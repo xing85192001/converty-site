@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Converty - Free online calculators and converters",
+  title: "baikecalc - Free online calculators and converters",
   description:
     "Free online calculators and converters for finance, health, math, photo, video, and more.",
   icons: {

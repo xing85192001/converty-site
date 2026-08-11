@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Converty",
+    "siteName": "baikecalc",
     "tagline": "Free online calculators and converters",
     "allTools": "All Tools",
     "home": "Home",
@@ -60,7 +60,7 @@
       "invalidUrl": "Please enter a valid URL"
     },
     "metadata": {
-      "titleSuffix": "Converty",
+      "titleSuffix": "baikecalc",
       "defaultDescription": "Free online calculators and converters for everyday needs"
     },
     "cookieConsent": {

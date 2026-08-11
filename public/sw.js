@@ -1,7 +1,7 @@
 /* global workbox, importScripts */
 
 /**
- * Converty Service Worker
+ * baikecalc Service Worker
  *
  * Implements offline-first caching strategies using Workbox v7.
  * Enables calculator functionality without internet connection.

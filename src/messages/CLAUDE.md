@@ -18,7 +18,7 @@ Four stable top-level namespaces (as of Phase 46 / ADR-012):
 ```json
 {
   "common": {
-    "siteName": "Converty",
+    "siteName": "baikecalc",
     "tagline": "Free online calculators",
     "backTo": "Back to {category}",
     "calculate": "Calculate",
@@ -29,7 +29,7 @@ Four stable top-level namespaces (as of Phase 46 / ADR-012):
       "invalidNumber": "Please enter a valid number"
     },
     "metadata": {
-      "title": "Converty — Free Online Calculators",
+      "title": "baikecalc — Free Online Calculators",
       "description": "..."
     }
   },

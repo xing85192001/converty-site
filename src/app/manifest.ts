@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 /**
  * PWA Manifest Configuration
  *
- * This manifest enables "Add to Home Screen" installation for Converty.
+ * This manifest enables "Add to Home Screen" installation for baikecalc.
  * Next.js automatically serves this at /manifest.webmanifest
  *
  * References:
@@ -16,8 +16,8 @@ export const dynamic = "force-static";
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Converty - Calculators & Converters",
-    short_name: "Converty",
+    name: "baikecalc - Calculators & Converters",
+    short_name: "baikecalc",
     description:
       "200+ free online calculators and converters for finance, health, math, photo, video, and more",
     id: "/",

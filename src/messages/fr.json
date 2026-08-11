@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Converty",
+    "siteName": "baikecalc",
     "tagline": "Calculatrices et convertisseurs en ligne gratuits",
     "allTools": "Tous les outils",
     "home": "Accueil",
@@ -60,7 +60,7 @@
       "invalidUrl": "Veuillez entrer une URL valide"
     },
     "metadata": {
-      "titleSuffix": "Converty",
+      "titleSuffix": "baikecalc",
       "defaultDescription": "Calculatrices et convertisseurs en ligne gratuits pour vos besoins quotidiens"
     },
     "cookieConsent": {

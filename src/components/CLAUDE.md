@@ -1,6 +1,6 @@
 # Components Directory
 
-This directory contains all React components for Converty.
+This directory contains all React components for baikecalc.
 
 ## Structure
 

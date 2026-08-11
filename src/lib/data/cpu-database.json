@@ -1,5 +1,5 @@
 {
-  "dataAsOf": "2026-06-19",
+  "dataAsOf": "2026-08-11",
   "staleDays": 90,
   "staleWarning": "SPECint2017 data may be outdated. Verify current scores at spec.org before procurement decisions.",
   "source": "https://www.spec.org/cpu2017/results/rint2017.html",
@@ -637,9 +637,9 @@
       "threadsPerCore": 2,
       "tdpW": 350,
       "socketType": "LGA4710",
-      "specint2017Base": 650,
-      "specint2017Peak": 673,
-      "releaseYear": 2025
+      "specint2017Base": 651,
+      "specint2017Peak": 674,
+      "releaseYear": 2026
     },
     {
       "id": "intel-xeon-6776p-b",
@@ -665,8 +665,8 @@
       "threadsPerCore": 2,
       "tdpW": 200,
       "socketType": "SP6",
-      "specint2017Base": 614,
-      "specint2017Peak": 614,
+      "specint2017Base": 616,
+      "specint2017Peak": 626,
       "releaseYear": 2026
     },
     {
@@ -927,6 +927,20 @@
       "notes": "Score normalized from 2-chip submission"
     },
     {
+      "id": "amd-epyc-8435p",
+      "vendor": "amd",
+      "name": "AMD EPYC 8435P",
+      "family": "Siena",
+      "generation": "current",
+      "cores": 48,
+      "threadsPerCore": 2,
+      "tdpW": 200,
+      "socketType": "SP6",
+      "specint2017Base": 528,
+      "specint2017Peak": 535,
+      "releaseYear": 2026
+    },
+    {
       "id": "intel-xeon-6731e",
       "vendor": "intel",
       "name": "Intel Xeon 6731E",
@@ -992,9 +1006,9 @@
       "threadsPerCore": 2,
       "tdpW": 350,
       "socketType": "LGA4710",
-      "specint2017Base": 495,
-      "specint2017Peak": 511,
-      "releaseYear": 2025
+      "specint2017Base": 497,
+      "specint2017Peak": 514,
+      "releaseYear": 2026
     },
     {
       "id": "intel-xeon-platinum-8581v",
@@ -1500,21 +1514,6 @@
       "notes": "Score normalized from 2-chip submission"
     },
     {
-      "id": "intel-xeon-6732p",
-      "vendor": "intel",
-      "name": "Intel Xeon 6732P",
-      "family": "Granite Rapids",
-      "generation": "current",
-      "cores": 64,
-      "threadsPerCore": 2,
-      "tdpW": 350,
-      "socketType": "LGA4710",
-      "specint2017Base": 391,
-      "specint2017Peak": 403.5,
-      "releaseYear": 2025,
-      "notes": "Score normalized from 2-chip submission"
-    },
-    {
       "id": "amd-epyc-9354p",
       "vendor": "amd",
       "name": "AMD EPYC 9354P",
@@ -1558,6 +1557,20 @@
       "notes": "Score normalized from 2-chip submission"
     },
     {
+      "id": "intel-xeon-6737p",
+      "vendor": "intel",
+      "name": "Intel Xeon 6737P",
+      "family": "Granite Rapids",
+      "generation": "current",
+      "cores": 32,
+      "threadsPerCore": 2,
+      "tdpW": 350,
+      "socketType": "LGA4710",
+      "specint2017Base": 387,
+      "specint2017Peak": 399,
+      "releaseYear": 2026
+    },
+    {
       "id": "amd-epyc-7h12",
       "vendor": "amd",
       "name": "AMD EPYC 7H12",
@@ -1570,20 +1583,6 @@
       "specint2017Base": 361,
       "specint2017Peak": 397,
       "releaseYear": 2020
-    },
-    {
-      "id": "intel-xeon-6737p",
-      "vendor": "intel",
-      "name": "Intel Xeon 6737P",
-      "family": "Granite Rapids",
-      "generation": "current",
-      "cores": 32,
-      "threadsPerCore": 2,
-      "tdpW": 350,
-      "socketType": "LGA4710",
-      "specint2017Base": 385,
-      "specint2017Peak": 397,
-      "releaseYear": 2025
     },
     {
       "id": "intel-xeon-6738p",
@@ -1599,6 +1598,20 @@
       "specint2017Peak": 395,
       "releaseYear": 2025,
       "notes": "Score normalized from 4-chip submission"
+    },
+    {
+      "id": "intel-xeon-6732p",
+      "vendor": "intel",
+      "name": "Intel Xeon 6732P",
+      "family": "Granite Rapids",
+      "generation": "current",
+      "cores": 32,
+      "threadsPerCore": 2,
+      "tdpW": 350,
+      "socketType": "LGA4710",
+      "specint2017Base": 382,
+      "specint2017Peak": 395,
+      "releaseYear": 2026
     },
     {
       "id": "intel-xeon-6736p",
@@ -3121,6 +3134,20 @@
       "releaseYear": 2021
     },
     {
+      "id": "amd-epyc-8125p",
+      "vendor": "amd",
+      "name": "AMD EPYC 8125P",
+      "family": "Siena",
+      "generation": "current",
+      "cores": 16,
+      "threadsPerCore": 2,
+      "tdpW": 200,
+      "socketType": "SP6",
+      "specint2017Base": 224,
+      "specint2017Peak": 224,
+      "releaseYear": 2026
+    },
+    {
       "id": "amd-epyc-4585px",
       "vendor": "amd",
       "name": "AMD EPYC 4585PX",
@@ -4449,6 +4476,20 @@
       "notes": "Score normalized from 2-chip submission"
     },
     {
+      "id": "intel-xeon-6377p",
+      "vendor": "intel",
+      "name": "Intel Xeon 6377P",
+      "family": "Granite Rapids",
+      "generation": "current",
+      "cores": 12,
+      "threadsPerCore": 2,
+      "tdpW": 350,
+      "socketType": "LGA4710",
+      "specint2017Base": 137,
+      "specint2017Peak": 143,
+      "releaseYear": 2026
+    },
+    {
       "id": "amd-epyc-7303p",
       "vendor": "amd",
       "name": "AMD EPYC 7303P",
@@ -5155,6 +5196,20 @@
       "specint2017Peak": 117.5,
       "releaseYear": 2019,
       "notes": "Score normalized from 2-chip submission"
+    },
+    {
+      "id": "amd-epyc-8025p",
+      "vendor": "amd",
+      "name": "AMD EPYC 8025P",
+      "family": "Siena",
+      "generation": "current",
+      "cores": 8,
+      "threadsPerCore": 2,
+      "tdpW": 200,
+      "socketType": "SP6",
+      "specint2017Base": 117,
+      "specint2017Peak": 117,
+      "releaseYear": 2026
     },
     {
       "id": "intel-xeon-gold-6256",

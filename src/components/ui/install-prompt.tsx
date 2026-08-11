@@ -117,7 +117,7 @@ export function InstallPrompt() {
             <Share className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600 dark:text-blue-400" />
             <div className="flex-1">
               <p className="text-sm font-medium text-blue-900 dark:text-blue-100">
-                Install Converty
+                Install baikecalc
               </p>
               <p className="mt-1 text-xs text-blue-700 dark:text-blue-300">
                 Tap <Share className="inline h-3 w-3" /> then "Add to Home Screen"
@@ -135,7 +135,7 @@ export function InstallPrompt() {
       <div className="fixed bottom-4 right-4 z-50">
         <Button onClick={handleInstallClick} size="lg" className="shadow-lg">
           <Download className="mr-2 h-5 w-5" />
-          Install Converty
+          Install baikecalc
         </Button>
       </div>
     );

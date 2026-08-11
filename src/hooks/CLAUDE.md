@@ -1,6 +1,6 @@
 # Hooks Directory
 
-Custom React hooks for Converty.
+Custom React hooks for baikecalc.
 
 ## Available Hooks
 

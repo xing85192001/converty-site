@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "转换",
+    "siteName": "baikecalc",
     "tagline": "免费在线计算器与转换工具，满足日常需求",
     "allTools": "所有工具",
     "home": "首页",
@@ -60,7 +60,7 @@
       "invalidUrl": "请输入有效网址"
     },
     "metadata": {
-      "titleSuffix": "转换",
+      "titleSuffix": "baikecalc",
       "defaultDescription": "免费在线计算器与转换工具，满足日常需求"
     },
     "cookieConsent": {
