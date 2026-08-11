@@ -12,14 +12,9 @@ const withBundleAnalyzer = withBundleAnalyzerFactory({
 const isProd = process.env.NODE_ENV === "production";
 
 // Production base path.
-//  - Default: "/converty"  -> deploy under a sub-path (e.g. GitHub Pages project site)
-//  - Set BASE_PATH=""      -> deploy at a domain root (e.g. https://yourdomain.com/)
-const basePath =
-  process.env.BASE_PATH !== undefined
-    ? process.env.BASE_PATH
-    : isProd
-      ? "/converty"
-      : "";
+//  - Default: "" (root domain) -> deploy at a domain root (https://yourdomain.com/)
+//  - Set BASE_PATH="/converty" -> deploy under a sub-path (e.g. GitHub Pages project site)
+const basePath = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
 
 const nextConfig: NextConfig = {
   // Only use static export in production to avoid dev server issues
