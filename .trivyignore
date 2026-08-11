@@ -1,0 +1,23 @@
+# Trivy Security Suppressions
+# ==========================
+#
+# Context: Converty is a STATIC SITE (Next.js output: "export")
+# - No Docker containers are used in production
+# - Site is deployed to GitHub Pages as static HTML/JS/CSS
+# - All vulnerabilities below are container-related false positives
+#
+# Review Date: July 2026 (6-month cycle)
+# Verified: npm audit --production shows 0 vulnerabilities
+
+# @surma/rollup-plugin-off-main-thread (transitive dev dependency)
+# Source: workbox-build -> @surma/rollup-plugin-off-main-thread
+# Issue: Dockerfile exists in package for browser testing
+# Impact: NONE - Dockerfile never executed, dev dependency only
+AVD-DS-0002 exp:2026-07-25
+AVD-DS-0017 exp:2026-07-25
+
+# libpng CVE-2024-44191 (container base image)
+# Issue: Vulnerability in libpng used by container base image
+# Impact: NONE - No Docker containers in production (static export)
+# Note: This only affects the development Dockerfile, not production
+CVE-2024-44191 exp:2026-07-25

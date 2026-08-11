@@ -1,0 +1,227 @@
+[
+  {
+    "id": "commercial-steel",
+    "name": "Commercial Steel",
+    "category": "Steel",
+    "roughness": 0.045,
+    "maxPressure": 200,
+    "maxTemperature": 400,
+    "density": 7850
+  },
+  {
+    "id": "stainless-steel",
+    "name": "Stainless Steel",
+    "category": "Steel",
+    "roughness": 0.015,
+    "maxPressure": 250,
+    "maxTemperature": 500,
+    "density": 8000
+  },
+  {
+    "id": "galvanized-steel",
+    "name": "Galvanized Steel",
+    "category": "Steel",
+    "roughness": 0.15,
+    "maxPressure": 150,
+    "maxTemperature": 200,
+    "density": 7850
+  },
+  {
+    "id": "cast-iron",
+    "name": "Cast Iron",
+    "category": "Iron",
+    "roughness": 0.26,
+    "maxPressure": 100,
+    "maxTemperature": 300,
+    "density": 7200
+  },
+  {
+    "id": "ductile-iron",
+    "name": "Ductile Iron",
+    "category": "Iron",
+    "roughness": 0.025,
+    "maxPressure": 250,
+    "maxTemperature": 350,
+    "density": 7100
+  },
+  {
+    "id": "wrought-iron",
+    "name": "Wrought Iron",
+    "category": "Iron",
+    "roughness": 0.045,
+    "maxPressure": 100,
+    "maxTemperature": 300,
+    "density": 7750
+  },
+  {
+    "id": "copper",
+    "name": "Copper",
+    "category": "Copper",
+    "roughness": 0.0015,
+    "maxPressure": 150,
+    "maxTemperature": 200,
+    "density": 8940
+  },
+  {
+    "id": "copper-drawn",
+    "name": "Drawn Copper Tubing",
+    "category": "Copper",
+    "roughness": 0.0015,
+    "maxPressure": 100,
+    "maxTemperature": 180,
+    "density": 8940
+  },
+  {
+    "id": "brass",
+    "name": "Brass",
+    "category": "Copper",
+    "roughness": 0.0015,
+    "maxPressure": 120,
+    "maxTemperature": 200,
+    "density": 8500
+  },
+  {
+    "id": "pvc",
+    "name": "PVC (Polyvinyl Chloride)",
+    "category": "Plastic",
+    "roughness": 0.0015,
+    "maxPressure": 16,
+    "maxTemperature": 60,
+    "density": 1400
+  },
+  {
+    "id": "cpvc",
+    "name": "CPVC (Chlorinated PVC)",
+    "category": "Plastic",
+    "roughness": 0.0015,
+    "maxPressure": 16,
+    "maxTemperature": 93,
+    "density": 1560
+  },
+  {
+    "id": "hdpe",
+    "name": "HDPE (High-Density Polyethylene)",
+    "category": "Plastic",
+    "roughness": 0.007,
+    "maxPressure": 16,
+    "maxTemperature": 60,
+    "density": 960
+  },
+  {
+    "id": "abs",
+    "name": "ABS (Acrylonitrile Butadiene Styrene)",
+    "category": "Plastic",
+    "roughness": 0.0015,
+    "maxPressure": 10,
+    "maxTemperature": 60,
+    "density": 1050
+  },
+  {
+    "id": "fiberglass-frp",
+    "name": "Fiberglass (FRP)",
+    "category": "Composite",
+    "roughness": 0.005,
+    "maxPressure": 25,
+    "maxTemperature": 150,
+    "density": 1900
+  },
+  {
+    "id": "concrete",
+    "name": "Concrete",
+    "category": "Concrete",
+    "roughness": 0.3,
+    "maxPressure": 30,
+    "maxTemperature": 200,
+    "density": 2400
+  },
+  {
+    "id": "concrete-smooth",
+    "name": "Concrete (Smooth Finish)",
+    "category": "Concrete",
+    "roughness": 0.03,
+    "maxPressure": 30,
+    "maxTemperature": 200,
+    "density": 2400
+  },
+  {
+    "id": "riveted-steel",
+    "name": "Riveted Steel",
+    "category": "Steel",
+    "roughness": 3.0,
+    "maxPressure": 100,
+    "maxTemperature": 350,
+    "density": 7850
+  },
+  {
+    "id": "corrugated-steel",
+    "name": "Corrugated Steel",
+    "category": "Steel",
+    "roughness": 45.0,
+    "maxPressure": 50,
+    "maxTemperature": 200,
+    "density": 7850
+  },
+  {
+    "id": "aluminum",
+    "name": "Aluminum",
+    "category": "Aluminum",
+    "roughness": 0.0015,
+    "maxPressure": 100,
+    "maxTemperature": 200,
+    "density": 2700
+  },
+  {
+    "id": "lead",
+    "name": "Lead",
+    "category": "Other",
+    "roughness": 0.0015,
+    "maxPressure": 20,
+    "maxTemperature": 100,
+    "density": 11340
+  },
+  {
+    "id": "glass",
+    "name": "Glass",
+    "category": "Other",
+    "roughness": 0.0015,
+    "maxPressure": 10,
+    "maxTemperature": 250,
+    "density": 2500
+  },
+  {
+    "id": "wood-stave",
+    "name": "Wood Stave",
+    "category": "Other",
+    "roughness": 0.6,
+    "maxPressure": 5,
+    "maxTemperature": 60,
+    "density": 600
+  },
+  {
+    "id": "clay-vitrified",
+    "name": "Vitrified Clay",
+    "category": "Other",
+    "roughness": 0.3,
+    "maxPressure": 10,
+    "maxTemperature": 200,
+    "density": 2000
+  },
+  {
+    "id": "rubber-lined",
+    "name": "Rubber-Lined Pipe",
+    "category": "Other",
+    "roughness": 0.01,
+    "maxPressure": 16,
+    "maxTemperature": 80,
+    "density": 7850
+  },
+  {
+    "id": "cement-lined",
+    "name": "Cement-Lined Ductile Iron",
+    "category": "Iron",
+    "roughness": 0.025,
+    "maxPressure": 250,
+    "maxTemperature": 300,
+    "density": 7200
+  }
+]

@@ -1,0 +1,81 @@
+{
+  // Use defaults as base
+  "default": true,
+
+  // Heading style: ATX (#, ##, ###)
+  "MD003": { "style": "atx" },
+
+  // Unordered list style: dash (-)
+  "MD004": { "style": "dash" },
+
+  // List indentation: 2 spaces
+  "MD007": { "indent": 2 },
+
+  // No trailing spaces
+  "MD009": true,
+
+  // No hard tabs
+  "MD010": true,
+
+  // Max 1 consecutive blank line
+  "MD012": { "maximum": 1 },
+
+  // Line length: disabled (too strict for docs)
+  "MD013": false,
+
+  // Duplicate headings: only check siblings
+  "MD024": { "siblings_only": true },
+
+  // Multiple H1: disabled (planning docs may have multiple)
+  "MD025": false,
+
+  // Trailing punctuation in headings
+  "MD026": { "punctuation": ".,;:!" },
+
+  // Ordered list style
+  "MD029": { "style": "ordered" },
+
+  // List marker spacing
+  "MD030": {
+    "ul_single": 1,
+    "ol_single": 1,
+    "ul_multi": 1,
+    "ol_multi": 1
+  },
+
+  // Inline HTML: disabled (planning uses XML-like tags)
+  "MD033": false,
+
+  // Bare URLs
+  "MD034": true,
+
+  // Horizontal rule style
+  "MD035": { "style": "---" },
+
+  // Emphasis as heading: disabled
+  "MD036": false,
+
+  // Fenced code blocks must have language
+  "MD040": true,
+
+  // First line H1: disabled (plan files start differently)
+  "MD041": false,
+
+  // Code block style: fenced
+  "MD046": { "style": "fenced" },
+
+  // Files should end with newline
+  "MD047": true,
+
+  // Code fence style: backticks
+  "MD048": { "style": "backtick" },
+
+  // Emphasis style: underscore for italic
+  "MD049": { "style": "underscore" },
+
+  // Strong style: asterisk for bold
+  "MD050": { "style": "asterisk" },
+
+  // Table column style: disabled (too strict for compact tables)
+  "MD060": false
+}

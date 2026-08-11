@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background rounded square -->
+  <rect width="200" height="200" rx="40" ry="40" fill="#3B82F6"/>
+
+  <!-- Two circular conversion arrows -->
+  <!-- Top-right arrow arc (clockwise, top half) -->
+  <path d="M 55 80 A 45 45 0 0 1 145 80"
+        fill="none" stroke="white" stroke-width="14" stroke-linecap="round"/>
+  <!-- Arrowhead for top arc -->
+  <polygon points="145,80 128,62 162,62" fill="white"/>
+
+  <!-- Bottom-left arrow arc (clockwise, bottom half) -->
+  <path d="M 145 120 A 45 45 0 0 1 55 120"
+        fill="none" stroke="white" stroke-width="14" stroke-linecap="round"/>
+  <!-- Arrowhead for bottom arc -->
+  <polygon points="55,120 72,138 38,138" fill="white"/>
+</svg>

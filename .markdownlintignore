@@ -1,0 +1,22 @@
+# Dependencies
+
+node_modules/
+
+# Build outputs
+
+out/
+.next/
+coverage/
+
+# Git
+
+.git/
+
+# Generated files
+
+public/search/
+CHANGELOG.md
+
+# Planning phase files (use XML-like tags)
+
+.planning/phases/

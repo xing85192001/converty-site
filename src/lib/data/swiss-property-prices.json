@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-01-24T00:00:00.000Z",
+  "source": "Swiss Real Estate Market Data 2026",
+  "currency": "CHF",
+  "unit": "per_m2",
+  "regions": {
+    "zurich": {
+      "name": "Zurich",
+      "apartment": 12000,
+      "house": 11500,
+      "commercial": 9500
+    },
+    "geneva": {
+      "name": "Geneva",
+      "apartment": 11500,
+      "house": 11000,
+      "commercial": 9000
+    },
+    "bern": {
+      "name": "Bern",
+      "apartment": 8500,
+      "house": 8000,
+      "commercial": 7000
+    },
+    "basel": {
+      "name": "Basel",
+      "apartment": 9000,
+      "house": 8500,
+      "commercial": 7500
+    },
+    "lausanne": {
+      "name": "Lausanne",
+      "apartment": 10000,
+      "house": 9500,
+      "commercial": 8000
+    },
+    "lucerne": {
+      "name": "Lucerne",
+      "apartment": 8000,
+      "house": 7500,
+      "commercial": 6500
+    },
+    "zug": {
+      "name": "Zug",
+      "apartment": 13000,
+      "house": 12500,
+      "commercial": 10500
+    },
+    "national": {
+      "name": "National Average",
+      "apartment": 9000,
+      "house": 8500,
+      "commercial": 7500
+    }
+  }
+}
