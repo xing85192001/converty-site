@@ -116,7 +116,12 @@ zh.blog = {
   minRead: "分钟阅读",
   backToBlog: "返回博客",
   all: "全部",
-  category: "分类",
+  category: {
+    finance: "财务",
+    health: "健康",
+    math: "数学",
+    cooking: "烹饪",
+  },
 };
 
 // Keep converter/calculator namespaces in English as a pragmatic fallback
