@@ -24,7 +24,13 @@
     "selectLanguage": "Select language",
     "footer": {
       "builtWith": "Built with Next.js and Tailwind CSS",
-      "copyright": "All rights reserved"
+      "copyright": "All rights reserved",
+      "links": {
+        "privacy": "Privacy Policy",
+        "about": "About",
+        "contact": "Contact",
+        "terms": "Terms of Service"
+      }
     },
     "navigation": {
       "categories": "Categories",
@@ -55,6 +61,13 @@
     "metadata": {
       "titleSuffix": "Converty",
       "defaultDescription": "Free online calculators and converters for everyday needs"
+    },
+    "cookieConsent": {
+      "title": "We value your privacy",
+      "description": "We use cookies to improve your experience and to serve personalized advertisements. You can accept or decline non-essential cookies at any time.",
+      "accept": "Accept all",
+      "decline": "Decline",
+      "manage": "Manage"
     }
   },
   "nav": {

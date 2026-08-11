@@ -24,7 +24,13 @@
     "selectLanguage": "Sprache waehlen",
     "footer": {
       "builtWith": "Erstellt mit Next.js und Tailwind CSS",
-      "copyright": "Alle Rechte vorbehalten"
+      "copyright": "Alle Rechte vorbehalten",
+      "links": {
+        "privacy": "Datenschutz",
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "terms": "Nutzungsbedingungen"
+      }
     },
     "navigation": {
       "categories": "Kategorien",
@@ -55,6 +61,13 @@
     "metadata": {
       "titleSuffix": "Converty",
       "defaultDescription": "Kostenlose Online-Rechner und Konverter fuer den taeglichen Bedarf"
+    },
+    "cookieConsent": {
+      "title": "Wir schätzen Ihre Privatsphäre",
+      "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und personalisierte Werbung anzuzeigen. Sie können nicht essenzielle Cookies jederzeit akzeptieren oder ablehnen.",
+      "accept": "Alle akzeptieren",
+      "decline": "Ablehnen",
+      "manage": "Verwalten"
     }
   },
   "nav": {

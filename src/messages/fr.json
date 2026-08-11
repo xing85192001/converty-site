@@ -24,7 +24,13 @@
     "selectLanguage": "Choisir la langue",
     "footer": {
       "builtWith": "Construit avec Next.js et Tailwind CSS",
-      "copyright": "Tous droits reserves"
+      "copyright": "Tous droits reserves",
+      "links": {
+        "privacy": "Politique de confidentialité",
+        "about": "À propos",
+        "contact": "Contact",
+        "terms": "Conditions d'utilisation"
+      }
     },
     "navigation": {
       "categories": "Categories",
@@ -55,6 +61,13 @@
     "metadata": {
       "titleSuffix": "Converty",
       "defaultDescription": "Calculatrices et convertisseurs en ligne gratuits pour vos besoins quotidiens"
+    },
+    "cookieConsent": {
+      "title": "Nous respectons votre vie privée",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience et afficher des publicités personnalisées. Vous pouvez accepter ou refuser les cookies non essentiels à tout moment.",
+      "accept": "Tout accepter",
+      "decline": "Refuser",
+      "manage": "Gérer"
     }
   },
   "nav": {

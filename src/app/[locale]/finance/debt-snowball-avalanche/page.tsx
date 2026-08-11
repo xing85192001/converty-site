@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { CalculatorSkeleton } from "@/components/calculator-skeleton";
+import { CalculatorInfo } from "@/components/converter/calculator-info";
 import { ConverterLayout } from "@/components/converter/converter-layout";
 import { locales } from "@/i18n/config";
 import { getCategoryBySlug } from "@/lib/registry/categories";
@@ -50,6 +51,50 @@ export default async function DebtSnowballAvalanchePage({
       <Suspense fallback={<CalculatorSkeleton />}>
         <DebtSnowballAvalancheComponent />
       </Suspense>
+      <CalculatorInfo
+        intro="Two popular strategies for paying off multiple debts faster. Both throw every spare dollar at debt, but they differ in which debt goes first."
+        sections={[
+          {
+            heading: "Snowball method",
+            body: (
+              <p>
+                Pay the minimum on everything, then put extra money toward the{" "}
+                <strong>smallest balance</strong> first. You win quick psychological wins as
+                balances disappear.
+              </p>
+            ),
+          },
+          {
+            heading: "Avalanche method",
+            body: (
+              <p>
+                Pay the minimum on everything, then put extra money toward the{" "}
+                <strong>highest interest rate</strong> first. This minimizes total interest paid and
+                is usually the cheaper path mathematically.
+              </p>
+            ),
+          },
+          {
+            heading: "How the payoff is computed",
+            body: (
+              <p>
+                Each month, interest accrues on every balance, then your payment covers interest
+                plus principal. Any leftover after minimums is applied to the target debt until it
+                is zero, and the freed-up payment rolls into the next debt.
+              </p>
+            ),
+          },
+          {
+            heading: "Tip",
+            body: (
+              <p>
+                Use the results to compare total interest and months saved between the two methods
+                for your exact debts.
+              </p>
+            ),
+          },
+        ]}
+      />
     </ConverterLayout>
   );
 }
