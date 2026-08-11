@@ -62,7 +62,8 @@ const blocks = {
   "income-tax": {
     name: "Income Tax Calculator",
     description: "Calculate progressive income tax with presets or your own custom tax brackets.",
-    metaDescription: "Free progressive income tax calculator with US, UK and custom bracket support.",
+    metaDescription:
+      "Free progressive income tax calculator with US, UK and custom bracket support.",
     system: "Tax system",
     income: "Taxable income",
     brackets: "Custom brackets",
@@ -107,7 +108,8 @@ const translations = {
     },
     "income-tax": {
       name: "Calculatrice d'impôt sur le revenu",
-      description: "Calculez l'impôt progressif sur le revenu avec des préréglages ou vos propres tranches.",
+      description:
+        "Calculez l'impôt progressif sur le revenu avec des préréglages ou vos propres tranches.",
       metaDescription:
         "Calculatrice d'impôt sur le revenu progressif gratuite avec préréglages US, UK et tranches personnalisées.",
     },
@@ -143,7 +145,8 @@ const translations = {
     },
     "income-tax": {
       name: "Einkommensteuer-Rechner",
-      description: "Berechnen Sie die progressive Einkommensteuer mit Voreinstellungen oder eigenen Steuerklassen.",
+      description:
+        "Berechnen Sie die progressive Einkommensteuer mit Voreinstellungen oder eigenen Steuerklassen.",
       metaDescription:
         "Kostenloser progressiver Einkommensteuer-Rechner mit US-, UK- und benutzerdefinierten Steuerklassen.",
     },
@@ -179,14 +182,15 @@ const translations = {
     },
     "income-tax": {
       name: "Calcolatrice imposta sul reddito",
-      description: "Calcola l'imposta progressiva sul reddito con preset o tue fasce personalizzate.",
+      description:
+        "Calcola l'imposta progressiva sul reddito con preset o tue fasce personalizzate.",
       metaDescription:
         "Calcolatrice imposta sul reddito progressiva gratuita con supporto per fasce USA, Regno Unito e personalizzate.",
     },
   },
 };
 
-for (const loc of ["en", "fr", "de", "it"]) {
+for (const loc of ["en", "fr", "de", "it", "zh"]) {
   const file = `src/messages/${loc}.json`;
   const data = JSON.parse(readFileSync(file, "utf8"));
   const merged = { ...blocks };

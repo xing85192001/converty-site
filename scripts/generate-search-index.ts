@@ -11,7 +11,7 @@ import Fuse from "fuse.js";
 import type { SearchDocument } from "../src/lib/search/search-data";
 
 // Locales to generate indexes for
-const LOCALES = ["en", "fr", "de", "it"] as const;
+const LOCALES = ["en", "fr", "de", "it", "zh"] as const;
 
 // Fuse.js keys for search - must match runtime options
 const FUSE_KEYS = ["name", "description", "keywords", "categoryName"];

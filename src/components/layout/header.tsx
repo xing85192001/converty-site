@@ -18,34 +18,33 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
-        <Link href="/" className="flex items-center space-x-2 mr-6">
+      <div className="container flex h-14 items-center justify-between">
+        <Link href="/" className="flex items-center space-x-2">
           <Calculator className="h-6 w-6" />
           <span className="font-bold">{t("siteName")}</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden sm:flex items-center space-x-6 text-sm font-medium">
-          <Link
-            href="/all"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            {t("allTools")}
-          </Link>
-          <Link
-            href="/blog"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            {t("blog")}
-          </Link>
-        </nav>
+        {/* Desktop Navigation + Search centered */}
+        <div className="hidden sm:flex flex-1 items-center justify-center gap-6">
+          <nav className="flex items-center space-x-6 text-sm font-medium">
+            <Link
+              href="/all"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("allTools")}
+            </Link>
+            <Link
+              href="/blog"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("blog")}
+            </Link>
+          </nav>
 
-        {/* Search */}
-        <div className="hidden sm:block mr-4">
           <GlobalSearch />
         </div>
 
-        <div className="flex items-center space-x-2 ml-auto">
+        <div className="flex items-center space-x-2">
           <LanguageSwitcher />
           <ThemeToggle />
           <Button

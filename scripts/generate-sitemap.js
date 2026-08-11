@@ -15,7 +15,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Configuration
-const LOCALES = ["en", "fr", "de", "it"];
+const LOCALES = ["en", "fr", "de", "it", "zh"];
 const DEFAULT_LOCALE = "en";
 const APP_DIR = path.join(process.cwd(), "src/app/[locale]");
 const OUTPUT_PATH = path.join(process.cwd(), "public/sitemap.xml");

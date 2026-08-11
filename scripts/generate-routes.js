@@ -15,7 +15,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Configuration
-const LOCALES = ["en", "fr", "de", "it"];
+const LOCALES = ["en", "fr", "de", "it", "zh"];
 const APP_DIR = path.join(process.cwd(), "src/app/[locale]");
 const DEFAULT_OUTPUT = path.join(process.cwd(), "routes.json");
 

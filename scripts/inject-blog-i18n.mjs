@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
-const locales = ["en", "fr", "de", "it"];
+const locales = ["en", "fr", "de", "it", "zh"];
 
 const blog = {
   en: {

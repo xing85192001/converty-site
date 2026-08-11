@@ -16,6 +16,7 @@ const localeLabels: Record<Locale, string> = {
   fr: "FR",
   de: "DE",
   it: "IT",
+  zh: "ZH",
 };
 
 const localeFullLabels: Record<Locale, string> = {
@@ -23,6 +24,7 @@ const localeFullLabels: Record<Locale, string> = {
   fr: "Français",
   de: "Deutsch",
   it: "Italiano",
+  zh: "中文",
 };
 
 export function LanguageSwitcher() {

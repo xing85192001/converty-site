@@ -17,7 +17,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const LOCALES = ["en", "fr", "de", "it"];
+const LOCALES = ["en", "fr", "de", "it", "zh"];
 const MESSAGES_DIR = path.join(__dirname, "../src/messages");
 
 function migrate(locale) {

@@ -16,7 +16,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Configuration
-const LOCALES = ["en", "fr", "de", "it"];
+const LOCALES = ["en", "fr", "de", "it", "zh"];
 const MESSAGES_DIR = path.join(process.cwd(), "src/messages");
 const SOURCE_DIRS = [
   path.join(process.cwd(), "src/app"),

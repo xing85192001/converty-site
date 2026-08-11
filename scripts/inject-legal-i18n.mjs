@@ -2,7 +2,7 @@
 import fs from "node:fs";
 
 const dir = "src/messages";
-const locales = ["en", "fr", "de", "it"];
+const locales = ["en", "fr", "de", "it", "zh"];
 
 // Footer link labels (short)
 const footerLinks = {
