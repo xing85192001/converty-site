@@ -9,7 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { type Locale, locales } from "@/i18n/config";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
@@ -29,11 +29,14 @@ const localeFullLabels: Record<Locale, string> = {
 
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
-  const router = useRouter();
   const pathname = usePathname();
 
   const handleLocaleChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale as Locale });
+    // Use a full page navigation for reliability across Next.js versions and
+    // static export. `pathname` from next-intl excludes the locale prefix when
+    // `localePrefix: "always"` is used, so we prepend the new locale.
+    const newPath = `/${newLocale}${pathname === "/" ? "" : pathname}`;
+    window.location.assign(newPath + window.location.search + window.location.hash);
   };
 
   return (

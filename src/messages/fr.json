@@ -5197,6 +5197,8 @@
       "health": "Santé",
       "math": "Mathématiques",
       "cooking": "Cuisine"
-    }
+    },
+    "relatedTitle": "Articles connexes",
+    "heroBadge": "Guides pratiques et calculateurs"
   }
 }

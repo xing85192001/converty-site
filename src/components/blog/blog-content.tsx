@@ -1,3 +1,4 @@
+import { Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import type { BlogBlock } from "@/lib/blog/posts";
@@ -63,20 +64,23 @@ function renderBold(text: string): ReactNode[] {
 
 export function BlogContent({ blocks }: { blocks: BlogBlock[] }) {
   return (
-    <div className="space-y-5 text-sm leading-relaxed text-foreground/90 sm:text-base">
+    <div className="space-y-5 text-base leading-7 text-foreground/90">
       {blocks.map((block, i) => {
         switch (block.type) {
           case "p":
             return <p key={i}>{renderInline(block.text)}</p>;
           case "h2":
             return (
-              <h2 key={i} className="pt-2 text-xl font-semibold tracking-tight">
+              <h2
+                key={i}
+                className="scroll-mt-20 pt-4 text-2xl font-bold tracking-tight text-foreground"
+              >
                 {block.text}
               </h2>
             );
           case "ul":
             return (
-              <ul key={i} className="list-disc space-y-1 pl-5">
+              <ul key={i} className="my-2 list-disc space-y-2 pl-6 marker:text-muted-foreground">
                 {block.items.map((item, j) => (
                   <li key={j}>{renderInline(item)}</li>
                 ))}
@@ -86,9 +90,10 @@ export function BlogContent({ blocks }: { blocks: BlogBlock[] }) {
             return (
               <div
                 key={i}
-                className="rounded-lg border border-primary/30 bg-primary/5 px-4 py-3 text-sm text-foreground/90"
+                className="my-6 flex gap-3 rounded-xl border border-primary/20 bg-primary/5 px-5 py-4 text-foreground/90"
               >
-                {renderInline(block.text)}
+                <Lightbulb className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+                <div className="text-base leading-7">{renderInline(block.text)}</div>
               </div>
             );
           default:

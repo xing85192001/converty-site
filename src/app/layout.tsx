@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     "Free online calculators and converters for finance, health, math, photo, video, and more.",
   icons: {
     icon: [
-      { url: "/converty/favicon.ico", sizes: "any" },
-      { url: "/converty/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
     ],
-    apple: "/converty/icons/apple-touch-icon.png",
+    apple: "/icons/apple-touch-icon.png",
   },
 };
 
@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }

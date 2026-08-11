@@ -5176,6 +5176,8 @@
       "health": "健康",
       "math": "数学",
       "cooking": "烹饪"
-    }
+    },
+    "relatedTitle": "相关文章",
+    "heroBadge": "实用指南与计算器"
   }
 }
