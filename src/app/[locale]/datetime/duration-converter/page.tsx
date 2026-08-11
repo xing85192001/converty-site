@@ -60,7 +60,7 @@ export default async function DurationConverterPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("datetime.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

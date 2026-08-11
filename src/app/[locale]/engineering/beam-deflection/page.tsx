@@ -53,7 +53,7 @@ export default async function BeamDeflectionPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("engineering.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

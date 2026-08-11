@@ -42,7 +42,7 @@ export default async function CSPPage({ params }: { params: Promise<{ locale: st
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("web.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

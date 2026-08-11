@@ -45,7 +45,7 @@ export default async function TimeZonePage({ params }: { params: Promise<{ local
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("datetime.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

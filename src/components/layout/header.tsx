@@ -1,12 +1,11 @@
 "use client";
 
-import { Calculator, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import { categories } from "@/lib/registry/categories";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
@@ -14,43 +13,26 @@ import { ThemeToggle } from "./theme-toggle";
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("common");
-  const tc = useTranslations("nav");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <Calculator className="h-6 w-6" />
+      <div className="container flex h-14 items-center justify-between gap-4">
+        <Link href="/" className="flex shrink-0 items-center gap-2">
+          <img src="/logo.svg" alt={t("siteName")} className="h-9 w-9 rounded-lg object-contain" />
           <span className="font-bold">{t("siteName")}</span>
         </Link>
 
-        {/* Desktop Navigation + Search centered */}
-        <div className="hidden sm:flex flex-1 items-center justify-center gap-6">
-          <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link
-              href="/all"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              {t("allTools")}
-            </Link>
-            <Link
-              href="/blog"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              {t("blog")}
-            </Link>
-          </nav>
-
+        <div className="hidden flex-1 justify-center sm:flex">
           <GlobalSearch />
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex shrink-0 items-center gap-1">
           <LanguageSwitcher />
           <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="sm:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <Menu className="h-5 w-5" />
@@ -59,21 +41,10 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className={cn("md:hidden border-t", mobileMenuOpen ? "block" : "hidden")}>
-        <nav className="container py-4 flex flex-col space-y-3">
-          {categories.map((category) => (
-            <Link
-              key={category.id}
-              href={`/${category.slug}`}
-              className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <category.icon className="h-4 w-4" />
-              {tc(`${category.id}.name`)}
-            </Link>
-          ))}
-        </nav>
+      <div className={cn("border-t sm:hidden", mobileMenuOpen ? "block" : "hidden")}>
+        <div className="container py-3">
+          <GlobalSearch />
+        </div>
       </div>
     </header>
   );

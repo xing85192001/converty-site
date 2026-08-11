@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { LocaleHtmlLang } from "@/components/layout/locale-html-lang";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+import { ToolMenu } from "@/components/layout/tool-menu";
 import { type Locale, locales } from "@/i18n/config";
 import { SWRegistration } from "./sw-registration";
 
@@ -76,6 +77,7 @@ export default async function LocaleLayout({
         <SWRegistration />
         <div className="relative flex min-h-screen flex-col">
           <Header />
+          <ToolMenu />
           <main className="flex-1">{children}</main>
           <Footer />
           <CookieConsent />

@@ -1,25 +1,30 @@
 import { ChevronRight, Home } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import type { Category } from "@/lib/registry/categories";
+import { getCategoryById } from "@/lib/registry/categories";
 
 interface BreadcrumbsProps {
-  category: Category;
+  categoryId: string;
   current: string;
-  categoryName?: string; // Translated category name (preferred over category.name)
+  categoryName?: string;
 }
 
-export function Breadcrumbs({ category, current, categoryName }: BreadcrumbsProps) {
+export function Breadcrumbs({ categoryId, current, categoryName }: BreadcrumbsProps) {
+  const category = getCategoryById(categoryId);
+
   return (
-    <nav className="flex items-center space-x-1 text-sm text-muted-foreground mb-4">
-      <Link href="/" className="hover:text-foreground transition-colors">
+    <nav className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
+      <Link href="/" className="transition-colors hover:text-foreground">
         <Home className="h-4 w-4" />
       </Link>
       <ChevronRight className="h-4 w-4" />
-      <Link href={`/${category.slug}`} className="hover:text-foreground transition-colors">
-        {categoryName || category.name}
+      <Link
+        href={`/${category?.slug ?? categoryId}`}
+        className="transition-colors hover:text-foreground"
+      >
+        {categoryName || category?.name || categoryId}
       </Link>
       <ChevronRight className="h-4 w-4" />
-      <span className="text-foreground font-medium">{current}</span>
+      <span className="font-medium text-foreground">{current}</span>
     </nav>
   );
 }

@@ -45,7 +45,7 @@ export default async function BandwidthPage({ params }: { params: Promise<{ loca
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("data.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

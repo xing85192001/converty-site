@@ -71,7 +71,7 @@ export default async function ExchangeRatePage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("crypto.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

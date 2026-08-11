@@ -45,7 +45,7 @@ export default async function LightEVPage({ params }: { params: Promise<{ locale
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("photo.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

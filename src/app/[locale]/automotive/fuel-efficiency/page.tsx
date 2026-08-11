@@ -46,7 +46,7 @@ export default async function FuelEfficiencyPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("automotive.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

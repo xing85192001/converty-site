@@ -45,7 +45,7 @@ export default async function LoanPage({ params }: { params: Promise<{ locale: s
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

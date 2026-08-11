@@ -53,7 +53,7 @@ export default async function StoichiometryPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("chemistry.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

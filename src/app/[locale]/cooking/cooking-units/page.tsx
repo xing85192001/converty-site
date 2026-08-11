@@ -46,7 +46,7 @@ export default async function CookingUnitsPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("cooking.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

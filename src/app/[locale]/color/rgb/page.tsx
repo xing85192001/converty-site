@@ -49,7 +49,7 @@ export default async function RgbConverterPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("color.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

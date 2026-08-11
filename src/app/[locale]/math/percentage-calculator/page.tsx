@@ -49,8 +49,9 @@ export default async function PercentageCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("math.name")}
+      toolId="percentage-calculator"
     >
       <Suspense fallback={<CalculatorSkeleton />}>
         <PercentageCalculator />

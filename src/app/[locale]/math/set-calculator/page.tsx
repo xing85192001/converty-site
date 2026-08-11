@@ -45,7 +45,7 @@ export default async function SetCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("math.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

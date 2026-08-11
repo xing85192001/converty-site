@@ -58,7 +58,7 @@ export default async function TcpThroughputPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("data.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

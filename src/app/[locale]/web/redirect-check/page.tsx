@@ -49,7 +49,7 @@ export default async function RedirectCheckPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("web.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

@@ -38,7 +38,7 @@ export default async function RoiPage({ params }: { params: Promise<{ locale: st
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <RoiCalculator />

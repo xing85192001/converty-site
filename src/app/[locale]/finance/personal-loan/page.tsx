@@ -45,7 +45,7 @@ export default async function PersonalLoanPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <PersonalLoanCalculator />

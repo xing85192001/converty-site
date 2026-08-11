@@ -62,7 +62,7 @@ export default async function HypervConsolidationCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("infrastructure.name")}
     >
       <Suspense fallback={<CalculatorSkeleton inputCount={8} showResults />}>

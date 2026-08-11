@@ -66,7 +66,7 @@ export default async function MiningCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("crypto.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

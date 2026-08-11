@@ -49,7 +49,7 @@ export default async function VideoFileSizePage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("video.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

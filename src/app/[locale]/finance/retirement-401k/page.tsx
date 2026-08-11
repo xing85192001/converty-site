@@ -46,7 +46,7 @@ export default async function Retirement401kPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <Retirement401kCalculator />

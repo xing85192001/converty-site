@@ -42,7 +42,7 @@ export default async function FoodCostPage({ params }: { params: Promise<{ local
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={categoryT("name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

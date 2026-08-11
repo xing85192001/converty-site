@@ -45,7 +45,7 @@ export default async function OneRepMaxPage({ params }: { params: Promise<{ loca
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("health.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

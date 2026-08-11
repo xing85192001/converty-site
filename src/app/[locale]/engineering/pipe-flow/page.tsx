@@ -51,7 +51,7 @@ export default async function PipeFlowPage({ params }: { params: Promise<{ local
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("engineering.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

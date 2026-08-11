@@ -65,7 +65,7 @@ export default async function IPCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("network.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

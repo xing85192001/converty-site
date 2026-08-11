@@ -46,7 +46,7 @@ export default async function NutritionCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={categoryT("name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

@@ -58,7 +58,7 @@ export default async function EngineeringUnitConverterPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("engineering.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

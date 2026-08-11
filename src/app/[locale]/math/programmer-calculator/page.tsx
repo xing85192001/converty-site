@@ -3,8 +3,8 @@ import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { CalculatorSkeleton } from "@/components/calculator-skeleton";
-import { ConverterLayout } from "@/components/converter/converter-layout";
 import { CalculatorInfo } from "@/components/converter/calculator-info";
+import { ConverterLayout } from "@/components/converter/converter-layout";
 import { locales } from "@/i18n/config";
 import { getCategoryBySlug } from "@/lib/registry/categories";
 
@@ -45,7 +45,7 @@ export default async function ProgrammerCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("math.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>
@@ -68,7 +68,8 @@ export default async function ProgrammerCalculatorPage({
                   <strong>Decimal (base 10)</strong> — everyday numbers.
                 </li>
                 <li>
-                  <strong>Hexadecimal (base 16)</strong> — digits 0–9 and A–F, common in programming.
+                  <strong>Hexadecimal (base 16)</strong> — digits 0–9 and A–F, common in
+                  programming.
                 </li>
               </ul>
             ),
@@ -77,8 +78,8 @@ export default async function ProgrammerCalculatorPage({
             heading: "Bitwise operations",
             body: (
               <p>
-                AND, OR, XOR, and NOT compare bits position by position; shifts (≪, ≫) move bits left
-                or right, which multiplies or divides by powers of two.
+                AND, OR, XOR, and NOT compare bits position by position; shifts (≪, ≫) move bits
+                left or right, which multiplies or divides by powers of two.
               </p>
             ),
           },

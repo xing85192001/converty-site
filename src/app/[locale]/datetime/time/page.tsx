@@ -45,7 +45,7 @@ export default async function TimePage({ params }: { params: Promise<{ locale: s
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("datetime.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

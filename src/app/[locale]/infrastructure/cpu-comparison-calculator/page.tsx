@@ -60,7 +60,7 @@ export default async function CpuComparisonCalculatorPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("infrastructure.name")}
     >
       <Suspense fallback={<CalculatorSkeleton inputCount={6} showResults />}>

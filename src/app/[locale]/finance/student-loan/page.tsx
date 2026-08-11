@@ -41,7 +41,7 @@ export default async function StudentLoanPage({ params }: { params: Promise<{ lo
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <StudentLoanCalculator />

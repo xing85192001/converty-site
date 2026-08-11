@@ -53,7 +53,7 @@ export default async function MaintenanceIntervalsPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={automotiveCategory}
+      categoryId={automotiveCategory.id}
       categoryName={categoryT("name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

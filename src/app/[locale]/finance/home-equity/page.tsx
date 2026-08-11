@@ -41,7 +41,7 @@ export default async function HomeEquityPage({ params }: { params: Promise<{ loc
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <HomeEquityCalculator />

@@ -45,7 +45,7 @@ export default async function DayCounterPage({ params }: { params: Promise<{ loc
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("datetime.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

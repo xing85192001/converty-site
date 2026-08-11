@@ -41,7 +41,7 @@ export default async function CurrencyPage({ params }: { params: Promise<{ local
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <CurrencyConverter />

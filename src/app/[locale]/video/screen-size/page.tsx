@@ -45,7 +45,7 @@ export default async function ScreenSizePage({ params }: { params: Promise<{ loc
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("video.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

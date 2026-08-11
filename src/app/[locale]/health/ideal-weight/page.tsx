@@ -45,7 +45,7 @@ export default async function IdealWeightPage({ params }: { params: Promise<{ lo
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("health.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

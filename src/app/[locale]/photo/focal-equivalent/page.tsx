@@ -49,7 +49,7 @@ export default async function FocalEquivalentPage({
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("photo.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

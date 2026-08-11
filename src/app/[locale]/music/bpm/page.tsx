@@ -42,7 +42,7 @@ export default async function BPMPage({ params }: { params: Promise<{ locale: st
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("music.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

@@ -52,7 +52,7 @@ export default async function MortgagePage({ params }: { params: Promise<{ local
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("finance.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>

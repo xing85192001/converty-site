@@ -45,7 +45,7 @@ export default async function AdvancedDOFPage({ params }: { params: Promise<{ lo
     <ConverterLayout
       title={t("name")}
       description={t("description")}
-      category={category}
+      categoryId={category.id}
       categoryName={tc("photo.name")}
     >
       <Suspense fallback={<CalculatorSkeleton />}>
