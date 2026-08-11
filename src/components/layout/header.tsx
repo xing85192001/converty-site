@@ -32,6 +32,12 @@ export function Header() {
           >
             {t("allTools")}
           </Link>
+          <Link
+            href="/blog"
+            className="transition-colors hover:text-foreground/80 text-foreground/60"
+          >
+            {t("blog")}
+          </Link>
         </nav>
 
         {/* Search */}

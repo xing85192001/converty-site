@@ -29,7 +29,8 @@
         "privacy": "Informativa sulla privacy",
         "about": "Chi siamo",
         "contact": "Contatti",
-        "terms": "Termini di servizio"
+        "terms": "Termini di servizio",
+        "blog": "Blog"
       }
     },
     "navigation": {
@@ -68,7 +69,8 @@
       "accept": "Accetta tutto",
       "decline": "Rifiuta",
       "manage": "Gestisci"
-    }
+    },
+    "blog": "Blog"
   },
   "nav": {
     "color": {
@@ -5179,6 +5181,21 @@
           "wiper_blades": "Spazzole tergicristallo"
         }
       }
+    }
+  },
+  "blog": {
+    "title": "Articoli e guide",
+    "subtitle": "Spiegazioni pratiche su soldi, salute e matematica di tutti i giorni, abbinate ai nostri calcolatori gratuiti.",
+    "readMore": "Leggi l'articolo",
+    "publishedOn": "Pubblicato il",
+    "minRead": "min di lettura",
+    "backToBlog": "Torna agli articoli",
+    "all": "Tutti",
+    "category": {
+      "finance": "Finanza",
+      "health": "Salute",
+      "math": "Matematica",
+      "cooking": "Cucina"
     }
   }
 }

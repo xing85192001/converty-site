@@ -29,7 +29,8 @@
         "privacy": "Datenschutz",
         "about": "Über uns",
         "contact": "Kontakt",
-        "terms": "Nutzungsbedingungen"
+        "terms": "Nutzungsbedingungen",
+        "blog": "Blog"
       }
     },
     "navigation": {
@@ -68,7 +69,8 @@
       "accept": "Alle akzeptieren",
       "decline": "Ablehnen",
       "manage": "Verwalten"
-    }
+    },
+    "blog": "Blog"
   },
   "nav": {
     "color": {
@@ -5180,6 +5182,21 @@
         "findV2": "Das Endvolumen nach Verdünnung berechnen",
         "findM2": "Die Endkonzentration nach Verdünnung berechnen"
       }
+    }
+  },
+  "blog": {
+    "title": "Artikel & Anleitungen",
+    "subtitle": "Praktische Erklärungen zu Geld, Gesundheit und Alltagsmathematik – kombiniert mit unseren kostenlosen Rechnern.",
+    "readMore": "Artikel lesen",
+    "publishedOn": "Veröffentlicht",
+    "minRead": "Min. Lesezeit",
+    "backToBlog": "Zurück zu den Artikeln",
+    "all": "Alle",
+    "category": {
+      "finance": "Finanzen",
+      "health": "Gesundheit",
+      "math": "Mathematik",
+      "cooking": "Kochen"
     }
   }
 }

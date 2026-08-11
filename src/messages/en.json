@@ -29,7 +29,8 @@
         "privacy": "Privacy Policy",
         "about": "About",
         "contact": "Contact",
-        "terms": "Terms of Service"
+        "terms": "Terms of Service",
+        "blog": "Blog"
       }
     },
     "navigation": {
@@ -68,7 +69,8 @@
       "accept": "Accept all",
       "decline": "Decline",
       "manage": "Manage"
-    }
+    },
+    "blog": "Blog"
   },
   "nav": {
     "color": {
@@ -5179,6 +5181,21 @@
           "wiper_blades": "Wiper Blades"
         }
       }
+    }
+  },
+  "blog": {
+    "title": "Articles & Guides",
+    "subtitle": "Practical explainers on money, health, and everyday math, paired with our free calculators.",
+    "readMore": "Read article",
+    "publishedOn": "Published",
+    "minRead": "min read",
+    "backToBlog": "Back to all articles",
+    "all": "All",
+    "category": {
+      "finance": "Finance",
+      "health": "Health",
+      "math": "Math",
+      "cooking": "Cooking"
     }
   }
 }

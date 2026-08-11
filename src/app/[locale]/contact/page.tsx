@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
 import { locales } from "@/i18n/config";
 
@@ -25,18 +25,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           General &amp; support:{" "}
           <a
             className="text-primary underline underline-offset-4"
-            href="mailto:hello@allcalc.cc.cd"
+            href="mailto:xingxing85192001@gmail.com"
           >
-            hello@allcalc.cc.cd
+            xingxing85192001@gmail.com
           </a>
         </p>
         <p>
           Privacy questions:{" "}
-          <a
-            className="text-primary underline underline-offset-4"
-            href="mailto:privacy@allcalc.cc.cd"
-          >
-            privacy@allcalc.cc.cd
+          <a className="text-primary underline underline-offset-4" href="mailto:85192001@qq.com">
+            85192001@qq.com
           </a>
         </p>
       </LegalSection>

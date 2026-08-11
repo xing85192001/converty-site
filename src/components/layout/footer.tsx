@@ -23,6 +23,9 @@ export function Footer() {
           <Link href="/terms" className="hover:text-foreground transition-colors">
             {t("links.terms")}
           </Link>
+          <Link href="/blog" className="hover:text-foreground transition-colors">
+            {t("links.blog")}
+          </Link>
         </nav>
         <p className="text-center text-sm text-muted-foreground md:text-right">
           © {year} {t("builtWith")}. {t("copyright")}.

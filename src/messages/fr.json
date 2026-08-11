@@ -29,7 +29,8 @@
         "privacy": "Politique de confidentialité",
         "about": "À propos",
         "contact": "Contact",
-        "terms": "Conditions d'utilisation"
+        "terms": "Conditions d'utilisation",
+        "blog": "Blog"
       }
     },
     "navigation": {
@@ -68,7 +69,8 @@
       "accept": "Tout accepter",
       "decline": "Refuser",
       "manage": "Gérer"
-    }
+    },
+    "blog": "Blog"
   },
   "nav": {
     "color": {
@@ -5180,6 +5182,21 @@
         "findV2": "Calculer le volume final après dilution",
         "findM2": "Calculer la concentration finale après dilution"
       }
+    }
+  },
+  "blog": {
+    "title": "Articles et guides",
+    "subtitle": "Des explications pratiques sur l'argent, la santé et les mathématiques du quotidien, associées à nos calculateurs gratuits.",
+    "readMore": "Lire l'article",
+    "publishedOn": "Publié le",
+    "minRead": "min de lecture",
+    "backToBlog": "Retour aux articles",
+    "all": "Tous",
+    "category": {
+      "finance": "Finance",
+      "health": "Santé",
+      "math": "Mathématiques",
+      "cooking": "Cuisine"
     }
   }
 }

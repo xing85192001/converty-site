@@ -89,11 +89,8 @@ export default async function PrivacyPolicyPage({
       <LegalSection title="Contact">
         <p>
           If you have any questions about this policy, contact us at{" "}
-          <a
-            className="text-primary underline underline-offset-4"
-            href="mailto:privacy@allcalc.cc.cd"
-          >
-            privacy@allcalc.cc.cd
+          <a className="text-primary underline underline-offset-4" href="mailto:85192001@qq.com">
+            85192001@qq.com
           </a>
           .
         </p>
