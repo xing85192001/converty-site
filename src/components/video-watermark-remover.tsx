@@ -1,0 +1,331 @@
+"use client";
+
+import { Download, Loader2, Play, Trash2, Upload, Video } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+// FFmpeg.wasm is loaded lazily only when the user starts processing.
+let ffmpegModule: typeof import("@ffmpeg/ffmpeg") | null = null;
+let utilModule: typeof import("@ffmpeg/util") | null = null;
+
+async function loadFfmpeg() {
+  if (!ffmpegModule) ffmpegModule = await import("@ffmpeg/ffmpeg");
+  if (!utilModule) utilModule = await import("@ffmpeg/util");
+  return { FFmpeg: ffmpegModule.FFmpeg, fetchFile: utilModule.fetchFile, toBlobURL: utilModule.toBlobURL };
+}
+
+interface Selection {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+export function VideoWatermarkRemover() {
+  const [file, setFile] = useState<File | null>(null);
+  const [originalUrl, setOriginalUrl] = useState<string>("");
+  const [processedUrl, setProcessedUrl] = useState<string>("");
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [error, setError] = useState<string>("");
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState<{ x: number; y: number } | null>(null);
+  const [selection, setSelection] = useState<Selection | null>(null);
+
+  // Clean up object URLs on unmount or file change.
+  useEffect(() => {
+    return () => {
+      if (originalUrl) URL.revokeObjectURL(originalUrl);
+      if (processedUrl) URL.revokeObjectURL(processedUrl);
+    };
+  }, [originalUrl, processedUrl]);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const chosen = e.target.files?.[0];
+    if (!chosen) return;
+    setError("");
+    setProcessedUrl("");
+    setProgress(0);
+    setSelection(null);
+    setFile(chosen);
+    setOriginalUrl(URL.createObjectURL(chosen));
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    const chosen = e.dataTransfer.files?.[0];
+    if (!chosen || !chosen.type.startsWith("video/")) return;
+    setError("");
+    setProcessedUrl("");
+    setProgress(0);
+    setSelection(null);
+    setFile(chosen);
+    setOriginalUrl(URL.createObjectURL(chosen));
+  };
+
+  const clearAll = () => {
+    setFile(null);
+    setOriginalUrl("");
+    setProcessedUrl("");
+    setSelection(null);
+    setProgress(0);
+    setError("");
+  };
+
+  // Convert screen coordinates inside the video element to video-frame coordinates.
+  const videoToFrame = (clientX: number, clientY: number) => {
+    const video = videoRef.current;
+    if (!video) return { x: 0, y: 0 };
+    const rect = video.getBoundingClientRect();
+    const scaleX = video.videoWidth / rect.width;
+    const scaleY = video.videoHeight / rect.height;
+    return {
+      x: Math.round((clientX - rect.left) * scaleX),
+      y: Math.round((clientY - rect.top) * scaleY),
+    };
+  };
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    if (!videoRef.current) return;
+    e.preventDefault();
+    const pos = videoToFrame(e.clientX, e.clientY);
+    setIsDragging(true);
+    setDragStart(pos);
+    setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
+  };
+
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !dragStart || !videoRef.current) return;
+    const pos = videoToFrame(e.clientX, e.clientY);
+    const x = Math.min(dragStart.x, pos.x);
+    const y = Math.min(dragStart.y, pos.y);
+    const w = Math.abs(pos.x - dragStart.x);
+    const h = Math.abs(pos.y - dragStart.y);
+    setSelection({ x, y, w, h });
+  };
+
+  const onMouseUp = () => {
+    setIsDragging(false);
+    setDragStart(null);
+  };
+
+  // Compute the overlay rectangle (in CSS pixels) from the frame selection.
+  const overlayStyle = () => {
+    const video = videoRef.current;
+    if (!video || !selection || selection.w < 2 || selection.h < 2) return { display: "none" };
+    const rect = video.getBoundingClientRect();
+    const scaleX = rect.width / video.videoWidth;
+    const scaleY = rect.height / video.videoHeight;
+    return {
+      display: "block",
+      left: selection.x * scaleX,
+      top: selection.y * scaleY,
+      width: selection.w * scaleX,
+      height: selection.h * scaleY,
+    } as React.CSSProperties;
+  };
+
+  const processVideo = async () => {
+    if (!file || !selection || selection.w < 2 || selection.h < 2) {
+      setError("请先框选要去除的水印区域");
+      return;
+    }
+    setIsProcessing(true);
+    setError("");
+    setProgress(0);
+
+    try {
+      const { FFmpeg, fetchFile, toBlobURL } = await loadFfmpeg();
+      const ffmpeg = new FFmpeg();
+      ffmpeg.on("log", ({ message }) => {
+        // eslint-disable-next-line no-console
+        console.log("[ffmpeg]", message);
+      });
+      ffmpeg.on("progress", ({ progress }) => {
+        setProgress(Math.min(99, Math.round(progress * 100)));
+      });
+
+      const coreURL = await toBlobURL(
+        "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js",
+        "text/javascript"
+      );
+      const wasmURL = await toBlobURL(
+        "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.wasm",
+        "application/wasm"
+      );
+      await ffmpeg.load({ coreURL, wasmURL });
+
+      const ext = file.name.split(".").pop() || "mp4";
+      const inputName = `input.${ext}`;
+      const outputName = `output.${ext}`;
+
+      await ffmpeg.writeFile(inputName, await fetchFile(file));
+      await ffmpeg.exec([
+        "-i",
+        inputName,
+        "-vf",
+        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:show=0`,
+        "-c:a",
+        "copy",
+        outputName,
+      ]);
+
+      const data = await ffmpeg.readFile(outputName);
+      // Copy into a fresh ArrayBuffer-backed Uint8Array so it satisfies BlobPart
+      // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
+      const bytes = data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
+      const mime = file.type || "video/mp4";
+      const blob = new Blob([bytes], { type: mime });
+      const url = URL.createObjectURL(blob);
+      setProcessedUrl(url);
+      setProgress(100);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "处理失败，请重试");
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
+  const downloadResult = () => {
+    if (!processedUrl || !file) return;
+    const a = document.createElement("a");
+    a.href = processedUrl;
+    a.download = `no-watermark-${file.name}`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
+  return (
+    <div className="grid gap-5 lg:grid-cols-[1.1fr,0.9fr]">
+      {/* Left: upload / original video + selection */}
+      <div
+        className={cn(
+          "relative flex min-h-[320px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-white/15 bg-card/50 p-6 text-center",
+          originalUrl ? "justify-start border-solid border-white/10 bg-card p-0" : "p-8"
+        )}
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleDrop}
+      >
+        {!originalUrl ? (
+          <>
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Video className="h-6 w-6" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">视频去水印</h3>
+            <p className="mt-2 max-w-xs text-sm text-muted-foreground">
+              拖拽或点击上传视频，在画面上框选水印区域即可去除。
+            </p>
+            <Button
+              asChild
+              className="mt-5 rounded-xl bg-gradient-to-r from-primary to-cyan-400 px-5 text-primary-foreground hover:opacity-90"
+            >
+              <label className="cursor-pointer">
+                <Upload className="mr-2 inline h-4 w-4" />
+                选择视频
+                <input type="file" accept="video/*" className="sr-only" onChange={handleFileChange} />
+              </label>
+            </Button>
+          </>
+        ) : (
+          <div className="flex h-full w-full flex-col p-4">
+            <div className="mb-3 flex items-center justify-between">
+              <span className="text-sm font-medium">原视频 · 框选水印区域</span>
+              <div className="flex items-center gap-2">
+                <Button size="sm" variant="ghost" className="h-8 text-xs text-muted-foreground hover:text-foreground" onClick={clearAll}>
+                  <Trash2 className="mr-1 h-3.5 w-3.5" />
+                  移除
+                </Button>
+                <Button
+                  size="sm"
+                  className="h-8 rounded-lg bg-gradient-to-r from-primary to-cyan-400 text-xs text-primary-foreground hover:opacity-90"
+                  onClick={processVideo}
+                  disabled={isProcessing}
+                >
+                  {isProcessing ? (
+                    <>
+                      <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
+                      处理中 {progress}%
+                    </>
+                  ) : (
+                    <>
+                      <Play className="mr-1.5 h-3.5 w-3.5" />
+                      开始去水印
+                    </>
+                  )}
+                </Button>
+              </div>
+            </div>
+
+            <div
+              ref={wrapperRef}
+              className="relative flex-1 overflow-hidden rounded-xl bg-black/40"
+              onMouseDown={onMouseDown}
+              onMouseMove={onMouseMove}
+              onMouseUp={onMouseUp}
+              onMouseLeave={onMouseUp}
+            >
+              {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+              <video
+                ref={videoRef}
+                src={originalUrl}
+                className="h-full w-full cursor-crosshair object-contain"
+                controls
+                onLoadedMetadata={() => setSelection(null)}
+              />
+              {selection && (
+                <div
+                  className="pointer-events-none absolute border-2 border-primary bg-primary/20"
+                  style={overlayStyle()}
+                >
+                  <span className="absolute -top-5 left-0 whitespace-nowrap rounded bg-primary px-1.5 py-0.5 text-[10px] text-primary-foreground">
+                    {selection.w}×{selection.h}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
+            {!selection && !error && (
+              <p className="mt-3 text-xs text-muted-foreground">提示：在视频画面上按住鼠标拖拽，框选水印位置。</p>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Right: processed preview */}
+      <div className="flex min-h-[320px] flex-col rounded-2xl border border-white/10 bg-card p-5">
+        <div className="mb-3 flex items-center justify-between">
+          <span className="text-sm font-medium">处理效果预览</span>
+          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">AI 处理</span>
+        </div>
+
+        <div className="relative flex flex-1 items-center justify-center overflow-hidden rounded-xl bg-black/40">
+          {processedUrl ? (
+            // eslint-disable-next-line jsx-a11y/media-has-caption
+            <video src={processedUrl} className="h-full w-full object-contain" controls />
+          ) : (
+            <div className="flex flex-col items-center justify-center text-muted-foreground">
+              <Play className="mb-2 h-8 w-8 opacity-40" />
+              <span className="text-xs">处理后的视频将显示在这里</span>
+            </div>
+          )}
+        </div>
+
+        <Button
+          className="mt-4 w-full rounded-xl bg-gradient-to-r from-primary to-cyan-400 text-primary-foreground hover:opacity-90 disabled:opacity-40"
+          disabled={!processedUrl}
+          onClick={downloadResult}
+        >
+          <Download className="mr-2 h-4 w-4" />
+          下载处理后的视频
+        </Button>
+      </div>
+    </div>
+  );
+}

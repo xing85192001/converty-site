@@ -41,24 +41,37 @@ export function InstallPrompt() {
   };
 
   if (isStandalone) return null;
-  if (!isIOS && !installPrompt) return null;
+
+  const showHint = () => {
+    if (isIOS) {
+      setShowIOSHint((s) => !s);
+      return;
+    }
+    // On desktop Chrome/Edge that haven't fired beforeinstallprompt yet,
+    // show a small non-blocking hint so the icon always feels alive.
+    setShowIOSHint((s) => !s);
+  };
 
   return (
     <div className="relative">
       <Button
-        onClick={handleInstallClick}
+        onClick={installPrompt ? handleInstallClick : showHint}
         variant="ghost"
         size="icon"
-        className="h-9 w-9"
+        className="h-8 w-8 text-muted-foreground hover:bg-white/10 hover:text-foreground"
         aria-label="Install baikecalc"
       >
-        {isIOS ? <Share className="h-5 w-5" /> : <Download className="h-5 w-5" />}
+        {isIOS ? <Share className="h-[18px] w-[18px]" /> : <Download className="h-[18px] w-[18px]" />}
       </Button>
-      {isIOS && showIOSHint && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-56 rounded-lg border border-blue-200 bg-blue-50 p-3 text-xs text-blue-900 shadow-lg dark:border-blue-800 dark:bg-blue-950 dark:text-blue-100">
-          <p className="font-medium">Install baikecalc</p>
-          <p className="mt-1">
-            Tap <Share className="inline h-3 w-3" /> then "Add to Home Screen"
+      {showIOSHint && (
+        <div className="absolute right-0 top-full z-50 mt-2 w-56 rounded-lg border border-white/10 bg-card p-3 text-xs text-foreground shadow-xl">
+          <p className="font-medium text-primary">
+            {isIOS ? "Add to Home Screen" : "Install baikecalc"}
+          </p>
+          <p className="mt-1 text-muted-foreground">
+            {isIOS
+              ? "Tap the share icon in your browser, then choose \"Add to Home Screen\"."
+              : "Look for the browser menu (⋮) and choose \"Install baikecalc\" or \"Add to Home Screen\"."}
           </p>
         </div>
       )}

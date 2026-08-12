@@ -90,13 +90,13 @@ export function GlobalSearch() {
     <>
       <Button
         variant="outline"
-        className="relative h-9 w-full justify-start rounded-md bg-muted/50 text-sm text-muted-foreground sm:w-64 sm:pr-12"
+        className="relative h-10 w-full justify-start rounded-xl border-white/10 bg-white/5 text-sm text-muted-foreground hover:bg-white/10 hover:text-foreground sm:w-80 sm:pr-12"
         onClick={() => setOpen(true)}
       >
         <Search className="mr-2 h-4 w-4" />
         <span className="hidden lg:inline-flex">{t("placeholder")}</span>
-        <span className="inline-flex lg:hidden">Search...</span>
-        <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-6 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+        <span className="inline-flex lg:hidden">搜索...</span>
+        <kbd className="pointer-events-none absolute right-2 top-2 hidden h-6 select-none items-center gap-1 rounded border border-white/10 bg-white/5 px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
           {isMac ? (
             <>
               <span className="text-xs">⌘</span>K

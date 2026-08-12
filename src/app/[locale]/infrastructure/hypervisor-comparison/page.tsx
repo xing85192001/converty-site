@@ -3,10 +3,11 @@ import { getTranslations } from "next-intl/server";
 import { HypervisorComparisonCalculator } from "./hypervisor-comparison-calculator";
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "converter" });
 
   return {

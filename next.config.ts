@@ -17,9 +17,9 @@ const isProd = process.env.NODE_ENV === "production";
 const basePath = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : "";
 
 const nextConfig: NextConfig = {
-  // Build artifacts dir (overridable to dodge a locked .next during CI)
+  // Build artifacts dir (overridable via env var for build tooling)
   distDir: process.env.BUILD_DIR ?? ".next",
-  // Only use static export in production to avoid dev server issues
+  // Static export for production (used by Vercel / static hosts)
   ...(isProd && { output: "export" }),
   // Force trailing slashes for GitHub Pages compatibility
   trailingSlash: true,

@@ -16,17 +16,20 @@ export function Header() {
   const t = useTranslations("common");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 w-full border-b border-white/[0.08] bg-background/80 backdrop-blur-xl">
+      <div className="container flex h-14 items-center justify-between gap-3">
+        {/* Logo */}
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <img src="/logo.svg" alt={t("siteName")} className="h-9 w-9 rounded-lg object-contain" />
-          <span className="font-bold">{t("siteName")}</span>
+          <div className="relative h-8 w-8 overflow-hidden rounded-lg bg-gradient-to-br from-brand via-brand2 to-brand-green shadow-[0_0_14px_rgba(34,211,238,0.45)]" />
+          <span className="text-lg font-extrabold tracking-wide">{t("siteName")}</span>
         </Link>
 
-        <div className="hidden flex-1 justify-center sm:flex">
+        {/* Search */}
+        <div className="hidden flex-1 justify-center sm:flex max-w-xl">
           <GlobalSearch />
         </div>
 
+        {/* Actions */}
         <div className="flex shrink-0 items-center gap-1">
           <InstallPrompt />
           <LanguageSwitcher />
@@ -34,16 +37,16 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="sm:hidden"
+            className="h-8 w-8 sm:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <Menu className="h-5 w-5" />
+            <Menu className="h-[18px] w-[18px]" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
       </div>
 
-      <div className={cn("border-t sm:hidden", mobileMenuOpen ? "block" : "hidden")}>
+      <div className={cn("border-t border-white/[0.08] sm:hidden", mobileMenuOpen ? "block" : "hidden")}>
         <div className="container py-3">
           <GlobalSearch />
         </div>
