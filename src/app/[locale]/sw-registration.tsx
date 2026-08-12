@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { InstallPrompt } from "@/components/ui/install-prompt";
 import { OfflineBanner } from "@/components/ui/offline-banner";
 import { registerServiceWorker } from "@/lib/pwa/register-sw";
 
@@ -49,9 +48,6 @@ export function SWRegistration() {
     <>
       {/* Offline detection banner - shows when network is unavailable */}
       <OfflineBanner />
-
-      {/* Install prompt - shows on compatible browsers when not installed */}
-      <InstallPrompt />
     </>
   );
 }
