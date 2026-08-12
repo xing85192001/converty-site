@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
+import { InstallPrompt } from "@/components/ui/install-prompt";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
@@ -27,6 +28,7 @@ export function Header() {
         </div>
 
         <div className="flex shrink-0 items-center gap-1">
+          <InstallPrompt />
           <LanguageSwitcher />
           <ThemeToggle />
           <Button
