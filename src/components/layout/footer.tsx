@@ -26,8 +26,6 @@ export function Footer() {
             {t("links.blog")}
           </Link>
         </nav>
-        <div className="h-px w-16 bg-border" />
-        <p className="text-center text-xs text-muted-foreground">{t("copyrightNotice")}</p>
       </div>
     </footer>
   );
