@@ -25,6 +25,7 @@
     "footer": {
       "builtWith": "Erstellt mit Next.js und Tailwind CSS",
       "copyright": "Alle Rechte vorbehalten",
+      "copyrightNotice": "© 2026 Urheberrecht © baikecalc. Alle Rechte vorbehalten.",
       "links": {
         "privacy": "Datenschutz",
         "about": "Über uns",

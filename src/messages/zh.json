@@ -25,6 +25,7 @@
     "footer": {
       "builtWith": "使用 Next.js 与 Tailwind CSS 构建",
       "copyright": "版权所有",
+      "copyrightNotice": "© 2026 版权所有 © baikecalc，保留所有权利。",
       "links": {
         "privacy": "隐私政策",
         "about": "关于我们",

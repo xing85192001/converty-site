@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Package Converty for local/offline usage
+ * Package baikecalc for local/offline usage
  *
  * Creates a distributable folder with:
  * - All static files from the build
@@ -18,9 +18,9 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, "..");
 const outDir = join(rootDir, "out");
-const packageDir = join(rootDir, "converty-local");
+const packageDir = join(rootDir, "baikecalc-local");
 
-console.log("📦 Packaging Converty for local usage...\n");
+console.log("📦 Packaging baikecalc for local usage...\n");
 
 // Step 1: Build the project
 console.log("1. Building project...");
@@ -47,13 +47,13 @@ console.log("4. Creating start scripts...");
 
 // start.sh (Mac/Linux)
 const startSh = `#!/bin/bash
-# Converty Local Server
-# Starts a local web server to run Converty offline
+# baikecalc Local Server
+# Starts a local web server to run baikecalc offline
 
 PORT=\${1:-3000}
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
-echo "🧮 Starting Converty on http://localhost:$PORT"
+echo "🧮 Starting baikecalc on http://localhost:$PORT"
 echo "   Press Ctrl+C to stop"
 echo ""
 
@@ -74,13 +74,13 @@ fi
 
 // start.bat (Windows CMD)
 const startBat = `@echo off
-:: Converty Local Server
-:: Starts a local web server to run Converty offline
+:: baikecalc Local Server
+:: Starts a local web server to run baikecalc offline
 
 set PORT=%1
 if "%PORT%"=="" set PORT=3000
 
-echo Starting Converty on http://localhost:%PORT%
+echo Starting baikecalc on http://localhost:%PORT%
 echo Press Ctrl+C to stop
 echo.
 
@@ -104,14 +104,14 @@ pause
 `;
 
 // start.ps1 (Windows PowerShell)
-const startPs1 = `# Converty Local Server
-# Starts a local web server to run Converty offline
+const startPs1 = `# baikecalc Local Server
+# Starts a local web server to run baikecalc offline
 
 param([int]$Port = 3000)
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-Write-Host "Starting Converty on http://localhost:$Port" -ForegroundColor Cyan
+Write-Host "Starting baikecalc on http://localhost:$Port" -ForegroundColor Cyan
 Write-Host "Press Ctrl+C to stop"
 Write-Host ""
 
@@ -136,9 +136,9 @@ Read-Host "Press Enter to exit"
 `;
 
 // README
-const readme = `# Converty Local
+const readme = `# baikecalc Local
 
-Run Converty offline on your computer.
+Run baikecalc offline on your computer.
 
 ## Quick Start
 
@@ -182,8 +182,8 @@ One of:
 
 ## More Info
 
-- Website: https://fjacquet.github.io/converty/
-- Source: https://github.com/fjacquet/converty
+- Website: https://converty-site.vercel.app/
+- Source: https://github.com/xing85192001/converty-site
 `;
 
 writeFileSync(join(packageDir, "start.sh"), startSh, { mode: 0o755 });
@@ -193,25 +193,25 @@ writeFileSync(join(packageDir, "README.md"), readme);
 
 // Step 5: Create ZIP (optional, if zip command available)
 console.log("5. Creating ZIP archive...");
-const zipPath = join(rootDir, "converty-local.zip");
+const zipPath = join(rootDir, "baikecalc-local.zip");
 try {
   if (existsSync(zipPath)) {
     rmSync(zipPath);
   }
-  execSync(`cd "${rootDir}" && zip -r converty-local.zip converty-local`, {
+  execSync(`cd "${rootDir}" && zip -r baikecalc-local.zip baikecalc-local`, {
     stdio: "pipe",
   });
-  console.log(`   ✓ Created converty-local.zip`);
+  console.log(`   ✓ Created baikecalc-local.zip`);
 } catch {
   console.log("   ⚠ zip command not available, skipping archive");
 }
 
 // Done
 console.log("\n✅ Package created successfully!\n");
-console.log("📁 Folder: converty-local/");
+console.log("📁 Folder: baikecalc-local/");
 if (existsSync(zipPath)) {
-  console.log("📦 Archive: converty-local.zip");
+  console.log("📦 Archive: baikecalc-local.zip");
 }
 console.log("\nTo run locally:");
-console.log("  cd converty-local && ./start.sh   # Mac/Linux");
-console.log("  cd converty-local && start.bat    # Windows");
+console.log("  cd baikecalc-local && ./start.sh   # Mac/Linux");
+console.log("  cd baikecalc-local && start.bat    # Windows");

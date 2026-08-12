@@ -47,9 +47,9 @@ export function BlogList({ posts, locale, categoryLabels, strings }: BlogListPro
       <Tabs
         value={active}
         onValueChange={(value) => setActive(value as BlogCategory | "all")}
-        className="mb-10"
+        className="mb-10 flex justify-center"
       >
-        <TabsList className="h-auto flex-wrap justify-start gap-1 bg-transparent p-0">
+        <TabsList className="h-auto flex-wrap justify-center gap-1 bg-transparent p-0">
           <TabsTrigger
             value="all"
             className="rounded-full border border-border/60 bg-background px-4 py-2 text-sm font-medium shadow-sm data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow"

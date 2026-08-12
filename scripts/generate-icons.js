@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PWA icons for Converty
+ * Generate PWA icons for baikecalc
  *
  * This script generates all required icon sizes for Progressive Web App support:
  * - 192x192px: Chrome minimum requirement
@@ -21,7 +21,7 @@ const path = require("node:path");
 const ICONS_DIR = path.join(__dirname, "..", "public", "icons");
 
 /**
- * Generate a simple source icon (1024x1024) for Converty
+ * Generate a simple source icon (1024x1024) for baikecalc
  * This is a placeholder that creates a gradient background with "C" letter
  * Replace this with actual branded SVG/PNG assets when available
  */
@@ -101,7 +101,7 @@ async function generateMaskableIcon(sourceBuffer, outputSize) {
  * Main icon generation function
  */
 async function generateIcons() {
-  console.log("🎨 Generating PWA icons for Converty...\n");
+  console.log("🎨 Generating PWA icons for baikecalc...\n");
 
   // Create icons directory if it doesn't exist
   if (!fs.existsSync(ICONS_DIR)) {

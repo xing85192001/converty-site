@@ -1,7 +1,7 @@
+import { BookOpen, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BlogList } from "@/components/blog/blog-list";
-import { BookOpen, Sparkles } from "lucide-react";
 import { locales } from "@/i18n/config";
 import { type BlogCategory, blogPosts } from "@/lib/blog/posts";
 
@@ -38,7 +38,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b bg-gradient-to-br from-muted/50 via-background to-background py-16 sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden border-b bg-gradient-to-br from-muted/50 via-background to-background py-10 sm:py-12 lg:py-14">
         <div className="absolute inset-0 -z-10 opacity-40">
           <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
           <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
@@ -52,9 +52,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
             <BookOpen className="h-10 w-10 text-primary sm:h-12 sm:w-12" />
             {t("title")}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-            {t("subtitle")}
-          </p>
+          <p className="mt-5 max-w-2xl text-lg text-muted-foreground sm:text-xl">{t("subtitle")}</p>
         </div>
       </section>
 

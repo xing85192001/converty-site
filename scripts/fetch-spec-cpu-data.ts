@@ -252,7 +252,7 @@ async function fetchSpecData(): Promise<CpuDatabase> {
 
   const response = await fetch(SPEC_URL, {
     headers: {
-      "User-Agent": "Converty/build (https://github.com/fjacquet/converty)",
+      "User-Agent": "baikecalc/build (https://github.com/fjacquet/converty)",
       Accept: "text/csv, text/plain, */*",
     },
     signal: AbortSignal.timeout(90_000),

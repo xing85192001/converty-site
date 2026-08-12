@@ -1,9 +1,9 @@
-# Converty
+# baikecalc
 
 [![CI](https://github.com/fjacquet/converty/actions/workflows/ci.yml/badge.svg)](https://github.com/fjacquet/converty/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/fjacquet/converty)](https://github.com/fjacquet/converty/blob/HEAD/LICENSE)
 
-A comprehensive unit converter and calculator toolkit built with Next.js 16. Inspired by [toolstud.io](https://toolstud.io), Converty provides 167+ calculators across 15 categories for photography, video production, web development, networking, finance, crypto, real estate, cooking, automotive, and more.
+A comprehensive unit converter and calculator toolkit built with Next.js 16. Inspired by [toolstud.io](https://toolstud.io), baikecalc provides 167+ calculators across 15 categories for photography, video production, web development, networking, finance, crypto, real estate, cooking, automotive, and more.
 
 [![Deploy to GitHub Pages](https://github.com/fjacquet/converty/actions/workflows/static.yml/badge.svg)](https://github.com/fjacquet/converty/actions/workflows/static.yml)
 [![Security Scan](https://github.com/fjacquet/converty/actions/workflows/security.yml/badge.svg)](https://github.com/fjacquet/converty/actions/workflows/security.yml)
@@ -31,14 +31,14 @@ A comprehensive unit converter and calculator toolkit built with Next.js 16. Ins
 
 ### Online
 
-Use Converty directly at **[fjacquet.github.io/converty](https://fjacquet.github.io/converty/)**
+Use baikecalc directly at **[converty-site.vercel.app](https://converty-site.vercel.app/)**
 
 ### Offline / Local
 
 Download the latest release for offline use:
 
-1. Go to [Releases](https://github.com/fjacquet/converty/releases)
-2. Download `converty-local.zip`
+1. Go to [Releases](https://github.com/xing85192001/converty-site/releases)
+2. Download `baikecalc-local.zip`
 3. Extract and run:
    - **Mac/Linux:** `./start.sh`
    - **Windows:** `start.bat`
@@ -50,7 +50,7 @@ Requires Python 3.x (pre-installed on Mac/Linux) or Node.js 18+.
 
 ### For Users
 
-**[📖 User Guide](docs/USER_GUIDE.md)** - Complete guide to using Converty's calculators:
+**[📖 User Guide](docs/USER_GUIDE.md)** - Complete guide to using baikecalc's calculators:
 - How to find and use calculators
 - Share calculations via URL
 - Install as offline PWA
@@ -96,8 +96,8 @@ Requires Python 3.x (pre-installed on Mac/Linux) or Node.js 18+.
 
 ```bash
 # Clone the repository
-git clone https://github.com/fjacquet/converty.git
-cd converty
+git clone https://github.com/xing85192001/converty-site.git
+cd converty-site
 
 # Install dependencies
 npm install
@@ -129,7 +129,7 @@ npm run build
 ## Project Structure
 
 ```text
-converty/
+converty-site/
 ├── src/
 │   ├── app/                    # Next.js App Router pages
 │   │   ├── photo/              # Photography calculators
@@ -226,10 +226,10 @@ converty/
 
 ```bash
 # Build Docker image
-docker build -t converty .
+docker build -t baikecalc .
 
 # Run container
-docker run -p 3000:3000 converty
+docker run -p 3000:3000 baikecalc
 ```
 
 ### Static Hosting (GitHub Pages, Netlify, etc.)

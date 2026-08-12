@@ -23,7 +23,7 @@ const OUTPUT_PATH = path.join(process.cwd(), "public/sitemap.xml");
 // Parse command line arguments
 const args = process.argv.slice(2);
 const baseUrlArg = args.find((arg) => arg.startsWith("--base-url="));
-const BASE_URL = baseUrlArg ? baseUrlArg.split("=")[1] : "https://converty.app";
+const BASE_URL = baseUrlArg ? baseUrlArg.split("=")[1] : "https://converty-site.vercel.app";
 
 // Colors for terminal output
 const colors = {
