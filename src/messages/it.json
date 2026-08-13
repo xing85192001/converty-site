@@ -72,7 +72,21 @@
     "coreFeatures": "Funzionalità principali",
     "toolHighlights": "Caratteristiche dello strumento",
     "blog": "Blog",
-    "homepageViewBlog": "Vedi blog"
+    "homepageViewBlog": "Vedi blog",
+    "allCategories": "📂 Tutte le categorie",
+    "colorHealthTools": "🎨 Strumenti colore e salute",
+    "financeComingSoon": "Calcolatrici finanziarie in arrivo!",
+    "homepageBrowseAll": "Sfoglia tutti gli strumenti",
+    "homepageTitle": "Toolbox online gratuita",
+    "homepageViewAll": "Vedi tutto →",
+    "hotTools": "🔥 Strumenti popolari",
+    "hotToolsChips": {
+      "all": "Tutti",
+      "basic": "Base",
+      "datetime": "Data e ora",
+      "percentage": "Percentuale",
+      "unit": "Convertitore di unità"
+    }
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Elaborazione immagini e video",
@@ -1844,7 +1858,11 @@
       "enterValidValues": "Inserisci valori validi",
       "enterValuesToConvert": "Inserisci i valori da convertire",
       "enter-values": "Inserisci valori",
-      "interest-not-capitalized": "Interessi non capitalizzati"
+      "interest-not-capitalized": "Interessi non capitalizzati",
+      "bitsPerSecond": "Bit per secondo",
+      "bytesPerSecond": "Byte per secondo",
+      "dataTransferOverTime": "Trasferimento dati nel tempo",
+      "unit": "Unità"
     },
     "options": {
       "annual": "Annuale",
@@ -6469,6 +6487,30 @@
           "pricingVerifyUrl": "Pricing Verify Url: {vendorUrl}"
         }
       }
+    },
+    "dataSize": {
+      "binaryUnits": "Unità binarie (base 1024)",
+      "bytes": "Byte",
+      "decimalUnits": "Unità decimali (base 1000)",
+      "gibibytes": "Gibibyte",
+      "gigabytes": "Gigabyte",
+      "kibibytes": "Kibibyte",
+      "kilobytes": "Kilobyte",
+      "mebibytes": "Mebibyte",
+      "megabytes": "Megabyte",
+      "note": "Nota: le unità decimali (KB, MB, GB) usano la base 1000, mentre le unità binarie (KiB, MiB, GiB) usano la base 1024. I produttori di memoria usano solitamente unità decimali, mentre i sistemi operativi usano spesso unità binarie.",
+      "tebibytes": "Tebibyte",
+      "terabytes": "Terabyte"
+    },
+    "bandwidthUnits": {
+      "Bps": "B/s",
+      "GBps": "GB/s",
+      "KBps": "KB/s",
+      "MBps": "MB/s",
+      "bps": "bps",
+      "gbps": "Gbps",
+      "kbps": "Kbps",
+      "mbps": "Mbps"
     }
   },
   "blog": {

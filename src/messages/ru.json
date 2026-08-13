@@ -6279,7 +6279,9 @@
           "actualSpeed": "При спидометре 100 км/ч реальная скорость = {result} км/ч",
           "revolutionsDiffPerKm": "Разница оборотов/км = {tire2} - {tire1} = {result}",
           "warning": "ВНИМАНИЕ: {message}"
-        }
+        },
+        "warningTolerance3": "Разница диаметров превышает 3% — это может повлиять на точность спидометра",
+        "warningTolerance5": "Разница диаметров превышает 5% — это может существенно повлиять на спидометр, ABS и систему контроля тяги"
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",

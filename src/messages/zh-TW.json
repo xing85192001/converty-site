@@ -6278,7 +6278,9 @@
           "actualSpeed": "當速度表顯示100 km/h時，實際速度 = {result} km/h",
           "revolutionsDiffPerKm": "每公里轉數差 = {tire2} - {tire1} = {result}",
           "warning": "警告：{message}"
-        }
+        },
+        "warningTolerance3": "直徑差異超過 3%，可能影響速度表準確度",
+        "warningTolerance5": "直徑差異超過 5%，可能顯著影響速度表、ABS 與循跡控制系統"
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",

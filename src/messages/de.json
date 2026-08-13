@@ -72,7 +72,21 @@
     "coreFeatures": "Hauptfunktionen",
     "toolHighlights": "Tool-Highlights",
     "blog": "Blog",
-    "homepageViewBlog": "Blog ansehen"
+    "homepageViewBlog": "Blog ansehen",
+    "allCategories": "📂 Alle Kategorien",
+    "colorHealthTools": "🎨 Farb- & Gesundheitswerkzeuge",
+    "financeComingSoon": "Finanzrechner kommen bald!",
+    "homepageBrowseAll": "Alle Werkzeuge durchsuchen",
+    "homepageTitle": "Kostenlose Online-Toolbox",
+    "homepageViewAll": "Alle ansehen →",
+    "hotTools": "🔥 Beliebte Werkzeuge",
+    "hotToolsChips": {
+      "all": "Alle",
+      "basic": "Basis",
+      "datetime": "Datum & Zeit",
+      "percentage": "Prozent",
+      "unit": "Einheitenrechner"
+    }
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -1462,7 +1476,12 @@
     "unit-converter": {
       "name": "Einheitenumrechner",
       "description": "Konvertiert Längen-, Masse-, Temperatur-, Flächen-, Volumen-, Geschwindigkeits-, Zeit-, Daten-, Energie-, Leistungs- und Druckeinheiten",
-      "metaDescription": "Einheitenumrechner"
+      "metaDescription": "Einheitenumrechner",
+      "category": "Kategorie",
+      "from": "Von",
+      "swap": "Tauschen",
+      "to": "Nach",
+      "value": "Wert"
     },
     "set-calculator": {
       "name": "Mengenrechner",
@@ -1478,7 +1497,16 @@
     "programmer-calculator": {
       "name": "Programmierer-Rechner",
       "description": "Konvertiert zwischen Dezimal-, Hex-, Oktal- und Binärzahlen",
-      "metaDescription": "Rechner für Programmierer"
+      "metaDescription": "Rechner für Programmierer",
+      "bitwise": "Bitweise Operation",
+      "left": "Links (<<)",
+      "none": "Keine",
+      "reprA": "A-Darstellungen",
+      "reprB": "B-Darstellungen",
+      "right": "Rechts (>>)",
+      "shift": "Verschieben",
+      "valueA": "Wert A",
+      "valueB": "Wert B"
     },
     "debt-snowball-avalanche": {
       "name": "Schulden-Tilgungsplaner",
@@ -1830,7 +1858,11 @@
       "enterValidValues": "Gültige Werte eingeben",
       "enterValuesToConvert": "Werte zum Konvertieren eingeben",
       "enter-values": "Werte eingeben",
-      "interest-not-capitalized": "Zinsen nicht kapitalisiert"
+      "interest-not-capitalized": "Zinsen nicht kapitalisiert",
+      "bitsPerSecond": "Bits pro Sekunde",
+      "bytesPerSecond": "Byte pro Sekunde",
+      "dataTransferOverTime": "Datentransfer über die Zeit",
+      "unit": "Einheit"
     },
     "options": {
       "annual": "Jaehrlich",
@@ -6456,6 +6488,30 @@
           "pricingVerifyUrl": "Pricing Verify Url: {vendorUrl}"
         }
       }
+    },
+    "bandwidthUnits": {
+      "Bps": "B/s",
+      "GBps": "GB/s",
+      "KBps": "KB/s",
+      "MBps": "MB/s",
+      "bps": "bps",
+      "gbps": "Gbps",
+      "kbps": "Kbps",
+      "mbps": "Mbps"
+    },
+    "dataSize": {
+      "binaryUnits": "Binäre Einheiten (1024-basiert)",
+      "bytes": "Byte",
+      "decimalUnits": "Dezimaleinheiten (1000-basiert)",
+      "gibibytes": "Gibibyte",
+      "gigabytes": "Gigabyte",
+      "kibibytes": "Kibibyte",
+      "kilobytes": "Kilobyte",
+      "mebibytes": "Mebibyte",
+      "megabytes": "Megabyte",
+      "note": "Hinweis: Dezimaleinheiten (KB, MB, GB) verwenden die Basis 1000, während binäre Einheiten (KiB, MiB, GiB) die Basis 1024 verwenden. Speicherhersteller verwenden meist dezimale Einheiten, während Betriebssysteme oft binäre Einheiten nutzen.",
+      "tebibytes": "Tebibyte",
+      "terabytes": "Terabyte"
     }
   },
   "blog": {

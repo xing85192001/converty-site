@@ -1479,7 +1479,12 @@
     "unit-converter": {
       "name": "단위 변환기",
       "description": "길이, 질량, 온도, 면적, 부피, 속도, 시간, 데이터, 에너지, 전력, 압력 단위 변환",
-      "metaDescription": "단위 변환 도구"
+      "metaDescription": "단위 변환 도구",
+      "category": "범주",
+      "from": "변환 전",
+      "swap": "교환",
+      "to": "변환 후",
+      "value": "값"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1495,7 +1500,16 @@
     "programmer-calculator": {
       "name": "프로그래머 계산기",
       "description": "10진수, 16진수, 8진수, 2진수 변환 및 비트 연산",
-      "metaDescription": "프로그래머용 계산기"
+      "metaDescription": "프로그래머용 계산기",
+      "bitwise": "비트 연산",
+      "left": "왼쪽 시프트 (<<)",
+      "none": "없음",
+      "reprA": "A 표현",
+      "reprB": "B 표현",
+      "right": "오른쪽 시프트 (>>)",
+      "shift": "시프트",
+      "valueA": "값 A",
+      "valueB": "값 B"
     },
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
@@ -6265,7 +6279,9 @@
           "actualSpeed": "속도계가 100 km/h일 때 실제 속도 = {result} km/h",
           "revolutionsDiffPerKm": "km당 회전수 차이 = {tire2} - {tire1} = {result}",
           "warning": "경고: {message}"
-        }
+        },
+        "warningTolerance3": "지름 차이가 3%를 초과하여 속도계 정확도에 영향을 줄 수 있습니다",
+        "warningTolerance5": "지름 차이가 5%를 초과하여 속도계, ABS 및 트랙션 컨트롤에 상당한 영향을 줄 수 있습니다"
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",

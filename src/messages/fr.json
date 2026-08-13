@@ -72,7 +72,21 @@
     "coreFeatures": "Fonctionnalités principales",
     "toolHighlights": "Points forts de l'outil",
     "blog": "Blog",
-    "homepageViewBlog": "Voir le blog"
+    "homepageViewBlog": "Voir le blog",
+    "allCategories": "📂 Toutes les catégories",
+    "colorHealthTools": "🎨 Outils couleur et santé",
+    "financeComingSoon": "Calculateurs financiers bientôt disponibles !",
+    "homepageBrowseAll": "Parcourir tous les outils",
+    "homepageTitle": "Boîte à outils en ligne gratuite",
+    "homepageViewAll": "Voir tout →",
+    "hotTools": "🔥 Outils populaires",
+    "hotToolsChips": {
+      "all": "Tous",
+      "basic": "Basique",
+      "datetime": "Date et heure",
+      "percentage": "Pourcentage",
+      "unit": "Convertisseur d’unités"
+    }
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Traitement d'images & vidéos",
@@ -1462,7 +1476,12 @@
     "unit-converter": {
       "name": "Convertisseur d'Unités",
       "description": "Convertit les unités de longueur, masse, température, surface, volume, vitesse, temps, données, énergie, puissance et pression",
-      "metaDescription": "Outil de conversion d'unités"
+      "metaDescription": "Outil de conversion d'unités",
+      "category": "Catégorie",
+      "from": "De",
+      "swap": "Échanger",
+      "to": "À",
+      "value": "Valeur"
     },
     "set-calculator": {
       "name": "Calculateur d'ensembles",
@@ -1478,7 +1497,16 @@
     "programmer-calculator": {
       "name": "Calculatrice Programmeur",
       "description": "Convertit entre décimal, hexadécimal, octal et binaire",
-      "metaDescription": "Calculatrice pour programmeurs"
+      "metaDescription": "Calculatrice pour programmeurs",
+      "bitwise": "Opération bit à bit",
+      "left": "Gauche (<<)",
+      "none": "Aucun",
+      "reprA": "Représentations A",
+      "reprB": "Représentations B",
+      "right": "Droite (>>)",
+      "shift": "Décalage",
+      "valueA": "Valeur A",
+      "valueB": "Valeur B"
     },
     "debt-snowball-avalanche": {
       "name": "Planificateur de remboursement de dettes",
@@ -1830,7 +1858,11 @@
       "enterValidValues": "Saisir des valeurs valides",
       "enterValuesToConvert": "Saisir les valeurs à convertir",
       "enter-values": "Saisir les valeurs",
-      "interest-not-capitalized": "Intérêts non capitalisés"
+      "interest-not-capitalized": "Intérêts non capitalisés",
+      "bitsPerSecond": "Bits par seconde",
+      "bytesPerSecond": "Octets par seconde",
+      "dataTransferOverTime": "Transfert de données dans le temps",
+      "unit": "Unité"
     },
     "options": {
       "annual": "Annuel",
@@ -6456,6 +6488,30 @@
           "pricingVerifyUrl": "Pricing Verify Url: {vendorUrl}"
         }
       }
+    },
+    "dataSize": {
+      "binaryUnits": "Unités binaires (base 1024)",
+      "bytes": "Octets",
+      "decimalUnits": "Unités décimales (base 1000)",
+      "gibibytes": "Gibioctets",
+      "gigabytes": "Gigaoctets",
+      "kibibytes": "Kibioctets",
+      "kilobytes": "Kiloctets",
+      "mebibytes": "Mébioctets",
+      "megabytes": "Mégaoctets",
+      "note": "Remarque : les unités décimales (Ko, Mo, Go) utilisent la base 1000, tandis que les unités binaires (Kio, Mio, Gio) utilisent la base 1024. Les fabricants de stockage utilisent généralement des unités décimales, alors que les systèmes d’exploitation utilisent souvent des unités binaires.",
+      "tebibytes": "Tébioctets",
+      "terabytes": "Téraoctets"
+    },
+    "bandwidthUnits": {
+      "Bps": "B/s",
+      "GBps": "GB/s",
+      "KBps": "KB/s",
+      "MBps": "MB/s",
+      "bps": "bps",
+      "gbps": "Gbps",
+      "kbps": "Kbps",
+      "mbps": "Mbps"
     }
   },
   "blog": {

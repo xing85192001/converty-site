@@ -29,7 +29,8 @@
         "contact": "联系我们",
         "terms": "服务条款",
         "blog": "博客"
-      }
+      },
+      "copyright": "版权所有"
     },
     "navigation": {
       "categories": "分类",
@@ -253,15 +254,34 @@
     },
     "infrastructure": {
       "name": "基础设施",
-      "description": "建筑与工程计算器"
+      "description": "建筑与工程计算器",
+      "subcategories": {
+        "cost": "成本分析",
+        "cpu": "CPU 性能",
+        "hyperv": "Hyper-V",
+        "kubernetes": "Kubernetes",
+        "vmware": "VMware"
+      }
     },
     "engineering": {
       "name": "工程",
-      "description": "电气、机械与其他工程计算器"
+      "description": "电气、机械与其他工程计算器",
+      "subcategories": {
+        "conversion": "转换",
+        "hydraulics": "液压",
+        "materials": "材料",
+        "structural": "结构"
+      }
     },
     "chemistry": {
       "name": "化学",
-      "description": "化学与摩尔计算器"
+      "description": "化学与摩尔计算器",
+      "subcategories": {
+        "general": "常规",
+        "reactions": "反应",
+        "reference": "参考",
+        "solutions": "溶液"
+      }
     },
     "math": {
       "name": "数学",
@@ -269,7 +289,8 @@
     },
     "music": {
       "name": "音乐",
-      "description": "音乐理论、音频与节拍计算器"
+      "description": "音乐理论、音频与节拍计算器",
+      "comingSoon": "音乐计算器即将推出！"
     },
     "network": {
       "name": "网络",
@@ -2540,7 +2561,7 @@
       "initialInvestment": "初始投资",
       "interestDuringPayout": "利息 During Payout",
       "interestEarned": "赚取的利息",
-      "moreYears": "+{cou年years",
+      "moreYears": "+{count} 年",
       "par": "Par",
       "payment": "付款",
       "premium": "Premium",
@@ -2582,10 +2603,10 @@
       "currentPhase": "Current Light Phase"
     },
     "time": {
-      "yearsMonthsDays": "{年s} years, {months} months, {days} days",
-      "hoursMinutesSeconds": "{小时s}h {minutes}m {seconds}s",
-      "daysAgo": "{天s} days ago",
-      "daysUntil": "{天s} days until",
+      "yearsMonthsDays": "{years} 年 {months} 个月 {days} 天",
+      "hoursMinutesSeconds": "{hours} 小时 {minutes} 分 {seconds} 秒",
+      "daysAgo": "{days} 天前",
+      "daysUntil": "{days} 天后",
       "today": "Today"
     },
     "frequency": {
@@ -2739,8 +2760,8 @@
       "targetPayoffDescription": "Optional:计算Calculate payment needed to pay off in this time",
       "firstPayment": "First 付款ayment",
       "average": "平均值",
-      "yearsMonthsFormat": "{年s} years, {months} months",
-      "totalMonthsCount": "{coun总计total months",
+      "yearsMonthsFormat": "{years} 年 {months} 个月",
+      "totalMonthsCount": "{count} 个月",
       "paymentForTargetPayoff": "付款 for {months}-Month Payoff",
       "totalPaid": "总计 Paid",
       "plusTotalInterest": "+ 总计al Interest",
@@ -2752,7 +2773,7 @@
       "loss": "损失",
       "totalRoi": "总计 ROI",
       "annualizedRoi": "年度ized ROI",
-      "yearsCount": "{coun年years}}",
+      "yearsCount": "{count, plural, =1 {1 年} other {# 年}}",
       "savingsGoal": "Savings Goal",
       "timeToReachGoal": "时间 to Reach Goal",
       "interestEarned": "赚取的利息",
@@ -2809,7 +2830,7 @@
       "totalReceived": "= 总计al Received",
       "annualSummary": "年度 Summary",
       "yearLabel": "Year {year}",
-      "moreYears": "+ {co年years...",
+      "moreYears": "+ {count} 年...",
       "faceValue": "值Face Value (Par)",
       "couponRate": "Coup利率Rate (%)",
       "yearsToMaturity": "年 to Maturity",
@@ -2934,7 +2955,7 @@
       "matchLimit": "Match Limit (%)",
       "returnRate": "Retu利率Rate (%)",
       "salaryGrowth": "Salary增长Growth (%)",
-      "yearsToRetirement": "In {年ears} years at age {age}",
+      "yearsToRetirement": "在 {years} 年后，年龄 {age} 岁",
       "withdrawalRule": "碱d on 4% withdrawal rule",
       "yourContributions": "Your 缴款utions",
       "employerMatchLabel": "雇主匹配",
@@ -4401,11 +4422,11 @@
       "currentAmount": "当前金额",
       "inflationRate": "年通货膨胀率（%）",
       "numberOfYears": "年数",
-      "inYearsNeed": "In {年ears} years, you'll need",
+      "inYearsNeed": "{years} 年后，你将需要",
       "samePurchasingPower": "to hav金额amount} today",
       "purchasingPowerLoss": "购买力 Loss",
       "lossPercentage": "Loss Percentage",
-      "todayEquivalent": "{金额t} today is equivalent to",
+      "todayEquivalent": "{amount} 相当于今天的价值",
       "inTodaysDollars": "in to值value, {years} years from now",
       "yearByYearImpact": "Year-by-Year Impact",
       "year": "Year {year}",
@@ -4539,7 +4560,7 @@
         "inverseRate": "Inve利率Rate",
         "priceDataFrom": "Pric从from",
         "lastUpdated": "Last日期dated",
-        "hoursAgo": "{小时s} hours ago",
+        "hoursAgo": "{hours} 小时前",
         "fallback": "返回fallback data",
         "stalePriceTitle": "Pric日期dated",
         "stalePriceDescription": "Pric从from CoinGecko."
@@ -4567,7 +4588,7 @@
         "blockReward": "区块奖励",
         "dataFrom": "Data从from",
         "lastUpdated": "Last日期dated",
-        "hoursAgo": "{小时s} hours ago",
+        "hoursAgo": "{hours} 小时前",
         "staleDataTitle": "Mini日期dated",
         "staleDataDescription": "Netwo小时hours old. Rebuild the site to fetch fresh difficulty and price data.",
         "disclaimer": {

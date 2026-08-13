@@ -1482,7 +1482,12 @@
     "unit-converter": {
       "name": "Convertidor de Unidades",
       "description": "Convierte unidades de longitud, masa, temperatura, área, volumen, velocidad, tiempo, datos, energía, potencia y presión",
-      "metaDescription": "Herramienta de conversión de unidades"
+      "metaDescription": "Herramienta de conversión de unidades",
+      "category": "Categoría",
+      "from": "De",
+      "swap": "Intercambiar",
+      "to": "A",
+      "value": "Valor"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1498,7 +1503,16 @@
     "programmer-calculator": {
       "name": "Calculadora de Programador",
       "description": "Convierte entre decimal, hexadecimal, octal y binario",
-      "metaDescription": "Calculadora para programadores"
+      "metaDescription": "Calculadora para programadores",
+      "bitwise": "Operación bit a bit",
+      "left": "Izquierda (<<)",
+      "none": "Ninguno",
+      "reprA": "Representaciones A",
+      "reprB": "Representaciones B",
+      "right": "Derecha (>>)",
+      "shift": "Desplazamiento",
+      "valueA": "Valor A",
+      "valueB": "Valor B"
     },
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
@@ -6271,7 +6285,9 @@
           "actualSpeed": "Si el velocímetro marca 100 km/h, la velocidad real = {result} km/h",
           "revolutionsDiffPerKm": "Diferencia de revoluciones por km = {tire2} - {tire1} = {result}",
           "warning": "ADVERTENCIA: {message}"
-        }
+        },
+        "warningTolerance3": "La diferencia de diámetro supera el 3 % y puede afectar la precisión del velocímetro",
+        "warningTolerance5": "La diferencia de diámetro supera el 5 % y puede afectar significativamente el velocímetro, el ABS y el control de tracción"
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",
