@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "เครื่องคิดเลขและแปลงค่าออนไลน์ฟรี",
+    "allTools": "เครื่องมือทั้งหมด",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "ข้อผิดพลาด",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "คัดลอก",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "รีเซ็ต",
+    "calculate": "คำนวณ",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "ล้าง",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "สงวนลิขสิทธิ์",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
-        "blog": "Blog"
+        "privacy": "นโยบายความเป็นส่วนตัว",
+        "about": "เกี่ยวกับเรา",
+        "contact": "ติดต่อเรา",
+        "terms": "เงื่อนไขการให้บริการ",
+        "blog": "บล็อก"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "เครื่องมือเพิ่มเติม"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "คุณสมบัติหลัก",
+    "toolHighlights": "จุดเด่นของเครื่องมือ",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "ดูบล็อก",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,7 +86,9 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "ค้นหาเครื่องคิดเลข……",
+    "result": "ผลลัพธ์"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -225,36 +227,36 @@
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "สี",
+      "description": "การแปลงสีและจานสี"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "ครัว",
+      "description": "การปรุงอาหารและสูตร"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "คริปโต",
+      "description": "คริปโตและการขุด"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "ข้อมูล",
+      "description": "ข้อมูลและแบนด์วิธ"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "วันที่/เวลา",
+      "description": "วันที่และเวลา"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "การเงิน",
+      "description": "เครื่องคิดเลขการเงิน"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "สุขภาพ",
+      "description": "สุขภาพและการออกกำลังกาย"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "โครงสร้างพื้นฐาน",
+      "description": "ไอทีและเวอร์ชวลไลซ์",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +266,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "วิศวกรรม",
+      "description": "วิศวกรรมและฟิสิกส์",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +276,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "เคมี",
+      "description": "เครื่องคิดเลขเคมี",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +286,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "คณิตศาสตร์",
+      "description": "เครื่องคิดเลขคณิตศาสตร์"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "เพลง",
+      "description": "เสียงและเพลง",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "เครือข่าย",
+      "description": "เครื่องมือเครือข่าย"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "รูปภาพ",
+      "description": "เครื่องมือรูปภาพ"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "ฟิสิกส์",
+      "description": "ฟิสิกส์และกลศาสตร์"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "อสังหาริมทรัพย์",
+      "description": "จำนองและเช่า"
     },
     "video": {
-      "name": "Video",
-      "description": "Video and media calculators"
+      "name": "วิดีโอ",
+      "description": "เครื่องมือวิดีโอ"
     },
     "web": {
-      "name": "Web",
-      "description": "Web development tools"
+      "name": "เว็บ",
+      "description": "เครื่องมือเว็บและ SEO"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "ยานยนต์",
+      "description": "เครื่องคิดเลขเชื้อเพลิง ยาง การบำรุงรักษา และการเงิน"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -810,49 +812,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "การจำนอง",
+      "description": "คำนวณการชำระรายเดือนและตารางการลดหย่อน",
+      "metaDescription": "การจำนองพร้อมตารางการลดหย่อน"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "ดอกเบี้ยทบต้น",
+      "description": "คำนวณดอกเบี้ยทบต้นสำหรับการลงทุนโดยมีการชำระเป็นประจำ",
+      "metaDescription": "คำนวณการเติบโตของดอกเบี้ยทบต้นตามเวลา"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "กู้ยืม",
+      "description": "คำนวณการชำระรายเดือนสำหรับกู้ยืม",
+      "metaDescription": "การชำระกู้ยืมและการลดหย่อน"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "เกษียณอายุ",
+      "description": "วางแผนเกษียณอายุด้วยการคาดการณ์การออม",
+      "metaDescription": "การวางแผนเกษียณอายุ"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "ทิป",
+      "description": "คำนวณจำนวนทิปและแบ่งบิล",
+      "metaDescription": "คำนวณทิป"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "เป้าหมายการออม",
+      "description": "คำนวณเวลาในการถึงเป้าหมายการออม",
+      "metaDescription": "การวางแผนการออม"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "อัตราเงินเฟ้อ",
+      "description": "คำนวณผลกระทบของเงินเฟ้อที่ต่ออำนาจซื้อ",
+      "metaDescription": "ผลกระทบเงินเฟ้อ"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "ผลตอบแทนการลงทุน",
+      "description": "คำนวณผลตอบแทนจากการลงทุน",
+      "metaDescription": "ผลตอบแทนการลงทุน"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "จุดคุ้มทุน",
+      "description": "คำนวณจุดคุ้มทุน",
+      "metaDescription": "การวิเคราะห์จุดคุ้มทุน"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -1454,22 +1456,22 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "ประสิทธิภาพเชื้อเพลิง",
+      "description": "คำนวณการใช้เชื้อเพลิง",
+      "metaDescription": "เครื่องมือเชื้อเพลิง"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "การเงินยานยนต์",
+      "description": "เครื่องมือคำนวณการเงินยานยนต์",
+      "metaDescription": "เครื่องคิดเลขการเงินยานยนต์"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "ขนาดยาง",
+      "description": "เครื่องมือเปลี่ยนขนาดยาง",
+      "metaDescription": "เครื่องคิดเลขขนาดยาง"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
+      "name": "ตารางบำรุงรักษารถ",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
@@ -1536,49 +1538,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "กู้ยืมรถ",
+      "description": "คำนวณการชำระกู้ยืมรถรายเดือน",
+      "metaDescription": "เครื่องคิดเลขกู้ยืมรถ"
+    },
+    "lease": {
+      "name": "เช่า",
+      "description": "คำนวณการชำระเช่ารถ",
+      "metaDescription": "เครื่องคิดเลขเช่า"
+    },
+    "trade-in": {
+      "name": "แลกเปลี่ยนรถ",
+      "description": "คำนวณมูลค่าการแลกเปลี่ยนรถ",
+      "metaDescription": "เครื่องคิดเลขมูลค่าแลกเปลี่ยน"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "ค่า",
+      "amount": "จำนวน",
+      "result": "ผลลัพธ์",
+      "from": "จาก",
+      "to": "ถึง",
+      "date": "วันที่",
+      "startDate": "วันที่เริ่มต้น",
+      "endDate": "วันที่สิ้นสุด",
+      "birthDate": "วันเกิด",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "ปี",
+      "months": "เดือน",
+      "weeks": "สัปดาห์",
+      "days": "วัน",
+      "hours": "ชั่วโมง",
+      "minutes": "นาที",
+      "seconds": "วินาที",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "เงินดาวน์",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "ดอกเบี้ยรวม",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "เงินต้น",
+      "interest": "ดอกเบี้ย",
+      "balance": "ยอดคงเหลือ",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "ปี",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1681,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "คำนวณ",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1794,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "เดือน",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1830,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "ค้นหา",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1893,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "ข้อมูลเข้า",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "รายละเอียดการกู้ยืม",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1905,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "ข้อมูลออก"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2034,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "ขั้นตอนการคำนวณ",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2057,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "รีเซ็ต"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2098,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "ต้นทุนรวม",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2106,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "ปี"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2197,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "ต้นทุนรวม",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "ขั้นตอนการคำนวณ"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2238,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "ต่อเดือน",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "ทั้งหมด",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2353,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "ชื่อเรื่อง",
+      "seo_category_description": "คำอธิบาย",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2576,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "การชำระเงิน",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "การชำระทั้งหมด",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "ผลลัพธ์",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2642,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "รายละเอียดการกู้ยืม",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "วันที่เริ่มต้น",
+      "totalInterest": "ดอกเบี้ยรวม",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "เงินต้น",
+      "interest": "ดอกเบี้ย",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "ปี",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2699,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "ต่อเดือน",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2717,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "ยอดคงเหลือ",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2753,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "การชำระทั้งหมด",
+      "totalCost": "ต้นทุนรวม",
+      "vehiclePrice": "ราคารถ",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2910,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "เดือน",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2988,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "เดือน",
+      "payment": "การชำระเงิน",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3031,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "ค่า",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3054,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "ผลลัพธ์",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3093,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "ค่า",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3575,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "คำนวณ",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4132,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "ตัวกรอง",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4185,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "คำนวณ",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4233,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "ชื่อ",
+        "description": "คำอธิบาย",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "สกุลเงิน",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "เงินดาวน์",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "รายละเอียดการกู้ยืม",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "วันที่เริ่มต้น",
+        "years": "ปี",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "ต่อเดือน",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "ดอกเบี้ยรวม",
+        "totalCost": "ต้นทุนรวม",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "เงินต้น",
+        "interest": "ดอกเบี้ย",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "ปี",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4339,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "สกุลเงิน",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4495,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "ข้อมูลเข้า",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4512,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "ข้อมูลเข้า",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4537,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "จำนวน",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "ผลลัพธ์",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4557,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "สกุลเงิน",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4584,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "ข้อมูลเข้า",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "จำนวน",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4604,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "ผลลัพธ์",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4616,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "สกุลเงิน",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "จำนวน",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4632,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "ขั้นตอนการคำนวณ",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4654,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "จำนวน",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4664,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "ขั้นตอนการคำนวณ",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4694,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "จำนวน"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4961,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "ปี",
+        "years": "ปี",
+        "month": "เดือน",
+        "months": "เดือน",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5130,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "ขั้นตอนการคำนวณ",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5324,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "ค่า",
+        "from": "จาก",
+        "to": "ถึง",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5462,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "ขั้นตอนการคำนวณ",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "คำนวณ",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5704,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "ขั้นตอนการคำนวณ",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5748,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "คำอธิบาย",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5789,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "วินาที",
+        "min": "นาที",
+        "hr": "ชั่วโมง"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5811,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "วินาที",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5830,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "รีเซ็ต",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5845,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "ขั้นตอนการคำนวณ",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "คัดลอก",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5931,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "ค่า",
+        "description": "คำอธิบาย"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +6005,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "ชื่อ",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "คำอธิบาย",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6089,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "ข้อมูลเข้า",
+        "result": "ผลลัพธ์",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "เปรียบเทียบ"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6106,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "สกุลเงิน",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6125,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "ขั้นตอนการคำนวณ",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6151,92 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "กู้ยืม",
+          "lease": "เช่า",
+          "compare": "เปรียบเทียบ"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "รายละเอียดยานยนต์",
+        "vehicleDetailsDescription": "กรอกราคารถและรายละเอียดการชำระเงิน",
+        "vehiclePrice": "ราคารถ",
+        "downPayment": "เงินดาวน์",
+        "tradeInValue": "มูลค่าแลกเปลี่ยน",
+        "currency": "สกุลเงิน",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "รวมภาษีมูลค่าเพิ่มสวิส",
+        "loanDetails": "รายละเอียดการกู้ยืม",
+        "leaseDetails": "รายละเอียดการเช่า",
+        "interestRate": "อัตราดอกเบี้ย (%)",
+        "loanTerm": "ระยะเวลากู้",
+        "leaseTerm": "ระยะเวลาเช่า",
+        "residualValue": "มูลค่าคงเหลือ (%)",
+        "leaseAPR": "APR การเช่า (%)",
+        "annualKmLimit": "ขีดจำกัดกิโลเมตรต่อปี",
+        "months": "เดือน",
+        "years": "ปี",
+        "year": "ปี",
+        "month": "เดือน",
+        "loanResult": "สรุปเงินกู้",
+        "leaseResult": "สรุปการเช่า",
+        "comparisonResult": "เปรียบเทียบการซื้อ vs การเช่า",
+        "perMonth": "ต่อเดือน",
+        "loanAmount": "จำนวนเงินกู้",
+        "totalPayments": "จ่ายทั้งสิ้น",
+        "totalInterest": "ดอกเบี้ยทั้งหมด",
+        "totalCost": "ค่าใช้จ่ายทั้งหมด",
+        "capitalizedCost": "ต้นทุนการลงทุน",
+        "depreciation": "ค่าเสื่อมราคา",
+        "financeCharge": "ค่าธรรมเนียมการเงิน",
+        "total": "รวม",
+        "kmLimit": "ขีดจำกัดกิโลเมตร",
+        "excessKmCharge": "ค่าธรรมเนียมกิโลเมตรส่วนเกิน",
+        "amortizationSchedule": "ตารางการผ่อนชำระ",
+        "payment": "การชำระเงิน",
+        "principal": "เงินต้น",
+        "interest": "ดอกเบี้ย",
+        "balance": "ยอดคงเหลือ",
+        "showingFirst12Months": "แสดง 12 เดือนแรกของตาราง",
+        "lowerMonthlyPayment": "การชำระรายเดือนที่ต่ำกว่า",
+        "lowerTotalCost": "ต้นทุนรวมที่ต่ำกว่า",
+        "recommendation": "คำแนะนำ",
+        "calculationSteps": "ขั้นตอนการคำนวณ",
+        "loan": "กู้ยืม",
+        "lease": "เช่า",
+        "compare": "เปรียบเทียบ",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "ราคารถ: {value}",
+          "salesTax": "ภาษีการขาย: {rate} {value}",
+          "totalVehicleCost": "ต้นทุนรวมรถ: {value}",
+          "downPayment": "เงินดาวน์: {value}",
+          "tradeInValue": "มูลค่าการแลกเปลี่ยน: {value}",
+          "loanAmount": "จำนวนเงินกู้: {value}",
+          "interestRate": "อัตราดอกเบี้ย: {apr} {monthly}",
+          "loanTerm": "ระยะเวลาเงินกู้: {months}",
+          "monthlyPayment": "การชำระรายเดือน: {value}",
+          "totalPayments": "การชำระทั้งหมด: {value}",
+          "totalInterest": "ดอกเบี้ยรวม: {value}",
+          "totalCost": "ต้นทุนรวม: {value}",
+          "capitalizedCost": "ต้นทุนที่ถูกตีเป็นทุน: {value}",
+          "residualValue": "มูลค่าคงเหลือ: {percent} {value}",
+          "depreciation": "ค่าเสื่อมราคา: {capCost} {residual} {months} {result}",
+          "financeCharge": "ค่าธรรมเนียมการเงิน: {capCost} {residual} {result}",
+          "totalLeaseCost": "ต้นทุนรวมการเช่า: {value}",
+          "moneyFactorToAPR": "ปัจจัยเงินเป็น APR: {apr}",
+          "kmLimit": "จำกัดกิโลเมตร: {annual} {total}",
+          "excessKmCharge": "ค่าเกินกิโลเมตร: {value}",
+          "loanMonthlyPayment": "การชำระรายเดือนของเงินกู้: {value}",
+          "leaseMonthlyPayment": "การชำระรายเดือนของการเช่า: {value}",
+          "monthlyDifference": "ความแตกต่างรายเดือน: {value} {lower}",
+          "loanTotalCost": "ต้นทุนรวมเงินกู้: {value}",
+          "leaseTotalCost": "ต้นทุนรวมการเช่า: {value}",
+          "totalCostDifference": "ความแตกต่างของต้นทุนรวม: {value}",
+          "recommendation": "คำแนะนำ: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "ข้อมูลเข้า",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6242,7 +6262,7 @@
         "speedometerError": "Speedometer Error",
         "withinTolerance": "Within recommended tolerance (3%)",
         "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "ขั้นตอนการคำนวณ",
         "steps": {
           "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
           "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
@@ -6283,7 +6303,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "เดือน",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

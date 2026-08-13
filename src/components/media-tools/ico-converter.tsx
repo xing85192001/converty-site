@@ -1,7 +1,8 @@
 "use client";
 
+import { Download, Images, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { Images, Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FileDropZone, SelectedFile, ToolError } from "./shared";
 
@@ -50,7 +51,6 @@ async function createIcoBlob(file: File): Promise<Blob> {
   }
   parts.push(...blobBuffers);
 
-  // Flatten parts into one Uint8Array
   let total = 0;
   for (const p of parts) total += p.byteLength;
   const out = new Uint8Array(total);
@@ -67,12 +67,19 @@ function loadImage(file: File): Promise<HTMLImageElement> {
     const url = URL.createObjectURL(file);
     const img = new Image();
     img.src = url;
-    img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
-    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error("图片加载失败")); };
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      resolve(img);
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error("load"));
+    };
   });
 }
 
 export function IcoConverter() {
+  const t = useTranslations("mediaTools.icoConverter");
   const [file, setFile] = useState<File | null>(null);
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -87,7 +94,7 @@ export function IcoConverter() {
       const url = URL.createObjectURL(blob);
       setDownloadUrl(url);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "转换失败");
+      setError(err instanceof Error ? err.message : t("processError"));
     } finally {
       setProcessing(false);
     }
@@ -105,9 +112,21 @@ export function IcoConverter() {
     <div className="space-y-4">
       <ToolError message={error} />
       {!file ? (
-        <FileDropZone accept="image/*" onFiles={(files) => { setFile(files[0]); setDownloadUrl(null); }} />
+        <FileDropZone
+          accept="image/*"
+          onFiles={(files) => {
+            setFile(files[0]);
+            setDownloadUrl(null);
+          }}
+        />
       ) : (
-        <SelectedFile file={file} onClear={() => { setFile(null); setDownloadUrl(null); }} />
+        <SelectedFile
+          file={file}
+          onClear={() => {
+            setFile(null);
+            setDownloadUrl(null);
+          }}
+        />
       )}
       {file && (
         <Button
@@ -115,13 +134,17 @@ export function IcoConverter() {
           disabled={processing}
           className="w-full rounded-xl bg-gradient-to-r from-pink-500 to-purple-500"
         >
-          {processing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Images className="mr-2 h-4 w-4" />}
-          生成 ICO 图标
+          {processing ? (
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Images className="mr-2 h-4 w-4" />
+          )}
+          {t("generateBtn")}
         </Button>
       )}
       {downloadUrl && (
         <Button onClick={download} className="w-full rounded-xl">
-          <Download className="mr-2 h-4 w-4" /> 下载 ICO 文件
+          <Download className="mr-2 h-4 w-4" /> {t("downloadBtn")}
         </Button>
       )}
     </div>

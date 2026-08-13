@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "Бесплатные онлайн калькуляторы и конвертеры",
+    "allTools": "Все инструменты",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "Ошибка",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "Копировать",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "Сбросить",
+    "calculate": "Рассчитать",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "Очистить",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "Все права защищены",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
-        "blog": "Blog"
+        "privacy": "Политика конфиденциальности",
+        "about": "О нас",
+        "contact": "Контакты",
+        "terms": "Условия обслуживания",
+        "blog": "Блог"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "Больше инструментов"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "Основные функции",
+    "toolHighlights": "Особенности инструмента",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "Посмотреть блог",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,175 +86,178 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "Поиск калькуляторов……",
+    "result": "Результат",
+    "results": "Результаты"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ Обработка изображений и видео",
+    "sectionSubtitle": "Инструменты для изображений и видео · Новое",
+    "featuredTitle": "✨ Рекомендуемые инструменты",
+    "allCategories": "Все",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "Все",
+      "watermark": "Удалить водяной знак",
+      "format": "Конвертация формата",
+      "icon": "Инструменты иконок",
+      "compress": "Сжатие и оптимизация"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "Удаление водяных знаков с видео",
+      "desc": "Загрузите видео и выберите область водяного знака. Обработка ИИ в браузере. Поддерживает MP4 / MOV / WebM."
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "Удаление водяных знаков с изображения",
+      "desc": "Выберите область водяного знака. Умное удаление на основе ИИ. Поддерживает JPG / PNG / WEBP."
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "Конвертер ICO-иконок",
+      "desc": "Преобразуйте изображения в .ico с несколькими размерами (16/32/64/128/256px)."
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "Конвертер форматов изображений",
+      "desc": "Пакетное преобразование PNG / JPG / WEBP / BMP / GIF."
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "Сжатие изображений",
+      "desc": "Сжатие с потерями / без потерь. Уменьшайте размер файла, сохраняя качество."
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "Сжатие видео",
+      "desc": "Настройте разрешение и битрейт, чтобы быстро уменьшить размер видео."
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "Увеличение изображений",
+      "desc": "ИИ-суперразрешение — сделайте размытые изображения чёткими."
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "Не удалось загрузить изображение",
+      "canvasError": "Не удалось создать canvas",
+      "readError": "Не удалось прочитать файл",
+      "pdfError": "Создание PDF не удалось",
+      "mergeBtn": "Объединить в PDF",
+      "downloadBtn": "Скачать PDF",
+      "title": "Изображение в PDF",
+      "desc": "Объедините несколько изображений в один PDF-файл."
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "Нажмите или перетащите файлы для загрузки",
+      "supports": "Поддерживает"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "Удаление водяных знаков с видео",
+      "description": "Перетащите видео или нажмите для загрузки, затем обведите область водяного знака, чтобы удалить его.",
+      "selectVideo": "Выбрать видео",
+      "originalLabel": "Исходное видео · выберите область водяного знака",
+      "removeBtn": "Удалить",
+      "previewTitle": "Предпросмотр результата",
+      "aiBadge": "Обработка ИИ",
+      "emptyPreview": "Обработанное видео появится здесь",
+      "processing": "Обработка {progress}%",
+      "startRemoval": "Удалить водяной знак",
+      "download": "Скачать обработанное видео",
+      "errorSelectArea": "Сначала обведите водяной знак, который хотите удалить",
+      "errorFailed": "Обработка не удалась, попробуйте ещё раз",
+      "hint": "Подсказка: нажмите и перетащите на кадре видео, чтобы обвести водяной знак."
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "Не удалось загрузить изображение",
+      "canvasError": "Не удалось получить контекст canvas",
+      "processError": "Обработка не удалась",
+      "hint": "Перетащите по изображению, чтобы выбрать область водяного знака",
+      "processBtn": "Умное удаление водяного знака",
+      "resultTitle": "Результат",
+      "downloadBtn": "Скачать обработанное изображение"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "Не удалось загрузить изображение",
+      "processError": "Конвертация не удалась",
+      "generateBtn": "Сгенерировать ICO",
+      "downloadBtn": "Скачать ICO-файл"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "Не удалось загрузить изображение",
+      "canvasError": "Не удалось создать canvas",
+      "convertError": "Конвертация формата не удалась",
+      "unsupportedFormat": "Неподдерживаемый формат",
+      "outputFormat": "Выходной формат",
+      "convertBtn": "Конвертировать формат",
+      "downloadBtn": "Скачать конвертированное изображение"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "Не удалось загрузить изображение",
+      "canvasError": "Не удалось создать canvas",
+      "compressError": "Сжатие не удалось",
+      "qualityLabel": "Качество JPEG",
+      "scaleLabel": "Масштаб",
+      "sizeCompare": "Исходный {original} → Сжатый {compressed}",
+      "compressBtn": "Сжать изображение",
+      "downloadBtn": "Скачать сжатое изображение"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
+      "title": "Сжатие видео",
+      "description": "Перетащите видео или нажмите для загрузки, затем настройте разрешение и битрейт для сжатия.",
+      "selectVideo": "Выбрать видео",
+      "originalLabel": "Исходное видео",
+      "removeBtn": "Удалить",
+      "settingsTitle": "Настройки сжатия",
+      "resolutionLabel": "Разрешение",
+      "originalResolution": "Сохранить исходное разрешение",
       "res1080p": "1920px (1080p)",
       "res720p": "1280px (720p)",
       "res480p": "854px (480p)",
       "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "crfLabel": "Качество CRF",
+      "crfHint": "Меньшее значение = лучшее качество, больше файл",
+      "processing": "Сжатие {progress}%",
+      "processBtn": "Сжать видео",
+      "uploadFirstError": "Сначала загрузите видео",
+      "processError": "Обработка не удалась, попробуйте ещё раз",
+      "downloadBtn": "Скачать сжатое видео"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "Не удалось загрузить изображение",
+      "canvasError": "Не удалось создать canvas",
+      "upscaleError": "Увеличение не удалось",
+      "scaleLabel": "Коэффициент увеличения",
+      "sharpenLabel": "Усилить резкость краёв",
+      "upscaleBtn": "ИИ-увеличение",
+      "downloadBtn": "Скачать увеличенное изображение"
     }
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "Цвет",
+      "description": "Преобразование цвета и палитры"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "Кулинария",
+      "description": "Кулинария и рецепты"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "Криптовалюты",
+      "description": "Крипто и майнинг"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "Данные",
+      "description": "Данные и пропускная способность"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "Дата/Время",
+      "description": "Даты и время"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "Финансы",
+      "description": "Финансовые калькуляторы"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "Здоровье",
+      "description": "Здоровье и фитнес"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "Инфраструктура",
+      "description": "ИТ и виртуализация",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +267,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "Инженерия",
+      "description": "Инженерия и физика",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +277,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "Химия",
+      "description": "Химические калькуляторы",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +287,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "Математика",
+      "description": "Математические калькуляторы"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "Музыка",
+      "description": "Аудио и музыка",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "Сеть",
+      "description": "Сетевые инструменты"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "Фото",
+      "description": "Фотоинструменты"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "Физика",
+      "description": "Физика и механика"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "Недвижимость",
+      "description": "Ипотека и аренда"
     },
     "video": {
-      "name": "Video",
-      "description": "Video and media calculators"
+      "name": "Видео",
+      "description": "Видеоинструменты"
     },
     "web": {
-      "name": "Web",
-      "description": "Web development tools"
+      "name": "Веб",
+      "description": "Веб-инструменты и SEO"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "Автомобили",
+      "description": "Калькуляторы для топлива, шин, обслуживания и финансирования"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -810,49 +813,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "Ипотека",
+      "description": "Рассчитайте ежемесячные платежи и график амортизации",
+      "metaDescription": "Ипотечный калькулятор с графиком платежей"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "Сложный процент",
+      "description": "Рассчитайте сложный процент по инвестициям с регулярными взносами",
+      "metaDescription": "Рассчитайте рост сложного процента со временем"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "Кредит",
+      "description": "Рассчитайте ежемесячные платежи по кредиту",
+      "metaDescription": "Кредитный калькулятор"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "Пенсия",
+      "description": "Планируйте пенсию с прогнозами сбережений",
+      "metaDescription": "Планирование пенсии"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "Чаевые",
+      "description": "Рассчитайте сумму чаевых и разделите счёт",
+      "metaDescription": "Калькулятор чаевых"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "Цель сбережений",
+      "description": "Рассчитайте время достижения цели",
+      "metaDescription": "Планирование сбережений"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "Инфляция",
+      "description": "Рассчитайте влияние инфляции на покупательную способность",
+      "metaDescription": "Влияние инфляции на деньги"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "Доходность",
+      "description": "Рассчитайте доходность инвестиций",
+      "metaDescription": "Доходность инвестиций"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "Точка безубыточности",
+      "description": "Рассчитайте точку безубыточности",
+      "metaDescription": "Анализ безубыточности"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -1454,22 +1457,22 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "Расход топлива",
+      "description": "Рассчитайте расход топлива",
+      "metaDescription": "Калькулятор расхода топлива"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "Финансирование авто",
+      "description": "Инструмент расчёта финансирования",
+      "metaDescription": "Калькулятор финансирования"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "Размер шин",
+      "description": "Рассчитайте замену размера шин",
+      "metaDescription": "Калькулятор размера шин"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
+      "name": "Калькулятор ТО",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
@@ -1536,49 +1539,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "Автокредит",
+      "description": "Рассчитайте ежемесячные платежи по автокредиту",
+      "metaDescription": "Автокредитный калькулятор"
+    },
+    "lease": {
+      "name": "Лизинг",
+      "description": "Рассчитайте лизинговые платежи",
+      "metaDescription": "Лизинговый калькулятор"
+    },
+    "trade-in": {
+      "name": "Трейд-ин",
+      "description": "Рассчитайте стоимость трейд-ин",
+      "metaDescription": "Калькулятор трейд-ин"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "Значение",
+      "amount": "Сумма",
+      "result": "Результат",
+      "from": "От",
+      "to": "До",
+      "date": "Дата",
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания",
+      "birthDate": "Дата рождения",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "Лет",
+      "months": "Месяцев",
+      "weeks": "Недель",
+      "days": "Дней",
+      "hours": "Часов",
+      "minutes": "Минут",
+      "seconds": "Секунд",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "Первоначальный взнос",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "Общие проценты",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "Основная сумма",
+      "interest": "Процент",
+      "balance": "Баланс",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Год",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1682,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "Вычислить",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1795,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "Месяц",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1831,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "Поиск",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1894,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "Вход",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "Детали кредита",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1906,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "Выход"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2035,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Шаги вычисления",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2058,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "Сбросить"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2099,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "Общая стоимость",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2107,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "лет"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2198,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "Общая стоимость",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "Шаги вычисления"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2239,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "в месяц",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "Всего",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2354,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "Заголовок",
+      "seo_category_description": "Описание",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2577,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "Платеж",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "Общие платежи",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "Результат",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2643,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "Детали кредита",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "Дата начала",
+      "totalInterest": "Общие проценты",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "Основная сумма",
+      "interest": "Процент",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Год",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2700,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "в месяц",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2718,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "Баланс",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2754,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "Общие платежи",
+      "totalCost": "Общая стоимость",
+      "vehiclePrice": "Цена автомобиля",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2911,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "Месяц",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2989,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "Месяц",
+      "payment": "Платеж",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3032,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "Значение",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3055,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "Результат",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3094,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "Значение",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3576,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "Вычислить",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4133,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "Фильтр",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4186,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "Вычислить",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4234,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "Имя",
+        "description": "Описание",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "Валюта",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "Первоначальный взнос",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "Детали кредита",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "Дата начала",
+        "years": "лет",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "в месяц",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "Общие проценты",
+        "totalCost": "Общая стоимость",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "Основная сумма",
+        "interest": "Процент",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "Год",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4340,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "Валюта",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4496,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "Вход",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4513,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "Вход",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4538,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "Сумма",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "Результат",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4558,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "Валюта",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4585,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "Вход",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "Сумма",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4605,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "Результат",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4617,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "Валюта",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "Сумма",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4633,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Шаги вычисления",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4655,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "Сумма",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4665,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Шаги вычисления",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4695,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "Сумма"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4962,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "год",
+        "years": "лет",
+        "month": "месяц",
+        "months": "месяцев",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5131,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Шаги вычисления",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5325,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "Значение",
+        "from": "От",
+        "to": "До",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5463,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Шаги вычисления",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "Вычислить",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5705,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Шаги вычисления",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5749,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "Описание",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5790,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "Секунд",
+        "min": "Минут",
+        "hr": "Часов"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5812,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "Секунд",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5831,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "Сбросить",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5846,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "Шаги вычисления",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "Копировать",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5932,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "Значение",
+        "description": "Описание"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +6006,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "Имя",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "Описание",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6090,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "Вход",
+        "result": "Результат",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "Сравнить"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6107,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "Валюта",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6126,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Шаги вычисления",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6152,92 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "Кредит",
+          "lease": "Лизинг",
+          "compare": "Сравнить"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "Детали ТС",
+        "vehicleDetailsDescription": "Введите цену транспортного средства и детали платежа",
+        "vehiclePrice": "Стоимость авто",
+        "downPayment": "Первый взнос",
+        "tradeInValue": "Стоимость обмена",
+        "currency": "Валюта",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "Включить швейцарский НДС",
+        "loanDetails": "Детали кредита",
+        "leaseDetails": "Детали лизинга",
+        "interestRate": "Процентная ставка (%)",
+        "loanTerm": "Срок кредита",
+        "leaseTerm": "Срок аренды",
+        "residualValue": "Остаточная стоимость (%)",
+        "leaseAPR": "APR аренды (%)",
+        "annualKmLimit": "Годовой лимит пробега",
+        "months": "месяцев",
+        "years": "лет",
+        "year": "год",
+        "month": "месяц",
+        "loanResult": "Итог по кредиту",
+        "leaseResult": "Итог по аренде",
+        "comparisonResult": "Сравнение покупки vs аренды",
+        "perMonth": "в месяц",
+        "loanAmount": "Сумма кредита",
+        "totalPayments": "Всего платежей",
+        "totalInterest": "Всего процентов",
+        "totalCost": "Итоговая стоимость",
+        "capitalizedCost": "Капитализированная стоимость",
+        "depreciation": "Амортизация",
+        "financeCharge": "Финансовый сбор",
+        "total": "всего",
+        "kmLimit": "Лимит пробега",
+        "excessKmCharge": "Сбор за превышение пробега",
+        "amortizationSchedule": "График амортизации",
+        "payment": "Платеж",
+        "principal": "Основная сумма",
+        "interest": "Процент",
+        "balance": "Баланс",
+        "showingFirst12Months": "Показ первых 12 месяцев графика",
+        "lowerMonthlyPayment": "Ниже ежемесячный платеж",
+        "lowerTotalCost": "Ниже общая стоимость",
+        "recommendation": "Рекомендация",
+        "calculationSteps": "Шаги расчета",
+        "loan": "Кредит",
+        "lease": "Лизинг",
+        "compare": "Сравнить",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "Цена автомобиля: {value}",
+          "salesTax": "Налог с продаж: {rate} {value}",
+          "totalVehicleCost": "Общая стоимость автомобиля: {value}",
+          "downPayment": "Первоначальный взнос: {value}",
+          "tradeInValue": "Стоимость обмена: {value}",
+          "loanAmount": "Сумма кредита: {value}",
+          "interestRate": "Процентная ставка: {apr} {monthly}",
+          "loanTerm": "Срок кредита: {months}",
+          "monthlyPayment": "Ежемесячный платеж: {value}",
+          "totalPayments": "Общие платежи: {value}",
+          "totalInterest": "Общие проценты: {value}",
+          "totalCost": "Общая стоимость: {value}",
+          "capitalizedCost": "Капитализированные затраты: {value}",
+          "residualValue": "Остаточная стоимость: {percent} {value}",
+          "depreciation": "Амортизация: {capCost} {residual} {months} {result}",
+          "financeCharge": "Финансовые расходы: {capCost} {residual} {result}",
+          "totalLeaseCost": "Общая стоимость лизинга: {value}",
+          "moneyFactorToAPR": "Денежный фактор в APR: {apr}",
+          "kmLimit": "Лимит км: {annual} {total}",
+          "excessKmCharge": "Плата за превышение км: {value}",
+          "loanMonthlyPayment": "Ежемесячный платеж по кредиту: {value}",
+          "leaseMonthlyPayment": "Ежемесячный платеж по лизингу: {value}",
+          "monthlyDifference": "Ежемесячная разница: {value} {lower}",
+          "loanTotalCost": "Общая стоимость кредита: {value}",
+          "leaseTotalCost": "Общая стоимость лизинга: {value}",
+          "totalCostDifference": "Разница общей стоимости: {value}",
+          "recommendation": "Рекомендация: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "Вход",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6234,33 +6255,31 @@
         "compareModeDescription": "Compare with another tire size",
         "compareTire": "Comparison Tire Size",
         "comparisonResult": "Size Comparison",
-        "sidewallHeight": "Sidewall Height",
-        "overallDiameter": "Overall Diameter",
-        "circumference": "Circumference",
-        "revolutionsPerKm": "Revolutions/km",
+        "sidewallHeight": "Высота профиля",
+        "overallDiameter": "Общий диаметр",
+        "circumference": "Окружность",
+        "revolutionsPerKm": "Оборотов/км",
         "diameterDifference": "Diameter Difference",
         "speedometerError": "Speedometer Error",
-        "withinTolerance": "Within recommended tolerance (3%)",
-        "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "withinTolerance": "В пределах допуска (3%)",
+        "exceedsTolerance": "Превышает допуск",
+        "calculationSteps": "Шаги расчета",
         "steps": {
-          "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
-          "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
-          "overallDiameter": "Overall diameter = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
-          "circumference": "Circumference = π × {diameter}mm = {result}mm",
-          "revolutionsPerKm": "Revolutions/km = 1,000,000 / {circumference} = {result}",
-          "loadIndex": "Load index {loadIndex} = {loadValue} kg per tire",
-          "speedRating": "Speed rating {rating} = {speedValue} km/h ({desc})",
-          "diameterDiffMm": "Diameter difference = {tire2}mm - {tire1}mm = {result}mm",
-          "diameterDiffPct": "Diameter difference % = ({diffMm} / {tire1}) × 100 = {result}%",
-          "circumferenceDiffPct": "Circumference difference = {result}%",
-          "speedometerError": "Speedometer error = {result}%",
-          "actualSpeed": "When speedometer shows 100 km/h, actual speed = {result} km/h",
-          "revolutionsDiffPerKm": "Revolutions difference per km = {tire2} - {tire1} = {result}",
-          "warning": "WARNING: {message}"
-        },
-        "warningTolerance5": "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly",
-        "warningTolerance3": "Diameter difference exceeds 3% - may affect speedometer accuracy"
+          "sidewallHeight": "Высота профиля = {width}мм × ({aspectRatio}/100) = {result}мм",
+          "rimDiameter": "Диаметр диска = {rimDiameter}\" × 25.4 = {result}мм",
+          "overallDiameter": "Общий диаметр = {rimMm}мм + (2 × {sidewall}мм) = {result}мм",
+          "circumference": "Окружность = π × {diameter}мм = {result}мм",
+          "revolutionsPerKm": "Оборотов/км = 1 000 000 / {circumference} = {result}",
+          "loadIndex": "Индекс нагрузки {loadIndex} = {loadValue} кг на шину",
+          "speedRating": "Индекс скорости {rating} = {speedValue} км/ч ({desc})",
+          "diameterDiffMm": "Разница диаметров = {tire2}мм - {tire1}мм = {result}мм",
+          "diameterDiffPct": "Разница диаметров % = ({diffMm} / {tire1}) × 100 = {result}%",
+          "circumferenceDiffPct": "Разница окружностей = {result}%",
+          "speedometerError": "Ошибка спидометра = {result}%",
+          "actualSpeed": "При спидометре 100 км/ч реальная скорость = {result} км/ч",
+          "revolutionsDiffPerKm": "Разница оборотов/км = {tire2} - {tire1} = {result}",
+          "warning": "ВНИМАНИЕ: {message}"
+        }
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",
@@ -6283,7 +6302,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "месяцев",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

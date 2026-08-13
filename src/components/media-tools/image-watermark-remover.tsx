@@ -1,11 +1,13 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
-import { Eraser, Download, Loader2 } from "lucide-react";
+import { Download, Eraser, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FileDropZone, SelectedFile, ToolError } from "./shared";
 
 export function ImageWatermarkRemover() {
+  const t = useTranslations("mediaTools.imageWatermarkRemover");
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const previewRef = useRef<HTMLCanvasElement>(null);
   const [file, setFile] = useState<File | null>(null);
@@ -28,9 +30,9 @@ export function ImageWatermarkRemover() {
       setRect(null);
       setResultUrl(null);
     };
-    image.onerror = () => setError("图片加载失败");
+    image.onerror = () => setError(t("loadError"));
     return () => URL.revokeObjectURL(url);
-  }, [file]);
+  }, [file, t]);
 
   function drawCanvas(image: HTMLImageElement) {
     const canvas = canvasRef.current;
@@ -98,7 +100,7 @@ export function ImageWatermarkRemover() {
       canvas.width = img.naturalWidth;
       canvas.height = img.naturalHeight;
       const ctx = canvas.getContext("2d");
-      if (!ctx) throw new Error("无法获取画布上下文");
+      if (!ctx) throw new Error(t("canvasError"));
       ctx.drawImage(img, 0, 0);
       const src = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const dst = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -108,13 +110,17 @@ export function ImageWatermarkRemover() {
       const x2 = Math.min(canvas.width - 1, Math.ceil(x + w));
       const y2 = Math.min(canvas.height - 1, Math.ceil(y + h));
 
-      // Simple content-aware fill: for each masked pixel, find nearest non-masked pixel within a radius.
       const maxR = 64;
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
           let found = false;
           for (let r = 1; r <= maxR; r++) {
-            const samples: { r: number; g: number; b: number; n: number } = { r: 0, g: 0, b: 0, n: 0 };
+            const samples: { r: number; g: number; b: number; n: number } = {
+              r: 0,
+              g: 0,
+              b: 0,
+              n: 0,
+            };
             for (let dy = -r; dy <= r; dy++) {
               for (let dx = -r; dx <= r; dx++) {
                 if (Math.abs(dx) !== r && Math.abs(dy) !== r) continue;
@@ -160,7 +166,7 @@ export function ImageWatermarkRemover() {
         pctx?.drawImage(canvas, 0, 0);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "处理失败");
+      setError(err instanceof Error ? err.message : t("processError"));
     } finally {
       setProcessing(false);
     }
@@ -180,12 +186,20 @@ export function ImageWatermarkRemover() {
       {!file ? (
         <FileDropZone accept="image/*" onFiles={(files) => setFile(files[0])} />
       ) : (
-        <SelectedFile file={file} onClear={() => { setFile(null); setImg(null); setRect(null); setResultUrl(null); }} />
+        <SelectedFile
+          file={file}
+          onClear={() => {
+            setFile(null);
+            setImg(null);
+            setRect(null);
+            setResultUrl(null);
+          }}
+        />
       )}
       {img && (
         <>
           <div className="rounded-xl border border-white/10 bg-black/20 p-3">
-            <p className="mb-2 text-xs text-muted-foreground">在图片上拖拽框选水印区域</p>
+            <p className="mb-2 text-xs text-muted-foreground">{t("hint")}</p>
             <div className="max-h-[320px] overflow-auto rounded-lg border border-white/10 bg-black/40">
               <canvas
                 ref={canvasRef}
@@ -205,17 +219,24 @@ export function ImageWatermarkRemover() {
             disabled={!rect || processing}
             className="w-full rounded-xl bg-gradient-to-r from-pink-500 to-purple-500"
           >
-            {processing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Eraser className="mr-2 h-4 w-4" />}
-            智能去除水印
+            {processing ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : (
+              <Eraser className="mr-2 h-4 w-4" />
+            )}
+            {t("processBtn")}
           </Button>
         </>
       )}
       {resultUrl && (
         <div className="rounded-xl border border-white/10 bg-black/20 p-3">
-          <p className="mb-2 text-sm font-medium">处理结果</p>
-          <canvas ref={previewRef} className="max-h-[320px] max-w-full rounded-lg border border-white/10" />
+          <p className="mb-2 text-sm font-medium">{t("resultTitle")}</p>
+          <canvas
+            ref={previewRef}
+            className="max-h-[320px] max-w-full rounded-lg border border-white/10"
+          />
           <Button onClick={download} className="mt-3 w-full rounded-xl">
-            <Download className="mr-2 h-4 w-4" /> 下载处理后图片
+            <Download className="mr-2 h-4 w-4" /> {t("downloadBtn")}
           </Button>
         </div>
       )}

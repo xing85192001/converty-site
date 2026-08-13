@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { FileText, Download, Loader2, X } from "lucide-react";
 import { jsPDF } from "jspdf";
+import { Download, FileText, Loader2, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { FileDropZone, ToolError, formatBytes } from "./shared";
+import { FileDropZone, formatBytes, ToolError } from "./shared";
 
 export function ImageToPdf() {
+  const t = useTranslations("mediaTools.imageToPdf");
   const [files, setFiles] = useState<File[]>([]);
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -44,7 +46,7 @@ export function ImageToPdf() {
       const url = URL.createObjectURL(blob);
       setDownloadUrl(url);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "PDF 生成失败");
+      setError(err instanceof Error ? err.message : t("pdfError"));
     } finally {
       setProcessing(false);
     }
@@ -69,7 +71,10 @@ export function ImageToPdf() {
       <FileDropZone
         accept="image/*"
         multiple
-        onFiles={(newFiles) => { setFiles((prev) => [...prev, ...newFiles]); setDownloadUrl(null); }}
+        onFiles={(newFiles) => {
+          setFiles((prev) => [...prev, ...newFiles]);
+          setDownloadUrl(null);
+        }}
       />
       {files.length > 0 && (
         <div className="space-y-2">
@@ -99,13 +104,17 @@ export function ImageToPdf() {
           disabled={processing}
           className="w-full rounded-xl bg-gradient-to-r from-pink-500 to-purple-500"
         >
-          {processing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <FileText className="mr-2 h-4 w-4" />}
-          合并为 PDF
+          {processing ? (
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <FileText className="mr-2 h-4 w-4" />
+          )}
+          {t("mergeBtn")}
         </Button>
       )}
       {downloadUrl && (
         <Button onClick={download} className="w-full rounded-xl">
-          <Download className="mr-2 h-4 w-4" /> 下载 PDF 文件
+          <Download className="mr-2 h-4 w-4" /> {t("downloadBtn")}
         </Button>
       )}
     </div>
@@ -123,15 +132,15 @@ function fileToJpegDataUrl(file: File): Promise<string> {
         canvas.width = img.naturalWidth;
         canvas.height = img.naturalHeight;
         const ctx = canvas.getContext("2d");
-        if (!ctx) return reject(new Error("无法创建画布"));
+        if (!ctx) return reject(new Error("canvas"));
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0);
         resolve(canvas.toDataURL("image/jpeg", 0.92));
       };
-      img.onerror = () => reject(new Error("图片加载失败"));
+      img.onerror = () => reject(new Error("load"));
     };
-    reader.onerror = () => reject(new Error("文件读取失败"));
+    reader.onerror = () => reject(new Error("read"));
     reader.readAsDataURL(file);
   });
 }
@@ -141,6 +150,6 @@ function loadImage(src: string): Promise<HTMLImageElement> {
     const img = new Image();
     img.src = src;
     img.onload = () => resolve(img);
-    img.onerror = () => reject(new Error("图片加载失败"));
+    img.onerror = () => reject(new Error("load"));
   });
 }

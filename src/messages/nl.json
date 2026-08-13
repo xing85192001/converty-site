@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "Gratis online rekenmachines en converters",
+    "allTools": "Alle tools",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "Fout",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "Kopiëren",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "Resetten",
+    "calculate": "Berekenen",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "Wissen",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "Alle rechten voorbehouden",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
+        "privacy": "Privacybeleid",
+        "about": "Over ons",
         "contact": "Contact",
-        "terms": "Terms of Service",
+        "terms": "Servicevoorwaarden",
         "blog": "Blog"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "Meer tools"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "Hoofdfuncties",
+    "toolHighlights": "Tool-hoogtepunten",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "Blog bekijken",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,175 +86,177 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "Rekenmachines zoeken……",
+    "result": "Resultaat"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ Afbeelding- & videobewerking",
+    "sectionSubtitle": "Afbeelding- & videotools · Nieuw",
+    "featuredTitle": "✨ Uitgelichte tools",
+    "allCategories": "Alle",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "Alle",
+      "watermark": "Watermerk verwijderen",
+      "format": "Formaat conversie",
+      "icon": "Icontools",
+      "compress": "Comprimeren & optimaliseren"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "Video-watermerkverwijderaar",
+      "desc": "Upload een video en selecteer het watermerkgebied. AI-verwerking in de browser. Ondersteunt MP4 / MOV / WebM."
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "Afbeelding-watermerkverwijderaar",
+      "desc": "Selecteer het watermerkgebied. Slimme verwijdering op basis van AI. Ondersteunt JPG / PNG / WEBP."
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "ICO-pictogramconverter",
+      "desc": "Converteer afbeeldingen naar .ico met meerdere formaten (16/32/64/128/256px)."
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "Afbeeldingsformaatconverter",
+      "desc": "Batchconversie PNG / JPG / WEBP / BMP / GIF."
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "Afbeeldingscompressor",
+      "desc": "Lossy / lossless compressie. Verklein bestandsgrootte met behoud van kwaliteit."
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "Videocompressor",
+      "desc": "Pas resolutie en bitrate aan om de videobestandsgrootte snel te verkleinen."
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "Afbeeldingsupscaler",
+      "desc": "AI-superresolutie — maak wazige afbeeldingen scherp."
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "Afbeelding laden mislukt",
+      "canvasError": "Kan canvas niet maken",
+      "readError": "Bestand lezen mislukt",
+      "pdfError": "PDF-generatie mislukt",
+      "mergeBtn": "Samenvoegen tot PDF",
+      "downloadBtn": "PDF downloaden",
+      "title": "Afbeelding naar PDF",
+      "desc": "Voeg meerdere afbeeldingen samen tot één PDF-bestand."
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "Klik of sleep om bestanden te uploaden",
+      "supports": "Ondersteunt"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "Video-watermerkverwijderaar",
+      "description": "Sleep of klik om een video te uploaden, teken dan een vak over het watermerkgebied om het te verwijderen.",
+      "selectVideo": "Selecteer video",
+      "originalLabel": "Originele video · selecteer watermerkgebied",
+      "removeBtn": "Verwijderen",
+      "previewTitle": "Verwerkte voorbeeld",
+      "aiBadge": "AI-verwerking",
+      "emptyPreview": "De verwerkte video verschijnt hier",
+      "processing": "Verwerken {progress}%",
+      "startRemoval": "Watermerk verwijderen",
+      "download": "Verwerkte video downloaden",
+      "errorSelectArea": "Teken eerst een vak over het watermerk dat u wilt verwijderen",
+      "errorFailed": "Verwerking mislukt, probeer het opnieuw",
+      "hint": "Tip: druk en sleep op het videobeeld om een vak over het watermerk te tekenen."
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "Afbeelding laden mislukt",
+      "canvasError": "Kan canvascontext niet ophalen",
+      "processError": "Verwerking mislukt",
+      "hint": "Sleep op de afbeelding om het watermerkgebied te selecteren",
+      "processBtn": "Slim watermerk verwijderen",
+      "resultTitle": "Resultaat",
+      "downloadBtn": "Verwerkte afbeelding downloaden"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "Afbeelding laden mislukt",
+      "processError": "Conversie mislukt",
+      "generateBtn": "ICO genereren",
+      "downloadBtn": "ICO-bestand downloaden"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "Afbeelding laden mislukt",
+      "canvasError": "Kan canvas niet maken",
+      "convertError": "Formaatconversie mislukt",
+      "unsupportedFormat": "Niet-ondersteund formaat",
+      "outputFormat": "Uitvoerformaat",
+      "convertBtn": "Formaat converteren",
+      "downloadBtn": "Geconverteerde afbeelding downloaden"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "Afbeelding laden mislukt",
+      "canvasError": "Kan canvas niet maken",
+      "compressError": "Compressie mislukt",
+      "qualityLabel": "JPEG-kwaliteit",
+      "scaleLabel": "Schaal",
+      "sizeCompare": "Origineel {original} → Gecomprimeerd {compressed}",
+      "compressBtn": "Afbeelding comprimeren",
+      "downloadBtn": "Gecomprimeerde afbeelding downloaden"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
+      "title": "Videocompressor",
+      "description": "Sleep of klik om een video te uploaden, pas vervolgens resolutie en bitrate aan om te comprimeren.",
+      "selectVideo": "Selecteer video",
+      "originalLabel": "Originele video",
+      "removeBtn": "Verwijderen",
+      "settingsTitle": "Compressie-instellingen",
+      "resolutionLabel": "Resolutie",
+      "originalResolution": "Originele resolutie behouden",
       "res1080p": "1920px (1080p)",
       "res720p": "1280px (720p)",
       "res480p": "854px (480p)",
       "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "crfLabel": "CRF-kwaliteit",
+      "crfHint": "Lagere waarde = betere kwaliteit, groter bestand",
+      "processing": "Comprimeren {progress}%",
+      "processBtn": "Video comprimeren",
+      "uploadFirstError": "Upload eerst een video",
+      "processError": "Verwerking mislukt, probeer het opnieuw",
+      "downloadBtn": "Gecomprimeerde video downloaden"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "Afbeelding laden mislukt",
+      "canvasError": "Kan canvas niet maken",
+      "upscaleError": "Upscalen mislukt",
+      "scaleLabel": "Upscale-factor",
+      "sharpenLabel": "Randen verscherpen",
+      "upscaleBtn": "AI-upscale",
+      "downloadBtn": "Geüpscalede afbeelding downloaden"
     }
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "Kleur",
+      "description": "Kleurconversie en paletten"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "Koken",
+      "description": "Koken en recepten"
     },
     "crypto": {
       "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "description": "Crypto en mining"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "Gegevens",
+      "description": "Gegevens en bandbreedte"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "Datum/Tijd",
+      "description": "Datum en tijd"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "Financiën",
+      "description": "Financiële calculators"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "Gezondheid",
+      "description": "Gezondheid en fitness"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "Infrastructuur",
+      "description": "IT en virtualisatie",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +266,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "Techniek",
+      "description": "Techniek en natuurkunde",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +276,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "Chemie",
+      "description": "Chemische calculators",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +286,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "Wiskunde",
+      "description": "Wiskundige calculators"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "Muziek",
+      "description": "Audio en muziek",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "Netwerk",
+      "description": "Netwerk-tools"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "Foto",
+      "description": "Foto-tools"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "Natuurkunde",
+      "description": "Natuurkunde en mechanica"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "Vastgoed",
+      "description": "Hypotheken en verhuur"
     },
     "video": {
       "name": "Video",
-      "description": "Video and media calculators"
+      "description": "Video-tools"
     },
     "web": {
       "name": "Web",
-      "description": "Web development tools"
+      "description": "Web-tools en SEO"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "Auto",
+      "description": "Brandstof-, banden-, onderhouds- en financieringscalculators"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -810,49 +812,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "Hypotheek",
+      "description": "Bereken maandelijkse betalingen en aflossingsschema",
+      "metaDescription": "Hypotheekcalculator met aflossing"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "Samengestelde Rente",
+      "description": "Bereken de samengestelde rente voor investeringen met regelmatige bijdragen",
+      "metaDescription": "Bereken de groei van samengestelde rente in de tijd"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "Lening",
+      "description": "Bereken maandelijkse leningbetalingen",
+      "metaDescription": "Leningbetalingen en aflossing"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "Pensioen",
+      "description": "Plan je pensioen met besparingsprognoses",
+      "metaDescription": "Pensioenplanning"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "Fooien",
+      "description": "Bereken het fooienbedrag en deel de rekening",
+      "metaDescription": "Fooiencalculator"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "Bespaardoel",
+      "description": "Bereken de tijd om het bespaardoel te bereiken",
+      "metaDescription": "Besparingsplanning"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "Inflatie",
+      "description": "Bereken de impact van inflatie op de koopkracht",
+      "metaDescription": "Inflatie-impact"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "Rendement",
+      "description": "Bereken het investeringsrendement",
+      "metaDescription": "Investeringsrendement"
     },
     "break-even": {
       "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "description": "Bereken het break-even-punt",
+      "metaDescription": "Break-even-analyse"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -1454,19 +1456,19 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "Brandstofverbruik",
+      "description": "Bereken het brandstofverbruik",
+      "metaDescription": "Brandstofcalculator"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "Voertuigfinanciering",
+      "description": "Voertuigfinancieringscalculator",
+      "metaDescription": "Voertuigfinancieringscalculator"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "Bandenmaat",
+      "description": "Bandenmaatwisselcalculator",
+      "metaDescription": "Bandenmaatcalculator"
     },
     "maintenance-intervals": {
       "name": "Maintenance Intervals Calculator",
@@ -1536,49 +1538,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "Autolening",
+      "description": "Bereken maandelijkse autoleningbetalingen",
+      "metaDescription": "Autoleningcalculator"
+    },
+    "lease": {
+      "name": "Lease",
+      "description": "Bereken leasebetalingen",
+      "metaDescription": "Leasecalculator"
+    },
+    "trade-in": {
+      "name": "Inruil",
+      "description": "Bereken de inruilwaarde",
+      "metaDescription": "Inruilcalculator"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "Waarde",
+      "amount": "Bedrag",
+      "result": "Resultaat",
+      "from": "Van",
+      "to": "Naar",
+      "date": "Datum",
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "birthDate": "Geboortedatum",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "Jaren",
+      "months": "Maanden",
+      "weeks": "Weken",
+      "days": "Dagen",
+      "hours": "Uren",
+      "minutes": "Minuten",
+      "seconds": "Seconden",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "Aanbetaling",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "Totale rente",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "Hoofdsom",
+      "interest": "Rente",
+      "balance": "Saldo",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Jaar",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1681,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "Berekenen",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1794,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "Maand",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1830,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "Zoeken",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1893,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "Invoer",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "Leningdetails",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1905,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "Uitvoer"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2034,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Berekeningsstappen",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2057,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "Resetten"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2098,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "Totale kosten",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2106,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "jaren"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2197,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "Totale kosten",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "Berekeningsstappen"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2238,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "per maand",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "Totaal",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2353,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "Titel",
+      "seo_category_description": "Beschrijving",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2576,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "Betaling",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "Totale betalingen",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "Resultaat",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2642,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "Leningdetails",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "Startdatum",
+      "totalInterest": "Totale rente",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "Hoofdsom",
+      "interest": "Rente",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Jaar",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2699,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "per maand",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2717,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "Saldo",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2753,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "Totale betalingen",
+      "totalCost": "Totale kosten",
+      "vehiclePrice": "Voertuigprijs",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2910,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "Maand",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2988,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "Maand",
+      "payment": "Betaling",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3031,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "Waarde",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3054,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "Resultaat",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3093,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "Waarde",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3575,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "Berekenen",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4132,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "Filteren",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4185,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "Berekenen",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4233,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "Naam",
+        "description": "Beschrijving",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "Valuta",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "Aanbetaling",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "Leningdetails",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "Startdatum",
+        "years": "jaren",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "per maand",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "Totale rente",
+        "totalCost": "Totale kosten",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "Hoofdsom",
+        "interest": "Rente",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "Jaar",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4339,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "Valuta",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4495,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "Invoer",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4512,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "Invoer",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4537,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "Bedrag",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "Resultaat",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4557,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "Valuta",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4584,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "Invoer",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "Bedrag",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4604,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "Resultaat",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4616,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "Valuta",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "Bedrag",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4632,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Berekeningsstappen",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4654,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "Bedrag",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4664,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Berekeningsstappen",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4694,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "Bedrag"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4961,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "jaar",
+        "years": "jaren",
+        "month": "maand",
+        "months": "maanden",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5130,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Berekeningsstappen",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5324,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "Waarde",
+        "from": "Van",
+        "to": "Naar",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5462,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Berekeningsstappen",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "Berekenen",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5704,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Berekeningsstappen",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5748,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "Beschrijving",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5789,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "Seconden",
+        "min": "Minuten",
+        "hr": "Uren"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5811,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "Seconden",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5830,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "Resetten",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5845,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "Berekeningsstappen",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "Kopiëren",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5931,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "Waarde",
+        "description": "Beschrijving"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +6005,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "Naam",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "Beschrijving",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6089,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "Invoer",
+        "result": "Resultaat",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "Vergelijken"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6106,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "Valuta",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6125,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Berekeningsstappen",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6151,92 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "Lening",
+          "lease": "Leasing",
+          "compare": "Vergelijken"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "Voertuiggegevens",
+        "vehicleDetailsDescription": "Voer de voertuigprijs en betalingsgegevens in",
+        "vehiclePrice": "Voertuigprijs",
+        "downPayment": "Aanbetaling",
+        "tradeInValue": "Inruilwaarde",
+        "currency": "Valuta",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "Zwitserse BTW inbegrepen",
+        "loanDetails": "Leningdetails",
+        "leaseDetails": "Leasingdetails",
+        "interestRate": "Rentepercentage (%)",
+        "loanTerm": "Krediettermijn",
+        "leaseTerm": "Leasingtermijn",
+        "residualValue": "Restwaarde (%)",
+        "leaseAPR": "Leasing-APR (%)",
+        "annualKmLimit": "Jaarlijkse kilometerlimiet",
+        "months": "maanden",
+        "years": "jaar",
+        "year": "jaar",
+        "month": "maand",
+        "loanResult": "Leningsoverzicht",
+        "leaseResult": "Leasingoverzicht",
+        "comparisonResult": "Vergelijking Kopen vs Leasen",
+        "perMonth": "per maand",
+        "loanAmount": "Kredietbedrag",
+        "totalPayments": "Totale betalingen",
+        "totalInterest": "Totale rente",
+        "totalCost": "Totale kosten",
+        "capitalizedCost": "Gekapitaliseerde kosten",
+        "depreciation": "Afschrijving",
+        "financeCharge": "Financieringskosten",
+        "total": "totaal",
+        "kmLimit": "Kilometerlimiet",
+        "excessKmCharge": "Over kilometers vergoeding",
+        "amortizationSchedule": "Aflossingsschema",
+        "payment": "Betaling",
+        "principal": "Hoofdsom",
+        "interest": "Rente",
+        "balance": "Saldo",
+        "showingFirst12Months": "Weergave van de eerste 12 maanden van het schema",
+        "lowerMonthlyPayment": "Lagere maandelijkse betaling",
+        "lowerTotalCost": "Lagere totale kosten",
+        "recommendation": "Aanbeveling",
+        "calculationSteps": "Berekeningsstappen",
+        "loan": "Lening",
+        "lease": "Leasing",
+        "compare": "Vergelijken",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "Voertuigprijs: {value}",
+          "salesTax": "Verkoopbelasting: {rate} {value}",
+          "totalVehicleCost": "Totale voertuigkosten: {value}",
+          "downPayment": "Aanbetaling: {value}",
+          "tradeInValue": "Inruilwaarde: {value}",
+          "loanAmount": "Leenbedrag: {value}",
+          "interestRate": "Rentevoet: {apr} {monthly}",
+          "loanTerm": "Leentermijn: {months}",
+          "monthlyPayment": "Maandelijkse betaling: {value}",
+          "totalPayments": "Totale betalingen: {value}",
+          "totalInterest": "Totale rente: {value}",
+          "totalCost": "Totale kosten: {value}",
+          "capitalizedCost": "Gekapitaliseerde kosten: {value}",
+          "residualValue": "Restwaarde: {percent} {value}",
+          "depreciation": "Afschrijving: {capCost} {residual} {months} {result}",
+          "financeCharge": "Financieringskosten: {capCost} {residual} {result}",
+          "totalLeaseCost": "Totale leasingkosten: {value}",
+          "moneyFactorToAPR": "Geldfactor naar APR: {apr}",
+          "kmLimit": "km-limiet: {annual} {total}",
+          "excessKmCharge": "Overschreden km-kosten: {value}",
+          "loanMonthlyPayment": "Lening maandelijkse betaling: {value}",
+          "leaseMonthlyPayment": "Leasing maandelijkse betaling: {value}",
+          "monthlyDifference": "Maandelijks verschil: {value} {lower}",
+          "loanTotalCost": "Totale leenkosten: {value}",
+          "leaseTotalCost": "Totale leasingkosten: {value}",
+          "totalCostDifference": "Totale kostenverschil: {value}",
+          "recommendation": "Aanbeveling: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "Invoer",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6242,7 +6262,7 @@
         "speedometerError": "Speedometer Error",
         "withinTolerance": "Within recommended tolerance (3%)",
         "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Berekeningsstappen",
         "steps": {
           "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
           "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
@@ -6283,7 +6303,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "maanden",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

@@ -7,6 +7,7 @@ import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
 import { InstallPrompt } from "@/components/ui/install-prompt";
 import { Link } from "@/i18n/navigation";
+import { categories } from "@/lib/registry/categories";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
@@ -14,6 +15,7 @@ import { ThemeToggle } from "./theme-toggle";
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("common");
+  const nav = useTranslations("nav");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/[0.08] bg-background/80 backdrop-blur-xl">
@@ -46,9 +48,47 @@ export function Header() {
         </div>
       </div>
 
-      <div className={cn("border-t border-white/[0.08] sm:hidden", mobileMenuOpen ? "block" : "hidden")}>
-        <div className="container py-3">
-          <GlobalSearch />
+      <div
+        className={cn(
+          "border-t border-white/[0.08] sm:hidden",
+          mobileMenuOpen ? "block" : "hidden"
+        )}
+      >
+        <div className="container max-h-[72vh] overflow-y-auto py-3">
+          <div className="mb-3">
+            <GlobalSearch />
+          </div>
+          <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            {t("navigation.categories")}
+          </div>
+          <div className="grid grid-cols-2 gap-1">
+            {categories.map((c) => (
+              <Link
+                key={c.id}
+                href={`/${c.slug}`}
+                onClick={() => setMobileMenuOpen(false)}
+                className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-white/5"
+              >
+                {nav(`${c.id}.name`)}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-3 flex flex-col gap-1 border-t border-white/[0.08] pt-3">
+            <Link
+              href="/all"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-lg bg-primary/10 px-3 py-2 text-sm font-medium text-primary"
+            >
+              {t("allTools")}
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-white/5"
+            >
+              {t("homepageViewBlog")}
+            </Link>
+          </div>
         </div>
       </div>
     </header>

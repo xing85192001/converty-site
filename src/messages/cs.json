@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "Zadarmo online kalkulačky a převodníky",
+    "allTools": "Všechny nástroje",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "Chyba",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "Kopírovat",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "Resetovat",
+    "calculate": "Vypočítat",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "Vymazat",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "Všechna práva vyhrazena",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
+        "privacy": "Zásady ochrany osobních údajů",
+        "about": "O nás",
+        "contact": "Kontakt",
+        "terms": "Podmínky služby",
         "blog": "Blog"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "Další nástroje"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "Hlavní funkce",
+    "toolHighlights": "Výhody nástroje",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "Zobrazit blog",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,7 +86,9 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "Hledat kalkulačky……",
+    "result": "Výsledek"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -229,11 +231,11 @@
       "description": "Color conversion and palettes"
     },
     "cooking": {
-      "name": "Cooking",
+      "name": "Vaření",
       "description": "Recipe scaling and nutrition calculators"
     },
     "crypto": {
-      "name": "Crypto",
+      "name": "Krypto",
       "description": "Cryptocurrency and blockchain tools"
     },
     "data": {
@@ -241,7 +243,7 @@
       "description": "Bandwidth and file size calculators"
     },
     "datetime": {
-      "name": "Date & Time",
+      "name": "Datum/Čas",
       "description": "Date, time, and duration calculators"
     },
     "finance": {
@@ -249,11 +251,11 @@
       "description": "Financial calculators and converters"
     },
     "health": {
-      "name": "Health",
+      "name": "Zdraví",
       "description": "Health and fitness calculators"
     },
     "infrastructure": {
-      "name": "Infrastructure",
+      "name": "Infrastruktura",
       "description": "Virtualization, Kubernetes, and datacenter tools",
       "subcategories": {
         "vmware": "VMware",
@@ -264,7 +266,7 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
+      "name": "Inženýrství",
       "description": "Structural calculations, material properties, and beam analysis",
       "subcategories": {
         "structural": "Structural",
@@ -274,7 +276,7 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
+      "name": "Chemie",
       "description": "Chemical calculations and molecular tools",
       "subcategories": {
         "general": "General",
@@ -284,28 +286,28 @@
       }
     },
     "math": {
-      "name": "Math",
+      "name": "Matematika",
       "description": "Mathematical calculators"
     },
     "music": {
-      "name": "Music",
+      "name": "Hudba",
       "description": "Music theory and audio tools",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
+      "name": "Síť",
       "description": "Network calculators and IP address tools"
     },
     "photo": {
-      "name": "Photo",
+      "name": "Foto",
       "description": "Photography calculators"
     },
     "physics": {
-      "name": "Physics",
+      "name": "Fyzika",
       "description": "Physics and unit converters"
     },
     "realestate": {
-      "name": "Real Estate",
+      "name": "Nemovitosti",
       "description": "Property valuation and mortgage calculators"
     },
     "video": {
@@ -317,7 +319,7 @@
       "description": "Web development tools"
     },
     "automotive": {
-      "name": "Automotive",
+      "name": "Automotiv",
       "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
     },
     "subcategories": {
@@ -372,8 +374,8 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
-      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
+      "description": "Vypočítejte si index tělesné hmotnosti a zdravotní kategorii",
+      "metaDescription": "Vypočítejte si index tělesné hmotnosti (BMI) a pochopte svou zdravotní kategorii"
     },
     "corpulence": {
       "name": "Corpulence",
@@ -396,7 +398,7 @@
       "generations": {
         "all": "All Generations",
         "current": "Current",
-        "previous": "Previous"
+        "previous": "Předchozí"
       },
       "selectCpus": "Select CPUs",
       "selectCpusHint": "Select 2 to 4 CPUs to compare",
@@ -485,7 +487,7 @@
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
+      "name": "Hodiny",
       "description": "Calculate hours between two times or dates",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
@@ -530,7 +532,7 @@
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
+      "name": "Stáhnout",
       "description": "Calculate download time from bandwidth and file size",
       "metaDescription": "Calculate how long a file download will take"
     },
@@ -900,7 +902,7 @@
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
+      "name": "Akontace",
       "description": "Calculate how much to save for a down payment",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
@@ -1055,7 +1057,7 @@
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
+      "name": "Základní",
       "description": "Perform arithmetic calculations with expression support",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
@@ -1065,7 +1067,7 @@
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
+      "name": "Procento",
       "description": "Calculate percentages, percent change, and percent difference",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
@@ -1369,7 +1371,7 @@
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
+      "name": "Poměr",
       "description": "Calculate and simplify ratios, find equivalent ratios",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
@@ -1459,12 +1461,12 @@
       "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
+      "name": "Kalkulačka financování vozidel",
       "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
       "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
+      "name": "Kalkulačka velikosti pneumatik",
       "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
       "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
     },
@@ -1477,11 +1479,11 @@
       "name": "Unit Converter",
       "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "category": "Category",
-      "value": "Value",
-      "from": "From",
-      "to": "To",
-      "swap": "Swap"
+      "category": "Kategorie",
+      "value": "Hodnota",
+      "from": "Z",
+      "to": "Na",
+      "swap": "Zaměnit"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1502,7 +1504,7 @@
       "valueB": "Value B",
       "bitwise": "Bitwise operation",
       "shift": "Shift",
-      "none": "None",
+      "none": "Žádné",
       "left": "Left (<<)",
       "right": "Right (>>)",
       "reprA": "A representations",
@@ -1517,8 +1519,8 @@
       "extra": "Extra monthly payment",
       "snowball": "Snowball (smallest balance first)",
       "avalanche": "Avalanche (highest rate first)",
-      "months": "Months",
-      "totalInterest": "Total interest",
+      "months": "Měsíce",
+      "totalInterest": "Celkový úrok",
       "totalPaid": "Total paid",
       "order": "Payoff order",
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
@@ -1540,45 +1542,45 @@
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "Hodnota",
+      "amount": "Částka",
+      "result": "Výsledek",
+      "from": "Od",
+      "to": "Na",
+      "date": "Datum",
+      "startDate": "Datum začátku",
+      "endDate": "Datum konce",
+      "birthDate": "Datum narození",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "Roky",
+      "months": "Měsíce",
+      "weeks": "Týdny",
+      "days": "Dny",
+      "hours": "Hodiny",
+      "minutes": "Minuty",
+      "seconds": "Sekundy",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "Down payment",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "Celkový úrok",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "Jistina",
+      "interest": "Úrok",
+      "balance": "Zůstatek",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Rok",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1666,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "Vypočítat",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1779,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "Měsíc",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1815,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "Hledat",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1878,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "Vstup",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "Podrobnosti o půjčce",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1890,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "Výstup"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2019,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Výpočtové kroky",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2081,7 +2083,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "Celkové náklady",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2091,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "roků"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2182,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "Celkové náklady",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "Výpočtové kroky"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2223,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "měsíčně",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "Celkem",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2338,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "Titulek",
+      "seo_category_description": "Popis",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2561,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "Platba",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "Celkové platby",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "Výsledek",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2627,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "Podrobnosti o půjčce",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "Datum začátku",
+      "totalInterest": "Celkový úrok",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "Jistina",
+      "interest": "Úrok",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Rok",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2684,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "měsíčně",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2702,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "Zůstatek",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2738,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "Celkové platby",
+      "totalCost": "Celkové náklady",
+      "vehiclePrice": "Cena vozidla",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2895,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "Měsíc",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2973,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "Měsíc",
+      "payment": "Platba",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3016,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "Hodnota",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3039,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "Výsledek",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3078,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "Hodnota",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3560,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "Vypočítat",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4117,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "Filtr",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4170,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "Vypočítat",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4218,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "Název",
+        "description": "Popis",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "Měna",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "Down payment",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "Podrobnosti o půjčce",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "Datum začátku",
+        "years": "roků",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "měsíčně",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "Celkový úrok",
+        "totalCost": "Celkové náklady",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "Jistina",
+        "interest": "Úrok",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "Rok",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4324,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "Měna",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4480,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "Vstup",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4497,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "Vstup",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4522,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "Částka",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "Výsledek",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4542,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "Měna",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4569,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "Vstup",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "Částka",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4589,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "Výsledek",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4601,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "Měna",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "Částka",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4617,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Výpočtové kroky",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4639,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "Částka",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4649,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Výpočtové kroky",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4679,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "Částka"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4946,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "rok",
+        "years": "roků",
+        "month": "měsíc",
+        "months": "měsíců",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5115,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Výpočtové kroky",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5309,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "Hodnota",
+        "from": "Od",
+        "to": "Na",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5447,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Výpočtové kroky",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "Vypočítat",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5689,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Výpočtové kroky",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5733,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "Popis",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5774,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "Sekundy",
+        "min": "Minuty",
+        "hr": "Hodiny"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5796,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "Sekundy",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5828,11 +5830,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "Výpočtové kroky",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "Kopírovat",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5916,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "Hodnota",
+        "description": "Popis"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +5990,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "Název",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "Popis",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6074,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "Vstup",
+        "result": "Výsledek",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "Porovnat"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6091,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "Měna",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6110,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Výpočtové kroky",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6136,92 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "Půjčka",
+          "lease": "Leasing",
+          "compare": "Porovnat"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "Podrobnosti o vozidle",
+        "vehicleDetailsDescription": "Zadejte cenu vozidla a platební údaje",
+        "vehiclePrice": "Cena vozidla",
+        "downPayment": "Down payment",
+        "tradeInValue": "Hodnota protiúplaty",
+        "currency": "Měna",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "Zahrnout švýcarské DPH",
+        "loanDetails": "Podrobnosti o půjčce",
+        "leaseDetails": "Podrobnosti o leasingu",
+        "interestRate": "Úroková sazba (%)",
+        "loanTerm": "Délka půjčky",
+        "leaseTerm": "Doba pronájmu",
+        "residualValue": "Zbytková hodnota (%)",
+        "leaseAPR": "APR pronájmu (%)",
+        "annualKmLimit": "Roční limit kilometrů",
+        "months": "měsíců",
+        "years": "let",
+        "year": "rok",
+        "month": "měsíc",
+        "loanResult": "Shrnutí půjčky",
+        "leaseResult": "Shrnutí pronájmu",
+        "comparisonResult": "Porovnání koupě a pronájmu",
+        "perMonth": "měsíčně",
+        "loanAmount": "Výše půjčky",
+        "totalPayments": "Celkové platby",
+        "totalInterest": "Celkový úrok",
+        "totalCost": "Celkové náklady",
+        "capitalizedCost": "Kapitalizované náklady",
+        "depreciation": "Odepisování",
+        "financeCharge": "Finanční poplatek",
+        "total": "celkem",
+        "kmLimit": "Limit kilometrů",
+        "excessKmCharge": "Poplatek za přebytečné kilometry",
+        "amortizationSchedule": "Amortizační plán",
+        "payment": "Platba",
+        "principal": "Jistina",
+        "interest": "Úrok",
+        "balance": "Zůstatek",
+        "showingFirst12Months": "Zobrazuje prvních 12 měsíců plánu",
+        "lowerMonthlyPayment": "Nižší měsíční splátka",
+        "lowerTotalCost": "Nižší celkové náklady",
+        "recommendation": "Doporučení",
+        "calculationSteps": "Kroky výpočtu",
+        "loan": "Úvěr",
+        "lease": "Leasing",
+        "compare": "Porovnat",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "Cena vozidla: {value}",
+          "salesTax": "Daň z prodeje: {rate} {value}",
+          "totalVehicleCost": "Celkové náklady na vozidlo: {value}",
+          "downPayment": "Down payment: {value}",
+          "tradeInValue": "Hodnota protiúčtu: {value}",
+          "loanAmount": "Výše půjčky: {value}",
+          "interestRate": "Úroková sazba: {apr} {monthly}",
+          "loanTerm": "Délka půjčky: {months}",
+          "monthlyPayment": "Měsíční splátka: {value}",
+          "totalPayments": "Celkové platby: {value}",
+          "totalInterest": "Celkový úrok: {value}",
+          "totalCost": "Celkové náklady: {value}",
+          "capitalizedCost": "Kapitalizované náklady: {value}",
+          "residualValue": "Zůstatková hodnota: {percent} {value}",
+          "depreciation": "Odpisy: {capCost} {residual} {months} {result}",
+          "financeCharge": "Finanční poplatek: {capCost} {residual} {result}",
+          "totalLeaseCost": "Celkové náklady leasingu: {value}",
+          "moneyFactorToAPR": "Peněžní faktor na APR: {apr}",
+          "kmLimit": "Limit km: {annual} {total}",
+          "excessKmCharge": "Poplatek za překročení km: {value}",
+          "loanMonthlyPayment": "Měsíční splátka půjčky: {value}",
+          "leaseMonthlyPayment": "Měsíční splátka leasingu: {value}",
+          "monthlyDifference": "Měsíční rozdíl: {value} {lower}",
+          "loanTotalCost": "Celkové náklady na půjčku: {value}",
+          "leaseTotalCost": "Celkové náklady leasingu: {value}",
+          "totalCostDifference": "Rozdíl v celkových nákladech: {value}",
+          "recommendation": "Doporučení: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "Vstup",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6242,7 +6247,7 @@
         "speedometerError": "Speedometer Error",
         "withinTolerance": "Within recommended tolerance (3%)",
         "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Výpočtové kroky",
         "steps": {
           "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
           "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
@@ -6283,7 +6288,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "měsíců",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

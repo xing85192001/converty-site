@@ -23,7 +23,6 @@
     "clear": "Cancella",
     "selectLanguage": "Seleziona lingua",
     "footer": {
-      "builtWith": "Costruito con Next.js e Tailwind CSS",
       "copyright": "Tutti i diritti riservati",
       "links": {
         "privacy": "Informativa sulla privacy",
@@ -71,41 +70,177 @@
       "manage": "Gestisci"
     },
     "coreFeatures": "Funzionalità principali",
-    "toolHighlights": "Punti di forza",
-    "blog": "Blog"
+    "toolHighlights": "Caratteristiche dello strumento",
+    "blog": "Blog",
+    "homepageViewBlog": "Vedi blog"
+  },
+  "mediaTools": {
+    "sectionTitle": "🖼️ Elaborazione immagini e video",
+    "sectionSubtitle": "Strumenti immagini e video · Nuovo",
+    "featuredTitle": "✨ Strumenti in evidenza",
+    "allCategories": "Tutto",
+    "categories": {
+      "all": "Tutto",
+      "watermark": "Rimuovi filigrana",
+      "format": "Conversione formato",
+      "icon": "Strumenti icone",
+      "compress": "Comprimi e ottimizza"
+    },
+    "videoWatermark": {
+      "title": "Rimozione filigrana video",
+      "desc": "Carica un video e seleziona l'area della filigrana. Elaborazione AI nel browser. Supporta MP4 / MOV / WebM."
+    },
+    "imageWatermark": {
+      "title": "Rimozione filigrana immagine",
+      "desc": "Seleziona l'area della filigrana. Rimozione intelligente basata su AI. Supporta JPG / PNG / WEBP."
+    },
+    "ico": {
+      "title": "Convertitore icone ICO",
+      "desc": "Converti immagini in .ico con pacchetto multi-dimensione (16/32/64/128/256px)."
+    },
+    "formatConvert": {
+      "title": "Convertitore formato immagine",
+      "desc": "Conversione batch PNG / JPG / WEBP / BMP / GIF."
+    },
+    "imageCompress": {
+      "title": "Compressore immagini",
+      "desc": "Compressione lossy / lossless. Riduci la dimensione del file mantenendo la qualità."
+    },
+    "videoCompress": {
+      "title": "Compressore video",
+      "desc": "Regola risoluzione e bitrate per ridurre rapidamente la dimensione del video."
+    },
+    "imageUpscale": {
+      "title": "Upscaler immagini",
+      "desc": "Super-risoluzione AI — rendi nitide le immagini sfocate."
+    },
+    "imageToPdf": {
+      "loadError": "Caricamento immagine fallito",
+      "canvasError": "Impossibile creare il canvas",
+      "readError": "Lettura file fallita",
+      "pdfError": "Generazione PDF fallita",
+      "mergeBtn": "Unisci in PDF",
+      "downloadBtn": "Scarica PDF",
+      "title": "Immagine in PDF",
+      "desc": "Unisci più immagini in un unico file PDF."
+    },
+    "fileDrop": {
+      "clickOrDrag": "Clicca o trascina per caricare i file",
+      "supports": "Supporta"
+    },
+    "videoWatermarkRemover": {
+      "title": "Rimozione filigrana video",
+      "description": "Trascina o clicca per caricare un video, poi disegna un riquadro sull'area della filigrana per rimuoverla.",
+      "selectVideo": "Seleziona video",
+      "originalLabel": "Video originale · seleziona area filigrana",
+      "removeBtn": "Rimuovi",
+      "previewTitle": "Anteprima elaborata",
+      "aiBadge": "Elaborazione AI",
+      "emptyPreview": "Il video elaborato apparirà qui",
+      "processing": "Elaborazione {progress}%",
+      "startRemoval": "Rimuovi filigrana",
+      "download": "Scarica video elaborato",
+      "errorSelectArea": "Disegna prima un riquadro sulla filigrana da rimuovere",
+      "errorFailed": "Elaborazione fallita, riprova",
+      "hint": "Suggerimento: premi e trascina sul fotogramma video per disegnare un riquadro sulla filigrana."
+    },
+    "imageWatermarkRemover": {
+      "loadError": "Caricamento immagine fallito",
+      "canvasError": "Impossibile ottenere il contesto canvas",
+      "processError": "Elaborazione fallita",
+      "hint": "Trascina sull'immagine per selezionare l'area della filigrana",
+      "processBtn": "Rimozione intelligente filigrana",
+      "resultTitle": "Risultato",
+      "downloadBtn": "Scarica immagine elaborata"
+    },
+    "icoConverter": {
+      "loadError": "Caricamento immagine fallito",
+      "processError": "Conversione fallita",
+      "generateBtn": "Genera ICO",
+      "downloadBtn": "Scarica file ICO"
+    },
+    "formatConverter": {
+      "loadError": "Caricamento immagine fallito",
+      "canvasError": "Impossibile creare il canvas",
+      "convertError": "Conversione formato fallita",
+      "unsupportedFormat": "Formato non supportato",
+      "outputFormat": "Formato di output",
+      "convertBtn": "Converti formato",
+      "downloadBtn": "Scarica immagine convertita"
+    },
+    "imageCompressor": {
+      "loadError": "Caricamento immagine fallito",
+      "canvasError": "Impossibile creare il canvas",
+      "compressError": "Compressione fallita",
+      "qualityLabel": "Qualità JPEG",
+      "scaleLabel": "Scala",
+      "sizeCompare": "Originale {original} → Compresso {compressed}",
+      "compressBtn": "Comprimi immagine",
+      "downloadBtn": "Scarica immagine compressa"
+    },
+    "videoCompressor": {
+      "title": "Compressore video",
+      "description": "Trascina o clicca per caricare un video, poi regola risoluzione e bitrate per comprimere.",
+      "selectVideo": "Seleziona video",
+      "originalLabel": "Video originale",
+      "removeBtn": "Rimuovi",
+      "settingsTitle": "Impostazioni compressione",
+      "resolutionLabel": "Risoluzione",
+      "originalResolution": "Mantieni risoluzione originale",
+      "res1080p": "1920px (1080p)",
+      "res720p": "1280px (720p)",
+      "res480p": "854px (480p)",
+      "res360p": "640px (360p)",
+      "crfLabel": "Qualità CRF",
+      "crfHint": "Valore inferiore = migliore qualità, file più grande",
+      "processing": "Compressione {progress}%",
+      "processBtn": "Comprimi video",
+      "uploadFirstError": "Carica prima un video",
+      "processError": "Elaborazione fallita, riprova",
+      "downloadBtn": "Scarica video compresso"
+    },
+    "imageUpscaler": {
+      "loadError": "Caricamento immagine fallito",
+      "canvasError": "Impossibile creare il canvas",
+      "upscaleError": "Upscale fallito",
+      "scaleLabel": "Fattore di upscale",
+      "sharpenLabel": "Nitidezza bordi",
+      "upscaleBtn": "Upscale AI",
+      "downloadBtn": "Scarica immagine ingrandita"
+    }
   },
   "nav": {
     "color": {
       "name": "Colore",
-      "description": "Conversione colori e palette"
+      "description": "Conversione colore e palette"
     },
     "cooking": {
       "name": "Cucina",
-      "description": "Conversione ricette e calcolatori nutrizionali"
+      "description": "Cucina e ricette"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Strumenti per criptovalute e blockchain"
+      "name": "Cripto",
+      "description": "Cripto e mining"
     },
     "data": {
       "name": "Dati",
-      "description": "Calcolatori di banda e dimensione file"
+      "description": "Dati e larghezza di banda"
     },
     "datetime": {
-      "name": "Data e Ora",
-      "description": "Calcolatori di data, ora e durata"
+      "name": "Data/Ora",
+      "description": "Date e orari"
     },
     "finance": {
-      "name": "Finanza",
-      "description": "Calcolatori e convertitori finanziari"
+      "name": "Finanze",
+      "description": "Calcolatrici finanziarie"
     },
     "health": {
       "name": "Salute",
-      "description": "Calcolatori salute e fitness"
+      "description": "Salute e fitness"
     },
     "infrastructure": {
       "name": "Infrastruttura",
-      "description": "Strumenti per virtualizzazione, Kubernetes e data center",
+      "description": "IT e virtualizzazione",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -116,7 +251,7 @@
     },
     "engineering": {
       "name": "Ingegneria",
-      "description": "Calcoli strutturali, proprietà dei materiali e analisi delle travi",
+      "description": "Ingegneria e fisica",
       "subcategories": {
         "structural": "Strutturale",
         "materials": "Materiali",
@@ -126,7 +261,7 @@
     },
     "chemistry": {
       "name": "Chimica",
-      "description": "Calcoli chimici e strumenti molecolari",
+      "description": "Calcolatrici chimiche",
       "subcategories": {
         "general": "Generale",
         "solutions": "Soluzioni",
@@ -136,40 +271,40 @@
     },
     "math": {
       "name": "Matematica",
-      "description": "Calcolatori matematici"
+      "description": "Calcolatrici matematiche"
     },
     "music": {
       "name": "Musica",
-      "description": "Teoria musicale e strumenti audio",
+      "description": "Audio e musica",
       "comingSoon": "Calcolatori di musica prossimamente!"
     },
     "network": {
       "name": "Rete",
-      "description": "Calcolatori di rete e strumenti per indirizzi IP"
+      "description": "Strumenti di rete"
     },
     "photo": {
       "name": "Foto",
-      "description": "Calcolatori fotografici"
+      "description": "Strumenti fotografici"
     },
     "physics": {
       "name": "Fisica",
-      "description": "Convertitori unita fisiche"
+      "description": "Fisica e meccanica"
     },
     "realestate": {
       "name": "Immobiliare",
-      "description": "Calcolatori di valutazione immobiliare e mutui"
+      "description": "Mutui e affitti"
     },
     "video": {
       "name": "Video",
-      "description": "Calcolatori video e media"
+      "description": "Strumenti video"
     },
     "web": {
       "name": "Web",
-      "description": "Strumenti per sviluppo web"
+      "description": "Strumenti web e SEO"
     },
     "automotive": {
-      "name": "Automobilistico",
-      "description": "Calcolatori per carburante, pneumatici, manutenzione e finanziamento veicoli"
+      "name": "Automobile",
+      "description": "Calcolatrici per carburante, pneumatici, manutenzione e finanziamento"
     },
     "subcategories": {
       "date-time": "Data e Ora",
@@ -662,48 +797,48 @@
     },
     "mortgage": {
       "name": "Mutuo",
-      "description": "Calcola i pagamenti mensili, visualizza il piano di ammortamento e il tuo prestito",
-      "metaDescription": "Calcola i pagamenti del mutuo con piano di ammortamento"
+      "description": "Calcola pagamenti mensili e piano di ammortamento",
+      "metaDescription": "Calcolatore mutuo con ammortamento"
     },
     "compound-interest": {
       "name": "Interesse Composto",
-      "description": "Calcola l'interesse composto sugli investimenti con contributi regolari",
+      "description": "Calcola l'interesse composto per investimenti con contributi regolari",
       "metaDescription": "Calcola la crescita dell'interesse composto nel tempo"
     },
     "loan": {
       "name": "Prestito",
-      "description": "Calcola i pagamenti mensili per prestiti personali, auto o qualsiasi tipo di prestito",
-      "metaDescription": "Calcola i pagamenti e l'ammortamento del prestito"
+      "description": "Calcola pagamenti mensili per qualsiasi prestito",
+      "metaDescription": "Pagamenti prestito e ammortamento"
     },
     "retirement": {
       "name": "Pensione",
-      "description": "Pianifica la tua pensione con proiezioni di risparmio e pianificazione del reddito",
-      "metaDescription": "Pianifica i tuoi risparmi e il tuo reddito pensionistico"
+      "description": "Pianifica la pensione con proiezioni di risparmio",
+      "metaDescription": "Pianificazione pensionistica"
     },
     "tip": {
       "name": "Mancia",
-      "description": "Calcola la mancia e dividi il conto tra piu persone",
-      "metaDescription": "Calcola le mance e dividi i conti facilmente"
+      "description": "Calcola l'importo della mancia e dividi il conto",
+      "metaDescription": "Calcola la mancia"
     },
     "savings-goal": {
-      "name": "Obiettivo Risparmio",
-      "description": "Calcola quanto tempo ci vuole per raggiungere il tuo obiettivo di risparmio",
-      "metaDescription": "Pianifica i tuoi risparmi e raggiungi i tuoi obiettivi finanziari"
+      "name": "Obiettivo di Risparmio",
+      "description": "Calcola il tempo per raggiungere l'obiettivo",
+      "metaDescription": "Pianificazione risparmio"
     },
     "inflation": {
       "name": "Inflazione",
       "description": "Calcola l'impatto dell'inflazione sul potere d'acquisto",
-      "metaDescription": "Comprendi l'impatto dell'inflazione sul tuo denaro"
+      "metaDescription": "Impatto dell'inflazione"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calcola il ritorno sull'investimento e i rendimenti annualizzati",
-      "metaDescription": "Calcola i tuoi rendimenti di investimento"
+      "name": "Rendimento",
+      "description": "Calcola il rendimento degli investimenti",
+      "metaDescription": "Rendimento investimenti"
     },
     "break-even": {
       "name": "Punto di Pareggio",
-      "description": "Calcola il punto di pareggio per la tua attivita",
-      "metaDescription": "Trova il punto di pareggio della tua attivita"
+      "description": "Calcola il punto di pareggio",
+      "metaDescription": "Analisi pareggio"
     },
     "profit-margin": {
       "name": "Margine di Profitto",
@@ -1305,19 +1440,19 @@
       "metaDescription": "Calcolatore nutrizionale gratuito. Monitora calorie, proteine, carboidrati, grassi e altri valori nutrizionali per il cibo."
     },
     "fuel-efficiency": {
-      "name": "Calcolatore di efficienza del carburante",
-      "description": "Calcola il consumo di carburante in L/100km, km/L e MPG con stime di viaggio e costi",
-      "metaDescription": "Calcolatore gratuito di efficienza del carburante - conversioni L/100km, km/L, MPG, carburante necessario e stima dei costi annuali."
+      "name": "Efficienza Carburante",
+      "description": "Calcola l'efficienza carburante",
+      "metaDescription": "Strumento carburante"
     },
     "vehicle-financing": {
-      "name": "Calcolatore finanziamento veicolo",
-      "description": "Calcola i pagamenti di prestiti auto e leasing con confronto acquisto vs noleggio (CHF/EUR)",
-      "metaDescription": "Calcolatore gratuito finanziamento veicolo - prestiti auto, leasing e confronto acquisto vs noleggio. Supporto CHF e EUR con IVA svizzera."
+      "name": "Finanziamento Veicoli",
+      "description": "Strumento calcolo finanziamento veicoli",
+      "metaDescription": "Calcolatore finanziamento veicoli"
     },
     "tire-sizing": {
-      "name": "Calcolatore dimensioni pneumatici",
-      "description": "Calcola le dimensioni degli pneumatici, confronta le misure e verifica l'errore del tachimetro",
-      "metaDescription": "Calcolatore gratuito dimensioni pneumatici - dimensioni, confronto, errore tachimetro. Supporta la notazione metrica europea (205/55R16)."
+      "name": "Dimensione Pneumatici",
+      "description": "Strumento cambio dimensione pneumatici",
+      "metaDescription": "Calcolatore dimensione pneumatici"
     },
     "maintenance-intervals": {
       "name": "Calcolatore intervalli di manutenzione",
@@ -1387,6 +1522,21 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "Prestito Auto",
+      "description": "Calcola pagamenti prestito auto",
+      "metaDescription": "Calcolatore prestito auto"
+    },
+    "lease": {
+      "name": "Leasing",
+      "description": "Calcola pagamenti leasing auto",
+      "metaDescription": "Calcolatore leasing"
+    },
+    "trade-in": {
+      "name": "Permuta",
+      "description": "Calcola il valore di permuta",
+      "metaDescription": "Calcolatore permuta"
     }
   },
   "calculator": {
@@ -2933,7 +3083,31 @@
       "angleA": "Angolo A",
       "angleB": "Angolo B",
       "angleC": "Angolo C",
-      "area": "Area",
+      "area": {
+        "steps": {
+          "rectangleFormula": "Rectangle Formula",
+          "rectangleResult": "Rectangle Result",
+          "squareFormula": "Square Formula",
+          "squareResult": "Square Result",
+          "triangleFormula": "Triangle Formula",
+          "triangleResult": "Triangle Result",
+          "circleFormula1": "Circle Formula1",
+          "circleFormula2": "Circle Formula2: {radiusSquared}",
+          "circleResult": "Circle Result: {area}",
+          "trapezoidFormula1": "Trapezoid Formula1",
+          "trapezoidFormula2": "Trapezoid Formula2: {sum}",
+          "trapezoidResult": "Trapezoid Result",
+          "parallelogramFormula": "Parallelogram Formula",
+          "parallelogramResult": "Parallelogram Result",
+          "ellipseFormula": "Ellipse Formula",
+          "ellipseResult": "Ellipse Result: {area}",
+          "sectorFormula1": "Sector Formula1",
+          "sectorFormula2": "Sector Formula2: {ratio} {piRSquared}",
+          "sectorResult": "Sector Result: {area}",
+          "rhombusFormula": "Rhombus Formula",
+          "rhombusResult": "Rhombus Result"
+        }
+      },
       "perimeter": "Perimetro",
       "radius": "Raggio",
       "diameter": "Diametro",
@@ -2957,24 +3131,162 @@
       "cylinder": "Cilindro",
       "cone": "Cono",
       "pyramid": "Piramide",
-      "volume": "Volume",
-      "surfaceArea": "Superficie",
+      "volume": {
+        "steps": {
+          "cubeVSubstitute": "Cube V Substitute",
+          "cubeVResult": "Cube V Result",
+          "rectVSubstitute": "Rect V Substitute",
+          "rectVResult": "Rect V Result",
+          "sphereVSubstitute": "Sphere V Substitute",
+          "sphereVCubed": "Sphere V Cubed: {radiusCubed}",
+          "sphereVResult": "Sphere V Result: {volume}",
+          "cylVSubstitute": "Cyl V Substitute",
+          "cylVSquared": "Cyl V Squared: {radiusSquared}",
+          "cylVResult": "Cyl V Result: {volume}",
+          "coneVSubstitute": "Cone V Substitute",
+          "coneVResult": "Cone V Result: {volume}",
+          "pyrVSubstitute": "Pyr V Substitute",
+          "pyrVResult": "Pyr V Result: {volume}",
+          "prismVSubstitute": "Prism V Substitute",
+          "prismVResult": "Prism V Result",
+          "torusVSubstitute": "Torus V Substitute",
+          "torusVResult": "Torus V Result: {volume}"
+        }
+      },
+      "surfaceArea": {
+        "steps": {
+          "cubeSide": "Cube Side",
+          "cubeFormula": "Cube Formula",
+          "cubeSubstitute": "Cube Substitute",
+          "cubeSquared": "Cube Squared: {squared}",
+          "cubeResult": "Cube Result",
+          "rectDimensions": "Rect Dimensions",
+          "rectFormula": "Rect Formula",
+          "rectSubstitute": "Rect Substitute",
+          "rectProducts": "Rect Products: {lw} {wh} {hl}",
+          "rectResult": "Rect Result",
+          "sphereRadius": "Sphere Radius",
+          "sphereFormula": "Sphere Formula",
+          "sphereSubstitute": "Sphere Substitute",
+          "sphereSquared": "Sphere Squared: {squared}",
+          "sphereResult": "Sphere Result: {totalSurfaceArea}",
+          "cylDimensions": "Cyl Dimensions",
+          "cylLateral": "Cyl Lateral: {lateralSurfaceArea}",
+          "cylBase": "Cyl Base: {baseSurfaceArea}",
+          "cylFormula": "Cyl Formula",
+          "cylResult": "Cyl Result: {totalSurfaceArea}",
+          "coneDimensions": "Cone Dimensions",
+          "coneLateral": "Cone Lateral: {lateralSurfaceArea}",
+          "coneBase": "Cone Base: {baseSurfaceArea}",
+          "coneFormula": "Cone Formula",
+          "coneResult": "Cone Result: {totalSurfaceArea}",
+          "pyrDimensions": "Pyr Dimensions",
+          "pyrBase": "Pyr Base",
+          "pyrLateralSubstitute": "Pyr Lateral Substitute",
+          "pyrLateralResult": "Pyr Lateral Result",
+          "pyrTotal": "Pyr Total",
+          "triPrismBaseDims": "Tri Prism Base Dims",
+          "triPrismLength": "Tri Prism Length",
+          "triPrismBaseArea": "Tri Prism Base Area",
+          "triPrismLateralSubstitute": "Tri Prism Lateral Substitute: {s2} {s3}",
+          "triPrismLateralResult": "Tri Prism Lateral Result: {lateralSurfaceArea}",
+          "triPrismTotal": "Tri Prism Total: {totalSurfaceArea}",
+          "hemiRadius": "Hemi Radius",
+          "hemiCurved": "Hemi Curved: {lateralSurfaceArea}",
+          "hemiBase": "Hemi Base: {baseSurfaceArea}",
+          "hemiTotal": "Hemi Total: {totalSurfaceArea}"
+        }
+      },
       "lateralArea": "Superficie laterale",
       "point1X": "Punto 1 X",
       "point1Y": "Punto 1 Y",
       "point2X": "Punto 2 X",
       "point2Y": "Punto 2 Y",
-      "slope": "Pendenza",
+      "slope": {
+        "steps": {
+          "point1": "Point1",
+          "point2": "Point2",
+          "verticalLine": "Vertical Line",
+          "slopeCalc": "Slope Calc",
+          "yInterceptCalc": "Y Intercept Calc",
+          "givenSlopeIntercept": "Given Slope Intercept",
+          "givenPointSlope": "Given Point Slope",
+          "pointSlopeYIntercept": "Point Slope Y Intercept",
+          "xIntercept": "X Intercept",
+          "distance": "Distance: {distance}",
+          "midpoint": "Midpoint: {x} {y}"
+        }
+      },
       "yInterceptValue": "Intercetta Y",
       "slopeInterceptForm": "Forma pendenza-intercetta",
       "pointSlopeForm": "Forma punto-pendenza",
-      "distance": "Distanza",
+      "distance": {
+        "steps": {
+          "twoPoints2DPoint1": "Two Points2 D Point1: {x} {y}",
+          "twoPoints2DPoint2": "Two Points2 D Point2: {x} {y}",
+          "twoPoints2DDx": "Two Points2 D Dx",
+          "twoPoints2DDy": "Two Points2 D Dy",
+          "twoPoints2DFormula1": "Two Points2 D Formula1",
+          "twoPoints2DFormula2": "Two Points2 D Formula2: {dxSquared} {dySquared}",
+          "twoPoints2DFormula3": "Two Points2 D Formula3: {sum}",
+          "twoPoints2DResult": "Two Points2 D Result: {distance}",
+          "twoPoints2DMidpoint": "Two Points2 D Midpoint: {x} {y}",
+          "twoPoints3DPoint1": "Two Points3 D Point1: {x} {y} {z}",
+          "twoPoints3DPoint2": "Two Points3 D Point2: {x} {y} {z}",
+          "twoPoints3DDelta": "Two Points3 D Delta",
+          "twoPoints3DFormula1": "Two Points3 D Formula1",
+          "twoPoints3DFormula2": "Two Points3 D Formula2: {dxSquared} {dySquared} {dzSquared}",
+          "twoPoints3DResult": "Two Points3 D Result: {distance}",
+          "twoPoints3DMidpoint": "Two Points3 D Midpoint: {x} {y} {z}",
+          "pointToLinePoint": "Point To Line Point: {x} {y}",
+          "pointToLineLine": "Point To Line Line: {a} {b} {c}",
+          "pointToLineFormula1": "Point To Line Formula1: {a} {x} {b} {y} {c}",
+          "pointToLineFormula2": "Point To Line Formula2: {numerator} {denomSquared}",
+          "pointToLineFormula3": "Point To Line Formula3: {denominator}",
+          "pointToLineResult": "Point To Line Result: {distance}",
+          "manhattanPoint1": "Manhattan Point1: {x} {y}",
+          "manhattanPoint2": "Manhattan Point2: {x} {y}",
+          "manhattanFormula1": "Manhattan Formula1",
+          "manhattanFormula2": "Manhattan Formula2",
+          "manhattanResult": "Manhattan Result",
+          "manhattanNote": "Manhattan Note",
+          "haversineLocation1": "Haversine Location1: {lat} {lon}",
+          "haversineLocation2": "Haversine Location2: {lat} {lon}",
+          "haversineConverting": "Haversine Converting",
+          "haversinePhi": "Haversine Phi: {phi1} {phi2}",
+          "haversineDelta": "Haversine Delta: {deltaPhi} {deltaLambda}",
+          "haversineA": "Haversine A: {a}",
+          "haversineC": "Haversine C: {a} {oneMinusA} {c}",
+          "haversineDistanceKm": "Haversine Distance Km: {radius} {c} {distance}",
+          "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
+          "haversineBearing": "Haversine Bearing: {bearing}"
+        }
+      },
       "midpoint": "Punto medio",
       "standardDeviation": "Deviazione standard",
       "variance": "Varianza",
       "populationStdDev": "Dev. standard popolazione",
       "sampleStdDev": "Dev. standard campione",
-      "probability": "Probabilità",
+      "probability": {
+        "steps": {
+          "singleResult": "Single Result",
+          "andFormula": "And Formula",
+          "andResult": "And Result",
+          "orFormula": "Or Formula",
+          "orResult": "Or Result",
+          "condFormula": "Cond Formula",
+          "condResult": "Cond Result",
+          "compFormula": "Comp Formula",
+          "compResult": "Comp Result",
+          "binomCoeff": "Binom Coeff",
+          "binomFormula": "Binom Formula: {expK} {expNk}",
+          "binomResult": "Binom Result",
+          "permFormula": "Perm Formula: {nMinusR}",
+          "permResult": "Perm Result",
+          "combFormula": "Comb Formula: {nMinusR}",
+          "combResult": "Comb Result"
+        }
+      },
       "favorableOutcomes": "Esiti favorevoli",
       "totalOutcomes": "Esiti totali",
       "odds": "Quote",
@@ -2989,11 +3301,51 @@
       "quantity": "Quantità",
       "generate": "Genera",
       "randomNumbers": "Numeri casuali",
-      "ratio": "Rapporto",
+      "ratio": {
+        "steps": {
+          "originalRatio": "Original Ratio",
+          "gcd": "Gcd: {gcd}",
+          "simplified": "Simplified: {a} {b}",
+          "scaledByFactor": "Scaled By Factor: {a} {b}",
+          "scaledToTarget": "Scaled To Target: {a} {b}",
+          "findMissingD": "Find Missing D",
+          "findMissingDResult": "Find Missing D Result",
+          "findMissingC": "Find Missing C",
+          "findMissingCResult": "Find Missing C Result",
+          "compareIntro": "Compare Intro",
+          "compareRatio1": "Compare Ratio1: {ratio}",
+          "compareRatio2": "Compare Ratio2: {ratio}",
+          "compareResult": "Compare Result"
+        }
+      },
       "antecedent": "Antecedente",
       "consequent": "Conseguente",
       "simplifiedRatio": "Rapporto semplificato",
-      "scientificNotation": "Notazione scientifica",
+      "scientificNotation": {
+        "steps": {
+          "originalNumber": "Original Number: {number}",
+          "moveDecimal": "Move Decimal: {places} {direction}",
+          "mantissa": "Mantissa: {mantissa}",
+          "exponent": "Exponent",
+          "fromSciInput": "From Sci Input",
+          "fromSciExpanded": "From Sci Expanded: {power}",
+          "fromSciResult": "From Sci Result",
+          "opAddInput": "Op Add Input",
+          "opAddExpanded": "Op Add Expanded",
+          "opAddResult": "Op Add Result: {result}",
+          "opSubInput": "Op Sub Input",
+          "opSubExpanded": "Op Sub Expanded",
+          "opSubResult": "Op Sub Result: {result}",
+          "opMulInput": "Op Mul Input",
+          "opMulExpanded": "Op Mul Expanded",
+          "opMulProduct": "Op Mul Product: {product} {exponent}",
+          "opMulResult": "Op Mul Result: {result}",
+          "opDivInput": "Op Div Input",
+          "opDivExpanded": "Op Div Expanded",
+          "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
+          "opDivResult": "Op Div Result: {result}"
+        }
+      },
       "coefficient": "Coefficiente",
       "mantissa": "Mantissa",
       "engineeringNotation": "Notazione ingegneristica",
@@ -3011,13 +3363,105 @@
       "remainder": "Resto",
       "divisionSteps": "Passaggi divisione",
       "confidenceLevel": "Livello di confidenza",
-      "sampleSize": "Dimensione campione",
+      "sampleSize": {
+        "steps": {
+          "propConfidence": "Prop Confidence",
+          "propMargin": "Prop Margin: {marginOfError}",
+          "propProportion": "Prop Proportion",
+          "propFormula": "Prop Formula",
+          "propSubstitute": "Prop Substitute: {zSquared} {pq} {eSquared}",
+          "propNumerator": "Prop Numerator: {numerator} {denominator}",
+          "propResult": "Prop Result",
+          "propFpcIntro": "Prop Fpc Intro",
+          "propFpcResult": "Prop Fpc Result",
+          "meanConfidence": "Mean Confidence",
+          "meanStdDev": "Mean Std Dev",
+          "meanMargin": "Mean Margin",
+          "meanFormula": "Mean Formula",
+          "meanSubstitute": "Mean Substitute: {ratio}",
+          "meanResult": "Mean Result",
+          "meanFpcIntro": "Mean Fpc Intro",
+          "meanFpcResult": "Mean Fpc Result",
+          "fromMoESampleSize": "From Mo E Sample Size",
+          "fromMoEConfidence": "From Mo E Confidence",
+          "fromMoEProportion": "From Mo E Proportion",
+          "fromMoEFormula": "From Mo E Formula",
+          "fromMoESubstitute": "From Mo E Substitute: {pqOverN}",
+          "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
+          "fromMoEResult": "From Mo E Result: {marginOfError}"
+        }
+      },
       "marginOfError": "Margine di errore",
-      "confidenceInterval": "Intervallo di confidenza",
+      "confidenceInterval": {
+        "steps": {
+          "meanSampleMean": "Mean Sample Mean",
+          "meanSampleSize": "Mean Sample Size",
+          "meanStdDev": "Mean Std Dev",
+          "meanStandardError": "Mean Standard Error: {standardError}",
+          "meanCriticalValue": "Mean Critical Value: {criticalValue}",
+          "proportionSuccesses": "Proportion Successes",
+          "proportionSampleSize": "Proportion Sample Size",
+          "proportionSampleProportion": "Proportion Sample Proportion: {proportion}",
+          "proportionStandardError": "Proportion Standard Error: {proportion} {q} {standardError}",
+          "proportionCriticalValue": "Proportion Critical Value: {criticalValue}",
+          "differenceSample1": "Difference Sample1: {mean} {n} {stdDev}",
+          "differenceSample2": "Difference Sample2: {mean} {n} {stdDev}",
+          "differencePointEstimate": "Difference Point Estimate: {pointEstimate}",
+          "differenceStandardError": "Difference Standard Error: {standardError}",
+          "differenceDf": "Difference Df",
+          "differenceCriticalValue": "Difference Critical Value: {criticalValue}",
+          "marginOfError": "Margin Of Error: {criticalValue} {standardError} {marginOfError}",
+          "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
+          "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
+        }
+      },
       "lowerBound": "Limite inferiore",
       "upperBound": "Limite superiore",
-      "zScore": "Punteggio Z",
-      "pValue": "Valore P",
+      "zScore": {
+        "steps": {
+          "calcValue": "Calc Value",
+          "calcMean": "Calc Mean",
+          "calcStdDev": "Calc Std Dev",
+          "calcZFormula": "Calc Z Formula",
+          "calcZSubstitute": "Calc Z Substitute",
+          "calcZNumerator": "Calc Z Numerator: {numerator}",
+          "calcZResult": "Calc Z Result: {zScore}",
+          "fromZValue": "From Z Value",
+          "fromZMean": "From Z Mean",
+          "fromZStdDev": "From Z Std Dev",
+          "fromZXFormula": "From Z X Formula",
+          "fromZXSubstitute": "From Z X Substitute",
+          "fromZXProduct": "From Z X Product: {product}",
+          "fromZXResult": "From Z X Result: {value}",
+          "probPercentile": "Prob Percentile",
+          "probZScoreForPercentile": "Prob Z Score For Percentile: {zScore}",
+          "probValueAtPercentile": "Prob Value At Percentile: {value}",
+          "probBelow": "Prob Below: {zScore} {probability}",
+          "probAbove": "Prob Above: {zScore} {probability}",
+          "probBetween": "Prob Between: {zScore} {probability}"
+        }
+      },
+      "pValue": {
+        "steps": {
+          "zTestStat": "Z Test Stat",
+          "zOneTail": "Z One Tail: {oneTailP}",
+          "zTwoTailed": "Z Two Tailed: {oneTailP} {pValue}",
+          "tTestStat": "T Test Stat",
+          "tDof": "T Dof",
+          "tOneTail": "T One Tail: {oneTailP}",
+          "tTwoTailed": "T Two Tailed: {oneTailP} {pValue}",
+          "chiTestStat": "Chi Test Stat",
+          "chiDof": "Chi Dof",
+          "chiResult": "Chi Result: {pValue}",
+          "fTestStat": "F Test Stat",
+          "fDof1": "F Dof1",
+          "fDof2": "F Dof2",
+          "fResult": "F Result: {pValue}",
+          "sigAt05": "Sig At05: {significant}",
+          "sigAt01": "Sig At01: {significant}",
+          "sigAt001": "Sig At001: {significant}"
+        }
+      },
       "significanceLevel": "Livello di significatività",
       "permutation": "Permutazione",
       "combination": "Combinazione",
@@ -3042,7 +3486,41 @@
       "determinant": "Determinante",
       "inverse": "Inversa",
       "matrixResult": "Matrice risultato",
-      "halfLife": "Tempo di dimezzamento",
+      "halfLife": {
+        "steps": {
+          "decayInitialAmount": "Decay Initial Amount",
+          "decayHalfLife": "Decay Half Life",
+          "decayTime": "Decay Time",
+          "decayDecayConstant": "Decay Decay Constant: {decayConstant}",
+          "decayFormula1": "Decay Formula1",
+          "decayFormula2": "Decay Formula2: {exponent}",
+          "decayResult": "Decay Result: {remainingAmount}",
+          "remainingInitialAmount": "Remaining Initial Amount",
+          "remainingRemainingAmount": "Remaining Remaining Amount",
+          "remainingHalfLife": "Remaining Half Life",
+          "remainingFormula1": "Remaining Formula1",
+          "remainingFormula2": "Remaining Formula2: {ratio}",
+          "remainingFormula3": "Remaining Formula3: {logValue}",
+          "remainingResult": "Remaining Result: {time}",
+          "findHalfLifeInitialAmount": "Find Half Life Initial Amount",
+          "findHalfLifeRemainingAmount": "Find Half Life Remaining Amount",
+          "findHalfLifeTime": "Find Half Life Time",
+          "findHalfLifeFormula1": "Find Half Life Formula1",
+          "findHalfLifeFormula2": "Find Half Life Formula2: {ln2} {logValue}",
+          "findHalfLifeResult": "Find Half Life Result: {halfLife}",
+          "findTimeHalfLife": "Find Time Half Life",
+          "findTimeDecayConstant": "Find Time Decay Constant: {decayConstant}",
+          "findTimeFraction": "Find Time Fraction: {percent}",
+          "findTimeFormula": "Find Time Formula: {fraction} {decayConstant}",
+          "findTimeResult": "Find Time Result: {time}",
+          "carbon14HalfLife": "Carbon14 Half Life: {halfLife}",
+          "carbon14DecayConstant": "Carbon14 Decay Constant: {halfLife} {decayConstant}",
+          "carbon14PercentRemaining": "Carbon14 Percent Remaining: {percent}",
+          "carbon14Formula": "Carbon14 Formula: {fraction} {decayConstant}",
+          "carbon14Result": "Carbon14 Result: {age}",
+          "carbon14Note": "Carbon14 Note"
+        }
+      },
       "initialQuantity": "Quantità iniziale",
       "timeElapsed": "Tempo trascorso",
       "decayConstant": "Costante di decadimento",
@@ -3057,7 +3535,26 @@
       "bigNumberOperation": "Operazione",
       "expression": "Espressione",
       "evaluate": "Valuta",
-      "bigNumber": "Grandi Numeri",
+      "bigNumber": {
+        "steps": {
+          "addIntro": "Add Intro",
+          "addResult": "Add Result",
+          "subtractIntro": "Subtract Intro",
+          "subtractResult": "Subtract Result",
+          "multiplyIntro": "Multiply Intro",
+          "multiplyDigitCount": "Multiply Digit Count: {count}",
+          "multiplyResult": "Multiply Result",
+          "divideIntro": "Divide Intro",
+          "divideQuotient": "Divide Quotient",
+          "divideRemainder": "Divide Remainder: {remainder}",
+          "powerIntro": "Power Intro",
+          "powerDigitCount": "Power Digit Count: {count}",
+          "factorialIntro": "Factorial Intro",
+          "factorialExpansion": "Factorial Expansion",
+          "factorialDigitCount": "Factorial Digit Count: {count}",
+          "compareResult": "Compare Result: {comparison}"
+        }
+      },
       "calculate": "Calcola",
       "every": "Ogni",
       "or": "o",
@@ -3066,11 +3563,81 @@
       "diceRoll": "Lancio Dadi",
       "enterNumbers": "Inserisci Numeri",
       "generatorMode": "Modalita Generatore",
-      "matrix": "Matrici",
+      "matrix": {
+        "steps": {
+          "matrixA": "Matrix A: {rows} {cols}",
+          "matrixAContent": "Matrix A Content: {content}",
+          "addMatrixB": "Add Matrix B: {rows} {cols}",
+          "addMatrixBContent": "Add Matrix B Content: {content}",
+          "addResult": "Add Result",
+          "addResultContent": "Add Result Content: {content}",
+          "subMatrixB": "Sub Matrix B: {rows} {cols}",
+          "subMatrixBContent": "Sub Matrix B Content: {content}",
+          "subResult": "Sub Result",
+          "subResultContent": "Sub Result Content: {content}",
+          "mulMatrixB": "Mul Matrix B: {rows} {cols}",
+          "mulMatrixBContent": "Mul Matrix B Content: {content}",
+          "mulResultDims": "Mul Result Dims: {rows} {cols}",
+          "mulFormula": "Mul Formula",
+          "mulResultContent": "Mul Result Content: {content}",
+          "transposeIntro": "Transpose Intro",
+          "transposeResultDims": "Transpose Result Dims: {rows} {cols}",
+          "transposeResultContent": "Transpose Result Content: {content}",
+          "scalarValue": "Scalar Value",
+          "scalarIntro": "Scalar Intro",
+          "scalarResultContent": "Scalar Result Content: {content}",
+          "detCalculating": "Det Calculating",
+          "det2x2Formula": "Det2x2 Formula",
+          "det2x2Substitute": "Det2x2 Substitute: {a11} {a22} {a12} {a21}",
+          "det3x3Method": "Det3x3 Method",
+          "detResult": "Det Result",
+          "detInvertible": "Det Invertible: {status}",
+          "invDet": "Inv Det",
+          "invFormula": "Inv Formula",
+          "invResultContent": "Inv Result Content: {content}",
+          "invVerification": "Inv Verification"
+        }
+      },
       "maximum": "Massimo",
       "minimum": "Minimo",
       "multipleNumbers": "Numeri Multipli",
-      "numberSequence": "Sequenza Numerica",
+      "numberSequence": {
+        "steps": {
+          "arithFirstTerm": "Arith First Term",
+          "arithDiff": "Arith Diff",
+          "arithNumTerms": "Arith Num Terms",
+          "arithNthFormula": "Arith Nth Formula",
+          "arithSumFormula": "Arith Sum Formula",
+          "arithSum": "Arith Sum: {first} {last}",
+          "arithNth": "Arith Nth",
+          "geoConverges": "Geo Converges",
+          "geoLimit": "Geo Limit",
+          "geoFirstTerm": "Geo First Term",
+          "geoRatio": "Geo Ratio",
+          "geoNumTerms": "Geo Num Terms",
+          "geoNthFormula": "Geo Nth Formula",
+          "geoSum": "Geo Sum: {sum}",
+          "geoNth": "Geo Nth: {exponent}",
+          "fibIntro": "Fib Intro",
+          "fibStart": "Fib Start",
+          "fibFormula": "Fib Formula",
+          "fibSum": "Fib Sum",
+          "fibGoldenRatio": "Fib Golden Ratio: {goldenRatio}",
+          "fibNth": "Fib Nth",
+          "customArith": "Custom Arith: {diff}",
+          "customGeo": "Custom Geo: {ratio}",
+          "customFib": "Custom Fib",
+          "customUnknown": "Custom Unknown",
+          "customSum": "Custom Sum",
+          "fpAnalyzing": "Fp Analyzing: {sequence}",
+          "fpArithPattern": "Fp Arith Pattern",
+          "fpArithDiff": "Fp Arith Diff: {diff}",
+          "fpGeoPattern": "Fp Geo Pattern",
+          "fpGeoRatio": "Fp Geo Ratio: {ratio}",
+          "fpFibPattern": "Fp Fib Pattern",
+          "fpUnknownPattern": "Fp Unknown Pattern"
+        }
+      },
       "numbersHelp": "Inserisci numeri interi separati da virgole, spazi o nuove righe",
       "populationOrSample": "Popolazione o Campione",
       "randomFloat": "Decimale Casuale",
@@ -3169,7 +3736,171 @@
       "azimuth": "Azimut",
       "sunTimes": "Orari del Sole",
       "sunPosition": "Posizione del Sole",
-      "currentPhase": "Fase di Luce Attuale"
+      "currentPhase": "Fase di Luce Attuale",
+      "basicCalculator": {
+        "steps": {
+          "constant": "Constant: {value}",
+          "operator": "Operator: {operator}",
+          "function": "Function: {fn} {input}",
+          "expression": "Expression",
+          "angleMode": "Angle Mode",
+          "result": "Result: {result}",
+          "error": "Error: {message} {message}"
+        }
+      },
+      "binary": {
+        "steps": {
+          "decimalToBinaryIntro": "Decimal To Binary Intro",
+          "decimalToBinaryDivision": "Decimal To Binary Division: {value} {quotient} {remainder}",
+          "decimalToBinaryResult": "Decimal To Binary Result",
+          "binaryToDecimalIntro": "Binary To Decimal Intro",
+          "binaryToDecimalPosition": "Binary To Decimal Position: {position} {power} {result}",
+          "binaryToDecimalSum": "Binary To Decimal Sum: {terms}",
+          "binaryOpNot": "Binary Op Not",
+          "binaryOpAdd": "Binary Op Add: {binaryA} {binaryB} {result}",
+          "binaryOpSubtract": "Binary Op Subtract: {binaryA} {binaryB} {result}",
+          "binaryOpMultiply": "Binary Op Multiply: {binaryA} {binaryB} {result}",
+          "binaryOpAnd": "Binary Op And: {binaryA} {binaryB} {result}",
+          "binaryOpOr": "Binary Op Or: {binaryA} {binaryB} {result}",
+          "binaryOpXor": "Binary Op Xor: {binaryA} {binaryB} {result}"
+        }
+      },
+      "factor": {
+        "steps": {
+          "findingFactors": "Finding Factors",
+          "factors": "Factors: {factors}",
+          "primeFactorization": "Prime Factorization: {factorization}",
+          "factorsOf2": "Factors Of2: {factors}",
+          "commonFactors": "Common Factors: {factors}",
+          "gcf": "Gcf: {gcf}"
+        }
+      },
+      "fraction": {
+        "steps": {
+          "simplifyOriginal": "Simplify Original: {numerator} {denominator}",
+          "addExpression": "Add Expression: {n1} {d1} {n2} {d2}",
+          "addCommonDenominator": "Add Common Denominator: {n1Converted} {commonDen} {n2Converted}",
+          "addResult": "Add Result: {numerator} {denominator}",
+          "subtractExpression": "Subtract Expression: {n1} {d1} {n2} {d2}",
+          "subtractResult": "Subtract Result: {numerator} {denominator}",
+          "multiplyExpression": "Multiply Expression: {n1} {d1} {n2} {d2}",
+          "multiplyResult": "Multiply Result: {numerator} {denominator}",
+          "divideExpression": "Divide Expression: {n1} {d1} {n2} {d2}",
+          "divideInvert": "Divide Invert: {n1} {d1} {n2} {d2}",
+          "divideResult": "Divide Result: {numerator} {denominator}",
+          "toDecimalResult": "To Decimal Result: {numerator} {denominator} {decimal}",
+          "toFractionResult": "To Fraction Result: {numerator} {denominator}",
+          "simplifiedResult": "Simplified Result: {numerator} {denominator}"
+        }
+      },
+      "hex": {
+        "steps": {
+          "decimalToHexIntro": "Decimal To Hex Intro",
+          "decimalToHexDivision": "Decimal To Hex Division: {value} {quotient}",
+          "decimalToHexResult": "Decimal To Hex Result",
+          "hexToDecimalIntro": "Hex To Decimal Intro",
+          "hexToDecimalPosition": "Hex To Decimal Position: {position} {power} {result}",
+          "hexToDecimalSum": "Hex To Decimal Sum: {terms}",
+          "hexOpAdd": "Hex Op Add: {hexA} {hexB} {result}",
+          "hexOpSubtract": "Hex Op Subtract: {hexA} {hexB} {result}",
+          "hexOpMultiply": "Hex Op Multiply: {hexA} {hexB} {result}",
+          "hexOpAnd": "Hex Op And: {hexA} {hexB} {result}",
+          "hexOpOr": "Hex Op Or: {hexA} {hexB} {result}",
+          "hexOpXor": "Hex Op Xor: {hexA} {hexB} {result}",
+          "hexToRgbIntro": "Hex To Rgb Intro",
+          "hexToRgbR": "Hex To Rgb R: {hexPart} {value}",
+          "hexToRgbG": "Hex To Rgb G: {hexPart} {value}",
+          "hexToRgbB": "Hex To Rgb B: {hexPart} {value}",
+          "rgbToHexIntro": "Rgb To Hex Intro",
+          "rgbToHexR": "Rgb To Hex R: {value} {hex}",
+          "rgbToHexG": "Rgb To Hex G: {value} {hex}",
+          "rgbToHexB": "Rgb To Hex B: {value} {hex}"
+        }
+      },
+      "permutationCombination": {
+        "steps": {
+          "permIntro": "Perm Intro",
+          "permFormula": "Perm Formula",
+          "permSimplified": "Perm Simplified: {nMinusR}",
+          "permFactorials": "Perm Factorials",
+          "permResult": "Perm Result",
+          "combIntro": "Comb Intro",
+          "combFormula": "Comb Formula",
+          "combSimplified": "Comb Simplified: {nMinusR}",
+          "combFactorials": "Comb Factorials",
+          "combResult": "Comb Result",
+          "permRepIntro": "Perm Rep Intro",
+          "permRepFormula": "Perm Rep Formula",
+          "permRepResult": "Perm Rep Result",
+          "combRepIntro": "Comb Rep Intro",
+          "combRepFormula": "Comb Rep Formula",
+          "combRepSimplified": "Comb Rep Simplified: {nPlusRMinus1}",
+          "combRepResult": "Comb Rep Result"
+        }
+      },
+      "quadratic": {
+        "steps": {
+          "equation": "Equation",
+          "discriminant": "Discriminant",
+          "twoRealRoots": "Two Real Roots",
+          "root1": "Root1: {x}",
+          "root2": "Root2: {x}",
+          "oneRealRoot": "One Real Root",
+          "repeatedRoot": "Repeated Root: {x}",
+          "complexRoots": "Complex Roots",
+          "complexRootResult": "Complex Root Result: {real} {imaginary}",
+          "vertex": "Vertex: {x} {y}",
+          "yIntercept": "Y Intercept",
+          "parabolaDirection": "Parabola Direction: {direction} {comparison}"
+        }
+      },
+      "rounding": {
+        "steps": {
+          "originalNumber": "Original Number",
+          "roundMultiply": "Round Multiply: {product}",
+          "roundRound": "Round Round: {value}",
+          "roundDivide": "Round Divide: {result}",
+          "ceilMultiply": "Ceil Multiply: {product}",
+          "ceilCeil": "Ceil Ceil: {value}",
+          "ceilDivide": "Ceil Divide: {result}",
+          "floorMultiply": "Floor Multiply: {product}",
+          "floorFloor": "Floor Floor: {value}",
+          "floorDivide": "Floor Divide: {result}",
+          "truncate": "Truncate: {result}",
+          "toFixed": "To Fixed: {result}",
+          "sigFigs": "Sig Figs",
+          "sigFigsResult": "Sig Figs Result: {result}"
+        }
+      },
+      "statistics": {
+        "steps": {
+          "dataset": "Dataset: {data}",
+          "count": "Count",
+          "sum": "Sum",
+          "mean": "Mean: {mean}",
+          "minMax": "Min Max",
+          "range": "Range",
+          "medianEven": "Median Even: {a} {b}",
+          "medianOdd": "Median Odd",
+          "noMode": "No Mode",
+          "mode": "Mode: {mode}",
+          "variance": "Variance: {sumOfSquares} {variance}",
+          "standardDeviation": "Standard Deviation: {variance} {standardDeviation}",
+          "standardError": "Standard Error: {standardDeviation} {standardError}",
+          "coefficientOfVariation": "Coefficient Of Variation: {coefficientOfVariation}",
+          "q1": "Q1: {q1}",
+          "q2": "Q2: {q2}",
+          "q3": "Q3: {q3}",
+          "iqr": "Iqr: {q3} {q1} {iqr}",
+          "skewness": "Skewness: {skewness}",
+          "negativelySkewed": "Negatively Skewed",
+          "positivelySkewed": "Positively Skewed",
+          "symmetric": "Symmetric",
+          "kurtosis": "Kurtosis: {kurtosis}",
+          "geometricMean": "Geometric Mean: {geometricMean}",
+          "harmonicMean": "Harmonic Mean: {harmonicMean}"
+        }
+      }
     },
     "color": {
       "colorConverter": "Convertitore Colore",
@@ -3881,7 +4612,13 @@
         "mostExpensive": "Piu costoso",
         "leastExpensive": "Meno costoso",
         "costBreakdown": "Ripartizione costi per ingrediente",
-        "calculationSteps": "Passaggi di calcolo"
+        "calculationSteps": "Passaggi di calcolo",
+        "steps": {
+          "noIngredientsAdded": "No Ingredients Added",
+          "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
+          "totalCost": "Total Cost: {totalCost}",
+          "costPerServing": "Cost Per Serving: {costPerServing}"
+        }
       },
       "recipeScaler": {
         "recipeInfo": "Informazioni sulla ricetta",
@@ -3938,6 +4675,26 @@
         "foodBreakdown": "Nutrizione per alimento",
         "food": "Alimento",
         "amount": "Quantità"
+      },
+      "cookingUnits": {
+        "steps": {
+          "volumeToMl": "Volume To Ml: {fromUnit} {ml}",
+          "mlToVolume": "Ml To Volume: {ml} {toUnit} {convertedAmount}",
+          "weightToGrams": "Weight To Grams: {fromUnit} {grams}",
+          "gramsToWeight": "Grams To Weight: {grams} {toUnit} {convertedAmount}",
+          "applyDensityToWeight": "Apply Density To Weight: {ingredientName} {ml} {grams}",
+          "applyDensityToVolume": "Apply Density To Volume: {ingredientName} {grams} {ml}"
+        }
+      },
+      "nutritionCalculator": {
+        "steps": {
+          "noFoodsSelected": "No Foods Selected",
+          "foodNotFoundWarning": "Food Not Found Warning: {foodId}",
+          "foodBreakdown": "Food Breakdown: {name} {calories} {protein} {carbs} {fat}",
+          "totalSeparator": "Total Separator",
+          "totalCalories": "Total Calories: {calories}",
+          "calorieBreakdown": "Calorie Breakdown: {proteinPercent} {carbsPercent} {fatPercent}"
+        }
       }
     },
     "health": {
@@ -4417,6 +5174,22 @@
           "Wood": "Legno",
           "Concrete": "Calcestruzzo",
           "Other": "Altro"
+        },
+        "steps": {
+          "materialInfo": "Material Info: {name}",
+          "sectionInfo": "Section Info: {name} {area_in2} {A_mm2} {I_in4} {momentOfInertiaX} {I_mm4}",
+          "endCondition": "End Condition",
+          "effectiveLength": "Effective Length: {effectiveLength} {KL_mm}",
+          "radiusOfGyration": "Radius Of Gyration: {I_mm4} {A_mm2} {r_mm}",
+          "slendernessRatio": "Slenderness Ratio: {KL_mm} {r_mm} {value}",
+          "eulerStress": "Euler Stress: {slenderness} {Fe_MPa}",
+          "criticalSlenderness": "Critical Slenderness: {value}",
+          "bucklingModeElastic": "Buckling Mode Elastic: {slenderness} {criticalSlenderness}",
+          "aiscCriticalStressElastic": "Aisc Critical Stress Elastic: {Fe_MPa} {Fcr_MPa}",
+          "bucklingModeInelastic": "Buckling Mode Inelastic: {slenderness} {criticalSlenderness}",
+          "aiscCriticalStressInelastic": "Aisc Critical Stress Inelastic: {Fe_MPa} {Fcr_MPa}",
+          "eulerCriticalLoad": "Euler Critical Load: {I_mm4} {KL_mm} {Pcr_kN}",
+          "aiscNominalStrength": "Aisc Nominal Strength: {Fcr_MPa} {A_mm2} {allowableLoad_kN}"
         }
       },
       "pipeFlow": {
@@ -4508,6 +5281,25 @@
           "Chemical": "Prodotto chimico",
           "Fuel": "Carburante",
           "Other": "Altro"
+        },
+        "steps": {
+          "pipeMaterialInfo": "Pipe Material Info: {name} {roughness}",
+          "fluidInfo": "Fluid Info: {name}",
+          "givenTitle": "Given Title",
+          "givenDiameter": "Given Diameter",
+          "givenLength": "Given Length",
+          "givenVelocity": "Given Velocity",
+          "reynoldsNumber": "Reynolds Number: {re}",
+          "flowRegimeLaminar": "Flow Regime Laminar: {re}",
+          "flowRegimeTransitional": "Flow Regime Transitional: {re}",
+          "flowRegimeTurbulent": "Flow Regime Turbulent: {re}",
+          "relativeRoughness": "Relative Roughness: {epsilon} {value}",
+          "frictionFactorLaminar": "Friction Factor Laminar: {re} {f}",
+          "swameeJainInitial": "Swamee Jain Initial: {f}",
+          "colebrookConverged": "Colebrook Converged: {f}",
+          "pressureDrop": "Pressure Drop: {f} {pressureDrop}",
+          "headLoss": "Head Loss: {pressureDrop} {headLoss}",
+          "flowRate": "Flow Rate: {area} {flowRate} {flowRateLpm}"
         }
       },
       "unitConverter": {
@@ -4529,6 +5321,111 @@
           "density": "Densità",
           "stress": "Sollecitazione",
           "torque": "Coppia"
+        },
+        "steps": {
+          "category": "Category: {name}",
+          "convertHeader": "Convert Header: {fromSymbol} {toSymbol}",
+          "step1Title": "Step1 Title",
+          "step1Calc": "Step1 Calc: {fromSymbol} {toBase} {baseValue} {baseSymbol}",
+          "step2Title": "Step2 Title",
+          "step2Calc": "Step2 Calc: {baseValue} {baseSymbol} {toBase} {result} {toSymbol}",
+          "conversionFactor": "Conversion Factor: {fromSymbol} {factor} {toSymbol}"
+        }
+      },
+      "beamDeflection": {
+        "steps": {
+          "givenTitle": "Given Title",
+          "givenBeamType": "Given Beam Type: {beamType}",
+          "givenLoadType": "Given Load Type: {loadType}",
+          "givenLength": "Given Length: {length}",
+          "givenYoungsModulus": "Given Youngs Modulus: {youngsModulus}",
+          "givenMomentOfInertia": "Given Moment Of Inertia: {I_mm4}",
+          "givenPointLoad": "Given Point Load: {pointLoad}",
+          "givenDistributedLoad": "Given Distributed Load: {distributedLoad} {w_Nmm}",
+          "formulasTitle": "Formulas Title",
+          "ssPointDeltaFormula": "Ss Point Delta Formula",
+          "ssPointMomentFormula": "Ss Point Moment Formula",
+          "ssPointShearFormula": "Ss Point Shear Formula",
+          "ssDistributedDeltaFormula": "Ss Distributed Delta Formula",
+          "ssDistributedMomentFormula": "Ss Distributed Moment Formula",
+          "ssDistributedShearFormula": "Ss Distributed Shear Formula",
+          "cantPointDeltaFormula": "Cant Point Delta Formula",
+          "cantPointMomentFormula": "Cant Point Moment Formula",
+          "cantPointShearFormula": "Cant Point Shear Formula",
+          "cantDistributedDeltaFormula": "Cant Distributed Delta Formula",
+          "cantDistributedMomentFormula": "Cant Distributed Moment Formula",
+          "cantDistributedShearFormula": "Cant Distributed Shear Formula",
+          "ffPointDeltaFormula": "Ff Point Delta Formula",
+          "ffPointMomentFormula": "Ff Point Moment Formula",
+          "ffPointShearFormula": "Ff Point Shear Formula",
+          "ffDistributedDeltaFormula": "Ff Distributed Delta Formula",
+          "ffDistributedMomentFormula": "Ff Distributed Moment Formula",
+          "ffDistributedShearFormula": "Ff Distributed Shear Formula",
+          "calculationsTitle": "Calculations Title",
+          "calcDeltaMax": "Calc Delta Max: {value}",
+          "calcMomentMax": "Calc Moment Max: {value}",
+          "calcShearMax": "Calc Shear Max: {value}",
+          "deflectionCriteriaTitle": "Deflection Criteria Title",
+          "criteriaL180": "Criteria L180: {value}",
+          "criteriaL240": "Criteria L240: {value}",
+          "criteriaL360": "Criteria L360: {value}",
+          "criteriaL600": "Criteria L600: {value}",
+          "criteriaActual": "Criteria Actual: {ratio} {deflection}"
+        }
+      },
+      "momentOfInertia": {
+        "steps": {
+          "standardSectionUsed": "Standard Section Used: {name}",
+          "standardSectionStandard": "Standard Section Standard: {standard}",
+          "standardSectionIx": "Standard Section Ix: {in4} {mm4}",
+          "standardSectionIy": "Standard Section Iy: {in4} {mm4}",
+          "rectangleHeader": "Rectangle Header: {width} {height}",
+          "rectangleIx": "Rectangle Ix: {width} {height} {ix}",
+          "rectangleIy": "Rectangle Iy: {height} {width} {iy}",
+          "circleHeader": "Circle Header: {diameter}",
+          "circleI": "Circle I: {diameter} {i}",
+          "hollowRectangleHeader": "Hollow Rectangle Header: {width} {height} {innerWidth} {innerHeight}",
+          "hollowRectangleIx": "Hollow Rectangle Ix: {ix}",
+          "hollowCircleHeader": "Hollow Circle Header: {diameter} {innerDiameter}",
+          "hollowCircleI": "Hollow Circle I: {i}",
+          "triangleHeader": "Triangle Header: {base} {height}",
+          "triangleIx": "Triangle Ix: {ix}",
+          "iBeamHeader": "I Beam Header: {depth} {flangeWidth} {flangeThickness} {webThickness}",
+          "iBeamMethod": "I Beam Method",
+          "channelHeader": "Channel Header: {depth} {width}",
+          "angleHeader": "Angle Header: {leg1} {leg2} {thickness}",
+          "parallelAxisTitle": "Parallel Axis Title",
+          "parallelAxisOffset": "Parallel Axis Offset: {dx} {dy}",
+          "parallelAxisIx": "Parallel Axis Ix: {ix}",
+          "parallelAxisIy": "Parallel Axis Iy: {iy}",
+          "areaResult": "Area Result: {area}",
+          "radiusOfGyrationX": "Radius Of Gyration X: {rx}",
+          "radiusOfGyrationY": "Radius Of Gyration Y: {ry}"
+        }
+      },
+      "stressStrain": {
+        "steps": {
+          "materialInfo": "Material Info: {name} {youngsModulus} {yieldStrength}",
+          "stressModeForceConvertTitle": "Stress Mode Force Convert Title",
+          "stressModeForceConvert": "Stress Mode Force Convert",
+          "stressModeCalcTitle": "Stress Mode Calc Title",
+          "stressModeCalc": "Stress Mode Calc: {stress}",
+          "stressModeStrainTitle": "Stress Mode Strain Title",
+          "stressModeStrainCalc": "Stress Mode Strain Calc: {stress} {strain}",
+          "strainModeStep1Title": "Strain Mode Step1 Title",
+          "strainModeCalc": "Strain Mode Calc: {strain}",
+          "strainModeStressTitle": "Strain Mode Stress Title",
+          "strainModeStressCalc": "Strain Mode Stress Calc: {strain} {stress}",
+          "ymModeStressTitle": "Ym Mode Stress Title",
+          "ymModeForceConvert": "Ym Mode Force Convert",
+          "ymModeStressCalc": "Ym Mode Stress Calc: {stress}",
+          "ymModeStrainTitle": "Ym Mode Strain Title",
+          "ymModeStrainCalc": "Ym Mode Strain Calc: {strain}",
+          "ymModeModulusTitle": "Ym Mode Modulus Title",
+          "ymModeModulusCalc": "Ym Mode Modulus Calc: {stress} {strain} {youngsModulus}",
+          "safetyFactorTitle": "Safety Factor Title",
+          "safetyFactorCalc": "Safety Factor Calc: {stress} {safetyFactor}",
+          "yieldWarning": "Yield Warning: {stress}"
         }
       }
     },
@@ -4662,6 +5559,110 @@
         "findV1": "Calcola il volume di soluzione madre necessario",
         "findV2": "Calcola il volume finale dopo la diluizione",
         "findM2": "Calcola la concentrazione finale dopo la diluizione"
+      },
+      "dilution": {
+        "steps": {
+          "initialMolarity": "Initial Molarity: {molarity}",
+          "finalMolarity": "Final Molarity: {molarity}",
+          "finalVolume": "Final Volume: {value}",
+          "initialVolumeCalc": "Initial Volume Calc: {m2} {v2} {m1} {result}",
+          "initialVolume": "Initial Volume: {value}",
+          "finalVolumeCalc": "Final Volume Calc: {m1} {v1} {m2} {result}",
+          "finalMolarityCalc": "Final Molarity Calc: {m1} {v1} {v2} {result}",
+          "dilutionFactor": "Dilution Factor: {value}",
+          "solventToAdd": "Solvent To Add: {value}",
+          "separator": "Separator",
+          "safetyWarning": "Safety Warning"
+        }
+      },
+      "molarity": {
+        "steps": {
+          "volumeL": "Volume L",
+          "volumeMl": "Volume Ml: {result}",
+          "volumeUl": "Volume Ul: {result}",
+          "mass": "Mass",
+          "molecularWeight": "Molecular Weight: {mw}",
+          "molesFromMass": "Moles From Mass: {mw} {result}",
+          "molesDirect": "Moles Direct",
+          "molarity": "Molarity: {moles} {volume} {result}",
+          "separator": "Separator",
+          "concentrationUnits": "Concentration Units",
+          "unitM": "Unit M: {value}",
+          "unitMm": "Unit Mm: {value}",
+          "unitUm": "Unit Um: {value}",
+          "unitNm": "Unit Nm: {value}"
+        }
+      },
+      "molecularWeight": {
+        "steps": {
+          "formula": "Formula",
+          "parsedComposition": "Parsed Composition: {composition}",
+          "elementMass": "Element Mass: {name} {atomicMass} {totalMass}",
+          "totalMolarMass": "Total Molar Mass: {value}",
+          "totalAtoms": "Total Atoms: {value}",
+          "separator": "Separator",
+          "compositionByMass": "Composition By Mass",
+          "compositionPercent": "Composition Percent: {name} {value}"
+        }
+      },
+      "ph": {
+        "steps": {
+          "givenH": "Given H: {value}",
+          "phFromH": "Ph From H: {value}",
+          "phValue": "Ph Value: {value}",
+          "pohFromPh": "Poh From Ph: {value}",
+          "ohFromPoh": "Oh From Poh: {value}",
+          "givenOh": "Given Oh: {value}",
+          "pohFromOh": "Poh From Oh: {value}",
+          "pohValue": "Poh Value: {value}",
+          "phFromPoh": "Ph From Poh: {value}",
+          "hFromPh": "H From Ph: {value}",
+          "givenPh": "Given Ph: {value}",
+          "givenPoh": "Given Poh: {value}",
+          "strongAcidIntro": "Strong Acid Intro",
+          "hValue": "H Value: {value}",
+          "phFromHValue": "Ph From H Value: {value}",
+          "ohFromKwH": "Oh From Kw H: {value}",
+          "strongBaseIntro": "Strong Base Intro",
+          "ohValue": "Oh Value: {value}",
+          "pohFromOhValue": "Poh From Oh Value: {value}",
+          "hFromKwOh": "H From Kw Oh: {value}",
+          "weakAcidIntro": "Weak Acid Intro: {name}",
+          "pKaValue": "P Ka Value: {value}",
+          "kaFromPka": "Ka From Pka: {value}",
+          "hFromKaC": "H From Ka C: {ka} {c}",
+          "hResult": "H Result: {value}",
+          "phResult": "Ph Result: {value}",
+          "weakBaseIntro": "Weak Base Intro: {name}",
+          "pKbValue": "P Kb Value: {value}",
+          "kbFromPkb": "Kb From Pkb: {value}",
+          "ohFromKbC": "Oh From Kb C: {kb} {c}",
+          "ohResult": "Oh Result: {value}",
+          "pohResult": "Poh Result: {value}",
+          "phFromPohResult": "Ph From Poh Result: {value}",
+          "bufferIntro": "Buffer Intro: {name}",
+          "hhEquation": "Hh Equation",
+          "pKaValueBuffer": "P Ka Value Buffer: {value}",
+          "baseConc": "Base Conc: {value}",
+          "acidConc": "Acid Conc: {value}",
+          "ratioValue": "Ratio Value: {value}",
+          "phBufferCalc": "Ph Buffer Calc: {pka} {ratio} {result}"
+        }
+      },
+      "stoichiometry": {
+        "steps": {
+          "equation": "Equation",
+          "separator": "Separator",
+          "step1MolarMasses": "Step1 Molar Masses",
+          "molarMass": "Molar Mass: {formula} {value}",
+          "step2Moles": "Step2 Moles",
+          "molesCalc": "Moles Calc: {formula} {mass} {molarMass} {result}",
+          "step3Limiting": "Step3 Limiting",
+          "ratioCalc": "Ratio Calc: {formula} {moles} {coefficient} {result}",
+          "limitingReactant": "Limiting Reactant: {formula}",
+          "step4Yield": "Step4 Yield",
+          "yieldCalc": "Yield Calc: {formula} {moles} {molarMass} {result}"
+        }
       }
     },
     "errors": {
@@ -4685,7 +5686,24 @@
       "formula": "Formula",
       "calculationSteps": "Passaggi di Calcolo",
       "recommendations": "Raccomandazioni",
-      "bdp": "Prodotto Banda-Ritardo",
+      "bdp": {
+        "steps": {
+          "bandwidth": "Bandwidth",
+          "rtt": "Rtt",
+          "windowSize": "Window Size: {windowBytes}",
+          "bdpFormula": "Bdp Formula",
+          "bdpSubstituted": "Bdp Substituted",
+          "bdpResult": "Bdp Result",
+          "bdpConverted": "Bdp Converted",
+          "maxThroughputFormula": "Max Throughput Formula",
+          "maxThroughputSubstituted": "Max Throughput Substituted",
+          "maxThroughputResult": "Max Throughput Result",
+          "requiredWindowFormula": "Required Window Formula",
+          "requiredWindowResult": "Required Window Result",
+          "windowUtilizationFormula": "Window Utilization Formula",
+          "windowUtilizationResult": "Window Utilization Result"
+        }
+      },
       "bdpBits": "BDP (bit)",
       "bdpBytes": "BDP (byte)",
       "requiredWindow": "Dim. Finestra Richiesta",
@@ -4812,7 +5830,47 @@
       "bbResultsTitle": "Requisiti crediti BB",
       "bbCommandsTitle": "Comandi di configurazione",
       "bbCopy": "Copia",
-      "bbCopied": "Copiato!"
+      "bbCopied": "Copiato!",
+      "bbCredit": {
+        "steps": {
+          "rttFormula": "Rtt Formula: {speedOfLight}",
+          "rttResult": "Rtt Result",
+          "bytesInFlightFormula": "Bytes In Flight Formula",
+          "bytesInFlightResult": "Bytes In Flight Result: {bytesInFlight}",
+          "minCreditsFormula": "Min Credits Formula: {bytesInFlight} {fcFrameSize}",
+          "minCreditsResult": "Min Credits Result",
+          "recommendedCredits": "Recommended Credits: {safetyMargin} {marginPercent}"
+        }
+      },
+      "tcpThroughput": {
+        "steps": {
+          "mss": "Mss",
+          "rtt": "Rtt",
+          "lossRate": "Loss Rate",
+          "cFactor": "C Factor",
+          "negligibleLoss": "Negligible Loss",
+          "formula": "Formula",
+          "formulaSubstituted": "Formula Substituted",
+          "formulaCalculated": "Formula Calculated: {term1} {term2}",
+          "throughputResult": "Throughput Result"
+        }
+      },
+      "throughput": {
+        "steps": {
+          "dial-up": "Dial-up",
+          "dsl": "Dsl",
+          "3g": "3g",
+          "4g": "4g",
+          "cable": "Cable",
+          "5g": "5g",
+          "fiber": "Fiber",
+          "10g": "10g",
+          "dataSize": "Data Size",
+          "transferTime": "Transfer Time",
+          "throughputBytes": "Throughput Bytes",
+          "throughputBits": "Throughput Bits"
+        }
+      }
     },
     "subnet": {
       "diagram": {
@@ -5053,6 +6111,22 @@
           "good": "Buono (5-7 L/100km)",
           "average": "Medio (7-9 L/100km)",
           "poor": "Scarso (>9 L/100km)"
+        },
+        "steps": {
+          "consumptionFormula": "Consumption Formula",
+          "consumptionResult": "Consumption Result: {result}",
+          "usingConsumption": "Using Consumption: {value}",
+          "vehicle1": "Vehicle1: {value}",
+          "vehicle2": "Vehicle2: {value}",
+          "kmPerL": "Km Per L: {input} {result}",
+          "mpgUS": "Mpg U S: {input} {result}",
+          "mpgUK": "Mpg U K: {input} {result}",
+          "costPer100km": "Cost Per100km: {consumption} {price} {result}",
+          "annualCost": "Annual Cost: {distance} {cost} {result}",
+          "tripFuel": "Trip Fuel: {distance} {consumption} {result}",
+          "tripCost": "Trip Cost: {fuel} {price} {result}",
+          "savingsPer100km": "Savings Per100km: {savings} {price} {result}",
+          "annualSavings": "Annual Savings: {distance} {result}"
         }
       },
       "financing": {
@@ -5065,7 +6139,7 @@
         "vehicleDetailsDescription": "Inserisci il prezzo del veicolo e i dettagli di pagamento",
         "vehiclePrice": "Prezzo veicolo",
         "downPayment": "Anticipo",
-        "tradeInValue": "Valore permuta",
+        "tradeInValue": "Valore di permuta",
         "currency": "Valuta",
         "currencies": {
           "chf": "Franco svizzero (CHF)",
@@ -5075,20 +6149,20 @@
         "loanDetails": "Dettagli prestito",
         "leaseDetails": "Dettagli leasing",
         "interestRate": "Tasso di interesse (%)",
-        "loanTerm": "Durata prestito",
-        "leaseTerm": "Durata leasing",
+        "loanTerm": "Durata del prestito",
+        "leaseTerm": "Durata del leasing",
         "residualValue": "Valore residuo (%)",
-        "leaseAPR": "TAEG leasing (%)",
-        "annualKmLimit": "Limite km annuale",
+        "leaseAPR": "APR del leasing (%)",
+        "annualKmLimit": "Limite chilometraggio annuale",
         "months": "mesi",
         "years": "anni",
         "year": "anno",
         "month": "mese",
         "loanResult": "Riepilogo prestito",
         "leaseResult": "Riepilogo leasing",
-        "comparisonResult": "Confronto acquisto vs noleggio",
+        "comparisonResult": "Confronto Acquisto vs Leasing",
         "perMonth": "al mese",
-        "loanAmount": "Importo prestito",
+        "loanAmount": "Importo del prestito",
         "totalPayments": "Pagamenti totali",
         "totalInterest": "Interessi totali",
         "totalCost": "Costo totale",
@@ -5096,18 +6170,47 @@
         "depreciation": "Ammortamento",
         "financeCharge": "Oneri finanziari",
         "total": "totale",
-        "kmLimit": "Limite km",
-        "excessKmCharge": "Costo km eccedenti",
+        "kmLimit": "Limite chilometraggio",
+        "excessKmCharge": "Penalità chilometraggio eccedente",
         "amortizationSchedule": "Piano di ammortamento",
         "payment": "Pagamento",
         "principal": "Capitale",
         "interest": "Interessi",
         "balance": "Saldo",
-        "showingFirst12Months": "Mostra i primi 12 mesi del piano",
-        "lowerMonthlyPayment": "Rata mensile inferiore",
+        "showingFirst12Months": "Visualizzazione dei primi 12 mesi del piano",
+        "lowerMonthlyPayment": "Pagamento mensile inferiore",
         "lowerTotalCost": "Costo totale inferiore",
         "recommendation": "Raccomandazione",
-        "calculationSteps": "Passaggi di calcolo"
+        "calculationSteps": "Passaggi di calcolo",
+        "steps": {
+          "vehiclePrice": "Prezzo veicolo: {value}",
+          "salesTax": "Imposta sulle vendite: {rate} {value}",
+          "totalVehicleCost": "Costo totale del veicolo: {value}",
+          "downPayment": "Acconto: {value}",
+          "tradeInValue": "Valore di scambio: {value}",
+          "loanAmount": "Importo prestito: {value}",
+          "interestRate": "Tasso di interesse: {apr} {monthly}",
+          "loanTerm": "Durata prestito: {months}",
+          "monthlyPayment": "Pagamento mensile: {value}",
+          "totalPayments": "Pagamenti totali: {value}",
+          "totalInterest": "Interessi totali: {value}",
+          "totalCost": "Costo totale: {value}",
+          "capitalizedCost": "Costo capitalizzato: {value}",
+          "residualValue": "Valore residuo: {percent} {value}",
+          "depreciation": "Ammortamento: {capCost} {residual} {months} {result}",
+          "financeCharge": "Onerere finanziaria: {capCost} {residual} {result}",
+          "totalLeaseCost": "Costo totale del leasing: {value}",
+          "moneyFactorToAPR": "Fattore monetario a APR: {apr}",
+          "kmLimit": "Limite km: {annual} {total}",
+          "excessKmCharge": "Costo km eccedente: {value}",
+          "loanMonthlyPayment": "Pagamento mensile prestito: {value}",
+          "leaseMonthlyPayment": "Pagamento mensile leasing: {value}",
+          "monthlyDifference": "Differenza mensile: {value} {lower}",
+          "loanTotalCost": "Costo totale prestito: {value}",
+          "leaseTotalCost": "Costo totale del leasing: {value}",
+          "totalCostDifference": "Differenza di costo totale: {value}",
+          "recommendation": "Raccomandazione: {value}"
+        }
       },
       "tireSizing": {
         "input": "Input",
@@ -5136,7 +6239,25 @@
         "speedometerError": "Errore tachimetro",
         "withinTolerance": "Entro la tolleranza consigliata (3%)",
         "exceedsTolerance": "Supera la tolleranza consigliata",
-        "calculationSteps": "Passaggi di calcolo"
+        "calculationSteps": "Passaggi di calcolo",
+        "steps": {
+          "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
+          "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
+          "overallDiameter": "Overall diameter = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
+          "circumference": "Circumference = π × {diameter}mm = {result}mm",
+          "revolutionsPerKm": "Revolutions/km = 1,000,000 / {circumference} = {result}",
+          "loadIndex": "Load index {loadIndex} = {loadValue} kg per tire",
+          "speedRating": "Speed rating {rating} = {speedValue} km/h ({desc})",
+          "diameterDiffMm": "Diameter difference = {tire2}mm - {tire1}mm = {result}mm",
+          "diameterDiffPct": "Diameter difference % = ({diffMm} / {tire1}) × 100 = {result}%",
+          "circumferenceDiffPct": "Circumference difference = {result}%",
+          "speedometerError": "Speedometer error = {result}%",
+          "actualSpeed": "When speedometer shows 100 km/h, actual speed = {result} km/h",
+          "revolutionsDiffPerKm": "Revolutions difference per km = {tire2} - {tire1} = {result}",
+          "warning": "WARNING: {message}"
+        },
+        "warningTolerance5": "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly",
+        "warningTolerance3": "Diameter difference exceeds 3% - may affect speedometer accuracy"
       },
       "maintenance": {
         "vehicleInfo": "Informazioni veicolo",
@@ -5181,6 +6302,171 @@
           "tires": "Pneumatici",
           "battery": "Batteria",
           "wiper_blades": "Spazzole tergicristallo"
+        }
+      }
+    },
+    "infrastructure": {
+      "hypervConsolidation": {
+        "steps": {
+          "resourceRequirementsTitle": "Resource Requirements Title",
+          "totalVms": "Total Vms: {vmCount}",
+          "totalVcpus": "Total Vcpus: {vmCount} {avgVcpusPerVm}",
+          "totalVmRam": "Total Vm Ram: {vmCount} {avgRamPerVm}",
+          "totalVmStorage": "Total Vm Storage: {vmCount} {avgStoragePerVm}",
+          "storageCalculationTitle": "Storage Calculation Title",
+          "baseVmStorage": "Base Vm Storage",
+          "diskType": "Disk Type: {name}",
+          "afterThinProvisioning": "After Thin Provisioning: {afterThin}",
+          "snapshotOverhead": "Snapshot Overhead: {afterSnapshots}",
+          "hypervReplica": "Hyperv Replica: {totalStorage}",
+          "hypervReplicaNote": "Hyperv Replica Note",
+          "totalStackingFactor": "Total Stacking Factor: {stackingFactor}",
+          "totalStorageRequired": "Total Storage Required: {totalStorage}",
+          "hostRequirementsTitle": "Host Requirements Title",
+          "physicalCoresPerHost": "Physical Cores Per Host: {cpusPerHost} {coresPerCpu}",
+          "hypervCpuOverhead": "Hyperv Cpu Overhead: {percent}",
+          "usableCoresPerHost": "Usable Cores Per Host: {usableCoresPerHost}",
+          "vcpuRatio": "Vcpu Ratio: {vcpuRatio} {maxVcpusPerHost}",
+          "parentPartitionMemory": "Parent Partition Memory: {parentPartitionMemory}",
+          "perVmMemoryOverhead": "Per Vm Memory Overhead: {perVmMemoryOverhead} {vmCount} {totalVmMemoryOverhead}",
+          "totalRamRequired": "Total Ram Required: {totalRamRequired}",
+          "ramOvercommit": "Ram Overcommit: {ramOvercommit}",
+          "hostsByCpu": "Hosts By Cpu",
+          "hostsByRam": "Hosts By Ram",
+          "hostsByStorage": "Hosts By Storage",
+          "minimumHostsBeforeHa": "Minimum Hosts Before Ha",
+          "highAvailabilityTitle": "High Availability Title",
+          "haModeNPlus1": "Ha Mode N Plus1",
+          "hostsRequiredNPlus1": "Hosts Required N Plus1",
+          "haModeNPlus2": "Ha Mode N Plus2",
+          "hostsRequiredNPlus2": "Hosts Required N Plus2",
+          "haModeNone": "Ha Mode None",
+          "hostsRequiredNoHa": "Hosts Required No Ha",
+          "windowsLicensingTitle": "Windows Licensing Title",
+          "datacenterEditionTitle": "Datacenter Edition Title",
+          "dcCoresPerHost": "Dc Cores Per Host",
+          "dcCorePacksPerHost": "Dc Core Packs Per Host",
+          "dcTotalCorePacks": "Dc Total Core Packs",
+          "dcCost": "Dc Cost: {costPerPack} {totalCost}",
+          "dcVmsUnlimited": "Dc Vms Unlimited",
+          "standardEditionTitle": "Standard Edition Title",
+          "stdCoresPerHost": "Std Cores Per Host",
+          "stdCorePacksPerLicense": "Std Core Packs Per License",
+          "stdLicensesForVms": "Std Licenses For Vms: {vmCount}",
+          "stdTotalCorePacks": "Std Total Core Packs",
+          "stdCost": "Std Cost: {costPerPack} {totalCost}",
+          "stdVms": "Std Vms: {vmCount}",
+          "recommendation": "Recommendation: {recommendation}",
+          "breakEvenPoint": "Break Even Point"
+        }
+      },
+      "serverVirtualization": {
+        "steps": {
+          "platform": "Platform: {name}",
+          "cpuOverhead": "Cpu Overhead",
+          "memoryReserved": "Memory Reserved: {memoryReservedGb}",
+          "totalVCpuRequired": "Total V Cpu Required: {vmCount} {vCpuPerVm}",
+          "totalRamRequired": "Total Ram Required: {vmCount} {ramPerVmGb}",
+          "availableCpuPerHost": "Available Cpu Per Host: {hostCores} {availableCoresPerHost}",
+          "effectiveCpuPerHost": "Effective Cpu Per Host: {availableCoresPerHost} {vCpuToCoreRatio} {targetCpuUtilization} {effectiveCpuPerHost}",
+          "availableRamPerHost": "Available Ram Per Host: {hostRamGb} {memoryReservedGb} {baseAvailableRamGb}",
+          "effectiveRamPerHost": "Effective Ram Per Host: {baseAvailableRamGb} {targetRamUtilization} {effectiveRamPerHostGb}",
+          "hostsNeededByCpu": "Hosts Needed By Cpu: {effectiveCpuPerHost}",
+          "hostsNeededByRam": "Hosts Needed By Ram: {effectiveRamPerHostGb}",
+          "limitingFactor": "Limiting Factor: {limitingFactor}",
+          "haEnabled": "Ha Enabled",
+          "haDisabled": "Ha Disabled",
+          "vCpuConsolidationRatio": "V Cpu Consolidation Ratio: {hostCores} {ratio}",
+          "finalCpuUtilization": "Final Cpu Utilization: {finalCpuUtilization} {capacity}",
+          "finalRamUtilization": "Final Ram Utilization: {finalRamUtilization} {capacity}"
+        }
+      },
+      "virtualizationCost": {
+        "steps": {
+          "platform": "Platform: {platform}",
+          "capex": "Capex: {serverCost} {storageCost} {networkCost} {capex}",
+          "annualPowerCost": "Annual Power Cost: {totalPowerKw} {pue} {hoursPerYear} {powerCostPerKwh} {annualPowerCost}",
+          "annualDatacenterCost": "Annual Datacenter Cost: {datacenterCostPerRu} {totalRackUnits} {annualDatacenterCost}",
+          "annualSoftwareCost": "Annual Software Cost: {hypervisorLicenseCost} {platform} {osLicenseCost} {backupSoftwareCost} {annualSoftwareCost}",
+          "opexAnnual": "Opex Annual: {annualPowerCost} {annualDatacenterCost} {annualSoftwareCost} {laborCostAnnual} {opexAnnual}",
+          "opexTotal": "Opex Total: {termYears} {opexAnnual} {opexTotal}",
+          "tco": "Tco: {capex} {opexTotal} {tco}",
+          "costPerVm": "Cost Per Vm: {termYears} {tco} {vmCount} {costPerVm}",
+          "costPerVmMonthly": "Cost Per Vm Monthly: {tco} {termYears} {vmCount} {costPerVmMonthly}"
+        }
+      },
+      "vmStorage": {
+        "steps": {
+          "platform": "Platform: {name}",
+          "totalProvisionedDisk": "Total Provisioned Disk: {totalProvisionedGb}",
+          "thinProvisioning": "Thin Provisioning: {thinProvisioningPercent} {usedDiskGb} {overSubscribedGb}",
+          "thickProvisioning": "Thick Provisioning: {usedDiskGb}",
+          "snapshotAllocation": "Snapshot Allocation: {snapshotPercent} {snapshotGb}",
+          "swapFilesIncluded": "Swap Files Included: {swapGb}",
+          "swapFilesExcluded": "Swap Files Excluded",
+          "configLogFiles": "Config Log Files: {configLogGbPerVm} {configLogGb}",
+          "totalVmStorage": "Total Vm Storage: {totalVmStorageGb}",
+          "hypervisorOverhead": "Hypervisor Overhead: {hypervisorOverheadGb}",
+          "subtotal": "Subtotal: {subtotal}",
+          "growthAllocation": "Growth Allocation: {growthPercent} {growthAllocationGb}",
+          "totalRequiredStorage": "Total Required Storage: {totalRequiredGb}"
+        }
+      },
+      "vmwareLicensing": {
+        "steps": {
+          "totalPhysicalCores": "Total Physical Cores: {hostCount} {cpusPerHost} {coresPerCpu}",
+          "minCoreEnforced": "Min Core Enforced: {coresPerCpu}",
+          "coresPerCpuLicensed": "Cores Per Cpu Licensed",
+          "totalLicensedCores": "Total Licensed Cores: {hostCount} {cpusPerHost}",
+          "productPricing": "Product Pricing: {productName}",
+          "annualCost": "Annual Cost: {annualCost}",
+          "totalCost": "Total Cost: {termYears} {annualCost} {totalCost}",
+          "vsanEntitlementIncluded": "Vsan Entitlement Included: {entitlementPerCore} {vsanEntitlementTib}",
+          "vsanEntitlementExcluded": "Vsan Entitlement Excluded: {productName}"
+        }
+      },
+      "windowsLicensing": {
+        "steps": {
+          "calculatorTitle": "Calculator Title",
+          "inputHosts": "Input Hosts: {hostCount}",
+          "inputCoresPerCpu": "Input Cores Per Cpu: {coresPerCpu}",
+          "inputSocketsPerHost": "Input Sockets Per Host: {socketsPerHost}",
+          "inputVmCount": "Input Vm Count: {vmCount}",
+          "physicalCoresPerHost": "Physical Cores Per Host: {coresPerCpu} {socketsPerHost}",
+          "totalPhysicalCores": "Total Physical Cores: {hostCount}",
+          "datacenterTitle": "Datacenter Title",
+          "dcMinCores": "Dc Min Cores",
+          "dcLicensedCoresPerHost": "Dc Licensed Cores Per Host",
+          "dcCorePacksPerHost": "Dc Core Packs Per Host: {coresPerPack}",
+          "dcTotalCorePacks": "Dc Total Core Packs: {hostCount}",
+          "dcCostPerCorePack": "Dc Cost Per Core Pack: {pricePerCorePack}",
+          "dcTotalCost": "Dc Total Cost: {pricePerCorePack} {totalCost}",
+          "dcVmsIncluded": "Dc Vms Included",
+          "standardTitle": "Standard Title",
+          "stdMinCores": "Std Min Cores",
+          "stdLicensedCoresPerHost": "Std Licensed Cores Per Host",
+          "stdCorePacksPerLicense": "Std Core Packs Per License: {coresPerPack}",
+          "stdVmsPerLicense": "Std Vms Per License: {vmsPerLicense}",
+          "stdLicensesRequired": "Std Licenses Required: {vmCount} {vmsPerLicense}",
+          "stdTotalCorePacks": "Std Total Core Packs",
+          "stdCostPerCorePack": "Std Cost Per Core Pack: {pricePerCorePack}",
+          "stdTotalCost": "Std Total Cost: {pricePerCorePack} {totalCost}",
+          "stdVmsIncluded": "Std Vms Included: {vmCount} {vmsPerLicense}",
+          "comparisonTitle": "Comparison Title",
+          "comparisonDatacenterTotal": "Comparison Datacenter Total: {totalCost}",
+          "comparisonStandardTotal": "Comparison Standard Total: {totalCost}",
+          "savingsWithDatacenter": "Savings With Datacenter: {savings} {savingsPercent}",
+          "recommendationDatacenter": "Recommendation Datacenter",
+          "savingsWithStandard": "Savings With Standard: {savings} {savingsPercent}",
+          "recommendationStandard": "Recommendation Standard",
+          "breakEvenPoint": "Break Even Point",
+          "currentDensity": "Current Density: {currentVmsPerHost}",
+          "densityExceedsBreakEven": "Density Exceeds Break Even: {currentVmsPerHost}",
+          "datacenterMoreCostEffective": "Datacenter More Cost Effective",
+          "densityBelowBreakEven": "Density Below Break Even: {currentVmsPerHost}",
+          "standardMoreCostEffective": "Standard More Cost Effective",
+          "pricingStaleWarning": "Pricing Stale Warning: {daysOld} {lastUpdated}",
+          "pricingVerifyUrl": "Pricing Verify Url: {vendorUrl}"
         }
       }
     }

@@ -1,6 +1,7 @@
 "use client";
 
 import { Download, Loader2, Play, Trash2, Upload, Video } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -13,10 +14,15 @@ let utilModule: typeof import("@ffmpeg/util") | null = null;
 async function loadFfmpeg() {
   if (!ffmpegModule) ffmpegModule = await import("@ffmpeg/ffmpeg");
   if (!utilModule) utilModule = await import("@ffmpeg/util");
-  return { FFmpeg: ffmpegModule.FFmpeg, fetchFile: utilModule.fetchFile, toBlobURL: utilModule.toBlobURL };
+  return {
+    FFmpeg: ffmpegModule.FFmpeg,
+    fetchFile: utilModule.fetchFile,
+    toBlobURL: utilModule.toBlobURL,
+  };
 }
 
 export function VideoCompressor() {
+  const t = useTranslations("mediaTools.videoCompressor");
   const [file, setFile] = useState<File | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string>("");
   const [processedUrl, setProcessedUrl] = useState<string>("");
@@ -64,7 +70,7 @@ export function VideoCompressor() {
 
   async function processVideo() {
     if (!file) {
-      setError("请先上传视频");
+      setError(t("uploadFirstError"));
       return;
     }
     setIsProcessing(true);
@@ -100,20 +106,33 @@ export function VideoCompressor() {
       if (resolution !== "original") {
         args.push("-vf", `scale=${resolution}:-2`);
       }
-      args.push("-c:v", "libx264", "-crf", String(crf), "-preset", "fast", "-c:a", "copy", "-movflags", "+faststart", outputName);
+      args.push(
+        "-c:v",
+        "libx264",
+        "-crf",
+        String(crf),
+        "-preset",
+        "fast",
+        "-c:a",
+        "copy",
+        "-movflags",
+        "+faststart",
+        outputName
+      );
 
       await ffmpeg.writeFile(inputName, await fetchFile(file));
       await ffmpeg.exec(args);
 
       const data = await ffmpeg.readFile(outputName);
-      const bytes = data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
+      const bytes =
+        data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
       const mime = file.type || "video/mp4";
       const blob = new Blob([bytes], { type: mime });
       const url = URL.createObjectURL(blob);
       setProcessedUrl(url);
       setProgress(100);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "处理失败，请重试");
+      setError(err instanceof Error ? err.message : t("processError"));
     } finally {
       setIsProcessing(false);
     }
@@ -144,21 +163,34 @@ export function VideoCompressor() {
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
               <Video className="h-6 w-6" />
             </div>
-            <h3 className="mt-4 text-lg font-semibold">视频压缩</h3>
-            <p className="mt-2 max-w-xs text-sm text-muted-foreground">拖拽或点击上传视频，调整分辨率与码率进行压缩。</p>
-            <Button asChild className="mt-5 rounded-xl bg-gradient-to-r from-primary to-cyan-400 px-5 text-primary-foreground hover:opacity-90">
+            <h3 className="mt-4 text-lg font-semibold">{t("title")}</h3>
+            <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t("description")}</p>
+            <Button
+              asChild
+              className="mt-5 rounded-xl bg-gradient-to-r from-primary to-cyan-400 px-5 text-primary-foreground hover:opacity-90"
+            >
               <label className="cursor-pointer">
-                <Upload className="mr-2 inline h-4 w-4" /> 选择视频
-                <input type="file" accept="video/*" className="sr-only" onChange={handleFileChange} />
+                <Upload className="mr-2 inline h-4 w-4" /> {t("selectVideo")}
+                <input
+                  type="file"
+                  accept="video/*"
+                  className="sr-only"
+                  onChange={handleFileChange}
+                />
               </label>
             </Button>
           </>
         ) : (
           <div className="flex h-full w-full flex-col p-4">
             <div className="mb-3 flex items-center justify-between">
-              <span className="text-sm font-medium">原视频</span>
-              <Button size="sm" variant="ghost" className="h-8 text-xs text-muted-foreground hover:text-foreground" onClick={clearAll}>
-                <Trash2 className="mr-1 h-3.5 w-3.5" /> 移除
+              <span className="text-sm font-medium">{t("originalLabel")}</span>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="h-8 text-xs text-muted-foreground hover:text-foreground"
+                onClick={clearAll}
+              >
+                <Trash2 className="mr-1 h-3.5 w-3.5" /> {t("removeBtn")}
               </Button>
             </div>
             <div className="relative flex-1 overflow-hidden rounded-xl bg-black/40">
@@ -171,31 +203,42 @@ export function VideoCompressor() {
 
       <div className="flex min-h-[320px] flex-col rounded-2xl border border-white/10 bg-card p-5">
         <div className="mb-3 flex items-center justify-between">
-          <span className="text-sm font-medium">压缩设置</span>
-          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">FFmpeg</span>
+          <span className="text-sm font-medium">{t("settingsTitle")}</span>
+          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">
+            FFmpeg
+          </span>
         </div>
         <div className="space-y-4">
           <div>
-            <label className="mb-1 block text-xs text-muted-foreground">分辨率</label>
+            <label className="mb-1 block text-xs text-muted-foreground">
+              {t("resolutionLabel")}
+            </label>
             <select
               value={resolution}
               onChange={(e) => setResolution(e.target.value)}
               className="w-full rounded-lg border border-white/10 bg-black/30 px-3 py-2 text-sm outline-none focus:border-primary"
             >
-              <option value="original">保持原始分辨率</option>
-              <option value="1920">1920px（1080p）</option>
-              <option value="1280">1280px（720p）</option>
-              <option value="854">854px（480p）</option>
-              <option value="640">640px（360p）</option>
+              <option value="original">{t("originalResolution")}</option>
+              <option value="1920">{t("res1080p")}</option>
+              <option value="1280">{t("res720p")}</option>
+              <option value="854">{t("res480p")}</option>
+              <option value="640">{t("res360p")}</option>
             </select>
           </div>
           <div>
             <div className="mb-1 flex justify-between text-sm">
-              <span className="text-muted-foreground">CRF 码率质量</span>
+              <span className="text-muted-foreground">{t("crfLabel")}</span>
               <span>{crf}</span>
             </div>
-            <input type="range" min={18} max={40} value={crf} onChange={(e) => setCrf(Number(e.target.value))} className="w-full accent-primary" />
-            <p className="mt-1 text-xs text-muted-foreground">数值越小画质越好、体积越大</p>
+            <input
+              type="range"
+              min={18}
+              max={40}
+              value={crf}
+              onChange={(e) => setCrf(Number(e.target.value))}
+              className="w-full accent-primary"
+            />
+            <p className="mt-1 text-xs text-muted-foreground">{t("crfHint")}</p>
           </div>
           {isProcessing && <Progress value={progress} />}
           <ToolError message={error || null} />
@@ -204,11 +247,15 @@ export function VideoCompressor() {
             disabled={isProcessing || !file}
             className="w-full rounded-xl bg-gradient-to-r from-primary to-cyan-400"
           >
-            {isProcessing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Play className="mr-2 h-4 w-4" />}
-            {isProcessing ? `压缩中 ${progress}%` : "开始压缩"}
+            {isProcessing ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : (
+              <Play className="mr-2 h-4 w-4" />
+            )}
+            {isProcessing ? t("processing", { progress }) : t("processBtn")}
           </Button>
           <Button className="w-full rounded-xl" disabled={!processedUrl} onClick={downloadResult}>
-            <Download className="mr-2 h-4 w-4" /> 下载压缩后视频
+            <Download className="mr-2 h-4 w-4" /> {t("downloadBtn")}
           </Button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Upload, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 export function formatBytes(bytes: number): string {
@@ -24,6 +25,8 @@ export function FileDropZone({
   children?: React.ReactNode;
   className?: string;
 }) {
+  const t = useTranslations("mediaTools.fileDrop");
+
   return (
     <label
       className={cn(
@@ -45,8 +48,10 @@ export function FileDropZone({
       {children || (
         <>
           <Upload className="mb-3 h-8 w-8 text-muted-foreground" />
-          <p className="text-sm font-medium">点击或拖拽上传文件</p>
-          <p className="mt-1 text-xs text-muted-foreground">支持 {accept}</p>
+          <p className="text-sm font-medium">{t("clickOrDrag")}</p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t("supports")} {accept}
+          </p>
         </>
       )}
     </label>

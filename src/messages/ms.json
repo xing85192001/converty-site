@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "Kalkulator & penukar dalam talian percuma",
+    "allTools": "Semua Alat",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "Ralat",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "Salin",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "Tetapkan semula",
+    "calculate": "Kira",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "Padam",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "Hak cipta terpelihara",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
+        "privacy": "Dasar Privasi",
+        "about": "Mengenai",
+        "contact": "Hubungi",
+        "terms": "Terma Perkhidmatan",
         "blog": "Blog"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "Lebih Banyak Alat"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "Ciri-ciri Teras",
+    "toolHighlights": "Sorotan Alat",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "Lihat Blog",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,175 +86,177 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "Cari kalkulator……",
+    "result": "Hasil"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ Pemprosesan Imej & Video",
+    "sectionSubtitle": "Alat Imej & Video · Baharu",
+    "featuredTitle": "✨ Alat Pilihan",
+    "allCategories": "Semua",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "Semua",
+      "watermark": "Buang Tanda Air",
+      "format": "Penukaran Format",
+      "icon": "Alat Ikon",
+      "compress": "Mampat & Optimum"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "Pembuang Tanda Air Video",
+      "desc": "Muat naik video dan pilih kawasan tanda air. Pemprosesan AI dalam pelayar. Menyokong MP4 / MOV / WebM."
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "Pembuang Tanda Air Imej",
+      "desc": "Pilih kawasan tanda air. Penyingkiran pintar berasaskan AI. Menyokong JPG / PNG / WEBP."
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "Penukar Ikon ICO",
+      "desc": "Tukar imej kepada .ico dengan pek pelbagai saiz (16/32/64/128/256px)."
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "Penukar Format Imej",
+      "desc": "Penukaran pukal PNG / JPG / WEBP / BMP / GIF."
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "Pemampat Imej",
+      "desc": "Mampatan lossy / lossless. Kurangkan saiz fail sambil mengekalkan kualiti."
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "Pemampat Video",
+      "desc": "Laraskan resolusi & bitrate untuk memampatkan saiz video dengan pantas."
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "Pembesar Imej",
+      "desc": "Super-resolusi AI — jadikan imej kabur menjadi jelas."
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "Gagal memuatkan imej",
+      "canvasError": "Gagal membuat kanvas",
+      "readError": "Gagal membaca fail",
+      "pdfError": "Penjanaan PDF gagal",
+      "mergeBtn": "Gabungkan ke PDF",
+      "downloadBtn": "Muat turun PDF",
+      "title": "Imej ke PDF",
+      "desc": "Gabungkan beberapa imej menjadi satu fail PDF."
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "Klik atau seret untuk memuat naik fail",
+      "supports": "Menyokong"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "Pembuang Tanda Air Video",
+      "description": "Seret atau klik untuk memuat naik video, kemudian lukis kotak di kawasan tanda air untuk membuangnya.",
+      "selectVideo": "Pilih Video",
+      "originalLabel": "Video asal · pilih kawasan tanda air",
+      "removeBtn": "Buang",
+      "previewTitle": "Pratonton yang diproses",
+      "aiBadge": "Pemprosesan AI",
+      "emptyPreview": "Video yang diproses akan dipaparkan di sini",
+      "processing": "Memproses {progress}%",
+      "startRemoval": "Buang Tanda Air",
+      "download": "Muat turun video yang diproses",
+      "errorSelectArea": "Sila lukis kotak di atas tanda air yang ingin dibuang",
+      "errorFailed": "Pemprosesan gagal, sila cuba lagi",
+      "hint": "Petua: tekan dan seret pada bingkai video untuk melukis kotak di kawasan tanda air."
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "Gagal memuatkan imej",
+      "canvasError": "Gagal mendapatkan konteks kanvas",
+      "processError": "Pemprosesan gagal",
+      "hint": "Seret pada imej untuk memilih kawasan tanda air",
+      "processBtn": "Buang tanda air secara pintar",
+      "resultTitle": "Hasil",
+      "downloadBtn": "Muat turun imej yang diproses"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "Gagal memuatkan imej",
+      "processError": "Penukaran gagal",
+      "generateBtn": "Hasilkan ICO",
+      "downloadBtn": "Muat turun fail ICO"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "Gagal memuatkan imej",
+      "canvasError": "Gagal membuat kanvas",
+      "convertError": "Penukaran format gagal",
+      "unsupportedFormat": "Format tidak disokong",
+      "outputFormat": "Format output",
+      "convertBtn": "Tukar Format",
+      "downloadBtn": "Muat turun imej yang ditukar"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "Gagal memuatkan imej",
+      "canvasError": "Gagal membuat kanvas",
+      "compressError": "Mampatan gagal",
+      "qualityLabel": "Kualiti JPEG",
+      "scaleLabel": "Skala",
+      "sizeCompare": "Asal {original} → Mampat {compressed}",
+      "compressBtn": "Mampatkan Imej",
+      "downloadBtn": "Muat turun imej terkumpat"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
+      "title": "Pemampat Video",
+      "description": "Seret atau klik untuk memuat naik video, kemudian laraskan resolusi dan bitrate untuk memampatkan.",
+      "selectVideo": "Pilih Video",
+      "originalLabel": "Video asal",
+      "removeBtn": "Buang",
+      "settingsTitle": "Tetapan mampatan",
+      "resolutionLabel": "Resolusi",
+      "originalResolution": "Kekalkan resolusi asal",
       "res1080p": "1920px (1080p)",
       "res720p": "1280px (720p)",
       "res480p": "854px (480p)",
       "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "crfLabel": "Kualiti CRF",
+      "crfHint": "Nilai lebih rendah = kualiti lebih baik, fail lebih besar",
+      "processing": "Memampatkan {progress}%",
+      "processBtn": "Mampatkan Video",
+      "uploadFirstError": "Sila muat naik video terlebih dahulu",
+      "processError": "Pemprosesan gagal, sila cuba lagi",
+      "downloadBtn": "Muat turun video terkumpat"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "Gagal memuatkan imej",
+      "canvasError": "Gagal membuat kanvas",
+      "upscaleError": "Pembesaran gagal",
+      "scaleLabel": "Faktor pembesaran",
+      "sharpenLabel": "Tajamkan tepi",
+      "upscaleBtn": "Pembesaran AI",
+      "downloadBtn": "Muat turun imej yang diperbesar"
     }
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "Warna",
+      "description": "Penukaran warna dan palet"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "Memasak",
+      "description": "Memasak dan resipi"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "Kripto",
+      "description": "Kripto dan perlombongan"
     },
     "data": {
       "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "description": "Data dan jalur lebar"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "Tarikh/Masa",
+      "description": "Tarikh dan masa"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "Keuangan",
+      "description": "Kalkulator kewangan"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "Kesihatan",
+      "description": "Kesihatan dan kecergasan"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "Infrastruktur",
+      "description": "IT dan virtualisasi",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +266,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "Kejuruteraan",
+      "description": "Kejuruteraan dan fizik",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +276,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "Kimia",
+      "description": "Kalkulator kimia",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +286,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "Matematik",
+      "description": "Kalkulator matematik"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "Muzik",
+      "description": "Audio dan muzik",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "Rangkaian",
+      "description": "Alat rangkaian"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "Foto",
+      "description": "Alat foto"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "Fizik",
+      "description": "Fizik dan mekanik"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "Hartanah",
+      "description": "Gadai janji dan sewa"
     },
     "video": {
       "name": "Video",
-      "description": "Video and media calculators"
+      "description": "Alat video"
     },
     "web": {
       "name": "Web",
-      "description": "Web development tools"
+      "description": "Alat web dan SEO"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "Automobil",
+      "description": "Kalkulator bahan api, tayar, penyelenggaraan dan pembiayaan"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -372,8 +374,8 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
-      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
+      "description": "Kira Indeks Jisim Badan dan kategori kesihatan",
+      "metaDescription": "Kira Indeks Jisim Badan (BMI) dan fahami kategori kesihatan anda"
     },
     "corpulence": {
       "name": "Corpulence",
@@ -396,7 +398,7 @@
       "generations": {
         "all": "All Generations",
         "current": "Current",
-        "previous": "Previous"
+        "previous": "Sebelumnya"
       },
       "selectCpus": "Select CPUs",
       "selectCpusHint": "Select 2 to 4 CPUs to compare",
@@ -485,7 +487,7 @@
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
+      "name": "Jam",
       "description": "Calculate hours between two times or dates",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
@@ -530,7 +532,7 @@
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
+      "name": "Muat turun",
       "description": "Calculate download time from bandwidth and file size",
       "metaDescription": "Calculate how long a file download will take"
     },
@@ -810,49 +812,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "Hipotek",
+      "description": "Kira bayaran bulanan dan jadual pelunasan",
+      "metaDescription": "Kalkulator hipotek dengan pelunasan"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "Faedah Kompaun",
+      "description": "Kira faedah kompaun untuk pelaburan dengan sumbangan tetap",
+      "metaDescription": "Kira pertumbuhan faedah kompaun dari masa ke masa"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "Pinjaman",
+      "description": "Kira bayaran bulanan untuk pinjaman",
+      "metaDescription": "Bayaran pinjaman dan pelunasan"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "Pencen",
+      "description": "Rancang pencen anda dengan unjukan simpanan",
+      "metaDescription": "Perancangan pencen"
     },
     "tip": {
       "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "description": "Kira jumlah tip dan bahagikan bil",
+      "metaDescription": "Kalkulator tip"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "Matlamat Simpanan",
+      "description": "Kira masa untuk mencapai matlamat simpanan",
+      "metaDescription": "Perancangan simpanan"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "Inflasi",
+      "description": "Kira kesan inflasi pada kuasa beli",
+      "metaDescription": "Kesan inflasi"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "Pulangan Pelaburan",
+      "description": "Kira pulangan pelaburan",
+      "metaDescription": "Pulangan pelaburan"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "Titik Impas",
+      "description": "Kira titik impas",
+      "metaDescription": "Analisis impas"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -900,7 +902,7 @@
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
+      "name": "Bayaran Muka",
       "description": "Calculate how much to save for a down payment",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
@@ -1055,7 +1057,7 @@
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
+      "name": "Asas",
       "description": "Perform arithmetic calculations with expression support",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
@@ -1065,7 +1067,7 @@
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
+      "name": "Peratusan",
       "description": "Calculate percentages, percent change, and percent difference",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
@@ -1369,7 +1371,7 @@
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
+      "name": "Nisbah",
       "description": "Calculate and simplify ratios, find equivalent ratios",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
@@ -1454,19 +1456,19 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "Kecekapan Bahan Bakar",
+      "description": "Kira penggunaan bahan bakar",
+      "metaDescription": "Alat bahan bakar"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "Pembiayaan Kenderaan",
+      "description": "Alat kira pembiayaan kenderaan",
+      "metaDescription": "Kalkulator pembiayaan kenderaan"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "Saiz Tayar",
+      "description": "Alat tukar saiz tayar",
+      "metaDescription": "Kalkulator saiz tayar"
     },
     "maintenance-intervals": {
       "name": "Maintenance Intervals Calculator",
@@ -1477,11 +1479,11 @@
       "name": "Unit Converter",
       "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "category": "Category",
-      "value": "Value",
-      "from": "From",
-      "to": "To",
-      "swap": "Swap"
+      "category": "Kategori",
+      "value": "Nilai",
+      "from": "Dari",
+      "to": "Ke",
+      "swap": "Tukar"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1502,7 +1504,7 @@
       "valueB": "Value B",
       "bitwise": "Bitwise operation",
       "shift": "Shift",
-      "none": "None",
+      "none": "Tiada",
       "left": "Left (<<)",
       "right": "Right (>>)",
       "reprA": "A representations",
@@ -1517,8 +1519,8 @@
       "extra": "Extra monthly payment",
       "snowball": "Snowball (smallest balance first)",
       "avalanche": "Avalanche (highest rate first)",
-      "months": "Months",
-      "totalInterest": "Total interest",
+      "months": "Bulan",
+      "totalInterest": "Jumlah faedah",
       "totalPaid": "Total paid",
       "order": "Payoff order",
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
@@ -1536,49 +1538,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "Pinjaman Kereta",
+      "description": "Kira bayaran pinjaman kereta bulanan",
+      "metaDescription": "Kalkulator pinjaman kereta"
+    },
+    "lease": {
+      "name": "Pajakan",
+      "description": "Kira bayaran pajakan kereta",
+      "metaDescription": "Kalkulator pajakan"
+    },
+    "trade-in": {
+      "name": "Tukar Belian",
+      "description": "Kira nilai tukar belian",
+      "metaDescription": "Kalkulator nilai tukar belian"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "Nilai",
+      "amount": "Jumlah",
+      "result": "Hasil",
+      "from": "Dari",
+      "to": "Ke",
+      "date": "Tarikh",
+      "startDate": "Tarikh mula",
+      "endDate": "Tarikh tamat",
+      "birthDate": "Tarikh lahir",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "Tahun",
+      "months": "Bulan",
+      "weeks": "Minggu",
+      "days": "Hari",
+      "hours": "Jam",
+      "minutes": "Minit",
+      "seconds": "Saat",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "Bayaran pendahuluan",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "Jumlah faedah",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "Pokok",
+      "interest": "Faedah",
+      "balance": "Baki",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Tahun",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1681,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "Kira",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1794,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "Bulan",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1830,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "Cari",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1880,7 +1897,7 @@
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "Butiran pinjaman",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -2017,7 +2034,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Langkah pengiraan",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2081,7 +2098,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "Jumlah kos",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2106,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "tahun"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2197,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "Jumlah kos",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "Langkah pengiraan"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2238,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "sebulan",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "Jumlah",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2353,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "Tajuk",
+      "seo_category_description": "Penerangan",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2576,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "Pembayaran",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "Jumlah pembayaran",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "Hasil",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2642,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "Butiran pinjaman",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "Tarikh mula",
+      "totalInterest": "Jumlah faedah",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "Pokok",
+      "interest": "Faedah",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Tahun",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2699,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "sebulan",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2717,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "Baki",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2753,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "Jumlah pembayaran",
+      "totalCost": "Jumlah kos",
+      "vehiclePrice": "Harga kenderaan",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2910,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "Bulan",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2988,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "Bulan",
+      "payment": "Pembayaran",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3031,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "Nilai",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3054,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "Hasil",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3093,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "Nilai",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3575,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "Kira",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4132,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "Penapis",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4185,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "Kira",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4233,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "Nama",
+        "description": "Penerangan",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "Mata wang",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "Bayaran pendahuluan",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "Butiran pinjaman",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "Tarikh mula",
+        "years": "tahun",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "sebulan",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "Jumlah faedah",
+        "totalCost": "Jumlah kos",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "Pokok",
+        "interest": "Faedah",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "Tahun",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4339,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "Mata wang",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4520,10 +4537,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "Jumlah",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "Hasil",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4557,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "Mata wang",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4569,7 +4586,7 @@
       "units": {
         "input": "Input",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "Jumlah",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4604,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "Hasil",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4616,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "Mata wang",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "Jumlah",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4632,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Langkah pengiraan",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4654,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "Jumlah",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4664,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Langkah pengiraan",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4694,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "Jumlah"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4961,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "tahun",
+        "years": "tahun",
+        "month": "bulan",
+        "months": "bulan",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5130,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Langkah pengiraan",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5324,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "Nilai",
+        "from": "Dari",
+        "to": "Ke",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5462,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Langkah pengiraan",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "Kira",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5704,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Langkah pengiraan",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5748,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "Penerangan",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5789,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "Saat",
+        "min": "Minit",
+        "hr": "Jam"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5811,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "Saat",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5828,11 +5845,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "Langkah pengiraan",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "Salin",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5931,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "Nilai",
+        "description": "Penerangan"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +6005,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "Nama",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "Penerangan",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6073,11 +6090,11 @@
     "automotive": {
       "fuelEfficiency": {
         "input": "Input",
-        "result": "Result",
+        "result": "Hasil",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "Bandingkan"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6106,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "Mata wang",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6125,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Langkah pengiraan",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,85 +6151,88 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "Pinjaman",
+          "lease": "Sewa",
+          "compare": "Bandingkan"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "Butiran kenderaan",
+        "vehicleDetailsDescription": "Masukkan harga kenderaan dan butiran pembayaran",
+        "vehiclePrice": "Harga kenderaan",
+        "downPayment": "Bayaran pendahuluan",
+        "tradeInValue": "Nilai tukaran",
+        "currency": "Mata wang",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "Sertakan VAT Switzerland",
+        "loanDetails": "Butiran pinjaman",
+        "leaseDetails": "Butiran sewa",
+        "interestRate": "Kadar faedah (%)",
+        "loanTerm": "Tempoh pinjaman",
+        "leaseTerm": "Tempoh pajakan",
+        "residualValue": "Nilai sisa (%)",
+        "leaseAPR": "APR pajakan (%)",
+        "annualKmLimit": "Had km tahunan",
+        "months": "bulan",
+        "years": "tahun",
+        "year": "tahun",
+        "month": "bulan",
+        "loanResult": "Ringkasan Pinjaman",
+        "leaseResult": "Ringkasan Pajakan",
+        "comparisonResult": "Perbandingan Beli vs Pajakan",
+        "perMonth": "sebulan",
+        "loanAmount": "Jumlah pinjaman",
+        "totalPayments": "Jumlah pembayaran",
+        "totalInterest": "Jumlah faedah",
+        "totalCost": "Jumlah kos",
+        "capitalizedCost": "Kos Dikapitalkan",
+        "depreciation": "Susut Nilai",
+        "financeCharge": "Caj Kewangan",
+        "total": "jumlah",
+        "kmLimit": "Had km",
+        "excessKmCharge": "Caj lebihan km",
+        "amortizationSchedule": "Jadual Pelunasan",
+        "payment": "Pembayaran",
+        "principal": "Pokok",
+        "interest": "Faedah",
+        "balance": "Baki",
+        "showingFirst12Months": "Menunjukkan 12 bulan pertama jadual",
+        "lowerMonthlyPayment": "Pembayaran Bulanan Lebih Rendah",
+        "lowerTotalCost": "Jumlah Kos Lebih Rendah",
+        "recommendation": "Cadangan",
+        "calculationSteps": "Langkah Pengiraan",
+        "loan": "Pinjaman",
+        "lease": "Sewa",
+        "compare": "Banding",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "Harga kenderaan: {value}",
+          "salesTax": "Cukai jualan: {rate} {value}",
+          "totalVehicleCost": "Jumlah kos kenderaan: {value}",
+          "downPayment": "Bayaran pendahuluan: {value}",
+          "tradeInValue": "Nilai tukaran: {value}",
+          "loanAmount": "Jumlah pinjaman: {value}",
+          "interestRate": "Kadar faedah: {apr} {monthly}",
+          "loanTerm": "Tempoh pinjaman: {months}",
+          "monthlyPayment": "Pembayaran bulanan: {value}",
+          "totalPayments": "Jumlah pembayaran: {value}",
+          "totalInterest": "Jumlah faedah: {value}",
+          "totalCost": "Jumlah kos: {value}",
+          "capitalizedCost": "Kos dipermodalkan: {value}",
+          "residualValue": "Nilai baki: {percent} {value}",
+          "depreciation": "Susut nilai: {capCost} {residual} {months} {result}",
+          "financeCharge": "Caj kewangan: {capCost} {residual} {result}",
+          "totalLeaseCost": "Jumlah kos sewa: {value}",
+          "moneyFactorToAPR": "Faktor wang ke APR: {apr}",
+          "kmLimit": "Had km: {annual} {total}",
+          "excessKmCharge": "Caj lebih km: {value}",
+          "loanMonthlyPayment": "Pembayaran bulanan pinjaman: {value}",
+          "leaseMonthlyPayment": "Pembayaran bulanan sewa: {value}",
+          "monthlyDifference": "Perbezaan bulanan: {value} {lower}",
+          "loanTotalCost": "Jumlah kos pinjaman: {value}",
+          "leaseTotalCost": "Jumlah kos sewa: {value}",
+          "totalCostDifference": "Perbezaan jumlah kos: {value}",
+          "recommendation": "Cadangan: {value}"
         }
       },
       "tireSizing": {
@@ -6242,7 +6262,7 @@
         "speedometerError": "Speedometer Error",
         "withinTolerance": "Within recommended tolerance (3%)",
         "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Langkah pengiraan",
         "steps": {
           "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
           "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
@@ -6283,7 +6303,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "bulan",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

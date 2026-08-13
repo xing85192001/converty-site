@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "무료 온라인 계산기 및 변환기",
+    "allTools": "모든 도구",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -12,30 +12,30 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "오류",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "복사",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "초기화",
+    "calculate": "계산",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "지우기",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "판권 소유",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
-        "blog": "Blog"
+        "privacy": "개인정보 처리방침",
+        "about": "소개",
+        "contact": "연락처",
+        "terms": "서비스 약관",
+        "blog": "블로그"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "더 많은 도구"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "주요 기능",
+    "toolHighlights": "도구 하이라이트",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "블로그 보기",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,175 +86,178 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "계산기를 검색하세요……",
+    "result": "결과",
+    "results": "결과"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ 이미지 / 비디오 처리",
+    "sectionSubtitle": "이미지 및 비디오 도구 · 신규",
+    "featuredTitle": "✨ 추천 도구 미리보기",
+    "allCategories": "전체",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "전체",
+      "watermark": "워터마크 제거",
+      "format": "형식 변환",
+      "icon": "아이콘 도구",
+      "compress": "압축 및 최적화"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "동영상 워터마크 제거",
+      "desc": "동영상을 업로드하고 워터마크 영역을 선택하세요. 브라우저 내 AI 처리, MP4 / MOV / WebM 지원."
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "이미지 워터마크 제거",
+      "desc": "워터마크 영역을 선택하면 AI가 스마트하게 제거합니다. JPG / PNG / WEBP 지원."
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "ICO 아이콘 변환",
+      "desc": "이미지를 .ico 형식으로 변환하고 여러 크기(16/32/64/128/256px)로 패키징합니다."
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "이미지 형식 변환",
+      "desc": "PNG / JPG / WEBP / BMP / GIF 일괄 변환."
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "이미지 압축",
+      "desc": "손실 / 무손실 압축으로 화질을 유지하면서 파일 크기를 줄입니다."
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "동영상 압축",
+      "desc": "해상도와 비트레이트를 조정하여 동영상 파일 크기를 빠르게 줄입니다."
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "이미지 확대",
+      "desc": "AI 초해상도 — 흐릿한 이미지를 선명하게 되살립니다."
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "이미지를 불러오지 못했습니다",
+      "canvasError": "캔버스를 생성할 수 없습니다",
+      "readError": "파일을 읽지 못했습니다",
+      "pdfError": "PDF 생성에 실패했습니다",
+      "mergeBtn": "PDF로 병합",
+      "downloadBtn": "PDF 다운로드",
+      "title": "이미지를 PDF로",
+      "desc": "여러 이미지를 하나의 PDF 파일로 병합합니다."
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "클릭 또는 드래그하여 파일 업로드",
+      "supports": "지원 형식"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "동영상 워터마크 제거",
+      "description": "동영상을 드래그하거나 클릭하여 업로드한 후, 워터마크 영역에 상자를 그려 제거하세요.",
+      "selectVideo": "동영상 선택",
+      "originalLabel": "원본 동영상 · 워터마크 영역 선택",
+      "removeBtn": "제거",
+      "previewTitle": "처리 미리보기",
+      "aiBadge": "AI 처리 중",
+      "emptyPreview": "처리된 동영상이 여기에 표시됩니다",
+      "processing": "처리 중 {progress}%",
+      "startRemoval": "워터마크 제거 시작",
+      "download": "처리된 동영상 다운로드",
+      "errorSelectArea": "먼저 제거할 워터마크 영역에 상자를 그려주세요",
+      "errorFailed": "처리에 실패했습니다. 다시 시도해 주세요",
+      "hint": "팁: 동영상 화면에서 누른 채 드래그하여 워터마크 영역에 상자를 그리세요."
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "이미지를 불러오지 못했습니다",
+      "canvasError": "캔버스 컨텍스트를 가져올 수 없습니다",
+      "processError": "처리에 실패했습니다",
+      "hint": "이미지 위에서 드래그하여 워터마크 영역을 선택하세요",
+      "processBtn": "스마트 워터마크 제거",
+      "resultTitle": "처리 결과",
+      "downloadBtn": "처리된 이미지 다운로드"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "이미지를 불러오지 못했습니다",
+      "processError": "변환에 실패했습니다",
+      "generateBtn": "ICO 생성",
+      "downloadBtn": "ICO 파일 다운로드"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "이미지를 불러오지 못했습니다",
+      "canvasError": "캔버스를 생성할 수 없습니다",
+      "convertError": "형식 변환에 실패했습니다",
+      "unsupportedFormat": "지원하지 않는 형식입니다",
+      "outputFormat": "출력 형식",
+      "convertBtn": "형식 변환",
+      "downloadBtn": "변환된 이미지 다운로드"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "이미지를 불러오지 못했습니다",
+      "canvasError": "캔버스를 생성할 수 없습니다",
+      "compressError": "압축에 실패했습니다",
+      "qualityLabel": "JPEG 품질",
+      "scaleLabel": "크기 조정",
+      "sizeCompare": "원본 {original} → 압축 후 {compressed}",
+      "compressBtn": "이미지 압축",
+      "downloadBtn": "압축된 이미지 다운로드"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
-      "res1080p": "1920px (1080p)",
-      "res720p": "1280px (720p)",
-      "res480p": "854px (480p)",
-      "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "title": "동영상 압축",
+      "description": "동영상을 드래그하거나 클릭하여 업로드하고, 해상도와 비트레이트를 조정하여 압축하세요.",
+      "selectVideo": "동영상 선택",
+      "originalLabel": "원본 동영상",
+      "removeBtn": "제거",
+      "settingsTitle": "압축 설정",
+      "resolutionLabel": "해상도",
+      "originalResolution": "원본 해상도 유지",
+      "res1080p": "1920px(1080p)",
+      "res720p": "1280px(720p)",
+      "res480p": "854px(480p)",
+      "res360p": "640px(360p)",
+      "crfLabel": "CRF 품질",
+      "crfHint": "값이 낮을수록 화질이 좋고 파일이 커집니다",
+      "processing": "압축 중 {progress}%",
+      "processBtn": "동영상 압축",
+      "uploadFirstError": "먼저 동영상을 업로드해 주세요",
+      "processError": "처리에 실패했습니다. 다시 시도해 주세요",
+      "downloadBtn": "압축된 동영상 다운로드"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "이미지를 불러오지 못했습니다",
+      "canvasError": "캔버스를 생성할 수 없습니다",
+      "upscaleError": "확대에 실패했습니다",
+      "scaleLabel": "확대 배율",
+      "sharpenLabel": "선명하게 가장자리 강화",
+      "upscaleBtn": "AI 고해상도 확대",
+      "downloadBtn": "확대된 이미지 다운로드"
     }
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "색상",
+      "description": "색상 변환 및 팔레트"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "요리",
+      "description": "요리 및 조리법"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "암호화폐",
+      "description": "암호화폐 및 채굴"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "데이터",
+      "description": "데이터 및 대역폭"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "날짜/시간",
+      "description": "날짜와 시간"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "금융",
+      "description": "금융 계산기"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "건강",
+      "description": "건강 및 피트니스"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "인프라",
+      "description": "IT 및 가상화",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +267,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "공학",
+      "description": "공학 및 물리",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +277,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "화학",
+      "description": "화학 계산기",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +287,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "수학",
+      "description": "수학 계산기"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "음악",
+      "description": "음악 및 오디오",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "네트워크",
+      "description": "네트워크 도구"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "사진",
+      "description": "사진 계산기"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "물리",
+      "description": "물리 및 역학"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "부동산",
+      "description": "모기지 및 임대"
     },
     "video": {
-      "name": "Video",
-      "description": "Video and media calculators"
+      "name": "동영상",
+      "description": "동영상 계산기"
     },
     "web": {
-      "name": "Web",
-      "description": "Web development tools"
+      "name": "웹",
+      "description": "웹 및 SEO 도구"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "자동차",
+      "description": "연료, 타이어, 유지보수 및 금융 계산기"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -490,9 +493,9 @@
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
-      "metaDescription": "Calculate the exact duration between two dates and times"
+      "name": "시간 계산기",
+      "description": "두 날짜와 시간 사이의 기간 계산",
+      "metaDescription": "시간 기간 계산기"
     },
     "time-zone": {
       "name": "Time Zone",
@@ -510,9 +513,9 @@
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
-      "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
+      "name": "기간 변환기",
+      "description": "초, 분, 시간, 일, 주, 월, 년 시간 단위 변환",
+      "metaDescription": "시간 단위 변환 도구"
     },
     "rgb": {
       "name": "RGB Converter",
@@ -810,49 +813,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "주택담보대출",
+      "description": "월별 상환액을 계산하고 상환 일정 확인",
+      "metaDescription": "상환 일정이 포함된 주택담보대출 계산"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "복리",
+      "description": "정기적인 기여와 함께 투자의 복리를 계산",
+      "metaDescription": "시간에 따른 복리 성장 계산"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "대출",
+      "description": "개인, 자동차 또는 기타 대출의 월별 상환액 계산",
+      "metaDescription": "대출 상환 및 상환 일정"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "은퇴",
+      "description": "저축 예측과 소득 계획으로 은퇴 계획 수립",
+      "metaDescription": "은퇴 저축 및 소득 계획"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "팁",
+      "description": "팁 금액을 계산하고 여러 사람과 나누기",
+      "metaDescription": "팁 계산 및 분배"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "저축 목표",
+      "description": "정기적인 기여로 저축 목표 달성 기간 계산",
+      "metaDescription": "저축 계획 및 목표 달성"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "인플레이션",
+      "description": "인플레이션이 구매력에 미치는 영향 계산",
+      "metaDescription": "인플레이션이 화폐 가치에 미치는 영향"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "투자수익률",
+      "description": "투자수익률과 연간 수익 계산",
+      "metaDescription": "투자 수익 계산"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "손익분기점",
+      "description": "손익분기점과 이익 분석 계산",
+      "metaDescription": "손익분기점 분석"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -865,9 +868,9 @@
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
-      "metaDescription": "Convert currencies with live exchange rates"
+      "name": "통화 변환기",
+      "description": "주요 세계 통화 변환",
+      "metaDescription": "통화 변환 도구"
     },
     "auto-loan": {
       "name": "Auto Loan",
@@ -1055,9 +1058,9 @@
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
-      "description": "Perform arithmetic calculations with expression support",
-      "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
+      "name": "기본 계산기",
+      "description": "표현식 지원 산술 계산",
+      "metaDescription": "무료 온라인 기본 계산기"
     },
     "fraction-calculator": {
       "name": "Fraction",
@@ -1065,9 +1068,9 @@
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
-      "description": "Calculate percentages, percent change, and percent difference",
-      "metaDescription": "Calculate percentages, find percent change, and percent difference"
+      "name": "백분율 계산기",
+      "description": "백분율, 증감률, 차이율 계산",
+      "metaDescription": "백분율 계산 도구"
     },
     "percent-error": {
       "name": "Percent Error",
@@ -1155,9 +1158,9 @@
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
-      "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
+      "name": "면적 계산기",
+      "description": "다양한 도형의 면적 계산",
+      "metaDescription": "면적 계산 도구"
     },
     "surface-area-calculator": {
       "name": "Surface Area",
@@ -1454,34 +1457,29 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "연비",
+      "description": "차량 연비 계산",
+      "metaDescription": "연비 계산 도구"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "차량 융자",
+      "description": "차량 융자 계산 도구",
+      "metaDescription": "차량 융자 계산기"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "타이어 사이즈",
+      "description": "타이어 사이즈 변경 계산 도구",
+      "metaDescription": "타이어 사이즈 계산기"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
+      "name": "차량 정비 계산기",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "category": "Category",
-      "value": "Value",
-      "from": "From",
-      "to": "To",
-      "swap": "Swap"
+      "name": "단위 변환기",
+      "description": "길이, 질량, 온도, 면적, 부피, 속도, 시간, 데이터, 에너지, 전력, 압력 단위 변환",
+      "metaDescription": "단위 변환 도구"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1495,18 +1493,9 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
-      "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
-      "valueA": "Value A",
-      "valueB": "Value B",
-      "bitwise": "Bitwise operation",
-      "shift": "Shift",
-      "none": "None",
-      "left": "Left (<<)",
-      "right": "Right (>>)",
-      "reprA": "A representations",
-      "reprB": "B representations"
+      "name": "프로그래머 계산기",
+      "description": "10진수, 16진수, 8진수, 2진수 변환 및 비트 연산",
+      "metaDescription": "프로그래머용 계산기"
     },
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
@@ -1536,49 +1525,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "자동차 대출",
+      "description": "자동차 대출 월별 상환액 계산",
+      "metaDescription": "자동차 대출 계산"
+    },
+    "lease": {
+      "name": "리스",
+      "description": "자동차 리스 상환액 계산",
+      "metaDescription": "리스 상환 계산"
+    },
+    "trade-in": {
+      "name": "중고차 대체",
+      "description": "자동차 대체 가치 계산",
+      "metaDescription": "중고차 가치 계산"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "값",
+      "amount": "금액",
+      "result": "결과",
+      "from": "에서",
+      "to": "까지",
+      "date": "날짜",
+      "startDate": "시작 날짜",
+      "endDate": "종료 날짜",
+      "birthDate": "생년월일",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "년",
+      "months": "개월",
+      "weeks": "주",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "계약금",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "총 이자",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "원금",
+      "interest": "이자",
+      "balance": "잔액",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "년",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1668,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "계산",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1781,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "개월",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1817,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "검색",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1880,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "입력",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "대출 세부 정보",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1892,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "출력"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2021,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "계산 단계",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2044,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "재설정"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2085,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "총 비용",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2093,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "년"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2184,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "총 비용",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "계산 단계"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2225,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "매월",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "총",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2340,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "제목",
+      "seo_category_description": "설명",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2563,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "결제",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "총 상환액",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "결과",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2629,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "대출 세부 정보",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "시작 날짜",
+      "totalInterest": "총 이자",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "원금",
+      "interest": "이자",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "년",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2686,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "매월",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2704,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "잔액",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2740,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "총 상환액",
+      "totalCost": "총 비용",
+      "vehiclePrice": "차량 가격",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2897,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "개월",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2975,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "개월",
+      "payment": "결제",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3018,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "값",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3041,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "결과",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3080,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "값",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3562,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "계산",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4119,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "필터",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4172,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "계산",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4220,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "이름",
+        "description": "설명",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "통화",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "계약금",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "대출 세부 정보",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "시작 날짜",
+        "years": "년",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "매월",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "총 이자",
+        "totalCost": "총 비용",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "원금",
+        "interest": "이자",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "년",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4326,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "통화",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4482,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "입력",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4499,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "입력",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4524,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "금액",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "결과",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4544,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "통화",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4571,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "입력",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "금액",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4591,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "결과",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4603,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "통화",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "금액",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4619,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "계산 단계",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4641,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "금액",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4651,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "계산 단계",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4681,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "금액"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4948,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "년",
+        "years": "년",
+        "month": "개월",
+        "months": "개월",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5117,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "계산 단계",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5311,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "값",
+        "from": "에서",
+        "to": "까지",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5449,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "계산 단계",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "계산",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5691,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "계산 단계",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5735,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "설명",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5776,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "초",
+        "min": "분",
+        "hr": "시간"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5798,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "초",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5817,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "재설정",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5832,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "계산 단계",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "복사",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5918,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "값",
+        "description": "설명"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +5992,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "이름",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "설명",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6076,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "입력",
+        "result": "결과",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "비교"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6093,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "통화",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6112,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "계산 단계",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6138,92 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "대출",
+          "lease": "리스",
+          "compare": "비교"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "차량 상세",
+        "vehicleDetailsDescription": "차량 가격과 결제 세부 정보를 입력하세요",
+        "vehiclePrice": "차량 가격",
+        "downPayment": "계약금",
+        "tradeInValue": "중고차 가치",
+        "currency": "통화",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
-        "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "includeVAT": "스위스 부가가치세 포함",
+        "loanDetails": "대출 세부 정보",
+        "leaseDetails": "리스 세부 정보",
+        "interestRate": "이자율 (%)",
+        "loanTerm": "대출 기간",
+        "leaseTerm": "리스 기간",
+        "residualValue": "잔존 가치 (%)",
+        "leaseAPR": "리스 APR (%)",
+        "annualKmLimit": "연간 주행 거리 제한",
+        "months": "개월",
+        "years": "년",
+        "year": "년",
+        "month": "개월",
+        "loanResult": "대출 요약",
+        "leaseResult": "리스 요약",
+        "comparisonResult": "구매 vs 리스 비교",
+        "perMonth": "매월",
+        "loanAmount": "대출 금액",
+        "totalPayments": "총 납부액",
+        "totalInterest": "총 이자",
+        "totalCost": "총 비용",
+        "capitalizedCost": "자본화 비용",
+        "depreciation": "감가상각",
+        "financeCharge": "금융 비용",
+        "total": "총계",
+        "kmLimit": "주행 거리 제한",
+        "excessKmCharge": "초과 주행 비용",
+        "amortizationSchedule": "상환 일정",
+        "payment": "결제",
+        "principal": "원금",
+        "interest": "이자",
+        "balance": "잔액",
+        "showingFirst12Months": "일정의 처음 12개월 표시",
+        "lowerMonthlyPayment": "더 낮은 월별 결제",
+        "lowerTotalCost": "더 낮은 총 비용",
+        "recommendation": "추천",
+        "calculationSteps": "계산 단계",
+        "loan": "대출",
+        "lease": "리스",
+        "compare": "비교",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "차량 가격: {value}",
+          "salesTax": "판매세: {rate} {value}",
+          "totalVehicleCost": "차량 총 비용: {value}",
+          "downPayment": "계약금: {value}",
+          "tradeInValue": "교환 가치: {value}",
+          "loanAmount": "대출 금액: {value}",
+          "interestRate": "금리: {apr} {monthly}",
+          "loanTerm": "대출 기간: {months}",
+          "monthlyPayment": "월 상환액: {value}",
+          "totalPayments": "총 상환액: {value}",
+          "totalInterest": "총 이자: {value}",
+          "totalCost": "총 비용: {value}",
+          "capitalizedCost": "자본화 비용: {value}",
+          "residualValue": "잔존 가치: {percent} {value}",
+          "depreciation": "감가상각: {capCost} {residual} {months} {result}",
+          "financeCharge": "금융 비용: {capCost} {residual} {result}",
+          "totalLeaseCost": "리스 총 비용: {value}",
+          "moneyFactorToAPR": "금전 계수에서 APR로: {apr}",
+          "kmLimit": "km 한도: {annual} {total}",
+          "excessKmCharge": "초과 km 요금: {value}",
+          "loanMonthlyPayment": "대출 월 상환액: {value}",
+          "leaseMonthlyPayment": "리스 월 상환액: {value}",
+          "monthlyDifference": "월 차이: {value} {lower}",
+          "loanTotalCost": "대출 총 비용: {value}",
+          "leaseTotalCost": "리스 총 비용: {value}",
+          "totalCostDifference": "총 비용 차이: {value}",
+          "recommendation": "추천: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "입력",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6234,33 +6241,31 @@
         "compareModeDescription": "Compare with another tire size",
         "compareTire": "Comparison Tire Size",
         "comparisonResult": "Size Comparison",
-        "sidewallHeight": "Sidewall Height",
-        "overallDiameter": "Overall Diameter",
-        "circumference": "Circumference",
-        "revolutionsPerKm": "Revolutions/km",
+        "sidewallHeight": "사이드월 높이",
+        "overallDiameter": "총 직경",
+        "circumference": "원주",
+        "revolutionsPerKm": "회전수/km",
         "diameterDifference": "Diameter Difference",
         "speedometerError": "Speedometer Error",
-        "withinTolerance": "Within recommended tolerance (3%)",
-        "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "withinTolerance": "권장 오차 범위 내 (3%)",
+        "exceedsTolerance": "권장 오차 범위 초과",
+        "calculationSteps": "계산 단계",
         "steps": {
-          "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
-          "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
-          "overallDiameter": "Overall diameter = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
-          "circumference": "Circumference = π × {diameter}mm = {result}mm",
-          "revolutionsPerKm": "Revolutions/km = 1,000,000 / {circumference} = {result}",
-          "loadIndex": "Load index {loadIndex} = {loadValue} kg per tire",
-          "speedRating": "Speed rating {rating} = {speedValue} km/h ({desc})",
-          "diameterDiffMm": "Diameter difference = {tire2}mm - {tire1}mm = {result}mm",
-          "diameterDiffPct": "Diameter difference % = ({diffMm} / {tire1}) × 100 = {result}%",
-          "circumferenceDiffPct": "Circumference difference = {result}%",
-          "speedometerError": "Speedometer error = {result}%",
-          "actualSpeed": "When speedometer shows 100 km/h, actual speed = {result} km/h",
-          "revolutionsDiffPerKm": "Revolutions difference per km = {tire2} - {tire1} = {result}",
-          "warning": "WARNING: {message}"
-        },
-        "warningTolerance5": "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly",
-        "warningTolerance3": "Diameter difference exceeds 3% - may affect speedometer accuracy"
+          "sidewallHeight": "사이드월 높이 = {width}mm × ({aspectRatio}/100) = {result}mm",
+          "rimDiameter": "림 직경 = {rimDiameter}\" × 25.4 = {result}mm",
+          "overallDiameter": "총 직경 = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
+          "circumference": "원주 = π × {diameter}mm = {result}mm",
+          "revolutionsPerKm": "회전수/km = 1,000,000 / {circumference} = {result}",
+          "loadIndex": "하중지수 {loadIndex} = {loadValue} kg/타이어",
+          "speedRating": "속도등급 {rating} = {speedValue} km/h ({desc})",
+          "diameterDiffMm": "직경 차이 = {tire2}mm - {tire1}mm = {result}mm",
+          "diameterDiffPct": "직경 차이% = ({diffMm} / {tire1}) × 100 = {result}%",
+          "circumferenceDiffPct": "원주 차이 = {result}%",
+          "speedometerError": "속도계 오차 = {result}%",
+          "actualSpeed": "속도계가 100 km/h일 때 실제 속도 = {result} km/h",
+          "revolutionsDiffPerKm": "km당 회전수 차이 = {tire2} - {tire1} = {result}",
+          "warning": "경고: {message}"
+        }
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",
@@ -6283,7 +6288,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "개월",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

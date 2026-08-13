@@ -1,8 +1,8 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
-    "allTools": "All Tools",
+    "tagline": "Calculadoras y conversores online gratuitos",
+    "allTools": "Todas las herramientas",
     "home": "Home",
     "search": {
       "placeholder": "Search calculators...",
@@ -14,28 +14,28 @@
     "loading": "Loading...",
     "error": "Error",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "Copiar",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "Reiniciar",
+    "calculate": "Calcular",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "Borrar",
     "selectLanguage": "Select language",
     "footer": {
-      "copyright": "All rights reserved",
+      "copyright": "Todos los derechos reservados",
       "links": {
-        "privacy": "Privacy Policy",
-        "about": "About",
-        "contact": "Contact",
-        "terms": "Terms of Service",
+        "privacy": "Política de Privacidad",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "terms": "Términos de Servicio",
         "blog": "Blog"
       }
     },
     "navigation": {
       "categories": "Categories",
       "featured": "Featured",
-      "moreTools": "More Tools"
+      "moreTools": "Más herramientas"
     },
     "at": "at",
     "duration": "Duration",
@@ -69,12 +69,12 @@
       "decline": "Decline",
       "manage": "Manage"
     },
-    "coreFeatures": "Core Features",
-    "toolHighlights": "Tool Highlights",
+    "coreFeatures": "Características principales",
+    "toolHighlights": "Destacados de la herramienta",
     "blog": "Blog",
     "homepageTitle": "Free online toolbox",
     "homepageBrowseAll": "Browse All Tools",
-    "homepageViewBlog": "View Blog",
+    "homepageViewBlog": "Ver blog",
     "homepageViewAll": "View All →",
     "hotTools": "🔥 Hot Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
@@ -86,175 +86,181 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "backTo": "Volver a {category}",
+    "seeAll": "Ver todo",
+    "toolCategories": "Categorías de herramientas",
+    "searchPlaceholder": "Buscar calculadoras……",
+    "result": "Resultado",
+    "results": "Resultados"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ Procesamiento de imágenes y video",
+    "sectionSubtitle": "Herramientas de imagen y video · Nuevo",
+    "featuredTitle": "✨ Herramientas destacadas",
+    "allCategories": "Todo",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "Todo",
+      "watermark": "Eliminar marca de agua",
+      "format": "Conversión de formato",
+      "icon": "Herramientas de iconos",
+      "compress": "Comprimir y optimizar"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "Eliminador de marca de agua de video",
+      "desc": "Sube un video y selecciona el área de la marca de agua. Procesamiento IA en el navegador. Soporta MP4 / MOV / WebM."
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "Eliminador de marca de agua de imagen",
+      "desc": "Selecciona el área de la marca de agua. Eliminación inteligente con IA. Soporta JPG / PNG / WEBP."
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "Convertidor de iconos ICO",
+      "desc": "Convierte imágenes a .ico con empaquetado de múltiples tamaños (16/32/64/128/256px)."
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "Convertidor de formato de imagen",
+      "desc": "Conversión por lotes PNG / JPG / WEBP / BMP / GIF."
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "Compresor de imágenes",
+      "desc": "Compresión con o sin pérdida. Reduce el tamaño del archivo conservando la calidad."
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "Compresor de video",
+      "desc": "Ajusta resolución y bitrate para reducir rápidamente el tamaño del video."
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "Ampliador de imágenes",
+      "desc": "Superresolución con IA — haz que las imágenes borrosas se vean nítidas."
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "Error al cargar la imagen",
+      "canvasError": "No se pudo crear el canvas",
+      "readError": "Error al leer el archivo",
+      "pdfError": "La generación de PDF falló",
+      "mergeBtn": "Fusionar en PDF",
+      "downloadBtn": "Descargar PDF",
+      "title": "Imagen a PDF",
+      "desc": "Combina varias imágenes en un solo archivo PDF."
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "Haz clic o arrastra para subir archivos",
+      "supports": "Soporta"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "Eliminador de marca de agua de video",
+      "description": "Arrastra o haz clic para subir un video, luego dibuja un cuadro sobre el área de la marca de agua para eliminarla.",
+      "selectVideo": "Seleccionar video",
+      "originalLabel": "Video original · selecciona área de marca de agua",
+      "removeBtn": "Eliminar",
+      "previewTitle": "Vista previa procesada",
+      "aiBadge": "Procesamiento IA",
+      "emptyPreview": "El video procesado aparecerá aquí",
+      "processing": "Procesando {progress}%",
+      "startRemoval": "Eliminar marca de agua",
+      "download": "Descargar video procesado",
+      "errorSelectArea": "Primero dibuja un cuadro sobre la marca de agua que quieres eliminar",
+      "errorFailed": "El procesamiento falló, inténtalo de nuevo",
+      "hint": "Consejo: presiona y arrastra sobre el fotograma del video para dibujar un cuadro sobre la marca de agua."
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "Error al cargar la imagen",
+      "canvasError": "No se pudo obtener el contexto del canvas",
+      "processError": "El procesamiento falló",
+      "hint": "Arrastra sobre la imagen para seleccionar el área de la marca de agua",
+      "processBtn": "Eliminar marca de agua inteligentemente",
+      "resultTitle": "Resultado",
+      "downloadBtn": "Descargar imagen procesada"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "Error al cargar la imagen",
+      "processError": "La conversión falló",
+      "generateBtn": "Generar ICO",
+      "downloadBtn": "Descargar archivo ICO"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "Error al cargar la imagen",
+      "canvasError": "No se pudo crear el canvas",
+      "convertError": "La conversión de formato falló",
+      "unsupportedFormat": "Formato no soportado",
+      "outputFormat": "Formato de salida",
+      "convertBtn": "Convertir formato",
+      "downloadBtn": "Descargar imagen convertida"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "Error al cargar la imagen",
+      "canvasError": "No se pudo crear el canvas",
+      "compressError": "La compresión falló",
+      "qualityLabel": "Calidad JPEG",
+      "scaleLabel": "Escala",
+      "sizeCompare": "Original {original} → Comprimido {compressed}",
+      "compressBtn": "Comprimir imagen",
+      "downloadBtn": "Descargar imagen comprimida"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
+      "title": "Compresor de video",
+      "description": "Arrastra o haz clic para subir un video, luego ajusta la resolución y el bitrate para comprimir.",
+      "selectVideo": "Seleccionar video",
+      "originalLabel": "Video original",
+      "removeBtn": "Eliminar",
+      "settingsTitle": "Ajustes de compresión",
+      "resolutionLabel": "Resolución",
+      "originalResolution": "Mantener resolución original",
       "res1080p": "1920px (1080p)",
       "res720p": "1280px (720p)",
       "res480p": "854px (480p)",
       "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "crfLabel": "Calidad CRF",
+      "crfHint": "Valor menor = mejor calidad, archivo más grande",
+      "processing": "Comprimiendo {progress}%",
+      "processBtn": "Comprimir video",
+      "uploadFirstError": "Primero sube un video",
+      "processError": "El procesamiento falló, inténtalo de nuevo",
+      "downloadBtn": "Descargar video comprimido"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "Error al cargar la imagen",
+      "canvasError": "No se pudo crear el canvas",
+      "upscaleError": "La ampliación falló",
+      "scaleLabel": "Factor de ampliación",
+      "sharpenLabel": "Nitidez de bordes",
+      "upscaleBtn": "Ampliación IA",
+      "downloadBtn": "Descargar imagen ampliada"
     }
   },
   "nav": {
     "color": {
       "name": "Color",
-      "description": "Color conversion and palettes"
+      "description": "Conversión de color y paletas"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "Cocina",
+      "description": "Cocina y recetas"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "Criptomonedas",
+      "description": "Cripto y minería"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "Datos",
+      "description": "Datos y ancho de banda"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "Fecha y Hora",
+      "description": "Fechas y tiempos"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "Finanzas",
+      "description": "Calculadoras financieras"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "Salud",
+      "description": "Salud y fitness"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "Infraestructura",
+      "description": "IT y virtualización",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +270,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "Ingeniería",
+      "description": "Ingeniería y física",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +280,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "Química",
+      "description": "Calculadoras de química",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +290,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "Matemáticas",
+      "description": "Calculadoras matemáticas"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "Música",
+      "description": "Audio y música",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "Redes",
+      "description": "Herramientas de red"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "Fotografía",
+      "description": "Herramientas para fotos"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "Física",
+      "description": "Física y mecánica"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "Inmobiliario",
+      "description": "Hipotecas y alquiler"
     },
     "video": {
-      "name": "Video",
-      "description": "Video and media calculators"
+      "name": "Vídeo",
+      "description": "Herramientas para vídeo"
     },
     "web": {
       "name": "Web",
-      "description": "Web development tools"
+      "description": "Herramientas web y SEO"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "Automoción",
+      "description": "Calculadoras para combustible, neumáticos, mantenimiento y financiación"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -372,8 +378,8 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
-      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
+      "description": "Calcula tu Índice de Masa Corporal y categoría de salud",
+      "metaDescription": "Calcula tu Índice de Masa Corporal (IMC) y comprende tu categoría de salud"
     },
     "corpulence": {
       "name": "Corpulence",
@@ -396,7 +402,7 @@
       "generations": {
         "all": "All Generations",
         "current": "Current",
-        "previous": "Previous"
+        "previous": "Anterior"
       },
       "selectCpus": "Select CPUs",
       "selectCpusHint": "Select 2 to 4 CPUs to compare",
@@ -485,14 +491,14 @@
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
+      "name": "Horas",
       "description": "Calculate hours between two times or dates",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
-      "metaDescription": "Calculate the exact duration between two dates and times"
+      "name": "Duración de Tiempo",
+      "description": "Calcula la duración entre dos fechas y horas",
+      "metaDescription": "Calculadora de duración"
     },
     "time-zone": {
       "name": "Time Zone",
@@ -510,9 +516,9 @@
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
-      "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
+      "name": "Convertidor de Duración",
+      "description": "Convierte unidades de tiempo: segundos, minutos, horas, días, semanas, meses, años",
+      "metaDescription": "Convertidor de unidades de tiempo"
     },
     "rgb": {
       "name": "RGB Converter",
@@ -530,7 +536,7 @@
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
+      "name": "Descargar",
       "description": "Calculate download time from bandwidth and file size",
       "metaDescription": "Calculate how long a file download will take"
     },
@@ -810,49 +816,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "Hipoteca",
+      "description": "Calcula los pagos mensuales y el plan de amortización",
+      "metaDescription": "Calcula la hipoteca con plan de amortización"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "Interés Compuesto",
+      "description": "Calcula el interés compuesto de inversiones con aportaciones periódicas",
+      "metaDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "Préstamo",
+      "description": "Calcula los pagos mensuales de préstamos personales, de auto o cualquier otro tipo",
+      "metaDescription": "Pagos de préstamo y amortización"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "Jubilación",
+      "description": "Planifica tu jubilación con proyecciones de ahorro y planificación de ingresos",
+      "metaDescription": "Ahorro y planificación de ingresos para la jubilación"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "Propina",
+      "description": "Calcula el monto de la propina y divide la cuenta entre varias personas",
+      "metaDescription": "Calcula propinas y divide cuentas"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "Meta de Ahorro",
+      "description": "Calcula cuánto tiempo se necesita para alcanzar la meta de ahorro",
+      "metaDescription": "Planifica tus ahorros y alcanza tus metas"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "Inflación",
+      "description": "Calcula el impacto de la inflación en el poder adquisitivo",
+      "metaDescription": "Entiende el impacto de la inflación en tu dinero"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "Retorno de Inversión",
+      "description": "Calcula el retorno de la inversión y los retornos anualizados",
+      "metaDescription": "Calcula tus retornos de inversión"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "Punto de Equilibrio",
+      "description": "Calcula el punto de equilibrio y el análisis de beneficios",
+      "metaDescription": "Análisis del punto de equilibrio"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -865,9 +871,9 @@
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
-      "metaDescription": "Convert currencies with live exchange rates"
+      "name": "Convertidor de Moneda",
+      "description": "Convierte las principales monedas mundiales",
+      "metaDescription": "Herramienta de conversión de moneda"
     },
     "auto-loan": {
       "name": "Auto Loan",
@@ -900,7 +906,7 @@
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
+      "name": "Pago inicial",
       "description": "Calculate how much to save for a down payment",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
@@ -1055,9 +1061,9 @@
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
-      "description": "Perform arithmetic calculations with expression support",
-      "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
+      "name": "Calculadora Básica",
+      "description": "Realiza cálculos aritméticos con soporte para expresiones",
+      "metaDescription": "Calculadora básica gratuita"
     },
     "fraction-calculator": {
       "name": "Fraction",
@@ -1065,9 +1071,9 @@
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
-      "description": "Calculate percentages, percent change, and percent difference",
-      "metaDescription": "Calculate percentages, find percent change, and percent difference"
+      "name": "Calculadora de Porcentaje",
+      "description": "Calcula porcentajes, cambio porcentual y diferencia porcentual",
+      "metaDescription": "Herramienta de porcentaje"
     },
     "percent-error": {
       "name": "Percent Error",
@@ -1155,9 +1161,9 @@
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
-      "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
+      "name": "Calculadora de Área",
+      "description": "Calcula el área de varias formas",
+      "metaDescription": "Herramienta de área"
     },
     "surface-area-calculator": {
       "name": "Surface Area",
@@ -1369,7 +1375,7 @@
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
+      "name": "Proporción",
       "description": "Calculate and simplify ratios, find equivalent ratios",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
@@ -1454,34 +1460,29 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "Eficiencia de Combustible",
+      "description": "Calcula la eficiencia de combustible de tu auto",
+      "metaDescription": "Herramienta de eficiencia de combustible"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "Financiación de Vehículos",
+      "description": "Herramienta de cálculo de financiación de vehículos",
+      "metaDescription": "Calculadora de financiación de vehículos"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "Tamaño de Neumático",
+      "description": "Herramienta de cálculo de cambio de tamaño de neumático",
+      "metaDescription": "Calculadora de tamaño de neumático"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "name": "Calculadora de Mantenimiento",
+      "description": "Intervalos de servicio para su vehículo",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "category": "Category",
-      "value": "Value",
-      "from": "From",
-      "to": "To",
-      "swap": "Swap"
+      "name": "Convertidor de Unidades",
+      "description": "Convierte unidades de longitud, masa, temperatura, área, volumen, velocidad, tiempo, datos, energía, potencia y presión",
+      "metaDescription": "Herramienta de conversión de unidades"
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -1495,18 +1496,9 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
-      "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
-      "valueA": "Value A",
-      "valueB": "Value B",
-      "bitwise": "Bitwise operation",
-      "shift": "Shift",
-      "none": "None",
-      "left": "Left (<<)",
-      "right": "Right (>>)",
-      "reprA": "A representations",
-      "reprB": "B representations"
+      "name": "Calculadora de Programador",
+      "description": "Convierte entre decimal, hexadecimal, octal y binario",
+      "metaDescription": "Calculadora para programadores"
     },
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
@@ -1517,8 +1509,8 @@
       "extra": "Extra monthly payment",
       "snowball": "Snowball (smallest balance first)",
       "avalanche": "Avalanche (highest rate first)",
-      "months": "Months",
-      "totalInterest": "Total interest",
+      "months": "Meses",
+      "totalInterest": "Intereses totales",
       "totalPaid": "Total paid",
       "order": "Payoff order",
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
@@ -1536,49 +1528,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "Préstamo de Auto",
+      "description": "Calcula los pagos mensuales del préstamo de auto",
+      "metaDescription": "Calculadora de préstamo de auto"
+    },
+    "lease": {
+      "name": "Leasing",
+      "description": "Calcula los pagos de leasing de auto",
+      "metaDescription": "Calculadora de leasing"
+    },
+    "trade-in": {
+      "name": "Valor de Canje",
+      "description": "Calcula el valor de canje de tu auto",
+      "metaDescription": "Calculadora de valor de canje"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "Valor",
+      "amount": "Cantidad",
+      "result": "Resultado",
+      "from": "De",
+      "to": "A",
+      "date": "Fecha",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "birthDate": "Fecha de nacimiento",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "Años",
+      "months": "Meses",
+      "weeks": "Semanas",
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "Pago inicial",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "Intereses totales",
       "totalPayment": "Total Payment",
       "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "interest": "Interés",
+      "balance": "Saldo",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Año",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1671,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "Calcular",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1784,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "Mes",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1820,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "Buscar",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1883,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "Entrada",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "Detalles del préstamo",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1895,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "Salida"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2024,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Pasos de cálculo",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2047,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "Reiniciar"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2088,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "Costo total",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2096,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "años"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2187,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "Costo total",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "Pasos de cálculo"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,7 +2228,7 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "por mes",
       "perYear": "per year",
       "perWeek": "per week",
       "total": "Total",
@@ -2336,8 +2343,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "Título",
+      "seo_category_description": "Descripción",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2566,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "Pago",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "Pagos totales",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "Resultado",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2632,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "Detalles del préstamo",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "Fecha de inicio",
+      "totalInterest": "Intereses totales",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
       "principal": "Principal",
-      "interest": "Interest",
+      "interest": "Interés",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "Año",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2689,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "por mes",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2707,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "Saldo",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2743,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "Pagos totales",
+      "totalCost": "Costo total",
+      "vehiclePrice": "Precio del vehículo",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2900,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "Mes",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2978,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "Mes",
+      "payment": "Pago",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3021,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "Valor",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3044,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "Resultado",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3083,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "Valor",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3565,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "Calcular",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4122,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "Filtrar",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4175,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "Calcular",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4223,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "Nombre",
+        "description": "Descripción",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "Moneda",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "Pago inicial",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "Detalles del préstamo",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "Fecha de inicio",
+        "years": "años",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "por mes",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "Intereses totales",
+        "totalCost": "Costo total",
         "payoffDate": "Payoff Date",
         "principal": "Principal",
-        "interest": "Interest",
+        "interest": "Interés",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "Año",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4329,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "Moneda",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4485,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "Entrada",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4502,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "Entrada",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4527,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "Cantidad",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "Resultado",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4547,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "Moneda",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4574,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "Entrada",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "Cantidad",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4594,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "Resultado",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4606,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "Moneda",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "Cantidad",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4622,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Pasos de cálculo",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4644,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "Cantidad",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4654,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Pasos de cálculo",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4684,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "Cantidad"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4951,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "año",
+        "years": "años",
+        "month": "mes",
+        "months": "meses",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5120,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Pasos de cálculo",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5314,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "Valor",
+        "from": "De",
+        "to": "A",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5452,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Pasos de cálculo",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "Calcular",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5694,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "Pasos de cálculo",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5738,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "Descripción",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5779,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "Segundos",
+        "min": "Minutos",
+        "hr": "Horas"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5801,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "Segundos",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5820,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "Reiniciar",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5835,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "Pasos de cálculo",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "Copiar",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5921,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "Valor",
+        "description": "Descripción"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +5995,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "Nombre",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "Descripción",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6079,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "Entrada",
+        "result": "Resultado",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "Comparar"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6096,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "Moneda",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6115,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "Pasos de cálculo",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,89 +6141,95 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "Préstamo",
+          "lease": "Arrendamiento",
+          "compare": "Comparar"
         },
-        "vehicleDetails": "Vehicle Details",
-        "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
-        "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "vehicleDetails": "Detalles del Vehículo",
+        "vehicleDetailsDescription": "Ingrese el precio del vehículo y los detalles de pago",
+        "vehiclePrice": "Precio del Vehículo",
+        "downPayment": "Pago Inicial",
+        "tradeInValue": "Valor de canje",
+        "currency": "Moneda",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
-        "leaseTerm": "Lease Term",
-        "residualValue": "Residual Value (%)",
-        "leaseAPR": "Lease APR (%)",
-        "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
-        "loanResult": "Loan Summary",
-        "leaseResult": "Lease Summary",
-        "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
-        "capitalizedCost": "Capitalized Cost",
-        "depreciation": "Depreciation",
-        "financeCharge": "Finance Charge",
+        "includeVAT": "Incluir IVA suizo",
+        "loanDetails": "Detalles del préstamo",
+        "leaseDetails": "Detalles del arrendamiento",
+        "interestRate": "Tasa de interés (%)",
+        "loanTerm": "Plazo del préstamo",
+        "leaseTerm": "Plazo de arrendamiento",
+        "residualValue": "Valor residual (%)",
+        "leaseAPR": "APR de arrendamiento (%)",
+        "annualKmLimit": "Límite anual de kilometraje",
+        "months": "meses",
+        "years": "años",
+        "year": "año",
+        "month": "mes",
+        "loanResult": "Resumen del préstamo",
+        "leaseResult": "Resumen del arrendamiento",
+        "comparisonResult": "Comparación de compra vs arrendamiento",
+        "perMonth": "Por Mes",
+        "loanAmount": "Monto del préstamo",
+        "totalPayments": "Pagos Totales",
+        "totalInterest": "Intereses Totales",
+        "totalCost": "Coste Total",
+        "capitalizedCost": "Costo capitalizado",
+        "depreciation": "Depreciación",
+        "financeCharge": "Cargo financiero",
         "total": "total",
-        "kmLimit": "Km Limit",
-        "excessKmCharge": "Excess km Charge",
-        "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
+        "kmLimit": "Límite de kilometraje",
+        "excessKmCharge": "Cargo por exceso de kilometraje",
+        "amortizationSchedule": "Calendario de amortización",
+        "payment": "Pago",
         "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
-        "showingFirst12Months": "Showing first 12 months of schedule",
-        "lowerMonthlyPayment": "Lower Monthly Payment",
-        "lowerTotalCost": "Lower Total Cost",
-        "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "interest": "Interés",
+        "balance": "Saldo",
+        "showingFirst12Months": "Mostrando los primeros 12 meses del calendario",
+        "lowerMonthlyPayment": "Pago mensual menor",
+        "lowerTotalCost": "Costo total menor",
+        "recommendation": "Recomendación",
+        "calculationSteps": "Pasos de Cálculo",
+        "loan": "Préstamo",
+        "lease": "Alquiler",
+        "compare": "Comparar",
+        "monthlyPayment": "Pago Mensual",
+        "loanSummary": "Resumen del Préstamo",
+        "leaseSummary": "Resumen del Alquiler",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "Precio del vehículo: {value}",
+          "salesTax": "Impuesto sobre ventas: {rate} {value}",
+          "totalVehicleCost": "Costo total del vehículo: {value}",
+          "downPayment": "Pago inicial: {value}",
+          "tradeInValue": "Valor de intercambio: {value}",
+          "loanAmount": "Monto del préstamo: {value}",
+          "interestRate": "Tasa de interés: {apr} {monthly}",
+          "loanTerm": "Plazo del préstamo: {months}",
+          "monthlyPayment": "Pago mensual: {value}",
+          "totalPayments": "Pagos totales: {value}",
+          "totalInterest": "Intereses totales: {value}",
+          "totalCost": "Costo total: {value}",
+          "capitalizedCost": "Costo capitalizado: {value}",
+          "residualValue": "Valor residual: {percent} {value}",
+          "depreciation": "Depreciación: {capCost} {residual} {months} {result}",
+          "financeCharge": "Cargo financiero: {capCost} {residual} {result}",
+          "totalLeaseCost": "Costo total del arrendamiento: {value}",
+          "moneyFactorToAPR": "Factor monetario a APR: {apr}",
+          "kmLimit": "Límite de km: {annual} {total}",
+          "excessKmCharge": "Cargo por exceso de km: {value}",
+          "loanMonthlyPayment": "Pago mensual del préstamo: {value}",
+          "leaseMonthlyPayment": "Pago mensual del arrendamiento: {value}",
+          "monthlyDifference": "Diferencia mensal: {value} {lower}",
+          "loanTotalCost": "Costo total del préstamo: {value}",
+          "leaseTotalCost": "Costo total del arrendamiento: {value}",
+          "totalCostDifference": "Diferencia de costo total: {value}",
+          "recommendation": "Recomendación: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "Entrada",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6234,33 +6247,31 @@
         "compareModeDescription": "Compare with another tire size",
         "compareTire": "Comparison Tire Size",
         "comparisonResult": "Size Comparison",
-        "sidewallHeight": "Sidewall Height",
-        "overallDiameter": "Overall Diameter",
-        "circumference": "Circumference",
-        "revolutionsPerKm": "Revolutions/km",
+        "sidewallHeight": "Altura de Flanco",
+        "overallDiameter": "Diámetro Total",
+        "circumference": "Circunferencia",
+        "revolutionsPerKm": "Revoluciones/km",
         "diameterDifference": "Diameter Difference",
         "speedometerError": "Speedometer Error",
-        "withinTolerance": "Within recommended tolerance (3%)",
-        "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "withinTolerance": "Dentro de tolerancia recomendada (3%)",
+        "exceedsTolerance": "Excede tolerancia recomendada",
+        "calculationSteps": "Pasos de Cálculo",
         "steps": {
-          "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
-          "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
-          "overallDiameter": "Overall diameter = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
-          "circumference": "Circumference = π × {diameter}mm = {result}mm",
-          "revolutionsPerKm": "Revolutions/km = 1,000,000 / {circumference} = {result}",
-          "loadIndex": "Load index {loadIndex} = {loadValue} kg per tire",
-          "speedRating": "Speed rating {rating} = {speedValue} km/h ({desc})",
-          "diameterDiffMm": "Diameter difference = {tire2}mm - {tire1}mm = {result}mm",
-          "diameterDiffPct": "Diameter difference % = ({diffMm} / {tire1}) × 100 = {result}%",
-          "circumferenceDiffPct": "Circumference difference = {result}%",
-          "speedometerError": "Speedometer error = {result}%",
-          "actualSpeed": "When speedometer shows 100 km/h, actual speed = {result} km/h",
-          "revolutionsDiffPerKm": "Revolutions difference per km = {tire2} - {tire1} = {result}",
-          "warning": "WARNING: {message}"
-        },
-        "warningTolerance5": "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly",
-        "warningTolerance3": "Diameter difference exceeds 3% - may affect speedometer accuracy"
+          "sidewallHeight": "Altura del flanco = {width}mm × ({aspectRatio}/100) = {result}mm",
+          "rimDiameter": "Diámetro de llanta = {rimDiameter}\" × 25.4 = {result}mm",
+          "overallDiameter": "Diámetro total = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
+          "circumference": "Circunferencia = π × {diameter}mm = {result}mm",
+          "revolutionsPerKm": "Revoluciones/km = 1.000.000 / {circumference} = {result}",
+          "loadIndex": "Índice de carga {loadIndex} = {loadValue} kg por neumático",
+          "speedRating": "Velocidad máxima {rating} = {speedValue} km/h ({desc})",
+          "diameterDiffMm": "Diferencia de diámetro = {tire2}mm - {tire1}mm = {result}mm",
+          "diameterDiffPct": "% Diferencia de diámetro = ({diffMm} / {tire1}) × 100 = {result}%",
+          "circumferenceDiffPct": "Diferencia de circunferencia = {result}%",
+          "speedometerError": "Error del velocímetro = {result}%",
+          "actualSpeed": "Si el velocímetro marca 100 km/h, la velocidad real = {result} km/h",
+          "revolutionsDiffPerKm": "Diferencia de revoluciones por km = {tire2} - {tire1} = {result}",
+          "warning": "ADVERTENCIA: {message}"
+        }
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",
@@ -6283,7 +6294,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "meses",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",

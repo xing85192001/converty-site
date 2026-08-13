@@ -1,7 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
-    "tagline": "Free online calculators and converters",
+    "tagline": "免費線上計算機與轉換工具",
     "allTools": "All Tools",
     "home": "Home",
     "search": {
@@ -12,15 +12,15 @@
       "hint": "to search"
     },
     "loading": "Loading...",
-    "error": "Error",
+    "error": "錯誤",
     "close": "Close",
-    "copy": "Copy",
+    "copy": "複製",
     "copied": "Copied!",
-    "reset": "Reset",
-    "calculate": "Calculate",
+    "reset": "重設",
+    "calculate": "計算",
     "every": "Every",
     "or": "or",
-    "clear": "Clear",
+    "clear": "清除",
     "selectLanguage": "Select language",
     "footer": {
       "copyright": "All rights reserved",
@@ -86,175 +86,177 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "searchPlaceholder": "搜尋計算機……",
+    "result": "結果"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
-    "featuredTitle": "✨ Featured Tools Preview",
-    "allCategories": "All",
+    "sectionTitle": "🖼️ 圖片 / 影片處理",
+    "sectionSubtitle": "圖片與影片工具 · 新增",
+    "featuredTitle": "✨ 精選工具預覽",
+    "allCategories": "全部",
     "categories": {
-      "all": "All",
-      "watermark": "Remove Watermark",
-      "format": "Format Conversion",
-      "icon": "Icon Tools",
-      "compress": "Compress & Optimize"
+      "all": "全部",
+      "watermark": "去水印",
+      "format": "格式轉換",
+      "icon": "圖示工具",
+      "compress": "壓縮最佳化"
     },
     "videoWatermark": {
-      "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "title": "影片去水印",
+      "desc": "上傳影片，框選水印區域。瀏覽器內 AI 處理，支援 MP4 / MOV / WebM。"
     },
     "imageWatermark": {
-      "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "title": "圖片去水印",
+      "desc": "框選水印區域，AI 智慧去除。支援 JPG / PNG / WEBP。"
     },
     "ico": {
-      "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "title": "ICO 圖示轉換",
+      "desc": "將圖片轉換為 .ico 格式，自動封裝多尺寸（16/32/64/128/256px）。"
     },
     "formatConvert": {
-      "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "title": "圖片格式轉換",
+      "desc": "PNG / JPG / WEBP / BMP / GIF 批次轉換。"
     },
     "imageCompress": {
-      "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "title": "圖片壓縮",
+      "desc": "有損 / 無損壓縮，在保留畫質的同時縮小檔案大小。"
     },
     "videoCompress": {
-      "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "title": "影片壓縮",
+      "desc": "調整解析度與位元率，快速壓縮影片檔案大小。"
     },
     "imageUpscale": {
-      "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "title": "圖片放大",
+      "desc": "AI 超解析度 —— 讓模糊圖片變清晰。"
     },
     "imageToPdf": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "readError": "Failed to read file",
-      "pdfError": "PDF generation failed",
-      "mergeBtn": "Merge to PDF",
-      "downloadBtn": "Download PDF",
-      "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "loadError": "圖片載入失敗",
+      "canvasError": "無法建立畫布",
+      "readError": "檔案讀取失敗",
+      "pdfError": "PDF 生成失敗",
+      "mergeBtn": "合併為 PDF",
+      "downloadBtn": "下載 PDF 檔案",
+      "title": "圖片轉 PDF",
+      "desc": "將多張圖片合併為一個 PDF 檔案。"
     },
     "fileDrop": {
-      "clickOrDrag": "Click or drag to upload files",
-      "supports": "Supports"
+      "clickOrDrag": "點擊或拖曳上傳檔案",
+      "supports": "支援"
     },
     "videoWatermarkRemover": {
-      "title": "Video Watermark Remover",
-      "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video · select watermark area",
-      "removeBtn": "Remove",
-      "previewTitle": "Processed preview",
-      "aiBadge": "AI Processing",
-      "emptyPreview": "Processed video will appear here",
-      "processing": "Processing {progress}%",
-      "startRemoval": "Remove Watermark",
-      "download": "Download processed video",
-      "errorSelectArea": "Please first draw a box over the watermark you want removed",
-      "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "title": "影片去水印",
+      "description": "拖曳或點擊上傳影片，然後在影片幀上框選水印區域進行去除。",
+      "selectVideo": "選擇影片",
+      "originalLabel": "原影片 · 框選水印區域",
+      "removeBtn": "移除",
+      "previewTitle": "處理預覽",
+      "aiBadge": "AI 處理中",
+      "emptyPreview": "處理後的影片將顯示在這裡",
+      "processing": "處理中 {progress}%",
+      "startRemoval": "開始去水印",
+      "download": "下載處理後影片",
+      "errorSelectArea": "請先在要去除的水印區域畫一個框",
+      "errorFailed": "處理失敗，請重試",
+      "hint": "提示：在影片畫面上按住並拖動，框選水印區域。"
     },
     "imageWatermarkRemover": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to get canvas context",
-      "processError": "Processing failed",
-      "hint": "Drag on the image to draw a box around the watermark area",
-      "processBtn": "Remove Watermark",
-      "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "loadError": "圖片載入失敗",
+      "canvasError": "無法取得畫布上下文",
+      "processError": "處理失敗",
+      "hint": "在圖片上拖曳框選水印區域",
+      "processBtn": "智慧去除水印",
+      "resultTitle": "處理結果",
+      "downloadBtn": "下載處理後圖片"
     },
     "icoConverter": {
-      "loadError": "Failed to load image",
-      "processError": "Conversion failed",
-      "generateBtn": "Generate ICO",
-      "downloadBtn": "Download ICO file"
+      "loadError": "圖片載入失敗",
+      "processError": "轉換失敗",
+      "generateBtn": "生成 ICO 圖示",
+      "downloadBtn": "下載 ICO 檔案"
     },
     "formatConverter": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "convertError": "Format conversion failed",
-      "unsupportedFormat": "Unsupported format",
-      "outputFormat": "Output format",
-      "convertBtn": "Convert Format",
-      "downloadBtn": "Download converted image"
+      "loadError": "圖片載入失敗",
+      "canvasError": "無法建立畫布",
+      "convertError": "格式轉換失敗",
+      "unsupportedFormat": "不支援的格式",
+      "outputFormat": "輸出格式",
+      "convertBtn": "轉換格式",
+      "downloadBtn": "下載轉換後圖片"
     },
     "imageCompressor": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "compressError": "Compression failed",
-      "qualityLabel": "JPEG quality",
-      "scaleLabel": "Scale",
-      "sizeCompare": "Original {original} → Compressed {compressed}",
-      "compressBtn": "Compress Image",
-      "downloadBtn": "Download compressed image"
+      "loadError": "圖片載入失敗",
+      "canvasError": "無法建立畫布",
+      "compressError": "壓縮失敗",
+      "qualityLabel": "JPEG 品質",
+      "scaleLabel": "尺寸縮放",
+      "sizeCompare": "原始 {original} → 壓縮後 {compressed}",
+      "compressBtn": "開始壓縮",
+      "downloadBtn": "下載壓縮後圖片"
     },
     "videoCompressor": {
-      "title": "Video Compressor",
-      "description": "Drag or click to upload a video, then adjust resolution and bitrate to compress.",
-      "selectVideo": "Select Video",
-      "originalLabel": "Original video",
-      "removeBtn": "Remove",
-      "settingsTitle": "Compression settings",
-      "resolutionLabel": "Resolution",
-      "originalResolution": "Keep original resolution",
-      "res1080p": "1920px (1080p)",
-      "res720p": "1280px (720p)",
-      "res480p": "854px (480p)",
-      "res360p": "640px (360p)",
-      "crfLabel": "CRF quality",
-      "crfHint": "Lower value = better quality, larger file size",
-      "processing": "Compressing {progress}%",
-      "processBtn": "Compress Video",
-      "uploadFirstError": "Please upload a video first",
-      "processError": "Processing failed, please try again",
-      "downloadBtn": "Download compressed video"
+      "title": "影片壓縮",
+      "description": "拖曳或點擊上傳影片，調整解析度與位元率進行壓縮。",
+      "selectVideo": "選擇影片",
+      "originalLabel": "原影片",
+      "removeBtn": "移除",
+      "settingsTitle": "壓縮設定",
+      "resolutionLabel": "解析度",
+      "originalResolution": "保持原始解析度",
+      "res1080p": "1920px（1080p）",
+      "res720p": "1280px（720p）",
+      "res480p": "854px（480p）",
+      "res360p": "640px（360p）",
+      "crfLabel": "CRF 位元率品質",
+      "crfHint": "數值越小畫質越好、檔案越大",
+      "processing": "壓縮中 {progress}%",
+      "processBtn": "開始壓縮",
+      "uploadFirstError": "請先上傳影片",
+      "processError": "處理失敗，請重試",
+      "downloadBtn": "下載壓縮後影片"
     },
     "imageUpscaler": {
-      "loadError": "Failed to load image",
-      "canvasError": "Failed to create canvas",
-      "upscaleError": "Upscaling failed",
-      "scaleLabel": "Upscale factor",
-      "sharpenLabel": "Sharpen edges",
-      "upscaleBtn": "AI Upscale",
-      "downloadBtn": "Download upscaled image"
+      "loadError": "圖片載入失敗",
+      "canvasError": "無法建立畫布",
+      "upscaleError": "放大失敗",
+      "scaleLabel": "放大倍數",
+      "sharpenLabel": "銳化增強邊緣",
+      "upscaleBtn": "AI 高清放大",
+      "downloadBtn": "下載放大後圖片"
     }
   },
   "nav": {
     "color": {
-      "name": "Color",
-      "description": "Color conversion and palettes"
+      "name": "顏色",
+      "description": "顏色轉換與調色板"
     },
     "cooking": {
-      "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "name": "烹飪",
+      "description": "烹飪與食譜"
     },
     "crypto": {
-      "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "name": "加密貨幣",
+      "description": "加密貨幣與挖礦"
     },
     "data": {
-      "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "name": "資料",
+      "description": "資料與頻寬"
     },
     "datetime": {
-      "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "name": "日期時間",
+      "description": "日期與時間"
     },
     "finance": {
-      "name": "Finance",
-      "description": "Financial calculators and converters"
+      "name": "財務",
+      "description": "財務計算機"
     },
     "health": {
-      "name": "Health",
-      "description": "Health and fitness calculators"
+      "name": "健康",
+      "description": "健康與健身"
     },
     "infrastructure": {
-      "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "name": "基礎設施",
+      "description": "IT與虛擬化",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -264,8 +266,8 @@
       }
     },
     "engineering": {
-      "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "name": "工程",
+      "description": "工程與物理",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -274,8 +276,8 @@
       }
     },
     "chemistry": {
-      "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "name": "化學",
+      "description": "化學計算機",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -284,41 +286,41 @@
       }
     },
     "math": {
-      "name": "Math",
-      "description": "Mathematical calculators"
+      "name": "數學",
+      "description": "數學計算機"
     },
     "music": {
-      "name": "Music",
-      "description": "Music theory and audio tools",
+      "name": "音樂",
+      "description": "音樂與音訊",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
-      "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "name": "網路",
+      "description": "網路計算工具"
     },
     "photo": {
-      "name": "Photo",
-      "description": "Photography calculators"
+      "name": "攝影",
+      "description": "攝影計算工具"
     },
     "physics": {
-      "name": "Physics",
-      "description": "Physics and unit converters"
+      "name": "物理",
+      "description": "物理與力學"
     },
     "realestate": {
-      "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "name": "房地產",
+      "description": "房貸與租賃"
     },
     "video": {
-      "name": "Video",
-      "description": "Video and media calculators"
+      "name": "影音",
+      "description": "影音計算工具"
     },
     "web": {
-      "name": "Web",
-      "description": "Web development tools"
+      "name": "網頁",
+      "description": "網頁與SEO工具"
     },
     "automotive": {
-      "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "name": "汽車",
+      "description": "燃油、輪胎、維護及融資計算機"
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -810,49 +812,49 @@
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "name": "房貸",
+      "description": "計算每月付款和攤銷表",
+      "metaDescription": "房貸計算機含攤銷"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "name": "複利",
+      "description": "計算定期投入的投資複利",
+      "metaDescription": "計算複利隨時間的增長"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "name": "貸款",
+      "description": "計算各種貸款的每月付款",
+      "metaDescription": "貸款付款及攤銷"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "name": "退休規劃",
+      "description": "通過儲蓄預測規劃退休",
+      "metaDescription": "退休規劃"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "name": "小費",
+      "description": "計算小費金額並分攤帳單",
+      "metaDescription": "小費計算機"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "name": "儲蓄目標",
+      "description": "計算達成儲蓄目標所需時間",
+      "metaDescription": "儲蓄規劃"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "name": "通貨膨脹",
+      "description": "計算通脹對購買力的影響",
+      "metaDescription": "通脹影響"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "name": "投資報酬率",
+      "description": "計算投資報酬率",
+      "metaDescription": "投資報酬率"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "name": "損益平衡點",
+      "description": "計算損益平衡點",
+      "metaDescription": "損益平衡分析"
     },
     "profit-margin": {
       "name": "Profit Margin",
@@ -1454,22 +1456,22 @@
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "name": "燃油效率",
+      "description": "計算車輛燃油效率",
+      "metaDescription": "燃油效率計算機"
     },
     "vehicle-financing": {
-      "name": "Vehicle Financing Calculator",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "name": "車輛融資",
+      "description": "車輛融資計算工具",
+      "metaDescription": "車輛融資計算機"
     },
     "tire-sizing": {
-      "name": "Tire Size Calculator",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "name": "輪胎尺寸",
+      "description": "輪胎尺寸替換計算工具",
+      "metaDescription": "輪胎尺寸計算機"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
+      "name": "車輛保養計算機",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
@@ -1536,49 +1538,64 @@
       "marginalRate": "Marginal rate",
       "net": "Net income",
       "breakdown": "Per-bracket breakdown"
+    },
+    "car-loan": {
+      "name": "汽車貸款",
+      "description": "計算汽車貸款每月付款",
+      "metaDescription": "汽車貸款計算機"
+    },
+    "lease": {
+      "name": "租賃",
+      "description": "計算汽車租賃付款",
+      "metaDescription": "租賃計算機"
+    },
+    "trade-in": {
+      "name": "舊車換新",
+      "description": "計算舊車折抵價值",
+      "metaDescription": "舊車折抵計算機"
     }
   },
   "calculator": {
     "labels": {
-      "value": "Value",
-      "amount": "Amount",
-      "result": "Result",
-      "from": "From",
-      "to": "To",
-      "date": "Date",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "birthDate": "Birth Date",
+      "value": "數值",
+      "amount": "金額",
+      "result": "結果",
+      "from": "從",
+      "to": "到",
+      "date": "日期",
+      "startDate": "開始日期",
+      "endDate": "結束日期",
+      "birthDate": "出生日期",
       "zodiacSign": "Zodiac Sign",
       "chineseZodiac": "Chinese Zodiac",
       "nextBirthday": "Next Birthday",
       "daysUntilBirthday": "Days Until Birthday",
-      "years": "Years",
-      "months": "Months",
-      "weeks": "Weeks",
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds",
+      "years": "年",
+      "months": "月",
+      "weeks": "週",
+      "days": "天",
+      "hours": "小時",
+      "minutes": "分鐘",
+      "seconds": "秒",
       "humanReadable": "Human Readable",
       "timezone": "Time Zone",
       "operation": "Operation",
       "add": "Add",
       "subtract": "Subtract",
       "homePrice": "Home Price",
-      "downPayment": "Down Payment",
+      "downPayment": "首付款",
       "loanAmount": "Loan Amount",
       "interestRate": "Interest Rate",
       "loanTerm": "Loan Term",
       "monthlyPayment": "Monthly Payment",
-      "totalInterest": "Total Interest",
+      "totalInterest": "總利息",
       "totalPayment": "Total Payment",
-      "principal": "Principal",
-      "interest": "Interest",
-      "balance": "Balance",
+      "principal": "本金",
+      "interest": "利息",
+      "balance": "餘額",
       "balanceOverTime": "Balance Over Time",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "年",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "payoffDate": "Payoff Date",
       "results": "Results",
@@ -1664,7 +1681,7 @@
       "activity": "Activity",
       "duration": "Duration (minutes)",
       "restingHeartRate": "Resting Heart Rate (optional)",
-      "calculate": "Calculate",
+      "calculate": "計算",
       "every": "Every",
       "or": "or",
       "convert": "Convert",
@@ -1777,7 +1794,7 @@
       "current-mortgage-balance": "Current Mortgage Balance",
       "heloc": "HELOC (Home Equity Line of Credit)",
       "heloc-description": "Variable rate, interest-only payments during draw period",
-      "down-payment-month": "Month",
+      "down-payment-month": "月",
       "down-payment-annual-return-rate": "Annual Return Rate (%)",
       "down-payment-amount-needed": "Amount Needed",
       "down-payment-savings-milestones": "Savings Milestones",
@@ -1813,7 +1830,7 @@
       "principalAmount": "Principal Amount",
       "profitAnalysis": "Profit Analysis",
       "revenue": "Revenue",
-      "search": "Search",
+      "search": "搜索",
       "sellingPricePerUnit": "Selling Price Per Unit",
       "swapCurrencies": "Swap Currencies",
       "timeSaved": "Time Saved",
@@ -1876,11 +1893,11 @@
       "noData": "No data to export"
     },
     "sections": {
-      "input": "Input",
+      "input": "輸入",
       "results": "Results",
       "details": "Details",
       "breakdown": "Breakdown",
-      "loanDetails": "Loan Details",
+      "loanDetails": "貸款詳情",
       "paymentSchedule": "Payment Schedule",
       "amortization": "Amortization Schedule",
       "incomeDetails": "Income Details",
@@ -1888,7 +1905,7 @@
       "deductions": "Deductions",
       "takeHomePay": "Take-Home Pay",
       "summary": "Summary",
-      "output": "Output"
+      "output": "輸出"
     },
     "activities": {
       "walking_slow": "Walking (slow, 2 mph)",
@@ -2017,7 +2034,7 @@
       "breakdown": "Capacity Breakdown",
       "cpuBreakdown": "CPU Breakdown",
       "memoryBreakdown": "Memory Breakdown",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "計算步驟",
       "overUtilizationWarning": "Warning: Utilization exceeds 80%. Consider adding more nodes or reducing target utilization for better reliability and autoscaling headroom.",
       "systemReservedHelp": "System reserved includes OS daemons, Kubernetes components (kubelet, container runtime), and eviction thresholds. Typical values: 500-1000m CPU, 500-1000 MiB memory.",
       "daemonSetHelp": "DaemonSets run on every node (monitoring agents, log collectors, network plugins). Typical values: 200-500m CPU, 256-512 MiB memory per node.",
@@ -2040,7 +2057,7 @@
       "step3": "Step 3: Apply target utilization",
       "step4": "Step 4: Calculate nodes needed by each resource",
       "step5": "Step 5: Determine final node count",
-      "reset": "Reset"
+      "reset": "重置"
     },
     "serverVirtualizationCalculator": {
       "title": "Server Virtualization Calculator",
@@ -2081,7 +2098,7 @@
       "termYears": "Term (Years)",
       "totalLicensedCores": "Total Licensed Cores",
       "annualCost": "Annual Cost",
-      "totalCost": "Total Cost",
+      "totalCost": "總成本",
       "vsanEntitlementTib": "vSAN Entitlement (TiB)",
       "coresPerCpuLicensed": "Cores per CPU (Licensed)",
       "minCoreEnforced": "16-Core Minimum Applied",
@@ -2089,7 +2106,7 @@
       "cores": "cores",
       "hosts": "hosts",
       "cpus": "CPUs",
-      "years": "years"
+      "years": "年"
     },
     "virtualizationCost": {
       "title": "Virtualization Cost Calculator",
@@ -2180,10 +2197,10 @@
       "standardEdition": "Standard Edition",
       "licensesRequired": "Licenses Required",
       "corePacksPerLicense": "Core Packs per License",
-      "totalCost": "Total Cost",
+      "totalCost": "總成本",
       "recommended": "Recommended",
       "breakEvenVms": "Break-even at {count} VMs per host",
-      "calculationSteps": "Calculation Steps"
+      "calculationSteps": "計算步驟"
     },
     "windowsLicensing": {
       "title": "Windows Server Licensing Calculator",
@@ -2221,10 +2238,10 @@
       "checkVendorPricing": "Check Microsoft Volume Licensing pricing"
     },
     "results": {
-      "perMonth": "per month",
+      "perMonth": "每月",
       "perYear": "per year",
       "perWeek": "per week",
-      "total": "Total",
+      "total": "總計",
       "annual": "Annual",
       "monthly": "Monthly",
       "biweekly": "Bi-weekly",
@@ -2336,8 +2353,8 @@
       "seo_links_good_internal": "Good internal linking",
       "seo_links_balanced": "Balanced link distribution",
       "seo_links_more_internal": "Consider more internal links",
-      "seo_category_title": "Title",
-      "seo_category_description": "Description",
+      "seo_category_title": "標題",
+      "seo_category_description": "描述",
       "seo_category_headings": "Headings",
       "seo_category_images": "Images",
       "seo_category_content": "Content",
@@ -2559,18 +2576,18 @@
       "interestEarned": "Interest Earned",
       "moreYears": "+{count} more years",
       "par": "Par",
-      "payment": "Payment",
+      "payment": "付款",
       "premium": "Premium",
       "purchasePrice": "Purchase Price",
       "totalCoupons": "Total Coupons",
       "totalCouponsReceived": "Total Coupons Received",
-      "totalPayments": "Total Payments",
+      "totalPayments": "總付款",
       "totalReceived": "Total Received",
       "totalReturn": "Total Return",
       "valueAtPayoutStart": "Value at Payout Start",
       "yearLabel": "Year {year}",
       "yieldToMaturity": "Yield to Maturity",
-      "result": "Result",
+      "result": "結果",
       "estimatedGFR": "Estimated GFR",
       "gfrByFormula": "GFR by Formula",
       "ckdStages": "CKD Stages Reference",
@@ -2625,22 +2642,22 @@
       "head_of_household": "Head of Household"
     },
     "finance": {
-      "loanDetails": "Loan Details",
+      "loanDetails": "貸款詳情",
       "monthlyPayment": "Monthly Payment",
       "loanAmount": "Loan Amount",
       "annualInterestRate": "Annual Interest Rate (%)",
       "loanTermMonths": "Loan Term (months)",
-      "startDate": "Start Date",
-      "totalInterest": "Total Interest",
+      "startDate": "開始日期",
+      "totalInterest": "總利息",
       "totalPayment": "Total Payment",
       "effectiveRate": "Effective Rate",
       "principalVsInterest": "Principal vs Interest",
-      "principal": "Principal",
-      "interest": "Interest",
+      "principal": "本金",
+      "interest": "利息",
       "balanceOverTime": "Balance Over Time",
       "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
       "remainingBalance": "Remaining Balance",
-      "year": "Year",
+      "year": "年",
       "downPaymentAmount": "Down Payment ($)",
       "salaryAmount": "Salary Amount",
       "hoursPerWeek": "Hours Per Week",
@@ -2682,7 +2699,7 @@
       "weekly": "Weekly",
       "daily": "Daily",
       "hourly": "Hourly",
-      "perMonth": "per month",
+      "perMonth": "每月",
       "personalInformation": "Personal Information",
       "lifeExpectancy": "Life Expectancy",
       "savingsContributions": "Savings & Contributions",
@@ -2700,7 +2717,7 @@
       "accumulationPhaseDetails": "Accumulation Phase Details",
       "contributions": "Contributions",
       "growth": "Growth",
-      "balance": "Balance",
+      "balance": "餘額",
       "showingFirst20Years": "Showing first 20 years...",
       "investmentDetails": "Investment Details",
       "initialInvestment": "Initial Investment",
@@ -2736,9 +2753,9 @@
       "pmi": "PMI",
       "hoaFees": "HOA Fees",
       "loanSummary": "Loan Summary",
-      "totalPayments": "Total Payments",
-      "totalCost": "Total Cost",
-      "vehiclePrice": "Vehicle Price",
+      "totalPayments": "總付款",
+      "totalCost": "總成本",
+      "vehiclePrice": "車輛價格",
       "tradeInValue": "Trade-In Value",
       "salesTaxRate": "Sales Tax Rate (%)",
       "salesTax": "Sales Tax",
@@ -2893,7 +2910,7 @@
       "downPaymentAfter": "After",
       "downPaymentLabel": "down payment",
       "savingsMilestones": "Savings Milestones",
-      "monthLabel": "Month",
+      "monthLabel": "月",
       "homeValue": "Home Value",
       "currentMortgageBalance": "Current Mortgage Balance",
       "desiredLoanAmount": "Desired Loan Amount",
@@ -2971,8 +2988,8 @@
       "totalRepayment": "Total Repayment",
       "totalContributions": "Total Contributions",
       "paymentSchedule": "Payment Schedule",
-      "month": "Month",
-      "payment": "Payment",
+      "month": "月",
+      "payment": "付款",
       "principalPaid": "Principal Paid",
       "interestPaid": "Interest Paid",
       "currentSalary": "Current Salary",
@@ -3014,7 +3031,7 @@
       "percentDifference": "Percent difference between X and Y",
       "percentValue": "Percentage (%)",
       "ofValue": "Of Value",
-      "value": "Value",
+      "value": "數值",
       "ofTotal": "Of Total",
       "fromValue": "From Value",
       "toValue": "To Value",
@@ -3037,7 +3054,7 @@
       "numerator2": "Numerator 2",
       "denominator2": "Denominator 2",
       "decimal": "Decimal",
-      "result": "Result",
+      "result": "結果",
       "simplified": "Simplified",
       "mixedNumber": "Mixed Number",
       "percentage": "Percentage",
@@ -3076,7 +3093,7 @@
       "radicand": "Radicand",
       "index": "Index (n-th root)",
       "logBase": "Logarithm Base",
-      "logValue": "Value",
+      "logValue": "數值",
       "naturalLog": "Natural Log (ln)",
       "commonLog": "Common Log (log₁₀)",
       "customBase": "Custom Base",
@@ -3558,7 +3575,7 @@
           "compareResult": "Compare Result: {comparison}"
         }
       },
-      "calculate": "Calculate",
+      "calculate": "計算",
       "every": "Every",
       "or": "or",
       "dataValues": "Data Values",
@@ -4115,7 +4132,7 @@
         "filter-factor": "Filter Factor",
         "light-reduction": "Light Reduction",
         "quick-reference-table": "Quick Reference Table",
-        "filter": "Filter",
+        "filter": "篩選",
         "stops": "Stops",
         "factor": "Factor",
         "result-for-shutter": "Result for {speed}",
@@ -4168,7 +4185,7 @@
         "tips-and-information": "Tips & Information",
         "best-conditions": "Best Conditions",
         "techniques": "Techniques",
-        "calculate": "Calculate",
+        "calculate": "計算",
         "every": "Every",
         "or": "or",
         "clip-length-mode": "Clip Length (from interval & duration)",
@@ -4216,41 +4233,41 @@
         "ffmpeg-command": "FFmpeg Command",
         "sox-audio-command": "Sox Audio Command",
         "codec-format": "Codec/Format",
-        "name": "Name",
-        "description": "Description",
+        "name": "名稱",
+        "description": "描述",
         "all": "All",
         "avg-of-presets": "avg. of {count} presets"
       }
     },
     "realestate": {
-      "currency": "Currency",
+      "currency": "貨幣",
       "mortgage": {
         "propertyDetails": "Property Details",
         "propertyPrice": "Property Price",
-        "downPayment": "Down Payment",
+        "downPayment": "首付款",
         "downPaymentPercent": "Down Payment %",
-        "loanDetails": "Loan Details",
+        "loanDetails": "貸款詳情",
         "loanTerm": "Loan Term",
         "interestRate": "Interest Rate (%)",
-        "startDate": "Start Date",
-        "years": "years",
+        "startDate": "開始日期",
+        "years": "年",
         "currentRates": "Current Swiss rates",
         "fixed5y": "5-year fixed",
         "fixed10y": "10-year fixed",
         "monthlyPayment": "Monthly Payment",
-        "perMonth": "per month",
+        "perMonth": "每月",
         "loanAmount": "Loan Amount",
         "ltv": "Loan-to-Value (LTV)",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "totalInterest": "總利息",
+        "totalCost": "總成本",
         "payoffDate": "Payoff Date",
-        "principal": "Principal",
-        "interest": "Interest",
+        "principal": "本金",
+        "interest": "利息",
         "principalVsInterest": "Principal vs Interest",
         "balanceOverTime": "Balance Over Time",
         "yearlyPrincipalVsInterest": "Yearly Principal vs Interest",
         "remainingBalance": "Remaining Balance",
-        "year": "Year",
+        "year": "年",
         "perYear": "per year",
         "affordabilityCheck": "Affordability Check",
         "affordabilityDescription": "Swiss banks use a 5% stress test rate to ensure you can afford the mortgage even if rates rise.",
@@ -4322,7 +4339,7 @@
         "disclaimerText": "This calculator provides estimates based on market data and typical adjustments. Actual property values may vary significantly (±30%) based on unique characteristics, market conditions, and professional appraisals.",
         "propertyType": "Property Type",
         "region": "Location/Region",
-        "currency": "Currency",
+        "currency": "貨幣",
         "size": "Size",
         "rooms": "Rooms",
         "year": "Construction Year",
@@ -4478,7 +4495,7 @@
     },
     "crypto": {
       "hash": {
-        "input": "Input",
+        "input": "輸入",
         "algorithm": "Algorithm",
         "textToHash": "Text to Hash",
         "placeholder": "Enter text to hash...",
@@ -4495,7 +4512,7 @@
         }
       },
       "wallet": {
-        "input": "Input",
+        "input": "輸入",
         "walletType": "Wallet Type",
         "addressLabel": "Wallet Address",
         "addressPlaceholder": "Enter wallet address to validate...",
@@ -4520,10 +4537,10 @@
       },
       "exchange": {
         "convert": "Convert",
-        "amount": "Amount",
+        "amount": "金額",
         "cryptocurrency": "Cryptocurrency",
         "fiatCurrency": "Fiat Currency",
-        "result": "Result",
+        "result": "結果",
         "exchangeRate": "Exchange Rate",
         "inverseRate": "Inverse Rate",
         "priceDataFrom": "Price data from",
@@ -4540,7 +4557,7 @@
         "hashRateUnit": "Unit",
         "powerConsumption": "Power Consumption",
         "electricityCost": "Electricity Cost",
-        "currency": "Currency",
+        "currency": "貨幣",
         "hardwareCost": "Hardware Cost",
         "profitable": "Profitable",
         "notProfitable": "Not Profitable",
@@ -4567,9 +4584,9 @@
     },
     "cooking": {
       "units": {
-        "input": "Input",
+        "input": "輸入",
         "inputDescription": "Enter amount and select units to convert",
-        "amount": "Amount",
+        "amount": "金額",
         "from": "From Unit",
         "to": "To Unit",
         "volumeMetric": "Volume (Metric)",
@@ -4587,7 +4604,7 @@
           "fat": "Fats & Oils",
           "other": "Other Ingredients"
         },
-        "result": "Result",
+        "result": "結果",
         "forIngredient": "For ingredient",
         "conversionSteps": "Conversion Steps",
         "selectIngredientNotice": "Select an ingredient above to convert between volume and weight units"
@@ -4599,14 +4616,14 @@
         "recipeNamePlaceholder": "e.g., Chocolate Cake",
         "servings": "Number of Servings",
         "servingsLabel": "servings",
-        "currency": "Currency",
+        "currency": "貨幣",
         "ingredients": "Ingredients",
         "ingredientsDescription": "Add ingredients with their cost and amount used",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
         "costPerUnit": "Cost per",
         "unit": "Unit",
-        "amountUsed": "Amount",
+        "amountUsed": "金額",
         "amountUnit": "Unit",
         "addIngredient": "Add Ingredient",
         "result": "Cost Analysis",
@@ -4615,7 +4632,7 @@
         "mostExpensive": "Most Expensive",
         "leastExpensive": "Least Expensive",
         "costBreakdown": "Cost Breakdown by Ingredient",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "計算步驟",
         "steps": {
           "noIngredientsAdded": "No Ingredients Added",
           "ingredientCost": "Ingredient Cost: {name} {amountUsed} {amountUnit} {costPerUnit} {unit} {cost}",
@@ -4637,7 +4654,7 @@
         "ingredientsDescription": "Add ingredients with their type for intelligent scaling",
         "ingredientName": "Ingredient",
         "ingredientPlaceholder": "e.g., Flour",
-        "amount": "Amount",
+        "amount": "金額",
         "unit": "Unit",
         "type": "Type",
         "addIngredient": "Add Ingredient",
@@ -4647,7 +4664,7 @@
         "original": "Original",
         "scaled": "Scaled",
         "fractional": "Fractional",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "計算步驟",
         "types": {
           "standard": "Standard",
           "salt": "Salt",
@@ -4677,7 +4694,7 @@
         "sugars": "Total Sugars",
         "foodBreakdown": "Nutrition by Food",
         "food": "Food",
-        "amount": "Amount"
+        "amount": "金額"
       },
       "cookingUnits": {
         "steps": {
@@ -4944,10 +4961,10 @@
       "weekday": "Weekday",
       "and": "and",
       "units": {
-        "year": "year",
-        "years": "years",
-        "month": "month",
-        "months": "months",
+        "year": "年",
+        "years": "年",
+        "month": "月",
+        "months": "個月",
         "week": "week",
         "weeks": "weeks",
         "day": "day",
@@ -5113,7 +5130,7 @@
         "roofs": "Roofs",
         "special": "Special cases"
       },
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "計算步驟",
       "columnBuckling": {
         "section": "Column Section",
         "beamSection": "Beam Section",
@@ -5307,9 +5324,9 @@
       },
       "unitConverter": {
         "category": "Unit Category",
-        "value": "Value",
-        "from": "From",
-        "to": "To",
+        "value": "數值",
+        "from": "從",
+        "to": "到",
         "swap": "Swap Units",
         "conversionFactor": "Conversion Factor",
         "allConversions": "All Conversions",
@@ -5445,13 +5462,13 @@
       "dilutionFormula": "Dilution Formula (Initial Molarity × Initial Volume = Final Molarity × Final Volume)",
       "dilutionFactor": "Dilution Factor",
       "solventToAdd": "Solvent to Add",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "計算步驟",
       "chemicalEquation": "Chemical Equation",
       "equationHelp": "Enter a balanced equation. Accepted arrow formats",
       "reactantMasses": "Reactant Masses",
       "addReactant": "Add Reactant",
       "remove": "Remove",
-      "calculate": "Calculate",
+      "calculate": "計算",
       "limitingReactant": "Limiting Reactant",
       "limiting": "Limiting",
       "reactantsUsed": "Reactants Used",
@@ -5687,7 +5704,7 @@
       "throughputKbps": "Throughput (Kbps)",
       "throughputMBs": "Throughput (MB/s)",
       "formula": "Formula",
-      "calculationSteps": "Calculation Steps",
+      "calculationSteps": "計算步驟",
       "recommendations": "Recommendations",
       "bdp": {
         "steps": {
@@ -5731,7 +5748,7 @@
       "subnetBreakdown": "Subnet Breakdown",
       "ipClassLabel": "IP Class",
       "rangeType": "Range Type",
-      "rangeDescription": "Description",
+      "rangeDescription": "描述",
       "status": "Status",
       "public": "Public",
       "private": "Private",
@@ -5772,9 +5789,9 @@
       "comparisonTimes": "About {times}x {speed}",
       "timeUnits": {
         "ms": "Milliseconds",
-        "s": "Seconds",
-        "min": "Minutes",
-        "hr": "Hours"
+        "s": "秒",
+        "min": "分鐘",
+        "hr": "小時"
       },
       "speedReferences": {
         "dial-up": "Dial-up (56 Kbps)",
@@ -5794,7 +5811,7 @@
       "category": "Category",
       "typicalUseCase": "Typical Use Case",
       "units": {
-        "s": "Seconds",
+        "s": "秒",
         "ms": "Milliseconds",
         "us": "Microseconds",
         "ns": "Nanoseconds"
@@ -5813,7 +5830,7 @@
         "crossOcean": "Cross-ocean",
         "satellite": "Satellite or heavily congested network"
       },
-      "reset": "Reset",
+      "reset": "重置",
       "bbDistanceKm": "Distance (km)",
       "bbSpeedGbps": "Fibre Channel Speed",
       "bbPortId": "Port Identifier",
@@ -5828,11 +5845,11 @@
       "bbPortcfgld": "portcfglongdistance (legacy FOS)",
       "bbFcrxbbcredit": "fcrxbbcredit",
       "bbBufSize": "buf-size",
-      "bbSteps": "Calculation Steps",
+      "bbSteps": "計算步驟",
       "bbInputTitle": "ISL Link Parameters",
       "bbResultsTitle": "BB Credit Requirements",
       "bbCommandsTitle": "Configuration Commands",
-      "bbCopy": "Copy",
+      "bbCopy": "複製",
       "bbCopied": "Copied!",
       "bbCredit": {
         "steps": {
@@ -5914,8 +5931,8 @@
         "ip-version": "IP Version",
         "ip-version-desc": "Internet Protocol version",
         "property": "Property",
-        "value": "Value",
-        "description": "Description"
+        "value": "數值",
+        "description": "描述"
       },
       "advanced": {
         "mode-basic": "Basic",
@@ -5988,10 +6005,10 @@
       },
       "all": "All",
       "codec-format": "Codec/Format",
-      "name": "Name",
+      "name": "名稱",
       "bitrate": "Bitrate",
       "resolution": "Resolution",
-      "description": "Description",
+      "description": "描述",
       "avg-of-presets": "avg. of {count} presets",
       "unit": "Unit",
       "brightnessLevel": "Brightness Level",
@@ -6072,12 +6089,12 @@
     },
     "automotive": {
       "fuelEfficiency": {
-        "input": "Input",
-        "result": "Result",
+        "input": "輸入",
+        "result": "結果",
         "modes": {
           "consumption": "Consumption",
           "tripPlanning": "Trip Planning",
-          "comparison": "Compare"
+          "comparison": "對比"
         },
         "consumptionDescription": "Calculate fuel consumption from distance traveled and fuel used",
         "tripPlanningDescription": "Plan fuel needed for a trip based on known consumption",
@@ -6089,7 +6106,7 @@
         "vehicle1": "Vehicle 1 (L/100km)",
         "vehicle2": "Vehicle 2 (L/100km)",
         "costSettings": "Cost Settings",
-        "currency": "Currency",
+        "currency": "貨幣",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
@@ -6108,7 +6125,7 @@
         "vehicleNumber": "Vehicle {number}",
         "savingsPer100km": "Savings per 100km",
         "annualSavings": "Annual Savings",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "計算步驟",
         "ratings": {
           "excellent": "Excellent (<5 L/100km)",
           "good": "Good (5-7 L/100km)",
@@ -6134,41 +6151,41 @@
       },
       "financing": {
         "modes": {
-          "loan": "Loan",
-          "lease": "Lease",
-          "compare": "Compare"
+          "loan": "貸款",
+          "lease": "租賃",
+          "compare": "對比"
         },
-        "vehicleDetails": "Vehicle Details",
+        "vehicleDetails": "車輛詳情",
         "vehicleDetailsDescription": "Enter the vehicle price and payment details",
-        "vehiclePrice": "Vehicle Price",
-        "downPayment": "Down Payment",
+        "vehiclePrice": "車輛價格",
+        "downPayment": "首付",
         "tradeInValue": "Trade-in Value",
-        "currency": "Currency",
+        "currency": "貨幣",
         "currencies": {
           "chf": "Swiss Franc (CHF)",
           "eur": "Euro (EUR)"
         },
-        "includeVAT": "Include Swiss VAT",
-        "loanDetails": "Loan Details",
-        "leaseDetails": "Lease Details",
-        "interestRate": "Interest Rate (%)",
-        "loanTerm": "Loan Term",
+        "includeVAT": "包含瑞士增值稅",
+        "loanDetails": "貸款詳情",
+        "leaseDetails": "租賃詳情",
+        "interestRate": "利率",
+        "loanTerm": "貸款期限",
         "leaseTerm": "Lease Term",
         "residualValue": "Residual Value (%)",
         "leaseAPR": "Lease APR (%)",
         "annualKmLimit": "Annual km Limit",
-        "months": "months",
-        "years": "years",
-        "year": "year",
-        "month": "month",
+        "months": "個月",
+        "years": "年",
+        "year": "年",
+        "month": "月",
         "loanResult": "Loan Summary",
         "leaseResult": "Lease Summary",
         "comparisonResult": "Buy vs Lease Comparison",
-        "perMonth": "per month",
-        "loanAmount": "Loan Amount",
-        "totalPayments": "Total Payments",
-        "totalInterest": "Total Interest",
-        "totalCost": "Total Cost",
+        "perMonth": "每月",
+        "loanAmount": "貸款金額",
+        "totalPayments": "總付款",
+        "totalInterest": "總利息",
+        "totalCost": "總成本",
         "capitalizedCost": "Capitalized Cost",
         "depreciation": "Depreciation",
         "financeCharge": "Finance Charge",
@@ -6176,47 +6193,50 @@
         "kmLimit": "Km Limit",
         "excessKmCharge": "Excess km Charge",
         "amortizationSchedule": "Amortization Schedule",
-        "payment": "Payment",
-        "principal": "Principal",
-        "interest": "Interest",
-        "balance": "Balance",
+        "payment": "付款",
+        "principal": "本金",
+        "interest": "利息",
+        "balance": "餘額",
         "showingFirst12Months": "Showing first 12 months of schedule",
         "lowerMonthlyPayment": "Lower Monthly Payment",
         "lowerTotalCost": "Lower Total Cost",
         "recommendation": "Recommendation",
-        "calculationSteps": "Calculation Steps",
+        "calculationSteps": "計算步驟",
+        "loan": "貸款",
+        "lease": "租賃",
+        "compare": "比較",
         "steps": {
-          "vehiclePrice": "Vehicle Price: {value}",
-          "salesTax": "Sales Tax: {rate} {value}",
-          "totalVehicleCost": "Total Vehicle Cost: {value}",
-          "downPayment": "Down Payment: {value}",
-          "tradeInValue": "Trade In Value: {value}",
-          "loanAmount": "Loan Amount: {value}",
-          "interestRate": "Interest Rate: {apr} {monthly}",
-          "loanTerm": "Loan Term: {months}",
-          "monthlyPayment": "Monthly Payment: {value}",
-          "totalPayments": "Total Payments: {value}",
-          "totalInterest": "Total Interest: {value}",
-          "totalCost": "Total Cost: {value}",
-          "capitalizedCost": "Capitalized Cost: {value}",
-          "residualValue": "Residual Value: {percent} {value}",
-          "depreciation": "Depreciation: {capCost} {residual} {months} {result}",
-          "financeCharge": "Finance Charge: {capCost} {residual} {result}",
-          "totalLeaseCost": "Total Lease Cost: {value}",
-          "moneyFactorToAPR": "Money Factor To A P R: {apr}",
-          "kmLimit": "Km Limit: {annual} {total}",
-          "excessKmCharge": "Excess Km Charge: {value}",
-          "loanMonthlyPayment": "Loan Monthly Payment: {value}",
-          "leaseMonthlyPayment": "Lease Monthly Payment: {value}",
-          "monthlyDifference": "Monthly Difference: {value} {lower}",
-          "loanTotalCost": "Loan Total Cost: {value}",
-          "leaseTotalCost": "Lease Total Cost: {value}",
-          "totalCostDifference": "Total Cost Difference: {value}",
-          "recommendation": "Recommendation: {value}"
+          "vehiclePrice": "車輛價格: {value}",
+          "salesTax": "銷售稅: {rate} {value}",
+          "totalVehicleCost": "車輛總成本: {value}",
+          "downPayment": "首付款: {value}",
+          "tradeInValue": "置換價值: {value}",
+          "loanAmount": "貸款金額: {value}",
+          "interestRate": "利率: {apr} {monthly}",
+          "loanTerm": "貸款期限: {months}",
+          "monthlyPayment": "月供: {value}",
+          "totalPayments": "總付款: {value}",
+          "totalInterest": "總利息: {value}",
+          "totalCost": "總成本: {value}",
+          "capitalizedCost": "資本化成本: {value}",
+          "residualValue": "剩餘價值: {percent} {value}",
+          "depreciation": "折舊: {capCost} {residual} {months} {result}",
+          "financeCharge": "財務費用: {capCost} {residual} {result}",
+          "totalLeaseCost": "租賃總成本: {value}",
+          "moneyFactorToAPR": "金錢係數轉年利率: {apr}",
+          "kmLimit": "里程限制: {annual} {total}",
+          "excessKmCharge": "超里程費: {value}",
+          "loanMonthlyPayment": "貸款月供: {value}",
+          "leaseMonthlyPayment": "租賃月供: {value}",
+          "monthlyDifference": "月度差異: {value} {lower}",
+          "loanTotalCost": "貸款總成本: {value}",
+          "leaseTotalCost": "租賃總成本: {value}",
+          "totalCostDifference": "总成本差異: {value}",
+          "recommendation": "建議: {value}"
         }
       },
       "tireSizing": {
-        "input": "Input",
+        "input": "輸入",
         "result": "Tire Dimensions",
         "modes": {
           "notation": "Tire Notation",
@@ -6234,33 +6254,31 @@
         "compareModeDescription": "Compare with another tire size",
         "compareTire": "Comparison Tire Size",
         "comparisonResult": "Size Comparison",
-        "sidewallHeight": "Sidewall Height",
-        "overallDiameter": "Overall Diameter",
-        "circumference": "Circumference",
-        "revolutionsPerKm": "Revolutions/km",
+        "sidewallHeight": "胎壁高度",
+        "overallDiameter": "總直徑",
+        "circumference": "圓周長",
+        "revolutionsPerKm": "轉數/公里",
         "diameterDifference": "Diameter Difference",
         "speedometerError": "Speedometer Error",
-        "withinTolerance": "Within recommended tolerance (3%)",
-        "exceedsTolerance": "Exceeds recommended tolerance",
-        "calculationSteps": "Calculation Steps",
+        "withinTolerance": "在允許公差內（3%）",
+        "exceedsTolerance": "超過公差範圍",
+        "calculationSteps": "計算步驟",
         "steps": {
-          "sidewallHeight": "Sidewall height = {width}mm × ({aspectRatio}/100) = {result}mm",
-          "rimDiameter": "Rim diameter = {rimDiameter}\" × 25.4 = {result}mm",
-          "overallDiameter": "Overall diameter = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
-          "circumference": "Circumference = π × {diameter}mm = {result}mm",
-          "revolutionsPerKm": "Revolutions/km = 1,000,000 / {circumference} = {result}",
-          "loadIndex": "Load index {loadIndex} = {loadValue} kg per tire",
-          "speedRating": "Speed rating {rating} = {speedValue} km/h ({desc})",
-          "diameterDiffMm": "Diameter difference = {tire2}mm - {tire1}mm = {result}mm",
-          "diameterDiffPct": "Diameter difference % = ({diffMm} / {tire1}) × 100 = {result}%",
-          "circumferenceDiffPct": "Circumference difference = {result}%",
-          "speedometerError": "Speedometer error = {result}%",
-          "actualSpeed": "When speedometer shows 100 km/h, actual speed = {result} km/h",
-          "revolutionsDiffPerKm": "Revolutions difference per km = {tire2} - {tire1} = {result}",
-          "warning": "WARNING: {message}"
-        },
-        "warningTolerance5": "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly",
-        "warningTolerance3": "Diameter difference exceeds 3% - may affect speedometer accuracy"
+          "sidewallHeight": "胎壁高度 = {width}mm × ({aspectRatio}/100) = {result}mm",
+          "rimDiameter": "輪轂直徑 = {rimDiameter}\" × 25.4 = {result}mm",
+          "overallDiameter": "總直徑 = {rimMm}mm + (2 × {sidewall}mm) = {result}mm",
+          "circumference": "圓周長 = π × {diameter}mm = {result}mm",
+          "revolutionsPerKm": "轉數/公里 = 1,000,000 / {circumference} = {result}",
+          "loadIndex": "載重指數 {loadIndex} = {loadValue} 公斤/輪胎",
+          "speedRating": "速度級別 {rating} = {speedValue} 公里/小時 ({desc})",
+          "diameterDiffMm": "直徑差 = {tire2}mm - {tire1}mm = {result}mm",
+          "diameterDiffPct": "直徑差% = ({diffMm} / {tire1}) × 100 = {result}%",
+          "circumferenceDiffPct": "周長差 = {result}%",
+          "speedometerError": "速度表誤差 = {result}%",
+          "actualSpeed": "當速度表顯示100 km/h時，實際速度 = {result} km/h",
+          "revolutionsDiffPerKm": "每公里轉數差 = {tire2} - {tire1} = {result}",
+          "warning": "警告：{message}"
+        }
       },
       "maintenance": {
         "vehicleInfo": "Vehicle Information",
@@ -6283,7 +6301,7 @@
         "lastDate": "Last Service Date",
         "mfkInspection": "Swiss MFK Inspection",
         "dueDate": "Due Date",
-        "months": "months",
+        "months": "個月",
         "overdue": "Overdue",
         "overdueServices": "Overdue",
         "dueSoonServices": "Due Soon",
