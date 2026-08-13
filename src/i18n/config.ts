@@ -1,5 +1,29 @@
-// Locale configuration for Swiss languages + Chinese
-export const locales = ["en", "fr", "de", "it", "zh"] as const;
+// Locale configuration for all supported languages
+export const locales = [
+  "en",
+  "vi",
+  "id",
+  "pt",
+  "ms",
+  "cs",
+  "es",
+  "fr",
+  "de",
+  "el",
+  "hu",
+  "it",
+  "nl",
+  "th",
+  "tr",
+  "uk",
+  "ru",
+  "ko",
+  "ja",
+  "ar",
+  "zh",
+  "zh-TW",
+] as const;
+
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -8,27 +32,78 @@ export const localeFormats: Record<
   Locale,
   { currency: string; numberLocale: string; dateLocale: string }
 > = {
-  en: { currency: "CHF", numberLocale: "en-CH", dateLocale: "en-CH" },
-  fr: { currency: "CHF", numberLocale: "fr-CH", dateLocale: "fr-CH" },
-  de: { currency: "CHF", numberLocale: "de-CH", dateLocale: "de-CH" },
-  it: { currency: "CHF", numberLocale: "it-CH", dateLocale: "it-CH" },
+  en: { currency: "USD", numberLocale: "en-US", dateLocale: "en-US" },
+  vi: { currency: "VND", numberLocale: "vi-VN", dateLocale: "vi-VN" },
+  id: { currency: "IDR", numberLocale: "id-ID", dateLocale: "id-ID" },
+  pt: { currency: "BRL", numberLocale: "pt-BR", dateLocale: "pt-BR" },
+  ms: { currency: "MYR", numberLocale: "ms-MY", dateLocale: "ms-MY" },
+  cs: { currency: "CZK", numberLocale: "cs-CZ", dateLocale: "cs-CZ" },
+  es: { currency: "EUR", numberLocale: "es-ES", dateLocale: "es-ES" },
+  fr: { currency: "EUR", numberLocale: "fr-FR", dateLocale: "fr-FR" },
+  de: { currency: "EUR", numberLocale: "de-DE", dateLocale: "de-DE" },
+  el: { currency: "EUR", numberLocale: "el-GR", dateLocale: "el-GR" },
+  hu: { currency: "HUF", numberLocale: "hu-HU", dateLocale: "hu-HU" },
+  it: { currency: "EUR", numberLocale: "it-IT", dateLocale: "it-IT" },
+  nl: { currency: "EUR", numberLocale: "nl-NL", dateLocale: "nl-NL" },
+  th: { currency: "THB", numberLocale: "th-TH", dateLocale: "th-TH" },
+  tr: { currency: "TRY", numberLocale: "tr-TR", dateLocale: "tr-TR" },
+  uk: { currency: "UAH", numberLocale: "uk-UA", dateLocale: "uk-UA" },
+  ru: { currency: "RUB", numberLocale: "ru-RU", dateLocale: "ru-RU" },
+  ko: { currency: "KRW", numberLocale: "ko-KR", dateLocale: "ko-KR" },
+  ja: { currency: "JPY", numberLocale: "ja-JP", dateLocale: "ja-JP" },
+  ar: { currency: "SAR", numberLocale: "ar-SA", dateLocale: "ar-SA" },
   zh: { currency: "CNY", numberLocale: "zh-CN", dateLocale: "zh-CN" },
+  "zh-TW": { currency: "TWD", numberLocale: "zh-TW", dateLocale: "zh-TW" },
 };
 
 // Locale labels for language switcher
 export const localeLabels: Record<Locale, string> = {
   en: "English",
+  vi: "Tiếng Việt",
+  id: "Bahasa Indonesia",
+  pt: "Português",
+  ms: "Bahasa Malaysia",
+  cs: "Czech",
+  es: "Español",
   fr: "Français",
   de: "Deutsch",
+  el: "Greek",
+  hu: "Hungary",
   it: "Italiano",
-  zh: "中文",
+  nl: "Netherlands",
+  th: "Thai",
+  tr: "Turkish",
+  uk: "Ukrainian",
+  ru: "Русский",
+  ko: "한국어",
+  ja: "日本語",
+  ar: "Saudi Arabia",
+  zh: "简体中文",
+  "zh-TW": "繁體中文",
 };
 
-// Locale flags (emoji) for visual display
+// Locale flags for visual display
 export const localeFlags: Record<Locale, string> = {
   en: "🇬🇧",
+  vi: "🇻🇳",
+  id: "🇮🇩",
+  pt: "🇵🇹",
+  ms: "🇲🇾",
+  cs: "🇨🇿",
+  es: "🇪🇸",
   fr: "🇫🇷",
   de: "🇩🇪",
+  el: "🇬🇷",
+  hu: "🇭🇺",
   it: "🇮🇹",
+  nl: "🇳🇱",
+  th: "🇹🇭",
+  tr: "🇹🇷",
+  uk: "🇺🇦",
+  ru: "🇷🇺",
+  ko: "🇰🇷",
+  ja: "🇯🇵",
+  ar: "🇸🇦",
   zh: "🇨🇳",
+  "zh-TW": "🇭🇰",
 };
