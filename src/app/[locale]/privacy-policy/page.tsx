@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 
 export function generateStaticParams() {
@@ -15,9 +16,10 @@ export default async function PrivacyPolicyPage({
   setRequestLocale(locale);
   const t = await getTranslations("common");
 
+  const tUi = await getTranslations("ui");
   return (
     <LegalPage
-      title="Privacy Policy"
+      title={tUi("privacy-policy")}
       description="How we handle information when you use our free online calculators."
     >
       <p>
@@ -26,7 +28,7 @@ export default async function PrivacyPolicyPage({
         an account and does not ask you to submit personal information to use any calculator.
       </p>
 
-      <LegalSection title="Information collected automatically">
+      <LegalSection title={tUi("information-collected-automatically")}>
         <p>
           When you visit the site, our hosting provider (Vercel) and, if enabled, analytics and
           advertising partners automatically receive standard technical information such as your IP
@@ -36,7 +38,7 @@ export default async function PrivacyPolicyPage({
         </p>
       </LegalSection>
 
-      <LegalSection title="Cookies and advertising">
+      <LegalSection title={tUi("cookies-and-advertising")}>
         <p>
           We use cookies and similar technologies to remember your preferences and to serve
           personalized advertisements through Google AdSense. Advertisers may use cookies to build a
@@ -68,15 +70,21 @@ export default async function PrivacyPolicyPage({
         </p>
       </LegalSection>
 
-      <LegalSection title="How we use information">
+      <LegalSection title={tUi("how-we-use-information")}>
         <ul className="list-disc space-y-1 pl-5">
-          <li>To operate and secure the site.</li>
-          <li>To understand which tools are useful so we can improve them.</li>
-          <li>To display advertisements that help keep the calculators free.</li>
+          <li>
+            <T k="ui.to-operate-and-secure-the-site" />
+          </li>
+          <li>
+            <T k="ui.to-understand-which-tools-are-useful-so-we-can-improve-them" />
+          </li>
+          <li>
+            <T k="ui.to-display-advertisements-that-help-keep-the-calculators-free" />
+          </li>
         </ul>
       </LegalSection>
 
-      <LegalSection title="Your rights">
+      <LegalSection title={tUi("your-rights")}>
         <p>
           Depending on where you live (for example under the EU GDPR or the California CCPA), you
           may have the right to access, correct, or delete personal data and to object to certain
@@ -96,7 +104,9 @@ export default async function PrivacyPolicyPage({
         </p>
       </LegalSection>
 
-      <p className="text-xs text-muted-foreground">Last updated: August 11, 2026.</p>
+      <p className="text-xs text-muted-foreground">
+        <T k="ui.last-updated-august-11-2026" />
+      </p>
     </LegalPage>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -13,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   type BigNumberInput,
   type BigNumberResult,
@@ -35,6 +37,7 @@ export function BigNumberCalculator() {
   const t = useTranslations("calculator.labels");
   const tResults = useTranslations("calculator.results");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.bigNumber");
 
   const [mode, setMode] = useState<Mode>("multiply");
   const [numberA, setNumberA] = useState("123456789012345678901234567890");
@@ -55,6 +58,7 @@ export function BigNumberCalculator() {
 
   const needsSecondNumber = mode !== "factorial";
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <Card>
@@ -93,13 +97,15 @@ export function BigNumberCalculator() {
                 setNumberA(e.target.value);
                 setResult(null);
               }}
-              placeholder="Enter a large integer"
+              placeholder={tUi("enter-a-large-integer")}
             />
           </div>
 
           {needsSecondNumber && (
             <div className="space-y-2">
-              <Label>Number B</Label>
+              <Label>
+                <T k="ui.number-b" />
+              </Label>
               <Input
                 type="text"
                 value={numberB}
@@ -107,7 +113,7 @@ export function BigNumberCalculator() {
                   setNumberB(e.target.value);
                   setResult(null);
                 }}
-                placeholder="Enter a large integer"
+                placeholder={tUi("enter-a-large-integer")}
               />
             </div>
           )}
@@ -188,9 +194,9 @@ export function BigNumberCalculator() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-1 text-sm font-mono">
-                {result.steps.map((step) => (
-                  <li key={step} className="text-muted-foreground">
-                    {step}
+                {result.steps.map((step, index) => (
+                  <li key={index} className="text-muted-foreground">
+                    {formatStep(step, tSteps, "calculator.math.bigNumber")}
                   </li>
                 ))}
               </ul>

@@ -3,6 +3,7 @@
 import { AlertCircle, HardDrive, Plus, Trash2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
+import { formatStep } from "@/components/calc-steps";
 import {
   CsvExportButton,
   InputField,
@@ -30,6 +31,7 @@ export function VmStorageCalculator() {
   const t = useTranslations("calculator.vmStorage");
   const tSections = useTranslations("calculator.sections");
   const tCommon = useTranslations("common");
+  const tSteps = useTranslations("calculator.infrastructure.vmStorage");
 
   const {
     platform,
@@ -487,11 +489,13 @@ export function VmStorageCalculator() {
                 <h3 className="text-lg font-semibold mb-3">{tCommon("calculationSteps")}</h3>
                 <div className="space-y-2 rounded-lg bg-muted p-4">
                   {result.steps.map((step, index) => (
-                    <div key={`step-${index}-${step.slice(0, 20)}`} className="flex gap-3">
+                    <div key={`step-${index}-${String(step).slice(0, 20)}`} className="flex gap-3">
                       <span className="text-sm font-medium text-muted-foreground">
                         {index + 1}.
                       </span>
-                      <span className="text-sm">{step}</span>
+                      <span className="text-sm">
+                        {formatStep(step, tSteps, "calculator.infrastructure.vmStorage")}
+                      </span>
                     </div>
                   ))}
                 </div>

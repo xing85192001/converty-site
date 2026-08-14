@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface SampleSizeInput {
@@ -20,7 +21,7 @@ export interface SampleSizeResult {
   zScore: number;
   formula: string;
   finiteCorrected?: number;
-  steps: string[];
+  steps: CalcStep[];
   interpretation: string;
 }
 
@@ -55,7 +56,7 @@ export function calculateSampleSize(input: SampleSizeInput): CalculationResult<S
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const z = getZScore(confidenceLevel);
   let sampleSize: number;
   let formula: string;
@@ -71,23 +72,35 @@ export function calculateSampleSize(input: SampleSizeInput): CalculationResult<S
       sampleSize = Math.ceil((z * z * p * q) / (marginOfError * marginOfError));
       formula = "n = (z² × p × (1-p)) / E²";
 
-      steps.push(`Confidence Level: ${confidenceLevel}%, Z-score = ${z}`);
-      steps.push(`Margin of Error (E): ${(marginOfError * 100).toFixed(1)}%`);
-      steps.push(`Population Proportion (p): ${p}`);
-      steps.push(`n = (${z}² × ${p} × ${q}) / ${marginOfError}²`);
-      steps.push(
-        `n = (${(z * z).toFixed(4)} × ${(p * q).toFixed(4)}) / ${(marginOfError * marginOfError).toFixed(6)}`
-      );
-      steps.push(
-        `n = ${(z * z * p * q).toFixed(4)} / ${(marginOfError * marginOfError).toFixed(6)}`
-      );
-      steps.push(`n = ${sampleSize}`);
+      steps.push({ key: "propConfidence", params: { confidenceLevel, z } });
+      steps.push({
+        key: "propMargin",
+        params: { marginOfError: (marginOfError * 100).toFixed(1) },
+      });
+      steps.push({ key: "propProportion", params: { p } });
+      steps.push({ key: "propFormula", params: { z, p, q, marginOfError } });
+      steps.push({
+        key: "propSubstitute",
+        params: {
+          zSquared: (z * z).toFixed(4),
+          pq: (p * q).toFixed(4),
+          eSquared: (marginOfError * marginOfError).toFixed(6),
+        },
+      });
+      steps.push({
+        key: "propNumerator",
+        params: {
+          numerator: (z * z * p * q).toFixed(4),
+          denominator: (marginOfError * marginOfError).toFixed(6),
+        },
+      });
+      steps.push({ key: "propResult", params: { sampleSize } });
 
       // Finite population correction
       if (populationSize && populationSize > 0) {
         finiteCorrected = Math.ceil(sampleSize / (1 + (sampleSize - 1) / populationSize));
-        steps.push(`With finite population correction (N=${populationSize}):`);
-        steps.push(`n_corrected = n / (1 + (n-1)/N) = ${finiteCorrected}`);
+        steps.push({ key: "propFpcIntro", params: { populationSize } });
+        steps.push({ key: "propFpcResult", params: { finiteCorrected } });
       }
       break;
     }
@@ -105,18 +118,21 @@ export function calculateSampleSize(input: SampleSizeInput): CalculationResult<S
       sampleSize = Math.ceil(((z * standardDeviation) / marginOfError) ** 2);
       formula = "n = (z × σ / E)²";
 
-      steps.push(`Confidence Level: ${confidenceLevel}%, Z-score = ${z}`);
-      steps.push(`Standard Deviation (σ): ${standardDeviation}`);
-      steps.push(`Margin of Error (E): ${marginOfError}`);
-      steps.push(`n = (${z} × ${standardDeviation} / ${marginOfError})²`);
-      steps.push(`n = (${((z * standardDeviation) / marginOfError).toFixed(4)})²`);
-      steps.push(`n = ${sampleSize}`);
+      steps.push({ key: "meanConfidence", params: { confidenceLevel, z } });
+      steps.push({ key: "meanStdDev", params: { standardDeviation } });
+      steps.push({ key: "meanMargin", params: { marginOfError } });
+      steps.push({ key: "meanFormula", params: { z, standardDeviation, marginOfError } });
+      steps.push({
+        key: "meanSubstitute",
+        params: { ratio: ((z * standardDeviation) / marginOfError).toFixed(4) },
+      });
+      steps.push({ key: "meanResult", params: { sampleSize } });
 
       // Finite population correction
       if (populationSize && populationSize > 0) {
         finiteCorrected = Math.ceil(sampleSize / (1 + (sampleSize - 1) / populationSize));
-        steps.push(`With finite population correction (N=${populationSize}):`);
-        steps.push(`n_corrected = ${finiteCorrected}`);
+        steps.push({ key: "meanFpcIntro", params: { populationSize } });
+        steps.push({ key: "meanFpcResult", params: { finiteCorrected } });
       }
       break;
     }
@@ -139,13 +155,22 @@ export function calculateSampleSize(input: SampleSizeInput): CalculationResult<S
       resultMarginOfError = z * Math.sqrt((p * q) / sampleSize);
       formula = "E = z × √(p(1-p)/n)";
 
-      steps.push(`Sample Size (n): ${sampleSize}`);
-      steps.push(`Confidence Level: ${confidenceLevel}%, Z-score = ${z}`);
-      steps.push(`Population Proportion (p): ${p}`);
-      steps.push(`E = ${z} × √(${p} × ${q} / ${sampleSize})`);
-      steps.push(`E = ${z} × √(${((p * q) / sampleSize).toFixed(6)})`);
-      steps.push(`E = ${z} × ${Math.sqrt((p * q) / sampleSize).toFixed(6)}`);
-      steps.push(`E = ${(resultMarginOfError * 100).toFixed(2)}%`);
+      steps.push({ key: "fromMoESampleSize", params: { sampleSize } });
+      steps.push({ key: "fromMoEConfidence", params: { confidenceLevel, z } });
+      steps.push({ key: "fromMoEProportion", params: { p } });
+      steps.push({ key: "fromMoEFormula", params: { z, p, q, sampleSize } });
+      steps.push({
+        key: "fromMoESubstitute",
+        params: { z, pqOverN: ((p * q) / sampleSize).toFixed(6) },
+      });
+      steps.push({
+        key: "fromMoESqrt",
+        params: { z, sqrtValue: Math.sqrt((p * q) / sampleSize).toFixed(6) },
+      });
+      steps.push({
+        key: "fromMoEResult",
+        params: { marginOfError: (resultMarginOfError * 100).toFixed(2) },
+      });
       break;
     }
 

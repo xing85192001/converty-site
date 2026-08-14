@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   calculateTriangle,
   type TriangleInput,
@@ -65,7 +66,9 @@ export function TriangleCalculator() {
     <div className="space-y-6">
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label>Input Method</Label>
+          <Label>
+            <T k="ui.input-method" />
+          </Label>
           <Select
             value={values.mode}
             onValueChange={(v) => setValue("mode", v as FormValues["mode"])}

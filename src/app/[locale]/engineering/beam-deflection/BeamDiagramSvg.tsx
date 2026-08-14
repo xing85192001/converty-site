@@ -1,4 +1,5 @@
 import type React from "react";
+import { T } from "@/components/ui/t";
 
 interface BeamDiagramSvgProps {
   beamType: "simply-supported" | "cantilever" | "fixed-fixed";
@@ -281,7 +282,9 @@ export function BeamDiagramSvg({
       preserveAspectRatio="xMidYMid meet"
       className="border rounded-lg bg-white dark:bg-slate-900"
     >
-      <title>Beam Deflection Diagram</title>
+      <title>
+        <T k="ui.beam-deflection-diagram" />
+      </title>
       <desc>
         {beamType} beam with {loadType} showing shear, moment, and deflection
       </desc>

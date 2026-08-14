@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 
 export function generateStaticParams() {
@@ -11,9 +12,10 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations("common");
 
+  const tUi = await getTranslations("ui");
   return (
     <LegalPage
-      title="Terms of Service"
+      title={tUi("terms-of-service")}
       description="The rules for using our free calculators and converters."
     >
       <p>
@@ -21,7 +23,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         charge for general informational purposes.
       </p>
 
-      <LegalSection title="No professional advice">
+      <LegalSection title={tUi("no-professional-advice")}>
         <p>
           Calculators on this site are educational and informational. They are not a substitute for
           professional financial, medical, legal, or engineering advice. Always verify important
@@ -36,11 +38,17 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         </p>
       </LegalSection>
 
-      <LegalSection title="Acceptable use">
+      <LegalSection title={tUi("acceptable-use")}>
         <ul className="list-disc space-y-1 pl-5">
-          <li>Do not misuse, disrupt, or attempt to overload the service.</li>
-          <li>Do not use the site for any unlawful purpose.</li>
-          <li>Respect the intellectual property behind the software and content.</li>
+          <li>
+            <T k="ui.do-not-misuse-disrupt-or-attempt-to-overload-the-service" />
+          </li>
+          <li>
+            <T k="ui.do-not-use-the-site-for-any-unlawful-purpose" />
+          </li>
+          <li>
+            <T k="ui.respect-the-intellectual-property-behind-the-software-and-content" />
+          </li>
         </ul>
       </LegalSection>
 
@@ -59,7 +67,9 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         </p>
       </LegalSection>
 
-      <p className="text-xs text-muted-foreground">Last updated: August 11, 2026.</p>
+      <p className="text-xs text-muted-foreground">
+        <T k="ui.last-updated-august-11-2026" />
+      </p>
     </LegalPage>
   );
 }

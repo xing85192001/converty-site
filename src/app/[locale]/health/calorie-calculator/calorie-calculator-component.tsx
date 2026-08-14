@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   type CalorieInput,
   type CalorieResult,
@@ -184,7 +185,9 @@ export function CalorieCalculatorComponent() {
             </div>
           )}
 
-          <h3 className="text-lg font-semibold">Daily Macros</h3>
+          <h3 className="text-lg font-semibold">
+            <T k="ui.daily-macros" />
+          </h3>
           <ResultGrid
             results={[
               {

@@ -1,0 +1,2002 @@
+{
+  "phrases": [
+    {
+      "slug": "last-updated-august-11-2026",
+      "phrase": "Last updated: August 11, 2026.",
+      "count": 4
+    },
+    {
+      "slug": "note",
+      "phrase": "Note:",
+      "count": 4
+    },
+    {
+      "slug": "calculation-details",
+      "phrase": "Calculation Details",
+      "count": 2
+    },
+    {
+      "slug": "1-year",
+      "phrase": "1 year",
+      "count": 2
+    },
+    {
+      "slug": "3-years",
+      "phrase": "3 years",
+      "count": 2
+    },
+    {
+      "slug": "5-years",
+      "phrase": "5 years",
+      "count": 2
+    },
+    {
+      "slug": "enter-a-large-integer",
+      "phrase": "Enter a large integer",
+      "count": 2
+    },
+    {
+      "slug": "enter-numbers-separated-by-commas-spaces-or-new-lines",
+      "phrase": "Enter numbers separated by commas, spaces, or new lines",
+      "count": 2
+    },
+    {
+      "slug": "high-latitude",
+      "phrase": "High Latitude:",
+      "count": 2
+    },
+    {
+      "slug": "mid-latitude",
+      "phrase": "Mid Latitude:",
+      "count": 2
+    },
+    {
+      "slug": "low-latitude",
+      "phrase": "Low Latitude:",
+      "count": 2
+    },
+    {
+      "slug": "est-size",
+      "phrase": "Est. Size",
+      "count": 2
+    },
+    {
+      "slug": "aspect-ratio",
+      "phrase": "Aspect Ratio",
+      "count": 2
+    },
+    {
+      "slug": "typical-use",
+      "phrase": "Typical Use",
+      "count": 2
+    },
+    {
+      "slug": "frame-rate",
+      "phrase": "Frame Rate",
+      "count": 2
+    },
+    {
+      "slug": "all-categories",
+      "phrase": "All Categories",
+      "count": 2
+    },
+    {
+      "slug": "copied",
+      "phrase": "Copied!",
+      "count": 2
+    },
+    {
+      "slug": "redirecting",
+      "phrase": "Redirecting...",
+      "count": 1
+    },
+    {
+      "slug": "about-us",
+      "phrase": "About Us",
+      "count": 1
+    },
+    {
+      "slug": "what-we-offer",
+      "phrase": "What we offer",
+      "count": 1
+    },
+    {
+      "slug": "how-it-works",
+      "phrase": "How it works",
+      "count": 1
+    },
+    {
+      "slug": "editorial-standards",
+      "phrase": "Editorial standards",
+      "count": 1
+    },
+    {
+      "slug": "automotive-calculators-coming-soon",
+      "phrase": "Automotive calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "chemistry-calculators-coming-soon",
+      "phrase": "Chemistry calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "category-not-found",
+      "phrase": "Category not found",
+      "count": 1
+    },
+    {
+      "slug": "hex-color",
+      "phrase": "HEX Color",
+      "count": 1
+    },
+    {
+      "slug": "contact-us",
+      "phrase": "Contact Us",
+      "count": 1
+    },
+    {
+      "slug": "what-to-include",
+      "phrase": "What to include",
+      "count": 1
+    },
+    {
+      "slug": "for-a-bug-or-wrong-result-tell-us-which-calculator-and-the-inputs-you-used",
+      "phrase": "For a bug or wrong result, tell us which calculator and the inputs you used.",
+      "count": 1
+    },
+    {
+      "slug": "for-a-new-tool-suggestion-describe-the-calculation-you-need",
+      "phrase": "For a new tool suggestion, describe the calculation you need.",
+      "count": 1
+    },
+    {
+      "slug": "for-business-or-advertising-include-your-website-and-a-short-note",
+      "phrase": "For business or advertising, include your website and a short note.",
+      "count": 1
+    },
+    {
+      "slug": "cooking-calculators-coming-soon",
+      "phrase": "Cooking calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "crypto-calculators-coming-soon",
+      "phrase": "Crypto calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "network-difficulty",
+      "phrase": "Network Difficulty",
+      "count": 1
+    },
+    {
+      "slug": "file-size",
+      "phrase": "File Size",
+      "count": 1
+    },
+    {
+      "slug": "enter-file-size",
+      "phrase": "Enter file size",
+      "count": 1
+    },
+    {
+      "slug": "connection-speed",
+      "phrase": "Connection Speed",
+      "count": 1
+    },
+    {
+      "slug": "enter-speed",
+      "phrase": "Enter speed",
+      "count": 1
+    },
+    {
+      "slug": "search-timezone",
+      "phrase": "Search timezone...",
+      "count": 1
+    },
+    {
+      "slug": "no-timezone-found",
+      "phrase": "No timezone found.",
+      "count": 1
+    },
+    {
+      "slug": "engineering-calculators-coming-soon",
+      "phrase": "Engineering calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "beam-deflection-diagram",
+      "phrase": "Beam Deflection Diagram",
+      "count": 1
+    },
+    {
+      "slug": "smallest-balance",
+      "phrase": "smallest balance",
+      "count": 1
+    },
+    {
+      "slug": "highest-interest-rate",
+      "phrase": "highest interest rate",
+      "count": 1
+    },
+    {
+      "slug": "bmr-formulas",
+      "phrase": "BMR Formulas",
+      "count": 1
+    },
+    {
+      "slug": "daily-calories-by-activity-level",
+      "phrase": "Daily Calories by Activity Level",
+      "count": 1
+    },
+    {
+      "slug": "daily-macros",
+      "phrase": "Daily Macros",
+      "count": 1
+    },
+    {
+      "slug": "macros-breakdown",
+      "phrase": "Macros Breakdown",
+      "count": 1
+    },
+    {
+      "slug": "infrastructure-calculators-coming-soon",
+      "phrase": "Infrastructure calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "high-availability",
+      "phrase": "High Availability",
+      "count": 1
+    },
+    {
+      "slug": "ha-modes",
+      "phrase": "HA Modes",
+      "count": 1
+    },
+    {
+      "slug": "failover-time",
+      "phrase": "Failover Time",
+      "count": 1
+    },
+    {
+      "slug": "live-migration",
+      "phrase": "Live Migration",
+      "count": 1
+    },
+    {
+      "slug": "cross-host",
+      "phrase": "Cross-Host",
+      "count": 1
+    },
+    {
+      "slug": "cross-datacenter",
+      "phrase": "Cross-Datacenter",
+      "count": 1
+    },
+    {
+      "slug": "storage-types",
+      "phrase": "Storage Types",
+      "count": 1
+    },
+    {
+      "slug": "thin-provisioning",
+      "phrase": "Thin Provisioning",
+      "count": 1
+    },
+    {
+      "slug": "pros",
+      "phrase": "Pros:",
+      "count": 1
+    },
+    {
+      "slug": "cons",
+      "phrase": "Cons:",
+      "count": 1
+    },
+    {
+      "slug": "host-requirements",
+      "phrase": "Host Requirements",
+      "count": 1
+    },
+    {
+      "slug": "licensing-costs",
+      "phrase": "Licensing Costs",
+      "count": 1
+    },
+    {
+      "slug": "number-b",
+      "phrase": "Number B",
+      "count": 1
+    },
+    {
+      "slug": "known-value",
+      "phrase": "Known Value",
+      "count": 1
+    },
+    {
+      "slug": "arc-length",
+      "phrase": "Arc Length",
+      "count": 1
+    },
+    {
+      "slug": "sector-area",
+      "phrase": "Sector Area",
+      "count": 1
+    },
+    {
+      "slug": "rules",
+      "phrase": "Rules:",
+      "count": 1
+    },
+    {
+      "slug": "enter-integers-separated-by-commas-spaces-or-new-lines",
+      "phrase": "Enter integers separated by commas, spaces, or new lines",
+      "count": 1
+    },
+    {
+      "slug": "logarithm-properties",
+      "phrase": "Logarithm Properties:",
+      "count": 1
+    },
+    {
+      "slug": "matrix-b",
+      "phrase": "Matrix B",
+      "count": 1
+    },
+    {
+      "slug": "result-matrix",
+      "phrase": "Result Matrix",
+      "count": 1
+    },
+    {
+      "slug": "e-g-50-for-50th-term",
+      "phrase": "e.g., 50 for 50th term",
+      "count": 1
+    },
+    {
+      "slug": "nth-term-formula",
+      "phrase": "nth Term Formula",
+      "count": 1
+    },
+    {
+      "slug": "sum-formula",
+      "phrase": "Sum Formula",
+      "count": 1
+    },
+    {
+      "slug": "not-a",
+      "phrase": "NOT A",
+      "count": 1
+    },
+    {
+      "slug": "leave-empty-to-find",
+      "phrase": "Leave empty to find",
+      "count": 1
+    },
+    {
+      "slug": "verification",
+      "phrase": "Verification:",
+      "count": 1
+    },
+    {
+      "slug": "related-roots",
+      "phrase": "Related Roots:",
+      "count": 1
+    },
+    {
+      "slug": "to-fixed",
+      "phrase": "To Fixed",
+      "count": 1
+    },
+    {
+      "slug": "significant-figures",
+      "phrase": "Significant Figures",
+      "count": 1
+    },
+    {
+      "slug": "symmetric-difference",
+      "phrase": "Symmetric difference",
+      "count": 1
+    },
+    {
+      "slug": "input-method",
+      "phrase": "Input Method",
+      "count": 1
+    },
+    {
+      "slug": "network-calculators-coming-soon",
+      "phrase": "Network calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "192-168-1-50-or-2001-db8-1",
+      "phrase": "192.168.1.50 or 2001:db8::1",
+      "count": 1
+    },
+    {
+      "slug": "192-168-1-1-or-2001-db8-1",
+      "phrase": "192.168.1.1 or 2001:db8::1",
+      "count": 1
+    },
+    {
+      "slug": "select",
+      "phrase": "Select...",
+      "count": 1
+    },
+    {
+      "slug": "photo-calculators-coming-soon",
+      "phrase": "Photo calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "image-dimensions",
+      "phrase": "Image Dimensions",
+      "count": 1
+    },
+    {
+      "slug": "screen-dimensions",
+      "phrase": "Screen Dimensions",
+      "count": 1
+    },
+    {
+      "slug": "enter-width",
+      "phrase": "Enter width",
+      "count": 1
+    },
+    {
+      "slug": "enter-height",
+      "phrase": "Enter height",
+      "count": 1
+    },
+    {
+      "slug": "common-aspect-ratios",
+      "phrase": "Common Aspect Ratios",
+      "count": 1
+    },
+    {
+      "slug": "crop-factor",
+      "phrase": "Crop Factor",
+      "count": 1
+    },
+    {
+      "slug": "subject-coverage",
+      "phrase": "Subject Coverage",
+      "count": 1
+    },
+    {
+      "slug": "in-front-of-subject",
+      "phrase": "In Front of Subject",
+      "count": 1
+    },
+    {
+      "slug": "behind-subject",
+      "phrase": "Behind Subject",
+      "count": 1
+    },
+    {
+      "slug": "depth-of-field-visualization",
+      "phrase": "Depth of Field Visualization",
+      "count": 1
+    },
+    {
+      "slug": "common-sizes",
+      "phrase": "Common sizes:",
+      "count": 1
+    },
+    {
+      "slug": "print-quality",
+      "phrase": "Print Quality",
+      "count": 1
+    },
+    {
+      "slug": "exposure",
+      "phrase": "Exposure:",
+      "count": 1
+    },
+    {
+      "slug": "golden-hour-settings",
+      "phrase": "Golden Hour Settings",
+      "count": 1
+    },
+    {
+      "slug": "blue-hour-settings",
+      "phrase": "Blue Hour Settings",
+      "count": 1
+    },
+    {
+      "slug": "night-settings",
+      "phrase": "Night Settings",
+      "count": 1
+    },
+    {
+      "slug": "color-temperature-reference",
+      "phrase": "Color Temperature Reference",
+      "count": 1
+    },
+    {
+      "slug": "light-phases-by-sun-elevation",
+      "phrase": "Light Phases by Sun Elevation",
+      "count": 1
+    },
+    {
+      "slug": "planning-tips",
+      "phrase": "Planning Tips",
+      "count": 1
+    },
+    {
+      "slug": "summer-considerations",
+      "phrase": "Summer Considerations",
+      "count": 1
+    },
+    {
+      "slug": "winter-considerations",
+      "phrase": "Winter Considerations",
+      "count": 1
+    },
+    {
+      "slug": "twilight-duration-by-latitude",
+      "phrase": "Twilight Duration by Latitude",
+      "count": 1
+    },
+    {
+      "slug": "golden-hour",
+      "phrase": "Golden Hour",
+      "count": 1
+    },
+    {
+      "slug": "blue-hour",
+      "phrase": "Blue Hour",
+      "count": 1
+    },
+    {
+      "slug": "shutter-speed",
+      "phrase": "Shutter Speed",
+      "count": 1
+    },
+    {
+      "slug": "light-level",
+      "phrase": "Light Level",
+      "count": 1
+    },
+    {
+      "slug": "light-condition",
+      "phrase": "Light Condition",
+      "count": 1
+    },
+    {
+      "slug": "use-cases",
+      "phrase": "Use Cases",
+      "count": 1
+    },
+    {
+      "slug": "common-megapixel-reference",
+      "phrase": "Common Megapixel Reference",
+      "count": 1
+    },
+    {
+      "slug": "portrait-type",
+      "phrase": "Portrait Type",
+      "count": 1
+    },
+    {
+      "slug": "compression-effect",
+      "phrase": "Compression Effect",
+      "count": 1
+    },
+    {
+      "slug": "focal-length",
+      "phrase": "Focal Length",
+      "count": 1
+    },
+    {
+      "slug": "image-size",
+      "phrase": "Image Size",
+      "count": 1
+    },
+    {
+      "slug": "clip-length",
+      "phrase": "Clip Length",
+      "count": 1
+    },
+    {
+      "slug": "shooting-duration",
+      "phrase": "Shooting Duration",
+      "count": 1
+    },
+    {
+      "slug": "speed-up",
+      "phrase": "Speed Up",
+      "count": 1
+    },
+    {
+      "slug": "total-photos",
+      "phrase": "Total Photos",
+      "count": 1
+    },
+    {
+      "slug": "memory-needed",
+      "phrase": "Memory Needed",
+      "count": 1
+    },
+    {
+      "slug": "recommended-intervals",
+      "phrase": "Recommended Intervals",
+      "count": 1
+    },
+    {
+      "slug": "physics-calculators-coming-soon",
+      "phrase": "Physics calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "privacy-policy",
+      "phrase": "Privacy Policy",
+      "count": 1
+    },
+    {
+      "slug": "information-collected-automatically",
+      "phrase": "Information collected automatically",
+      "count": 1
+    },
+    {
+      "slug": "cookies-and-advertising",
+      "phrase": "Cookies and advertising",
+      "count": 1
+    },
+    {
+      "slug": "how-we-use-information",
+      "phrase": "How we use information",
+      "count": 1
+    },
+    {
+      "slug": "to-operate-and-secure-the-site",
+      "phrase": "To operate and secure the site.",
+      "count": 1
+    },
+    {
+      "slug": "to-understand-which-tools-are-useful-so-we-can-improve-them",
+      "phrase": "To understand which tools are useful so we can improve them.",
+      "count": 1
+    },
+    {
+      "slug": "to-display-advertisements-that-help-keep-the-calculators-free",
+      "phrase": "To display advertisements that help keep the calculators free.",
+      "count": 1
+    },
+    {
+      "slug": "your-rights",
+      "phrase": "Your rights",
+      "count": 1
+    },
+    {
+      "slug": "real-estate-calculators-coming-soon",
+      "phrase": "Real estate calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "terms-of-service",
+      "phrase": "Terms of Service",
+      "count": 1
+    },
+    {
+      "slug": "no-professional-advice",
+      "phrase": "No professional advice",
+      "count": 1
+    },
+    {
+      "slug": "acceptable-use",
+      "phrase": "Acceptable use",
+      "count": 1
+    },
+    {
+      "slug": "do-not-misuse-disrupt-or-attempt-to-overload-the-service",
+      "phrase": "Do not misuse, disrupt, or attempt to overload the service.",
+      "count": 1
+    },
+    {
+      "slug": "do-not-use-the-site-for-any-unlawful-purpose",
+      "phrase": "Do not use the site for any unlawful purpose.",
+      "count": 1
+    },
+    {
+      "slug": "respect-the-intellectual-property-behind-the-software-and-content",
+      "phrase": "Respect the intellectual property behind the software and content.",
+      "count": 1
+    },
+    {
+      "slug": "video-calculators-coming-soon",
+      "phrase": "Video calculators coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "dcp-specifications",
+      "phrase": "DCP Specifications",
+      "count": 1
+    },
+    {
+      "slug": "frame-rate-24-fps",
+      "phrase": "Frame Rate: 24 fps",
+      "count": 1
+    },
+    {
+      "slug": "resolution-preset",
+      "phrase": "Resolution Preset",
+      "count": 1
+    },
+    {
+      "slug": "enter-bitrate",
+      "phrase": "Enter bitrate",
+      "count": 1
+    },
+    {
+      "slug": "total-duration",
+      "phrase": "Total Duration",
+      "count": 1
+    },
+    {
+      "slug": "web-tools-coming-soon",
+      "phrase": "Web tools coming soon!",
+      "count": 1
+    },
+    {
+      "slug": "meta-tag",
+      "phrase": "Meta Tag",
+      "count": 1
+    },
+    {
+      "slug": "click-to-copy",
+      "phrase": "Click to copy",
+      "count": 1
+    },
+    {
+      "slug": "click-to-copy-character",
+      "phrase": "Click to copy character",
+      "count": 1
+    },
+    {
+      "slug": "click-to-copy-entity",
+      "phrase": "Click to copy entity",
+      "count": 1
+    },
+    {
+      "slug": "encoding-mode",
+      "phrase": "Encoding Mode",
+      "count": 1
+    },
+    {
+      "slug": "characters-converted",
+      "phrase": "Characters Converted",
+      "count": 1
+    },
+    {
+      "slug": "common-html-entities",
+      "phrase": "Common HTML Entities",
+      "count": 1
+    },
+    {
+      "slug": "security-headers",
+      "phrase": "Security Headers",
+      "count": 1
+    },
+    {
+      "slug": "tls-version-reference",
+      "phrase": "TLS Version Reference",
+      "count": 1
+    },
+    {
+      "slug": "redirect-chain",
+      "phrase": "Redirect Chain",
+      "count": 1
+    },
+    {
+      "slug": "spf-record",
+      "phrase": "SPF Record",
+      "count": 1
+    },
+    {
+      "slug": "dns-lookups",
+      "phrase": "DNS Lookups",
+      "count": 1
+    },
+    {
+      "slug": "parsed-mechanisms",
+      "phrase": "Parsed Mechanisms",
+      "count": 1
+    },
+    {
+      "slug": "spf-mechanisms-reference",
+      "phrase": "SPF Mechanisms Reference",
+      "count": 1
+    },
+    {
+      "slug": "common-url-encodings",
+      "phrase": "Common URL Encodings",
+      "count": 1
+    },
+    {
+      "slug": "about-this-calculator",
+      "phrase": "About this calculator",
+      "count": 1
+    },
+    {
+      "slug": "copy-value",
+      "phrase": "Copy value",
+      "count": 1
+    },
+    {
+      "slug": "something-went-wrong",
+      "phrase": "Something went wrong",
+      "count": 1
+    },
+    {
+      "slug": "toggle-menu",
+      "phrase": "Toggle menu",
+      "count": 1
+    },
+    {
+      "slug": "toggle-theme",
+      "phrase": "Toggle theme",
+      "count": 1
+    },
+    {
+      "slug": "install-baikecalc",
+      "phrase": "Install baikecalc",
+      "count": 1
+    },
+    {
+      "slug": "you-are-offline-calculators-will-work-from-cache",
+      "phrase": "You are offline. Calculators will work from cache.",
+      "count": 1
+    }
+  ],
+  "occurrences": [
+    {
+      "file": "src/app/page.tsx",
+      "line": 18,
+      "phrase": "Redirecting...",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/about/page.tsx",
+      "line": 16,
+      "phrase": "About Us",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/about/page.tsx",
+      "line": 25,
+      "phrase": "What we offer",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/about/page.tsx",
+      "line": 43,
+      "phrase": "How it works",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/about/page.tsx",
+      "line": 52,
+      "phrase": "Editorial standards",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/about/page.tsx",
+      "line": 60,
+      "phrase": "Last updated: August 11, 2026.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/automotive/page.tsx",
+      "line": 62,
+      "phrase": "Automotive calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/chemistry/page.tsx",
+      "line": 73,
+      "phrase": "Chemistry calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/color/page.tsx",
+      "line": 40,
+      "phrase": "Category not found",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/color/rgb/rgb-converter.tsx",
+      "line": 117,
+      "phrase": "HEX Color",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 15,
+      "phrase": "Contact Us",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 41,
+      "phrase": "What to include",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 43,
+      "phrase": "For a bug or wrong result, tell us which calculator and the inputs you used.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 44,
+      "phrase": "For a new tool suggestion, describe the calculation you need.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 45,
+      "phrase": "For business or advertising, include your website and a short note.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/contact/page.tsx",
+      "line": 49,
+      "phrase": "Last updated: August 11, 2026.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/cooking/page.tsx",
+      "line": 62,
+      "phrase": "Cooking calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/crypto/page.tsx",
+      "line": 62,
+      "phrase": "Crypto calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/crypto/mining/mining-calculator.tsx",
+      "line": 427,
+      "phrase": "Network Difficulty",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/data/download-calculator/download-calculator.tsx",
+      "line": 37,
+      "phrase": "File Size",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/data/download-calculator/download-calculator.tsx",
+      "line": 46,
+      "phrase": "Enter file size",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/data/download-calculator/download-calculator.tsx",
+      "line": 78,
+      "phrase": "Connection Speed",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/data/download-calculator/download-calculator.tsx",
+      "line": 87,
+      "phrase": "Enter speed",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/datetime/time-zone/time-zone-calculator.tsx",
+      "line": 55,
+      "phrase": "Search timezone...",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/datetime/time-zone/time-zone-calculator.tsx",
+      "line": 88,
+      "phrase": "No timezone found.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/engineering/page.tsx",
+      "line": 62,
+      "phrase": "Engineering calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/engineering/beam-deflection/BeamDiagramSvg.tsx",
+      "line": 284,
+      "phrase": "Beam Deflection Diagram",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/finance/debt-snowball-avalanche/page.tsx",
+      "line": 62,
+      "phrase": "smallest balance",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/finance/debt-snowball-avalanche/page.tsx",
+      "line": 72,
+      "phrase": "highest interest rate",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/health/bmr-calculator/bmr-calculator-component.tsx",
+      "line": 117,
+      "phrase": "BMR Formulas",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/health/bmr-calculator/bmr-calculator-component.tsx",
+      "line": 133,
+      "phrase": "Daily Calories by Activity Level",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/health/calorie-calculator/calorie-calculator-component.tsx",
+      "line": 187,
+      "phrase": "Daily Macros",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/health/tdee-calculator/tdee-calculator-component.tsx",
+      "line": 174,
+      "phrase": "Macros Breakdown",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/page.tsx",
+      "line": 66,
+      "phrase": "Infrastructure calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 98,
+      "phrase": "High Availability",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 120,
+      "phrase": "HA Modes",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 128,
+      "phrase": "Failover Time",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 141,
+      "phrase": "Live Migration",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 163,
+      "phrase": "Cross-Host",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 171,
+      "phrase": "Cross-Datacenter",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 198,
+      "phrase": "Storage Types",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 206,
+      "phrase": "Thin Provisioning",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 377,
+      "phrase": "Pros:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/hypervisor-comparison/FeatureMatrixTable.tsx",
+      "line": 388,
+      "phrase": "Cons:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/server-virtualization-calculator/server-virtualization-calculator.tsx",
+      "line": 297,
+      "phrase": "Host Requirements",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/server-virtualization-calculator/server-virtualization-calculator.tsx",
+      "line": 350,
+      "phrase": "Calculation Details",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/virtualization-cost/virtualization-cost-calculator.tsx",
+      "line": 450,
+      "phrase": "1 year",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/virtualization-cost/virtualization-cost-calculator.tsx",
+      "line": 451,
+      "phrase": "3 years",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/virtualization-cost/virtualization-cost-calculator.tsx",
+      "line": 452,
+      "phrase": "5 years",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/vmware-licensing-calculator/vmware-licensing-calculator.tsx",
+      "line": 210,
+      "phrase": "1 year",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/vmware-licensing-calculator/vmware-licensing-calculator.tsx",
+      "line": 211,
+      "phrase": "3 years",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/vmware-licensing-calculator/vmware-licensing-calculator.tsx",
+      "line": 212,
+      "phrase": "5 years",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/vmware-licensing-calculator/vmware-licensing-calculator.tsx",
+      "line": 227,
+      "phrase": "Licensing Costs",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/infrastructure/vmware-licensing-calculator/vmware-licensing-calculator.tsx",
+      "line": 301,
+      "phrase": "Calculation Details",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/big-number/big-number-calculator.tsx",
+      "line": 98,
+      "phrase": "Enter a large integer",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/big-number/big-number-calculator.tsx",
+      "line": 104,
+      "phrase": "Number B",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/big-number/big-number-calculator.tsx",
+      "line": 112,
+      "phrase": "Enter a large integer",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/circle-calculator/circle-calculator.tsx",
+      "line": 64,
+      "phrase": "Known Value",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/circle-calculator/circle-calculator.tsx",
+      "line": 132,
+      "phrase": "Arc Length",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/circle-calculator/circle-calculator.tsx",
+      "line": 133,
+      "phrase": "Sector Area",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/exponent-calculator/exponent-calculator.tsx",
+      "line": 92,
+      "phrase": "Rules:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/gcd-lcm-calculator/gcd-lcm-calculator.tsx",
+      "line": 44,
+      "phrase": "Enter integers separated by commas, spaces, or new lines",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/logarithm-calculator/logarithm-calculator.tsx",
+      "line": 92,
+      "phrase": "Logarithm Properties:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/matrix-calculator/matrix-calculator.tsx",
+      "line": 122,
+      "phrase": "Matrix B",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/matrix-calculator/matrix-calculator.tsx",
+      "line": 168,
+      "phrase": "Result Matrix",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/number-sequence/number-sequence-calculator.tsx",
+      "line": 197,
+      "phrase": "e.g., 50 for 50th term",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/number-sequence/number-sequence-calculator.tsx",
+      "line": 223,
+      "phrase": "nth Term Formula",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/number-sequence/number-sequence-calculator.tsx",
+      "line": 228,
+      "phrase": "Sum Formula",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/programmer-calculator/programmer-calculator-component.tsx",
+      "line": 165,
+      "phrase": "NOT A",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/ratio-calculator/ratio-calculator.tsx",
+      "line": 123,
+      "phrase": "Leave empty to find",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/root-calculator/root-calculator.tsx",
+      "line": 104,
+      "phrase": "Verification:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/root-calculator/root-calculator.tsx",
+      "line": 110,
+      "phrase": "Related Roots:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/rounding-calculator/rounding-calculator.tsx",
+      "line": 75,
+      "phrase": "To Fixed",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/rounding-calculator/rounding-calculator.tsx",
+      "line": 76,
+      "phrase": "Significant Figures",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/set-calculator/page.tsx",
+      "line": 71,
+      "phrase": "Symmetric difference",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/math/standard-deviation-calculator/standard-deviation-calculator.tsx",
+      "line": 49,
+      "phrase": "Enter numbers separated by commas, spaces, or new lines",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/statistics-calculator/statistics-calculator.tsx",
+      "line": 49,
+      "phrase": "Enter numbers separated by commas, spaces, or new lines",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/math/triangle-calculator/triangle-calculator.tsx",
+      "line": 68,
+      "phrase": "Input Method",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/page.tsx",
+      "line": 62,
+      "phrase": "Network calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/cidr-range/cidr-range-calculator.tsx",
+      "line": 57,
+      "phrase": "192.168.1.50 or 2001:db8::1",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/network/cidr-range/cidr-range-calculator.tsx",
+      "line": 123,
+      "phrase": "Note:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/cidr-range/cidr-range-calculator.tsx",
+      "line": 133,
+      "phrase": "Note:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/ip-calculator/ip-calculator.tsx",
+      "line": 73,
+      "phrase": "192.168.1.1 or 2001:db8::1",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/network/subnet-calculator/subnet-calculator.tsx",
+      "line": 142,
+      "phrase": "Note:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/subnet-calculator/subnet-calculator.tsx",
+      "line": 152,
+      "phrase": "Note:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/network/subnet-calculator/components/split-controls.tsx",
+      "line": 74,
+      "phrase": "Select...",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/photo/page.tsx",
+      "line": 62,
+      "phrase": "Photo calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/aspect-fit/aspect-fit-calculator.tsx",
+      "line": 27,
+      "phrase": "Image Dimensions",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/aspect-fit/aspect-fit-calculator.tsx",
+      "line": 46,
+      "phrase": "Screen Dimensions",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/aspect-ratio/aspect-ratio-converter.tsx",
+      "line": 30,
+      "phrase": "Enter width",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/photo/aspect-ratio/aspect-ratio-converter.tsx",
+      "line": 40,
+      "phrase": "Enter height",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/photo/aspect-ratio/aspect-ratio-converter.tsx",
+      "line": 85,
+      "phrase": "Common Aspect Ratios",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/composition/composition-calculator.tsx",
+      "line": 59,
+      "phrase": "Crop Factor",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/composition/composition-calculator.tsx",
+      "line": 87,
+      "phrase": "Subject Coverage",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/depth-of-field/depth-of-field-calculator.tsx",
+      "line": 98,
+      "phrase": "In Front of Subject",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/depth-of-field/depth-of-field-calculator.tsx",
+      "line": 102,
+      "phrase": "Behind Subject",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/depth-of-field/depth-of-field-calculator.tsx",
+      "line": 108,
+      "phrase": "Depth of Field Visualization",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/dpi/dpi-calculator.tsx",
+      "line": 74,
+      "phrase": "Common sizes:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/dpi/dpi-calculator.tsx",
+      "line": 108,
+      "phrase": "Print Quality",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/focal-equivalent/focal-equivalent-calculator.tsx",
+      "line": 188,
+      "phrase": "Exposure:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/camera-settings-cards.tsx",
+      "line": 9,
+      "phrase": "Golden Hour Settings",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/camera-settings-cards.tsx",
+      "line": 21,
+      "phrase": "Blue Hour Settings",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/camera-settings-cards.tsx",
+      "line": 33,
+      "phrase": "Night Settings",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/color-temperature-table.tsx",
+      "line": 8,
+      "phrase": "Color Temperature Reference",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/light-phases-reference.tsx",
+      "line": 8,
+      "phrase": "Light Phases by Sun Elevation",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/planning-tips.tsx",
+      "line": 8,
+      "phrase": "Planning Tips",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 9,
+      "phrase": "Summer Considerations",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 12,
+      "phrase": "High Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 15,
+      "phrase": "Mid Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 18,
+      "phrase": "Low Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 23,
+      "phrase": "Winter Considerations",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 26,
+      "phrase": "High Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 29,
+      "phrase": "Mid Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/seasonal-notes.tsx",
+      "line": 32,
+      "phrase": "Low Latitude:",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/twilight-duration-table.tsx",
+      "line": 8,
+      "phrase": "Twilight Duration by Latitude",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/twilight-duration-table.tsx",
+      "line": 15,
+      "phrase": "Golden Hour",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/golden-hour/components/twilight-duration-table.tsx",
+      "line": 16,
+      "phrase": "Blue Hour",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/image-filesize/image-filesize-calculator.tsx",
+      "line": 110,
+      "phrase": "Est. Size",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/light-ev/light-ev-calculator.tsx",
+      "line": 44,
+      "phrase": "Shutter Speed",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/light-ev/light-ev-calculator.tsx",
+      "line": 89,
+      "phrase": "Light Level",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/light-ev/light-ev-calculator.tsx",
+      "line": 99,
+      "phrase": "Light Condition",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/megapixel-aspects/megapixel-aspects-calculator.tsx",
+      "line": 47,
+      "phrase": "Aspect Ratio",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/megapixel-aspects/megapixel-aspects-calculator.tsx",
+      "line": 51,
+      "phrase": "Use Cases",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/megapixels/megapixel-calculator.tsx",
+      "line": 75,
+      "phrase": "Common Megapixel Reference",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/megapixels/megapixel-calculator.tsx",
+      "line": 81,
+      "phrase": "Typical Use",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/portrait-distance/portrait-distance-calculator.tsx",
+      "line": 60,
+      "phrase": "Portrait Type",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/portrait-distance/portrait-distance-calculator.tsx",
+      "line": 108,
+      "phrase": "Compression Effect",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/portrait-distance/portrait-distance-calculator.tsx",
+      "line": 119,
+      "phrase": "Focal Length",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 122,
+      "phrase": "Frame Rate",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 137,
+      "phrase": "Image Size",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 154,
+      "phrase": "Clip Length",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 158,
+      "phrase": "Shooting Duration",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 166,
+      "phrase": "Speed Up",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 173,
+      "phrase": "Total Photos",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 177,
+      "phrase": "Memory Needed",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 185,
+      "phrase": "Frame Rate",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/photo/time-lapse/time-lapse-calculator.tsx",
+      "line": 192,
+      "phrase": "Recommended Intervals",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/physics/page.tsx",
+      "line": 62,
+      "phrase": "Physics calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 20,
+      "phrase": "Privacy Policy",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 29,
+      "phrase": "Information collected automatically",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 39,
+      "phrase": "Cookies and advertising",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 71,
+      "phrase": "How we use information",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 73,
+      "phrase": "To operate and secure the site.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 74,
+      "phrase": "To understand which tools are useful so we can improve them.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 75,
+      "phrase": "To display advertisements that help keep the calculators free.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 79,
+      "phrase": "Your rights",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/privacy-policy/page.tsx",
+      "line": 99,
+      "phrase": "Last updated: August 11, 2026.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/realestate/page.tsx",
+      "line": 62,
+      "phrase": "Real estate calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 16,
+      "phrase": "Terms of Service",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 24,
+      "phrase": "No professional advice",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 39,
+      "phrase": "Acceptable use",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 41,
+      "phrase": "Do not misuse, disrupt, or attempt to overload the service.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 42,
+      "phrase": "Do not use the site for any unlawful purpose.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 43,
+      "phrase": "Respect the intellectual property behind the software and content.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/terms/page.tsx",
+      "line": 62,
+      "phrase": "Last updated: August 11, 2026.",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/page.tsx",
+      "line": 62,
+      "phrase": "Video calculators coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/audio-filesize/audio-filesize-calculator.tsx",
+      "line": 103,
+      "phrase": "Est. Size",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/dcp-filesize/dcp-filesize-calculator.tsx",
+      "line": 106,
+      "phrase": "DCP Specifications",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/dcp-filesize/dcp-filesize-calculator.tsx",
+      "line": 113,
+      "phrase": "Frame Rate: 24 fps",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/screen-size/screen-size-calculator.tsx",
+      "line": 52,
+      "phrase": "Aspect Ratio",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/screen-size/screen-size-calculator.tsx",
+      "line": 120,
+      "phrase": "Typical Use",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/video-file-size/video-file-size-calculator.tsx",
+      "line": 79,
+      "phrase": "Resolution Preset",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/video/video-file-size/video-file-size-calculator.tsx",
+      "line": 118,
+      "phrase": "Enter bitrate",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/video/video-file-size/video-file-size-calculator.tsx",
+      "line": 181,
+      "phrase": "Total Duration",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/page.tsx",
+      "line": 62,
+      "phrase": "Web tools coming soon!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/csp/csp-generator.tsx",
+      "line": 83,
+      "phrase": "Meta Tag",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/emoji-chars/emoji-map.tsx",
+      "line": 60,
+      "phrase": "All Categories",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/emoji-chars/emoji-map.tsx",
+      "line": 110,
+      "phrase": "Click to copy",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/web/html-chars/html-char-map.tsx",
+      "line": 60,
+      "phrase": "All Categories",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/html-chars/html-char-map.tsx",
+      "line": 95,
+      "phrase": "Click to copy character",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/web/html-chars/html-char-map.tsx",
+      "line": 100,
+      "phrase": "Copied!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/html-chars/html-char-map.tsx",
+      "line": 108,
+      "phrase": "Click to copy entity",
+      "kind": "attr"
+    },
+    {
+      "file": "src/app/[locale]/web/html-chars/html-char-map.tsx",
+      "line": 113,
+      "phrase": "Copied!",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/html-encoder/html-encoder-tool.tsx",
+      "line": 41,
+      "phrase": "Encoding Mode",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/html-encoder/html-encoder-tool.tsx",
+      "line": 68,
+      "phrase": "Characters Converted",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/html-encoder/html-encoder-tool.tsx",
+      "line": 106,
+      "phrase": "Common HTML Entities",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/https-check/https-checker.tsx",
+      "line": 49,
+      "phrase": "Security Headers",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/https-check/https-checker.tsx",
+      "line": 87,
+      "phrase": "TLS Version Reference",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/redirect-check/redirect-checker.tsx",
+      "line": 87,
+      "phrase": "Redirect Chain",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/spf-check/spf-checker.tsx",
+      "line": 17,
+      "phrase": "SPF Record",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/spf-check/spf-checker.tsx",
+      "line": 40,
+      "phrase": "DNS Lookups",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/spf-check/spf-checker.tsx",
+      "line": 55,
+      "phrase": "Parsed Mechanisms",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/spf-check/spf-checker.tsx",
+      "line": 125,
+      "phrase": "SPF Mechanisms Reference",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/app/[locale]/web/url-encoder/url-encoder-converter.tsx",
+      "line": 96,
+      "phrase": "Common URL Encodings",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/converter/calculator-info.tsx",
+      "line": 12,
+      "phrase": "About this calculator",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/converter/output-display.tsx",
+      "line": 61,
+      "phrase": "Copy value",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/error-boundary/calculator-error-fallback.tsx",
+      "line": 11,
+      "phrase": "Something went wrong",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/layout/header.tsx",
+      "line": 46,
+      "phrase": "Toggle menu",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/layout/theme-toggle.tsx",
+      "line": 19,
+      "phrase": "Toggle theme",
+      "kind": "jsx"
+    },
+    {
+      "file": "src/components/ui/install-prompt.tsx",
+      "line": 62,
+      "phrase": "Install baikecalc",
+      "kind": "attr"
+    },
+    {
+      "file": "src/components/ui/offline-banner.tsx",
+      "line": 51,
+      "phrase": "You are offline. Calculators will work from cache.",
+      "kind": "jsx"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import {
   type CalculateMode,
   calculateTimeLapse,
@@ -119,7 +120,9 @@ export function TimeLapseCalculator() {
         )}
 
         <div className="space-y-2">
-          <label className="text-sm font-medium">Frame Rate</label>
+          <label className="text-sm font-medium">
+            <T k="ui.frame-rate" />
+          </label>
           <select
             value={frameRate}
             onChange={(e) => setFrameRate(parseInt(e.target.value))}
@@ -134,7 +137,9 @@ export function TimeLapseCalculator() {
         </div>
 
         <div className="space-y-2">
-          <label className="text-sm font-medium">Image Size</label>
+          <label className="text-sm font-medium">
+            <T k="ui.image-size" />
+          </label>
           <select
             value={imageSizeMB}
             onChange={(e) => setImageSizeMB(parseFloat(e.target.value))}
@@ -151,11 +156,15 @@ export function TimeLapseCalculator() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="p-4 rounded-lg border bg-primary/10 text-center">
-          <p className="text-sm text-muted-foreground">Clip Length</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.clip-length" />
+          </p>
           <p className="text-2xl font-bold text-primary">{result.clipLengthFormatted}</p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
-          <p className="text-sm text-muted-foreground">Shooting Duration</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.shooting-duration" />
+          </p>
           <p className="text-2xl font-bold">{result.eventDurationFormatted}</p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
@@ -163,18 +172,24 @@ export function TimeLapseCalculator() {
           <p className="text-2xl font-bold">{result.intervalSeconds.toFixed(1)}s</p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
-          <p className="text-sm text-muted-foreground">Speed Up</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.speed-up" />
+          </p>
           <p className="text-2xl font-bold">{result.speedupFactor}x</p>
         </div>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
-          <p className="text-sm text-muted-foreground">Total Photos</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.total-photos" />
+          </p>
           <p className="text-2xl font-bold">{result.totalPhotos.toLocaleString()}</p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
-          <p className="text-sm text-muted-foreground">Memory Needed</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.memory-needed" />
+          </p>
           <p className="text-2xl font-bold">
             {result.totalMemoryGB >= 1
               ? `${result.totalMemoryGB.toFixed(1)} GB`
@@ -182,14 +197,18 @@ export function TimeLapseCalculator() {
           </p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50 text-center">
-          <p className="text-sm text-muted-foreground">Frame Rate</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.frame-rate" />
+          </p>
           <p className="text-2xl font-bold">{frameRate} fps</p>
         </div>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-4">
-          <p className="text-sm font-medium">Recommended Intervals</p>
+          <p className="text-sm font-medium">
+            <T k="ui.recommended-intervals" />
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>

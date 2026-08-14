@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import {
   type BandwidthDelayProductInput,
@@ -36,6 +37,7 @@ const useStore = createCalculatorStore<FormValues, BandwidthDelayProductResult>(
 
 export function BandwidthDelayProductCalculator() {
   const t = useTranslations("calculator.network");
+  const tSteps = useTranslations("calculator.network.bdp");
   const { values, setValue, result, errors, calculationError } = useStore();
 
   return (
@@ -115,7 +117,9 @@ export function BandwidthDelayProductCalculator() {
             <p className="text-sm font-medium">{t("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {result.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.network.bdp")}>
+                  {formatStep(step, tSteps, "calculator.network.bdp")}
+                </p>
               ))}
             </div>
           </div>

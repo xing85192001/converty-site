@@ -4,6 +4,7 @@
  */
 
 import acidsBasesData from "@/data/chemistry/acids-bases.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /**
@@ -62,7 +63,7 @@ export interface PhResult {
   /** Compound name (if applicable) */
   compoundName?: string;
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 const Kw = 1e-14; // Water ion product constant at 25°C
@@ -82,7 +83,7 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
   let ohConcentration: number;
   let pka: number | undefined;
   let compoundName: string | undefined;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   try {
     switch (mode) {
@@ -95,11 +96,11 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         poh = 14 - ph;
         ohConcentration = 10 ** -poh;
 
-        steps.push(`Given: [H⁺] = ${hConcentration.toExponential(3)} M`);
-        steps.push(`pH = -log₁₀[H⁺] = -log₁₀(${hConcentration.toExponential(3)})`);
-        steps.push(`pH = ${ph.toFixed(2)}`);
-        steps.push(`pOH = 14 - pH = ${poh.toFixed(2)}`);
-        steps.push(`[OH⁻] = 10^(-pOH) = ${ohConcentration.toExponential(3)} M`);
+        steps.push({ key: "givenH", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "phFromH", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "phValue", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "pohFromPh", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "ohFromPoh", params: { value: ohConcentration.toExponential(3) } });
         break;
 
       case "from-oh-concentration":
@@ -111,11 +112,11 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         ph = 14 - poh;
         hConcentration = 10 ** -ph;
 
-        steps.push(`Given: [OH⁻] = ${ohConcentration.toExponential(3)} M`);
-        steps.push(`pOH = -log₁₀[OH⁻] = -log₁₀(${ohConcentration.toExponential(3)})`);
-        steps.push(`pOH = ${poh.toFixed(2)}`);
-        steps.push(`pH = 14 - pOH = ${ph.toFixed(2)}`);
-        steps.push(`[H⁺] = 10^(-pH) = ${hConcentration.toExponential(3)} M`);
+        steps.push({ key: "givenOh", params: { value: ohConcentration.toExponential(3) } });
+        steps.push({ key: "pohFromOh", params: { value: ohConcentration.toExponential(3) } });
+        steps.push({ key: "pohValue", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "phFromPoh", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "hFromPh", params: { value: hConcentration.toExponential(3) } });
         break;
 
       case "from-ph":
@@ -127,10 +128,10 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         hConcentration = 10 ** -ph;
         ohConcentration = 10 ** -poh;
 
-        steps.push(`Given: pH = ${ph.toFixed(2)}`);
-        steps.push(`[H⁺] = 10^(-pH) = ${hConcentration.toExponential(3)} M`);
-        steps.push(`pOH = 14 - pH = ${poh.toFixed(2)}`);
-        steps.push(`[OH⁻] = 10^(-pOH) = ${ohConcentration.toExponential(3)} M`);
+        steps.push({ key: "givenPh", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "hFromPh", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "pohFromPh", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "ohFromPoh", params: { value: ohConcentration.toExponential(3) } });
         break;
 
       case "from-poh":
@@ -142,10 +143,10 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         hConcentration = 10 ** -ph;
         ohConcentration = 10 ** -poh;
 
-        steps.push(`Given: pOH = ${poh.toFixed(2)}`);
-        steps.push(`pH = 14 - pOH = ${ph.toFixed(2)}`);
-        steps.push(`[H⁺] = 10^(-pH) = ${hConcentration.toExponential(3)} M`);
-        steps.push(`[OH⁻] = 10^(-pOH) = ${ohConcentration.toExponential(3)} M`);
+        steps.push({ key: "givenPoh", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "phFromPoh", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "hFromPh", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "ohFromPoh", params: { value: ohConcentration.toExponential(3) } });
         break;
 
       case "strong-acid":
@@ -158,11 +159,11 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         poh = 14 - ph;
         ohConcentration = Kw / hConcentration;
 
-        steps.push(`Strong acid: [H⁺] = concentration`);
-        steps.push(`[H⁺] = ${hConcentration.toExponential(3)} M`);
-        steps.push(`pH = -log₁₀[H⁺] = ${ph.toFixed(2)}`);
-        steps.push(`pOH = 14 - pH = ${poh.toFixed(2)}`);
-        steps.push(`[OH⁻] = Kw / [H⁺] = ${ohConcentration.toExponential(3)} M`);
+        steps.push({ key: "strongAcidIntro" });
+        steps.push({ key: "hValue", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "phFromHValue", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "pohFromPh", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "ohFromKwH", params: { value: ohConcentration.toExponential(3) } });
         break;
 
       case "strong-base":
@@ -175,11 +176,11 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         ph = 14 - poh;
         hConcentration = Kw / ohConcentration;
 
-        steps.push(`Strong base: [OH⁻] = concentration`);
-        steps.push(`[OH⁻] = ${ohConcentration.toExponential(3)} M`);
-        steps.push(`pOH = -log₁₀[OH⁻] = ${poh.toFixed(2)}`);
-        steps.push(`pH = 14 - pOH = ${ph.toFixed(2)}`);
-        steps.push(`[H⁺] = Kw / [OH⁻] = ${hConcentration.toExponential(3)} M`);
+        steps.push({ key: "strongBaseIntro" });
+        steps.push({ key: "ohValue", params: { value: ohConcentration.toExponential(3) } });
+        steps.push({ key: "pohFromOhValue", params: { value: poh.toFixed(2) } });
+        steps.push({ key: "phFromPoh", params: { value: ph.toFixed(2) } });
+        steps.push({ key: "hFromKwOh", params: { value: hConcentration.toExponential(3) } });
         break;
 
       case "weak-acid": {
@@ -217,12 +218,15 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         poh = 14 - ph;
         ohConcentration = Kw / hConcentration;
 
-        steps.push(`Weak acid: ${compoundName || "Unknown"}`);
-        steps.push(`pKa = ${pka.toFixed(2)}`);
-        steps.push(`Ka = 10^(-pKa) = ${ka.toExponential(3)}`);
-        steps.push(`[H⁺] = √(Ka × C) = √(${ka.toExponential(3)} × ${input.concentration})`);
-        steps.push(`[H⁺] = ${hConcentration.toExponential(3)} M`);
-        steps.push(`pH = -log₁₀[H⁺] = ${ph.toFixed(2)}`);
+        steps.push({ key: "weakAcidIntro", params: { name: compoundName || "Unknown" } });
+        steps.push({ key: "pKaValue", params: { value: pka.toFixed(2) } });
+        steps.push({ key: "kaFromPka", params: { value: ka.toExponential(3) } });
+        steps.push({
+          key: "hFromKaC",
+          params: { ka: ka.toExponential(3), c: input.concentration },
+        });
+        steps.push({ key: "hResult", params: { value: hConcentration.toExponential(3) } });
+        steps.push({ key: "phResult", params: { value: ph.toFixed(2) } });
         break;
       }
 
@@ -261,13 +265,16 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
           ph = 14 - poh;
           hConcentration = Kw / ohConcentration;
 
-          steps.push(`Weak base: ${compoundName}`);
-          steps.push(`pKb = ${pkb.toFixed(2)}`);
-          steps.push(`Kb = 10^(-pKb) = ${kb.toExponential(3)}`);
-          steps.push(`[OH⁻] = √(Kb × C) = √(${kb.toExponential(3)} × ${input.concentration})`);
-          steps.push(`[OH⁻] = ${ohConcentration.toExponential(3)} M`);
-          steps.push(`pOH = -log₁₀[OH⁻] = ${poh.toFixed(2)}`);
-          steps.push(`pH = 14 - pOH = ${ph.toFixed(2)}`);
+          steps.push({ key: "weakBaseIntro", params: { name: compoundName } });
+          steps.push({ key: "pKbValue", params: { value: pkb.toFixed(2) } });
+          steps.push({ key: "kbFromPkb", params: { value: kb.toExponential(3) } });
+          steps.push({
+            key: "ohFromKbC",
+            params: { kb: kb.toExponential(3), c: input.concentration },
+          });
+          steps.push({ key: "ohResult", params: { value: ohConcentration.toExponential(3) } });
+          steps.push({ key: "pohResult", params: { value: poh.toFixed(2) } });
+          steps.push({ key: "phFromPohResult", params: { value: ph.toFixed(2) } });
         } else {
           return {
             ok: false,
@@ -319,13 +326,16 @@ export function calculatePh(input: PhInput): CalculationResult<PhResult> {
         hConcentration = 10 ** -ph;
         ohConcentration = Kw / hConcentration;
 
-        steps.push(`Buffer solution: ${compoundName || "Unknown"}`);
-        steps.push(`Henderson-Hasselbalch equation: pH = pKa + log₁₀([A⁻]/[HA])`);
-        steps.push(`pKa = ${pka.toFixed(2)}`);
-        steps.push(`[A⁻] (base) = ${input.baseConcentration} M`);
-        steps.push(`[HA] (acid) = ${input.acidConcentration} M`);
-        steps.push(`Ratio = [A⁻]/[HA] = ${ratio.toFixed(4)}`);
-        steps.push(`pH = ${pka.toFixed(2)} + log₁₀(${ratio.toFixed(4)}) = ${ph.toFixed(2)}`);
+        steps.push({ key: "bufferIntro", params: { name: compoundName || "Unknown" } });
+        steps.push({ key: "hhEquation" });
+        steps.push({ key: "pKaValueBuffer", params: { value: pka.toFixed(2) } });
+        steps.push({ key: "baseConc", params: { value: input.baseConcentration } });
+        steps.push({ key: "acidConc", params: { value: input.acidConcentration } });
+        steps.push({ key: "ratioValue", params: { value: ratio.toFixed(4) } });
+        steps.push({
+          key: "phBufferCalc",
+          params: { pka: pka.toFixed(2), ratio: ratio.toFixed(4), result: ph.toFixed(2) },
+        });
         break;
       }
 

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   calculateExponent,
   type ExponentInput,
@@ -89,7 +90,9 @@ export function ExponentCalculator() {
             <p className="text-sm text-muted-foreground font-mono">{expResult.formula}</p>
             {expResult.rules.length > 0 && (
               <>
-                <p className="text-sm font-medium mt-4">Rules:</p>
+                <p className="text-sm font-medium mt-4">
+                  <T k="ui.rules" />
+                </p>
                 {expResult.rules.map((rule) => (
                   <p key={rule} className="text-sm text-muted-foreground">
                     {rule}

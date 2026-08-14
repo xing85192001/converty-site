@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -460,8 +461,8 @@ export function VehicleFinancingCalculator() {
               <Label>{t("calculationSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {loanResult.steps.map((step, i) => (
-                  <div key={`loan-step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div key={`loan-step-${i}-${String(step).slice(0, 20)}`} className="font-mono">
+                    {i + 1}. {formatStep(step, t, "calculator.automotive.financing")}
                   </div>
                 ))}
               </div>
@@ -542,8 +543,8 @@ export function VehicleFinancingCalculator() {
               <Label>{t("calculationSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {leaseResult.steps.map((step, i) => (
-                  <div key={`lease-step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div key={`lease-step-${i}-${String(step).slice(0, 20)}`} className="font-mono">
+                    {i + 1}. {formatStep(step, t, "calculator.automotive.financing")}
                   </div>
                 ))}
               </div>
@@ -640,10 +641,10 @@ export function VehicleFinancingCalculator() {
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {comparisonResult.steps.map((step, i) => (
                   <div
-                    key={`financing-comparison-step-${i}-${step.slice(0, 20)}`}
+                    key={`financing-comparison-step-${i}-${String(step).slice(0, 20)}`}
                     className="font-mono"
                   >
-                    {i + 1}. {step}
+                    {i + 1}. {formatStep(step, t, "calculator.automotive.financing")}
                   </div>
                 ))}
               </div>

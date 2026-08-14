@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface HalfLifeInput {
@@ -20,7 +21,7 @@ export interface HalfLifeResult {
   percentRemaining: number;
   numberOfHalfLives: number;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
   decayTable: Array<{ time: number; amount: number; halfLives: number }>;
 }
 
@@ -37,7 +38,7 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
     percentRemaining,
   } = input;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let initialAmount: number;
   let remainingAmount: number;
   let halfLife: number;
@@ -73,13 +74,19 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
       remainingAmount = initialAmount * 0.5 ** (time / halfLife);
       formula = "N(t) = N₀ × (1/2)^(t/t½)";
 
-      steps.push(`Initial amount (N₀) = ${initialAmount}`);
-      steps.push(`Half-life (t½) = ${halfLife}`);
-      steps.push(`Time (t) = ${time}`);
-      steps.push(`Decay constant (λ) = ln(2)/t½ = ${decayConstant.toFixed(6)}`);
-      steps.push(`N(t) = ${initialAmount} × (1/2)^(${time}/${halfLife})`);
-      steps.push(`N(t) = ${initialAmount} × (1/2)^${(time / halfLife).toFixed(4)}`);
-      steps.push(`N(t) = ${remainingAmount.toFixed(6)}`);
+      steps.push({ key: "decayInitialAmount", params: { initialAmount } });
+      steps.push({ key: "decayHalfLife", params: { halfLife } });
+      steps.push({ key: "decayTime", params: { time } });
+      steps.push({
+        key: "decayDecayConstant",
+        params: { decayConstant: decayConstant.toFixed(6) },
+      });
+      steps.push({ key: "decayFormula1", params: { initialAmount, time, halfLife } });
+      steps.push({
+        key: "decayFormula2",
+        params: { initialAmount, exponent: (time / halfLife).toFixed(4) },
+      });
+      steps.push({ key: "decayResult", params: { remainingAmount: remainingAmount.toFixed(6) } });
       break;
     }
 
@@ -120,13 +127,22 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
       time = halfLife * Math.log2(initialAmount / remainingAmount);
       formula = "t = t½ × log₂(N₀/N)";
 
-      steps.push(`Initial amount (N₀) = ${initialAmount}`);
-      steps.push(`Remaining amount (N) = ${remainingAmount}`);
-      steps.push(`Half-life (t½) = ${halfLife}`);
-      steps.push(`t = ${halfLife} × log₂(${initialAmount}/${remainingAmount})`);
-      steps.push(`t = ${halfLife} × log₂(${(initialAmount / remainingAmount).toFixed(4)})`);
-      steps.push(`t = ${halfLife} × ${Math.log2(initialAmount / remainingAmount).toFixed(4)}`);
-      steps.push(`t = ${time.toFixed(4)}`);
+      steps.push({ key: "remainingInitialAmount", params: { initialAmount } });
+      steps.push({ key: "remainingRemainingAmount", params: { remainingAmount } });
+      steps.push({ key: "remainingHalfLife", params: { halfLife } });
+      steps.push({
+        key: "remainingFormula1",
+        params: { halfLife, initialAmount, remainingAmount },
+      });
+      steps.push({
+        key: "remainingFormula2",
+        params: { halfLife, ratio: (initialAmount / remainingAmount).toFixed(4) },
+      });
+      steps.push({
+        key: "remainingFormula3",
+        params: { halfLife, logValue: Math.log2(initialAmount / remainingAmount).toFixed(4) },
+      });
+      steps.push({ key: "remainingResult", params: { time: time.toFixed(4) } });
       break;
     }
 
@@ -163,14 +179,19 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
       decayConstant = Math.LN2 / halfLife;
       formula = "t½ = t × ln(2) / ln(N₀/N)";
 
-      steps.push(`Initial amount (N₀) = ${initialAmount}`);
-      steps.push(`Remaining amount (N) = ${remainingAmount}`);
-      steps.push(`Time (t) = ${time}`);
-      steps.push(`t½ = ${time} × ln(2) / ln(${initialAmount}/${remainingAmount})`);
-      steps.push(
-        `t½ = ${time} × ${Math.LN2.toFixed(6)} / ${Math.log(initialAmount / remainingAmount).toFixed(6)}`
-      );
-      steps.push(`t½ = ${halfLife.toFixed(4)}`);
+      steps.push({ key: "findHalfLifeInitialAmount", params: { initialAmount } });
+      steps.push({ key: "findHalfLifeRemainingAmount", params: { remainingAmount } });
+      steps.push({ key: "findHalfLifeTime", params: { time } });
+      steps.push({ key: "findHalfLifeFormula1", params: { time, initialAmount, remainingAmount } });
+      steps.push({
+        key: "findHalfLifeFormula2",
+        params: {
+          time,
+          ln2: Math.LN2.toFixed(6),
+          logValue: Math.log(initialAmount / remainingAmount).toFixed(6),
+        },
+      });
+      steps.push({ key: "findHalfLifeResult", params: { halfLife: halfLife.toFixed(4) } });
       break;
     }
 
@@ -212,11 +233,17 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
       time = -Math.log(fraction) / decayConstant;
       formula = "t = -ln(N/N₀) / λ";
 
-      steps.push(`Half-life (t½) = ${halfLife}`);
-      steps.push(`Decay constant (λ) = ${decayConstant.toFixed(6)}`);
-      steps.push(`Fraction remaining = ${(fraction * 100).toFixed(2)}%`);
-      steps.push(`t = -ln(${fraction.toFixed(4)}) / ${decayConstant.toFixed(6)}`);
-      steps.push(`t = ${time.toFixed(4)}`);
+      steps.push({ key: "findTimeHalfLife", params: { halfLife } });
+      steps.push({
+        key: "findTimeDecayConstant",
+        params: { decayConstant: decayConstant.toFixed(6) },
+      });
+      steps.push({ key: "findTimeFraction", params: { percent: (fraction * 100).toFixed(2) } });
+      steps.push({
+        key: "findTimeFormula",
+        params: { fraction: fraction.toFixed(4), decayConstant: decayConstant.toFixed(6) },
+      });
+      steps.push({ key: "findTimeResult", params: { time: time.toFixed(4) } });
       break;
     }
 
@@ -246,16 +273,23 @@ export function calculateHalfLife(input: HalfLifeInput): CalculationResult<HalfL
       time = -Math.log(fraction) / decayConstant;
       formula = "Age = -t½ × ln(N/N₀) / ln(2)";
 
-      steps.push(`Carbon-14 half-life = ${CARBON14_HALF_LIFE} years`);
-      steps.push(
-        `Decay constant (λ) = ln(2)/${CARBON14_HALF_LIFE} = ${decayConstant.toFixed(10)}/year`
-      );
-      steps.push(`Percentage of C-14 remaining = ${(fraction * 100).toFixed(2)}%`);
-      steps.push(`Age = -ln(${fraction.toFixed(4)}) / ${decayConstant.toFixed(10)}`);
-      steps.push(`Age = ${time.toFixed(0)} years`);
+      steps.push({ key: "carbon14HalfLife", params: { halfLife: CARBON14_HALF_LIFE } });
+      steps.push({
+        key: "carbon14DecayConstant",
+        params: { halfLife: CARBON14_HALF_LIFE, decayConstant: decayConstant.toFixed(10) },
+      });
+      steps.push({
+        key: "carbon14PercentRemaining",
+        params: { percent: (fraction * 100).toFixed(2) },
+      });
+      steps.push({
+        key: "carbon14Formula",
+        params: { fraction: fraction.toFixed(4), decayConstant: decayConstant.toFixed(10) },
+      });
+      steps.push({ key: "carbon14Result", params: { age: time.toFixed(0) } });
 
       if (time > 50000) {
-        steps.push("Note: Carbon-14 dating is less reliable beyond ~50,000 years");
+        steps.push({ key: "carbon14Note" });
       }
       break;
     }

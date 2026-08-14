@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -67,6 +68,7 @@ const useProbabilityStore = createCalculatorStore<FormValues, ProbabilityResult 
 
 export function ProbabilityCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.probability");
 
   const { values, setValue, result, errors, calculationError } = useProbabilityStore();
 
@@ -322,8 +324,11 @@ export function ProbabilityCalculator() {
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
               {probabilityResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+                <p
+                  key={formatStep(step, tSteps, "calculator.math.probability")}
+                  className="text-sm text-muted-foreground font-mono"
+                >
+                  {formatStep(step, tSteps, "calculator.math.probability")}
                 </p>
               ))}
             </div>

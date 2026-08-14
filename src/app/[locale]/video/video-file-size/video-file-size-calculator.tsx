@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   BITRATE_PRESETS,
   calculateVideoFileSize,
@@ -35,6 +36,7 @@ export function VideoFileSizeCalculator() {
 
   const presets = BITRATE_PRESETS[resolution as keyof typeof BITRATE_PRESETS];
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       {/* Duration Inputs */}
@@ -76,7 +78,9 @@ export function VideoFileSizeCalculator() {
 
       {/* Resolution Selector */}
       <div className="space-y-2">
-        <label className="text-sm font-medium">Resolution Preset</label>
+        <label className="text-sm font-medium">
+          <T k="ui.resolution-preset" />
+        </label>
         <div className="grid gap-2 grid-cols-2 sm:grid-cols-5">
           {RESOLUTIONS.map((res) => (
             <button
@@ -115,7 +119,7 @@ export function VideoFileSizeCalculator() {
             min={0.1}
             max={500}
             step={0.1}
-            placeholder="Enter bitrate"
+            placeholder={tUi("enter-bitrate")}
           />
           {presets && (
             <div className="flex gap-2">
@@ -178,7 +182,9 @@ export function VideoFileSizeCalculator() {
 
           {/* Duration Display */}
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Total Duration</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.total-duration" />
+            </p>
             <p className="text-lg font-medium font-mono">
               {String(parseInt(hours) || 0).padStart(2, "0")}:
               {String(parseInt(minutes) || 0).padStart(2, "0")}:

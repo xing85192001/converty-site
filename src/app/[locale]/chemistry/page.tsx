@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
 import { getCategoryBySlug } from "@/lib/registry/categories";
@@ -70,7 +71,9 @@ export default async function ChemistryPage({ params }: { params: Promise<{ loca
         </div>
       ) : (
         <div className="text-center py-12 border rounded-lg bg-muted/50">
-          <p className="text-muted-foreground">Chemistry calculators coming soon!</p>
+          <p className="text-muted-foreground">
+            <T k="ui.chemistry-calculators-coming-soon" />
+          </p>
         </div>
       )}
     </div>

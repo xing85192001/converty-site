@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   COMMON_RESOLUTIONS,
   calculateImageFilesize,
@@ -107,7 +108,9 @@ export function ImageFilesizeCalculator() {
                 <tr className="border-b">
                   <th className="text-left py-2">Format</th>
                   <th className="text-left py-2">Description</th>
-                  <th className="text-right py-2">Est. Size</th>
+                  <th className="text-right py-2">
+                    <T k="ui.est-size" />
+                  </th>
                 </tr>
               </thead>
               <tbody>

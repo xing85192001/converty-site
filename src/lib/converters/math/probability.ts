@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface ProbabilityInput {
@@ -25,7 +26,7 @@ export interface ProbabilityResult {
   odds: { for: string; against: string };
   formula: string;
   explanation: string;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function factorial(n: number): number {
@@ -55,7 +56,7 @@ export function calculateProbability(
   let result: number;
   let formula: string;
   let explanation: string;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   switch (mode) {
     case "single": {
@@ -66,7 +67,7 @@ export function calculateProbability(
       result = probabilityA;
       formula = "P(A)";
       explanation = `The probability of event A is ${(probabilityA * 100).toFixed(2)}%`;
-      steps.push(`P(A) = ${probabilityA}`);
+      steps.push({ key: "singleResult", params: { probabilityA } });
       break;
     }
 
@@ -86,8 +87,8 @@ export function calculateProbability(
       result = probabilityA * probabilityB;
       formula = "P(A ∩ B) = P(A) × P(B)";
       explanation = "For independent events, multiply the probabilities";
-      steps.push(`P(A ∩ B) = ${probabilityA} × ${probabilityB}`);
-      steps.push(`P(A ∩ B) = ${result}`);
+      steps.push({ key: "andFormula", params: { probabilityA, probabilityB } });
+      steps.push({ key: "andResult", params: { result } });
       break;
     }
 
@@ -108,8 +109,8 @@ export function calculateProbability(
       result = Math.min(1, Math.max(0, result));
       formula = "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)";
       explanation = "Add probabilities and subtract the overlap";
-      steps.push(`P(A ∪ B) = ${probabilityA} + ${probabilityB} - ${probabilityAandB}`);
-      steps.push(`P(A ∪ B) = ${result}`);
+      steps.push({ key: "orFormula", params: { probabilityA, probabilityB, probabilityAandB } });
+      steps.push({ key: "orResult", params: { result } });
       break;
     }
 
@@ -133,8 +134,8 @@ export function calculateProbability(
       result = probabilityAandB / probabilityB;
       formula = "P(A|B) = P(A ∩ B) / P(B)";
       explanation = "The probability of A given that B has occurred";
-      steps.push(`P(A|B) = ${probabilityAandB} / ${probabilityB}`);
-      steps.push(`P(A|B) = ${result}`);
+      steps.push({ key: "condFormula", params: { probabilityAandB, probabilityB } });
+      steps.push({ key: "condResult", params: { result } });
       break;
     }
 
@@ -146,8 +147,8 @@ export function calculateProbability(
       result = 1 - probabilityA;
       formula = "P(A') = 1 - P(A)";
       explanation = "The probability that A does NOT occur";
-      steps.push(`P(A') = 1 - ${probabilityA}`);
-      steps.push(`P(A') = ${result}`);
+      steps.push({ key: "compFormula", params: { probabilityA } });
+      steps.push({ key: "compResult", params: { result } });
       break;
     }
 
@@ -180,9 +181,9 @@ export function calculateProbability(
       result = coeff * p ** k * q ** (n - k);
       formula = "P(X = k) = C(n,k) × p^k × (1-p)^(n-k)";
       explanation = `Probability of exactly ${k} successes in ${n} trials`;
-      steps.push(`C(${n},${k}) = ${coeff}`);
-      steps.push(`P(X = ${k}) = ${coeff} × ${p}^${k} × ${q}^${n - k}`);
-      steps.push(`P(X = ${k}) = ${result}`);
+      steps.push({ key: "binomCoeff", params: { n, k, coeff } });
+      steps.push({ key: "binomFormula", params: { k, coeff, p, q, expK: k, expNk: n - k } });
+      steps.push({ key: "binomResult", params: { k, result } });
       break;
     }
 
@@ -198,8 +199,8 @@ export function calculateProbability(
       result = permutation(n, r);
       formula = "P(n,r) = n! / (n-r)!";
       explanation = `Number of ways to arrange ${r} items from ${n} items (order matters)`;
-      steps.push(`P(${n},${r}) = ${n}! / ${n - r}!`);
-      steps.push(`P(${n},${r}) = ${result}`);
+      steps.push({ key: "permFormula", params: { n, r, nMinusR: n - r } });
+      steps.push({ key: "permResult", params: { n, r, result } });
       break;
     }
 
@@ -215,8 +216,8 @@ export function calculateProbability(
       result = combination(n, r);
       formula = "C(n,r) = n! / (r! × (n-r)!)";
       explanation = `Number of ways to choose ${r} items from ${n} items (order doesn't matter)`;
-      steps.push(`C(${n},${r}) = ${n}! / (${r}! × ${n - r}!)`);
-      steps.push(`C(${n},${r}) = ${result}`);
+      steps.push({ key: "combFormula", params: { n, r, nMinusR: n - r } });
+      steps.push({ key: "combResult", params: { n, r, result } });
       break;
     }
 

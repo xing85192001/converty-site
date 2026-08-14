@@ -4,6 +4,7 @@
  */
 
 import periodicTableData from "@/data/chemistry/periodic-table.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import { parseChemicalEquation } from "./equation-parser";
 import { parseChemicalFormula } from "./formula-parser";
@@ -56,7 +57,7 @@ export interface StoichiometryResult {
   /** Product information */
   products: ProductInfo[];
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -74,8 +75,8 @@ export function calculateStoichiometry(
     return { ok: false, error: "Equation and reactant masses are required", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
-  steps.push(`Equation: ${equation}`);
+  const steps: CalcStep[] = [];
+  steps.push({ key: "equation", params: { equation } });
 
   // Parse equation
   const parseResult = parseChemicalEquation(equation);
@@ -84,8 +85,8 @@ export function calculateStoichiometry(
   }
 
   const parsedEq = parseResult.value;
-  steps.push("");
-  steps.push("Step 1: Calculate molar masses");
+  steps.push({ key: "separator" });
+  steps.push({ key: "step1MolarMasses" });
 
   // Get periodic table
   const periodicTable = periodicTableData as Element[];
@@ -108,12 +109,15 @@ export function calculateStoichiometry(
         };
       }
       molarMasses.set(compound.formula, molarMass);
-      steps.push(`${compound.formula}: ${molarMass.toFixed(3)} g/mol`);
+      steps.push({
+        key: "molarMass",
+        params: { formula: compound.formula, value: molarMass.toFixed(3) },
+      });
     }
   }
 
-  steps.push("");
-  steps.push("Step 2: Calculate moles of each reactant");
+  steps.push({ key: "separator" });
+  steps.push({ key: "step2Moles" });
 
   // Calculate moles for each reactant
   const reactantInfo: ReactantInfo[] = [];
@@ -123,9 +127,15 @@ export function calculateStoichiometry(
     const molarMass = molarMasses.get(reactant.formula)!;
     const molesAvailable = massGiven / molarMass;
 
-    steps.push(
-      `${reactant.formula}: ${massGiven} g ÷ ${molarMass.toFixed(3)} g/mol = ${molesAvailable.toFixed(6)} mol`
-    );
+    steps.push({
+      key: "molesCalc",
+      params: {
+        formula: reactant.formula,
+        mass: massGiven,
+        molarMass: molarMass.toFixed(3),
+        result: molesAvailable.toFixed(6),
+      },
+    });
 
     reactantInfo.push({
       formula: reactant.formula,
@@ -138,8 +148,8 @@ export function calculateStoichiometry(
     });
   }
 
-  steps.push("");
-  steps.push("Step 3: Determine limiting reactant");
+  steps.push({ key: "separator" });
+  steps.push({ key: "step3Limiting" });
 
   // Find limiting reactant
   // For each reactant, calculate the mole ratio relative to its stoichiometric coefficient
@@ -150,9 +160,15 @@ export function calculateStoichiometry(
     const info = reactantInfo[i];
     // Ratio = moles available / coefficient
     const ratio = info.molesAvailable / info.coefficient;
-    steps.push(
-      `${info.formula}: ${info.molesAvailable.toFixed(6)} mol ÷ ${info.coefficient} = ${ratio.toFixed(6)}`
-    );
+    steps.push({
+      key: "ratioCalc",
+      params: {
+        formula: info.formula,
+        moles: info.molesAvailable.toFixed(6),
+        coefficient: info.coefficient,
+        result: ratio.toFixed(6),
+      },
+    });
 
     if (ratio < minRatio) {
       minRatio = ratio;
@@ -163,7 +179,7 @@ export function calculateStoichiometry(
   reactantInfo[limitingIndex].isLimiting = true;
   const limitingReactant = reactantInfo[limitingIndex].formula;
 
-  steps.push(`Limiting reactant: ${limitingReactant}`);
+  steps.push({ key: "limitingReactant", params: { formula: limitingReactant } });
 
   // Calculate moles required based on limiting reactant
   const limitingMoles = reactantInfo[limitingIndex].molesAvailable;
@@ -173,8 +189,8 @@ export function calculateStoichiometry(
     info.molesRequired = (limitingMoles / limitingCoeff) * info.coefficient;
   }
 
-  steps.push("");
-  steps.push("Step 4: Calculate theoretical yield of products");
+  steps.push({ key: "separator" });
+  steps.push({ key: "step4Yield" });
 
   // Calculate product yields based on limiting reactant
   const productInfo: ProductInfo[] = [];
@@ -184,9 +200,15 @@ export function calculateStoichiometry(
     const molesProduced = (limitingMoles / limitingCoeff) * product.coefficient;
     const massProduced = molesProduced * molarMass;
 
-    steps.push(
-      `${product.formula}: ${molesProduced.toFixed(6)} mol × ${molarMass.toFixed(3)} g/mol = ${massProduced.toFixed(3)} g`
-    );
+    steps.push({
+      key: "yieldCalc",
+      params: {
+        formula: product.formula,
+        moles: molesProduced.toFixed(6),
+        molarMass: molarMass.toFixed(3),
+        result: massProduced.toFixed(3),
+      },
+    });
 
     productInfo.push({
       formula: product.formula,

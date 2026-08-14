@@ -4,6 +4,7 @@
  */
 
 import hypervisorData from "@/data/infrastructure/hypervisor-overhead.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { HaMode } from "./types";
 
@@ -90,7 +91,7 @@ export interface HypervConsolidationResult {
     storageGB: number;
   };
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -114,28 +115,35 @@ export function calculateHypervConsolidation(
     return { ok: false, error: "All consolidation inputs must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const hypervData = hypervisorData.find((h) => h.id === "hyperv");
 
   if (!hypervData)
     return { ok: false, error: "Hyper-V platform data not found", code: "INVALID_INPUT" };
 
   // Step 1: Calculate total resource requirements
-  steps.push("=== Resource Requirements ===");
+  steps.push({ key: "resourceRequirementsTitle" });
 
   const totalVcpus = input.vmCount * input.avgVcpusPerVm;
   const totalVmRam = input.vmCount * input.avgRamPerVm;
   const totalVmStorage = input.vmCount * input.avgStoragePerVm;
 
-  steps.push(`Total VMs: ${input.vmCount}`);
-  steps.push(`Total vCPUs: ${totalVcpus} (${input.vmCount} × ${input.avgVcpusPerVm})`);
-  steps.push(`Total VM RAM: ${totalVmRam} GB (${input.vmCount} × ${input.avgRamPerVm} GB)`);
-  steps.push(
-    `Total VM Storage: ${totalVmStorage} GB (${input.vmCount} × ${input.avgStoragePerVm} GB)`
-  );
+  steps.push({ key: "totalVms", params: { vmCount: input.vmCount } });
+  steps.push({
+    key: "totalVcpus",
+    params: { totalVcpus, vmCount: input.vmCount, avgVcpusPerVm: input.avgVcpusPerVm },
+  });
+  steps.push({
+    key: "totalVmRam",
+    params: { totalVmRam, vmCount: input.vmCount, avgRamPerVm: input.avgRamPerVm },
+  });
+  steps.push({
+    key: "totalVmStorage",
+    params: { totalVmStorage, vmCount: input.vmCount, avgStoragePerVm: input.avgStoragePerVm },
+  });
 
   // Step 2: Calculate storage with stacking
-  steps.push("\n=== Storage Calculation ===");
+  steps.push({ key: "storageCalculationTitle" });
 
   const diskFormat = hypervData.diskFormats[input.diskType];
   if (!diskFormat) {
@@ -158,27 +166,54 @@ export function calculateHypervConsolidation(
     total: totalStorage,
   };
 
-  steps.push(`Base VM storage: ${vmStorage} GB`);
-  steps.push(`Disk type: ${diskFormat.name} (${thinMultiplier}×)`);
-  steps.push(`After thin provisioning: ${afterThin.toFixed(2)} GB`);
+  steps.push({ key: "baseVmStorage", params: { vmStorage } });
+  steps.push({
+    key: "diskType",
+    params: { name: diskFormat.name, thinMultiplier },
+  });
+  steps.push({
+    key: "afterThinProvisioning",
+    params: { afterThin: afterThin.toFixed(2) },
+  });
 
   if (input.enableSnapshots) {
-    steps.push(`Snapshot overhead: ${snapshotMultiplier}× → ${afterSnapshots.toFixed(2)} GB`);
+    steps.push({
+      key: "snapshotOverhead",
+      params: {
+        snapshotMultiplier,
+        afterSnapshots: afterSnapshots.toFixed(2),
+      },
+    });
   }
 
   if (input.enableReplica) {
-    steps.push(`Hyper-V Replica: ${replicaMultiplier}× → ${totalStorage.toFixed(2)} GB`);
-    steps.push(`Note: Hyper-V Replica stores full copy locally (2× space requirement)`);
+    steps.push({
+      key: "hypervReplica",
+      params: {
+        replicaMultiplier,
+        totalStorage: totalStorage.toFixed(2),
+      },
+    });
+    steps.push({ key: "hypervReplicaNote" });
   }
 
   const stackingFactor = thinMultiplier * snapshotMultiplier * replicaMultiplier;
-  steps.push(
-    `Total stacking factor: ${thinMultiplier}× × ${snapshotMultiplier}× × ${replicaMultiplier}× = ${stackingFactor.toFixed(2)}×`
-  );
-  steps.push(`Total storage required: ${totalStorage.toFixed(2)} GB`);
+  steps.push({
+    key: "totalStackingFactor",
+    params: {
+      thinMultiplier,
+      snapshotMultiplier,
+      replicaMultiplier,
+      stackingFactor: stackingFactor.toFixed(2),
+    },
+  });
+  steps.push({
+    key: "totalStorageRequired",
+    params: { totalStorage: totalStorage.toFixed(2) },
+  });
 
   // Step 3: Calculate host requirements
-  steps.push("\n=== Host Requirements ===");
+  steps.push({ key: "hostRequirementsTitle" });
 
   const physicalCoresPerHost = input.coresPerCpu * input.cpusPerHost;
   const usableCpuPercent = (100 - hypervData.cpuOverhead.percent) / 100;
@@ -192,34 +227,68 @@ export function calculateHypervConsolidation(
   const usableRamPerHost = input.ramPerHost - parentPartitionMemory;
   const maxRamPerHost = usableRamPerHost * input.ramOvercommit;
 
-  steps.push(
-    `Physical cores per host: ${physicalCoresPerHost} (${input.cpusPerHost} CPUs × ${input.coresPerCpu} cores)`
-  );
-  steps.push(`Hyper-V CPU overhead: ${hypervData.cpuOverhead.percent}%`);
-  steps.push(`Usable cores per host: ${usableCoresPerHost.toFixed(2)}`);
-  steps.push(`vCPU ratio: ${input.vcpuRatio}:1 → ${maxVcpusPerHost.toFixed(0)} max vCPUs per host`);
+  steps.push({
+    key: "physicalCoresPerHost",
+    params: {
+      physicalCoresPerHost,
+      cpusPerHost: input.cpusPerHost,
+      coresPerCpu: input.coresPerCpu,
+    },
+  });
+  steps.push({
+    key: "hypervCpuOverhead",
+    params: { percent: hypervData.cpuOverhead.percent },
+  });
+  steps.push({
+    key: "usableCoresPerHost",
+    params: { usableCoresPerHost: usableCoresPerHost.toFixed(2) },
+  });
+  steps.push({
+    key: "vcpuRatio",
+    params: {
+      vcpuRatio: input.vcpuRatio,
+      maxVcpusPerHost: maxVcpusPerHost.toFixed(0),
+    },
+  });
 
-  steps.push(`\nParent partition memory: ${parentPartitionMemory.toFixed(2)} GB`);
-  steps.push(
-    `Per-VM memory overhead: ${perVmMemoryOverhead.toFixed(2)} GB × ${input.vmCount} VMs = ${totalVmMemoryOverhead.toFixed(2)} GB`
-  );
-  steps.push(`Total RAM required: ${totalRamRequired.toFixed(2)} GB`);
-  steps.push(`RAM overcommit: ${input.ramOvercommit}:1`);
+  steps.push({
+    key: "parentPartitionMemory",
+    params: { parentPartitionMemory: parentPartitionMemory.toFixed(2) },
+  });
+  steps.push({
+    key: "perVmMemoryOverhead",
+    params: {
+      perVmMemoryOverhead: perVmMemoryOverhead.toFixed(2),
+      vmCount: input.vmCount,
+      totalVmMemoryOverhead: totalVmMemoryOverhead.toFixed(2),
+    },
+  });
+  steps.push({
+    key: "totalRamRequired",
+    params: { totalRamRequired: totalRamRequired.toFixed(2) },
+  });
+  steps.push({
+    key: "ramOvercommit",
+    params: { ramOvercommit: input.ramOvercommit },
+  });
 
   // Calculate hosts needed based on each constraint
   const hostsByCpu = Math.ceil(totalVcpus / maxVcpusPerHost);
   const hostsByRam = Math.ceil(totalRamRequired / maxRamPerHost);
   const hostsByStorage = Math.ceil(totalStorage / input.storagePerHost);
 
-  steps.push(`\nHosts by CPU: ${hostsByCpu}`);
-  steps.push(`Hosts by RAM: ${hostsByRam}`);
-  steps.push(`Hosts by Storage: ${hostsByStorage}`);
+  steps.push({ key: "hostsByCpu", params: { hostsByCpu } });
+  steps.push({ key: "hostsByRam", params: { hostsByRam } });
+  steps.push({ key: "hostsByStorage", params: { hostsByStorage } });
 
   const hostsBeforeHa = Math.max(hostsByCpu, hostsByRam, hostsByStorage);
-  steps.push(`Minimum hosts (before HA): ${hostsBeforeHa}`);
+  steps.push({
+    key: "minimumHostsBeforeHa",
+    params: { hostsBeforeHa },
+  });
 
   // Step 4: Apply HA
-  steps.push("\n=== High Availability ===");
+  steps.push({ key: "highAvailabilityTitle" });
 
   let hostsRequired = hostsBeforeHa;
   let effectiveHosts = hostsBeforeHa;
@@ -229,21 +298,30 @@ export function calculateHypervConsolidation(
     hostsRequired = hostsBeforeHa + 1;
     effectiveHosts = hostsBeforeHa;
     failoverCapacity = 1;
-    steps.push(`HA mode: N+1 (1 host failure tolerance)`);
-    steps.push(`Hosts required: ${hostsBeforeHa} + 1 = ${hostsRequired}`);
+    steps.push({ key: "haModeNPlus1" });
+    steps.push({
+      key: "hostsRequiredNPlus1",
+      params: { hostsBeforeHa, hostsRequired },
+    });
   } else if (input.haMode === "n_plus_2") {
     hostsRequired = hostsBeforeHa + 2;
     effectiveHosts = hostsBeforeHa;
     failoverCapacity = 2;
-    steps.push(`HA mode: N+2 (2 host failure tolerance)`);
-    steps.push(`Hosts required: ${hostsBeforeHa} + 2 = ${hostsRequired}`);
+    steps.push({ key: "haModeNPlus2" });
+    steps.push({
+      key: "hostsRequiredNPlus2",
+      params: { hostsBeforeHa, hostsRequired },
+    });
   } else {
-    steps.push(`HA mode: None`);
-    steps.push(`Hosts required: ${hostsRequired}`);
+    steps.push({ key: "haModeNone" });
+    steps.push({
+      key: "hostsRequiredNoHa",
+      params: { hostsRequired },
+    });
   }
 
   // Step 5: Windows Server Licensing
-  steps.push("\n=== Windows Server Licensing ===");
+  steps.push({ key: "windowsLicensingTitle" });
 
   const totalCoresRequired = hostsRequired * physicalCoresPerHost;
   const minCoresPerServer = 16;
@@ -255,20 +333,40 @@ export function calculateHypervConsolidation(
   const datacenterTotalCorePacks = datacenterCorePacksPerHost * hostsRequired;
   const datacenterCost = datacenterTotalCorePacks * 6155; // $6,155 per 2-core pack
 
-  steps.push(`Datacenter Edition:`);
-  steps.push(
-    `  - Cores per host: max(${physicalCoresPerHost}, ${minCoresPerServer}) = ${datacenterCoresPerHost}`
-  );
-  steps.push(
-    `  - Core packs per host: ${datacenterCoresPerHost} / ${coresPerPack} = ${datacenterCorePacksPerHost}`
-  );
-  steps.push(
-    `  - Total core packs: ${datacenterCorePacksPerHost} × ${hostsRequired} hosts = ${datacenterTotalCorePacks}`
-  );
-  steps.push(
-    `  - Cost: ${datacenterTotalCorePacks} × $6,155 = $${datacenterCost.toLocaleString()}`
-  );
-  steps.push(`  - VMs: Unlimited`);
+  steps.push({ key: "datacenterEditionTitle" });
+  steps.push({
+    key: "dcCoresPerHost",
+    params: {
+      physicalCoresPerHost,
+      minCoresPerServer,
+      datacenterCoresPerHost,
+    },
+  });
+  steps.push({
+    key: "dcCorePacksPerHost",
+    params: {
+      datacenterCoresPerHost,
+      coresPerPack,
+      datacenterCorePacksPerHost,
+    },
+  });
+  steps.push({
+    key: "dcTotalCorePacks",
+    params: {
+      datacenterCorePacksPerHost,
+      hostsRequired,
+      datacenterTotalCorePacks,
+    },
+  });
+  steps.push({
+    key: "dcCost",
+    params: {
+      datacenterTotalCorePacks,
+      costPerPack: 6155,
+      totalCost: datacenterCost.toLocaleString(),
+    },
+  });
+  steps.push({ key: "dcVmsUnlimited" });
 
   // Standard: 16-core minimum, additional in 2-core packs, 2 VMs per license
   const standardCoresPerHost = Math.max(physicalCoresPerHost, minCoresPerServer);
@@ -278,23 +376,55 @@ export function calculateHypervConsolidation(
   const standardTotalCorePacks = standardLicensesForVms * standardCorePacksPerLicense;
   const standardCost = standardTotalCorePacks * 1069; // $1,069 per 2-core pack
 
-  steps.push(`\nStandard Edition:`);
-  steps.push(
-    `  - Cores per host: max(${physicalCoresPerHost}, ${minCoresPerServer}) = ${standardCoresPerHost}`
-  );
-  steps.push(`  - Core packs per license: ${standardCorePacksPerHost}`);
-  steps.push(`  - Licenses for VMs: ceil(${input.vmCount} / 2) = ${standardLicensesForVms}`);
-  steps.push(
-    `  - Total core packs: ${standardLicensesForVms} × ${standardCorePacksPerHost} = ${standardTotalCorePacks}`
-  );
-  steps.push(`  - Cost: ${standardTotalCorePacks} × $1,069 = $${standardCost.toLocaleString()}`);
-  steps.push(`  - VMs: ${input.vmCount} (2 per license)`);
+  steps.push({ key: "standardEditionTitle" });
+  steps.push({
+    key: "stdCoresPerHost",
+    params: {
+      physicalCoresPerHost,
+      minCoresPerServer,
+      standardCoresPerHost,
+    },
+  });
+  steps.push({
+    key: "stdCorePacksPerLicense",
+    params: { standardCorePacksPerHost },
+  });
+  steps.push({
+    key: "stdLicensesForVms",
+    params: { vmCount: input.vmCount, standardLicensesForVms },
+  });
+  steps.push({
+    key: "stdTotalCorePacks",
+    params: {
+      standardLicensesForVms,
+      standardCorePacksPerHost,
+      standardTotalCorePacks,
+    },
+  });
+  steps.push({
+    key: "stdCost",
+    params: {
+      standardTotalCorePacks,
+      costPerPack: 1069,
+      totalCost: standardCost.toLocaleString(),
+    },
+  });
+  steps.push({
+    key: "stdVms",
+    params: { vmCount: input.vmCount },
+  });
 
   const breakEvenVms = 13; // Approximate break-even point
   const recommendation = input.vmCount >= breakEvenVms ? "datacenter" : "standard";
 
-  steps.push(`\nRecommendation: ${recommendation.toUpperCase()}`);
-  steps.push(`Break-even point: ~${breakEvenVms} VMs per host`);
+  steps.push({
+    key: "recommendation",
+    params: { recommendation: recommendation.toUpperCase() },
+  });
+  steps.push({
+    key: "breakEvenPoint",
+    params: { breakEvenVms },
+  });
 
   // Per-host calculations
   const vmsPerHost = Math.ceil(input.vmCount / effectiveHosts);

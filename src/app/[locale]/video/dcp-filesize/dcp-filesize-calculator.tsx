@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   AUDIO_CONFIGS,
   calculateDCPFilesize,
@@ -103,14 +104,18 @@ export function DCPFilesizeCalculator() {
           />
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm font-medium mb-2">DCP Specifications</p>
+            <p className="text-sm font-medium mb-2">
+              <T k="ui.dcp-specifications" />
+            </p>
             <ul className="text-sm text-muted-foreground space-y-1">
               <li>
                 Video: JPEG2000 at {result.videoBitrate} Mbps ({resolution.toUpperCase()})
               </li>
               <li>Audio: Uncompressed PCM 24-bit/48kHz</li>
               <li>Container: MXF (Material Exchange Format)</li>
-              <li>Frame Rate: 24 fps</li>
+              <li>
+                <T k="ui.frame-rate-24-fps" />
+              </li>
             </ul>
           </div>
         </div>

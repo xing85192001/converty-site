@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   COMMON_APERTURES,
   COMMON_ISO,
@@ -41,7 +42,9 @@ export function LightEVCalculator() {
           </select>
         </div>
         <div className="space-y-2">
-          <label className="text-sm font-medium">Shutter Speed</label>
+          <label className="text-sm font-medium">
+            <T k="ui.shutter-speed" />
+          </label>
           <select
             value={shutterSpeed}
             onChange={(e) => setShutterSpeed(e.target.value)}
@@ -86,7 +89,9 @@ export function LightEVCalculator() {
           />
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Light Level</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.light-level" />
+            </p>
             <p className="text-xl font-semibold">{result.lightLevel}</p>
             <p className="text-sm text-muted-foreground mt-1">{result.description}</p>
           </div>
@@ -96,7 +101,9 @@ export function LightEVCalculator() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-2">EV100</th>
-                  <th className="text-left py-2">Light Condition</th>
+                  <th className="text-left py-2">
+                    <T k="ui.light-condition" />
+                  </th>
                 </tr>
               </thead>
               <tbody>

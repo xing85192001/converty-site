@@ -1,5 +1,6 @@
 import fluidsData from "@/data/engineering/fluids.json";
 import pipeMaterialsData from "@/data/engineering/pipe-materials.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { FluidProperties, PipeMaterial } from "./types";
 
@@ -54,7 +55,7 @@ export interface PipeFlowResult {
   /** Iterations for Colebrook-White convergence */
   iterations: number;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
   /** Pressure in additional units */
   pressureUnits: {
     pa: number;
@@ -99,7 +100,7 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Get pipe material properties
   let roughness_mm = customRoughness;
@@ -110,7 +111,10 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
     if (pipeMat) {
       roughness_mm = pipeMat.roughness;
       pipeMaterialName = pipeMat.name;
-      steps.push(`Pipe: ${pipeMat.name} (ε = ${roughness_mm} mm)`);
+      steps.push({
+        key: "pipeMaterialInfo",
+        params: { name: pipeMat.name, roughness: roughness_mm },
+      });
     }
   }
 
@@ -125,7 +129,10 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
       density = fluid.density;
       viscosity = fluid.dynamicViscosity;
       fluidName = fluid.name;
-      steps.push(`Fluid: ${fluid.name} (ρ = ${density} kg/m³, μ = ${viscosity} Pa·s)`);
+      steps.push({
+        key: "fluidInfo",
+        params: { name: fluid.name, density, viscosity },
+      });
     }
   }
 
@@ -139,36 +146,42 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
 
   const D_m = diameter / 1000; // mm → m
 
-  steps.push(`Given:`);
-  steps.push(`  Diameter D = ${diameter} mm = ${D_m} m`);
-  steps.push(`  Length L = ${length} m`);
-  steps.push(`  Velocity v = ${velocity} m/s`);
+  steps.push({ key: "givenTitle" });
+  steps.push({ key: "givenDiameter", params: { diameter, D_m } });
+  steps.push({ key: "givenLength", params: { length } });
+  steps.push({ key: "givenVelocity", params: { velocity } });
 
   // Reynolds number: Re = ρvD/μ
   const Re = (density * velocity * D_m) / viscosity;
-  steps.push(
-    `Reynolds number: Re = ρvD/μ = ${density} × ${velocity} × ${D_m} / ${viscosity} = ${Re.toFixed(0)}`
-  );
+  steps.push({
+    key: "reynoldsNumber",
+    params: { density, velocity, D_m, viscosity, re: Re.toFixed(0) },
+  });
 
   // Determine flow regime
   let flowRegime: "laminar" | "transitional" | "turbulent";
   if (Re < 2300) {
     flowRegime = "laminar";
-    steps.push(`Flow regime: LAMINAR (Re < 2,300)`);
+    steps.push({ key: "flowRegimeLaminar", params: { re: Re.toFixed(0) } });
   } else if (Re < 4000) {
     flowRegime = "transitional";
-    steps.push(`Flow regime: TRANSITIONAL (2,300 ≤ Re < 4,000)`);
+    steps.push({ key: "flowRegimeTransitional", params: { re: Re.toFixed(0) } });
   } else {
     flowRegime = "turbulent";
-    steps.push(`Flow regime: TURBULENT (Re ≥ 4,000)`);
+    steps.push({ key: "flowRegimeTurbulent", params: { re: Re.toFixed(0) } });
   }
 
   // Relative roughness
   const epsilon_m = roughness_mm / 1000; // mm → m
   const relativeRoughness = epsilon_m / D_m;
-  steps.push(
-    `Relative roughness: ε/D = ${epsilon_m.toExponential(3)} / ${D_m} = ${relativeRoughness.toExponential(4)}`
-  );
+  steps.push({
+    key: "relativeRoughness",
+    params: {
+      epsilon: epsilon_m.toExponential(3),
+      D_m,
+      value: relativeRoughness.toExponential(4),
+    },
+  });
 
   // Calculate friction factor
   let f: number;
@@ -177,13 +190,16 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
   if (Re < 2300) {
     // Laminar flow: f = 64/Re
     f = 64 / Re;
-    steps.push(`Friction factor (laminar): f = 64/Re = 64/${Re.toFixed(0)} = ${f.toFixed(6)}`);
+    steps.push({
+      key: "frictionFactorLaminar",
+      params: { re: Re.toFixed(0), f: f.toFixed(6) },
+    });
   } else {
     // Turbulent flow: Colebrook-White iterative solution
     // Initial guess: Swamee-Jain approximation
     const sj_term = relativeRoughness / 3.7 + 5.74 / Re ** 0.9;
     f = 0.25 / Math.log10(sj_term) ** 2;
-    steps.push(`Initial guess (Swamee-Jain): f₀ = ${f.toFixed(6)}`);
+    steps.push({ key: "swameeJainInitial", params: { f: f.toFixed(6) } });
 
     // Iterative Colebrook-White: 1/√f = -2 log₁₀(ε/(3.7D) + 2.51/(Re√f))
     const MAX_ITER = 50;
@@ -202,29 +218,52 @@ export function calculatePipeFlow(input: PipeFlowInput): CalculationResult<PipeF
       f = f_new;
     }
 
-    steps.push(`Colebrook-White converged: f = ${f.toFixed(6)} (${iterations} iterations)`);
+    steps.push({
+      key: "colebrookConverged",
+      params: { f: f.toFixed(6), iterations },
+    });
   }
 
   // Darcy-Weisbach: ΔP = f × (L/D) × (ρv²/2)
   const pressureDrop = f * (length / D_m) * ((density * velocity * velocity) / 2);
-  steps.push(
-    `Pressure drop: ΔP = f × (L/D) × (ρv²/2) = ${f.toFixed(6)} × (${length}/${D_m}) × (${density} × ${velocity}² / 2) = ${pressureDrop.toFixed(1)} Pa`
-  );
+  steps.push({
+    key: "pressureDrop",
+    params: {
+      f: f.toFixed(6),
+      length,
+      D_m,
+      density,
+      velocity,
+      pressureDrop: pressureDrop.toFixed(1),
+    },
+  });
 
   // Head loss: hL = ΔP/(ρg)
   const g = 9.80665; // m/s²
   const headLoss = pressureDrop / (density * g);
-  steps.push(
-    `Head loss: hL = ΔP/(ρg) = ${pressureDrop.toFixed(1)} / (${density} × ${g}) = ${headLoss.toFixed(3)} m`
-  );
+  steps.push({
+    key: "headLoss",
+    params: {
+      pressureDrop: pressureDrop.toFixed(1),
+      density,
+      g,
+      headLoss: headLoss.toFixed(3),
+    },
+  });
 
   // Flow rate
   const A_m2 = (Math.PI * D_m * D_m) / 4;
   const flowRate = velocity * A_m2; // m³/s
   const flowRateLpm = flowRate * 60000; // m³/s → L/min
-  steps.push(
-    `Flow rate: Q = v × A = ${velocity} × ${A_m2.toExponential(4)} = ${flowRate.toExponential(4)} m³/s = ${flowRateLpm.toFixed(1)} L/min`
-  );
+  steps.push({
+    key: "flowRate",
+    params: {
+      velocity,
+      area: A_m2.toExponential(4),
+      flowRate: flowRate.toExponential(4),
+      flowRateLpm: flowRateLpm.toFixed(1),
+    },
+  });
 
   // Pressure in multiple units
   const pressureUnits = {

@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface BasicCalculatorInput {
@@ -10,7 +11,7 @@ export interface BasicCalculatorResult {
   result: number;
   expression: string;
   formattedResult: string;
-  steps: string[];
+  steps: CalcStep[];
   variables: Record<string, number>;
 }
 
@@ -142,7 +143,7 @@ function toPostfix(tokens: string[]): string[] {
 function evaluatePostfix(
   postfix: string[],
   angleMode: "degrees" | "radians",
-  steps: string[]
+  steps: CalcStep[]
 ): number {
   const stack: number[] = [];
 
@@ -162,7 +163,7 @@ function evaluatePostfix(
       stack.push(parseFloat(token));
     } else if (token in CONSTANTS) {
       stack.push(CONSTANTS[token]);
-      steps.push(`${token} = ${CONSTANTS[token]}`);
+      steps.push({ key: "constant", params: { token, value: CONSTANTS[token] } });
     } else if (["+", "-", "*", "/", "^", "%"].includes(token)) {
       const b = stack.pop()!;
       const a = stack.pop()!;
@@ -191,7 +192,7 @@ function evaluatePostfix(
           result = NaN;
       }
 
-      steps.push(`${a} ${token} ${b} = ${result}`);
+      steps.push({ key: "operator", params: { a, operator: token, b, result } });
       stack.push(result);
     } else {
       // Functions
@@ -265,7 +266,7 @@ function evaluatePostfix(
           result = NaN;
       }
 
-      steps.push(`${token}(${a}) = ${result}`);
+      steps.push({ key: "function", params: { fn: token, input: a, result } });
       stack.push(result);
     }
   }
@@ -282,7 +283,7 @@ export function calculateBasicCalculator(
     return { ok: false, error: "Expression is required", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   try {
     // Clean and normalize expression
@@ -293,8 +294,8 @@ export function calculateBasicCalculator(
       .replace(/\s+/g, " ")
       .trim();
 
-    steps.push(`Expression: ${expression}`);
-    steps.push(`Angle mode: ${angleMode}`);
+    steps.push({ key: "expression", params: { expression } });
+    steps.push({ key: "angleMode", params: { angleMode } });
 
     // Handle implicit multiplication: 2pi -> 2*pi, 2(3) -> 2*(3)
     cleanExpr = cleanExpr
@@ -334,7 +335,7 @@ export function calculateBasicCalculator(
       ? result.toString()
       : parseFloat(result.toPrecision(precision)).toString();
 
-    steps.push(`Result: ${formattedResult}`);
+    steps.push({ key: "result", params: { result: formattedResult } });
 
     return {
       ok: true,
@@ -347,7 +348,10 @@ export function calculateBasicCalculator(
       },
     };
   } catch (error) {
-    steps.push(`Error: ${error instanceof Error ? error.message : "Invalid expression"}`);
+    steps.push({
+      key: "error",
+      params: { message: error instanceof Error ? error.message : "Invalid expression" },
+    });
     return {
       ok: false,
       error: error instanceof Error ? error.message : "Invalid expression",

@@ -7,6 +7,7 @@
  * - NIST Handbook 44 (2024)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /**
@@ -58,7 +59,7 @@ export interface UnitConverterResult {
   /** Conversion factor (from → to) */
   conversionFactor: number;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
   /** All conversions from the source value */
   allConversions: Array<{ name: string; symbol: string; value: number }>;
 }
@@ -229,25 +230,47 @@ export function calculateUnitConversion(
       code: "INVALID_INPUT",
     };
 
-  const steps: string[] = [];
-  steps.push(`Category: ${category.name}`);
-  steps.push(`Convert: ${value} ${from.symbol} → ${to.symbol}`);
+  const steps: CalcStep[] = [];
+  steps.push({ key: "category", params: { name: category.name } });
+  steps.push({
+    key: "convertHeader",
+    params: { value, fromSymbol: from.symbol, toSymbol: to.symbol },
+  });
 
   // Convert: value → base → target
   const conversionFactor = from.toBase / to.toBase;
   const result = value * conversionFactor;
 
-  steps.push(`Step 1: Convert to base unit`);
-  steps.push(
-    `  ${value} ${from.symbol} × ${from.toBase} = ${(value * from.toBase).toPrecision(10)} ${category.units[0].symbol}`
-  );
-  steps.push(`Step 2: Convert to target unit`);
-  steps.push(
-    `  ${(value * from.toBase).toPrecision(10)} ${category.units[0].symbol} / ${to.toBase} = ${result.toPrecision(10)} ${to.symbol}`
-  );
-  steps.push(
-    `Conversion factor: 1 ${from.symbol} = ${conversionFactor.toPrecision(10)} ${to.symbol}`
-  );
+  steps.push({ key: "step1Title" });
+  steps.push({
+    key: "step1Calc",
+    params: {
+      value,
+      fromSymbol: from.symbol,
+      toBase: from.toBase,
+      baseValue: (value * from.toBase).toPrecision(10),
+      baseSymbol: category.units[0].symbol,
+    },
+  });
+  steps.push({ key: "step2Title" });
+  steps.push({
+    key: "step2Calc",
+    params: {
+      baseValue: (value * from.toBase).toPrecision(10),
+      baseSymbol: category.units[0].symbol,
+      toBase: to.toBase,
+      result: result.toPrecision(10),
+      toSymbol: to.symbol,
+    },
+  });
+  steps.push({
+    key: "conversionFactor",
+    params: {
+      fromSymbol: from.symbol,
+      factor: conversionFactor.toPrecision(10),
+      toSymbol: to.symbol,
+    },
+  });
 
   // Compute all conversions from the source value
   const allConversions = category.units.map((unit) => ({

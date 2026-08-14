@@ -4,6 +4,7 @@
  */
 
 import licensingData from "@/data/infrastructure/licensing-costs.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { WindowsServerEdition } from "./types";
 
@@ -68,7 +69,7 @@ export interface WindowsLicensingResult {
     vendorUrl: string;
   };
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -104,28 +105,38 @@ export function calculateWindowsLicensing(
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const { windowsServer } = licensingData;
 
-  steps.push("=== Windows Server Licensing Calculator ===");
-  steps.push(`Hosts: ${input.hostCount}`);
-  steps.push(`Cores per CPU: ${input.coresPerCpu}`);
-  steps.push(`Sockets per host: ${input.socketsPerHost}`);
-  steps.push(`VMs to license: ${input.vmCount}`);
+  steps.push({ key: "calculatorTitle" });
+  steps.push({ key: "inputHosts", params: { hostCount: input.hostCount } });
+  steps.push({ key: "inputCoresPerCpu", params: { coresPerCpu: input.coresPerCpu } });
+  steps.push({ key: "inputSocketsPerHost", params: { socketsPerHost: input.socketsPerHost } });
+  steps.push({ key: "inputVmCount", params: { vmCount: input.vmCount } });
 
   // Calculate total cores
   const physicalCoresPerHost = input.coresPerCpu * input.socketsPerHost;
   const totalPhysicalCores = physicalCoresPerHost * input.hostCount;
 
-  steps.push(
-    `\nPhysical cores per host: ${input.coresPerCpu} × ${input.socketsPerHost} = ${physicalCoresPerHost}`
-  );
-  steps.push(
-    `Total physical cores: ${physicalCoresPerHost} × ${input.hostCount} = ${totalPhysicalCores}`
-  );
+  steps.push({
+    key: "physicalCoresPerHost",
+    params: {
+      coresPerCpu: input.coresPerCpu,
+      socketsPerHost: input.socketsPerHost,
+      physicalCoresPerHost,
+    },
+  });
+  steps.push({
+    key: "totalPhysicalCores",
+    params: {
+      physicalCoresPerHost,
+      hostCount: input.hostCount,
+      totalPhysicalCores,
+    },
+  });
 
   // Datacenter Edition
-  steps.push("\n=== Datacenter Edition ===");
+  steps.push({ key: "datacenterTitle" });
 
   const minCores = windowsServer.datacenter.minCoresPerServer;
   const datacenterCoresPerHost = Math.max(physicalCoresPerHost, minCores);
@@ -133,21 +144,46 @@ export function calculateWindowsLicensing(
   const datacenterTotalCorePacks = datacenterCorePacksPerHost * input.hostCount;
   const datacenterTotalCost = datacenterTotalCorePacks * windowsServer.datacenter.pricePerCorePack;
 
-  steps.push(`Minimum cores per server: ${minCores}`);
-  steps.push(
-    `Licensed cores per host: max(${physicalCoresPerHost}, ${minCores}) = ${datacenterCoresPerHost}`
-  );
-  steps.push(
-    `Core packs per host: ${datacenterCoresPerHost} / ${windowsServer.datacenter.coresPerPack} = ${datacenterCorePacksPerHost}`
-  );
-  steps.push(
-    `Total core packs: ${datacenterCorePacksPerHost} × ${input.hostCount} hosts = ${datacenterTotalCorePacks}`
-  );
-  steps.push(`Cost per core pack: $${windowsServer.datacenter.pricePerCorePack.toLocaleString()}`);
-  steps.push(
-    `Total cost: ${datacenterTotalCorePacks} × $${windowsServer.datacenter.pricePerCorePack.toLocaleString()} = $${datacenterTotalCost.toLocaleString()}`
-  );
-  steps.push(`VMs included: Unlimited`);
+  steps.push({ key: "dcMinCores", params: { minCores } });
+  steps.push({
+    key: "dcLicensedCoresPerHost",
+    params: {
+      physicalCoresPerHost,
+      minCores,
+      datacenterCoresPerHost,
+    },
+  });
+  steps.push({
+    key: "dcCorePacksPerHost",
+    params: {
+      datacenterCoresPerHost,
+      coresPerPack: windowsServer.datacenter.coresPerPack,
+      datacenterCorePacksPerHost,
+    },
+  });
+  steps.push({
+    key: "dcTotalCorePacks",
+    params: {
+      datacenterCorePacksPerHost,
+      hostCount: input.hostCount,
+      datacenterTotalCorePacks,
+    },
+  });
+  steps.push({
+    key: "dcCostPerCorePack",
+    params: {
+      pricePerCorePack: windowsServer.datacenter.pricePerCorePack.toLocaleString(),
+    },
+  });
+  steps.push({
+    key: "dcTotalCost",
+    params: {
+      datacenterTotalCorePacks,
+      pricePerCorePack: windowsServer.datacenter.pricePerCorePack.toLocaleString(),
+      totalCost: datacenterTotalCost.toLocaleString(),
+    },
+  });
+  steps.push({ key: "dcVmsIncluded" });
 
   const datacenterNotes = [
     "One license per physical server (regardless of VM count)",
@@ -158,7 +194,7 @@ export function calculateWindowsLicensing(
   ];
 
   // Standard Edition
-  steps.push("\n=== Standard Edition ===");
+  steps.push({ key: "standardTitle" });
 
   const standardCoresPerHost = Math.max(physicalCoresPerHost, minCores);
   const standardCorePacksPerHost = standardCoresPerHost / windowsServer.standard.coresPerPack;
@@ -166,27 +202,64 @@ export function calculateWindowsLicensing(
   const standardTotalCorePacks = standardLicensesRequired * standardCorePacksPerHost;
   const standardTotalCost = standardTotalCorePacks * windowsServer.standard.pricePerCorePack;
 
-  steps.push(`Minimum cores per server: ${minCores}`);
-  steps.push(
-    `Licensed cores per host: max(${physicalCoresPerHost}, ${minCores}) = ${standardCoresPerHost}`
-  );
-  steps.push(
-    `Core packs per license: ${standardCoresPerHost} / ${windowsServer.standard.coresPerPack} = ${standardCorePacksPerHost}`
-  );
-  steps.push(`VMs per license: ${windowsServer.standard.vmsPerLicense}`);
-  steps.push(
-    `Licenses required: ceil(${input.vmCount} / ${windowsServer.standard.vmsPerLicense}) = ${standardLicensesRequired}`
-  );
-  steps.push(
-    `Total core packs: ${standardLicensesRequired} × ${standardCorePacksPerHost} = ${standardTotalCorePacks}`
-  );
-  steps.push(`Cost per core pack: $${windowsServer.standard.pricePerCorePack.toLocaleString()}`);
-  steps.push(
-    `Total cost: ${standardTotalCorePacks} × $${windowsServer.standard.pricePerCorePack.toLocaleString()} = $${standardTotalCost.toLocaleString()}`
-  );
-  steps.push(
-    `VMs included: ${input.vmCount} (${windowsServer.standard.vmsPerLicense} per license)`
-  );
+  steps.push({ key: "stdMinCores", params: { minCores } });
+  steps.push({
+    key: "stdLicensedCoresPerHost",
+    params: {
+      physicalCoresPerHost,
+      minCores,
+      standardCoresPerHost,
+    },
+  });
+  steps.push({
+    key: "stdCorePacksPerLicense",
+    params: {
+      standardCoresPerHost,
+      coresPerPack: windowsServer.standard.coresPerPack,
+      standardCorePacksPerHost,
+    },
+  });
+  steps.push({
+    key: "stdVmsPerLicense",
+    params: { vmsPerLicense: windowsServer.standard.vmsPerLicense },
+  });
+  steps.push({
+    key: "stdLicensesRequired",
+    params: {
+      vmCount: input.vmCount,
+      vmsPerLicense: windowsServer.standard.vmsPerLicense,
+      standardLicensesRequired,
+    },
+  });
+  steps.push({
+    key: "stdTotalCorePacks",
+    params: {
+      standardLicensesRequired,
+      standardCorePacksPerHost,
+      standardTotalCorePacks,
+    },
+  });
+  steps.push({
+    key: "stdCostPerCorePack",
+    params: {
+      pricePerCorePack: windowsServer.standard.pricePerCorePack.toLocaleString(),
+    },
+  });
+  steps.push({
+    key: "stdTotalCost",
+    params: {
+      standardTotalCorePacks,
+      pricePerCorePack: windowsServer.standard.pricePerCorePack.toLocaleString(),
+      totalCost: standardTotalCost.toLocaleString(),
+    },
+  });
+  steps.push({
+    key: "stdVmsIncluded",
+    params: {
+      vmCount: input.vmCount,
+      vmsPerLicense: windowsServer.standard.vmsPerLicense,
+    },
+  });
 
   const standardNotes = [
     "Each license covers 2 Windows Server VMs",
@@ -197,7 +270,7 @@ export function calculateWindowsLicensing(
   ];
 
   // Comparison
-  steps.push("\n=== Cost Comparison ===");
+  steps.push({ key: "comparisonTitle" });
 
   const savings = standardTotalCost - datacenterTotalCost;
   const savingsPercent = (savings / standardTotalCost) * 100;
@@ -206,34 +279,59 @@ export function calculateWindowsLicensing(
   const breakEvenVms = windowsServer.datacenter.breakEvenVms;
   const currentVmsPerHost = input.vmCount / input.hostCount;
 
-  steps.push(`Datacenter total: $${datacenterTotalCost.toLocaleString()}`);
-  steps.push(`Standard total: $${standardTotalCost.toLocaleString()}`);
+  steps.push({
+    key: "comparisonDatacenterTotal",
+    params: { totalCost: datacenterTotalCost.toLocaleString() },
+  });
+  steps.push({
+    key: "comparisonStandardTotal",
+    params: { totalCost: standardTotalCost.toLocaleString() },
+  });
 
   if (recommendation === "datacenter") {
-    steps.push(
-      `Savings with Datacenter: $${Math.abs(savings).toLocaleString()} (${Math.abs(savingsPercent).toFixed(1)}%)`
-    );
-    steps.push(`✓ RECOMMENDATION: Datacenter Edition`);
+    steps.push({
+      key: "savingsWithDatacenter",
+      params: {
+        savings: Math.abs(savings).toLocaleString(),
+        savingsPercent: Math.abs(savingsPercent).toFixed(1),
+      },
+    });
+    steps.push({ key: "recommendationDatacenter" });
   } else {
-    steps.push(
-      `Savings with Standard: $${Math.abs(savings).toLocaleString()} (${Math.abs(savingsPercent).toFixed(1)}%)`
-    );
-    steps.push(`✓ RECOMMENDATION: Standard Edition`);
+    steps.push({
+      key: "savingsWithStandard",
+      params: {
+        savings: Math.abs(savings).toLocaleString(),
+        savingsPercent: Math.abs(savingsPercent).toFixed(1),
+      },
+    });
+    steps.push({ key: "recommendationStandard" });
   }
 
-  steps.push(`\nBreak-even point: ~${breakEvenVms} VMs per host`);
-  steps.push(`Current density: ${currentVmsPerHost.toFixed(1)} VMs per host`);
+  steps.push({ key: "breakEvenPoint", params: { breakEvenVms } });
+  steps.push({
+    key: "currentDensity",
+    params: { currentVmsPerHost: currentVmsPerHost.toFixed(1) },
+  });
 
   if (currentVmsPerHost >= breakEvenVms) {
-    steps.push(
-      `Your VM density (${currentVmsPerHost.toFixed(1)}) exceeds break-even (${breakEvenVms})`
-    );
-    steps.push(`Datacenter Edition is more cost-effective`);
+    steps.push({
+      key: "densityExceedsBreakEven",
+      params: {
+        currentVmsPerHost: currentVmsPerHost.toFixed(1),
+        breakEvenVms,
+      },
+    });
+    steps.push({ key: "datacenterMoreCostEffective" });
   } else {
-    steps.push(
-      `Your VM density (${currentVmsPerHost.toFixed(1)}) is below break-even (${breakEvenVms})`
-    );
-    steps.push(`Standard Edition is more cost-effective`);
+    steps.push({
+      key: "densityBelowBreakEven",
+      params: {
+        currentVmsPerHost: currentVmsPerHost.toFixed(1),
+        breakEvenVms,
+      },
+    });
+    steps.push({ key: "standardMoreCostEffective" });
   }
 
   // Check pricing staleness
@@ -250,10 +348,17 @@ export function calculateWindowsLicensing(
       vendorUrl: windowsServer.datacenter.vendorUrl,
     };
 
-    steps.push(
-      `\n⚠️  WARNING: Pricing data is ${staleness.daysOld} days old (last updated: ${licensingData.lastUpdated})`
-    );
-    steps.push(`Please verify current prices at: ${windowsServer.datacenter.vendorUrl}`);
+    steps.push({
+      key: "pricingStaleWarning",
+      params: {
+        daysOld: staleness.daysOld,
+        lastUpdated: licensingData.lastUpdated,
+      },
+    });
+    steps.push({
+      key: "pricingVerifyUrl",
+      params: { vendorUrl: windowsServer.datacenter.vendorUrl },
+    });
   }
 
   return {

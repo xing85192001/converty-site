@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface NumberSequenceInput {
@@ -25,7 +26,7 @@ export interface NumberSequenceResult {
   commonDifference?: number;
   commonRatio?: number;
   nthTerm?: number;
-  steps: string[];
+  steps: CalcStep[];
   isConvergent?: boolean;
   limit?: number;
 }
@@ -96,7 +97,7 @@ export function calculateNumberSequence(
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let sequence: number[] = [];
   let sequenceType: string;
   let formula: string;
@@ -124,20 +125,27 @@ export function calculateNumberSequence(
       sum = (numberOfTerms / 2) * (2 * firstTerm + (numberOfTerms - 1) * commonDifference);
       sumFormula = `S_n = n/2 × (2a_1 + (n-1)d)`;
 
-      steps.push(`First term (a₁) = ${firstTerm}`);
-      steps.push(`Common difference (d) = ${commonDifference}`);
-      steps.push(`Number of terms (n) = ${numberOfTerms}`);
-      steps.push(`nth term formula: a_n = a₁ + (n-1)d`);
-      steps.push(`Sum formula: S_n = n/2 × (first + last)`);
-      steps.push(
-        `Sum = ${numberOfTerms}/2 × (${sequence[0]} + ${sequence[sequence.length - 1]}) = ${sum}`
-      );
+      steps.push({ key: "arithFirstTerm", params: { firstTerm } });
+      steps.push({ key: "arithDiff", params: { commonDifference } });
+      steps.push({ key: "arithNumTerms", params: { numberOfTerms } });
+      steps.push({ key: "arithNthFormula" });
+      steps.push({ key: "arithSumFormula" });
+      steps.push({
+        key: "arithSum",
+        params: {
+          numberOfTerms,
+          first: sequence[0],
+          last: sequence[sequence.length - 1],
+          sum,
+        },
+      });
 
       if (findNthTerm) {
         nthTerm = firstTerm + (findNthTerm - 1) * commonDifference;
-        steps.push(
-          `a_${findNthTerm} = ${firstTerm} + (${findNthTerm}-1) × ${commonDifference} = ${nthTerm}`
-        );
+        steps.push({
+          key: "arithNth",
+          params: { findNthTerm, firstTerm, commonDifference, nthTerm },
+        });
       }
       break;
     }
@@ -165,23 +173,24 @@ export function calculateNumberSequence(
       if (Math.abs(commonRatio) < 1) {
         isConvergent = true;
         limit = firstTerm / (1 - commonRatio);
-        steps.push(`Since |r| < 1, the infinite series converges`);
-        steps.push(`S_∞ = a₁ / (1-r) = ${firstTerm} / (1-${commonRatio}) = ${limit}`);
+        steps.push({ key: "geoConverges" });
+        steps.push({ key: "geoLimit", params: { firstTerm, commonRatio, limit } });
       } else {
         isConvergent = false;
       }
 
-      steps.push(`First term (a₁) = ${firstTerm}`);
-      steps.push(`Common ratio (r) = ${commonRatio}`);
-      steps.push(`Number of terms (n) = ${numberOfTerms}`);
-      steps.push(`nth term formula: a_n = a₁ × r^(n-1)`);
-      steps.push(`Sum = ${sum.toFixed(6)}`);
+      steps.push({ key: "geoFirstTerm", params: { firstTerm } });
+      steps.push({ key: "geoRatio", params: { commonRatio } });
+      steps.push({ key: "geoNumTerms", params: { numberOfTerms } });
+      steps.push({ key: "geoNthFormula" });
+      steps.push({ key: "geoSum", params: { sum: sum.toFixed(6) } });
 
       if (findNthTerm) {
         nthTerm = firstTerm * commonRatio ** (findNthTerm - 1);
-        steps.push(
-          `a_${findNthTerm} = ${firstTerm} × ${commonRatio}^${findNthTerm - 1} = ${nthTerm}`
-        );
+        steps.push({
+          key: "geoNth",
+          params: { findNthTerm, firstTerm, commonRatio, exponent: findNthTerm - 1, nthTerm },
+        });
       }
       break;
     }
@@ -202,20 +211,20 @@ export function calculateNumberSequence(
 
       sum = sequence.reduce((acc, val) => acc + val, 0);
 
-      steps.push(`Fibonacci sequence: each term is the sum of the two preceding terms`);
-      steps.push(`F_1 = 1, F_2 = 1`);
-      steps.push(`F_n = F_(n-1) + F_(n-2)`);
-      steps.push(`Sum of first ${numberOfTerms} terms = ${sum}`);
+      steps.push({ key: "fibIntro" });
+      steps.push({ key: "fibStart" });
+      steps.push({ key: "fibFormula" });
+      steps.push({ key: "fibSum", params: { numberOfTerms, sum } });
 
       // Golden ratio approximation
       if (numberOfTerms >= 2) {
         const goldenRatio = sequence[sequence.length - 1] / sequence[sequence.length - 2];
-        steps.push(`Ratio of consecutive terms approaches φ ≈ ${goldenRatio.toFixed(6)}`);
+        steps.push({ key: "fibGoldenRatio", params: { goldenRatio: goldenRatio.toFixed(6) } });
       }
 
       if (findNthTerm && findNthTerm <= sequence.length) {
         nthTerm = sequence[findNthTerm - 1];
-        steps.push(`F_${findNthTerm} = ${nthTerm}`);
+        steps.push({ key: "fibNth", params: { findNthTerm, nthTerm } });
       }
       break;
     }
@@ -237,7 +246,7 @@ export function calculateNumberSequence(
         resultDiff = pattern.diff;
         formula = `a_n = ${terms[0]} + (n-1) × ${pattern.diff}`;
         nthTermFormula = formula;
-        steps.push(`Detected arithmetic pattern with d = ${pattern.diff}`);
+        steps.push({ key: "customArith", params: { diff: pattern.diff ?? 0 } });
 
         // Extend sequence if requested
         if (numberOfTerms > terms.length) {
@@ -250,7 +259,7 @@ export function calculateNumberSequence(
         resultRatio = pattern.ratio;
         formula = `a_n = ${terms[0]} × ${pattern.ratio?.toFixed(4)}^(n-1)`;
         nthTermFormula = formula;
-        steps.push(`Detected geometric pattern with r = ${pattern.ratio?.toFixed(4)}`);
+        steps.push({ key: "customGeo", params: { ratio: pattern.ratio?.toFixed(4) ?? "0" } });
 
         if (numberOfTerms > terms.length) {
           for (let i = terms.length; i < numberOfTerms; i++) {
@@ -261,7 +270,7 @@ export function calculateNumberSequence(
         sequenceType = "Fibonacci-like Sequence (detected)";
         formula = `a_n = a_(n-1) + a_(n-2)`;
         nthTermFormula = formula;
-        steps.push(`Detected Fibonacci-like pattern`);
+        steps.push({ key: "customFib" });
 
         if (numberOfTerms > terms.length) {
           for (let i = terms.length; i < numberOfTerms; i++) {
@@ -272,11 +281,11 @@ export function calculateNumberSequence(
         sequenceType = "Unknown Pattern";
         formula = "Pattern not recognized";
         nthTermFormula = "Unable to determine";
-        steps.push(`Could not detect a standard pattern`);
+        steps.push({ key: "customUnknown" });
       }
 
       sum = sequence.reduce((acc, val) => acc + val, 0);
-      steps.push(`Sum = ${sum}`);
+      steps.push({ key: "customSum", params: { sum } });
       break;
     }
 
@@ -293,28 +302,28 @@ export function calculateNumberSequence(
       const pattern = detectPattern(terms);
 
       sequenceType = `Pattern Analysis`;
-      steps.push(`Analyzing sequence: ${terms.join(", ")}`);
+      steps.push({ key: "fpAnalyzing", params: { sequence: terms.join(", ") } });
 
       if (pattern.type === "arithmetic") {
         formula = `Arithmetic: a_n = ${terms[0]} + (n-1) × ${pattern.diff}`;
         nthTermFormula = formula;
         resultDiff = pattern.diff;
-        steps.push(`Pattern: Arithmetic progression`);
-        steps.push(`Common difference: ${pattern.diff}`);
+        steps.push({ key: "fpArithPattern" });
+        steps.push({ key: "fpArithDiff", params: { diff: pattern.diff ?? 0 } });
       } else if (pattern.type === "geometric") {
         formula = `Geometric: a_n = ${terms[0]} × ${pattern.ratio?.toFixed(4)}^(n-1)`;
         nthTermFormula = formula;
         resultRatio = pattern.ratio;
-        steps.push(`Pattern: Geometric progression`);
-        steps.push(`Common ratio: ${pattern.ratio?.toFixed(4)}`);
+        steps.push({ key: "fpGeoPattern" });
+        steps.push({ key: "fpGeoRatio", params: { ratio: pattern.ratio?.toFixed(4) ?? "0" } });
       } else if (pattern.type === "fibonacci") {
         formula = `Fibonacci-like: a_n = a_(n-1) + a_(n-2)`;
         nthTermFormula = formula;
-        steps.push(`Pattern: Fibonacci-like sequence`);
+        steps.push({ key: "fpFibPattern" });
       } else {
         formula = "No standard pattern detected";
         nthTermFormula = "Unknown";
-        steps.push(`No standard pattern (arithmetic, geometric, or Fibonacci) detected`);
+        steps.push({ key: "fpUnknownPattern" });
       }
 
       sum = sequence.reduce((acc, val) => acc + val, 0);

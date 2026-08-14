@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface ConfidenceIntervalInput {
@@ -24,7 +25,7 @@ export interface ConfidenceIntervalResult {
   criticalValue: number;
   standardError: number;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
   interpretation: string;
 }
 
@@ -119,7 +120,7 @@ export function calculateConfidenceInterval(
     return { ok: false, error: "Sample size must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let pointEstimate: number;
   let standardError: number;
   let criticalValue: number;
@@ -144,13 +145,14 @@ export function calculateConfidenceInterval(
 
       formula = sampleSize < 30 ? "x̄ ± t × (s/√n)" : "x̄ ± z × (σ/√n)";
 
-      steps.push(`Sample mean (x̄) = ${sampleMean}`);
-      steps.push(`Sample size (n) = ${sampleSize}`);
-      steps.push(`Standard deviation = ${standardDeviation}`);
-      steps.push(
-        `Standard error = ${standardDeviation}/√${sampleSize} = ${standardError.toFixed(4)}`
-      );
-      steps.push(`Critical value = ${criticalValue.toFixed(4)}`);
+      steps.push({ key: "meanSampleMean", params: { sampleMean } });
+      steps.push({ key: "meanSampleSize", params: { sampleSize } });
+      steps.push({ key: "meanStdDev", params: { standardDeviation } });
+      steps.push({
+        key: "meanStandardError",
+        params: { standardDeviation, sampleSize, standardError: standardError.toFixed(4) },
+      });
+      steps.push({ key: "meanCriticalValue", params: { criticalValue: criticalValue.toFixed(4) } });
       break;
     }
 
@@ -168,15 +170,25 @@ export function calculateConfidenceInterval(
       criticalValue = getZScore(confidenceLevel);
       formula = "p̂ ± z × √(p̂(1-p̂)/n)";
 
-      steps.push(`Successes = ${successes}`);
-      steps.push(`Sample size (n) = ${sampleSize}`);
-      steps.push(
-        `Sample proportion (p̂) = ${successes}/${sampleSize} = ${pointEstimate.toFixed(4)}`
-      );
-      steps.push(
-        `Standard error = √(${pointEstimate.toFixed(4)} × ${(1 - pointEstimate).toFixed(4)} / ${sampleSize}) = ${standardError.toFixed(4)}`
-      );
-      steps.push(`Z critical value = ${criticalValue.toFixed(4)}`);
+      steps.push({ key: "proportionSuccesses", params: { successes } });
+      steps.push({ key: "proportionSampleSize", params: { sampleSize } });
+      steps.push({
+        key: "proportionSampleProportion",
+        params: { successes, sampleSize, proportion: pointEstimate.toFixed(4) },
+      });
+      steps.push({
+        key: "proportionStandardError",
+        params: {
+          proportion: pointEstimate.toFixed(4),
+          q: (1 - pointEstimate).toFixed(4),
+          sampleSize,
+          standardError: standardError.toFixed(4),
+        },
+      });
+      steps.push({
+        key: "proportionCriticalValue",
+        params: { criticalValue: criticalValue.toFixed(4) },
+      });
       break;
     }
 
@@ -213,12 +225,27 @@ export function calculateConfidenceInterval(
       criticalValue = df < 30 ? getTValue(confidenceLevel, df) : getZScore(confidenceLevel);
       formula = "(x̄₁ - x̄₂) ± t × √(s₁²/n₁ + s₂²/n₂)";
 
-      steps.push(`Sample 1: mean = ${sampleMean}, n = ${sampleSize}, s = ${standardDeviation}`);
-      steps.push(`Sample 2: mean = ${sampleMean2}, n = ${sampleSize2}, s = ${standardDeviation2}`);
-      steps.push(`Point estimate = ${sampleMean} - ${sampleMean2} = ${pointEstimate.toFixed(4)}`);
-      steps.push(`Standard error = ${standardError.toFixed(4)}`);
-      steps.push(`Degrees of freedom (Welch) ≈ ${df}`);
-      steps.push(`Critical value = ${criticalValue.toFixed(4)}`);
+      steps.push({
+        key: "differenceSample1",
+        params: { mean: sampleMean, n: sampleSize, stdDev: standardDeviation },
+      });
+      steps.push({
+        key: "differenceSample2",
+        params: { mean: sampleMean2, n: sampleSize2, stdDev: standardDeviation2 },
+      });
+      steps.push({
+        key: "differencePointEstimate",
+        params: { sampleMean, sampleMean2, pointEstimate: pointEstimate.toFixed(4) },
+      });
+      steps.push({
+        key: "differenceStandardError",
+        params: { standardError: standardError.toFixed(4) },
+      });
+      steps.push({ key: "differenceDf", params: { df } });
+      steps.push({
+        key: "differenceCriticalValue",
+        params: { criticalValue: criticalValue.toFixed(4) },
+      });
       break;
     }
 
@@ -230,11 +257,22 @@ export function calculateConfidenceInterval(
   const lowerBound = pointEstimate - marginOfError;
   const upperBound = pointEstimate + marginOfError;
 
-  steps.push(
-    `Margin of error = ${criticalValue.toFixed(4)} × ${standardError.toFixed(4)} = ${marginOfError.toFixed(4)}`
-  );
-  steps.push(`Confidence interval = ${pointEstimate.toFixed(4)} ± ${marginOfError.toFixed(4)}`);
-  steps.push(`= (${lowerBound.toFixed(4)}, ${upperBound.toFixed(4)})`);
+  steps.push({
+    key: "marginOfError",
+    params: {
+      criticalValue: criticalValue.toFixed(4),
+      standardError: standardError.toFixed(4),
+      marginOfError: marginOfError.toFixed(4),
+    },
+  });
+  steps.push({
+    key: "confidenceInterval",
+    params: { pointEstimate: pointEstimate.toFixed(4), marginOfError: marginOfError.toFixed(4) },
+  });
+  steps.push({
+    key: "confidenceIntervalResult",
+    params: { lowerBound: lowerBound.toFixed(4), upperBound: upperBound.toFixed(4) },
+  });
 
   let interpretation: string;
   if (mode === "proportion") {

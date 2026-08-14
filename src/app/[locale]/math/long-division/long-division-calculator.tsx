@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -39,6 +40,7 @@ export function LongDivisionCalculator() {
   const t = useTranslations("calculator.labels");
   const tResults = useTranslations("calculator.results");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.longDivision");
 
   const { values, setValue, result, errors, calculationError } = useLongDivisionStore();
 

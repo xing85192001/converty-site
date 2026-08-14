@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface SlopeInput {
@@ -23,14 +24,14 @@ export interface SlopeResult {
   isVertical: boolean;
   isHorizontal: boolean;
   slopeType: string;
-  steps: string[];
+  steps: CalcStep[];
   parallelSlope: number | null;
   perpendicularSlope: number | null;
 }
 
 export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult> {
   const { mode } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   let slope: number | null;
   let yIntercept: number;
@@ -56,19 +57,19 @@ export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult
       x2 = input.x2;
       y2 = input.y2;
 
-      steps.push(`Point 1: (${x1}, ${y1})`);
-      steps.push(`Point 2: (${x2}, ${y2})`);
+      steps.push({ key: "point1", params: { x1, y1 } });
+      steps.push({ key: "point2", params: { x2, y2 } });
 
       // Check for vertical line
       if (x2 - x1 === 0) {
         slope = null; // undefined slope (vertical line)
         yIntercept = NaN;
-        steps.push("Vertical line (undefined slope)");
+        steps.push({ key: "verticalLine" });
       } else {
         slope = (y2 - y1) / (x2 - x1);
         yIntercept = y1 - slope * x1;
-        steps.push(`Slope = (y₂ - y₁) / (x₂ - x₁) = (${y2} - ${y1}) / (${x2} - ${x1}) = ${slope}`);
-        steps.push(`y-intercept = y₁ - m × x₁ = ${y1} - ${slope} × ${x1} = ${yIntercept}`);
+        steps.push({ key: "slopeCalc", params: { y2, y1, x2, x1, slope } });
+        steps.push({ key: "yInterceptCalc", params: { y1, slope, x1, yIntercept } });
       }
       break;
     }
@@ -88,7 +89,7 @@ export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult
       x2 = 1;
       y2 = yIntercept + slope;
 
-      steps.push(`Given: slope = ${slope}, y-intercept = ${yIntercept}`);
+      steps.push({ key: "givenSlopeIntercept", params: { slope, yIntercept } });
       break;
     }
 
@@ -105,8 +106,8 @@ export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult
       slope = input.slope;
       yIntercept = y1 - slope * x1;
 
-      steps.push(`Given: point (${x1}, ${y1}), slope = ${slope}`);
-      steps.push(`y-intercept = y₁ - m × x₁ = ${y1} - ${slope} × ${x1} = ${yIntercept}`);
+      steps.push({ key: "givenPointSlope", params: { x1, y1, slope } });
+      steps.push({ key: "pointSlopeYIntercept", params: { y1, slope, x1, yIntercept } });
       break;
     }
 
@@ -122,7 +123,7 @@ export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult
   let xIntercept: number | null = null;
   if (slope !== null && slope !== 0) {
     xIntercept = -yIntercept / slope;
-    steps.push(`x-intercept = -b/m = ${xIntercept}`);
+    steps.push({ key: "xIntercept", params: { xIntercept } });
   } else if (slope === 0) {
     xIntercept = null; // Horizontal line (no x-intercept unless at y=0)
     if (yIntercept === 0) {
@@ -139,8 +140,8 @@ export function calculateSlope(input: SlopeInput): CalculationResult<SlopeResult
   if (x2 !== undefined && y2 !== undefined) {
     distance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
     midpoint = { x: (x1 + x2) / 2, y: (y1 + y2) / 2 };
-    steps.push(`Distance = √[(x₂-x₁)² + (y₂-y₁)²] = ${distance.toFixed(6)}`);
-    steps.push(`Midpoint = ((x₁+x₂)/2, (y₁+y₂)/2) = (${midpoint.x}, ${midpoint.y})`);
+    steps.push({ key: "distance", params: { distance: distance.toFixed(6) } });
+    steps.push({ key: "midpoint", params: { x: midpoint.x, y: midpoint.y } });
   }
 
   // Slope type

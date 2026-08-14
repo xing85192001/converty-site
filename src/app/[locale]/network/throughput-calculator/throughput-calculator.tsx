@@ -2,6 +2,7 @@
 
 import { Activity, Info, RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,6 +21,7 @@ import { useThroughputCalculatorStore } from "@/stores/throughput-calculator-sto
 export function ThroughputCalculator() {
   const t = useTranslations("calculator.network");
   const tDataUnits = useTranslations("calculator.data.units");
+  const tSteps = useTranslations("calculator.network.throughput");
   const {
     dataSize,
     dataSizeUnit,
@@ -168,8 +170,11 @@ export function ThroughputCalculator() {
             <CardContent>
               <div className="space-y-2 font-mono text-sm">
                 {result.steps.map((step) => (
-                  <p key={step} className="text-muted-foreground">
-                    {step}
+                  <p
+                    key={formatStep(step, tSteps, "calculator.network.throughput")}
+                    className="text-muted-foreground"
+                  >
+                    {formatStep(step, tSteps, "calculator.network.throughput")}
                   </p>
                 ))}
               </div>

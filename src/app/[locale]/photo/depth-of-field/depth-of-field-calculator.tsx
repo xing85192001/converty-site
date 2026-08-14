@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { CROP_FACTORS } from "@/lib/converters/photo/composition";
 import { COMMON_APERTURES, calculateDepthOfField } from "@/lib/converters/photo/depth-of-field";
 
@@ -95,17 +96,23 @@ export function DepthOfFieldCalculator() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="p-4 rounded-lg border bg-muted/50">
-              <p className="text-sm text-muted-foreground">In Front of Subject</p>
+              <p className="text-sm text-muted-foreground">
+                <T k="ui.in-front-of-subject" />
+              </p>
               <p className="text-lg font-mono">{formatDistance(result.inFrontOfSubject)}</p>
             </div>
             <div className="p-4 rounded-lg border bg-muted/50">
-              <p className="text-sm text-muted-foreground">Behind Subject</p>
+              <p className="text-sm text-muted-foreground">
+                <T k="ui.behind-subject" />
+              </p>
               <p className="text-lg font-mono">{formatDistance(result.behindSubject)}</p>
             </div>
           </div>
 
           <div className="p-4 rounded-lg border">
-            <p className="text-sm text-muted-foreground mb-2">Depth of Field Visualization</p>
+            <p className="text-sm text-muted-foreground mb-2">
+              <T k="ui.depth-of-field-visualization" />
+            </p>
             <div className="relative h-8 bg-muted rounded overflow-hidden">
               <div
                 className="absolute h-full bg-primary/30"

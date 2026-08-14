@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import { CSP_DIRECTIVES, CSP_PRESETS, type CSPConfig, generateCSP } from "@/lib/converters/web/csp";
 
 export function CSPGenerator() {
@@ -80,7 +81,9 @@ export function CSPGenerator() {
         </div>
 
         <div className="space-y-2">
-          <p className="text-sm font-medium">Meta Tag</p>
+          <p className="text-sm font-medium">
+            <T k="ui.meta-tag" />
+          </p>
           <pre className="p-3 rounded-lg bg-muted text-sm font-mono overflow-x-auto whitespace-pre-wrap break-all">
             {result.metaTag}
           </pre>

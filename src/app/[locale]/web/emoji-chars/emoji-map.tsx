@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { toast } from "sonner";
+import { T } from "@/components/ui/t";
 import {
   EMOJI_CATEGORIES,
   EMOJI_DATA,
@@ -37,6 +38,7 @@ export function EmojiMap() {
       });
   };
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
@@ -57,7 +59,9 @@ export function EmojiMap() {
             onChange={(e) => setCategory(e.target.value as EmojiCategory | "all")}
             className="w-full h-10 px-3 rounded-md border bg-background"
           >
-            <option value="all">All Categories</option>
+            <option value="all">
+              <T k="ui.all-categories" />
+            </option>
             {EMOJI_CATEGORIES.map((cat) => (
               <option key={cat} value={cat}>
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -107,7 +111,7 @@ export function EmojiMap() {
                     <button
                       onClick={() => copyToClipboard(emoji.emoji, `table-${emoji.name}`)}
                       className="text-2xl hover:bg-primary/10 px-2 py-1 rounded"
-                      title="Click to copy"
+                      title={tUi("click-to-copy")}
                     >
                       {emoji.emoji}
                     </button>

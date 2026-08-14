@@ -10,6 +10,7 @@
  * - Mw = molecular weight (g/mol)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /**
@@ -50,7 +51,7 @@ export interface MolarityResult {
     nM: number; // nmol/L
   };
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -66,22 +67,22 @@ export function calculateMolarity(input: MolarityInput): CalculationResult<Molar
     return { ok: false, error: "Volume must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Convert volume to liters
   let volumeL: number;
   switch (volumeUnit) {
     case "L":
       volumeL = volume;
-      steps.push(`Volume: ${volume} L`);
+      steps.push({ key: "volumeL", params: { volume } });
       break;
     case "mL":
       volumeL = volume / 1000;
-      steps.push(`Volume: ${volume} mL = ${volumeL.toFixed(6)} L`);
+      steps.push({ key: "volumeMl", params: { volume, result: volumeL.toFixed(6) } });
       break;
     case "µL":
       volumeL = volume / 1e6;
-      steps.push(`Volume: ${volume} µL = ${volumeL.toFixed(9)} L`);
+      steps.push({ key: "volumeUl", params: { volume, result: volumeL.toFixed(9) } });
       break;
   }
 
@@ -96,12 +97,15 @@ export function calculateMolarity(input: MolarityInput): CalculationResult<Molar
       };
     }
 
-    steps.push(`Mass: ${mass} g`);
-    steps.push(`Molecular weight: ${molecularWeight} g/mol`);
+    steps.push({ key: "mass", params: { mass } });
+    steps.push({ key: "molecularWeight", params: { mw: molecularWeight } });
 
     // Calculate moles from mass
     molesValue = mass / molecularWeight;
-    steps.push(`Moles: n = m / Mw = ${mass} / ${molecularWeight} = ${molesValue.toFixed(6)} mol`);
+    steps.push({
+      key: "molesFromMass",
+      params: { mass, mw: molecularWeight, result: molesValue.toFixed(6) },
+    });
   } else {
     // moles-volume mode
     if (!moles || moles <= 0) {
@@ -113,14 +117,19 @@ export function calculateMolarity(input: MolarityInput): CalculationResult<Molar
     }
 
     molesValue = moles;
-    steps.push(`Moles: ${moles} mol`);
+    steps.push({ key: "molesDirect", params: { moles } });
   }
 
   // Calculate molarity
   const molarity = molesValue / volumeL;
-  steps.push(
-    `Molarity: M = n / V = ${molesValue.toFixed(6)} / ${volumeL.toFixed(6)} = ${molarity.toFixed(6)} mol/L`
-  );
+  steps.push({
+    key: "molarity",
+    params: {
+      moles: molesValue.toFixed(6),
+      volume: volumeL.toFixed(6),
+      result: molarity.toFixed(6),
+    },
+  });
 
   // Multi-unit concentrations
   const concentrationUnits = {
@@ -130,12 +139,12 @@ export function calculateMolarity(input: MolarityInput): CalculationResult<Molar
     nM: molarity * 1e9,
   };
 
-  steps.push("");
-  steps.push("Concentration in different units:");
-  steps.push(`${concentrationUnits.M.toFixed(6)} M (mol/L)`);
-  steps.push(`${concentrationUnits.mM.toFixed(3)} mM (mmol/L)`);
-  steps.push(`${concentrationUnits.µM.toFixed(3)} µM (µmol/L)`);
-  steps.push(`${concentrationUnits.nM.toFixed(3)} nM (nmol/L)`);
+  steps.push({ key: "separator" });
+  steps.push({ key: "concentrationUnits" });
+  steps.push({ key: "unitM", params: { value: concentrationUnits.M.toFixed(6) } });
+  steps.push({ key: "unitMm", params: { value: concentrationUnits.mM.toFixed(3) } });
+  steps.push({ key: "unitUm", params: { value: concentrationUnits.µM.toFixed(3) } });
+  steps.push({ key: "unitNm", params: { value: concentrationUnits.nM.toFixed(3) } });
 
   return {
     ok: true,

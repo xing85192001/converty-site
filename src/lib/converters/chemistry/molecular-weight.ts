@@ -1,4 +1,5 @@
 import periodicTableData from "@/data/chemistry/periodic-table.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import { parseChemicalFormula } from "./formula-parser";
 import type { Element } from "./types";
@@ -38,7 +39,7 @@ export interface MolecularWeightResult {
   /** Total number of atoms */
   totalAtoms: number;
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -62,8 +63,8 @@ export function calculateMolecularWeight(
     return { ok: false, error: "Formula is required", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
-  steps.push(`Formula: ${formula}`);
+  const steps: CalcStep[] = [];
+  steps.push({ key: "formula", params: { formula } });
 
   // Parse formula
   const parseResult = parseChemicalFormula(formula);
@@ -72,11 +73,14 @@ export function calculateMolecularWeight(
   }
 
   const composition = parseResult.value.composition;
-  steps.push(
-    `Parsed composition: ${Object.entries(composition)
-      .map(([symbol, count]) => `${symbol}: ${count}`)
-      .join(", ")}`
-  );
+  steps.push({
+    key: "parsedComposition",
+    params: {
+      composition: Object.entries(composition)
+        .map(([symbol, count]) => `${symbol}: ${count}`)
+        .join(", "),
+    },
+  });
 
   // Get periodic table
   const periodicTable = periodicTableData as Element[];
@@ -109,9 +113,16 @@ export function calculateMolecularWeight(
       percentage: 0, // Will be calculated after total is known
     });
 
-    steps.push(
-      `${element.name} (${symbol}): ${count} × ${element.atomicMass.toFixed(4)} = ${totalMass.toFixed(4)} g/mol`
-    );
+    steps.push({
+      key: "elementMass",
+      params: {
+        name: element.name,
+        symbol,
+        count,
+        atomicMass: element.atomicMass.toFixed(4),
+        totalMass: totalMass.toFixed(4),
+      },
+    });
   }
 
   // Calculate percentages
@@ -122,14 +133,17 @@ export function calculateMolecularWeight(
   // Sort elements by decreasing mass
   elements.sort((a, b) => b.totalMass - a.totalMass);
 
-  steps.push(`Total molar mass: ${molarMass.toFixed(3)} g/mol`);
-  steps.push(`Total atoms: ${totalAtoms}`);
+  steps.push({ key: "totalMolarMass", params: { value: molarMass.toFixed(3) } });
+  steps.push({ key: "totalAtoms", params: { value: totalAtoms } });
 
   // Add composition percentages
-  steps.push("");
-  steps.push("Composition by mass:");
+  steps.push({ key: "separator" });
+  steps.push({ key: "compositionByMass" });
   for (const element of elements) {
-    steps.push(`${element.name}: ${element.percentage.toFixed(2)}%`);
+    steps.push({
+      key: "compositionPercent",
+      params: { name: element.name, value: element.percentage.toFixed(2) },
+    });
   }
 
   return {

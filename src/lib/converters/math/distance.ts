@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface DistanceInput {
@@ -26,7 +27,7 @@ export interface DistanceResult {
   distanceType: string;
   unit: string;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
   midpoint?: { x: number; y: number; z?: number };
   bearing?: number; // For haversine
 }
@@ -44,7 +45,7 @@ function toDegrees(radians: number): number {
 
 export function calculateDistance(input: DistanceInput): CalculationResult<DistanceResult> {
   const { mode } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let distance: number;
   let distanceType: string;
   let unit: string;
@@ -75,15 +76,18 @@ export function calculateDistance(input: DistanceInput): CalculationResult<Dista
         y: (y1 + y2) / 2,
       };
 
-      steps.push(`Point 1: (${x1}, ${y1})`);
-      steps.push(`Point 2: (${x2}, ${y2})`);
-      steps.push(`Δx = ${x2} - ${x1} = ${dx}`);
-      steps.push(`Δy = ${y2} - ${y1} = ${dy}`);
-      steps.push(`d = √(${dx}² + ${dy}²)`);
-      steps.push(`d = √(${dx * dx} + ${dy * dy})`);
-      steps.push(`d = √${dx * dx + dy * dy}`);
-      steps.push(`d = ${distance.toFixed(6)}`);
-      steps.push(`Midpoint: (${midpoint.x}, ${midpoint.y})`);
+      steps.push({ key: "twoPoints2DPoint1", params: { x: x1, y: y1 } });
+      steps.push({ key: "twoPoints2DPoint2", params: { x: x2, y: y2 } });
+      steps.push({ key: "twoPoints2DDx", params: { x2, x1, dx } });
+      steps.push({ key: "twoPoints2DDy", params: { y2, y1, dy } });
+      steps.push({ key: "twoPoints2DFormula1", params: { dx, dy } });
+      steps.push({
+        key: "twoPoints2DFormula2",
+        params: { dxSquared: dx * dx, dySquared: dy * dy },
+      });
+      steps.push({ key: "twoPoints2DFormula3", params: { sum: dx * dx + dy * dy } });
+      steps.push({ key: "twoPoints2DResult", params: { distance: distance.toFixed(6) } });
+      steps.push({ key: "twoPoints2DMidpoint", params: { x: midpoint.x, y: midpoint.y } });
       break;
     }
 
@@ -118,13 +122,19 @@ export function calculateDistance(input: DistanceInput): CalculationResult<Dista
         z: (z1 + z2) / 2,
       };
 
-      steps.push(`Point 1: (${x1}, ${y1}, ${z1})`);
-      steps.push(`Point 2: (${x2}, ${y2}, ${z2})`);
-      steps.push(`Δx = ${dx}, Δy = ${dy}, Δz = ${dz}`);
-      steps.push(`d = √(${dx}² + ${dy}² + ${dz}²)`);
-      steps.push(`d = √(${dx * dx} + ${dy * dy} + ${dz * dz})`);
-      steps.push(`d = ${distance.toFixed(6)}`);
-      steps.push(`Midpoint: (${midpoint.x}, ${midpoint.y}, ${midpoint.z})`);
+      steps.push({ key: "twoPoints3DPoint1", params: { x: x1, y: y1, z: z1 } });
+      steps.push({ key: "twoPoints3DPoint2", params: { x: x2, y: y2, z: z2 } });
+      steps.push({ key: "twoPoints3DDelta", params: { dx, dy, dz } });
+      steps.push({ key: "twoPoints3DFormula1", params: { dx, dy, dz } });
+      steps.push({
+        key: "twoPoints3DFormula2",
+        params: { dxSquared: dx * dx, dySquared: dy * dy, dzSquared: dz * dz },
+      });
+      steps.push({ key: "twoPoints3DResult", params: { distance: distance.toFixed(6) } });
+      steps.push({
+        key: "twoPoints3DMidpoint",
+        params: { x: midpoint.x, y: midpoint.y, z: midpoint.z ?? 0 },
+      });
       break;
     }
 
@@ -162,12 +172,24 @@ export function calculateDistance(input: DistanceInput): CalculationResult<Dista
       unit = "units";
       formula = "d = |ax₁ + by₁ + c| / √(a² + b²)";
 
-      steps.push(`Point: (${x1}, ${y1})`);
-      steps.push(`Line: ${lineA}x + ${lineB}y + ${lineC} = 0`);
-      steps.push(`d = |${lineA}(${x1}) + ${lineB}(${y1}) + ${lineC}| / √(${lineA}² + ${lineB}²)`);
-      steps.push(`d = |${lineA * x1 + lineB * y1 + lineC}| / √(${lineA * lineA + lineB * lineB})`);
-      steps.push(`d = ${numerator} / ${denominator.toFixed(6)}`);
-      steps.push(`d = ${distance.toFixed(6)}`);
+      steps.push({ key: "pointToLinePoint", params: { x: x1, y: y1 } });
+      steps.push({ key: "pointToLineLine", params: { a: lineA, b: lineB, c: lineC } });
+      steps.push({
+        key: "pointToLineFormula1",
+        params: { a: lineA, x: x1, b: lineB, y: y1, c: lineC },
+      });
+      steps.push({
+        key: "pointToLineFormula2",
+        params: {
+          numerator: lineA * x1 + lineB * y1 + lineC,
+          denomSquared: lineA * lineA + lineB * lineB,
+        },
+      });
+      steps.push({
+        key: "pointToLineFormula3",
+        params: { numerator, denominator: denominator.toFixed(6) },
+      });
+      steps.push({ key: "pointToLineResult", params: { distance: distance.toFixed(6) } });
       break;
     }
 
@@ -188,12 +210,12 @@ export function calculateDistance(input: DistanceInput): CalculationResult<Dista
       unit = "units";
       formula = "d = |x₂-x₁| + |y₂-y₁|";
 
-      steps.push(`Point 1: (${x1}, ${y1})`);
-      steps.push(`Point 2: (${x2}, ${y2})`);
-      steps.push(`d = |${x2} - ${x1}| + |${y2} - ${y1}|`);
-      steps.push(`d = ${dx} + ${dy}`);
-      steps.push(`d = ${distance}`);
-      steps.push("(Also known as taxicab or city block distance)");
+      steps.push({ key: "manhattanPoint1", params: { x: x1, y: y1 } });
+      steps.push({ key: "manhattanPoint2", params: { x: x2, y: y2 } });
+      steps.push({ key: "manhattanFormula1", params: { x2, x1, y2, y1 } });
+      steps.push({ key: "manhattanFormula2", params: { dx, dy } });
+      steps.push({ key: "manhattanResult", params: { distance } });
+      steps.push({ key: "manhattanNote" });
       break;
     }
 
@@ -228,16 +250,28 @@ export function calculateDistance(input: DistanceInput): CalculationResult<Dista
       const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
       bearing = (toDegrees(Math.atan2(y, x)) + 360) % 360;
 
-      steps.push(`Location 1: (${lat1}°, ${lon1}°)`);
-      steps.push(`Location 2: (${lat2}°, ${lon2}°)`);
-      steps.push(`Converting to radians...`);
-      steps.push(`φ₁ = ${φ1.toFixed(6)} rad, φ₂ = ${φ2.toFixed(6)} rad`);
-      steps.push(`Δφ = ${Δφ.toFixed(6)} rad, Δλ = ${Δλ.toFixed(6)} rad`);
-      steps.push(`a = sin²(Δφ/2) + cos(φ₁)cos(φ₂)sin²(Δλ/2) = ${a.toFixed(6)}`);
-      steps.push(`c = 2 × atan2(√${a.toFixed(4)}, √${(1 - a).toFixed(4)}) = ${c.toFixed(6)} rad`);
-      steps.push(`d = ${EARTH_RADIUS_KM} × ${c.toFixed(6)} = ${distance.toFixed(2)} km`);
-      steps.push(`d = ${(distance * 0.621371).toFixed(2)} miles`);
-      steps.push(`Initial bearing: ${bearing.toFixed(1)}°`);
+      steps.push({ key: "haversineLocation1", params: { lat: lat1, lon: lon1 } });
+      steps.push({ key: "haversineLocation2", params: { lat: lat2, lon: lon2 } });
+      steps.push({ key: "haversineConverting" });
+      steps.push({ key: "haversinePhi", params: { phi1: φ1.toFixed(6), phi2: φ2.toFixed(6) } });
+      steps.push({
+        key: "haversineDelta",
+        params: { deltaPhi: Δφ.toFixed(6), deltaLambda: Δλ.toFixed(6) },
+      });
+      steps.push({ key: "haversineA", params: { a: a.toFixed(6) } });
+      steps.push({
+        key: "haversineC",
+        params: { a: a.toFixed(4), oneMinusA: (1 - a).toFixed(4), c: c.toFixed(6) },
+      });
+      steps.push({
+        key: "haversineDistanceKm",
+        params: { radius: EARTH_RADIUS_KM, c: c.toFixed(6), distance: distance.toFixed(2) },
+      });
+      steps.push({
+        key: "haversineDistanceMiles",
+        params: { distance: (distance * 0.621371).toFixed(2) },
+      });
+      steps.push({ key: "haversineBearing", params: { bearing: bearing.toFixed(1) } });
       break;
     }
 

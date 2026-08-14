@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { calculateRoot, type RootInput, type RootResult } from "@/lib/converters/math/root";
 import { RootFormSchema } from "@/lib/schemas/math";
 import { createCalculatorStore } from "@/stores/calculator-store";
@@ -101,13 +102,17 @@ export function RootCalculator() {
           <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
             <p className="text-sm font-medium">{tMath("formula")}:</p>
             <p className="text-sm text-muted-foreground font-mono">{rootResult.formula}</p>
-            <p className="text-sm font-medium mt-4">Verification:</p>
+            <p className="text-sm font-medium mt-4">
+              <T k="ui.verification" />
+            </p>
             <p className="text-sm text-muted-foreground font-mono">{rootResult.verification}</p>
           </div>
 
           {rootResult.relatedRoots.length > 0 && (
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
-              <p className="text-sm font-medium">Related Roots:</p>
+              <p className="text-sm font-medium">
+                <T k="ui.related-roots" />
+              </p>
               {rootResult.relatedRoots.map((root) => (
                 <p key={`root-${root.index}`} className="text-sm text-muted-foreground font-mono">
                   {root.index === 2 ? "√" : root.index === 3 ? "∛" : `${root.index}√`}

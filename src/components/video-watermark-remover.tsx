@@ -1,6 +1,7 @@
 "use client";
 
 import { Download, Loader2, Play, Trash2, Upload, Video } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -13,7 +14,11 @@ let utilModule: typeof import("@ffmpeg/util") | null = null;
 async function loadFfmpeg() {
   if (!ffmpegModule) ffmpegModule = await import("@ffmpeg/ffmpeg");
   if (!utilModule) utilModule = await import("@ffmpeg/util");
-  return { FFmpeg: ffmpegModule.FFmpeg, fetchFile: utilModule.fetchFile, toBlobURL: utilModule.toBlobURL };
+  return {
+    FFmpeg: ffmpegModule.FFmpeg,
+    fetchFile: utilModule.fetchFile,
+    toBlobURL: utilModule.toBlobURL,
+  };
 }
 
 interface Selection {
@@ -24,6 +29,7 @@ interface Selection {
 }
 
 export function VideoWatermarkRemover() {
+  const t = useTranslations("mediaTools.videoWatermarkRemover");
   const [file, setFile] = useState<File | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string>("");
   const [processedUrl, setProcessedUrl] = useState<string>("");
@@ -132,7 +138,7 @@ export function VideoWatermarkRemover() {
 
   const processVideo = async () => {
     if (!file || !selection || selection.w < 2 || selection.h < 2) {
-      setError("请先框选要去除的水印区域");
+      setError(t("errorSelectArea"));
       return;
     }
     setIsProcessing(true);
@@ -178,14 +184,15 @@ export function VideoWatermarkRemover() {
       const data = await ffmpeg.readFile(outputName);
       // Copy into a fresh ArrayBuffer-backed Uint8Array so it satisfies BlobPart
       // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
-      const bytes = data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
+      const bytes =
+        data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
       const mime = file.type || "video/mp4";
       const blob = new Blob([bytes], { type: mime });
       const url = URL.createObjectURL(blob);
       setProcessedUrl(url);
       setProgress(100);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "处理失败，请重试");
+      setError(err instanceof Error ? err.message : t("errorFailed"));
     } finally {
       setIsProcessing(false);
     }
@@ -217,29 +224,37 @@ export function VideoWatermarkRemover() {
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
               <Video className="h-6 w-6" />
             </div>
-            <h3 className="mt-4 text-lg font-semibold">视频去水印</h3>
-            <p className="mt-2 max-w-xs text-sm text-muted-foreground">
-              拖拽或点击上传视频，在画面上框选水印区域即可去除。
-            </p>
+            <h3 className="mt-4 text-lg font-semibold">{t("title")}</h3>
+            <p className="mt-2 max-w-xs text-sm text-muted-foreground">{t("description")}</p>
             <Button
               asChild
               className="mt-5 rounded-xl bg-gradient-to-r from-primary to-cyan-400 px-5 text-primary-foreground hover:opacity-90"
             >
               <label className="cursor-pointer">
                 <Upload className="mr-2 inline h-4 w-4" />
-                选择视频
-                <input type="file" accept="video/*" className="sr-only" onChange={handleFileChange} />
+                {t("selectVideo")}
+                <input
+                  type="file"
+                  accept="video/*"
+                  className="sr-only"
+                  onChange={handleFileChange}
+                />
               </label>
             </Button>
           </>
         ) : (
           <div className="flex h-full w-full flex-col p-4">
             <div className="mb-3 flex items-center justify-between">
-              <span className="text-sm font-medium">原视频 · 框选水印区域</span>
+              <span className="text-sm font-medium">{t("originalLabel")}</span>
               <div className="flex items-center gap-2">
-                <Button size="sm" variant="ghost" className="h-8 text-xs text-muted-foreground hover:text-foreground" onClick={clearAll}>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="h-8 text-xs text-muted-foreground hover:text-foreground"
+                  onClick={clearAll}
+                >
                   <Trash2 className="mr-1 h-3.5 w-3.5" />
-                  移除
+                  {t("removeBtn")}
                 </Button>
                 <Button
                   size="sm"
@@ -250,12 +265,12 @@ export function VideoWatermarkRemover() {
                   {isProcessing ? (
                     <>
                       <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
-                      处理中 {progress}%
+                      {t("processing")} {progress}%
                     </>
                   ) : (
                     <>
                       <Play className="mr-1.5 h-3.5 w-3.5" />
-                      开始去水印
+                      {t("startRemoval")}
                     </>
                   )}
                 </Button>
@@ -292,7 +307,7 @@ export function VideoWatermarkRemover() {
 
             {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
             {!selection && !error && (
-              <p className="mt-3 text-xs text-muted-foreground">提示：在视频画面上按住鼠标拖拽，框选水印位置。</p>
+              <p className="mt-3 text-xs text-muted-foreground">{t("hint")}</p>
             )}
           </div>
         )}
@@ -301,8 +316,10 @@ export function VideoWatermarkRemover() {
       {/* Right: processed preview */}
       <div className="flex min-h-[320px] flex-col rounded-2xl border border-white/10 bg-card p-5">
         <div className="mb-3 flex items-center justify-between">
-          <span className="text-sm font-medium">处理效果预览</span>
-          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">AI 处理</span>
+          <span className="text-sm font-medium">{t("previewTitle")}</span>
+          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">
+            {t("aiBadge")}
+          </span>
         </div>
 
         <div className="relative flex flex-1 items-center justify-center overflow-hidden rounded-xl bg-black/40">
@@ -312,7 +329,7 @@ export function VideoWatermarkRemover() {
           ) : (
             <div className="flex flex-col items-center justify-center text-muted-foreground">
               <Play className="mb-2 h-8 w-8 opacity-40" />
-              <span className="text-xs">处理后的视频将显示在这里</span>
+              <span className="text-xs">{t("emptyPreview")}</span>
             </div>
           )}
         </div>
@@ -323,7 +340,7 @@ export function VideoWatermarkRemover() {
           onClick={downloadResult}
         >
           <Download className="mr-2 h-4 w-4" />
-          下载处理后的视频
+          {t("download")}
         </Button>
       </div>
     </div>

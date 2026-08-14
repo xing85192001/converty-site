@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface QuadraticInput {
@@ -17,7 +18,7 @@ export interface QuadraticResult {
   yIntercept: number;
   opensUpward: boolean;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 export function calculateQuadratic(input: QuadraticInput): CalculationResult<QuadraticResult> {
@@ -31,12 +32,12 @@ export function calculateQuadratic(input: QuadraticInput): CalculationResult<Qua
     };
   }
 
-  const steps: string[] = [];
-  steps.push(`Equation: ${a}x² + ${b}x + ${c} = 0`);
+  const steps: CalcStep[] = [];
+  steps.push({ key: "equation", params: { a, b, c } });
 
   // Discriminant
   const discriminant = b * b - 4 * a * c;
-  steps.push(`Discriminant: b² - 4ac = ${b}² - 4(${a})(${c}) = ${discriminant}`);
+  steps.push({ key: "discriminant", params: { b, a, c, discriminant } });
 
   let discriminantType: "positive" | "zero" | "negative";
   let hasRealRoots: boolean;
@@ -49,41 +50,47 @@ export function calculateQuadratic(input: QuadraticInput): CalculationResult<Qua
     const sqrtD = Math.sqrt(discriminant);
     roots.x1 = (-b + sqrtD) / (2 * a);
     roots.x2 = (-b - sqrtD) / (2 * a);
-    steps.push(`Two distinct real roots:`);
-    steps.push(`x₁ = (-${b} + √${discriminant}) / (2 × ${a}) = ${roots.x1}`);
-    steps.push(`x₂ = (-${b} - √${discriminant}) / (2 × ${a}) = ${roots.x2}`);
+    steps.push({ key: "twoRealRoots" });
+    steps.push({ key: "root1", params: { b, discriminant, a, x: roots.x1 } });
+    steps.push({ key: "root2", params: { b, discriminant, a, x: roots.x2 } });
   } else if (discriminant === 0) {
     discriminantType = "zero";
     hasRealRoots = true;
     roots.x1 = -b / (2 * a);
     roots.x2 = roots.x1;
-    steps.push(`One repeated real root:`);
-    steps.push(`x = -${b} / (2 × ${a}) = ${roots.x1}`);
+    steps.push({ key: "oneRealRoot" });
+    steps.push({ key: "repeatedRoot", params: { b, a, x: roots.x1 } });
   } else {
     discriminantType = "negative";
     hasRealRoots = false;
     const realPart = -b / (2 * a);
     const imaginaryPart = Math.sqrt(-discriminant) / (2 * a);
     complexRoots = { real: realPart, imaginary: Math.abs(imaginaryPart) };
-    steps.push(`Two complex conjugate roots:`);
-    steps.push(`x = ${realPart.toFixed(4)} ± ${complexRoots.imaginary.toFixed(4)}i`);
+    steps.push({ key: "complexRoots" });
+    steps.push({
+      key: "complexRootResult",
+      params: { real: realPart.toFixed(4), imaginary: complexRoots.imaginary.toFixed(4) },
+    });
   }
 
   // Vertex
   const vertexX = -b / (2 * a);
   const vertexY = a * vertexX * vertexX + b * vertexX + c;
-  steps.push(`Vertex: (-b/2a, f(-b/2a)) = (${vertexX.toFixed(4)}, ${vertexY.toFixed(4)})`);
+  steps.push({ key: "vertex", params: { x: vertexX.toFixed(4), y: vertexY.toFixed(4) } });
 
   // Axis of symmetry
   const axisOfSymmetry = vertexX;
 
   // Y-intercept
   const yIntercept = c;
-  steps.push(`Y-intercept: (0, ${yIntercept})`);
+  steps.push({ key: "yIntercept", params: { yIntercept } });
 
   // Direction
   const opensUpward = a > 0;
-  steps.push(`Parabola opens ${opensUpward ? "upward" : "downward"} (a ${a > 0 ? ">" : "<"} 0)`);
+  steps.push({
+    key: "parabolaDirection",
+    params: { direction: opensUpward ? "upward" : "downward", a, comparison: a > 0 ? ">" : "<" },
+  });
 
   // Standard form
   const formula = `f(x) = ${a}x² ${b >= 0 ? "+" : ""}${b}x ${c >= 0 ? "+" : ""}${c}`;

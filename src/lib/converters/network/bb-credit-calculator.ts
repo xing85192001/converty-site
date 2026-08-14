@@ -12,6 +12,7 @@
  *                   = ceil(distance_km × speed_Gbps × 1250 / 2148)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /** Standard FC frame payload + overhead = 2148 bytes */
@@ -55,7 +56,7 @@ export interface BBCreditResult {
   /** Cisco MDS NX-OS — switchport buf-size syntax */
   mdsBufSize: string;
   /** Human-readable calculation steps for display */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -78,37 +79,49 @@ export function calculateBBCredits(input: BBCreditInput): CalculationResult<BBCr
     return { ok: false, error: "Distance and speed must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Step 1: Round-trip time
   // RTT = (2 × distance) / speed_of_light  [no ×2 in denominator — that's the round-trip factor]
   const rttSeconds = (2 * distanceKm) / SPEED_OF_LIGHT_IN_FIBER_KM_PER_S;
   const rttMicroseconds = rttSeconds * 1_000_000;
-  steps.push(
-    `RTT = 2 × ${distanceKm} km / ${SPEED_OF_LIGHT_IN_FIBER_KM_PER_S.toLocaleString()} km/s`
-  );
-  steps.push(`RTT = ${rttMicroseconds.toFixed(2)} µs`);
+  steps.push({
+    key: "rttFormula",
+    params: { distanceKm, speedOfLight: SPEED_OF_LIGHT_IN_FIBER_KM_PER_S },
+  });
+  steps.push({ key: "rttResult", params: { rttMicroseconds } });
 
   // Step 2: Bytes in flight
   const lineRateBytesPerSecond = (speedGbps * 1e9) / 8;
   const bytesInFlight = rttSeconds * lineRateBytesPerSecond;
-  steps.push(
-    `Bytes in flight = RTT × line rate = ${rttMicroseconds.toFixed(2)} µs × ${speedGbps} Gbps / 8`
-  );
-  steps.push(`Bytes in flight = ${Math.round(bytesInFlight).toLocaleString()} bytes`);
+  steps.push({
+    key: "bytesInFlightFormula",
+    params: { rttMicroseconds, speedGbps },
+  });
+  steps.push({
+    key: "bytesInFlightResult",
+    params: { bytesInFlight: Math.round(bytesInFlight) },
+  });
 
   // Step 3: Minimum credits
   const minCredits = Math.ceil(bytesInFlight / FC_FRAME_SIZE_BYTES);
-  steps.push(
-    `Min credits = ⌈bytes in flight / FC frame size⌉ = ⌈${Math.round(bytesInFlight).toLocaleString()} / ${FC_FRAME_SIZE_BYTES}⌉`
-  );
-  steps.push(`Min credits = ${minCredits}`);
+  steps.push({
+    key: "minCreditsFormula",
+    params: { bytesInFlight: Math.round(bytesInFlight), fcFrameSize: FC_FRAME_SIZE_BYTES },
+  });
+  steps.push({ key: "minCreditsResult", params: { minCredits } });
 
   // Step 4: Recommended credits (+20%)
   const recommendedCredits = Math.ceil(minCredits * SAFETY_MARGIN);
-  steps.push(
-    `Recommended = ⌈${minCredits} × ${SAFETY_MARGIN}⌉ = ${recommendedCredits} (${(SAFETY_MARGIN - 1) * 100}% margin)`
-  );
+  steps.push({
+    key: "recommendedCredits",
+    params: {
+      minCredits,
+      safetyMargin: SAFETY_MARGIN,
+      recommendedCredits,
+      marginPercent: (SAFETY_MARGIN - 1) * 100,
+    },
+  });
 
   // Generate CLI commands
   const portStr = portId.trim() || "1/1";

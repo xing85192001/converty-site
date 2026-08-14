@@ -6,6 +6,7 @@ import { useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
 import { InstallPrompt } from "@/components/ui/install-prompt";
+import { T } from "@/components/ui/t";
 import { Link } from "@/i18n/navigation";
 import { categories } from "@/lib/registry/categories";
 import { cn } from "@/lib/utils";
@@ -43,7 +44,9 @@ export function Header() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <Menu className="h-[18px] w-[18px]" />
-            <span className="sr-only">Toggle menu</span>
+            <span className="sr-only">
+              <T k="ui.toggle-menu" />
+            </span>
           </Button>
         </div>
       </div>

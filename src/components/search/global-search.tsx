@@ -95,7 +95,7 @@ export function GlobalSearch() {
       >
         <Search className="mr-2 h-4 w-4" />
         <span className="hidden lg:inline-flex">{t("placeholder")}</span>
-        <span className="inline-flex lg:hidden">搜索...</span>
+        <span className="inline-flex lg:hidden">{t("placeholder")}</span>
         <kbd className="pointer-events-none absolute right-2 top-2 hidden h-6 select-none items-center gap-1 rounded border border-white/10 bg-white/5 px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
           {isMac ? (
             <>

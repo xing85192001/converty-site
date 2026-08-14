@@ -5,6 +5,29 @@ import tireSpeedRatingsData from "@/lib/data/tire-speed-ratings.json";
 import type { CalculationResult } from "@/types";
 
 /**
+ * Tagged calculation step — the actual localized string is rendered on the client
+ * using next-intl with `calculator.automotive.tireSizing.steps.{type}` template.
+ *
+ * Keeping raw variables here (instead of hard-coded English) lets each locale
+ * format numbers, units and sentence structure properly.
+ */
+export type TireStep =
+  | { type: "sidewallHeight"; width: number; aspectRatio: number; result: number }
+  | { type: "rimDiameter"; rimDiameter: number; result: number }
+  | { type: "overallDiameter"; rimMm: number; sidewall: number; result: number }
+  | { type: "circumference"; diameter: number; result: number }
+  | { type: "revolutionsPerKm"; circumference: number; result: number }
+  | { type: "loadIndex"; loadIndex: number; loadValue: number }
+  | { type: "speedRating"; rating: string; speedValue: number; desc: string }
+  | { type: "diameterDiffMm"; tire2: number; tire1: number; result: number }
+  | { type: "diameterDiffPct"; diffMm: number; tire1: number; result: number }
+  | { type: "circumferenceDiffPct"; result: number }
+  | { type: "speedometerError"; result: number }
+  | { type: "actualSpeed"; result: number }
+  | { type: "revolutionsDiffPerKm"; tire2: number; tire1: number; result: number }
+  | { type: "warning"; message: string };
+
+/**
  * Tire construction type
  */
 export type TireConstruction = "R" | "D" | "B";
@@ -46,8 +69,8 @@ export interface TireDimensionsResult {
   loadDescription?: string;
   speedDescription?: string;
 
-  // Calculation steps
-  steps: string[];
+  // Calculation steps (tagged for i18n)
+  steps: TireStep[];
 }
 
 /**
@@ -74,7 +97,7 @@ export interface TireComparisonResult {
   withinTolerance: boolean; // ±3% diameter
   warning?: string;
 
-  steps: string[];
+  steps: TireStep[];
 }
 
 // Load data
@@ -133,33 +156,32 @@ export function calculateTireDimensions(
     return { ok: false, error: "Tire dimensions must be greater than zero", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: TireStep[] = [];
 
   // Calculate sidewall height
   const sidewallHeight = width * (aspectRatio / 100);
-  steps.push(
-    `Sidewall height = ${width}mm × (${aspectRatio}/100) = ${sidewallHeight.toFixed(2)}mm`
-  );
+  steps.push({ type: "sidewallHeight", width, aspectRatio, result: sidewallHeight });
 
   // Calculate wheel diameter in mm (rim is in inches)
   const rimDiameterMm = rimDiameter * 25.4;
-  steps.push(`Rim diameter = ${rimDiameter}" × 25.4 = ${rimDiameterMm.toFixed(1)}mm`);
+  steps.push({ type: "rimDiameter", rimDiameter, result: rimDiameterMm });
 
   // Calculate overall tire diameter
   const overallDiameter = rimDiameterMm + 2 * sidewallHeight;
-  steps.push(
-    `Overall diameter = ${rimDiameterMm.toFixed(1)}mm + (2 × ${sidewallHeight.toFixed(2)}mm) = ${overallDiameter.toFixed(1)}mm`
-  );
+  steps.push({
+    type: "overallDiameter",
+    rimMm: rimDiameterMm,
+    sidewall: sidewallHeight,
+    result: overallDiameter,
+  });
 
   // Calculate circumference
   const circumference = Math.PI * overallDiameter;
-  steps.push(`Circumference = π × ${overallDiameter.toFixed(1)}mm = ${circumference.toFixed(1)}mm`);
+  steps.push({ type: "circumference", diameter: overallDiameter, result: circumference });
 
   // Calculate revolutions per km
   const revolutionsPerKm = 1000000 / circumference;
-  steps.push(
-    `Revolutions/km = 1,000,000 / ${circumference.toFixed(1)} = ${revolutionsPerKm.toFixed(1)}`
-  );
+  steps.push({ type: "revolutionsPerKm", circumference, result: revolutionsPerKm });
 
   // Build result
   const result: TireDimensionsResult = {
@@ -180,7 +202,7 @@ export function calculateTireDimensions(
     if (loadValue) {
       result.maxLoad = loadValue;
       result.loadDescription = `${loadValue} kg per tire (${loadValue * 4} kg total for 4 tires)`;
-      steps.push(`Load index ${loadIndex} = ${loadValue} kg per tire`);
+      steps.push({ type: "loadIndex", loadIndex, loadValue });
     }
   }
 
@@ -190,7 +212,12 @@ export function calculateTireDimensions(
     if (speedValue) {
       result.maxSpeed = speedValue;
       result.speedDescription = speedDescriptions[speedRating] || `${speedValue} km/h`;
-      steps.push(`Speed rating ${speedRating} = ${speedValue} km/h (${result.speedDescription})`);
+      steps.push({
+        type: "speedRating",
+        rating: speedRating,
+        speedValue,
+        desc: result.speedDescription,
+      });
     }
   }
 
@@ -217,35 +244,48 @@ export function compareTireSizes(
   const tire1 = tire1Result.value;
   const tire2 = tire2Result.value;
 
-  const steps: string[] = [];
+  const steps: TireStep[] = [];
 
   // Calculate diameter difference
   const diameterDifferenceMm = tire2.overallDiameter - tire1.overallDiameter;
   const diameterDifferencePercent = (diameterDifferenceMm / tire1.overallDiameter) * 100;
 
-  steps.push(
-    `Diameter difference = ${tire2.overallDiameter.toFixed(1)}mm - ${tire1.overallDiameter.toFixed(1)}mm = ${diameterDifferenceMm.toFixed(1)}mm`
-  );
-  steps.push(
-    `Diameter difference % = (${diameterDifferenceMm.toFixed(1)} / ${tire1.overallDiameter.toFixed(1)}) × 100 = ${diameterDifferencePercent.toFixed(2)}%`
-  );
+  steps.push({
+    type: "diameterDiffMm",
+    tire2: tire2.overallDiameter,
+    tire1: tire1.overallDiameter,
+    result: diameterDifferenceMm,
+  });
+  steps.push({
+    type: "diameterDiffPct",
+    diffMm: diameterDifferenceMm,
+    tire1: tire1.overallDiameter,
+    result: diameterDifferencePercent,
+  });
 
   // Calculate circumference difference
   const circumferenceDifferenceMm = tire2.circumference - tire1.circumference;
   const circumferenceDifferencePercent = (circumferenceDifferenceMm / tire1.circumference) * 100;
 
-  steps.push(`Circumference difference = ${circumferenceDifferencePercent.toFixed(2)}%`);
+  steps.push({ type: "circumferenceDiffPct", result: circumferenceDifferencePercent });
 
   // Calculate speedometer error
   // If tire2 is larger, actual speed is higher than displayed
   const speedometerErrorPercent = diameterDifferencePercent;
   const actualSpeedAt100 = 100 * (1 + diameterDifferencePercent / 100);
 
-  steps.push(`Speedometer error = ${speedometerErrorPercent.toFixed(2)}%`);
-  steps.push(`When speedometer shows 100 km/h, actual speed = ${actualSpeedAt100.toFixed(1)} km/h`);
+  steps.push({ type: "speedometerError", result: speedometerErrorPercent });
+  steps.push({ type: "actualSpeed", result: actualSpeedAt100 });
 
   // Revolutions difference
   const revolutionsDifferencePerKm = tire2.revolutionsPerKm - tire1.revolutionsPerKm;
+
+  steps.push({
+    type: "revolutionsDiffPerKm",
+    tire2: tire2.revolutionsPerKm,
+    tire1: tire1.revolutionsPerKm,
+    result: revolutionsDifferencePerKm,
+  });
 
   // Check tolerance (±3% is generally acceptable)
   const withinTolerance = Math.abs(diameterDifferencePercent) <= 3;
@@ -254,10 +294,10 @@ export function compareTireSizes(
   if (Math.abs(diameterDifferencePercent) > 5) {
     warning =
       "Diameter difference exceeds 5% - may affect speedometer, ABS, and traction control significantly";
-    steps.push(`WARNING: ${warning}`);
+    steps.push({ type: "warning", message: warning });
   } else if (Math.abs(diameterDifferencePercent) > 3) {
     warning = "Diameter difference exceeds 3% - may affect speedometer accuracy";
-    steps.push(`WARNING: ${warning}`);
+    steps.push({ type: "warning", message: warning });
   }
 
   return {

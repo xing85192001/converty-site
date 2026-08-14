@@ -1,6 +1,7 @@
 "use client";
 
 import { WifiOff } from "lucide-react";
+import { T } from "@/components/ui/t";
 import { useOnlineStatus } from "@/lib/pwa/offline-detector";
 
 /**
@@ -48,7 +49,9 @@ export function OfflineBanner() {
     >
       <div className="flex items-center justify-center gap-2">
         <WifiOff size={16} aria-hidden="true" />
-        <span>You are offline. Calculators will work from cache.</span>
+        <span>
+          <T k="ui.you-are-offline-calculators-will-work-from-cache" />
+        </span>
       </div>
     </div>
   );

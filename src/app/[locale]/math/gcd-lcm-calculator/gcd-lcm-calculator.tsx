@@ -32,6 +32,7 @@ export function GcdLcmCalculator() {
     }
   };
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <div className="space-y-4">
@@ -41,7 +42,7 @@ export function GcdLcmCalculator() {
             id="numbers"
             value={numbersInput}
             onChange={(e) => setNumbersInput(e.target.value)}
-            placeholder="Enter integers separated by commas, spaces, or new lines"
+            placeholder={tUi("enter-integers-separated-by-commas-spaces-or-new-lines")}
             rows={3}
           />
           <p className="text-sm text-muted-foreground">{tMath("numbersHelp")}</p>

@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import type { HypervisorPlatform } from "@/lib/converters/infrastructure/types";
 import {
   calculateVirtualizationCost,
@@ -447,9 +448,15 @@ export default function VirtualizationCostCalculator() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="1">1 year</SelectItem>
-                    <SelectItem value="3">3 years</SelectItem>
-                    <SelectItem value="5">5 years</SelectItem>
+                    <SelectItem value="1">
+                      <T k="ui.1-year" />
+                    </SelectItem>
+                    <SelectItem value="3">
+                      <T k="ui.3-years" />
+                    </SelectItem>
+                    <SelectItem value="5">
+                      <T k="ui.5-years" />
+                    </SelectItem>
                   </SelectContent>
                 </Select>
               </div>

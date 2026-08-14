@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   calculateTdee,
   type TdeeInput,
@@ -171,7 +172,9 @@ export function TdeeCalculatorComponent() {
             size="lg"
           />
 
-          <h3 className="text-lg font-semibold">Macros Breakdown</h3>
+          <h3 className="text-lg font-semibold">
+            <T k="ui.macros-breakdown" />
+          </h3>
           <ResultGrid
             results={[
               {

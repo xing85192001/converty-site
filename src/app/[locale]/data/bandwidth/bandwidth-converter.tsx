@@ -8,6 +8,7 @@ import { BANDWIDTH_UNITS, convertBandwidth } from "@/lib/converters/data/bandwid
 export function BandwidthConverter() {
   const t = useTranslations("calculator.labels");
   const tResults = useTranslations("calculator.results");
+  const tUnits = useTranslations("calculator.bandwidthUnits");
   const [value, setValue] = useState("100");
   const [unit, setUnit] = useState("mbps");
 
@@ -28,7 +29,7 @@ export function BandwidthConverter() {
           step={1}
         />
         <div className="space-y-2">
-          <label className="text-sm font-medium">Unit</label>
+          <label className="text-sm font-medium">{t("unit")}</label>
           <select
             value={unit}
             onChange={(e) => setUnit(e.target.value)}
@@ -36,7 +37,7 @@ export function BandwidthConverter() {
           >
             {BANDWIDTH_UNITS.map((u) => (
               <option key={u.id} value={u.id}>
-                {u.name}
+                {tUnits(u.id)}
               </option>
             ))}
           </select>
@@ -47,7 +48,7 @@ export function BandwidthConverter() {
         <div className="space-y-6">
           {/* Bit-based conversions */}
           <div className="space-y-2">
-            <h3 className="font-medium">Bits per Second</h3>
+            <h3 className="font-medium">{t("bitsPerSecond")}</h3>
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-4">
               {result.conversions.slice(0, 4).map((conv) => (
                 <div key={conv.unit} className="p-3 rounded-md border bg-muted/50">
@@ -60,7 +61,7 @@ export function BandwidthConverter() {
 
           {/* Byte-based conversions */}
           <div className="space-y-2">
-            <h3 className="font-medium">Bytes per Second</h3>
+            <h3 className="font-medium">{t("bytesPerSecond")}</h3>
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-4">
               {result.conversions.slice(4).map((conv) => (
                 <div key={conv.unit} className="p-3 rounded-md border bg-muted/50">
@@ -73,12 +74,12 @@ export function BandwidthConverter() {
 
           {/* Time-based calculations */}
           <div className="space-y-2">
-            <h3 className="font-medium">Data Transfer Over Time</h3>
+            <h3 className="font-medium">{t("dataTransferOverTime")}</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-2 font-medium">Period</th>
+                    <th className="text-left py-2 font-medium">{t("period")}</th>
                     <th className="text-right py-2 font-medium">GB</th>
                     <th className="text-right py-2 font-medium">TB</th>
                   </tr>

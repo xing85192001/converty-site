@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -30,6 +31,7 @@ export default function PhCalculatorCalculator() {
   const t = useTranslations("calculator.chemistry");
   const tSections = useTranslations("calculator.sections");
   const tModes = useTranslations("calculator.chemistry.phModes");
+  const tSteps = useTranslations("calculator.chemistry.ph");
 
   const { values, setValue, result, calculationError } = usePhStore();
 
@@ -294,7 +296,7 @@ export default function PhCalculatorCalculator() {
                 <ol className="list-decimal list-inside space-y-2 text-sm">
                   {result.steps.map((step, index) => (
                     <li key={index} className="text-muted-foreground">
-                      {step}
+                      {formatStep(step, tSteps, "calculator.chemistry.ph")}
                     </li>
                   ))}
                 </ol>

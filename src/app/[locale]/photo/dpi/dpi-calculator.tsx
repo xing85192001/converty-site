@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { COMMON_DPI, COMMON_PRINT_SIZES, calculateDPI } from "@/lib/converters/photo/dpi";
 
 export function DPICalculator() {
@@ -71,7 +72,9 @@ export function DPICalculator() {
       </div>
 
       <div className="flex flex-wrap gap-2">
-        <span className="text-sm text-muted-foreground py-1">Common sizes:</span>
+        <span className="text-sm text-muted-foreground py-1">
+          <T k="ui.common-sizes" />
+        </span>
         {COMMON_PRINT_SIZES.slice(0, 6).map((size) => (
           <button
             key={size.name}
@@ -105,7 +108,9 @@ export function DPICalculator() {
           />
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Print Quality</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.print-quality" />
+            </p>
             <p className={`text-xl font-semibold ${getQualityColor(result.printQuality)}`}>
               {result.printQuality}
             </p>

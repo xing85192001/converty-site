@@ -1,5 +1,6 @@
 import beamSectionsData from "@/data/engineering/beam-sections.json";
 import materialsData from "@/data/engineering/materials.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { BeamSection, Material } from "./types";
 
@@ -69,7 +70,7 @@ export interface ColumnBucklingResult {
   /** Section name (if selected) */
   sectionName: string | null;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
   /** Load in additional units */
   loadUnits: {
     kN: number;
@@ -114,7 +115,7 @@ export function calculateColumnBuckling(
     return { ok: false, error: "Length must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Get material properties
   let E_GPa = customYoungsModulus;
@@ -127,7 +128,10 @@ export function calculateColumnBuckling(
       E_GPa = material.youngsModulus;
       Fy_MPa = material.yieldStrength;
       materialName = material.name;
-      steps.push(`Material: ${material.name} (E = ${E_GPa} GPa, Fy = ${Fy_MPa} MPa)`);
+      steps.push({
+        key: "materialInfo",
+        params: { name: material.name, E_GPa, Fy_MPa },
+      });
     }
   }
 
@@ -156,11 +160,17 @@ export function calculateColumnBuckling(
           ? section.momentOfInertiaX * IN4_TO_MM4
           : section.momentOfInertiaY * IN4_TO_MM4;
       sectionName = section.name;
-      steps.push(
-        `Section: ${section.name} (A = ${section.area} in² = ${A_mm2.toFixed(0)} mm², I${axis} = ${
-          axis === "x" ? section.momentOfInertiaX : section.momentOfInertiaY
-        } in⁴ = ${I_mm4.toExponential(3)} mm⁴)`
-      );
+      steps.push({
+        key: "sectionInfo",
+        params: {
+          name: section.name,
+          area_in2: section.area,
+          A_mm2: A_mm2.toFixed(0),
+          axis,
+          I_in4: axis === "x" ? section.momentOfInertiaX : section.momentOfInertiaY,
+          I_mm4: I_mm4.toExponential(3),
+        },
+      });
     }
   }
 
@@ -174,43 +184,72 @@ export function calculateColumnBuckling(
 
   // K factor
   const K = END_CONDITION_K[endCondition];
-  steps.push(`End condition: ${endCondition} → K = ${K}`);
+  steps.push({
+    key: "endCondition",
+    params: { endCondition, K },
+  });
 
   // Effective length
   const L_mm = length * 1000;
   const KL_mm = K * L_mm;
   const effectiveLength = K * length;
-  steps.push(
-    `Effective length: KL = ${K} × ${length} m = ${effectiveLength.toFixed(2)} m = ${KL_mm.toFixed(0)} mm`
-  );
+  steps.push({
+    key: "effectiveLength",
+    params: {
+      K,
+      length,
+      effectiveLength: effectiveLength.toFixed(2),
+      KL_mm: KL_mm.toFixed(0),
+    },
+  });
 
   // Radius of gyration
   const r_mm = Math.sqrt(I_mm4 / A_mm2);
-  steps.push(
-    `Radius of gyration: r = √(I/A) = √(${I_mm4.toExponential(3)} / ${A_mm2.toFixed(0)}) = ${r_mm.toFixed(2)} mm`
-  );
+  steps.push({
+    key: "radiusOfGyration",
+    params: {
+      I_mm4: I_mm4.toExponential(3),
+      A_mm2: A_mm2.toFixed(0),
+      r_mm: r_mm.toFixed(2),
+    },
+  });
 
   // Slenderness ratio
   const slendernessRatio = KL_mm / r_mm;
-  steps.push(
-    `Slenderness ratio: KL/r = ${KL_mm.toFixed(0)} / ${r_mm.toFixed(2)} = ${slendernessRatio.toFixed(1)}`
-  );
+  steps.push({
+    key: "slendernessRatio",
+    params: {
+      KL_mm: KL_mm.toFixed(0),
+      r_mm: r_mm.toFixed(2),
+      value: slendernessRatio.toFixed(1),
+    },
+  });
 
   // Unit conversion for calculations
   const E_MPa = E_GPa * 1000;
 
   // Euler critical stress
   const Fe_MPa = (Math.PI * Math.PI * E_MPa) / (slendernessRatio * slendernessRatio);
-  steps.push(
-    `Euler stress: Fe = π²E/(KL/r)² = π² × ${E_MPa} / ${slendernessRatio.toFixed(1)}² = ${Fe_MPa.toFixed(2)} MPa`
-  );
+  steps.push({
+    key: "eulerStress",
+    params: {
+      E_MPa,
+      slenderness: slendernessRatio.toFixed(1),
+      Fe_MPa: Fe_MPa.toFixed(2),
+    },
+  });
 
   // Critical slenderness ratio (elastic/inelastic boundary)
   // λc where Fe = Fy/2, i.e., λc = π√(2E/Fy) per AISC transition
   const criticalSlenderness = Math.PI * Math.sqrt((2 * E_MPa) / Fy_MPa);
-  steps.push(
-    `Critical slenderness: λc = π√(2E/Fy) = π√(2 × ${E_MPa} / ${Fy_MPa}) = ${criticalSlenderness.toFixed(1)}`
-  );
+  steps.push({
+    key: "criticalSlenderness",
+    params: {
+      E_MPa,
+      Fy_MPa,
+      value: criticalSlenderness.toFixed(1),
+    },
+  });
 
   // Determine buckling mode and AISC allowable stress
   let Fcr_MPa: number;
@@ -220,37 +259,65 @@ export function calculateColumnBuckling(
     // Elastic buckling (AISC E3-3)
     bucklingMode = "elastic";
     Fcr_MPa = 0.877 * Fe_MPa;
-    steps.push(
-      `Buckling mode: ELASTIC (KL/r = ${slendernessRatio.toFixed(1)} > λc = ${criticalSlenderness.toFixed(1)})`
-    );
-    steps.push(
-      `AISC critical stress: Fcr = 0.877 × Fe = 0.877 × ${Fe_MPa.toFixed(2)} = ${Fcr_MPa.toFixed(2)} MPa`
-    );
+    steps.push({
+      key: "bucklingModeElastic",
+      params: {
+        slenderness: slendernessRatio.toFixed(1),
+        criticalSlenderness: criticalSlenderness.toFixed(1),
+      },
+    });
+    steps.push({
+      key: "aiscCriticalStressElastic",
+      params: {
+        Fe_MPa: Fe_MPa.toFixed(2),
+        Fcr_MPa: Fcr_MPa.toFixed(2),
+      },
+    });
   } else {
     // Inelastic buckling (AISC E3-2)
     bucklingMode = "inelastic";
     Fcr_MPa = 0.658 ** (Fy_MPa / Fe_MPa) * Fy_MPa;
-    steps.push(
-      `Buckling mode: INELASTIC (KL/r = ${slendernessRatio.toFixed(1)} ≤ λc = ${criticalSlenderness.toFixed(1)})`
-    );
-    steps.push(
-      `AISC critical stress: Fcr = 0.658^(Fy/Fe) × Fy = 0.658^(${Fy_MPa}/${Fe_MPa.toFixed(2)}) × ${Fy_MPa} = ${Fcr_MPa.toFixed(2)} MPa`
-    );
+    steps.push({
+      key: "bucklingModeInelastic",
+      params: {
+        slenderness: slendernessRatio.toFixed(1),
+        criticalSlenderness: criticalSlenderness.toFixed(1),
+      },
+    });
+    steps.push({
+      key: "aiscCriticalStressInelastic",
+      params: {
+        Fy_MPa,
+        Fe_MPa: Fe_MPa.toFixed(2),
+        Fcr_MPa: Fcr_MPa.toFixed(2),
+      },
+    });
   }
 
   // Euler critical load: Pcr = π²EI / (KL)²
   const Pcr_N = (Math.PI * Math.PI * E_MPa * I_mm4) / (KL_mm * KL_mm);
   const Pcr_kN = Pcr_N / 1000;
-  steps.push(
-    `Euler critical load: Pcr = π²EI/(KL)² = π² × ${E_MPa} × ${I_mm4.toExponential(3)} / ${KL_mm.toFixed(0)}² = ${Pcr_kN.toFixed(1)} kN`
-  );
+  steps.push({
+    key: "eulerCriticalLoad",
+    params: {
+      E_MPa,
+      I_mm4: I_mm4.toExponential(3),
+      KL_mm: KL_mm.toFixed(0),
+      Pcr_kN: Pcr_kN.toFixed(1),
+    },
+  });
 
   // AISC allowable load (with φ = 0.9 for LRFD)
   const allowableLoad_N = Fcr_MPa * A_mm2;
   const allowableLoad_kN = allowableLoad_N / 1000;
-  steps.push(
-    `AISC nominal strength: Pn = Fcr × A = ${Fcr_MPa.toFixed(2)} × ${A_mm2.toFixed(0)} = ${allowableLoad_kN.toFixed(1)} kN`
-  );
+  steps.push({
+    key: "aiscNominalStrength",
+    params: {
+      Fcr_MPa: Fcr_MPa.toFixed(2),
+      A_mm2: A_mm2.toFixed(0),
+      allowableLoad_kN: allowableLoad_kN.toFixed(1),
+    },
+  });
 
   // Unit conversions
   const loadUnits = {

@@ -5,6 +5,7 @@
  */
 
 import beamSectionsData from "@/data/engineering/beam-sections.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { BeamSection } from "./types";
 
@@ -57,7 +58,7 @@ export interface MomentOfInertiaResult {
   centroidY: number; // mm
   radiusOfGyrationX: number; // mm
   radiusOfGyrationY: number; // mm
-  steps: string[];
+  steps: CalcStep[];
   units: {
     mm4: { Ix: number; Iy: number };
     in4: { Ix: number; Iy: number };
@@ -235,7 +236,7 @@ function applyParallelAxisTheorem(
 export function calculateMomentOfInertia(
   input: MomentOfInertiaInput
 ): CalculationResult<MomentOfInertiaResult> {
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // If beam section selected, use database values
   if (input.beamSectionId && input.beamSectionId !== "custom") {
@@ -247,8 +248,14 @@ export function calculateMomentOfInertia(
         code: "INVALID_INPUT",
       };
 
-    steps.push(`Using standard beam section: ${section.name}`);
-    steps.push(`Standard: ${section.standard}`);
+    steps.push({
+      key: "standardSectionUsed",
+      params: { name: section.name },
+    });
+    steps.push({
+      key: "standardSectionStandard",
+      params: { standard: section.standard },
+    });
 
     // Convert from AISC units (in⁴) to mm⁴
     const MM4_PER_IN4 = 416231.4;
@@ -256,8 +263,20 @@ export function calculateMomentOfInertia(
     const Iy = section.momentOfInertiaY * MM4_PER_IN4;
     const area = section.area * 645.16; // in² → mm²
 
-    steps.push(`Ix = ${section.momentOfInertiaX.toFixed(2)} in⁴ = ${Ix.toFixed(0)} mm⁴`);
-    steps.push(`Iy = ${section.momentOfInertiaY.toFixed(2)} in⁴ = ${Iy.toFixed(0)} mm⁴`);
+    steps.push({
+      key: "standardSectionIx",
+      params: {
+        in4: section.momentOfInertiaX.toFixed(2),
+        mm4: Ix.toFixed(0),
+      },
+    });
+    steps.push({
+      key: "standardSectionIy",
+      params: {
+        in4: section.momentOfInertiaY.toFixed(2),
+        mm4: Iy.toFixed(0),
+      },
+    });
 
     const radiusOfGyrationX = Math.sqrt(Ix / area);
     const radiusOfGyrationY = Math.sqrt(Iy / area);
@@ -296,9 +315,26 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(`Rectangle: ${input.width}mm × ${input.height}mm`);
-      steps.push(`Ix = bh³/12 = ${input.width} × ${input.height}³ / 12 = ${Ix.toFixed(0)} mm⁴`);
-      steps.push(`Iy = hb³/12 = ${input.height} × ${input.width}³ / 12 = ${Iy.toFixed(0)} mm⁴`);
+      steps.push({
+        key: "rectangleHeader",
+        params: { width: input.width, height: input.height },
+      });
+      steps.push({
+        key: "rectangleIx",
+        params: {
+          width: input.width,
+          height: input.height,
+          ix: Ix.toFixed(0),
+        },
+      });
+      steps.push({
+        key: "rectangleIy",
+        params: {
+          height: input.height,
+          width: input.width,
+          iy: Iy.toFixed(0),
+        },
+      });
       break;
     }
 
@@ -309,8 +345,14 @@ export function calculateMomentOfInertia(
       Ix = result.I;
       Iy = result.I;
       area = result.area;
-      steps.push(`Circle: Ø${input.diameter}mm`);
-      steps.push(`I = πd⁴/64 = π × ${input.diameter}⁴ / 64 = ${Ix.toFixed(0)} mm⁴`);
+      steps.push({
+        key: "circleHeader",
+        params: { diameter: input.diameter },
+      });
+      steps.push({
+        key: "circleI",
+        params: { diameter: input.diameter, i: Ix.toFixed(0) },
+      });
       break;
     }
 
@@ -330,10 +372,19 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(
-        `Hollow Rectangle: ${input.width}×${input.height}mm, inner ${input.innerWidth}×${input.innerHeight}mm`
-      );
-      steps.push(`Ix = I_outer - I_inner = ${Ix.toFixed(0)} mm⁴`);
+      steps.push({
+        key: "hollowRectangleHeader",
+        params: {
+          width: input.width,
+          height: input.height,
+          innerWidth: input.innerWidth,
+          innerHeight: input.innerHeight,
+        },
+      });
+      steps.push({
+        key: "hollowRectangleIx",
+        params: { ix: Ix.toFixed(0) },
+      });
       break;
     }
 
@@ -348,8 +399,17 @@ export function calculateMomentOfInertia(
       Ix = result.I;
       Iy = result.I;
       area = result.area;
-      steps.push(`Hollow Circle: Ø${input.diameter}mm, inner Ø${input.innerDiameter}mm`);
-      steps.push(`I = I_outer - I_inner = ${Ix.toFixed(0)} mm⁴`);
+      steps.push({
+        key: "hollowCircleHeader",
+        params: {
+          diameter: input.diameter,
+          innerDiameter: input.innerDiameter,
+        },
+      });
+      steps.push({
+        key: "hollowCircleI",
+        params: { i: Ix.toFixed(0) },
+      });
       break;
     }
 
@@ -364,8 +424,14 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(`Triangle: base ${input.width}mm, height ${input.height}mm`);
-      steps.push(`Ix = bh³/36 = ${Ix.toFixed(0)} mm⁴`);
+      steps.push({
+        key: "triangleHeader",
+        params: { base: input.width, height: input.height },
+      });
+      steps.push({
+        key: "triangleIx",
+        params: { ix: Ix.toFixed(0) },
+      });
       break;
     }
 
@@ -385,10 +451,16 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(
-        `I-Beam: depth ${input.depth}mm, flange ${input.flangeWidth}×${input.flangeThickness}mm, web ${input.webThickness}mm`
-      );
-      steps.push(`Calculated using composite section method`);
+      steps.push({
+        key: "iBeamHeader",
+        params: {
+          depth: input.depth,
+          flangeWidth: input.flangeWidth,
+          flangeThickness: input.flangeThickness,
+          webThickness: input.webThickness,
+        },
+      });
+      steps.push({ key: "iBeamMethod" });
       break;
     }
 
@@ -414,7 +486,10 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(`Channel: ${input.channelDepth}×${input.channelWidth}mm`);
+      steps.push({
+        key: "channelHeader",
+        params: { depth: input.channelDepth, width: input.channelWidth },
+      });
       break;
     }
 
@@ -429,7 +504,14 @@ export function calculateMomentOfInertia(
       Ix = result.Ix;
       Iy = result.Iy;
       area = result.area;
-      steps.push(`Angle: ${input.legWidth1}×${input.legWidth2}×${input.thickness}mm`);
+      steps.push({
+        key: "angleHeader",
+        params: {
+          leg1: input.legWidth1,
+          leg2: input.legWidth2,
+          thickness: input.thickness,
+        },
+      });
       break;
     }
 
@@ -442,10 +524,16 @@ export function calculateMomentOfInertia(
     const offsetX = input.offsetX || 0;
     const offsetY = input.offsetY || 0;
     const parallel = applyParallelAxisTheorem(Ix, Iy, area, offsetX, offsetY);
-    steps.push(`\nApplying Parallel Axis Theorem:`);
-    steps.push(`Offset: dx=${offsetX}mm, dy=${offsetY}mm`);
-    steps.push(`Ix_new = Ix + A×dy² = ${parallel.Ix.toFixed(0)} mm⁴`);
-    steps.push(`Iy_new = Iy + A×dx² = ${parallel.Iy.toFixed(0)} mm⁴`);
+    steps.push({ key: "parallelAxisTitle" });
+    steps.push({ key: "parallelAxisOffset", params: { dx: offsetX, dy: offsetY } });
+    steps.push({
+      key: "parallelAxisIx",
+      params: { ix: parallel.Ix.toFixed(0) },
+    });
+    steps.push({
+      key: "parallelAxisIy",
+      params: { iy: parallel.Iy.toFixed(0) },
+    });
     Ix = parallel.Ix;
     Iy = parallel.Iy;
   }
@@ -454,9 +542,15 @@ export function calculateMomentOfInertia(
   const radiusOfGyrationX = Math.sqrt(Ix / area);
   const radiusOfGyrationY = Math.sqrt(Iy / area);
 
-  steps.push(`\nArea = ${area.toFixed(2)} mm²`);
-  steps.push(`Radius of gyration: rx = ${radiusOfGyrationX.toFixed(2)} mm`);
-  steps.push(`Radius of gyration: ry = ${radiusOfGyrationY.toFixed(2)} mm`);
+  steps.push({ key: "areaResult", params: { area: area.toFixed(2) } });
+  steps.push({
+    key: "radiusOfGyrationX",
+    params: { rx: radiusOfGyrationX.toFixed(2) },
+  });
+  steps.push({
+    key: "radiusOfGyrationY",
+    params: { ry: radiusOfGyrationY.toFixed(2) },
+  });
 
   return {
     ok: true,

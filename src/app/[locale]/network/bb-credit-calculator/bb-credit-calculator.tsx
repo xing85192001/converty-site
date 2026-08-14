@@ -3,6 +3,7 @@
 import { Check, Copy, Database, RotateCcw, Server } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { InputField } from "@/components/converter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,8 +52,15 @@ function CommandBlock({ label, command }: { label: string; command: string }) {
   );
 }
 
-function StepsSection({ steps, title }: { steps: string[]; title: string }) {
+function StepsSection({
+  steps,
+  title,
+}: {
+  steps: import("@/lib/calc-step").CalcStep[];
+  title: string;
+}) {
   const [open, setOpen] = useState(false);
+  const tSteps = useTranslations("calculator.network.bbCredit");
 
   return (
     <div className="border rounded-lg">
@@ -67,9 +75,9 @@ function StepsSection({ steps, title }: { steps: string[]; title: string }) {
       </button>
       {open && (
         <div className="px-4 pb-4 space-y-1 border-t pt-3">
-          {steps.map((step) => (
-            <p key={step} className="text-sm font-mono text-muted-foreground">
-              {step}
+          {steps.map((step, i) => (
+            <p key={i} className="text-sm font-mono text-muted-foreground">
+              {formatStep(step, tSteps, "calculator.network.bbCredit")}
             </p>
           ))}
         </div>
@@ -81,6 +89,7 @@ function StepsSection({ steps, title }: { steps: string[]; title: string }) {
 export function BBCreditCalculator() {
   const t = useTranslations("calculator.network");
   const tCommon = useTranslations("common");
+  const tSteps = useTranslations("calculator.network.bbCredit");
 
   const {
     distanceKm,

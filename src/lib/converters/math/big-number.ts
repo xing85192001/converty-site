@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface BigNumberInput {
@@ -14,7 +15,7 @@ export interface BigNumberResult {
   numberB?: string;
   scientificNotation: string;
   digitCount: number;
-  steps: string[];
+  steps: CalcStep[];
   comparison?: string;
 }
 
@@ -168,7 +169,7 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
     return { ok: false, error: "numberB must be a valid integer", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let result: string;
   let operation: string;
   let comparison: string | undefined;
@@ -205,8 +206,8 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         }
       }
 
-      steps.push(`Adding ${numberA} and ${numberB}`);
-      steps.push(`Result: ${result}`);
+      steps.push({ key: "addIntro", params: { numberA, numberB } });
+      steps.push({ key: "addResult", params: { result } });
       break;
     }
 
@@ -236,8 +237,8 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         }
       }
 
-      steps.push(`Subtracting ${numberB} from ${numberA}`);
-      steps.push(`Result: ${result}`);
+      steps.push({ key: "subtractIntro", params: { numberA, numberB } });
+      steps.push({ key: "subtractResult", params: { result } });
       break;
     }
 
@@ -258,9 +259,9 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         result = `-${result}`;
       }
 
-      steps.push(`Multiplying ${numberA} by ${numberB}`);
-      steps.push(`Result has ${result.replace("-", "").length} digits`);
-      steps.push(`Result: ${result}`);
+      steps.push({ key: "multiplyIntro", params: { numberA, numberB } });
+      steps.push({ key: "multiplyDigitCount", params: { count: result.replace("-", "").length } });
+      steps.push({ key: "multiplyResult", params: { result } });
       break;
     }
 
@@ -283,9 +284,9 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         const remainder = bigA % bigB;
 
         result = quotient.toString();
-        steps.push(`Dividing ${numberA} by ${numberB}`);
-        steps.push(`Quotient: ${result}`);
-        steps.push(`Remainder: ${remainder.toString()}`);
+        steps.push({ key: "divideIntro", params: { numberA, numberB } });
+        steps.push({ key: "divideQuotient", params: { result } });
+        steps.push({ key: "divideRemainder", params: { remainder: remainder.toString() } });
       } catch {
         return { ok: false, error: "Division calculation failed", code: "CALCULATION_ERROR" };
       }
@@ -326,8 +327,8 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         }
       }
 
-      steps.push(`Calculating ${numberA}^${numberB}`);
-      steps.push(`Result has ${result.replace("-", "").length} digits`);
+      steps.push({ key: "powerIntro", params: { numberA, numberB } });
+      steps.push({ key: "powerDigitCount", params: { count: result.replace("-", "").length } });
       break;
     }
 
@@ -344,9 +345,9 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
       operation = `${n}!`;
       result = factorialBig(n);
 
-      steps.push(`Calculating ${n}!`);
-      steps.push(`${n}! = 1 × 2 × 3 × ... × ${n}`);
-      steps.push(`Result has ${result.length} digits`);
+      steps.push({ key: "factorialIntro", params: { n } });
+      steps.push({ key: "factorialExpansion", params: { n } });
+      steps.push({ key: "factorialDigitCount", params: { count: result.length } });
       break;
     }
 
@@ -381,7 +382,7 @@ export function calculateBigNumber(input: BigNumberInput): CalculationResult<Big
         }
       }
 
-      steps.push(comparison);
+      steps.push({ key: "compareResult", params: { comparison: comparison ?? "" } });
       break;
     }
 

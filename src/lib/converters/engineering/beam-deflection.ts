@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface BeamDeflectionInput {
@@ -28,7 +29,7 @@ export interface BeamDeflectionResult {
   shearDiagram: Array<{ x: number; V: number }>; // x in m, V in kN
   momentDiagram: Array<{ x: number; M: number }>; // x in m, M in kN·m
   deflectionCurve: Array<{ x: number; y: number }>; // x in m, y in mm
-  steps: string[];
+  steps: CalcStep[];
   units: {
     deflection: { mm: number; in: number; cm: number };
     moment: { kNm: number; ftlb: number };
@@ -66,29 +67,44 @@ export function calculateBeamDeflection(
     return { ok: false, error: "Distributed load must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Unit conversions
   const L_mm = input.length * 1000; // m → mm
   const E_Nmm2 = input.youngsModulus * 1000; // GPa → N/mm²
   const I_mm4 = input.momentOfInertia; // mm⁴ (already in correct unit)
 
-  steps.push(`Given:`);
-  steps.push(`  Beam type: ${input.beamType}`);
-  steps.push(`  Load type: ${input.loadType}`);
-  steps.push(`  Length L = ${input.length} m = ${L_mm} mm`);
-  steps.push(`  Young's modulus E = ${input.youngsModulus} GPa = ${E_Nmm2} N/mm²`);
-  steps.push(`  Moment of inertia I = ${I_mm4.toExponential(2)} mm⁴`);
+  steps.push({ key: "givenTitle" });
+  steps.push({ key: "givenBeamType", params: { beamType: input.beamType } });
+  steps.push({ key: "givenLoadType", params: { loadType: input.loadType } });
+  steps.push({ key: "givenLength", params: { length: input.length, L_mm } });
+  steps.push({
+    key: "givenYoungsModulus",
+    params: { youngsModulus: input.youngsModulus, E_Nmm2 },
+  });
+  steps.push({
+    key: "givenMomentOfInertia",
+    params: { I_mm4: I_mm4.toExponential(2) },
+  });
 
   let P_N = 0; // Point load in N
   let w_Nmm = 0; // Distributed load in N/mm
 
   if (input.loadType === "point-load") {
     P_N = input.pointLoad! * 1000; // kN → N
-    steps.push(`  Point load P = ${input.pointLoad} kN = ${P_N} N`);
+    steps.push({
+      key: "givenPointLoad",
+      params: { pointLoad: input.pointLoad!, P_N },
+    });
   } else {
     w_Nmm = (input.distributedLoad! * 1000) / 1000; // kN/m → N/mm
-    steps.push(`  Distributed load w = ${input.distributedLoad} kN/m = ${w_Nmm.toFixed(3)} N/mm`);
+    steps.push({
+      key: "givenDistributedLoad",
+      params: {
+        distributedLoad: input.distributedLoad!,
+        w_Nmm: w_Nmm.toFixed(3),
+      },
+    });
   }
 
   // Calculate deflection, shear, and moment based on beam and load type
@@ -99,8 +115,7 @@ export function calculateBeamDeflection(
   let slopeLeft_rad = 0;
   let slopeRight_rad = 0;
 
-  steps.push("");
-  steps.push(`Formulas (Beer & Johnston, Mechanics of Materials):`);
+  steps.push({ key: "formulasTitle" });
 
   if (input.beamType === "simply-supported") {
     if (input.loadType === "point-load") {
@@ -115,9 +130,9 @@ export function calculateBeamDeflection(
       slopeLeft_rad = (P_N * L_mm ** 2) / (16 * E_Nmm2 * I_mm4);
       slopeRight_rad = -slopeLeft_rad;
 
-      steps.push(`  δ_max = PL³/(48EI)`);
-      steps.push(`  M_max = PL/4`);
-      steps.push(`  V_max = P/2`);
+      steps.push({ key: "ssPointDeltaFormula" });
+      steps.push({ key: "ssPointMomentFormula" });
+      steps.push({ key: "ssPointShearFormula" });
     } else {
       // Simply Supported + Distributed Load
       // δ_max = 5wL⁴/(384EI) at center
@@ -130,9 +145,9 @@ export function calculateBeamDeflection(
       slopeLeft_rad = (w_Nmm * L_mm ** 3) / (24 * E_Nmm2 * I_mm4);
       slopeRight_rad = -slopeLeft_rad;
 
-      steps.push(`  δ_max = 5wL⁴/(384EI)`);
-      steps.push(`  M_max = wL²/8`);
-      steps.push(`  V_max = wL/2`);
+      steps.push({ key: "ssDistributedDeltaFormula" });
+      steps.push({ key: "ssDistributedMomentFormula" });
+      steps.push({ key: "ssDistributedShearFormula" });
     }
   } else if (input.beamType === "cantilever") {
     if (input.loadType === "point-load") {
@@ -147,9 +162,9 @@ export function calculateBeamDeflection(
       slopeLeft_rad = 0; // Fixed end
       slopeRight_rad = (P_N * L_mm ** 2) / (2 * E_Nmm2 * I_mm4);
 
-      steps.push(`  δ_max = PL³/(3EI)`);
-      steps.push(`  M_max = PL`);
-      steps.push(`  V_max = P`);
+      steps.push({ key: "cantPointDeltaFormula" });
+      steps.push({ key: "cantPointMomentFormula" });
+      steps.push({ key: "cantPointShearFormula" });
     } else {
       // Cantilever + Distributed Load
       // δ_max = wL⁴/(8EI) at free end
@@ -162,9 +177,9 @@ export function calculateBeamDeflection(
       slopeLeft_rad = 0; // Fixed end
       slopeRight_rad = (w_Nmm * L_mm ** 3) / (6 * E_Nmm2 * I_mm4);
 
-      steps.push(`  δ_max = wL⁴/(8EI)`);
-      steps.push(`  M_max = wL²/2`);
-      steps.push(`  V_max = wL`);
+      steps.push({ key: "cantDistributedDeltaFormula" });
+      steps.push({ key: "cantDistributedMomentFormula" });
+      steps.push({ key: "cantDistributedShearFormula" });
     }
   } else {
     // fixed-fixed
@@ -180,9 +195,9 @@ export function calculateBeamDeflection(
       slopeLeft_rad = 0; // Fixed end
       slopeRight_rad = 0; // Fixed end
 
-      steps.push(`  δ_max = PL³/(192EI)`);
-      steps.push(`  M_max = PL/8 (at supports and center)`);
-      steps.push(`  V_max = P/2`);
+      steps.push({ key: "ffPointDeltaFormula" });
+      steps.push({ key: "ffPointMomentFormula" });
+      steps.push({ key: "ffPointShearFormula" });
     } else {
       // Fixed-Fixed + Distributed Load
       // δ_max = wL⁴/(384EI) at center
@@ -195,17 +210,16 @@ export function calculateBeamDeflection(
       slopeLeft_rad = 0; // Fixed end
       slopeRight_rad = 0; // Fixed end
 
-      steps.push(`  δ_max = wL⁴/(384EI)`);
-      steps.push(`  M_max = wL²/12 (at supports)`);
-      steps.push(`  V_max = wL/2`);
+      steps.push({ key: "ffDistributedDeltaFormula" });
+      steps.push({ key: "ffDistributedMomentFormula" });
+      steps.push({ key: "ffDistributedShearFormula" });
     }
   }
 
-  steps.push("");
-  steps.push(`Calculations:`);
-  steps.push(`  δ_max = ${maxDeflection_mm.toFixed(3)} mm`);
-  steps.push(`  M_max = ${maxMoment_kNm.toFixed(3)} kN·m`);
-  steps.push(`  V_max = ${maxShear_kN.toFixed(3)} kN`);
+  steps.push({ key: "calculationsTitle" });
+  steps.push({ key: "calcDeltaMax", params: { value: maxDeflection_mm.toFixed(3) } });
+  steps.push({ key: "calcMomentMax", params: { value: maxMoment_kNm.toFixed(3) } });
+  steps.push({ key: "calcShearMax", params: { value: maxShear_kN.toFixed(3) } });
 
   // Generate diagram data (21 points for smooth curves)
   const shearDiagram: Array<{ x: number; V: number }> = [];
@@ -311,15 +325,30 @@ export function calculateBeamDeflection(
     actual: (L_m * 1000) / maxDeflection_mm, // L/δ ratio
   };
 
-  steps.push("");
-  steps.push(`Deflection criteria:`);
-  steps.push(`  L/180 = ${deflectionRatios.l180.toFixed(2)} mm (floors, non-critical)`);
-  steps.push(`  L/240 = ${deflectionRatios.l240.toFixed(2)} mm (floors with plaster)`);
-  steps.push(`  L/360 = ${deflectionRatios.l360.toFixed(2)} mm (roofs)`);
-  steps.push(`  L/600 = ${deflectionRatios.l600.toFixed(2)} mm (special cases)`);
-  steps.push(
-    `  Actual: L/${deflectionRatios.actual.toFixed(0)} = ${maxDeflection_mm.toFixed(2)} mm`
-  );
+  steps.push({ key: "deflectionCriteriaTitle" });
+  steps.push({
+    key: "criteriaL180",
+    params: { value: deflectionRatios.l180.toFixed(2) },
+  });
+  steps.push({
+    key: "criteriaL240",
+    params: { value: deflectionRatios.l240.toFixed(2) },
+  });
+  steps.push({
+    key: "criteriaL360",
+    params: { value: deflectionRatios.l360.toFixed(2) },
+  });
+  steps.push({
+    key: "criteriaL600",
+    params: { value: deflectionRatios.l600.toFixed(2) },
+  });
+  steps.push({
+    key: "criteriaActual",
+    params: {
+      ratio: deflectionRatios.actual.toFixed(0),
+      deflection: maxDeflection_mm.toFixed(2),
+    },
+  });
 
   return {
     ok: true,

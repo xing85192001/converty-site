@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   calculateLogarithm,
   type LogarithmInput,
@@ -89,7 +90,9 @@ export function LogarithmCalculator() {
           </div>
 
           <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
-            <p className="text-sm font-medium">Logarithm Properties:</p>
+            <p className="text-sm font-medium">
+              <T k="ui.logarithm-properties" />
+            </p>
             {logResult.properties.map((prop) => (
               <p key={prop} className="text-sm text-muted-foreground font-mono">
                 {prop}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { OutputDisplay } from "@/components/converter";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -35,6 +36,7 @@ const useBasicCalculatorStore = createCalculatorStore<FormValues, BasicCalculato
 export function BasicCalculatorComponent() {
   const tResults = useTranslations("calculator.results");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.basic");
 
   const { values, setValue, result, calculationError } = useBasicCalculatorStore();
 
@@ -82,7 +84,9 @@ export function BasicCalculatorComponent() {
             <p className="text-sm font-medium">{tMath("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {calcResult.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.math.basic")}>
+                  {formatStep(step, tSteps, "calculator.math.basic")}
+                </p>
               ))}
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import { parseSPF, SPF_MECHANISMS, SPF_QUALIFIERS } from "@/lib/converters/web/spf-check";
 
 export function SPFChecker() {
@@ -14,7 +15,9 @@ export function SPFChecker() {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <label className="text-sm font-medium">SPF Record</label>
+        <label className="text-sm font-medium">
+          <T k="ui.spf-record" />
+        </label>
         <input
           type="text"
           value={record}
@@ -37,7 +40,9 @@ export function SPFChecker() {
           </p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50">
-          <p className="text-sm text-muted-foreground">DNS Lookups</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.dns-lookups" />
+          </p>
           <p
             className={`text-xl font-semibold ${result.lookupCount > 10 ? "text-red-600" : result.lookupCount > 7 ? "text-yellow-600" : ""}`}
           >
@@ -52,7 +57,9 @@ export function SPFChecker() {
 
       {result.mechanisms.length > 0 && (
         <div className="space-y-2">
-          <p className="text-sm font-medium">Parsed Mechanisms</p>
+          <p className="text-sm font-medium">
+            <T k="ui.parsed-mechanisms" />
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -122,7 +129,9 @@ export function SPFChecker() {
       )}
 
       <div className="space-y-4">
-        <p className="text-sm font-medium">SPF Mechanisms Reference</p>
+        <p className="text-sm font-medium">
+          <T k="ui.spf-mechanisms-reference" />
+        </p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

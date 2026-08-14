@@ -12,6 +12,7 @@
  * - TCO: CAPEX + (OPEX × term years)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { HypervisorPlatform } from "./types";
 
@@ -126,7 +127,7 @@ export interface VirtualizationCostResult {
   /** Percentage breakdown */
   percentages: CostPercentages;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -163,7 +164,7 @@ export interface VirtualizationCostResult {
 export function calculateVirtualizationCost(
   input: VirtualizationCostInput
 ): CalculationResult<VirtualizationCostResult> {
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Platform selection: default to VMware for backward compatibility
   const platform = input.platform || "vmware";
@@ -171,7 +172,7 @@ export function calculateVirtualizationCost(
   // Backward compatibility: use deprecated vmwareLicenseCost if new field not provided
   const hypervisorLicenseCost = input.hypervisorLicenseCost ?? input.vmwareLicenseCost ?? 0;
 
-  steps.push(`Platform: ${platform.toUpperCase()}`);
+  steps.push({ key: "platform", params: { platform: platform.toUpperCase() } });
 
   // Validation: All costs must be non-negative
   if (
@@ -208,66 +209,120 @@ export function calculateVirtualizationCost(
   // Step 1: Calculate CAPEX (hardware costs)
   const capex = input.serverCost + input.storageCost + input.networkCost;
 
-  steps.push(
-    `CAPEX (Hardware): $${input.serverCost.toLocaleString()} (servers) + $${input.storageCost.toLocaleString()} (storage) + $${input.networkCost.toLocaleString()} (network) = $${capex.toLocaleString()}`
-  );
+  steps.push({
+    key: "capex",
+    params: {
+      serverCost: input.serverCost.toLocaleString(),
+      storageCost: input.storageCost.toLocaleString(),
+      networkCost: input.networkCost.toLocaleString(),
+      capex: capex.toLocaleString(),
+    },
+  });
 
   // Step 2: Calculate annual power cost (includes PUE)
   const annualPowerCost = input.totalPowerKw * input.pue * HOURS_PER_YEAR * input.powerCostPerKwh;
 
-  steps.push(
-    `Annual power cost: ${input.totalPowerKw} kW × ${input.pue} PUE × ${HOURS_PER_YEAR} hours × $${input.powerCostPerKwh}/kWh = $${annualPowerCost.toLocaleString()}`
-  );
+  steps.push({
+    key: "annualPowerCost",
+    params: {
+      totalPowerKw: input.totalPowerKw,
+      pue: input.pue,
+      hoursPerYear: HOURS_PER_YEAR,
+      powerCostPerKwh: input.powerCostPerKwh,
+      annualPowerCost: annualPowerCost.toLocaleString(),
+    },
+  });
 
   // Step 3: Calculate annual datacenter cost
   const annualDatacenterCost = input.datacenterCostPerRu * input.totalRackUnits * 12;
 
-  steps.push(
-    `Annual datacenter cost: $${input.datacenterCostPerRu}/RU/month × ${input.totalRackUnits} RU × 12 months = $${annualDatacenterCost.toLocaleString()}`
-  );
+  steps.push({
+    key: "annualDatacenterCost",
+    params: {
+      datacenterCostPerRu: input.datacenterCostPerRu,
+      totalRackUnits: input.totalRackUnits,
+      annualDatacenterCost: annualDatacenterCost.toLocaleString(),
+    },
+  });
 
   // Step 4: Calculate annual software cost
   const annualSoftwareCost = hypervisorLicenseCost + input.osLicenseCost + input.backupSoftwareCost;
 
-  steps.push(
-    `Annual software cost: $${hypervisorLicenseCost.toLocaleString()} (${platform.toUpperCase()}) + $${input.osLicenseCost.toLocaleString()} (OS) + $${input.backupSoftwareCost.toLocaleString()} (backup) = $${annualSoftwareCost.toLocaleString()}`
-  );
+  steps.push({
+    key: "annualSoftwareCost",
+    params: {
+      hypervisorLicenseCost: hypervisorLicenseCost.toLocaleString(),
+      platform: platform.toUpperCase(),
+      osLicenseCost: input.osLicenseCost.toLocaleString(),
+      backupSoftwareCost: input.backupSoftwareCost.toLocaleString(),
+      annualSoftwareCost: annualSoftwareCost.toLocaleString(),
+    },
+  });
 
   // Step 5: Calculate total annual OPEX
   const opexAnnual =
     annualPowerCost + annualDatacenterCost + annualSoftwareCost + input.laborCostAnnual;
 
-  steps.push(
-    `Annual OPEX: $${annualPowerCost.toLocaleString()} (power) + $${annualDatacenterCost.toLocaleString()} (datacenter) + $${annualSoftwareCost.toLocaleString()} (software) + $${input.laborCostAnnual.toLocaleString()} (labor) = $${opexAnnual.toLocaleString()}`
-  );
+  steps.push({
+    key: "opexAnnual",
+    params: {
+      annualPowerCost: annualPowerCost.toLocaleString(),
+      annualDatacenterCost: annualDatacenterCost.toLocaleString(),
+      annualSoftwareCost: annualSoftwareCost.toLocaleString(),
+      laborCostAnnual: input.laborCostAnnual.toLocaleString(),
+      opexAnnual: opexAnnual.toLocaleString(),
+    },
+  });
 
   // Step 6: Calculate total OPEX over term
   const opexTotal = opexAnnual * input.termYears;
 
-  steps.push(
-    `Total OPEX (${input.termYears}-year term): $${opexAnnual.toLocaleString()} × ${input.termYears} = $${opexTotal.toLocaleString()}`
-  );
+  steps.push({
+    key: "opexTotal",
+    params: {
+      termYears: input.termYears,
+      opexAnnual: opexAnnual.toLocaleString(),
+      opexTotal: opexTotal.toLocaleString(),
+    },
+  });
 
   // Step 7: Calculate TCO
   const tco = capex + opexTotal;
 
-  steps.push(
-    `Total Cost of Ownership: $${capex.toLocaleString()} (CAPEX) + $${opexTotal.toLocaleString()} (OPEX) = $${tco.toLocaleString()}`
-  );
+  steps.push({
+    key: "tco",
+    params: {
+      capex: capex.toLocaleString(),
+      opexTotal: opexTotal.toLocaleString(),
+      tco: tco.toLocaleString(),
+    },
+  });
 
   // Step 8: Calculate cost per VM
   const costPerVm = tco / input.vmCount;
 
-  steps.push(
-    `Cost per VM (${input.termYears}-year term): $${tco.toLocaleString()} ÷ ${input.vmCount} VMs = $${costPerVm.toLocaleString()}`
-  );
+  steps.push({
+    key: "costPerVm",
+    params: {
+      termYears: input.termYears,
+      tco: tco.toLocaleString(),
+      vmCount: input.vmCount,
+      costPerVm: costPerVm.toLocaleString(),
+    },
+  });
 
   // Step 9: Calculate monthly cost per VM
   const costPerVmMonthly = tco / input.termYears / 12 / input.vmCount;
 
-  steps.push(
-    `Monthly cost per VM: $${tco.toLocaleString()} ÷ ${input.termYears} years ÷ 12 months ÷ ${input.vmCount} VMs = $${costPerVmMonthly.toLocaleString()}`
-  );
+  steps.push({
+    key: "costPerVmMonthly",
+    params: {
+      tco: tco.toLocaleString(),
+      termYears: input.termYears,
+      vmCount: input.vmCount,
+      costPerVmMonthly: costPerVmMonthly.toLocaleString(),
+    },
+  });
 
   // Build breakdown
   const breakdown: CostBreakdown = {

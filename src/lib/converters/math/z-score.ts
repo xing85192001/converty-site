@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface ZScoreInput {
@@ -18,7 +19,7 @@ export interface ZScoreResult {
   probabilityAbove: number;
   probabilityBetween?: number; // For range between -z and +z
   interpretation: string;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 // Approximation of the cumulative distribution function for standard normal
@@ -95,7 +96,7 @@ export function calculateZScore(input: ZScoreInput): CalculationResult<ZScoreRes
     return { ok: false, error: "Standard deviation must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let zScore: number;
   let resultValue: number;
 
@@ -109,13 +110,13 @@ export function calculateZScore(input: ZScoreInput): CalculationResult<ZScoreRes
       zScore = (value - mean) / standardDeviation;
       resultValue = value;
 
-      steps.push(`Value (x) = ${value}`);
-      steps.push(`Mean (μ) = ${mean}`);
-      steps.push(`Standard Deviation (σ) = ${standardDeviation}`);
-      steps.push(`z = (x - μ) / σ`);
-      steps.push(`z = (${value} - ${mean}) / ${standardDeviation}`);
-      steps.push(`z = ${value - mean} / ${standardDeviation}`);
-      steps.push(`z = ${zScore.toFixed(4)}`);
+      steps.push({ key: "calcValue", params: { value } });
+      steps.push({ key: "calcMean", params: { mean } });
+      steps.push({ key: "calcStdDev", params: { standardDeviation } });
+      steps.push({ key: "calcZFormula" });
+      steps.push({ key: "calcZSubstitute", params: { value, mean, standardDeviation } });
+      steps.push({ key: "calcZNumerator", params: { numerator: value - mean, standardDeviation } });
+      steps.push({ key: "calcZResult", params: { zScore: zScore.toFixed(4) } });
       break;
     }
 
@@ -132,13 +133,13 @@ export function calculateZScore(input: ZScoreInput): CalculationResult<ZScoreRes
       zScore = inputZScore;
       resultValue = mean + zScore * standardDeviation;
 
-      steps.push(`Z-score (z) = ${zScore}`);
-      steps.push(`Mean (μ) = ${mean}`);
-      steps.push(`Standard Deviation (σ) = ${standardDeviation}`);
-      steps.push(`x = μ + z × σ`);
-      steps.push(`x = ${mean} + ${zScore} × ${standardDeviation}`);
-      steps.push(`x = ${mean} + ${zScore * standardDeviation}`);
-      steps.push(`x = ${resultValue.toFixed(4)}`);
+      steps.push({ key: "fromZValue", params: { zScore } });
+      steps.push({ key: "fromZMean", params: { mean } });
+      steps.push({ key: "fromZStdDev", params: { standardDeviation } });
+      steps.push({ key: "fromZXFormula" });
+      steps.push({ key: "fromZXSubstitute", params: { mean, zScore, standardDeviation } });
+      steps.push({ key: "fromZXProduct", params: { mean, product: zScore * standardDeviation } });
+      steps.push({ key: "fromZXResult", params: { value: resultValue.toFixed(4) } });
       break;
     }
 
@@ -156,9 +157,9 @@ export function calculateZScore(input: ZScoreInput): CalculationResult<ZScoreRes
       zScore = normalInverseCDF(percentile);
       resultValue = mean + zScore * standardDeviation;
 
-      steps.push(`Percentile = ${value}%`);
-      steps.push(`Z-score for ${value}th percentile = ${zScore.toFixed(4)}`);
-      steps.push(`Value at this percentile: ${resultValue.toFixed(4)}`);
+      steps.push({ key: "probPercentile", params: { value } });
+      steps.push({ key: "probZScoreForPercentile", params: { value, zScore: zScore.toFixed(4) } });
+      steps.push({ key: "probValueAtPercentile", params: { value: resultValue.toFixed(4) } });
       break;
     }
 
@@ -171,11 +172,21 @@ export function calculateZScore(input: ZScoreInput): CalculationResult<ZScoreRes
   const percentile = probabilityBelow * 100;
   const probabilityBetween = normalCDF(Math.abs(zScore)) - normalCDF(-Math.abs(zScore));
 
-  steps.push(`P(Z < ${zScore.toFixed(4)}) = ${(probabilityBelow * 100).toFixed(2)}%`);
-  steps.push(`P(Z > ${zScore.toFixed(4)}) = ${(probabilityAbove * 100).toFixed(2)}%`);
-  steps.push(
-    `P(-${Math.abs(zScore).toFixed(4)} < Z < ${Math.abs(zScore).toFixed(4)}) = ${(probabilityBetween * 100).toFixed(2)}%`
-  );
+  steps.push({
+    key: "probBelow",
+    params: { zScore: zScore.toFixed(4), probability: (probabilityBelow * 100).toFixed(2) },
+  });
+  steps.push({
+    key: "probAbove",
+    params: { zScore: zScore.toFixed(4), probability: (probabilityAbove * 100).toFixed(2) },
+  });
+  steps.push({
+    key: "probBetween",
+    params: {
+      zScore: Math.abs(zScore).toFixed(4),
+      probability: (probabilityBetween * 100).toFixed(2),
+    },
+  });
 
   let interpretation: string;
   if (zScore < -2) {

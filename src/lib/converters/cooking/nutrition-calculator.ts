@@ -1,5 +1,6 @@
 // src/lib/converters/cooking/nutrition-calculator.ts
 
+import type { CalcStep } from "@/lib/calc-step";
 import foodsData from "@/lib/data/foods-cooking.json";
 import type { CalculationResult } from "@/types";
 
@@ -64,7 +65,7 @@ export interface NutritionResult {
   totalNutrition: NutritionFacts;
   breakdown: FoodNutritionBreakdown[];
   calorieBreakdown: CalorieBreakdown;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 // Type assertion for imported JSON
@@ -192,7 +193,7 @@ function calculateCalorieBreakdown(nutrition: NutritionFacts): CalorieBreakdown 
  */
 export function calculateNutrition(input: NutritionInput): CalculationResult<NutritionResult> {
   const { selectedFoods } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   if (selectedFoods.length === 0) {
     return {
@@ -208,7 +209,7 @@ export function calculateNutrition(input: NutritionInput): CalculationResult<Nut
           carbsPercent: 0,
           fatPercent: 0,
         },
-        steps: ["No foods selected"],
+        steps: [{ key: "noFoodsSelected" }],
       },
     };
   }
@@ -219,7 +220,10 @@ export function calculateNutrition(input: NutritionInput): CalculationResult<Nut
   for (const selected of selectedFoods) {
     const food = getFoodById(selected.foodId);
     if (!food) {
-      steps.push(`Warning: Food "${selected.foodId}" not found, skipped`);
+      steps.push({
+        key: "foodNotFoundWarning",
+        params: { foodId: selected.foodId },
+      });
       continue;
     }
 
@@ -244,20 +248,34 @@ export function calculateNutrition(input: NutritionInput): CalculationResult<Nut
       fat: foodFat,
     });
 
-    steps.push(
-      `${food.name}: ${grams}g = ${foodCalories.toFixed(0)} cal, ` +
-        `${foodProtein.toFixed(1)}g protein, ${foodCarbs.toFixed(1)}g carbs, ${foodFat.toFixed(1)}g fat`
-    );
+    steps.push({
+      key: "foodBreakdown",
+      params: {
+        name: food.name,
+        grams,
+        calories: foodCalories.toFixed(0),
+        protein: foodProtein.toFixed(1),
+        carbs: foodCarbs.toFixed(1),
+        fat: foodFat.toFixed(1),
+      },
+    });
   }
 
   const calorieBreakdown = calculateCalorieBreakdown(totalNutrition);
 
-  steps.push("");
-  steps.push(`Total: ${totalNutrition.calories.toFixed(0)} calories`);
-  steps.push(
-    `Calorie breakdown: ${calorieBreakdown.proteinPercent.toFixed(0)}% protein, ` +
-      `${calorieBreakdown.carbsPercent.toFixed(0)}% carbs, ${calorieBreakdown.fatPercent.toFixed(0)}% fat`
-  );
+  steps.push({ key: "totalSeparator" });
+  steps.push({
+    key: "totalCalories",
+    params: { calories: totalNutrition.calories.toFixed(0) },
+  });
+  steps.push({
+    key: "calorieBreakdown",
+    params: {
+      proteinPercent: calorieBreakdown.proteinPercent.toFixed(0),
+      carbsPercent: calorieBreakdown.carbsPercent.toFixed(0),
+      fatPercent: calorieBreakdown.fatPercent.toFixed(0),
+    },
+  });
 
   return {
     ok: true,

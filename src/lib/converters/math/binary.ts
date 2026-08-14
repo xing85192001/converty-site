@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface BinaryInput {
@@ -17,7 +18,7 @@ export interface BinaryResult {
     binary: string;
     decimal: number;
   };
-  steps: string[];
+  steps: CalcStep[];
   bitCount: number;
   twosComplement: string;
 }
@@ -84,7 +85,7 @@ function binaryNot(a: string): string {
 
 export function calculateBinary(input: BinaryInput): CalculationResult<BinaryResult> {
   const { mode, decimal: inputDecimal, binary: inputBinary, binary2, operation } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   let decimal: number;
   let binary: string;
@@ -100,15 +101,18 @@ export function calculateBinary(input: BinaryInput): CalculationResult<BinaryRes
       }
       decimal = inputDecimal;
       binary = decimalToBinary(decimal);
-      steps.push(`Converting ${decimal} to binary:`);
+      steps.push({ key: "decimalToBinaryIntro", params: { decimal } });
 
       // Show division steps
       let temp = Math.abs(decimal);
       while (temp > 0) {
-        steps.push(`${temp} ÷ 2 = ${Math.floor(temp / 2)} remainder ${temp % 2}`);
+        steps.push({
+          key: "decimalToBinaryDivision",
+          params: { value: temp, quotient: Math.floor(temp / 2), remainder: temp % 2 },
+        });
         temp = Math.floor(temp / 2);
       }
-      steps.push(`Read remainders bottom-up: ${binary}`);
+      steps.push({ key: "decimalToBinaryResult", params: { binary } });
       break;
     }
 
@@ -122,7 +126,7 @@ export function calculateBinary(input: BinaryInput): CalculationResult<BinaryRes
       }
       binary = inputBinary;
       decimal = binaryToDecimal(binary);
-      steps.push(`Converting ${binary} to decimal:`);
+      steps.push({ key: "binaryToDecimalIntro", params: { binary } });
 
       // Show position values
       const bits = binary.split("").reverse();
@@ -130,10 +134,13 @@ export function calculateBinary(input: BinaryInput): CalculationResult<BinaryRes
       bits.forEach((bit, i) => {
         if (bit === "1") {
           terms.push(`2^${i}`);
-          steps.push(`Position ${i}: ${bit} × 2^${i} = ${2 ** i}`);
+          steps.push({
+            key: "binaryToDecimalPosition",
+            params: { position: i, bit, power: i, result: 2 ** i },
+          });
         }
       });
-      steps.push(`Sum: ${terms.join(" + ")} = ${decimal}`);
+      steps.push({ key: "binaryToDecimalSum", params: { terms: terms.join(" + "), decimal } });
       break;
     }
 
@@ -157,7 +164,7 @@ export function calculateBinary(input: BinaryInput): CalculationResult<BinaryRes
               binary: result,
               decimal: binaryToDecimal(result),
             },
-            steps: [`NOT ${binary} = ${result}`],
+            steps: [{ key: "binaryOpNot", params: { binary, result } }],
             bitCount: binary.length,
             twosComplement: decimalToBinary(-decimal),
           },
@@ -176,27 +183,45 @@ export function calculateBinary(input: BinaryInput): CalculationResult<BinaryRes
       switch (operation) {
         case "add":
           resultBinary = binaryAdd(binary, binary2);
-          steps.push(`${binary} + ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpAdd",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         case "subtract":
           resultBinary = binarySubtract(binary, binary2);
-          steps.push(`${binary} - ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpSubtract",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         case "multiply":
           resultBinary = binaryMultiply(binary, binary2);
-          steps.push(`${binary} × ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpMultiply",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         case "and":
           resultBinary = binaryAnd(binary, binary2);
-          steps.push(`${binary} AND ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpAnd",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         case "or":
           resultBinary = binaryOr(binary, binary2);
-          steps.push(`${binary} OR ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpOr",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         case "xor":
           resultBinary = binaryXor(binary, binary2);
-          steps.push(`${binary} XOR ${binary2} = ${resultBinary}`);
+          steps.push({
+            key: "binaryOpXor",
+            params: { binaryA: binary, binaryB: binary2, result: resultBinary },
+          });
           break;
         default:
           return { ok: false, error: "Unknown binary operation", code: "INVALID_INPUT" };

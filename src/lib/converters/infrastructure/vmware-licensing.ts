@@ -8,6 +8,7 @@
  * Reference: https://kb.vmware.com/s/article/95927
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /**
@@ -65,7 +66,7 @@ export interface VmwareLicensingResult {
   /** True if 16-core minimum was enforced */
   minCoreEnforced: boolean;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -90,7 +91,7 @@ export interface VmwareLicensingResult {
 export function calculateVmwareLicensing(
   input: VmwareLicensingInput
 ): CalculationResult<VmwareLicensingResult> {
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Validation: Positive host configuration
   if (input.hostCount <= 0 || input.cpusPerHost <= 0 || input.coresPerCpu <= 0) {
@@ -118,28 +119,47 @@ export function calculateVmwareLicensing(
   // Step 1: Calculate total physical cores
   const totalPhysicalCores = input.hostCount * input.cpusPerHost * input.coresPerCpu;
 
-  steps.push(
-    `Total physical cores: ${input.hostCount} hosts × ${input.cpusPerHost} CPUs × ${input.coresPerCpu} cores = ${totalPhysicalCores} cores`
-  );
+  steps.push({
+    key: "totalPhysicalCores",
+    params: {
+      hostCount: input.hostCount,
+      cpusPerHost: input.cpusPerHost,
+      coresPerCpu: input.coresPerCpu,
+      totalPhysicalCores,
+    },
+  });
 
   // Step 2: Apply 16-core minimum per CPU
   const coresPerCpuLicensed = Math.max(input.coresPerCpu, 16);
   const minCoreEnforced = input.coresPerCpu < 16;
 
   if (minCoreEnforced) {
-    steps.push(
-      `16-core minimum per CPU: ${input.coresPerCpu} cores → ${coresPerCpuLicensed} cores (minimum enforced)`
-    );
+    steps.push({
+      key: "minCoreEnforced",
+      params: {
+        coresPerCpu: input.coresPerCpu,
+        coresPerCpuLicensed,
+      },
+    });
   } else {
-    steps.push(`Cores per CPU (licensed): ${coresPerCpuLicensed} cores`);
+    steps.push({
+      key: "coresPerCpuLicensed",
+      params: { coresPerCpuLicensed },
+    });
   }
 
   // Step 3: Calculate total licensed cores
   const totalLicensedCores = input.hostCount * input.cpusPerHost * coresPerCpuLicensed;
 
-  steps.push(
-    `Total licensed cores: ${input.hostCount} hosts × ${input.cpusPerHost} CPUs × ${coresPerCpuLicensed} cores = ${totalLicensedCores} cores`
-  );
+  steps.push({
+    key: "totalLicensedCores",
+    params: {
+      hostCount: input.hostCount,
+      cpusPerHost: input.cpusPerHost,
+      coresPerCpuLicensed,
+      totalLicensedCores,
+    },
+  });
 
   // Step 4: Get pricing for product type
   const pricePerCorePerYear = PRICING[input.productType];
@@ -151,21 +171,37 @@ export function calculateVmwareLicensing(
     "vsphere-std": "vSphere Standard",
   };
 
-  steps.push(`${productNames[input.productType]}: $${pricePerCorePerYear}/core/year`);
+  steps.push({
+    key: "productPricing",
+    params: {
+      productName: productNames[input.productType],
+      pricePerCorePerYear,
+    },
+  });
 
   // Step 5: Calculate annual cost
   const annualCost = totalLicensedCores * pricePerCorePerYear;
 
-  steps.push(
-    `Annual cost: ${totalLicensedCores} cores × $${pricePerCorePerYear} = $${annualCost.toLocaleString()}`
-  );
+  steps.push({
+    key: "annualCost",
+    params: {
+      totalLicensedCores,
+      pricePerCorePerYear,
+      annualCost: annualCost.toLocaleString(),
+    },
+  });
 
   // Step 6: Calculate total cost over term
   const totalCost = annualCost * input.termYears;
 
-  steps.push(
-    `Total cost (${input.termYears}-year term): $${annualCost.toLocaleString()} × ${input.termYears} = $${totalCost.toLocaleString()}`
-  );
+  steps.push({
+    key: "totalCost",
+    params: {
+      termYears: input.termYears,
+      annualCost: annualCost.toLocaleString(),
+      totalCost: totalCost.toLocaleString(),
+    },
+  });
 
   // Step 7: Calculate vSAN entitlement (if applicable)
   const vsanEntitlementTib =
@@ -174,13 +210,19 @@ export function calculateVmwareLicensing(
       : null;
 
   if (vsanEntitlementTib !== null) {
-    steps.push(
-      `vSAN entitlement: ${totalLicensedCores} cores × ${VSAN_ENTITLEMENT[input.productType as keyof typeof VSAN_ENTITLEMENT]} TiB/core = ${vsanEntitlementTib.toFixed(2)} TiB`
-    );
+    steps.push({
+      key: "vsanEntitlementIncluded",
+      params: {
+        totalLicensedCores,
+        entitlementPerCore: VSAN_ENTITLEMENT[input.productType as keyof typeof VSAN_ENTITLEMENT],
+        vsanEntitlementTib: vsanEntitlementTib.toFixed(2),
+      },
+    });
   } else {
-    steps.push(
-      `vSAN entitlement: Not included (${productNames[input.productType]} does not include vSAN)`
-    );
+    steps.push({
+      key: "vsanEntitlementExcluded",
+      params: { productName: productNames[input.productType] },
+    });
   }
 
   return {

@@ -1,11 +1,14 @@
 "use client";
+import { T } from "@/components/ui/t";
 
 import { COLOR_TEMPERATURES } from "@/lib/converters/photo/golden-hour";
 
 export function ColorTemperatureTable() {
   return (
     <div className="space-y-4">
-      <p className="text-sm font-medium">Color Temperature Reference</p>
+      <p className="text-sm font-medium">
+        <T k="ui.color-temperature-reference" />
+      </p>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>

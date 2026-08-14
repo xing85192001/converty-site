@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { InputField } from "@/components/converter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,6 +15,7 @@ import {
 export default function StoichiometryCalculator() {
   const t = useTranslations("calculator.chemistry");
   const tSections = useTranslations("calculator.sections");
+  const tSteps = useTranslations("calculator.chemistry.stoichiometry");
 
   const [equation, setEquation] = useState("2H2 + O2 → 2H2O");
   const [reactantMasses, setReactantMasses] = useState<Record<string, string>>({
@@ -205,7 +207,7 @@ export default function StoichiometryCalculator() {
                 <ol className="list-decimal list-inside space-y-2 text-sm">
                   {result.steps.map((step, index) => (
                     <li key={index} className="text-muted-foreground">
-                      {step}
+                      {formatStep(step, tSteps, "calculator.chemistry.stoichiometry")}
                     </li>
                   ))}
                 </ol>

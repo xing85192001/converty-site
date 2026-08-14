@@ -1,5 +1,6 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 
 export function generateStaticParams() {
@@ -10,9 +11,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const tUi = await getTranslations("ui");
   return (
     <LegalPage
-      title="Contact Us"
+      title={tUi("contact-us")}
       description="Questions, corrections, or partnership ideas? Reach out any time."
     >
       <p>
@@ -38,15 +40,23 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         </p>
       </LegalSection>
 
-      <LegalSection title="What to include">
+      <LegalSection title={tUi("what-to-include")}>
         <ul className="list-disc space-y-1 pl-5">
-          <li>For a bug or wrong result, tell us which calculator and the inputs you used.</li>
-          <li>For a new tool suggestion, describe the calculation you need.</li>
-          <li>For business or advertising, include your website and a short note.</li>
+          <li>
+            <T k="ui.for-a-bug-or-wrong-result-tell-us-which-calculator-and-the-inputs-you-used" />
+          </li>
+          <li>
+            <T k="ui.for-a-new-tool-suggestion-describe-the-calculation-you-need" />
+          </li>
+          <li>
+            <T k="ui.for-business-or-advertising-include-your-website-and-a-short-note" />
+          </li>
         </ul>
       </LegalSection>
 
-      <p className="text-xs text-muted-foreground">Last updated: August 11, 2026.</p>
+      <p className="text-xs text-muted-foreground">
+        <T k="ui.last-updated-august-11-2026" />
+      </p>
     </LegalPage>
   );
 }

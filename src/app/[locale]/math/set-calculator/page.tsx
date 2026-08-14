@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { CalculatorSkeleton } from "@/components/calculator-skeleton";
 import { CalculatorInfo } from "@/components/converter/calculator-info";
 import { ConverterLayout } from "@/components/converter/converter-layout";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 import { getCategoryBySlug } from "@/lib/registry/categories";
 
@@ -68,7 +69,10 @@ export default async function SetCalculatorPage({
                   <strong>Difference (A − B)</strong> — items in A but not in B.
                 </li>
                 <li>
-                  <strong>Symmetric difference</strong> — items in either set but not both.
+                  <strong>
+                    <T k="ui.symmetric-difference" />
+                  </strong>{" "}
+                  — items in either set but not both.
                 </li>
               </ul>
             ),

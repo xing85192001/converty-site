@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -55,6 +56,7 @@ const useHalfLifeStore = createCalculatorStore<FormValues, HalfLifeResult | null
 
 export function HalfLifeCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.halfLife");
 
   const { values, setValue, result, errors, calculationError } = useHalfLifeStore();
 
@@ -183,7 +185,9 @@ export function HalfLifeCalculator() {
             <p className="text-sm font-medium">{tMath("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {halfLifeResult.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.math.halfLife")}>
+                  {formatStep(step, tSteps, "calculator.math.halfLife")}
+                </p>
               ))}
             </div>
           </div>

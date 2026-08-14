@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   AUDIO_FORMATS,
   type AudioFormat,
@@ -100,7 +101,9 @@ export function AudioFilesizeCalculator() {
                 <tr className="border-b">
                   <th className="text-left py-2">Format</th>
                   <th className="text-left py-2">Type</th>
-                  <th className="text-right py-2">Est. Size</th>
+                  <th className="text-right py-2">
+                    <T k="ui.est-size" />
+                  </th>
                 </tr>
               </thead>
               <tbody>

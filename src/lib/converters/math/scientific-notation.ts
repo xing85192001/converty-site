@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface ScientificNotationInput {
@@ -17,7 +18,7 @@ export interface ScientificNotationResult {
   exponent: number;
   engineeringNotation: string;
   significantFigures: number;
-  steps: string[];
+  steps: CalcStep[];
   operationResult?: {
     standardForm: number;
     scientificNotation: string;
@@ -63,7 +64,7 @@ export function calculateScientificNotation(
   input: ScientificNotationInput
 ): CalculationResult<ScientificNotationResult> {
   const { mode } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   let standardForm: number;
   let mantissa: number;
@@ -85,13 +86,14 @@ export function calculateScientificNotation(
       mantissa = result.mantissa;
       exponent = result.exponent;
 
-      steps.push(`Original number: ${inputNumber}`);
+      steps.push({ key: "originalNumber", params: { number: inputNumber } });
       if (inputNumber !== 0) {
-        steps.push(
-          `Move decimal point ${Math.abs(exponent)} places ${exponent >= 0 ? "left" : "right"}`
-        );
-        steps.push(`Mantissa: ${mantissa.toFixed(6)}`);
-        steps.push(`Exponent: ${exponent}`);
+        steps.push({
+          key: "moveDecimal",
+          params: { places: Math.abs(exponent), direction: exponent >= 0 ? "left" : "right" },
+        });
+        steps.push({ key: "mantissa", params: { mantissa: mantissa.toFixed(6) } });
+        steps.push({ key: "exponent", params: { exponent } });
       }
       break;
     }
@@ -110,9 +112,9 @@ export function calculateScientificNotation(
       exponent = inputExponent;
       standardForm = mantissa * 10 ** exponent;
 
-      steps.push(`${mantissa} × 10^${exponent}`);
-      steps.push(`= ${mantissa} × ${10 ** exponent}`);
-      steps.push(`= ${standardForm}`);
+      steps.push({ key: "fromSciInput", params: { mantissa, exponent } });
+      steps.push({ key: "fromSciExpanded", params: { mantissa, power: 10 ** exponent } });
+      steps.push({ key: "fromSciResult", params: { standardForm } });
       break;
     }
 
@@ -143,32 +145,32 @@ export function calculateScientificNotation(
       switch (operation) {
         case "add":
           resultNum = num1 + num2;
-          steps.push(`(${m1} × 10^${e1}) + (${m2} × 10^${e2})`);
-          steps.push(`= ${num1} + ${num2}`);
-          steps.push(`= ${resultNum}`);
+          steps.push({ key: "opAddInput", params: { m1, e1, m2, e2 } });
+          steps.push({ key: "opAddExpanded", params: { num1, num2 } });
+          steps.push({ key: "opAddResult", params: { result: resultNum } });
           break;
         case "subtract":
           resultNum = num1 - num2;
-          steps.push(`(${m1} × 10^${e1}) - (${m2} × 10^${e2})`);
-          steps.push(`= ${num1} - ${num2}`);
-          steps.push(`= ${resultNum}`);
+          steps.push({ key: "opSubInput", params: { m1, e1, m2, e2 } });
+          steps.push({ key: "opSubExpanded", params: { num1, num2 } });
+          steps.push({ key: "opSubResult", params: { result: resultNum } });
           break;
         case "multiply":
           resultNum = num1 * num2;
-          steps.push(`(${m1} × 10^${e1}) × (${m2} × 10^${e2})`);
-          steps.push(`= (${m1} × ${m2}) × 10^(${e1} + ${e2})`);
-          steps.push(`= ${m1 * m2} × 10^${e1 + e2}`);
-          steps.push(`= ${resultNum}`);
+          steps.push({ key: "opMulInput", params: { m1, e1, m2, e2 } });
+          steps.push({ key: "opMulExpanded", params: { m1, m2, e1, e2 } });
+          steps.push({ key: "opMulProduct", params: { product: m1 * m2, exponent: e1 + e2 } });
+          steps.push({ key: "opMulResult", params: { result: resultNum } });
           break;
         case "divide":
           if (num2 === 0) {
             return { ok: false, error: "Cannot divide by zero", code: "DIVISION_BY_ZERO" };
           }
           resultNum = num1 / num2;
-          steps.push(`(${m1} × 10^${e1}) ÷ (${m2} × 10^${e2})`);
-          steps.push(`= (${m1} / ${m2}) × 10^(${e1} - ${e2})`);
-          steps.push(`= ${m1 / m2} × 10^${e1 - e2}`);
-          steps.push(`= ${resultNum}`);
+          steps.push({ key: "opDivInput", params: { m1, e1, m2, e2 } });
+          steps.push({ key: "opDivExpanded", params: { m1, m2, e1, e2 } });
+          steps.push({ key: "opDivQuotient", params: { quotient: m1 / m2, exponent: e1 - e2 } });
+          steps.push({ key: "opDivResult", params: { result: resultNum } });
           break;
         default:
           return { ok: false, error: "Unknown operation specified", code: "INVALID_INPUT" };

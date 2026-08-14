@@ -30,6 +30,7 @@ export default async function FinancePage({ params }: { params: Promise<{ locale
 
   const t = await getTranslations("nav.finance");
   const tc = await getTranslations("converter");
+  const common = await getTranslations("common");
 
   const category = getCategoryBySlug("finance")!;
   const converters = getConvertersByCategory("finance");
@@ -59,7 +60,7 @@ export default async function FinancePage({ params }: { params: Promise<{ locale
         </div>
       ) : (
         <div className="text-center py-12 border rounded-lg bg-muted/50">
-          <p className="text-muted-foreground">Finance calculators coming soon!</p>
+          <p className="text-muted-foreground">{common("financeComingSoon")}</p>
         </div>
       )}
     </div>

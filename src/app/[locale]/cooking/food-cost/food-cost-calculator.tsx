@@ -3,6 +3,7 @@
 import { Plus, RotateCcw, Trash2, TrendingDown, TrendingUp, Wallet } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -300,8 +301,8 @@ export function FoodCostCalculator() {
               <Label>{t("calculationSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {result.steps.map((step, i) => (
-                  <div key={`step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div key={`step-${i}-${String(step).slice(0, 20)}`} className="font-mono">
+                    {i + 1}. {formatStep(step, t, "calculator.cooking.foodCost")}
                   </div>
                 ))}
               </div>

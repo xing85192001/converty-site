@@ -12,7 +12,7 @@ const UNIT_OPTIONS = DATA_UNITS.map((u) => ({
 
 export function DataSizeConverter() {
   const t = useTranslations("calculator.labels");
-  const _tResults = useTranslations("calculator.results");
+  const tDs = useTranslations("calculator.dataSize");
   const [value, setValue] = useState("1");
   const [unit, setUnit] = useState<DataUnit>("gb");
 
@@ -44,38 +44,34 @@ export function DataSizeConverter() {
       {result && (
         <div className="space-y-6">
           <div>
-            <h3 className="font-medium mb-3">Decimal Units (1000-based)</h3>
+            <h3 className="font-medium mb-3">{tDs("decimalUnits")}</h3>
             <ResultGrid
               results={[
-                { label: "Bytes", value: formatValue(result.bytes), unit: "B" },
-                { label: "Kilobytes", value: formatValue(result.kb), unit: "KB" },
-                { label: "Megabytes", value: formatValue(result.mb), unit: "MB" },
-                { label: "Gigabytes", value: formatValue(result.gb), unit: "GB" },
-                { label: "Terabytes", value: formatValue(result.tb), unit: "TB" },
+                { label: tDs("bytes"), value: formatValue(result.bytes), unit: "B" },
+                { label: tDs("kilobytes"), value: formatValue(result.kb), unit: "KB" },
+                { label: tDs("megabytes"), value: formatValue(result.mb), unit: "MB" },
+                { label: tDs("gigabytes"), value: formatValue(result.gb), unit: "GB" },
+                { label: tDs("terabytes"), value: formatValue(result.tb), unit: "TB" },
               ]}
               columns={3}
             />
           </div>
 
           <div>
-            <h3 className="font-medium mb-3">Binary Units (1024-based)</h3>
+            <h3 className="font-medium mb-3">{tDs("binaryUnits")}</h3>
             <ResultGrid
               results={[
-                { label: "Kibibytes", value: formatValue(result.kib), unit: "KiB" },
-                { label: "Mebibytes", value: formatValue(result.mib), unit: "MiB" },
-                { label: "Gibibytes", value: formatValue(result.gib), unit: "GiB" },
-                { label: "Tebibytes", value: formatValue(result.tib), unit: "TiB" },
+                { label: tDs("kibibytes"), value: formatValue(result.kib), unit: "KiB" },
+                { label: tDs("mebibytes"), value: formatValue(result.mib), unit: "MiB" },
+                { label: tDs("gibibytes"), value: formatValue(result.gib), unit: "GiB" },
+                { label: tDs("tebibytes"), value: formatValue(result.tib), unit: "TiB" },
               ]}
               columns={4}
             />
           </div>
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground">
-              <strong>Note:</strong> Decimal units (KB, MB, GB) use base 1000, while binary units
-              (KiB, MiB, GiB) use base 1024. Storage manufacturers typically use decimal units,
-              while operating systems often use binary units.
-            </p>
+            <p className="text-sm text-muted-foreground">{tDs("note")}</p>
           </div>
         </div>
       )}

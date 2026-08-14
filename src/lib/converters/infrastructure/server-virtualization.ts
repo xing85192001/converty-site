@@ -10,6 +10,7 @@
  */
 
 import hypervisorData from "@/data/infrastructure/hypervisor-overhead.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { HypervisorOverhead, HypervisorPlatform } from "./types";
 
@@ -68,7 +69,7 @@ export interface ServerVirtualizationResult {
   /** Actual RAM utilization percentage after rounding hosts */
   finalRamUtilization: number;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -100,7 +101,7 @@ export interface ServerVirtualizationResult {
 export function calculateServerVirtualization(
   input: ServerVirtualizationInput
 ): CalculationResult<ServerVirtualizationResult> {
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Platform selection: default to VMware for backward compatibility
   const platform = input.platform || "vmware";
@@ -118,11 +119,18 @@ export function calculateServerVirtualization(
   const memoryReservedGb = platformData.memoryOverhead.hypervisorReserved / 1024; // Convert MB to GB
   const perVmMemoryOverheadMb = platformData.memoryOverhead.perVmOverheadMB;
 
-  steps.push(`Platform: ${platformName}`);
-  steps.push(`CPU overhead: ${cpuOverheadPercent}% (reserved for hypervisor)`);
-  steps.push(
-    `Memory reserved: ${memoryReservedGb.toFixed(1)} GB (hypervisor) + ${perVmMemoryOverheadMb} MB/VM`
-  );
+  steps.push({ key: "platform", params: { name: platformName } });
+  steps.push({
+    key: "cpuOverhead",
+    params: { cpuOverheadPercent },
+  });
+  steps.push({
+    key: "memoryReserved",
+    params: {
+      memoryReservedGb: memoryReservedGb.toFixed(1),
+      perVmMemoryOverheadMb,
+    },
+  });
 
   // Validation: Positive VM configuration
   if (input.vmCount <= 0 || input.vCpuPerVm <= 0 || input.ramPerVmGb <= 0) {
@@ -161,12 +169,22 @@ export function calculateServerVirtualization(
   const totalVCpuRequired = input.vmCount * input.vCpuPerVm;
   const totalRamRequiredGb = input.vmCount * input.ramPerVmGb;
 
-  steps.push(
-    `Total vCPU required: ${input.vmCount} VMs × ${input.vCpuPerVm} vCPU = ${totalVCpuRequired} vCPU`
-  );
-  steps.push(
-    `Total RAM required: ${input.vmCount} VMs × ${input.ramPerVmGb} GB = ${totalRamRequiredGb} GB`
-  );
+  steps.push({
+    key: "totalVCpuRequired",
+    params: {
+      vmCount: input.vmCount,
+      vCpuPerVm: input.vCpuPerVm,
+      totalVCpuRequired,
+    },
+  });
+  steps.push({
+    key: "totalRamRequired",
+    params: {
+      vmCount: input.vmCount,
+      ramPerVmGb: input.ramPerVmGb,
+      totalRamRequiredGb,
+    },
+  });
 
   // Step 2: Calculate effective capacity per host (accounting for hypervisor overhead and utilization targets)
 
@@ -179,45 +197,86 @@ export function calculateServerVirtualization(
   const baseAvailableRamGb = input.hostRamGb - memoryReservedGb;
   const effectiveRamPerHostGb = baseAvailableRamGb * (input.targetRamUtilization / 100);
 
-  steps.push(
-    `Available CPU per host: ${input.hostCores} cores × (100% - ${cpuOverheadPercent}%) = ${availableCoresPerHost.toFixed(1)} cores`
-  );
-  steps.push(
-    `Effective CPU per host: ${availableCoresPerHost.toFixed(1)} cores × ${input.vCpuToCoreRatio}:1 ratio × ${input.targetCpuUtilization}% = ${effectiveCpuPerHost.toFixed(1)} vCPU`
-  );
-  steps.push(
-    `Available RAM per host: ${input.hostRamGb} GB - ${memoryReservedGb.toFixed(1)} GB (hypervisor) = ${baseAvailableRamGb.toFixed(1)} GB`
-  );
-  steps.push(
-    `Effective RAM per host: ${baseAvailableRamGb.toFixed(1)} GB × ${input.targetRamUtilization}% = ${effectiveRamPerHostGb.toFixed(1)} GB`
-  );
+  steps.push({
+    key: "availableCpuPerHost",
+    params: {
+      hostCores: input.hostCores,
+      cpuOverheadPercent,
+      availableCoresPerHost: availableCoresPerHost.toFixed(1),
+    },
+  });
+  steps.push({
+    key: "effectiveCpuPerHost",
+    params: {
+      availableCoresPerHost: availableCoresPerHost.toFixed(1),
+      vCpuToCoreRatio: input.vCpuToCoreRatio,
+      targetCpuUtilization: input.targetCpuUtilization,
+      effectiveCpuPerHost: effectiveCpuPerHost.toFixed(1),
+    },
+  });
+  steps.push({
+    key: "availableRamPerHost",
+    params: {
+      hostRamGb: input.hostRamGb,
+      memoryReservedGb: memoryReservedGb.toFixed(1),
+      baseAvailableRamGb: baseAvailableRamGb.toFixed(1),
+    },
+  });
+  steps.push({
+    key: "effectiveRamPerHost",
+    params: {
+      baseAvailableRamGb: baseAvailableRamGb.toFixed(1),
+      targetRamUtilization: input.targetRamUtilization,
+      effectiveRamPerHostGb: effectiveRamPerHostGb.toFixed(1),
+    },
+  });
 
   // Step 3: Calculate hosts needed by each constraint
   const hostsNeededByCpu = Math.ceil(totalVCpuRequired / effectiveCpuPerHost);
   const hostsNeededByRam = Math.ceil(totalRamRequiredGb / effectiveRamPerHostGb);
 
-  steps.push(
-    `Hosts needed (CPU): ceil(${totalVCpuRequired} / ${effectiveCpuPerHost.toFixed(1)}) = ${hostsNeededByCpu}`
-  );
-  steps.push(
-    `Hosts needed (RAM): ceil(${totalRamRequiredGb} / ${effectiveRamPerHostGb.toFixed(1)}) = ${hostsNeededByRam}`
-  );
+  steps.push({
+    key: "hostsNeededByCpu",
+    params: {
+      totalVCpuRequired,
+      effectiveCpuPerHost: effectiveCpuPerHost.toFixed(1),
+      hostsNeededByCpu,
+    },
+  });
+  steps.push({
+    key: "hostsNeededByRam",
+    params: {
+      totalRamRequiredGb,
+      effectiveRamPerHostGb: effectiveRamPerHostGb.toFixed(1),
+      hostsNeededByRam,
+    },
+  });
 
   // Step 4: Select limiting factor (max of CPU/RAM)
   const hostsNeededBeforeHa = Math.max(hostsNeededByCpu, hostsNeededByRam);
   const limitingFactor = hostsNeededByCpu > hostsNeededByRam ? "cpu" : "ram";
 
-  steps.push(
-    `Limiting factor: ${limitingFactor.toUpperCase()} (requires ${hostsNeededBeforeHa} hosts)`
-  );
+  steps.push({
+    key: "limitingFactor",
+    params: {
+      limitingFactor: limitingFactor.toUpperCase(),
+      hostsNeededBeforeHa,
+    },
+  });
 
   // Step 5: Apply N+1 high availability if enabled
   const hostsNeededTotal = input.highAvailability ? hostsNeededBeforeHa + 1 : hostsNeededBeforeHa;
 
   if (input.highAvailability) {
-    steps.push(`N+1 High Availability: ${hostsNeededBeforeHa} + 1 = ${hostsNeededTotal} hosts`);
+    steps.push({
+      key: "haEnabled",
+      params: { hostsNeededBeforeHa, hostsNeededTotal },
+    });
   } else {
-    steps.push(`Total hosts needed: ${hostsNeededTotal} (N+1 HA disabled)`);
+    steps.push({
+      key: "haDisabled",
+      params: { hostsNeededTotal },
+    });
   }
 
   // Step 6: Calculate actual consolidation and utilization
@@ -226,15 +285,31 @@ export function calculateServerVirtualization(
     (totalVCpuRequired / (hostsNeededTotal * input.hostCores * input.vCpuToCoreRatio)) * 100;
   const finalRamUtilization = (totalRamRequiredGb / (hostsNeededTotal * input.hostRamGb)) * 100;
 
-  steps.push(
-    `vCPU consolidation ratio: ${totalVCpuRequired} vCPU / (${hostsNeededTotal} hosts × ${input.hostCores} cores) = ${vCpuConsolidationRatio.toFixed(2)}:1`
-  );
-  steps.push(
-    `Final CPU utilization: ${finalCpuUtilization.toFixed(1)}% (${totalVCpuRequired} vCPU / ${hostsNeededTotal * input.hostCores * input.vCpuToCoreRatio} capacity)`
-  );
-  steps.push(
-    `Final RAM utilization: ${finalRamUtilization.toFixed(1)}% (${totalRamRequiredGb} GB / ${hostsNeededTotal * input.hostRamGb} GB capacity)`
-  );
+  steps.push({
+    key: "vCpuConsolidationRatio",
+    params: {
+      totalVCpuRequired,
+      hostsNeededTotal,
+      hostCores: input.hostCores,
+      ratio: vCpuConsolidationRatio.toFixed(2),
+    },
+  });
+  steps.push({
+    key: "finalCpuUtilization",
+    params: {
+      finalCpuUtilization: finalCpuUtilization.toFixed(1),
+      totalVCpuRequired,
+      capacity: hostsNeededTotal * input.hostCores * input.vCpuToCoreRatio,
+    },
+  });
+  steps.push({
+    key: "finalRamUtilization",
+    params: {
+      finalRamUtilization: finalRamUtilization.toFixed(1),
+      totalRamRequiredGb,
+      capacity: hostsNeededTotal * input.hostRamGb,
+    },
+  });
 
   return {
     ok: true,

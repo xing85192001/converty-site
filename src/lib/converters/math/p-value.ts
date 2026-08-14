@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface PValueInput {
@@ -18,7 +19,7 @@ export interface PValueResult {
   significantAt01: boolean;
   significantAt001: boolean;
   interpretation: string;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 // Normal CDF approximation
@@ -143,7 +144,7 @@ function fCDF(f: number, df1: number, df2: number): number {
 export function calculatePValue(input: PValueInput): CalculationResult<PValueResult> {
   const { mode, testStatistic, degreesOfFreedom, degreesOfFreedom2, twoTailed = true } = input;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let pValue: number;
   let statisticType: string;
 
@@ -153,10 +154,13 @@ export function calculatePValue(input: PValueInput): CalculationResult<PValueRes
       const oneTailP = 1 - normalCDF(Math.abs(testStatistic));
       pValue = twoTailed ? 2 * oneTailP : oneTailP;
 
-      steps.push(`Test statistic (z) = ${testStatistic}`);
-      steps.push(`P(Z > |${testStatistic}|) = ${oneTailP.toFixed(6)}`);
+      steps.push({ key: "zTestStat", params: { testStatistic } });
+      steps.push({ key: "zOneTail", params: { testStatistic, oneTailP: oneTailP.toFixed(6) } });
       if (twoTailed) {
-        steps.push(`Two-tailed p-value = 2 × ${oneTailP.toFixed(6)} = ${pValue.toFixed(6)}`);
+        steps.push({
+          key: "zTwoTailed",
+          params: { oneTailP: oneTailP.toFixed(6), pValue: pValue.toFixed(6) },
+        });
       }
       break;
     }
@@ -174,11 +178,14 @@ export function calculatePValue(input: PValueInput): CalculationResult<PValueRes
       const oneTailP = 1 - tCDF(Math.abs(testStatistic), degreesOfFreedom);
       pValue = twoTailed ? 2 * oneTailP : oneTailP;
 
-      steps.push(`Test statistic (t) = ${testStatistic}`);
-      steps.push(`Degrees of freedom = ${degreesOfFreedom}`);
-      steps.push(`P(t > |${testStatistic}|) = ${oneTailP.toFixed(6)}`);
+      steps.push({ key: "tTestStat", params: { testStatistic } });
+      steps.push({ key: "tDof", params: { degreesOfFreedom } });
+      steps.push({ key: "tOneTail", params: { testStatistic, oneTailP: oneTailP.toFixed(6) } });
       if (twoTailed) {
-        steps.push(`Two-tailed p-value = 2 × ${oneTailP.toFixed(6)} = ${pValue.toFixed(6)}`);
+        steps.push({
+          key: "tTwoTailed",
+          params: { oneTailP: oneTailP.toFixed(6), pValue: pValue.toFixed(6) },
+        });
       }
       break;
     }
@@ -195,9 +202,9 @@ export function calculatePValue(input: PValueInput): CalculationResult<PValueRes
       statisticType = "Chi-square";
       pValue = 1 - chiSquareCDF(testStatistic, degreesOfFreedom);
 
-      steps.push(`Test statistic (χ²) = ${testStatistic}`);
-      steps.push(`Degrees of freedom = ${degreesOfFreedom}`);
-      steps.push(`P(χ² > ${testStatistic}) = ${pValue.toFixed(6)}`);
+      steps.push({ key: "chiTestStat", params: { testStatistic } });
+      steps.push({ key: "chiDof", params: { degreesOfFreedom } });
+      steps.push({ key: "chiResult", params: { testStatistic, pValue: pValue.toFixed(6) } });
       break;
     }
 
@@ -218,10 +225,10 @@ export function calculatePValue(input: PValueInput): CalculationResult<PValueRes
       statisticType = "F-score";
       pValue = 1 - fCDF(testStatistic, degreesOfFreedom, degreesOfFreedom2);
 
-      steps.push(`Test statistic (F) = ${testStatistic}`);
-      steps.push(`Degrees of freedom 1 = ${degreesOfFreedom}`);
-      steps.push(`Degrees of freedom 2 = ${degreesOfFreedom2}`);
-      steps.push(`P(F > ${testStatistic}) = ${pValue.toFixed(6)}`);
+      steps.push({ key: "fTestStat", params: { testStatistic } });
+      steps.push({ key: "fDof1", params: { degreesOfFreedom } });
+      steps.push({ key: "fDof2", params: { degreesOfFreedom2 } });
+      steps.push({ key: "fResult", params: { testStatistic, pValue: pValue.toFixed(6) } });
       break;
     }
 
@@ -254,9 +261,9 @@ export function calculatePValue(input: PValueInput): CalculationResult<PValueRes
       "The result is not statistically significant (p ≥ 0.10). Insufficient evidence to reject the null hypothesis.";
   }
 
-  steps.push(`Significant at α = 0.05? ${significantAt05 ? "Yes" : "No"}`);
-  steps.push(`Significant at α = 0.01? ${significantAt01 ? "Yes" : "No"}`);
-  steps.push(`Significant at α = 0.001? ${significantAt001 ? "Yes" : "No"}`);
+  steps.push({ key: "sigAt05", params: { significant: significantAt05 ? "Yes" : "No" } });
+  steps.push({ key: "sigAt01", params: { significant: significantAt01 ? "Yes" : "No" } });
+  steps.push({ key: "sigAt001", params: { significant: significantAt001 ? "Yes" : "No" } });
 
   return {
     ok: true,

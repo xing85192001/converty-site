@@ -1,3 +1,5 @@
+import type { CalcStep, TextStep } from "@/lib/calc-step";
+import { textStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import { type Currency, formatCurrency } from "./types";
 
@@ -64,7 +66,7 @@ export interface VehicleLoanResult {
   };
 
   currency: Currency;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -134,7 +136,7 @@ export interface VehicleLeaseResult {
   };
 
   currency: Currency;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -159,7 +161,7 @@ export interface FinancingComparisonResult {
   recommendation: string;
 
   currency: Currency;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -200,27 +202,33 @@ export function calculateVehicleLoan(
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Calculate sales tax
   const taxRate = includeVAT ? salesTaxRate : 0;
   const salesTax = vehiclePrice * (taxRate / 100);
   const totalVehicleCost = vehiclePrice + salesTax;
 
-  steps.push(`Vehicle price: ${formatCurrency(vehiclePrice, currency)}`);
+  steps.push({ key: "vehiclePrice", params: { value: formatCurrency(vehiclePrice, currency) } });
   if (includeVAT) {
-    steps.push(`Sales tax (${salesTaxRate}%): ${formatCurrency(salesTax, currency)}`);
-    steps.push(`Total vehicle cost: ${formatCurrency(totalVehicleCost, currency)}`);
+    steps.push({
+      key: "salesTax",
+      params: { rate: salesTaxRate, value: formatCurrency(salesTax, currency) },
+    });
+    steps.push({
+      key: "totalVehicleCost",
+      params: { value: formatCurrency(totalVehicleCost, currency) },
+    });
   }
 
   // Calculate loan amount
   const loanAmount = Math.max(0, totalVehicleCost - downPayment - tradeInValue);
 
-  steps.push(`Down payment: ${formatCurrency(downPayment, currency)}`);
+  steps.push({ key: "downPayment", params: { value: formatCurrency(downPayment, currency) } });
   if (tradeInValue > 0) {
-    steps.push(`Trade-in value: ${formatCurrency(tradeInValue, currency)}`);
+    steps.push({ key: "tradeInValue", params: { value: formatCurrency(tradeInValue, currency) } });
   }
-  steps.push(`Loan amount: ${formatCurrency(loanAmount, currency)}`);
+  steps.push({ key: "loanAmount", params: { value: formatCurrency(loanAmount, currency) } });
 
   if (loanAmount === 0) {
     return {
@@ -257,20 +265,24 @@ export function calculateVehicleLoan(
   const monthlyRate = annualInterestRate / 100 / 12;
   const monthlyPayment = calculatePMT(loanAmount, monthlyRate, loanTermMonths);
 
-  steps.push(
-    `Interest rate: ${annualInterestRate}% APR (${(monthlyRate * 100).toFixed(4)}% monthly)`
-  );
-  steps.push(`Loan term: ${loanTermMonths} months`);
-  steps.push(`Monthly payment (PMT formula): ${formatCurrency(monthlyPayment, currency)}`);
+  steps.push({
+    key: "interestRate",
+    params: { apr: annualInterestRate, monthly: (monthlyRate * 100).toFixed(4) },
+  });
+  steps.push({ key: "loanTerm", params: { months: loanTermMonths } });
+  steps.push({
+    key: "monthlyPayment",
+    params: { value: formatCurrency(monthlyPayment, currency) },
+  });
 
   // Calculate totals
   const totalPayments = monthlyPayment * loanTermMonths;
   const totalInterest = totalPayments - loanAmount;
   const totalCost = totalVehicleCost + totalInterest;
 
-  steps.push(`Total payments: ${formatCurrency(totalPayments, currency)}`);
-  steps.push(`Total interest: ${formatCurrency(totalInterest, currency)}`);
-  steps.push(`Total cost (vehicle + interest): ${formatCurrency(totalCost, currency)}`);
+  steps.push({ key: "totalPayments", params: { value: formatCurrency(totalPayments, currency) } });
+  steps.push({ key: "totalInterest", params: { value: formatCurrency(totalInterest, currency) } });
+  steps.push({ key: "totalCost", params: { value: formatCurrency(totalCost, currency) } });
 
   // Generate amortization schedule
   const amortization: AmortizationEntry[] = [];
@@ -352,7 +364,7 @@ export function calculateVehicleLease(
     };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Calculate sales tax
   const taxRate = includeVAT ? salesTaxRate : 0;
@@ -361,54 +373,87 @@ export function calculateVehicleLease(
   // Capitalized cost = Vehicle price + tax - down payment - trade-in
   const capitalizedCost = vehiclePrice + salesTax - downPayment - tradeInValue;
 
-  steps.push(`Vehicle price: ${formatCurrency(vehiclePrice, currency)}`);
+  steps.push({ key: "vehiclePrice", params: { value: formatCurrency(vehiclePrice, currency) } });
   if (includeVAT) {
-    steps.push(`Sales tax (${salesTaxRate}%): ${formatCurrency(salesTax, currency)}`);
+    steps.push({
+      key: "salesTax",
+      params: { rate: salesTaxRate, value: formatCurrency(salesTax, currency) },
+    });
   }
-  steps.push(`Down payment: ${formatCurrency(downPayment, currency)}`);
+  steps.push({ key: "downPayment", params: { value: formatCurrency(downPayment, currency) } });
   if (tradeInValue > 0) {
-    steps.push(`Trade-in value: ${formatCurrency(tradeInValue, currency)}`);
+    steps.push({ key: "tradeInValue", params: { value: formatCurrency(tradeInValue, currency) } });
   }
-  steps.push(`Capitalized cost: ${formatCurrency(capitalizedCost, currency)}`);
+  steps.push({
+    key: "capitalizedCost",
+    params: { value: formatCurrency(capitalizedCost, currency) },
+  });
 
   // Residual value
   const residualValue = vehiclePrice * (residualPercent / 100);
-  steps.push(`Residual value (${residualPercent}%): ${formatCurrency(residualValue, currency)}`);
+  steps.push({
+    key: "residualValue",
+    params: { percent: residualPercent, value: formatCurrency(residualValue, currency) },
+  });
 
   // Depreciation (per month)
   const depreciationTotal = capitalizedCost - residualValue;
   const depreciation = depreciationTotal / leaseTermMonths;
-  steps.push(
-    `Depreciation: (${formatCurrency(capitalizedCost, currency)} - ${formatCurrency(residualValue, currency)}) / ${leaseTermMonths} = ${formatCurrency(depreciation, currency)}/month`
-  );
+  steps.push({
+    key: "depreciation",
+    params: {
+      capCost: formatCurrency(capitalizedCost, currency),
+      residual: formatCurrency(residualValue, currency),
+      months: leaseTermMonths,
+      result: formatCurrency(depreciation, currency),
+    },
+  });
 
   // Finance charge (per month)
   const financeCharge = (capitalizedCost + residualValue) * moneyFactor;
-  steps.push(
-    `Finance charge: (${formatCurrency(capitalizedCost, currency)} + ${formatCurrency(residualValue, currency)}) × ${moneyFactor} = ${formatCurrency(financeCharge, currency)}/month`
-  );
+  steps.push({
+    key: "financeCharge",
+    params: {
+      capCost: formatCurrency(capitalizedCost, currency),
+      residual: formatCurrency(residualValue, currency),
+      moneyFactor,
+      result: formatCurrency(financeCharge, currency),
+    },
+  });
 
   // Monthly payment
   const monthlyPayment = depreciation + financeCharge;
-  steps.push(
-    `Monthly payment: ${formatCurrency(depreciation, currency)} + ${formatCurrency(financeCharge, currency)} = ${formatCurrency(monthlyPayment, currency)}`
-  );
+  steps.push({
+    key: "monthlyPayment",
+    params: {
+      depreciation: formatCurrency(depreciation, currency),
+      financeCharge: formatCurrency(financeCharge, currency),
+      result: formatCurrency(monthlyPayment, currency),
+    },
+  });
 
   // Total payments
   const totalPayments = monthlyPayment * leaseTermMonths + downPayment;
   const totalCost = totalPayments;
-  steps.push(`Total lease cost: ${formatCurrency(totalCost, currency)}`);
+  steps.push({ key: "totalLeaseCost", params: { value: formatCurrency(totalCost, currency) } });
 
   // Convert money factor to APR
   const equivalentAPR = moneyFactor * 2400;
-  steps.push(`Money factor ${moneyFactor} = ${equivalentAPR.toFixed(2)}% APR equivalent`);
+  steps.push({
+    key: "moneyFactorToAPR",
+    params: { moneyFactor, apr: equivalentAPR.toFixed(2) },
+  });
 
   // Km limits
   const totalKmLimit = annualKmLimit * (leaseTermMonths / 12);
-  steps.push(
-    `Km limit: ${annualKmLimit.toLocaleString()} km/year (${totalKmLimit.toLocaleString()} km total)`
-  );
-  steps.push(`Excess km charge: ${formatCurrency(excessKmCharge, currency)}/km`);
+  steps.push({
+    key: "kmLimit",
+    params: { annual: annualKmLimit.toLocaleString(), total: totalKmLimit.toLocaleString() },
+  });
+  steps.push({
+    key: "excessKmCharge",
+    params: { value: formatCurrency(excessKmCharge, currency) },
+  });
 
   return {
     ok: true,
@@ -463,22 +508,27 @@ export function compareFinancingOptions(
   const loan = loanResult.value;
   const lease = leaseResult.value;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   const monthlyDifference = loan.monthlyPayment - lease.monthlyPayment;
   const totalCostDifference = loan.totalCost - lease.totalCost;
 
-  steps.push(`Loan monthly payment: ${loan.formatted.monthlyPayment}`);
-  steps.push(`Lease monthly payment: ${lease.formatted.monthlyPayment}`);
-  steps.push(
-    `Monthly difference: ${formatCurrency(Math.abs(monthlyDifference), loan.currency)} (${monthlyDifference > 0 ? "lease is lower" : "loan is lower"})`
-  );
+  steps.push({ key: "loanMonthlyPayment", params: { value: loan.formatted.monthlyPayment } });
+  steps.push({ key: "leaseMonthlyPayment", params: { value: lease.formatted.monthlyPayment } });
+  steps.push({
+    key: "monthlyDifference",
+    params: {
+      value: formatCurrency(Math.abs(monthlyDifference), loan.currency),
+      lower: monthlyDifference > 0 ? "lease" : "loan",
+    },
+  });
 
-  steps.push(`Loan total cost: ${loan.formatted.totalCost}`);
-  steps.push(`Lease total cost: ${lease.formatted.totalCost}`);
-  steps.push(
-    `Total cost difference: ${formatCurrency(Math.abs(totalCostDifference), loan.currency)}`
-  );
+  steps.push({ key: "loanTotalCost", params: { value: loan.formatted.totalCost } });
+  steps.push({ key: "leaseTotalCost", params: { value: lease.formatted.totalCost } });
+  steps.push({
+    key: "totalCostDifference",
+    params: { value: formatCurrency(Math.abs(totalCostDifference), loan.currency) },
+  });
 
   const lowerMonthlyPayment = loan.monthlyPayment <= lease.monthlyPayment ? "loan" : "lease";
   const lowerTotalCost = loan.totalCost <= lease.totalCost ? "loan" : "lease";
@@ -493,7 +543,7 @@ export function compareFinancingOptions(
     recommendation = `Lease has lower monthly payment, but loan has lower total cost if you keep the vehicle`;
   }
 
-  steps.push(`Recommendation: ${recommendation}`);
+  steps.push({ key: "recommendation", params: { value: recommendation } });
 
   return {
     ok: true,

@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface StatisticsInput {
@@ -33,7 +34,7 @@ export interface StatisticsResult {
   sortedData: number[];
   frequencyDistribution: Record<number, number>;
   isPopulation: boolean;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function calculateQuartile(sorted: number[], quartile: number): number {
@@ -64,12 +65,12 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
     return { ok: false, error: "Data array cannot be empty", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const n = data.length;
   const sorted = [...data].sort((a, b) => a - b);
 
-  steps.push(`Dataset: ${data.join(", ")}`);
-  steps.push(`Count (n): ${n}`);
+  steps.push({ key: "dataset", params: { data: data.join(", ") } });
+  steps.push({ key: "count", params: { n } });
 
   // Basic statistics
   const sum = data.reduce((a, b) => a + b, 0);
@@ -78,19 +79,19 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
   const max = sorted[sorted.length - 1];
   const range = max - min;
 
-  steps.push(`Sum: ${sum}`);
-  steps.push(`Mean (x̄): ${sum}/${n} = ${mean.toFixed(6)}`);
-  steps.push(`Min: ${min}, Max: ${max}`);
-  steps.push(`Range: ${max} - ${min} = ${range}`);
+  steps.push({ key: "sum", params: { sum } });
+  steps.push({ key: "mean", params: { sum, n, mean: mean.toFixed(6) } });
+  steps.push({ key: "minMax", params: { min, max } });
+  steps.push({ key: "range", params: { max, min, range } });
 
   // Median
   let median: number;
   if (n % 2 === 0) {
     median = (sorted[n / 2 - 1] + sorted[n / 2]) / 2;
-    steps.push(`Median: (${sorted[n / 2 - 1]} + ${sorted[n / 2]}) / 2 = ${median}`);
+    steps.push({ key: "medianEven", params: { a: sorted[n / 2 - 1], b: sorted[n / 2], median } });
   } else {
     median = sorted[Math.floor(n / 2)];
-    steps.push(`Median: ${median}`);
+    steps.push({ key: "medianOdd", params: { median } });
   }
 
   // Mode
@@ -105,9 +106,9 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
     .map(Number);
 
   if (maxFreq === 1) {
-    steps.push("Mode: No mode (all values appear once)");
+    steps.push({ key: "noMode" });
   } else {
-    steps.push(`Mode: ${mode.join(", ")} (appears ${maxFreq} times)`);
+    steps.push({ key: "mode", params: { mode: mode.join(", "), maxFreq } });
   }
 
   // Variance and Standard Deviation
@@ -117,22 +118,41 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
   const standardDeviation = Math.sqrt(variance);
 
   const varianceType = population ? "Population" : "Sample";
-  steps.push(
-    `${varianceType} Variance (σ²): ${sumOfSquares.toFixed(4)} / ${denominator} = ${variance.toFixed(6)}`
-  );
-  steps.push(
-    `${varianceType} Standard Deviation (σ): √${variance.toFixed(4)} = ${standardDeviation.toFixed(6)}`
-  );
+  steps.push({
+    key: "variance",
+    params: {
+      varianceType,
+      sumOfSquares: sumOfSquares.toFixed(4),
+      denominator,
+      variance: variance.toFixed(6),
+    },
+  });
+  steps.push({
+    key: "standardDeviation",
+    params: {
+      varianceType,
+      variance: variance.toFixed(4),
+      standardDeviation: standardDeviation.toFixed(6),
+    },
+  });
 
   // Standard Error
   const standardError = standardDeviation / Math.sqrt(n);
-  steps.push(
-    `Standard Error: ${standardDeviation.toFixed(4)} / √${n} = ${standardError.toFixed(6)}`
-  );
+  steps.push({
+    key: "standardError",
+    params: {
+      standardDeviation: standardDeviation.toFixed(4),
+      n,
+      standardError: standardError.toFixed(6),
+    },
+  });
 
   // Coefficient of Variation
   const coefficientOfVariation = mean !== 0 ? (standardDeviation / Math.abs(mean)) * 100 : 0;
-  steps.push(`Coefficient of Variation: ${coefficientOfVariation.toFixed(2)}%`);
+  steps.push({
+    key: "coefficientOfVariation",
+    params: { coefficientOfVariation: coefficientOfVariation.toFixed(2) },
+  });
 
   // Quartiles
   const q1 = calculateQuartile(sorted, 0.25);
@@ -140,10 +160,10 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
   const q3 = calculateQuartile(sorted, 0.75);
   const iqr = q3 - q1;
 
-  steps.push(`Q1 (25th percentile): ${q1.toFixed(4)}`);
-  steps.push(`Q2 (50th percentile / Median): ${q2.toFixed(4)}`);
-  steps.push(`Q3 (75th percentile): ${q3.toFixed(4)}`);
-  steps.push(`IQR (Interquartile Range): ${q3.toFixed(4)} - ${q1.toFixed(4)} = ${iqr.toFixed(4)}`);
+  steps.push({ key: "q1", params: { q1: q1.toFixed(4) } });
+  steps.push({ key: "q2", params: { q2: q2.toFixed(4) } });
+  steps.push({ key: "q3", params: { q3: q3.toFixed(4) } });
+  steps.push({ key: "iqr", params: { q3: q3.toFixed(4), q1: q1.toFixed(4), iqr: iqr.toFixed(4) } });
 
   // Common percentiles
   const percentiles: Record<number, number> = {};
@@ -153,26 +173,26 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
 
   // Skewness (Fisher-Pearson)
   const skewness = data.reduce((acc, val) => acc + ((val - mean) / standardDeviation) ** 3, 0) / n;
-  steps.push(`Skewness: ${skewness.toFixed(6)}`);
+  steps.push({ key: "skewness", params: { skewness: skewness.toFixed(6) } });
   if (skewness < -0.5) {
-    steps.push("Distribution is negatively (left) skewed");
+    steps.push({ key: "negativelySkewed" });
   } else if (skewness > 0.5) {
-    steps.push("Distribution is positively (right) skewed");
+    steps.push({ key: "positivelySkewed" });
   } else {
-    steps.push("Distribution is approximately symmetric");
+    steps.push({ key: "symmetric" });
   }
 
   // Kurtosis (excess kurtosis)
   const kurtosis =
     data.reduce((acc, val) => acc + ((val - mean) / standardDeviation) ** 4, 0) / n - 3;
-  steps.push(`Excess Kurtosis: ${kurtosis.toFixed(6)}`);
+  steps.push({ key: "kurtosis", params: { kurtosis: kurtosis.toFixed(6) } });
 
   // Geometric Mean (only for positive numbers)
   let geometricMean: number | null = null;
   if (data.every((v) => v > 0)) {
     const logSum = data.reduce((acc, val) => acc + Math.log(val), 0);
     geometricMean = Math.exp(logSum / n);
-    steps.push(`Geometric Mean: ${geometricMean.toFixed(6)}`);
+    steps.push({ key: "geometricMean", params: { geometricMean: geometricMean.toFixed(6) } });
   }
 
   // Harmonic Mean (only for positive numbers)
@@ -180,7 +200,7 @@ export function calculateStatistics(input: StatisticsInput): CalculationResult<S
   if (data.every((v) => v > 0)) {
     const reciprocalSum = data.reduce((acc, val) => acc + 1 / val, 0);
     harmonicMean = n / reciprocalSum;
-    steps.push(`Harmonic Mean: ${harmonicMean.toFixed(6)}`);
+    steps.push({ key: "harmonicMean", params: { harmonicMean: harmonicMean.toFixed(6) } });
   }
 
   return {

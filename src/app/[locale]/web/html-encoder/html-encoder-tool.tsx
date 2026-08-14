@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { toast } from "sonner";
+import { T } from "@/components/ui/t";
 import {
   decodeHTML,
   type EncodingMode,
@@ -38,7 +39,9 @@ export function HTMLEncoderTool() {
         </div>
         {direction === "encode" && (
           <div className="space-y-2">
-            <label className="text-sm font-medium">Encoding Mode</label>
+            <label className="text-sm font-medium">
+              <T k="ui.encoding-mode" />
+            </label>
             <select
               value={mode}
               onChange={(e) => setMode(e.target.value as EncodingMode)}
@@ -65,7 +68,9 @@ export function HTMLEncoderTool() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="p-4 rounded-lg border bg-muted/50">
-          <p className="text-sm text-muted-foreground">Characters Converted</p>
+          <p className="text-sm text-muted-foreground">
+            <T k="ui.characters-converted" />
+          </p>
           <p className="text-xl font-semibold">{stats.charactersConverted}</p>
         </div>
         <div className="p-4 rounded-lg border bg-muted/50">
@@ -103,7 +108,9 @@ export function HTMLEncoderTool() {
       </div>
 
       <div className="p-4 rounded-lg border bg-muted/50">
-        <p className="text-sm font-medium mb-2">Common HTML Entities</p>
+        <p className="text-sm font-medium mb-2">
+          <T k="ui.common-html-entities" />
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm font-mono">
           <div>&amp; → &amp;amp;</div>
           <div>&lt; → &amp;lt;</div>

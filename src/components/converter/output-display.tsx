@@ -4,6 +4,7 @@ import { Check, Copy } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import { T } from "@/components/ui/t";
 import { cn } from "@/lib/utils";
 
 interface OutputDisplayProps {
@@ -58,7 +59,9 @@ export function OutputDisplay({
         {copyable && (
           <Button variant="outline" size="icon" onClick={handleCopy} className="shrink-0">
             {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-            <span className="sr-only">Copy value</span>
+            <span className="sr-only">
+              <T k="ui.copy-value" />
+            </span>
           </Button>
         )}
       </div>

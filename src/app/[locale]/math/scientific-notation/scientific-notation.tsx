@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -52,6 +53,7 @@ const useScientificNotationStore = createCalculatorStore<
 
 export function ScientificNotationCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.scientificNotation");
 
   const { values, setValue, result, errors, calculationError } = useScientificNotationStore();
 
@@ -132,7 +134,9 @@ export function ScientificNotationCalculator() {
             <p className="text-sm font-medium">{tMath("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {notationResult.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.math.scientificNotation")}>
+                  {formatStep(step, tSteps, "calculator.math.scientificNotation")}
+                </p>
               ))}
             </div>
           </div>

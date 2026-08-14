@@ -8,24 +8,19 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { categories } from "@/lib/registry/categories";
 import { cn } from "@/lib/utils";
 
-// 设计稿重点展示的分类（图片/视频处理使用更直观的别名）
-const featuredIds = [
-  { id: "photo", label: "图片处理" },
-  { id: "video", label: "视频处理" },
-  { id: "finance", label: "财务" },
-  { id: "realestate", label: "房地产" },
-  { id: "health", label: "健康" },
-  { id: "automotive", label: "汽车" },
-];
+const featuredIds = ["photo", "video", "finance", "realestate", "health", "automotive"];
 
-const featuredSet = new Set(featuredIds.map((f) => f.id));
+const featuredSet = new Set(featuredIds);
 const moreCategories = categories.filter((c) => !featuredSet.has(c.id));
 
 export function ToolMenu() {
   const t = useTranslations("nav");
+  const tc = useTranslations("common");
   const pathname = usePathname();
   const [moreOpen, setMoreOpen] = useState(false);
-  const [menuPos, setMenuPos] = useState<{ left: number; top: number; maxHeight: number } | null>(null);
+  const [menuPos, setMenuPos] = useState<{ left: number; top: number; maxHeight: number } | null>(
+    null
+  );
   const [mounted, setMounted] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -37,12 +32,9 @@ export function ToolMenu() {
   useLayoutEffect(() => {
     if (moreOpen && moreRef.current) {
       const rect = moreRef.current.getBoundingClientRect();
-      const menuWidth = 224; // w-56
+      const menuWidth = 224;
       const padding = 16;
-      const left = Math.min(
-        rect.left,
-        Math.max(padding, window.innerWidth - menuWidth - padding)
-      );
+      const left = Math.min(rect.left, Math.max(padding, window.innerWidth - menuWidth - padding));
       const top = rect.bottom + 8;
       const maxHeight = window.innerHeight - top - padding;
       setMenuPos({ left, top, maxHeight });
@@ -101,11 +93,11 @@ export function ToolMenu() {
           <CategoryItem
             href="/"
             icon={<Home className="h-3.5 w-3.5" />}
-            label="首页"
+            label={tc("home")}
             active={pathname === "/" || pathname === ""}
           />
 
-          {featuredIds.map(({ id, label }) => {
+          {featuredIds.map((id) => {
             const category = categories.find((c) => c.id === id);
             if (!category) return null;
             return (
@@ -113,13 +105,12 @@ export function ToolMenu() {
                 key={id}
                 href={`/${category.slug}`}
                 icon={<category.icon className="h-3.5 w-3.5" />}
-                label={label}
+                label={t(`${id}.name`)}
                 active={isActive(category.slug)}
               />
             );
           })}
 
-          {/* 更多工具下拉 */}
           <div className="relative" ref={moreRef}>
             <button
               type="button"
@@ -132,17 +123,22 @@ export function ToolMenu() {
               )}
             >
               <MoreHorizontal className="h-3.5 w-3.5" />
-              <span>更多工具</span>
+              <span>{tc("navigation.moreTools")}</span>
             </button>
 
-            {moreOpen && mounted && menuPos &&
+            {moreOpen &&
+              mounted &&
+              menuPos &&
               createPortal(
                 <div
                   ref={menuRef}
                   className="fixed z-[100] w-56 overflow-hidden rounded-xl border border-white/10 bg-card shadow-xl"
                   style={{ left: menuPos.left, top: menuPos.top, maxHeight: menuPos.maxHeight }}
                 >
-                  <div className="scrollbar-hide grid gap-0.5 overflow-y-auto p-2" style={{ maxHeight: menuPos.maxHeight }}>
+                  <div
+                    className="scrollbar-hide grid gap-0.5 overflow-y-auto p-2"
+                    style={{ maxHeight: menuPos.maxHeight }}
+                  >
                     {moreCategories.map((category) => (
                       <Link
                         key={category.id}

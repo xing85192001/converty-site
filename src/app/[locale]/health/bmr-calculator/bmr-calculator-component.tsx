@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   type BmrInput,
   type BmrResult,
@@ -114,7 +115,9 @@ export function BmrCalculatorComponent() {
             size="lg"
           />
 
-          <h3 className="text-lg font-semibold">BMR Formulas</h3>
+          <h3 className="text-lg font-semibold">
+            <T k="ui.bmr-formulas" />
+          </h3>
           <ResultGrid
             results={[
               {
@@ -130,7 +133,9 @@ export function BmrCalculatorComponent() {
             ]}
           />
 
-          <h3 className="text-lg font-semibold">Daily Calories by Activity Level</h3>
+          <h3 className="text-lg font-semibold">
+            <T k="ui.daily-calories-by-activity-level" />
+          </h3>
           <ResultGrid
             results={[
               {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -53,6 +54,7 @@ const useFractionStore = createCalculatorStore<FormValues, FractionResult | null
 
 export function FractionCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.fraction");
 
   const { values, setValue, result, errors, calculationError } = useFractionStore();
 
@@ -182,8 +184,11 @@ export function FractionCalculator() {
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
               {fractionResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+                <p
+                  key={formatStep(step, tSteps, "calculator.math.fraction")}
+                  className="text-sm text-muted-foreground font-mono"
+                >
+                  {formatStep(step, tSteps, "calculator.math.fraction")}
                 </p>
               ))}
             </div>

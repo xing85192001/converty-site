@@ -5,6 +5,7 @@ import { useFormatter, useTranslations } from "next-intl";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { T } from "@/components/ui/t";
 import { useCIDRRangeStore } from "@/stores/cidr-range-store";
 
 /**
@@ -120,8 +121,11 @@ export function CIDRRangeCalculator() {
             {rangeResult.ipVersion === 6 && (
               <div className="rounded-md bg-muted px-4 py-3">
                 <p className="text-sm text-muted-foreground">
-                  <strong>Note:</strong> IPv6 has no broadcast address (uses multicast ff02::1) and
-                  no subnet mask notation (CIDR only).
+                  <strong>
+                    <T k="ui.note" />
+                  </strong>{" "}
+                  IPv6 has no broadcast address (uses multicast ff02::1) and no subnet mask notation
+                  (CIDR only).
                 </p>
               </div>
             )}
@@ -130,8 +134,11 @@ export function CIDRRangeCalculator() {
             {rangeResult.totalHosts > BigInt(Number.MAX_SAFE_INTEGER) && (
               <div className="rounded-md bg-muted px-4 py-3">
                 <p className="text-sm text-muted-foreground">
-                  <strong>Note:</strong> Host counts exceed JavaScript&apos;s safe integer limit and
-                  may lose precision in display.
+                  <strong>
+                    <T k="ui.note" />
+                  </strong>{" "}
+                  Host counts exceed JavaScript&apos;s safe integer limit and may lose precision in
+                  display.
                 </p>
               </div>
             )}

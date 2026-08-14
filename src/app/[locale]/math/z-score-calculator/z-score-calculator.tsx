@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -52,6 +53,7 @@ const useZScoreStore = createCalculatorStore<FormValues, ZScoreResult | null>({
 
 export function ZScoreCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.zScore");
 
   const { values, setValue, result, errors, calculationError } = useZScoreStore();
 
@@ -168,7 +170,9 @@ export function ZScoreCalculator() {
             <p className="text-sm font-medium">{tMath("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {zResult.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.math.zScore")}>
+                  {formatStep(step, tSteps, "calculator.math.zScore")}
+                </p>
               ))}
             </div>
           </div>

@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface FactorInput {
@@ -20,7 +21,7 @@ export interface FactorResult {
   isDeficient: boolean;
   commonFactors?: number[];
   greatestCommonFactor?: number;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function getFactors(n: number): number[] {
@@ -108,7 +109,7 @@ export function calculateFactor(input: FactorInput): CalculationResult<FactorRes
     return { ok: false, error: "Number must be a positive integer", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const factors = getFactors(number);
   const primeFactors = getPrimeFactors(number);
 
@@ -120,9 +121,12 @@ export function calculateFactor(input: FactorInput): CalculationResult<FactorRes
     }
   }
 
-  steps.push(`Finding factors of ${number}`);
-  steps.push(`Factors: ${factors.join(", ")}`);
-  steps.push(`Prime factorization: ${formatPrimeFactorization(primeFactors)}`);
+  steps.push({ key: "findingFactors", params: { number } });
+  steps.push({ key: "factors", params: { factors: factors.join(", ") } });
+  steps.push({
+    key: "primeFactorization",
+    params: { factorization: formatPrimeFactorization(primeFactors) },
+  });
 
   const factorSum = factors.reduce((a, b) => a + b, 0) - number; // Sum of proper divisors
   const isPerfectNumber = factorSum === number;
@@ -141,9 +145,9 @@ export function calculateFactor(input: FactorInput): CalculationResult<FactorRes
     const factors2 = getFactors(number2);
     commonFactors = factors.filter((f) => factors2.includes(f));
     greatestCommonFactor = gcd(number, number2);
-    steps.push(`Factors of ${number2}: ${factors2.join(", ")}`);
-    steps.push(`Common factors: ${commonFactors.join(", ")}`);
-    steps.push(`GCF: ${greatestCommonFactor}`);
+    steps.push({ key: "factorsOf2", params: { number2, factors: factors2.join(", ") } });
+    steps.push({ key: "commonFactors", params: { factors: commonFactors.join(", ") } });
+    steps.push({ key: "gcf", params: { gcf: greatestCommonFactor } });
   }
 
   return {

@@ -1,7 +1,7 @@
 "use client";
 
 import { Clock, Monitor, Zap } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { CalculatorErrorBoundary } from "@/components/error-boundary/calculator-error-boundary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCategoryById } from "@/lib/registry/categories";
@@ -31,8 +31,9 @@ export function ConverterLayout({
   toolId,
 }: ConverterLayoutProps) {
   const t = useTranslations("common");
+  const locale = useLocale();
   const category = getCategoryById(categoryId);
-  const { coreFeatures, highlights } = getToolFeatures(toolId ?? "", categoryId);
+  const { coreFeatures, highlights } = getToolFeatures(toolId ?? "", categoryId, locale);
 
   return (
     <div className="container max-w-5xl py-8">

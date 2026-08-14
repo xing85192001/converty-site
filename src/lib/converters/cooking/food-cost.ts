@@ -1,5 +1,6 @@
 // src/lib/converters/cooking/food-cost.ts
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export type CostUnit = "kg" | "l" | "piece" | "g" | "ml";
@@ -41,7 +42,7 @@ export interface FoodCostResult {
   ingredientBreakdown: IngredientBreakdown[];
   mostExpensiveIngredient: string | null;
   leastExpensiveIngredient: string | null;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -103,7 +104,7 @@ function calculateIngredientCost(ingredient: IngredientCost): number | null {
  */
 export function calculateFoodCost(input: FoodCostInput): CalculationResult<FoodCostResult> {
   const { recipeName, servings, currency, ingredients } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   if (servings <= 0) {
     return { ok: false, error: "Servings must be greater than zero", code: "INVALID_INPUT" };
@@ -121,7 +122,7 @@ export function calculateFoodCost(input: FoodCostInput): CalculationResult<FoodC
         ingredientBreakdown: [],
         mostExpensiveIngredient: null,
         leastExpensiveIngredient: null,
-        steps: ["No ingredients added"],
+        steps: [{ key: "noIngredientsAdded" }],
       },
     };
   }
@@ -137,9 +138,18 @@ export function calculateFoodCost(input: FoodCostInput): CalculationResult<FoodC
         code: "INVALID_INPUT",
       };
     }
-    steps.push(
-      `${ing.name}: ${ing.amountUsed} ${ing.amountUnit} @ ${currency} ${ing.costPerUnit.toFixed(2)}/${ing.unit} = ${currency} ${cost.toFixed(2)}`
-    );
+    steps.push({
+      key: "ingredientCost",
+      params: {
+        name: ing.name,
+        amountUsed: ing.amountUsed,
+        amountUnit: ing.amountUnit,
+        currency,
+        costPerUnit: ing.costPerUnit.toFixed(2),
+        unit: ing.unit,
+        cost: cost.toFixed(2),
+      },
+    });
     ingredientBreakdown.push({
       id: ing.id,
       name: ing.name,
@@ -154,7 +164,10 @@ export function calculateFoodCost(input: FoodCostInput): CalculationResult<FoodC
 
   // Calculate total cost
   const totalCost = ingredientBreakdown.reduce((sum, item) => sum + item.cost, 0);
-  steps.push(`Total cost: ${currency} ${totalCost.toFixed(2)}`);
+  steps.push({
+    key: "totalCost",
+    params: { currency, totalCost: totalCost.toFixed(2) },
+  });
 
   // Calculate percentages
   ingredientBreakdown.forEach((item) => {
@@ -163,7 +176,14 @@ export function calculateFoodCost(input: FoodCostInput): CalculationResult<FoodC
 
   // Calculate cost per serving
   const costPerServing = totalCost / servings;
-  steps.push(`Cost per serving (${servings} servings): ${currency} ${costPerServing.toFixed(2)}`);
+  steps.push({
+    key: "costPerServing",
+    params: {
+      servings,
+      currency,
+      costPerServing: costPerServing.toFixed(2),
+    },
+  });
 
   // Find most and least expensive ingredients
   const sortedByCost = [...ingredientBreakdown].sort((a, b) => b.cost - a.cost);

@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import { T } from "@/components/ui/t";
 
 interface FeatureMatrixTableProps {
   features: {
@@ -93,9 +94,11 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
 
   return (
     <div className="space-y-8">
-      {/* High Availability */}
+      {/* <T k="ui.high-availability" /> */}
       <div className="overflow-x-auto">
-        <h3 className="text-lg font-semibold mb-3">High Availability</h3>
+        <h3 className="text-lg font-semibold mb-3">
+          <T k="ui.high-availability" />
+        </h3>
         <table className="w-full text-sm border-collapse">
           <thead>
             <tr className="bg-muted/50">
@@ -117,7 +120,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
               ))}
             </tr>
             <tr>
-              <td className="border p-2 font-medium">HA Modes</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.ha-modes" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2">
                   {h.features.highAvailability.modes.join(", ")}
@@ -125,7 +130,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
               ))}
             </tr>
             <tr>
-              <td className="border p-2 font-medium">Failover Time</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.failover-time" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2">
                   {h.features.highAvailability.failoverTime}
@@ -136,9 +143,11 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
         </table>
       </div>
 
-      {/* Live Migration */}
+      {/* <T k="ui.live-migration" /> */}
       <div className="overflow-x-auto">
-        <h3 className="text-lg font-semibold mb-3">Live Migration</h3>
+        <h3 className="text-lg font-semibold mb-3">
+          <T k="ui.live-migration" />
+        </h3>
         <table className="w-full text-sm border-collapse">
           <thead>
             <tr className="bg-muted/50">
@@ -160,7 +169,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
               ))}
             </tr>
             <tr>
-              <td className="border p-2 font-medium">Cross-Host</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.cross-host" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2 text-center">
                   {renderBooleanIcon(h.features.liveMigration.crossHost)}
@@ -168,7 +179,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
               ))}
             </tr>
             <tr>
-              <td className="border p-2 font-medium">Cross-Datacenter</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.cross-datacenter" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2 text-center">
                   {renderBooleanIcon(h.features.liveMigration.crossDatacenter)}
@@ -195,7 +208,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
           </thead>
           <tbody>
             <tr>
-              <td className="border p-2 font-medium">Storage Types</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.storage-types" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2 text-xs">
                   {h.features.storage.types.join(", ")}
@@ -203,7 +218,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
               ))}
             </tr>
             <tr>
-              <td className="border p-2 font-medium">Thin Provisioning</td>
+              <td className="border p-2 font-medium">
+                <T k="ui.thin-provisioning" />
+              </td>
               {hypervisors.map((h) => (
                 <td key={h.id} className="border p-2 text-center">
                   {renderBooleanIcon(h.features.storage.thinProvisioning)}
@@ -374,7 +391,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
             <h4 className="font-semibold mb-2">{h.name}</h4>
             <div className="space-y-2">
               <div>
-                <p className="text-sm font-medium text-green-700 mb-1">Pros:</p>
+                <p className="text-sm font-medium text-green-700 mb-1">
+                  <T k="ui.pros" />
+                </p>
                 <ul className="text-sm space-y-1">
                   {h.pros.map((pro, i) => (
                     <li key={i} className="flex items-start gap-1">
@@ -385,7 +404,9 @@ export function FeatureMatrixTable({ features }: FeatureMatrixTableProps) {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-medium text-red-700 mb-1">Cons:</p>
+                <p className="text-sm font-medium text-red-700 mb-1">
+                  <T k="ui.cons" />
+                </p>
                 <ul className="text-sm space-y-1">
                   {h.cons.map((con, i) => (
                     <li key={i} className="flex items-start gap-1">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -47,6 +48,7 @@ const useBinaryStore = createCalculatorStore<FormValues, BinaryResult | null>({
 
 export function BinaryCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.binary");
 
   const { values, setValue, result, errors, calculationError } = useBinaryStore();
 
@@ -193,8 +195,11 @@ export function BinaryCalculator() {
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
               {binaryResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+                <p
+                  key={formatStep(step, tSteps, "calculator.math.binary")}
+                  className="text-sm text-muted-foreground font-mono"
+                >
+                  {formatStep(step, tSteps, "calculator.math.binary")}
                 </p>
               ))}
             </div>

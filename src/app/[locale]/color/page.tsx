@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
 import { getCategoryBySlug } from "@/lib/registry/categories";
@@ -37,7 +38,11 @@ export default async function ColorCategoryPage({
   const converters = getConvertersByCategory("color");
 
   if (!category) {
-    return <div>Category not found</div>;
+    return (
+      <div>
+        <T k="ui.category-not-found" />
+      </div>
+    );
   }
 
   return (

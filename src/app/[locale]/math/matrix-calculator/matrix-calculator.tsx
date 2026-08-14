@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -13,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import { calculateMatrix, type MatrixInput, type MatrixResult } from "@/lib/converters/math/matrix";
 
 type Mode = MatrixInput["mode"];
@@ -45,6 +47,7 @@ export function MatrixCalculator() {
   const t = useTranslations("calculator.labels");
   const tResults = useTranslations("calculator.results");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.matrix");
 
   const [mode, setMode] = useState<Mode>("multiply");
   const [matrixAText, setMatrixAText] = useState("1, 2\n3, 4");
@@ -117,7 +120,9 @@ export function MatrixCalculator() {
 
           {needsB && (
             <div className="space-y-2">
-              <Label>Matrix B</Label>
+              <Label>
+                <T k="ui.matrix-b" />
+              </Label>
               <textarea
                 className="w-full h-24 p-2 font-mono text-sm border rounded-md bg-background"
                 value={matrixBText}
@@ -163,7 +168,9 @@ export function MatrixCalculator() {
             <CardContent>
               {isResultMatrix ? (
                 <div className="space-y-2">
-                  <Label className="text-muted-foreground">Result Matrix</Label>
+                  <Label className="text-muted-foreground">
+                    <T k="ui.result-matrix" />
+                  </Label>
                   <pre className="p-4 bg-muted rounded-md font-mono text-sm overflow-x-auto">
                     {matrixToString(result.result as number[][])}
                   </pre>
@@ -211,9 +218,9 @@ export function MatrixCalculator() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-1 text-sm font-mono whitespace-pre-wrap">
-                {result.steps.map((step) => (
-                  <li key={step} className="text-muted-foreground">
-                    {step}
+                {result.steps.map((step, index) => (
+                  <li key={index} className="text-muted-foreground">
+                    {formatStep(step, tSteps, "calculator.math.matrix")}
                   </li>
                 ))}
               </ul>

@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface AreaInput {
@@ -35,7 +36,7 @@ export interface AreaResult {
   area: number;
   perimeter: number | null;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
   unit: string;
 }
 
@@ -44,7 +45,7 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
   let area: number;
   let perimeter: number | null = null;
   let formula: string;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   switch (shape) {
     case "rectangle": {
@@ -55,8 +56,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       area = length * width;
       perimeter = 2 * (length + width);
       formula = "A = length × width";
-      steps.push(`A = ${length} × ${width}`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "rectangleFormula", params: { length, width } });
+      steps.push({ key: "rectangleResult", params: { area } });
       break;
     }
 
@@ -68,8 +69,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       area = length * length;
       perimeter = 4 * length;
       formula = "A = side²";
-      steps.push(`A = ${length}²`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "squareFormula", params: { length } });
+      steps.push({ key: "squareResult", params: { area } });
       break;
     }
 
@@ -80,8 +81,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       }
       area = 0.5 * base * height;
       formula = "A = ½ × base × height";
-      steps.push(`A = ½ × ${base} × ${height}`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "triangleFormula", params: { base, height } });
+      steps.push({ key: "triangleResult", params: { area } });
       break;
     }
 
@@ -93,9 +94,9 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       area = Math.PI * radius * radius;
       perimeter = 2 * Math.PI * radius; // Circumference
       formula = "A = πr²";
-      steps.push(`A = π × ${radius}²`);
-      steps.push(`A = π × ${radius * radius}`);
-      steps.push(`A = ${area.toFixed(6)}`);
+      steps.push({ key: "circleFormula1", params: { radius } });
+      steps.push({ key: "circleFormula2", params: { radiusSquared: radius * radius } });
+      steps.push({ key: "circleResult", params: { area: area.toFixed(6) } });
       break;
     }
 
@@ -110,9 +111,9 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       }
       area = 0.5 * (base1 + base2) * height;
       formula = "A = ½ × (base₁ + base₂) × height";
-      steps.push(`A = ½ × (${base1} + ${base2}) × ${height}`);
-      steps.push(`A = ½ × ${base1 + base2} × ${height}`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "trapezoidFormula1", params: { base1, base2, height } });
+      steps.push({ key: "trapezoidFormula2", params: { sum: base1 + base2, height } });
+      steps.push({ key: "trapezoidResult", params: { area } });
       break;
     }
 
@@ -123,8 +124,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       }
       area = base * height;
       formula = "A = base × height";
-      steps.push(`A = ${base} × ${height}`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "parallelogramFormula", params: { base, height } });
+      steps.push({ key: "parallelogramResult", params: { area } });
       break;
     }
 
@@ -138,8 +139,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       const h = (radiusA - radiusB) ** 2 / (radiusA + radiusB) ** 2;
       perimeter = Math.PI * (radiusA + radiusB) * (1 + (3 * h) / (10 + Math.sqrt(4 - 3 * h)));
       formula = "A = π × a × b";
-      steps.push(`A = π × ${radiusA} × ${radiusB}`);
-      steps.push(`A = ${area.toFixed(6)}`);
+      steps.push({ key: "ellipseFormula", params: { radiusA, radiusB } });
+      steps.push({ key: "ellipseResult", params: { area: area.toFixed(6) } });
       break;
     }
 
@@ -156,9 +157,15 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       const arcLength = (angle / 360) * 2 * Math.PI * radius;
       perimeter = arcLength + 2 * radius;
       formula = "A = (θ/360) × πr²";
-      steps.push(`A = (${angle}/360) × π × ${radius}²`);
-      steps.push(`A = ${(angle / 360).toFixed(6)} × ${(Math.PI * radius * radius).toFixed(6)}`);
-      steps.push(`A = ${area.toFixed(6)}`);
+      steps.push({ key: "sectorFormula1", params: { angle, radius } });
+      steps.push({
+        key: "sectorFormula2",
+        params: {
+          ratio: (angle / 360).toFixed(6),
+          piRSquared: (Math.PI * radius * radius).toFixed(6),
+        },
+      });
+      steps.push({ key: "sectorResult", params: { area: area.toFixed(6) } });
       break;
     }
 
@@ -171,8 +178,8 @@ export function calculateArea(input: AreaInput): CalculationResult<AreaResult> {
       const side = Math.sqrt((diagonal1 / 2) ** 2 + (diagonal2 / 2) ** 2);
       perimeter = 4 * side;
       formula = "A = ½ × d₁ × d₂";
-      steps.push(`A = ½ × ${diagonal1} × ${diagonal2}`);
-      steps.push(`A = ${area}`);
+      steps.push({ key: "rhombusFormula", params: { diagonal1, diagonal2 } });
+      steps.push({ key: "rhombusResult", params: { area } });
       break;
     }
 

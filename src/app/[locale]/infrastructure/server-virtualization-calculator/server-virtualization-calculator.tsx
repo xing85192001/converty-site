@@ -3,6 +3,7 @@
 import { Cpu, HardDrive, Server, Settings } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { CsvExportButton, InputField, PdfExportButton, ResultGrid } from "@/components/converter";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
+import { T } from "@/components/ui/t";
 import {
   calculateServerVirtualization,
   type ServerVirtualizationInput,
@@ -48,6 +50,7 @@ const useServerVirtualizationStore = createCalculatorStore<
 export function ServerVirtualizationCalculator() {
   const t = useTranslations("calculator.serverVirtualizationCalculator");
   const tCommon = useTranslations("common");
+  const tSteps = useTranslations("calculator.infrastructure.serverVirtualization");
   const { values, setValue, result, calculationError } = useServerVirtualizationStore();
 
   // PDF export sections
@@ -289,10 +292,12 @@ export function ServerVirtualizationCalculator() {
         <div className="space-y-6">
           {result && (
             <>
-              {/* Host Requirements Card */}
+              {/* <T k="ui.host-requirements" /> Card */}
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between">
-                  <CardTitle>Host Requirements</CardTitle>
+                  <CardTitle>
+                    <T k="ui.host-requirements" />
+                  </CardTitle>
                   <div className="flex gap-2">
                     <PdfExportButton sections={pdfSections} options={{ title: t("title") }} />
                     <CsvExportButton data={csvData} filename="server-virtualization-calculator" />
@@ -342,19 +347,25 @@ export function ServerVirtualizationCalculator() {
                 </CardContent>
               </Card>
 
-              {/* Calculation Details Card */}
+              {/* <T k="ui.calculation-details" /> Card */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Calculation Details</CardTitle>
+                  <CardTitle>
+                    <T k="ui.calculation-details" />
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2 rounded-lg bg-muted p-4">
+                  <div className="space-y-2 rounded-lg bg-muted p-4 font-mono text-sm">
                     {result.steps.map((step, index) => (
-                      <div key={`step-${index}-${step.slice(0, 20)}`} className="flex gap-3">
-                        <span className="text-sm font-medium text-muted-foreground">
-                          {index + 1}.
+                      <div key={`step-${index}`} className="flex gap-3">
+                        <span className="font-medium text-muted-foreground">{index + 1}.</span>
+                        <span>
+                          {formatStep(
+                            step,
+                            tSteps,
+                            "calculator.infrastructure.serverVirtualization"
+                          )}
                         </span>
-                        <span className="text-sm">{step}</span>
                       </div>
                     ))}
                   </div>

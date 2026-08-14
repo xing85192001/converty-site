@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -13,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   calculateNumberSequence,
   type NumberSequenceInput,
@@ -32,6 +34,7 @@ const modes: { value: Mode; label: string }[] = [
 export function NumberSequenceCalculator() {
   const t = useTranslations("calculator.labels");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.numberSequence");
 
   const [mode, setMode] = useState<Mode>("arithmetic");
   const [firstTerm, setFirstTerm] = useState(1);
@@ -81,6 +84,7 @@ export function NumberSequenceCalculator() {
     needsCustomTerms,
   ]);
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <Card>
@@ -192,7 +196,7 @@ export function NumberSequenceCalculator() {
                 setFindNthTerm(e.target.value ? Number(e.target.value) : undefined);
                 setResult(null);
               }}
-              placeholder="e.g., 50 for 50th term"
+              placeholder={tUi("e-g-50-for-50th-term")}
             />
           </div>
 
@@ -218,12 +222,16 @@ export function NumberSequenceCalculator() {
                 <p className="text-lg font-mono">{result.formula}</p>
               </div>
               <div>
-                <Label className="text-muted-foreground">nth Term Formula</Label>
+                <Label className="text-muted-foreground">
+                  <T k="ui.nth-term-formula" />
+                </Label>
                 <p className="text-lg font-mono">{result.nthTermFormula}</p>
               </div>
               {result.sumFormula && (
                 <div>
-                  <Label className="text-muted-foreground">Sum Formula</Label>
+                  <Label className="text-muted-foreground">
+                    <T k="ui.sum-formula" />
+                  </Label>
                   <p className="text-lg font-mono">{result.sumFormula}</p>
                 </div>
               )}
@@ -302,9 +310,9 @@ export function NumberSequenceCalculator() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-1 text-sm font-mono">
-                {result.steps.map((step) => (
-                  <li key={step} className="text-muted-foreground">
-                    {step}
+                {result.steps.map((step, index) => (
+                  <li key={index} className="text-muted-foreground">
+                    {formatStep(step, tSteps, "calculator.math.numberSequence")}
                   </li>
                 ))}
               </ul>

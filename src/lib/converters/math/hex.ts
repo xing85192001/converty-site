@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface HexInput {
@@ -19,7 +20,7 @@ export interface HexResult {
     decimal: number;
   };
   rgb?: { r: number; g: number; b: number };
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function isValidHex(str: string): boolean {
@@ -39,7 +40,7 @@ function decimalToHex(decimal: number): string {
 
 export function calculateHex(input: HexInput): CalculationResult<HexResult> {
   const { mode, decimal: inputDecimal, hex: inputHex, hex2, operation, rgb: inputRgb } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   let decimal: number;
   let hexadecimal: string;
@@ -55,17 +56,20 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
       }
       decimal = inputDecimal;
       hexadecimal = decimalToHex(decimal);
-      steps.push(`Converting ${decimal} to hexadecimal:`);
+      steps.push({ key: "decimalToHexIntro", params: { decimal } });
 
       // Show division steps
       let temp = Math.abs(decimal);
       while (temp > 0) {
         const remainder = temp % 16;
         const hexDigit = remainder.toString(16).toUpperCase();
-        steps.push(`${temp} ÷ 16 = ${Math.floor(temp / 16)} remainder ${remainder} (${hexDigit})`);
+        steps.push({
+          key: "decimalToHexDivision",
+          params: { value: temp, quotient: Math.floor(temp / 16), remainder, hexDigit },
+        });
         temp = Math.floor(temp / 16);
       }
-      steps.push(`Result: ${hexadecimal}`);
+      steps.push({ key: "decimalToHexResult", params: { hexadecimal } });
       break;
     }
 
@@ -79,7 +83,7 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
       }
       hexadecimal = inputHex.toUpperCase();
       decimal = hexToDecimal(hexadecimal);
-      steps.push(`Converting ${hexadecimal} to decimal:`);
+      steps.push({ key: "hexToDecimalIntro", params: { hexadecimal } });
 
       // Show position values
       const digits = hexadecimal.split("").reverse();
@@ -88,10 +92,13 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
         const value = parseInt(digit, 16);
         if (value > 0) {
           terms.push(`${value} × 16^${i}`);
-          steps.push(`Position ${i}: ${digit} (${value}) × 16^${i} = ${value * 16 ** i}`);
+          steps.push({
+            key: "hexToDecimalPosition",
+            params: { position: i, digit, value, power: i, result: value * 16 ** i },
+          });
         }
       });
-      steps.push(`Sum: ${terms.join(" + ")} = ${decimal}`);
+      steps.push({ key: "hexToDecimalSum", params: { terms: terms.join(" + "), decimal } });
       break;
     }
 
@@ -111,27 +118,69 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
       switch (operation) {
         case "add":
           resultDecimal = decimal + decimal2;
-          steps.push(`${hexadecimal} + ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpAdd",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         case "subtract":
           resultDecimal = decimal - decimal2;
-          steps.push(`${hexadecimal} - ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpSubtract",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         case "multiply":
           resultDecimal = decimal * decimal2;
-          steps.push(`${hexadecimal} × ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpMultiply",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         case "and":
           resultDecimal = decimal & decimal2;
-          steps.push(`${hexadecimal} AND ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpAnd",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         case "or":
           resultDecimal = decimal | decimal2;
-          steps.push(`${hexadecimal} OR ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpOr",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         case "xor":
           resultDecimal = decimal ^ decimal2;
-          steps.push(`${hexadecimal} XOR ${hex2.toUpperCase()} = ${decimalToHex(resultDecimal)}`);
+          steps.push({
+            key: "hexOpXor",
+            params: {
+              hexA: hexadecimal,
+              hexB: hex2.toUpperCase(),
+              result: decimalToHex(resultDecimal),
+            },
+          });
           break;
         default:
           return { ok: false, error: "Unknown hex operation", code: "INVALID_INPUT" };
@@ -179,10 +228,10 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
       const g = parseInt(cleanHex.substring(2, 4), 16);
       const b = parseInt(cleanHex.substring(4, 6), 16);
 
-      steps.push(`#${hexadecimal} → RGB(${r}, ${g}, ${b})`);
-      steps.push(`R: ${cleanHex.substring(0, 2)} = ${r}`);
-      steps.push(`G: ${cleanHex.substring(2, 4)} = ${g}`);
-      steps.push(`B: ${cleanHex.substring(4, 6)} = ${b}`);
+      steps.push({ key: "hexToRgbIntro", params: { hexadecimal, r, g, b } });
+      steps.push({ key: "hexToRgbR", params: { hexPart: cleanHex.substring(0, 2), value: r } });
+      steps.push({ key: "hexToRgbG", params: { hexPart: cleanHex.substring(2, 4), value: g } });
+      steps.push({ key: "hexToRgbB", params: { hexPart: cleanHex.substring(4, 6), value: b } });
 
       return {
         ok: true,
@@ -213,10 +262,10 @@ export function calculateHex(input: HexInput): CalculationResult<HexResult> {
       hexadecimal = `#${rHex}${gHex}${bHex}`;
       decimal = (r << 16) + (g << 8) + b;
 
-      steps.push(`RGB(${r}, ${g}, ${b}) → ${hexadecimal}`);
-      steps.push(`R: ${r} = ${rHex}`);
-      steps.push(`G: ${g} = ${gHex}`);
-      steps.push(`B: ${b} = ${bHex}`);
+      steps.push({ key: "rgbToHexIntro", params: { r, g, b, hexadecimal } });
+      steps.push({ key: "rgbToHexR", params: { value: r, hex: rHex } });
+      steps.push({ key: "rgbToHexG", params: { value: g, hex: gHex } });
+      steps.push({ key: "rgbToHexB", params: { value: b, hex: bHex } });
 
       return {
         ok: true,

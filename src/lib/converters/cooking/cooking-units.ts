@@ -1,5 +1,6 @@
 // src/lib/converters/cooking/cooking-units.ts
 
+import type { CalcStep } from "@/lib/calc-step";
 import { getIngredientDensity, INGREDIENT_DENSITIES } from "@/lib/data/cooking-densities";
 import type { CalculationResult } from "@/types";
 import {
@@ -27,7 +28,7 @@ export interface CookingUnitResult {
   formula: string;
   requiresIngredient: boolean;
   ingredientName?: string;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 // Volume conversion to ml (base unit)
@@ -81,7 +82,7 @@ function convertFromGrams(grams: number, unit: WeightUnit): number {
  */
 export function convertCookingUnit(input: CookingUnitInput): CalculationResult<CookingUnitResult> {
   const { amount, fromUnit, toUnit, ingredientId } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Handle zero/negative amounts
   if (amount <= 0) {
@@ -100,23 +101,47 @@ export function convertCookingUnit(input: CookingUnitInput): CalculationResult<C
   if (fromIsVolume && toIsVolume) {
     // Volume to volume
     const ml = convertToMl(amount, fromUnit as VolumeUnit);
-    steps.push(`Convert ${amount} ${UNIT_LABELS[fromUnit]} to ml: ${ml.toFixed(2)} ml`);
+    steps.push({
+      key: "volumeToMl",
+      params: {
+        amount,
+        fromUnit: UNIT_LABELS[fromUnit],
+        ml: ml.toFixed(2),
+      },
+    });
 
     convertedAmount = convertFromMl(ml, toUnit as VolumeUnit);
-    steps.push(
-      `Convert ${ml.toFixed(2)} ml to ${UNIT_LABELS[toUnit]}: ${convertedAmount.toFixed(4)}`
-    );
+    steps.push({
+      key: "mlToVolume",
+      params: {
+        ml: ml.toFixed(2),
+        toUnit: UNIT_LABELS[toUnit],
+        convertedAmount: convertedAmount.toFixed(4),
+      },
+    });
 
     formula = `${amount} ${UNIT_LABELS[fromUnit]} = ${convertedAmount.toFixed(4)} ${UNIT_LABELS[toUnit]}`;
   } else if (!fromIsVolume && !toIsVolume) {
     // Weight to weight
     const grams = convertToGrams(amount, fromUnit as WeightUnit);
-    steps.push(`Convert ${amount} ${UNIT_LABELS[fromUnit]} to g: ${grams.toFixed(2)} g`);
+    steps.push({
+      key: "weightToGrams",
+      params: {
+        amount,
+        fromUnit: UNIT_LABELS[fromUnit],
+        grams: grams.toFixed(2),
+      },
+    });
 
     convertedAmount = convertFromGrams(grams, toUnit as WeightUnit);
-    steps.push(
-      `Convert ${grams.toFixed(2)} g to ${UNIT_LABELS[toUnit]}: ${convertedAmount.toFixed(4)}`
-    );
+    steps.push({
+      key: "gramsToWeight",
+      params: {
+        grams: grams.toFixed(2),
+        toUnit: UNIT_LABELS[toUnit],
+        convertedAmount: convertedAmount.toFixed(4),
+      },
+    });
 
     formula = `${amount} ${UNIT_LABELS[fromUnit]} = ${convertedAmount.toFixed(4)} ${UNIT_LABELS[toUnit]}`;
   } else {
@@ -147,33 +172,69 @@ export function convertCookingUnit(input: CookingUnitInput): CalculationResult<C
     if (fromIsVolume) {
       // Volume to weight
       const ml = convertToMl(amount, fromUnit as VolumeUnit);
-      steps.push(`Convert ${amount} ${UNIT_LABELS[fromUnit]} to ml: ${ml.toFixed(2)} ml`);
+      steps.push({
+        key: "volumeToMl",
+        params: {
+          amount,
+          fromUnit: UNIT_LABELS[fromUnit],
+          ml: ml.toFixed(2),
+        },
+      });
 
       const grams = ml * density;
-      steps.push(
-        `Apply density for ${ingredient.name} (${density} g/ml): ${ml.toFixed(2)} ml × ${density} = ${grams.toFixed(2)} g`
-      );
+      steps.push({
+        key: "applyDensityToWeight",
+        params: {
+          ingredientName: ingredient.name,
+          density,
+          ml: ml.toFixed(2),
+          grams: grams.toFixed(2),
+        },
+      });
 
       convertedAmount = convertFromGrams(grams, toUnit as WeightUnit);
-      steps.push(
-        `Convert ${grams.toFixed(2)} g to ${UNIT_LABELS[toUnit]}: ${convertedAmount.toFixed(4)}`
-      );
+      steps.push({
+        key: "gramsToWeight",
+        params: {
+          grams: grams.toFixed(2),
+          toUnit: UNIT_LABELS[toUnit],
+          convertedAmount: convertedAmount.toFixed(4),
+        },
+      });
 
       formula = `${amount} ${UNIT_LABELS[fromUnit]} ${ingredient.name} = ${convertedAmount.toFixed(2)} ${UNIT_LABELS[toUnit]}`;
     } else {
       // Weight to volume
       const grams = convertToGrams(amount, fromUnit as WeightUnit);
-      steps.push(`Convert ${amount} ${UNIT_LABELS[fromUnit]} to g: ${grams.toFixed(2)} g`);
+      steps.push({
+        key: "weightToGrams",
+        params: {
+          amount,
+          fromUnit: UNIT_LABELS[fromUnit],
+          grams: grams.toFixed(2),
+        },
+      });
 
       const ml = grams / density;
-      steps.push(
-        `Apply density for ${ingredient.name} (${density} g/ml): ${grams.toFixed(2)} g ÷ ${density} = ${ml.toFixed(2)} ml`
-      );
+      steps.push({
+        key: "applyDensityToVolume",
+        params: {
+          ingredientName: ingredient.name,
+          density,
+          grams: grams.toFixed(2),
+          ml: ml.toFixed(2),
+        },
+      });
 
       convertedAmount = convertFromMl(ml, toUnit as VolumeUnit);
-      steps.push(
-        `Convert ${ml.toFixed(2)} ml to ${UNIT_LABELS[toUnit]}: ${convertedAmount.toFixed(4)}`
-      );
+      steps.push({
+        key: "mlToVolume",
+        params: {
+          ml: ml.toFixed(2),
+          toUnit: UNIT_LABELS[toUnit],
+          convertedAmount: convertedAmount.toFixed(4),
+        },
+      });
 
       formula = `${amount} ${UNIT_LABELS[fromUnit]} ${ingredient.name} = ${convertedAmount.toFixed(2)} ${UNIT_LABELS[toUnit]}`;
     }

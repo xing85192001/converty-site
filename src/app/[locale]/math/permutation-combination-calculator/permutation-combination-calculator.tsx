@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -50,6 +51,7 @@ const usePermutationCombinationStore = createCalculatorStore<
 export function PermutationCombinationCalculator() {
   const tResults = useTranslations("calculator.results");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.permutationCombination");
 
   const { values, setValue, result, errors, calculationError } = usePermutationCombinationStore();
 
@@ -121,7 +123,9 @@ export function PermutationCombinationCalculator() {
             <p className="text-sm font-medium">{tMath("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {pcResult.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.math.permutationCombination")}>
+                  {formatStep(step, tSteps, "calculator.math.permutationCombination")}
+                </p>
               ))}
             </div>
           </div>

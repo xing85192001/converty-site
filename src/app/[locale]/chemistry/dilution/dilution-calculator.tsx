@@ -2,6 +2,7 @@
 
 import { AlertCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -38,6 +39,7 @@ export default function DilutionCalculator() {
   const t = useTranslations("calculator.chemistry");
   const tSections = useTranslations("calculator.sections");
   const tModes = useTranslations("calculator.chemistry.modes");
+  const tSteps = useTranslations("calculator.chemistry.dilution");
 
   const { values, setValue, result, calculationError } = useDilutionStore();
 
@@ -266,7 +268,7 @@ export default function DilutionCalculator() {
                 <ol className="list-decimal list-inside space-y-2 text-sm">
                   {result.steps.map((step, index) => (
                     <li key={index} className="text-muted-foreground">
-                      {step}
+                      {formatStep(step, tSteps, "calculator.chemistry.dilution")}
                     </li>
                   ))}
                 </ol>

@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import { type CircleInput, type CircleResult, calculateCircle } from "@/lib/converters/math/circle";
 import { CircleFormSchema } from "@/lib/schemas/math";
 import { createCalculatorStore } from "@/stores/calculator-store";
@@ -61,7 +62,9 @@ export function CircleCalculator() {
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-2">
-          <Label>Known Value</Label>
+          <Label>
+            <T k="ui.known-value" />
+          </Label>
           <Select
             value={values.mode}
             onValueChange={(v) => setValue("mode", v as FormValues["mode"])}
@@ -129,8 +132,12 @@ export function CircleCalculator() {
                 <thead>
                   <tr className="border-b">
                     <th className="text-left p-2">Angle</th>
-                    <th className="text-left p-2">Arc Length</th>
-                    <th className="text-left p-2">Sector Area</th>
+                    <th className="text-left p-2">
+                      <T k="ui.arc-length" />
+                    </th>
+                    <th className="text-left p-2">
+                      <T k="ui.sector-area" />
+                    </th>
                     <th className="text-left p-2">Chord</th>
                   </tr>
                 </thead>

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   COMMON_MEGAPIXELS,
   calculateMegapixels,
@@ -72,13 +73,17 @@ export function MegapixelCalculator() {
           />
 
           <div className="space-y-2">
-            <h3 className="font-medium">Common Megapixel Reference</h3>
+            <h3 className="font-medium">
+              <T k="ui.common-megapixel-reference" />
+            </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b">
                     <th className="text-left py-2">MP</th>
-                    <th className="text-left py-2">Typical Use</th>
+                    <th className="text-left py-2">
+                      <T k="ui.typical-use" />
+                    </th>
                     <th className="text-right py-2">Comparison</th>
                   </tr>
                 </thead>

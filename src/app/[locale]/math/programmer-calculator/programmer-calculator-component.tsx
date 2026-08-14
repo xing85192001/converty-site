@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   BASE_OPTIONS,
   type Base,
@@ -162,7 +163,9 @@ export function ProgrammerCalculatorComponent() {
           <ResultGrid results={repRows(result.a)} columns={4} />
           <p className="text-sm font-medium">{t("reprB")}</p>
           <ResultGrid results={repRows(result.b)} columns={4} />
-          <p className="text-sm font-medium">NOT A</p>
+          <p className="text-sm font-medium">
+            <T k="ui.not-a" />
+          </p>
           <ResultGrid results={repRows(result.not)} columns={4} />
           {result.bitwise && (
             <>

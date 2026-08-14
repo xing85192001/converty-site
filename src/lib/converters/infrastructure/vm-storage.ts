@@ -14,6 +14,7 @@
  */
 
 import hypervisorData from "@/data/infrastructure/hypervisor-overhead.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { HypervisorOverhead, HypervisorPlatform } from "./types";
 
@@ -95,7 +96,7 @@ export interface VmStorageResult {
     growth: number;
   };
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -122,7 +123,7 @@ export interface VmStorageResult {
  * });
  */
 export function calculateVmStorage(input: VmStorageInput): CalculationResult<VmStorageResult> {
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Platform selection: default to VMware for backward compatibility
   const platform = input.platform || "vmware";
@@ -141,7 +142,7 @@ export function calculateVmStorage(input: VmStorageInput): CalculationResult<VmS
   }
 
   const platformName = platformData.name;
-  steps.push(`Platform: ${platformName}`);
+  steps.push({ key: "platform", params: { name: platformName } });
 
   // Validation: Check for empty VM configs
   if (input.vmConfigs.length === 0) {
@@ -186,62 +187,112 @@ export function calculateVmStorage(input: VmStorageInput): CalculationResult<VmS
     0
   );
   const totalVmCount = input.vmConfigs.reduce((sum, config) => sum + config.count, 0);
-  steps.push(
-    `Total provisioned disk: ${totalProvisionedGb.toFixed(2)} GB across ${totalVmCount} VMs`
-  );
+  steps.push({
+    key: "totalProvisionedDisk",
+    params: {
+      totalProvisionedGb: totalProvisionedGb.toFixed(2),
+      totalVmCount,
+    },
+  });
 
   // Step 2: Calculate used disk (with thin provisioning)
   const usedDiskGb = totalProvisionedGb * (1 - input.thinProvisioningPercent / 100);
   const overSubscribedGb = totalProvisionedGb - usedDiskGb;
   if (input.thinProvisioningPercent > 0) {
-    steps.push(
-      `Thin provisioning (${input.thinProvisioningPercent}%): Used ${usedDiskGb.toFixed(2)} GB, over-subscribed ${overSubscribedGb.toFixed(2)} GB`
-    );
+    steps.push({
+      key: "thinProvisioning",
+      params: {
+        thinProvisioningPercent: input.thinProvisioningPercent,
+        usedDiskGb: usedDiskGb.toFixed(2),
+        overSubscribedGb: overSubscribedGb.toFixed(2),
+      },
+    });
   } else {
-    steps.push(`Thick provisioning: ${usedDiskGb.toFixed(2)} GB (no over-subscription)`);
+    steps.push({
+      key: "thickProvisioning",
+      params: { usedDiskGb: usedDiskGb.toFixed(2) },
+    });
   }
 
   // Step 3: Calculate snapshot allocation
   const snapshotGb = totalProvisionedGb * (input.snapshotPercent / 100);
-  steps.push(`Snapshot allocation (${input.snapshotPercent}%): ${snapshotGb.toFixed(2)} GB`);
+  steps.push({
+    key: "snapshotAllocation",
+    params: {
+      snapshotPercent: input.snapshotPercent,
+      snapshotGb: snapshotGb.toFixed(2),
+    },
+  });
 
   // Step 4: Calculate swap file allocation
   const swapGb = input.includeSwapFiles
     ? input.vmConfigs.reduce((sum, config) => sum + config.ramGb * config.count, 0)
     : 0;
   if (input.includeSwapFiles) {
-    steps.push(`Swap files (equal to RAM): ${swapGb.toFixed(2)} GB`);
+    steps.push({
+      key: "swapFilesIncluded",
+      params: { swapGb: swapGb.toFixed(2) },
+    });
   } else {
-    steps.push("Swap files: Not included (0 GB)");
+    steps.push({ key: "swapFilesExcluded" });
   }
 
   // Step 5: Calculate config/log allocation
   const configLogGb = totalVmCount * input.configLogGbPerVm;
-  steps.push(
-    `Config/log files (${input.configLogGbPerVm} GB × ${totalVmCount} VMs): ${configLogGb.toFixed(2)} GB`
-  );
+  steps.push({
+    key: "configLogFiles",
+    params: {
+      configLogGbPerVm: input.configLogGbPerVm,
+      totalVmCount,
+      configLogGb: configLogGb.toFixed(2),
+    },
+  });
 
   // Step 6: Calculate total VM storage
   const totalVmStorageGb = usedDiskGb + snapshotGb + swapGb + configLogGb;
-  steps.push(`Total VM storage: ${totalVmStorageGb.toFixed(2)} GB`);
+  steps.push({
+    key: "totalVmStorage",
+    params: { totalVmStorageGb: totalVmStorageGb.toFixed(2) },
+  });
 
   // Step 7: Calculate hypervisor overhead
   const hypervisorOverheadGb = hypervisorHosts * hypervisorStorageGbPerHost;
-  steps.push(
-    `${platformName} overhead (${hypervisorStorageGbPerHost} GB × ${hypervisorHosts} hosts): ${hypervisorOverheadGb.toFixed(2)} GB`
-  );
+  steps.push({
+    key: "hypervisorOverhead",
+    params: {
+      platformName,
+      hypervisorStorageGbPerHost,
+      hypervisorHosts,
+      hypervisorOverheadGb: hypervisorOverheadGb.toFixed(2),
+    },
+  });
 
   // Step 8: Calculate subtotal before growth
   const subtotal = totalVmStorageGb + hypervisorOverheadGb;
-  steps.push(`Subtotal (VM + ${platformName}): ${subtotal.toFixed(2)} GB`);
+  steps.push({
+    key: "subtotal",
+    params: {
+      platformName,
+      subtotal: subtotal.toFixed(2),
+    },
+  });
 
   // Step 9: Calculate growth allocation
   const growthAllocationGb = subtotal * (input.growthPercent / 100);
-  steps.push(`Growth allocation (${input.growthPercent}%): ${growthAllocationGb.toFixed(2)} GB`);
+  steps.push({
+    key: "growthAllocation",
+    params: {
+      growthPercent: input.growthPercent,
+      growthAllocationGb: growthAllocationGb.toFixed(2),
+    },
+  });
 
   // Step 10: Calculate total required storage
   const totalRequiredGb = subtotal + growthAllocationGb;
-  steps.push(`Total required storage: ${totalRequiredGb.toFixed(2)} GB`);
+  steps.push({
+    key: "totalRequiredStorage",
+    params: { totalRequiredGb: totalRequiredGb.toFixed(2) },
+  });
 
   // Calculate percentage breakdown
   const percentages = {

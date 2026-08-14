@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface SurfaceAreaInput {
@@ -38,7 +39,7 @@ export interface SurfaceAreaResult {
   lateralSurfaceArea: number;
   baseSurfaceArea: number;
   formula: string;
-  steps: string[];
+  steps: CalcStep[];
   unit: string;
 }
 
@@ -46,7 +47,7 @@ export function calculateSurfaceArea(
   input: SurfaceAreaInput
 ): CalculationResult<SurfaceAreaResult> {
   const { shape } = input;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let totalSurfaceArea: number;
   let lateralSurfaceArea: number;
   let baseSurfaceArea: number;
@@ -70,11 +71,11 @@ export function calculateSurfaceArea(
       baseSurfaceArea = side * side;
       formula = "SA = 6s²";
 
-      steps.push(`Side length (s) = ${side}`);
-      steps.push(`Surface Area = 6 × s²`);
-      steps.push(`= 6 × ${side}²`);
-      steps.push(`= 6 × ${side * side}`);
-      steps.push(`= ${totalSurfaceArea}`);
+      steps.push({ key: "cubeSide", params: { side } });
+      steps.push({ key: "cubeFormula" });
+      steps.push({ key: "cubeSubstitute", params: { side } });
+      steps.push({ key: "cubeSquared", params: { squared: side * side } });
+      steps.push({ key: "cubeResult", params: { totalSurfaceArea } });
       break;
     }
 
@@ -94,11 +95,14 @@ export function calculateSurfaceArea(
       baseSurfaceArea = length * width;
       formula = "SA = 2(lw + wh + hl)";
 
-      steps.push(`Length (l) = ${length}, Width (w) = ${width}, Height (h) = ${height}`);
-      steps.push(`Surface Area = 2(lw + wh + hl)`);
-      steps.push(`= 2(${length}×${width} + ${width}×${height} + ${height}×${length})`);
-      steps.push(`= 2(${length * width} + ${width * height} + ${height * length})`);
-      steps.push(`= ${totalSurfaceArea}`);
+      steps.push({ key: "rectDimensions", params: { length, width, height } });
+      steps.push({ key: "rectFormula" });
+      steps.push({ key: "rectSubstitute", params: { length, width, height } });
+      steps.push({
+        key: "rectProducts",
+        params: { lw: length * width, wh: width * height, hl: height * length },
+      });
+      steps.push({ key: "rectResult", params: { totalSurfaceArea } });
       break;
     }
 
@@ -118,11 +122,14 @@ export function calculateSurfaceArea(
       baseSurfaceArea = 0;
       formula = "SA = 4πr²";
 
-      steps.push(`Radius (r) = ${radius}`);
-      steps.push(`Surface Area = 4πr²`);
-      steps.push(`= 4 × π × ${radius}²`);
-      steps.push(`= 4 × π × ${radius * radius}`);
-      steps.push(`= ${totalSurfaceArea.toFixed(6)}`);
+      steps.push({ key: "sphereRadius", params: { radius } });
+      steps.push({ key: "sphereFormula" });
+      steps.push({ key: "sphereSubstitute", params: { radius } });
+      steps.push({ key: "sphereSquared", params: { squared: radius * radius } });
+      steps.push({
+        key: "sphereResult",
+        params: { totalSurfaceArea: totalSurfaceArea.toFixed(6) },
+      });
       break;
     }
 
@@ -142,11 +149,14 @@ export function calculateSurfaceArea(
       totalSurfaceArea = lateralSurfaceArea + 2 * baseSurfaceArea;
       formula = "SA = 2πrh + 2πr²";
 
-      steps.push(`Radius (r) = ${radius}, Height (h) = ${height}`);
-      steps.push(`Lateral Surface Area = 2πrh = ${lateralSurfaceArea.toFixed(6)}`);
-      steps.push(`Base Area = πr² = ${baseSurfaceArea.toFixed(6)}`);
-      steps.push(`Total Surface Area = 2πrh + 2πr²`);
-      steps.push(`= ${totalSurfaceArea.toFixed(6)}`);
+      steps.push({ key: "cylDimensions", params: { radius, height } });
+      steps.push({
+        key: "cylLateral",
+        params: { lateralSurfaceArea: lateralSurfaceArea.toFixed(6) },
+      });
+      steps.push({ key: "cylBase", params: { baseSurfaceArea: baseSurfaceArea.toFixed(6) } });
+      steps.push({ key: "cylFormula" });
+      steps.push({ key: "cylResult", params: { totalSurfaceArea: totalSurfaceArea.toFixed(6) } });
       break;
     }
 
@@ -166,11 +176,14 @@ export function calculateSurfaceArea(
       totalSurfaceArea = lateralSurfaceArea + baseSurfaceArea;
       formula = "SA = πrs + πr²";
 
-      steps.push(`Radius (r) = ${radius}, Slant Height (s) = ${slantHeight}`);
-      steps.push(`Lateral Surface Area = πrs = ${lateralSurfaceArea.toFixed(6)}`);
-      steps.push(`Base Area = πr² = ${baseSurfaceArea.toFixed(6)}`);
-      steps.push(`Total Surface Area = πrs + πr²`);
-      steps.push(`= ${totalSurfaceArea.toFixed(6)}`);
+      steps.push({ key: "coneDimensions", params: { radius, slantHeight } });
+      steps.push({
+        key: "coneLateral",
+        params: { lateralSurfaceArea: lateralSurfaceArea.toFixed(6) },
+      });
+      steps.push({ key: "coneBase", params: { baseSurfaceArea: baseSurfaceArea.toFixed(6) } });
+      steps.push({ key: "coneFormula" });
+      steps.push({ key: "coneResult", params: { totalSurfaceArea: totalSurfaceArea.toFixed(6) } });
       break;
     }
 
@@ -198,11 +211,11 @@ export function calculateSurfaceArea(
       totalSurfaceArea = baseSurfaceArea + lateralSurfaceArea;
       formula = "SA = lw + ls + ws";
 
-      steps.push(`Base: ${baseLength} × ${baseWidth}, Slant Height = ${slantHeight}`);
-      steps.push(`Base Area = ${baseSurfaceArea}`);
-      steps.push(`Lateral Area = ${baseLength}×${slantHeight} + ${baseWidth}×${slantHeight}`);
-      steps.push(`= ${lateralSurfaceArea}`);
-      steps.push(`Total = ${totalSurfaceArea}`);
+      steps.push({ key: "pyrDimensions", params: { baseLength, baseWidth, slantHeight } });
+      steps.push({ key: "pyrBase", params: { baseSurfaceArea } });
+      steps.push({ key: "pyrLateralSubstitute", params: { baseLength, baseWidth, slantHeight } });
+      steps.push({ key: "pyrLateralResult", params: { lateralSurfaceArea } });
+      steps.push({ key: "pyrTotal", params: { totalSurfaceArea } });
       break;
     }
 
@@ -236,12 +249,24 @@ export function calculateSurfaceArea(
       totalSurfaceArea = 2 * baseSurfaceArea + lateralSurfaceArea;
       formula = "SA = bh + (s₁ + s₂ + s₃)L";
 
-      steps.push(`Triangle base = ${triangleBase}, height = ${triangleHeight}`);
-      steps.push(`Prism length = ${prismLength}`);
-      steps.push(`Base Area = ½ × ${triangleBase} × ${triangleHeight} = ${baseSurfaceArea}`);
-      steps.push(`Lateral Area = (${s1} + ${s2.toFixed(2)} + ${s3.toFixed(2)}) × ${prismLength}`);
-      steps.push(`= ${lateralSurfaceArea.toFixed(6)}`);
-      steps.push(`Total = ${totalSurfaceArea.toFixed(6)}`);
+      steps.push({ key: "triPrismBaseDims", params: { triangleBase, triangleHeight } });
+      steps.push({ key: "triPrismLength", params: { prismLength } });
+      steps.push({
+        key: "triPrismBaseArea",
+        params: { triangleBase, triangleHeight, baseSurfaceArea },
+      });
+      steps.push({
+        key: "triPrismLateralSubstitute",
+        params: { s1, s2: s2.toFixed(2), s3: s3.toFixed(2), prismLength },
+      });
+      steps.push({
+        key: "triPrismLateralResult",
+        params: { lateralSurfaceArea: lateralSurfaceArea.toFixed(6) },
+      });
+      steps.push({
+        key: "triPrismTotal",
+        params: { totalSurfaceArea: totalSurfaceArea.toFixed(6) },
+      });
       break;
     }
 
@@ -261,10 +286,13 @@ export function calculateSurfaceArea(
       totalSurfaceArea = lateralSurfaceArea + baseSurfaceArea;
       formula = "SA = 3πr²";
 
-      steps.push(`Radius (r) = ${radius}`);
-      steps.push(`Curved Surface Area = 2πr² = ${lateralSurfaceArea.toFixed(6)}`);
-      steps.push(`Base Area = πr² = ${baseSurfaceArea.toFixed(6)}`);
-      steps.push(`Total Surface Area = 3πr² = ${totalSurfaceArea.toFixed(6)}`);
+      steps.push({ key: "hemiRadius", params: { radius } });
+      steps.push({
+        key: "hemiCurved",
+        params: { lateralSurfaceArea: lateralSurfaceArea.toFixed(6) },
+      });
+      steps.push({ key: "hemiBase", params: { baseSurfaceArea: baseSurfaceArea.toFixed(6) } });
+      steps.push({ key: "hemiTotal", params: { totalSurfaceArea: totalSurfaceArea.toFixed(6) } });
       break;
     }
 

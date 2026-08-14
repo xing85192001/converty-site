@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { COMMON_RATIOS, calculateAspectRatio } from "@/lib/converters/photo/aspect-ratio";
 
 export function AspectRatioConverter() {
@@ -16,6 +17,7 @@ export function AspectRatioConverter() {
   const calcResult = calculateAspectRatio(w, h);
   const result = calcResult.ok ? calcResult.value : null;
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
@@ -27,7 +29,7 @@ export function AspectRatioConverter() {
           unit="px"
           min={1}
           step={1}
-          placeholder="Enter width"
+          placeholder={tUi("enter-width")}
         />
         <InputField
           id="height"
@@ -37,7 +39,7 @@ export function AspectRatioConverter() {
           unit="px"
           min={1}
           step={1}
-          placeholder="Enter height"
+          placeholder={tUi("enter-height")}
         />
       </div>
 
@@ -82,7 +84,9 @@ export function AspectRatioConverter() {
 
           {/* Common Ratios Reference */}
           <div className="space-y-2">
-            <p className="text-sm font-medium text-muted-foreground">Common Aspect Ratios</p>
+            <p className="text-sm font-medium text-muted-foreground">
+              <T k="ui.common-aspect-ratios" />
+            </p>
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-4">
               {COMMON_RATIOS.map((r) => (
                 <div

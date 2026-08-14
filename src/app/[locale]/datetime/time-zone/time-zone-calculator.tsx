@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/command";
 import { Label } from "@/components/ui/label";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { T } from "@/components/ui/t";
 import {
   calculateTimeZone,
   getTimezonesByRegion,
@@ -52,7 +53,7 @@ function TimezoneCombobox({
   onValueChange,
   groups,
   label,
-  placeholder = "Search timezone...",
+  placeholder,
   tDatetime,
 }: TimezoneComboboxProps) {
   const [open, setOpen] = useState(false);
@@ -85,7 +86,9 @@ function TimezoneCombobox({
           <Command>
             <CommandInput placeholder={placeholder} />
             <CommandList>
-              <CommandEmpty>No timezone found.</CommandEmpty>
+              <CommandEmpty>
+                <T k="ui.no-timezone-found" />
+              </CommandEmpty>
               {groups.map((group) => (
                 <CommandGroup key={group.region} heading={tDatetime(`regions.${group.regionKey}`)}>
                   {group.timezones.map((tz) => (
@@ -120,6 +123,7 @@ export function TimeZoneCalculator() {
   const t = useTranslations("calculator.labels");
   const tSections = useTranslations("calculator.sections");
   const tDatetime = useTranslations("calculator.datetime");
+  const tUi = useTranslations("ui");
   const { values, setValue, result, calculationError } = useTimeZoneStore();
 
   // Get timezone groups (memoized since it's computed)
@@ -145,6 +149,7 @@ export function TimeZoneCalculator() {
             onValueChange={(value) => setValue("fromTimezone", value)}
             groups={timezoneGroups}
             label={t("timezone")}
+            placeholder={tUi("search-timezone")}
             tDatetime={tDatetime}
           />
         </CardContent>
@@ -160,6 +165,7 @@ export function TimeZoneCalculator() {
             onValueChange={(value) => setValue("toTimezone", value)}
             groups={timezoneGroups}
             label={t("timezone")}
+            placeholder={tUi("search-timezone")}
             tDatetime={tDatetime}
           />
         </CardContent>

@@ -3,6 +3,7 @@
 import { AlertCircle, DollarSign, Server } from "lucide-react";
 import { useFormatter, useTranslations } from "next-intl";
 import { useMemo } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { CsvExportButton, InputField, PdfExportButton, ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -13,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   calculateVmwareLicensing,
   type VmwareLicensingInput,
@@ -37,6 +39,7 @@ const useVmwareLicensingStore = createCalculatorStore<VmwareLicensingInput, Vmwa
 export function VmwareLicensingCalculator() {
   const t = useTranslations("calculator.vmwareLicensingCalculator");
   const tCommon = useTranslations("common");
+  const tSteps = useTranslations("calculator.infrastructure.vmwareLicensing");
   const format = useFormatter();
   const { values, setValue, result, calculationError } = useVmwareLicensingStore();
 
@@ -205,9 +208,15 @@ export function VmwareLicensingCalculator() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="1">1 year</SelectItem>
-                    <SelectItem value="3">3 years</SelectItem>
-                    <SelectItem value="5">5 years</SelectItem>
+                    <SelectItem value="1">
+                      <T k="ui.1-year" />
+                    </SelectItem>
+                    <SelectItem value="3">
+                      <T k="ui.3-years" />
+                    </SelectItem>
+                    <SelectItem value="5">
+                      <T k="ui.5-years" />
+                    </SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -219,10 +228,12 @@ export function VmwareLicensingCalculator() {
         <div className="space-y-6">
           {result && (
             <>
-              {/* Licensing Costs Card */}
+              {/* <T k="ui.licensing-costs" /> Card */}
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between">
-                  <CardTitle>Licensing Costs</CardTitle>
+                  <CardTitle>
+                    <T k="ui.licensing-costs" />
+                  </CardTitle>
                   <div className="flex gap-2">
                     <PdfExportButton sections={pdfSections} options={{ title: t("title") }} />
                     <CsvExportButton data={csvData} filename="vmware-licensing-calculator" />
@@ -293,19 +304,21 @@ export function VmwareLicensingCalculator() {
                 </CardContent>
               </Card>
 
-              {/* Calculation Details Card */}
+              {/* <T k="ui.calculation-details" /> Card */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Calculation Details</CardTitle>
+                  <CardTitle>
+                    <T k="ui.calculation-details" />
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2 rounded-lg bg-muted p-4">
+                  <div className="space-y-2 rounded-lg bg-muted p-4 font-mono text-sm">
                     {result.steps.map((step, index) => (
-                      <div key={`step-${index}-${step.slice(0, 20)}`} className="flex gap-3">
-                        <span className="text-sm font-medium text-muted-foreground">
-                          {index + 1}.
+                      <div key={`step-${index}`} className="flex gap-3">
+                        <span className="font-medium text-muted-foreground">{index + 1}.</span>
+                        <span>
+                          {formatStep(step, tSteps, "calculator.infrastructure.vmwareLicensing")}
                         </span>
-                        <span className="text-sm">{step}</span>
                       </div>
                     ))}
                   </div>

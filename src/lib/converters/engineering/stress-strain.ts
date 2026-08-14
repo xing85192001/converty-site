@@ -1,4 +1,5 @@
 import materialsData from "@/data/engineering/materials.json";
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import type { Material } from "./types";
 
@@ -45,7 +46,7 @@ export interface StressStrainResult {
   /** Yield strength used in MPa */
   yieldStrength: number | null;
   /** Step-by-step calculation breakdown */
-  steps: string[];
+  steps: CalcStep[];
   /** Stress in additional units for display */
   stressUnits: {
     mpa: number;
@@ -91,7 +92,7 @@ export function calculateStressStrain(
     return { ok: false, error: "Force must be non-negative", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Get material properties if material selected
   let material: Material | undefined;
@@ -105,9 +106,14 @@ export function calculateStressStrain(
       youngsModulus = material.youngsModulus;
       yieldStrength = material.yieldStrength;
       materialName = material.name;
-      steps.push(
-        `Material: ${material.name} (E = ${material.youngsModulus} GPa, σ_y = ${material.yieldStrength} MPa)`
-      );
+      steps.push({
+        key: "materialInfo",
+        params: {
+          name: material.name,
+          youngsModulus: material.youngsModulus,
+          yieldStrength: material.yieldStrength,
+        },
+      });
     }
   }
 
@@ -122,20 +128,28 @@ export function calculateStressStrain(
     // Calculate stress: σ = F/A (result in MPa since N/mm² = MPa)
     stress = forceN / area;
 
-    steps.push(`Step 1: Convert force to N`);
-    steps.push(`F = ${force} kN × 1000 = ${forceN} N`);
-    steps.push(`Step 2: Calculate stress`);
-    steps.push(`σ = F / A = ${forceN} N / ${area} mm² = ${stress.toFixed(2)} MPa`);
+    steps.push({ key: "stressModeForceConvertTitle" });
+    steps.push({ key: "stressModeForceConvert", params: { force, forceN } });
+    steps.push({ key: "stressModeCalcTitle" });
+    steps.push({
+      key: "stressModeCalc",
+      params: { forceN, area, stress: stress.toFixed(2) },
+    });
 
     // Calculate strain if E is available
     if (youngsModulus > 0) {
       // E is in GPa, stress is in MPa
       // ε = σ / E = σ(MPa) / (E(GPa) × 1000)
       strain = stress / (youngsModulus * 1000);
-      steps.push(`Step 3: Calculate strain`);
-      steps.push(
-        `ε = σ / E = ${stress.toFixed(2)} MPa / (${youngsModulus} GPa × 1000) = ${strain.toExponential(4)}`
-      );
+      steps.push({ key: "stressModeStrainTitle" });
+      steps.push({
+        key: "stressModeStrainCalc",
+        params: {
+          stress: stress.toFixed(2),
+          youngsModulus,
+          strain: strain.toExponential(4),
+        },
+      });
     } else {
       strain = 0;
     }
@@ -143,19 +157,29 @@ export function calculateStressStrain(
     // Calculate strain: ε = ΔL / L
     strain = changeInLength / originalLength;
 
-    steps.push(`Step 1: Calculate strain`);
-    steps.push(
-      `ε = ΔL / L = ${changeInLength} mm / ${originalLength} mm = ${strain.toExponential(4)}`
-    );
+    steps.push({ key: "strainModeStep1Title" });
+    steps.push({
+      key: "strainModeCalc",
+      params: {
+        changeInLength,
+        originalLength,
+        strain: strain.toExponential(4),
+      },
+    });
 
     // Calculate stress if E is available
     if (youngsModulus > 0) {
       // σ = ε × E (E in GPa, result in MPa)
       stress = strain * youngsModulus * 1000;
-      steps.push(`Step 2: Calculate stress`);
-      steps.push(
-        `σ = ε × E = ${strain.toExponential(4)} × ${youngsModulus} GPa × 1000 = ${stress.toFixed(2)} MPa`
-      );
+      steps.push({ key: "strainModeStressTitle" });
+      steps.push({
+        key: "strainModeStressCalc",
+        params: {
+          strain: strain.toExponential(4),
+          youngsModulus,
+          stress: stress.toFixed(2),
+        },
+      });
     } else {
       stress = 0;
     }
@@ -167,17 +191,25 @@ export function calculateStressStrain(
     const forceN = force * 1000;
     stress = forceN / area;
 
-    steps.push(`Step 1: Calculate stress`);
-    steps.push(`F = ${force} kN × 1000 = ${forceN} N`);
-    steps.push(`σ = F / A = ${forceN} N / ${area} mm² = ${stress.toFixed(2)} MPa`);
+    steps.push({ key: "ymModeStressTitle" });
+    steps.push({ key: "ymModeForceConvert", params: { force, forceN } });
+    steps.push({
+      key: "ymModeStressCalc",
+      params: { forceN, area, stress: stress.toFixed(2) },
+    });
 
     // Calculate strain
     strain = changeInLength / originalLength;
 
-    steps.push(`Step 2: Calculate strain`);
-    steps.push(
-      `ε = ΔL / L = ${changeInLength} mm / ${originalLength} mm = ${strain.toExponential(4)}`
-    );
+    steps.push({ key: "ymModeStrainTitle" });
+    steps.push({
+      key: "ymModeStrainCalc",
+      params: {
+        changeInLength,
+        originalLength,
+        strain: strain.toExponential(4),
+      },
+    });
 
     // Calculate Young's modulus: E = σ / ε
     if (strain === 0) {
@@ -189,10 +221,15 @@ export function calculateStressStrain(
     }
     youngsModulus = stress / (strain * 1000); // Convert MPa to GPa
 
-    steps.push(`Step 3: Calculate Young's modulus`);
-    steps.push(
-      `E = σ / ε = ${stress.toFixed(2)} MPa / ${strain.toExponential(4)} = ${youngsModulus.toFixed(2)} GPa`
-    );
+    steps.push({ key: "ymModeModulusTitle" });
+    steps.push({
+      key: "ymModeModulusCalc",
+      params: {
+        stress: stress.toFixed(2),
+        strain: strain.toExponential(4),
+        youngsModulus: youngsModulus.toFixed(2),
+      },
+    });
   }
 
   // Calculate safety factor
@@ -203,15 +240,21 @@ export function calculateStressStrain(
     safetyFactor = yieldStrength / stress;
     exceedsYield = stress > yieldStrength;
 
-    steps.push(`Step ${steps.length / 2 + 2}: Safety factor`);
-    steps.push(
-      `SF = σ_y / σ = ${yieldStrength} MPa / ${stress.toFixed(2)} MPa = ${safetyFactor.toFixed(2)}`
-    );
+    steps.push({ key: "safetyFactorTitle" });
+    steps.push({
+      key: "safetyFactorCalc",
+      params: {
+        yieldStrength,
+        stress: stress.toFixed(2),
+        safetyFactor: safetyFactor.toFixed(2),
+      },
+    });
 
     if (exceedsYield) {
-      steps.push(
-        `⚠️ WARNING: Stress (${stress.toFixed(2)} MPa) exceeds yield strength (${yieldStrength} MPa)`
-      );
+      steps.push({
+        key: "yieldWarning",
+        params: { stress: stress.toFixed(2), yieldStrength },
+      });
     }
   }
 

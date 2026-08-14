@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface RoundingInput {
@@ -14,7 +15,7 @@ export interface RoundingResult {
   decimalPlaces: number;
   difference: number;
   percentChange: number;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function countDecimalPlaces(num: number): number {
@@ -37,20 +38,20 @@ export function calculateRounding(input: RoundingInput): CalculationResult<Round
     return { ok: false, error: "Number must be a finite value", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let rounded: number;
   let method: string;
 
-  steps.push(`Original number: ${number}`);
+  steps.push({ key: "originalNumber", params: { number } });
 
   switch (mode) {
     case "round": {
       const factor = 10 ** decimalPlaces;
       rounded = Math.round(number * factor) / factor;
       method = `Round to ${decimalPlaces} decimal places`;
-      steps.push(`Multiply by 10^${decimalPlaces}: ${number * factor}`);
-      steps.push(`Round: ${Math.round(number * factor)}`);
-      steps.push(`Divide by 10^${decimalPlaces}: ${rounded}`);
+      steps.push({ key: "roundMultiply", params: { decimalPlaces, product: number * factor } });
+      steps.push({ key: "roundRound", params: { value: Math.round(number * factor) } });
+      steps.push({ key: "roundDivide", params: { decimalPlaces, result: rounded } });
       break;
     }
 
@@ -58,9 +59,9 @@ export function calculateRounding(input: RoundingInput): CalculationResult<Round
       const factor = 10 ** decimalPlaces;
       rounded = Math.ceil(number * factor) / factor;
       method = `Ceiling to ${decimalPlaces} decimal places`;
-      steps.push(`Multiply by 10^${decimalPlaces}: ${number * factor}`);
-      steps.push(`Ceiling: ${Math.ceil(number * factor)}`);
-      steps.push(`Divide by 10^${decimalPlaces}: ${rounded}`);
+      steps.push({ key: "ceilMultiply", params: { decimalPlaces, product: number * factor } });
+      steps.push({ key: "ceilCeil", params: { value: Math.ceil(number * factor) } });
+      steps.push({ key: "ceilDivide", params: { decimalPlaces, result: rounded } });
       break;
     }
 
@@ -68,9 +69,9 @@ export function calculateRounding(input: RoundingInput): CalculationResult<Round
       const factor = 10 ** decimalPlaces;
       rounded = Math.floor(number * factor) / factor;
       method = `Floor to ${decimalPlaces} decimal places`;
-      steps.push(`Multiply by 10^${decimalPlaces}: ${number * factor}`);
-      steps.push(`Floor: ${Math.floor(number * factor)}`);
-      steps.push(`Divide by 10^${decimalPlaces}: ${rounded}`);
+      steps.push({ key: "floorMultiply", params: { decimalPlaces, product: number * factor } });
+      steps.push({ key: "floorFloor", params: { value: Math.floor(number * factor) } });
+      steps.push({ key: "floorDivide", params: { decimalPlaces, result: rounded } });
       break;
     }
 
@@ -78,22 +79,22 @@ export function calculateRounding(input: RoundingInput): CalculationResult<Round
       const factor = 10 ** decimalPlaces;
       rounded = Math.trunc(number * factor) / factor;
       method = `Truncate to ${decimalPlaces} decimal places`;
-      steps.push(`Truncate (remove decimal part): ${rounded}`);
+      steps.push({ key: "truncate", params: { result: rounded } });
       break;
     }
 
     case "toFixed": {
       rounded = parseFloat(number.toFixed(decimalPlaces));
       method = `Fixed to ${decimalPlaces} decimal places`;
-      steps.push(`toFixed(${decimalPlaces}): ${rounded}`);
+      steps.push({ key: "toFixed", params: { decimalPlaces, result: rounded } });
       break;
     }
 
     case "toSignificant": {
       rounded = roundToSignificantFigures(number, significantFigures);
       method = `Round to ${significantFigures} significant figures`;
-      steps.push(`Significant figures: ${significantFigures}`);
-      steps.push(`Result: ${rounded}`);
+      steps.push({ key: "sigFigs", params: { significantFigures } });
+      steps.push({ key: "sigFigsResult", params: { result: rounded } });
       break;
     }
 

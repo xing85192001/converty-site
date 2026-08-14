@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface FractionInput {
@@ -16,7 +17,7 @@ export interface FractionResult {
   decimal: number;
   mixedNumber: { whole: number; numerator: number; denominator: number } | null;
   percentage: number;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function gcd(a: number, b: number): number {
@@ -56,13 +57,16 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
 
   let resultNum: number;
   let resultDen: number;
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   switch (mode) {
     case "simplify":
       resultNum = numerator1;
       resultDen = denominator1;
-      steps.push(`Original: ${numerator1}/${denominator1}`);
+      steps.push({
+        key: "simplifyOriginal",
+        params: { numerator: numerator1, denominator: denominator1 },
+      });
       break;
 
     case "add": {
@@ -77,11 +81,19 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
       resultNum =
         numerator1 * (commonDenAdd / denominator1) + numerator2 * (commonDenAdd / denominator2);
       resultDen = commonDenAdd;
-      steps.push(`${numerator1}/${denominator1} + ${numerator2}/${denominator2}`);
-      steps.push(
-        `= ${numerator1 * (commonDenAdd / denominator1)}/${commonDenAdd} + ${numerator2 * (commonDenAdd / denominator2)}/${commonDenAdd}`
-      );
-      steps.push(`= ${resultNum}/${resultDen}`);
+      steps.push({
+        key: "addExpression",
+        params: { n1: numerator1, d1: denominator1, n2: numerator2, d2: denominator2 },
+      });
+      steps.push({
+        key: "addCommonDenominator",
+        params: {
+          n1Converted: numerator1 * (commonDenAdd / denominator1),
+          commonDen: commonDenAdd,
+          n2Converted: numerator2 * (commonDenAdd / denominator2),
+        },
+      });
+      steps.push({ key: "addResult", params: { numerator: resultNum, denominator: resultDen } });
       break;
     }
 
@@ -97,8 +109,14 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
       resultNum =
         numerator1 * (commonDenSub / denominator1) - numerator2 * (commonDenSub / denominator2);
       resultDen = commonDenSub;
-      steps.push(`${numerator1}/${denominator1} - ${numerator2}/${denominator2}`);
-      steps.push(`= ${resultNum}/${resultDen}`);
+      steps.push({
+        key: "subtractExpression",
+        params: { n1: numerator1, d1: denominator1, n2: numerator2, d2: denominator2 },
+      });
+      steps.push({
+        key: "subtractResult",
+        params: { numerator: resultNum, denominator: resultDen },
+      });
       break;
     }
 
@@ -112,8 +130,14 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
       }
       resultNum = numerator1 * numerator2;
       resultDen = denominator1 * denominator2;
-      steps.push(`${numerator1}/${denominator1} × ${numerator2}/${denominator2}`);
-      steps.push(`= ${resultNum}/${resultDen}`);
+      steps.push({
+        key: "multiplyExpression",
+        params: { n1: numerator1, d1: denominator1, n2: numerator2, d2: denominator2 },
+      });
+      steps.push({
+        key: "multiplyResult",
+        params: { numerator: resultNum, denominator: resultDen },
+      });
       break;
 
     case "divide":
@@ -126,15 +150,28 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
       }
       resultNum = numerator1 * denominator2;
       resultDen = denominator1 * numerator2;
-      steps.push(`${numerator1}/${denominator1} ÷ ${numerator2}/${denominator2}`);
-      steps.push(`= ${numerator1}/${denominator1} × ${denominator2}/${numerator2}`);
-      steps.push(`= ${resultNum}/${resultDen}`);
+      steps.push({
+        key: "divideExpression",
+        params: { n1: numerator1, d1: denominator1, n2: numerator2, d2: denominator2 },
+      });
+      steps.push({
+        key: "divideInvert",
+        params: { n1: numerator1, d1: denominator1, n2: numerator2, d2: denominator2 },
+      });
+      steps.push({ key: "divideResult", params: { numerator: resultNum, denominator: resultDen } });
       break;
 
     case "toDecimal":
       resultNum = numerator1;
       resultDen = denominator1;
-      steps.push(`${numerator1}/${denominator1} = ${(numerator1 / denominator1).toFixed(6)}`);
+      steps.push({
+        key: "toDecimalResult",
+        params: {
+          numerator: numerator1,
+          denominator: denominator1,
+          decimal: (numerator1 / denominator1).toFixed(6),
+        },
+      });
       break;
 
     case "toFraction": {
@@ -149,7 +186,10 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
       const precision = 1000000;
       resultNum = Math.round(decimal * precision);
       resultDen = precision;
-      steps.push(`${decimal} = ${resultNum}/${resultDen}`);
+      steps.push({
+        key: "toFractionResult",
+        params: { decimal, numerator: resultNum, denominator: resultDen },
+      });
       break;
     }
 
@@ -178,7 +218,10 @@ export function calculateFraction(input: FractionInput): CalculationResult<Fract
   }
 
   if (simplified.numerator !== resultNum || simplified.denominator !== resultDen) {
-    steps.push(`Simplified: ${simplified.numerator}/${simplified.denominator}`);
+    steps.push({
+      key: "simplifiedResult",
+      params: { numerator: simplified.numerator, denominator: simplified.denominator },
+    });
   }
 
   return {

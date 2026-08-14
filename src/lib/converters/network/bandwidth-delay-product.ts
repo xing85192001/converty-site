@@ -6,6 +6,8 @@
  * TCP window size ≥ BW × RTT
  */
 
+import type { CalcStep } from "@/lib/calc-step";
+
 export interface BandwidthDelayProductInput {
   bandwidth: number; // Bandwidth in Mbps
   rtt: number; // Round Trip Time in milliseconds
@@ -21,7 +23,7 @@ export interface BandwidthDelayProductResult {
   requiredWindowKB: number; // Required window size for full bandwidth utilization
   windowUtilization: number; // Percentage of window utilization
   isWindowSufficient: boolean; // Whether current window is sufficient
-  steps: string[]; // Calculation steps
+  steps: CalcStep[]; // Calculation steps
   recommendations: string[]; // Recommendations based on results
 }
 
@@ -30,18 +32,19 @@ export function calculateBandwidthDelayProduct(
 ): BandwidthDelayProductResult {
   const { bandwidth, rtt, windowSize } = input;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Convert units
   const bandwidthBps = bandwidth * 1000000; // Mbps to bps
   const rttSeconds = rtt / 1000; // ms to seconds
   const windowBits = windowSize * 1024 * 8; // KBytes to bits
 
-  steps.push(`Bandwidth = ${bandwidth} Mbps = ${bandwidthBps.toLocaleString()} bps`);
-  steps.push(`RTT = ${rtt} ms = ${rttSeconds} seconds`);
-  steps.push(
-    `Window Size = ${windowSize} KB = ${windowSize * 1024} bytes = ${windowBits.toLocaleString()} bits`
-  );
+  steps.push({ key: "bandwidth", params: { bandwidth, bandwidthBps } });
+  steps.push({ key: "rtt", params: { rtt, rttSeconds } });
+  steps.push({
+    key: "windowSize",
+    params: { windowSize, windowBytes: windowSize * 1024, windowBits },
+  });
 
   // Calculate BDP
   // BDP (bits) = Bandwidth (bps) × RTT (seconds)
@@ -50,38 +53,43 @@ export function calculateBandwidthDelayProduct(
   const bdpKBytes = bdpBytes / 1024;
   const bdpMBytes = bdpKBytes / 1024;
 
-  steps.push(`BDP = Bandwidth × RTT`);
-  steps.push(`BDP = ${bandwidthBps.toLocaleString()} bps × ${rttSeconds} s`);
-  steps.push(`BDP = ${bdpBits.toLocaleString()} bits = ${bdpBytes.toLocaleString()} bytes`);
-  steps.push(`BDP = ${bdpKBytes.toFixed(2)} KB = ${bdpMBytes.toFixed(4)} MB`);
+  steps.push({ key: "bdpFormula" });
+  steps.push({ key: "bdpSubstituted", params: { bandwidthBps, rttSeconds } });
+  steps.push({ key: "bdpResult", params: { bdpBits, bdpBytes } });
+  steps.push({ key: "bdpConverted", params: { bdpKBytes, bdpMBytes } });
 
   // Calculate maximum throughput with current window size
   // Throughput ≤ Window Size / RTT
   const maxThroughputBps = windowBits / rttSeconds;
   const maxThroughputMbps = maxThroughputBps / 1000000;
 
-  steps.push(`Maximum Throughput = Window Size / RTT`);
-  steps.push(`Maximum Throughput = ${windowBits.toLocaleString()} bits / ${rttSeconds} s`);
-  steps.push(
-    `Maximum Throughput = ${maxThroughputBps.toLocaleString()} bps = ${maxThroughputMbps.toFixed(2)} Mbps`
-  );
+  steps.push({ key: "maxThroughputFormula" });
+  steps.push({
+    key: "maxThroughputSubstituted",
+    params: { windowBits, rttSeconds },
+  });
+  steps.push({
+    key: "maxThroughputResult",
+    params: { maxThroughputBps, maxThroughputMbps },
+  });
 
   // Calculate required window size for full bandwidth utilization
   // Required Window = BDP = BW × RTT
   const requiredWindowBits = bdpBits;
   const requiredWindowKB = requiredWindowBits / 8 / 1024;
 
-  steps.push(`Required Window Size for full utilization = BDP`);
-  steps.push(`Required Window Size = ${requiredWindowKB.toFixed(2)} KB`);
+  steps.push({ key: "requiredWindowFormula" });
+  steps.push({ key: "requiredWindowResult", params: { requiredWindowKB } });
 
   // Calculate window utilization
   const windowUtilization = Math.min((windowBits / bdpBits) * 100, 100);
   const isWindowSufficient = windowBits >= bdpBits;
 
-  steps.push(`Window Utilization = (Current Window / Required Window) × 100`);
-  steps.push(
-    `Window Utilization = (${windowSize} KB / ${requiredWindowKB.toFixed(2)} KB) × 100 = ${windowUtilization.toFixed(1)}%`
-  );
+  steps.push({ key: "windowUtilizationFormula" });
+  steps.push({
+    key: "windowUtilizationResult",
+    params: { windowSize, requiredWindowKB, windowUtilization },
+  });
 
   // Generate recommendations
   const recommendations: string[] = [];

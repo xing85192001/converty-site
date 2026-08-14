@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface PermutationCombinationInput {
@@ -15,7 +16,7 @@ export interface PermutationCombinationResult {
     rFactorial: number;
     nMinusRFactorial: number;
   };
-  steps: string[];
+  steps: CalcStep[];
   interpretation: string;
   examples: string[];
 }
@@ -72,7 +73,7 @@ export function calculatePermutationCombination(
     return { ok: false, error: "n and r must be non-negative integers", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let result: number;
   let formula: string;
   let notation: string;
@@ -98,13 +99,13 @@ export function calculatePermutationCombination(
       formula = "P(n,r) = n! / (n-r)!";
       notation = `P(${n},${r}) or ${n}P${r}`;
 
-      steps.push(`Permutation without repetition`);
-      steps.push(`P(${n},${r}) = ${n}! / (${n}-${r})!`);
-      steps.push(`= ${n}! / ${n - r}!`);
+      steps.push({ key: "permIntro" });
+      steps.push({ key: "permFormula", params: { n, r } });
+      steps.push({ key: "permSimplified", params: { n, nMinusR: n - r } });
       if (n <= 10) {
-        steps.push(`= ${nFactorial} / ${nMinusRFactorial}`);
+        steps.push({ key: "permFactorials", params: { nFactorial, nMinusRFactorial } });
       }
-      steps.push(`= ${result}`);
+      steps.push({ key: "permResult", params: { result } });
 
       interpretation = `There are ${result} ways to arrange ${r} items from ${n} distinct items where order matters.`;
       examples = [
@@ -129,13 +130,13 @@ export function calculatePermutationCombination(
       formula = "C(n,r) = n! / (r! × (n-r)!)";
       notation = `C(${n},${r}) or (${n} choose ${r}) or ${n}C${r}`;
 
-      steps.push(`Combination without repetition`);
-      steps.push(`C(${n},${r}) = ${n}! / (${r}! × (${n}-${r})!)`);
-      steps.push(`= ${n}! / (${r}! × ${n - r}!)`);
+      steps.push({ key: "combIntro" });
+      steps.push({ key: "combFormula", params: { n, r } });
+      steps.push({ key: "combSimplified", params: { n, r, nMinusR: n - r } });
       if (n <= 10) {
-        steps.push(`= ${nFactorial} / (${rFactorial} × ${nMinusRFactorial})`);
+        steps.push({ key: "combFactorials", params: { nFactorial, rFactorial, nMinusRFactorial } });
       }
-      steps.push(`= ${result}`);
+      steps.push({ key: "combResult", params: { result } });
 
       interpretation = `There are ${result} ways to choose ${r} items from ${n} distinct items where order doesn't matter.`;
       examples = [
@@ -154,9 +155,9 @@ export function calculatePermutationCombination(
       formula = "P'(n,r) = n^r";
       notation = `${n}^${r}`;
 
-      steps.push(`Permutation with repetition`);
-      steps.push(`P'(${n},${r}) = ${n}^${r}`);
-      steps.push(`= ${result}`);
+      steps.push({ key: "permRepIntro" });
+      steps.push({ key: "permRepFormula", params: { n, r } });
+      steps.push({ key: "permRepResult", params: { result } });
 
       interpretation = `There are ${result} ways to arrange ${r} positions where each position can be any of ${n} items (repetition allowed).`;
       examples = [
@@ -173,10 +174,10 @@ export function calculatePermutationCombination(
       formula = "C'(n,r) = C(n+r-1, r) = (n+r-1)! / (r! × (n-1)!)";
       notation = `((${n} multichoose ${r})) or C(${n + r - 1},${r})`;
 
-      steps.push(`Combination with repetition (multiset)`);
-      steps.push(`C'(${n},${r}) = C(${n}+${r}-1, ${r})`);
-      steps.push(`= C(${n + r - 1}, ${r})`);
-      steps.push(`= ${result}`);
+      steps.push({ key: "combRepIntro" });
+      steps.push({ key: "combRepFormula", params: { n, r } });
+      steps.push({ key: "combRepSimplified", params: { nPlusRMinus1: n + r - 1, r } });
+      steps.push({ key: "combRepResult", params: { result } });
 
       interpretation = `There are ${result} ways to choose ${r} items from ${n} types where items can be repeated and order doesn't matter.`;
       examples = [

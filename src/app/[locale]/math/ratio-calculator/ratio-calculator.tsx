@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -52,6 +53,8 @@ const useRatioStore = createCalculatorStore<FormValues, RatioResult | null>({
 
 export function RatioCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.ratio");
+  const tUi = useTranslations("ui");
 
   const { values, setValue, result, errors, calculationError } = useRatioStore();
 
@@ -118,7 +121,7 @@ export function RatioCalculator() {
               value={values.d}
               onChange={(v) => setValue("d", v)}
               step="any"
-              placeholder="Leave empty to find"
+              placeholder={tUi("leave-empty-to-find")}
               error={errors.d}
             />
           </>
@@ -240,9 +243,9 @@ export function RatioCalculator() {
           {ratioResult.steps.length > 0 && (
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
-              {ratioResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+              {ratioResult.steps.map((step, index) => (
+                <p key={index} className="text-sm text-muted-foreground font-mono">
+                  {formatStep(step, tSteps, "calculator.math.ratio")}
                 </p>
               ))}
             </div>

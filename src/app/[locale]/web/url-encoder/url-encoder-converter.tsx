@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { OutputDisplay } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   decodeBase64,
   decodeURL,
@@ -93,7 +94,9 @@ export function URLEncoderConverter() {
 
       {/* Special Characters Reference */}
       <div className="space-y-2">
-        <p className="text-sm font-medium text-muted-foreground">Common URL Encodings</p>
+        <p className="text-sm font-medium text-muted-foreground">
+          <T k="ui.common-url-encodings" />
+        </p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

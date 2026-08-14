@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   COMMON_ASPECT_RATIOS,
   COMMON_DIAGONALS,
@@ -49,7 +50,9 @@ export function ScreenSizeCalculator() {
           </div>
         </div>
         <div className="space-y-2">
-          <label className="text-sm font-medium">Aspect Ratio</label>
+          <label className="text-sm font-medium">
+            <T k="ui.aspect-ratio" />
+          </label>
           <select
             value={`${aspectW}:${aspectH}`}
             onChange={(e) => {
@@ -117,7 +120,9 @@ export function ScreenSizeCalculator() {
                   <th className="text-left py-2">Size</th>
                   <th className="text-right py-2">Width</th>
                   <th className="text-right py-2">Height</th>
-                  <th className="text-left py-2 pl-4">Typical Use</th>
+                  <th className="text-left py-2 pl-4">
+                    <T k="ui.typical-use" />
+                  </th>
                 </tr>
               </thead>
               <tbody>

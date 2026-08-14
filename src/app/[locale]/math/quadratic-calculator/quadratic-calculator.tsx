@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import {
   calculateQuadratic,
@@ -36,6 +37,7 @@ const useQuadraticStore = createCalculatorStore<FormValues, QuadraticResult | nu
 
 export function QuadraticCalculator() {
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.quadratic");
 
   const { values, setValue, result, errors, calculationError } = useQuadraticStore();
 
@@ -129,8 +131,11 @@ export function QuadraticCalculator() {
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
               {quadResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+                <p
+                  key={formatStep(step, tSteps, "calculator.math.quadratic")}
+                  className="text-sm text-muted-foreground font-mono"
+                >
+                  {formatStep(step, tSteps, "calculator.math.quadratic")}
                 </p>
               ))}
             </div>

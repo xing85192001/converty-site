@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   calculateMegapixelAspects,
   MEGAPIXEL_PRESETS,
@@ -44,11 +45,15 @@ export function MegapixelAspectsCalculator() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b">
-                <th className="text-left py-3 font-medium">Aspect Ratio</th>
+                <th className="text-left py-3 font-medium">
+                  <T k="ui.aspect-ratio" />
+                </th>
                 <th className="text-right py-3 font-medium">Width</th>
                 <th className="text-right py-3 font-medium">Height</th>
                 <th className="text-right py-3 font-medium">Megapixels</th>
-                <th className="text-left py-3 font-medium pl-4">Use Cases</th>
+                <th className="text-left py-3 font-medium pl-4">
+                  <T k="ui.use-cases" />
+                </th>
               </tr>
             </thead>
             <tbody>

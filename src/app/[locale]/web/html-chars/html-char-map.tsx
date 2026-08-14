@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { toast } from "sonner";
+import { T } from "@/components/ui/t";
 import {
   getCharsByCategory,
   HTML_CHAR_CATEGORIES,
@@ -37,6 +38,7 @@ export function HTMLCharMap() {
       });
   };
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
@@ -57,7 +59,9 @@ export function HTMLCharMap() {
             onChange={(e) => setCategory(e.target.value as HTMLCharCategory | "all")}
             className="w-full h-10 px-3 rounded-md border bg-background"
           >
-            <option value="all">All Categories</option>
+            <option value="all">
+              <T k="ui.all-categories" />
+            </option>
             {HTML_CHAR_CATEGORIES.map((cat) => (
               <option key={cat} value={cat}>
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -92,12 +96,14 @@ export function HTMLCharMap() {
                   <button
                     onClick={() => copyToClipboard(entity.char, `char-${entity.name}`)}
                     className="text-2xl hover:bg-primary/10 px-2 py-1 rounded"
-                    title="Click to copy character"
+                    title={tUi("click-to-copy-character")}
                   >
                     {entity.char}
                   </button>
                   {copied === `char-${entity.name}` && (
-                    <span className="text-xs text-green-600 ml-1">Copied!</span>
+                    <span className="text-xs text-green-600 ml-1">
+                      <T k="ui.copied" />
+                    </span>
                   )}
                 </td>
                 <td className="py-2 font-mono text-muted-foreground">{entity.name}</td>
@@ -105,12 +111,14 @@ export function HTMLCharMap() {
                   <button
                     onClick={() => copyToClipboard(entity.entity, `entity-${entity.name}`)}
                     className="font-mono text-primary hover:underline"
-                    title="Click to copy entity"
+                    title={tUi("click-to-copy-entity")}
                   >
                     {entity.entity}
                   </button>
                   {copied === `entity-${entity.name}` && (
-                    <span className="text-xs text-green-600 ml-1">Copied!</span>
+                    <span className="text-xs text-green-600 ml-1">
+                      <T k="ui.copied" />
+                    </span>
                   )}
                 </td>
                 <td className="py-2 font-mono text-muted-foreground">&amp;#{entity.decimal};</td>

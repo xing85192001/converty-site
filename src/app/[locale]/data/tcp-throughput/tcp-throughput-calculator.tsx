@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import {
   calculateTcpThroughput,
@@ -39,6 +40,7 @@ const useStore = createCalculatorStore<FormValues, TcpThroughputResult>({
 
 export function TcpThroughputCalculator() {
   const t = useTranslations("calculator.network");
+  const tSteps = useTranslations("calculator.network.tcpThroughput");
   const { values, setValue, result, errors, calculationError } = useStore();
 
   return (
@@ -118,7 +120,9 @@ export function TcpThroughputCalculator() {
             <p className="text-sm font-medium">{t("calculationSteps")}:</p>
             <div className="text-sm text-muted-foreground font-mono space-y-1">
               {result.steps.map((step) => (
-                <p key={step}>{step}</p>
+                <p key={formatStep(step, tSteps, "calculator.network.tcpThroughput")}>
+                  {formatStep(step, tSteps, "calculator.network.tcpThroughput")}
+                </p>
               ))}
             </div>
           </div>

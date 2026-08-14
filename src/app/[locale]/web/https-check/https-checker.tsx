@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import {
   analyzeSecurityHeaders,
   SECURITY_HEADERS,
@@ -46,7 +47,9 @@ export function HTTPSChecker() {
       </div>
 
       <div className="space-y-4">
-        <p className="text-sm font-medium">Security Headers</p>
+        <p className="text-sm font-medium">
+          <T k="ui.security-headers" />
+        </p>
         {SECURITY_HEADERS.map((header) => {
           const status = analysis.find((a) => a.name === header.name);
           return (
@@ -84,7 +87,9 @@ export function HTTPSChecker() {
       </div>
 
       <div className="space-y-4">
-        <p className="text-sm font-medium">TLS Version Reference</p>
+        <p className="text-sm font-medium">
+          <T k="ui.tls-version-reference" />
+        </p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

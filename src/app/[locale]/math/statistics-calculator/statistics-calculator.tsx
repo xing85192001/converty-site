@@ -37,6 +37,7 @@ export function StatisticsCalculator() {
     }
   };
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
       <div className="space-y-4">
@@ -46,7 +47,7 @@ export function StatisticsCalculator() {
             id="data"
             value={dataInput}
             onChange={(e) => setDataInput(e.target.value)}
-            placeholder="Enter numbers separated by commas, spaces, or new lines"
+            placeholder={tUi("enter-numbers-separated-by-commas-spaces-or-new-lines")}
             rows={4}
           />
           <p className="text-sm text-muted-foreground">{tMath("dataValuesHelp")}</p>

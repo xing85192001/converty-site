@@ -17,8 +17,94 @@ import {
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getCommonTireSizes } from "@/lib/converters/automotive/tire-sizing";
+import { getCommonTireSizes, type TireStep } from "@/lib/converters/automotive/tire-sizing";
 import { type InputMode, useTireSizingStore } from "@/stores/tire-sizing-store";
+
+/**
+ * Render a single tagged calculation step using the localized template
+ * from `calculator.automotive.tireSizing.steps.{type}` with the raw
+ * numeric payload from the store (numbers formatted as locale strings via toLocaleString()).
+ *
+ * Falls back to a debug string if the template key is missing so the user
+ * still sees the numbers instead of a blank or error.
+ */
+function formatStep(step: TireStep, t: ReturnType<typeof useTranslations<string>>): string {
+  try {
+    switch (step.type) {
+      case "sidewallHeight":
+        return t("steps.sidewallHeight", {
+          width: step.width.toLocaleString(),
+          aspectRatio: step.aspectRatio.toLocaleString(),
+          result: step.result.toFixed(2),
+        });
+      case "rimDiameter":
+        return t("steps.rimDiameter", {
+          rimDiameter: step.rimDiameter.toLocaleString(),
+          result: step.result.toFixed(1),
+        });
+      case "overallDiameter":
+        return t("steps.overallDiameter", {
+          rimMm: step.rimMm.toFixed(1),
+          sidewall: step.sidewall.toFixed(2),
+          result: step.result.toFixed(1),
+        });
+      case "circumference":
+        return t("steps.circumference", {
+          diameter: step.diameter.toFixed(1),
+          result: step.result.toFixed(1),
+        });
+      case "revolutionsPerKm":
+        return t("steps.revolutionsPerKm", {
+          circumference: step.circumference.toFixed(1),
+          result: step.result.toFixed(1),
+        });
+      case "loadIndex":
+        return t("steps.loadIndex", {
+          loadIndex: step.loadIndex.toLocaleString(),
+          loadValue: step.loadValue.toLocaleString(),
+        });
+      case "speedRating":
+        return t("steps.speedRating", {
+          rating: step.rating,
+          speedValue: step.speedValue.toLocaleString(),
+          desc: step.desc,
+        });
+      case "diameterDiffMm":
+        return t("steps.diameterDiffMm", {
+          tire2: step.tire2.toFixed(1),
+          tire1: step.tire1.toFixed(1),
+          result: step.result.toFixed(1),
+        });
+      case "diameterDiffPct":
+        return t("steps.diameterDiffPct", {
+          diffMm: step.diffMm.toFixed(1),
+          tire1: step.tire1.toFixed(1),
+          result: step.result.toFixed(2),
+        });
+      case "circumferenceDiffPct":
+        return t("steps.circumferenceDiffPct", {
+          result: step.result.toFixed(2),
+        });
+      case "speedometerError":
+        return t("steps.speedometerError", { result: step.result.toFixed(2) });
+      case "actualSpeed":
+        return t("steps.actualSpeed", { result: step.result.toFixed(1) });
+      case "revolutionsDiffPerKm":
+        return t("steps.revolutionsDiffPerKm", {
+          tire2: step.tire2.toFixed(1),
+          tire1: step.tire1.toFixed(1),
+          result: step.result.toFixed(1),
+        });
+      case "warning":
+        return t("steps.warning", { message: step.message });
+      default:
+        return JSON.stringify(step);
+    }
+  } catch {
+    // next-intl throws if key missing; fall back to a readable raw rendering
+    return JSON.stringify(step);
+  }
+}
 
 export function TireSizingCalculator() {
   const t = useTranslations("calculator.automotive.tireSizing");
@@ -309,8 +395,11 @@ export function TireSizingCalculator() {
               <Label>{t("calculationSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {tire1Result.steps.map((step, i) => (
-                  <div key={`tire1-step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div
+                    key={`tire1-step-${i}-${step.type}`}
+                    className="font-mono whitespace-pre-wrap break-words"
+                  >
+                    {i + 1}. {formatStep(step, t)}
                   </div>
                 ))}
               </div>
@@ -408,8 +497,11 @@ export function TireSizingCalculator() {
               <Label>{t("calculationSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {comparisonResult.steps.map((step, i) => (
-                  <div key={`comparison-step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div
+                    key={`comparison-step-${i}-${step.type}`}
+                    className="font-mono whitespace-pre-wrap break-words"
+                  >
+                    {i + 1}. {formatStep(step, t)}
                   </div>
                 ))}
               </div>

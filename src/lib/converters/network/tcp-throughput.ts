@@ -6,6 +6,8 @@
  * Where C = 1 (constant factor, typically between 0.87 and 1.31)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
+
 export interface TcpThroughputInput {
   mss: number; // Maximum Segment Size in bytes (typically MTU - 40B for TCP/IP header)
   rtt: number; // Round Trip Time in milliseconds
@@ -21,7 +23,7 @@ export interface TcpThroughputResult {
   throughputBytesPerSec: number; // Throughput in bytes per second
   throughputMBPerSec: number; // Throughput in megabytes per second
   formula: string; // The formula used
-  steps: string[]; // Calculation steps
+  steps: CalcStep[]; // Calculation steps
   recommendations: string[]; // Recommendations based on results
 }
 
@@ -35,12 +37,12 @@ export function calculateTcpThroughput(input: TcpThroughputInput): TcpThroughput
   // User enters as percentage (e.g., 0.0001 means 0.0001%)
   const lossDecimal = lossRate / 100;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
-  steps.push(`MSS = ${mss} bytes`);
-  steps.push(`RTT = ${rtt} ms = ${rttSeconds} seconds`);
-  steps.push(`Loss Rate = ${lossRate}% = ${lossDecimal}`);
-  steps.push(`C Factor = ${cFactor}`);
+  steps.push({ key: "mss", params: { mss } });
+  steps.push({ key: "rtt", params: { rtt, rttSeconds } });
+  steps.push({ key: "lossRate", params: { lossRate, lossDecimal } });
+  steps.push({ key: "cFactor", params: { cFactor } });
 
   // Mathis formula: Throughput = (MSS / RTT) * (C / sqrt(Loss))
   // Result is in bytes per second
@@ -50,17 +52,24 @@ export function calculateTcpThroughput(input: TcpThroughputInput): TcpThroughput
     // If no loss, throughput is theoretically infinite, but we cap at line rate
     // Use a very small loss value for calculation
     throughputBytesPerSec = (mss / rttSeconds) * (cFactor / Math.sqrt(1e-10));
-    steps.push(`With zero/negligible loss, using minimum loss value of 10^-10`);
+    steps.push({ key: "negligibleLoss" });
   } else {
     throughputBytesPerSec = (mss / rttSeconds) * (cFactor / Math.sqrt(lossDecimal));
   }
 
-  steps.push(`Throughput = (MSS / RTT) × (C / √Loss)`);
-  steps.push(`Throughput = (${mss} / ${rttSeconds}) × (${cFactor} / √${lossDecimal})`);
-  steps.push(
-    `Throughput = ${(mss / rttSeconds).toFixed(2)} × ${(cFactor / Math.sqrt(lossDecimal)).toFixed(2)}`
-  );
-  steps.push(`Throughput = ${throughputBytesPerSec.toFixed(2)} bytes/sec`);
+  steps.push({ key: "formula" });
+  steps.push({
+    key: "formulaSubstituted",
+    params: { mss, rttSeconds, cFactor, lossDecimal },
+  });
+  steps.push({
+    key: "formulaCalculated",
+    params: {
+      term1: mss / rttSeconds,
+      term2: cFactor / Math.sqrt(lossDecimal),
+    },
+  });
+  steps.push({ key: "throughputResult", params: { throughputBytesPerSec } });
 
   // Convert to various units
   const throughputBps = throughputBytesPerSec * 8;

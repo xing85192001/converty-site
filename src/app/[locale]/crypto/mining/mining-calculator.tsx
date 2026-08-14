@@ -23,6 +23,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   formatBtc,
   formatMiningCurrency,
@@ -424,7 +425,9 @@ export function MiningCalculator() {
                 <span className="font-medium">{result.blockReward} BTC</span>
               </div>
               <div className="flex justify-between items-center text-sm">
-                <span className="text-muted-foreground">Network Difficulty</span>
+                <span className="text-muted-foreground">
+                  <T k="ui.network-difficulty" />
+                </span>
                 <span className="font-medium">{result.networkDifficulty.toExponential(2)}</span>
               </div>
             </div>

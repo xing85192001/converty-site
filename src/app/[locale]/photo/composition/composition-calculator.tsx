@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   COMMON_FOCAL_LENGTHS,
   CROP_FACTORS,
@@ -56,7 +57,9 @@ export function CompositionCalculator() {
           step={0.1}
         />
         <div className="space-y-2">
-          <label className="text-sm font-medium">Crop Factor</label>
+          <label className="text-sm font-medium">
+            <T k="ui.crop-factor" />
+          </label>
           <select
             value={cropFactor}
             onChange={(e) => setCropFactor(e.target.value)}
@@ -84,7 +87,9 @@ export function CompositionCalculator() {
           />
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Subject Coverage</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.subject-coverage" />
+            </p>
             <p className="text-lg font-medium">
               {result.subjectCoverage}% of frame width (for 0.5m subject)
             </p>

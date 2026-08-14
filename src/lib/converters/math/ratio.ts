@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface RatioInput {
@@ -18,7 +19,7 @@ export interface RatioResult {
   scaled?: { a: number; b: number };
   missing?: number;
   comparison?: string;
-  steps: string[];
+  steps: CalcStep[];
   equivalentRatios: Array<{ a: number; b: number }>;
 }
 
@@ -46,15 +47,15 @@ export function calculateRatio(input: RatioInput): CalculationResult<RatioResult
     return { ok: false, error: "Second ratio value (b) cannot be zero", code: "DIVISION_BY_ZERO" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   const simplified = simplifyRatio(a, b);
   const decimal = b !== 0 ? a / b : 0;
   const percentage = decimal * 100;
   const fraction = `${simplified.a}/${simplified.b}`;
 
-  steps.push(`Original ratio: ${a}:${b}`);
-  steps.push(`GCD(${a}, ${b}) = ${gcd(a, b)}`);
-  steps.push(`Simplified: ${simplified.a}:${simplified.b}`);
+  steps.push({ key: "originalRatio", params: { a, b } });
+  steps.push({ key: "gcd", params: { a, b, gcd: gcd(a, b) } });
+  steps.push({ key: "simplified", params: { a: simplified.a, b: simplified.b } });
 
   // Generate equivalent ratios
   const equivalentRatios: Array<{ a: number; b: number }> = [];
@@ -75,11 +76,11 @@ export function calculateRatio(input: RatioInput): CalculationResult<RatioResult
       const { scaleFactor, targetValue } = input;
       if (scaleFactor !== undefined) {
         scaled = { a: a * scaleFactor, b: b * scaleFactor };
-        steps.push(`Scaled by ${scaleFactor}: ${scaled.a}:${scaled.b}`);
+        steps.push({ key: "scaledByFactor", params: { scaleFactor, a: scaled.a, b: scaled.b } });
       } else if (targetValue !== undefined) {
         const factor = targetValue / a;
         scaled = { a: targetValue, b: b * factor };
-        steps.push(`Scaled to make first value ${targetValue}: ${scaled.a}:${scaled.b}`);
+        steps.push({ key: "scaledToTarget", params: { targetValue, a: scaled.a, b: scaled.b } });
       }
       break;
     }
@@ -97,8 +98,8 @@ export function calculateRatio(input: RatioInput): CalculationResult<RatioResult
           };
         }
         missing = (b * c) / a;
-        steps.push(`${a}:${b} = ${c}:?`);
-        steps.push(`? = (${b} × ${c}) / ${a} = ${missing}`);
+        steps.push({ key: "findMissingD", params: { a, b, c } });
+        steps.push({ key: "findMissingDResult", params: { b, c, a, missing } });
       } else if (c === undefined && d !== undefined) {
         // a:b = ?:d → ? = (a × d) / b
         if (b === 0) {
@@ -109,8 +110,8 @@ export function calculateRatio(input: RatioInput): CalculationResult<RatioResult
           };
         }
         missing = (a * d) / b;
-        steps.push(`${a}:${b} = ?:${d}`);
-        steps.push(`? = (${a} × ${d}) / ${b} = ${missing}`);
+        steps.push({ key: "findMissingC", params: { a, b, d } });
+        steps.push({ key: "findMissingCResult", params: { a, d, b, missing } });
       }
       break;
     }
@@ -136,10 +137,10 @@ export function calculateRatio(input: RatioInput): CalculationResult<RatioResult
         comparison = `${a}:${b} < ${c}:${d}`;
       }
 
-      steps.push(`Comparing ${a}:${b} with ${c}:${d}`);
-      steps.push(`${a}/${b} = ${ratio1.toFixed(6)}`);
-      steps.push(`${c}/${d} = ${ratio2.toFixed(6)}`);
-      steps.push(comparison);
+      steps.push({ key: "compareIntro", params: { a, b, c, d } });
+      steps.push({ key: "compareRatio1", params: { a, b, ratio: ratio1.toFixed(6) } });
+      steps.push({ key: "compareRatio2", params: { c, d, ratio: ratio2.toFixed(6) } });
+      steps.push({ key: "compareResult", params: { comparison } });
       break;
     }
 

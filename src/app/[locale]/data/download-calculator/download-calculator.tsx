@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import {
   BANDWIDTH_PRESETS,
   calculateDownloadTime,
@@ -30,11 +31,14 @@ export function DownloadCalculator() {
   );
   const result = calcResult.ok ? calcResult.value : null;
 
+  const tUi = useTranslations("ui");
   return (
     <div className="space-y-6">
-      {/* File Size Input */}
+      {/* <T k="ui.file-size" /> Input */}
       <div className="space-y-2">
-        <label className="text-sm font-medium">File Size</label>
+        <label className="text-sm font-medium">
+          <T k="ui.file-size" />
+        </label>
         <div className="grid gap-4 sm:grid-cols-2">
           <InputField
             id="fileSize"
@@ -43,7 +47,7 @@ export function DownloadCalculator() {
             onChange={setFileSize}
             min={0}
             step={0.1}
-            placeholder="Enter file size"
+            placeholder={tUi("enter-file-size")}
           />
           <select
             value={fileSizeUnit}
@@ -75,7 +79,9 @@ export function DownloadCalculator() {
 
       {/* Bandwidth Input */}
       <div className="space-y-2">
-        <label className="text-sm font-medium">Connection Speed</label>
+        <label className="text-sm font-medium">
+          <T k="ui.connection-speed" />
+        </label>
         <div className="grid gap-4 sm:grid-cols-2">
           <InputField
             id="bandwidth"
@@ -84,7 +90,7 @@ export function DownloadCalculator() {
             onChange={setBandwidth}
             min={0}
             step={1}
-            placeholder="Enter speed"
+            placeholder={tUi("enter-speed")}
           />
           <select
             value={bandwidthUnit}

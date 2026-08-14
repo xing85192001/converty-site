@@ -1,11 +1,14 @@
 "use client";
+import { T } from "@/components/ui/t";
 
 import { LIGHT_PHASES } from "@/lib/converters/photo/golden-hour";
 
 export function LightPhasesReference() {
   return (
     <div className="space-y-4">
-      <p className="text-sm font-medium">Light Phases by Sun Elevation</p>
+      <p className="text-sm font-medium">
+        <T k="ui.light-phases-by-sun-elevation" />
+      </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {LIGHT_PHASES.map((phase) => (
           <div

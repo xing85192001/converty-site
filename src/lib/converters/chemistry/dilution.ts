@@ -9,6 +9,7 @@
  * - V₂ = final volume (L)
  */
 
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 /**
@@ -52,7 +53,7 @@ export interface DilutionResult {
   /** Safety warning if dilution is extreme */
   safetyWarning?: string;
   /** Calculation steps */
-  steps: string[];
+  steps: CalcStep[];
 }
 
 /**
@@ -76,8 +77,8 @@ export function calculateDilution(input: DilutionInput): CalculationResult<Dilut
     return { ok: false, error: "Initial molarity must be positive", code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
-  steps.push(`Initial molarity (M₁): ${initialMolarity} M`);
+  const steps: CalcStep[] = [];
+  steps.push({ key: "initialMolarity", params: { molarity: initialMolarity } });
 
   // Convert volumes to liters
   const convertToLiters = (value: number, unit: "L" | "mL" | "µL"): number => {
@@ -124,14 +125,23 @@ export function calculateDilution(input: DilutionInput): CalculationResult<Dilut
 
     finalMolarityValue = finalMolarity;
     finalVolumeL = convertToLiters(finalVolume, finalVolumeUnit);
-    steps.push(`Final molarity (M₂): ${finalMolarity} M`);
-    steps.push(`Final volume (V₂): ${formatVolume(finalVolumeL, finalVolumeUnit)}`);
+    steps.push({ key: "finalMolarity", params: { molarity: finalMolarity } });
+    steps.push({
+      key: "finalVolume",
+      params: { value: formatVolume(finalVolumeL, finalVolumeUnit) },
+    });
 
     // M₁V₁ = M₂V₂ → V₁ = M₂V₂ / M₁
     initialVolumeL = (finalMolarityValue * finalVolumeL) / initialMolarity;
-    steps.push(
-      `Initial volume (V₁): V₁ = M₂V₂ / M₁ = ${finalMolarityValue} × ${finalVolumeL.toFixed(6)} / ${initialMolarity} = ${initialVolumeL.toFixed(6)} L`
-    );
+    steps.push({
+      key: "initialVolumeCalc",
+      params: {
+        m2: finalMolarityValue,
+        v2: finalVolumeL.toFixed(6),
+        m1: initialMolarity,
+        result: initialVolumeL.toFixed(6),
+      },
+    });
   } else if (mode === "find-V2") {
     // Find final volume
     if (
@@ -150,14 +160,23 @@ export function calculateDilution(input: DilutionInput): CalculationResult<Dilut
 
     initialVolumeL = convertToLiters(initialVolume, initialVolumeUnit);
     finalMolarityValue = finalMolarity;
-    steps.push(`Initial volume (V₁): ${formatVolume(initialVolumeL, initialVolumeUnit)}`);
-    steps.push(`Final molarity (M₂): ${finalMolarity} M`);
+    steps.push({
+      key: "initialVolume",
+      params: { value: formatVolume(initialVolumeL, initialVolumeUnit) },
+    });
+    steps.push({ key: "finalMolarity", params: { molarity: finalMolarity } });
 
     // M₁V₁ = M₂V₂ → V₂ = M₁V₁ / M₂
     finalVolumeL = (initialMolarity * initialVolumeL) / finalMolarityValue;
-    steps.push(
-      `Final volume (V₂): V₂ = M₁V₁ / M₂ = ${initialMolarity} × ${initialVolumeL.toFixed(6)} / ${finalMolarityValue} = ${finalVolumeL.toFixed(6)} L`
-    );
+    steps.push({
+      key: "finalVolumeCalc",
+      params: {
+        m1: initialMolarity,
+        v1: initialVolumeL.toFixed(6),
+        m2: finalMolarityValue,
+        result: finalVolumeL.toFixed(6),
+      },
+    });
   } else {
     // mode === "find-M2" - Find final molarity
     if (
@@ -177,31 +196,43 @@ export function calculateDilution(input: DilutionInput): CalculationResult<Dilut
 
     initialVolumeL = convertToLiters(initialVolume, initialVolumeUnit);
     finalVolumeL = convertToLiters(finalVolume, finalVolumeUnit);
-    steps.push(`Initial volume (V₁): ${formatVolume(initialVolumeL, initialVolumeUnit)}`);
-    steps.push(`Final volume (V₂): ${formatVolume(finalVolumeL, finalVolumeUnit)}`);
+    steps.push({
+      key: "initialVolume",
+      params: { value: formatVolume(initialVolumeL, initialVolumeUnit) },
+    });
+    steps.push({
+      key: "finalVolume",
+      params: { value: formatVolume(finalVolumeL, finalVolumeUnit) },
+    });
 
     // M₁V₁ = M₂V₂ → M₂ = M₁V₁ / V₂
     finalMolarityValue = (initialMolarity * initialVolumeL) / finalVolumeL;
-    steps.push(
-      `Final molarity (M₂): M₂ = M₁V₁ / V₂ = ${initialMolarity} × ${initialVolumeL.toFixed(6)} / ${finalVolumeL.toFixed(6)} = ${finalMolarityValue.toFixed(6)} M`
-    );
+    steps.push({
+      key: "finalMolarityCalc",
+      params: {
+        m1: initialMolarity,
+        v1: initialVolumeL.toFixed(6),
+        v2: finalVolumeL.toFixed(6),
+        result: finalMolarityValue.toFixed(6),
+      },
+    });
   }
 
   // Dilution factor
   const dilutionFactor = initialMolarity / finalMolarityValue;
-  steps.push(`Dilution factor: ${dilutionFactor.toFixed(2)}×`);
+  steps.push({ key: "dilutionFactor", params: { value: dilutionFactor.toFixed(2) } });
 
   // Volume of solvent to add
   const solventVolumeL = finalVolumeL - initialVolumeL;
-  steps.push(`Solvent to add: ${solventVolumeL.toFixed(6)} L`);
+  steps.push({ key: "solventToAdd", params: { value: solventVolumeL.toFixed(6) } });
 
   // Safety warning for extreme dilutions or concentrated stock
   let safetyWarning: string | undefined;
   if (initialMolarity > 10 || dilutionFactor > 100) {
     safetyWarning =
       "⚠️ High concentration or large dilution factor. For concentrated acids/bases, always add acid to water, never water to acid.";
-    steps.push("");
-    steps.push(safetyWarning);
+    steps.push({ key: "separator" });
+    steps.push({ key: "safetyWarning" });
   }
 
   // Format solvent volume in appropriate unit

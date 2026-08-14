@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { T } from "@/components/ui/t";
 
 export function CalculatorInfo({
   intro,
@@ -9,7 +10,9 @@ export function CalculatorInfo({
 }) {
   return (
     <div className="mt-10 border-t pt-8">
-      <h2 className="text-2xl font-bold tracking-tight">About this calculator</h2>
+      <h2 className="text-2xl font-bold tracking-tight">
+        <T k="ui.about-this-calculator" />
+      </h2>
       {intro ? <p className="mt-3 text-muted-foreground">{intro}</p> : null}
       <div className="mt-6 space-y-6 text-sm leading-relaxed text-foreground/90">
         {sections.map((section, i) => (

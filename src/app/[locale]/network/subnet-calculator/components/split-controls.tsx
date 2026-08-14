@@ -56,6 +56,7 @@ export function SplitControls({
     return bitsNeeded <= availableBits;
   });
 
+  const tUi = useTranslations("ui");
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-end">
       <div className="flex-1 space-y-2">
@@ -71,7 +72,7 @@ export function SplitControls({
             disabled={disabled}
           >
             <SelectTrigger id="division-count" className="w-[180px]">
-              <SelectValue placeholder="Select..." />
+              <SelectValue placeholder={tUi("select")} />
             </SelectTrigger>
             <SelectContent>
               {validOptions.map((option) => (

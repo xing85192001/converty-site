@@ -6,6 +6,7 @@ import { ResultGrid } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { T } from "@/components/ui/t";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   type ColorConversion,
@@ -114,7 +115,9 @@ export function RgbConverter() {
 
             <TabsContent value="hex" className="space-y-4 mt-4">
               <div className="space-y-2">
-                <Label>HEX Color</Label>
+                <Label>
+                  <T k="ui.hex-color" />
+                </Label>
                 <Input
                   type="text"
                   value={hex}

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { CROP_FACTORS } from "@/lib/converters/photo/composition";
 import {
   calculatePortraitDistance,
@@ -57,7 +58,9 @@ export function PortraitDistanceCalculator() {
           </div>
         </div>
         <div className="space-y-2">
-          <label className="text-sm font-medium">Portrait Type</label>
+          <label className="text-sm font-medium">
+            <T k="ui.portrait-type" />
+          </label>
           <select
             value={portraitType}
             onChange={(e) => setPortraitType(e.target.value as PortraitType)}
@@ -105,7 +108,9 @@ export function PortraitDistanceCalculator() {
           />
 
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Compression Effect</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.compression-effect" />
+            </p>
             <p className={`text-xl font-semibold ${getCompressionColor(result.compressionEffect)}`}>
               {result.compressionEffect}
             </p>
@@ -116,7 +121,9 @@ export function PortraitDistanceCalculator() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b">
-                  <th className="text-left py-2">Focal Length</th>
+                  <th className="text-left py-2">
+                    <T k="ui.focal-length" />
+                  </th>
                   <th className="text-right py-2">Distance</th>
                   <th className="text-left py-2 pl-4">Effect</th>
                 </tr>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import {
   calculateFocalEquivalent,
   FOCAL_EQUIV_APERTURES,
@@ -185,7 +186,10 @@ export function FocalEquivalentCalculator() {
               <strong>DOF:</strong> {FOCAL_EQUIVALENT_INFO.depthOfField}
             </li>
             <li>
-              <strong>Exposure:</strong> {FOCAL_EQUIVALENT_INFO.exposure}
+              <strong>
+                <T k="ui.exposure" />
+              </strong>{" "}
+              {FOCAL_EQUIVALENT_INFO.exposure}
             </li>
           </ul>
         </div>

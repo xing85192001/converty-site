@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { CalculatorSkeleton } from "@/components/calculator-skeleton";
 import { CalculatorInfo } from "@/components/converter/calculator-info";
 import { ConverterLayout } from "@/components/converter/converter-layout";
+import { T } from "@/components/ui/t";
 import { locales } from "@/i18n/config";
 import { getCategoryBySlug } from "@/lib/registry/categories";
 
@@ -59,8 +60,10 @@ export default async function DebtSnowballAvalanchePage({
             body: (
               <p>
                 Pay the minimum on everything, then put extra money toward the{" "}
-                <strong>smallest balance</strong> first. You win quick psychological wins as
-                balances disappear.
+                <strong>
+                  <T k="ui.smallest-balance" />
+                </strong>{" "}
+                first. You win quick psychological wins as balances disappear.
               </p>
             ),
           },
@@ -69,8 +72,11 @@ export default async function DebtSnowballAvalanchePage({
             body: (
               <p>
                 Pay the minimum on everything, then put extra money toward the{" "}
-                <strong>highest interest rate</strong> first. This minimizes total interest paid and
-                is usually the cheaper path mathematically.
+                <strong>
+                  <T k="ui.highest-interest-rate" />
+                </strong>{" "}
+                first. This minimizes total interest paid and is usually the cheaper path
+                mathematically.
               </p>
             ),
           },

@@ -2,6 +2,7 @@
 
 import { Check, X } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay } from "@/components/converter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -43,6 +44,7 @@ const useBeamDeflectionStore = createCalculatorStore<BeamDeflectionInput, BeamDe
 export default function BeamDeflectionCalculator() {
   const t = useTranslations("calculator.engineering");
   const tSections = useTranslations("calculator.sections");
+  const tSteps = useTranslations("calculator.engineering.beamDeflection");
 
   const { values, setValue, result, calculationError } = useBeamDeflectionStore();
 
@@ -486,7 +488,7 @@ export default function BeamDeflectionCalculator() {
                 <div className="space-y-1 text-sm font-mono whitespace-pre-wrap">
                   {result.steps.map((step, index) => (
                     <div key={index} className="text-muted-foreground">
-                      {step}
+                      {formatStep(step, tSteps, "calculator.engineering.beamDeflection")}
                     </div>
                   ))}
                 </div>

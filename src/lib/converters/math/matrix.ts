@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 
 export interface MatrixInput {
@@ -16,7 +17,7 @@ export interface MatrixResult {
   determinant?: number;
   isSquare: boolean;
   isInvertible?: boolean;
-  steps: string[];
+  steps: CalcStep[];
 }
 
 function matrixToString(m: number[][]): string {
@@ -159,7 +160,7 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
   const [rowsA, colsAFinal] = getDimensions(matrixA);
   const isSquare = rowsA === colsAFinal;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let result: number[][] | number;
   let operation: string;
   let dimensionsB: string | undefined;
@@ -167,8 +168,8 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
   let det: number | undefined;
   let isInvertible: boolean | undefined;
 
-  steps.push(`Matrix A (${rowsA}×${colsAFinal}):`);
-  steps.push(matrixToString(matrixA));
+  steps.push({ key: "matrixA", params: { rows: rowsA, cols: colsAFinal } });
+  steps.push({ key: "matrixAContent", params: { content: matrixToString(matrixA) } });
 
   switch (mode) {
     case "add": {
@@ -184,16 +185,19 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
         };
       }
 
-      steps.push(`Matrix B (${rowsB}×${colsB}):`);
-      steps.push(matrixToString(matrixB));
+      steps.push({ key: "addMatrixB", params: { rows: rowsB, cols: colsB } });
+      steps.push({ key: "addMatrixBContent", params: { content: matrixToString(matrixB) } });
 
       result = addMatrices(matrixA, matrixB);
       operation = "Addition (A + B)";
       dimensionsB = `${rowsB}×${colsB}`;
       dimensionsResult = `${rowsA}×${colsAFinal}`;
 
-      steps.push("Result = A + B");
-      steps.push(matrixToString(result));
+      steps.push({ key: "addResult" });
+      steps.push({
+        key: "addResultContent",
+        params: { content: matrixToString(result as number[][]) },
+      });
       break;
     }
 
@@ -210,16 +214,19 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
         };
       }
 
-      steps.push(`Matrix B (${rowsB}×${colsB}):`);
-      steps.push(matrixToString(matrixB));
+      steps.push({ key: "subMatrixB", params: { rows: rowsB, cols: colsB } });
+      steps.push({ key: "subMatrixBContent", params: { content: matrixToString(matrixB) } });
 
       result = subtractMatrices(matrixA, matrixB);
       operation = "Subtraction (A - B)";
       dimensionsB = `${rowsB}×${colsB}`;
       dimensionsResult = `${rowsA}×${colsAFinal}`;
 
-      steps.push("Result = A - B");
-      steps.push(matrixToString(result));
+      steps.push({ key: "subResult" });
+      steps.push({
+        key: "subResultContent",
+        params: { content: matrixToString(result as number[][]) },
+      });
       break;
     }
 
@@ -240,17 +247,20 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
         };
       }
 
-      steps.push(`Matrix B (${rowsB}×${colsB}):`);
-      steps.push(matrixToString(matrixB));
+      steps.push({ key: "mulMatrixB", params: { rows: rowsB, cols: colsB } });
+      steps.push({ key: "mulMatrixBContent", params: { content: matrixToString(matrixB) } });
 
       result = multiplyMatrices(matrixA, matrixB);
       operation = "Multiplication (A × B)";
       dimensionsB = `${rowsB}×${colsB}`;
       dimensionsResult = `${rowsA}×${colsB}`;
 
-      steps.push(`Result is ${rowsA}×${colsB} matrix`);
-      steps.push("Each element c_ij = Σ(a_ik × b_kj)");
-      steps.push(matrixToString(result));
+      steps.push({ key: "mulResultDims", params: { rows: rowsA, cols: colsB } });
+      steps.push({ key: "mulFormula" });
+      steps.push({
+        key: "mulResultContent",
+        params: { content: matrixToString(result as number[][]) },
+      });
       break;
     }
 
@@ -259,9 +269,12 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
       operation = "Transpose (Aᵀ)";
       dimensionsResult = `${colsAFinal}×${rowsA}`;
 
-      steps.push("Transpose: swap rows and columns");
-      steps.push(`Result is ${colsAFinal}×${rowsA} matrix`);
-      steps.push(matrixToString(result));
+      steps.push({ key: "transposeIntro" });
+      steps.push({ key: "transposeResultDims", params: { rows: colsAFinal, cols: rowsA } });
+      steps.push({
+        key: "transposeResultContent",
+        params: { content: matrixToString(result as number[][]) },
+      });
       break;
     }
 
@@ -278,9 +291,12 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
       operation = `Scalar multiplication (${scalar} × A)`;
       dimensionsResult = `${rowsA}×${colsAFinal}`;
 
-      steps.push(`Scalar: ${scalar}`);
-      steps.push("Multiply each element by scalar");
-      steps.push(matrixToString(result));
+      steps.push({ key: "scalarValue", params: { scalar } });
+      steps.push({ key: "scalarIntro" });
+      steps.push({
+        key: "scalarResultContent",
+        params: { content: matrixToString(result as number[][]) },
+      });
       break;
     }
 
@@ -297,17 +313,28 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
       result = det;
       operation = "Determinant (det A or |A|)";
 
-      steps.push("Calculating determinant...");
+      steps.push({ key: "detCalculating" });
       if (rowsA === 2) {
-        steps.push(`det = a₁₁×a₂₂ - a₁₂×a₂₁`);
-        steps.push(`det = ${matrixA[0][0]}×${matrixA[1][1]} - ${matrixA[0][1]}×${matrixA[1][0]}`);
+        steps.push({ key: "det2x2Formula" });
+        steps.push({
+          key: "det2x2Substitute",
+          params: {
+            a11: matrixA[0][0],
+            a22: matrixA[1][1],
+            a12: matrixA[0][1],
+            a21: matrixA[1][0],
+          },
+        });
       } else if (rowsA === 3) {
-        steps.push("Using Sarrus' rule or cofactor expansion");
+        steps.push({ key: "det3x3Method" });
       }
-      steps.push(`det(A) = ${det}`);
+      steps.push({ key: "detResult", params: { det } });
 
       isInvertible = Math.abs(det) > 1e-10;
-      steps.push(`Matrix is ${isInvertible ? "invertible" : "singular (not invertible)"}`);
+      steps.push({
+        key: "detInvertible",
+        params: { status: isInvertible ? "invertible" : "singular (not invertible)" },
+      });
       break;
     }
 
@@ -340,10 +367,10 @@ export function calculateMatrix(input: MatrixInput): CalculationResult<MatrixRes
       operation = "Inverse (A⁻¹)";
       dimensionsResult = `${rowsA}×${colsAFinal}`;
 
-      steps.push(`Determinant = ${det}`);
-      steps.push("A⁻¹ = (1/det) × adj(A)");
-      steps.push(matrixToString(inv));
-      steps.push("Verification: A × A⁻¹ = I");
+      steps.push({ key: "invDet", params: { det } });
+      steps.push({ key: "invFormula" });
+      steps.push({ key: "invResultContent", params: { content: matrixToString(inv) } });
+      steps.push({ key: "invVerification" });
       break;
     }
 

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { T } from "@/components/ui/t";
 import {
   analyzeRedirectChain,
   COMMON_STATUS_CODES,
@@ -84,7 +85,9 @@ export function RedirectChecker() {
       {chain.length > 0 && (
         <div className="space-y-4">
           <div className="p-4 rounded-lg border bg-muted/50">
-            <p className="text-sm text-muted-foreground mb-1">Redirect Chain</p>
+            <p className="text-sm text-muted-foreground mb-1">
+              <T k="ui.redirect-chain" />
+            </p>
             <p className="text-xl font-semibold">
               {chain.length} hop{chain.length !== 1 ? "s" : ""}
             </p>

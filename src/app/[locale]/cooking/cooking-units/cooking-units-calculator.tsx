@@ -3,6 +3,7 @@
 import { ArrowRightLeft, Info, RotateCcw, Scale } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
+import { formatStep } from "@/components/calc-steps";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -23,6 +24,7 @@ import { useCookingUnitsStore } from "@/stores/cooking-units-store";
 export function CookingUnitsCalculator() {
   const t = useTranslations("calculator.cooking.units");
   const commonT = useTranslations("common");
+  const tSteps = useTranslations("calculator.cooking.cookingUnits");
 
   const {
     amount,
@@ -276,8 +278,8 @@ export function CookingUnitsCalculator() {
               <Label>{t("conversionSteps")}</Label>
               <div className="p-4 bg-muted rounded-md text-sm space-y-1">
                 {result.steps.map((step, i) => (
-                  <div key={`step-${i}-${step.slice(0, 20)}`} className="font-mono">
-                    {i + 1}. {step}
+                  <div key={`step-${i}-${String(step).slice(0, 20)}`} className="font-mono">
+                    {i + 1}. {formatStep(step, tSteps, "calculator.cooking.cookingUnits")}
                   </div>
                 ))}
               </div>

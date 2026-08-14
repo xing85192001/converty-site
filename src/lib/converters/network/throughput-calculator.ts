@@ -1,3 +1,4 @@
+import type { CalcStep } from "@/lib/calc-step";
 import { BANDWIDTH_UNITS } from "@/lib/converters/data/bandwidth";
 import { FILE_SIZE_UNITS } from "@/lib/converters/data/download-calculator";
 import type { CalculationResult } from "@/types";
@@ -48,7 +49,7 @@ export interface ThroughputResult {
   bitsPerSecond: number;
   bytesPerSecond: number;
   conversions: ThroughputConversion[];
-  steps: string[];
+  steps: CalcStep[];
   comparison: string; // Key for translation
   comparisonRatio: number;
 }
@@ -129,23 +130,24 @@ export function calculateThroughput(input: ThroughputInput): CalculationResult<T
     return { ok: false, error: `Unknown time unit: ${transferTimeUnit}`, code: "INVALID_INPUT" };
   }
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
 
   // Convert to bytes
   const totalBytes = dataSize * sizeUnit.bytes;
-  steps.push(`dataSize: ${dataSize} ${dataSizeUnit} = ${totalBytes.toLocaleString()} bytes`);
+  steps.push({ key: "dataSize", params: { dataSize, dataSizeUnit, totalBytes } });
 
   // Convert time to seconds
   const timeInSeconds = transferTime * timeUnit.seconds;
-  steps.push(`transferTime: ${transferTime} ${transferTimeUnit} = ${timeInSeconds} seconds`);
+  steps.push({ key: "transferTime", params: { transferTime, transferTimeUnit, timeInSeconds } });
 
   // Calculate throughput
   const bytesPerSecond = totalBytes / timeInSeconds;
   const bitsPerSecond = bytesPerSecond * 8;
-  steps.push(
-    `throughput: ${totalBytes.toLocaleString()} bytes / ${timeInSeconds} s = ${formatNumber(bytesPerSecond)} B/s`
-  );
-  steps.push(`           = ${formatNumber(bitsPerSecond)} bits/second`);
+  steps.push({
+    key: "throughputBytes",
+    params: { totalBytes, timeInSeconds, bytesPerSecond },
+  });
+  steps.push({ key: "throughputBits", params: { bitsPerSecond } });
 
   // Convert to all bandwidth units
   const conversions: ThroughputConversion[] = BANDWIDTH_UNITS.map((unit) => ({

@@ -1,3 +1,5 @@
+import type { CalcStep, TextStep } from "@/lib/calc-step";
+import { textStep } from "@/lib/calc-step";
 import type { CalculationResult } from "@/types";
 import { type Currency, type EfficiencyRating, formatCurrency, getEfficiencyRating } from "./types";
 
@@ -53,7 +55,7 @@ export interface FuelEfficiencyResult {
   moreEfficientVehicle?: 1 | 2;
 
   // Calculation steps
-  steps: string[];
+  steps: CalcStep[];
 
   // Formatted outputs
   formatted: {
@@ -126,7 +128,7 @@ export function calculateFuelEfficiency(
     annualDistanceKm,
   } = input;
 
-  const steps: string[] = [];
+  const steps: CalcStep[] = [];
   let lPer100km = 0;
 
   // Calculate base consumption based on mode
@@ -140,8 +142,8 @@ export function calculateFuelEfficiency(
         };
       }
       lPer100km = calculateConsumption(distanceKm, fuelLiters);
-      steps.push(`Consumption = (${fuelLiters} L / ${distanceKm} km) × 100`);
-      steps.push(`Consumption = ${lPer100km.toFixed(2)} L/100km`);
+      steps.push({ key: "consumptionFormula", params: { fuelLiters, distanceKm } });
+      steps.push({ key: "consumptionResult", params: { result: lPer100km.toFixed(2) } });
       break;
 
     case "tripPlanning":
@@ -149,7 +151,7 @@ export function calculateFuelEfficiency(
         return { ok: false, error: "Consumption must be greater than zero", code: "INVALID_INPUT" };
       }
       lPer100km = consumptionLPer100km;
-      steps.push(`Using consumption: ${lPer100km.toFixed(2)} L/100km`);
+      steps.push({ key: "usingConsumption", params: { value: lPer100km.toFixed(2) } });
       break;
 
     case "comparison":
@@ -166,8 +168,8 @@ export function calculateFuelEfficiency(
         };
       }
       lPer100km = vehicle1LPer100km; // Use vehicle 1 as reference
-      steps.push(`Vehicle 1: ${vehicle1LPer100km.toFixed(2)} L/100km`);
-      steps.push(`Vehicle 2: ${vehicle2LPer100km.toFixed(2)} L/100km`);
+      steps.push({ key: "vehicle1", params: { value: vehicle1LPer100km.toFixed(2) } });
+      steps.push({ key: "vehicle2", params: { value: vehicle2LPer100km.toFixed(2) } });
       break;
   }
 
@@ -176,9 +178,9 @@ export function calculateFuelEfficiency(
   const mpgUS = lPer100kmToMpgUS(lPer100km);
   const mpgUK = lPer100kmToMpgUK(lPer100km);
 
-  steps.push(`km/L = 100 / ${lPer100km.toFixed(2)} = ${kmPerL.toFixed(2)}`);
-  steps.push(`MPG (US) = 235.21 / ${lPer100km.toFixed(2)} = ${mpgUS.toFixed(1)}`);
-  steps.push(`MPG (UK) = 282.48 / ${lPer100km.toFixed(2)} = ${mpgUK.toFixed(1)}`);
+  steps.push({ key: "kmPerL", params: { input: lPer100km.toFixed(2), result: kmPerL.toFixed(2) } });
+  steps.push({ key: "mpgUS", params: { input: lPer100km.toFixed(2), result: mpgUS.toFixed(1) } });
+  steps.push({ key: "mpgUK", params: { input: lPer100km.toFixed(2), result: mpgUK.toFixed(1) } });
 
   // Get efficiency rating
   const rating = getEfficiencyRating(lPer100km);
@@ -211,18 +213,29 @@ export function calculateFuelEfficiency(
     result.costPerKm = costPerKm;
     result.formatted.costPer100km = formatCurrency(costPer100km, currency);
 
-    steps.push(
-      `Cost per 100km = ${lPer100km.toFixed(2)} × ${currency} ${fuelPricePerLiter.toFixed(2)} = ${formatCurrency(costPer100km, currency)}`
-    );
+    steps.push({
+      key: "costPer100km",
+      params: {
+        consumption: lPer100km.toFixed(2),
+        currency,
+        price: fuelPricePerLiter.toFixed(2),
+        result: formatCurrency(costPer100km, currency),
+      },
+    });
 
     // Annual cost
     if (annualDistanceKm && annualDistanceKm > 0) {
       const annualCost = (annualDistanceKm / 100) * costPer100km;
       result.annualCost = annualCost;
       result.formatted.annualCost = formatCurrency(annualCost, currency);
-      steps.push(
-        `Annual cost = (${annualDistanceKm} km / 100) × ${formatCurrency(costPer100km, currency)} = ${formatCurrency(annualCost, currency)}`
-      );
+      steps.push({
+        key: "annualCost",
+        params: {
+          distance: annualDistanceKm,
+          cost: formatCurrency(costPer100km, currency),
+          result: formatCurrency(annualCost, currency),
+        },
+      });
     }
   }
 
@@ -231,17 +244,28 @@ export function calculateFuelEfficiency(
     const tripFuelNeeded = (tripDistanceKm / 100) * lPer100km;
     result.tripFuelNeeded = tripFuelNeeded;
     result.formatted.tripFuelNeeded = `${tripFuelNeeded.toFixed(2)} L`;
-    steps.push(
-      `Trip fuel = (${tripDistanceKm} km / 100) × ${lPer100km.toFixed(2)} = ${tripFuelNeeded.toFixed(2)} L`
-    );
+    steps.push({
+      key: "tripFuel",
+      params: {
+        distance: tripDistanceKm,
+        consumption: lPer100km.toFixed(2),
+        result: tripFuelNeeded.toFixed(2),
+      },
+    });
 
     if (fuelPricePerLiter && fuelPricePerLiter > 0) {
       const tripCost = tripFuelNeeded * fuelPricePerLiter;
       result.tripCost = tripCost;
       result.formatted.tripCost = formatCurrency(tripCost, currency);
-      steps.push(
-        `Trip cost = ${tripFuelNeeded.toFixed(2)} × ${currency} ${fuelPricePerLiter.toFixed(2)} = ${formatCurrency(tripCost, currency)}`
-      );
+      steps.push({
+        key: "tripCost",
+        params: {
+          fuel: tripFuelNeeded.toFixed(2),
+          currency,
+          price: fuelPricePerLiter.toFixed(2),
+          result: formatCurrency(tripCost, currency),
+        },
+      });
     }
   }
 
@@ -254,17 +278,27 @@ export function calculateFuelEfficiency(
       const savingsCostPer100km = savingsPer100km * fuelPricePerLiter;
       result.savingsPer100km = savingsCostPer100km;
       result.formatted.savingsPer100km = formatCurrency(savingsCostPer100km, currency);
-      steps.push(
-        `Savings per 100km = ${savingsPer100km.toFixed(2)} L × ${currency} ${fuelPricePerLiter.toFixed(2)} = ${formatCurrency(savingsCostPer100km, currency)}`
-      );
+      steps.push({
+        key: "savingsPer100km",
+        params: {
+          savings: savingsPer100km.toFixed(2),
+          currency,
+          price: fuelPricePerLiter.toFixed(2),
+          result: formatCurrency(savingsCostPer100km, currency),
+        },
+      });
 
       const compareDistance = comparisonDistanceKm || annualDistanceKm || 15000;
       const annualSavings = (compareDistance / 100) * savingsCostPer100km;
       result.annualSavings = annualSavings;
       result.formatted.annualSavings = formatCurrency(annualSavings, currency);
-      steps.push(
-        `Annual savings (${compareDistance} km) = ${formatCurrency(annualSavings, currency)}`
-      );
+      steps.push({
+        key: "annualSavings",
+        params: {
+          distance: compareDistance,
+          result: formatCurrency(annualSavings, currency),
+        },
+      });
     }
   }
 

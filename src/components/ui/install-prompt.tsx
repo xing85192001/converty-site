@@ -1,6 +1,7 @@
 "use client";
 
 import { Download, Share } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Button } from "./button";
 
@@ -14,6 +15,7 @@ export function InstallPrompt() {
   const [isIOS, setIsIOS] = useState(false);
   const [isStandalone, setIsStandalone] = useState(false);
   const [showIOSHint, setShowIOSHint] = useState(false);
+  const tUi = useTranslations("ui");
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent;
@@ -59,9 +61,13 @@ export function InstallPrompt() {
         variant="ghost"
         size="icon"
         className="h-8 w-8 text-muted-foreground hover:bg-white/10 hover:text-foreground"
-        aria-label="Install baikecalc"
+        aria-label={tUi("install-baikecalc")}
       >
-        {isIOS ? <Share className="h-[18px] w-[18px]" /> : <Download className="h-[18px] w-[18px]" />}
+        {isIOS ? (
+          <Share className="h-[18px] w-[18px]" />
+        ) : (
+          <Download className="h-[18px] w-[18px]" />
+        )}
       </Button>
       {showIOSHint && (
         <div className="absolute right-0 top-full z-50 mt-2 w-56 rounded-lg border border-white/10 bg-card p-3 text-xs text-foreground shadow-xl">
@@ -70,8 +76,8 @@ export function InstallPrompt() {
           </p>
           <p className="mt-1 text-muted-foreground">
             {isIOS
-              ? "Tap the share icon in your browser, then choose \"Add to Home Screen\"."
-              : "Look for the browser menu (⋮) and choose \"Install baikecalc\" or \"Add to Home Screen\"."}
+              ? 'Tap the share icon in your browser, then choose "Add to Home Screen".'
+              : 'Look for the browser menu (⋮) and choose "Install baikecalc" or "Add to Home Screen".'}
           </p>
         </div>
       )}

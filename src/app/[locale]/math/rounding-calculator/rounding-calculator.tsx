@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { formatStep } from "@/components/calc-steps";
 import { InputField, OutputDisplay, ResultGrid } from "@/components/converter";
 import { Label } from "@/components/ui/label";
 import {
@@ -10,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { T } from "@/components/ui/t";
 import {
   calculateRounding,
   type RoundingInput,
@@ -48,6 +50,7 @@ const useRoundingStore = createCalculatorStore<FormValues, RoundingResult | null
 export function RoundingCalculator() {
   const t = useTranslations("calculator.labels");
   const tMath = useTranslations("calculator.math");
+  const tSteps = useTranslations("calculator.math.rounding");
 
   const { values, setValue, result, errors, calculationError } = useRoundingStore();
 
@@ -70,8 +73,12 @@ export function RoundingCalculator() {
               <SelectItem value="ceil">{tMath("roundUp")}</SelectItem>
               <SelectItem value="floor">{tMath("roundDown")}</SelectItem>
               <SelectItem value="truncate">Truncate</SelectItem>
-              <SelectItem value="toFixed">To Fixed</SelectItem>
-              <SelectItem value="toSignificant">Significant Figures</SelectItem>
+              <SelectItem value="toFixed">
+                <T k="ui.to-fixed" />
+              </SelectItem>
+              <SelectItem value="toSignificant">
+                <T k="ui.significant-figures" />
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -139,9 +146,9 @@ export function RoundingCalculator() {
           {roundingResult.steps.length > 0 && (
             <div className="rounded-lg border bg-muted/50 p-4 space-y-2">
               <p className="text-sm font-medium">{tMath("steps")}:</p>
-              {roundingResult.steps.map((step) => (
-                <p key={step} className="text-sm text-muted-foreground font-mono">
-                  {step}
+              {roundingResult.steps.map((step, index) => (
+                <p key={index} className="text-sm text-muted-foreground font-mono">
+                  {formatStep(step, tSteps, "calculator.math.rounding")}
                 </p>
               ))}
             </div>

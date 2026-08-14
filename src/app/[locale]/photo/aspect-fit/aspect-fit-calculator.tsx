@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { InputField, ResultGrid } from "@/components/converter";
+import { T } from "@/components/ui/t";
 import { COMMON_SCREENS, calculateAspectFit } from "@/lib/converters/photo/aspect-fit";
 
 export function AspectFitCalculator() {
@@ -24,7 +25,9 @@ export function AspectFitCalculator() {
     <div className="space-y-6">
       <div className="grid gap-6 md:grid-cols-2">
         <div className="space-y-4">
-          <h3 className="font-medium">Image Dimensions</h3>
+          <h3 className="font-medium">
+            <T k="ui.image-dimensions" />
+          </h3>
           <InputField
             id="imageWidth"
             label={tMath("width")}
@@ -43,7 +46,9 @@ export function AspectFitCalculator() {
           />
         </div>
         <div className="space-y-4">
-          <h3 className="font-medium">Screen Dimensions</h3>
+          <h3 className="font-medium">
+            <T k="ui.screen-dimensions" />
+          </h3>
           <InputField
             id="screenWidth"
             label={tMath("width")}
