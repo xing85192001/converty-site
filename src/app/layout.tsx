@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Free online calculators and converters for finance, health, math, photo, video, and more.",
   icons: {
     icon: [
+      { url: "/logo.jpg", type: "image/jpeg" },
       { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],

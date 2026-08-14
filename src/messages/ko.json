@@ -6721,6 +6721,8 @@
     "something-went-wrong": "문제가 발생했습니다.",
     "toggle-menu": "토글 메뉴",
     "toggle-theme": "테마 전환",
+
+    "user-content-body": "You may only upload, submit, or process content that you own or are authorized to use. You are solely responsible for ensuring you have the rights, licenses, and permissions needed for any content you use with our tools.",
     "install-baikecalc": "바이케칼크 설치",
     "you-are-offline-calculators-will-work-from-cache": "귀하는 오프라인 상태입니다. 계산기는 캐시에서 작동합니다."
   }

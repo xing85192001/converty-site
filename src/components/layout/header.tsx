@@ -33,9 +33,11 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
         {/* Logo (single) */}
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-lg font-bold text-primary-foreground shadow-sm">
-            b
-          </span>
+          <img
+            src="/logo.jpg"
+            alt="baikecalc"
+            className="h-9 w-9 rounded-xl object-cover shadow-sm"
+          />
           <span className="text-lg font-extrabold tracking-tight text-foreground">
             baike<span className="text-primary">calc</span>
           </span>

@@ -60,6 +60,12 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         </p>
       </LegalSection>
 
+      <LegalSection title={tUi("user-content")}>
+        <p>
+          <T k="ui.user-content-body" />
+        </p>
+      </LegalSection>
+
       <LegalSection title="Changes">
         <p>
           We may update these terms from time to time. Continued use of the site after changes

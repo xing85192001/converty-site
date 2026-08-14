@@ -6705,6 +6705,8 @@
     "something-went-wrong": "Bir şeyler ters gitti",
     "toggle-menu": "Menüyü değiştir",
     "toggle-theme": "Temayı değiştir",
+
+    "user-content-body": "You may only upload, submit, or process content that you own or are authorized to use. You are solely responsible for ensuring you have the rights, licenses, and permissions needed for any content you use with our tools.",
     "install-baikecalc": "Baikecalc'ı yükleyin",
     "you-are-offline-calculators-will-work-from-cache": "Çevrimdışısınız. Hesap makineleri önbellekten çalışacaktır."
   }

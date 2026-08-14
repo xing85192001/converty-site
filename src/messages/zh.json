@@ -6820,6 +6820,8 @@
     "something-went-wrong": "出了点问题",
     "toggle-menu": "切换菜单",
     "toggle-theme": "切换主题",
+
+    "user-content-body": "您仅可上传、提交或处理您拥有版权或已获授权的內容。您须自行确保对所使用內容具备必要的权利、许可与授权。",
     "install-baikecalc": "安装百科计算器",
     "you-are-offline-calculators-will-work-from-cache": "您已离线。计算器将从缓存中运行。"
   }

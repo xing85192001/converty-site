@@ -6716,6 +6716,8 @@
     "something-went-wrong": "Quelque chose s'est mal passé",
     "toggle-menu": "Changer de menu",
     "toggle-theme": "Changer de thème",
+
+    "user-content-body": "You may only upload, submit, or process content that you own or are authorized to use. You are solely responsible for ensuring you have the rights, licenses, and permissions needed for any content you use with our tools.",
     "install-baikecalc": "Installer baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Vous êtes hors ligne. Les calculatrices fonctionneront à partir du cache."
   }
