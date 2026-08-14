@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "أدوات سريعة",
     "tagline": "الآلات الحاسبة والمحولات المجانية عبر الإنترنت",
     "allTools": "جميع الأدوات",
     "home": "Home",

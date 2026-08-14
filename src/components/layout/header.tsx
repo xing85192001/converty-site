@@ -1,34 +1,36 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
 import { InstallPrompt } from "@/components/ui/install-prompt";
-import { T } from "@/components/ui/t";
 import { Link } from "@/i18n/navigation";
 import { categories } from "@/lib/registry/categories";
-import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations("common");
   const nav = useTranslations("nav");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/[0.08] bg-background/80 backdrop-blur-xl">
-      <div className="container flex h-14 items-center justify-between gap-3">
-        {/* Logo */}
+    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
+        {/* Logo (single) */}
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-lg bg-gradient-to-br from-brand via-brand2 to-brand-green shadow-[0_0_14px_rgba(34,211,238,0.45)]" />
-          <span className="text-lg font-extrabold tracking-wide">{t("siteName")}</span>
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-lg font-bold text-primary-foreground shadow-sm">
+            b
+          </span>
+          <span className="text-lg font-extrabold tracking-tight text-foreground">
+            baike<span className="text-primary">calc</span>
+          </span>
         </Link>
 
-        {/* Search */}
-        <div className="hidden flex-1 justify-center sm:flex max-w-xl">
+        {/* Search (single, prominent) */}
+        <div className="hidden flex-1 sm:block">
           <GlobalSearch />
         </div>
 
@@ -40,60 +42,62 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="h-8 w-8 sm:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="h-9 w-9 text-muted-foreground hover:bg-muted hover:text-foreground sm:hidden"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menu"
           >
-            <Menu className="h-[18px] w-[18px]" />
-            <span className="sr-only">
-              <T k="ui.toggle-menu" />
-            </span>
+            {menuOpen ? (
+              <X className="h-[18px] w-[18px]" />
+            ) : (
+              <Menu className="h-[18px] w-[18px]" />
+            )}
           </Button>
         </div>
       </div>
 
-      <div
-        className={cn(
-          "border-t border-white/[0.08] sm:hidden",
-          mobileMenuOpen ? "block" : "hidden"
-        )}
-      >
-        <div className="container max-h-[72vh] overflow-y-auto py-3">
-          <div className="mb-3">
-            <GlobalSearch />
-          </div>
-          <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            {t("navigation.categories")}
-          </div>
-          <div className="grid grid-cols-2 gap-1">
-            {categories.map((c) => (
+      {/* Mobile search row */}
+      <div className="border-t border-border px-4 py-2 sm:hidden">
+        <GlobalSearch />
+      </div>
+
+      {/* Mobile category drawer */}
+      {menuOpen && (
+        <div className="border-t border-border bg-background sm:hidden">
+          <div className="mx-auto max-h-[70vh] overflow-y-auto px-4 py-3">
+            <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {t("navigation.categories")}
+            </div>
+            <div className="grid grid-cols-2 gap-1">
+              {categories.map((c) => (
+                <Link
+                  key={c.id}
+                  href={`/${c.slug}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-muted"
+                >
+                  {nav(`${c.id}.name`)}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-3 flex flex-col gap-1 border-t border-border pt-3">
               <Link
-                key={c.id}
-                href={`/${c.slug}`}
-                onClick={() => setMobileMenuOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-white/5"
+                href="/all"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg bg-primary/10 px-3 py-2 text-sm font-medium text-primary"
               >
-                {nav(`${c.id}.name`)}
+                {t("allTools")}
               </Link>
-            ))}
-          </div>
-          <div className="mt-3 flex flex-col gap-1 border-t border-white/[0.08] pt-3">
-            <Link
-              href="/all"
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg bg-primary/10 px-3 py-2 text-sm font-medium text-primary"
-            >
-              {t("allTools")}
-            </Link>
-            <Link
-              href="/blog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-white/5"
-            >
-              {t("homepageViewBlog")}
-            </Link>
+              <Link
+                href="/blog"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-3 py-2 text-sm text-foreground/90 transition-colors hover:bg-muted"
+              >
+                {t("homepageViewBlog")}
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

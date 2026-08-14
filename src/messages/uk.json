@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Швидкі інструменти",
     "tagline": "Безкоштовні онлайн калькулятори та конвертери",
     "allTools": "Усі інструменти",
     "home": "Home",

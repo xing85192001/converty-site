@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Rychlé nástroje",
     "tagline": "Zadarmo online kalkulačky a převodníky",
     "allTools": "Všechny nástroje",
     "home": "Home",

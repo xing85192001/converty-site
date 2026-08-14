@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Outils rapides",
     "tagline": "Calculatrices et convertisseurs en ligne gratuits",
     "allTools": "Tous les outils",
     "home": "Accueil",

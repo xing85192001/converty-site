@@ -1,11 +1,12 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Quick Tools",
     "tagline": "Free online calculators and converters",
     "allTools": "All Tools",
     "home": "Home",
     "search": {
-      "placeholder": "Search calculators...",
+      "placeholder": "Search for a calculator...",
       "noResults": "No calculators found",
       "calculators": "Calculators",
       "loading": "Loading search...",

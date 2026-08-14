@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "快捷工具",
     "tagline": "免费在线计算器与转换工具，满足日常需求",
     "allTools": "所有工具",
     "home": "首页",

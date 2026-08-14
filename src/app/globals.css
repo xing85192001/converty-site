@@ -1,58 +1,62 @@
 @import "tailwindcss";
 
+/* Make `dark:` variants respond to next-themes `.dark` class (not just prefers-color-scheme) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  /* 设计稿深色青紫主题 - 默认 & dark */
-  --color-background: hsl(222 47% 9%);
-  --color-foreground: hsl(225 48% 94%);
-  --color-card: hsl(224 43% 13%);
-  --color-card-foreground: hsl(225 48% 94%);
-  --color-popover: hsl(224 43% 13%);
-  --color-popover-foreground: hsl(225 48% 94%);
-  --color-primary: hsl(187 85% 53%);
-  --color-primary-foreground: hsl(222 47% 9%);
-  --color-secondary: hsl(224 32% 17%);
-  --color-secondary-foreground: hsl(225 48% 94%);
-  --color-muted: hsl(224 32% 17%);
-  --color-muted-foreground: hsl(224 23% 68%);
-  --color-accent: hsl(262 83% 58%);
-  --color-accent-foreground: hsl(225 48% 94%);
-  --color-destructive: hsl(0 84.2% 60.2%);
-  --color-destructive-foreground: hsl(210 40% 98%);
-  --color-border: hsl(224 32% 17%);
-  --color-input: hsl(224 32% 17%);
-  --color-ring: hsl(187 85% 53%);
-  --radius: 0.75rem;
+  /* ===== Light theme (default) ===== */
+  --color-background: #f7f8fa;
+  --color-foreground: #1e293b; /* slate-800 */
+  --color-card: #ffffff;
+  --color-card-foreground: #1e293b;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1e293b;
+  --color-primary: #4f46e5; /* indigo-600 */
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f5f9; /* slate-100 */
+  --color-secondary-foreground: #1e293b;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b; /* slate-500 */
+  --color-accent: #eef2ff; /* indigo-50 */
+  --color-accent-foreground: #4f46e5;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e2e8f0; /* slate-200 */
+  --color-input: #e2e8f0;
+  --color-ring: #4f46e5;
+
+  --radius: 0.75rem; /* rounded-xl */
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
-  /* 品牌扩展色 */
-  --color-brand: hsl(187 85% 53%);
-  --color-brand2: hsl(262 83% 58%);
-  --color-brand-green: hsl(158 70% 52%);
-  --color-brand-pink: hsl(330 81% 60%);
+  /* Brand harmonies (kept for legacy gradient refs) */
+  --color-brand: #6366f1;
+  --color-brand2: #8b5cf6;
+  --color-brand-green: #10b981;
+  --color-brand-pink: #ec4899;
 }
 
 .dark {
-  --color-background: hsl(222 47% 9%);
-  --color-foreground: hsl(225 48% 94%);
-  --color-card: hsl(224 43% 13%);
-  --color-card-foreground: hsl(225 48% 94%);
-  --color-popover: hsl(224 43% 13%);
-  --color-popover-foreground: hsl(225 48% 94%);
-  --color-primary: hsl(187 85% 53%);
-  --color-primary-foreground: hsl(222 47% 9%);
-  --color-secondary: hsl(224 32% 17%);
-  --color-secondary-foreground: hsl(225 48% 94%);
-  --color-muted: hsl(224 32% 17%);
-  --color-muted-foreground: hsl(224 23% 68%);
-  --color-accent: hsl(262 83% 58%);
-  --color-accent-foreground: hsl(225 48% 94%);
-  --color-destructive: hsl(0 62.8% 30.6%);
-  --color-destructive-foreground: hsl(210 40% 98%);
-  --color-border: hsl(224 32% 17%);
-  --color-input: hsl(224 32% 17%);
-  --color-ring: hsl(187 85% 53%);
+  --color-background: #0f172a; /* slate-900 */
+  --color-foreground: #e2e8f0; /* slate-200 */
+  --color-card: #1e293b; /* slate-800 */
+  --color-card-foreground: #e2e8f0;
+  --color-popover: #1e293b;
+  --color-popover-foreground: #e2e8f0;
+  --color-primary: #6366f1; /* indigo-500 */
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #334155;
+  --color-secondary-foreground: #e2e8f0;
+  --color-muted: #334155;
+  --color-muted-foreground: #94a3b8; /* slate-400 */
+  --color-accent: #312e81;
+  --color-accent-foreground: #c7d2fe;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #334155; /* slate-700 */
+  --color-input: #334155;
+  --color-ring: #6366f1;
 }
 
 * {

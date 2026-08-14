@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Alat cepat",
     "tagline": "Kalkulator & konverter daring gratis",
     "allTools": "Semua Alat",
     "home": "Home",

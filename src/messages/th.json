@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "เครื่องมือด่วน",
     "tagline": "เครื่องคิดเลขและแปลงค่าออนไลน์ฟรี",
     "allTools": "เครื่องมือทั้งหมด",
     "home": "Home",

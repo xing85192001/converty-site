@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Công cụ nhanh",
     "tagline": "Công cụ tính toán và quy đổi miễn phí",
     "allTools": "Tất cả công cụ",
     "home": "Home",

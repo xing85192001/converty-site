@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Gyors eszközök",
     "tagline": "Ingyenes online számológépek és átváltók",
     "allTools": "Összes eszköz",
     "home": "Home",

@@ -90,21 +90,18 @@ export function GlobalSearch() {
     <>
       <Button
         variant="outline"
-        className="relative h-10 w-full justify-start rounded-xl border-white/10 bg-white/5 text-sm text-muted-foreground hover:bg-white/10 hover:text-foreground sm:w-80 sm:pr-12"
+        className="group relative flex h-11 w-full items-center justify-start gap-2 rounded-xl border border-border bg-card px-3 text-sm text-muted-foreground transition-colors hover:border-primary/60 hover:bg-accent/40 sm:w-[440px]"
         onClick={() => setOpen(true)}
       >
-        <Search className="mr-2 h-4 w-4" />
-        <span className="hidden lg:inline-flex">{t("placeholder")}</span>
-        <span className="inline-flex lg:hidden">{t("placeholder")}</span>
-        <kbd className="pointer-events-none absolute right-2 top-2 hidden h-6 select-none items-center gap-1 rounded border border-white/10 bg-white/5 px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+        <Search className="h-4 w-4 shrink-0" />
+        <span className="truncate">{t("placeholder")}</span>
+        <kbd className="pointer-events-none absolute right-2 top-1/2 hidden h-6 -translate-y-1/2 select-none items-center gap-1 rounded border border-border bg-muted px-1.5 font-mono text-[10px] font-medium sm:flex">
           {isMac ? (
             <>
               <span className="text-xs">⌘</span>K
             </>
           ) : (
-            <>
-              <span className="text-xs">Ctrl</span>K
-            </>
+            <>Ctrl K</>
           )}
         </kbd>
       </Button>

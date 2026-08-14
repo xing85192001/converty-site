@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Alat pantas",
     "tagline": "Kalkulator & penukar dalam talian percuma",
     "allTools": "Semua Alat",
     "home": "Home",

@@ -152,6 +152,16 @@
           }
         }
       }
+    },
+    {
+      "includes": ["src/components/converter/converter-layout.tsx"],
+      "linter": {
+        "rules": {
+          "security": {
+            "noDangerouslySetInnerHtml": "off"
+          }
+        }
+      }
     }
   ]
 }

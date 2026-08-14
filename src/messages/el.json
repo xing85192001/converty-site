@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Γρήγορα εργαλεία",
     "tagline": "Δωρεάν online αριθμομηχανές και μετατροπείς",
     "allTools": "Όλα τα εργαλεία",
     "home": "Home",

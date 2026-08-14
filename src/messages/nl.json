@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Snelle tools",
     "tagline": "Gratis online rekenmachines en converters",
     "allTools": "Alle tools",
     "home": "Home",

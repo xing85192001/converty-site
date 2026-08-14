@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Schnellwerkzeuge",
     "tagline": "Kostenlose Online-Rechner und Konverter",
     "allTools": "Alle Tools",
     "home": "Startseite",

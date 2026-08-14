@@ -1,6 +1,7 @@
 {
   "common": {
     "siteName": "baikecalc",
+    "quickTools": "Hızlı araçlar",
     "tagline": "Ücretsiz online hesap makineleri ve dönüştürücüler",
     "allTools": "Tüm araçlar",
     "home": "Home",
