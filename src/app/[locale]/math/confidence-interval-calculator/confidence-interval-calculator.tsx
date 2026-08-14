@@ -110,7 +110,7 @@ export function ConfidenceIntervalCalculator() {
           />
           <InputField
             id="sampleSize"
-            label={tMath("sampleSize")}
+            label={tMath("sampleSize.name")}
             value={values.sampleSize}
             onChange={(v) => setValue("sampleSize", v)}
             min={1}
@@ -145,7 +145,7 @@ export function ConfidenceIntervalCalculator() {
           />
           <InputField
             id="sampleSize"
-            label={tMath("sampleSize")}
+            label={tMath("sampleSize.name")}
             value={values.sampleSize}
             onChange={(v) => setValue("sampleSize", v)}
             min={1}
@@ -160,7 +160,7 @@ export function ConfidenceIntervalCalculator() {
         <div className="space-y-4">
           <div className="rounded-lg border bg-primary/10 p-4 text-center">
             <p className="text-sm text-muted-foreground mb-1">
-              {tMath("confidenceInterval")} ({ciResult.confidenceLevel}%)
+              {tMath("confidenceInterval.name")} ({ciResult.confidenceLevel}%)
             </p>
             <p className="text-2xl font-bold">
               ({ciResult.lowerBound.toFixed(4)}, {ciResult.upperBound.toFixed(4)})

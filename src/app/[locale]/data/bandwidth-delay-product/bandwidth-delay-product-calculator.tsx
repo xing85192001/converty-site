@@ -79,7 +79,7 @@ export function BandwidthDelayProductCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={t("bdp")}
+              label={t("bdp.name")}
               value={result.bdpKBytes.toFixed(2)}
               unit="KB"
               size="lg"

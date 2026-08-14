@@ -3113,7 +3113,8 @@
           "sectorResult": "面积 = {area}",
           "rhombusFormula": "面积公式：A = ½ × {diagonal1} × {diagonal2}",
           "rhombusResult": "面积 = {area}"
-        }
+        },
+        "name": "面积"
       },
       "perimeter": "周长",
       "radius": "半径",
@@ -3168,7 +3169,8 @@
           "pyramidVFormula": "体积公式：V = (1/3) × {baseArea} × {height}",
           "pyramidVSubstitute": "代入：底面积 = {baseArea}，高 = {height}",
           "pyramidVResult": "体积 = {result}"
-        }
+        },
+        "name": "体积"
       },
       "surfaceArea": {
         "steps": {
@@ -3212,7 +3214,8 @@
           "hemiCurved": "hemicurved: {lateralSurfaceArea}",
           "hemiBase": "hemi碱: {baseSurfaceArea}",
           "hemiTotal": "hemi总计: {totalSurfaceArea}"
-        }
+        },
+        "name": "表面积"
       },
       "lateralArea": "Late面积Area",
       "point1X": "Point 1 X",
@@ -3232,7 +3235,8 @@
           "xIntercept": "x截距",
           "distance": "距离: {distance}",
           "midpoint": "中点: {x} {y}"
-        }
+        },
+        "name": "斜率"
       },
       "yInterceptValue": "Y轴截距",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3277,7 +3281,8 @@
           "haversineDistanceKm": "haversine距离km: {radius} {c} {distance}",
           "haversineDistanceMiles": "haversine距离miles: {distance}",
           "haversineBearing": "haversinebearing: {bearing}"
-        }
+        },
+        "name": "距离"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "标准差",
@@ -3302,7 +3307,8 @@
           "permResult": "perm结果",
           "combFormula": "comb公式: {nMinusR}",
           "combResult": "comb结果"
-        }
+        },
+        "name": "概率"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "总计 Outcomes",
@@ -3361,7 +3367,8 @@
           "opDivExpanded": "opdivexpanded",
           "opDivQuotient": "opdivquotient: {quotient} {exponent}",
           "opDivResult": "opdiv结果: {result}"
-        }
+        },
+        "name": "科学计数法"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3406,7 +3413,8 @@
           "fromMoESubstitute": "frommoe代入: {pqOverN}",
           "fromMoESqrt": "frommoesqrt: {sqrtValue}",
           "fromMoEResult": "frommoe结果: {marginOfError}"
-        }
+        },
+        "name": "样本大小"
       },
       "marginOfError": "误差范围",
       "confidenceInterval": {
@@ -3430,7 +3438,8 @@
           "marginOfError": "利润率of误差: {criticalValue} {standardError} {marginOfError}",
           "confidenceInterval": "置信区间: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "置信区间结果: {lowerBound} {upperBound}"
-        }
+        },
+        "name": "置信区间"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3458,7 +3467,8 @@
           "probBetween": "probbetween: {zScore} {probability}",
           "percentileFormula": "百分位查表",
           "percentileResult": "百分位 = {percentile}%"
-        }
+        },
+        "name": "Z评分"
       },
       "pValue": {
         "steps": {
@@ -3479,7 +3489,8 @@
           "sigAt05": "sigat05: {significant}",
           "sigAt01": "sigat01: {significant}",
           "sigAt001": "sigat001: {significant}"
-        }
+        },
+        "name": "P值"
       },
       "significanceLevel": "显著性水平",
       "permutation": "排列",
@@ -3538,7 +3549,8 @@
           "carbon14Formula": "carbon14公式: {fraction} {decayConstant}",
           "carbon14Result": "carbon14结果: {age}",
           "carbon14Note": "carbon14note"
-        }
+        },
+        "name": "半衰期"
       },
       "initialQuantity": "数量Initial Quantity",
       "timeElapsed": "时间 Elapsed",
@@ -3572,7 +3584,8 @@
           "factorialExpansion": "factorialexpansion",
           "factorialDigitCount": "factorialdigitcount: {count}",
           "compareResult": "compare结果: {comparison}"
-        }
+        },
+        "name": "大数"
       },
       "calculate": "计算",
       "every": "Every",
@@ -3615,7 +3628,8 @@
           "invFormula": "inv公式",
           "invResultContent": "inv结果content: {content}",
           "invVerification": "invverification"
-        }
+        },
+        "name": "矩阵"
       },
       "maximum": "最大值",
       "minimum": "最小值",
@@ -3661,7 +3675,8 @@
           "geoNthTerm": "第{n}项 = {nthTerm}",
           "geoSumFormula": "求和公式：Sₙ = a₁ × (rⁿ - 1) / (r - 1)",
           "fibSequence": "数列：{sequence}"
-        }
+        },
+        "name": "数列"
       },
       "numbersHelp": "Ente利率rated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3816,7 +3831,8 @@
           "toDecimalResult": "todecimal结果: {numerator} {denominator} {decimal}",
           "toFractionResult": "tofraction结果: {numerator} {denominator}",
           "simplifiedResult": "simplified结果: {numerator} {denominator}"
-        }
+        },
+        "name": "分数"
       },
       "hex": {
         "steps": {
@@ -5743,7 +5759,8 @@
           "separator": "———",
           "optimalWindow": "最优窗口 = {value}",
           "maxThroughput": "最大吞吐量 = {value}"
-        }
+        },
+        "name": "带宽-延迟乘积"
       },
       "bdpBits": "BDP 位bits)",
       "bdpBytes": "字节BDP (bytes)",

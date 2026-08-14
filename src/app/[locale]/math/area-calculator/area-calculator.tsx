@@ -314,7 +314,7 @@ export function AreaCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={tMath("area")}
+              label={tMath("area.name")}
               value={areaResult.area.toFixed(4)}
               unit={areaResult.unit}
               size="lg"

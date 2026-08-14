@@ -89,7 +89,7 @@ export function NumberSequenceCalculator() {
     <div className="space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>{tMath("numberSequence")}</CardTitle>
+          <CardTitle>{tMath("numberSequence.name")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">

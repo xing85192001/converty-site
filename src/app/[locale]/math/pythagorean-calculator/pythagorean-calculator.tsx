@@ -132,7 +132,11 @@ export function PythagoreanCalculator() {
 
           <ResultGrid
             results={[
-              { label: tMath("area"), value: pythagoreanResult.area.toFixed(4), unit: "sq units" },
+              {
+                label: tMath("area.name"),
+                value: pythagoreanResult.area.toFixed(4),
+                unit: "sq units",
+              },
               {
                 label: tMath("perimeter"),
                 value: pythagoreanResult.perimeter.toFixed(4),

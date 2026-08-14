@@ -175,7 +175,7 @@ export function TriangleCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={tMath("area")}
+              label={tMath("area.name")}
               value={triangleResult.area.toFixed(4)}
               unit="sq units"
               size="lg"

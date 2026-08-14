@@ -107,7 +107,7 @@ export function SlopeCalculator() {
           <>
             <InputField
               id="slope"
-              label={tMath("slope")}
+              label={tMath("slope.name")}
               value={values.slope}
               onChange={(v) => setValue("slope", v)}
               step="any"
@@ -148,7 +148,7 @@ export function SlopeCalculator() {
             />
             <InputField
               id="slope"
-              label={tMath("slope")}
+              label={tMath("slope.name")}
               value={values.slope}
               onChange={(v) => setValue("slope", v)}
               step="any"
@@ -189,7 +189,7 @@ export function SlopeCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={tMath("slope")}
+              label={tMath("slope.name")}
               value={slopeResult.slope !== null ? slopeResult.slope.toFixed(4) : "undefined"}
               size="lg"
             />
@@ -212,7 +212,7 @@ export function SlopeCalculator() {
                 ? [{ label: tMath("xIntercept"), value: slopeResult.xIntercept.toFixed(4) }]
                 : []),
               ...(slopeResult.distance !== null
-                ? [{ label: tMath("distance"), value: slopeResult.distance.toFixed(4) }]
+                ? [{ label: tMath("distance.name"), value: slopeResult.distance.toFixed(4) }]
                 : []),
             ]}
           />

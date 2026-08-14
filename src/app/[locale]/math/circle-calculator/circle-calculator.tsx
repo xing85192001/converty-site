@@ -52,7 +52,7 @@ export function CircleCalculator() {
       case "circumference":
         return tMath("circumference");
       case "area":
-        return tMath("area");
+        return tMath("area.name");
       default:
         return tMath("value");
     }
@@ -76,7 +76,7 @@ export function CircleCalculator() {
               <SelectItem value="radius">{tMath("radius")}</SelectItem>
               <SelectItem value="diameter">{tMath("diameter")}</SelectItem>
               <SelectItem value="circumference">{tMath("circumference")}</SelectItem>
-              <SelectItem value="area">{tMath("area")}</SelectItem>
+              <SelectItem value="area">{tMath("area.name")}</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -97,7 +97,7 @@ export function CircleCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={tMath("area")}
+              label={tMath("area.name")}
               value={circleResult.area.toFixed(4)}
               unit="sq units"
               size="lg"

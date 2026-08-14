@@ -131,7 +131,7 @@ export function PValueCalculator() {
       {pResult && (
         <div className="space-y-4">
           <OutputDisplay
-            label={tMath("pValue")}
+            label={tMath("pValue.name")}
             value={pResult.pValue < 0.0001 ? "< 0.0001" : pResult.pValue.toFixed(6)}
             size="lg"
           />

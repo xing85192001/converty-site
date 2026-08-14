@@ -3130,7 +3130,8 @@
           "sectorResult": "Sector Result: {area}",
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
-        }
+        },
+        "name": "Calculadora de Área"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3175,7 +3176,8 @@
           "prismVResult": "Prism V Result",
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
-        }
+        },
+        "name": "Volume"
       },
       "surfaceArea": {
         "steps": {
@@ -3219,7 +3221,8 @@
           "hemiCurved": "Hemi Curved: {lateralSurfaceArea}",
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
-        }
+        },
+        "name": "Surface Area"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3239,7 +3242,8 @@
           "xIntercept": "X Intercept",
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
-        }
+        },
+        "name": "Slope"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3284,7 +3288,8 @@
           "haversineDistanceKm": "Haversine Distance Km: {radius} {c} {distance}",
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
-        }
+        },
+        "name": "Distance"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3309,7 +3314,8 @@
           "permResult": "Perm Result",
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
-        }
+        },
+        "name": "Probability"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3368,7 +3374,8 @@
           "opDivExpanded": "Op Div Expanded",
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
-        }
+        },
+        "name": "Scientific Notation"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3413,7 +3420,8 @@
           "fromMoESubstitute": "From Mo E Substitute: {pqOverN}",
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
-        }
+        },
+        "name": "Sample Size"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3437,7 +3445,8 @@
           "marginOfError": "Margin Of Error: {criticalValue} {standardError} {marginOfError}",
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
-        }
+        },
+        "name": "Confidence Interval"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3463,7 +3472,8 @@
           "probBelow": "Prob Below: {zScore} {probability}",
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
-        }
+        },
+        "name": "Z-Score"
       },
       "pValue": {
         "steps": {
@@ -3484,7 +3494,8 @@
           "sigAt05": "Sig At05: {significant}",
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
-        }
+        },
+        "name": "P-Value"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3543,7 +3554,8 @@
           "carbon14Formula": "Carbon14 Formula: {fraction} {decayConstant}",
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
-        }
+        },
+        "name": "Half-Life"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3577,7 +3589,8 @@
           "factorialExpansion": "Factorial Expansion",
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
-        }
+        },
+        "name": "Big Number"
       },
       "calculate": "Calcular",
       "every": "Every",
@@ -3620,7 +3633,8 @@
           "invFormula": "Inv Formula",
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
-        }
+        },
+        "name": "Matrix"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3660,7 +3674,8 @@
           "fpGeoRatio": "Fp Geo Ratio: {ratio}",
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
-        }
+        },
+        "name": "Number Sequence"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3815,7 +3830,8 @@
           "toDecimalResult": "To Decimal Result: {numerator} {denominator} {decimal}",
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
-        }
+        },
+        "name": "Fraction"
       },
       "hex": {
         "steps": {
@@ -5726,7 +5742,8 @@
           "requiredWindowResult": "Required Window Result",
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
-        }
+        },
+        "name": "Bandwidth-Delay Product"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",

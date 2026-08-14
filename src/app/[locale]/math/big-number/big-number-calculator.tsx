@@ -63,7 +63,7 @@ export function BigNumberCalculator() {
     <div className="space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>{tMath("bigNumber") || "Big Number Calculator"}</CardTitle>
+          <CardTitle>{tMath("bigNumber.name") || "Big Number Calculator"}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">

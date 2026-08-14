@@ -75,7 +75,7 @@ export function ExponentCalculator() {
 
           <ResultGrid
             results={[
-              { label: tMath("scientificNotation"), value: expResult.scientificNotation },
+              { label: tMath("scientificNotation.name"), value: expResult.scientificNotation },
               ...(expResult.reciprocal !== null
                 ? [{ label: "Reciprocal (1/x)", value: expResult.reciprocal.toExponential(4) }]
                 : []),

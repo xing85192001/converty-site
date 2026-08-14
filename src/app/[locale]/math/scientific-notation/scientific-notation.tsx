@@ -112,7 +112,7 @@ export function ScientificNotationCalculator() {
       {notationResult && (
         <div className="space-y-4">
           <OutputDisplay
-            label={tMath("scientificNotation")}
+            label={tMath("scientificNotation.name")}
             value={notationResult.scientificNotation}
             size="lg"
           />

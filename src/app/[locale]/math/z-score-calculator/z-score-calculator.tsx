@@ -91,7 +91,7 @@ export function ZScoreCalculator() {
         {values.mode === "fromZScore" && (
           <InputField
             id="zScore"
-            label={tMath("zScore")}
+            label={tMath("zScore.name")}
             value={values.zScore}
             onChange={(v) => setValue("zScore", v)}
             step="any"
@@ -139,7 +139,11 @@ export function ZScoreCalculator() {
       {zResult && (
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
-            <OutputDisplay label={tMath("zScore")} value={zResult.zScore.toFixed(4)} size="lg" />
+            <OutputDisplay
+              label={tMath("zScore.name")}
+              value={zResult.zScore.toFixed(4)}
+              size="lg"
+            />
             <OutputDisplay label={tMath("rawValue")} value={zResult.value.toFixed(4)} size="lg" />
           </div>
 

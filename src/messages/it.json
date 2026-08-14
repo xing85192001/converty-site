@@ -3124,7 +3124,8 @@
           "sectorResult": "Sector Result: {area}",
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
-        }
+        },
+        "name": "Area"
       },
       "perimeter": "Perimetro",
       "radius": "Raggio",
@@ -3169,7 +3170,8 @@
           "prismVResult": "Prism V Result",
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
-        }
+        },
+        "name": "Volume"
       },
       "surfaceArea": {
         "steps": {
@@ -3213,7 +3215,8 @@
           "hemiCurved": "Hemi Curved: {lateralSurfaceArea}",
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
-        }
+        },
+        "name": "Superficie"
       },
       "lateralArea": "Superficie laterale",
       "point1X": "Punto 1 X",
@@ -3233,7 +3236,8 @@
           "xIntercept": "X Intercept",
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
-        }
+        },
+        "name": "Pendenza"
       },
       "yInterceptValue": "Intercetta Y",
       "slopeInterceptForm": "Forma pendenza-intercetta",
@@ -3278,7 +3282,8 @@
           "haversineDistanceKm": "Haversine Distance Km: {radius} {c} {distance}",
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
-        }
+        },
+        "name": "Distanza"
       },
       "midpoint": "Punto medio",
       "standardDeviation": "Deviazione standard",
@@ -3303,7 +3308,8 @@
           "permResult": "Perm Result",
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
-        }
+        },
+        "name": "Probabilita"
       },
       "favorableOutcomes": "Esiti favorevoli",
       "totalOutcomes": "Esiti totali",
@@ -3362,7 +3368,8 @@
           "opDivExpanded": "Op Div Expanded",
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
-        }
+        },
+        "name": "Notazione Scientifica"
       },
       "coefficient": "Coefficiente",
       "mantissa": "Mantissa",
@@ -3407,7 +3414,8 @@
           "fromMoESubstitute": "From Mo E Substitute: {pqOverN}",
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
-        }
+        },
+        "name": "Dimensione Campione"
       },
       "marginOfError": "Margine di errore",
       "confidenceInterval": {
@@ -3431,7 +3439,8 @@
           "marginOfError": "Margin Of Error: {criticalValue} {standardError} {marginOfError}",
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
-        }
+        },
+        "name": "Intervallo di Confidenza"
       },
       "lowerBound": "Limite inferiore",
       "upperBound": "Limite superiore",
@@ -3457,7 +3466,8 @@
           "probBelow": "Prob Below: {zScore} {probability}",
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
-        }
+        },
+        "name": "Punteggio Z"
       },
       "pValue": {
         "steps": {
@@ -3478,7 +3488,8 @@
           "sigAt05": "Sig At05: {significant}",
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
-        }
+        },
+        "name": "P-Value"
       },
       "significanceLevel": "Livello di significatività",
       "permutation": "Permutazione",
@@ -3537,7 +3548,8 @@
           "carbon14Formula": "Carbon14 Formula: {fraction} {decayConstant}",
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
-        }
+        },
+        "name": "Tempo di Dimezzamento"
       },
       "initialQuantity": "Quantità iniziale",
       "timeElapsed": "Tempo trascorso",
@@ -3571,7 +3583,8 @@
           "factorialExpansion": "Factorial Expansion",
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
-        }
+        },
+        "name": "Grandi Numeri"
       },
       "calculate": "Calcola",
       "every": "Ogni",
@@ -3614,7 +3627,8 @@
           "invFormula": "Inv Formula",
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
-        }
+        },
+        "name": "Matrici"
       },
       "maximum": "Massimo",
       "minimum": "Minimo",
@@ -3654,7 +3668,8 @@
           "fpGeoRatio": "Fp Geo Ratio: {ratio}",
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
-        }
+        },
+        "name": "Sequenze Numeriche"
       },
       "numbersHelp": "Inserisci numeri interi separati da virgole, spazi o nuove righe",
       "populationOrSample": "Popolazione o Campione",
@@ -3809,7 +3824,8 @@
           "toDecimalResult": "To Decimal Result: {numerator} {denominator} {decimal}",
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
-        }
+        },
+        "name": "Frazioni"
       },
       "hex": {
         "steps": {
@@ -5720,7 +5736,8 @@
           "requiredWindowResult": "Required Window Result",
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
-        }
+        },
+        "name": "Prodotto Banda-Ritardo"
       },
       "bdpBits": "BDP (bit)",
       "bdpBytes": "BDP (byte)",

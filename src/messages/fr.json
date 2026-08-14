@@ -3124,7 +3124,8 @@
           "sectorResult": "Sector Result: {area}",
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
-        }
+        },
+        "name": "Calculatrice d'Aire"
       },
       "perimeter": "Périmètre",
       "radius": "Rayon",
@@ -3169,7 +3170,8 @@
           "prismVResult": "Prism V Result",
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
-        }
+        },
+        "name": "Volume"
       },
       "surfaceArea": {
         "steps": {
@@ -3213,7 +3215,8 @@
           "hemiCurved": "Hemi Curved: {lateralSurfaceArea}",
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
-        }
+        },
+        "name": "Surface"
       },
       "lateralArea": "Surface latérale",
       "point1X": "Point 1 X",
@@ -3233,7 +3236,8 @@
           "xIntercept": "X Intercept",
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
-        }
+        },
+        "name": "Pente"
       },
       "yInterceptValue": "Ordonnée à l'origine",
       "slopeInterceptForm": "Forme pente-ordonnée",
@@ -3278,7 +3282,8 @@
           "haversineDistanceKm": "Haversine Distance Km: {radius} {c} {distance}",
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
-        }
+        },
+        "name": "Distance"
       },
       "midpoint": "Point milieu",
       "standardDeviation": "Écart-type",
@@ -3303,7 +3308,8 @@
           "permResult": "Perm Result",
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
-        }
+        },
+        "name": "Probabilite"
       },
       "favorableOutcomes": "Issues favorables",
       "totalOutcomes": "Issues totales",
@@ -3362,7 +3368,8 @@
           "opDivExpanded": "Op Div Expanded",
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
-        }
+        },
+        "name": "Notation Scientifique"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantisse",
@@ -3407,7 +3414,8 @@
           "fromMoESubstitute": "From Mo E Substitute: {pqOverN}",
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
-        }
+        },
+        "name": "Taille d'Echantillon"
       },
       "marginOfError": "Marge d'erreur",
       "confidenceInterval": {
@@ -3431,7 +3439,8 @@
           "marginOfError": "Margin Of Error: {criticalValue} {standardError} {marginOfError}",
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
-        }
+        },
+        "name": "Intervalle de Confiance"
       },
       "lowerBound": "Borne inférieure",
       "upperBound": "Borne supérieure",
@@ -3457,7 +3466,8 @@
           "probBelow": "Prob Below: {zScore} {probability}",
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
-        }
+        },
+        "name": "Score Z"
       },
       "pValue": {
         "steps": {
@@ -3478,7 +3488,8 @@
           "sigAt05": "Sig At05: {significant}",
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
-        }
+        },
+        "name": "P-Valeur"
       },
       "significanceLevel": "Seuil de signification",
       "permutation": "Permutation",
@@ -3537,7 +3548,8 @@
           "carbon14Formula": "Carbon14 Formula: {fraction} {decayConstant}",
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
-        }
+        },
+        "name": "Demi-Vie"
       },
       "initialQuantity": "Quantité initiale",
       "timeElapsed": "Temps écoulé",
@@ -3571,7 +3583,8 @@
           "factorialExpansion": "Factorial Expansion",
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
-        }
+        },
+        "name": "Grands Nombres"
       },
       "calculate": "Calculer",
       "every": "Tous les",
@@ -3614,7 +3627,8 @@
           "invFormula": "Inv Formula",
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
-        }
+        },
+        "name": "Matrices"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3654,7 +3668,8 @@
           "fpGeoRatio": "Fp Geo Ratio: {ratio}",
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
-        }
+        },
+        "name": "Suites Numeriques"
       },
       "numbersHelp": "Entrez les entiers separes par des virgules, espaces ou nouvelles lignes",
       "populationOrSample": "Population ou Echantillon",
@@ -3809,7 +3824,8 @@
           "toDecimalResult": "To Decimal Result: {numerator} {denominator} {decimal}",
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
-        }
+        },
+        "name": "Fractions"
       },
       "hex": {
         "steps": {
@@ -5485,7 +5501,8 @@
           "requiredWindowResult": "Required Window Result",
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
-        }
+        },
+        "name": "Produit Bande Passante-Delai"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (octets)",

@@ -239,13 +239,13 @@ export function VolumeCalculator() {
         <div className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <OutputDisplay
-              label={tMath("volume")}
+              label={tMath("volume.name")}
               value={volumeResult.volume.toFixed(4)}
               unit={volumeResult.unit}
               size="lg"
             />
             <OutputDisplay
-              label={tMath("surfaceArea")}
+              label={tMath("surfaceArea.name")}
               value={volumeResult.surfaceArea.toFixed(4)}
               unit="sq units"
               size="lg"

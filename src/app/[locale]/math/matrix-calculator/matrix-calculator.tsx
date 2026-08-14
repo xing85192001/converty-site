@@ -80,7 +80,7 @@ export function MatrixCalculator() {
     <div className="space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>{tMath("matrix") || "Matrix Calculator"}</CardTitle>
+          <CardTitle>{tMath("matrix.name") || "Matrix Calculator"}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">

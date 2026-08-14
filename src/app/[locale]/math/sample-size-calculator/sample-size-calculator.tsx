@@ -161,7 +161,7 @@ export function SampleSizeCalculator() {
                 value: `${(sizeResult.marginOfError * 100).toFixed(2)}%`,
               },
               { label: tMath("confidenceLevel"), value: `${sizeResult.confidenceLevel}%` },
-              { label: tMath("zScore"), value: sizeResult.zScore.toFixed(4) },
+              { label: tMath("zScore.name"), value: sizeResult.zScore.toFixed(4) },
             ]}
           />
 

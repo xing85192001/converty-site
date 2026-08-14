@@ -111,7 +111,7 @@ export function HalfLifeCalculator() {
         {(values.mode === "decay" || values.mode === "remaining") && (
           <InputField
             id="halfLife"
-            label={tMath("halfLife")}
+            label={tMath("halfLife.name")}
             value={values.halfLife}
             onChange={(v) => setValue("halfLife", v)}
             step="any"
@@ -166,7 +166,7 @@ export function HalfLifeCalculator() {
 
           <ResultGrid
             results={[
-              { label: tMath("halfLife"), value: halfLifeResult.halfLife.toFixed(4) },
+              { label: tMath("halfLife.name"), value: halfLifeResult.halfLife.toFixed(4) },
               { label: tMath("timeElapsed"), value: halfLifeResult.time.toFixed(4) },
               { label: tMath("decayConstant"), value: halfLifeResult.decayConstant.toFixed(8) },
               {

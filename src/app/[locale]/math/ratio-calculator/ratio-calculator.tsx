@@ -191,7 +191,7 @@ export function RatioCalculator() {
             results={[
               { label: tMath("decimal"), value: ratioResult.decimal.toFixed(6) },
               { label: tMath("percentage"), value: ratioResult.percentage.toFixed(2), unit: "%" },
-              { label: tMath("fraction"), value: ratioResult.fraction },
+              { label: tMath("fraction.name"), value: ratioResult.fraction },
             ]}
           />
 
