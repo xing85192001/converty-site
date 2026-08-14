@@ -57,7 +57,7 @@ export function ConverterLayout({
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8">
+    <div className="mx-auto max-w-5xl px-4 py-6">
       {/* JSON-LD WebApplication structured data (static, server-rendered) */}
       <script
         type="application/ld+json"
@@ -66,21 +66,21 @@ export function ConverterLayout({
 
       <Breadcrumbs categoryId={categoryId} current={title} categoryName={categoryName} />
 
-      <div className="mb-8 space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight">{title}</h1>
+      <div className="mb-6 space-y-2">
+        <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
         <p className="text-muted-foreground">{description}</p>
       </div>
 
-      <Card className="mb-8 border-border shadow-card">
+      <Card className="mb-6 border-border shadow-card">
         <CardContent className="pt-6">
           <CalculatorErrorBoundary>{children}</CalculatorErrorBoundary>
         </CardContent>
       </Card>
 
       {coreFeatures.length > 0 && (
-        <section className="mb-10">
-          <h2 className="mb-4 text-xl font-bold tracking-tight">{t("coreFeatures")}</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="mb-8">
+          <h2 className="mb-3 text-lg font-bold tracking-tight">{t("coreFeatures")}</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {coreFeatures.map((feature) => (
               <Card
                 key={feature.title}
@@ -97,9 +97,9 @@ export function ConverterLayout({
       )}
 
       {highlights.length > 0 && (
-        <section className="mb-10">
-          <h2 className="mb-4 text-xl font-bold tracking-tight">{t("toolHighlights")}</h2>
-          <div className="grid gap-4 sm:grid-cols-3">
+        <section className="mb-8">
+          <h2 className="mb-3 text-lg font-bold tracking-tight">{t("toolHighlights")}</h2>
+          <div className="grid gap-3 sm:grid-cols-3">
             {highlights.map((highlight, index) => {
               const Icon = highlightIcons[index % highlightIcons.length];
               return (
@@ -121,9 +121,9 @@ export function ConverterLayout({
       )}
 
       {related.length > 0 && (
-        <section className="mb-10">
-          <h2 className="mb-4 text-xl font-bold tracking-tight">{t("navigation.moreTools")}</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="mb-8">
+          <h2 className="mb-3 text-lg font-bold tracking-tight">{t("navigation.moreTools")}</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {related.map((tool) => {
               const Icon = tool.icon;
               return (

@@ -63,7 +63,7 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
   );
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
+    <div className="mx-auto max-w-6xl px-4 py-6">
       <button
         type="button"
         onClick={() => setDrawerOpen(true)}
@@ -148,9 +148,9 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
               <h1 className="text-2xl font-bold tracking-tight">{nav(`${category.id}.name`)}</h1>
             </div>
           </div>
-          <p className="mb-6 text-muted-foreground">{category.description}</p>
+          <p className="mb-4 text-muted-foreground">{category.description}</p>
 
-          <div className="relative mb-6 max-w-md">
+          <div className="relative mb-4 max-w-md">
             <input
               type="text"
               value={query}
@@ -161,7 +161,7 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
           </div>
 
           <div
-            className="grid gap-4"
+            className="grid gap-3"
             style={{ gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}
           >
             {filtered.map((tool) => {
@@ -170,7 +170,7 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
                 <Link
                   key={tool.id}
                   href={`/${categorySlug}/${tool.slug}`}
-                  className="block rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+                  className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <Icon className="h-5 w-5" />
