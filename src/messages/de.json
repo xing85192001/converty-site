@@ -745,7 +745,7 @@
       "metaDescription": "Berechnen Sie DCP-Dateigroessen fuer Kinovertrieb"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
+      "name": "Fuß-Lambert",
       "description": "Berechnen Sie die Bildschirmleuchtdichte fuer Kinoprojektion",
       "metaDescription": "Berechnen Sie die Bildschirmhelligkeit fuer Kinoprojektion"
     },
@@ -850,7 +850,7 @@
       "metaDescription": "Investitionsrendite"
     },
     "break-even": {
-      "name": "Break-Even",
+      "name": "Die Gewinnzone erreichen",
       "description": "Berechnen Sie den Break-Even-Punkt",
       "metaDescription": "Break-Even-Analyse"
     },

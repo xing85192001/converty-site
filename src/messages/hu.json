@@ -374,17 +374,17 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
+      "description": "Számolja ki testtömeg-indexét és egészségi kategóriáját",
       "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "Testesség",
+      "description": "Számítsa ki a korpulencia indexét (Ponderal Index)",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "CPU összehasonlítás",
+      "description": "Hasonlítson össze akár 4 CPU-t a SPECint2017 pontszám, a magonkénti teljesítmény és a wattonkénti teljesítmény alapján",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -421,8 +421,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "Szerver frissítése",
+      "description": "Tervezze meg a szerverflotta frissítését: számítsa ki, hány új szerver felel meg jelenlegi flottateljesítményének",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -472,803 +472,803 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "Kor",
+      "description": "Számítsa ki a születési dátumtól számított pontos életkort években, hónapokban és napokban",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "Dátum",
+      "description": "Adjon hozzá vagy vonjon ki egy dátumból napokat, heteket, hónapokat és éveket",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "Idő",
+      "description": "Órák, percek és másodpercek összeadása vagy kivonása",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
-      "description": "Calculate hours between two times or dates",
+      "name": "Órák",
+      "description": "Számítsa ki az órákat két időpont vagy dátum között",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
+      "name": "Időtartam",
+      "description": "Számítsa ki az időtartamot két dátum és időpont között",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "Időzóna",
+      "description": "Idők konvertálása a különböző időzónák között",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "Napi számláló",
+      "description": "Számolja a napokat a dátumok között vagy egy jövőbeli dátumig",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "A hét napja",
+      "description": "Keresse meg, hogy a hét melyik napjára esik valamelyik dátum",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
+      "name": "Időtartam-átalakító",
+      "description": "Átalakítás időegységek között (másodperc, perc, óra, nap, hét, hónap, év)",
       "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "RGB konverter",
+      "description": "Átalakítás RGB, HEX, HSL és CMYK színformátumok között",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "Adatméret",
+      "description": "Átalakítás byte, KB, MB, GB, TB és egyebek között",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "Sávszélesség konverter",
+      "description": "Mb/s konvertálása KB/s, GB/nap, TB/hét stb",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
-      "description": "Calculate download time from bandwidth and file size",
+      "name": "Letöltés",
+      "description": "Számítsa ki a letöltési időt a sávszélesség és a fájlméret alapján",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "Vizuális alhálózat",
+      "description": "Számítsa ki az IPv4 és IPv6 alhálózat részleteit CIDR jelöléssel",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "CIDR tartomány",
+      "description": "Számítsa ki az IP-tartományokat a CIDR-jelölés alapján, és ellenőrizze, hogy az IP tartományon belül van-e",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "IP-cím",
+      "description": "Osztályozza az IP-címeket osztályok szerint (A-E), és azonosítsa a nyilvános/privát állapotot",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "áteresztőképesség",
+      "description": "Számítsa ki a hálózati átviteli sebességet az átvitt adatokból és az időből",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "Sebességváltó",
+      "description": "Átalakítás m/s, km/h, mph, csomó és egyebek között",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "Képarány",
+      "description": "Számítsa ki a képarányokat szélességből és magasságból",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
       "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "description": "Kép illesztése a képernyőre levélszekrényekkel",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "Összetétel",
+      "description": "Számítsa ki a látómezőt a gyújtótávolság és a távolság alapján",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "Mélységélesség",
+      "description": "Számítsa ki a DoF-értéket a rekeszértékből, a gyújtótávolságból és a távolságból",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
       "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "description": "Számítsa ki a megapixeleket a nyomtatási méret és a DPI alapján",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "Képfájl mérete",
+      "description": "Becsült képfájl mérete JPEG, PNG, RAW formátumokhoz",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "Könnyű EV",
+      "description": "Számítsa ki az Expozíciós értéket a fényképezőgép beállításaiból",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
       "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "description": "Számítsa ki a megapixelt szélességből és magasságból",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
       "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "description": "Tekintse meg a megapixeleket különböző képarányokban",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "Portré távolság",
+      "description": "Számítsa ki az ideális fényképezési távolságot portrékhoz",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "Csillagösvények",
+      "description": "Számítsa ki az expozíciós időt a csillagút forgásához",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
       "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "description": "Számítsa ki a maximális expozíciót, hogy megakadályozza a csillagok lefutását (NPF-szabály)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
       "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "description": "Számítsa ki az időközt, a klip hosszát és a memóriát az időzéshez",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "Fókusztávolság egyenértékű",
+      "description": "Párosítsa a beállításokat a különböző szenzorméretek között",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "Végtelen fókusztávolság",
+      "description": "Számítsa ki a hiperfokális távolságot a maximális mélységélesség érdekében",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "ND szűrő",
+      "description": "Számítsa ki az expozíciós időt ND szűrőkkel",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "Arany óra kalauz",
+      "description": "Számolja ki az aranyórák idejét a tartózkodási helye alapján",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "Főzési egységek",
+      "description": "Átalakítás a metrikus és a brit főzési mérések között az összetevők sűrűségével",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "Árfolyam",
+      "description": "Konvertálás kriptovaluták és fiat valuták között (CHF, EUR, USD)",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "Hash kalkulátor",
+      "description": "MD5, SHA-1, SHA-256, SHA-512 hash értékek kiszámítása",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "Bányászat jövedelmezősége",
+      "description": "Számítsa ki a Bitcoin bányászat jövedelmezőségét a hash ráta és az áramköltség alapján",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
       "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "description": "Érvényesítse a Bitcoin, Ethereum és Litecoin pénztárca címét",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "Svájci jelzálogkalkulátor",
+      "description": "Számítsa ki a jelzáloghitel-törlesztéseket CHF/EUR támogatással és svájci piaci kamatokkal",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "Bérleti hozamkalkulátor",
+      "description": "Számítsa ki a svájci ingatlanbefektetések bruttó és nettó bérleti hozamát",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "Ingatlan értékelési kalkulátor",
+      "description": "Becsülje meg a svájci ingatlanértékeket hedonikus módszerrel",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "Nap pozíciója",
+      "description": "Számítsa ki a nappozíciót, a szürkületi időt és a fényfázisokat a fotózáshoz",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "Zavar köre",
+      "description": "Számítsa ki a CoC-t az érzékelő, a nyomtatási méret és a látótávolság alapján",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "Speciális DoF",
+      "description": "Mélységélesség állítható CoC-vel a nyomtatási mérethez és a megtekintéshez",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "Makró DoF",
+      "description": "Pontos mélységélesség makró fotózáshoz",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "DoF táblázat",
+      "description": "Interaktív táblázat, amely a rekesznyílások és távolságok közötti DoF-et mutatja",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "Diffrakció",
+      "description": "Számolja ki, mikor válik a fényképezőgép diffrakciókorlátozottá",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "Makro diffrakció",
+      "description": "Számítsa ki az effektív rekesznyílást és diffrakciót makrófotózásban",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "BPM konvertálása Hz-re, sávhosszra és hangjegyek időtartamára",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "Videó fájl mérete",
+      "description": "Becsülje meg a videofájl méretét a felbontás és az időtartam alapján",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "Hangfájl mérete",
+      "description": "Becsülje meg az audiofájl méretét az időtartam és a formátum alapján",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "Közös bitsebesség-referencia",
+      "description": "Útmutató a ProRes, DNxHD, DCP és MPEG bitrátákhoz",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "DCP fájlméret",
+      "description": "Számítsa ki a Digital Cinema Package fájlméreteit",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
       "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "description": "Számítsa ki a képernyő fénysűrűségét a mozi vetítéshez",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "Képernyőméret",
+      "description": "Számítsa ki a képernyő méreteit az átlóból és a képarányból",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "Videó Bitráta",
+      "description": "Becsülje meg a videó bitsebességét a felbontás és a kodek alapján",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
       "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "description": "Konvertálás a képsebességek között az ffmpeg parancsokkal",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "URL kódoló",
+      "description": "URL-ek és speciális karakterek kódolása és dekódolása",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "CSP generátor",
+      "description": "Tartalombiztonsági szabályzat fejléceinek létrehozása",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "Átirányítás-ellenőrző",
+      "description": "Ellenőrizze a HTTP átirányítási láncokat és állapotkódokat",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
       "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "description": "Elemezze az SPF rekordokat az e-mail hitelesítéshez",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "HTTPS biztonsági ellenőrző",
+      "description": "Ellenőrizze a biztonsági fejléceket és a TLS-konfigurációt",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "HTML kódoló",
+      "description": "HTML entitások kódolása és dekódolása",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "HTML karaktertérkép",
+      "description": "Böngésszen és másoljon HTML karakteres entitásokat",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "Emoji karaktertérkép",
+      "description": "Böngésszen és másoljon hangulatjeleket kódokkal",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "SEO teljesítményelemző",
+      "description": "Elemezze az oldal SEO mutatóit, és kapjon ajánlásokat",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
+      "name": "Jelzálog",
+      "description": "Számítsa ki a havi törlesztőrészleteket, tekintse meg a törlesztési ütemtervet, és képzelje el hitelét",
       "metaDescription": "Calculate mortgage payments with amortization schedule"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
+      "name": "Kamatos kamat",
+      "description": "Számítson kamatos kamatot a rendszeres hozzájárulással járó befektetésekre",
       "metaDescription": "Calculate compound interest growth over time"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
+      "name": "Hitel",
+      "description": "Számítsa ki a havi törlesztőrészletet személyi, autós vagy bármilyen típusú hitel esetében",
       "metaDescription": "Calculate loan payments and amortization"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
+      "name": "Nyugdíjazás",
+      "description": "Tervezze meg nyugdíját megtakarítási előrejelzésekkel és jövedelemtervezéssel",
       "metaDescription": "Plan your retirement savings and income"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
+      "name": "Tipp",
+      "description": "Számolja ki a borravaló összegét, és ossza meg a számlákat több ember között",
       "metaDescription": "Calculate tips and split bills easily"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
+      "name": "Megtakarítási cél",
+      "description": "Számolja ki, mennyi idő alatt éri el megtakarítási célját rendszeres befizetésekkel",
       "metaDescription": "Plan your savings and reach your financial goals"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
+      "name": "Infláció",
+      "description": "Számítsa ki az infláció vásárlóerőre gyakorolt ​​hatását az idő múlásával",
       "metaDescription": "Understand inflation's impact on your money"
     },
     "roi": {
       "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
+      "description": "Számítsa ki a befektetés megtérülését és az éves hozamot",
       "metaDescription": "Calculate your investment returns"
     },
     "break-even": {
       "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
+      "description": "Számítsa ki vállalkozása fedezeti pontját",
       "metaDescription": "Find your business break-even point"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "Profit margin",
+      "description": "Számítsa ki a bruttó, működési és nettó haszonkulcsot",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "Kedvezmény",
+      "description": "Számítsa ki a kedvezményeket, az eladási árakat és a megtakarításokat",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
+      "name": "Valutaváltó",
+      "description": "Átváltás a világ főbb valutái között",
       "metaDescription": "Convert currencies with live exchange rates"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "Autókölcsön",
+      "description": "Számítsa ki az autóhitel törlesztőrészletét, a kamatokat és a teljes költséget",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "Személyi kölcsön",
+      "description": "Számítsa ki a személyi kölcsön törlesztését díjakkal és THM-mel",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "Diákhitel",
+      "description": "Számítsa ki a diákhitel törlesztését türelmi idővel",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
       "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "description": "Számolja ki a lakáshitel vagy a HELOC kifizetéseket",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "Adósság kifizetése",
+      "description": "Számolja ki, mennyi ideig kell törleszteni az adósságot extra befizetésekkel",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "Hitelkártya",
+      "description": "Számolja ki a hitelkártya kifizetési idejét és a kamatot",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
-      "description": "Calculate how much to save for a down payment",
+      "name": "Előleg",
+      "description": "Számolja ki, mennyit spóroljon előlegre",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "Számítsa ki a nyugdíj-megtakarítást munkáltatói megfeleltetéssel",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Hasonlítsa össze a hagyományos és a Roth IRA nyugdíjszámláit",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "Kötvény",
+      "description": "Számítsa ki a kötvényárakat, hozamokat és hozamokat",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "Járadék",
+      "description": "Számítsa ki a járadékot és a nyugdíjjövedelmet",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "Testzsír",
+      "description": "Számítsa ki a testzsírszázalékot a US Navy módszerével",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "Sovány testtömeg",
+      "description": "Számítsa ki a sovány testtömeget több képlet segítségével",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "Testfelület",
+      "description": "Számítsa ki a BSA-t több orvosi képlet segítségével",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "Ideális súly",
+      "description": "Számítsa ki az ideális testsúlyt több képlet segítségével",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
       "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "description": "Számítsa ki az alap anyagcsere sebességet a kalóriatervezéshez",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "Számolja ki a teljes napi energiakiadást",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "Kalória",
+      "description": "Számolja ki a napi kalóriaszükségletet a súlycélokhoz",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "Elégetett kalóriák",
+      "description": "Számolja ki a különféle tevékenységek során elégetett kalóriákat",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "Cél pulzusszám",
+      "description": "Számítsa ki a cél pulzusszámot az edzéshez",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "Egy Rep Max",
+      "description": "Számítsa ki az egy ismétlés maximális számát a szubmaximális emelkedésekből",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
       "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "description": "Számolja ki a futási tempót, sebességet és versenyidőket",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "Makró",
+      "description": "Számítsa ki a napi makrotápanyag-célokat",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
-      "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "name": "Fehérje",
+      "description": "Számolja ki a napi fehérjeszükségletet",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "Szénhidrát",
+      "description": "Számolja ki a napi szénhidrátszükségletet",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "Zsírbevitel",
+      "description": "Számolja ki a napi zsírbeviteli igényt",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "Vízfelvétel",
+      "description": "Számítsa ki a napi vízszükségletet",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "Testtípus",
+      "description": "Határozza meg testtípusát (ektomorf, mezomorf, endomorf)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "Egészséges súly",
+      "description": "Számolja ki egészséges testsúlyát a magasság alapján",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "Army Testzsír",
+      "description": "Számítsa ki a testzsírt az amerikai hadsereg szabványai szerint",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
       "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "description": "Számítsa ki a vér alkoholtartalmát",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
       "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "description": "Számítsa ki a glomeruláris szűrési sebességet a vesefunkcióhoz",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "Alvás",
+      "description": "Számítsa ki az optimális alvási és ébrenléti időt",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "Esedékesség",
+      "description": "Számolja ki a terhesség esedékességét és a mérföldköveket",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "Peteérés",
+      "description": "Számítsa ki az ovuláció dátumát és a termékeny időszakot",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "Időszak",
+      "description": "Kövesse nyomon a menstruációs ciklust és jósolja meg a következő menstruációt",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "Terhesség súlygyarapodás",
+      "description": "Számítsa ki az ajánlott súlygyarapodást a terhesség alatt",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
-      "description": "Perform arithmetic calculations with expression support",
+      "name": "Alapvető",
+      "description": "Végezzen aritmetikai számításokat kifejezéstámogatással",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "Frakció",
+      "description": "Összeadás, kivonás, szorzás, osztás és törtek egyszerűsítése",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
-      "description": "Calculate percentages, percent change, and percent difference",
+      "name": "Százalék",
+      "description": "Számítsa ki a százalékokat, a százalékos változást és a százalékos eltérést",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "Százalékos hiba",
+      "description": "Számítsa ki a százalékos hibát a kísérleti és a tényleges értékek között",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "Kerekítés",
+      "description": "Kerek számok különböző módszerekkel és pontossággal",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "Átlagos",
+      "description": "Átlag, medián, módus és egyéb átlagok kiszámítása",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "Hosszú hadosztály",
+      "description": "Végezzen hosszú felosztást lépésről lépésre történő megoldással",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "Kitevő",
+      "description": "Hatványok és exponenciális kifejezések kiszámítása",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "Gyökér",
+      "description": "Számítsa ki a négyzetgyököket, a kockagyököket és az n-edik gyököket",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "Logaritmus",
+      "description": "Számítsa ki a logaritmusokat bármilyen bázissal",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "Másodfokú képlet",
+      "description": "Oldja meg a másodfokú egyenleteket, és keressen gyököket",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "Tényező",
+      "description": "Keresse meg egy szám összes tényezőjét",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "Számítsa ki több szám legnagyobb közös osztóját",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "Számítsa ki a Legkevésbé gyakori többszörös több számot",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "GCD és LCM",
+      "description": "Számítsa ki több szám GCD-jét és LCM-jét",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "Prime Faktorizáció",
+      "description": "Keresse meg tetszőleges szám prímtényezőit és osztóit",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "Háromszög",
+      "description": "Számítsa ki a háromszög tulajdonságait oldalak és szögek alapján",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "Derékszögű háromszög",
+      "description": "Számítsa ki a derékszögű háromszög oldalait és szögeit!",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "Pitagorasz-tétel",
+      "description": "Számítsa ki a hiányzó oldalt Pitagorasz-tétel segítségével",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "Kör",
+      "description": "Számítsa ki a kör tulajdonságait sugárból, átmérőből vagy kerületből",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
+      "name": "Terület",
+      "description": "Számítsa ki a különböző formájú területeket",
       "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "Felületi terület",
+      "description": "Számítsa ki a 3D alakzatok felületét",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "Kötet",
+      "description": "Számítsa ki a 3D alakzatok térfogatát",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "Tehetetlenségi pillanat kalkulátor",
+      "description": "Számítsa ki a terület második momentumát különböző keresztmetszetekhez",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "Nyalábelhajlás kalkulátor",
+      "description": "Számítsa ki a nyaláb elhajlását, nyírását és hajlítónyomatékát diagramokkal",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "Stressz-feszültség kalkulátor",
+      "description": "Számítsa ki a feszültséget, alakváltozást és Young-modulust az anyagadatbázis segítségével",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "Oszlop kihajlás kalkulátor",
+      "description": "Számítsa ki az Euler kritikus terhelést, az AISC megengedett terhelést és az oszlopok karcsúsági arányát",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "Csőáramlás kalkulátor",
+      "description": "Számítsa ki a nyomásesést, a Reynolds-számot és a súrlódási tényezőt a csőáramláshoz",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "Mérnöki egység átalakító",
+      "description": "Konvertálás a mérnöki egységek között: erő, nyomás, feszültség, nyomaték stb",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "Molekulasúly kalkulátor",
+      "description": "Számítsa ki a moláris tömeget és az összetételt a kémiai képletből",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "Molaritás kalkulátor",
+      "description": "Számítsa ki az oldat koncentrációját tömegből, mólból és térfogatból",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "Hígítási kalkulátor",
+      "description": "Számítsa ki a hígítási paramétereket az M1V1 = M2V2 képlet segítségével",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "Sztöchiometriai kalkulátor",
+      "description": "Számítsa ki a kémiai egyenletekből a korlátozó reagenst és az elméleti hozamot",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "pH kalkulátor",
+      "description": "Számítsa ki a savak, bázisok és pufferek pH-, pOH- és ionkoncentrációit",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "Periodikus rendszer",
+      "description": "Interaktív periódusos rendszer elemtulajdonságokkal és kereséssel",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
       "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "description": "Számítsa ki a vSphere ESX fürt tárolási kapacitásigényét",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kubernetes kapacitás kalkulátor",
+      "description": "Számítsa ki a Kubernetes-fürtcsomópont-követelményeket a munkaterheléshez",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "Szerver virtualizációs kalkulátor",
+      "description": "Számítsa ki az ESX gazdagép követelményeit a virtuális gépek munkaterheléseihez",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
       "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "description": "Számítsa ki a VMware VCF/VVF licenc költségeit",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "Virtualizációs költségkalkulátor",
+      "description": "Számítsa ki a virtualizációs infrastruktúra teljes tulajdonlási költségét",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Hyper-V konszolidációs kalkulátor",
+      "description": "Számítsa ki a Hyper-V gazdagépigényét HA és Windows licenccel",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
       "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "description": "Hasonlítsa össze az adatközpont és a normál licencköltségeket",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "Hypervisor összehasonlító kalkulátor",
+      "description": "Hasonlítsa össze a VMware, Hyper-V, Proxmox és XCP-ng platformokat",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1326,158 +1326,158 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "Lejtő",
+      "description": "Számítsa ki egy egyenes meredekségét, egyenletét és szögét",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "Szórás",
+      "description": "Számítsa ki a szórást és a szórást",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "Statisztika",
+      "description": "Számítson ki átfogó statisztikákat egy adatkészlethez",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "Valószínűség",
+      "description": "Számítsa ki az események és kombinációk valószínűségét",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "Minta mérete",
+      "description": "Számítsa ki a felmérésekhez és tanulmányokhoz szükséges mintanagyságot",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Z-pontszám",
+      "description": "Számítsa ki a z-pontszámot és a normális eloszlási valószínűségeket!",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P-érték",
+      "description": "Számítsa ki a p-értékeket a statisztikai hipotézisvizsgálathoz",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "Bizalmi intervallum",
+      "description": "Számítsa ki az átlagok és az arányok konfidenciaintervallumát",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "Permutáció és kombináció",
+      "description": "Permutációk és kombinációk kiszámítása ismétléssel és anélkül",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "name": "Hányados",
+      "description": "Számítsa ki és egyszerűsítse az arányokat, találjon megfelelő arányokat",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "Bináris",
+      "description": "Konvertálás és műveletek végrehajtása binárisan",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "Hexadecimális",
+      "description": "Átalakítás és számítás hexadecimálisan",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "Tudományos jelölés",
+      "description": "Konvertálás tudományos jelölésre/ból és műveletek végrehajtása",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "Nagy Szám",
+      "description": "Végezzen számtani tetszőlegesen nagy egész számokat",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "Számsorozat",
+      "description": "Aritmetikai, geometriai és Fibonacci sorozatok elemzése és generálása",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "Mátrix",
+      "description": "Mátrixműveletek végrehajtása: összeadás, szorzás, transzponálás, determináns",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "Felezési idő",
+      "description": "Számítsa ki a radioaktív bomlást és a maradék mennyiséget",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "Távolság",
+      "description": "Számítsa ki a pontok közötti távolságot 2D-ben, 3D-ben és a Földön",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "Véletlenszám-generátor",
+      "description": "Véletlen számok generálása különféle eloszlásokkal",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "TCP áteresztőképesség",
+      "description": "Számítsa ki az elméleti TCP átviteli sebességet a Mathis-képlet segítségével",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "Sávszélesség-késleltetésű termék",
+      "description": "Számítsa ki a BDP-t és az optimális TCP-pufferméretet",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "BB hitelkalkulátor",
+      "description": "Számítsa ki a Fibre Channel BB krediteket az ISL-kapcsolatokhoz a sebesség és a távolság alapján",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "Latencia konverter",
+      "description": "Ping időegységek közötti konvertálás (másodperc, ezredmásodperc, mikroszekundum, nanoszekundum)",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "Élelmiszerköltség kalkulátor",
+      "description": "Számítsa ki a recept teljes költségét és az adagonkénti költséget az összetevők árából",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "Recept Scaler",
+      "description": "Szórja be a recept összetevőit a só, a fűszerek és a kelesztőszerek intelligens beállításával",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "Táplálkozási kalkulátor",
+      "description": "Számítsa ki a kiválasztott élelmiszerekből származó kalóriákat, makrókat és táplálkozási tényeket",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
+      "name": "Üzemanyag-hatékonysági kalkulátor",
+      "description": "Számítsa ki az üzemanyag-fogyasztást L/100 km-ben, km/L-ben és MPG-ben az utazási és költségbecslésekkel",
       "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
     },
     "vehicle-financing": {
       "name": "Járműfinanszírozás Kalkulátor",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
+      "description": "Számítsa ki az autóhitel- és lízingrészleteket a vásárlás és a lízing összehasonlításával (CHF/EUR)",
       "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
     },
     "tire-sizing": {
       "name": "Gumiméret Kalkulátor",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
+      "description": "Számítsa ki a gumiabroncs méreteit, hasonlítsa össze a méreteket, és ellenőrizze a sebességmérő hibáját",
       "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "name": "Karbantartási intervallumok kalkulátor",
+      "description": "Kövesse nyomon a jármű szerviz menetrendjét és számítsa ki a következő esedékes dátumokat a svájci MFK emlékeztetőkkel",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "name": "Mértékegység-átalakító",
+      "description": "Átalakítás a hossz, tömeg, hőmérséklet, terület, térfogat, sebesség, idő, adatok, energia, teljesítmény és nyomás mértékegységei között.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Category",
       "value": "Value",
@@ -1486,8 +1486,8 @@
       "swap": "Swap"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "Állítsa be a Számológépet",
+      "description": "Végezzen halmazműveleteket: egyesülés, metszéspont, különbség, szimmetrikus különbség, derékszögű szorzat és halmazviszonyok.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1497,8 +1497,8 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
+      "name": "Programozó kalkulátor",
+      "description": "Átalakítás decimális, hexadecimális, oktális és bináris között, valamint bitenkénti és eltolási műveletek alkalmazása.",
       "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
       "valueA": "Value A",
       "valueB": "Value B",
@@ -1511,8 +1511,8 @@
       "reprB": "B representations"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "Adósságtörlesztési tervező",
+      "description": "Hasonlítsa össze a hógolyó és a lavina adósságtörlesztési stratégiáit, és nézze meg, melyik törli ki gyorsabban az adósságát.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1526,8 +1526,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "Jövedelemadó kalkulátor",
+      "description": "Számítsa ki a progresszív jövedelemadót előre beállított értékekkel vagy saját egyéni adósávokkal.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3112,7 +3112,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "Terület"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3158,7 +3158,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "Kötet"
       },
       "surfaceArea": {
         "steps": {
@@ -3203,7 +3203,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "Felületi terület"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3224,7 +3224,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "Lejtő"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3270,7 +3270,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "Távolság"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3296,7 +3296,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "Valószínűség"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3356,7 +3356,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "Tudományos jelölés"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3402,7 +3402,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "Minta mérete"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3427,7 +3427,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "Bizalmi intervallum"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3454,7 +3454,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Z-pontszám"
       },
       "pValue": {
         "steps": {
@@ -3476,7 +3476,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P-érték"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3536,7 +3536,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "Felezési idő"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3571,7 +3571,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "Nagy Szám"
       },
       "calculate": "Számítás",
       "every": "Every",
@@ -3615,7 +3615,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "Mátrix"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3656,7 +3656,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "Számsorozat"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3812,7 +3812,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "Frakció"
       },
       "hex": {
         "steps": {
@@ -5724,7 +5724,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "Sávszélesség-késleltetésű termék"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",

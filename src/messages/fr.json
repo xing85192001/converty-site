@@ -580,7 +580,7 @@
       "metaDescription": "Calculez la profondeur de champ pour la photographie"
     },
     "dpi": {
-      "name": "DPI",
+      "name": "PPP",
       "description": "Calculez les megapixels a partir de la taille d'impression et du DPI",
       "metaDescription": "Calculez le DPI et la resolution pour l'impression"
     },
@@ -620,7 +620,7 @@
       "metaDescription": "Calculez le temps d'exposition maximum pour des etoiles nettes"
     },
     "time-lapse": {
-      "name": "Time Lapse",
+      "name": "Laps de temps",
       "description": "Calculez l'intervalle, la duree du clip et la memoire pour time lapse",
       "metaDescription": "Planifiez vos projets de photographie time lapse"
     },
@@ -720,7 +720,7 @@
       "metaDescription": "Calculez les effets de diffraction en macrophotographie"
     },
     "bpm": {
-      "name": "BPM",
+      "name": "temporisation",
       "description": "Convertissez BPM en Hz, longueur de mesure et durees de notes",
       "metaDescription": "Convertissez les battements par minute en autres unites de timing musical"
     },
@@ -745,7 +745,7 @@
       "metaDescription": "Calculez les tailles de fichiers DCP pour la distribution cinema"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
+      "name": "Pied-Lambert",
       "description": "Calculez la luminance de l'ecran pour la projection cinema",
       "metaDescription": "Calculez la luminosite de l'ecran pour la projection cinema"
     },
@@ -1324,7 +1324,7 @@
       "metaDescription": "Calculez nPr et nCr pour problemes de denombrement"
     },
     "ratio-calculator": {
-      "name": "Ratio",
+      "name": "Rapport",
       "description": "Calculez et simplifiez les ratios, trouvez les equivalents",
       "metaDescription": "Simplifiez ratios, trouvez ratios equivalents et proportions"
     },
@@ -1334,7 +1334,7 @@
       "metaDescription": "Convertissez entre binaire, decimal, octal et hexadecimal"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
+      "name": "Hexadécimal",
       "description": "Convertissez et calculez en hexadecimal",
       "metaDescription": "Convertissez et effectuez operations arithmetiques en hexadecimal"
     },

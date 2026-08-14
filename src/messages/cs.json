@@ -378,13 +378,13 @@
       "metaDescription": "Vypočítejte si index tělesné hmotnosti (BMI) a pochopte svou zdravotní kategorii"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "Otylost",
+      "description": "Vypočítejte si index korpulence (Ponderal Index)",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "Porovnání CPU",
+      "description": "Porovnejte až 4 CPU podle skóre SPECint2017, výkonu na jádro a výkonu na watt",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -421,8 +421,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "Aktualizace serveru",
+      "description": "Naplánujte aktualizaci flotily serverů: spočítejte, kolik nových serverů odpovídá vašemu aktuálnímu výkonu flotily",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -472,803 +472,803 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "Stáří",
+      "description": "Vypočítejte přesný věk od data narození v letech, měsících a dnech",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "Datum",
+      "description": "Přidejte nebo odečtěte dny, týdny, měsíce a roky od data",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "Čas",
+      "description": "Přidejte nebo odečtěte hodiny, minuty a sekundy",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
       "name": "Hodiny",
-      "description": "Calculate hours between two times or dates",
+      "description": "Vypočítejte hodiny mezi dvěma časy nebo daty",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
+      "name": "Doba trvání",
+      "description": "Vypočítejte dobu mezi dvěma daty a časy",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "Časové pásmo",
+      "description": "Převod časů mezi různými časovými pásmy",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "Denní počítadlo",
+      "description": "Počítejte dny mezi daty nebo do budoucího data",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "den v týdnu",
+      "description": "Zjistěte, na který den v týdnu připadá jakékoli datum",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
+      "name": "Převodník doby trvání",
+      "description": "Převod mezi časovými jednotkami (sekundy, minuty, hodiny, dny, týdny, měsíce, roky)",
       "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "Převodník RGB",
+      "description": "Převod mezi barevnými formáty RGB, HEX, HSL a CMYK",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "Velikost dat",
+      "description": "Převod mezi bajty, KB, MB, GB, TB a dalšími",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "Převodník šířky pásma",
+      "description": "Převeďte Mbps na KB/s, GB/den, TB/týden a další",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
       "name": "Stáhnout",
-      "description": "Calculate download time from bandwidth and file size",
+      "description": "Vypočítejte dobu stahování z šířky pásma a velikosti souboru",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "Vizuální podsíť",
+      "description": "Vypočítejte podrobnosti podsítě IPv4 a IPv6 pomocí notace CIDR",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "Rozsah CIDR",
+      "description": "Vypočítejte rozsahy IP ze zápisu CIDR a zkontrolujte, zda je IP v rozsahu",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "IP adresa",
+      "description": "Klasifikujte IP adresy podle třídy (A-E) a identifikujte veřejný/soukromý status",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "Propustnost",
+      "description": "Vypočítejte propustnost sítě z přenesených dat a času",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "Převodník rychlosti",
+      "description": "Převod mezi m/s, km/h, mph, uzly a dalšími",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "Poměr stran",
+      "description": "Vypočítejte poměry stran ze šířky a výšky",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "Přizpůsobení stran",
+      "description": "Umístěte obrázek na obrazovku pomocí letterboxingu",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "Složení",
+      "description": "Vypočítejte zorné pole z ohniskové vzdálenosti a vzdálenosti",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "Hloubka ostrosti",
+      "description": "Vypočítejte DoF z clony, ohniskové vzdálenosti a vzdálenosti",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
       "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "description": "Vypočítejte megapixely z velikosti tisku a DPI",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "Velikost souboru obrázku",
+      "description": "Odhadněte velikost souboru obrázku pro formáty JPEG, PNG, RAW",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "Lehké EV",
+      "description": "Vypočítat hodnotu expozice z nastavení fotoaparátu",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
       "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "description": "Vypočítejte megapixely ze šířky a výšky",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "Megapixelové aspekty",
+      "description": "Zobrazte megapixely v různých poměrech stran",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "Vzdálenost na výšku",
+      "description": "Vypočítejte ideální vzdálenost fotografování pro portréty",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "Hvězdné stezky",
+      "description": "Vypočítejte dobu expozice pro rotaci hvězdné stopy",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
       "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "description": "Vypočítejte maximální expozici, abyste zabránili procházení hvězdy (pravidlo NPF)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "Časosběr",
+      "description": "Vypočítejte interval, délku klipu a paměť pro časosběr",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "Ekvivalent ohniskové vzdálenosti",
+      "description": "Přizpůsobte nastavení mezi různými velikostmi senzorů",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "Hyperfokální vzdálenost",
+      "description": "Vypočítejte hyperfokální vzdálenost pro maximální hloubku ostrosti",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "ND filtr",
+      "description": "Vypočítejte dobu expozice pomocí ND filtrů",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "Průvodce Zlatou hodinou",
+      "description": "Vypočítejte časy zlaté hodiny na základě vaší polohy",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "Varné jednotky",
+      "description": "Převod mezi metrickými a imperiálními měřeními vaření s hustotou přísad",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "Kurz",
+      "description": "Převod mezi kryptoměnami a fiat měnami (CHF, EUR, USD)",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "Hash kalkulačka",
+      "description": "Vypočítat hodnoty hash MD5, SHA-1, SHA-256, SHA-512",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "Ziskovost těžby",
+      "description": "Vypočítejte ziskovost těžby bitcoinů na základě hash rate a nákladů na elektřinu",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "Validátor peněženky",
+      "description": "Ověřte adresy peněženek bitcoinů, etherea a litecoinů",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "Švýcarská hypoteční kalkulačka",
+      "description": "Spočítejte si splátky hypotéky s podporou CHF/EUR a švýcarskými tržními sazbami",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "Kalkulačka výnosů z pronájmu",
+      "description": "Vypočítejte hrubý a čistý výnos z pronájmu pro švýcarské investice do nemovitostí",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "Kalkulačka ocenění nemovitosti",
+      "description": "Odhadněte hodnoty švýcarských nemovitostí pomocí hedonické metody",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "Poloha slunce",
+      "description": "Vypočítejte polohu slunce, časy soumraku a světelné fáze pro fotografování",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "Kruh zmatku",
+      "description": "Vypočítejte CoC ze senzoru, velikosti tisku a pozorovací vzdálenosti",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "Pokročilé stupně volnosti",
+      "description": "Hloubka ostrosti s nastavitelným CoC pro velikost tisku a zobrazení",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "Makro stupně volnosti",
+      "description": "Přesná hloubka ostrosti pro makrofotografii",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "Tabulka stupně volnosti",
+      "description": "Interaktivní tabulka zobrazující stupně volnosti napříč otvory a vzdálenostmi",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "Difrakce",
+      "description": "Vypočítejte, kdy se váš fotoaparát stane difrakčním omezeným",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "Makro difrakce",
+      "description": "Vypočítejte efektivní clonu a difrakci v makrofotografii",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "Převeďte BPM na Hz, délku taktu a trvání not",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "Velikost souboru videa",
+      "description": "Odhadněte velikost souboru videa z rozlišení a trvání",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "Velikost zvukového souboru",
+      "description": "Odhadněte velikost zvukového souboru z délky a formátu",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "Odkaz na běžné přenosové rychlosti",
+      "description": "Referenční příručka pro přenosové rychlosti ProRes, DNxHD, DCP a MPEG",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "Velikost souboru DCP",
+      "description": "Vypočítat velikosti souborů balíčku Digital Cinema Package",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "Noha-Lambert",
+      "description": "Vypočítejte jas obrazovky pro promítání v kině",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "Velikost obrazovky",
+      "description": "Vypočítejte rozměry obrazovky z úhlopříčky a poměru stran",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "Přenosová rychlost videa",
+      "description": "Odhadněte datový tok videa na základě rozlišení a kodeku",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "Převodník snímkové frekvence",
+      "description": "Převod mezi snímkovými frekvencemi pomocí příkazů ffmpeg",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
       "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "description": "Kódujte a dekódujte adresy URL a speciální znaky",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "Generátor CSP",
+      "description": "Generování záhlaví zásad zabezpečení obsahu",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "Kontrola přesměrování",
+      "description": "Zkontrolujte řetězce přesměrování HTTP a stavové kódy",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "Kontrola SPF záznamů",
+      "description": "Analyzujte záznamy SPF pro ověřování e-mailů",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "Kontrola zabezpečení HTTPS",
+      "description": "Zkontrolujte bezpečnostní hlavičky a konfiguraci TLS",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "HTML kodér",
+      "description": "Kódovat a dekódovat HTML entity",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "Mapa znaků HTML",
+      "description": "Procházejte a kopírujte entity znaků HTML",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "Mapa znaků Emoji",
+      "description": "Procházejte a kopírujte emotikony s kódy",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "SEO analyzátor výkonu",
+      "description": "Analyzujte metriky SEO stránky a získejte doporučení",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
+      "name": "Hypotéka",
+      "description": "Spočítejte si měsíční splátky, prohlédněte si plán amortizace a vizualizujte si svůj úvěr",
       "metaDescription": "Calculate mortgage payments with amortization schedule"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
+      "name": "Složené úročení",
+      "description": "Vypočítejte si složený úrok z investic s pravidelnými příspěvky",
       "metaDescription": "Calculate compound interest growth over time"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
+      "name": "Půjčka",
+      "description": "Spočítejte si měsíční platby za osobní, auto nebo jakýkoli typ půjčky",
       "metaDescription": "Calculate loan payments and amortization"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
+      "name": "Odchod do důchodu",
+      "description": "Naplánujte si svůj důchod pomocí projekcí úspor a plánování příjmů",
       "metaDescription": "Plan your retirement savings and income"
     },
     "tip": {
       "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
+      "description": "Vypočítejte výši spropitného a rozdělte účty mezi více lidí",
       "metaDescription": "Calculate tips and split bills easily"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
+      "name": "Cíl úspor",
+      "description": "Spočítejte si, za jak dlouho dosáhnete cíle spoření s pravidelnými příspěvky",
       "metaDescription": "Plan your savings and reach your financial goals"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
+      "name": "Inflace",
+      "description": "Vypočítejte dopad inflace na kupní sílu v čase",
       "metaDescription": "Understand inflation's impact on your money"
     },
     "roi": {
       "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
+      "description": "Vypočítejte návratnost investic a roční výnosy",
       "metaDescription": "Calculate your investment returns"
     },
     "break-even": {
       "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
+      "description": "Vypočítejte bod zvratu pro vaši firmu",
       "metaDescription": "Find your business break-even point"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "zisková marže",
+      "description": "Vypočítejte hrubé, provozní a čisté ziskové marže",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "Sleva",
+      "description": "Spočítejte si slevy, prodejní ceny a úspory",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
+      "name": "Převodník měn",
+      "description": "Převod mezi hlavními světovými měnami",
       "metaDescription": "Convert currencies with live exchange rates"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "Auto Půjčka",
+      "description": "Spočítejte si splátky půjčky na auto, úroky a celkové náklady",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "Osobní Půjčka",
+      "description": "Spočítejte si splátky osobní půjčky s poplatky a RPSN",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "Studentská půjčka",
+      "description": "Vypočítejte si splátky studentských půjček s možnostmi doby odkladu",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "Domácí kapitál",
+      "description": "Spočítejte si půjčku na bydlení nebo platby HELOC",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "Výplata dluhu",
+      "description": "Spočítejte si, jak dlouho budete splácet dluh dodatečnými platbami",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "Kreditní karta",
+      "description": "Vypočítejte dobu splácení kreditní karty a úrok",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
       "name": "Akontace",
-      "description": "Calculate how much to save for a down payment",
+      "description": "Spočítejte si, kolik ušetřit na zálohu",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "Spočítejte si penzijní úspory s párováním zaměstnavatele",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Porovnejte tradiční vs Roth IRA důchodové účty",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "Pouto",
+      "description": "Vypočítejte ceny dluhopisů, výnosy a výnosy",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "Anuita",
+      "description": "Spočítejte si anuitní platby a důchodový příjem",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "Tělesný tuk",
+      "description": "Vypočítejte procento tělesného tuku pomocí metody US Navy",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
       "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "description": "Vypočítejte beztukovou tělesnou hmotnost pomocí více vzorců",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "Oblast povrchu těla",
+      "description": "Vypočítejte BSA pomocí několika lékařských vzorců",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "Ideální váha",
+      "description": "Vypočítejte ideální tělesnou hmotnost pomocí více vzorců",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
       "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "description": "Vypočítejte bazální rychlost metabolismu pro plánování kalorií",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "Vypočítejte celkový denní energetický výdej",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "Kalorie",
+      "description": "Vypočítejte si denní potřebu kalorií pro dosažení cílů hmotnosti",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "Spálené kalorie",
+      "description": "Počítejte spálené kalorie při různých činnostech",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "Cílová srdeční frekvence",
+      "description": "Vypočítejte cílové zóny tepové frekvence pro cvičení",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "Max. jedno opakování",
+      "description": "Vypočítejte si maximum pro jedno opakování ze submaximálních zdvihů",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "Tempo",
+      "description": "Vypočítejte rychlost běhu, rychlost a časy závodu",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "Makro",
+      "description": "Vypočítejte denní cíle makroživin",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
       "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "description": "Vypočítejte si denní potřebu bílkovin",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "Uhlohydrát",
+      "description": "Vypočítejte si denní potřebu sacharidů",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "Příjem tuku",
+      "description": "Vypočítejte si denní potřebu tuků",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "Příjem vody",
+      "description": "Vypočítejte denní potřebu příjmu vody",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "Typ těla",
+      "description": "Určete typ svého těla (ektomorf, mezomorf, endomorf)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "Zdravá váha",
+      "description": "Vypočítejte si rozsah zdravé hmotnosti na základě výšky",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "Armádní tělesný tuk",
+      "description": "Vypočítejte tělesný tuk pomocí standardů americké armády",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
       "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "description": "Vypočítejte obsah alkoholu v krvi",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
       "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "description": "Vypočítejte rychlost glomerulární filtrace pro funkci ledvin",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "Spát",
+      "description": "Vypočítejte si optimální dobu spánku a probuzení",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "Datum splatnosti",
+      "description": "Vypočítejte datum porodu a milníky",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "Ovulace",
+      "description": "Vypočítejte datum ovulace a plodné okno",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "Období",
+      "description": "Sledujte menstruační cyklus a předvídejte další menstruaci",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "Těhotenství Přibývání na váze",
+      "description": "Vypočítejte doporučený přírůstek hmotnosti během těhotenství",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
       "name": "Základní",
-      "description": "Perform arithmetic calculations with expression support",
+      "description": "Provádějte aritmetické výpočty s podporou výrazů",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "Zlomek",
+      "description": "Sčítání, odčítání, násobení, dělení a zjednodušování zlomků",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
       "name": "Procento",
-      "description": "Calculate percentages, percent change, and percent difference",
+      "description": "Vypočítejte procenta, procentuální změnu a procentuální rozdíl",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "Procentuální chyba",
+      "description": "Vypočítejte procentuální chybu mezi experimentálními a skutečnými hodnotami",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "Zaokrouhlování",
+      "description": "Zaokrouhlete čísla pomocí různých metod a přesnosti",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "Průměrný",
+      "description": "Vypočítejte průměr, medián, modus a další průměry",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "Dlouhá divize",
+      "description": "Proveďte dlouhé dělení s řešením krok za krokem",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
       "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "description": "Vypočítejte mocniny a exponenciální výrazy",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "Vykořenit",
+      "description": "Vypočítejte druhé odmocniny, krychlové odmocniny a n-té odmocniny",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "Logaritmus",
+      "description": "Vypočítejte logaritmy s libovolnou bází",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "Kvadratický vzorec",
+      "description": "Řešte kvadratické rovnice a najděte kořeny",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "Faktor",
+      "description": "Najděte všechny faktory čísla",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "Vypočítejte největšího společného dělitele více čísel",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "Vypočítejte nejmenší společný násobek více čísel",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "GCD a LCM",
+      "description": "Vypočítejte GCD a LCM více čísel",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "Prvotní faktorizace",
+      "description": "Najděte prvočinitele a dělitele libovolného čísla",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "Trojúhelník",
+      "description": "Vypočítejte vlastnosti trojúhelníku ze stran a úhlů",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "Pravý trojúhelník",
+      "description": "Vypočítejte strany a úhly pravoúhlého trojúhelníku",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "Pythagorova věta",
+      "description": "Vypočítejte chybějící stranu pomocí Pythagorovy věty",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "Kruh",
+      "description": "Vypočítejte vlastnosti kruhu z poloměru, průměru nebo obvodu",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
+      "name": "Plocha",
+      "description": "Vypočítejte plochu různých tvarů",
       "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "Plocha povrchu",
+      "description": "Vypočítejte povrch 3D tvarů",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "Objem",
+      "description": "Vypočítejte objem 3D tvarů",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "Kalkulačka momentu setrvačnosti",
+      "description": "Vypočítejte druhý moment plochy pro různé průřezy",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "Kalkulačka průhybu paprsku",
+      "description": "Vypočítejte průhyb nosníku, smyk a ohybový moment pomocí diagramů",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "Kalkulačka napětí-deformace",
+      "description": "Vypočítejte napětí, deformaci a Youngův modul pomocí materiálové databáze",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "Kalkulačka vzpěru sloupu",
+      "description": "Vypočítejte Eulerovo kritické zatížení, povolené zatížení AISC a poměr štíhlosti pro sloupy",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "Kalkulačka průtoku v potrubí",
+      "description": "Vypočítejte tlakovou ztrátu, Reynoldsovo číslo a faktor tření pro průtok potrubím",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "Převodník technických jednotek",
+      "description": "Převod mezi technickými jednotkami: síla, tlak, napětí, krouticí moment a další",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "Kalkulačka molekulové hmotnosti",
+      "description": "Vypočítejte molární hmotnost a složení z chemického vzorce",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "Kalkulačka molarity",
+      "description": "Vypočítejte koncentraci roztoku z hmotnosti, molů a objemu",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "Kalkulačka ředění",
+      "description": "Vypočítejte parametry ředění pomocí vzorce M₁V1 = M₂V₂",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "Stechiometrická kalkulačka",
+      "description": "Vypočítejte limitní reaktant a teoretický výtěžek z chemických rovnic",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "Kalkulačka pH",
+      "description": "Vypočítejte pH, pOH a koncentrace iontů pro kyseliny, zásady a pufry",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "Periodická tabulka",
+      "description": "Interaktivní periodická tabulka s vlastnostmi prvků a vyhledáváním",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
       "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "description": "Vypočítejte požadavky na kapacitu úložiště clusteru vSphere ESX",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kalkulačka kapacity Kubernetes",
+      "description": "Vypočítejte požadavky na uzel clusteru Kubernetes pro vaši pracovní zátěž",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "Kalkulačka virtualizace serveru",
+      "description": "Vypočítejte požadavky na hostitele ESX pro úlohy virtuálních počítačů",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "VMware licenční kalkulačka",
+      "description": "Spočítejte si licenční náklady VMware VCF/VVF",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "Kalkulačka nákladů na virtualizaci",
+      "description": "Vypočítejte celkové náklady na vlastnictví virtualizační infrastruktury",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Hyper-V konsolidační kalkulačka",
+      "description": "Vypočítejte požadavky na hostitele Hyper-V s licencováním HA a Windows",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
       "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "description": "Porovnejte náklady na Datacenter a Standard",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "Porovnávací kalkulačka hypervisoru",
+      "description": "Porovnejte platformy VMware, Hyper-V, Proxmox a XCP-ng",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1326,158 +1326,158 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "Sklon",
+      "description": "Vypočítejte sklon, rovnici a úhel přímky",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "Standardní odchylka",
+      "description": "Vypočítejte směrodatnou odchylku a rozptyl",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "Statistika",
+      "description": "Vypočítejte komplexní statistiku pro soubor dat",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "Pravděpodobnost",
+      "description": "Vypočítejte pravděpodobnost jevů a kombinací",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "Velikost vzorku",
+      "description": "Vypočítejte požadovanou velikost vzorku pro průzkumy a studie",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Z-skóre",
+      "description": "Vypočítejte z-skóre a pravděpodobnosti normálního rozdělení",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P-hodnota",
+      "description": "Vypočítejte p-hodnoty pro testování statistických hypotéz",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "Interval spolehlivosti",
+      "description": "Vypočítejte intervaly spolehlivosti pro průměry a podíly",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "Permutace a kombinace",
+      "description": "Vypočítejte permutace a kombinace s opakováním a bez opakování",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
       "name": "Poměr",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "description": "Vypočítat a zjednodušit poměry, najít ekvivalentní poměry",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "Binární",
+      "description": "Převádějte a provádějte operace v binárním formátu",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "Hexadecimální",
+      "description": "Převést a vypočítat v šestnáctkové soustavě",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "Vědecký zápis",
+      "description": "Převod do/z vědeckého zápisu a provádění operací",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "Velké číslo",
+      "description": "Proveďte aritmetiku na libovolně velkých celých číslech",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "Posloupnost čísel",
+      "description": "Analyzujte a generujte aritmetické, geometrické a Fibonacciho sekvence",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "Matice",
+      "description": "Provádějte maticové operace: sčítání, násobení, transponování, determinant",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "Poločas rozpadu",
+      "description": "Vypočítejte radioaktivní rozpad a zbývající množství",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "Vzdálenost",
+      "description": "Vypočítejte vzdálenosti mezi body ve 2D, 3D a na Zemi",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "Generátor náhodných čísel",
+      "description": "Generujte náhodná čísla s různým rozdělením",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "Propustnost TCP",
+      "description": "Vypočítejte teoretickou propustnost TCP pomocí Mathisova vzorce",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "Produkt se zpožděním šířky pásma",
+      "description": "Vypočítejte BDP a optimální velikost vyrovnávací paměti TCP",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "Kreditní kalkulačka BB",
+      "description": "Vypočítejte Fibre Channel BB kredity pro ISL spojení na základě rychlosti a vzdálenosti",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "Převodník latence",
+      "description": "Převod mezi časovými jednotkami pingu (sekundy, milisekundy, mikrosekundy, nanosekundy)",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "Kalkulačka nákladů na jídlo",
+      "description": "Vypočítejte celkové náklady na recept a náklady na porci z cen přísad",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "Škálovač receptů",
+      "description": "Měřítko receptur s chytrými úpravami soli, koření a kypřících látek",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "Výživová kalkulačka",
+      "description": "Spočítejte si kalorie, makra a výživová fakta z vybraných potravin",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
+      "name": "Kalkulačka palivové účinnosti",
+      "description": "Vypočítejte spotřebu paliva v l/100 km, km/l a MPG s odhadem cesty a nákladů",
       "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
     },
     "vehicle-financing": {
       "name": "Kalkulačka financování vozidel",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
+      "description": "Vypočítejte si splátky autopůjček a leasingu s porovnáním nákupu a leasingu (CHF/EUR)",
       "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
     },
     "tire-sizing": {
       "name": "Kalkulačka velikosti pneumatik",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
+      "description": "Vypočítejte rozměry pneumatik, porovnejte rozměry a zkontrolujte chybu rychloměru",
       "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "name": "Kalkulačka intervalů údržby",
+      "description": "Sledujte plány servisu vozidel a vypočítejte další termíny s připomenutím Swiss MFK",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "name": "Převodník jednotek",
+      "description": "Převod mezi jednotkami délky, hmotnosti, teploty, plochy, objemu, rychlosti, času, dat, energie, výkonu a tlaku.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Kategorie",
       "value": "Hodnota",
@@ -1486,8 +1486,8 @@
       "swap": "Zaměnit"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "Nastavit kalkulačku",
+      "description": "Provádějte množinové operace: sjednocení, průnik, rozdíl, symetrický rozdíl, kartézský součin a množinové relace.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1497,8 +1497,8 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
+      "name": "Programátorská kalkulačka",
+      "description": "Převádějte mezi desítkovými, šestnáctkovými, osmičkovými a binárními a aplikujte bitové operace a operace posunu.",
       "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
       "valueA": "Value A",
       "valueB": "Value B",
@@ -1511,8 +1511,8 @@
       "reprB": "B representations"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "Plánovač splácení dluhu",
+      "description": "Porovnejte strategie splácení dluhů jako sněhové koule a laviny a zjistěte, která splácí váš dluh rychleji.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1526,8 +1526,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "Kalkulačka daně z příjmu",
+      "description": "Vypočítejte si progresivní daň z příjmu s přednastavenými nebo vlastními daňovými pásmy.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3112,7 +3112,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "Plocha"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3158,7 +3158,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "Objem"
       },
       "surfaceArea": {
         "steps": {
@@ -3203,7 +3203,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "Plocha povrchu"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3224,7 +3224,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "Sklon"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3270,7 +3270,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "Vzdálenost"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3296,7 +3296,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "Pravděpodobnost"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3356,7 +3356,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "Vědecký zápis"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3402,7 +3402,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "Velikost vzorku"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3427,7 +3427,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "Interval spolehlivosti"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3454,7 +3454,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Z-skóre"
       },
       "pValue": {
         "steps": {
@@ -3476,7 +3476,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P-hodnota"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3536,7 +3536,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "Poločas rozpadu"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3571,7 +3571,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "Velké číslo"
       },
       "calculate": "Vypočítat",
       "every": "Every",
@@ -3615,7 +3615,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "Matice"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3656,7 +3656,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "Posloupnost čísel"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3812,7 +3812,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "Zlomek"
       },
       "hex": {
         "steps": {
@@ -5724,7 +5724,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "Produkt se zpožděním šířky pásma"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",

@@ -530,7 +530,7 @@
       "metaDescription": "Converti la banda tra diverse unita"
     },
     "download-calculator": {
-      "name": "Download",
+      "name": "Scaricamento",
       "description": "Calcola il tempo di download da banda e dimensione file",
       "metaDescription": "Calcola quanto tempo impieghera un download"
     },
@@ -550,7 +550,7 @@
       "metaDescription": "Classificatore di indirizzi IP gratuito. Rileva la classe IP (A, B, C, D, E), identifica gli indirizzi pubblici vs privati e valida il formato IPv4/IPv6."
     },
     "throughput-calculator": {
-      "name": "Throughput",
+      "name": "Produttività",
       "description": "Calcola il throughput di rete dai dati trasferiti e dal tempo",
       "metaDescription": "Calcolatore di throughput di rete gratuito. Calcola la velocità di trasferimento effettiva dalla dimensione del file e dal tempo di trasferimento."
     },
@@ -565,7 +565,7 @@
       "metaDescription": "Calcola e converti i rapporti d'aspetto per immagini e video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
+      "name": "Aspetto Adatta",
       "description": "Adatta un'immagine allo schermo con letterboxing",
       "metaDescription": "Calcola letterboxing e pillarboxing per l'adattamento immagine"
     },
@@ -620,7 +620,7 @@
       "metaDescription": "Calcola il tempo massimo di esposizione per stelle nitide"
     },
     "time-lapse": {
-      "name": "Time Lapse",
+      "name": "Lasso di tempo",
       "description": "Calcola intervallo, durata clip e memoria per time lapse",
       "metaDescription": "Pianifica i tuoi progetti di fotografia time lapse"
     },
@@ -955,7 +955,7 @@
       "metaDescription": "Calcola il tuo dispendio energetico totale in base al livello di attivita"
     },
     "calorie-calculator": {
-      "name": "Calorie",
+      "name": "Caloria",
       "description": "Calcola il fabbisogno calorico per obiettivi di peso",
       "metaDescription": "Calcola il fabbisogno calorico e i macro per perdere o aumentare peso"
     },
@@ -1155,7 +1155,7 @@
       "metaDescription": "Calcola area, circonferenza, diametro e raggio di un cerchio"
     },
     "area-calculator": {
-      "name": "Area",
+      "name": "Zona",
       "description": "Calcola l'area di varie forme",
       "metaDescription": "Calcola area di rettangolo, quadrato, cerchio, triangolo e altro"
     },
@@ -1354,7 +1354,7 @@
       "metaDescription": "Calcola punteggio Z e trova probabilita dalla distribuzione normale"
     },
     "p-value-calculator": {
-      "name": "P-Value",
+      "name": "Valore P",
       "description": "Calcola p-value per test di ipotesi statistici",
       "metaDescription": "Calcola p-value da punteggi z, t, chi-quadrato e F"
     },
@@ -3125,7 +3125,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "Zona"
       },
       "perimeter": "Perimetro",
       "radius": "Raggio",
@@ -3489,7 +3489,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "Valore P"
       },
       "significanceLevel": "Livello di significatività",
       "permutation": "Permutazione",

@@ -377,18 +377,18 @@
   },
   "converter": {
     "bmi": {
-      "name": "BMI",
+      "name": "IMC",
       "description": "Calcula tu Índice de Masa Corporal y categoría de salud",
       "metaDescription": "Calcula tu Índice de Masa Corporal (IMC) y comprende tu categoría de salud"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "Corpulencia",
+      "description": "Calcula tu Índice de Corpulencia (Índice Ponderal)",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "Comparación de CPU",
+      "description": "Compare hasta 4 CPU según la puntuación SPECint2017, el rendimiento por núcleo y el rendimiento por vatio",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -425,8 +425,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "Actualización del servidor",
+      "description": "Planifique una actualización de la flota de servidores: calcule cuántos servidores nuevos coinciden con el rendimiento de su flota actual",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -476,23 +476,23 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "Edad",
+      "description": "Calcule la edad exacta desde la fecha de nacimiento en años, meses y días.",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "Fecha",
+      "description": "Sumar o restar días, semanas, meses y años a una fecha",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "Tiempo",
+      "description": "Sumar o restar horas, minutos y segundos",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
       "name": "Horas",
-      "description": "Calculate hours between two times or dates",
+      "description": "Calcular horas entre dos horas o fechas.",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
@@ -501,18 +501,18 @@
       "metaDescription": "Calculadora de duración"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "Huso horario",
+      "description": "Convertir horas entre diferentes zonas horarias",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "Contador de días",
+      "description": "Contar días entre fechas o hasta una fecha futura",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "Día de la semana",
+      "description": "Encuentra en qué día de la semana cae cualquier fecha",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
@@ -521,298 +521,298 @@
       "metaDescription": "Convertidor de unidades de tiempo"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "Convertidor RGB",
+      "description": "Convierta entre formatos de color RGB, HEX, HSL y CMYK",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "Tamaño de datos",
+      "description": "Convierte entre bytes, KB, MB, GB, TB y más",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "Convertidor de ancho de banda",
+      "description": "Convierta Mbps a KB/s, GB/día, TB/semana y más",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
       "name": "Descargar",
-      "description": "Calculate download time from bandwidth and file size",
+      "description": "Calcule el tiempo de descarga a partir del ancho de banda y el tamaño del archivo",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "Subred visual",
+      "description": "Calcule los detalles de las subredes IPv4 e IPv6 con notación CIDR",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "Gama CIDR",
+      "description": "Calcule rangos de IP a partir de la notación CIDR y verifique si una IP está dentro del rango",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "Dirección IP",
+      "description": "Clasifique direcciones IP por clase (A-E) e identifique el estado público/privado",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "Rendimiento",
+      "description": "Calcule el rendimiento de la red a partir de los datos transferidos y el tiempo",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "Convertidor de velocidad",
+      "description": "Convierte entre m/s, km/h, mph, nudos y más",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "Relación de aspecto",
+      "description": "Calcular relaciones de aspecto a partir del ancho y el alto.",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "Ajuste de aspecto",
+      "description": "Ajustar una imagen en una pantalla con formato letterboxing",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "Composición",
+      "description": "Calcular el campo de visión a partir de la distancia focal y la distancia.",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "Profundidad de campo",
+      "description": "Calcule DoF a partir de apertura, distancia focal y distancia",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
-      "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "name": "PPP",
+      "description": "Calcule megapíxeles a partir del tamaño de impresión y DPI",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "Tamaño del archivo de imagen",
+      "description": "Estimar el tamaño del archivo de imagen para formatos JPEG, PNG y RAW",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "Vehículo eléctrico ligero",
+      "description": "Calcular el valor de exposición a partir de la configuración de la cámara",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
-      "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "name": "megapíxel",
+      "description": "Calcular megapíxeles a partir de ancho y alto.",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "Aspectos megapíxeles",
+      "description": "Ver megapíxeles en diferentes relaciones de aspecto",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "Distancia vertical",
+      "description": "Calcule la distancia de disparo ideal para retratos",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "Senderos de estrellas",
+      "description": "Calcular el tiempo de exposición para la rotación del rastro de estrellas.",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
-      "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "name": "Estrellas puntuales",
+      "description": "Calcule la exposición máxima para evitar el seguimiento de estrellas (Regla NPF)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "Lapso de tiempo",
+      "description": "Calcule el intervalo, la duración del clip y la memoria para el lapso de tiempo",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "Longitud focal equivalente",
+      "description": "Haga coincidir la configuración entre diferentes tamaños de sensores",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "Distancia hiperfocal",
+      "description": "Calcule la distancia hiperfocal para obtener la máxima profundidad de campo",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "Filtro ND",
+      "description": "Calcular el tiempo de exposición con filtros ND",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "Guía de la hora dorada",
+      "description": "Calcule los tiempos de la hora dorada según su ubicación",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "Unidades de cocina",
+      "description": "Convierta entre medidas de cocción métricas e imperiales con densidades de ingredientes",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "Tipo de cambio",
+      "description": "Convierta entre criptomonedas y monedas fiduciarias (CHF, EUR, USD)",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "Calculadora de hash",
+      "description": "Calcule los valores hash MD5, SHA-1, SHA-256, SHA-512",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "Rentabilidad Minera",
+      "description": "Calcule la rentabilidad de la minería de Bitcoin en función de la tasa de hash y el costo de la electricidad",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "Validador de billetera",
+      "description": "Validar direcciones de billetera Bitcoin, Ethereum y Litecoin",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "Calculadora de hipotecas suiza",
+      "description": "Calcule los pagos de la hipoteca con soporte de CHF/EUR y tasas del mercado suizo",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "Calculadora de rendimiento de alquiler",
+      "description": "Calcule el rendimiento de alquiler bruto y neto para inversiones inmobiliarias en Suiza",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "Calculadora de valoración de propiedades",
+      "description": "Calcule el valor de las propiedades suizas utilizando el método hedónico",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "Posición del sol",
+      "description": "Calcula la posición del sol, las horas del crepúsculo y las fases de luz para fotografía.",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "Círculo de confusión",
+      "description": "Calcule CoC a partir del sensor, el tamaño de impresión y la distancia de visualización",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "DoF avanzado",
+      "description": "Profundidad de campo con CoC ajustable para tamaño de impresión y visualización",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "Macro de campo de visión",
+      "description": "Profundidad de campo precisa para fotografía macro",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "Tabla de grados de libertad",
+      "description": "Tabla interactiva que muestra DoF en aperturas y distancias",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "Difracción",
+      "description": "Calcule cuándo su cámara se vuelve limitada en difracción",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "Macrodifracción",
+      "description": "Calcular apertura y difracción efectivas en fotografía macro.",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "Convierta BPM a Hz, longitud de compás y duraciones de notas",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "Tamaño del archivo de vídeo",
+      "description": "Calcule el tamaño del archivo de video a partir de la resolución y la duración",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "Tamaño del archivo de audio",
+      "description": "Calcule el tamaño del archivo de audio a partir de la duración y el formato",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "Referencia de velocidades de bits comunes",
+      "description": "Guía de referencia para velocidades de bits ProRes, DNxHD, DCP y MPEG",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "Tamaño del archivo DCP",
+      "description": "Calcular el tamaño de los archivos del paquete de cine digital",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "Pie-Lambert",
+      "description": "Calcular la luminancia de la pantalla para proyección de cine.",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "Tamaño de pantalla",
+      "description": "Calcule las dimensiones de la pantalla a partir de la diagonal y la relación de aspecto",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "Velocidad de bits de vídeo",
+      "description": "Estimar la tasa de bits de video según la resolución y el códec",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "Convertidor de velocidad de fotogramas",
+      "description": "Convierta entre velocidades de fotogramas con comandos ffmpeg",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "Codificador de URL",
+      "description": "Codificar y decodificar URL y caracteres especiales",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "Generador CSP",
+      "description": "Generar encabezados de política de seguridad de contenido",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "Comprobador de redireccionamiento",
+      "description": "Verifique las cadenas de redireccionamiento HTTP y los códigos de estado",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "Comprobador de registros SPF",
+      "description": "Analizar registros SPF para autenticación de correo electrónico",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "Comprobador de seguridad HTTPS",
+      "description": "Verifique los encabezados de seguridad y la configuración de TLS",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "Codificador HTML",
+      "description": "Codificar y decodificar entidades HTML",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "Mapa de caracteres HTML",
+      "description": "Explorar y copiar entidades de caracteres HTML",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "Mapa de caracteres emoji",
+      "description": "Explora y copia emoji con códigos",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "Analizador de rendimiento SEO",
+      "description": "Analice las métricas de SEO de la página y obtenga recomendaciones",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
@@ -861,13 +861,13 @@
       "metaDescription": "Análisis del punto de equilibrio"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "Margen de beneficio",
+      "description": "Calcular los márgenes de beneficio bruto, operativo y neto.",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "Descuento",
+      "description": "Calcula descuentos, precios de venta y ahorros.",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
@@ -876,188 +876,188 @@
       "metaDescription": "Herramienta de conversión de moneda"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "Préstamo para automóvil",
+      "description": "Calcule los pagos del préstamo del automóvil, los intereses y el costo total",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "Préstamo personal",
+      "description": "Calcular pagos de préstamos personales con tarifas y APR",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "Préstamo estudiantil",
+      "description": "Calcule los pagos de préstamos estudiantiles con opciones de período de gracia",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "Valor de la vivienda",
+      "description": "Calcule el préstamo con garantía hipotecaria o los pagos HELOC",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "Pago de deuda",
+      "description": "Calcule en cuánto tiempo saldar la deuda con pagos extras",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "Tarjeta de crédito",
+      "description": "Calcular el tiempo de pago y los intereses de la tarjeta de crédito.",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
       "name": "Pago inicial",
-      "description": "Calculate how much to save for a down payment",
+      "description": "Calcula cuánto ahorrar para el pago inicial",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "Calcule los ahorros para la jubilación con la contrapartida del empleador",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Compare las cuentas de jubilación IRA tradicional y Roth",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "Vínculo",
+      "description": "Calcule los precios, rendimientos y rentabilidades de los bonos",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "Anualidad",
+      "description": "Calcular pagos de anualidades e ingresos de jubilación.",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "Grasa corporal",
+      "description": "Calcule el porcentaje de grasa corporal utilizando el método de la Marina de los EE. UU.",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "Masa corporal magra",
+      "description": "Calcule la masa corporal magra usando múltiples fórmulas",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "Área de superficie corporal",
+      "description": "Calcule BSA utilizando múltiples fórmulas médicas",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "Peso Ideal",
+      "description": "Calcule el peso corporal ideal usando múltiples fórmulas",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
-      "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "name": "TMB",
+      "description": "Calcular la tasa metabólica basal para la planificación de calorías",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "Calcular el gasto energético diario total",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "Caloría",
+      "description": "Calcular las necesidades calóricas diarias para los objetivos de peso.",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "Calorías quemadas",
+      "description": "Calcular las calorías quemadas durante diversas actividades.",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "Frecuencia cardíaca objetivo",
+      "description": "Calcular zonas de frecuencia cardíaca objetivo para el ejercicio",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "Una repetición máxima",
+      "description": "Calcula tu repetición máxima a partir de levantamientos submáximos",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "Paso",
+      "description": "Calcula el ritmo de carrera, la velocidad y los tiempos de carrera.",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
       "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "description": "Calcular los objetivos diarios de macronutrientes",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
-      "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "name": "Proteína",
+      "description": "Calcular los requerimientos diarios de proteínas.",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "Carbohidrato",
+      "description": "Calcular las necesidades diarias de carbohidratos.",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "Ingesta de grasas",
+      "description": "Calcular las necesidades diarias de ingesta de grasas.",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "Ingesta de agua",
+      "description": "Calcular las necesidades diarias de ingesta de agua.",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "Tipo de cuerpo",
+      "description": "Determina tu tipo de cuerpo (ectomorfo, mesomorfo, endomorfo)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "Peso saludable",
+      "description": "Calcule su rango de peso saludable según la altura",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "Grasa corporal del ejército",
+      "description": "Calcule la grasa corporal utilizando los estándares del ejército de EE. UU.",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
-      "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "name": "bachillerato",
+      "description": "Calcular el contenido de alcohol en sangre.",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
-      "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "name": "TFG",
+      "description": "Calcular la tasa de filtración glomerular para la función renal.",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "Dormir",
+      "description": "Calcule los tiempos óptimos de sueño y vigilia",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "Fecha de vencimiento",
+      "description": "Calcular la fecha prevista del embarazo y los hitos",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "Ovulación",
+      "description": "Calcular fecha de ovulación y ventana fértil",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "Período",
+      "description": "Realice un seguimiento del ciclo menstrual y prediga el próximo período",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "Aumento de peso durante el embarazo",
+      "description": "Calcular el aumento de peso recomendado durante el embarazo",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
@@ -1066,8 +1066,8 @@
       "metaDescription": "Calculadora básica gratuita"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "Fracción",
+      "description": "Sumar, restar, multiplicar, dividir y simplificar fracciones",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
@@ -1076,88 +1076,88 @@
       "metaDescription": "Herramienta de porcentaje"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "Error porcentual",
+      "description": "Calcular el error porcentual entre los valores experimentales y reales.",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "redondeo",
+      "description": "Números redondos usando diferentes métodos y precisión.",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "Promedio",
+      "description": "Calcular la media, la mediana, la moda y otros promedios",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "División larga",
+      "description": "Realiza una división larga con una solución paso a paso",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "Exponente",
+      "description": "Calcular potencias y expresiones exponenciales.",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "Raíz",
+      "description": "Calcular raíces cuadradas, raíces cúbicas y raíces enésimas",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "Logaritmo",
+      "description": "Calcular logaritmos con cualquier base.",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "Fórmula cuadrática",
+      "description": "Resolver ecuaciones cuadráticas y encontrar raíces.",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
       "name": "Factor",
-      "description": "Find all factors of a number",
+      "description": "Encuentra todos los factores de un número.",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
-      "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "name": "MCD",
+      "description": "Calcular el máximo común divisor de varios números",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "Calcular el mínimo común múltiplo de varios números",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "MCD y MCM",
+      "description": "Calcular MCD y MCM de varios números",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "Factorización prima",
+      "description": "Encuentra factores primos y divisores de cualquier número.",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "Triángulo",
+      "description": "Calcular las propiedades de un triángulo a partir de lados y ángulos.",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "Triángulo Rectángulo",
+      "description": "Calcular lados y ángulos de un triángulo rectángulo.",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "Teorema de Pitágoras",
+      "description": "Calcular el lado faltante usando el teorema de Pitágoras",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "Círculo",
+      "description": "Calcular propiedades de círculos a partir de radio, diámetro o circunferencia.",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
@@ -1166,113 +1166,113 @@
       "metaDescription": "Herramienta de área"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "Área de superficie",
+      "description": "Calcular el área de superficie de formas 3D",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "Volumen",
+      "description": "Calcular el volumen de formas 3D.",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "Calculadora de momento de inercia",
+      "description": "Calcular el segundo momento de área para varias secciones transversales.",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "Calculadora de deflexión de haz",
+      "description": "Calcule la deflexión, el corte y el momento flector de la viga con diagramas",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "Calculadora de tensión-deformación",
+      "description": "Calcule la tensión, la deformación y el módulo de Young con la base de datos de materiales",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "Calculadora de pandeo de columnas",
+      "description": "Calcule la carga crítica de Euler, la carga permitida por AISC y la relación de esbeltez para columnas",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "Calculadora de flujo de tubería",
+      "description": "Calcule la caída de presión, el número de Reynolds y el factor de fricción para el flujo de la tubería",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "Convertidor de unidades de ingeniería",
+      "description": "Convierta entre unidades de ingeniería: fuerza, presión, tensión, torsión y más",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "Calculadora de peso molecular",
+      "description": "Calcular la masa molar y la composición a partir de la fórmula química.",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "Calculadora de molaridad",
+      "description": "Calcular la concentración de la solución a partir de masa, moles y volumen.",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "Calculadora de dilución",
+      "description": "Calcule los parámetros de dilución usando la fórmula M₁V₁ = M₂V₂",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "Calculadora de estequiometría",
+      "description": "Calcular el reactivo límite y el rendimiento teórico a partir de ecuaciones químicas.",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "Calculadora de pH",
+      "description": "Calcule pH, pOH y concentraciones de iones para ácidos, bases y tampones.",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "Tabla periódica",
+      "description": "Tabla periódica interactiva con propiedades de elementos y búsqueda.",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
-      "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "name": "Calculadora de almacenamiento de máquinas virtuales",
+      "description": "Calcule los requisitos de capacidad de almacenamiento del clúster vSphere ESX",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Calculadora de capacidad de Kubernetes",
+      "description": "Calcule los requisitos de nodos del clúster de Kubernetes para su carga de trabajo",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "Calculadora de virtualización de servidores",
+      "description": "Calcule los requisitos del host ESX para cargas de trabajo de VM",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "Calculadora de licencias de VMware",
+      "description": "Calcule los costos de licencia de VMware VCF/VVF",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "Calculadora de costos de virtualización",
+      "description": "Calcule el costo total de propiedad de la infraestructura de virtualización",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Calculadora de consolidación de Hyper-V",
+      "description": "Calcule los requisitos del host Hyper-V con licencias HA y Windows",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
-      "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "name": "Calculadora de licencias de Windows Server",
+      "description": "Compare los costos de licencia de centro de datos con los de licencia estándar",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "Calculadora de comparación de hipervisores",
+      "description": "Compare las plataformas VMware, Hyper-V, Proxmox y XCP-ng",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1330,133 +1330,133 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "Pendiente",
+      "description": "Calcular pendiente, ecuación y ángulo de una recta.",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "Desviación estándar",
+      "description": "Calcular la desviación estándar y la varianza.",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "Estadística",
+      "description": "Calcular estadísticas completas para un conjunto de datos.",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "Probabilidad",
+      "description": "Calcular la probabilidad de eventos y combinaciones.",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "Tamaño de la muestra",
+      "description": "Calcular el tamaño de muestra requerido para encuestas y estudios.",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Puntuación Z",
+      "description": "Calcular la puntuación z y las probabilidades de distribución normal.",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "Valor p",
+      "description": "Calcular valores p para pruebas de hipótesis estadísticas",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "Intervalo de confianza",
+      "description": "Calcular intervalos de confianza para medias y proporciones.",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "Permutación y combinación",
+      "description": "Calcular permutaciones y combinaciones con y sin repetición.",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
       "name": "Proporción",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "description": "Calcular y simplificar razones, encontrar razones equivalentes",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "Binario",
+      "description": "Convertir y realizar operaciones en binario.",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "hexadecimal",
+      "description": "Convertir y calcular en hexadecimal",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "Notación científica",
+      "description": "Convertir a/desde notación científica y realizar operaciones",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "Número grande",
+      "description": "Realizar aritmética con números enteros arbitrariamente grandes",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "Secuencia numérica",
+      "description": "Analizar y generar secuencias aritméticas, geométricas y de Fibonacci.",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "Matriz",
+      "description": "Realizar operaciones matriciales: sumar, multiplicar, transponer, determinante",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "Media vida",
+      "description": "Calcular la desintegración radiactiva y la cantidad restante.",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "Distancia",
+      "description": "Calcula distancias entre puntos en 2D, 3D y en la Tierra.",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "Generador de números aleatorios",
+      "description": "Genera números aleatorios con varias distribuciones.",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "Rendimiento TCP",
+      "description": "Calcule el rendimiento teórico de TCP utilizando la fórmula de Mathis",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "Producto de retardo de ancho de banda",
+      "description": "Calcule BDP y el tamaño óptimo del búfer TCP",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "Calculadora de crédito BB",
+      "description": "Calcule los créditos BB de Fibre Channel para enlaces ISL según la velocidad y la distancia",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "Convertidor de latencia",
+      "description": "Convertir entre unidades de tiempo de ping (segundos, milisegundos, microsegundos, nanosegundos)",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "Calculadora de costos de alimentos",
+      "description": "Calcule el costo total de la receta y el costo por porción a partir de los precios de los ingredientes",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "Escalador de recetas",
+      "description": "Escale los ingredientes de las recetas con ajustes inteligentes de sal, especias y agentes leudantes.",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "Calculadora de nutrición",
+      "description": "Calcule calorías, macros e información nutricional de alimentos seleccionados",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
@@ -1490,8 +1490,8 @@
       "value": "Valor"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "Establecer calculadora",
+      "description": "Realizar operaciones de conjuntos: unión, intersección, diferencia, diferencia simétrica, producto cartesiano y relaciones de conjuntos.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1515,8 +1515,8 @@
       "valueB": "Valor B"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "Planificador de pago de deuda",
+      "description": "Compare las estrategias de pago de deudas de bola de nieve y avalancha y vea cuál liquida su deuda más rápido.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1530,8 +1530,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "Calculadora de Impuesto sobre la Renta",
+      "description": "Calcule el impuesto sobre la renta progresivo con ajustes preestablecidos o sus propios tramos impositivos personalizados.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3177,7 +3177,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "Volumen"
       },
       "surfaceArea": {
         "steps": {
@@ -3222,7 +3222,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "Área de superficie"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3243,7 +3243,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "Pendiente"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3289,7 +3289,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "Distancia"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3315,7 +3315,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "Probabilidad"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3375,7 +3375,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "Notación científica"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3421,7 +3421,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "Tamaño de la muestra"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3446,7 +3446,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "Intervalo de confianza"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3473,7 +3473,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Puntuación Z"
       },
       "pValue": {
         "steps": {
@@ -3495,7 +3495,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "Valor p"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3555,7 +3555,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "Media vida"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3590,7 +3590,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "Número grande"
       },
       "calculate": "Calcular",
       "every": "Every",
@@ -3634,7 +3634,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "Matriz"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3675,7 +3675,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "Secuencia numérica"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3831,7 +3831,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "Fracción"
       },
       "hex": {
         "steps": {
@@ -5743,7 +5743,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "Producto de retardo de ancho de banda"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",
