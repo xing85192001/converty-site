@@ -13,8 +13,58 @@ interface Rect {
   h: number;
 }
 
+// Light box blur restricted to a region (with a small margin) so the inpaint
+// seam feathers into the surroundings instead of leaving a hard visible edge /
+// trace after removal.
+function featherRegion(
+  data: Uint8ClampedArray,
+  W: number,
+  H: number,
+  x1: number,
+  y1: number,
+  x2: number,
+  y2: number,
+  radius: number
+) {
+  const m = radius + 1;
+  const bx1 = Math.max(0, x1 - m);
+  const by1 = Math.max(0, y1 - m);
+  const bx2 = Math.min(W - 1, x2 + m);
+  const by2 = Math.min(H - 1, y2 + m);
+  const snap = new Uint8ClampedArray(data);
+  const r2 = radius * radius;
+  for (let yy = by1; yy <= by2; yy++) {
+    for (let xx = bx1; xx <= bx2; xx++) {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      let n = 0;
+      for (let dy = -radius; dy <= radius; dy++) {
+        const ny = yy + dy;
+        if (ny < by1 || ny > by2) continue;
+        for (let dx = -radius; dx <= radius; dx++) {
+          if (dx * dx + dy * dy > r2) continue;
+          const nx = xx + dx;
+          if (nx < bx1 || nx > bx2) continue;
+          const i = (ny * W + nx) * 4;
+          r += snap[i];
+          g += snap[i + 1];
+          b += snap[i + 2];
+          n++;
+        }
+      }
+      const i = (yy * W + xx) * 4;
+      data[i] = r / n;
+      data[i + 1] = g / n;
+      data[i + 2] = b / n;
+    }
+  }
+}
+
 export function ImageWatermarkRemover() {
   const t = useTranslations("mediaTools.imageWatermarkRemover");
+  // Reuse the (already localized in all 22 locales) "processing" label.
+  const tV = useTranslations("mediaTools.videoWatermarkRemover");
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [file, setFile] = useState<File | null>(null);
   const [img, setImg] = useState<HTMLImageElement | null>(null);
@@ -25,6 +75,7 @@ export function ImageWatermarkRemover() {
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [resultUrl, setResultUrl] = useState<string | null>(null);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     if (!file) {
@@ -95,10 +146,14 @@ export function ImageWatermarkRemover() {
     setStartPt(null);
   }
 
-  function process() {
+  async function process() {
     if (!img || !rect || rect.w < 2 || rect.h < 2) return;
     setProcessing(true);
     setError(null);
+    setProgress(0);
+    // Let React paint the "processing" state before the heavy synchronous work.
+    await new Promise((res) => setTimeout(res, 0));
+
     try {
       const canvas = document.createElement("canvas");
       canvas.width = img.naturalWidth;
@@ -107,82 +162,126 @@ export function ImageWatermarkRemover() {
       if (!ctx) throw new Error(t("canvasError"));
       ctx.drawImage(img, 0, 0);
       const src = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const dst = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const dst = ctx.createImageData(canvas.width, canvas.height);
+      dst.data.set(src.data);
+      const data = dst.data;
+      const W = canvas.width;
+      const H = canvas.height;
 
       const { x, y, w, h } = rect;
       const x1 = Math.max(0, Math.floor(x));
       const y1 = Math.max(0, Math.floor(y));
-      const x2 = Math.min(canvas.width - 1, Math.ceil(x + w));
-      const y2 = Math.min(canvas.height - 1, Math.ceil(y + h));
+      const x2 = Math.min(W - 1, Math.ceil(x + w));
+      const y2 = Math.min(H - 1, Math.ceil(y + h));
 
-      const maxR = Math.min(128, Math.floor(Math.max(canvas.width, canvas.height) / 4));
-      const minSamples = 16;
+      const filled = new Uint8Array(W * H);
+      // Cap the search radius so we never scan the whole image per pixel.
+      const maxR = Math.min(160, Math.max(W, H));
+      const minSamples = 12;
+      const rows = y2 - y1 + 1;
 
+      // Pass 1: weighted neighbour sampling from outside the selection.
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
           let totalR = 0;
           let totalG = 0;
           let totalB = 0;
           let totalW = 0;
+          let bestD = Infinity;
+          let bestIdx = -1;
 
-          for (let r = 1; r <= maxR && totalW < minSamples; r++) {
-            for (let dy = -r; dy <= r && totalW < minSamples; dy++) {
-              for (let dx = -r; dx <= r && totalW < minSamples; dx++) {
+          for (let r = 1; r <= maxR; r++) {
+            const ring = 2 * r + 1;
+            let count = 0;
+            for (let dy = -r; dy <= r && count < ring; dy++) {
+              for (let dx = -r; dx <= r && count < ring; dx++) {
                 if (Math.abs(dx) !== r && Math.abs(dy) !== r) continue;
+                count++;
                 const sx = px + dx;
                 const sy = py + dy;
+                if (sx < 0 || sx >= W || sy < 0 || sy >= H) continue;
                 if (sx >= x1 && sx <= x2 && sy >= y1 && sy <= y2) continue;
-                if (sx < 0 || sx >= canvas.width || sy < 0 || sy >= canvas.height) continue;
-                const idx = (sy * canvas.width + sx) * 4;
+                const idx = (sy * W + sx) * 4;
                 const weight = 1 / r;
-                totalR += src.data[idx] * weight;
-                totalG += src.data[idx + 1] * weight;
-                totalB += src.data[idx + 2] * weight;
+                totalR += data[idx] * weight;
+                totalG += data[idx + 1] * weight;
+                totalB += data[idx + 2] * weight;
                 totalW += weight;
-              }
-            }
-          }
-
-          const idx = (py * canvas.width + px) * 4;
-          if (totalW > 0) {
-            dst.data[idx] = Math.round(totalR / totalW);
-            dst.data[idx + 1] = Math.round(totalG / totalW);
-            dst.data[idx + 2] = Math.round(totalB / totalW);
-          } else {
-            // fallback: copy nearest border pixel
-            let bestD = Infinity;
-            let bestIdx = -1;
-            for (let r = 1; r <= maxR && bestIdx < 0; r++) {
-              for (let dy = -r; dy <= r; dy++) {
-                for (let dx = -r; dx <= r; dx++) {
-                  if (Math.abs(dx) !== r && Math.abs(dy) !== r) continue;
-                  const sx = px + dx;
-                  const sy = py + dy;
-                  if (sx < 0 || sx >= canvas.width || sy < 0 || sy >= canvas.height) continue;
-                  if (sx >= x1 && sx <= x2 && sy >= y1 && sy <= y2) continue;
-                  const d = Math.hypot(sx - px, sy - py);
-                  if (d < bestD) {
-                    bestD = d;
-                    bestIdx = (sy * canvas.width + sx) * 4;
-                  }
+                if (r < bestD) {
+                  bestD = r;
+                  bestIdx = idx;
                 }
               }
             }
-            if (bestIdx >= 0) {
-              dst.data[idx] = src.data[bestIdx];
-              dst.data[idx + 1] = src.data[bestIdx + 1];
-              dst.data[idx + 2] = src.data[bestIdx + 2];
-            } else {
-              dst.data[idx] = 255;
-              dst.data[idx + 1] = 255;
-              dst.data[idx + 2] = 255;
-            }
+            if (totalW >= minSamples) break;
           }
+
+          const idx = (py * W + px) * 4;
+          if (totalW > 0) {
+            data[idx] = Math.round(totalR / totalW);
+            data[idx + 1] = Math.round(totalG / totalW);
+            data[idx + 2] = Math.round(totalB / totalW);
+            filled[py * W + px] = 1;
+          } else if (bestIdx >= 0) {
+            data[idx] = data[bestIdx];
+            data[idx + 1] = data[bestIdx + 1];
+            data[idx + 2] = data[bestIdx + 2];
+            filled[py * W + px] = 1;
+          }
+        }
+        // Yield periodically so mobile devices never freeze and the progress
+        // bar keeps updating.
+        if ((py - y1) % 48 === 0) {
+          setProgress(Math.round(((py - y1) / rows) * 85));
+          await new Promise((res) => setTimeout(res, 0));
         }
       }
 
+      // Pass 2: fill any interior holes by copying the nearest already-filled
+      // pixel. This guarantees the watermark (and any white patch) is fully
+      // removed even for large selections.
+      for (let py = y1; py <= y2; py++) {
+        for (let px = x1; px <= x2; px++) {
+          if (filled[py * W + px]) continue;
+          let bestD = Infinity;
+          let bestIdx = -1;
+          for (let r = 1; r <= maxR && bestIdx < 0; r++) {
+            for (let dy = -r; dy <= r; dy++) {
+              for (let dx = -r; dx <= r; dx++) {
+                if (Math.abs(dx) !== r && Math.abs(dy) !== r) continue;
+                const sx = px + dx;
+                const sy = py + dy;
+                if (sx < 0 || sx >= W || sy < 0 || sy >= H) continue;
+                if (!filled[sy * W + sx]) continue;
+                const d = Math.hypot(sx - px, sy - py);
+                if (d < bestD) {
+                  bestD = d;
+                  bestIdx = (sy * W + sx) * 4;
+                }
+              }
+            }
+          }
+          const idx = (py * W + px) * 4;
+          if (bestIdx >= 0) {
+            data[idx] = data[bestIdx];
+            data[idx + 1] = data[bestIdx + 1];
+            data[idx + 2] = data[bestIdx + 2];
+            filled[py * W + px] = 1;
+          }
+        }
+        if ((py - y1) % 96 === 0) {
+          setProgress(85 + Math.round(((py - y1) / rows) * 12));
+          await new Promise((res) => setTimeout(res, 0));
+        }
+      }
+
+      // Feather the seam so the inpainting blends into the background.
+      featherRegion(data, W, H, x1, y1, x2, y2, 3);
+
       ctx.putImageData(dst, 0, 0);
-      setResultUrl(canvas.toDataURL("image/png"));
+      setProgress(100);
+      // JPEG encodes far faster than PNG on mobile for large photos.
+      setResultUrl(canvas.toDataURL("image/jpeg", 0.92));
     } catch (err) {
       setError(err instanceof Error ? err.message : t("processError"));
     } finally {
@@ -194,7 +293,7 @@ export function ImageWatermarkRemover() {
     if (!resultUrl || !file) return;
     const a = document.createElement("a");
     a.href = resultUrl;
-    a.download = `no-watermark-${file.name.replace(/\.[^.]+$/, "")}.png`;
+    a.download = `no-watermark-${file.name.replace(/\.[^.]+$/, "")}.jpg`;
     a.click();
   }
 
@@ -272,6 +371,19 @@ export function ImageWatermarkRemover() {
             )}
             {t("processBtn")}
           </Button>
+          {processing && (
+            <div className="mt-3">
+              <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
+                <div
+                  className="h-full bg-gradient-to-r from-pink-500 to-purple-500 transition-all duration-200"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
+              <p className="mt-1 text-center text-xs text-muted-foreground">
+                {tV("processing", { progress })}
+              </p>
+            </div>
+          )}
         </>
       )}
       {resultUrl && (

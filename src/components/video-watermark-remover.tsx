@@ -176,8 +176,9 @@ export function VideoWatermarkRemover() {
         inputName,
         "-vf",
         // band softens the luma correction border so the removed region
-        // doesn't leave a hard rectangular trace.
-        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
+        // doesn't leave a hard rectangular trace; a light box blur feathers the
+        // seam across the whole frame so no residual edge remains.
+        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0,boxblur=2`,
         "-c:a",
         "copy",
         outputName,
@@ -278,6 +279,20 @@ export function VideoWatermarkRemover() {
                 </Button>
               </div>
             </div>
+
+            {isProcessing && (
+              <div className="mb-3">
+                <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className="h-full bg-gradient-to-r from-primary to-cyan-400 transition-all duration-200"
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
+                <p className="mt-1 text-center text-xs text-muted-foreground">
+                  {t("processing")} {progress}%
+                </p>
+              </div>
+            )}
 
             {/* self-start prevents the flex column from stretching this wrapper
                 to full width; it shrinks to the displayed video so the
