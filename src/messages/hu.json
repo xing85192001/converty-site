@@ -843,7 +843,7 @@
     },
     "inflation": {
       "name": "Infláció",
-      "description": "Számítsa ki az infláció vásárlóerőre gyakorolt ​​hatását az idő múlásával",
+      "description": "Számítsa ki az infláció vásárlóerőre gyakorolt hatását az idő múlásával",
       "metaDescription": "Understand inflation's impact on your money"
     },
     "roi": {

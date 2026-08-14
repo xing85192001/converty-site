@@ -374,17 +374,17 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
+      "description": "Vücut Kitle İndeksinizi ve sağlık kategorinizi hesaplayın",
       "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "Şişmanlık",
+      "description": "Şişmanlık Endeksinizi (Ponderal Index) hesaplayın",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "CPU Karşılaştırması",
+      "description": "SPECint2017 puanına, çekirdek başına performansa ve watt başına performansa göre 4 adede kadar CPU'yu karşılaştırın",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -421,8 +421,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "Sunucu Yenileme",
+      "description": "Sunucu filosu yenilemesi planlayın: Mevcut filo performansınıza uygun kaç yeni sunucuyu hesaplayın",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -472,803 +472,803 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "Yaş",
+      "description": "Yıl, ay ve gün cinsinden doğum tarihinden itibaren tam yaşı hesaplayın",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "Tarih",
+      "description": "Bir tarihe gün, hafta, ay ve yıl ekleme veya çıkarma",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "Zaman",
+      "description": "Saat, dakika ve saniye ekleme veya çıkarma",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
-      "description": "Calculate hours between two times or dates",
+      "name": "Saat",
+      "description": "İki saat veya tarih arasındaki saatleri hesaplayın",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
+      "name": "Zaman Süresi",
+      "description": "İki tarih ve saat arasındaki süreyi hesaplayın",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "Saat Dilimi",
+      "description": "Farklı saat dilimleri arasındaki saatleri dönüştürme",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "Gün Sayacı",
+      "description": "Tarihler arasındaki veya gelecekteki bir tarihe kadar olan günleri sayın",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "Haftanın Günü",
+      "description": "Herhangi bir tarihin haftanın hangi gününe denk geldiğini bulun",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
+      "name": "Süre Dönüştürücü",
+      "description": "Zaman birimleri (saniye, dakika, saat, gün, hafta, ay, yıl) arasında dönüştürme",
       "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "RGB Dönüştürücü",
+      "description": "RGB, HEX, HSL ve CMYK renk formatları arasında dönüştürme",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "Veri Boyutu",
+      "description": "Bayt, KB, MB, GB, TB ve daha fazlası arasında dönüştürme",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "Bant Genişliği Dönüştürücü",
+      "description": "Mbps'yi KB/s, GB/gün, TB/hafta ve daha fazlasına dönüştürün",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
-      "description": "Calculate download time from bandwidth and file size",
+      "name": "İndirmek",
+      "description": "Bant genişliğinden ve dosya boyutundan indirme süresini hesaplayın",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "Görsel Alt Ağ",
+      "description": "CIDR gösterimiyle IPv4 ve IPv6 alt ağ ayrıntılarını hesaplayın",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "CIDR Aralığı",
+      "description": "IP aralıklarını CIDR gösteriminden hesaplayın ve bir IP'nin aralık dahilinde olup olmadığını kontrol edin",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "IP Adresi",
+      "description": "IP adreslerini sınıfa (A-E) göre sınıflandırın ve genel/özel durumunu tanımlayın",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "Verim",
+      "description": "Aktarılan verilerden ve zamandan ağ verimini hesaplayın",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "Hız Dönüştürücü",
+      "description": "M/s, km/sa, mph, knot ve daha fazlası arasında dönüştürme",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "En Boy Oranı",
+      "description": "Genişlik ve yükseklikten en boy oranlarını hesaplayın",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "En boy uyumu",
+      "description": "Letterboxing ile bir görüntüyü ekrana sığdırma",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "Kompozisyon",
+      "description": "Odak uzaklığından ve mesafeden görüş alanını hesaplayın",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "Alan Derinliği",
+      "description": "DoF'yi diyafram açıklığından, odak uzaklığından ve mesafeden hesaplayın",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
       "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "description": "Baskı boyutundan ve DPI'dan megapikselleri hesaplayın",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "Resim Dosya Boyutu",
+      "description": "JPEG, PNG, RAW formatları için görüntü dosyası boyutunu tahmin edin",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "Hafif EV",
+      "description": "Pozlama Değerini kamera ayarlarından hesaplayın",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
-      "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "name": "Megapiksel",
+      "description": "Genişlik ve yükseklikten megapiksel hesaplayın",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "Megapiksel Yönleri",
+      "description": "Megapikselleri farklı en boy oranlarında görüntüleyin",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "Portre Mesafesi",
+      "description": "Portreler için ideal çekim mesafesini hesaplayın",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "Yıldız Yolları",
+      "description": "Yıldız izi dönüşü için pozlama süresini hesaplayın",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
-      "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "name": "Spot Yıldızlar",
+      "description": "Yıldız takibini önlemek için maksimum pozlamayı hesaplayın (NPF Kuralı)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "Zaman Atlaması",
+      "description": "Hızlandırılmış çekim için aralığı, klip uzunluğunu ve belleği hesaplayın",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "Odak Uzaklığı Eşdeğeri",
+      "description": "Farklı sensör boyutları arasındaki ayarları eşleştirin",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "Hiper Odak Mesafesi",
+      "description": "Maksimum alan derinliği için hiperfokal mesafeyi hesaplayın",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "ND Filtresi",
+      "description": "ND filtreleriyle pozlama süresini hesaplayın",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "Altın Saat Rehberi",
+      "description": "Bulunduğunuz yere göre altın saat sürelerini hesaplayın",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "Pişirme Üniteleri",
+      "description": "İçerik yoğunluklarıyla metrik ve İngiliz pişirme ölçümleri arasında dönüştürme",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "Döviz kuru",
+      "description": "Kripto para birimleri ve fiat para birimleri (CHF, EUR, USD) arasında dönüştürme",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "Karma Hesaplayıcı",
+      "description": "MD5, SHA-1, SHA-256, SHA-512 karma değerlerini hesaplayın",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "Madencilik Karlılığı",
+      "description": "Hash oranına ve elektrik maliyetine göre Bitcoin madenciliği karlılığını hesaplayın",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "Cüzdan Doğrulayıcı",
+      "description": "Bitcoin, Ethereum ve Litecoin cüzdan adreslerini doğrulayın",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "İsviçre Mortgage Hesaplayıcısı",
+      "description": "Mortgage ödemelerini CHF/EUR desteği ve İsviçre piyasası oranlarıyla hesaplayın",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "Kira Getirisi Hesaplayıcı",
+      "description": "İsviçre gayrimenkul yatırımları için brüt ve net kira getirisini hesaplayın",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "Gayrimenkul Değerleme Hesaplayıcı",
+      "description": "Hedonik yöntemi kullanarak İsviçre mülk değerlerini tahmin edin",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "Güneş Konumu",
+      "description": "Fotoğrafçılık için güneşin konumunu, alacakaranlık zamanlarını ve ışık evrelerini hesaplayın",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "Karışıklık Çemberi",
+      "description": "Sensörden, baskı boyutundan ve görüntüleme mesafesinden CoC'yi hesaplayın",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "Gelişmiş DoF",
+      "description": "Baskı boyutu ve görüntüleme için ayarlanabilir CoC ile alan derinliği",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "Makro DoF'si",
+      "description": "Makro fotoğrafçılık için doğru alan derinliği",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "DoF Tablosu",
+      "description": "Açıklıklar ve mesafeler genelinde DoF'yi gösteren etkileşimli tablo",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "Kırınım",
+      "description": "Kameranızın ne zaman kırınım sınırlı hale geleceğini hesaplayın",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "Makro Kırınım",
+      "description": "Makro fotoğrafçılıkta etkili diyafram açıklığını ve kırınımı hesaplayın",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "BPM'yi Hz'ye, çubuk uzunluğuna ve nota sürelerine dönüştürün",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "Video Dosya Boyutu",
+      "description": "Çözünürlük ve süreye göre video dosyasının boyutunu tahmin edin",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "Ses Dosyası Boyutu",
+      "description": "Süre ve formata göre ses dosyası boyutunu tahmin edin",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "Ortak Bit Hızları Referansı",
+      "description": "ProRes, DNxHD, DCP ve MPEG bit hızları için başvuru kılavuzu",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "DCP Dosya Boyutu",
+      "description": "Dijital Sinema Paketi dosya boyutlarını hesaplayın",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "Ayak-Lambert",
+      "description": "Sinema projeksiyonu için ekran parlaklığını hesaplayın",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "Ekran Boyutu",
+      "description": "Çapraz ve en boy oranından ekran boyutlarını hesaplayın",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "Video Bit Hızı",
+      "description": "Çözünürlük ve codec bileşenine dayalı olarak video bit hızını tahmin edin",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "Kare Hızı Dönüştürücü",
+      "description": "Ffmpeg komutlarıyla kare hızları arasında dönüştürme",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "URL Kodlayıcı",
+      "description": "URL'leri ve özel karakterleri kodlayın ve kodunu çözün",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "CSP Oluşturucu",
+      "description": "İçerik Güvenliği Politikası üstbilgileri oluşturun",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "Yönlendirme Denetleyicisi",
+      "description": "HTTP yönlendirme zincirlerini ve durum kodlarını kontrol edin",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "SPF Kayıt Denetleyicisi",
+      "description": "E-posta kimlik doğrulaması için SPF kayıtlarını analiz edin",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "HTTPS Güvenlik Denetleyicisi",
+      "description": "Güvenlik başlıklarını ve TLS yapılandırmasını kontrol edin",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "HTML Kodlayıcı",
+      "description": "HTML varlıklarını kodlama ve kodunu çözme",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "HTML Karakter Haritası",
+      "description": "HTML karakter varlıklarına göz atın ve kopyalayın",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "Emoji Karakter Haritası",
+      "description": "Kodlarla emojilere göz atın ve kopyalayın",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "SEO Performans Analizörü",
+      "description": "Sayfa SEO ölçümlerini analiz edin ve öneriler alın",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
-      "name": "Mortgage",
-      "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
+      "name": "İpotek",
+      "description": "Aylık ödemeleri hesaplayın, amortisman planını görüntüleyin ve kredinizi görselleştirin",
       "metaDescription": "Calculate mortgage payments with amortization schedule"
     },
     "compound-interest": {
-      "name": "Compound Interest",
-      "description": "Calculate compound interest on investments with regular contributions",
+      "name": "Bileşik faiz",
+      "description": "Düzenli katkılarla yapılan yatırımların bileşik faizini hesaplayın",
       "metaDescription": "Calculate compound interest growth over time"
     },
     "loan": {
-      "name": "Loan",
-      "description": "Calculate monthly payments for personal, auto, or any loan type",
+      "name": "Borç",
+      "description": "Bireysel, otomobil veya herhangi bir kredi türü için aylık ödemeleri hesaplayın",
       "metaDescription": "Calculate loan payments and amortization"
     },
     "retirement": {
-      "name": "Retirement",
-      "description": "Plan your retirement with savings projections and income planning",
+      "name": "Emeklilik",
+      "description": "Tasarruf projeksiyonları ve gelir planlamasıyla emekliliğinizi planlayın",
       "metaDescription": "Plan your retirement savings and income"
     },
     "tip": {
-      "name": "Tip",
-      "description": "Calculate tip amount and split bills between multiple people",
+      "name": "Uç",
+      "description": "Bahşiş miktarını hesaplayın ve faturaları birden fazla kişi arasında bölün",
       "metaDescription": "Calculate tips and split bills easily"
     },
     "savings-goal": {
-      "name": "Savings Goal",
-      "description": "Calculate how long to reach your savings goal with regular contributions",
+      "name": "Tasarruf Hedefi",
+      "description": "Düzenli katkılarla tasarruf hedefinize ne kadar sürede ulaşacağınızı hesaplayın",
       "metaDescription": "Plan your savings and reach your financial goals"
     },
     "inflation": {
-      "name": "Inflation",
-      "description": "Calculate the impact of inflation on purchasing power over time",
+      "name": "Enflasyon",
+      "description": "Enflasyonun satın alma gücü üzerindeki zaman içindeki etkisini hesaplayın",
       "metaDescription": "Understand inflation's impact on your money"
     },
     "roi": {
-      "name": "ROI",
-      "description": "Calculate return on investment and annualized returns",
+      "name": "yatırım getirisi",
+      "description": "Yatırım getirisini ve yıllık getiriyi hesaplayın",
       "metaDescription": "Calculate your investment returns"
     },
     "break-even": {
-      "name": "Break-Even",
-      "description": "Calculate break-even point for your business",
+      "name": "Başa baş",
+      "description": "İşletmeniz için başabaş noktasını hesaplayın",
       "metaDescription": "Find your business break-even point"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "Kâr Marjı",
+      "description": "Brüt, faaliyet ve net kar marjlarını hesaplayın",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "İndirim",
+      "description": "İndirimleri, satış fiyatlarını ve tasarrufları hesaplayın",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
+      "name": "Döviz Çevirici",
+      "description": "Başlıca dünya para birimleri arasında dönüştürme",
       "metaDescription": "Convert currencies with live exchange rates"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "Taşıt Kredisi",
+      "description": "Araç kredisi ödemelerini, faizini ve toplam maliyeti hesaplayın",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "Bireysel Kredi",
+      "description": "Ücretler ve APR ile kişisel kredi ödemelerini hesaplayın",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "Öğrenci Kredisi",
+      "description": "Ödemesiz dönem seçenekleriyle öğrenci kredisi ödemelerini hesaplayın",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "Ev Sermayesi",
+      "description": "Konut sermayesi kredisini veya HELOC ödemelerini hesaplayın",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "Borç Ödemesi",
+      "description": "Ekstra ödemelerle borcunuzu ne kadar sürede ödeyeceğinizi hesaplayın",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "Kredi kartı",
+      "description": "Kredi kartı ödeme süresini ve faizini hesaplayın",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
-      "description": "Calculate how much to save for a down payment",
+      "name": "Peşinat",
+      "description": "Peşinat için ne kadar tasarruf edeceğinizi hesaplayın",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "İşveren eşleştirmesi ile emeklilik tasarruflarını hesaplayın",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Geleneksel ve Roth IRA emeklilik hesaplarını karşılaştırın",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "Bağlamak",
+      "description": "Tahvil fiyatlarını, getirilerini ve getirilerini hesaplayın",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "Yıllık gelir",
+      "description": "Yıllık ödemeleri ve emeklilik gelirini hesaplayın",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "Vücut Yağı",
+      "description": "ABD Donanması yöntemini kullanarak vücut yağ yüzdesini hesaplayın",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "Yalın Vücut Kütlesi",
+      "description": "Birden fazla formül kullanarak yağsız vücut kütlesini hesaplayın",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "Gövde Yüzey Alanı",
+      "description": "Birden fazla tıbbi formül kullanarak BSA'yı hesaplayın",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "İdeal Ağırlık",
+      "description": "Birden fazla formül kullanarak ideal vücut ağırlığını hesaplayın",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
       "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "description": "Kalori planlaması için Bazal Metabolizma Hızını hesaplayın",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "Toplam Günlük Enerji Harcamasını Hesapla",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "Kalori",
+      "description": "Kilo hedefleri için günlük kalori ihtiyacını hesaplayın",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "Yakılan Kaloriler",
+      "description": "Çeşitli aktiviteler sırasında yakılan kalorileri hesaplayın",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "Hedef Kalp Atış Hızı",
+      "description": "Egzersiz için hedef kalp atış hızı bölgelerini hesaplayın",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "Maksimum Bir Temsilci",
+      "description": "Maksimumun altındaki kaldırma hareketlerinden tek tekrar maksimumunuzu hesaplayın",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "Adımlamak",
+      "description": "Koşu temposunu, hızı ve yarış sürelerini hesaplayın",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "Makro",
+      "description": "Günlük makro besin hedeflerini hesaplayın",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
       "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "description": "Günlük protein ihtiyacını hesaplayın",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "Karbonhidrat",
+      "description": "Günlük karbonhidrat ihtiyacını hesaplayın",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "Yağ Alımı",
+      "description": "Günlük yağ alımı gereksinimlerini hesaplayın",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "Su Girişi",
+      "description": "Günlük su alımı ihtiyaçlarını hesaplayın",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "Gövde Tipi",
+      "description": "Vücut tipinizi belirleyin (ektomorf, mezomorf, endomorf)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "Sağlıklı Kilo",
+      "description": "Boyunuza göre sağlıklı kilo aralığınızı hesaplayın",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "Ordu Vücut Yağı",
+      "description": "ABD Ordusu standartlarını kullanarak vücut yağını hesaplayın",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
       "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "description": "Kandaki alkol içeriğini hesaplayın",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
       "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "description": "Böbrek fonksiyonu için glomerüler filtrasyon hızını hesaplayın",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "Uyumak",
+      "description": "Optimum uyku ve uyanma sürelerini hesaplayın",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "Bitiş tarihi",
+      "description": "Hamileliğin son tarihini ve kilometre taşlarını hesaplayın",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "Yumurtlama",
+      "description": "Yumurtlama tarihini ve doğurganlık penceresini hesaplayın",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "Dönem",
+      "description": "Adet döngüsünü takip edin ve bir sonraki dönemi tahmin edin",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "Hamilelikte Kilo Alma",
+      "description": "Hamilelik sırasında önerilen kilo alımını hesaplayın",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
-      "description": "Perform arithmetic calculations with expression support",
+      "name": "Temel",
+      "description": "İfade desteğiyle aritmetik hesaplamalar gerçekleştirin",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "Kesir",
+      "description": "Kesirleri toplama, çıkarma, çarpma, bölme ve basitleştirme",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
-      "description": "Calculate percentages, percent change, and percent difference",
+      "name": "Yüzde",
+      "description": "Yüzdeleri, yüzde değişimi ve yüzde farkını hesaplayın",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "Yüzde Hata",
+      "description": "Deneysel ve gerçek değerler arasındaki hata yüzdesini hesaplayın",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "Yuvarlama",
+      "description": "Farklı yöntemler ve hassasiyet kullanarak yuvarlak sayılar",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "Ortalama",
+      "description": "Ortalama, medyan, mod ve diğer ortalamaları hesaplayın",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "Uzun Bölüm",
+      "description": "Adım adım çözümle uzun bölme işlemini gerçekleştirin",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "Üs",
+      "description": "Üsleri ve üstel ifadeleri hesaplama",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "Kök",
+      "description": "Karekökleri, küpkökleri ve n'inci kökleri hesaplayın",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "Logaritma",
+      "description": "Herhangi bir tabana göre logaritmaları hesaplayın",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "İkinci Dereceden Formül",
+      "description": "İkinci dereceden denklemleri çözün ve kökleri bulun",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "Faktör",
+      "description": "Bir sayının tüm çarpanlarını bulma",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "Birden Çok Sayının En Büyük Ortak Bölenini Hesaplayın",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "Birden çok sayının En Küçük Ortak Katını Hesapla",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "GCD ve LCM",
+      "description": "Birden fazla sayının GCD'sini ve LCM'sini hesaplayın",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "Asal çarpanlara ayırma",
+      "description": "Herhangi bir sayının asal çarpanlarını ve bölenlerini bulun",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "Üçgen",
+      "description": "Kenarlardan ve açılardan üçgen özelliklerini hesaplama",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "Sağ Üçgen",
+      "description": "Dik üçgenin kenarlarını ve açılarını hesaplayın",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "Pisagor Teoremi",
+      "description": "Pisagor teoremini kullanarak eksik tarafı hesaplayın",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "Daire",
+      "description": "Yarıçaptan, çaptan veya çevreden daire özelliklerini hesaplama",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
+      "name": "Alan",
+      "description": "Çeşitli şekillerin alanını hesaplayın",
       "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "Yüzey Alanı",
+      "description": "3B şekillerin yüzey alanını hesaplayın",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "Hacim",
+      "description": "3B şekillerin hacmini hesaplayın",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "Atalet Momenti Hesaplayıcı",
+      "description": "Çeşitli kesitler için alanın ikinci momentini hesaplayın",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "Işın Sapması Hesaplayıcısı",
+      "description": "Kiriş sapmasını, kaymayı ve bükülme momentini diyagramlarla hesaplayın",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "Gerilme-Gerilme Hesaplayıcısı",
+      "description": "Malzeme veritabanıyla gerilim, gerinim ve Young modülünü hesaplayın",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "Kolon Burkulması Hesaplayıcısı",
+      "description": "Sütunlar için Euler kritik yükünü, AISC izin verilen yükünü ve narinlik oranını hesaplayın",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "Boru Akışı Hesaplayıcısı",
+      "description": "Boru akışı için basınç düşüşünü, Reynolds sayısını ve sürtünme faktörünü hesaplayın",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "Mühendislik Birimi Dönüştürücü",
+      "description": "Mühendislik birimleri arasında dönüştürme: kuvvet, basınç, gerilim, tork ve daha fazlası",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "Moleküler Ağırlık Hesaplayıcı",
+      "description": "Kimyasal formülden molar kütle ve bileşimi hesaplayın",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "Molarite Hesaplayıcı",
+      "description": "Kütle, mol ve hacimden çözelti konsantrasyonunu hesaplayın",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "Seyreltme Hesaplayıcı",
+      "description": "M₁V₁ = M₂V₂ formülünü kullanarak seyreltme parametrelerini hesaplayın",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "Stokiyometri Hesaplayıcı",
+      "description": "Kimyasal denklemlerden sınırlayıcı reaktant ve teorik verimi hesaplayın",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "pH Hesaplayıcı",
+      "description": "Asitler, bazlar ve tamponlar için pH, pOH ve iyon konsantrasyonlarını hesaplayın",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "Periyodik Tablo",
+      "description": "Element özellikleri ve arama içeren etkileşimli periyodik tablo",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
-      "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "name": "VM Depolama Hesaplayıcısı",
+      "description": "vSphere ESX kümesi depolama kapasitesi gereksinimlerini hesaplayın",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kubernetes Kapasite Hesaplayıcı",
+      "description": "İş yükünüz için Kubernetes küme düğümü gereksinimlerini hesaplayın",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "Sunucu Sanallaştırma Hesaplayıcısı",
+      "description": "VM iş yükleri için ESX ana bilgisayar gereksinimlerini hesaplayın",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "VMware Lisans Hesaplayıcı",
+      "description": "VMware VCF/VVF lisanslama maliyetlerini hesaplayın",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "Sanallaştırma Maliyeti Hesaplayıcı",
+      "description": "Sanallaştırma altyapısının toplam sahip olma maliyetini hesaplayın",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Hyper-V Konsolidasyon Hesaplayıcısı",
+      "description": "HA ve Windows lisanslamayla Hyper-V ana bilgisayar gereksinimlerini hesaplayın",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
-      "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "name": "Windows Server Lisans Hesaplayıcı",
+      "description": "Datacenter ile Standart lisanslama maliyetlerini karşılaştırın",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "Hiper Yönetici Karşılaştırma Hesaplayıcısı",
+      "description": "VMware, Hyper-V, Proxmox ve XCP-ng platformlarını karşılaştırın",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1326,158 +1326,158 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "Eğim",
+      "description": "Bir çizginin eğimini, denklemini ve açısını hesaplama",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "Standart Sapma",
+      "description": "Standart sapmayı ve varyansı hesaplayın",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "İstatistikler",
+      "description": "Bir veri kümesi için kapsamlı istatistikleri hesaplayın",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "Olasılık",
+      "description": "Olayların ve kombinasyonların olasılığını hesaplayın",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "Örnek Boyutu",
+      "description": "Anketler ve çalışmalar için gerekli örnek boyutunu hesaplayın",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Z-Skoru",
+      "description": "Z-skoru ve normal dağılım olasılıklarını hesaplayın",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P-Değeri",
+      "description": "İstatistiksel hipotez testi için p değerlerini hesaplayın",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "Güven Aralığı",
+      "description": "Ortalamalar ve oranlar için güven aralıklarını hesaplayın",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "Permütasyon ve Kombinasyon",
+      "description": "Tekrarlı ve tekrarsız permütasyon ve kombinasyonları hesaplayın",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "name": "Oran",
+      "description": "Oranları hesaplayın ve basitleştirin, eşdeğer oranları bulun",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "İkili",
+      "description": "İşlemleri ikili olarak dönüştürün ve gerçekleştirin",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "Onaltılık",
+      "description": "Onaltılı sistemde dönüştürün ve hesaplayın",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "Bilimsel Gösterim",
+      "description": "Bilimsel gösterime/gösterimden dönüştürme ve işlemleri gerçekleştirme",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "Büyük Sayı",
+      "description": "Rastgele büyük tam sayılar üzerinde aritmetik işlem yapın",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "Sayı Sırası",
+      "description": "Aritmetik, geometrik ve Fibonacci dizilerini analiz edin ve oluşturun",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "Matris",
+      "description": "Matris işlemlerini gerçekleştirin: toplama, çarpma, devrikleştirme, determinant",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "Yarı ömür",
+      "description": "Radyoaktif bozunmayı ve kalan miktarı hesaplayın",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "Mesafe",
+      "description": "2B, 3B ve Dünya üzerindeki noktalar arasındaki mesafeleri hesaplayın",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "Rastgele Sayı Üreteci",
+      "description": "Çeşitli dağılımlarla rastgele sayılar oluşturun",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "TCP Verimi",
+      "description": "Mathis formülünü kullanarak teorik TCP verimini hesaplayın",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "Bant Genişliği-Gecikme Ürünü",
+      "description": "BDP'yi ve optimum TCP arabellek boyutunu hesaplayın",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "BB Kredi Hesaplayıcı",
+      "description": "Hız ve mesafeye göre ISL bağlantıları için Fiber Kanal BB kredilerini hesaplayın",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "Gecikme Dönüştürücü",
+      "description": "Ping zaman birimleri arasında dönüştürme (saniye, milisaniye, mikrosaniye, nanosaniye)",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "Yemek Maliyeti Hesaplayıcı",
+      "description": "İçerik fiyatlarından toplam tarif maliyetini ve porsiyon başına maliyeti hesaplayın",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "Tarif Ölçekleyici",
+      "description": "Tarif malzemelerini tuz, baharat ve mayalama maddeleri için akıllı ayarlamalarla ölçeklendirin",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "Beslenme Hesaplayıcı",
+      "description": "Seçilen gıdalardan kalorileri, makroları ve beslenme gerçeklerini hesaplayın",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
-      "name": "Fuel Efficiency Calculator",
-      "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
+      "name": "Yakıt Verimliliği Hesaplayıcı",
+      "description": "Yolculuk ve maliyet tahminleriyle yakıt tüketimini L/100km, km/L ve MPG cinsinden hesaplayın",
       "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
     },
     "vehicle-financing": {
       "name": "Araç Finansman Hesaplayıcı",
-      "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
+      "description": "Satın alma ve kiralama karşılaştırması ile taşıt kredisi ve kira ödemelerini hesaplayın (CHF/EUR)",
       "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
     },
     "tire-sizing": {
       "name": "Lastik Boyutu Hesaplayıcı",
-      "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
+      "description": "Lastik boyutlarını hesaplayın, boyutları karşılaştırın ve hız göstergesi hatasını kontrol edin",
       "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "name": "Bakım Aralıkları Hesaplayıcı",
+      "description": "İsviçre MFK hatırlatıcılarıyla araç servis programlarını takip edin ve sonraki son tarihleri hesaplayın",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "name": "Birim Dönüştürücü",
+      "description": "Uzunluk, kütle, sıcaklık, alan, hacim, hız, zaman, veri, enerji, güç ve basınç birimleri arasında dönüşüm yapın.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Category",
       "value": "Value",
@@ -1486,8 +1486,8 @@
       "swap": "Swap"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "Hesap Makinesini Ayarla",
+      "description": "Küme işlemlerini gerçekleştirin: birleşim, kesişim, fark, simetrik fark, kartezyen çarpım ve küme ilişkileri.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1497,8 +1497,8 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
+      "name": "Programcı Hesap Makinesi",
+      "description": "Ondalık, onaltılı, sekizli ve ikili arasında dönüştürme yapın ve bit düzeyinde ve kaydırma işlemlerini uygulayın.",
       "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
       "valueA": "Value A",
       "valueB": "Value B",
@@ -1511,8 +1511,8 @@
       "reprB": "B representations"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "Borç Ödeme Planlayıcısı",
+      "description": "Kartopu ve çığ borç ödeme stratejilerini karşılaştırın ve hangisinin borcunuzu daha hızlı temizlediğini görün.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1526,8 +1526,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "Gelir Vergisi Hesaplayıcı",
+      "description": "Artan gelir vergisini ön ayarlarla veya kendi özel vergi dilimlerinizle hesaplayın.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3112,7 +3112,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "Alan"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3158,7 +3158,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "Hacim"
       },
       "surfaceArea": {
         "steps": {
@@ -3203,7 +3203,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "Yüzey Alanı"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3224,7 +3224,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "Eğim"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3270,7 +3270,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "Mesafe"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3296,7 +3296,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "Olasılık"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3356,7 +3356,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "Bilimsel Gösterim"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3402,7 +3402,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "Örnek Boyutu"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3427,7 +3427,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "Güven Aralığı"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3454,7 +3454,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Z-Skoru"
       },
       "pValue": {
         "steps": {
@@ -3476,7 +3476,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P-Değeri"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3536,7 +3536,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "Yarı ömür"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3571,7 +3571,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "Büyük Sayı"
       },
       "calculate": "Hesapla",
       "every": "Every",
@@ -3615,7 +3615,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "Matris"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3656,7 +3656,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "Sayı Sırası"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3812,7 +3812,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "Kesir"
       },
       "hex": {
         "steps": {
@@ -5724,7 +5724,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "Bant Genişliği-Gecikme Ürünü"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",

@@ -373,18 +373,18 @@
   },
   "converter": {
     "bmi": {
-      "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
+      "name": "體重指數",
+      "description": "計算您的體重指數和健康類別",
       "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "肥胖",
+      "description": "計算您的肥胖指數（龐德爾指數）",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "CPU比較",
+      "description": "透過 SPECint2017 分數、每核心效能和每瓦效能比較最多 4 個 CPU",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -421,8 +421,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "伺服器重新整理",
+      "description": "規劃伺服器機群更新：計算有多少新伺服器與您目前的機群效能相符",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -472,343 +472,343 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "年齡",
+      "description": "以年、月、日為單位計算出生日期的準確年齡",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "日期",
+      "description": "從日期中添加或減去天、週、月和年",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "時間",
+      "description": "添加或減去小時、分鐘和秒",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
-      "description": "Calculate hours between two times or dates",
+      "name": "時間",
+      "description": "計算兩個時間或日期之間的小時數",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
+      "name": "持續時間",
+      "description": "計算兩個日期和時間之間的持續時間",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "時區",
+      "description": "轉換不同時區之間的時間",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "日計數器",
+      "description": "計算日期之間或直到未來日期的天數",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "一週中的某一天",
+      "description": "尋找任何日期是星期幾",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
+      "name": "持續時間轉換器",
+      "description": "時間單位之間的轉換（秒、分鐘、小時、天、週、月、年）",
       "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "RGB轉換器",
+      "description": "在 RGB、HEX、HSL 和 CMYK 色彩格式之間轉換",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "數據大小",
+      "description": "在位元組、KB、MB、GB、TB 等之間轉換",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "頻寬轉換器",
+      "description": "將 Mbps 轉換為 KB/s、GB/天、TB/週等",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
-      "description": "Calculate download time from bandwidth and file size",
+      "name": "下載",
+      "description": "根據頻寬和檔案大小計算下載時間",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "視覺子網路",
+      "description": "使用 CIDR 表示法計算 IPv4 和 IPv6 子網路詳細信息",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "CIDR範圍",
+      "description": "根據 CIDR 表示法計算 IP 範圍並檢查 IP 是否在範圍內",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "IP位址",
+      "description": "按類別 (A-E) 對 IP 位址進行分類並識別公用/私人狀態",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "吞吐量",
+      "description": "根據傳輸的資料和時間計算網路吞吐量",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "速度轉換器",
+      "description": "在米/秒、公里/小時、英里/小時、節等之間轉換",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "縱橫比",
+      "description": "根據寬度和高度計算縱橫比",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "方面適合",
+      "description": "使用信箱將影像調整到螢幕上",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "作品",
+      "description": "根據焦距和距離計算視野",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "景深",
+      "description": "根據光圈、焦距和距離計算 DoF",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
-      "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "name": "深度PI",
+      "description": "根據列印尺寸和 DPI 計算百萬像素",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "圖像檔案大小",
+      "description": "估計 JPEG、PNG、RAW 格式的圖片檔案大小",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "輕型電動車",
+      "description": "根據相機設定計算曝光值",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
-      "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "name": "百萬畫素",
+      "description": "根據寬度和高度計算百萬像素",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "百萬畫素方面",
+      "description": "以不同的縱橫比查看百萬像素",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "人像距離",
+      "description": "計算人像的理想拍攝距離",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "星軌",
+      "description": "計算星跡旋轉的曝光時間",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
-      "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "name": "點星",
+      "description": "計算最大曝光量以防止星尾拖尾（NPF 規則）",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "縮時攝影",
+      "description": "計算延時的間隔、剪輯長度和內存",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "等效焦距",
+      "description": "不同感測器尺寸之間的匹配設置",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "超焦距",
+      "description": "計算最大景深的超焦距",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "ND濾鏡",
+      "description": "使用 ND 濾鏡計算曝光時間",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "黃金時段指南",
+      "description": "根據您所在的位置計算黃金時段",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "烹飪單位",
+      "description": "根據成分密度在公制和英制烹飪測量之間進行轉換",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "匯率",
+      "description": "加密貨幣與法定貨幣（瑞士法郎、歐元、美元）之間的轉換",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "哈希計算器",
+      "description": "計算 MD5、SHA-1、SHA-256、SHA-512 雜湊值",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "挖礦獲利能力",
+      "description": "根據算力和電費計算比特幣挖礦獲利能力",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "錢包驗證器",
+      "description": "驗證比特幣、以太坊和萊特幣錢包地址",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "瑞士抵押貸款計算器",
+      "description": "使用瑞士法郎/歐元支援和瑞士市場利率計算抵押貸款付款",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "租金收益計算器",
+      "description": "計算瑞士房地產投資的總租金收益率和淨租金收益率",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "房產估價計算器",
+      "description": "使用特徵法估算瑞士財產價值",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "太陽位置",
+      "description": "計算攝影的太陽位置、黃昏時間和光相位",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "混亂之環",
+      "description": "根據感應器、列印尺寸和觀看距離計算 CoC",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "高級自由度",
+      "description": "可調整 CoC 的景深以適應列印尺寸和檢視",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "宏觀自由度",
+      "description": "微距攝影的精確景深",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "自由度表",
+      "description": "顯示孔徑和距離的自由度的互動式表格",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "繞射",
+      "description": "計算相機何時會受到繞射限制",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "宏觀衍射",
+      "description": "計算微距攝影中的有效光圈和衍射",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
-      "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "name": "業務流程管理",
+      "description": "將 BPM 轉換為 Hz、小節長度和音符持續時間",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "影片檔案大小",
+      "description": "根據解析度和持續時間估計視訊檔案大小",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "音訊檔案大小",
+      "description": "根據持續時間和格式估計音訊檔案大小",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "常見比特率參考",
+      "description": "ProRes、DNxHD、DCP 和 MPEG 位元率參考指南",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "DCP 檔案大小",
+      "description": "計算數位電影包檔案大小",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "福特-蘭伯特",
+      "description": "計算電影投影的螢幕亮度",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "螢幕尺寸",
+      "description": "根據對角線和長寬比計算螢幕尺寸",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "視訊比特率",
+      "description": "根據解析度和編解碼器估計視訊位元率",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "影格率轉換器",
+      "description": "使用 ffmpeg 指令在幀速率之間進行轉換",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "網址編碼器",
+      "description": "對 URL 和特殊字元進行編碼和解碼",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "光熱發電發電機",
+      "description": "產生內容安全策略標頭",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "重定向檢查器",
+      "description": "檢查 HTTP 重定向鍊和狀態代碼",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "SPF記錄檢查器",
+      "description": "分析 SPF 記錄以進行電子郵件身份驗證",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "HTTPS 安全性檢查器",
+      "description": "檢查安全標頭和 TLS 配置",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "HTML編碼器",
+      "description": "對 HTML 實體進行編碼和解碼",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "HTML 字元對應表",
+      "description": "瀏覽和複製 HTML 字元實體",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "表情符號字元圖",
+      "description": "使用程式碼瀏覽和複製表情符號",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "SEO 效能分析器",
+      "description": "分析頁面 SEO 指標並獲得建議",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
@@ -857,418 +857,418 @@
       "metaDescription": "損益平衡分析"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "利潤率",
+      "description": "計算毛利率、營業利益率和淨利潤率",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "折扣",
+      "description": "計算折扣、銷售價格和節省額",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
+      "name": "貨幣換算",
+      "description": "世界主要貨幣之間的轉換",
       "metaDescription": "Convert currencies with live exchange rates"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "汽車貸款",
+      "description": "計算汽車貸款付款、利息和總成本",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "個人貸款",
+      "description": "計算個人貸款還款金額及費用及年利率",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "學生貸款",
+      "description": "使用寬限期選項計算學生貸款付款",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "房屋淨值",
+      "description": "計算房屋淨值貸款或 HELOC 付款",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "債務清償",
+      "description": "計算額外付款還清債務需要多長時間",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "信用卡",
+      "description": "計算信用卡還款時間和利息",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
-      "description": "Calculate how much to save for a down payment",
+      "name": "首付",
+      "description": "計算需要節省多少首付款",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "透過雇主配對計算退休儲蓄",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
-      "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "name": "愛爾蘭共和軍",
+      "description": "比較傳統與 Roth IRA 退休帳戶",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "紐帶",
+      "description": "計算債券價格、收益率和回報",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "年金",
+      "description": "計算年金付款和退休收入",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "身體脂肪",
+      "description": "使用美國海軍方法計算身體脂肪百分比",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "去脂體重",
+      "description": "使用多個公式計算去脂體重",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "體表面積",
+      "description": "使用多個醫學公式計算 BSA",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "理想體重",
+      "description": "使用多個公式計算理想體重",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
-      "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "name": "基礎代謝率",
+      "description": "計算卡路里計劃的基礎代謝率",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "計算每日總能源消耗",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "卡路里",
+      "description": "計算體重目標的每日卡路里需求",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "燃燒的卡路里",
+      "description": "計算各種活動所消耗的卡路里",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "目標心率",
+      "description": "計算運動的目標心率區",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "最多 1 次",
+      "description": "透過次最大舉重計算您的單次最大舉重次數",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "步伐",
+      "description": "計算跑步配速、速度和比賽時間",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "宏",
+      "description": "計算每日宏量營養素目標",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
-      "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "name": "蛋白質",
+      "description": "計算每日蛋白質需求量",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "醣類",
+      "description": "計算每日碳水化合物需求量",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "脂肪攝取量",
+      "description": "計算每日脂肪攝取量需求",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "飲水量",
+      "description": "計算每日需水量",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "體型",
+      "description": "確定您的體型（外胚型、中胚型、內胚型）",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "健康體重",
+      "description": "根據身高計算您的健康體重範圍",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "陸軍體脂",
+      "description": "使用美國陸軍標準計算體脂",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
-      "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "name": "巴克",
+      "description": "計算血液酒精含量",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
-      "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "name": "腎小球濾過率",
+      "description": "計算腎功能的腎絲球濾過率",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "睡覺",
+      "description": "計算最佳睡眠和起床時間",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "到期日",
+      "description": "計算預產期和里程碑",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "排卵",
+      "description": "計算排卵日期和受孕窗口",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "時期",
+      "description": "追蹤月經週期並預測下次經期",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "懷孕期間體重增加",
+      "description": "計算懷孕期間建議的體重增加",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
-      "name": "Basic",
-      "description": "Perform arithmetic calculations with expression support",
+      "name": "基本的",
+      "description": "使用表達式支援執行算術計算",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "分數",
+      "description": "加、減、乘、除和化簡分數",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
-      "name": "Percentage",
-      "description": "Calculate percentages, percent change, and percent difference",
+      "name": "百分比",
+      "description": "計算百分比、變化百分比和差異百分比",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "誤差百分比",
+      "description": "計算實驗值和實際值之間的百分比誤差",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "四捨五入",
+      "description": "使用不同的方法和精度對數字進行舍入",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "平均的",
+      "description": "計算平均值、中位數、眾數和其他平均值",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "長除法",
+      "description": "透過逐步解決方案執行長除法",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "指數",
+      "description": "計算冪和指數表達式",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "根",
+      "description": "計算平方根、立方根和 n 次根",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "對數",
+      "description": "計算任意底數的對數",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "二次公式",
+      "description": "求解二次方程式求根",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "因素",
+      "description": "求出一個數的所有因數",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "計算多個數字的最大公約數",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
-      "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "name": "液晶模組",
+      "description": "計算多個數字的最小公倍數",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "液晶顯示模組",
+      "description": "計算多個數的 GCD 和 LCM",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "質因數分解",
+      "description": "求任意數字的質因數和約數",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "三角形",
+      "description": "從邊和角計算三角形屬性",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "直角三角形",
+      "description": "計算直角三角形的邊長和角度",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "畢達哥拉斯定理",
+      "description": "利用畢達哥拉斯定理計算缺失邊",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "圓圈",
+      "description": "根據半徑、直徑或週長計算圓屬性",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
+      "name": "區域",
+      "description": "計算各種形狀的面積",
       "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "表面積",
+      "description": "計算 3D 形狀的表面積",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "體積",
+      "description": "計算 3D 形狀的體積",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "轉動慣量計算器",
+      "description": "計算各種橫斷面的面積二次矩",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "梁撓度計算器",
+      "description": "用圖表計算樑的撓度、剪力和彎矩",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "應力應變計算器",
+      "description": "使用材料資料庫計算應力、應變和楊氏模量",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "柱屈曲計算器",
+      "description": "計算柱的歐拉臨界載重、AISC 許用載重和長細比",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "管道流量計算器",
+      "description": "計算管道流的壓力降、雷諾數和摩擦係數",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "工程單位轉換器",
+      "description": "工程單位之間的轉換：力、壓力、應力、扭力等",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "分子量計算器",
+      "description": "從化學式計算摩爾質量和組成",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "摩爾濃度計算器",
+      "description": "根據質量、摩爾和體積計算溶液濃度",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "稀釋計算器",
+      "description": "使用 M₁V₁ = M2V2 公式計算稀釋參數",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "化學計量計算器",
+      "description": "從化學方程式計算極限反應物與理論產率",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "pH值計算器",
+      "description": "計算酸、鹼和緩衝液的 pH、pOH 和離子濃度",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "元素週期表",
+      "description": "具有元素屬性和搜尋功能的互動式週期表",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
-      "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "name": "虛擬機器儲存計算器",
+      "description": "計算 vSphere ESX 叢集儲存容量需求",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kubernetes 容量計算器",
+      "description": "計算您的工作負載的 Kubernetes 叢集節點需求",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "伺服器虛擬化計算器",
+      "description": "計算虛擬機器工作負載的 ESX 主機需求",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "VMware 授權計算器",
+      "description": "計算 VMware VCF/VVF 許可成本",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "虛擬化成本計算器",
+      "description": "計算虛擬化基礎架構的總擁有成本",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Hyper-V 整合計算器",
+      "description": "計算具有 HA 和 Windows 授權的 Hyper-V 主機需求",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
-      "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "name": "Windows Server 授權計算器",
+      "description": "比較資料中心與標準授權成本",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "虛擬機器管理程式比較計算器",
+      "description": "比較 VMware、Hyper-V、Proxmox 和 XCP-ng 平台",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1326,133 +1326,133 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "坡",
+      "description": "計算直線的斜率、方程式和角度",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "標準差",
+      "description": "計算標準差和方差",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "統計數據",
+      "description": "計算數據集的綜合統計數據",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "可能性",
+      "description": "計算事件和組合的機率",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "樣本量",
+      "description": "計算調查和研究所需的樣本量",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Z 分數",
+      "description": "計算 z 分數和常態分佈機率",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P值",
+      "description": "計算統計假設檢定的 p 值",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "信賴區間",
+      "description": "計算平均值和比例的置信區間",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "排列組合",
+      "description": "計算有重複和無重複的排列和組合",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "name": "比率",
+      "description": "計算並簡化比率，找出等效比率",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "二進位",
+      "description": "以二進位形式轉換並執行操作",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "十六進位",
+      "description": "以十六進制轉換併計算",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "科學記數法",
+      "description": "與科學記數法相互轉換並執行運算",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "大數字",
+      "description": "對任意大整數執行算術運算",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "編號順序",
+      "description": "分析和產生算術、幾何和斐波那契數列",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "矩陣",
+      "description": "執行矩陣運算：加法、乘法、轉置、行列式",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "半衰期",
+      "description": "計算放射性衰變和剩餘量",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "距離",
+      "description": "計算 2D、3D 和地球上的點之間的距離",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "隨機數產生器",
+      "description": "產生具有各種分佈的隨機數",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "TCP 吞吐量",
+      "description": "使用 Mathis 公式計算理論 TCP 吞吐量",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "頻寬延遲積",
+      "description": "計算 BDP 和最佳 TCP 緩衝區大小",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "BB 信用計算器",
+      "description": "根據速度和距離計算 ISL 鏈路的光纖通道 BB 積分",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "延遲轉換器",
+      "description": "ping 時間單位之間的轉換（秒、毫秒、微秒、奈秒）",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "食品成本計算器",
+      "description": "根據原料價格計算總配方成本和每份成本",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "配方縮放器",
+      "description": "透過智慧調整鹽、香料和發酵劑來調整配方成分",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "營養計算器",
+      "description": "計算所選食物的卡路里、宏量和營養成分",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
@@ -1472,12 +1472,12 @@
     },
     "maintenance-intervals": {
       "name": "車輛保養計算機",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "description": "使用 Swiss MFK 提醒追蹤車輛服務時間表並計算下一個到期日",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "name": "單位換算",
+      "description": "長度、質量、溫度、面積、體積、速度、時間、資料、能量、功率和壓力單位之間的轉換。",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Category",
       "value": "Value",
@@ -1486,8 +1486,8 @@
       "swap": "Swap"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "設定計算器",
+      "description": "執行集合運算：並、交、差、對稱差、笛卡兒積和集合關係。",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1497,8 +1497,8 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
+      "name": "程式設計師計算器",
+      "description": "在十進制、十六進制、八進制和二進制之間進行轉換，並應用按位和移位運算。",
       "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
       "valueA": "Value A",
       "valueB": "Value B",
@@ -1511,8 +1511,8 @@
       "reprB": "B representations"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "債務償還規劃師",
+      "description": "比較滾雪球式和雪崩式債務償還策略，看看哪一種可以更快清償你的債務。",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1526,8 +1526,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "所得稅計算器",
+      "description": "使用預設或您自己的自訂稅級計算累進所得稅。",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3127,7 +3127,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "區域"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3173,7 +3173,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "體積"
       },
       "surfaceArea": {
         "steps": {
@@ -3218,7 +3218,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "表面積"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3239,7 +3239,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "坡"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3285,7 +3285,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "距離"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3311,7 +3311,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "可能性"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3371,7 +3371,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "科學記數法"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3417,7 +3417,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "樣本量"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3442,7 +3442,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "信賴區間"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3469,7 +3469,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Z 分數"
       },
       "pValue": {
         "steps": {
@@ -3491,7 +3491,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P值"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3551,7 +3551,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "半衰期"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3586,7 +3586,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "大數字"
       },
       "calculate": "計算",
       "every": "Every",
@@ -3630,7 +3630,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "矩陣"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3671,7 +3671,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "編號順序"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3827,7 +3827,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "分數"
       },
       "hex": {
         "steps": {
@@ -5739,7 +5739,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "頻寬延遲積"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",
@@ -6683,7 +6683,7 @@
     "how-we-use-information": "我們如何使用資訊",
     "to-operate-and-secure-the-site": "經營和保護網站。",
     "to-understand-which-tools-are-useful-so-we-can-improve-them": "了解哪些工具有用，以便我們可以改進它們。",
-    "to-display-advertisements-that-help-keep-the-calculators-free": "顯示有​​助於保持計算機免費的廣告。",
+    "to-display-advertisements-that-help-keep-the-calculators-free": "顯示有助於保持計算機免費的廣告。",
     "your-rights": "您的權利",
     "real-estate-calculators-coming-soon": "房地產計算器即將推出！",
     "terms-of-service": "服務條款",

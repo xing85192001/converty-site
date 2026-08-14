@@ -378,13 +378,13 @@
       "metaDescription": "Kira Indeks Jisim Badan (BMI) dan fahami kategori kesihatan anda"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "Keperkasaan",
+      "description": "Kira Indeks Korpulen anda (Indeks Ponderal)",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "Perbandingan CPU",
+      "description": "Bandingkan sehingga 4 CPU mengikut skor SPECint2017, prestasi setiap teras dan prestasi setiap watt",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -421,8 +421,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "Muat semula Pelayan",
+      "description": "Rancang muat semula armada pelayan: hitung bilangan pelayan baharu yang sepadan dengan prestasi armada semasa anda",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -472,343 +472,343 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "Umur",
+      "description": "Kira umur tepat dari tarikh lahir dalam tahun, bulan dan hari",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "tarikh",
+      "description": "Tambah atau tolak hari, minggu, bulan dan tahun daripada tarikh",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "Masa",
+      "description": "Tambah atau tolak jam, minit dan saat",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
       "name": "Jam",
-      "description": "Calculate hours between two times or dates",
+      "description": "Kira jam antara dua masa atau tarikh",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
-      "description": "Calculate duration between two dates and times",
+      "name": "Tempoh Masa",
+      "description": "Kira tempoh antara dua tarikh dan masa",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "Zon Masa",
+      "description": "Tukar masa antara zon waktu yang berbeza",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "Kaunter Hari",
+      "description": "Kira hari antara tarikh atau sehingga tarikh akan datang",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "Hari dalam Minggu",
+      "description": "Cari hari dalam minggu mana-mana tarikh jatuh pada",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
-      "name": "Duration Converter",
-      "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
+      "name": "Penukar Tempoh",
+      "description": "Tukar antara unit masa (saat, minit, jam, hari, minggu, bulan, tahun)",
       "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "Penukar RGB",
+      "description": "Tukar antara format warna RGB, HEX, HSL dan CMYK",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "Saiz Data",
+      "description": "Tukar antara bait, KB, MB, GB, TB dan banyak lagi",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "Penukar Lebar Jalur",
+      "description": "Tukar Mbps kepada KB/s, GB/hari, TB/minggu dan banyak lagi",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
       "name": "Muat turun",
-      "description": "Calculate download time from bandwidth and file size",
+      "description": "Kira masa muat turun dari lebar jalur dan saiz fail",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "Subnet Visual",
+      "description": "Kira butiran subnet IPv4 dan IPv6 dengan tatatanda CIDR",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "Julat CIDR",
+      "description": "Kira julat IP daripada tatatanda CIDR dan semak sama ada IP berada dalam julat",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "Alamat IP",
+      "description": "Kelaskan alamat IP mengikut kelas (A-E) dan kenal pasti status awam/swasta",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
       "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "description": "Kira daya pemprosesan rangkaian daripada data yang dipindahkan dan masa",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "Penukar Kelajuan",
+      "description": "Tukar antara m/s, km/j, mph, knot dan banyak lagi",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "Nisbah Aspek",
+      "description": "Kira nisbah bidang daripada lebar dan tinggi",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "Kesesuaian Aspek",
+      "description": "Muatkan imej pada skrin dengan kotak surat",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "Komposisi",
+      "description": "Kira medan pandangan dari jarak fokus dan jarak",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "Kedalaman Medan",
+      "description": "Kira DoF daripada apertur, panjang fokus dan jarak",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
       "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "description": "Kira megapiksel daripada saiz cetakan dan DPI",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "Saiz Fail Imej",
+      "description": "Anggarkan saiz fail imej untuk format JPEG, PNG, RAW",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "EV ringan",
+      "description": "Kira Nilai Pendedahan daripada tetapan kamera",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
-      "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "name": "Megapiksel",
+      "description": "Kira megapiksel daripada lebar dan tinggi",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "Aspek Megapiksel",
+      "description": "Lihat megapiksel dalam nisbah aspek yang berbeza",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "Jarak Potret",
+      "description": "Kira jarak penangkapan ideal untuk potret",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "Jejak Bintang",
+      "description": "Kira masa pendedahan untuk putaran jejak bintang",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
-      "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "name": "Bintang Spot",
+      "description": "Kira pendedahan maks untuk mengelakkan jejak bintang (Peraturan NPF)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "Selang Masa",
+      "description": "Kira selang masa, panjang klip dan ingatan untuk selang masa",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "Setara Panjang Fokus",
+      "description": "Padankan tetapan antara saiz penderia yang berbeza",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "Jarak Hiperfokal",
+      "description": "Kira jarak hiperfokal untuk kedalaman medan maksimum",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "Penapis ND",
+      "description": "Kira masa pendedahan dengan penapis ND",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "Panduan Golden Hour",
+      "description": "Kira masa jam emas berdasarkan lokasi anda",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "Unit Memasak",
+      "description": "Tukar antara ukuran memasak metrik dan imperial dengan ketumpatan bahan",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "Kadar Pertukaran",
+      "description": "Tukar antara mata wang kripto dan mata wang fiat (CHF, EUR, USD)",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "Kalkulator Hash",
+      "description": "Kira nilai cincang MD5, SHA-1, SHA-256, SHA-512",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "Keuntungan Perlombongan",
+      "description": "Kira keuntungan perlombongan Bitcoin berdasarkan kadar hash dan kos elektrik",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "Pengesah Dompet",
+      "description": "Sahkan alamat dompet Bitcoin, Ethereum dan Litecoin",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "Kalkulator Gadai Janji Swiss",
+      "description": "Kira bayaran gadai janji dengan sokongan CHF/EUR dan kadar pasaran Switzerland",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "Kalkulator Hasil Sewaan",
+      "description": "Kira hasil sewa kasar dan bersih untuk pelaburan hartanah Switzerland",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "Kalkulator Penilaian Harta",
+      "description": "Anggarkan nilai harta Swiss menggunakan kaedah hedonik",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "Kedudukan Matahari",
+      "description": "Kira kedudukan matahari, waktu senja dan fasa cahaya untuk fotografi",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "Bulatan Kekeliruan",
+      "description": "Kira CoC daripada penderia, saiz cetakan dan jarak tontonan",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "DoF lanjutan",
+      "description": "Kedalaman medan dengan CoC boleh laras untuk saiz cetakan dan tontonan",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "Makro DoF",
+      "description": "Kedalaman medan yang tepat untuk fotografi makro",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "Jadual DoF",
+      "description": "Jadual interaktif menunjukkan DoF merentasi apertur dan jarak",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "pembelauan",
+      "description": "Kira apabila kamera anda menjadi terhad difraksi",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "Pembezaan Makro",
+      "description": "Kira apertur dan pembelauan berkesan dalam fotografi makro",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "Tukar BPM kepada Hz, panjang bar dan tempoh nota",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "Saiz Fail Video",
+      "description": "Anggarkan saiz fail video daripada resolusi dan tempoh",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "Saiz Fail Audio",
+      "description": "Anggarkan saiz fail audio daripada tempoh dan format",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "Rujukan Kadar Bit Biasa",
+      "description": "Panduan rujukan untuk ProRes, DNxHD, DCP dan kadar bit MPEG",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "Saiz Fail DCP",
+      "description": "Kira saiz fail Pakej Pawagam Digital",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "Kaki-Lambert",
+      "description": "Kira kecerahan skrin untuk unjuran pawagam",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "Saiz Skrin",
+      "description": "Kira dimensi skrin daripada pepenjuru dan nisbah bidang",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "Kadar Bit Video",
+      "description": "Anggarkan kadar bit video berdasarkan resolusi dan codec",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "Penukar Kadar Bingkai",
+      "description": "Tukar antara kadar bingkai dengan arahan ffmpeg",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "Pengekod URL",
+      "description": "Mengekod dan menyahkod URL dan aksara khas",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "Penjana CSP",
+      "description": "Hasilkan pengepala Dasar Keselamatan Kandungan",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "Penyemak Ubah hala",
+      "description": "Semak rantaian ubah hala HTTP dan kod status",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "Penyemak Rekod SPF",
+      "description": "Analisis rekod SPF untuk pengesahan e-mel",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "Pemeriksa Keselamatan HTTPS",
+      "description": "Semak pengepala keselamatan dan konfigurasi TLS",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "Pengekod HTML",
+      "description": "Mengekod dan menyahkod entiti HTML",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "Peta Aksara HTML",
+      "description": "Semak imbas dan salin entiti aksara HTML",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "Peta Watak Emoji",
+      "description": "Semak imbas dan salin emoji dengan kod",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "Penganalisis Prestasi SEO",
+      "description": "Analisis metrik SEO halaman dan dapatkan cadangan",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
@@ -832,7 +832,7 @@
       "metaDescription": "Perancangan pencen"
     },
     "tip": {
-      "name": "Tip",
+      "name": "Petua",
       "description": "Kira jumlah tip dan bahagikan bil",
       "metaDescription": "Kalkulator tip"
     },
@@ -857,418 +857,418 @@
       "metaDescription": "Analisis impas"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "Margin Keuntungan",
+      "description": "Kira margin keuntungan kasar, operasi dan bersih",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "Diskaun",
+      "description": "Kira diskaun, harga jualan dan penjimatan",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
-      "name": "Currency Converter",
-      "description": "Convert between major world currencies",
+      "name": "Penukar Mata Wang",
+      "description": "Tukar antara mata wang utama dunia",
       "metaDescription": "Convert currencies with live exchange rates"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "Pinjaman Kenderaan",
+      "description": "Kira bayaran pinjaman kereta, faedah, dan jumlah kos",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "Pinjaman Peribadi",
+      "description": "Kira bayaran pinjaman peribadi dengan yuran dan APR",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "Pinjaman Pelajar",
+      "description": "Kira bayaran pinjaman pelajar dengan pilihan tempoh tangguh",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "Ekuiti Rumah",
+      "description": "Kira pinjaman ekuiti rumah atau pembayaran HELOC",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "Bayaran Hutang",
+      "description": "Kira berapa lama untuk membayar hutang dengan bayaran tambahan",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "Kad Kredit",
+      "description": "Kira masa pembayaran kad kredit dan faedah",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
       "name": "Bayaran Muka",
-      "description": "Calculate how much to save for a down payment",
+      "description": "Kira berapa banyak yang perlu disimpan untuk bayaran muka",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "Kira simpanan persaraan dengan padanan majikan",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Bandingkan akaun persaraan Tradisional vs Roth IRA",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
       "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "description": "Kira harga bon, hasil dan pulangan",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "Anuiti",
+      "description": "Kira bayaran anuiti dan pendapatan persaraan",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "Badan Lemak",
+      "description": "Kira peratusan lemak badan menggunakan kaedah US Navy",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "Jisim Badan Kurus",
+      "description": "Kira jisim badan tanpa lemak menggunakan pelbagai formula",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "Kawasan Permukaan Badan",
+      "description": "Kira BSA menggunakan pelbagai formula perubatan",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "Berat Ideal",
+      "description": "Kira berat badan ideal menggunakan pelbagai formula",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
       "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "description": "Kira Kadar Metabolik Basal untuk perancangan kalori",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "Kira Jumlah Perbelanjaan Tenaga Harian",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "Kalori",
+      "description": "Kira keperluan kalori harian untuk matlamat berat badan",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "Kalori Terbakar",
+      "description": "Kira kalori yang dibakar semasa pelbagai aktiviti",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "Kadar Jantung Sasaran",
+      "description": "Kira zon kadar denyutan jantung sasaran untuk bersenam",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "Satu Rep Maks",
+      "description": "Kira maks satu ulangan anda daripada lif submaksimum",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "laju",
+      "description": "Kira kadar larian, kelajuan dan masa perlumbaan",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "Makro",
+      "description": "Kira sasaran makronutrien harian",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
       "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "description": "Kira keperluan protein harian",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "Karbohidrat",
+      "description": "Kira keperluan karbohidrat harian",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "Pengambilan Lemak",
+      "description": "Kira keperluan pengambilan lemak harian",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "Pengambilan Air",
+      "description": "Kira keperluan pengambilan air harian",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "Jenis Badan",
+      "description": "Tentukan jenis badan anda (ectomorph, mesomorph, endomorph)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "Berat Badan Sihat",
+      "description": "Kira julat berat badan anda berdasarkan ketinggian",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "Lemak Badan Tentera",
+      "description": "Kira lemak badan menggunakan piawaian Tentera AS",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
       "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "description": "Kira kandungan alkohol dalam darah",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
       "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "description": "Kira kadar penapisan glomerular untuk fungsi buah pinggang",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "tidur",
+      "description": "Kira masa tidur dan bangun yang optimum",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "Tarikh Akhir",
+      "description": "Kira tarikh matang kehamilan dan peristiwa penting",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "Ovulasi",
+      "description": "Kira tarikh ovulasi dan tingkap subur",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "Tempoh",
+      "description": "Jejaki kitaran haid dan ramalkan haid seterusnya",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "Pertambahan Berat Badan Kehamilan",
+      "description": "Kira pertambahan berat badan yang disyorkan semasa mengandung",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
       "name": "Asas",
-      "description": "Perform arithmetic calculations with expression support",
+      "description": "Lakukan pengiraan aritmetik dengan sokongan ungkapan",
       "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "Pecahan",
+      "description": "Tambah, tolak, darab, bahagi dan mudahkan pecahan",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
       "name": "Peratusan",
-      "description": "Calculate percentages, percent change, and percent difference",
+      "description": "Kira peratusan, peratus perubahan dan peratus perbezaan",
       "metaDescription": "Calculate percentages, find percent change, and percent difference"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "Ralat Peratus",
+      "description": "Kira peratus ralat antara nilai eksperimen dan sebenar",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "Membundarkan",
+      "description": "Nombor bulat menggunakan kaedah dan ketepatan yang berbeza",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "Purata",
+      "description": "Kira min, median, mod dan purata lain",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "Bahagian Panjang",
+      "description": "Lakukan pembahagian panjang dengan penyelesaian langkah demi langkah",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "Eksponen",
+      "description": "Kira kuasa dan ungkapan eksponen",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "akar",
+      "description": "Hitung punca kuasa dua, punca kubus, dan punca ke-n",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "Logaritma",
+      "description": "Kira logaritma dengan sebarang asas",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "Formula Kuadratik",
+      "description": "Selesaikan persamaan kuadratik dan cari punca",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "Faktor",
+      "description": "Cari semua faktor bagi suatu nombor",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "Kira Pembahagi Sepunya Terbesar bagi berbilang nombor",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "Kira Gandaan Sepunya Terkecil bagi berbilang nombor",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
       "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "description": "Kira GCD dan LCM bagi berbilang nombor",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "Pemfaktoran Perdana",
+      "description": "Cari faktor perdana dan pembahagi sebarang nombor",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "Segi tiga",
+      "description": "Kira sifat segi tiga daripada sisi dan sudut",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "Segitiga Kanan",
+      "description": "Kira sisi dan sudut segi tiga tepat",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "Teorem Pythagoras",
+      "description": "Kira sisi yang hilang menggunakan teorem Pythagoras",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "Bulatan",
+      "description": "Kira sifat bulatan daripada jejari, diameter atau lilitan",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
-      "name": "Area",
-      "description": "Calculate area of various shapes",
+      "name": "Kawasan",
+      "description": "Kira luas pelbagai bentuk",
       "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "Kawasan Permukaan",
+      "description": "Kira luas permukaan bentuk 3D",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "Kelantangan",
+      "description": "Kira isipadu bentuk 3D",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "Momen Kalkulator Inersia",
+      "description": "Kira momen kedua luas untuk pelbagai keratan rentas",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "Kalkulator Pesongan Rasuk",
+      "description": "Kira pesongan rasuk, ricih dan momen lentur dengan gambar rajah",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "Kalkulator Tekanan-Tekanan",
+      "description": "Kira tegasan, terikan, dan modulus Young dengan pangkalan data bahan",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "Kalkulator Lengkok Lajur",
+      "description": "Kira beban kritikal Euler, beban dibenarkan AISC dan nisbah kelangsingan untuk lajur",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "Kalkulator Aliran Paip",
+      "description": "Kira kejatuhan tekanan, nombor Reynolds, dan faktor geseran untuk aliran paip",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "Penukar Unit Kejuruteraan",
+      "description": "Tukar antara unit kejuruteraan: daya, tekanan, tegasan, tork dan banyak lagi",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "Kalkulator Berat Molekul",
+      "description": "Kira jisim molar dan komposisi daripada formula kimia",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "Kalkulator Molariti",
+      "description": "Kira kepekatan larutan daripada jisim, mol, dan isipadu",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "Kalkulator Pencairan",
+      "description": "Kira parameter pencairan menggunakan formula M₁V₁ = M₂V₂",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "Kalkulator Stoikiometri",
+      "description": "Kira menghadkan bahan tindak balas dan hasil teori daripada persamaan kimia",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "Kalkulator pH",
+      "description": "Kira kepekatan pH, pOH dan ion untuk asid, bes dan penimbal",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "Jadual Berkala",
+      "description": "Jadual berkala interaktif dengan sifat unsur dan carian",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
-      "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "name": "Kalkulator Storan VM",
+      "description": "Kira keperluan kapasiti storan kluster vSphere ESX",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kalkulator Kapasiti Kubernetes",
+      "description": "Kira keperluan nod kluster Kubernetes untuk beban kerja anda",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "Kalkulator Maya Pelayan",
+      "description": "Kira keperluan hos ESX untuk beban kerja VM",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "Kalkulator Pelesenan VMware",
+      "description": "Kira kos pelesenan VMware VCF/VVF",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "Kalkulator Kos Maya",
+      "description": "Kira jumlah kos pemilikan untuk infrastruktur virtualisasi",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Kalkulator Penyatuan Hiper-V",
+      "description": "Kira keperluan hos Hyper-V dengan pelesenan HA dan Windows",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
-      "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "name": "Kalkulator Pelesenan Pelayan Windows",
+      "description": "Bandingkan Datacenter vs kos pelesenan Standard",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "Kalkulator Perbandingan Hypervisor",
+      "description": "Bandingkan platform VMware, Hyper-V, Proxmox dan XCP-ng",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1326,133 +1326,133 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "Cerun",
+      "description": "Kira kecerunan, persamaan dan sudut garis",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "Sisihan Piawai",
+      "description": "Kira sisihan piawai dan varians",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "Perangkaan",
+      "description": "Kira statistik komprehensif untuk set data",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "Kebarangkalian",
+      "description": "Kira kebarangkalian kejadian dan gabungan",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "Saiz Sampel",
+      "description": "Kira saiz sampel yang diperlukan untuk tinjauan dan kajian",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Skor Z",
+      "description": "Kira z-skor dan kebarangkalian taburan normal",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P-Nilai",
+      "description": "Kira nilai-p untuk ujian hipotesis statistik",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "Selang Keyakinan",
+      "description": "Kira selang keyakinan untuk min dan perkadaran",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "Permutasi & Gabungan",
+      "description": "Kira pilih atur dan gabungan dengan dan tanpa pengulangan",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
       "name": "Nisbah",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "description": "Kira dan mudahkan nisbah, cari nisbah setara",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "binari",
+      "description": "Menukar dan melaksanakan operasi dalam binari",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "Heksadesimal",
+      "description": "Menukar dan mengira dalam perenambelasan",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "Notasi Saintifik",
+      "description": "Tukar kepada/daripada tatatanda saintifik dan lakukan operasi",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "Nombor Besar",
+      "description": "Lakukan aritmetik pada integer besar sewenang-wenangnya",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "Urutan Nombor",
+      "description": "Menganalisis dan menjana jujukan aritmetik, geometri dan Fibonacci",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "Matriks",
+      "description": "Lakukan operasi matriks: tambah, darab, transpos, penentu",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "Separuh Hayat",
+      "description": "Kira pereputan radioaktif dan baki kuantiti",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "Jarak",
+      "description": "Kira jarak antara titik dalam 2D, 3D dan di Bumi",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "Penjana Nombor Rawak",
+      "description": "Hasilkan nombor rawak dengan pelbagai taburan",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
       "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "description": "Kira daya pemprosesan TCP teori menggunakan formula Mathis",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "Produk Kelewatan Lebar Jalur",
+      "description": "Kira BDP dan saiz penimbal TCP optimum",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "Kalkulator Kredit BB",
+      "description": "Kira kredit BB Saluran Serat untuk pautan ISL berdasarkan kelajuan dan jarak",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "Penukar Latensi",
+      "description": "Tukar antara unit masa ping (saat, milisaat, mikrosaat, nanosaat)",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "Kalkulator Kos Makanan",
+      "description": "Kira jumlah kos resipi dan kos setiap hidangan daripada harga bahan",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "Pengukur Resipi",
+      "description": "Skala ramuan resipi dengan pelarasan pintar untuk garam, rempah ratus dan agen penaik",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "Kalkulator Pemakanan",
+      "description": "Kira kalori, makro dan fakta pemakanan daripada makanan terpilih",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
@@ -1471,13 +1471,13 @@
       "metaDescription": "Kalkulator saiz tayar"
     },
     "maintenance-intervals": {
-      "name": "Maintenance Intervals Calculator",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "name": "Kalkulator Selang Penyelenggaraan",
+      "description": "Jejaki jadual servis kenderaan dan hitung tarikh akhir seterusnya dengan peringatan MFK Switzerland",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
-      "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "name": "Penukar Unit",
+      "description": "Menukar antara unit panjang, jisim, suhu, luas, isipadu, kelajuan, masa, data, tenaga, kuasa dan tekanan.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Kategori",
       "value": "Nilai",
@@ -1486,8 +1486,8 @@
       "swap": "Tukar"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "Tetapkan Kalkulator",
+      "description": "Lakukan operasi set: kesatuan, persilangan, perbezaan, perbezaan simetri, hasil darab kartesian dan hubungan set.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1497,8 +1497,8 @@
       "resultSet": "Result set"
     },
     "programmer-calculator": {
-      "name": "Programmer Calculator",
-      "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
+      "name": "Kalkulator Pengaturcara",
+      "description": "Tukar antara perpuluhan, perenambelasan, perlapanan dan perduaan dan gunakan operasi bitwise dan anjakan.",
       "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
       "valueA": "Value A",
       "valueB": "Value B",
@@ -1511,8 +1511,8 @@
       "reprB": "B representations"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "Perancang Pembayaran Hutang",
+      "description": "Bandingkan bola salji dan strategi pembayaran hutang salji dan lihat yang menjelaskan hutang anda dengan lebih cepat.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1526,8 +1526,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "Kalkulator Cukai Pendapatan",
+      "description": "Kira cukai pendapatan progresif dengan pratetap atau kurungan cukai tersuai anda sendiri.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3127,7 +3127,7 @@
           "rhombusFormula": "Rhombus Formula",
           "rhombusResult": "Rhombus Result"
         },
-        "name": "Area"
+        "name": "Kawasan"
       },
       "perimeter": "Perimeter",
       "radius": "Radius",
@@ -3173,7 +3173,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "Kelantangan"
       },
       "surfaceArea": {
         "steps": {
@@ -3218,7 +3218,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "Kawasan Permukaan"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3239,7 +3239,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "Cerun"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3285,7 +3285,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "Jarak"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3311,7 +3311,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "Kebarangkalian"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3371,7 +3371,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "Notasi Saintifik"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3417,7 +3417,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "Saiz Sampel"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3442,7 +3442,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "Selang Keyakinan"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3469,7 +3469,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Skor Z"
       },
       "pValue": {
         "steps": {
@@ -3491,7 +3491,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P-Nilai"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3551,7 +3551,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "Separuh Hayat"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3586,7 +3586,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "Nombor Besar"
       },
       "calculate": "Kira",
       "every": "Every",
@@ -3630,7 +3630,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "Matriks"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3671,7 +3671,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "Urutan Nombor"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3827,7 +3827,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "Pecahan"
       },
       "hex": {
         "steps": {
@@ -5739,7 +5739,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "Produk Kelewatan Lebar Jalur"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",

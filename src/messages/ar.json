@@ -1083,7 +1083,7 @@
     },
     "average-calculator": {
       "name": "متوسط",
-      "description": "حساب المتوسط ​​والوسيط والوضع والمعدلات الأخرى",
+      "description": "حساب المتوسط والوسيط والوضع والمعدلات الأخرى",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {

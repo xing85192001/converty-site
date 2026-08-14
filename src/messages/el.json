@@ -492,7 +492,7 @@
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
-      "name": "Time Duration",
+      "name": "Χρονική Διάρκεια",
       "description": "Υπολογίστε τη διάρκεια μεταξύ δύο ημερομηνιών και ωρών",
       "metaDescription": "Calculate the exact duration between two dates and times"
     },
@@ -547,7 +547,7 @@
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
+      "name": "Διεύθυνση IP",
       "description": "Ταξινόμηση διευθύνσεων IP κατά κλάση (A-E) και αναγνώριση δημόσιας/ιδιωτικής κατάστασης",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
@@ -908,7 +908,7 @@
     },
     "retirement-401k": {
       "name": "401 (k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "Υπολογίστε τις συνταξιοδοτικές αποταμιεύσεις με αντιστοίχιση εργοδότη",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
@@ -938,7 +938,7 @@
     },
     "body-surface-area": {
       "name": "Περιοχή επιφάνειας σώματος",
-      "description": "Calculate BSA using multiple medical formulas",
+      "description": "Υπολογίστε το BSA χρησιμοποιώντας πολλαπλούς ιατρικούς τύπους",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
@@ -1018,7 +1018,7 @@
     },
     "army-body-fat": {
       "name": "Σωματικό Λίπος Στρατού",
-      "description": "Calculate body fat using US Army standards",
+      "description": "Υπολογίστε το σωματικό λίπος χρησιμοποιώντας τα πρότυπα του αμερικανικού στρατού",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
@@ -1476,7 +1476,7 @@
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
-      "name": "Unit Converter",
+      "name": "Μετατροπέας μονάδων",
       "description": "Μετατροπή μεταξύ μονάδων μήκους, μάζας, θερμοκρασίας, περιοχής, όγκου, ταχύτητας, χρόνου, δεδομένων, ενέργειας, ισχύος και πίεσης.",
       "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
       "category": "Category",

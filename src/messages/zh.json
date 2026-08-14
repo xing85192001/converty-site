@@ -580,7 +580,7 @@
       "metaDescription": "计算摄影的景深"
     },
     "dpi": {
-      "name": "DPI",
+      "name": "深度PI",
       "description": "从打印尺寸和DPI计算百万像素",
       "metaDescription": "计算打印的DPI和分辨率"
     },

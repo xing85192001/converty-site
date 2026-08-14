@@ -375,17 +375,17 @@
   "converter": {
     "bmi": {
       "name": "BMI",
-      "description": "Calculate your Body Mass Index and health category",
+      "description": "체질량 지수와 건강 카테고리를 계산하세요",
       "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
     },
     "corpulence": {
-      "name": "Corpulence",
-      "description": "Calculate your Corpulence Index (Ponderal Index)",
+      "name": "비만",
+      "description": "비만 지수(Ponderal Index) 계산",
       "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
     },
     "cpu-comparison-calculator": {
-      "name": "CPU Comparison",
-      "description": "Compare up to 4 CPUs by SPECint2017 score, performance-per-core, and performance-per-watt",
+      "name": "CPU 비교",
+      "description": "SPECint2017 점수, 코어당 성능, 와트당 성능을 기준으로 최대 4개의 CPU 비교",
       "metaDescription": "Free CPU comparison calculator. Compare Intel Xeon, AMD EPYC, and Ampere Altra CPUs by SPECint2017 benchmark scores, performance per core, and performance per watt.",
       "filterPanel": "Filters",
       "vendorFilter": "Vendor",
@@ -422,8 +422,8 @@
       "sizingRatio": "Sizing Ratio"
     },
     "server-refresh-calculator": {
-      "name": "Server Refresh",
-      "description": "Plan a server fleet refresh: calculate how many new servers match your current fleet performance",
+      "name": "서버 새로고침",
+      "description": "서버 플릿 새로 고침 계획: 현재 플릿 성능과 일치하는 새 서버 수 계산",
       "metaDescription": "Free server refresh calculator. Model a server fleet migration — calculate minimum new server count, headroom buffer, chassis constraints, and power budget impact.",
       "oldFleetTitle": "Old Fleet Configuration",
       "newFleetTitle": "Target New CPU",
@@ -473,23 +473,23 @@
       "totalSpecint": "Total SPECint"
     },
     "age": {
-      "name": "Age",
-      "description": "Calculate exact age from birthdate in years, months, and days",
+      "name": "나이",
+      "description": "생년월일부터 정확한 나이를 연, 월, 일 단위로 계산합니다.",
       "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
     },
     "date": {
-      "name": "Date",
-      "description": "Add or subtract days, weeks, months, and years from a date",
+      "name": "날짜",
+      "description": "날짜에서 일, 주, 월, 연도를 더하거나 뺍니다.",
       "metaDescription": "Add or subtract time periods from any date"
     },
     "time": {
-      "name": "Time",
-      "description": "Add or subtract hours, minutes, and seconds",
+      "name": "시간",
+      "description": "시간, 분, 초를 더하거나 뺍니다.",
       "metaDescription": "Perform time calculations with hours, minutes, and seconds"
     },
     "hours": {
-      "name": "Hours",
-      "description": "Calculate hours between two times or dates",
+      "name": "시간",
+      "description": "두 시간 또는 날짜 사이의 시간 계산",
       "metaDescription": "Calculate the number of hours between two times or dates"
     },
     "time-duration": {
@@ -498,18 +498,18 @@
       "metaDescription": "시간 기간 계산기"
     },
     "time-zone": {
-      "name": "Time Zone",
-      "description": "Convert times between different time zones",
+      "name": "시간대",
+      "description": "서로 다른 시간대 간의 시간 변환",
       "metaDescription": "Convert times across different time zones worldwide"
     },
     "day-counter": {
-      "name": "Day Counter",
-      "description": "Count days between dates or until a future date",
+      "name": "데이 카운터",
+      "description": "날짜 사이 또는 미래 날짜까지의 일수 계산",
       "metaDescription": "Count the days between two dates or until an upcoming event"
     },
     "day-of-week": {
-      "name": "Day of the Week",
-      "description": "Find what day of the week any date falls on",
+      "name": "요일",
+      "description": "특정 날짜가 어떤 요일에 해당하는지 알아보세요.",
       "metaDescription": "Find out what day of the week any date falls on"
     },
     "duration-converter": {
@@ -518,298 +518,298 @@
       "metaDescription": "시간 단위 변환 도구"
     },
     "rgb": {
-      "name": "RGB Converter",
-      "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
+      "name": "RGB 변환기",
+      "description": "RGB, HEX, HSL 및 CMYK 색상 형식 간 변환",
       "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
     },
     "data-size": {
-      "name": "Data Size",
-      "description": "Convert between bytes, KB, MB, GB, TB and more",
+      "name": "데이터 크기",
+      "description": "바이트, KB, MB, GB, TB 등 간 변환",
       "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more"
     },
     "bandwidth": {
-      "name": "Bandwidth Converter",
-      "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
+      "name": "대역폭 변환기",
+      "description": "Mbps를 KB/s, GB/일, TB/주 등으로 변환",
       "metaDescription": "Convert bandwidth between different units"
     },
     "download-calculator": {
-      "name": "Download",
-      "description": "Calculate download time from bandwidth and file size",
+      "name": "다운로드",
+      "description": "대역폭과 파일 크기로 다운로드 시간 계산",
       "metaDescription": "Calculate how long a file download will take"
     },
     "subnet-calculator": {
-      "name": "Visual Subnet",
-      "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
+      "name": "시각적 서브넷",
+      "description": "CIDR 표기법으로 IPv4 및 IPv6 서브넷 세부정보 계산",
       "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
     },
     "cidr-range": {
-      "name": "CIDR Range",
-      "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
+      "name": "CIDR 범위",
+      "description": "CIDR 표기법으로 IP 범위를 계산하고 IP가 범위 내에 있는지 확인합니다.",
       "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6."
     },
     "ip-calculator": {
-      "name": "IP Address",
-      "description": "Classify IP addresses by class (A-E) and identify public/private status",
+      "name": "IP 주소",
+      "description": "IP 주소를 클래스(A~E)별로 분류하고 공개/비공개 상태를 식별합니다.",
       "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format."
     },
     "throughput-calculator": {
-      "name": "Throughput",
-      "description": "Calculate network throughput from data transferred and time",
+      "name": "처리량",
+      "description": "전송된 데이터와 시간으로부터 네트워크 처리량을 계산합니다.",
       "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons."
     },
     "speed": {
-      "name": "Speed Converter",
-      "description": "Convert between m/s, km/h, mph, knots, and more",
+      "name": "속도 변환기",
+      "description": "m/s, km/h, mph, 노트 등 간 변환",
       "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
     },
     "aspect-ratio": {
-      "name": "Aspect Ratio",
-      "description": "Calculate aspect ratios from width and height",
+      "name": "종횡비",
+      "description": "너비와 높이에서 종횡비 계산",
       "metaDescription": "Calculate and convert aspect ratios for images and video"
     },
     "aspect-fit": {
-      "name": "Aspect Fit",
-      "description": "Fit an image on a screen with letterboxing",
+      "name": "가로세로 맞춤",
+      "description": "레터박스를 사용하여 화면에 이미지 맞추기",
       "metaDescription": "Calculate letterboxing and pillarboxing for image fitting"
     },
     "composition": {
-      "name": "Composition",
-      "description": "Calculate field of view from focal length and distance",
+      "name": "구성",
+      "description": "초점 거리와 거리로부터 시야 계산",
       "metaDescription": "Calculate photographic field of view and composition"
     },
     "depth-of-field": {
-      "name": "Depth of Field",
-      "description": "Calculate DoF from aperture, focal length, and distance",
+      "name": "피사계 심도",
+      "description": "조리개, 초점 거리 및 거리에서 DoF를 계산합니다.",
       "metaDescription": "Calculate depth of field for photography"
     },
     "dpi": {
       "name": "DPI",
-      "description": "Calculate megapixels from print size and DPI",
+      "description": "인쇄 크기 및 DPI에서 메가픽셀 계산",
       "metaDescription": "Calculate DPI and resolution for printing"
     },
     "image-filesize": {
-      "name": "Image Filesize",
-      "description": "Estimate image file size for JPEG, PNG, RAW formats",
+      "name": "이미지 파일 크기",
+      "description": "JPEG, PNG, RAW 형식의 이미지 파일 크기 추정",
       "metaDescription": "Estimate image file sizes for different formats"
     },
     "light-ev": {
-      "name": "Light EV",
-      "description": "Calculate Exposure Value from camera settings",
+      "name": "가벼운 EV",
+      "description": "카메라 설정에서 노출 값 계산",
       "metaDescription": "Calculate exposure value from camera settings"
     },
     "megapixels": {
-      "name": "Megapixel",
-      "description": "Calculate megapixels from width and height",
+      "name": "메가픽셀",
+      "description": "너비와 높이로 메가픽셀 계산",
       "metaDescription": "Calculate megapixels from image dimensions"
     },
     "megapixel-aspects": {
-      "name": "Megapixel Aspects",
-      "description": "View megapixels in different aspect ratios",
+      "name": "메가픽셀 측면",
+      "description": "다양한 종횡비로 메가픽셀 보기",
       "metaDescription": "View megapixel counts across different aspect ratios"
     },
     "portrait-distance": {
-      "name": "Portrait Distance",
-      "description": "Calculate ideal shooting distance for portraits",
+      "name": "인물 거리",
+      "description": "인물 사진에 이상적인 촬영 거리 계산",
       "metaDescription": "Calculate the ideal distance for portrait photography"
     },
     "star-trails": {
-      "name": "Star Trails",
-      "description": "Calculate exposure time for star trail rotation",
+      "name": "스타 트레일",
+      "description": "별궤적 회전에 대한 노출 시간 계산",
       "metaDescription": "Calculate exposure times for star trail photography"
     },
     "spot-stars": {
-      "name": "Spot Stars",
-      "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
+      "name": "스팟 스타",
+      "description": "별 추적을 방지하기 위한 최대 노출 계산(NPF 규칙)",
       "metaDescription": "Calculate maximum exposure time for sharp stars"
     },
     "time-lapse": {
-      "name": "Time Lapse",
-      "description": "Calculate interval, clip length, and memory for time lapse",
+      "name": "시간 경과",
+      "description": "시간 경과에 대한 간격, 클립 길이 및 메모리를 계산합니다.",
       "metaDescription": "Plan your time lapse photography projects"
     },
     "focal-equivalent": {
-      "name": "Focal Length Equivalent",
-      "description": "Match settings between different sensor sizes",
+      "name": "초점 거리 등가",
+      "description": "다양한 센서 크기 간의 설정 일치",
       "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
     },
     "hyperfocal": {
-      "name": "Hyperfocal Distance",
-      "description": "Calculate hyperfocal distance for maximum depth of field",
+      "name": "과초점 거리",
+      "description": "최대 심도에 대한 초초점 거리 계산",
       "metaDescription": "Calculate hyperfocal distance for landscape photography"
     },
     "nd-filter": {
-      "name": "ND Filter",
-      "description": "Calculate exposure time with ND filters",
+      "name": "ND 필터",
+      "description": "ND 필터로 노출 시간 계산",
       "metaDescription": "Calculate exposure times with neutral density filters"
     },
     "golden-hour": {
-      "name": "Golden Hour Guide",
-      "description": "Calculate golden hour times based on your location",
+      "name": "골든아워 가이드",
+      "description": "위치를 기준으로 골든 아워 시간을 계산하세요.",
       "metaDescription": "Find golden hour and blue hour times for your location"
     },
     "cooking-units": {
-      "name": "Cooking Units",
-      "description": "Convert between metric and imperial cooking measurements with ingredient densities",
+      "name": "요리 단위",
+      "description": "재료 밀도를 사용하여 미터식 요리 측정값과 영국식 요리 측정값 간 변환",
       "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
     },
     "exchange-rate": {
-      "name": "Exchange Rate",
-      "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
+      "name": "환율",
+      "description": "암호화폐와 법정화폐(CHF, EUR, USD) 간 변환",
       "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
     },
     "hash-calculator": {
-      "name": "Hash Calculator",
-      "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
+      "name": "해시 계산기",
+      "description": "MD5, SHA-1, SHA-256, SHA-512 해시 값 계산",
       "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
     },
     "mining-calculator": {
-      "name": "Mining Profitability",
-      "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
+      "name": "채굴 수익성",
+      "description": "해시율과 전기 비용을 기준으로 비트코인 채굴 수익성을 계산합니다.",
       "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
     },
     "wallet-validator": {
-      "name": "Wallet Validator",
-      "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
+      "name": "지갑 유효성 검사기",
+      "description": "비트코인, 이더리움, 라이트코인 지갑 주소 확인",
       "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
     },
     "mortgage-swiss": {
-      "name": "Swiss Mortgage Calculator",
-      "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
+      "name": "스위스 모기지 계산기",
+      "description": "CHF/EUR 지원 및 스위스 시장 금리로 모기지 지불금 계산",
       "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
     },
     "rental-yield": {
-      "name": "Rental Yield Calculator",
-      "description": "Calculate gross and net rental yield for Swiss property investments",
+      "name": "임대수익률 계산기",
+      "description": "스위스 부동산 투자에 대한 총 및 순 임대 수익률 계산",
       "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
     },
     "property-valuation": {
-      "name": "Property Valuation Calculator",
-      "description": "Estimate Swiss property values using the hedonic method",
+      "name": "부동산 평가 계산기",
+      "description": "헤도닉 방법을 사용하여 스위스 부동산 가치 추정",
       "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
     },
     "sun-position": {
-      "name": "Sun Position",
-      "description": "Calculate sun position, twilight times, and light phases for photography",
+      "name": "태양 위치",
+      "description": "사진 촬영을 위한 태양 위치, 황혼 시간 및 빛의 단계를 계산합니다.",
       "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning"
     },
     "circle-of-confusion": {
-      "name": "Circle of Confusion",
-      "description": "Calculate CoC from sensor, print size, and viewing distance",
+      "name": "혼란의 원",
+      "description": "센서, 인쇄 크기 및 시청 거리에서 CoC를 계산합니다.",
       "metaDescription": "Calculate circle of confusion for depth of field"
     },
     "advanced-dof": {
-      "name": "Advanced DoF",
-      "description": "Depth of field with adjustable CoC for print size and viewing",
+      "name": "고급 DoF",
+      "description": "인쇄 크기 및 보기에 맞게 조정 가능한 CoC를 갖춘 피사계 심도",
       "metaDescription": "Advanced depth of field calculations"
     },
     "macro-dof": {
-      "name": "Macro DoF",
-      "description": "Accurate depth of field for macro photography",
+      "name": "매크로 DoF",
+      "description": "매크로 사진을 위한 정확한 피사계 심도",
       "metaDescription": "Calculate depth of field for macro photography"
     },
     "dof-table": {
-      "name": "DoF Table",
-      "description": "Interactive table showing DoF across apertures and distances",
+      "name": "DoF 테이블",
+      "description": "조리개와 거리에 따른 DoF를 보여주는 대화형 테이블",
       "metaDescription": "Reference table for depth of field"
     },
     "diffraction": {
-      "name": "Diffraction",
-      "description": "Calculate when your camera becomes diffraction-limited",
+      "name": "회절",
+      "description": "카메라가 회절 제한되는 시점을 계산하세요.",
       "metaDescription": "Calculate diffraction limits for your camera"
     },
     "macro-diffraction": {
-      "name": "Macro Diffraction",
-      "description": "Calculate effective aperture and diffraction in macro photography",
+      "name": "매크로 회절",
+      "description": "매크로 사진의 유효 조리개와 회절을 계산합니다.",
       "metaDescription": "Calculate diffraction effects in macro photography"
     },
     "bpm": {
       "name": "BPM",
-      "description": "Convert BPM to Hz, bar length, and note durations",
+      "description": "BPM을 Hz, 마디 길이, 음표 지속 시간으로 변환",
       "metaDescription": "Convert beats per minute to other musical timing units"
     },
     "video-file-size": {
-      "name": "Video File Size",
-      "description": "Estimate video file size from resolution and duration",
+      "name": "비디오 파일 크기",
+      "description": "해상도와 지속 시간을 통해 비디오 파일 크기 추정",
       "metaDescription": "Estimate video file sizes based on settings"
     },
     "audio-filesize": {
-      "name": "Audio File Size",
-      "description": "Estimate audio file size from duration and format",
+      "name": "오디오 파일 크기",
+      "description": "지속 시간과 형식을 통해 오디오 파일 크기 추정",
       "metaDescription": "Estimate audio file sizes for different formats"
     },
     "common-bitrates": {
-      "name": "Common Bitrates Reference",
-      "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
+      "name": "일반 비트 전송률 참조",
+      "description": "ProRes, DNxHD, DCP 및 MPEG 비트 전송률에 대한 참조 가이드",
       "metaDescription": "Reference guide for video codec bitrates"
     },
     "dcp-filesize": {
-      "name": "DCP File Size",
-      "description": "Calculate Digital Cinema Package file sizes",
+      "name": "DCP 파일 크기",
+      "description": "디지털 시네마 패키지 파일 크기 계산",
       "metaDescription": "Calculate DCP file sizes for cinema distribution"
     },
     "foot-lambert": {
-      "name": "Foot-Lambert",
-      "description": "Calculate screen luminance for cinema projection",
+      "name": "풋 램버트",
+      "description": "영화 프로젝션을 위한 화면 휘도 계산",
       "metaDescription": "Calculate screen brightness for cinema projection"
     },
     "screen-size": {
-      "name": "Screen Size",
-      "description": "Calculate screen dimensions from diagonal and aspect ratio",
+      "name": "화면 크기",
+      "description": "대각선 및 종횡비로 화면 크기 계산",
       "metaDescription": "Calculate screen dimensions from diagonal size"
     },
     "video-bitrate": {
-      "name": "Video Bitrate",
-      "description": "Estimate video bitrate based on resolution and codec",
+      "name": "비디오 비트레이트",
+      "description": "해상도 및 코덱을 기반으로 비디오 비트 전송률 추정",
       "metaDescription": "Calculate optimal video bitrates"
     },
     "frame-rate": {
-      "name": "Frame Rate Converter",
-      "description": "Convert between frame rates with ffmpeg commands",
+      "name": "프레임 속도 변환기",
+      "description": "ffmpeg 명령을 사용하여 프레임 속도 간 변환",
       "metaDescription": "Convert video between frame rates"
     },
     "url-encoder": {
-      "name": "URL Encoder",
-      "description": "Encode and decode URLs and special characters",
+      "name": "URL 인코더",
+      "description": "URL 및 특수 문자 인코딩 및 디코딩",
       "metaDescription": "Encode and decode URLs and URI components"
     },
     "csp": {
-      "name": "CSP Generator",
-      "description": "Generate Content Security Policy headers",
+      "name": "CSP 생성기",
+      "description": "콘텐츠 보안 정책 헤더 생성",
       "metaDescription": "Generate Content Security Policy headers for web security"
     },
     "redirect-check": {
-      "name": "Redirect Checker",
-      "description": "Check HTTP redirect chains and status codes",
+      "name": "리디렉션 검사기",
+      "description": "HTTP 리디렉션 체인 및 상태 코드 확인",
       "metaDescription": "Check URL redirect chains and HTTP status codes"
     },
     "spf-check": {
-      "name": "SPF Record Checker",
-      "description": "Analyze SPF records for email authentication",
+      "name": "SPF 기록 검사기",
+      "description": "이메일 인증을 위한 SPF 레코드 분석",
       "metaDescription": "Analyze SPF records for email security"
     },
     "https-check": {
-      "name": "HTTPS Security Checker",
-      "description": "Check security headers and TLS configuration",
+      "name": "HTTPS 보안 검사기",
+      "description": "보안 헤더 및 TLS 구성 확인",
       "metaDescription": "Check website HTTPS and security headers"
     },
     "html-encoder": {
-      "name": "HTML Encoder",
-      "description": "Encode and decode HTML entities",
+      "name": "HTML 인코더",
+      "description": "HTML 엔터티 인코딩 및 디코딩",
       "metaDescription": "Encode and decode HTML special characters"
     },
     "html-chars": {
-      "name": "HTML Character Map",
-      "description": "Browse and copy HTML character entities",
+      "name": "HTML 문자표",
+      "description": "HTML 문자 엔터티 찾아보기 및 복사",
       "metaDescription": "Reference guide for HTML character entities"
     },
     "emoji-chars": {
-      "name": "Emoji Character Map",
-      "description": "Browse and copy emoji with codes",
+      "name": "이모티콘 문자표",
+      "description": "코드로 이모티콘 탐색 및 복사",
       "metaDescription": "Browse and copy emoji characters"
     },
     "seo-performance": {
-      "name": "SEO Performance Analyzer",
-      "description": "Analyze page SEO metrics and get recommendations",
+      "name": "SEO 성능 분석기",
+      "description": "페이지 SEO 측정항목을 분석하고 추천을 받으세요.",
       "metaDescription": "Analyze SEO performance and get optimization tips"
     },
     "mortgage": {
@@ -858,13 +858,13 @@
       "metaDescription": "손익분기점 분석"
     },
     "profit-margin": {
-      "name": "Profit Margin",
-      "description": "Calculate gross, operating, and net profit margins",
+      "name": "이익률",
+      "description": "총이익률, 영업이익률, 순이익률 계산",
       "metaDescription": "Calculate business profit margins"
     },
     "discount": {
-      "name": "Discount",
-      "description": "Calculate discounts, sale prices, and savings",
+      "name": "할인",
+      "description": "할인, 판매 가격, 절감액 계산",
       "metaDescription": "Calculate discounts and sale prices"
     },
     "currency": {
@@ -873,188 +873,188 @@
       "metaDescription": "통화 변환 도구"
     },
     "auto-loan": {
-      "name": "Auto Loan",
-      "description": "Calculate car loan payments, interest, and total cost",
+      "name": "자동차대출",
+      "description": "자동차 대출 지불금, 이자 및 총 비용을 계산합니다.",
       "metaDescription": "Calculate your auto loan monthly payments and total cost"
     },
     "personal-loan": {
-      "name": "Personal Loan",
-      "description": "Calculate personal loan payments with fees and APR",
+      "name": "개인대출",
+      "description": "수수료 및 APR을 사용하여 개인 대출 지불액 계산",
       "metaDescription": "Calculate personal loan payments including origination fees"
     },
     "student-loan": {
-      "name": "Student Loan",
-      "description": "Calculate student loan payments with grace period options",
+      "name": "학자금대출",
+      "description": "유예 기간 옵션을 사용하여 학자금 대출 상환액 계산",
       "metaDescription": "Calculate student loan payments and repayment schedules"
     },
     "home-equity": {
-      "name": "Home Equity",
-      "description": "Calculate home equity loan or HELOC payments",
+      "name": "주택 자산",
+      "description": "주택 담보 대출 또는 HELOC 지불 계산",
       "metaDescription": "Calculate home equity loan and HELOC payments"
     },
     "debt-payoff": {
-      "name": "Debt Payoff",
-      "description": "Calculate how long to pay off debt with extra payments",
+      "name": "부채 상환",
+      "description": "추가 지불로 부채를 갚는 데 걸리는 시간을 계산하십시오.",
       "metaDescription": "Calculate debt payoff time and savings from extra payments"
     },
     "credit-card": {
-      "name": "Credit Card",
-      "description": "Calculate credit card payoff time and interest",
+      "name": "신용카드",
+      "description": "신용카드 상환 시간 및 이자 계산",
       "metaDescription": "Calculate credit card payoff time and total interest cost"
     },
     "down-payment": {
-      "name": "Down Payment",
-      "description": "Calculate how much to save for a down payment",
+      "name": "계약금",
+      "description": "계약금으로 절약할 금액을 계산하세요.",
       "metaDescription": "Calculate monthly savings needed for your down payment goal"
     },
     "retirement-401k": {
       "name": "401(k)",
-      "description": "Calculate retirement savings with employer matching",
+      "description": "고용주 매칭을 통해 퇴직금 계산",
       "metaDescription": "Calculate 401k retirement savings with employer match and projections"
     },
     "ira-calculator": {
       "name": "IRA",
-      "description": "Compare Traditional vs Roth IRA retirement accounts",
+      "description": "Traditional과 Roth IRA 퇴직 계좌 비교",
       "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
     },
     "bond-calculator": {
-      "name": "Bond",
-      "description": "Calculate bond prices, yields, and returns",
+      "name": "노예",
+      "description": "채권 가격, 수익률, 수익률 계산",
       "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
     },
     "annuity-calculator": {
-      "name": "Annuity",
-      "description": "Calculate annuity payments and retirement income",
+      "name": "연금",
+      "description": "연금 지급액 및 퇴직 소득 계산",
       "metaDescription": "Calculate annuity payments and retirement income projections"
     },
     "body-fat": {
-      "name": "Body Fat",
-      "description": "Calculate body fat percentage using the US Navy method",
+      "name": "체지방",
+      "description": "미 해군 방법을 사용하여 체지방률 계산",
       "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
     },
     "lean-body-mass": {
-      "name": "Lean Body Mass",
-      "description": "Calculate lean body mass using multiple formulas",
+      "name": "제지방량",
+      "description": "여러 공식을 사용하여 제지방량 계산",
       "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
     },
     "body-surface-area": {
-      "name": "Body Surface Area",
-      "description": "Calculate BSA using multiple medical formulas",
+      "name": "신체 표면적",
+      "description": "여러 의학 공식을 사용하여 BSA 계산",
       "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
     },
     "ideal-weight": {
-      "name": "Ideal Weight",
-      "description": "Calculate ideal body weight using multiple formulas",
+      "name": "이상적인 체중",
+      "description": "여러 공식을 사용하여 이상적인 체중 계산",
       "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
     },
     "bmr-calculator": {
-      "name": "BMR",
-      "description": "Calculate Basal Metabolic Rate for calorie planning",
+      "name": "기초대사량",
+      "description": "칼로리 계획을 위한 기초 대사율 계산",
       "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
     },
     "tdee-calculator": {
       "name": "TDEE",
-      "description": "Calculate Total Daily Energy Expenditure",
+      "description": "총 일일 에너지 소비량 계산",
       "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
     },
     "calorie-calculator": {
-      "name": "Calorie",
-      "description": "Calculate daily calorie needs for weight goals",
+      "name": "칼로리",
+      "description": "체중 목표에 대한 일일 칼로리 필요량 계산",
       "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
     },
     "calories-burned": {
-      "name": "Calories Burned",
-      "description": "Calculate calories burned during various activities",
+      "name": "칼로리 소모량",
+      "description": "다양한 활동 중에 소모된 칼로리를 계산하세요.",
       "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
     },
     "target-heart-rate": {
-      "name": "Target Heart Rate",
-      "description": "Calculate target heart rate zones for exercise",
+      "name": "목표 심박수",
+      "description": "운동을 위한 목표 심박수 구간 계산",
       "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
     },
     "one-rep-max": {
-      "name": "One Rep Max",
-      "description": "Calculate your one-rep max from submaximal lifts",
+      "name": "단일 담당자 최대",
+      "description": "최대 이하 리프트에서 1회 최대 횟수 계산",
       "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
     },
     "pace-calculator": {
-      "name": "Pace",
-      "description": "Calculate running pace, speed, and race times",
+      "name": "속도",
+      "description": "달리기 속도, 속도, 경주 시간 계산",
       "metaDescription": "Calculate your running pace, predict race times, and plan your training"
     },
     "macro-calculator": {
-      "name": "Macro",
-      "description": "Calculate daily macronutrient targets",
+      "name": "매크로",
+      "description": "일일 다량 영양소 목표 계산",
       "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
     },
     "protein-calculator": {
-      "name": "Protein",
-      "description": "Calculate daily protein requirements",
+      "name": "단백질",
+      "description": "일일 단백질 요구량 계산",
       "metaDescription": "Calculate your daily protein needs based on your weight and goals"
     },
     "carb-calculator": {
-      "name": "Carbohydrate",
-      "description": "Calculate daily carbohydrate needs",
+      "name": "탄수화물",
+      "description": "일일 탄수화물 필요량 계산",
       "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
     },
     "fat-intake": {
-      "name": "Fat Intake",
-      "description": "Calculate daily fat intake requirements",
+      "name": "지방 섭취",
+      "description": "일일 지방 섭취량 계산",
       "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
     },
     "water-intake": {
-      "name": "Water Intake",
-      "description": "Calculate daily water intake needs",
+      "name": "물 섭취량",
+      "description": "일일 수분 섭취량 계산",
       "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
     },
     "body-type": {
-      "name": "Body Type",
-      "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
+      "name": "체형",
+      "description": "체형 결정(외배엽, 중배엽, 내배엽)",
       "metaDescription": "Discover your body type and get personalized training and nutrition advice"
     },
     "healthy-weight": {
-      "name": "Healthy Weight",
-      "description": "Calculate your healthy weight range based on height",
+      "name": "건강한 체중",
+      "description": "키를 기준으로 건강한 체중 범위를 계산하세요.",
       "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
     },
     "army-body-fat": {
-      "name": "Army Body Fat",
-      "description": "Calculate body fat using US Army standards",
+      "name": "육군 체지방",
+      "description": "미 육군 표준을 사용하여 체지방 계산",
       "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
     },
     "bac-calculator": {
       "name": "BAC",
-      "description": "Calculate blood alcohol content",
+      "description": "혈중 알코올 농도 계산",
       "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
     },
     "gfr-calculator": {
       "name": "GFR",
-      "description": "Calculate glomerular filtration rate for kidney function",
+      "description": "신장 기능에 대한 사구체 여과율 계산",
       "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
     },
     "sleep-calculator": {
-      "name": "Sleep",
-      "description": "Calculate optimal sleep and wake times",
+      "name": "잠",
+      "description": "최적의 수면 및 기상 시간 계산",
       "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
     },
     "due-date": {
-      "name": "Due Date",
-      "description": "Calculate pregnancy due date and milestones",
+      "name": "만기일",
+      "description": "임신 예정일 및 이정표 계산",
       "metaDescription": "Calculate your pregnancy due date and track important milestones"
     },
     "ovulation-calculator": {
-      "name": "Ovulation",
-      "description": "Calculate ovulation date and fertile window",
+      "name": "배란",
+      "description": "배란일과 가임기 계산",
       "metaDescription": "Calculate your ovulation date and most fertile days"
     },
     "period-calculator": {
-      "name": "Period",
-      "description": "Track menstrual cycle and predict next period",
+      "name": "기간",
+      "description": "생리 주기를 추적하고 다음 생리 기간을 예측하세요",
       "metaDescription": "Track your menstrual cycle and predict your next period"
     },
     "pregnancy-weight-gain": {
-      "name": "Pregnancy Weight Gain",
-      "description": "Calculate recommended weight gain during pregnancy",
+      "name": "임신 체중 증가",
+      "description": "임신 중 권장 체중 증가 계산",
       "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
     },
     "basic-calculator": {
@@ -1063,8 +1063,8 @@
       "metaDescription": "무료 온라인 기본 계산기"
     },
     "fraction-calculator": {
-      "name": "Fraction",
-      "description": "Add, subtract, multiply, divide, and simplify fractions",
+      "name": "분수",
+      "description": "분수 더하기, 빼기, 곱하기, 나누기, 단순화하기",
       "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
     },
     "percentage-calculator": {
@@ -1073,88 +1073,88 @@
       "metaDescription": "백분율 계산 도구"
     },
     "percent-error": {
-      "name": "Percent Error",
-      "description": "Calculate percent error between experimental and actual values",
+      "name": "백분율 오류",
+      "description": "실험값과 실제값 사이의 백분율 오차 계산",
       "metaDescription": "Calculate percent error for scientific experiments and measurements"
     },
     "rounding-calculator": {
-      "name": "Rounding",
-      "description": "Round numbers using different methods and precision",
+      "name": "반올림",
+      "description": "다양한 방법과 정밀도를 사용하여 숫자를 반올림합니다.",
       "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
     },
     "average-calculator": {
-      "name": "Average",
-      "description": "Calculate mean, median, mode, and other averages",
+      "name": "평균",
+      "description": "평균, 중앙값, 모드 및 기타 평균 계산",
       "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
     },
     "long-division": {
-      "name": "Long Division",
-      "description": "Perform long division with step-by-step solution",
+      "name": "긴 분할",
+      "description": "단계별 솔루션으로 긴 나눗셈 수행",
       "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
     },
     "exponent-calculator": {
-      "name": "Exponent",
-      "description": "Calculate powers and exponential expressions",
+      "name": "멱지수",
+      "description": "거듭제곱 및 지수 표현식 계산",
       "metaDescription": "Calculate powers, exponents, and exponential expressions"
     },
     "root-calculator": {
-      "name": "Root",
-      "description": "Calculate square roots, cube roots, and nth roots",
+      "name": "뿌리",
+      "description": "제곱근, 세제곱근, n제곱근 계산",
       "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
     },
     "logarithm-calculator": {
-      "name": "Logarithm",
-      "description": "Calculate logarithms with any base",
+      "name": "로그",
+      "description": "임의의 밑수를 사용하여 로그 계산",
       "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
     },
     "quadratic-calculator": {
-      "name": "Quadratic Formula",
-      "description": "Solve quadratic equations and find roots",
+      "name": "이차 공식",
+      "description": "이차방정식을 풀고 근을 찾아보세요",
       "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
     },
     "factor-calculator": {
-      "name": "Factor",
-      "description": "Find all factors of a number",
+      "name": "요인",
+      "description": "숫자의 모든 인수 찾기",
       "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
     },
     "gcd-calculator": {
       "name": "GCD",
-      "description": "Calculate Greatest Common Divisor of multiple numbers",
+      "description": "여러 숫자의 최대 공약수 계산",
       "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
     },
     "lcm-calculator": {
       "name": "LCM",
-      "description": "Calculate Least Common Multiple of multiple numbers",
+      "description": "여러 숫자의 최소 공배수 계산",
       "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
     },
     "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
+      "name": "GCD 및 LCM",
+      "description": "여러 숫자의 GCD 및 LCM 계산",
       "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
     },
     "prime-factorization": {
-      "name": "Prime Factorization",
-      "description": "Find prime factors and divisors of any number",
+      "name": "소인수분해",
+      "description": "모든 수의 소인수와 제수 찾기",
       "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
     },
     "triangle-calculator": {
-      "name": "Triangle",
-      "description": "Calculate triangle properties from sides and angles",
+      "name": "삼각형",
+      "description": "측면과 각도에서 삼각형 속성을 계산합니다.",
       "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
     },
     "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
+      "name": "직각삼각형",
+      "description": "직각 삼각형의 변과 각도 계산",
       "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
     },
     "pythagorean-calculator": {
-      "name": "Pythagorean Theorem",
-      "description": "Calculate missing side using Pythagorean theorem",
+      "name": "피타고라스 정리",
+      "description": "피타고라스 정리를 사용하여 누락된 변 계산",
       "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
     },
     "circle-calculator": {
-      "name": "Circle",
-      "description": "Calculate circle properties from radius, diameter, or circumference",
+      "name": "원",
+      "description": "반지름, 지름 또는 원주에서 원 속성을 계산합니다.",
       "metaDescription": "Calculate circle area, circumference, diameter, and radius"
     },
     "area-calculator": {
@@ -1163,113 +1163,113 @@
       "metaDescription": "면적 계산 도구"
     },
     "surface-area-calculator": {
-      "name": "Surface Area",
-      "description": "Calculate surface area of 3D shapes",
+      "name": "표면적",
+      "description": "3D 도형의 표면적 계산",
       "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
     },
     "volume-calculator": {
-      "name": "Volume",
-      "description": "Calculate volume of 3D shapes",
+      "name": "용량",
+      "description": "3D 모양의 부피 계산",
       "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
     },
     "moment-of-inertia": {
-      "name": "Moment of Inertia Calculator",
-      "description": "Calculate second moment of area for various cross-sections",
+      "name": "관성 모멘트 계산기",
+      "description": "다양한 단면에 대한 면적의 2차 모멘트 계산",
       "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
     },
     "beam-deflection": {
-      "name": "Beam Deflection Calculator",
-      "description": "Calculate beam deflection, shear, and bending moment with diagrams",
+      "name": "빔 편향 계산기",
+      "description": "다이어그램을 사용하여 빔 편향, 전단 및 굽힘 모멘트를 계산합니다.",
       "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
     },
     "stress-strain": {
-      "name": "Stress-Strain Calculator",
-      "description": "Calculate stress, strain, and Young's modulus with material database",
+      "name": "응력-변형 계산기",
+      "description": "재료 데이터베이스를 사용하여 응력, 변형률 및 영률을 계산합니다.",
       "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
     },
     "column-buckling": {
-      "name": "Column Buckling Calculator",
-      "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
+      "name": "기둥 좌굴 계산기",
+      "description": "기둥의 오일러 임계하중, AISC 허용하중, 세장비 계산",
       "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
     },
     "pipe-flow": {
-      "name": "Pipe Flow Calculator",
-      "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
+      "name": "파이프 흐름 계산기",
+      "description": "파이프 흐름에 대한 압력 강하, 레이놀즈 수 및 마찰 계수를 계산합니다.",
       "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
     },
     "engineering-unit-converter": {
-      "name": "Engineering Unit Converter",
-      "description": "Convert between engineering units: force, pressure, stress, torque, and more",
+      "name": "공학 단위 변환기",
+      "description": "공학 단위 간 변환: 힘, 압력, 응력, 토크 등",
       "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
     },
     "molecular-weight": {
-      "name": "Molecular Weight Calculator",
-      "description": "Calculate molar mass and composition from chemical formula",
+      "name": "분자량 계산기",
+      "description": "화학식에서 몰 질량과 조성을 계산합니다.",
       "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
     },
     "molarity": {
-      "name": "Molarity Calculator",
-      "description": "Calculate solution concentration from mass, moles, and volume",
+      "name": "몰농도 계산기",
+      "description": "질량, 몰, 부피로부터 용액 농도를 계산합니다.",
       "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
     },
     "dilution": {
-      "name": "Dilution Calculator",
-      "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
+      "name": "희석 계산기",
+      "description": "M₁V₁ = M₂V₂ 공식을 사용하여 희석 매개변수를 계산합니다.",
       "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
     },
     "stoichiometry": {
-      "name": "Stoichiometry Calculator",
-      "description": "Calculate limiting reactant and theoretical yield from chemical equations",
+      "name": "화학량론 계산기",
+      "description": "화학 반응식으로부터 한계 반응물과 이론적 수율을 계산합니다.",
       "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
     },
     "ph-calculator": {
-      "name": "pH Calculator",
-      "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
+      "name": "pH 계산기",
+      "description": "산, 염기, 완충액의 pH, pOH, 이온 농도 계산",
       "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
     },
     "periodic-table": {
-      "name": "Periodic Table",
-      "description": "Interactive periodic table with element properties and search",
+      "name": "주기율표",
+      "description": "원소 속성 및 검색 기능이 있는 대화형 주기율표",
       "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
     },
     "vm-storage-calculator": {
-      "name": "VM Storage Calculator",
-      "description": "Calculate vSphere ESX cluster storage capacity requirements",
+      "name": "VM 스토리지 계산기",
+      "description": "vSphere ESX 클러스터 스토리지 용량 요구 사항 계산",
       "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
     },
     "k8s-capacity-calculator": {
-      "name": "Kubernetes Capacity Calculator",
-      "description": "Calculate Kubernetes cluster node requirements for your workload",
+      "name": "Kubernetes 용량 계산기",
+      "description": "워크로드에 대한 Kubernetes 클러스터 노드 요구 사항 계산",
       "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
     },
     "server-virtualization-calculator": {
-      "name": "Server Virtualization Calculator",
-      "description": "Calculate ESX host requirements for VM workloads",
+      "name": "서버 가상화 계산기",
+      "description": "VM 워크로드에 대한 ESX 호스트 요구 사항 계산",
       "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
     },
     "vmware-licensing-calculator": {
-      "name": "VMware Licensing Calculator",
-      "description": "Calculate VMware VCF/VVF licensing costs",
+      "name": "VMware 라이센스 계산기",
+      "description": "VMware VCF/VVF 라이센스 비용 계산",
       "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
     },
     "virtualization-cost": {
-      "name": "Virtualization Cost Calculator",
-      "description": "Calculate total cost of ownership for virtualization infrastructure",
+      "name": "가상화 비용 계산기",
+      "description": "가상화 인프라의 총 소유 비용 계산",
       "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
     },
     "hyperv-consolidation": {
-      "name": "Hyper-V Consolidation Calculator",
-      "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
+      "name": "Hyper-V 통합 계산기",
+      "description": "HA 및 Windows 라이선스를 통해 Hyper-V 호스트 요구 사항 계산",
       "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
     },
     "windows-licensing": {
-      "name": "Windows Server Licensing Calculator",
-      "description": "Compare Datacenter vs Standard licensing costs",
+      "name": "Windows Server 라이선스 계산기",
+      "description": "데이터센터와 표준 라이선스 비용 비교",
       "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
     },
     "hypervisor-comparison": {
-      "name": "Hypervisor Comparison Calculator",
-      "description": "Compare VMware, Hyper-V, Proxmox, and XCP-ng platforms",
+      "name": "하이퍼바이저 비교 계산기",
+      "description": "VMware, Hyper-V, Proxmox 및 XCP-ng 플랫폼 비교",
       "metaDescription": "Free hypervisor comparison calculator. Compare VMware vSphere, Microsoft Hyper-V, Proxmox VE, and XCP-ng with TCO analysis, sizing, and feature matrix.",
       "workload": "Workload",
       "vmCount": "Number of VMs",
@@ -1327,133 +1327,133 @@
       "featureComparison": "Feature Comparison"
     },
     "slope-calculator": {
-      "name": "Slope",
-      "description": "Calculate slope, equation, and angle of a line",
+      "name": "경사",
+      "description": "선의 기울기, 방정식 및 각도를 계산합니다.",
       "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
     },
     "standard-deviation": {
-      "name": "Standard Deviation",
-      "description": "Calculate standard deviation and variance",
+      "name": "표준편차",
+      "description": "표준편차와 분산 계산",
       "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
     },
     "statistics-calculator": {
-      "name": "Statistics",
-      "description": "Calculate comprehensive statistics for a data set",
+      "name": "통계",
+      "description": "데이터 세트에 대한 종합적인 통계 계산",
       "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
     },
     "probability-calculator": {
-      "name": "Probability",
-      "description": "Calculate probability of events and combinations",
+      "name": "개연성",
+      "description": "사건과 조합의 확률 계산",
       "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
     },
     "sample-size": {
-      "name": "Sample Size",
-      "description": "Calculate required sample size for surveys and studies",
+      "name": "샘플 크기",
+      "description": "설문조사 및 연구에 필요한 표본 크기 계산",
       "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
     },
     "z-score-calculator": {
-      "name": "Z-Score",
-      "description": "Calculate z-score and normal distribution probabilities",
+      "name": "Z-점수",
+      "description": "z-점수 및 정규 분포 확률 계산",
       "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
     },
     "p-value-calculator": {
-      "name": "P-Value",
-      "description": "Calculate p-values for statistical hypothesis testing",
+      "name": "P-값",
+      "description": "통계적 가설 검정을 위한 p-값 계산",
       "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
     },
     "confidence-interval": {
-      "name": "Confidence Interval",
-      "description": "Calculate confidence intervals for means and proportions",
+      "name": "신뢰구간",
+      "description": "평균 및 비율에 대한 신뢰 구간 계산",
       "metaDescription": "Calculate confidence intervals for population mean and proportion"
     },
     "permutation-combination": {
-      "name": "Permutation & Combination",
-      "description": "Calculate permutations and combinations with and without repetition",
+      "name": "순열 및 조합",
+      "description": "반복이 있거나 없는 순열과 조합 계산",
       "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
     },
     "ratio-calculator": {
-      "name": "Ratio",
-      "description": "Calculate and simplify ratios, find equivalent ratios",
+      "name": "비율",
+      "description": "비율을 계산 및 단순화하고 등가 비율을 찾습니다.",
       "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
     },
     "binary-calculator": {
-      "name": "Binary",
-      "description": "Convert and perform operations in binary",
+      "name": "바이너리",
+      "description": "바이너리로 작업 변환 및 수행",
       "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
     },
     "hex-calculator": {
-      "name": "Hexadecimal",
-      "description": "Convert and calculate in hexadecimal",
+      "name": "16진수",
+      "description": "16진수로 변환 및 계산",
       "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
     },
     "scientific-notation": {
-      "name": "Scientific Notation",
-      "description": "Convert to/from scientific notation and perform operations",
+      "name": "과학적 표기법",
+      "description": "과학적 표기법으로/에서 변환하고 작업을 수행합니다.",
       "metaDescription": "Convert numbers to scientific notation and perform operations"
     },
     "big-number": {
-      "name": "Big Number",
-      "description": "Perform arithmetic on arbitrarily large integers",
+      "name": "큰 숫자",
+      "description": "임의로 큰 정수에 대한 산술 수행",
       "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
     },
     "number-sequence": {
-      "name": "Number Sequence",
-      "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
+      "name": "번호 순서",
+      "description": "산술, 기하학, 피보나치 수열 분석 및 생성",
       "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
     },
     "matrix-calculator": {
-      "name": "Matrix",
-      "description": "Perform matrix operations: add, multiply, transpose, determinant",
+      "name": "행렬",
+      "description": "행렬 연산 수행: 더하기, 곱하기, 전치, 행렬식",
       "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
     },
     "half-life-calculator": {
-      "name": "Half-Life",
-      "description": "Calculate radioactive decay and remaining quantity",
+      "name": "반감기",
+      "description": "방사성 붕괴 및 잔존량 계산",
       "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
     },
     "distance-calculator": {
-      "name": "Distance",
-      "description": "Calculate distances between points in 2D, 3D, and on Earth",
+      "name": "거리",
+      "description": "2D, 3D 및 지구상의 점 사이의 거리를 계산합니다.",
       "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
     },
     "random-number": {
-      "name": "Random Number Generator",
-      "description": "Generate random numbers with various distributions",
+      "name": "난수 생성기",
+      "description": "다양한 분포로 난수 생성",
       "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
     },
     "tcp-throughput": {
-      "name": "TCP Throughput",
-      "description": "Calculate theoretical TCP throughput using the Mathis formula",
+      "name": "TCP 처리량",
+      "description": "Mathis 공식을 사용하여 이론적 TCP 처리량 계산",
       "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula"
     },
     "bandwidth-delay-product": {
-      "name": "Bandwidth-Delay Product",
-      "description": "Calculate BDP and optimal TCP buffer size",
+      "name": "대역폭 지연 제품",
+      "description": "BDP 및 최적의 TCP 버퍼 크기 계산",
       "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance"
     },
     "bb-credit-calculator": {
-      "name": "BB Credit Calculator",
-      "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
+      "name": "BB 크레딧 계산기",
+      "description": "속도와 거리를 기준으로 ISL 링크에 대한 파이버 채널 BB 크레딧을 계산합니다.",
       "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance"
     },
     "latency-converter": {
-      "name": "Latency Converter",
-      "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
+      "name": "지연 시간 변환기",
+      "description": "핑 시간 단위(초, 밀리초, 마이크로초, 나노초) 간 변환",
       "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context."
     },
     "food-cost": {
-      "name": "Food Cost Calculator",
-      "description": "Calculate total recipe cost and cost per serving from ingredient prices",
+      "name": "식품 비용 계산기",
+      "description": "재료 가격에서 총 레시피 비용과 제공량당 비용을 계산합니다.",
       "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
     },
     "recipe-scaler": {
-      "name": "Recipe Scaler",
-      "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
+      "name": "레시피 스케일러",
+      "description": "소금, 향신료, 발효제 등을 스마트하게 조정하여 레시피 재료 크기를 조정하세요.",
       "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
     },
     "nutrition-calculator": {
-      "name": "Nutrition Calculator",
-      "description": "Calculate calories, macros, and nutrition facts from selected foods",
+      "name": "영양 계산기",
+      "description": "선택한 식품의 칼로리, 매크로 및 영양 성분을 계산합니다.",
       "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
     },
     "fuel-efficiency": {
@@ -1473,7 +1473,7 @@
     },
     "maintenance-intervals": {
       "name": "차량 정비 계산기",
-      "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
+      "description": "스위스 MFK 알림으로 차량 서비스 일정을 추적하고 다음 기한을 계산하세요",
       "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
     },
     "unit-converter": {
@@ -1487,8 +1487,8 @@
       "value": "값"
     },
     "set-calculator": {
-      "name": "Set Calculator",
-      "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
+      "name": "계산기 설정",
+      "description": "집합 연산을 수행합니다: 합집합, 교집합, 차이, 대칭 차이, 데카르트 곱 및 집합 관계.",
       "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
       "setA": "Set A",
       "setB": "Set B",
@@ -1512,8 +1512,8 @@
       "valueB": "값 B"
     },
     "debt-snowball-avalanche": {
-      "name": "Debt Payoff Planner",
-      "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
+      "name": "부채 상환 플래너",
+      "description": "눈덩이와 눈사태 부채 상환 전략을 비교하고 어느 것이 부채를 더 빨리 청산하는지 확인하세요.",
       "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
@@ -1527,8 +1527,8 @@
       "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
     },
     "income-tax": {
-      "name": "Income Tax Calculator",
-      "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
+      "name": "소득세 계산기",
+      "description": "사전 설정이나 사용자 정의 세금 등급을 사용하여 누진 소득세를 계산하세요.",
       "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
       "system": "Tax system",
       "income": "Taxable income",
@@ -3174,7 +3174,7 @@
           "torusVSubstitute": "Torus V Substitute",
           "torusVResult": "Torus V Result: {volume}"
         },
-        "name": "Volume"
+        "name": "용량"
       },
       "surfaceArea": {
         "steps": {
@@ -3219,7 +3219,7 @@
           "hemiBase": "Hemi Base: {baseSurfaceArea}",
           "hemiTotal": "Hemi Total: {totalSurfaceArea}"
         },
-        "name": "Surface Area"
+        "name": "표면적"
       },
       "lateralArea": "Lateral Area",
       "point1X": "Point 1 X",
@@ -3240,7 +3240,7 @@
           "distance": "Distance: {distance}",
           "midpoint": "Midpoint: {x} {y}"
         },
-        "name": "Slope"
+        "name": "경사"
       },
       "yInterceptValue": "Y-Intercept",
       "slopeInterceptForm": "Slope-Intercept Form",
@@ -3286,7 +3286,7 @@
           "haversineDistanceMiles": "Haversine Distance Miles: {distance}",
           "haversineBearing": "Haversine Bearing: {bearing}"
         },
-        "name": "Distance"
+        "name": "거리"
       },
       "midpoint": "Midpoint",
       "standardDeviation": "Standard Deviation",
@@ -3312,7 +3312,7 @@
           "combFormula": "Comb Formula: {nMinusR}",
           "combResult": "Comb Result"
         },
-        "name": "Probability"
+        "name": "개연성"
       },
       "favorableOutcomes": "Favorable Outcomes",
       "totalOutcomes": "Total Outcomes",
@@ -3372,7 +3372,7 @@
           "opDivQuotient": "Op Div Quotient: {quotient} {exponent}",
           "opDivResult": "Op Div Result: {result}"
         },
-        "name": "Scientific Notation"
+        "name": "과학적 표기법"
       },
       "coefficient": "Coefficient",
       "mantissa": "Mantissa",
@@ -3418,7 +3418,7 @@
           "fromMoESqrt": "From Mo E Sqrt: {sqrtValue}",
           "fromMoEResult": "From Mo E Result: {marginOfError}"
         },
-        "name": "Sample Size"
+        "name": "샘플 크기"
       },
       "marginOfError": "Margin of Error",
       "confidenceInterval": {
@@ -3443,7 +3443,7 @@
           "confidenceInterval": "Confidence Interval: {pointEstimate} {marginOfError}",
           "confidenceIntervalResult": "Confidence Interval Result: {lowerBound} {upperBound}"
         },
-        "name": "Confidence Interval"
+        "name": "신뢰구간"
       },
       "lowerBound": "Lower Bound",
       "upperBound": "Upper Bound",
@@ -3470,7 +3470,7 @@
           "probAbove": "Prob Above: {zScore} {probability}",
           "probBetween": "Prob Between: {zScore} {probability}"
         },
-        "name": "Z-Score"
+        "name": "Z-점수"
       },
       "pValue": {
         "steps": {
@@ -3492,7 +3492,7 @@
           "sigAt01": "Sig At01: {significant}",
           "sigAt001": "Sig At001: {significant}"
         },
-        "name": "P-Value"
+        "name": "P-값"
       },
       "significanceLevel": "Significance Level",
       "permutation": "Permutation",
@@ -3552,7 +3552,7 @@
           "carbon14Result": "Carbon14 Result: {age}",
           "carbon14Note": "Carbon14 Note"
         },
-        "name": "Half-Life"
+        "name": "반감기"
       },
       "initialQuantity": "Initial Quantity",
       "timeElapsed": "Time Elapsed",
@@ -3587,7 +3587,7 @@
           "factorialDigitCount": "Factorial Digit Count: {count}",
           "compareResult": "Compare Result: {comparison}"
         },
-        "name": "Big Number"
+        "name": "큰 숫자"
       },
       "calculate": "계산",
       "every": "Every",
@@ -3631,7 +3631,7 @@
           "invResultContent": "Inv Result Content: {content}",
           "invVerification": "Inv Verification"
         },
-        "name": "Matrix"
+        "name": "행렬"
       },
       "maximum": "Maximum",
       "minimum": "Minimum",
@@ -3672,7 +3672,7 @@
           "fpFibPattern": "Fp Fib Pattern",
           "fpUnknownPattern": "Fp Unknown Pattern"
         },
-        "name": "Number Sequence"
+        "name": "번호 순서"
       },
       "numbersHelp": "Enter integers separated by commas, spaces, or new lines",
       "populationOrSample": "Population or Sample",
@@ -3828,7 +3828,7 @@
           "toFractionResult": "To Fraction Result: {numerator} {denominator}",
           "simplifiedResult": "Simplified Result: {numerator} {denominator}"
         },
-        "name": "Fraction"
+        "name": "분수"
       },
       "hex": {
         "steps": {
@@ -5740,7 +5740,7 @@
           "windowUtilizationFormula": "Window Utilization Formula",
           "windowUtilizationResult": "Window Utilization Result"
         },
-        "name": "Bandwidth-Delay Product"
+        "name": "대역폭 지연 제품"
       },
       "bdpBits": "BDP (bits)",
       "bdpBytes": "BDP (bytes)",
