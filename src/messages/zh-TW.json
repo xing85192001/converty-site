@@ -6721,7 +6721,7 @@
     "toggle-menu": "切換選單",
     "toggle-theme": "切換主題",
 
-    "user-content-body": "您僅可上傳、提交或處理您擁有版權或已獲授權的內容。您須自行確保對所使用內容具備必要的權利、許可與授權。",
+    "user-content-body": "您只能上傳、提交或處理您擁有或有權使用的內容。您全權負責確保您擁有透過我們的工具所使用的任何內容所需的權利、許可和權限。",
     "install-baikecalc": "安裝百科計算器",
     "you-are-offline-calculators-will-work-from-cache": "您已離線。計算器將從快取中運行。"
   }
