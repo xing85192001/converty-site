@@ -102,6 +102,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
+      {/* ===== Media tools (preserved feature) ===== */}
+      <MediaToolsSection />
+
       {/* ===== Quick Tools ===== */}
       <section className="pb-6">
         <div className="mb-3 flex items-end justify-between">
@@ -164,9 +167,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             })}
         </div>
       </section>
-
-      {/* ===== Media tools (preserved feature) ===== */}
-      <MediaToolsSection />
     </div>
   );
 }

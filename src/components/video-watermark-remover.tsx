@@ -175,7 +175,9 @@ export function VideoWatermarkRemover() {
         "-i",
         inputName,
         "-vf",
-        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:show=0`,
+        // band softens the luma correction border so the removed region
+        // doesn't leave a hard rectangular trace.
+        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
         "-c:a",
         "copy",
         outputName,
@@ -214,7 +216,7 @@ export function VideoWatermarkRemover() {
       <div
         className={cn(
           "relative flex min-h-[320px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-white/15 bg-card/50 p-6 text-center",
-          originalUrl ? "justify-start border-solid border-white/10 bg-card p-0" : "p-8"
+          originalUrl ? "items-start justify-start border-solid border-white/10 bg-card p-4" : "p-8"
         )}
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
@@ -243,7 +245,7 @@ export function VideoWatermarkRemover() {
             </Button>
           </>
         ) : (
-          <div className="flex h-full w-full flex-col p-4">
+          <div className="flex w-full flex-col">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-sm font-medium">{t("originalLabel")}</span>
               <div className="flex items-center gap-2">
@@ -277,9 +279,12 @@ export function VideoWatermarkRemover() {
               </div>
             </div>
 
+            {/* self-start prevents the flex column from stretching this wrapper
+                to full width; it shrinks to the displayed video so the
+                selection overlay maps 1:1 and nothing is clipped or scrolled. */}
             <div
               ref={wrapperRef}
-              className="relative flex-1 overflow-hidden rounded-xl bg-black/40"
+              className="relative self-start inline-block max-w-full overflow-hidden rounded-xl bg-black/40"
               onMouseDown={onMouseDown}
               onMouseMove={onMouseMove}
               onMouseUp={onMouseUp}
@@ -289,7 +294,7 @@ export function VideoWatermarkRemover() {
               <video
                 ref={videoRef}
                 src={originalUrl}
-                className="h-full w-full cursor-crosshair object-contain"
+                className="block max-h-[320px] max-w-full cursor-crosshair object-contain"
                 controls
                 onLoadedMetadata={() => setSelection(null)}
               />
@@ -322,10 +327,14 @@ export function VideoWatermarkRemover() {
           </span>
         </div>
 
-        <div className="relative flex flex-1 items-center justify-center overflow-hidden rounded-xl bg-black/40">
+        <div className="flex flex-1 items-center justify-center overflow-hidden rounded-xl bg-black/40 p-2">
           {processedUrl ? (
             // eslint-disable-next-line jsx-a11y/media-has-caption
-            <video src={processedUrl} className="h-full w-full object-contain" controls />
+            <video
+              src={processedUrl}
+              className="block max-h-[300px] max-w-full object-contain"
+              controls
+            />
           ) : (
             <div className="flex flex-col items-center justify-center text-muted-foreground">
               <Play className="mb-2 h-8 w-8 opacity-40" />
