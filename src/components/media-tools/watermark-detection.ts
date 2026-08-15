@@ -12,12 +12,13 @@ const MAX_DIM = 480;
  * Detect likely watermark regions in an image or video frame.
  *
  * Approach: grayscale -> edge magnitude -> per-tile (16px) edge-density score,
- * with a *position prior* that boosts tiles near the frame edges/corners (where
- * text/logo watermarks almost always sit) so that busy scene content in the
- * middle is not mistaken for a watermark. Connected high-density tiles become
- * candidate boxes, filtered by size and ranked by average edge density.
+ * with a *position prior* that strongly boosts tiles near the frame
+ * edges/corners (where text/logo watermarks almost always sit) so that busy
+ * scene content in the middle is not mistaken for a watermark. Connected
+ * high-density tiles become candidate boxes, filtered by size and ranked by a
+ * combined density + corner-proximity score.
  *
- * This is a heuristic, not semantic watermark recognition — it works well for
+ * This is a heuristic, not semantic watermark recognition — it works best for
  * opaque text/logo watermarks and is less reliable for transparent or
  * edge-matched watermarks. The UI always lets the user confirm/adjust.
  */
@@ -58,8 +59,8 @@ export function detectWatermarks(
   const tilesX = Math.ceil(w / TILE);
   const tilesY = Math.ceil(h / TILE);
   const scores = new Float32Array(tilesX * tilesY);
-  const margin = Math.max(1, Math.round(tilesX * 0.22));
-  const marginY = Math.max(1, Math.round(tilesY * 0.22));
+  const margin = Math.max(1, Math.round(tilesX * 0.18));
+  const marginY = Math.max(1, Math.round(tilesY * 0.18));
 
   for (let ty = 0; ty < tilesY; ty++) {
     for (let tx = 0; tx < tilesX; tx++) {
@@ -72,10 +73,18 @@ export function detectWatermarks(
         }
       }
       let s = count > 0 ? sum / count : 0;
-      // Position prior: watermarks are usually near an edge/corner.
-      const nearEdge =
-        tx < margin || tx >= tilesX - margin || ty < marginY || ty >= tilesY - marginY;
-      if (nearEdge) s *= 1.8;
+      // Position prior: watermarks are usually near an edge/corner. A tile
+      // touching the outer margin gets a boost, with corners weighted higher.
+      const onEdge =
+        tx <= margin || tx >= tilesX - 1 - margin || ty <= marginY || ty >= tilesY - 1 - marginY;
+      if (onEdge) {
+        const corner =
+          (tx <= margin && ty <= marginY) ||
+          (tx >= tilesX - 1 - margin && ty <= marginY) ||
+          (tx <= margin && ty >= tilesY - 1 - marginY) ||
+          (tx >= tilesX - 1 - margin && ty >= tilesY - 1 - marginY);
+        s *= corner ? 2.6 : 1.7;
+      }
       scores[ty * tilesX + tx] = s;
     }
   }
@@ -86,9 +95,10 @@ export function detectWatermarks(
   let sqSum = 0;
   for (let i = 0; i < scores.length; i++) sqSum += (scores[i] - mean) ** 2;
   const std = Math.sqrt(sqSum / scores.length);
-  const threshold = Math.max(18, mean + std);
+  // Higher threshold so only genuinely strong edges (logo/text) survive.
+  const threshold = Math.max(24, mean + 1.5 * std);
 
-  const candidates: { rect: Rect; density: number }[] = [];
+  const candidates: { rect: Rect; score: number }[] = [];
   const visited = new Set<number>();
   for (let ty = 0; ty < tilesY; ty++) {
     for (let tx = 0; tx < tilesX; tx++) {
@@ -141,16 +151,22 @@ export function detectWatermarks(
       rh /= scale;
 
       const area = rw * rh;
-      // Keep moderate-size regions only: too small = noise, too large = scene.
-      if (compCount >= 2 && area >= W * H * 0.012 && area <= W * H * 0.35 && rw > 24 && rh > 14) {
+      // Keep small-to-medium regions only: too small = noise, too large = scene.
+      if (compCount >= 2 && area >= W * H * 0.008 && area <= W * H * 0.2 && rw > 20 && rh > 12) {
+        // Corner proximity bonus: normalize distance from nearest corner.
+        const dcx = Math.min(rx, W - rx - rw);
+        const dcy = Math.min(ry, H - ry - rh);
+        const cornerDist = Math.sqrt(dcx * dcx + dcy * dcy);
+        const cornerBonus = 1 + 2 / (1 + cornerDist / Math.max(W, H));
+        const density = compSum / compCount;
         candidates.push({
           rect: { x: Math.round(rx), y: Math.round(ry), w: Math.round(rw), h: Math.round(rh) },
-          density: compSum / compCount,
+          score: density * cornerBonus,
         });
       }
     }
   }
 
-  candidates.sort((a, b) => b.density - a.density);
+  candidates.sort((a, b) => b.score - a.score);
   return candidates.slice(0, 3).map((c) => c.rect);
 }

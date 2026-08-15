@@ -197,7 +197,11 @@
       "unsupportedFormat": "Niet-ondersteund formaat",
       "outputFormat": "Uitvoerformaat",
       "convertBtn": "Formaat converteren",
-      "downloadBtn": "Geconverteerde afbeelding downloaden"
+      "downloadBtn": "Geconverteerde afbeelding downloaden",
+      "multiImageHint": "Select multiple images to create an animated GIF (frame delay adjustable).",
+      "frameDelay": "Frame delay",
+      "addMore": "Add more images",
+      "removeFile": "Remove"
     },
     "imageCompressor": {
       "loadError": "Afbeelding laden mislukt",
@@ -238,6 +242,26 @@
       "sharpenLabel": "Randen verscherpen",
       "upscaleBtn": "AI-upscale",
       "downloadBtn": "Geüpscalede afbeelding downloaden"
+    },
+    "videoToGif": {
+      "title": "Video to GIF",
+      "description": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click.",
+      "selectVideo": "Select video",
+      "originalLabel": "Original video",
+      "removeBtn": "Remove",
+      "convertBtn": "Start conversion",
+      "converting": "Converting…",
+      "phaseLoadingEngine": "Loading processing engine…",
+      "phaseConverting": "Converting to GIF…",
+      "processing": "Processing {progress}%",
+      "fpsLabel": "FPS",
+      "widthLabel": "Width",
+      "previewTitle": "GIF preview",
+      "emptyPreview": "The converted GIF will appear here",
+      "download": "Download GIF",
+      "errorEmpty": "Output file is empty",
+      "errorNetwork": "Network error: failed to download the processing core. Check your connection and retry.",
+      "errorFailed": "Conversion failed, please retry"
     }
   },
   "nav": {

@@ -197,7 +197,11 @@
       "unsupportedFormat": "不支援的格式",
       "outputFormat": "輸出格式",
       "convertBtn": "轉換格式",
-      "downloadBtn": "下載轉換後圖片"
+      "downloadBtn": "下載轉換後圖片",
+      "multiImageHint": "选择多张图片可生成 GIF 动画（可设置帧延迟）。",
+      "frameDelay": "帧延迟",
+      "addMore": "添加更多图片",
+      "removeFile": "移除"
     },
     "imageCompressor": {
       "loadError": "圖片載入失敗",
@@ -238,6 +242,26 @@
       "sharpenLabel": "銳化增強邊緣",
       "upscaleBtn": "AI 高清放大",
       "downloadBtn": "下載放大後圖片"
+    },
+    "videoToGif": {
+      "title": "视频转 GIF",
+      "description": "上传视频，调整帧率与宽度，一键转换为动图 GIF。",
+      "selectVideo": "选择视频",
+      "originalLabel": "原视频",
+      "removeBtn": "移除",
+      "convertBtn": "开始转换",
+      "converting": "转换中…",
+      "phaseLoadingEngine": "正在加载处理引擎…",
+      "phaseConverting": "正在转换为 GIF…",
+      "processing": "处理中 {progress}%",
+      "fpsLabel": "帧率",
+      "widthLabel": "宽度",
+      "previewTitle": "GIF 预览",
+      "emptyPreview": "转换后的 GIF 将显示在这里",
+      "download": "下载 GIF",
+      "errorEmpty": "输出文件为空",
+      "errorNetwork": "网络错误：下载处理核心失败，请检查网络后重试。",
+      "errorFailed": "转换失败，请重试"
     }
   },
   "nav": {

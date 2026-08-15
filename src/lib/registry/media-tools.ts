@@ -17,6 +17,7 @@ import { ImageToPdf } from "@/components/media-tools/image-to-pdf";
 import { ImageUpscaler } from "@/components/media-tools/image-upscaler";
 import { ImageWatermarkRemover } from "@/components/media-tools/image-watermark-remover";
 import { VideoCompressor } from "@/components/media-tools/video-compressor";
+import { VideoToGif } from "@/components/media-tools/video-to-gif";
 import { VideoWatermarkRemover } from "@/components/video-watermark-remover";
 
 export type MediaCategory = "all" | "watermark" | "format" | "icon" | "compress";
@@ -99,6 +100,14 @@ export const mediaTools: MediaToolMeta[] = [
     icon: ArrowRight,
     categories: ["format"],
   },
+  {
+    id: "video-to-gif",
+    slug: "video-to-gif",
+    titleKey: "videoToGif.title",
+    descKey: "videoToGif.desc",
+    icon: Video,
+    categories: ["format"],
+  },
 ];
 
 export const mediaToolComponents: Record<string, ComponentType> = {
@@ -110,6 +119,7 @@ export const mediaToolComponents: Record<string, ComponentType> = {
   "video-compress": VideoCompressor,
   "image-upscale": ImageUpscaler,
   "image-to-pdf": ImageToPdf,
+  "video-to-gif": VideoToGif,
 };
 
 export function getMediaToolBySlug(slug: string): MediaToolMeta | undefined {

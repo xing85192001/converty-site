@@ -72,6 +72,8 @@ export function VideoWatermarkRemover() {
   const [loadingEngine, setLoadingEngine] = useState(false);
   const [zoom, setZoom] = useState(1);
   const [stageW, setStageW] = useState(0);
+  const [videoReady, setVideoReady] = useState(false);
+  const [videoMeta, setVideoMeta] = useState<{ w: number; h: number } | null>(null);
 
   // Clean up object URLs on unmount or file change.
   useEffect(() => {
@@ -113,6 +115,7 @@ export function VideoWatermarkRemover() {
     setCandidates([]);
     setFile(chosen);
     setOriginalUrl(URL.createObjectURL(chosen));
+    setVideoReady(false);
   };
 
   const handleDrop = (e: React.DragEvent) => {
@@ -126,6 +129,7 @@ export function VideoWatermarkRemover() {
     setCandidates([]);
     setFile(chosen);
     setOriginalUrl(URL.createObjectURL(chosen));
+    setVideoReady(false);
   };
 
   const clearAll = () => {
@@ -136,6 +140,8 @@ export function VideoWatermarkRemover() {
     setCandidates([]);
     setProgress(0);
     setError("");
+    setVideoReady(false);
+    setVideoMeta(null);
   };
 
   // Convert screen coordinates inside the video element to video-frame coordinates.
@@ -155,7 +161,7 @@ export function VideoWatermarkRemover() {
   // a new selection while none exists yet, so once the box is drawn the native
   // video controls (enabled via controls={!selection}) stay usable for preview.
   const onPointerDown = (e: React.PointerEvent) => {
-    if (!videoRef.current || selection) return;
+    if (!videoRef.current) return;
     e.preventDefault();
     (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
     const pos = videoToFrame(e.clientX, e.clientY);
@@ -280,7 +286,18 @@ export function VideoWatermarkRemover() {
         "-vf",
         // band softens the luma correction border so the removed region blends
         // into the surroundings without a hard rectangular trace.
-        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
+        // Clamp the selection into the actual video frame so an out-of-range
+        // region (e.g. caused by letterboxing or rounding) cannot produce an
+        // empty output.
+        (() => {
+          const vw = videoRef.current?.videoWidth || videoMeta?.w || 0;
+          const vh = videoRef.current?.videoHeight || videoMeta?.h || 0;
+          const cx = Math.max(0, Math.min(Math.round(selection.x), vw - 1));
+          const cy = Math.max(0, Math.min(Math.round(selection.y), vh - 1));
+          const cw = Math.max(2, Math.min(Math.round(selection.w), vw - cx));
+          const ch = Math.max(2, Math.min(Math.round(selection.h), vh - cy));
+          return `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:band=30:show=0`;
+        })(),
         "-c:v",
         "libx264",
         "-pix_fmt",
@@ -522,11 +539,16 @@ export function VideoWatermarkRemover() {
                   ref={videoRef}
                   src={originalUrl}
                   style={videoStyle}
-                  className="block cursor-crosshair object-contain"
+                  className="block cursor-crosshair"
                   controls={!selection}
                   playsInline
-                  preload="metadata"
-                  onLoadedMetadata={() => setSelection(null)}
+                  muted
+                  preload="auto"
+                  onLoadedMetadata={(e) => {
+                    const v = e.currentTarget;
+                    setVideoMeta({ w: v.videoWidth, h: v.videoHeight });
+                  }}
+                  onLoadedData={() => setVideoReady(true)}
                 />
                 {selection && (
                   <div
@@ -541,6 +563,9 @@ export function VideoWatermarkRemover() {
               </div>
             </div>
 
+            {!videoReady && !error && (
+              <p className="mt-3 text-xs text-muted-foreground">视频加载中，请稍候…</p>
+            )}
             {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
             {!selection && !error && (
               <p className="mt-3 text-xs text-muted-foreground">{t("hint")}</p>

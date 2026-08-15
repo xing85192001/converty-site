@@ -201,7 +201,11 @@
       "unsupportedFormat": "非対応の形式です",
       "outputFormat": "出力形式",
       "convertBtn": "形式を変換",
-      "downloadBtn": "変換後の画像をダウンロード"
+      "downloadBtn": "変換後の画像をダウンロード",
+      "multiImageHint": "Select multiple images to create an animated GIF (frame delay adjustable).",
+      "frameDelay": "Frame delay",
+      "addMore": "Add more images",
+      "removeFile": "Remove"
     },
     "imageCompressor": {
       "loadError": "画像の読み込みに失敗しました",
@@ -242,6 +246,26 @@
       "sharpenLabel": "エッジを鮮明にする",
       "upscaleBtn": "AI 高画質拡大",
       "downloadBtn": "拡大後の画像をダウンロード"
+    },
+    "videoToGif": {
+      "title": "Video to GIF",
+      "description": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click.",
+      "selectVideo": "Select video",
+      "originalLabel": "Original video",
+      "removeBtn": "Remove",
+      "convertBtn": "Start conversion",
+      "converting": "Converting…",
+      "phaseLoadingEngine": "Loading processing engine…",
+      "phaseConverting": "Converting to GIF…",
+      "processing": "Processing {progress}%",
+      "fpsLabel": "FPS",
+      "widthLabel": "Width",
+      "previewTitle": "GIF preview",
+      "emptyPreview": "The converted GIF will appear here",
+      "download": "Download GIF",
+      "errorEmpty": "Output file is empty",
+      "errorNetwork": "Network error: failed to download the processing core. Check your connection and retry.",
+      "errorFailed": "Conversion failed, please retry"
     }
   },
   "nav": {

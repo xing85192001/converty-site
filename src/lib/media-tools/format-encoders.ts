@@ -190,3 +190,70 @@ export function imageDataToGif(imageData: ImageData): Uint8Array {
 
   return out;
 }
+
+/**
+ * Encode a list of frames into an animated GIF89a.
+ * All frames are quantized against the same 256-color uniform palette, so the
+ * output is compatible everywhere (no per-frame local color tables needed).
+ * @param frames frames in display order; caller must ensure equal dimensions
+ * @param delayMs per-frame delay in milliseconds
+ */
+export function imageDataListToGif(frames: ImageData[], delayMs = 500): Uint8Array {
+  if (frames.length === 0) return new Uint8Array(0);
+  const { width, height } = frames[0];
+  const delay = Math.max(1, Math.round(delayMs / 10)); // GIF delay is in 1/100s
+
+  const out: number[] = [];
+  const push = (...bytes: number[]) => {
+    for (const b of bytes) out.push(b & 0xff);
+  };
+  const pushU16 = (v: number) => {
+    push(v & 0xff, (v >> 8) & 0xff);
+  };
+
+  // Header + Logical Screen Descriptor
+  push(0x47, 0x49, 0x46, 0x38, 0x39, 0x61); // "GIF89a"
+  pushU16(width);
+  pushU16(height);
+  push(0xf7); // global color table (256), color resolution 7
+  push(0x00); // background color index
+  push(0x00); // pixel aspect ratio
+  for (let i = 0; i < 768; i++) push(UNIFORM_PALETTE[i]);
+
+  const lzw = new LzwEncoder(8);
+  for (const frame of frames) {
+    // Graphic Control Extension: disposal=1 (leave in place), no transparency
+    push(0x21, 0xf9, 0x04, 0x04);
+    pushU16(delay);
+    push(0x00, 0x00); // transparent index + block terminator
+
+    // Image Descriptor (full frame)
+    push(0x2c);
+    push(0, 0, 0, 0); // left=0, top=0 (two 16-bit values)
+    push(width & 0xff, (width >> 8) & 0xff); // width
+    push(height & 0xff, (height >> 8) & 0xff); // height
+    push(0x00); // no local color table
+
+    // LZW minimum code size (matches 256-color palette)
+    push(0x08);
+
+    const pixels = new Uint8Array(width * height);
+    for (let i = 0; i < width * height; i++) {
+      pixels[i] = findNearestPaletteIndex(
+        frame.data[i * 4],
+        frame.data[i * 4 + 1],
+        frame.data[i * 4 + 2]
+      );
+    }
+    const compressed = lzw.encode(pixels);
+    for (let i = 0; i < compressed.length; i += 255) {
+      const chunk = compressed.subarray(i, i + 255);
+      push(chunk.length);
+      for (let j = 0; j < chunk.length; j++) push(chunk[j]);
+    }
+    push(0x00); // image data block terminator
+  }
+
+  push(0x3b); // trailer
+  return new Uint8Array(out);
+}
