@@ -144,6 +144,10 @@
       "supports": "Prend en charge"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Chargement du moteur de traitement...",
+      "phaseRemoving": "Suppression du filigrane...",
+      "zoomIn": "Zoom avant",
+      "zoomOut": "Zoom arrière",
       "autoDetect": "Détection automatique du filigrane",
       "autoDetecting": "Détection en cours...",
       "autoDetectNone": "Aucun filigrane évident détecté. Veuillez dessiner manuellement une zone autour du filigrane.",

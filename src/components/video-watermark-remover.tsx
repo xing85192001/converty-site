@@ -62,11 +62,16 @@ export function VideoWatermarkRemover() {
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState<{ x: number; y: number } | null>(null);
   const [selection, setSelection] = useState<Selection | null>(null);
   const [candidates, setCandidates] = useState<Rect[]>([]);
   const [detecting, setDetecting] = useState(false);
+  const [status, setStatus] = useState("");
+  const [loadingEngine, setLoadingEngine] = useState(false);
+  const [zoom, setZoom] = useState(1);
+  const [stageW, setStageW] = useState(0);
 
   // Clean up object URLs on unmount or file change.
   useEffect(() => {
@@ -75,6 +80,28 @@ export function VideoWatermarkRemover() {
       if (processedUrl) URL.revokeObjectURL(processedUrl);
     };
   }, [originalUrl, processedUrl]);
+
+  // Measure the available stage width so the zoom feature can size the video
+  // beyond the column width (overflow scrolls) while keeping selection mapping
+  // correct via getBoundingClientRect.
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el) return;
+    const update = () => setStageW(el.clientWidth);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  const videoStyle: React.CSSProperties = {
+    display: "block",
+    width: zoom > 1 ? (stageW ? `${stageW * zoom}px` : "100%") : "100%",
+    height: "auto",
+    maxWidth: zoom > 1 ? "none" : "100%",
+    maxHeight: `${320 * zoom}px`,
+    cursor: selection ? "default" : "crosshair",
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const chosen = e.target.files?.[0];
@@ -124,9 +151,13 @@ export function VideoWatermarkRemover() {
     };
   };
 
-  const onMouseDown = (e: React.MouseEvent) => {
-    if (!videoRef.current) return;
+  // Pointer Events unify mouse, touch and pen into one code path. We only start
+  // a new selection while none exists yet, so once the box is drawn the native
+  // video controls (enabled via controls={!selection}) stay usable for preview.
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (!videoRef.current || selection) return;
     e.preventDefault();
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
     const pos = videoToFrame(e.clientX, e.clientY);
     setIsDragging(true);
     setDragStart(pos);
@@ -134,7 +165,7 @@ export function VideoWatermarkRemover() {
     setCandidates([]);
   };
 
-  const onMouseMove = (e: React.MouseEvent) => {
+  const onPointerMove = (e: React.PointerEvent) => {
     if (!isDragging || !dragStart || !videoRef.current) return;
     const pos = videoToFrame(e.clientX, e.clientY);
     const x = Math.min(dragStart.x, pos.x);
@@ -144,45 +175,22 @@ export function VideoWatermarkRemover() {
     setSelection({ x, y, w, h });
   };
 
-  const onMouseUp = () => {
-    setIsDragging(false);
-    setDragStart(null);
-  };
-
-  const getTouchPos = (e: React.TouchEvent) => {
-    const touch = e.touches[0] || e.changedTouches[0];
-    return videoToFrame(touch.clientX, touch.clientY);
-  };
-
-  const onTouchStart = (e: React.TouchEvent) => {
-    if (!videoRef.current) return;
-    e.preventDefault();
-    const pos = getTouchPos(e);
-    setIsDragging(true);
-    setDragStart(pos);
-    setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
-    setCandidates([]);
-  };
-
-  const onTouchMove = (e: React.TouchEvent) => {
-    if (!isDragging || !dragStart || !videoRef.current) return;
-    e.preventDefault();
-    const pos = getTouchPos(e);
-    const x = Math.min(dragStart.x, pos.x);
-    const y = Math.min(dragStart.y, pos.y);
-    const w = Math.abs(pos.x - dragStart.x);
-    const h = Math.abs(pos.y - dragStart.y);
-    setSelection({ x, y, w, h });
-  };
-
-  const onTouchEnd = () => {
+  const onPointerUp = (e: React.PointerEvent) => {
+    const el = e.currentTarget as HTMLElement;
+    if (el.hasPointerCapture?.(e.pointerId)) {
+      try {
+        el.releasePointerCapture(e.pointerId);
+      } catch {
+        /* ignore */
+      }
+    }
     setIsDragging(false);
     setDragStart(null);
   };
 
   async function runAutoDetect() {
     const video = videoRef.current;
-    if (!video || !video.videoWidth || !video.videoHeight) return;
+    if (!video?.videoWidth || !video.videoHeight) return;
     setDetecting(true);
     setError("");
     setProcessedUrl("");
@@ -228,10 +236,14 @@ export function VideoWatermarkRemover() {
     setIsProcessing(true);
     setError("");
     setProgress(0);
+    setStatus(t("phaseLoadingEngine"));
+    setLoadingEngine(true);
 
     try {
       setProgress(5); // show immediate feedback while FFmpeg core downloads
       const { FFmpeg, fetchFile, toBlobURL } = await loadFfmpeg();
+      setLoadingEngine(false);
+      setStatus(t("phaseRemoving"));
       const ffmpeg = new FFmpeg();
       ffmpeg.on("log", ({ message }) => {
         // eslint-disable-next-line no-console
@@ -291,9 +303,13 @@ export function VideoWatermarkRemover() {
       // Copy into a fresh ArrayBuffer-backed Uint8Array so it satisfies BlobPart
       // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
       const bytes = new Uint8Array(data);
+      if (bytes.length === 0) {
+        throw new Error("Output file is empty");
+      }
       const blob = new Blob([bytes], { type: "video/mp4" });
       const url = URL.createObjectURL(blob);
       setProcessedUrl(url);
+      setStatus("");
       setProgress(100);
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
@@ -303,6 +319,8 @@ export function VideoWatermarkRemover() {
       setError(isNetworkError ? t("errorNetwork") : message || t("errorFailed"));
     } finally {
       setIsProcessing(false);
+      setLoadingEngine(false);
+      setStatus("");
     }
   };
 
@@ -432,12 +450,15 @@ export function VideoWatermarkRemover() {
               <div className="mb-3">
                 <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
                   <div
-                    className="h-full bg-gradient-to-r from-primary to-cyan-400 transition-all duration-200"
-                    style={{ width: `${progress}%` }}
+                    className={cn(
+                      "h-full bg-gradient-to-r from-primary to-cyan-400 transition-all duration-200",
+                      loadingEngine && "animate-pulse"
+                    )}
+                    style={{ width: loadingEngine ? "100%" : `${progress}%` }}
                   />
                 </div>
                 <p className="mt-1 text-center text-xs text-muted-foreground">
-                  {t("processing", { progress })}
+                  {status || t("processing", { progress })}
                 </p>
               </div>
             )}
@@ -445,37 +466,79 @@ export function VideoWatermarkRemover() {
             {/* self-start prevents the flex column from stretching this wrapper
                 to full width; it shrinks to the displayed video so the
                 selection overlay maps 1:1 and nothing is clipped or scrolled. */}
-            <div
-              ref={wrapperRef}
-              className="relative self-start inline-block max-w-full overflow-hidden rounded-xl bg-black/40"
-              onMouseDown={onMouseDown}
-              onMouseMove={onMouseMove}
-              onMouseUp={onMouseUp}
-              onMouseLeave={onMouseUp}
-              onTouchStart={onTouchStart}
-              onTouchMove={onTouchMove}
-              onTouchEnd={onTouchEnd}
-            >
-              {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-              <video
-                ref={videoRef}
-                src={originalUrl}
-                className="block max-h-[320px] max-w-full cursor-crosshair object-contain"
-                controls
-                playsInline
-                preload="metadata"
-                onLoadedMetadata={() => setSelection(null)}
-              />
-              {selection && (
-                <div
-                  className="pointer-events-none absolute border-2 border-primary bg-primary/20"
-                  style={overlayStyle()}
+            {/* Zoom controls let users enlarge the frame to select a small
+                watermark precisely; selection mapping stays correct because
+                videoToFrame reads the live getBoundingClientRect. */}
+            <div className="mb-2 flex items-center gap-2">
+              <Button
+                size="sm"
+                variant="outline"
+                className="h-8 w-8 p-0"
+                onClick={() => setZoom((z) => Math.max(1, +(z - 0.5).toFixed(2)))}
+                disabled={zoom <= 1 || isProcessing}
+                aria-label={t("zoomOut")}
+              >
+                -
+              </Button>
+              <span className="min-w-[44px] text-center text-xs tabular-nums text-muted-foreground">
+                {Math.round(zoom * 100)}%
+              </span>
+              <Button
+                size="sm"
+                variant="outline"
+                className="h-8 w-8 p-0"
+                onClick={() => setZoom((z) => Math.min(4, +(z + 0.5).toFixed(2)))}
+                disabled={isProcessing}
+                aria-label={t("zoomIn")}
+              >
+                +
+              </Button>
+              {zoom > 1 && (
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="h-8 text-xs text-muted-foreground hover:text-foreground"
+                  onClick={() => setZoom(1)}
                 >
-                  <span className="absolute -top-5 left-0 whitespace-nowrap rounded bg-primary px-1.5 py-0.5 text-[10px] text-primary-foreground">
-                    {selection.w}×{selection.h}
-                  </span>
-                </div>
+                  {t("zoomOut")}
+                </Button>
               )}
+            </div>
+
+            {/* Scrollable stage; the video can grow beyond the column width. */}
+            <div ref={stageRef} className="w-full overflow-auto rounded-xl bg-black/40">
+              <div
+                ref={wrapperRef}
+                className="relative inline-block select-none"
+                style={{ touchAction: selection ? "pan-x pan-y" : "none" }}
+                onContextMenu={(e) => e.preventDefault()}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={onPointerUp}
+                onPointerCancel={onPointerUp}
+              >
+                {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+                <video
+                  ref={videoRef}
+                  src={originalUrl}
+                  style={videoStyle}
+                  className="block cursor-crosshair object-contain"
+                  controls={!selection}
+                  playsInline
+                  preload="metadata"
+                  onLoadedMetadata={() => setSelection(null)}
+                />
+                {selection && (
+                  <div
+                    className="pointer-events-none absolute border-2 border-primary bg-primary/20"
+                    style={overlayStyle()}
+                  >
+                    <span className="absolute -top-5 left-0 whitespace-nowrap rounded bg-primary px-1.5 py-0.5 text-[10px] text-primary-foreground">
+                      {selection.w}×{selection.h}
+                    </span>
+                  </div>
+                )}
+              </div>
             </div>
 
             {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
@@ -499,6 +562,7 @@ export function VideoWatermarkRemover() {
           {processedUrl ? (
             // eslint-disable-next-line jsx-a11y/media-has-caption
             <video
+              key={processedUrl}
               src={processedUrl}
               className="block max-h-[300px] max-w-full object-contain"
               controls

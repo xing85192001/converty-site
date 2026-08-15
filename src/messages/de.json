@@ -144,6 +144,10 @@
       "supports": "Unterstützt"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Verarbeitungs-Engine wird geladen...",
+      "phaseRemoving": "Wasserzeichen wird entfernt...",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
       "autoDetect": "Wasserzeichen automatisch erkennen",
       "autoDetecting": "Erkennung läuft...",
       "autoDetectNone": "Kein eindeutiges Wasserzeichen erkannt. Bitte ziehen Sie manuell einen Rahmen um das Wasserzeichen.",

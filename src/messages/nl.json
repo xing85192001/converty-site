@@ -146,6 +146,10 @@
       "supports": "Ondersteunt"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Verwerkingsengine wordt geladen...",
+      "phaseRemoving": "Watermerk verwijderen...",
+      "zoomIn": "Inzoomen",
+      "zoomOut": "Uitzoomen",
       "autoDetect": "Watermerk automatisch detecteren",
       "autoDetecting": "Bezig met detecteren...",
       "autoDetectNone": "Geen duidelijk watermerk gedetecteerd. Teken handmatig een vak rond het watermerk.",

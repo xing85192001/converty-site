@@ -144,6 +144,10 @@
       "supports": "Supporta"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Caricamento motore di elaborazione...",
+      "phaseRemoving": "Rimozione filigrana...",
+      "zoomIn": "Ingrandisci",
+      "zoomOut": "Riduci",
       "autoDetect": "Rilevamento automatico filigrana",
       "autoDetecting": "Rilevamento in corso...",
       "autoDetectNone": "Nessun filigrana evidente rilevato. Disegna manualmente un riquadro intorno alla filigrana.",

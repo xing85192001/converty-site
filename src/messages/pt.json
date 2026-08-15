@@ -146,6 +146,10 @@
       "supports": "Suporta"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Carregando o motor de processamento...",
+      "phaseRemoving": "Removendo marca d'água...",
+      "zoomIn": "Ampliar",
+      "zoomOut": "Reduzir",
       "autoDetect": "Detectar marca d'água automaticamente",
       "autoDetecting": "Detectando...",
       "autoDetectNone": "Nenhuma marca d'água óbvia detectada. Desenhe manualmente uma caixa sobre a marca d'água.",

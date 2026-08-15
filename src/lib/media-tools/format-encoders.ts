@@ -82,7 +82,11 @@ class LzwEncoder {
         if (prevCode !== undefined) this.writeCode(prevCode);
         if (this.nextCode < 4096) {
           this.table.set(combined, this.nextCode++);
-          if (this.nextCode >= 1 << this.codeSize && this.codeSize < 12) this.codeSize++;
+          // GIF LZW: the code width must grow when the *next* code to be assigned
+          // would no longer fit in the current width (next > 2^codeSize), NOT when it
+          // equals it. Using >= (== 2^codeSize) desyncs the decoder on any image that
+          // grows past 512 codes, producing a blank/garbled GIF. Verified with PIL.
+          if (this.nextCode > 1 << this.codeSize && this.codeSize < 12) this.codeSize++;
         }
         this.buffer = c;
       }

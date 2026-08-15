@@ -146,6 +146,10 @@
       "supports": "Menyokong"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Memuatkan enjin pemprosesan...",
+      "phaseRemoving": "Menghapus tanda air...",
+      "zoomIn": "Zum masuk",
+      "zoomOut": "Zum keluar",
       "autoDetect": "Kesan Tanda Air Secara Automatik",
       "autoDetecting": "Mengesan...",
       "autoDetectNone": "Tiada tanda air yang jelas dikesan. Sila lukis kotak mengikut tanda air secara manual.",

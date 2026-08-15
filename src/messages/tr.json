@@ -146,6 +146,10 @@
       "supports": "Destekler"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "İşleme motoru yükleniyor...",
+      "phaseRemoving": "Filigran kaldırılıyor...",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır",
       "autoDetect": "Filigranı Otomatik Algıla",
       "autoDetecting": "Algılanıyor...",
       "autoDetectNone": "Belirgin bir filigran algılanamadı. Lütfen filigranın etrafına manuel olarak kutu çizin.",

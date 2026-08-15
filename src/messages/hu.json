@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Feldolgozó motor betöltése...",
+      "phaseRemoving": "Vízjel eltávolítása...",
+      "zoomIn": "Nagyítás",
+      "zoomOut": "Kicsinyítés",
       "autoDetect": "Vízjel automatikus felismerése",
       "autoDetecting": "Felismerés...",
       "autoDetectNone": "Nem észlelhető egyértelmű vízjel. Kérjük, rajzoljon manuálisan egy négyzetet a vízjel köré.",

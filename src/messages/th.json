@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "กำลังโหลดเครื่องมือประมวลผล...",
+      "phaseRemoving": "กำลังลบลายน้ำ...",
+      "zoomIn": "ขยาย",
+      "zoomOut": "ย่อ",
       "autoDetect": "ตรวจจับลายน้ำอัตโนมัติ",
       "autoDetecting": "กำลังตรวจจับ...",
       "autoDetectNone": "ไม่พบลายน้ำที่ชัดเจน กรุณาวาดกรอบรอบลายน้ำด้วยตนเอง",

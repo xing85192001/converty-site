@@ -147,6 +147,10 @@
       "supports": "지원 형식"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "처리 엔진 로딩 중...",
+      "phaseRemoving": "워터마크 제거 중...",
+      "zoomIn": "확대",
+      "zoomOut": "축소",
       "autoDetect": "자동 워터마크 감지",
       "autoDetecting": "감지 중...",
       "autoDetectNone": "뚜렷한 워터마크가 감지되지 않았습니다. 워터마크 영역을 수동으로 표시해 주세요.",

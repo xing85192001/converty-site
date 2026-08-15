@@ -150,6 +150,10 @@
       "supports": "Soporta"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Cargando el motor de procesamiento...",
+      "phaseRemoving": "Eliminando marca de agua...",
+      "zoomIn": "Acercar",
+      "zoomOut": "Alejar",
       "autoDetect": "Detectar marca de agua automáticamente",
       "autoDetecting": "Detectando...",
       "autoDetectNone": "No se detectó una marca de agua evidente. Dibuje un cuadro sobre la marca de agua manualmente.",

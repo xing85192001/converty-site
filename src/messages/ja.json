@@ -150,6 +150,10 @@
       "supports": "対応形式"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "処理エンジンを読み込み中...",
+      "phaseRemoving": "透かしを除去中...",
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
       "autoDetect": "自動で透かしを検出",
       "autoDetecting": "検出中...",
       "autoDetectNone": "明確な透かしが検出されませんでした。透かし領域を手動で囲ってください。",

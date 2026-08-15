@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "جارٍ تحميل محرك المعالجة...",
+      "phaseRemoving": "جارٍ إزالة العلامة المائية...",
+      "zoomIn": "تكبير",
+      "zoomOut": "تصغير",
       "autoDetect": "كشف العلامة المائية تلقائيًا",
       "autoDetecting": "جارٍ الكشف...",
       "autoDetectNone": "لم يتم اكتشاف علامة مائية واضحة. يرجى رسم مربع حول العلامة المائية يدويًا.",

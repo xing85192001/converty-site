@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Завантаження рушія обробки...",
+      "phaseRemoving": "Видалення водяного знака...",
+      "zoomIn": "Збільшити",
+      "zoomOut": "Зменшити",
       "autoDetect": "Автоматичне визначення водяного знака",
       "autoDetecting": "Визначення...",
       "autoDetectNone": "Не виявлено помітного водяного знака. Будь ласка, вручну намалюйте рамку навколо водяного знака.",

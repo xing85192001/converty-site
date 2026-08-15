@@ -146,6 +146,10 @@
       "supports": "Hỗ trợ"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Đang tải công cụ xử lý...",
+      "phaseRemoving": "Đang xóa hình mờ...",
+      "zoomIn": "Phóng to",
+      "zoomOut": "Thu nhỏ",
       "autoDetect": "Tự động nhận diện hình mờ",
       "autoDetecting": "Đang nhận diện...",
       "autoDetectNone": "Không phát hiện hình mờ rõ ràng. Vui lòng tự vẽ khung quanh vùng hình mờ.",

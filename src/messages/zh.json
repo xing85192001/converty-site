@@ -144,6 +144,10 @@
       "supports": "支持"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "正在加载处理引擎...",
+      "phaseRemoving": "正在去除水印...",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
       "autoDetect": "自动识别水印",
       "autoDetecting": "识别中...",
       "autoDetectNone": "未识别到明显水印，请手动框选水印区域。",

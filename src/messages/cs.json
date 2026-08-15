@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Načítání procesního enginu...",
+      "phaseRemoving": "Odstraňování vodoznaku...",
+      "zoomIn": "Přiblížit",
+      "zoomOut": "Oddálit",
       "autoDetect": "Automaticky detekovat vodoznak",
       "autoDetecting": "Detekuji...",
       "autoDetectNone": "Nebyl detekován žádný zřejmý vodoznak. Nakreslete prosím rámeček kolem vodoznaku ručně.",

@@ -144,6 +144,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "phaseLoadingEngine": "Loading processing engine...",
+      "phaseRemoving": "Removing watermark...",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
       "autoDetect": "Auto Detect Watermark",
       "autoDetecting": "Detecting...",
       "autoDetectNone": "No obvious watermark detected. Please draw a box over the watermark manually.",
