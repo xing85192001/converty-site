@@ -162,6 +162,16 @@
           }
         }
       }
+    },
+    {
+      "includes": ["src/components/video-watermark-remover.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off"
+          }
+        }
+      }
     }
   ]
 }

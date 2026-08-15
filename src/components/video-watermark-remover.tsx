@@ -51,6 +51,212 @@ interface Selection {
   h: number;
 }
 
+// --- Optional OpenCV.js (self-hosted) for higher-quality inpainting ---
+// To enable: drop opencv.js + opencv_js.wasm into /public/opencv/.
+// If unavailable, the tool transparently falls back to FFmpeg delogo so it
+// always produces a result instead of breaking.
+let opencvPromise: Promise<any> | null = null;
+function loadOpenCv(): Promise<any> {
+  if (opencvPromise) return opencvPromise;
+  opencvPromise = new Promise((resolve, reject) => {
+    const w = window as any;
+    if (w.cv?.inpaint) {
+      resolve(w.cv);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "/opencv/opencv.js";
+    script.async = true;
+    const timer = setTimeout(() => reject(new Error("opencv-timeout")), 30000);
+    script.onload = () => {
+      const cv = w.cv;
+      if (!cv) {
+        clearTimeout(timer);
+        reject(new Error("opencv-undefined"));
+        return;
+      }
+      if (cv.onRuntimeInitialized !== undefined && !cv.inpaint) {
+        cv.onRuntimeInitialized = () => {
+          clearTimeout(timer);
+          resolve(cv);
+        };
+      } else {
+        clearTimeout(timer);
+        resolve(cv);
+      }
+    };
+    script.onerror = () => {
+      clearTimeout(timer);
+      reject(new Error("opencv-script-error"));
+    };
+    document.head.appendChild(script);
+  });
+  return opencvPromise;
+}
+
+type TFn = (key: string, params?: Record<string, string | number | Date>) => string;
+
+// Robust FFmpeg delogo. Clamps so x+w <= vw and y+h <= vh — the previous code
+// clamped cx to vw-1 but then forced w>=2, which could push x+w past the frame
+// edge and make FFmpeg emit an empty file. Also retries without audio when the
+// input has no audio stream.
+async function runDelogo(
+  ffmpeg: any,
+  inputName: string,
+  outputName: string,
+  vw: number,
+  vh: number,
+  sel: Selection,
+  _t: TFn
+): Promise<void> {
+  const cx = Math.max(0, Math.min(Math.round(sel.x), vw - 2));
+  const cy = Math.max(0, Math.min(Math.round(sel.y), vh - 2));
+  const cw = Math.max(2, Math.min(Math.round(sel.w), vw - 1 - cx));
+  const ch = Math.max(2, Math.min(Math.round(sel.h), vh - 1 - cy));
+  const filter = `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:band=30:show=0`;
+  try {
+    await ffmpeg.exec([
+      "-i",
+      inputName,
+      "-vf",
+      filter,
+      "-c:v",
+      "libx264",
+      "-pix_fmt",
+      "yuv420p",
+      "-preset",
+      "ultrafast",
+      "-movflags",
+      "+faststart",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "128k",
+      outputName,
+    ]);
+  } catch {
+    await ffmpeg.exec([
+      "-i",
+      inputName,
+      "-vf",
+      filter,
+      "-c:v",
+      "libx264",
+      "-pix_fmt",
+      "yuv420p",
+      "-preset",
+      "ultrafast",
+      "-an",
+      outputName,
+    ]);
+  }
+}
+
+function inpaintFrame(
+  raw: Uint8Array,
+  cv: any,
+  sx: number,
+  sy: number,
+  sw: number,
+  sh: number,
+  radius: number
+): Uint8Array {
+  const imgMat = new cv.Mat(raw.length, 1, cv.CV_8U);
+  imgMat.data.set(raw);
+  const src = cv.imdecode(imgMat, cv.IMREAD_COLOR);
+  imgMat.delete();
+  if (src.empty()) throw new Error("imdecode failed");
+  const x = Math.max(0, Math.min(sx, src.cols - 1));
+  const y = Math.max(0, Math.min(sy, src.rows - 1));
+  const w = Math.max(2, Math.min(sw, src.cols - x));
+  const h = Math.max(2, Math.min(sh, src.rows - y));
+  const mask = new cv.Mat(src.rows, src.cols, cv.CV_8U, new cv.Scalar(0));
+  cv.rectangle(mask, new cv.Point(x, y), new cv.Point(x + w, y + h), new cv.Scalar(255), -1);
+  const dst = new cv.Mat();
+  cv.inpaint(src, mask, dst, radius, cv.INPAINT_TELEA);
+  const enc = new cv.Mat();
+  cv.imencode(".png", dst, enc);
+  const out = new Uint8Array(enc.data);
+  src.delete();
+  mask.delete();
+  dst.delete();
+  enc.delete();
+  return out;
+}
+
+// Full inpaint pipeline: extract frames -> OpenCV inpaint -> re-encode.
+async function runOpenCvInpaint(
+  ffmpeg: any,
+  cv: any,
+  inputName: string,
+  outputName: string,
+  vw: number,
+  vh: number,
+  sel: Selection,
+  setProgress: (n: number) => void,
+  setStatus: (s: string) => void,
+  t: TFn
+): Promise<boolean> {
+  const maxW = 720;
+  const scale = Math.min(1, maxW / vw);
+  const sw = Math.max(2, Math.round(vw * scale));
+  const sh = Math.max(2, Math.round(vh * scale));
+  const sx = Math.round(sel.x * scale);
+  const sy = Math.round(sel.y * scale);
+  const selW = Math.round(sel.w * scale);
+  const selH = Math.round(sel.h * scale);
+
+  let hasAudio = false;
+  try {
+    await ffmpeg.exec(["-i", inputName, "-vn", "-acodec", "copy", "audio.mka"]);
+    const a = await ffmpeg.readFile("audio.mka");
+    hasAudio = (a as Uint8Array).length > 0;
+  } catch {
+    hasAudio = false;
+  }
+
+  setStatus(t("phaseExtracting"));
+  setProgress(10);
+  await ffmpeg.exec(["-i", inputName, "-vf", `scale=${sw}:${sh}`, "frames/f%05d.png"]);
+
+  setStatus(t("phaseInpainting"));
+  const radius = Math.max(2, Math.min(12, Math.round(Math.max(selW, selH) / 8)));
+  let i = 0;
+  while (true) {
+    const name = `frames/f${String(i).padStart(5, "0")}.png`;
+    let raw: Uint8Array;
+    try {
+      raw = (await ffmpeg.readFile(name)) as Uint8Array;
+    } catch {
+      break;
+    }
+    const out = inpaintFrame(raw, cv, sx, sy, selW, selH, radius);
+    await ffmpeg.writeFile(name, out);
+    i += 1;
+    if (i % 10 === 0) setProgress(Math.min(95, 15 + Math.round((i / 300) * 75)));
+  }
+  if (i === 0) return false;
+
+  const fps = 30;
+  setStatus(t("phaseReencoding"));
+  const args: string[] = ["-framerate", String(fps), "-i", "frames/f%05d.png"];
+  if (hasAudio) args.push("-i", "audio.mka", "-c:a", "aac", "-b:a", "128k");
+  args.push(
+    "-c:v",
+    "libx264",
+    "-pix_fmt",
+    "yuv420p",
+    "-preset",
+    "ultrafast",
+    "-movflags",
+    "+faststart"
+  );
+  if (hasAudio) args.push("-shortest");
+  args.push(outputName);
+  await ffmpeg.exec(args);
+  return true;
+}
+
 export function VideoWatermarkRemover() {
   const t = useTranslations("mediaTools.videoWatermarkRemover");
   const [file, setFile] = useState<File | null>(null);
@@ -245,17 +451,21 @@ export function VideoWatermarkRemover() {
     setStatus(t("phaseLoadingEngine"));
     setLoadingEngine(true);
 
+    const ffmpegLogs: string[] = [];
     try {
-      setProgress(5); // show immediate feedback while FFmpeg core downloads
+      setProgress(5); // immediate feedback while FFmpeg core downloads
       const { FFmpeg, fetchFile, toBlobURL } = await loadFfmpeg();
       setLoadingEngine(false);
       setStatus(t("phaseRemoving"));
+
       const ffmpeg = new FFmpeg();
-      ffmpeg.on("log", ({ message }) => {
+      ffmpeg.on("log", ({ message }: { message: string }) => {
+        ffmpegLogs.push(message);
+        if (ffmpegLogs.length > 200) ffmpegLogs.shift();
         // eslint-disable-next-line no-console
         console.log("[ffmpeg]", message);
       });
-      ffmpeg.on("progress", ({ progress }) => {
+      ffmpeg.on("progress", ({ progress }: { progress: number }) => {
         setProgress(Math.min(99, Math.round(progress * 100)));
       });
 
@@ -271,47 +481,44 @@ export function VideoWatermarkRemover() {
       );
       await ffmpeg.load({ coreURL, wasmURL });
 
+      const vw = videoRef.current?.videoWidth || videoMeta?.w || 0;
+      const vh = videoRef.current?.videoHeight || videoMeta?.h || 0;
+      if (!vw || !vh) throw new Error(t("errorVideoMeta"));
+
       const ext = file.name.split(".").pop() || "mp4";
       const inputName = `input.${ext}`;
-      // Always output MP4 with H.264 + yuv420p + AAC for maximum compatibility
-      // with system players (Windows Media Player, QuickTime, etc.). We avoid
-      // locking profile/level so x264 can auto-pick a level appropriate for the
-      // input resolution; baseline/level-3.0 cannot handle 720p60/1080p content.
       const outputName = "output.mp4";
-
       await ffmpeg.writeFile(inputName, await fetchFile(file));
-      await ffmpeg.exec([
-        "-i",
-        inputName,
-        "-vf",
-        // band softens the luma correction border so the removed region blends
-        // into the surroundings without a hard rectangular trace.
-        // Clamp the selection into the actual video frame so an out-of-range
-        // region (e.g. caused by letterboxing or rounding) cannot produce an
-        // empty output.
-        (() => {
-          const vw = videoRef.current?.videoWidth || videoMeta?.w || 0;
-          const vh = videoRef.current?.videoHeight || videoMeta?.h || 0;
-          const cx = Math.max(0, Math.min(Math.round(selection.x), vw - 1));
-          const cy = Math.max(0, Math.min(Math.round(selection.y), vh - 1));
-          const cw = Math.max(2, Math.min(Math.round(selection.w), vw - cx));
-          const ch = Math.max(2, Math.min(Math.round(selection.h), vh - cy));
-          return `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:band=30:show=0`;
-        })(),
-        "-c:v",
-        "libx264",
-        "-pix_fmt",
-        "yuv420p",
-        "-preset",
-        "ultrafast",
-        "-movflags",
-        "+faststart",
-        "-c:a",
-        "aac",
-        "-b:a",
-        "128k",
-        outputName,
-      ]);
+
+      // Try OpenCV inpainting first (only if self-hosted opencv.js is present).
+      let usedOpenCv = false;
+      try {
+        const cv = await loadOpenCv();
+        if (cv?.inpaint) {
+          setStatus(t("phaseExtracting"));
+          usedOpenCv = await runOpenCvInpaint(
+            ffmpeg,
+            cv,
+            inputName,
+            outputName,
+            vw,
+            vh,
+            selection,
+            setProgress,
+            setStatus,
+            t
+          );
+        }
+      } catch {
+        usedOpenCv = false;
+        // eslint-disable-next-line no-console
+        console.warn("OpenCV unavailable; using FFmpeg delogo fallback.");
+      }
+
+      if (!usedOpenCv) {
+        setStatus(t("opencvFallback") || t("phaseRemoving"));
+        await runDelogo(ffmpeg, inputName, outputName, vw, vh, selection, t);
+      }
 
       const data = await ffmpeg.readFile(outputName);
       if (!(data instanceof Uint8Array)) {
@@ -321,7 +528,8 @@ export function VideoWatermarkRemover() {
       // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
       const bytes = new Uint8Array(data);
       if (bytes.length === 0) {
-        throw new Error("Output file is empty");
+        const tail = ffmpegLogs.slice(-14).join("\n");
+        throw new Error(`${t("errorEmptyLog")}\n${tail}`);
       }
       const blob = new Blob([bytes], { type: "video/mp4" });
       const url = URL.createObjectURL(blob);
@@ -330,7 +538,7 @@ export function VideoWatermarkRemover() {
       setProgress(100);
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
-      const isNetworkError = /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn/i.test(
+      const isNetworkError = /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn|opencv/i.test(
         message
       );
       setError(isNetworkError ? t("errorNetwork") : message || t("errorFailed"));

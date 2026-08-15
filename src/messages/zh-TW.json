@@ -167,6 +167,12 @@
       "download": "下載處理後影片",
       "errorSelectArea": "請先在要去除的水印區域畫一個框",
       "errorNetwork": "網路錯誤：下載影片處理核心失敗，請檢查網路後重試。",
+      "errorVideoMeta": "無法讀取影片尺寸。",
+      "errorEmptyLog": "處理結果為空檔案。FFmpeg 日誌：\n",
+      "phaseExtracting": "正在擷取影片幀…",
+      "phaseInpainting": "正在修復浮水印區域…",
+      "phaseReencoding": "正在重新合成影片…",
+      "opencvFallback": "OpenCV 引擎不可用，已切換為備用方法…",
       "errorFailed": "處理失敗，請重試",
       "hint": "提示：在影片畫面上按住並拖動，框選水印區域。"
     },

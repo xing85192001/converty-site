@@ -95,8 +95,9 @@ export function detectWatermarks(
   let sqSum = 0;
   for (let i = 0; i < scores.length; i++) sqSum += (scores[i] - mean) ** 2;
   const std = Math.sqrt(sqSum / scores.length);
-  // Higher threshold so only genuinely strong edges (logo/text) survive.
-  const threshold = Math.max(24, mean + 1.5 * std);
+  // Conservative threshold: only genuinely strong, well-separated edges
+  // (logo/text watermark) survive, not busy scene content.
+  const threshold = Math.max(34, mean + 2.2 * std);
 
   const candidates: { rect: Rect; score: number }[] = [];
   const visited = new Set<number>();
@@ -151,8 +152,23 @@ export function detectWatermarks(
       rh /= scale;
 
       const area = rw * rh;
-      // Keep small-to-medium regions only: too small = noise, too large = scene.
-      if (compCount >= 2 && area >= W * H * 0.008 && area <= W * H * 0.2 && rw > 20 && rh > 12) {
+      // Require the candidate to actually touch a frame edge/corner — watermarks
+      // live at the borders, while busy scene content in the middle is ignored.
+      const compOnEdge =
+        minX <= margin ||
+        maxX >= tilesX - 1 - margin ||
+        minY <= marginY ||
+        maxY >= tilesY - 1 - marginY;
+      // Keep small-to-medium edge regions only: too small = noise, too large =
+      // scene. A tighter upper bound avoids flagging whole building faces.
+      if (
+        compOnEdge &&
+        compCount >= 2 &&
+        area >= W * H * 0.01 &&
+        area <= W * H * 0.1 &&
+        rw > 20 &&
+        rh > 12
+      ) {
         // Corner proximity bonus: normalize distance from nearest corner.
         const dcx = Math.min(rx, W - rx - rw);
         const dcy = Math.min(ry, H - ry - rh);
@@ -168,5 +184,7 @@ export function detectWatermarks(
   }
 
   candidates.sort((a, b) => b.score - a.score);
-  return candidates.slice(0, 3).map((c) => c.rect);
+  // Only the single best candidate — returning several just confuses the UI when
+  // detection is uncertain, and the user can always draw the box manually.
+  return candidates.slice(0, 1).map((c) => c.rect);
 }

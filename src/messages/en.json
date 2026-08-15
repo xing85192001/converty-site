@@ -165,6 +165,12 @@
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "Network error: failed to download the video processing core. Please check your connection and try again.",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method...",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
