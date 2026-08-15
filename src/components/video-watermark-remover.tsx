@@ -120,6 +120,36 @@ export function VideoWatermarkRemover() {
     setDragStart(null);
   };
 
+  const getTouchPos = (e: React.TouchEvent) => {
+    const touch = e.touches[0] || e.changedTouches[0];
+    return videoToFrame(touch.clientX, touch.clientY);
+  };
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    if (!videoRef.current) return;
+    e.preventDefault();
+    const pos = getTouchPos(e);
+    setIsDragging(true);
+    setDragStart(pos);
+    setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging || !dragStart || !videoRef.current) return;
+    e.preventDefault();
+    const pos = getTouchPos(e);
+    const x = Math.min(dragStart.x, pos.x);
+    const y = Math.min(dragStart.y, pos.y);
+    const w = Math.abs(pos.x - dragStart.x);
+    const h = Math.abs(pos.y - dragStart.y);
+    setSelection({ x, y, w, h });
+  };
+
+  const onTouchEnd = () => {
+    setIsDragging(false);
+    setDragStart(null);
+  };
+
   // Compute the overlay rectangle (in CSS pixels) from the frame selection.
   const overlayStyle = () => {
     const video = videoRef.current;
@@ -146,6 +176,7 @@ export function VideoWatermarkRemover() {
     setProgress(0);
 
     try {
+      setProgress(5); // show immediate feedback while FFmpeg core downloads
       const { FFmpeg, fetchFile, toBlobURL } = await loadFfmpeg();
       const ffmpeg = new FFmpeg();
       ffmpeg.on("log", ({ message }) => {
@@ -175,10 +206,9 @@ export function VideoWatermarkRemover() {
         "-i",
         inputName,
         "-vf",
-        // band softens the luma correction border so the removed region
-        // doesn't leave a hard rectangular trace; a light box blur feathers the
-        // seam across the whole frame so no residual edge remains.
-        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0,boxblur=2`,
+        // band softens the luma correction border so the removed region blends
+        // into the surroundings without a hard rectangular trace.
+        `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
         "-c:a",
         "copy",
         outputName,
@@ -268,7 +298,7 @@ export function VideoWatermarkRemover() {
                   {isProcessing ? (
                     <>
                       <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
-                      {t("processing")} {progress}%
+                      {t("processing", { progress })}
                     </>
                   ) : (
                     <>
@@ -289,7 +319,7 @@ export function VideoWatermarkRemover() {
                   />
                 </div>
                 <p className="mt-1 text-center text-xs text-muted-foreground">
-                  {t("processing")} {progress}%
+                  {t("processing", { progress })}
                 </p>
               </div>
             )}
@@ -304,6 +334,9 @@ export function VideoWatermarkRemover() {
               onMouseMove={onMouseMove}
               onMouseUp={onMouseUp}
               onMouseLeave={onMouseUp}
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
             >
               {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
               <video

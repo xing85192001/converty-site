@@ -13,10 +13,9 @@ interface Rect {
   h: number;
 }
 
-// Light box blur restricted to a region (with a small margin) so the inpaint
-// seam feathers into the surroundings instead of leaving a hard visible edge /
-// trace after removal.
-function featherRegion(
+// Feather only the outer rim of the inpainted region so the seam blends in
+// without destroying the texture we just synthesised inside the selection.
+function featherBoundary(
   data: Uint8ClampedArray,
   W: number,
   H: number,
@@ -24,28 +23,25 @@ function featherRegion(
   y1: number,
   x2: number,
   y2: number,
-  radius: number
+  rim: number
 ) {
-  const m = radius + 1;
-  const bx1 = Math.max(0, x1 - m);
-  const by1 = Math.max(0, y1 - m);
-  const bx2 = Math.min(W - 1, x2 + m);
-  const by2 = Math.min(H - 1, y2 + m);
   const snap = new Uint8ClampedArray(data);
-  const r2 = radius * radius;
-  for (let yy = by1; yy <= by2; yy++) {
-    for (let xx = bx1; xx <= bx2; xx++) {
+  const r2 = rim * rim;
+  for (let yy = y1; yy <= y2; yy++) {
+    for (let xx = x1; xx <= x2; xx++) {
+      const dist = Math.min(xx - x1, x2 - xx, yy - y1, y2 - yy);
+      if (dist > rim) continue;
       let r = 0;
       let g = 0;
       let b = 0;
       let n = 0;
-      for (let dy = -radius; dy <= radius; dy++) {
+      for (let dy = -rim; dy <= rim; dy++) {
         const ny = yy + dy;
-        if (ny < by1 || ny > by2) continue;
-        for (let dx = -radius; dx <= radius; dx++) {
+        if (ny < 0 || ny >= H) continue;
+        for (let dx = -rim; dx <= rim; dx++) {
           if (dx * dx + dy * dy > r2) continue;
           const nx = xx + dx;
-          if (nx < bx1 || nx > bx2) continue;
+          if (nx < 0 || nx >= W) continue;
           const i = (ny * W + nx) * 4;
           r += snap[i];
           g += snap[i + 1];
@@ -54,9 +50,11 @@ function featherRegion(
         }
       }
       const i = (yy * W + xx) * 4;
-      data[i] = r / n;
-      data[i + 1] = g / n;
-      data[i + 2] = b / n;
+      if (n > 0) {
+        data[i] = Math.round(r / n);
+        data[i + 1] = Math.round(g / n);
+        data[i + 2] = Math.round(b / n);
+      }
     }
   }
 }
@@ -177,52 +175,47 @@ export function ImageWatermarkRemover() {
       const filled = new Uint8Array(W * H);
       // Cap the search radius so we never scan the whole image per pixel.
       const maxR = Math.min(160, Math.max(W, H));
-      const minSamples = 12;
       const rows = y2 - y1 + 1;
 
-      // Pass 1: weighted neighbour sampling from outside the selection.
+      // Texture-preserving fill: each selection pixel copies the nearest valid
+      // source pixel outside the selection, with a small random jitter so large
+      // flat areas keep natural variation instead of turning into a smudged
+      // rectangle.
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
-          let totalR = 0;
-          let totalG = 0;
-          let totalB = 0;
-          let totalW = 0;
-          let bestD = Infinity;
           let bestIdx = -1;
+          let bestD = Infinity;
 
-          for (let r = 1; r <= maxR; r++) {
-            const ring = 2 * r + 1;
-            let count = 0;
-            for (let dy = -r; dy <= r && count < ring; dy++) {
-              for (let dx = -r; dx <= r && count < ring; dx++) {
+          for (let r = 2; r <= maxR && bestIdx < 0; r++) {
+            // collect the source pixels on this ring
+            const ringSources: number[] = [];
+            for (let dy = -r; dy <= r; dy++) {
+              for (let dx = -r; dx <= r; dx++) {
                 if (Math.abs(dx) !== r && Math.abs(dy) !== r) continue;
-                count++;
                 const sx = px + dx;
                 const sy = py + dy;
                 if (sx < 0 || sx >= W || sy < 0 || sy >= H) continue;
                 if (sx >= x1 && sx <= x2 && sy >= y1 && sy <= y2) continue;
                 const idx = (sy * W + sx) * 4;
-                const weight = 1 / r;
-                totalR += data[idx] * weight;
-                totalG += data[idx + 1] * weight;
-                totalB += data[idx + 2] * weight;
-                totalW += weight;
-                if (r < bestD) {
-                  bestD = r;
+                const d = Math.hypot(sx - px, sy - py);
+                if (d < bestD) {
+                  bestD = d;
                   bestIdx = idx;
                 }
+                ringSources.push(idx);
               }
             }
-            if (totalW >= minSamples) break;
+            if (ringSources.length > 0) {
+              // prefer the nearest ring but add jitter by picking randomly from
+              // it; this keeps fabric / skin texture instead of averaging.
+              const chosen = ringSources[Math.floor(Math.random() * ringSources.length)];
+              bestIdx = chosen;
+              break;
+            }
           }
 
           const idx = (py * W + px) * 4;
-          if (totalW > 0) {
-            data[idx] = Math.round(totalR / totalW);
-            data[idx + 1] = Math.round(totalG / totalW);
-            data[idx + 2] = Math.round(totalB / totalW);
-            filled[py * W + px] = 1;
-          } else if (bestIdx >= 0) {
+          if (bestIdx >= 0) {
             data[idx] = data[bestIdx];
             data[idx + 1] = data[bestIdx + 1];
             data[idx + 2] = data[bestIdx + 2];
@@ -232,14 +225,13 @@ export function ImageWatermarkRemover() {
         // Yield periodically so mobile devices never freeze and the progress
         // bar keeps updating.
         if ((py - y1) % 48 === 0) {
-          setProgress(Math.round(((py - y1) / rows) * 85));
+          setProgress(Math.round(((py - y1) / rows) * 90));
           await new Promise((res) => setTimeout(res, 0));
         }
       }
 
-      // Pass 2: fill any interior holes by copying the nearest already-filled
-      // pixel. This guarantees the watermark (and any white patch) is fully
-      // removed even for large selections.
+      // Fill any interior pixels that didn't find a source (e.g. selection
+      // covers the whole image) by copying the nearest already-filled pixel.
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
           if (filled[py * W + px]) continue;
@@ -270,13 +262,14 @@ export function ImageWatermarkRemover() {
           }
         }
         if ((py - y1) % 96 === 0) {
-          setProgress(85 + Math.round(((py - y1) / rows) * 12));
+          setProgress(90 + Math.round(((py - y1) / rows) * 7));
           await new Promise((res) => setTimeout(res, 0));
         }
       }
 
-      // Feather the seam so the inpainting blends into the background.
-      featherRegion(data, W, H, x1, y1, x2, y2, 3);
+      // Feather only the boundary rim so the inpainted area blends into the
+      // background without turning the whole patch into a blurred rectangle.
+      featherBoundary(data, W, H, x1, y1, x2, y2, 3);
 
       ctx.putImageData(dst, 0, 0);
       setProgress(100);
