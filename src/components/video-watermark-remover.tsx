@@ -255,7 +255,9 @@ export function VideoWatermarkRemover() {
 
       const ext = file.name.split(".").pop() || "mp4";
       const inputName = `input.${ext}`;
-      const outputName = `output.${ext}`;
+      // Always output MP4 with H.264 baseline + yuv420p + AAC for maximum
+      // compatibility with system players (Windows Media Player, QuickTime, etc.)
+      const outputName = "output.mp4";
 
       await ffmpeg.writeFile(inputName, await fetchFile(file));
       await ffmpeg.exec([
@@ -265,18 +267,33 @@ export function VideoWatermarkRemover() {
         // band softens the luma correction border so the removed region blends
         // into the surroundings without a hard rectangular trace.
         `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
+        "-c:v",
+        "libx264",
+        "-profile:v",
+        "baseline",
+        "-level",
+        "3.0",
+        "-pix_fmt",
+        "yuv420p",
+        "-preset",
+        "ultrafast",
+        "-movflags",
+        "+faststart",
         "-c:a",
-        "copy",
+        "aac",
+        "-b:a",
+        "128k",
         outputName,
       ]);
 
       const data = await ffmpeg.readFile(outputName);
+      if (!(data instanceof Uint8Array)) {
+        throw new Error("Unexpected readFile output type");
+      }
       // Copy into a fresh ArrayBuffer-backed Uint8Array so it satisfies BlobPart
       // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
-      const bytes =
-        data instanceof Uint8Array ? new Uint8Array(data) : new TextEncoder().encode(data);
-      const mime = file.type || "video/mp4";
-      const blob = new Blob([bytes], { type: mime });
+      const bytes = new Uint8Array(data);
+      const blob = new Blob([bytes], { type: "video/mp4" });
       const url = URL.createObjectURL(blob);
       setProcessedUrl(url);
       setProgress(100);
@@ -295,7 +312,9 @@ export function VideoWatermarkRemover() {
     if (!processedUrl || !file) return;
     const a = document.createElement("a");
     a.href = processedUrl;
-    a.download = `no-watermark-${file.name}`;
+    // Output is always normalized to MP4/H.264/AAC for compatibility.
+    const baseName = file.name.replace(/\.[^/.]+$/, "");
+    a.download = `no-watermark-${baseName}.mp4`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
