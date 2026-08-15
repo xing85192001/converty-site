@@ -1,4 +1,4 @@
-const FFMPEG_CACHE = "ffmpeg-core-v3";
+const FFMPEG_CACHE = "ffmpeg-core-v5";
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();

@@ -27,7 +27,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Bump this when the SW logic itself changes, so clients drop any cached copy.
-const FFMPEG_CACHE = "ffmpeg-core-v4";
+const FFMPEG_CACHE = "ffmpeg-core-v5";
 
 const swSource = `
 const FFMPEG_CACHE = "${FFMPEG_CACHE}";

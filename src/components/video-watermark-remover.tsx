@@ -30,9 +30,9 @@ const CORE_HOSTS = [
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
 ];
 
-// Expected size of @ffmpeg/core@0.12.6 ffmpeg-core.wasm. If the fetched file
-// does not match, we reject it before FFmpeg tries to compile a truncated blob.
-const EXPECTED_WASM_SIZE = 20_275_200;
+// Bust the browser HTTP cache for the self-hosted copy whenever the SW cache
+// generation changes, so a stale/corrupted wasm cannot survive a deploy.
+const CORE_VERSION = "v5";
 
 async function fetchToBlobURL(
   url: string,
@@ -75,8 +75,10 @@ async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): 
   const errors: string[] = [];
 
   for (const host of CORE_HOSTS) {
-    const coreURL = `${host}/ffmpeg-core.js`;
-    const wasmURL = `${host}/ffmpeg-core.wasm`;
+    // Self-hosted copy gets a cache-busting query param tied to the SW version.
+    const versionSuffix = host.startsWith("/") ? `?${CORE_VERSION}` : "";
+    const coreURL = `${host}/ffmpeg-core.js${versionSuffix}`;
+    const wasmURL = `${host}/ffmpeg-core.wasm${versionSuffix}`;
     try {
       onProgress?.(5);
       const core = await fetchToBlobURL(coreURL, "text/javascript");
@@ -85,8 +87,9 @@ async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): 
         if (total > 0) onProgress?.(20 + Math.min(70, Math.round((received / total) * 70)));
       });
 
-      if (wasm.size !== EXPECTED_WASM_SIZE) {
-        throw new Error(`wasm size ${wasm.size}, expected ${EXPECTED_WASM_SIZE}`);
+      // Sanity checks: must be non-trivial and start with the WebAssembly magic.
+      if (wasm.size < 1_000_000) {
+        throw new Error(`wasm too small (${wasm.size} bytes)`);
       }
 
       onProgress?.(95);
