@@ -6720,9 +6720,39 @@
     "something-went-wrong": "出了點問題",
     "toggle-menu": "切換選單",
     "toggle-theme": "切換主題",
-
     "user-content-body": "您只能上傳、提交或處理您擁有或有權使用的內容。您全權負責確保您擁有透過我們的工具所使用的任何內容所需的權利、許可和權限。",
     "install-baikecalc": "安裝百科計算器",
     "you-are-offline-calculators-will-work-from-cache": "您已離線。計算器將從快取中運行。"
+  },
+  "legal": {
+    "terms": {
+      "description": "使用我們的免費計算器和轉換器的規則。",
+      "intro": "使用 {siteName} 即表示您同意以下條款。這些工具免費提供給一般資訊用途。",
+      "accuracy": "準確性",
+      "accuracyBody": "我們努力確保每個工具的準確性，但不保證結果完整、正確或適合您的具體情況。使用這些工具的風險由您自行承擔。",
+      "advertising": "廣告",
+      "advertisingBody": "本網站展示第三方廣告（包括 Google AdSense）。廣告商對其自身內容負責，他們對您數據的使用受其隱私政策約束。",
+      "changes": "變更",
+      "changesBody": "我們可能會不時更新這些條款。在變更後繼續使用本網站，即表示您接受更新後的條款。",
+      "noProfessionalAdviceBody": "本網站上的計算器僅用於教育和資訊目的。它們不能替代專業的財務、醫療、法律或工程建議。請務必獨立驗證重要結果，並在必要時諮詢合格的專業人士。"
+    },
+    "privacy": {
+      "description": "當您使用我們的免費線上計算器時，我們如何處理資訊。",
+      "intro": "本隱私政策說明您訪問 {siteName} 時收集哪些資訊以及如何使用這些資訊。本網站是一個靜態 Web 應用：無需建立帳戶，也無需提交個人資訊即可使用任何計算器。",
+      "infoCollectedBody": "當您訪問本網站時，我們的託管服務商（Vercel）以及已啟用的分析和廣告合作夥伴會自動接收標準技術資訊，例如您的 IP 位址、瀏覽器類型、裝置類型、語言偏好、來源頁面以及訪問日期和時間。這些資訊僅用於運營、保護和改進網站。",
+      "cookiesBody": "我們使用 Cookie 和類似技術來記住您的偏好，並透過 Google AdSense 投放個人化廣告。廣告商可能會根據您在不同網站的活動使用 Cookie 建立興趣檔案。您可以透過首次訪問時顯示的同意橫幅控制非必要 Cookie，也可以隨時清除本網站儲存來更改選擇。",
+      "cookiesGoogle": "要了解 Google 如何在使用我們合作夥伴的網站和應用時使用數據，請訪問 <link1>Google 廣告政策</link1>。您可以在 <link2>廣告設定</link2> 管理個人化設定。",
+      "cookiesGoogleLink": "Google 廣告政策",
+      "cookiesAdsLink": "廣告設定",
+      "yourRightsBody": "根據您所在的地區（例如歐盟 GDPR 或加利福尼亞 CCPA），您可能有權訪問、更正或刪除個人數據，並反對某些處理。由於本網站不在自己的伺服器上儲存個人數據，大多數請求涉及我們的服務提供商持有的數據，我們將根據請求協助您處理。",
+      "contactBody": "如果您對本政策有任何疑問，請透過 <email>85192001@qq.com</email> 聯繫我們。"
+    },
+    "contact": {
+      "description": "有問題、更正或合作想法？隨時與我們聯繫。",
+      "intro": "我們會閱讀每一條訊息，並盡量在幾個工作日內回覆。最快的方式是透過電子郵件聯繫我們。",
+      "emailTitle": "電子郵件",
+      "emailGeneral": "一般與支援：<email>xingxing85192001@gmail.com</email>",
+      "emailPrivacy": "隱私問題：<email>85192001@qq.com</email>"
+    }
   }
 }

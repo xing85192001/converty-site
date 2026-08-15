@@ -10,33 +10,37 @@ export function generateStaticParams() {
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
   const tUi = await getTranslations("ui");
-  return (
-    <LegalPage
-      title={tUi("contact-us")}
-      description="Questions, corrections, or partnership ideas? Reach out any time."
-    >
-      <p>
-        We read every message and try to reply within a few business days. The fastest way to reach
-        us is email.
-      </p>
+  const t = await getTranslations("legal.contact");
 
-      <LegalSection title="Email">
+  return (
+    <LegalPage title={tUi("contact-us")} description={t("description")}>
+      <p>{t("intro")}</p>
+
+      <LegalSection title={t("emailTitle")}>
         <p>
-          General &amp; support:{" "}
-          <a
-            className="text-primary underline underline-offset-4"
-            href="mailto:xingxing85192001@gmail.com"
-          >
-            xingxing85192001@gmail.com
-          </a>
+          {t.rich("emailGeneral", {
+            email: (chunks) => (
+              <a
+                className="text-primary underline underline-offset-4"
+                href="mailto:xingxing85192001@gmail.com"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
         <p>
-          Privacy questions:{" "}
-          <a className="text-primary underline underline-offset-4" href="mailto:85192001@qq.com">
-            85192001@qq.com
-          </a>
+          {t.rich("emailPrivacy", {
+            email: (chunks) => (
+              <a
+                className="text-primary underline underline-offset-4"
+                href="mailto:85192001@qq.com"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </LegalSection>
 
