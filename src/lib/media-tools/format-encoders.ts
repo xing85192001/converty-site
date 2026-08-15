@@ -143,7 +143,10 @@ export function imageDataToGif(imageData: ImageData): Uint8Array {
     pixels[i] = findNearestPaletteIndex(data[i * 4], data[i * 4 + 1], data[i * 4 + 2]);
   }
 
-  const lzw = new LzwEncoder(2);
+  // Palette has 256 entries, so the LZW minimum code size must be 8.
+  // Using 2 here meant only indices 0-3 existed in the initial code table,
+  // so most pixels were dropped and the GIF decoded as blank/transparent.
+  const lzw = new LzwEncoder(8);
   const compressed = lzw.encode(pixels);
 
   const headerSize = 6 + 7 + 768 + 8 + 10 + 2;
@@ -170,7 +173,7 @@ export function imageDataToGif(imageData: ImageData): Uint8Array {
   write([width & 0xff, (width >> 8) & 0xff]);
   write([height & 0xff, (height >> 8) & 0xff]);
   write([0x00]); // no local color table
-  write([0x02]); // LZW minimum code size
+  write([0x08]); // LZW minimum code size (matches 256-color palette)
 
   for (let i = 0; i < compressed.length; i += 255) {
     const chunk = compressed.subarray(i, i + 255);

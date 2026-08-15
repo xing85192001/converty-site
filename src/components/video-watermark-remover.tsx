@@ -462,6 +462,8 @@ export function VideoWatermarkRemover() {
                 src={originalUrl}
                 className="block max-h-[320px] max-w-full cursor-crosshair object-contain"
                 controls
+                playsInline
+                preload="metadata"
                 onLoadedMetadata={() => setSelection(null)}
               />
               {selection && (
@@ -500,6 +502,7 @@ export function VideoWatermarkRemover() {
               src={processedUrl}
               className="block max-h-[300px] max-w-full object-contain"
               controls
+              playsInline
             />
           ) : (
             <div className="flex flex-col items-center justify-center text-muted-foreground">
