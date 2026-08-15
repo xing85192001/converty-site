@@ -21,33 +21,59 @@ async function loadFfmpeg() {
   };
 }
 
-// Load the FFmpeg core from the first host that serves it. The self-hosted copy
-// on our own domain is always reachable; the public CDNs are fallbacks only.
+// Try the self-hosted core first, then fall back to public CDNs. Same-origin
+// URLs are fed directly to ffmpeg.load() so the worker downloads them once.
+// Cross-origin CDN URLs are converted to blob URLs to avoid CORS/MIME issues.
 const CORE_HOSTS = [
   "/ffmpeg",
   "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
 ];
 
-async function fetchWithRetry(
-  url: string,
-  type: string,
-  toBlobURL: (url: string, type: string) => Promise<string>
-): Promise<string> {
-  const lastErr: unknown[] = [];
-  for (let attempt = 1; attempt <= 3; attempt++) {
+async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): Promise<void> {
+  const errors: string[] = [];
+  const { toBlobURL } = await loadFfmpeg();
+
+  for (const host of CORE_HOSTS) {
+    const coreURL = `${host}/ffmpeg-core.js`;
+    const wasmURL = `${host}/ffmpeg-core.wasm`;
     try {
-      // eslint-disable-next-line no-await-in-loop
-      return await toBlobURL(`${url}?attempt=${attempt}`, type);
-    } catch (err) {
-      lastErr.push(err);
-      if (attempt < 3) {
-        // eslint-disable-next-line no-await-in-loop
-        await new Promise((res) => setTimeout(res, attempt * 800));
+      if (host.startsWith("/")) {
+        // Self-hosted: let the worker fetch directly. Pre-check existence so
+        // we can fall back quickly if the file is missing.
+        const [coreRes, wasmRes] = await Promise.all([
+          fetch(coreURL, { method: "HEAD" }),
+          fetch(wasmURL, { method: "HEAD" }),
+        ]);
+        if (!coreRes.ok) throw new Error(`core ${coreRes.status}`);
+        if (!wasmRes.ok) throw new Error(`wasm ${wasmRes.status}`);
+        onProgress?.(5);
+        await ffmpeg.load({ coreURL, wasmURL });
+      } else {
+        // CDN: use blob URLs to sidestep CORS and MIME checks.
+        const coreBlob = await toBlobURL(coreURL, "text/javascript");
+        onProgress?.(30);
+        const wasmBlob = await toBlobURL(
+          wasmURL,
+          "application/wasm",
+          true,
+          ({ received, total }) => {
+            if (total > 0) onProgress?.(30 + Math.min(60, Math.round((received / total) * 60)));
+          }
+        );
+        onProgress?.(95);
+        await ffmpeg.load({ coreURL: coreBlob, wasmURL: wasmBlob });
       }
+      onProgress?.(100);
+      return;
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      errors.push(`${host}: ${msg}`);
+      // eslint-disable-next-line no-console
+      console.warn(`[video-watermark] FFmpeg load failed from ${host}:`, err);
     }
   }
-  throw lastErr[lastErr.length - 1];
+  throw new Error(`FFmpeg core load failed: ${errors.join(" | ")}`);
 }
 
 interface Selection {
@@ -55,49 +81,6 @@ interface Selection {
   y: number;
   w: number;
   h: number;
-}
-
-// --- Optional OpenCV.js (self-hosted) for higher-quality inpainting ---
-// To enable: drop opencv.js + opencv_js.wasm into /public/opencv/.
-// If unavailable, the tool transparently falls back to FFmpeg delogo so it
-// always produces a result instead of breaking.
-let opencvPromise: Promise<any> | null = null;
-function loadOpenCv(): Promise<any> {
-  if (opencvPromise) return opencvPromise;
-  opencvPromise = new Promise((resolve, reject) => {
-    const w = window as any;
-    if (w.cv?.inpaint) {
-      resolve(w.cv);
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = "/opencv/opencv.js";
-    script.async = true;
-    const timer = setTimeout(() => reject(new Error("opencv-timeout")), 30000);
-    script.onload = () => {
-      const cv = w.cv;
-      if (!cv) {
-        clearTimeout(timer);
-        reject(new Error("opencv-undefined"));
-        return;
-      }
-      if (cv.onRuntimeInitialized !== undefined && !cv.inpaint) {
-        cv.onRuntimeInitialized = () => {
-          clearTimeout(timer);
-          resolve(cv);
-        };
-      } else {
-        clearTimeout(timer);
-        resolve(cv);
-      }
-    };
-    script.onerror = () => {
-      clearTimeout(timer);
-      reject(new Error("opencv-script-error"));
-    };
-    document.head.appendChild(script);
-  });
-  return opencvPromise;
 }
 
 type TFn = (key: string, params?: Record<string, string | number | Date>) => string;
@@ -156,111 +139,6 @@ async function runDelogo(
       outputName,
     ]);
   }
-}
-
-function inpaintFrame(
-  raw: Uint8Array,
-  cv: any,
-  sx: number,
-  sy: number,
-  sw: number,
-  sh: number,
-  radius: number
-): Uint8Array {
-  const imgMat = new cv.Mat(raw.length, 1, cv.CV_8U);
-  imgMat.data.set(raw);
-  const src = cv.imdecode(imgMat, cv.IMREAD_COLOR);
-  imgMat.delete();
-  if (src.empty()) throw new Error("imdecode failed");
-  const x = Math.max(0, Math.min(sx, src.cols - 1));
-  const y = Math.max(0, Math.min(sy, src.rows - 1));
-  const w = Math.max(2, Math.min(sw, src.cols - x));
-  const h = Math.max(2, Math.min(sh, src.rows - y));
-  const mask = new cv.Mat(src.rows, src.cols, cv.CV_8U, new cv.Scalar(0));
-  cv.rectangle(mask, new cv.Point(x, y), new cv.Point(x + w, y + h), new cv.Scalar(255), -1);
-  const dst = new cv.Mat();
-  cv.inpaint(src, mask, dst, radius, cv.INPAINT_TELEA);
-  const enc = new cv.Mat();
-  cv.imencode(".png", dst, enc);
-  const out = new Uint8Array(enc.data);
-  src.delete();
-  mask.delete();
-  dst.delete();
-  enc.delete();
-  return out;
-}
-
-// Full inpaint pipeline: extract frames -> OpenCV inpaint -> re-encode.
-async function runOpenCvInpaint(
-  ffmpeg: any,
-  cv: any,
-  inputName: string,
-  outputName: string,
-  vw: number,
-  vh: number,
-  sel: Selection,
-  setProgress: (n: number) => void,
-  setStatus: (s: string) => void,
-  t: TFn
-): Promise<boolean> {
-  const maxW = 720;
-  const scale = Math.min(1, maxW / vw);
-  const sw = Math.max(2, Math.round(vw * scale));
-  const sh = Math.max(2, Math.round(vh * scale));
-  const sx = Math.round(sel.x * scale);
-  const sy = Math.round(sel.y * scale);
-  const selW = Math.round(sel.w * scale);
-  const selH = Math.round(sel.h * scale);
-
-  let hasAudio = false;
-  try {
-    await ffmpeg.exec(["-i", inputName, "-vn", "-acodec", "copy", "audio.mka"]);
-    const a = await ffmpeg.readFile("audio.mka");
-    hasAudio = (a as Uint8Array).length > 0;
-  } catch {
-    hasAudio = false;
-  }
-
-  setStatus(t("phaseExtracting"));
-  setProgress(10);
-  await ffmpeg.exec(["-i", inputName, "-vf", `scale=${sw}:${sh}`, "frames/f%05d.png"]);
-
-  setStatus(t("phaseInpainting"));
-  const radius = Math.max(2, Math.min(12, Math.round(Math.max(selW, selH) / 8)));
-  let i = 0;
-  while (true) {
-    const name = `frames/f${String(i).padStart(5, "0")}.png`;
-    let raw: Uint8Array;
-    try {
-      raw = (await ffmpeg.readFile(name)) as Uint8Array;
-    } catch {
-      break;
-    }
-    const out = inpaintFrame(raw, cv, sx, sy, selW, selH, radius);
-    await ffmpeg.writeFile(name, out);
-    i += 1;
-    if (i % 10 === 0) setProgress(Math.min(95, 15 + Math.round((i / 300) * 75)));
-  }
-  if (i === 0) return false;
-
-  const fps = 30;
-  setStatus(t("phaseReencoding"));
-  const args: string[] = ["-framerate", String(fps), "-i", "frames/f%05d.png"];
-  if (hasAudio) args.push("-i", "audio.mka", "-c:a", "aac", "-b:a", "128k");
-  args.push(
-    "-c:v",
-    "libx264",
-    "-pix_fmt",
-    "yuv420p",
-    "-preset",
-    "ultrafast",
-    "-movflags",
-    "+faststart"
-  );
-  if (hasAudio) args.push("-shortest");
-  args.push(outputName);
-  await ffmpeg.exec(args);
-  return true;
 }
 
 export function VideoWatermarkRemover() {
@@ -459,10 +337,8 @@ export function VideoWatermarkRemover() {
 
     const ffmpegLogs: string[] = [];
     try {
-      setProgress(5); // immediate feedback while FFmpeg core downloads
-      const { FFmpeg, fetchFile, toBlobURL } = await loadFfmpeg();
-      setLoadingEngine(false);
-      setStatus(t("phaseRemoving"));
+      setProgress(2); // immediate feedback while FFmpeg core downloads
+      const { FFmpeg, fetchFile } = await loadFfmpeg();
 
       const ffmpeg = new FFmpeg();
       ffmpeg.on("log", ({ message }: { message: string }) => {
@@ -475,25 +351,15 @@ export function VideoWatermarkRemover() {
         setProgress(Math.min(99, Math.round(progress * 100)));
       });
 
-      // Try each host in turn; use the first one that serves both core files.
-      let coreURL: string | null = null;
-      let wasmURL: string | null = null;
-      let loadErr: unknown;
-      for (const host of CORE_HOSTS) {
-        try {
-          coreURL = await fetchWithRetry(`${host}/ffmpeg-core.js`, "text/javascript", toBlobURL);
-          wasmURL = await fetchWithRetry(`${host}/ffmpeg-core.wasm`, "application/wasm", toBlobURL);
-          await ffmpeg.load({ coreURL, wasmURL });
-          break;
-        } catch (err) {
-          loadErr = err;
-          coreURL = null;
-          wasmURL = null;
-        }
-      }
-      if (!coreURL || !wasmURL) {
-        throw loadErr ?? new Error(t("errorNetwork"));
-      }
+      // Load the core. Self-hosted files are downloaded directly by the worker;
+      // CDN fallbacks are fetched first and converted to blob URLs.
+      setLoadingEngine(true);
+      await loadFfmpegCore(ffmpeg, (pct) => {
+        if (pct <= 5) setProgress(Math.max(2, pct));
+      });
+      setLoadingEngine(false);
+      setStatus(t("phaseRemoving"));
+      setProgress(5);
 
       const vw = videoRef.current?.videoWidth || videoMeta?.w || 0;
       const vh = videoRef.current?.videoHeight || videoMeta?.h || 0;
@@ -504,35 +370,7 @@ export function VideoWatermarkRemover() {
       const outputName = "output.mp4";
       await ffmpeg.writeFile(inputName, await fetchFile(file));
 
-      // Try OpenCV inpainting first (only if self-hosted opencv.js is present).
-      let usedOpenCv = false;
-      try {
-        const cv = await loadOpenCv();
-        if (cv?.inpaint) {
-          setStatus(t("phaseExtracting"));
-          usedOpenCv = await runOpenCvInpaint(
-            ffmpeg,
-            cv,
-            inputName,
-            outputName,
-            vw,
-            vh,
-            selection,
-            setProgress,
-            setStatus,
-            t
-          );
-        }
-      } catch {
-        usedOpenCv = false;
-        // eslint-disable-next-line no-console
-        console.warn("OpenCV unavailable; using FFmpeg delogo fallback.");
-      }
-
-      if (!usedOpenCv) {
-        setStatus(t("opencvFallback") || t("phaseRemoving"));
-        await runDelogo(ffmpeg, inputName, outputName, vw, vh, selection, t);
-      }
+      await runDelogo(ffmpeg, inputName, outputName, vw, vh, selection, t);
 
       const data = await ffmpeg.readFile(outputName);
       if (!(data instanceof Uint8Array)) {
