@@ -146,6 +146,10 @@
       "supports": "Mendukung"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Deteksi Otomatis Tanda Air",
+      "autoDetecting": "Mendeteksi...",
+      "autoDetectNone": "Tidak ada tanda air yang terdeteksi. Silakan gambar kotak di area tanda air secara manual.",
+      "candidateLabel": "Tanda air {index}",
       "title": "Penghapus Watermark Video",
       "description": "Seret atau klik untuk mengunggah video, lalu gambar kotak di area watermark untuk menghapusnya.",
       "selectVideo": "Pilih Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Hapus Watermark",
       "download": "Unduh video yang diproses",
       "errorSelectArea": "Gambar kotak di area watermark yang ingin dihapus terlebih dahulu",
+      "errorNetwork": "Kesalahan jaringan: gagal mengunduh inti pemrosesan video. Periksa koneksi Anda dan coba lagi.",
       "errorFailed": "Pemrosesan gagal, silakan coba lagi",
       "hint": "Tip: tekan dan seret di frame video untuk menggambar kotak di area watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Deteksi Otomatis Tanda Air",
+      "autoDetecting": "Mendeteksi...",
+      "autoDetectNone": "Tidak ada tanda air yang terdeteksi. Silakan gambar kotak di area tanda air secara manual.",
+      "candidateLabel": "Tanda air {index}",
+      "hdMode": "Pemrosesan HD (lebih lambat, kualitas lebih baik)",
       "loadError": "Gagal memuat gambar",
       "canvasError": "Gagal mendapatkan konteks kanvas",
       "processError": "Pemrosesan gagal",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "Ada yang tidak beres",
     "toggle-menu": "Alihkan menu",
     "toggle-theme": "Beralih tema",
+    "user-content": "Konten Pengguna",
     "user-content-body": "Anda hanya boleh mengunggah, mengirimkan, atau memproses konten yang Anda miliki atau izinkan untuk Anda gunakan. Anda sepenuhnya bertanggung jawab untuk memastikan bahwa Anda memiliki hak, lisensi, dan izin yang diperlukan untuk konten apa pun yang Anda gunakan dengan alat kami.",
     "install-baikecalc": "Instal baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Anda sedang luring. Kalkulator akan bekerja dari cache."

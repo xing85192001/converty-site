@@ -146,6 +146,10 @@
       "supports": "Destekler"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Filigranı Otomatik Algıla",
+      "autoDetecting": "Algılanıyor...",
+      "autoDetectNone": "Belirgin bir filigran algılanamadı. Lütfen filigranın etrafına manuel olarak kutu çizin.",
+      "candidateLabel": "Filigran {index}",
       "title": "Video Filigran Kaldırıcı",
       "description": "Video yüklemek için sürükleyin veya tıklayın, ardından filigranı kaldırmak için alanın üzerine bir kutu çizin.",
       "selectVideo": "Video Seç",
@@ -158,10 +162,16 @@
       "startRemoval": "Filigranı Kaldır",
       "download": "İşlenmiş videoyu indir",
       "errorSelectArea": "Lütfen önce kaldırmak istediğiniz filigranın üzerine bir kutu çizin",
+      "errorNetwork": "Ağ hatası: video işleme çekirdeği indirilemedi. Lütfen bağlantınızı kontrol edip tekrar deneyin.",
       "errorFailed": "İşlem başarısız, lütfen tekrar deneyin",
       "hint": "İpucu: filigranın üzerine kutu çizmek için video karesinde basılı tutup sürükleyin."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Filigranı Otomatik Algıla",
+      "autoDetecting": "Algılanıyor...",
+      "autoDetectNone": "Belirgin bir filigran algılanamadı. Lütfen filigranın etrafına manuel olarak kutu çizin.",
+      "candidateLabel": "Filigran {index}",
+      "hdMode": "HD işleme (daha yavaş, daha iyi kalite)",
       "loadError": "Görsel yüklenemedi",
       "canvasError": "Canvas bağlamı alınamadı",
       "processError": "İşlem başarısız",
@@ -6705,6 +6715,7 @@
     "something-went-wrong": "Bir şeyler ters gitti",
     "toggle-menu": "Menüyü değiştir",
     "toggle-theme": "Temayı değiştir",
+    "user-content": "Kullanıcı İçeriği",
     "user-content-body": "Yalnızca sahip olduğunuz veya kullanmaya yetkili olduğunuz içeriği yükleyebilir, gönderebilir veya işleyebilirsiniz. Araçlarımızla kullandığınız her türlü içerik için gereken haklara, lisanslara ve izinlere sahip olmanızın sorumluluğu yalnızca size aittir.",
     "install-baikecalc": "Baikecalc'ı yükleyin",
     "you-are-offline-calculators-will-work-from-cache": "Çevrimdışısınız. Hesap makineleri önbellekten çalışacaktır."

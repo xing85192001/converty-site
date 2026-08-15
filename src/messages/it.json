@@ -144,6 +144,10 @@
       "supports": "Supporta"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Rilevamento automatico filigrana",
+      "autoDetecting": "Rilevamento in corso...",
+      "autoDetectNone": "Nessun filigrana evidente rilevato. Disegna manualmente un riquadro intorno alla filigrana.",
+      "candidateLabel": "Filigrana {index}",
       "title": "Rimozione filigrana video",
       "description": "Trascina o clicca per caricare un video, poi disegna un riquadro sull'area della filigrana per rimuoverla.",
       "selectVideo": "Seleziona video",
@@ -156,10 +160,16 @@
       "startRemoval": "Rimuovi filigrana",
       "download": "Scarica video elaborato",
       "errorSelectArea": "Disegna prima un riquadro sulla filigrana da rimuovere",
+      "errorNetwork": "Errore di rete: impossibile scaricare il core di elaborazione video. Controlla la connessione e riprova.",
       "errorFailed": "Elaborazione fallita, riprova",
       "hint": "Suggerimento: premi e trascina sul fotogramma video per disegnare un riquadro sulla filigrana."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Rilevamento automatico filigrana",
+      "autoDetecting": "Rilevamento in corso...",
+      "autoDetectNone": "Nessun filigrana evidente rilevato. Disegna manualmente un riquadro intorno alla filigrana.",
+      "candidateLabel": "Filigrana {index}",
+      "hdMode": "Elaborazione HD (più lenta, qualità migliore)",
       "loadError": "Caricamento immagine fallito",
       "canvasError": "Impossibile ottenere il contesto canvas",
       "processError": "Elaborazione fallita",
@@ -6715,6 +6725,7 @@
     "something-went-wrong": "Qualcosa è andato storto",
     "toggle-menu": "Cambia menu",
     "toggle-theme": "Cambia tema",
+    "user-content": "Contenuto degli utenti",
     "user-content-body": "Puoi caricare, inviare o elaborare solo i contenuti di tua proprietà o che sei autorizzato a utilizzare. Sei l'unico responsabile di garantire di disporre dei diritti, delle licenze e delle autorizzazioni necessarie per qualsiasi contenuto che utilizzi con i nostri strumenti.",
     "install-baikecalc": "Installa baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Sei offline. I calcolatori funzioneranno dalla cache."

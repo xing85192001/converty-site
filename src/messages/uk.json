@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Автоматичне визначення водяного знака",
+      "autoDetecting": "Визначення...",
+      "autoDetectNone": "Не виявлено помітного водяного знака. Будь ласка, вручну намалюйте рамку навколо водяного знака.",
+      "candidateLabel": "Водяний знак {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "Помилка мережі: не вдалося завантажити ядро обробки відео. Перевірте з'єднання та спробуйте ще раз.",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Автоматичне визначення водяного знака",
+      "autoDetecting": "Визначення...",
+      "autoDetectNone": "Не виявлено помітного водяного знака. Будь ласка, вручну намалюйте рамку навколо водяного знака.",
+      "candidateLabel": "Водяний знак {index}",
+      "hdMode": "HD обробка (повільніше, краща якість)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6705,6 +6715,7 @@
     "something-went-wrong": "Щось пішло не так",
     "toggle-menu": "Переключити меню",
     "toggle-theme": "Перемкнути тему",
+    "user-content": "Користувацький контент",
     "user-content-body": "Ви можете завантажувати, надсилати або обробляти лише вміст, яким ви володієте або маєте право використовувати. Ви несете особисту відповідальність за те, щоб мати права, ліцензії та дозволи, необхідні для будь-якого вмісту, який ви використовуєте за допомогою наших інструментів.",
     "install-baikecalc": "Встановіть baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Ви офлайн. Калькулятори будуть працювати з кешу."

@@ -146,6 +146,10 @@
       "supports": "支援"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "自動識別水印",
+      "autoDetecting": "識別中...",
+      "autoDetectNone": "未識別到明顯水印，請手動框選水印區域。",
+      "candidateLabel": "水印 {index}",
       "title": "影片去水印",
       "description": "拖曳或點擊上傳影片，然後在影片幀上框選水印區域進行去除。",
       "selectVideo": "選擇影片",
@@ -158,10 +162,16 @@
       "startRemoval": "開始去水印",
       "download": "下載處理後影片",
       "errorSelectArea": "請先在要去除的水印區域畫一個框",
+      "errorNetwork": "網路錯誤：下載影片處理核心失敗，請檢查網路後重試。",
       "errorFailed": "處理失敗，請重試",
       "hint": "提示：在影片畫面上按住並拖動，框選水印區域。"
     },
     "imageWatermarkRemover": {
+      "autoDetect": "自動識別水印",
+      "autoDetecting": "識別中...",
+      "autoDetectNone": "未識別到明顯水印，請手動框選水印區域。",
+      "candidateLabel": "水印 {index}",
+      "hdMode": "高清處理（較慢，品質更好）",
       "loadError": "圖片載入失敗",
       "canvasError": "無法取得畫布上下文",
       "processError": "處理失敗",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "出了點問題",
     "toggle-menu": "切換選單",
     "toggle-theme": "切換主題",
+    "user-content": "用戶內容",
     "user-content-body": "您只能上傳、提交或處理您擁有或有權使用的內容。您全權負責確保您擁有透過我們的工具所使用的任何內容所需的權利、許可和權限。",
     "install-baikecalc": "安裝百科計算器",
     "you-are-offline-calculators-will-work-from-cache": "您已離線。計算器將從快取中運行。"

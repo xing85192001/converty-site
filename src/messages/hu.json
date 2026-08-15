@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Vízjel automatikus felismerése",
+      "autoDetecting": "Felismerés...",
+      "autoDetectNone": "Nem észlelhető egyértelmű vízjel. Kérjük, rajzoljon manuálisan egy négyzetet a vízjel köré.",
+      "candidateLabel": "Vízjel {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "Hálózati hiba: a videófeldolgozó mag letöltése sikertelen. Ellenőrizze a kapcsolatot, és próbálja újra.",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Vízjel automatikus felismerése",
+      "autoDetecting": "Felismerés...",
+      "autoDetectNone": "Nem észlelhető egyértelmű vízjel. Kérjük, rajzoljon manuálisan egy négyzetet a vízjel köré.",
+      "candidateLabel": "Vízjel {index}",
+      "hdMode": "HD feldolgozás (lassabb, jobb minőség)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6705,6 +6715,7 @@
     "something-went-wrong": "Valami elromlott",
     "toggle-menu": "Váltó menü",
     "toggle-theme": "Téma váltása",
+    "user-content": "Felhasználói tartalom",
     "user-content-body": "Csak olyan tartalmat tölthet fel, küldhet be vagy dolgozhat fel, amely a tulajdonában van, vagy amelynek használatára jogosult. Kizárólag Ön felelős azért, hogy rendelkezzen az eszközeinkkel használt tartalomhoz szükséges jogokkal, licencekkel és engedélyekkel.",
     "install-baikecalc": "Telepítse a baikecalc-ot",
     "you-are-offline-calculators-will-work-from-cache": "Ön offline állapotban van. A számológépek gyorsítótárból működnek."

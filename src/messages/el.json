@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Αυτόματος εντοπισμός υδατογραφήματος",
+      "autoDetecting": "Εντοπισμός...",
+      "autoDetectNone": "Δεν εντοπίστηκε εμφανές υδατογράφημα. Σχεδιάστε χειροκίνητα ένα πλαίσιο γύρω από το υδατογράφημα.",
+      "candidateLabel": "Υδατογράφημα {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "Σφάλμα δικτύου: αποτυχία λήψης του πυρήνα επεξεργασίας βίντεο. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Αυτόματος εντοπισμός υδατογραφήματος",
+      "autoDetecting": "Εντοπισμός...",
+      "autoDetectNone": "Δεν εντοπίστηκε εμφανές υδατογράφημα. Σχεδιάστε χειροκίνητα ένα πλαίσιο γύρω από το υδατογράφημα.",
+      "candidateLabel": "Υδατογράφημα {index}",
+      "hdMode": "Επεξεργασία HD (πιο αργή, καλύτερη ποιότητα)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6705,6 +6715,7 @@
     "something-went-wrong": "Κάτι πήγε στραβά",
     "toggle-menu": "Εναλλαγή μενού",
     "toggle-theme": "Εναλλαγή θέματος",
+    "user-content": "Περιεχόμενο χρήστη",
     "user-content-body": "Μπορείτε να ανεβάσετε, να υποβάλετε ή να επεξεργαστείτε μόνο περιεχόμενο που σας ανήκει ή είστε εξουσιοδοτημένοι να χρησιμοποιείτε. Είστε αποκλειστικά υπεύθυνοι για τη διασφάλιση ότι έχετε τα δικαιώματα, τις άδειες και τις άδειες που απαιτούνται για οποιοδήποτε περιεχόμενο χρησιμοποιείτε με τα εργαλεία μας.",
     "install-baikecalc": "Εγκαταστήστε το baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Είστε εκτός σύνδεσης. Οι αριθμομηχανές θα λειτουργούν από την προσωρινή μνήμη."

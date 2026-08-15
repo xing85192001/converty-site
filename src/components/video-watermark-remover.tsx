@@ -1,9 +1,9 @@
 "use client";
 
-import { Download, Loader2, Play, Trash2, Upload, Video } from "lucide-react";
+import { Download, Loader2, Play, ScanSearch, Trash2, Upload, Video } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-
+import { detectWatermarks, type Rect } from "@/components/media-tools/watermark-detection";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -19,6 +19,29 @@ async function loadFfmpeg() {
     fetchFile: utilModule.fetchFile,
     toBlobURL: utilModule.toBlobURL,
   };
+}
+
+const CORE_BASE = "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd";
+
+async function fetchWithRetry(
+  url: string,
+  type: string,
+  toBlobURL: (url: string, type: string) => Promise<string>
+): Promise<string> {
+  const lastErr: unknown[] = [];
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      return await toBlobURL(`${url}?attempt=${attempt}`, type);
+    } catch (err) {
+      lastErr.push(err);
+      if (attempt < 3) {
+        // eslint-disable-next-line no-await-in-loop
+        await new Promise((res) => setTimeout(res, attempt * 800));
+      }
+    }
+  }
+  throw lastErr[lastErr.length - 1];
 }
 
 interface Selection {
@@ -42,6 +65,8 @@ export function VideoWatermarkRemover() {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState<{ x: number; y: number } | null>(null);
   const [selection, setSelection] = useState<Selection | null>(null);
+  const [candidates, setCandidates] = useState<Rect[]>([]);
+  const [detecting, setDetecting] = useState(false);
 
   // Clean up object URLs on unmount or file change.
   useEffect(() => {
@@ -58,6 +83,7 @@ export function VideoWatermarkRemover() {
     setProcessedUrl("");
     setProgress(0);
     setSelection(null);
+    setCandidates([]);
     setFile(chosen);
     setOriginalUrl(URL.createObjectURL(chosen));
   };
@@ -65,11 +91,12 @@ export function VideoWatermarkRemover() {
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     const chosen = e.dataTransfer.files?.[0];
-    if (!chosen || !chosen.type.startsWith("video/")) return;
+    if (!chosen?.type.startsWith("video/")) return;
     setError("");
     setProcessedUrl("");
     setProgress(0);
     setSelection(null);
+    setCandidates([]);
     setFile(chosen);
     setOriginalUrl(URL.createObjectURL(chosen));
   };
@@ -79,6 +106,7 @@ export function VideoWatermarkRemover() {
     setOriginalUrl("");
     setProcessedUrl("");
     setSelection(null);
+    setCandidates([]);
     setProgress(0);
     setError("");
   };
@@ -103,6 +131,7 @@ export function VideoWatermarkRemover() {
     setIsDragging(true);
     setDragStart(pos);
     setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
+    setCandidates([]);
   };
 
   const onMouseMove = (e: React.MouseEvent) => {
@@ -132,6 +161,7 @@ export function VideoWatermarkRemover() {
     setIsDragging(true);
     setDragStart(pos);
     setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
+    setCandidates([]);
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
@@ -149,6 +179,30 @@ export function VideoWatermarkRemover() {
     setIsDragging(false);
     setDragStart(null);
   };
+
+  async function runAutoDetect() {
+    const video = videoRef.current;
+    if (!video || !video.videoWidth || !video.videoHeight) return;
+    setDetecting(true);
+    setError("");
+    setProcessedUrl("");
+    setProgress(0);
+    await new Promise((res) => setTimeout(res, 0));
+
+    try {
+      const found = detectWatermarks(video, video.videoWidth, video.videoHeight);
+      setCandidates(found);
+      if (found.length === 0) {
+        setError(t("autoDetectNone"));
+      } else {
+        setSelection(found[0]);
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : t("errorFailed"));
+    } finally {
+      setDetecting(false);
+    }
+  }
 
   // Compute the overlay rectangle (in CSS pixels) from the frame selection.
   const overlayStyle = () => {
@@ -187,13 +241,15 @@ export function VideoWatermarkRemover() {
         setProgress(Math.min(99, Math.round(progress * 100)));
       });
 
-      const coreURL = await toBlobURL(
-        "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js",
-        "text/javascript"
+      const coreURL = await fetchWithRetry(
+        `${CORE_BASE}/ffmpeg-core.js`,
+        "text/javascript",
+        toBlobURL
       );
-      const wasmURL = await toBlobURL(
-        "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.wasm",
-        "application/wasm"
+      const wasmURL = await fetchWithRetry(
+        `${CORE_BASE}/ffmpeg-core.wasm`,
+        "application/wasm",
+        toBlobURL
       );
       await ffmpeg.load({ coreURL, wasmURL });
 
@@ -225,7 +281,11 @@ export function VideoWatermarkRemover() {
       setProcessedUrl(url);
       setProgress(100);
     } catch (err) {
-      setError(err instanceof Error ? err.message : t("errorFailed"));
+      const message = err instanceof Error ? err.message : String(err);
+      const isNetworkError = /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn/i.test(
+        message
+      );
+      setError(isNetworkError ? t("errorNetwork") : message || t("errorFailed"));
     } finally {
       setIsProcessing(false);
     }
@@ -282,6 +342,20 @@ export function VideoWatermarkRemover() {
               <div className="flex items-center gap-2">
                 <Button
                   size="sm"
+                  variant="outline"
+                  className="h-8 gap-1 text-xs"
+                  onClick={runAutoDetect}
+                  disabled={detecting || isProcessing}
+                >
+                  {detecting ? (
+                    <Loader2 className="h-3 w-3 animate-spin" />
+                  ) : (
+                    <ScanSearch className="h-3 w-3" />
+                  )}
+                  {detecting ? t("autoDetecting") : t("autoDetect")}
+                </Button>
+                <Button
+                  size="sm"
                   variant="ghost"
                   className="h-8 text-xs text-muted-foreground hover:text-foreground"
                   onClick={clearAll}
@@ -309,6 +383,33 @@ export function VideoWatermarkRemover() {
                 </Button>
               </div>
             </div>
+
+            {candidates.length > 0 && (
+              <div className="mb-2 flex flex-wrap gap-1.5">
+                {candidates.map((c, i) => (
+                  <button
+                    key={`${c.x}-${c.y}-${c.w}-${c.h}`}
+                    type="button"
+                    onClick={() => {
+                      setSelection(c);
+                      setProcessedUrl("");
+                    }}
+                    className={cn(
+                      "rounded-full px-2 py-0.5 text-[10px] font-medium transition",
+                      selection &&
+                        Math.round(selection.x) === Math.round(c.x) &&
+                        Math.round(selection.y) === Math.round(c.y) &&
+                        Math.round(selection.w) === Math.round(c.w) &&
+                        Math.round(selection.h) === Math.round(c.h)
+                        ? "bg-pink-500 text-white"
+                        : "bg-white/10 text-muted-foreground hover:bg-white/20 hover:text-foreground"
+                    )}
+                  >
+                    {t("candidateLabel", { index: i + 1 })}
+                  </button>
+                ))}
+              </div>
+            )}
 
             {isProcessing && (
               <div className="mb-3">

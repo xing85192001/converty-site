@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "ตรวจจับลายน้ำอัตโนมัติ",
+      "autoDetecting": "กำลังตรวจจับ...",
+      "autoDetectNone": "ไม่พบลายน้ำที่ชัดเจน กรุณาวาดกรอบรอบลายน้ำด้วยตนเอง",
+      "candidateLabel": "ลายน้ำ {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "ข้อผิดพลาดเครือข่าย: ไม่สามารถดาวน์โหลดคอร์ประมวลผลวิดีโอได้ โปรดตรวจสอบการเชื่อมต่อและลองอีกครั้ง",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "ตรวจจับลายน้ำอัตโนมัติ",
+      "autoDetecting": "กำลังตรวจจับ...",
+      "autoDetectNone": "ไม่พบลายน้ำที่ชัดเจน กรุณาวาดกรอบรอบลายน้ำด้วยตนเอง",
+      "candidateLabel": "ลายน้ำ {index}",
+      "hdMode": "ประมวลผล HD (ช้าลง คุณภาพดีขึ้น)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "มีบางอย่างผิดพลาด",
     "toggle-menu": "สลับเมนู",
     "toggle-theme": "สลับธีม",
+    "user-content": "เนื้อหาของผู้ใช้",
     "user-content-body": "คุณสามารถอัปโหลด ส่ง หรือประมวลผลเนื้อหาที่คุณเป็นเจ้าของหรือได้รับอนุญาตให้ใช้เท่านั้น คุณมีหน้าที่รับผิดชอบแต่เพียงผู้เดียวในการตรวจสอบให้แน่ใจว่าคุณมีสิทธิ์ ใบอนุญาต และการอนุญาตที่จำเป็นสำหรับเนื้อหาใด ๆ ที่คุณใช้กับเครื่องมือของเรา",
     "install-baikecalc": "ติดตั้ง baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "คุณออฟไลน์อยู่ เครื่องคิดเลขจะทำงานจากแคช"

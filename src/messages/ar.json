@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "كشف العلامة المائية تلقائيًا",
+      "autoDetecting": "جارٍ الكشف...",
+      "autoDetectNone": "لم يتم اكتشاف علامة مائية واضحة. يرجى رسم مربع حول العلامة المائية يدويًا.",
+      "candidateLabel": "علامة مائية {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "خطأ في الشبكة: فشل تنزيل نواة معالجة الفيديو. يرجى التحقق من الاتصال والمحاولة مرة أخرى.",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "كشف العلامة المائية تلقائيًا",
+      "autoDetecting": "جارٍ الكشف...",
+      "autoDetectNone": "لم يتم اكتشاف علامة مائية واضحة. يرجى رسم مربع حول العلامة المائية يدويًا.",
+      "candidateLabel": "علامة مائية {index}",
+      "hdMode": "معالجة عالية الدقة (أبطأ، جودة أفضل)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "حدث خطأ ما",
     "toggle-menu": "تبديل القائمة",
     "toggle-theme": "تبديل الموضوع",
+    "user-content": "محتوى المستخدم",
     "user-content-body": "لا يجوز لك سوى تحميل أو إرسال أو معالجة المحتوى الذي تملكه أو المصرح لك باستخدامه. أنت وحدك المسؤول عن ضمان حصولك على الحقوق والتراخيص والأذونات اللازمة لأي محتوى تستخدمه مع أدواتنا.",
     "install-baikecalc": "قم بتثبيت بايكالك",
     "you-are-offline-calculators-will-work-from-cache": "أنت غير متصل. ستعمل الآلات الحاسبة من ذاكرة التخزين المؤقت."

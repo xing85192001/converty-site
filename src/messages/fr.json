@@ -144,6 +144,10 @@
       "supports": "Prend en charge"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Détection automatique du filigrane",
+      "autoDetecting": "Détection en cours...",
+      "autoDetectNone": "Aucun filigrane évident détecté. Veuillez dessiner manuellement une zone autour du filigrane.",
+      "candidateLabel": "Filigrane {index}",
       "title": "Suppression de filigrane vidéo",
       "description": "Glissez ou cliquez pour télécharger une vidéo, puis dessinez un cadre sur la zone du filigrane pour le supprimer.",
       "selectVideo": "Sélectionner une vidéo",
@@ -156,10 +160,16 @@
       "startRemoval": "Supprimer le filigrane",
       "download": "Télécharger la vidéo traitée",
       "errorSelectArea": "Veuillez d'abord dessiner un cadre sur le filigrane à supprimer",
+      "errorNetwork": "Erreur réseau : échec du téléchargement du cœur de traitement vidéo. Veuillez vérifier votre connexion et réessayer.",
       "errorFailed": "Échec du traitement, veuillez réessayer",
       "hint": "Astuce : appuyez et faites glisser sur l'image vidéo pour dessiner un cadre sur le filigrane."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Détection automatique du filigrane",
+      "autoDetecting": "Détection en cours...",
+      "autoDetectNone": "Aucun filigrane évident détecté. Veuillez dessiner manuellement une zone autour du filigrane.",
+      "candidateLabel": "Filigrane {index}",
+      "hdMode": "Traitement HD (plus lent, meilleure qualité)",
       "loadError": "Échec du chargement de l'image",
       "canvasError": "Impossible d'obtenir le contexte du canvas",
       "processError": "Échec du traitement",
@@ -6716,6 +6726,7 @@
     "something-went-wrong": "Quelque chose s'est mal passé",
     "toggle-menu": "Changer de menu",
     "toggle-theme": "Changer de thème",
+    "user-content": "Contenu utilisateur",
     "user-content-body": "Vous ne pouvez télécharger, soumettre ou traiter que le contenu que vous possédez ou que vous êtes autorisé à utiliser. Vous êtes seul responsable de vous assurer que vous disposez des droits, licences et autorisations nécessaires pour tout contenu que vous utilisez avec nos outils.",
     "install-baikecalc": "Installer baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Vous êtes hors ligne. Les calculatrices fonctionneront à partir du cache."

@@ -146,6 +146,10 @@
       "supports": "Ondersteunt"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Watermerk automatisch detecteren",
+      "autoDetecting": "Bezig met detecteren...",
+      "autoDetectNone": "Geen duidelijk watermerk gedetecteerd. Teken handmatig een vak rond het watermerk.",
+      "candidateLabel": "Watermerk {index}",
       "title": "Video-watermerkverwijderaar",
       "description": "Sleep of klik om een video te uploaden, teken dan een vak over het watermerkgebied om het te verwijderen.",
       "selectVideo": "Selecteer video",
@@ -158,10 +162,16 @@
       "startRemoval": "Watermerk verwijderen",
       "download": "Verwerkte video downloaden",
       "errorSelectArea": "Teken eerst een vak over het watermerk dat u wilt verwijderen",
+      "errorNetwork": "Netwerkfout: downloaden van de videobewerkingskern mislukt. Controleer uw verbinding en probeer het opnieuw.",
       "errorFailed": "Verwerking mislukt, probeer het opnieuw",
       "hint": "Tip: druk en sleep op het videobeeld om een vak over het watermerk te tekenen."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Watermerk automatisch detecteren",
+      "autoDetecting": "Bezig met detecteren...",
+      "autoDetectNone": "Geen duidelijk watermerk gedetecteerd. Teken handmatig een vak rond het watermerk.",
+      "candidateLabel": "Watermerk {index}",
+      "hdMode": "HD-verwerking (langzamer, betere kwaliteit)",
       "loadError": "Afbeelding laden mislukt",
       "canvasError": "Kan canvascontext niet ophalen",
       "processError": "Verwerking mislukt",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "Er is iets misgegaan",
     "toggle-menu": "Schakelmenu",
     "toggle-theme": "Schakel van thema",
+    "user-content": "Gebruikersinhoud",
     "user-content-body": "U mag alleen inhoud uploaden, indienen of verwerken waarvan u de eigenaar bent of die u mag gebruiken. U bent als enige verantwoordelijk om ervoor te zorgen dat u over de rechten, licenties en machtigingen beschikt die nodig zijn voor alle inhoud die u met onze tools gebruikt.",
     "install-baikecalc": "Baikecalc installeren",
     "you-are-offline-calculators-will-work-from-cache": "Je bent offline. Rekenmachines werken vanuit cache."

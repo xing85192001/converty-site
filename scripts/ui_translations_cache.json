@@ -167,7 +167,8 @@
     "about-this-calculator": "Über diesen Rechner",
     "copy-value": "Wert kopieren",
     "you-are-offline-calculators-will-work-from-cache": "Du bist offline. Rechner funktionieren aus dem Cache.",
-    "install-baikecalc": "Installieren Sie Baikecalc"
+    "install-baikecalc": "Installieren Sie Baikecalc",
+    "user-content-body": "Sie dürfen nur Inhalte hochladen, übermitteln oder verarbeiten, deren Eigentümer Sie sind oder zu deren Nutzung Sie berechtigt sind. Sie allein sind dafür verantwortlich, sicherzustellen, dass Sie über die erforderlichen Rechte, Lizenzen und Berechtigungen für alle Inhalte verfügen, die Sie mit unseren Tools verwenden."
   },
   "fr": {
     "1-year": "1 an",
@@ -337,7 +338,8 @@
     "toggle-menu": "Changer de menu",
     "toggle-theme": "Changer de thème",
     "you-are-offline-calculators-will-work-from-cache": "Vous êtes hors ligne. Les calculatrices fonctionneront à partir du cache.",
-    "install-baikecalc": "Installer baikecalc"
+    "install-baikecalc": "Installer baikecalc",
+    "user-content-body": "Vous ne pouvez télécharger, soumettre ou traiter que le contenu que vous possédez ou que vous êtes autorisé à utiliser. Vous êtes seul responsable de vous assurer que vous disposez des droits, licences et autorisations nécessaires pour tout contenu que vous utilisez avec nos outils."
   },
   "ar": {
     "note": "ملحوظة:",
@@ -507,7 +509,8 @@
     "toggle-theme": "تبديل الموضوع",
     "something-went-wrong": "حدث خطأ ما",
     "you-are-offline-calculators-will-work-from-cache": "أنت غير متصل. ستعمل الآلات الحاسبة من ذاكرة التخزين المؤقت.",
-    "install-baikecalc": "قم بتثبيت بايكالك"
+    "install-baikecalc": "قم بتثبيت بايكالك",
+    "user-content-body": "لا يجوز لك سوى تحميل أو إرسال أو معالجة المحتوى الذي تملكه أو المصرح لك باستخدامه. أنت وحدك المسؤول عن ضمان حصولك على الحقوق والتراخيص والأذونات اللازمة لأي محتوى تستخدمه مع أدواتنا."
   },
   "cs": {
     "note": "Poznámka:",
@@ -677,7 +680,8 @@
     "toggle-menu": "Přepnout nabídku",
     "install-baikecalc": "Nainstalujte baikecalc",
     "copy-value": "Kopírovat hodnotu",
-    "you-are-offline-calculators-will-work-from-cache": "Jste offline. Kalkulačky budou pracovat z mezipaměti."
+    "you-are-offline-calculators-will-work-from-cache": "Jste offline. Kalkulačky budou pracovat z mezipaměti.",
+    "user-content-body": "Můžete nahrávat, odesílat nebo zpracovávat pouze obsah, který vlastníte nebo máte oprávnění používat. Jste výhradně odpovědní za to, že máte práva, licence a oprávnění potřebná pro jakýkoli obsah, který používáte s našimi nástroji."
   },
   "el": {
     "5-years": "5 χρόνια",
@@ -847,7 +851,8 @@
     "about-this-calculator": "Σχετικά με αυτήν την αριθμομηχανή",
     "toggle-theme": "Εναλλαγή θέματος",
     "install-baikecalc": "Εγκαταστήστε το baikecalc",
-    "you-are-offline-calculators-will-work-from-cache": "Είστε εκτός σύνδεσης. Οι αριθμομηχανές θα λειτουργούν από την προσωρινή μνήμη."
+    "you-are-offline-calculators-will-work-from-cache": "Είστε εκτός σύνδεσης. Οι αριθμομηχανές θα λειτουργούν από την προσωρινή μνήμη.",
+    "user-content-body": "Μπορείτε να ανεβάσετε, να υποβάλετε ή να επεξεργαστείτε μόνο περιεχόμενο που σας ανήκει ή είστε εξουσιοδοτημένοι να χρησιμοποιείτε. Είστε αποκλειστικά υπεύθυνοι για τη διασφάλιση ότι έχετε τα δικαιώματα, τις άδειες και τις άδειες που απαιτούνται για οποιοδήποτε περιεχόμενο χρησιμοποιείτε με τα εργαλεία μας."
   },
   "es": {
     "3-years": "3 años",
@@ -1017,7 +1022,8 @@
     "toggle-theme": "Alternar tema",
     "toggle-menu": "Alternar menú",
     "you-are-offline-calculators-will-work-from-cache": "Estás desconectado. Las calculadoras funcionarán desde el caché.",
-    "install-baikecalc": "Instalar baikecalc"
+    "install-baikecalc": "Instalar baikecalc",
+    "user-content-body": "Solo puede cargar, enviar o procesar contenido que sea de su propiedad o que esté autorizado a utilizar. Usted es el único responsable de garantizar que tiene los derechos, licencias y permisos necesarios para cualquier contenido que utilice con nuestras herramientas."
   },
   "hu": {
     "note": "Jegyzet:",
@@ -1187,7 +1193,8 @@
     "toggle-menu": "Váltó menü",
     "copy-value": "Másolja az értéket",
     "about-this-calculator": "Erről a számológépről",
-    "you-are-offline-calculators-will-work-from-cache": "Ön offline állapotban van. A számológépek gyorsítótárból működnek."
+    "you-are-offline-calculators-will-work-from-cache": "Ön offline állapotban van. A számológépek gyorsítótárból működnek.",
+    "user-content-body": "Csak olyan tartalmat tölthet fel, küldhet be vagy dolgozhat fel, amely a tulajdonában van, vagy amelynek használatára jogosult. Kizárólag Ön felelős azért, hogy rendelkezzen az eszközeinkkel használt tartalomhoz szükséges jogokkal, licencekkel és engedélyekkel."
   },
   "id": {
     "5-years": "5 tahun",
@@ -1357,7 +1364,8 @@
     "toggle-theme": "Beralih tema",
     "you-are-offline-calculators-will-work-from-cache": "Anda sedang luring. Kalkulator akan bekerja dari cache.",
     "something-went-wrong": "Ada yang tidak beres",
-    "install-baikecalc": "Instal baikecalc"
+    "install-baikecalc": "Instal baikecalc",
+    "user-content-body": "Anda hanya boleh mengunggah, mengirimkan, atau memproses konten yang Anda miliki atau izinkan untuk Anda gunakan. Anda sepenuhnya bertanggung jawab untuk memastikan bahwa Anda memiliki hak, lisensi, dan izin yang diperlukan untuk konten apa pun yang Anda gunakan dengan alat kami."
   },
   "it": {
     "1-year": "1 anno",
@@ -1527,7 +1535,8 @@
     "toggle-menu": "Cambia menu",
     "install-baikecalc": "Installa baikecalc",
     "toggle-theme": "Cambia tema",
-    "you-are-offline-calculators-will-work-from-cache": "Sei offline. I calcolatori funzioneranno dalla cache."
+    "you-are-offline-calculators-will-work-from-cache": "Sei offline. I calcolatori funzioneranno dalla cache.",
+    "user-content-body": "Puoi caricare, inviare o elaborare solo i contenuti di tua proprietà o che sei autorizzato a utilizzare. Sei l'unico responsabile di garantire di disporre dei diritti, delle licenze e delle autorizzazioni necessarie per qualsiasi contenuto che utilizzi con i nostri strumenti."
   },
   "ja": {
     "note": "注記：",
@@ -1697,7 +1706,8 @@
     "toggle-theme": "テーマの切り替え",
     "install-baikecalc": "baikecalc をインストールする",
     "you-are-offline-calculators-will-work-from-cache": "あなたはオフラインです。電卓はキャッシュから動作します。",
-    "total-photos": "合計写真数"
+    "total-photos": "合計写真数",
+    "user-content-body": "あなたが所有するコンテンツ、または使用を許可されているコンテンツのみをアップロード、送信、または処理できます。当社のツールで使用するコンテンツに必要な権利、ライセンス、許可を確実に取得することは、お客様が単独で責任を負います。"
   },
   "ko": {
     "3-years": "3년",
@@ -1867,7 +1877,8 @@
     "toggle-menu": "토글 메뉴",
     "copy-value": "값 복사",
     "you-are-offline-calculators-will-work-from-cache": "귀하는 오프라인 상태입니다. 계산기는 캐시에서 작동합니다.",
-    "install-baikecalc": "바이케칼크 설치"
+    "install-baikecalc": "바이케칼크 설치",
+    "user-content-body": "귀하는 귀하가 소유하거나 사용 권한이 있는 콘텐츠만 업로드, 제출 또는 처리할 수 있습니다. 귀하가 당사 도구와 함께 사용하는 모든 콘텐츠에 필요한 권리, 라이센스 및 권한을 보유하고 있는지 확인하는 것은 전적으로 귀하의 책임입니다."
   },
   "ms": {
     "note": "Nota:",
@@ -2037,7 +2048,8 @@
     "toggle-theme": "Togol tema",
     "copy-value": "Salin nilai",
     "you-are-offline-calculators-will-work-from-cache": "Anda berada di luar talian. Kalkulator akan berfungsi dari cache.",
-    "install-baikecalc": "Pasang baikecalc"
+    "install-baikecalc": "Pasang baikecalc",
+    "user-content-body": "Anda hanya boleh memuat naik, menyerahkan atau memproses kandungan yang anda miliki atau dibenarkan untuk digunakan. Anda bertanggungjawab sepenuhnya untuk memastikan anda mempunyai hak, lesen dan kebenaran yang diperlukan untuk sebarang kandungan yang anda gunakan dengan alatan kami."
   },
   "nl": {
     "3-years": "3 jaar",
@@ -2207,7 +2219,8 @@
     "toggle-theme": "Schakel van thema",
     "toggle-menu": "Schakelmenu",
     "install-baikecalc": "Baikecalc installeren",
-    "you-are-offline-calculators-will-work-from-cache": "Je bent offline. Rekenmachines werken vanuit cache."
+    "you-are-offline-calculators-will-work-from-cache": "Je bent offline. Rekenmachines werken vanuit cache.",
+    "user-content-body": "U mag alleen inhoud uploaden, indienen of verwerken waarvan u de eigenaar bent of die u mag gebruiken. U bent als enige verantwoordelijk om ervoor te zorgen dat u over de rechten, licenties en machtigingen beschikt die nodig zijn voor alle inhoud die u met onze tools gebruikt."
   },
   "pt": {
     "5-years": "5 anos",
@@ -2377,7 +2390,8 @@
     "copy-value": "Copiar valor",
     "toggle-theme": "Alternar tema",
     "install-baikecalc": "Instale baikecalc",
-    "you-are-offline-calculators-will-work-from-cache": "Você está off-line. As calculadoras funcionarão a partir do cache."
+    "you-are-offline-calculators-will-work-from-cache": "Você está off-line. As calculadoras funcionarão a partir do cache.",
+    "user-content-body": "Você só pode fazer upload, enviar ou processar conteúdo de sua propriedade ou que esteja autorizado a usar. Você é o único responsável por garantir que possui os direitos, licenças e permissões necessárias para qualquer conteúdo que usar com nossas ferramentas."
   },
   "ru": {
     "5-years": "5 лет",
@@ -2547,7 +2561,8 @@
     "copy-value": "Копировать значение",
     "toggle-theme": "Переключить тему",
     "install-baikecalc": "Установить байкекальк",
-    "you-are-offline-calculators-will-work-from-cache": "Вы не в сети. Калькуляторы будут работать из кэша."
+    "you-are-offline-calculators-will-work-from-cache": "Вы не в сети. Калькуляторы будут работать из кэша.",
+    "user-content-body": "Вы можете загружать, отправлять или обрабатывать только тот контент, которым вы владеете или имеете право на использование. Вы несете единоличную ответственность за наличие у вас прав, лицензий и разрешений, необходимых для любого контента, который вы используете с нашими инструментами."
   },
   "th": {
     "3-years": "3 ปี",
@@ -2717,7 +2732,8 @@
     "install-baikecalc": "ติดตั้ง baikecalc",
     "toggle-theme": "สลับธีม",
     "you-are-offline-calculators-will-work-from-cache": "คุณออฟไลน์อยู่ เครื่องคิดเลขจะทำงานจากแคช",
-    "copy-value": "คัดลอกค่า"
+    "copy-value": "คัดลอกค่า",
+    "user-content-body": "คุณสามารถอัปโหลด ส่ง หรือประมวลผลเนื้อหาที่คุณเป็นเจ้าของหรือได้รับอนุญาตให้ใช้เท่านั้น คุณมีหน้าที่รับผิดชอบแต่เพียงผู้เดียวในการตรวจสอบให้แน่ใจว่าคุณมีสิทธิ์ ใบอนุญาต และการอนุญาตที่จำเป็นสำหรับเนื้อหาใด ๆ ที่คุณใช้กับเครื่องมือของเรา"
   },
   "tr": {
     "1-year": "1 yıl",
@@ -2887,7 +2903,8 @@
     "toggle-theme": "Temayı değiştir",
     "install-baikecalc": "Baikecalc'ı yükleyin",
     "toggle-menu": "Menüyü değiştir",
-    "you-are-offline-calculators-will-work-from-cache": "Çevrimdışısınız. Hesap makineleri önbellekten çalışacaktır."
+    "you-are-offline-calculators-will-work-from-cache": "Çevrimdışısınız. Hesap makineleri önbellekten çalışacaktır.",
+    "user-content-body": "Yalnızca sahip olduğunuz veya kullanmaya yetkili olduğunuz içeriği yükleyebilir, gönderebilir veya işleyebilirsiniz. Araçlarımızla kullandığınız her türlü içerik için gereken haklara, lisanslara ve izinlere sahip olmanızın sorumluluğu yalnızca size aittir."
   },
   "uk": {
     "5-years": "5 років",
@@ -3057,7 +3074,8 @@
     "copy-value": "Копійне значення",
     "toggle-menu": "Переключити меню",
     "install-baikecalc": "Встановіть baikecalc",
-    "you-are-offline-calculators-will-work-from-cache": "Ви офлайн. Калькулятори будуть працювати з кешу."
+    "you-are-offline-calculators-will-work-from-cache": "Ви офлайн. Калькулятори будуть працювати з кешу.",
+    "user-content-body": "Ви можете завантажувати, надсилати або обробляти лише вміст, яким ви володієте або маєте право використовувати. Ви несете особисту відповідальність за те, щоб мати права, ліцензії та дозволи, необхідні для будь-якого вмісту, який ви використовуєте за допомогою наших інструментів."
   },
   "vi": {
     "5-years": "5 năm",
@@ -3227,7 +3245,8 @@
     "about-this-calculator": "Giới thiệu về máy tính này",
     "toggle-theme": "Chuyển đổi chủ đề",
     "install-baikecalc": "Cài đặt baikecalc",
-    "you-are-offline-calculators-will-work-from-cache": "Bạn đang ngoại tuyến. Máy tính sẽ hoạt động từ bộ đệm."
+    "you-are-offline-calculators-will-work-from-cache": "Bạn đang ngoại tuyến. Máy tính sẽ hoạt động từ bộ đệm.",
+    "user-content-body": "Bạn chỉ có thể tải lên, gửi hoặc xử lý nội dung mà bạn sở hữu hoặc được phép sử dụng. Bạn hoàn toàn chịu trách nhiệm đảm bảo rằng bạn có các quyền, giấy phép và sự cho phép cần thiết đối với bất kỳ nội dung nào bạn sử dụng bằng các công cụ của chúng tôi."
   },
   "zh": {
     "3-years": "3年",
@@ -3567,6 +3586,7 @@
     "install-baikecalc": "安裝百科計算器",
     "spf-record": "SPF記錄",
     "characters-converted": "轉換的字符",
-    "toggle-theme": "切換主題"
+    "toggle-theme": "切換主題",
+    "user-content-body": "您只能上傳、提交或處理您擁有或有權使用的內容。您全權負責確保您擁有透過我們的工具所使用的任何內容所需的權利、許可和權限。"
   }
 }

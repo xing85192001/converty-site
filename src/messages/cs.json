@@ -146,6 +146,10 @@
       "supports": "Supports"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Automaticky detekovat vodoznak",
+      "autoDetecting": "Detekuji...",
+      "autoDetectNone": "Nebyl detekován žádný zřejmý vodoznak. Nakreslete prosím rámeček kolem vodoznaku ručně.",
+      "candidateLabel": "Vodoznak {index}",
       "title": "Video Watermark Remover",
       "description": "Drag or click to upload a video, then draw a box over the watermark area to remove it.",
       "selectVideo": "Select Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Remove Watermark",
       "download": "Download processed video",
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
+      "errorNetwork": "Chyba sítě: nepodařilo se stáhnout jádro pro zpracování videa. Zkontrolujte připojení a zkuste to znovu.",
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Automaticky detekovat vodoznak",
+      "autoDetecting": "Detekuji...",
+      "autoDetectNone": "Nebyl detekován žádný zřejmý vodoznak. Nakreslete prosím rámeček kolem vodoznaku ručně.",
+      "candidateLabel": "Vodoznak {index}",
+      "hdMode": "Zpracování ve vysokém rozlišení (pomalejší, lepší kvalita)",
       "loadError": "Failed to load image",
       "canvasError": "Failed to get canvas context",
       "processError": "Processing failed",
@@ -6705,6 +6715,7 @@
     "something-went-wrong": "Něco se pokazilo",
     "toggle-menu": "Přepnout nabídku",
     "toggle-theme": "Přepnout motiv",
+    "user-content": "Uživatelský obsah",
     "user-content-body": "Můžete nahrávat, odesílat nebo zpracovávat pouze obsah, který vlastníte nebo máte oprávnění používat. Jste výhradně odpovědní za to, že máte práva, licence a oprávnění potřebná pro jakýkoli obsah, který používáte s našimi nástroji.",
     "install-baikecalc": "Nainstalujte baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Jste offline. Kalkulačky budou pracovat z mezipaměti."

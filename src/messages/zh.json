@@ -144,6 +144,10 @@
       "supports": "支持"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "自动识别水印",
+      "autoDetecting": "识别中...",
+      "autoDetectNone": "未识别到明显水印，请手动框选水印区域。",
+      "candidateLabel": "水印 {index}",
       "title": "视频去水印",
       "description": "拖拽或点击上传视频，然后在视频帧上框选水印区域进行去除。",
       "selectVideo": "选择视频",
@@ -156,10 +160,16 @@
       "startRemoval": "开始去水印",
       "download": "下载处理后视频",
       "errorSelectArea": "请先在要去除的水印区域画一个框",
+      "errorNetwork": "网络错误：下载视频处理核心失败，请检查网络后重试。",
       "errorFailed": "处理失败，请重试",
       "hint": "提示：在视频画面上按住并拖动，框选水印区域。"
     },
     "imageWatermarkRemover": {
+      "autoDetect": "自动识别水印",
+      "autoDetecting": "识别中...",
+      "autoDetectNone": "未识别到明显水印，请手动框选水印区域。",
+      "candidateLabel": "水印 {index}",
+      "hdMode": "高清处理（较慢，质量更好）",
       "loadError": "图片加载失败",
       "canvasError": "无法获取画布上下文",
       "processError": "处理失败",
@@ -6820,6 +6830,7 @@
     "something-went-wrong": "出了点问题",
     "toggle-menu": "切换菜单",
     "toggle-theme": "切换主题",
+    "user-content": "用户内容",
     "user-content-body": "您仅可上传、提交或处理您拥有版权或已获授权的內容。您须自行确保对所使用內容具备必要的权利、许可与授权。",
     "install-baikecalc": "安装百科计算器",
     "you-are-offline-calculators-will-work-from-cache": "您已离线。计算器将从缓存中运行。"

@@ -1,17 +1,15 @@
 "use client";
 
-import { Download, Eraser, Loader2 } from "lucide-react";
+import { Download, Eraser, Loader2, ScanSearch } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { cn } from "@/lib/utils";
 import { FileDropZone, SelectedFile, ToolError } from "./shared";
+import { detectWatermarks, type Rect } from "./watermark-detection";
 
-interface Rect {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-}
+const MAX_FAST_SIZE = 1600;
 
 // Feather only the outer rim of the inpainted region so the seam blends in
 // without destroying the texture we just synthesised inside the selection.
@@ -61,8 +59,6 @@ function featherBoundary(
 
 export function ImageWatermarkRemover() {
   const t = useTranslations("mediaTools.imageWatermarkRemover");
-  // Reuse the (already localized in all 22 locales) "processing" label.
-  const tV = useTranslations("mediaTools.videoWatermarkRemover");
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [file, setFile] = useState<File | null>(null);
   const [img, setImg] = useState<HTMLImageElement | null>(null);
@@ -74,6 +70,9 @@ export function ImageWatermarkRemover() {
   const [error, setError] = useState<string | null>(null);
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
+  const [candidates, setCandidates] = useState<Rect[]>([]);
+  const [detecting, setDetecting] = useState(false);
+  const [hdMode, setHdMode] = useState(false);
 
   useEffect(() => {
     if (!file) {
@@ -82,6 +81,7 @@ export function ImageWatermarkRemover() {
       setRect(null);
       setResultUrl(null);
       setError(null);
+      setCandidates([]);
       return;
     }
     const url = URL.createObjectURL(file);
@@ -93,6 +93,7 @@ export function ImageWatermarkRemover() {
       setRect(null);
       setResultUrl(null);
       setError(null);
+      setCandidates([]);
     };
     image.onerror = () => setError(t("loadError"));
     return () => URL.revokeObjectURL(url);
@@ -126,6 +127,7 @@ export function ImageWatermarkRemover() {
     setStartPt(p);
     setRect({ x: p.x, y: p.y, w: 0, h: 0 });
     setResultUrl(null);
+    setCandidates([]);
   }
 
   function handleMove(e: React.MouseEvent | React.TouchEvent) {
@@ -144,37 +146,70 @@ export function ImageWatermarkRemover() {
     setStartPt(null);
   }
 
+  async function runAutoDetect() {
+    if (!img) return;
+    setDetecting(true);
+    setError(null);
+    setResultUrl(null);
+    await new Promise((res) => setTimeout(res, 0));
+
+    try {
+      const found = detectWatermarks(img, img.naturalWidth, img.naturalHeight);
+      setCandidates(found);
+      if (found.length === 0) {
+        setError(t("autoDetectNone"));
+      } else {
+        setRect(found[0]);
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : t("processError"));
+    } finally {
+      setDetecting(false);
+    }
+  }
+
   async function process() {
     if (!img || !rect || rect.w < 2 || rect.h < 2) return;
     setProcessing(true);
     setError(null);
     setProgress(0);
-    // Let React paint the "processing" state before the heavy synchronous work.
+    setCandidates([]);
     await new Promise((res) => setTimeout(res, 0));
 
     try {
+      // Fast mode: downsample very large images so mobile devices finish quickly.
+      const maxDim = Math.max(img.naturalWidth, img.naturalHeight);
+      const scale = hdMode || maxDim <= MAX_FAST_SIZE ? 1 : MAX_FAST_SIZE / maxDim;
+      const procW = Math.round(img.naturalWidth * scale);
+      const procH = Math.round(img.naturalHeight * scale);
+
       const canvas = document.createElement("canvas");
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
+      canvas.width = procW;
+      canvas.height = procH;
       const ctx = canvas.getContext("2d");
       if (!ctx) throw new Error(t("canvasError"));
-      ctx.drawImage(img, 0, 0);
-      const src = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const dst = ctx.createImageData(canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, procW, procH);
+      const src = ctx.getImageData(0, 0, procW, procH);
+      const dst = ctx.createImageData(procW, procH);
       dst.data.set(src.data);
       const data = dst.data;
-      const W = canvas.width;
-      const H = canvas.height;
+      const W = procW;
+      const H = procH;
 
-      const { x, y, w, h } = rect;
+      const procRect = {
+        x: Math.round(rect.x * scale),
+        y: Math.round(rect.y * scale),
+        w: Math.round(rect.w * scale),
+        h: Math.round(rect.h * scale),
+      };
+      const { x, y, w, h } = procRect;
       const x1 = Math.max(0, Math.floor(x));
       const y1 = Math.max(0, Math.floor(y));
       const x2 = Math.min(W - 1, Math.ceil(x + w));
       const y2 = Math.min(H - 1, Math.ceil(y + h));
 
       const filled = new Uint8Array(W * H);
-      // Cap the search radius so we never scan the whole image per pixel.
-      const maxR = Math.min(160, Math.max(W, H));
+      const maxR = Math.min(hdMode ? 160 : 80, Math.max(W, H));
       const rows = y2 - y1 + 1;
 
       // Texture-preserving fill: each selection pixel copies the nearest valid
@@ -184,10 +219,8 @@ export function ImageWatermarkRemover() {
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
           let bestIdx = -1;
-          let bestD = Infinity;
 
           for (let r = 2; r <= maxR && bestIdx < 0; r++) {
-            // collect the source pixels on this ring
             const ringSources: number[] = [];
             for (let dy = -r; dy <= r; dy++) {
               for (let dx = -r; dx <= r; dx++) {
@@ -197,17 +230,10 @@ export function ImageWatermarkRemover() {
                 if (sx < 0 || sx >= W || sy < 0 || sy >= H) continue;
                 if (sx >= x1 && sx <= x2 && sy >= y1 && sy <= y2) continue;
                 const idx = (sy * W + sx) * 4;
-                const d = Math.hypot(sx - px, sy - py);
-                if (d < bestD) {
-                  bestD = d;
-                  bestIdx = idx;
-                }
                 ringSources.push(idx);
               }
             }
             if (ringSources.length > 0) {
-              // prefer the nearest ring but add jitter by picking randomly from
-              // it; this keeps fabric / skin texture instead of averaging.
               const chosen = ringSources[Math.floor(Math.random() * ringSources.length)];
               bestIdx = chosen;
               break;
@@ -222,16 +248,13 @@ export function ImageWatermarkRemover() {
             filled[py * W + px] = 1;
           }
         }
-        // Yield periodically so mobile devices never freeze and the progress
-        // bar keeps updating.
         if ((py - y1) % 48 === 0) {
           setProgress(Math.round(((py - y1) / rows) * 90));
           await new Promise((res) => setTimeout(res, 0));
         }
       }
 
-      // Fill any interior pixels that didn't find a source (e.g. selection
-      // covers the whole image) by copying the nearest already-filled pixel.
+      // Fill any interior pixels that didn't find a source.
       for (let py = y1; py <= y2; py++) {
         for (let px = x1; px <= x2; px++) {
           if (filled[py * W + px]) continue;
@@ -267,13 +290,10 @@ export function ImageWatermarkRemover() {
         }
       }
 
-      // Feather only the boundary rim so the inpainted area blends into the
-      // background without turning the whole patch into a blurred rectangle.
-      featherBoundary(data, W, H, x1, y1, x2, y2, 3);
+      featherBoundary(data, W, H, x1, y1, x2, y2, hdMode ? 3 : 2);
 
       ctx.putImageData(dst, 0, 0);
       setProgress(100);
-      // JPEG encodes far faster than PNG on mobile for large photos.
       setResultUrl(canvas.toDataURL("image/jpeg", 0.92));
     } catch (err) {
       setError(err instanceof Error ? err.message : t("processError"));
@@ -307,13 +327,58 @@ export function ImageWatermarkRemover() {
             setRect(null);
             setResultUrl(null);
             setError(null);
+            setCandidates([]);
           }}
         />
       )}
       {img && imgUrl && (
         <>
           <div className="rounded-xl border border-white/10 bg-black/20 p-3">
-            <p className="mb-2 text-xs text-muted-foreground">{t("hint")}</p>
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+              <p className="text-xs text-muted-foreground">{t("hint")}</p>
+              <Button
+                size="sm"
+                variant="outline"
+                className="h-7 gap-1 text-xs"
+                onClick={runAutoDetect}
+                disabled={detecting || processing}
+              >
+                {detecting ? (
+                  <Loader2 className="h-3 w-3 animate-spin" />
+                ) : (
+                  <ScanSearch className="h-3 w-3" />
+                )}
+                {detecting ? t("autoDetecting") : t("autoDetect")}
+              </Button>
+            </div>
+
+            {candidates.length > 0 && (
+              <div className="mb-2 flex flex-wrap gap-1.5">
+                {candidates.map((c, i) => (
+                  <button
+                    key={`${c.x}-${c.y}-${c.w}-${c.h}`}
+                    type="button"
+                    onClick={() => {
+                      setRect(c);
+                      setResultUrl(null);
+                    }}
+                    className={cn(
+                      "rounded-full px-2 py-0.5 text-[10px] font-medium transition",
+                      rect &&
+                        Math.round(rect.x) === Math.round(c.x) &&
+                        Math.round(rect.y) === Math.round(c.y) &&
+                        Math.round(rect.w) === Math.round(c.w) &&
+                        Math.round(rect.h) === Math.round(c.h)
+                        ? "bg-pink-500 text-white"
+                        : "bg-white/10 text-muted-foreground hover:bg-white/20 hover:text-foreground"
+                    )}
+                  >
+                    {t("candidateLabel", { index: i + 1 })}
+                  </button>
+                ))}
+              </div>
+            )}
+
             {/* inline-block wrapper shrinks to the displayed image, so the
                 percentage-based overlay maps 1:1 to the visible area with no
                 clipping and no in-container scroll. */}
@@ -352,6 +417,18 @@ export function ImageWatermarkRemover() {
               )}
             </div>
           </div>
+
+          <div className="flex items-center gap-2">
+            <Checkbox
+              id="hd-mode"
+              checked={hdMode}
+              onCheckedChange={(checked) => setHdMode(checked === true)}
+            />
+            <label htmlFor="hd-mode" className="cursor-pointer text-xs text-muted-foreground">
+              {t("hdMode")}
+            </label>
+          </div>
+
           <Button
             onClick={process}
             disabled={!rect || rect.w < 2 || rect.h < 2 || processing}
@@ -373,7 +450,7 @@ export function ImageWatermarkRemover() {
                 />
               </div>
               <p className="mt-1 text-center text-xs text-muted-foreground">
-                {tV("processing", { progress })}
+                {t("processing", { progress })}
               </p>
             </div>
           )}

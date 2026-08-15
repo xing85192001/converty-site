@@ -144,6 +144,10 @@
       "supports": "Unterstützt"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Wasserzeichen automatisch erkennen",
+      "autoDetecting": "Erkennung läuft...",
+      "autoDetectNone": "Kein eindeutiges Wasserzeichen erkannt. Bitte ziehen Sie manuell einen Rahmen um das Wasserzeichen.",
+      "candidateLabel": "Wasserzeichen {index}",
       "title": "Video-Wasserzeichen-Entferner",
       "description": "Ziehen oder klicken Sie, um ein Video hochzuladen, und ziehen Sie ein Feld über den Wasserzeichenbereich, um ihn zu entfernen.",
       "selectVideo": "Video auswählen",
@@ -156,10 +160,16 @@
       "startRemoval": "Wasserzeichen entfernen",
       "download": "Verarbeitetes Video herunterladen",
       "errorSelectArea": "Bitte ziehen Sie zuerst ein Feld über das zu entfernende Wasserzeichen",
+      "errorNetwork": "Netzwerkfehler: Der Download des Videoverarbeitungskerns ist fehlgeschlagen. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "errorFailed": "Verarbeitung fehlgeschlagen, bitte versuchen Sie es erneut",
       "hint": "Tipp: Drücken und ziehen Sie im Videobild, um ein Feld über das Wasserzeichen zu ziehen."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Wasserzeichen automatisch erkennen",
+      "autoDetecting": "Erkennung läuft...",
+      "autoDetectNone": "Kein eindeutiges Wasserzeichen erkannt. Bitte ziehen Sie manuell einen Rahmen um das Wasserzeichen.",
+      "candidateLabel": "Wasserzeichen {index}",
+      "hdMode": "HD-Verarbeitung (langsamer, bessere Qualität)",
       "loadError": "Bild konnte nicht geladen werden",
       "canvasError": "Canvas-Kontext konnte nicht abgerufen werden",
       "processError": "Verarbeitung fehlgeschlagen",
@@ -6716,6 +6726,7 @@
     "something-went-wrong": "Etwas ist schief gelaufen",
     "toggle-menu": "Menü umschalten",
     "toggle-theme": "Thema umschalten",
+    "user-content": "Nutzerinhalte",
     "user-content-body": "Sie dürfen nur Inhalte hochladen, übermitteln oder verarbeiten, deren Eigentümer Sie sind oder zu deren Nutzung Sie berechtigt sind. Sie allein sind dafür verantwortlich, sicherzustellen, dass Sie über die erforderlichen Rechte, Lizenzen und Berechtigungen für alle Inhalte verfügen, die Sie mit unseren Tools verwenden.",
     "install-baikecalc": "Installieren Sie Baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Du bist offline. Rechner funktionieren aus dem Cache."

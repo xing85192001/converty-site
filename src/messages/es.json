@@ -150,6 +150,10 @@
       "supports": "Soporta"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Detectar marca de agua automáticamente",
+      "autoDetecting": "Detectando...",
+      "autoDetectNone": "No se detectó una marca de agua evidente. Dibuje un cuadro sobre la marca de agua manualmente.",
+      "candidateLabel": "Marca de agua {index}",
       "title": "Eliminador de marca de agua de video",
       "description": "Arrastra o haz clic para subir un video, luego dibuja un cuadro sobre el área de la marca de agua para eliminarla.",
       "selectVideo": "Seleccionar video",
@@ -162,10 +166,16 @@
       "startRemoval": "Eliminar marca de agua",
       "download": "Descargar video procesado",
       "errorSelectArea": "Primero dibuja un cuadro sobre la marca de agua que quieres eliminar",
+      "errorNetwork": "Error de red: no se pudo descargar el núcleo de procesamiento de video. Verifique su conexión e inténtelo de nuevo.",
       "errorFailed": "El procesamiento falló, inténtalo de nuevo",
       "hint": "Consejo: presiona y arrastra sobre el fotograma del video para dibujar un cuadro sobre la marca de agua."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Detectar marca de agua automáticamente",
+      "autoDetecting": "Detectando...",
+      "autoDetectNone": "No se detectó una marca de agua evidente. Dibuje un cuadro sobre la marca de agua manualmente.",
+      "candidateLabel": "Marca de agua {index}",
+      "hdMode": "Procesamiento HD (más lento, mejor calidad)",
       "loadError": "Error al cargar la imagen",
       "canvasError": "No se pudo obtener el contexto del canvas",
       "processError": "El procesamiento falló",
@@ -6727,6 +6737,7 @@
     "something-went-wrong": "algo salió mal",
     "toggle-menu": "Alternar menú",
     "toggle-theme": "Alternar tema",
+    "user-content": "Contenido del usuario",
     "user-content-body": "Solo puede cargar, enviar o procesar contenido que sea de su propiedad o que esté autorizado a utilizar. Usted es el único responsable de garantizar que tiene los derechos, licencias y permisos necesarios para cualquier contenido que utilice con nuestras herramientas.",
     "install-baikecalc": "Instalar baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Estás desconectado. Las calculadoras funcionarán desde el caché."

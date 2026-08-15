@@ -147,6 +147,10 @@
       "supports": "지원 형식"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "자동 워터마크 감지",
+      "autoDetecting": "감지 중...",
+      "autoDetectNone": "뚜렷한 워터마크가 감지되지 않았습니다. 워터마크 영역을 수동으로 표시해 주세요.",
+      "candidateLabel": "워터마크 {index}",
       "title": "동영상 워터마크 제거",
       "description": "동영상을 드래그하거나 클릭하여 업로드한 후, 워터마크 영역에 상자를 그려 제거하세요.",
       "selectVideo": "동영상 선택",
@@ -159,10 +163,16 @@
       "startRemoval": "워터마크 제거 시작",
       "download": "처리된 동영상 다운로드",
       "errorSelectArea": "먼저 제거할 워터마크 영역에 상자를 그려주세요",
+      "errorNetwork": "네트워크 오류: 비디오 처리 코어 다운로드에 실패했습니다. 연결을 확인하고 다시 시도하세요.",
       "errorFailed": "처리에 실패했습니다. 다시 시도해 주세요",
       "hint": "팁: 동영상 화면에서 누른 채 드래그하여 워터마크 영역에 상자를 그리세요."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "자동 워터마크 감지",
+      "autoDetecting": "감지 중...",
+      "autoDetectNone": "뚜렷한 워터마크가 감지되지 않았습니다. 워터마크 영역을 수동으로 표시해 주세요.",
+      "candidateLabel": "워터마크 {index}",
+      "hdMode": "HD 처리 (느리지만 품질이 더 좋음)",
       "loadError": "이미지를 불러오지 못했습니다",
       "canvasError": "캔버스 컨텍스트를 가져올 수 없습니다",
       "processError": "처리에 실패했습니다",
@@ -6721,6 +6731,7 @@
     "something-went-wrong": "문제가 발생했습니다.",
     "toggle-menu": "토글 메뉴",
     "toggle-theme": "테마 전환",
+    "user-content": "사용자 콘텐츠",
     "user-content-body": "귀하는 귀하가 소유하거나 사용 권한이 있는 콘텐츠만 업로드, 제출 또는 처리할 수 있습니다. 귀하가 당사 도구와 함께 사용하는 모든 콘텐츠에 필요한 권리, 라이센스 및 권한을 보유하고 있는지 확인하는 것은 전적으로 귀하의 책임입니다.",
     "install-baikecalc": "바이케칼크 설치",
     "you-are-offline-calculators-will-work-from-cache": "귀하는 오프라인 상태입니다. 계산기는 캐시에서 작동합니다."

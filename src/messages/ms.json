@@ -146,6 +146,10 @@
       "supports": "Menyokong"
     },
     "videoWatermarkRemover": {
+      "autoDetect": "Kesan Tanda Air Secara Automatik",
+      "autoDetecting": "Mengesan...",
+      "autoDetectNone": "Tiada tanda air yang jelas dikesan. Sila lukis kotak mengikut tanda air secara manual.",
+      "candidateLabel": "Tanda air {index}",
       "title": "Pembuang Tanda Air Video",
       "description": "Seret atau klik untuk memuat naik video, kemudian lukis kotak di kawasan tanda air untuk membuangnya.",
       "selectVideo": "Pilih Video",
@@ -158,10 +162,16 @@
       "startRemoval": "Buang Tanda Air",
       "download": "Muat turun video yang diproses",
       "errorSelectArea": "Sila lukis kotak di atas tanda air yang ingin dibuang",
+      "errorNetwork": "Ralat rangkaian: gagal memuat turun teras pemprosesan video. Sila periksa sambungan anda dan cuba lagi.",
       "errorFailed": "Pemprosesan gagal, sila cuba lagi",
       "hint": "Petua: tekan dan seret pada bingkai video untuk melukis kotak di kawasan tanda air."
     },
     "imageWatermarkRemover": {
+      "autoDetect": "Kesan Tanda Air Secara Automatik",
+      "autoDetecting": "Mengesan...",
+      "autoDetectNone": "Tiada tanda air yang jelas dikesan. Sila lukis kotak mengikut tanda air secara manual.",
+      "candidateLabel": "Tanda air {index}",
+      "hdMode": "Pemprosesan HD (lebih perlahan, kualiti lebih baik)",
       "loadError": "Gagal memuatkan imej",
       "canvasError": "Gagal mendapatkan konteks kanvas",
       "processError": "Pemprosesan gagal",
@@ -6720,6 +6730,7 @@
     "something-went-wrong": "Sesuatu telah berlaku",
     "toggle-menu": "Togol menu",
     "toggle-theme": "Togol tema",
+    "user-content": "Kandungan Pengguna",
     "user-content-body": "Anda hanya boleh memuat naik, menyerahkan atau memproses kandungan yang anda miliki atau dibenarkan untuk digunakan. Anda bertanggungjawab sepenuhnya untuk memastikan anda mempunyai hak, lesen dan kebenaran yang diperlukan untuk sebarang kandungan yang anda gunakan dengan alatan kami.",
     "install-baikecalc": "Pasang baikecalc",
     "you-are-offline-calculators-will-work-from-cache": "Anda berada di luar talian. Kalkulator akan berfungsi dari cache."
