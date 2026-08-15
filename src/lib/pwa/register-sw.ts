@@ -46,11 +46,27 @@ export function registerServiceWorker(): void {
     return;
   }
 
-  // Register service worker
+  // Register service worker.
+  // updateViaCache: 'none' prevents the browser from using its HTTP cache for
+  // /sw.js, so every page load checks for a new service worker.
   navigator.serviceWorker
-    .register("/sw.js", { scope: "/" })
+    .register("/sw.js", { scope: "/", updateViaCache: "none" })
     .then((registration) => {
       console.log("Service worker registered:", registration.scope);
+
+      // Check for updates immediately and whenever the tab becomes visible.
+      // This helps PWA clients pick up new deployments without waiting for the
+      // browser's default 24-hour SW update interval.
+      registration.update().catch(() => {
+        // Ignore update check errors (e.g. offline).
+      });
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") {
+          registration.update().catch(() => {
+            // Ignore update check errors.
+          });
+        }
+      });
 
       // Check for updates on navigation
       registration.addEventListener("updatefound", () => {

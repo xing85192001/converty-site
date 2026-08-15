@@ -31,6 +31,20 @@ const nextConfig: NextConfig = {
   assetPrefix: basePath,
   // Allow cross-origin requests in development
   allowedDevOrigins: ["172.16.86.102"],
+  // Prevent browsers from caching /sw.js so the PWA always checks for updates.
+  async headers() {
+    return [
+      {
+        source: "/sw.js",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withBundleAnalyzer(withNextIntl(nextConfig));

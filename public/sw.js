@@ -5,6 +5,8 @@
  *
  * Implements offline-first caching strategies using Workbox v7.
  * Enables calculator functionality without internet connection.
+ *
+ * Cache version: v2 (bumped 2026-08-15 to force stale PWA clients to refresh).
  */
 
 // Import Workbox from CDN (Workbox v7 standard pattern)
@@ -25,10 +27,36 @@ if (workbox) {
   // Take control of all clients immediately
   workbox.core.clientsClaim();
 
-  // Cache names
-  const PAGES_CACHE = "pages-cache-v1";
-  const STATIC_CACHE = "static-cache-v1";
-  const FONT_CACHE = "font-cache-v1";
+  // Cache names - bump version on every major deployment so old caches are
+  // invalidated and clients pick up fresh HTML/CSS/JS.
+  const PAGES_CACHE = "pages-cache-v2";
+  const STATIC_CACHE = "static-cache-v2";
+  const FONT_CACHE = "font-cache-v2";
+
+  // Clean up caches from previous service-worker versions so stale footers,
+  // language switchers, and asset bundles don't persist across deployments.
+  self.addEventListener("activate", (event) => {
+    event.waitUntil(
+      caches
+        .keys()
+        .then((cacheNames) =>
+          Promise.all(
+            cacheNames.map((cacheName) => {
+              if (
+                cacheName !== PAGES_CACHE &&
+                cacheName !== STATIC_CACHE &&
+                cacheName !== FONT_CACHE
+              ) {
+                console.log("Deleting stale cache:", cacheName);
+                return caches.delete(cacheName);
+              }
+              return undefined;
+            })
+          )
+        )
+        .then(() => self.clients.claim())
+    );
+  });
 
   /**
    * STRATEGY 1: Network First for HTML/Document requests
