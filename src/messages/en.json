@@ -185,6 +185,7 @@
       "processError": "Processing failed",
       "hint": "Drag on the image to draw a box around the watermark area",
       "processBtn": "Remove Watermark",
+      "processing": "Processing {progress}%",
       "resultTitle": "Result",
       "downloadBtn": "Download processed image"
     },

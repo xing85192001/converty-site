@@ -15,7 +15,8 @@
       "!**/coverage",
       "!**/*.config.js",
       "!**/*.config.mjs",
-      "!**/*.css"
+      "!**/*.css",
+      "!**/public/ffmpeg"
     ]
   },
   "formatter": {

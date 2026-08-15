@@ -187,6 +187,7 @@
       "processError": "處理失敗",
       "hint": "在圖片上拖曳框選水印區域",
       "processBtn": "智慧去除水印",
+      "processing": "處理中 {progress}%",
       "resultTitle": "處理結果",
       "downloadBtn": "下載處理後圖片"
     },

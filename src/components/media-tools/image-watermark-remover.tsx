@@ -9,7 +9,8 @@ import { cn } from "@/lib/utils";
 import { FileDropZone, SelectedFile, ToolError } from "./shared";
 import { detectWatermarks, type Rect } from "./watermark-detection";
 
-const MAX_FAST_SIZE = 1600;
+// Processing-resolution caps: HD mode allows a larger longest edge, normal mode
+// stays small so mobile devices don't run out of memory or freeze on big photos.
 
 // Feather only the outer rim of the inpainted region so the seam blends in
 // without destroying the texture we just synthesised inside the selection.
@@ -177,9 +178,11 @@ export function ImageWatermarkRemover() {
     await new Promise((res) => setTimeout(res, 0));
 
     try {
-      // Fast mode: downsample very large images so mobile devices finish quickly.
+      // Cap the processing resolution. HD mode allows up to 1920px on the
+      // longest edge; normal mode caps at 1200px so phones don't OOM/freeze.
+      const cap = hdMode ? 1920 : 1200;
       const maxDim = Math.max(img.naturalWidth, img.naturalHeight);
-      const scale = hdMode || maxDim <= MAX_FAST_SIZE ? 1 : MAX_FAST_SIZE / maxDim;
+      const scale = maxDim <= cap ? 1 : cap / maxDim;
       const procW = Math.round(img.naturalWidth * scale);
       const procH = Math.round(img.naturalHeight * scale);
 
@@ -209,7 +212,7 @@ export function ImageWatermarkRemover() {
       const y2 = Math.min(H - 1, Math.ceil(y + h));
 
       const filled = new Uint8Array(W * H);
-      const maxR = Math.min(hdMode ? 160 : 80, Math.max(W, H));
+      const maxR = Math.min(hdMode ? 80 : 40, Math.max(W, H));
       const rows = y2 - y1 + 1;
 
       // Texture-preserving fill: each selection pixel copies the nearest valid

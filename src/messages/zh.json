@@ -185,6 +185,7 @@
       "processError": "处理失败",
       "hint": "在图片上拖拽框选水印区域",
       "processBtn": "智能去除水印",
+      "processing": "处理中 {progress}%",
       "resultTitle": "处理结果",
       "downloadBtn": "下载处理后图片"
     },

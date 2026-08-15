@@ -21,7 +21,13 @@ async function loadFfmpeg() {
   };
 }
 
-const CORE_BASE = "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd";
+// Load the FFmpeg core from the first host that serves it. The self-hosted copy
+// on our own domain is always reachable; the public CDNs are fallbacks only.
+const CORE_HOSTS = [
+  "/ffmpeg",
+  "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
+  "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
+];
 
 async function fetchWithRetry(
   url: string,
@@ -469,17 +475,25 @@ export function VideoWatermarkRemover() {
         setProgress(Math.min(99, Math.round(progress * 100)));
       });
 
-      const coreURL = await fetchWithRetry(
-        `${CORE_BASE}/ffmpeg-core.js`,
-        "text/javascript",
-        toBlobURL
-      );
-      const wasmURL = await fetchWithRetry(
-        `${CORE_BASE}/ffmpeg-core.wasm`,
-        "application/wasm",
-        toBlobURL
-      );
-      await ffmpeg.load({ coreURL, wasmURL });
+      // Try each host in turn; use the first one that serves both core files.
+      let coreURL: string | null = null;
+      let wasmURL: string | null = null;
+      let loadErr: unknown;
+      for (const host of CORE_HOSTS) {
+        try {
+          coreURL = await fetchWithRetry(`${host}/ffmpeg-core.js`, "text/javascript", toBlobURL);
+          wasmURL = await fetchWithRetry(`${host}/ffmpeg-core.wasm`, "application/wasm", toBlobURL);
+          await ffmpeg.load({ coreURL, wasmURL });
+          break;
+        } catch (err) {
+          loadErr = err;
+          coreURL = null;
+          wasmURL = null;
+        }
+      }
+      if (!coreURL || !wasmURL) {
+        throw loadErr ?? new Error(t("errorNetwork"));
+      }
 
       const vw = videoRef.current?.videoWidth || videoMeta?.w || 0;
       const vh = videoRef.current?.videoHeight || videoMeta?.h || 0;
