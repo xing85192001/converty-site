@@ -68,12 +68,21 @@ export function registerServiceWorker(): void {
         }
       });
 
-      // Check for updates on navigation
+      // Check for updates on navigation. When a new service worker activates,
+      // reload so the latest app shell (and hashed JS chunks) is used. This
+      // prevents stale SW caches from serving old HTML that points at deleted
+      // chunks, which causes "page cannot be loaded" errors on mobile.
       registration.addEventListener("updatefound", () => {
         const newWorker = registration.installing;
-        if (newWorker) {
-          console.log("Service worker update found");
-        }
+        if (!newWorker) return;
+        console.log("Service worker update found");
+
+        newWorker.addEventListener("statechange", () => {
+          if (newWorker.state === "activated") {
+            console.log("New service worker activated, reloading for fresh app shell");
+            window.location.reload();
+          }
+        });
       });
     })
     .catch((error) => {

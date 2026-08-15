@@ -23,6 +23,8 @@
  */
 
 const { generateSW } = require("workbox-build");
+const fs = require("node:fs");
+const path = require("node:path");
 
 async function buildServiceWorker() {
   try {
@@ -41,16 +43,35 @@ async function buildServiceWorker() {
       skipWaiting: true,
       clientsClaim: true,
 
+      // Bump cache id on every major deployment so stale precached HTML/JS
+      // from old builds (which reference deleted hashed chunks) is discarded.
+      cacheId: "converty-v2",
+      cleanupOutdatedCaches: true,
+
       // Runtime caching strategies
       runtimeCaching: [
         {
-          // HTML documents: NetworkFirst (fresh when online, cache fallback)
+          // HTML documents: NetworkFirst (fresh when online, short cache fallback)
           urlPattern: ({ request }) => request.destination === "document",
           handler: "NetworkFirst",
           options: {
-            cacheName: "pages-cache-v1",
+            cacheName: "pages-cache-v2",
             expiration: {
-              maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+              maxAgeSeconds: 24 * 60 * 60, // 1 day
+            },
+            cacheableResponse: {
+              statuses: [0, 200],
+            },
+          },
+        },
+        {
+          // Self-hosted FFmpeg core files: cache first, never expire (large, immutable)
+          urlPattern: ({ url }) => url.pathname.startsWith("/ffmpeg/"),
+          handler: "CacheFirst",
+          options: {
+            cacheName: "ffmpeg-core-cache-v2",
+            expiration: {
+              maxEntries: 10,
             },
             cacheableResponse: {
               statuses: [0, 200],
@@ -62,7 +83,7 @@ async function buildServiceWorker() {
           urlPattern: ({ request }) => request.destination === "image",
           handler: "CacheFirst",
           options: {
-            cacheName: "images-cache-v1",
+            cacheName: "images-cache-v2",
             expiration: {
               maxEntries: 100,
               maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
@@ -77,7 +98,7 @@ async function buildServiceWorker() {
           urlPattern: ({ request }) => request.destination === "font",
           handler: "StaleWhileRevalidate",
           options: {
-            cacheName: "font-cache-v1",
+            cacheName: "font-cache-v2",
             expiration: {
               maxEntries: 20,
             },
@@ -94,9 +115,20 @@ async function buildServiceWorker() {
       `✓ Service worker generated: ${result.count} files precached (${result.size} bytes)`
     );
   } catch (error) {
-    // Log error and exit with failure code
+    // Log error and fall back to the hand-written service worker so the
+    // build still produces a usable (if less optimized) SW with fresh cache
+    // versioning (v2) instead of a stale generated one.
     console.error("✗ Service worker generation failed:", error);
-    process.exit(1);
+    try {
+      fs.copyFileSync(
+        path.join(__dirname, "../public/sw.js"),
+        path.join(__dirname, "../out/sw.js")
+      );
+      console.log("✓ Fallback: copied public/sw.js to out/sw.js");
+    } catch (copyErr) {
+      console.error("✗ Fallback copy also failed:", copyErr);
+      process.exit(1);
+    }
   }
 }
 
