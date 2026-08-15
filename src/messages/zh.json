@@ -266,7 +266,8 @@
       "download": "下载 GIF",
       "errorEmpty": "输出文件为空",
       "errorNetwork": "网络错误：下载处理核心失败，请检查网络后重试。",
-      "errorFailed": "转换失败，请重试"
+      "errorFailed": "转换失败，请重试",
+      "desc": "上传视频，调整帧率与宽度，一键转换为动图 GIF。"
     }
   },
   "nav": {

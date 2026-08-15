@@ -266,7 +266,8 @@
       "download": "Download GIF",
       "errorEmpty": "Output file is empty",
       "errorNetwork": "Network error: failed to download the processing core. Check your connection and retry.",
-      "errorFailed": "Conversion failed, please retry"
+      "errorFailed": "Conversion failed, please retry",
+      "desc": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click."
     }
   },
   "nav": {

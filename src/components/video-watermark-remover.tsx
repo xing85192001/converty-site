@@ -17,53 +17,80 @@ async function loadFfmpeg() {
   return {
     FFmpeg: ffmpegModule.FFmpeg,
     fetchFile: utilModule.fetchFile,
-    toBlobURL: utilModule.toBlobURL,
   };
 }
 
-// Try the self-hosted core first, then fall back to public CDNs. Same-origin
-// URLs are fed directly to ffmpeg.load() so the worker downloads them once.
-// Cross-origin CDN URLs are converted to blob URLs to avoid CORS/MIME issues.
+// Try the self-hosted core first, then fall back to public CDNs. All cores are
+// fetched into memory as blob URLs so we can verify the wasm size before FFmpeg
+// tries to compile it; this avoids "section extends past end" errors caused by
+// truncated downloads or stale service-worker caches.
 const CORE_HOSTS = [
   "/ffmpeg",
   "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
 ];
 
+// Expected size of @ffmpeg/core@0.12.6 ffmpeg-core.wasm. If the fetched file
+// does not match, we reject it before FFmpeg tries to compile a truncated blob.
+const EXPECTED_WASM_SIZE = 20_275_200;
+
+async function fetchToBlobURL(
+  url: string,
+  mimeType: string,
+  onProgress?: (received: number, total: number) => void
+): Promise<{ blobURL: string; size: number }> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const total = Number.parseInt(res.headers.get("content-length") || "0", 10);
+  const reader = res.body?.getReader();
+  if (!reader) {
+    const buf = await res.arrayBuffer();
+    const blob = new Blob([buf], { type: mimeType });
+    return { blobURL: URL.createObjectURL(blob), size: buf.byteLength };
+  }
+
+  const chunks: Uint8Array[] = [];
+  let received = 0;
+  // eslint-disable-next-line no-constant-condition
+  while (true) {
+    // eslint-disable-next-line no-await-in-loop
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    received += value.length;
+    if (total > 0) onProgress?.(received, total);
+  }
+
+  const buf = new Uint8Array(received);
+  let offset = 0;
+  for (const chunk of chunks) {
+    buf.set(chunk, offset);
+    offset += chunk.length;
+  }
+  const blob = new Blob([buf], { type: mimeType });
+  return { blobURL: URL.createObjectURL(blob), size: received };
+}
+
 async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): Promise<void> {
   const errors: string[] = [];
-  const { toBlobURL } = await loadFfmpeg();
 
   for (const host of CORE_HOSTS) {
     const coreURL = `${host}/ffmpeg-core.js`;
     const wasmURL = `${host}/ffmpeg-core.wasm`;
     try {
-      if (host.startsWith("/")) {
-        // Self-hosted: let the worker fetch directly. Pre-check existence so
-        // we can fall back quickly if the file is missing.
-        const [coreRes, wasmRes] = await Promise.all([
-          fetch(coreURL, { method: "HEAD" }),
-          fetch(wasmURL, { method: "HEAD" }),
-        ]);
-        if (!coreRes.ok) throw new Error(`core ${coreRes.status}`);
-        if (!wasmRes.ok) throw new Error(`wasm ${wasmRes.status}`);
-        onProgress?.(5);
-        await ffmpeg.load({ coreURL, wasmURL });
-      } else {
-        // CDN: use blob URLs to sidestep CORS and MIME checks.
-        const coreBlob = await toBlobURL(coreURL, "text/javascript");
-        onProgress?.(30);
-        const wasmBlob = await toBlobURL(
-          wasmURL,
-          "application/wasm",
-          true,
-          ({ received, total }) => {
-            if (total > 0) onProgress?.(30 + Math.min(60, Math.round((received / total) * 60)));
-          }
-        );
-        onProgress?.(95);
-        await ffmpeg.load({ coreURL: coreBlob, wasmURL: wasmBlob });
+      onProgress?.(5);
+      const core = await fetchToBlobURL(coreURL, "text/javascript");
+      onProgress?.(20);
+      const wasm = await fetchToBlobURL(wasmURL, "application/wasm", (received, total) => {
+        if (total > 0) onProgress?.(20 + Math.min(70, Math.round((received / total) * 70)));
+      });
+
+      if (wasm.size !== EXPECTED_WASM_SIZE) {
+        throw new Error(`wasm size ${wasm.size}, expected ${EXPECTED_WASM_SIZE}`);
       }
+
+      onProgress?.(95);
+      await ffmpeg.load({ coreURL: core.blobURL, wasmURL: wasm.blobURL });
       onProgress?.(100);
       return;
     } catch (err) {
