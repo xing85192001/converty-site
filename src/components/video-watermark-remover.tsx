@@ -255,8 +255,10 @@ export function VideoWatermarkRemover() {
 
       const ext = file.name.split(".").pop() || "mp4";
       const inputName = `input.${ext}`;
-      // Always output MP4 with H.264 baseline + yuv420p + AAC for maximum
-      // compatibility with system players (Windows Media Player, QuickTime, etc.)
+      // Always output MP4 with H.264 + yuv420p + AAC for maximum compatibility
+      // with system players (Windows Media Player, QuickTime, etc.). We avoid
+      // locking profile/level so x264 can auto-pick a level appropriate for the
+      // input resolution; baseline/level-3.0 cannot handle 720p60/1080p content.
       const outputName = "output.mp4";
 
       await ffmpeg.writeFile(inputName, await fetchFile(file));
@@ -269,10 +271,6 @@ export function VideoWatermarkRemover() {
         `delogo=x=${selection.x}:y=${selection.y}:w=${selection.w}:h=${selection.h}:band=30:show=0`,
         "-c:v",
         "libx264",
-        "-profile:v",
-        "baseline",
-        "-level",
-        "3.0",
         "-pix_fmt",
         "yuv420p",
         "-preset",
