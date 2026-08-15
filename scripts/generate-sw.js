@@ -1,136 +1,118 @@
 /**
  * Service Worker Generation Script
  *
- * Generates production service worker with Workbox precaching manifest.
- * Runs as post-build step after Next.js static export completes.
+ * Replaced the Workbox precaching generator with a tiny, self-clearing
+ * service worker. Rationale:
  *
- * Why post-build script:
- * - Workbox needs static files to exist before generating precache manifest
- * - Next.js build creates files in out/, then this script scans and injects manifest
- * - Standard pattern for static site PWAs
+ * The previous Workbox-generated SW precached the hashed app shell. When a new
+ * deployment deleted the old hashed JS chunks, browsers still controlled by the
+ * OLD service worker served the cached (stale) HTML, which pointed at chunks
+ * that no longer existed -> "page cannot be loaded" on mobile, and stale code
+ * (jsdelivr core load) on desktop.
  *
- * Why generateSW:
- * - Creates complete SW file with precaching + runtime caching
- * - Simpler than injectManifest (no template needed)
- * - Perfect for static exports with predictable file structure
+ * The new SW is intentionally NOT a precache. It:
+ *   1. On install: skipWaiting() so it takes over immediately.
+ *   2. On activate: deletes EVERY cache (except the immutable FFmpeg core
+ *      cache), claims all clients, then reloads every open tab so the latest
+ *      code is served on the next load.
+ *   3. On fetch: goes straight to the network for everything except /ffmpeg/*
+ *      (which is large + immutable and is cached once).
  *
- * Caching strategies:
- * - HTML documents: NetworkFirst (fresh when online, 7-day cache fallback)
- * - Images: CacheFirst (immutable content, 30-day expiration, 100 max entries)
- * - Fonts: StaleWhileRevalidate (instant render, background updates, 20 max entries)
- *
- * @see https://developer.chrome.com/docs/workbox/modules/workbox-build/
+ * Net effect: after a deploy, the user only needs to reopen/refresh the site
+ * once. The old SW is replaced, all stale caches are wiped, and the page loads
+ * the fresh build from the network. No manual DevTools unregister required.
  */
 
-const { generateSW } = require("workbox-build");
 const fs = require("node:fs");
 const path = require("node:path");
 
-async function buildServiceWorker() {
-  try {
-    // Generate service worker with precache manifest
-    const result = await generateSW({
-      // Source: Next.js static export output directory
-      globDirectory: "out",
+// Bump this when the SW logic itself changes, so clients drop any cached copy.
+const FFMPEG_CACHE = "ffmpeg-core-v3";
 
-      // Files to precache: all static assets
-      globPatterns: ["**/*.{html,js,css,png,jpg,jpeg,svg,webp,woff2}"],
+const swSource = `
+const FFMPEG_CACHE = "${FFMPEG_CACHE}";
 
-      // Output: service worker file
-      swDest: "out/sw.js",
+self.addEventListener("install", (event) => {
+  self.skipWaiting();
+});
 
-      // Activation: immediate takeover
-      skipWaiting: true,
-      clientsClaim: true,
-
-      // Bump cache id on every major deployment so stale precached HTML/JS
-      // from old builds (which reference deleted hashed chunks) is discarded.
-      cacheId: "converty-v2",
-      cleanupOutdatedCaches: true,
-
-      // Runtime caching strategies
-      runtimeCaching: [
-        {
-          // HTML documents: NetworkFirst (fresh when online, short cache fallback)
-          urlPattern: ({ request }) => request.destination === "document",
-          handler: "NetworkFirst",
-          options: {
-            cacheName: "pages-cache-v2",
-            expiration: {
-              maxAgeSeconds: 24 * 60 * 60, // 1 day
-            },
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-        {
-          // Self-hosted FFmpeg core files: cache first, never expire (large, immutable)
-          urlPattern: ({ url }) => url.pathname.startsWith("/ffmpeg/"),
-          handler: "CacheFirst",
-          options: {
-            cacheName: "ffmpeg-core-cache-v2",
-            expiration: {
-              maxEntries: 10,
-            },
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-        {
-          // Images: CacheFirst (immutable content-hashed assets)
-          urlPattern: ({ request }) => request.destination === "image",
-          handler: "CacheFirst",
-          options: {
-            cacheName: "images-cache-v2",
-            expiration: {
-              maxEntries: 100,
-              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
-            },
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-        {
-          // Fonts: StaleWhileRevalidate (instant render + background updates)
-          urlPattern: ({ request }) => request.destination === "font",
-          handler: "StaleWhileRevalidate",
-          options: {
-            cacheName: "font-cache-v2",
-            expiration: {
-              maxEntries: 20,
-            },
-            cacheableResponse: {
-              statuses: [0, 200],
-            },
-          },
-        },
-      ],
-    });
-
-    // Log success with manifest details
-    console.log(
-      `✓ Service worker generated: ${result.count} files precached (${result.size} bytes)`
+self.addEventListener("activate", (event) => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(
+      keys.map((key) => {
+        if (key === FFMPEG_CACHE) {
+          return Promise.resolve();
+        }
+        return caches.delete(key);
+      })
     );
-  } catch (error) {
-    // Log error and fall back to the hand-written service worker so the
-    // build still produces a usable (if less optimized) SW with fresh cache
-    // versioning (v2) instead of a stale generated one.
-    console.error("✗ Service worker generation failed:", error);
-    try {
-      fs.copyFileSync(
-        path.join(__dirname, "../public/sw.js"),
-        path.join(__dirname, "../out/sw.js")
-      );
-      console.log("✓ Fallback: copied public/sw.js to out/sw.js");
-    } catch (copyErr) {
-      console.error("✗ Fallback copy also failed:", copyErr);
-      process.exit(1);
+    await self.clients.claim();
+
+    // Reload every open tab so it immediately picks up the fresh build
+    // instead of the stale HTML/JS served by the previous service worker.
+    const clients = await self.clients.matchAll({
+      type: "window",
+      includeUncontrolled: true,
+    });
+    for (const client of clients) {
+      client.navigate(client.url).catch(() => {});
     }
+  })());
+});
+
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET") {
+    return;
   }
+
+  const url = new URL(request.url);
+  const sameOrigin = url.origin === self.location.origin;
+
+  // Large, immutable FFmpeg core files: cache once, reuse afterwards.
+  if (sameOrigin && url.pathname.startsWith("/ffmpeg/")) {
+    event.respondWith(
+      caches.open(FFMPEG_CACHE).then(async (cache) => {
+        const cached = await cache.match(request);
+        if (cached) {
+          return cached;
+        }
+        const response = await fetch(request);
+        if (response && (response.ok || response.status === 0)) {
+          cache.put(request, response.clone());
+        }
+        return response;
+      }).catch(() => fetch(request))
+    );
+    return;
+  }
+
+  // Everything else: always go to the network. Never serve a stale response.
+  event.respondWith(fetch(request).catch(() => fetch(request)));
+});
+`;
+
+function writeServiceWorker() {
+  const outDir = path.join(__dirname, "../out");
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true });
+  }
+
+  const outFile = path.join(outDir, "sw.js");
+  fs.writeFileSync(outFile, swSource.trim());
+
+  // Keep a committed copy in public/ so local exports and the fallback use
+  // the same self-clearing SW.
+  const pubFile = path.join(__dirname, "../public/sw.js");
+  fs.writeFileSync(pubFile, swSource.trim());
+
+  console.log("✓ Service worker written:", outFile);
 }
 
-// Run build
-buildServiceWorker();
+try {
+  writeServiceWorker();
+} catch (error) {
+  console.error("✗ Service worker write failed:", error);
+  process.exit(1);
+}

@@ -16,7 +16,8 @@
       "!**/*.config.js",
       "!**/*.config.mjs",
       "!**/*.css",
-      "!**/public/ffmpeg"
+      "!**/public/ffmpeg",
+      "!**/public/sw.js"
     ]
   },
   "formatter": {
