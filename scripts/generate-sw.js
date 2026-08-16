@@ -28,7 +28,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Bump this when the SW logic itself changes, so clients drop any cached copy.
-const FFMPEG_CACHE = "ffmpeg-core-v6";
+const FFMPEG_CACHE = "ffmpeg-core-v7";
 
 const swSource = `
 const FFMPEG_CACHE = "${FFMPEG_CACHE}";
@@ -96,12 +96,15 @@ function writeServiceWorker() {
     fs.mkdirSync(outDir, { recursive: true });
   }
 
-  const outFile = path.join(outDir, "sw.js");
+  // Use a versioned filename so old service workers cannot intercept or
+  // cache the new worker file. This breaks the "stale SW serving stale SW"
+  // deadlock that kept old clients stuck on v3/v4/v5/v6.
+  const outFile = path.join(outDir, "sw-v7.js");
   fs.writeFileSync(outFile, swSource.trim());
 
   // Keep a committed copy in public/ so local exports and the fallback use
   // the same self-clearing SW.
-  const pubFile = path.join(__dirname, "../public/sw.js");
+  const pubFile = path.join(__dirname, "../public/sw-v7.js");
   fs.writeFileSync(pubFile, swSource.trim());
 
   console.log("✓ Service worker written:", outFile);

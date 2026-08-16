@@ -13,7 +13,7 @@
  *
  * Why scope '/':
  * The app is deployed at a root domain (basePath is "" in next.config.ts).
- * The SW is emitted at /sw.js and uses scope '/' to intercept all routes
+ * The SW is emitted at /sw-v7.js and uses scope '/' to intercept all routes
  * (/en/, /fr/, /zh/, ...).
  *
  * Why fire-and-forget:
@@ -28,6 +28,21 @@
  * }, []);
  * ```
  */
+function reloadWhenSafe(): void {
+  // Wait until the initial page load + React hydration are done before
+  // reloading. Reloading while React is hydrating throws "Minified React
+  // error #418" and can leave the DOM in a broken state.
+  const doReload = () => {
+    // Give hydration a tiny extra tick to settle.
+    setTimeout(() => window.location.reload(), 50);
+  };
+  if (document.readyState === "complete") {
+    doReload();
+  } else {
+    window.addEventListener("load", doReload, { once: true });
+  }
+}
+
 export function registerServiceWorker(): void {
   // Only register in browser (not during SSR)
   if (typeof window === "undefined") {
@@ -46,17 +61,36 @@ export function registerServiceWorker(): void {
     return;
   }
 
-  // Register service worker.
-  // updateViaCache: 'none' prevents the browser from using its HTTP cache for
-  // /sw.js, so every page load checks for a new service worker.
+  // STEP 1: Remove any previously registered service workers.
+  // Older deployments (v3/v4/v5/v6) called client.navigate() inside the
+  // activate event to force a reload. That navigation during React hydration
+  // is what produces "Minified React error #418" and the insertBefore crash.
+  // We unregister the old worker first, then reload once, so the next page
+  // load runs without any stale worker controlling it.
   navigator.serviceWorker
-    .register("/sw.js", { scope: "/", updateViaCache: "none" })
+    .getRegistrations()
+    .then((registrations) => {
+      if (registrations.length > 0) {
+        return Promise.all(registrations.map((r) => r.unregister())).then(() => {
+          console.log("Old service workers unregistered; reloading cleanly");
+          reloadWhenSafe();
+        });
+      }
+      return Promise.resolve();
+    })
+    .then(() => {
+      // STEP 2: Register the new, minimal worker under a versioned filename.
+      // The versioned filename prevents the old worker from intercepting or
+      // caching this file, breaking the stale-SW deadlock.
+      return navigator.serviceWorker.register("/sw-v7.js", {
+        scope: "/",
+        updateViaCache: "none",
+      });
+    })
     .then((registration) => {
       console.log("Service worker registered:", registration.scope);
 
       // Check for updates immediately and whenever the tab becomes visible.
-      // This helps PWA clients pick up new deployments without waiting for the
-      // browser's default 24-hour SW update interval.
       registration.update().catch(() => {
         // Ignore update check errors (e.g. offline).
       });
@@ -68,30 +102,9 @@ export function registerServiceWorker(): void {
         }
       });
 
-      // Check for updates on navigation. When a new service worker activates,
-      // reload so the latest app shell (and hashed JS chunks) is used. This
-      // prevents stale SW caches from serving old HTML that points at deleted
-      // chunks, which causes "page cannot be loaded" errors on mobile.
-      //
-      // IMPORTANT: reload only after the page has finished loading/hydrating.
-      // Reloading during React hydration throws "Minified React error #418".
-      registration.addEventListener("updatefound", () => {
-        const newWorker = registration.installing;
-        if (!newWorker) return;
-        console.log("Service worker update found");
-
-        newWorker.addEventListener("statechange", () => {
-          if (newWorker.state === "activated") {
-            console.log("New service worker activated; reloading after page load");
-            const reload = () => window.location.reload();
-            if (document.readyState === "complete") {
-              reload();
-            } else {
-              window.addEventListener("load", reload, { once: true });
-            }
-          }
-        });
-      });
+      // The new worker intentionally does NOT force-reload tabs on activation.
+      // It only caches /ffmpeg/* files; everything else comes straight from
+      // the network, so stale HTML/JS chunks are no longer a problem.
     })
     .catch((error) => {
       console.error("Service worker registration failed:", error);
