@@ -1,14 +1,19 @@
 /**
- * Service Worker Registration
+ * Service Worker Cleanup (page-level fallback)
  *
- * Earlier PWA service workers (v3/v4/v5/v6/v7) caused repeated crashes (React
- * hydration errors, infinite reload loops, broken fetches on mirror domains).
- * This module now only registers the self-destructing kill-switch when a stale
- * worker is still present. Once the kill-switch has run, the origin is left
- * with no controlling service worker.
+ * The authoritative cleanup runs as a synchronous inline script in the root
+ * layout (`src/app/layout.tsx`) BEFORE React hydration, so a stale worker
+ * cannot claim clients and trigger "Minified React error #418". This module is
+ * a secondary safety net that runs after hydration: if the inline script did
+ * not run (e.g. browser stripped it), we still unregister every worker and
+ * delete every cache here.
+ *
+ * We never register a new service worker anymore — the PWA was the root cause
+ * of repeated breakage (hydration crashes, infinite reload loops, broken
+ * fetches on mirror domains). The site now behaves like a plain website.
  */
 
-const SW_URL = "/sw-v8.js";
+const CLEANUP_FLAG = "sw-cleanup-v9";
 
 export function registerServiceWorker(): void {
   // Only run in browser (not during SSR)
@@ -26,52 +31,54 @@ export function registerServiceWorker(): void {
     return;
   }
 
-  // Only install the kill-switch if a stale worker is still around. New
-  // visitors should not get a service worker at all.
-  navigator.serviceWorker
-    .getRegistrations()
-    .then((registrations) => {
-      const hasStaleWorker = registrations.some(
-        (r) => !String((r as unknown as { scriptURL: string }).scriptURL).endsWith(SW_URL)
-      );
+  cleanupServiceWorkers().catch((error) => {
+    console.error("Service worker cleanup failed:", error);
+  });
+}
 
-      if (!hasStaleWorker) {
-        if (registrations.length > 0) {
-          console.log("Only kill-switch worker present; staying SW-free");
-        } else {
-          console.log("No stale service worker found; staying SW-free");
-        }
-        return;
-      }
+async function cleanupServiceWorkers(): Promise<void> {
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  const hasWorker = registrations.length > 0;
 
-      // Register the kill-switch to wipe caches and unregister everything.
-      navigator.serviceWorker
-        .register(SW_URL, { scope: "/", updateViaCache: "none" })
-        .then((registration) => {
-          console.log("Kill-switch service worker registered:", registration.scope);
+  const cacheKeys = typeof caches !== "undefined" && caches.keys ? await caches.keys() : [];
+  const hasCache = cacheKeys.length > 0;
 
-          navigator.serviceWorker.addEventListener("message", (event) => {
-            if (event.data?.type === "sw-cleanup-complete") {
-              console.log("Service worker cleanup complete; no worker controls this page");
-            }
-          });
+  if (!hasWorker && !hasCache) {
+    console.log("No stale service worker / cache found; staying SW-free");
+    return;
+  }
 
-          registration.update().catch(() => {
-            // Ignore update check errors (e.g. offline).
-          });
-          document.addEventListener("visibilitychange", () => {
-            if (document.visibilityState === "visible") {
-              registration.update().catch(() => {
-                // Ignore update check errors.
-              });
-            }
-          });
+  // Unregister every service worker on this origin.
+  await Promise.all(
+    registrations.map((registration) =>
+      registration.unregister().catch((err) => {
+        console.error("Failed to unregister a service worker:", err);
+      })
+    )
+  );
+
+  // Delete every cache (incl. stale "ffmpeg-core-v7" left by sw-v7.js).
+  if (typeof caches !== "undefined" && caches.delete) {
+    await Promise.all(
+      cacheKeys.map((key) =>
+        caches.delete(key).catch((err) => {
+          console.error(`Failed to delete cache ${key}:`, err);
         })
-        .catch((error) => {
-          console.error("Kill-switch service worker registration failed:", error);
-        });
-    })
-    .catch((error) => {
-      console.error("Failed to inspect service worker registrations:", error);
-    });
+      )
+    );
+  }
+
+  console.log("Service worker cleanup complete; no worker controls this page");
+
+  // Reload once per session so the current tab is no longer controlled by the
+  // just-unregistered worker. The inline script owns the reload flag; we reuse
+  // the same key so the two paths never trigger a reload loop.
+  try {
+    if (!window.sessionStorage.getItem(CLEANUP_FLAG)) {
+      window.sessionStorage.setItem(CLEANUP_FLAG, "1");
+      window.location.reload();
+    }
+  } catch {
+    /* sessionStorage may be unavailable; skip reload */
+  }
 }

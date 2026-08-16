@@ -168,7 +168,9 @@
       "errorSelectArea": "Lütfen önce kaldırmak istediğiniz filigranın üzerine bir kutu çizin",
       "errorNetwork": "Ağ hatası: video işleme çekirdeği indirilemedi. Lütfen bağlantınızı kontrol edip tekrar deneyin.",
       "errorFailed": "İşlem başarısız, lütfen tekrar deneyin",
-      "hint": "İpucu: filigranın üzerine kutu çizmek için video karesinde basılı tutup sürükleyin."
+      "hint": "İpucu: filigranın üzerine kutu çizmek için video karesinde basılı tutup sürükleyin.",
+      "play": "Oynat",
+      "pause": "Duraklat"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Filigranı Otomatik Algıla",

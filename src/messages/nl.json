@@ -168,7 +168,9 @@
       "errorSelectArea": "Teken eerst een vak over het watermerk dat u wilt verwijderen",
       "errorNetwork": "Netwerkfout: downloaden van de videobewerkingskern mislukt. Controleer uw verbinding en probeer het opnieuw.",
       "errorFailed": "Verwerking mislukt, probeer het opnieuw",
-      "hint": "Tip: druk en sleep op het videobeeld om een vak over het watermerk te tekenen."
+      "hint": "Tip: druk en sleep op het videobeeld om een vak over het watermerk te tekenen.",
+      "play": "Afspelen",
+      "pause": "Pauze"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Watermerk automatisch detecteren",

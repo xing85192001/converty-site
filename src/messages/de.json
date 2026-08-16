@@ -166,7 +166,9 @@
       "errorSelectArea": "Bitte ziehen Sie zuerst ein Feld über das zu entfernende Wasserzeichen",
       "errorNetwork": "Netzwerkfehler: Der Download des Videoverarbeitungskerns ist fehlgeschlagen. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "errorFailed": "Verarbeitung fehlgeschlagen, bitte versuchen Sie es erneut",
-      "hint": "Tipp: Drücken und ziehen Sie im Videobild, um ein Feld über das Wasserzeichen zu ziehen."
+      "hint": "Tipp: Drücken und ziehen Sie im Videobild, um ein Feld über das Wasserzeichen zu ziehen.",
+      "play": "Abspielen",
+      "pause": "Pause"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Wasserzeichen automatisch erkennen",

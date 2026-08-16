@@ -168,7 +168,9 @@
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "خطأ في الشبكة: فشل تنزيل نواة معالجة الفيديو. يرجى التحقق من الاتصال والمحاولة مرة أخرى.",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "تشغيل",
+      "pause": "إيقاف مؤقت"
     },
     "imageWatermarkRemover": {
       "autoDetect": "كشف العلامة المائية تلقائيًا",

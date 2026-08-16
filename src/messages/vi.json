@@ -168,7 +168,9 @@
       "errorSelectArea": "Trước tiên hãy vẽ khung qua watermark muốn xóa",
       "errorNetwork": "Lỗi mạng: không tải được lõi xử lý video. Vui lòng kiểm tra kết nối và thử lại.",
       "errorFailed": "Xử lý thất bại, vui lòng thử lại",
-      "hint": "Mẹo: nhấn và kéo trên khung video để vẽ khung qua watermark."
+      "hint": "Mẹo: nhấn và kéo trên khung video để vẽ khung qua watermark.",
+      "play": "Phát",
+      "pause": "Tạm dừng"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Tự động nhận diện hình mờ",

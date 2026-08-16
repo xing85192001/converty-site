@@ -168,7 +168,9 @@
       "errorSelectArea": "Gambar kotak di area watermark yang ingin dihapus terlebih dahulu",
       "errorNetwork": "Kesalahan jaringan: gagal mengunduh inti pemrosesan video. Periksa koneksi Anda dan coba lagi.",
       "errorFailed": "Pemrosesan gagal, silakan coba lagi",
-      "hint": "Tip: tekan dan seret di frame video untuk menggambar kotak di area watermark."
+      "hint": "Tip: tekan dan seret di frame video untuk menggambar kotak di area watermark.",
+      "play": "Putar",
+      "pause": "Jeda"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Deteksi Otomatis Tanda Air",

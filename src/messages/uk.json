@@ -168,7 +168,9 @@
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "Помилка мережі: не вдалося завантажити ядро обробки відео. Перевірте з'єднання та спробуйте ще раз.",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "Play",
+      "pause": "Pause"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Автоматичне визначення водяного знака",

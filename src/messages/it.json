@@ -166,7 +166,9 @@
       "errorSelectArea": "Disegna prima un riquadro sulla filigrana da rimuovere",
       "errorNetwork": "Errore di rete: impossibile scaricare il core di elaborazione video. Controlla la connessione e riprova.",
       "errorFailed": "Elaborazione fallita, riprova",
-      "hint": "Suggerimento: premi e trascina sul fotogramma video per disegnare un riquadro sulla filigrana."
+      "hint": "Suggerimento: premi e trascina sul fotogramma video per disegnare un riquadro sulla filigrana.",
+      "play": "Riproduci",
+      "pause": "Pausa"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Rilevamento automatico filigrana",

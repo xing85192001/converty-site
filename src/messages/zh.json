@@ -172,7 +172,9 @@
       "phaseReencoding": "正在重新合成视频…",
       "opencvFallback": "OpenCV 引擎不可用，已切换为备用方法…",
       "errorFailed": "处理失败，请重试",
-      "hint": "提示：在视频画面上按住并拖动，框选水印区域。"
+      "hint": "提示：用「播放/暂停」预览，然后在画面上按住拖动框选水印区域。",
+      "play": "播放",
+      "pause": "暂停"
     },
     "imageWatermarkRemover": {
       "autoDetect": "自动识别水印",

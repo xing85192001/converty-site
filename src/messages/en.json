@@ -172,7 +172,9 @@
       "phaseReencoding": "Rebuilding video...",
       "opencvFallback": "OpenCV engine unavailable; using fallback method...",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "Play",
+      "pause": "Pause"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Auto Detect Watermark",

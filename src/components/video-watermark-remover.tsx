@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, Loader2, Play, ScanSearch, Trash2, Upload, Video } from "lucide-react";
+import { Download, Loader2, Pause, Play, ScanSearch, Trash2, Upload, Video } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { detectWatermarks, type Rect } from "@/components/media-tools/watermark-detection";
@@ -42,11 +42,29 @@ const CORE_HOSTS = [
 // generation changes, so a stale/corrupted wasm cannot survive a deploy.
 const CORE_VERSION = "v6";
 
+// Remove any previously cached FFmpeg core blobs (most importantly the
+// "ffmpeg-core-v7" cache created by the old sw-v7.js worker, which could hold a
+// corrupted wasm). This runs before every load so a stale, poisoned cache can
+// never be served through the self-hosted /ffmpeg fallback.
+async function clearStaleFfmpegCaches(): Promise<void> {
+  try {
+    if (typeof caches === "undefined" || !caches.keys) return;
+    const keys = await caches.keys();
+    await Promise.all(
+      keys
+        .filter((key) => key.toLowerCase().includes("ffmpeg"))
+        .map((key) => caches.delete(key).catch(() => {}))
+    );
+  } catch {
+    /* cache API unavailable — non-fatal */
+  }
+}
+
 async function fetchToBlobURL(
   url: string,
   mimeType: string,
   onProgress?: (received: number, total: number) => void
-): Promise<{ blobURL: string; size: number }> {
+): Promise<{ blobURL: string; size: number; blob: Blob }> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const total = Number.parseInt(res.headers.get("content-length") || "0", 10);
@@ -54,7 +72,7 @@ async function fetchToBlobURL(
   if (!reader) {
     const buf = await res.arrayBuffer();
     const blob = new Blob([buf], { type: mimeType });
-    return { blobURL: URL.createObjectURL(blob), size: buf.byteLength };
+    return { blobURL: URL.createObjectURL(blob), size: buf.byteLength, blob };
   }
 
   const chunks: Uint8Array[] = [];
@@ -76,10 +94,15 @@ async function fetchToBlobURL(
     offset += chunk.length;
   }
   const blob = new Blob([buf], { type: mimeType });
-  return { blobURL: URL.createObjectURL(blob), size: received };
+  return { blobURL: URL.createObjectURL(blob), size: received, blob };
 }
 
 async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): Promise<void> {
+  // Wipe any stale service-worker caches (e.g. "ffmpeg-core-v7" left behind by
+  // sw-v7.js) so a corrupted wasm cached by an old worker cannot leak into the
+  // /ffmpeg self-hosted fallback.
+  await clearStaleFfmpegCaches();
+
   // Fire requests for every host at once; the first successful core+wasm is
   // adopted. This avoids getting stuck on a single blocked or slow CDN.
   const attempts = CORE_HOSTS.map(async (host) => {
@@ -98,6 +121,23 @@ async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): 
     // Sanity checks: must be non-trivial and start with the WebAssembly magic.
     if (wasm.size < 1_000_000) {
       throw new Error(`wasm too small (${wasm.size} bytes)`);
+    }
+
+    // Verify the wasm magic bytes (0x00 0x61 0x73 0x6d = "\0asm"). A corrupted or
+    // HTML error page served from a stale SW cache can be large enough to pass the
+    // size check but will fail FFmpeg's load silently. Catching it here lets the
+    // Promise.allSettled fallback move on to the next source.
+    const wasmHead = await wasm.blob.slice(0, 4).arrayBuffer();
+    const wasmMagic = new Uint8Array(wasmHead);
+    if (
+      wasmMagic[0] !== 0x00 ||
+      wasmMagic[1] !== 0x61 ||
+      wasmMagic[2] !== 0x73 ||
+      wasmMagic[3] !== 0x6d
+    ) {
+      throw new Error(
+        `wasm magic mismatch from ${host} (${wasmMagic[0]},${wasmMagic[1]},${wasmMagic[2]},${wasmMagic[3]})`
+      );
     }
 
     return { host, core, wasm };
@@ -216,6 +256,7 @@ export function VideoWatermarkRemover() {
   const [stageW, setStageW] = useState(0);
   const [videoReady, setVideoReady] = useState(false);
   const [videoMeta, setVideoMeta] = useState<{ w: number; h: number } | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   // Clean up object URLs on unmount or file change.
   useEffect(() => {
@@ -311,6 +352,7 @@ export function VideoWatermarkRemover() {
     setDragStart(pos);
     setSelection({ x: pos.x, y: pos.y, w: 0, h: 0 });
     setCandidates([]);
+    document.body.style.overflow = "hidden";
   };
 
   const onPointerMove = (e: React.PointerEvent) => {
@@ -334,6 +376,22 @@ export function VideoWatermarkRemover() {
     }
     setIsDragging(false);
     setDragStart(null);
+    // Restore page scroll now that the drag is finished.
+    document.body.style.overflow = "";
+  };
+
+  // Toggle playback without exposing native controls (native controls steal the
+  // touch on mobile and make box selection impossible).
+  const togglePlay = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) {
+      void v.play().catch(() => {});
+      setIsPlaying(true);
+    } else {
+      v.pause();
+      setIsPlaying(false);
+    }
   };
 
   async function runAutoDetect() {
@@ -534,6 +592,16 @@ export function VideoWatermarkRemover() {
                 </Button>
                 <Button
                   size="sm"
+                  variant="outline"
+                  className="h-8 gap-1 text-xs"
+                  onClick={togglePlay}
+                  disabled={isProcessing || !videoReady}
+                >
+                  {isPlaying ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3" />}
+                  {isPlaying ? t("pause") : t("play")}
+                </Button>
+                <Button
+                  size="sm"
                   className="h-8 rounded-lg bg-gradient-to-r from-primary to-cyan-400 text-xs text-primary-foreground hover:opacity-90"
                   onClick={processVideo}
                   disabled={isProcessing}
@@ -644,12 +712,8 @@ export function VideoWatermarkRemover() {
               <div
                 ref={wrapperRef}
                 className="relative inline-block select-none"
-                style={{ touchAction: selection ? "pan-x pan-y" : "none" }}
+                style={{ touchAction: "none" }}
                 onContextMenu={(e) => e.preventDefault()}
-                onPointerDown={onPointerDown}
-                onPointerMove={onPointerMove}
-                onPointerUp={onPointerUp}
-                onPointerCancel={onPointerUp}
               >
                 {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                 <video
@@ -657,7 +721,7 @@ export function VideoWatermarkRemover() {
                   src={originalUrl}
                   style={videoStyle}
                   className="block cursor-crosshair"
-                  controls={!selection}
+                  controls={false}
                   playsInline
                   muted
                   preload="auto"
@@ -666,6 +730,36 @@ export function VideoWatermarkRemover() {
                     setVideoMeta({ w: v.videoWidth, h: v.videoHeight });
                   }}
                   onLoadedData={() => setVideoReady(true)}
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                />
+                {/* Transparent capture layer. Native controls are disabled so mobile
+                    touches are not stolen by the play/seek bar; this layer receives
+                    all pointer events and has touch-action:none so the page never
+                    scrolls while drawing the selection box. */}
+                <div
+                  className="absolute inset-0 z-10 cursor-crosshair touch-none"
+                  onPointerDown={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    document.body.style.overflow = "hidden";
+                    onPointerDown(e);
+                  }}
+                  onPointerMove={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onPointerMove(e);
+                  }}
+                  onPointerUp={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onPointerUp(e);
+                  }}
+                  onPointerCancel={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onPointerUp(e);
+                  }}
                 />
                 {selection && (
                   <div

@@ -168,7 +168,9 @@
       "errorSelectArea": "Sila lukis kotak di atas tanda air yang ingin dibuang",
       "errorNetwork": "Ralat rangkaian: gagal memuat turun teras pemprosesan video. Sila periksa sambungan anda dan cuba lagi.",
       "errorFailed": "Pemprosesan gagal, sila cuba lagi",
-      "hint": "Petua: tekan dan seret pada bingkai video untuk melukis kotak di kawasan tanda air."
+      "hint": "Petua: tekan dan seret pada bingkai video untuk melukis kotak di kawasan tanda air.",
+      "play": "Play",
+      "pause": "Pause"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Kesan Tanda Air Secara Automatik",

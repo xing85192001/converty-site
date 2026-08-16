@@ -166,7 +166,9 @@
       "errorSelectArea": "Veuillez d'abord dessiner un cadre sur le filigrane à supprimer",
       "errorNetwork": "Erreur réseau : échec du téléchargement du cœur de traitement vidéo. Veuillez vérifier votre connexion et réessayer.",
       "errorFailed": "Échec du traitement, veuillez réessayer",
-      "hint": "Astuce : appuyez et faites glisser sur l'image vidéo pour dessiner un cadre sur le filigrane."
+      "hint": "Astuce : appuyez et faites glisser sur l'image vidéo pour dessiner un cadre sur le filigrane.",
+      "play": "Lire",
+      "pause": "Pause"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Détection automatique du filigrane",

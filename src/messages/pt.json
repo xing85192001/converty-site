@@ -168,7 +168,9 @@
       "errorSelectArea": "Primeiro desenhe uma caixa sobre a marca d'água que deseja remover",
       "errorNetwork": "Erro de rede: falha ao baixar o núcleo de processamento de vídeo. Verifique sua conexão e tente novamente.",
       "errorFailed": "Falha no processamento, tente novamente",
-      "hint": "Dica: pressione e arraste no quadro do vídeo para desenhar uma caixa sobre a marca d'água."
+      "hint": "Dica: pressione e arraste no quadro do vídeo para desenhar uma caixa sobre a marca d'água.",
+      "play": "Reproduzir",
+      "pause": "Pausar"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Detectar marca d'água automaticamente",

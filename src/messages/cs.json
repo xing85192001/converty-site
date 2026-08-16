@@ -168,7 +168,9 @@
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "Chyba sítě: nepodařilo se stáhnout jádro pro zpracování videa. Zkontrolujte připojení a zkuste to znovu.",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "Přehrát",
+      "pause": "Pozastavit"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Automaticky detekovat vodoznak",

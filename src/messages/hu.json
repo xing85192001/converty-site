@@ -168,7 +168,9 @@
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "Hálózati hiba: a videófeldolgozó mag letöltése sikertelen. Ellenőrizze a kapcsolatot, és próbálja újra.",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "Lejátszás",
+      "pause": "Szünet"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Vízjel automatikus felismerése",

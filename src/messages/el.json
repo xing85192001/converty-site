@@ -168,7 +168,9 @@
       "errorSelectArea": "Please first draw a box over the watermark you want removed",
       "errorNetwork": "Σφάλμα δικτύου: αποτυχία λήψης του πυρήνα επεξεργασίας βίντεο. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
       "errorFailed": "Processing failed, please try again",
-      "hint": "Tip: press and drag on the video frame to draw a box over the watermark."
+      "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
+      "play": "Αναπαραγωγή",
+      "pause": "Παύση"
     },
     "imageWatermarkRemover": {
       "autoDetect": "Αυτόματος εντοπισμός υδατογραφήματος",
