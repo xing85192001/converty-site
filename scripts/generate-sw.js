@@ -27,7 +27,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 // Bump this when the SW logic itself changes, so clients drop any cached copy.
-const FFMPEG_CACHE = "ffmpeg-core-v5";
+const FFMPEG_CACHE = "ffmpeg-core-v6";
 
 const swSource = `
 const FFMPEG_CACHE = "${FFMPEG_CACHE}";
@@ -70,7 +70,11 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   const sameOrigin = url.origin === self.location.origin;
 
-  // Large, immutable FFmpeg core files: cache once, reuse afterwards.
+  // Only intercept the large, immutable FFmpeg core files. Cache them once
+  // and reuse afterwards. We intentionally do NOT intercept page/app requests
+  // here; letting the browser fetch them directly avoids "Failed to fetch"
+  // errors caused by the SW retrying a request that the browser can handle
+  // better on its own (e.g. on custom domains or flaky networks).
   if (sameOrigin && url.pathname.startsWith("/ffmpeg/")) {
     event.respondWith(
       caches.open(FFMPEG_CACHE).then(async (cache) => {
@@ -85,11 +89,7 @@ self.addEventListener("fetch", (event) => {
         return response;
       }).catch(() => fetch(request))
     );
-    return;
   }
-
-  // Everything else: always go to the network. Never serve a stale response.
-  event.respondWith(fetch(request).catch(() => fetch(request)));
 });
 `;
 

@@ -32,7 +32,7 @@ const CORE_HOSTS = [
 
 // Bust the browser HTTP cache for the self-hosted copy whenever the SW cache
 // generation changes, so a stale/corrupted wasm cannot survive a deploy.
-const CORE_VERSION = "v5";
+const CORE_VERSION = "v6";
 
 async function fetchToBlobURL(
   url: string,
