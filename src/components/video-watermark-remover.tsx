@@ -32,7 +32,6 @@ const CORE_HOSTS = [
   // Mainland China npm mirrors
   "https://registry.npmmirror.com/@ffmpeg/core/0.12.6/files/dist/umd",
   "https://unpkg.zhimg.com/@ffmpeg/core@0.12.6/dist/umd",
-  "https://npm.onmicrosoft.cn/@ffmpeg/core@0.12.6/dist/umd",
   // Self-hosted fallback
   "/ffmpeg",
 ];
