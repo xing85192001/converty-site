@@ -13,8 +13,9 @@
  * The new SW is intentionally NOT a precache. It:
  *   1. On install: skipWaiting() so it takes over immediately.
  *   2. On activate: deletes EVERY cache (except the immutable FFmpeg core
- *      cache), claims all clients, then reloads every open tab so the latest
- *      code is served on the next load.
+ *      cache) and claims all clients. It intentionally does NOT force-reload
+ *      open tabs, because reloading during React hydration causes "Minified
+ *      React error #418".
  *   3. On fetch: goes straight to the network for everything except /ffmpeg/*
  *      (which is large + immutable and is cached once).
  *
@@ -49,15 +50,11 @@ self.addEventListener("activate", (event) => {
     );
     await self.clients.claim();
 
-    // Reload every open tab so it immediately picks up the fresh build
-    // instead of the stale HTML/JS served by the previous service worker.
-    const clients = await self.clients.matchAll({
-      type: "window",
-      includeUncontrolled: true,
-    });
-    for (const client of clients) {
-      client.navigate(client.url).catch(() => {});
-    }
+    // NOTE: We intentionally do NOT reload open tabs here. Forced navigation
+    // during React hydration can throw "Minified React error #418" and leave
+    // the page in a broken state. The new worker takes control immediately
+    // (clients.claim) so subsequent fetches use the fresh cache; the tab will
+    // pick up the new HTML/JS on its next regular navigation/reload.
   })());
 });
 

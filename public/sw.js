@@ -17,15 +17,11 @@ self.addEventListener("activate", (event) => {
     );
     await self.clients.claim();
 
-    // Reload every open tab so it immediately picks up the fresh build
-    // instead of the stale HTML/JS served by the previous service worker.
-    const clients = await self.clients.matchAll({
-      type: "window",
-      includeUncontrolled: true,
-    });
-    for (const client of clients) {
-      client.navigate(client.url).catch(() => {});
-    }
+    // NOTE: We intentionally do NOT reload open tabs here. Forced navigation
+    // during React hydration can throw "Minified React error #418" and leave
+    // the page in a broken state. The new worker takes control immediately
+    // (clients.claim) so subsequent fetches use the fresh cache; the tab will
+    // pick up the new HTML/JS on its next regular navigation/reload.
   })());
 });
 

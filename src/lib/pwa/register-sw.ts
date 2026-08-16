@@ -72,6 +72,9 @@ export function registerServiceWorker(): void {
       // reload so the latest app shell (and hashed JS chunks) is used. This
       // prevents stale SW caches from serving old HTML that points at deleted
       // chunks, which causes "page cannot be loaded" errors on mobile.
+      //
+      // IMPORTANT: reload only after the page has finished loading/hydrating.
+      // Reloading during React hydration throws "Minified React error #418".
       registration.addEventListener("updatefound", () => {
         const newWorker = registration.installing;
         if (!newWorker) return;
@@ -79,8 +82,13 @@ export function registerServiceWorker(): void {
 
         newWorker.addEventListener("statechange", () => {
           if (newWorker.state === "activated") {
-            console.log("New service worker activated, reloading for fresh app shell");
-            window.location.reload();
+            console.log("New service worker activated; reloading after page load");
+            const reload = () => window.location.reload();
+            if (document.readyState === "complete") {
+              reload();
+            } else {
+              window.addEventListener("load", reload, { once: true });
+            }
           }
         });
       });
