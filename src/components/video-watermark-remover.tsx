@@ -26,8 +26,10 @@ async function loadFfmpeg() {
 // fallback when the site is accessed through a mirror/proxy domain that cannot
 // reach external CDNs.
 const CORE_HOSTS = [
-  // Public CDNs
+  // Public CDNs (multiple jsdelivr edge domains for resilience)
   "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
+  "https://fastly.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
+  "https://gcore.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
   // Mainland China npm mirrors
   "https://registry.npmmirror.com/@ffmpeg/core/0.12.6/files/dist/umd",
