@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/sw.js",
+        source: "/sw-v8.js",
         headers: [
           {
             key: "Cache-Control",

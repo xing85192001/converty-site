@@ -25,9 +25,14 @@ async function loadFfmpeg() {
 // tries to compile it; this avoids "section extends past end" errors caused by
 // truncated downloads or stale service-worker caches.
 const CORE_HOSTS = [
-  "/ffmpeg",
+  // Prefer public CDNs first. They are served with correct CORS headers and
+  // do not depend on the exact origin/mirror domain, so they work even when
+  // the site is accessed through a forward/proxy address.
   "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
+  // Self-hosted copy is the final fallback. It requires the /ffmpeg path to
+  // be available on the exact origin the user is visiting.
+  "/ffmpeg",
 ];
 
 // Bust the browser HTTP cache for the self-hosted copy whenever the SW cache
