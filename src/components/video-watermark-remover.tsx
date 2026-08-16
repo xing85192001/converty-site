@@ -196,7 +196,7 @@ async function runDelogo(
   const cy = Math.max(0, Math.min(Math.round(sel.y), vh - 2));
   const cw = Math.max(2, Math.min(Math.round(sel.w), vw - 1 - cx));
   const ch = Math.max(2, Math.min(Math.round(sel.h), vh - 1 - cy));
-  const filter = `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:band=30:show=0`;
+  const filter = `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:show=0`;
   const baseArgs = [
     "-hide_banner",
     "-loglevel",
