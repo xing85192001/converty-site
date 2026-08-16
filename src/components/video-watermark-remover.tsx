@@ -591,9 +591,9 @@ export function VideoWatermarkRemover() {
           </>
         ) : (
           <div className="flex w-full flex-col">
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-sm font-medium">{t("originalLabel")}</span>
-              <div className="flex items-center gap-2">
+            <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <span className="shrink-0 text-sm font-medium">{t("originalLabel")}</span>
+              <div className="flex flex-wrap items-center justify-end gap-2">
                 <Button
                   size="sm"
                   variant="outline"
@@ -606,7 +606,9 @@ export function VideoWatermarkRemover() {
                   ) : (
                     <ScanSearch className="h-3 w-3" />
                   )}
-                  {detecting ? t("autoDetecting") : t("autoDetect")}
+                  <span className="hidden sm:inline">
+                    {detecting ? t("autoDetecting") : t("autoDetect")}
+                  </span>
                 </Button>
                 <Button
                   size="sm"
@@ -615,7 +617,7 @@ export function VideoWatermarkRemover() {
                   onClick={clearAll}
                 >
                   <Trash2 className="mr-1 h-3.5 w-3.5" />
-                  {t("removeBtn")}
+                  <span className="hidden sm:inline">{t("removeBtn")}</span>
                 </Button>
                 <Button
                   size="sm"
@@ -625,7 +627,7 @@ export function VideoWatermarkRemover() {
                   disabled={isProcessing || !videoReady}
                 >
                   {isPlaying ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3" />}
-                  {isPlaying ? t("pause") : t("play")}
+                  <span className="hidden sm:inline">{isPlaying ? t("pause") : t("play")}</span>
                 </Button>
                 <Button
                   size="sm"
@@ -636,12 +638,12 @@ export function VideoWatermarkRemover() {
                   {isProcessing ? (
                     <>
                       <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
-                      {t("processing", { progress })}
+                      <span className="hidden sm:inline">{t("processing", { progress })}</span>
                     </>
                   ) : (
                     <>
                       <Play className="mr-1.5 h-3.5 w-3.5" />
-                      {t("startRemoval")}
+                      <span className="hidden sm:inline">{t("startRemoval")}</span>
                     </>
                   )}
                 </Button>
