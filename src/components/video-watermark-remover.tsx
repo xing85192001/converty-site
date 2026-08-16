@@ -177,10 +177,11 @@ interface Selection {
 
 type TFn = (key: string, params?: Record<string, string | number | Date>) => string;
 
-// Robust FFmpeg delogo. Clamps so x+w <= vw and y+h <= vh — the previous code
-// clamped cx to vw-1 but then forced w>=2, which could push x+w past the frame
-// edge and make FFmpeg emit an empty file. Also retries without audio when the
-// input has no audio stream.
+// Robust FFmpeg delogo. Clamps so x+w <= vw and y+h <= vh. Tries a sequence of
+// audio strategies because wasm builds often lack a working AAC encoder and may
+// abort on audio encoding. Each attempt checks the exit code returned by
+// ffmpeg.exec (it resolves with the exit code, it does NOT throw on non-zero
+// exits) and cleans up a stale output file before retrying.
 async function runDelogo(
   ffmpeg: any,
   inputName: string,
@@ -188,49 +189,71 @@ async function runDelogo(
   vw: number,
   vh: number,
   sel: Selection,
-  _t: TFn
+  _t: TFn,
+  getLogs: () => string[]
 ): Promise<void> {
   const cx = Math.max(0, Math.min(Math.round(sel.x), vw - 2));
   const cy = Math.max(0, Math.min(Math.round(sel.y), vh - 2));
   const cw = Math.max(2, Math.min(Math.round(sel.w), vw - 1 - cx));
   const ch = Math.max(2, Math.min(Math.round(sel.h), vh - 1 - cy));
   const filter = `delogo=x=${cx}:y=${cy}:w=${cw}:h=${ch}:band=30:show=0`;
-  try {
-    await ffmpeg.exec([
-      "-i",
-      inputName,
-      "-vf",
-      filter,
-      "-c:v",
-      "libx264",
-      "-pix_fmt",
-      "yuv420p",
-      "-preset",
-      "ultrafast",
-      "-movflags",
-      "+faststart",
-      "-c:a",
-      "aac",
-      "-b:a",
-      "128k",
-      outputName,
-    ]);
-  } catch {
-    await ffmpeg.exec([
-      "-i",
-      inputName,
-      "-vf",
-      filter,
-      "-c:v",
-      "libx264",
-      "-pix_fmt",
-      "yuv420p",
-      "-preset",
-      "ultrafast",
-      "-an",
-      outputName,
-    ]);
+  const baseArgs = [
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    inputName,
+    "-vf",
+    filter,
+    "-c:v",
+    "libx264",
+    "-pix_fmt",
+    "yuv420p",
+    "-preset",
+    "ultrafast",
+    "-movflags",
+    "+faststart",
+  ];
+
+  const strategies = [
+    { label: "no-audio", args: [...baseArgs, "-an", outputName] },
+    { label: "copy-audio", args: [...baseArgs, "-c:a", "copy", outputName] },
+    {
+      label: "encode-audio",
+      args: [...baseArgs, "-c:a", "aac", "-b:a", "128k", outputName],
+    },
+  ];
+
+  const failures: string[] = [];
+  for (const { label, args } of strategies) {
+    try {
+      // Remove any previous partial/empty output so the next attempt starts
+      // with a clean virtual filesystem.
+      try {
+        await ffmpeg.deleteFile(outputName);
+      } catch {
+        /* file may not exist — ignore */
+      }
+      // eslint-disable-next-line no-await-in-loop
+      const exitCode = await ffmpeg.exec(args);
+      if (exitCode === 0) return;
+      const tail = getLogs().slice(-20).join("\n");
+      const detail = `[${label}] exit=${exitCode}\n${tail}`;
+      failures.push(detail);
+      // eslint-disable-next-line no-console
+      console.warn(`[video-watermark] FFmpeg attempt failed:`, detail);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      const detail = `[${label}] ${msg}`;
+      failures.push(detail);
+      // eslint-disable-next-line no-console
+      console.warn(`[video-watermark] FFmpeg attempt threw:`, detail);
+    }
   }
+
+  throw new Error(
+    `FFmpeg processing failed after ${strategies.length} attempts:\n${failures.join("\n---\n")}`
+  );
 }
 
 export function VideoWatermarkRemover() {
@@ -480,7 +503,7 @@ export function VideoWatermarkRemover() {
       const outputName = "output.mp4";
       await ffmpeg.writeFile(inputName, await fetchFile(file));
 
-      await runDelogo(ffmpeg, inputName, outputName, vw, vh, selection, t);
+      await runDelogo(ffmpeg, inputName, outputName, vw, vh, selection, t, () => ffmpegLogs);
 
       const data = await ffmpeg.readFile(outputName);
       if (!(data instanceof Uint8Array)) {
@@ -490,7 +513,7 @@ export function VideoWatermarkRemover() {
       // under TS 5.7+ strict Uint8Array<ArrayBufferLike> typing.
       const bytes = new Uint8Array(data);
       if (bytes.length === 0) {
-        const tail = ffmpegLogs.slice(-14).join("\n");
+        const tail = ffmpegLogs.slice(-30).join("\n");
         throw new Error(`${t("errorEmptyLog")}\n${tail}`);
       }
       const blob = new Blob([bytes], { type: "video/mp4" });
@@ -500,14 +523,18 @@ export function VideoWatermarkRemover() {
       setProgress(100);
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
+      // Only treat genuine core-download/network errors as "network" errors.
+      // Processing errors (exit codes, missing codecs, filter failures, aborts)
+      // should be shown as processing errors even if they contain the word
+      // "failed" somewhere in the FFmpeg output.
       const isNetworkError =
-        /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn|opencv|wasm|core|failed|HTTP/i.test(
+        /FFmpeg core load failed|download.*core|fetch.*core|network|timeout|unpkg|jsdelivr|cdn|npmmirror|zhimg|HTTP \d{3}/i.test(
           message
-        );
+        ) && !/exit=|Aborted|delogo|encoder|codec|filter|stream|Conversion failed/i.test(message);
       setError(
         isNetworkError
           ? `${t("errorNetwork")} (${message.slice(0, 200)})`
-          : message || t("errorFailed")
+          : message.slice(0, 300) || t("errorFailed")
       );
     } finally {
       setIsProcessing(false);
