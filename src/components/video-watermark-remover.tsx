@@ -20,18 +20,20 @@ async function loadFfmpeg() {
   };
 }
 
-// Try the self-hosted core first, then fall back to public CDNs. All cores are
-// fetched into memory as blob URLs so we can verify the wasm size before FFmpeg
-// tries to compile it; this avoids "section extends past end" errors caused by
-// truncated downloads or stale service-worker caches.
+// Try multiple hosts in parallel. The first host to return a valid core+wasm
+// wins. Public CDNs work from any origin; mainland-China mirrors help when
+// jsdelivr/unpkg are blocked or slow; the self-hosted /ffmpeg copy is the final
+// fallback when the site is accessed through a mirror/proxy domain that cannot
+// reach external CDNs.
 const CORE_HOSTS = [
-  // Prefer public CDNs first. They are served with correct CORS headers and
-  // do not depend on the exact origin/mirror domain, so they work even when
-  // the site is accessed through a forward/proxy address.
+  // Public CDNs
   "https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.6/dist/umd",
   "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd",
-  // Self-hosted copy is the final fallback. It requires the /ffmpeg path to
-  // be available on the exact origin the user is visiting.
+  // Mainland China npm mirrors
+  "https://registry.npmmirror.com/@ffmpeg/core/0.12.6/files/dist/umd",
+  "https://unpkg.zhimg.com/@ffmpeg/core@0.12.6/dist/umd",
+  "https://npm.onmicrosoft.cn/@ffmpeg/core@0.12.6/dist/umd",
+  // Self-hosted fallback
   "/ffmpeg",
 ];
 
@@ -77,37 +79,51 @@ async function fetchToBlobURL(
 }
 
 async function loadFfmpegCore(ffmpeg: any, onProgress?: (pct: number) => void): Promise<void> {
-  const errors: string[] = [];
-
-  for (const host of CORE_HOSTS) {
+  // Fire requests for every host at once; the first successful core+wasm is
+  // adopted. This avoids getting stuck on a single blocked or slow CDN.
+  const attempts = CORE_HOSTS.map(async (host) => {
     // Self-hosted copy gets a cache-busting query param tied to the SW version.
     const versionSuffix = host.startsWith("/") ? `?${CORE_VERSION}` : "";
     const coreURL = `${host}/ffmpeg-core.js${versionSuffix}`;
     const wasmURL = `${host}/ffmpeg-core.wasm${versionSuffix}`;
-    try {
-      onProgress?.(5);
-      const core = await fetchToBlobURL(coreURL, "text/javascript");
-      onProgress?.(20);
-      const wasm = await fetchToBlobURL(wasmURL, "application/wasm", (received, total) => {
-        if (total > 0) onProgress?.(20 + Math.min(70, Math.round((received / total) * 70)));
-      });
 
-      // Sanity checks: must be non-trivial and start with the WebAssembly magic.
-      if (wasm.size < 1_000_000) {
-        throw new Error(`wasm too small (${wasm.size} bytes)`);
-      }
+    onProgress?.(5);
+    const core = await fetchToBlobURL(coreURL, "text/javascript");
+    onProgress?.(20);
+    const wasm = await fetchToBlobURL(wasmURL, "application/wasm", (received, total) => {
+      if (total > 0) onProgress?.(20 + Math.min(70, Math.round((received / total) * 70)));
+    });
 
+    // Sanity checks: must be non-trivial and start with the WebAssembly magic.
+    if (wasm.size < 1_000_000) {
+      throw new Error(`wasm too small (${wasm.size} bytes)`);
+    }
+
+    return { host, core, wasm };
+  });
+
+  const results = await Promise.allSettled(attempts);
+
+  for (const result of results) {
+    if (result.status === "fulfilled") {
+      const { core, wasm } = result.value;
       onProgress?.(95);
       await ffmpeg.load({ coreURL: core.blobURL, wasmURL: wasm.blobURL });
       onProgress?.(100);
       return;
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      errors.push(`${host}: ${msg}`);
-      // eslint-disable-next-line no-console
-      console.warn(`[video-watermark] FFmpeg load failed from ${host}:`, err);
     }
   }
+
+  const errors = results.map((result, index) => {
+    const host = CORE_HOSTS[index];
+    if (result.status === "rejected") {
+      const msg = result.reason instanceof Error ? result.reason.message : String(result.reason);
+      // eslint-disable-next-line no-console
+      console.warn(`[video-watermark] FFmpeg load failed from ${host}:`, result.reason);
+      return `${host}: ${msg}`;
+    }
+    return `${host}: unknown`;
+  });
   throw new Error(`FFmpeg core load failed: ${errors.join(" | ")}`);
 }
 
@@ -425,10 +441,15 @@ export function VideoWatermarkRemover() {
       setProgress(100);
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
-      const isNetworkError = /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn|opencv/i.test(
-        message
+      const isNetworkError =
+        /fetch|network|timeout|load|download|unpkg|jsdelivr|cdn|opencv|wasm|core|failed|HTTP/i.test(
+          message
+        );
+      setError(
+        isNetworkError
+          ? `${t("errorNetwork")} (${message.slice(0, 200)})`
+          : message || t("errorFailed")
       );
-      setError(isNetworkError ? t("errorNetwork") : message || t("errorFailed"));
     } finally {
       setIsProcessing(false);
       setLoadingEngine(false);
