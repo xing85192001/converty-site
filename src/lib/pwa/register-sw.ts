@@ -1,15 +1,12 @@
 /**
  * Service Worker Registration
  *
- * Registers the service worker for PWA functionality including:
- * - Offline caching of calculator pages
- * - Static asset caching (JS, CSS, images)
- * - Runtime caching strategies
+ * Registers the service worker for PWA functionality including offline caching
+ * of static assets and runtime caching strategies.
  *
  * Why production-only:
- * Service worker caching breaks hot reload in development.
- * Development needs fresh code on every change, but SW caches aggressively.
- * This is a known PWA development pitfall (see RESEARCH.md Pitfall 5).
+ * Service worker caching breaks hot reload in development. Development needs
+ * fresh code on every change, but SW caches aggressively.
  *
  * Why scope '/':
  * The app is deployed at a root domain (basePath is "" in next.config.ts).
@@ -28,6 +25,20 @@
  * }, []);
  * ```
  */
+
+const SW_URL = "/sw-v7.js";
+const CLEANUP_KEY = "sw-cleanup-done-v7";
+
+function getWorkerScriptURL(
+  registration: ServiceWorkerRegistration,
+): string | undefined {
+  return (
+    registration.active?.scriptURL ??
+    registration.installing?.scriptURL ??
+    registration.waiting?.scriptURL
+  );
+}
+
 function reloadWhenSafe(): void {
   // Wait until the initial page load + React hydration are done before
   // reloading. Reloading while React is hydrating throws "Minified React
@@ -61,20 +72,38 @@ export function registerServiceWorker(): void {
     return;
   }
 
-  // STEP 1: Remove any previously registered service workers.
-  // Older deployments (v3/v4/v5/v6) called client.navigate() inside the
-  // activate event to force a reload. That navigation during React hydration
-  // is what produces "Minified React error #418" and the insertBefore crash.
-  // We unregister the old worker first, then reload once, so the next page
-  // load runs without any stale worker controlling it.
+  // STEP 1: Remove stale service workers from older deployments.
+  // Older deployments (v3/v4/v5/v6) used /sw.js and called client.navigate()
+  // inside the activate event to force a reload. That navigation during React
+  // hydration is what produces "Minified React error #418" and the
+  // insertBefore crash.
+  //
+  // We only unregister workers whose script URL is NOT the current versioned
+  // worker. The current worker is intentionally harmless (it only caches
+  // /ffmpeg/*), so there is no need to remove it on every load. We guard with
+  // a persistent flag so a given browser profile only does the cleanup reload
+  // once per SW version, preventing an infinite reload loop.
+  const cleanupDone = localStorage.getItem(CLEANUP_KEY) === "1";
+
   navigator.serviceWorker
     .getRegistrations()
     .then((registrations) => {
-      if (registrations.length > 0) {
-        return Promise.all(registrations.map((r) => r.unregister())).then(() => {
-          console.log("Old service workers unregistered; reloading cleanly");
-          reloadWhenSafe();
-        });
+      const staleRegistrations = registrations.filter((r) => {
+        const scriptUrl = getWorkerScriptURL(r);
+        return scriptUrl && !scriptUrl.endsWith(SW_URL);
+      });
+
+      if (staleRegistrations.length > 0) {
+        return Promise.all(staleRegistrations.map((r) => r.unregister())).then(
+          () => {
+            console.log("Stale service workers unregistered");
+            if (!cleanupDone) {
+              localStorage.setItem(CLEANUP_KEY, "1");
+              console.log("Reloading cleanly to release old worker");
+              reloadWhenSafe();
+            }
+          },
+        );
       }
       return Promise.resolve();
     })
@@ -82,7 +111,7 @@ export function registerServiceWorker(): void {
       // STEP 2: Register the new, minimal worker under a versioned filename.
       // The versioned filename prevents the old worker from intercepting or
       // caching this file, breaking the stale-SW deadlock.
-      return navigator.serviceWorker.register("/sw-v7.js", {
+      return navigator.serviceWorker.register(SW_URL, {
         scope: "/",
         updateViaCache: "none",
       });
