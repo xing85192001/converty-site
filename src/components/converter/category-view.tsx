@@ -183,7 +183,7 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
               );
             })}
             {filtered.length === 0 && (
-              <p className="text-sm text-muted-foreground">No matching tools.</p>
+              <p className="text-sm text-muted-foreground">{t("search.noResults")}</p>
             )}
           </div>
         </div>

@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "搜尋計算機……",
-    "result": "結果"
+    "result": "結果",
+    "aboutThisCalculator": "关于 {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 圖片 / 影片處理",

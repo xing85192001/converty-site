@@ -149,7 +149,7 @@ export function ConverterLayout({
       {infoContent && (
         <Card className="border-border">
           <CardHeader>
-            <CardTitle className="text-lg">About {title}</CardTitle>
+            <CardTitle className="text-lg">{t("aboutThisCalculator", { title })}</CardTitle>
           </CardHeader>
           <CardContent className="prose prose-sm max-w-none dark:prose-invert">
             {infoContent}

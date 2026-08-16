@@ -328,7 +328,7 @@ export function VideoToGif() {
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={gifUrl}
-              alt="GIF preview"
+              alt={t("previewTitle")}
               className="block max-h-[300px] max-w-full object-contain"
             />
           ) : (

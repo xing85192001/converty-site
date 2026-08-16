@@ -87,7 +87,8 @@
       "percentage": "Percentage",
       "datetime": "Date & Time"
     },
-    "financeComingSoon": "Finance calculators coming soon!"
+    "financeComingSoon": "Finance calculators coming soon!",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",

@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Pesquisar calculadoras……",
-    "result": "Resultado"
+    "result": "Resultado",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Processamento de imagem e vídeo",
@@ -170,7 +171,13 @@
       "errorFailed": "Falha no processamento, tente novamente",
       "hint": "Dica: pressione e arraste no quadro do vídeo para desenhar uma caixa sobre a marca d'água.",
       "play": "Reproduzir",
-      "pause": "Pausar"
+      "pause": "Pausar",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Detectar marca d'água automaticamente",
@@ -184,7 +191,8 @@
       "hint": "Arraste sobre a imagem para selecionar a área da marca d'água",
       "processBtn": "Remover marca d'água inteligentemente",
       "resultTitle": "Resultado",
-      "downloadBtn": "Baixar imagem processada"
+      "downloadBtn": "Baixar imagem processada",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Falha ao carregar imagem",

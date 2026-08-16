@@ -90,7 +90,8 @@
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "계산기를 검색하세요……",
     "result": "결과",
-    "results": "결과"
+    "results": "결과",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 이미지 / 비디오 처리",
@@ -171,7 +172,13 @@
       "errorFailed": "처리에 실패했습니다. 다시 시도해 주세요",
       "hint": "팁: 동영상 화면에서 누른 채 드래그하여 워터마크 영역에 상자를 그리세요.",
       "play": "재생",
-      "pause": "일시정지"
+      "pause": "일시정지",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "자동 워터마크 감지",
@@ -185,7 +192,8 @@
       "hint": "이미지 위에서 드래그하여 워터마크 영역을 선택하세요",
       "processBtn": "스마트 워터마크 제거",
       "resultTitle": "처리 결과",
-      "downloadBtn": "처리된 이미지 다운로드"
+      "downloadBtn": "처리된 이미지 다운로드",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "이미지를 불러오지 못했습니다",

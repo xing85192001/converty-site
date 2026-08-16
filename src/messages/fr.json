@@ -87,7 +87,8 @@
       "datetime": "Date et heure",
       "percentage": "Pourcentage",
       "unit": "Convertisseur d’unités"
-    }
+    },
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Traitement d'images & vidéos",
@@ -168,7 +169,13 @@
       "errorFailed": "Échec du traitement, veuillez réessayer",
       "hint": "Astuce : appuyez et faites glisser sur l'image vidéo pour dessiner un cadre sur le filigrane.",
       "play": "Lire",
-      "pause": "Pause"
+      "pause": "Pause",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Détection automatique du filigrane",
@@ -182,7 +189,8 @@
       "hint": "Faites glisser sur l'image pour sélectionner la zone du filigrane",
       "processBtn": "Supprimer intelligemment le filigrane",
       "resultTitle": "Résultat",
-      "downloadBtn": "Télécharger l'image traitée"
+      "downloadBtn": "Télécharger l'image traitée",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Échec du chargement de l'image",

@@ -93,7 +93,8 @@
       "backTo": "戻る"
     },
     "result": "結果",
-    "results": "結果"
+    "results": "結果",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 画像 / 動画処理",
@@ -174,7 +175,13 @@
       "errorFailed": "処理に失敗しました。もう一度お試しください",
       "hint": "ヒント：動画画面で押しながらドラッグして、透かし領域に枠を描きます。",
       "play": "再生",
-      "pause": "一時停止"
+      "pause": "一時停止",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "自動で透かしを検出",
@@ -188,7 +195,8 @@
       "hint": "画像上でドラッグして透かし領域を選択してください",
       "processBtn": "スマート透かし除去",
       "resultTitle": "処理結果",
-      "downloadBtn": "処理後の画像をダウンロード"
+      "downloadBtn": "処理後の画像をダウンロード",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "画像の読み込みに失敗しました",

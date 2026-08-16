@@ -1147,16 +1147,6 @@ export function getToolFeatures(toolId: string, categoryId: string, locale?: str
 
   if (loc === "en" || isZh) return raw;
 
-  // TEMPORARY: Force German to show test translation
-  if (loc === "de") {
-    return {
-      coreFeatures: [
-        { title: "KRAFTSTOFFVERBRAUCH (TEST)", description: "Testbeschreibung", color: "blue" },
-      ],
-      highlights: highlightsEn,
-    };
-  }
-
   return {
     coreFeatures: translateFeatures(loc, raw.coreFeatures),
     highlights: translateHighlights(loc, raw.highlights),

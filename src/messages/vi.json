@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Tìm kiếm máy tính……",
-    "result": "Kết quả"
+    "result": "Kết quả",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Xử lý hình ảnh & video",
@@ -170,7 +171,13 @@
       "errorFailed": "Xử lý thất bại, vui lòng thử lại",
       "hint": "Mẹo: nhấn và kéo trên khung video để vẽ khung qua watermark.",
       "play": "Phát",
-      "pause": "Tạm dừng"
+      "pause": "Tạm dừng",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Tự động nhận diện hình mờ",
@@ -184,7 +191,8 @@
       "hint": "Kéo trên ảnh để chọn vùng watermark",
       "processBtn": "Xóa watermark thông minh",
       "resultTitle": "Kết quả",
-      "downloadBtn": "Tải xuống ảnh đã xử lý"
+      "downloadBtn": "Tải xuống ảnh đã xử lý",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Không tải được ảnh",

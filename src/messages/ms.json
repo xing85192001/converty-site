@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Cari kalkulator……",
-    "result": "Hasil"
+    "result": "Hasil",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemprosesan Imej & Video",
@@ -170,7 +171,13 @@
       "errorFailed": "Pemprosesan gagal, sila cuba lagi",
       "hint": "Petua: tekan dan seret pada bingkai video untuk melukis kotak di kawasan tanda air.",
       "play": "Play",
-      "pause": "Pause"
+      "pause": "Pause",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Kesan Tanda Air Secara Automatik",
@@ -184,7 +191,8 @@
       "hint": "Seret pada imej untuk memilih kawasan tanda air",
       "processBtn": "Buang tanda air secara pintar",
       "resultTitle": "Hasil",
-      "downloadBtn": "Muat turun imej yang diproses"
+      "downloadBtn": "Muat turun imej yang diproses",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Gagal memuatkan imej",

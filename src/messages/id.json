@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Cari kalkulator……",
-    "result": "Hasil"
+    "result": "Hasil",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemrosesan Gambar & Video",
@@ -170,7 +171,13 @@
       "errorFailed": "Pemrosesan gagal, silakan coba lagi",
       "hint": "Tip: tekan dan seret di frame video untuk menggambar kotak di area watermark.",
       "play": "Putar",
-      "pause": "Jeda"
+      "pause": "Jeda",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Deteksi Otomatis Tanda Air",
@@ -184,7 +191,8 @@
       "hint": "Seret di gambar untuk memilih area watermark",
       "processBtn": "Hapus watermark secara cerdas",
       "resultTitle": "Hasil",
-      "downloadBtn": "Unduh gambar yang diproses"
+      "downloadBtn": "Unduh gambar yang diproses",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Gagal memuat gambar",

@@ -87,7 +87,8 @@
       "datetime": "Datum & Zeit",
       "percentage": "Prozent",
       "unit": "Einheitenrechner"
-    }
+    },
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -168,7 +169,13 @@
       "errorFailed": "Verarbeitung fehlgeschlagen, bitte versuchen Sie es erneut",
       "hint": "Tipp: Drücken und ziehen Sie im Videobild, um ein Feld über das Wasserzeichen zu ziehen.",
       "play": "Abspielen",
-      "pause": "Pause"
+      "pause": "Pause",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Wasserzeichen automatisch erkennen",
@@ -182,7 +189,8 @@
       "hint": "Ziehen Sie auf dem Bild, um den Wasserzeichenbereich auszuwählen",
       "processBtn": "Wasserzeichen intelligent entfernen",
       "resultTitle": "Ergebnis",
-      "downloadBtn": "Verarbeitetes Bild herunterladen"
+      "downloadBtn": "Verarbeitetes Bild herunterladen",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Bild konnte nicht geladen werden",

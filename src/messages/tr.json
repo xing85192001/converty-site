@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Hesap makinelerini ara……",
-    "result": "Sonuç"
+    "result": "Sonuç",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Görsel ve Video İşleme",
@@ -170,7 +171,13 @@
       "errorFailed": "İşlem başarısız, lütfen tekrar deneyin",
       "hint": "İpucu: filigranın üzerine kutu çizmek için video karesinde basılı tutup sürükleyin.",
       "play": "Oynat",
-      "pause": "Duraklat"
+      "pause": "Duraklat",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Filigranı Otomatik Algıla",
@@ -184,7 +191,8 @@
       "hint": "Filigran alanını seçmek için görsel üzerinde sürükleyin",
       "processBtn": "Akıllı filigran kaldırma",
       "resultTitle": "Sonuç",
-      "downloadBtn": "İşlenmiş görseli indir"
+      "downloadBtn": "İşlenmiş görseli indir",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Görsel yüklenemedi",

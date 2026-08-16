@@ -93,7 +93,8 @@
     "toolCategories": "Categorías de herramientas",
     "searchPlaceholder": "Buscar calculadoras……",
     "result": "Resultado",
-    "results": "Resultados"
+    "results": "Resultados",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Procesamiento de imágenes y video",
@@ -174,7 +175,13 @@
       "errorFailed": "El procesamiento falló, inténtalo de nuevo",
       "hint": "Consejo: presiona y arrastra sobre el fotograma del video para dibujar un cuadro sobre la marca de agua.",
       "play": "Reproducir",
-      "pause": "Pausar"
+      "pause": "Pausar",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Detectar marca de agua automáticamente",
@@ -188,7 +195,8 @@
       "hint": "Arrastra sobre la imagen para seleccionar el área de la marca de agua",
       "processBtn": "Eliminar marca de agua inteligentemente",
       "resultTitle": "Resultado",
-      "downloadBtn": "Descargar imagen procesada"
+      "downloadBtn": "Descargar imagen procesada",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Error al cargar la imagen",

@@ -90,7 +90,8 @@
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "Поиск калькуляторов……",
     "result": "Результат",
-    "results": "Результаты"
+    "results": "Результаты",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Обработка изображений и видео",
@@ -171,7 +172,13 @@
       "errorFailed": "Обработка не удалась, попробуйте ещё раз",
       "hint": "Подсказка: нажмите и перетащите на кадре видео, чтобы обвести водяной знак.",
       "play": "Воспроизвести",
-      "pause": "Пауза"
+      "pause": "Пауза",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "Автоматическое обнаружение водяного знака",
@@ -185,7 +192,8 @@
       "hint": "Перетащите по изображению, чтобы выбрать область водяного знака",
       "processBtn": "Умное удаление водяного знака",
       "resultTitle": "Результат",
-      "downloadBtn": "Скачать обработанное изображение"
+      "downloadBtn": "Скачать обработанное изображение",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Не удалось загрузить изображение",

@@ -89,7 +89,8 @@
     },
     "financeComingSoon": "Finance calculators coming soon!",
     "searchPlaceholder": "ค้นหาเครื่องคิดเลข……",
-    "result": "ผลลัพธ์"
+    "result": "ผลลัพธ์",
+    "aboutThisCalculator": "About {title}"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -170,7 +171,13 @@
       "errorFailed": "Processing failed, please try again",
       "hint": "Tip: press and drag on the video frame to draw a box over the watermark.",
       "play": "เล่น",
-      "pause": "หยุดชั่วคราว"
+      "pause": "หยุดชั่วคราว",
+      "errorVideoMeta": "Could not read video dimensions.",
+      "errorEmptyLog": "Processing produced an empty file. FFmpeg log:\n",
+      "phaseExtracting": "Extracting video frames...",
+      "phaseInpainting": "Repairing watermark area...",
+      "phaseReencoding": "Rebuilding video...",
+      "opencvFallback": "OpenCV engine unavailable; using fallback method..."
     },
     "imageWatermarkRemover": {
       "autoDetect": "ตรวจจับลายน้ำอัตโนมัติ",
@@ -184,7 +191,8 @@
       "hint": "Drag on the image to draw a box around the watermark area",
       "processBtn": "Remove Watermark",
       "resultTitle": "Result",
-      "downloadBtn": "Download processed image"
+      "downloadBtn": "Download processed image",
+      "processing": "Processing {progress}%"
     },
     "icoConverter": {
       "loadError": "Failed to load image",
