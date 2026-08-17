@@ -6585,7 +6585,321 @@
       "cooking": "Vaření"
     },
     "relatedTitle": "Související články",
-    "heroBadge": "Praktické průvodce a kalkulačky"
+    "heroBadge": "Praktické průvodce a kalkulačky",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Rozpočet 50/30/20: Jednoduchý plán, který se skutečně drží",
+        "excerpt": "Rozpočet funguje pouze tehdy, pokud jej můžete dodržet. Pravidlo 50/30/20 je oblíbené, protože je jednoduché: rozdělte svůj příjem po zdanění na potřeby, přání a úspory.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Většina rozpočtů selže ne proto, že by byly špatné, ale proto, že jsou vyčerpávající. Pravidlo 50/30/20 funguje, protože požaduje uvědomění, ne dokonalost. Rozdělíte svou výplatu domů do tří kbelíků a odtud upravíte."
+          },
+          {
+            "type": "h2",
+            "text": "Tři kbelíky"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Potřeby (50 %): nájem nebo hypotéka, potraviny, energie, pojištění, minimální splátky dluhu.",
+              "Potřeby (30 %): stolování, streamování, koníčky, cestování, věci, díky kterým se člověk cítí dobře.",
+              "Úspory (20 %): nouzový fond, odchod do důchodu a další splátky dluhu."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Začněte výpočtem svého příjmu po zdanění. Pokud si nejste jisti, co vám po odečtení přistane na účtu, náš [Kalkulačka daně z příjmu](/finance/income-tax) dokáže nejprve odhadnout vaši čistou mzdu."
+          },
+          {
+            "type": "h2",
+            "text": "Proč to funguje"
+          },
+          {
+            "type": "p",
+            "text": "Pravidlo vynucuje zvyk spořit před utrácením, ne s tím, co zbyde. Dokonce i stabilní 20% sazba vytváří skutečný polštář překvapivě rychle a struktura zviditelní nadměrné výdaje v okamžiku, kdy kbelík přeteče."
+          },
+          {
+            "type": "callout",
+            "text": "Automatizujte převod 20 % v den výplaty, abyste ušetřili dříve, než je můžete utratit. Z dohledu je celá pointa."
+          },
+          {
+            "type": "h2",
+            "text": "Kdy upravit"
+          },
+          {
+            "type": "p",
+            "text": "Ve velkoměstech s vysokými náklady může být na chvíli nutné rozdělení 60/20/20, a to je v pořádku. Jde o směr, nikoli pevné číslo. Použijte náš [Kalkulačka cílů úspor](/finance/savings-goal), abyste viděli, jak se vaše 20% sloučeniny v průběhu času."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Složené úročení: Proč začínat v raných hodinách a šetřit později",
+        "excerpt": "Albert Einstein údajně nazval složený úrok osmým divem světa. Ať už to řekl nebo ne, matematika je skutečná: vaše peníze vydělávají výnosy a pak tyto výnosy vydělávají výnosy.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Skládání je tichým motorem za téměř každým dlouhodobým finančním cílem. Investujete peníze, ony rostou a samotný růst začne vydělávat více. Čím delší dráha, tím dramatičtější efekt."
+          },
+          {
+            "type": "h2",
+            "text": "Efekt sněhové koule"
+          },
+          {
+            "type": "p",
+            "text": "Spočítejte si čísla v našem [Kalkulačka složeného úroku](/finance/compound-interest): dejte 200 měsíčně na 7 % po dobu 30 let a uvidíte, že většina konečného zůstatku pochází z růstu, nikoli z vašich příspěvků."
+          },
+          {
+            "type": "h2",
+            "text": "Čas převyšuje množství"
+          },
+          {
+            "type": "p",
+            "text": "Investování 100 měsíčně od věku 25 let často překonává investování 300 měsíčně od věku 40 let. První peníze se skládají na dalších 15 let a tyto roky znamenají těžkou práci. To je důvod, proč je prokrastinace nejdražším zvykem v osobních financích."
+          },
+          {
+            "type": "callout",
+            "text": "Jediným největším faktorem při skládání je čas zahájení. Nemůžete obnovit ztracené roky, bez ohledu na to, kolik později přidáte."
+          },
+          {
+            "type": "h2",
+            "text": "Udělejte to automaticky"
+          },
+          {
+            "type": "p",
+            "text": "Spárujte skládání s konzistencí pomocí [Kalkulačka cílů úspor](/finance/savings-goal). Stanovte si cíl, určete datum a o zbytek se postarají pravidelné příspěvky."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, tělesný tuk a co skutečně znamená vaše číslo hmotnosti",
+        "excerpt": "Stoupněte na váhu a číslo vám připadá jako verdikt. Samotná váha ale skrývá více, než prozrazuje. BMI je výchozí bod, nikoli cílová čára.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Máme tendenci považovat jedno váhové číslo za celý příběh. není. Dva lidé mohou vážit stejně a mít zcela odlišná těla. Užitečnou otázkou není jen to, kolik vážíte, ale z čeho se tato váha skládá."
+          },
+          {
+            "type": "h2",
+            "text": "Co BMI vlastně měří"
+          },
+          {
+            "type": "p",
+            "text": "Index tělesné hmotnosti je hmotnost dělená druhou mocninou výšky. Seskupuje vás jako podváhu, normální, s nadváhou nebo obezitu. Je to levná, rychlá obrazovka a své číslo můžete najít pomocí [BMI kalkulačka](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Kde BMI nedosahuje"
+          },
+          {
+            "type": "p",
+            "text": "Svaly váží více než tuk. Trénovaný sportovec může číst jako nadváhu, zatímco má velmi nízký tělesný tuk. To je důvod, proč [Kalkulačka tělesného tuku](/health/body-fat) a odhady libové hmotnosti poskytují úplnější obrázek než samotný BMI."
+          },
+          {
+            "type": "callout",
+            "text": "Použijte BMI jako obrazovku, nikoli diagnózu. Velikost pasu a složení těla obvykle vyprávějí ten upřímnější příběh."
+          },
+          {
+            "type": "h2",
+            "text": "Zdravější čočka"
+          },
+          {
+            "type": "p",
+            "text": "Místo toho, abyste se zaměřovali na váhu, zkombinujte své [BMR kalkulačka](/health/bmr-calculator) a [Kalkulačka TDEE](/health/tdee-calculator), abyste pochopili své energetické potřeby. Hmotnost je indikátorem zpoždění; energetická rovnováha je věc, kterou můžete skutečně řídit."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Jak extra splátky hypotéky vám ušetří roky úroků",
+        "excerpt": "Hypotéka na 30 let je většinou úrokem v prvních letech. Malé dodatečné platby mohou ušetřit roky a tisíce dolarů z půjčky.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prvních pár let hypotéky může působit skličujícím dojmem: vysoká splátka, ale zůstatek se sotva pohne. To proto, že předčasné platby jdou většinou na úroky. Dobrou zprávou je, že dodatečné platby zasáhnou jistinu nejhůře přesně ve chvíli, kdy na tom nejvíce záleží."
+          },
+          {
+            "type": "h2",
+            "text": "Jak funguje amortizace"
+          },
+          {
+            "type": "p",
+            "text": "Amortizace předem zatíží úrok. Naše [Hypoteční kalkulačka](/finance/mortgage) ukazuje rozdělení mezi jistinou a úrokem za každý měsíc, takže můžete vidět, jak pomalu zpočátku zůstatek klesá."
+          },
+          {
+            "type": "h2",
+            "text": "Síla malého množství navíc"
+          },
+          {
+            "type": "p",
+            "text": "U typické půjčky může dalších 100 měsíčně zkrátit dobu splatnosti o čtyři až šest let a ušetřit desítky tisíc na úrocích. Čím dříve začnete, tím větší bude efekt."
+          },
+          {
+            "type": "callout",
+            "text": "Vždy sdělte svému věřiteli, že dodatečná platba by měla jít na jistinu, nikoli na budoucí plánované platby."
+          },
+          {
+            "type": "h2",
+            "text": "Porovnejte kompromis"
+          },
+          {
+            "type": "p",
+            "text": "Než všechno hodíte na hypotéku, porovnejte to s ostatními cíli pomocí [Kalkulačka ROI](/finance/roi) a [Kalkulačka cílů úspor](/finance/savings-goal). Někdy investice s vyšší návratností předčí předčasné splacení půjčky."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Procenta v reálném životě: slevy, tipy a daně snadno",
+        "excerpt": "Procenta řídí každodenní matematiku peněz, od prodeje a spropitného až po daně a úroky. Jakmile vzor klapne, většinu z toho zvládnete v hlavě.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Procento znamená na sto. Ukotvěte každý procentuální problém na 100 a většina z nich přestane být zastrašující. Stejná myšlenka podporuje slevy, tipy, daně a růst."
+          },
+          {
+            "type": "h2",
+            "text": "slevy"
+          },
+          {
+            "type": "p",
+            "text": "30% sleva na 80 položek ušetří 24, zbyde 56. Zkratkou je cena krát (1 minus sazba). Naše [Kalkulačka slev](/math/discount) to udělá okamžitě, ale mentální verze se hodí v registru."
+          },
+          {
+            "type": "h2",
+            "text": "Tipy"
+          },
+          {
+            "type": "p",
+            "text": "18% spropitné na bankovku 50 je 9. [Kalkulačka tipů](/math/tip) řeší skupiny a zaokrouhlování, ale zde je trik: 10 % je snadné najít a 20 % je prostě dvojnásobek."
+          },
+          {
+            "type": "h2",
+            "text": "Daň a růst"
+          },
+          {
+            "type": "p",
+            "text": "Stejná logika procent popisuje úrok a inflaci. Podívejte se, jak se sazba v průběhu času mění pomocí [Kalkulačka procent](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Procento doslova znamená na sto. Ukotvete každý procentuální problém na 100 a rychle se to zjednoduší."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kalorie, BMR a TDEE: Plánování diety, která skutečně funguje",
+        "excerpt": "Méně jezte, více se hýbejte je pravda, ale bez čísel k ničemu. Vaše potřeby kalorií jsou osobní a dvě kalkulačky vysvětlují proč.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Obecné dietní rady ignorují fakt, že každý spaluje jiné množství energie. Řešením je nejprve odhadnout svá vlastní čísla a poté kolem nich vytvořit plán."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: vaše klidová popálenina"
+          },
+          {
+            "type": "p",
+            "text": "Bazální metabolismus je kalorie, které spálíte v úplném klidu, jen vás udrží naživu. Najděte ten svůj pomocí [BMR kalkulačka](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: vaše skutečná každodenní potřeba"
+          },
+          {
+            "type": "p",
+            "text": "Celkový denní energetický výdej přidává vaši aktivitu k BMR. [Kalkulačka TDEE](/health/tdee-calculator) z toho udělá denní cíl, na který můžete skutečně jíst."
+          },
+          {
+            "type": "h2",
+            "text": "Hubnutí nebo přibírání na váze"
+          },
+          {
+            "type": "p",
+            "text": "Deficit asi 500 kcal za den je zhruba jedna libra za týden. Sledujte své jídlo pomocí [Kalkulačka kalorií](/health/calorie-calculator) a svá makra pomocí [Makro kalkulačka](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Nárazové diety snižují vodu, nikoli tuk. Zaměřte se na mírný, udržitelný deficit, který si můžete udržet celé měsíce."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Převody varných jednotek: šálky, gramy a unce bez dohadů",
+        "excerpt": "Recept vyžaduje 200 g mouky, ale vaše hrníčky jsou imperiální. Přeměna varných jednotek by neměla zničit večeři.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Vaření napříč recepty z různých zemí znamená žonglování s šálky, gramy, uncemi a mililitry. Spolehlivým krokem je přestat měřit objem a začít měřit podle hmotnosti."
+          },
+          {
+            "type": "h2",
+            "text": "Váha převyšuje objem"
+          },
+          {
+            "type": "p",
+            "text": "Šálek mouky se může lišit o 20 % v závislosti na způsobu nabírání. Naše [Převodník jednotek vaření](/cooking/cooking-units) zpracovává šálky, gramy, unce a mililitry, takže vaše výsledky zůstanou konzistentní."
+          },
+          {
+            "type": "h2",
+            "text": "Recepty na škálování"
+          },
+          {
+            "type": "p",
+            "text": "Ruční zdvojení receptury je náchylné k chybám. [Škálovač receptů](/cooking/recipe-scaler) automaticky upraví každou surovinu a [Kalkulačka nákladů na jídlo](/cooking/food-cost) ji zpoplatní, pokud vaříte pro dav."
+          },
+          {
+            "type": "callout",
+            "text": "Mouka a cukr nejsou objemově zaměnitelné. Při pečení vždy převádějte podle hmotnosti."
+          },
+          {
+            "type": "h2",
+            "text": "Mimo kuchyni"
+          },
+          {
+            "type": "p",
+            "text": "U obecných měření pokrývá [Převodník jednotek](/math/unit-converter) délku, teplotu a další údaje, když recept zabloudí do oblasti, kde se nevaří."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Dluh Snowball vs. Avalanche: Která metoda výplaty vyhrává?",
+        "excerpt": "Dvě oblíbené metody slibují rozdrcení dluhů. Liší se v jedné otázce: platíte podle emocí, nebo podle matematiky?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pokud máte několik dluhů, na pořadí, v jakém je splatíte, záleží stejně jako na částce. Dvě nejznámější strategie útočí na toto pořadí velmi odlišně."
+          },
+          {
+            "type": "h2",
+            "text": "Sněhová koule: nejprve motivace"
+          },
+          {
+            "type": "p",
+            "text": "Seznam dluhů od nejmenšího po největší. Zaplaťte minimum ze všech a pak házejte každý dolar navíc na toho nejmenšího. Rychlá výhra buduje dynamiku. Modelujte to celé v našem [Dluhová sněhová koule a lavinová kalkulačka](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Avalanche: nejprve matematika"
+          },
+          {
+            "type": "p",
+            "text": "Nejprve zaplaťte nejvyšší úrokovou sazbu. Ušetříte nejvíce peněz a skončíte nejrychleji, ale počáteční pokrok se může zdát pomalý, protože velké zůstatky přetrvávají."
+          },
+          {
+            "type": "callout",
+            "text": "Matematicky vítězí lavina. Z hlediska chování se sněhová koule často drží. Vyberte si ten, který skutečně dokončíte."
+          },
+          {
+            "type": "h2",
+            "text": "Nezapomeňte na míru"
+          },
+          {
+            "type": "p",
+            "text": "Než si vyberete, porovnejte náklady na svůj dluh s tím, co byste mohli vydělat investováním pomocí [Kalkulačka ROI](/finance/roi). Někdy se vyplatí investovat při minimálních splátkách."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Poslední aktualizace: 11. srpna 2026.",

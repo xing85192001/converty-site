@@ -6600,7 +6600,321 @@
       "cooking": "Koken"
     },
     "relatedTitle": "Gerelateerde artikelen",
-    "heroBadge": "Praktische handleidingen en rekenmachines"
+    "heroBadge": "Praktische handleidingen en rekenmachines",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Het 50/30/20-budget: een eenvoudig plan dat echt blijft hangen",
+        "excerpt": "Een budget werkt alleen als je het vol kunt houden. De 50/30/20-regel is populair omdat deze eenvoudig is: verdeel uw inkomen na belastingen in behoeften, wensen en spaargeld.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "De meeste begrotingen mislukken niet omdat ze verkeerd zijn, maar omdat ze uitputtend zijn. De 50/30/20-regel werkt omdat deze om bewustzijn vraagt, niet om perfectie. U verdeelt uw nettoloon in drie emmers en past het vanaf daar aan."
+          },
+          {
+            "type": "h2",
+            "text": "De drie emmers"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Behoeften (50%): huur of hypotheek, boodschappen, nutsvoorzieningen, verzekeringen, minimale schuldbetalingen.",
+              "Wil (30%): uit eten gaan, streamen, hobby's, reizen, de dingen die het leven goed doen voelen.",
+              "Sparen (20%): noodfonds, pensioen en eventuele extra schuldenbetalingen."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Begin met het berekenen van uw inkomen na belastingen. Als u niet zeker weet wat er na aftrek op uw rekening terechtkomt, kan onze [Inkomstenbelastingcalculator](/finance/income-tax) eerst uw nettoloon schatten."
+          },
+          {
+            "type": "h2",
+            "text": "Waarom het werkt"
+          },
+          {
+            "type": "p",
+            "text": "De regel dwingt de gewoonte af om te sparen voordat u geld uitgeeft, en niet met wat er nog over is. Zelfs bij een vast tarief van 20% ontstaat er verrassend snel een echte buffer, en de structuur maakt overmatige uitgaven duidelijk op het moment dat de emmer overloopt."
+          },
+          {
+            "type": "callout",
+            "text": "Automatiseer de overdracht van 20% op de betaaldag, zodat u bespaart voordat u het kunt uitgeven. Uit het zicht is het hele punt."
+          },
+          {
+            "type": "h2",
+            "text": "Wanneer aanpassen"
+          },
+          {
+            "type": "p",
+            "text": "In dure steden moet de verdeling misschien een tijdje 60/20/20 zijn, en dat is prima. Het punt is richting, niet een rigide getal. Gebruik onze [Spaardoelcalculator](/finance/savings-goal) om te zien hoe uw 20% zich in de loop van de tijd opbouwt."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Samengestelde rente: waarom vroeg beginnen is beter dan later meer besparen",
+        "excerpt": "Albert Einstein zou samengestelde rente het achtste wereldwonder hebben genoemd. Of hij het nu wel of niet zei, de wiskunde is reëel: uw geld levert rendement op, en die rendementen verdienen rendement.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Compounding is de stille motor achter bijna elk financieel langetermijndoel. Je investeert geld, het groeit, en de groei zelf gaat meer opleveren. Hoe langer de landingsbaan, hoe dramatischer het effect."
+          },
+          {
+            "type": "h2",
+            "text": "Het sneeuwbaleffect"
+          },
+          {
+            "type": "p",
+            "text": "Bekijk de cijfers in onze [Samengestelde rentecalculator](/finance/compound-interest): zet 200 per maand op 7% gedurende 30 jaar en u zult zien dat het grootste deel van het eindsaldo voortkomt uit groei, en niet uit uw bijdragen."
+          },
+          {
+            "type": "h2",
+            "text": "Tijd gaat boven hoeveelheid"
+          },
+          {
+            "type": "p",
+            "text": "Het investeren van 100 per maand vanaf de leeftijd van 25 is vaak beter dan het investeren van 300 per maand vanaf de leeftijd van 40. Het vroege geld zorgt voor nog eens 15 jaar, en die jaren doen het zware werk. Dit is de reden waarom uitstelgedrag de duurste gewoonte is in persoonlijke financiën."
+          },
+          {
+            "type": "callout",
+            "text": "De grootste factor bij het samenstellen is de starttijd. Je kunt verloren jaren niet terughalen, hoeveel je er later ook aan toevoegt."
+          },
+          {
+            "type": "h2",
+            "text": "Maak het automatisch"
+          },
+          {
+            "type": "p",
+            "text": "Combineer samenstelling met consistentie met behulp van een [Spaardoelcalculator](/finance/savings-goal). Stel het doel vast, bepaal de datum en laat reguliere bijdragen de rest doen."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, lichaamsvet en wat uw gewichtsgetal werkelijk betekent",
+        "excerpt": "Stap op een weegschaal en het getal voelt als een oordeel. Maar gewicht alleen verbergt meer dan het onthult. BMI is een startpunt, geen eindpunt.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We hebben de neiging om één enkel gewichtsgetal als het hele verhaal te behandelen. Dat is het niet. Twee mensen kunnen hetzelfde wegen en totaal verschillende lichamen hebben. De nuttige vraag is niet alleen hoeveel je weegt, maar ook waaruit dat gewicht bestaat."
+          },
+          {
+            "type": "h2",
+            "text": "Wat BMI eigenlijk meet"
+          },
+          {
+            "type": "p",
+            "text": "De Body Mass Index is het gewicht gedeeld door de lengte in het kwadraat. Het groepeert u als ondergewicht, normaal, overgewicht of obesitas. Het is een goedkoop, snel scherm en je kunt je nummer vinden met [BMI-calculator](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Waar de BMI tekortschiet"
+          },
+          {
+            "type": "p",
+            "text": "Spieren wegen meer dan vet. Een getrainde atleet kan overgewicht hebben terwijl hij een zeer laag lichaamsvet heeft. Dat is de reden waarom [Lichaamsvetcalculator](/health/body-fat) en magere massaschattingen een vollediger beeld geven dan alleen BMI."
+          },
+          {
+            "type": "callout",
+            "text": "Gebruik BMI als een scherm, niet als een diagnose. Tailleomvang en lichaamssamenstelling vertellen meestal het eerlijkere verhaal."
+          },
+          {
+            "type": "h2",
+            "text": "Een gezondere lens"
+          },
+          {
+            "type": "p",
+            "text": "In plaats van je te fixeren op de weegschaal, combineer je [BMR-calculator](/health/bmr-calculator) en [TDEE-calculator](/health/tdee-calculator) om inzicht te krijgen in je energiebehoeften. Gewicht is een achterblijvende indicator; energiebalans is datgene waar je daadwerkelijk op kunt sturen."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Hoe extra hypotheekbetalingen u jaren rente besparen",
+        "excerpt": "Een hypotheek met een looptijd van 30 jaar bestaat vooral uit rente in de beginjaren. Kleine extra betalingen kunnen jaren en duizenden dollars van de lening afschuiven.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "De eerste paar jaar van een hypotheek kunnen ontmoedigend aanvoelen: een grote betaling, maar de balans beweegt nauwelijks. Dat komt omdat vervroegde betalingen grotendeels naar rente gaan. Het goede nieuws is dat extra betalingen de opdrachtgever het hardst treffen, juist op het moment dat het er het meest toe doet."
+          },
+          {
+            "type": "h2",
+            "text": "Hoe afschrijving werkt"
+          },
+          {
+            "type": "p",
+            "text": "Afschrijvingen zorgen ervoor dat de rente wordt vooruitbetaald. Onze [Hypotheekcalculator](/finance/mortgage) toont de verdeling tussen hoofdsom en rente voor elke maand, zodat u kunt zien hoe langzaam het saldo in eerste instantie daalt."
+          },
+          {
+            "type": "h2",
+            "text": "De kracht van een klein extra bedrag"
+          },
+          {
+            "type": "p",
+            "text": "Bij een typische lening kan een extra € 100,- per maand de looptijd met vier tot zes jaar verkorten en tienduizenden aan rente besparen. Hoe eerder je begint, hoe groter het effect."
+          },
+          {
+            "type": "callout",
+            "text": "Vertel uw kredietverstrekker altijd dat de extra betaling naar de hoofdsom moet gaan, en niet naar toekomstige geplande betalingen."
+          },
+          {
+            "type": "h2",
+            "text": "Vergelijk de afweging"
+          },
+          {
+            "type": "p",
+            "text": "Voordat u alles op de hypotheek gooit, moet u het afwegen tegen andere doelen met behulp van de [ROI-calculator](/finance/roi) en [Spaardoelcalculator](/finance/savings-goal). Soms is een investering met een hoger rendement beter dan het vroegtijdig betalen van de lening."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Percentages in het echte leven: kortingen, fooien en belastingen gemakkelijk gemaakt",
+        "excerpt": "Percentages bepalen de dagelijkse wiskunde van geld, van verkopen en fooien tot belasting en rente. Zodra het patroon klikt, kun je het meeste in je hoofd doen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Procent betekent per honderd. Veranker elk percentageprobleem op 100 en de meeste zijn niet meer intimiderend. Hetzelfde idee zorgt voor kortingen, fooien, belastingen en groei."
+          },
+          {
+            "type": "h2",
+            "text": "Kortingen"
+          },
+          {
+            "type": "p",
+            "text": "Een korting van 30% op 80 artikelen bespaart 24, waardoor er 56 overblijven. De kortere weg is prijs maal (1 minus het tarief). Onze [Kortingscalculator](/math/discount) doet het meteen, maar de mentale versie is handig bij de kassa."
+          },
+          {
+            "type": "h2",
+            "text": "Tips"
+          },
+          {
+            "type": "p",
+            "text": "Een fooi van 18% op een biljet van 50 is 9. De [Tipcalculator](/math/tip) verwerkt groepen en afrondingen, maar hier is de truc: 10% is gemakkelijk te vinden, en 20% is gewoon het dubbele."
+          },
+          {
+            "type": "h2",
+            "text": "Belastingen en groei"
+          },
+          {
+            "type": "p",
+            "text": "Dezelfde percentagelogica beschrijft rente en inflatie. Bekijk hoe een tarief zich in de loop van de tijd opbouwt met de [Percentagecalculator](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Procent betekent letterlijk per honderd. Veranker elk percentageprobleem op 100 en het wordt snel eenvoudig."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Calorieën, BMR en TDEE: een dieet plannen dat echt werkt",
+        "excerpt": "Minder eten, meer bewegen is waar, maar nutteloos zonder cijfers. Je caloriebehoefte is persoonlijk, en twee rekenmachines leggen uit waarom.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Generieke voedingsadviezen negeren het feit dat iedereen een andere hoeveelheid energie verbrandt. De oplossing is om eerst uw eigen cijfers te schatten en er vervolgens een plan omheen te bouwen."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: je rustverbranding"
+          },
+          {
+            "type": "p",
+            "text": "Het basaal metabolisme is het aantal calorieën dat u in volledige rust verbrandt, waardoor u alleen maar in leven blijft. Vind de jouwe met [BMR-calculator](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: uw echte dagelijkse behoefte"
+          },
+          {
+            "type": "p",
+            "text": "Met Total Daily Energy Expenditure wordt uw activiteit toegevoegd aan uw BMR. De [TDEE-calculator](/health/tdee-calculator) maakt daar een dagelijks doel van waar je daadwerkelijk voor kunt eten."
+          },
+          {
+            "type": "h2",
+            "text": "Afvallen of aankomen"
+          },
+          {
+            "type": "p",
+            "text": "Een tekort van ongeveer 500 kcal per dag komt neer op ongeveer een pond per week. Volg uw eten met de [Caloriecalculator](/health/calorie-calculator) en uw macro's met de [Macro-calculator](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Crash-diëten laten water vallen, geen vet. Streef naar een bescheiden, duurzaam tekort dat je maanden kunt volhouden."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Conversies van kookeenheden: kopjes, grammen en ons zonder giswerk",
+        "excerpt": "Voor een recept heb je 200 g bloem nodig, maar je kopjes zijn imperiaal. Het ombouwen van kookunits mag het diner niet verpesten.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Koken met recepten uit verschillende landen betekent jongleren met kopjes, grammen, ounces en milliliters. De betrouwbare zet is om te stoppen met het meten op volume en te beginnen met het meten op gewicht."
+          },
+          {
+            "type": "h2",
+            "text": "Gewicht verslaat volume"
+          },
+          {
+            "type": "p",
+            "text": "Een kopje bloem kan 20% variëren, afhankelijk van hoe je het uitschept. Onze [Converter kookeenheden](/cooking/cooking-units) verwerkt kopjes, grammen, ounces en milliliters, zodat uw resultaten consistent blijven."
+          },
+          {
+            "type": "h2",
+            "text": "Recepten schalen"
+          },
+          {
+            "type": "p",
+            "text": "Het handmatig verdubbelen van een recept is foutgevoelig. De [Receptenschaler](/cooking/recipe-scaler) past elk ingrediënt automatisch aan, en de [Voedselkostencalculator](/cooking/food-cost) geeft een prijs als je voor een publiek kookt."
+          },
+          {
+            "type": "callout",
+            "text": "Meel en suiker zijn qua volume niet uitwisselbaar. Bereken altijd op basis van gewicht als u bakt."
+          },
+          {
+            "type": "h2",
+            "text": "Voorbij de keuken"
+          },
+          {
+            "type": "p",
+            "text": "Voor algemene metingen omvat de [Eenheidsomzetter](/math/unit-converter) lengte, temperatuur en meer wanneer een recept zich op niet-kookgebied begeeft."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Schuldensneeuwbal versus lawine: welke uitbetalingsmethode wint?",
+        "excerpt": "Twee populaire methoden beloven schulden te vernietigen. Ze verschillen van mening over één vraag: betaal je op basis van emotie, of op basis van wiskunde?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Als u meerdere schulden heeft, is de volgorde waarin u ze betaalt net zo belangrijk als het bedrag. De twee bekendste strategieën vallen die volgorde heel anders aan."
+          },
+          {
+            "type": "h2",
+            "text": "Sneeuwbal: motivatie eerst"
+          },
+          {
+            "type": "p",
+            "text": "Maak een lijst van schulden van het kleinste saldo tot het grootste. Betaal het minimum voor alles en gooi elke extra dollar op de kleinste. Snelle overwinningen zorgen voor momentum. Modelleer het geheel in onze [Schuldensneeuwbal- en lawinecalculator](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Lawine: wiskunde eerst"
+          },
+          {
+            "type": "p",
+            "text": "Betaal eerst de hoogste rente. Je bespaart het meeste geld en eindigt het snelst, maar de eerste voortgang kan langzaam aanvoelen omdat grote saldi blijven hangen."
+          },
+          {
+            "type": "callout",
+            "text": "Wiskundig gezien wint de lawine. Gedragsmatig blijft de sneeuwbal vaak hangen. Kies degene die je daadwerkelijk gaat afmaken."
+          },
+          {
+            "type": "h2",
+            "text": "Vergeet het tarief niet"
+          },
+          {
+            "type": "p",
+            "text": "Voordat u een keuze maakt, vergelijkt u de kosten van uw schulden met wat u zou kunnen verdienen door te beleggen met [ROI-calculator](/finance/roi). Soms loont het om te investeren terwijl u minimale betalingen doet."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Laatst bijgewerkt: 11 augustus 2026.",

@@ -6596,7 +6596,321 @@
       "cooking": "Kochen"
     },
     "relatedTitle": "Verwandte Artikel",
-    "heroBadge": "Praktische Anleitungen & Rechner"
+    "heroBadge": "Praktische Anleitungen & Rechner",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Das 50/30/20-Budget: Ein einfacher Plan, der tatsächlich Bestand hat",
+        "excerpt": "Ein Budget funktioniert nur, wenn man es einhalten kann. Die 50/30/20-Regel ist beliebt, weil sie einfach ist: Teilen Sie Ihr Einkommen nach Steuern in Bedürfnisse, Wünsche und Ersparnisse auf.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die meisten Budgets scheitern nicht, weil sie falsch sind, sondern weil sie anstrengend sind. Die 50/30/20-Regel funktioniert, weil sie Bewusstsein und nicht Perfektion erfordert. Sie teilen Ihr Take-Home-Gehalt in drei Bereiche auf und passen es von dort aus an."
+          },
+          {
+            "type": "h2",
+            "text": "Die drei Eimer"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Bedarf (50 %): Miete oder Hypothek, Lebensmittel, Versorgung, Versicherung, Mindestschuldenzahlungen.",
+              "Wünsche (30 %): Essen gehen, Streaming, Hobbys, Reisen, die Dinge, die das Leben angenehm machen.",
+              "Ersparnisse (20 %): Notfallfonds, Ruhestand und etwaige zusätzliche Schuldenzahlungen."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Beginnen Sie mit der Berechnung Ihres Einkommens nach Steuern. Wenn Sie nicht sicher sind, was nach Abzug auf Ihrem Konto landet, kann unser [Einkommensteuerrechner](/finance/income-tax) zunächst Ihren Nettolohn schätzen."
+          },
+          {
+            "type": "h2",
+            "text": "Warum es funktioniert"
+          },
+          {
+            "type": "p",
+            "text": "Die Regel erzwingt das Sparen vor dem Ausgeben und nicht mit dem, was übrig bleibt. Sogar ein konstanter Satz von 20 % baut überraschend schnell ein echtes Polster auf, und die Struktur macht Überausgaben in dem Moment deutlich, in dem der Eimer überläuft."
+          },
+          {
+            "type": "callout",
+            "text": "Automatisieren Sie die Überweisung von 20 % am Zahltag, damit die Ersparnis erfolgt, bevor Sie sie ausgeben können. Außer Sichtweite ist der springende Punkt."
+          },
+          {
+            "type": "h2",
+            "text": "Wann anzupassen"
+          },
+          {
+            "type": "p",
+            "text": "In Städten mit hohen Kosten muss die Aufteilung möglicherweise eine Zeit lang 60/20/20 betragen, und das ist in Ordnung. Der Punkt ist die Richtung, keine starre Zahl. Verwenden Sie unseren [Sparzielrechner](/finance/savings-goal), um zu sehen, wie sich Ihre 20 % im Laufe der Zeit zusammensetzen."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Zinseszins: Warum frühes Starten besser ist als späteres Sparen",
+        "excerpt": "Albert Einstein nannte den Zinseszins angeblich das achte Weltwunder. Ob er es gesagt hat oder nicht, die Rechnung stimmt: Ihr Geld bringt Rendite, und diese Rendite bringt Rendite.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die Aufzinsung ist der stille Motor hinter fast jedem langfristigen Finanzziel. Sie investieren Geld, es wächst und das Wachstum selbst beginnt, mehr zu verdienen. Je länger die Landebahn ist, desto dramatischer ist der Effekt."
+          },
+          {
+            "type": "h2",
+            "text": "Der Schneeballeffekt"
+          },
+          {
+            "type": "p",
+            "text": "Führen Sie die Zahlen in unserem [Zinseszinsrechner](/finance/compound-interest) aus: Setzen Sie 30 Jahre lang 200 pro Monat bei 7 % und Sie werden sehen, dass der größte Teil des Endsaldos aus Wachstum und nicht aus Ihren Beiträgen stammt."
+          },
+          {
+            "type": "h2",
+            "text": "Zeit schlägt Menge"
+          },
+          {
+            "type": "p",
+            "text": "Eine monatliche Investition von 100 ab dem 25. Lebensjahr ist oft besser als eine monatliche Investition von 300 ab dem 40. Lebensjahr. Das frühe Geld summiert sich auf weitere 15 Jahre, und diese Jahre erledigen die schwere Arbeit. Aus diesem Grund ist das Aufschieben die teuerste Angewohnheit im Bereich der persönlichen Finanzen."
+          },
+          {
+            "type": "callout",
+            "text": "Der größte Einzelfaktor bei der Aufzinsung ist die Startzeit. Sie können verlorene Jahre nicht wiederherstellen, egal wie viel Sie später hinzufügen."
+          },
+          {
+            "type": "h2",
+            "text": "Machen Sie es automatisch"
+          },
+          {
+            "type": "p",
+            "text": "Koppeln Sie Compoundierung mit Konsistenz mithilfe eines [Sparzielrechner](/finance/savings-goal). Legen Sie das Ziel fest, legen Sie das Datum fest und lassen Sie regelmäßige Beiträge den Rest erledigen."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, Körperfett und was Ihre Gewichtszahl wirklich bedeutet",
+        "excerpt": "Treten Sie auf eine Waage und die Zahl fühlt sich wie ein Urteil an. Doch allein das Gewicht verbirgt mehr, als es verrät. Der BMI ist ein Ausgangspunkt, keine Ziellinie.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Wir neigen dazu, eine einzelne Gewichtszahl als die ganze Geschichte zu betrachten. Das ist es nicht. Zwei Menschen können das gleiche Gewicht haben und völlig unterschiedliche Körper haben. Die nützliche Frage ist nicht nur, wie viel Sie wiegen, sondern auch, woraus dieses Gewicht besteht."
+          },
+          {
+            "type": "h2",
+            "text": "Was der BMI tatsächlich misst"
+          },
+          {
+            "type": "p",
+            "text": "Der Body-Mass-Index ist das Gewicht dividiert durch die Körpergröße im Quadrat. Sie werden in Untergewicht, Normalgewicht, Übergewicht oder Fettleibigkeit eingeteilt. Es ist ein günstiger, schneller Bildschirm, und Sie können Ihre Nummer mit dem [BMI-Rechner](/health/bmi) finden."
+          },
+          {
+            "type": "h2",
+            "text": "Wo der BMI zu kurz kommt"
+          },
+          {
+            "type": "p",
+            "text": "Muskeln wiegen mehr als Fett. Ein trainierter Sportler kann als übergewichtig gelten, obwohl er einen sehr niedrigen Körperfettanteil hat. Aus diesem Grund liefern [Körperfettrechner](/health/body-fat) und Magermasseschätzungen ein umfassenderes Bild als der BMI allein."
+          },
+          {
+            "type": "callout",
+            "text": "Verwenden Sie den BMI als Bildschirm, nicht als Diagnose. Der Taillenumfang und die Körperzusammensetzung verraten in der Regel die ehrlichere Aussage."
+          },
+          {
+            "type": "h2",
+            "text": "Eine gesündere Linse"
+          },
+          {
+            "type": "p",
+            "text": "Anstatt sich auf die Waage zu konzentrieren, kombinieren Sie Ihre [BMR-Rechner](/health/bmr-calculator) und [TDEE-Rechner](/health/tdee-calculator), um Ihren Energiebedarf zu verstehen. Das Gewicht ist ein nachlaufender Indikator; Die Energiebilanz ist das, was man tatsächlich steuern kann."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Wie Sie durch zusätzliche Hypothekenzahlungen jahrelange Zinsen sparen",
+        "excerpt": "Bei einer Hypothek mit einer Laufzeit von 30 Jahren handelt es sich hauptsächlich um Zinsen in den ersten Jahren. Kleine zusätzliche Zahlungen können den Kredit um Jahre und Tausende von Dollar verkürzen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Die ersten Jahre einer Hypothek können sich entmutigend anfühlen: eine hohe Zahlung, aber der Restbetrag bewegt sich kaum. Das liegt daran, dass bei vorzeitigen Zahlungen überwiegend Zinsen anfallen. Die gute Nachricht ist, dass zusätzliche Zahlungen den Auftraggeber genau dann am härtesten treffen, wenn es darauf ankommt."
+          },
+          {
+            "type": "h2",
+            "text": "So funktioniert die Amortisation"
+          },
+          {
+            "type": "p",
+            "text": "Bei der Amortisation werden Zinsen vorgezogen. Unser [Hypothekenrechner](/finance/mortgage) zeigt die Aufteilung zwischen Kapital und Zinsen für jeden Monat, sodass Sie sehen können, wie langsam der Saldo zunächst sinkt."
+          },
+          {
+            "type": "h2",
+            "text": "Die Kraft einer kleinen Extramenge"
+          },
+          {
+            "type": "p",
+            "text": "Bei einem typischen Kredit können zusätzliche 100 pro Monat die Laufzeit um vier bis sechs Jahre verkürzen und Zehntausende an Zinsen einsparen. Je früher Sie beginnen, desto größer ist der Effekt."
+          },
+          {
+            "type": "callout",
+            "text": "Teilen Sie Ihrem Kreditgeber immer mit, dass die zusätzliche Zahlung dem Kapital zugute kommen soll und nicht für zukünftige geplante Zahlungen."
+          },
+          {
+            "type": "h2",
+            "text": "Vergleichen Sie den Kompromiss"
+          },
+          {
+            "type": "p",
+            "text": "Bevor Sie alles auf die Hypothek werfen, wägen Sie es mit den anderen Zielen ab, indem Sie [ROI-Rechner](/finance/roi) und [Sparzielrechner](/finance/savings-goal) verwenden. Manchmal ist eine Investition mit höherer Rendite besser als die vorzeitige Rückzahlung des Kredits."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Prozentsätze im wirklichen Leben: Rabatte, Trinkgelder und Steuern leicht gemacht",
+        "excerpt": "Prozentsätze bestimmen die alltägliche Geldberechnung, von Verkäufen und Trinkgeldern bis hin zu Steuern und Zinsen. Sobald das Muster klickt, können Sie das meiste im Kopf erledigen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prozent bedeutet pro Hundert. Befestigen Sie jedes Prozentproblem bei 100, und die meisten davon sind nicht mehr einschüchternd. Die gleiche Idee treibt Rabatte, Trinkgelder, Steuern und Wachstum voran."
+          },
+          {
+            "type": "h2",
+            "text": "Rabatte"
+          },
+          {
+            "type": "p",
+            "text": "Ein Rabatt von 30 % auf einen Artikel im Wert von 80 spart 24, sodass 56 übrig bleiben. Die Abkürzung lautet Preis mal (1 minus Preis). Unser [Rabattrechner](/math/discount) erledigt das sofort, aber die mentale Version ist an der Kasse praktisch."
+          },
+          {
+            "type": "h2",
+            "text": "Tipps"
+          },
+          {
+            "type": "p",
+            "text": "Ein Trinkgeld von 18 % auf einen 50-Dollar-Schein beträgt 9. Der [Trinkgeldrechner](/math/tip) kümmert sich um Gruppen und Rundungen, aber hier ist der Trick: 10 % sind leicht zu finden, und 20 % sind einfach das Doppelte."
+          },
+          {
+            "type": "h2",
+            "text": "Steuern und Wachstum"
+          },
+          {
+            "type": "p",
+            "text": "Die gleiche Prozentlogik beschreibt Zinsen und Inflation. Sehen Sie, wie sich eine Rate im Laufe der Zeit mit dem [Prozentrechner](/math/percentage-calculator) erhöht."
+          },
+          {
+            "type": "callout",
+            "text": "Prozent bedeutet wörtlich übersetzt pro Hundert. Verknüpfen Sie jedes Prozentproblem mit 100 und es wird schnell einfacher."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kalorien, BMR und TDEE: Planen Sie eine Diät, die tatsächlich funktioniert",
+        "excerpt": "Weniger essen, sich mehr bewegen ist wahr, aber ohne Zahlen nutzlos. Ihr Kalorienbedarf ist individuell und zwei Rechner erklären, warum.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Allgemeine Ernährungsempfehlungen ignorieren die Tatsache, dass jeder Mensch unterschiedlich viel Energie verbrennt. Die Lösung besteht darin, zuerst Ihre eigenen Zahlen zu schätzen und dann einen Plan auf der Grundlage dieser Zahlen zu erstellen."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: Ihr Ruhebrand"
+          },
+          {
+            "type": "p",
+            "text": "Der Grundumsatz ist der Kalorienverbrauch, den Sie in völliger Ruhe verbrennen und der Sie am Leben hält. Finden Sie Ihre mit dem [BMR-Rechner](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: Ihr tatsächlicher täglicher Bedarf"
+          },
+          {
+            "type": "p",
+            "text": "Der tägliche Gesamtenergieverbrauch addiert Ihre Aktivität zusätzlich zum BMR. Der [TDEE-Rechner](/health/tdee-calculator) macht daraus ein tägliches Ziel, das Sie tatsächlich erreichen können."
+          },
+          {
+            "type": "h2",
+            "text": "Abnehmen oder zunehmen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Defizit von etwa 500 kcal pro Tag entspricht etwa einem Pfund pro Woche. Verfolgen Sie Ihre Ernährung mit dem [Kalorienrechner](/health/calorie-calculator) und Ihre Makros mit dem [Makrorechner](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Bei Crash-Diäten verliert man Wasser, nicht Fett. Streben Sie ein bescheidenes, nachhaltiges Defizit an, das Sie über Monate halten können."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Umrechnung von Kocheinheiten: Tassen, Gramm und Unzen ohne Rätselraten",
+        "excerpt": "Ein Rezept verlangt 200 g Mehl, aber Ihre Tassen sind riesig. Der Umbau von Kocheinheiten sollte das Abendessen nicht ruinieren.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beim Kochen mit Rezepten aus verschiedenen Ländern muss man mit Tassen, Gramm, Unzen und Millilitern jonglieren. Der zuverlässige Schritt besteht darin, mit der Messung nach Volumen aufzuhören und mit der Messung nach Gewicht zu beginnen."
+          },
+          {
+            "type": "h2",
+            "text": "Gewicht schlägt Volumen"
+          },
+          {
+            "type": "p",
+            "text": "Eine Tasse Mehl kann um 20 % variieren, je nachdem, wie Sie es schöpfen. Unser [Kocheinheiten-Konverter](/cooking/cooking-units) verarbeitet Tassen, Gramm, Unzen und Milliliter, sodass Ihre Ergebnisse konsistent bleiben."
+          },
+          {
+            "type": "h2",
+            "text": "Skalierungsrezepte"
+          },
+          {
+            "type": "p",
+            "text": "Das manuelle Verdoppeln eines Rezepts ist fehleranfällig. Der [Rezept-Scaler](/cooking/recipe-scaler) passt jede Zutat automatisch an und der [Lebensmittelkostenrechner](/cooking/food-cost) berechnet den Preis, wenn Sie für eine große Menschenmenge kochen."
+          },
+          {
+            "type": "callout",
+            "text": "Mehl und Zucker sind mengenmäßig nicht austauschbar. Rechnen Sie beim Backen immer nach Gewicht um."
+          },
+          {
+            "type": "h2",
+            "text": "Jenseits der Küche"
+          },
+          {
+            "type": "p",
+            "text": "Für allgemeine Messungen deckt [Einheitenumrechner](/math/unit-converter) Länge, Temperatur und mehr ab, wenn ein Rezept in den nicht zum Kochen geeigneten Bereich abweicht."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Schulden-Schneeball vs. Schulden-Lawine: Welche Tilgungsmethode gewinnt?",
+        "excerpt": "Zwei beliebte Methoden versprechen die Schuldentilgung. Sie unterscheiden sich in einer Frage: Zahlen Sie nach Emotionen oder nach Mathematik?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Wenn Sie mehrere Schulden haben, ist die Reihenfolge, in der Sie diese abbezahlen, ebenso wichtig wie der Betrag. Die beiden bekanntesten Strategien greifen diese Ordnung sehr unterschiedlich an."
+          },
+          {
+            "type": "h2",
+            "text": "Schneeball: Motivation zuerst"
+          },
+          {
+            "type": "p",
+            "text": "Listen Sie die Schulden vom kleinsten bis zum größten Saldo auf. Zahlen Sie für alle den Mindestbetrag und geben Sie dann jeden zusätzlichen Dollar für den Kleinsten aus. Schnelle Erfolge sorgen für Dynamik. Modellieren Sie das Ganze in unserem [Schulden-Schneeball- und Lawinenrechner](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Lawine: Mathe zuerst"
+          },
+          {
+            "type": "p",
+            "text": "Zahlen Sie zuerst den höchsten Zinssatz. Sie sparen am meisten Geld und sind am schnellsten fertig, aber der erste Fortschritt kann sich langsam anfühlen, weil noch große Restbeträge übrig sind."
+          },
+          {
+            "type": "callout",
+            "text": "Mathematisch gesehen gewinnt die Lawine. Verhaltensbedingt bleiben Schneebälle oft hängen. Wählen Sie diejenige aus, die Sie tatsächlich fertigstellen werden."
+          },
+          {
+            "type": "h2",
+            "text": "Vergessen Sie nicht den Tarif"
+          },
+          {
+            "type": "p",
+            "text": "Bevor Sie sich entscheiden, vergleichen Sie die Kosten Ihrer Schulden mit dem, was Sie mit einer Investition in den [ROI-Rechner](/finance/roi) verdienen könnten. Manchmal lohnt es sich, mit minimalen Zahlungen zu investieren."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Letzte Aktualisierung: 11. August 2026.",

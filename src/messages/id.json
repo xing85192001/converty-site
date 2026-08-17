@@ -6600,7 +6600,321 @@
       "cooking": "Memasak"
     },
     "relatedTitle": "Artikel terkait",
-    "heroBadge": "Panduan praktis & kalkulator"
+    "heroBadge": "Panduan praktis & kalkulator",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Anggaran 50/30/20: Rencana Sederhana yang Benar-Benar Bertahan",
+        "excerpt": "Anggaran hanya berfungsi jika Anda dapat mempertahankannya. Aturan 50/30/20 populer karena sederhana: bagi pendapatan setelah pajak Anda menjadi kebutuhan, keinginan, dan tabungan.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kebanyakan anggaran gagal bukan karena salah, namun karena melelahkan. Aturan 50/30/20 berhasil karena meminta kesadaran, bukan kesempurnaan. Anda membagi gaji yang dibawa pulang menjadi tiga kelompok dan menyesuaikannya dari sana."
+          },
+          {
+            "type": "h2",
+            "text": "Tiga ember"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Kebutuhan (50%): sewa atau hipotek, bahan makanan, utilitas, asuransi, pembayaran utang minimum.",
+              "Keinginan (30%): makan di luar, streaming, hobi, jalan-jalan, hal-hal yang membuat hidup terasa menyenangkan.",
+              "Tabungan (20%): dana darurat, dana pensiun, dan pembayaran utang tambahan."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Mulailah dengan menghitung pendapatan setelah pajak Anda. Jika Anda tidak yakin apa yang masuk ke akun Anda setelah dipotong, [Kalkulator Pajak Penghasilan](/finance/income-tax) kami dapat memperkirakan pembayaran bersih Anda terlebih dahulu."
+          },
+          {
+            "type": "h2",
+            "text": "Mengapa ini berhasil"
+          },
+          {
+            "type": "p",
+            "text": "Aturan tersebut memaksakan kebiasaan menabung sebelum berbelanja, bukan dengan sisa. Bahkan tarif tetap sebesar 20% akan menghasilkan bantalan yang nyata dengan sangat cepat, dan struktur tersebut membuat pengeluaran berlebihan menjadi jelas saat ember meluap."
+          },
+          {
+            "type": "callout",
+            "text": "Otomatiskan transfer 20% pada hari gajian sehingga penghematan terjadi sebelum Anda dapat membelanjakannya. Tidak terlihat adalah intinya."
+          },
+          {
+            "type": "h2",
+            "text": "Kapan harus menyesuaikan"
+          },
+          {
+            "type": "p",
+            "text": "Di kota-kota berbiaya tinggi, pembagiannya mungkin perlu 60/20/20 untuk sementara waktu, dan itu tidak masalah. Intinya adalah arah, bukan angka yang kaku. Gunakan [Kalkulator Sasaran Penghematan](/finance/savings-goal) kami untuk melihat bagaimana 20% Anda bertambah seiring waktu."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Bunga Majemuk: Mengapa Memulai Lebih Awal Mengalahkan Menabung Lebih Banyak Nanti",
+        "excerpt": "Albert Einstein konon menyebut bunga majemuk sebagai keajaiban dunia kedelapan. Apakah dia mengatakannya atau tidak, perhitungannya nyata: uang Anda menghasilkan keuntungan, dan kemudian pengembalian itu menghasilkan keuntungan.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Peracikan adalah mesin diam di balik hampir setiap tujuan keuangan jangka panjang. Anda menginvestasikan uang, uang itu tumbuh, dan pertumbuhan itu sendiri mulai menghasilkan lebih banyak. Semakin panjang landasan pacunya, semakin dramatis efeknya."
+          },
+          {
+            "type": "h2",
+            "text": "Efek bola salju"
+          },
+          {
+            "type": "p",
+            "text": "Jalankan angka-angka di [Kalkulator Bunga Majemuk](/finance/compound-interest) kami: masukkan 200 per bulan pada tingkat 7% selama 30 tahun dan Anda akan melihat bahwa sebagian besar saldo akhir berasal dari pertumbuhan, bukan dari kontribusi Anda."
+          },
+          {
+            "type": "h2",
+            "text": "Waktu mengalahkan jumlah"
+          },
+          {
+            "type": "p",
+            "text": "Berinvestasi 100 sebulan sejak usia 25 tahun sering kali mengalahkan investasi 300 sebulan mulai usia 40 tahun. Uang awal akan bertambah untuk tambahan 15 tahun, dan tahun-tahun itulah yang melakukan pekerjaan berat. Inilah sebabnya mengapa penundaan adalah kebiasaan paling mahal dalam keuangan pribadi."
+          },
+          {
+            "type": "callout",
+            "text": "Satu-satunya faktor terbesar dalam penggabungan adalah waktu mulai. Anda tidak dapat memulihkan tahun-tahun yang hilang, tidak peduli berapa banyak Anda menambahkannya nanti."
+          },
+          {
+            "type": "h2",
+            "text": "Jadikan otomatis"
+          },
+          {
+            "type": "p",
+            "text": "Pasangkan peracikan dengan konsistensi menggunakan [Kalkulator Sasaran Penghematan](/finance/savings-goal). Tetapkan target, tetapkan tanggal, dan biarkan kontribusi rutin melakukan sisanya."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, Lemak Tubuh, dan Arti Sebenarnya Angka Berat Badan Anda",
+        "excerpt": "Injaklah timbangan dan angkanya terasa seperti sebuah keputusan. Tapi berat badan saja menyembunyikan lebih dari yang terungkap. BMI adalah titik awal, bukan garis akhir.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kita cenderung memperlakukan satu angka bobot sebagai keseluruhan cerita. Tidak. Dua orang bisa memiliki berat yang sama dan memiliki tubuh yang sangat berbeda. Pertanyaan yang berguna bukan hanya berapa berat Anda, tapi terbuat dari apa berat itu."
+          },
+          {
+            "type": "h2",
+            "text": "Apa yang sebenarnya diukur oleh BMI"
+          },
+          {
+            "type": "p",
+            "text": "Indeks Massa Tubuh adalah berat badan dibagi tinggi badan dikuadratkan. Ini mengelompokkan Anda menjadi kurus, normal, kelebihan berat badan, atau obesitas. Ini adalah layar yang murah dan cepat, dan Anda dapat menemukan nomor Anda dengan [Kalkulator BMI](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Dimana BMI gagal"
+          },
+          {
+            "type": "p",
+            "text": "Otot lebih berat daripada lemak. Seorang atlet yang terlatih dapat dianggap kelebihan berat badan namun memiliki lemak tubuh yang sangat rendah. Itulah sebabnya estimasi [Kalkulator Lemak Tubuh](/health/body-fat) dan lean-mass memberikan gambaran yang lebih lengkap dibandingkan BMI saja."
+          },
+          {
+            "type": "callout",
+            "text": "Gunakan BMI sebagai layar, bukan diagnosis. Ukuran pinggang dan komposisi tubuh biasanya menceritakan kisah yang lebih jujur."
+          },
+          {
+            "type": "h2",
+            "text": "Lensa yang lebih sehat"
+          },
+          {
+            "type": "p",
+            "text": "Daripada terpaku pada timbangan, gabungkan [Kalkulator BMR](/health/bmr-calculator) dan [Kalkulator TDEE](/health/tdee-calculator) Anda untuk memahami kebutuhan energi Anda. Berat badan adalah indikator tertinggal; keseimbangan energi adalah hal yang sebenarnya dapat Anda kendalikan."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Bagaimana Pembayaran Hipotek Ekstra Menghemat Bunga Anda Selama Bertahun-tahun",
+        "excerpt": "Hipotek 30 tahun sebagian besar merupakan bunga di tahun-tahun awal. Pembayaran tambahan dalam jumlah kecil dapat menghemat waktu bertahun-tahun, dan ribuan dolar, dari pinjaman.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beberapa tahun pertama hipotek bisa terasa mengecewakan: pembayarannya besar, tetapi saldonya hampir tidak bergerak. Hal ini karena pembayaran awal sebagian besar ditujukan untuk bunga. Kabar baiknya adalah pembayaran ekstra memberikan dampak paling besar pada pokok pinjaman pada saat yang paling penting."
+          },
+          {
+            "type": "h2",
+            "text": "Cara kerja amortisasi"
+          },
+          {
+            "type": "p",
+            "text": "Bunga beban depan amortisasi. [Kalkulator Hipotek](/finance/mortgage) kami menunjukkan pembagian antara pokok dan bunga setiap bulan, sehingga Anda dapat melihat betapa lambatnya penurunan saldo pada awalnya."
+          },
+          {
+            "type": "h2",
+            "text": "Kekuatan jumlah ekstra kecil"
+          },
+          {
+            "type": "p",
+            "text": "Pada pinjaman biasa, tambahan 100 per bulan dapat memotong jangka waktu empat hingga enam tahun dan menghemat bunga puluhan ribu. Semakin cepat Anda memulai, semakin besar efeknya."
+          },
+          {
+            "type": "callout",
+            "text": "Selalu beri tahu pemberi pinjaman Anda bahwa pembayaran tambahan harus diberikan kepada pokok pinjaman, bukan untuk pembayaran terjadwal di masa mendatang."
+          },
+          {
+            "type": "h2",
+            "text": "Bandingkan trade-offnya"
+          },
+          {
+            "type": "p",
+            "text": "Sebelum menyerahkan semuanya ke hipotek, pertimbangkan tujuan lain dengan menggunakan [Kalkulator ROI](/finance/roi) dan [Kalkulator Sasaran Penghematan](/finance/savings-goal). Terkadang investasi dengan pengembalian lebih tinggi mengalahkan pembayaran pinjaman lebih awal."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Persentase dalam Kehidupan Nyata: Diskon, Tip, dan Pajak Menjadi Mudah",
+        "excerpt": "Persentase menghitung perhitungan uang sehari-hari, mulai dari penjualan dan tip hingga pajak dan bunga. Setelah polanya diklik, Anda dapat melakukan sebagian besar hal itu di kepala Anda.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Persen artinya per seratus. Jangkar setiap persentase masalah hingga 100 dan kebanyakan dari masalah tersebut tidak lagi bersifat mengintimidasi. Ide yang sama mendorong diskon, tip, pajak, dan pertumbuhan."
+          },
+          {
+            "type": "h2",
+            "text": "Diskon"
+          },
+          {
+            "type": "p",
+            "text": "Diskon 30% untuk 80 item menghemat 24 item, menyisakan 56 item. Jalan pintasnya adalah harga dikalikan (1 dikurangi tarif). [Kalkulator Diskon](/math/discount) kami melakukannya secara instan, namun versi mentalnya berguna saat mendaftar."
+          },
+          {
+            "type": "h2",
+            "text": "Kiat"
+          },
+          {
+            "type": "p",
+            "text": "Tip 18% pada uang kertas 50 adalah 9. [Kalkulator Tip](/math/tip) menangani pengelompokan dan pembulatan, namun inilah triknya: 10% mudah ditemukan, dan 20% dua kali lipatnya."
+          },
+          {
+            "type": "h2",
+            "text": "Pajak dan pertumbuhan"
+          },
+          {
+            "type": "p",
+            "text": "Logika persentase yang sama menggambarkan bunga dan inflasi. Lihat bagaimana laju bertambah seiring waktu dengan [Kalkulator Persentase](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Persen secara harafiah berarti per seratus. Jangkar setiap masalah persentase ke 100 dan itu akan menjadi mudah dengan cepat."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kalori, BMR, dan TDEE: Merencanakan Diet yang Benar-Benar Berhasil",
+        "excerpt": "Makan lebih sedikit, lebih banyak bergerak memang benar tetapi tidak ada gunanya tanpa angka. Kebutuhan kalori Anda bersifat pribadi, dan dua kalkulator menjelaskan alasannya.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nasihat diet umum mengabaikan fakta bahwa setiap orang membakar jumlah energi yang berbeda. Cara mengatasinya adalah memperkirakan angka Anda sendiri terlebih dahulu, lalu membuat rencana berdasarkan angka tersebut."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: luka bakar istirahatmu"
+          },
+          {
+            "type": "p",
+            "text": "Tingkat Metabolisme Basal adalah kalori yang Anda bakar saat istirahat total, hanya untuk membuat Anda tetap hidup. Temukan milik Anda dengan [Kalkulator BMR](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: kebutuhan harian Anda yang sebenarnya"
+          },
+          {
+            "type": "p",
+            "text": "Total Pengeluaran Energi Harian menambah aktivitas Anda di atas BMR. [Kalkulator TDEE](/health/tdee-calculator) mengubahnya menjadi target harian yang bisa Anda makan."
+          },
+          {
+            "type": "h2",
+            "text": "Menurunkan atau menambah berat badan"
+          },
+          {
+            "type": "p",
+            "text": "Defisit sekitar 500 kkal per hari kira-kira setara dengan satu pon per minggu. Lacak makanan Anda dengan [Kalkulator Kalori](/health/calorie-calculator) dan makro Anda dengan [Macro Calculator](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Diet ketat hanya membuang air, bukan lemak. Targetkan defisit yang moderat dan berkelanjutan yang dapat Anda pertahankan selama berbulan-bulan."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Konversi Unit Memasak: Cangkir, Gram, dan Ons Tanpa Menebak",
+        "excerpt": "Sebuah resep membutuhkan 200 g tepung tetapi cangkir Anda berukuran imperial. Mengubah unit memasak tidak boleh merusak makan malam.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Memasak berbagai resep dari berbagai negara berarti menyulap cangkir, gram, ons, dan mililiter. Langkah yang dapat diandalkan adalah berhenti mengukur berdasarkan volume dan mulai mengukur berdasarkan berat."
+          },
+          {
+            "type": "h2",
+            "text": "Berat mengalahkan volume"
+          },
+          {
+            "type": "p",
+            "text": "Secangkir tepung bisa bervariasi sebesar 20% tergantung cara Anda menyendoknya. [Konverter Unit Memasak](/cooking/cooking-units) kami menangani cangkir, gram, ons, dan mililiter sehingga hasil Anda tetap konsisten."
+          },
+          {
+            "type": "h2",
+            "text": "Resep penskalaan"
+          },
+          {
+            "type": "p",
+            "text": "Menggandakan resep dengan tangan rawan kesalahan. [Scaler Resep](/cooking/recipe-scaler) menyesuaikan setiap bahan secara otomatis, dan [Kalkulator Biaya Makanan](/cooking/food-cost) memberi harga jika Anda memasak untuk orang banyak."
+          },
+          {
+            "type": "callout",
+            "text": "Tepung dan gula tidak dapat dipertukarkan berdasarkan volume. Selalu konversikan berdasarkan berat saat Anda memanggang."
+          },
+          {
+            "type": "h2",
+            "text": "Di luar dapur"
+          },
+          {
+            "type": "p",
+            "text": "Untuk pengukuran umum, [Pengonversi Satuan](/math/unit-converter) mencakup panjang, suhu, dan lainnya ketika resep menyimpang ke wilayah non-memasak."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Debt Snowball vs. Avalanche: Metode Pembayaran Mana yang Menang?",
+        "excerpt": "Dua metode populer menjanjikan untuk menghancurkan utang. Mereka berbeda pendapat dalam satu pertanyaan: apakah Anda membayar berdasarkan emosi atau matematika?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Jika Anda memiliki beberapa hutang, perintah untuk melunasinya sama pentingnya dengan jumlahnya. Dua strategi paling terkenal menyerang tatanan itu dengan sangat berbeda."
+          },
+          {
+            "type": "h2",
+            "text": "Bola Salju: motivasi dulu"
+          },
+          {
+            "type": "p",
+            "text": "Daftarkan hutang-hutang yang bersaldo terkecil sampai yang terbesar. Bayar semuanya seminimal mungkin, lalu buang setiap dolar ekstra paling sedikit. Kemenangan cepat membangun momentum. Modelkan semuanya di [Kalkulator Bola Salju Hutang dan Longsoran](/finance/debt-snowball-avalanche) kami."
+          },
+          {
+            "type": "h2",
+            "text": "Longsoran: matematika dulu"
+          },
+          {
+            "type": "p",
+            "text": "Bayar tingkat bunga tertinggi terlebih dahulu. Anda menghemat uang paling banyak dan menyelesaikannya paling cepat, namun kemajuan awal bisa terasa lambat karena saldo yang besar masih ada."
+          },
+          {
+            "type": "callout",
+            "text": "Secara matematis, longsoran salju menang. Secara perilaku, bola salju sering kali menempel. Pilih salah satu yang benar-benar akan Anda selesaikan."
+          },
+          {
+            "type": "h2",
+            "text": "Jangan lupa tarifnya"
+          },
+          {
+            "type": "p",
+            "text": "Sebelum memilih, bandingkan biaya utang Anda dengan penghasilan yang mungkin Anda peroleh dari investasi dengan [Kalkulator ROI](/finance/roi). Terkadang ada gunanya berinvestasi sambil melakukan pembayaran minimum."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Terakhir diperbarui: 11 Agustus 2026.",

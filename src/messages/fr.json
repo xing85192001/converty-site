@@ -6596,7 +6596,321 @@
       "cooking": "Cuisine"
     },
     "relatedTitle": "Articles connexes",
-    "heroBadge": "Guides pratiques et calculateurs"
+    "heroBadge": "Guides pratiques et calculateurs",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Le budget 50/30/20 : un plan simple qui tient réellement",
+        "excerpt": "Un budget ne fonctionne que si vous pouvez le maintenir. La règle des 50/30/20 est populaire parce qu’elle est simple : divisez votre revenu après impôt en besoins, désirs et épargne.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La plupart des budgets échouent non pas parce qu’ils sont erronés, mais parce qu’ils sont épuisants. La règle 50/30/20 fonctionne car elle demande de la conscience et non de la perfection. Vous divisez votre salaire net en trois tranches et vous vous ajustez à partir de là."
+          },
+          {
+            "type": "h2",
+            "text": "Les trois seaux"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Besoins (50 %) : loyer ou hypothèque, épicerie, services publics, assurance, remboursement minimum de la dette.",
+              "Désirs (30 %) : dîner au restaurant, streaming, passe-temps, voyages, les choses qui font du bien dans la vie.",
+              "Épargne (20 %) : fonds d’urgence, retraite et éventuels remboursements de dettes supplémentaires."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Commencez par calculer votre revenu après impôt. Si vous n'êtes pas sûr de ce qui arrive sur votre compte après déductions, notre [Calculateur d'impôt sur le revenu](/finance/income-tax) peut d'abord estimer votre salaire net."
+          },
+          {
+            "type": "h2",
+            "text": "Pourquoi ça marche"
+          },
+          {
+            "type": "p",
+            "text": "La règle impose l’habitude d’épargner avant de dépenser, et non avec ce qui reste. Même un taux constant de 20 % crée un véritable coussin étonnamment rapidement, et la structure rend les dépenses excessives évidentes au moment où un seau déborde."
+          },
+          {
+            "type": "callout",
+            "text": "Automatisez le transfert de 20 % le jour de paie afin que les économies soient réalisées avant de pouvoir les dépenser. Hors de vue, c’est tout l’intérêt."
+          },
+          {
+            "type": "h2",
+            "text": "Quand ajuster"
+          },
+          {
+            "type": "p",
+            "text": "Dans les villes où les coûts sont élevés, la répartition devra peut-être être de 60/20/20 pendant un certain temps, et c'est très bien. Le point est la direction, pas un nombre rigide. Utilisez notre [Calculateur d'objectifs d'épargne](/finance/savings-goal) pour voir comment vos 20 % se composent au fil du temps."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Intérêts composés : pourquoi commencer tôt au lieu d'économiser davantage plus tard",
+        "excerpt": "Albert Einstein aurait qualifié les intérêts composés de huitième merveille du monde. Qu’il le dise ou non, le calcul est réel : votre argent rapporte des rendements, et ces rendements génèrent ensuite des rendements.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La capitalisation est le moteur silencieux de presque tous les objectifs financiers à long terme. Vous investissez de l’argent, il croît et la croissance elle-même commence à rapporter davantage. Plus la piste est longue, plus l’effet est spectaculaire."
+          },
+          {
+            "type": "h2",
+            "text": "L'effet boule de neige"
+          },
+          {
+            "type": "p",
+            "text": "Faites les calculs dans notre [Calculateur d'intérêts composés](/finance/compound-interest) : mettez 200 par mois à 7% pendant 30 ans et vous verrez que la majeure partie du solde final provenait de la croissance, pas de vos cotisations."
+          },
+          {
+            "type": "h2",
+            "text": "Le temps bat la quantité"
+          },
+          {
+            "type": "p",
+            "text": "Investir 100 par mois à partir de 25 ans est souvent préférable à investir 300 par mois à partir de 40 ans. L’argent initial s’accumule pendant 15 années supplémentaires, et ces années font le gros du travail. C’est pourquoi la procrastination est l’habitude la plus coûteuse en matière de finances personnelles."
+          },
+          {
+            "type": "callout",
+            "text": "Le facteur le plus important dans la composition est l’heure de début. Vous ne pouvez pas récupérer les années perdues, peu importe combien vous en ajouterez plus tard."
+          },
+          {
+            "type": "h2",
+            "text": "Rendez-le automatique"
+          },
+          {
+            "type": "p",
+            "text": "Associez la composition à la cohérence à l'aide d'un [Calculateur d'objectifs d'épargne](/finance/savings-goal). Fixez un objectif, fixez une date et laissez les cotisations régulières faire le reste."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "IMC, graisse corporelle et ce que signifie réellement votre chiffre de poids",
+        "excerpt": "Montez sur une balance et le chiffre ressemble à un verdict. Mais le poids à lui seul cache plus qu’il ne révèle. L'IMC est un point de départ et non une ligne d'arrivée.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nous avons tendance à considérer un seul chiffre de poids comme l’ensemble de l’histoire. Ce n'est pas. Deux personnes peuvent peser le même poids et avoir des corps complètement différents. La question utile n’est pas seulement de savoir combien vous pesez, mais de quoi est composé ce poids."
+          },
+          {
+            "type": "h2",
+            "text": "Ce que mesure réellement l’IMC"
+          },
+          {
+            "type": "p",
+            "text": "L'indice de masse corporelle correspond au poids divisé par la taille au carré. Il vous regroupe selon un poids insuffisant, un poids normal, un surpoids ou une obésité. C'est un écran rapide et bon marché, et vous pouvez trouver votre numéro avec le [Calculateur d'IMC](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Là où l’IMC est insuffisant"
+          },
+          {
+            "type": "p",
+            "text": "Le muscle pèse plus que la graisse. Un athlète entraîné peut être considéré comme en surpoids tout en ayant une très faible masse grasse. C'est pourquoi [Calculateur de graisse corporelle](/health/body-fat) et les estimations de masse maigre donnent une image plus complète que l'IMC seul."
+          },
+          {
+            "type": "callout",
+            "text": "Utilisez l’IMC comme un écran, pas comme un diagnostic. Le tour de taille et la composition corporelle racontent généralement l’histoire la plus honnête."
+          },
+          {
+            "type": "h2",
+            "text": "Une lentille plus saine"
+          },
+          {
+            "type": "p",
+            "text": "Au lieu de vous concentrer sur la balance, combinez vos [Calculateur BMR](/health/bmr-calculator) et [Calculateur TDEE](/health/tdee-calculator) pour comprendre vos besoins énergétiques. Le poids est un indicateur retardé ; le bilan énergétique est la chose que vous pouvez réellement diriger."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Comment les versements hypothécaires supplémentaires vous font économiser des années d’intérêts",
+        "excerpt": "Une hypothèque sur 30 ans représente principalement des intérêts dans les premières années. De petits paiements supplémentaires peuvent réduire le prêt de plusieurs années, voire de milliers de dollars.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Les premières années d’un prêt hypothécaire peuvent être décourageantes : un versement important, mais le solde bouge à peine. En effet, les paiements anticipés concernent principalement les intérêts. La bonne nouvelle est que les paiements supplémentaires frappent le plus durement le principal, exactement au moment où cela compte le plus."
+          },
+          {
+            "type": "h2",
+            "text": "Comment fonctionne l'amortissement"
+          },
+          {
+            "type": "p",
+            "text": "L’amortissement accumule les intérêts dès le début. Notre [Calculateur hypothécaire](/finance/mortgage) affiche la répartition entre le capital et les intérêts pour chaque mois, afin que vous puissiez voir avec quelle lenteur le solde diminue au début."
+          },
+          {
+            "type": "h2",
+            "text": "Le pouvoir d’un petit montant supplémentaire"
+          },
+          {
+            "type": "p",
+            "text": "Sur un prêt typique, 100 $ supplémentaires par mois peuvent réduire la durée de quatre à six ans et économiser des dizaines de milliers d’euros en intérêts. Plus vous commencez tôt, plus l’effet est important."
+          },
+          {
+            "type": "callout",
+            "text": "Dites toujours à votre prêteur que le paiement supplémentaire doit être affecté au principal et non aux futurs paiements prévus."
+          },
+          {
+            "type": "h2",
+            "text": "Comparez le compromis"
+          },
+          {
+            "type": "p",
+            "text": "Avant de tout jeter sur l'hypothèque, comparez-la à d'autres objectifs en utilisant le [Calculateur de retour sur investissement](/finance/roi) et le [Calculateur d'objectifs d'épargne](/finance/savings-goal). Parfois, un investissement à rendement plus élevé est préférable à un remboursement anticipé du prêt."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Pourcentages dans la vraie vie : réductions, pourboires et taxes en toute simplicité",
+        "excerpt": "Les pourcentages déterminent les calculs quotidiens de l'argent, depuis les ventes et les pourboires jusqu'aux impôts et intérêts. Une fois le motif cliqué, vous pouvez en faire la majeure partie dans votre tête.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pour cent signifie pour cent. Fixez chaque pourcentage de problème à 100 et la plupart d’entre eux cesseront d’être intimidants. La même idée alimente les remises, les pourboires, les taxes et la croissance."
+          },
+          {
+            "type": "h2",
+            "text": "Réductions"
+          },
+          {
+            "type": "p",
+            "text": "Une remise de 30 % sur un article de 80 permet d'économiser 24, ce qui en laisse 56. Le raccourci est le prix multiplié par (1 moins le tarif). Notre [Calculateur de remise](/math/discount) le fait instantanément, mais la version mentale est pratique à la caisse."
+          },
+          {
+            "type": "h2",
+            "text": "Conseils"
+          },
+          {
+            "type": "p",
+            "text": "Un pourboire de 18 % sur un billet de 50 équivaut à 9. Le [Calculateur de pourboire](/math/tip) gère les groupes et les arrondis, mais voici l'astuce : 10 % est facile à trouver, et 20 % est tout simplement le double."
+          },
+          {
+            "type": "h2",
+            "text": "Fiscalité et croissance"
+          },
+          {
+            "type": "p",
+            "text": "La même logique de pourcentage décrit les intérêts et l’inflation. Découvrez comment un taux évolue au fil du temps avec le [Calculateur de pourcentage](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Pour cent signifie littéralement pour cent. Ancrez chaque problème de pourcentage à 100 et cela devient simple et rapide."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Calories, BMR et TDEE : planifier un régime qui fonctionne réellement",
+        "excerpt": "Manger moins, bouger plus, c’est vrai mais inutile sans chiffres. Vos besoins caloriques sont personnels et deux calculateurs vous expliquent pourquoi.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Les conseils diététiques génériques ignorent le fait que chacun brûle une quantité d’énergie différente. La solution consiste d’abord à estimer vos propres chiffres, puis à élaborer un plan autour de ceux-ci."
+          },
+          {
+            "type": "h2",
+            "text": "BMR : votre brûlure au repos"
+          },
+          {
+            "type": "p",
+            "text": "Le taux métabolique basal correspond aux calories que vous brûlez au repos complet, ce qui vous permet de rester en vie. Trouvez le vôtre avec le [Calculateur BMR](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE : votre réel besoin au quotidien"
+          },
+          {
+            "type": "p",
+            "text": "La dépense énergétique quotidienne totale ajoute votre activité au BMR. Le [Calculateur TDEE](/health/tdee-calculator) transforme cela en un objectif quotidien auquel vous pouvez réellement manger."
+          },
+          {
+            "type": "h2",
+            "text": "Perdre ou prendre du poids"
+          },
+          {
+            "type": "p",
+            "text": "Un déficit d’environ 500 kcal par jour équivaut à environ une livre par semaine. Suivez vos aliments avec le [Calculateur de calories](/health/calorie-calculator) et vos macros avec le [Calculateur de macros](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Les régimes drastiques font tomber de l’eau, pas de la graisse. Visez un déficit modeste et durable que vous pourrez conserver pendant des mois."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Conversions d'unités de cuisson : tasses, grammes et onces sans devinettes",
+        "excerpt": "Une recette demande 200 g de farine mais vos tasses sont impériales. La conversion des unités de cuisson ne devrait pas gâcher le dîner.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cuisiner à partir de recettes de différents pays signifie jongler avec les tasses, les grammes, les onces et les millilitres. La solution la plus fiable consiste à arrêter de mesurer en volume et à commencer à mesurer en poids."
+          },
+          {
+            "type": "h2",
+            "text": "Le poids bat le volume"
+          },
+          {
+            "type": "p",
+            "text": "Une tasse de farine peut varier de 20 % selon la façon dont vous la ramassez. Notre [Convertisseur d'unités de cuisson](/cooking/cooking-units) gère les tasses, les grammes, les onces et les millilitres afin que vos résultats restent cohérents."
+          },
+          {
+            "type": "h2",
+            "text": "Recettes de mise à l'échelle"
+          },
+          {
+            "type": "p",
+            "text": "Doubler une recette à la main est sujet aux erreurs. Le [Détartreur de recettes](/cooking/recipe-scaler) ajuste automatiquement chaque ingrédient et le [Calculateur du coût des aliments](/cooking/food-cost) le évalue si vous cuisinez pour une foule."
+          },
+          {
+            "type": "callout",
+            "text": "La farine et le sucre ne sont pas interchangeables en volume. Convertissez toujours en poids lorsque vous cuisinez."
+          },
+          {
+            "type": "h2",
+            "text": "Au-delà de la cuisine"
+          },
+          {
+            "type": "p",
+            "text": "Pour les mesures générales, le [Convertisseur d'unités](/math/unit-converter) couvre la longueur, la température et bien plus encore lorsqu'une recette s'éloigne du territoire autre que la cuisson."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Boule de neige de la dette ou avalanche : quelle méthode de remboursement est la plus efficace ?",
+        "excerpt": "Deux méthodes populaires promettent d’écraser la dette. Ils diffèrent sur une question : payez-vous par l’émotion ou par les mathématiques ?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Si vous avez plusieurs dettes, l’ordre dans lequel vous les payez compte autant que le montant. Les deux stratégies les plus connues attaquent cet ordre de manière très différente."
+          },
+          {
+            "type": "h2",
+            "text": "Boule de neige : la motivation avant tout"
+          },
+          {
+            "type": "p",
+            "text": "Énumérez les dettes du plus petit solde au plus grand. Payez le minimum sur tout, puis jetez chaque dollar supplémentaire au plus petit. Les victoires rapides créent une dynamique. Modélisez le tout dans notre [Calculateur de boule de neige et d’avalanche de dette](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Avalanche : les mathématiques d'abord"
+          },
+          {
+            "type": "p",
+            "text": "Payez d’abord le taux d’intérêt le plus élevé. Vous économisez le plus d’argent et terminez le plus rapidement, mais les premiers progrès peuvent sembler lents car de gros soldes persistent."
+          },
+          {
+            "type": "callout",
+            "text": "Mathématiquement, l'avalanche gagne. Sur le plan comportemental, la boule de neige colle souvent. Choisissez celui que vous allez réellement terminer."
+          },
+          {
+            "type": "h2",
+            "text": "N'oubliez pas le tarif"
+          },
+          {
+            "type": "p",
+            "text": "Avant de choisir, comparez le coût de votre dette à ce que vous pourriez gagner en investissant avec le [Calculateur de retour sur investissement](/finance/roi). Parfois, il vaut la peine d’investir tout en effectuant des paiements minimaux."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Dernière mise à jour : 11 août 2026.",

@@ -1,13 +1,13 @@
+import { ArrowLeft, CalendarDays, Clock } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BlogContent } from "@/components/blog/blog-content";
-import { getCategoryStyle } from "@/lib/blog/styles";
 import { Button } from "@/components/ui/button";
 import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
-import { type BlogCategory, blogPosts, getPostBySlug } from "@/lib/blog/posts";
-import { ArrowLeft, CalendarDays, Clock } from "lucide-react";
+import { type BlogCategory, blogPosts, getPostBySlug, localizePost } from "@/lib/blog/posts";
+import { getCategoryStyle } from "@/lib/blog/styles";
 
 export const dynamicParams = false;
 
@@ -20,9 +20,13 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
-  if (!post) return {};
+  const { locale, slug } = await params;
+  const postBase = getPostBySlug(slug);
+  if (!postBase) return {};
+
+  const postsT = await getTranslations({ locale, namespace: "blog.posts" });
+  const post = localizePost(postBase, postsT);
+
   return {
     title: post.title,
     description: post.excerpt,
@@ -37,10 +41,13 @@ export default async function BlogPostPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const post = getPostBySlug(slug);
-  if (!post) notFound();
+  const postBase = getPostBySlug(slug);
+  if (!postBase) notFound();
 
   const t = await getTranslations("blog");
+  const postsT = await getTranslations({ locale, namespace: "blog.posts" });
+  const post = localizePost(postBase, postsT);
+
   const dateFmt = new Intl.DateTimeFormat(locale, {
     year: "numeric",
     month: "long",
@@ -60,7 +67,8 @@ export default async function BlogPostPage({
   // Related posts: same category, excluding current, max 3
   const related = blogPosts
     .filter((p) => p.category === post.category && p.slug !== post.slug)
-    .slice(0, 3);
+    .slice(0, 3)
+    .map((p) => localizePost(p, postsT));
 
   return (
     <article className="min-h-screen bg-background">
@@ -68,16 +76,19 @@ export default async function BlogPostPage({
       <header
         className={`relative overflow-hidden border-b bg-gradient-to-br ${style.lightBg} py-14 sm:py-20`}
       >
-        <div
-          className={`absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b ${style.gradient}`}
-        />
+        <div className={`absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b ${style.gradient}`} />
         <div className="absolute inset-0 -z-10 opacity-30">
-          <div className={`absolute -right-20 -top-20 h-80 w-80 rounded-full bg-gradient-to-br ${style.gradient} opacity-20 blur-3xl`} />
+          <div
+            className={`absolute -right-20 -top-20 h-80 w-80 rounded-full bg-gradient-to-br ${style.gradient} opacity-20 blur-3xl`}
+          />
         </div>
 
         <div className="container max-w-4xl">
           <Button variant="ghost" size="sm" className="mb-6 -ml-3 h-auto px-3 py-2" asChild>
-            <Link href="/blog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
+            >
               <ArrowLeft className="h-4 w-4" />
               {t("backToBlog")}
             </Link>

@@ -6585,7 +6585,321 @@
       "cooking": "Főzés"
     },
     "relatedTitle": "Kapcsolódó cikkek",
-    "heroBadge": "Gyakorlati útmutatók és számológépek"
+    "heroBadge": "Gyakorlati útmutatók és számológépek",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Az 50/30/20 költségvetés: egy egyszerű terv, amely valóban kitart",
+        "excerpt": "A költségvetés csak akkor működik, ha fenn tudja tartani. Az 50/30/20 szabály népszerű, mert egyszerű: oszd meg az adózott bevételedet szükségletekre, szükségletekre és megtakarításokra.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A legtöbb költségvetés nem azért bukik meg, mert rossz, hanem azért, mert kimerítő. Az 50/30/20 szabály működik, mert tudatosságot kér, nem tökéletességet. A hazavitel fizetését három vödörre osztja, és onnan módosítja."
+          },
+          {
+            "type": "h2",
+            "text": "A három vödör"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Igények (50%): bérleti díj vagy jelzálog, élelmiszerek, rezsi, biztosítás, minimális tartozás.",
+              "Kívánságai (30%): étkezés, streamelés, hobbi, utazás, olyan dolgok, amelyek jó érzéssel töltik el az életet.",
+              "Megtakarítások (20%): sürgősségi alap, nyugdíj és minden további adósságfizetés."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Kezdje adózott bevételének kiszámításával. Ha nem biztos abban, hogy a levonások után mi kerül a fiókjába, [Jövedelemadó kalkulátor](/finance/income-tax) először meg tudja becsülni a nettó fizetését."
+          },
+          {
+            "type": "h2",
+            "text": "Miért működik"
+          },
+          {
+            "type": "p",
+            "text": "A szabály a megtakarítási szokást kényszeríti a költés előtt, nem pedig azzal, ami megmarad. Még az állandó 20%-os arány is meglepően gyorsan épít valódi párnát, és a szerkezet nyilvánvalóvá teszi a túlköltekezést abban a pillanatban, amikor egy vödör túlcsordul."
+          },
+          {
+            "type": "callout",
+            "text": "Automatizálja a 20%-os átutalást fizetésnapon, hogy a megtakarítás megtörténjen, mielőtt elkölthetné. Szem elől az egész lényeg."
+          },
+          {
+            "type": "h2",
+            "text": "Mikor kell beállítani"
+          },
+          {
+            "type": "p",
+            "text": "A magas költségű városokban a felosztásnak egy ideig 60/20/20-nak kell lennie, és ez rendben van. A lényeg az irány, nem egy merev szám. Használja [Megtakarítási cél kalkulátor](/finance/savings-goal)-unkat, hogy megtudja, hogyan alakul a 20%-a az idő múlásával."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Összetett kamat: Miért érdemes az Early Beats kezdéssel később többet spórolni?",
+        "excerpt": "Albert Einstein állítólag a kamatos kamatot a világ nyolcadik csodájának nevezte. Akár kimondta, akár nem, a matematika valóságos: a pénzed megtérül, és akkor ez a hozam megtérül.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Szinte minden hosszú távú pénzügyi cél mögött az összeállítás a csendes motor. Ön pénzt fektet be, az növekszik, és maga a növekedés elkezd többet keresni. Minél hosszabb a kifutópálya, annál drámaibb a hatás."
+          },
+          {
+            "type": "h2",
+            "text": "A hógolyó effektus"
+          },
+          {
+            "type": "p",
+            "text": "Futtassa a számokat a [Összetett kamat kalkulátor](/finance/compound-interest)-ban: havi 200-at állítson 7%-ra 30 évre, és látni fogja, hogy a végső egyenleg nagy része a növekedésből, nem pedig az Ön hozzájárulásából származik."
+          },
+          {
+            "type": "h2",
+            "text": "Az idő veri a mennyiséget"
+          },
+          {
+            "type": "p",
+            "text": "A havi 100 befektetés 25 éves kortól gyakran felülmúlja a havi 300 befektetést 40 éves kortól. A korai pénz további 15 évre nő, és ezek az évek teszik meg a nehéz terheket. Éppen ezért a halogatás a legdrágább szokás a személyes pénzügyekben."
+          },
+          {
+            "type": "callout",
+            "text": "A kompaundálás egyetlen legnagyobb tényezője a kezdési idő. Nem tudod visszaszerezni az elvesztett éveket, bármennyit is teszel hozzá később."
+          },
+          {
+            "type": "h2",
+            "text": "Legyen automatikus"
+          },
+          {
+            "type": "p",
+            "text": "Párosítsa az összeállítást a konzisztenciával a [Megtakarítási cél kalkulátor](/finance/savings-goal) segítségével. Állítsa be a célt, állítsa be a dátumot, és hagyja, hogy a rendszeres hozzájárulások elvégezzék a többit."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, testzsír és mit jelent valójában a súlyod",
+        "excerpt": "Lépjen a mérlegre, és a szám ítéletnek tűnik. De a súly önmagában többet rejt, mint amennyit elárul. A BMI egy kiindulási pont, nem pedig a célvonal.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hajlamosak vagyunk egyetlen súlyszámot az egész történetként kezelni. Nem az. Két ember súlya lehet azonos, és testük teljesen eltérő. A hasznos kérdés nem csak az, hogy mennyi a súlyod, hanem az, hogy ez a súly miből áll."
+          },
+          {
+            "type": "h2",
+            "text": "Mit mér valójában a BMI"
+          },
+          {
+            "type": "p",
+            "text": "A testtömegindex a súly osztva a magasság négyzetével. Alulsúlyú, normál, túlsúlyos vagy elhízott kategóriába sorolja Önt. Ez egy olcsó, gyors képernyő, és a telefonszámát a [BMI kalkulátor](/health/bmi) segítségével találhatja meg."
+          },
+          {
+            "type": "h2",
+            "text": "Ahol a BMI elmarad"
+          },
+          {
+            "type": "p",
+            "text": "Az izom súlya nagyobb, mint a zsír. Egy képzett sportoló túlsúlyosnak tekinthető, miközben nagyon alacsony a testzsírja. Ez az oka annak, hogy a [Testzsír kalkulátor](/health/body-fat) és a sovány tömeg becslései teljesebb képet adnak, mint a BMI önmagában."
+          },
+          {
+            "type": "callout",
+            "text": "Használja a BMI-t képernyőként, ne diagnózisként. A derékméret és a testösszetétel általában őszintébb történetet mesél el."
+          },
+          {
+            "type": "h2",
+            "text": "Egészségesebb lencse"
+          },
+          {
+            "type": "p",
+            "text": "A skálán való rögzítés helyett kombinálja a [BMR kalkulátor](/health/bmr-calculator) és [TDEE kalkulátor](/health/tdee-calculator)-t, hogy megértse energiaszükségletét. A súly egy lemaradó mutató; az energiaegyensúly az, amit valójában irányítani tudsz."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Hogyan takaríthat meg többéves kamatokat az extra jelzáloghitel-fizetéssel",
+        "excerpt": "A 30 éves lejáratú jelzáloghitel többnyire a korai évek kamata. Kis plusz befizetések éveket és több ezer dollárt csökkenthetnek a kölcsönből.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A jelzáloghitel első néhány éve elbátortalanító lehet: nagy kifizetés, de az egyenleg alig mozdul. Ennek az az oka, hogy a korai fizetések többnyire kamatra mennek. A jó hír az, hogy a többletbefizetések pontosan akkor sújtják a tőkét, amikor az a legfontosabb."
+          },
+          {
+            "type": "h2",
+            "text": "Hogyan működik az amortizáció"
+          },
+          {
+            "type": "p",
+            "text": "Az amortizáció előre terheli a kamatot. A [Jelzálogkalkulátor](/finance/mortgage) minden hónapban megmutatja a tőke és a kamat felosztását, így először láthatja, milyen lassan esik az egyenleg."
+          },
+          {
+            "type": "h2",
+            "text": "Egy kis plusz mennyiség ereje"
+          },
+          {
+            "type": "p",
+            "text": "Egy tipikus kölcsönnél havi 100 plusz négy-hat évet csökkenthet a futamidőből, és több tízezer kamat takarítható meg. Minél hamarabb kezdi, annál nagyobb a hatás."
+          },
+          {
+            "type": "callout",
+            "text": "Mindig mondja el a hitelezőnek, hogy a többletfizetést a tőke összegére kell fordítani, nem pedig a jövőbeni ütemezett kifizetésekre."
+          },
+          {
+            "type": "h2",
+            "text": "Hasonlítsa össze a kompromisszumot"
+          },
+          {
+            "type": "p",
+            "text": "Mielőtt mindent a jelzálogba dobna, mérlegelje más célokkal a [ROI kalkulátor](/finance/roi) és [Megtakarítási cél kalkulátor](/finance/savings-goal) segítségével. Néha a magasabb megtérülésű befektetés meghaladja a hitel korai kifizetését."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Százalékok a való életben: kedvezmények, borravalók és egyszerű adók",
+        "excerpt": "A százalékok a pénz mindennapi számításait, az eladásoktól és borravalóktól az adóig és a kamatig. Ha a minta kattan, a legtöbbet fejben is megteheti.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A százalék száz százalékot jelent. Rögzítsen minden százalékos problémát 100-hoz, és a legtöbbjük már nem félelmetes. Ugyanez az ötlet érvényesíti a kedvezményeket, a borravalót, az adót és a növekedést."
+          },
+          {
+            "type": "h2",
+            "text": "Kedvezmények"
+          },
+          {
+            "type": "p",
+            "text": "30% kedvezmény egy 80 tételre 24-et takarít meg, 56-ot hagyva. A parancsikon az áridő (1 mínusz az árfolyam). A mi [Kedvezmény kalkulátor](/math/discount) azonnal megcsinálja, de a mentális változat jól jön a nyilvántartásban."
+          },
+          {
+            "type": "h2",
+            "text": "Tippek"
+          },
+          {
+            "type": "p",
+            "text": "Egy 50-es bankjegy 18%-os borravalója 9. A [Tipp kalkulátor](/math/tip) kezeli a csoportokat és a kerekítést, de itt van a trükk: 10%-ot könnyű megtalálni, 20%-ot pedig ennek duplája."
+          },
+          {
+            "type": "h2",
+            "text": "Adó és növekedés"
+          },
+          {
+            "type": "p",
+            "text": "Ugyanez a százalékos logika írja le a kamatot és az inflációt. Tekintse meg, hogy a díjak hogyan kombinálódnak az idő múlásával a [Százalékkalkulátor](/math/percentage-calculator) segítségével."
+          },
+          {
+            "type": "callout",
+            "text": "A százalék szó szerint száz százalékot jelent. Rögzítsen minden százalékos problémát 100-hoz, és gyorsan egyszerűvé válik."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kalória, BMR és TDEE: Olyan étrend megtervezése, amely valóban működik",
+        "excerpt": "Egyél kevesebbet, mozogj többet ez igaz, de számok nélkül haszontalan. Az Ön kalóriaszükséglete személyes, és két számológép megmagyarázza, miért.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Az általános diétás tanácsok figyelmen kívül hagyják azt a tényt, hogy mindenki más mennyiségű energiát éget el. A megoldás az, hogy először becsülje meg a saját számait, majd építsen rájuk egy tervet."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: a nyugalmi égés"
+          },
+          {
+            "type": "p",
+            "text": "A Basal Metabolic Rate a teljes nyugalomban elégetett kalóriák, amelyek életben tartanak. Találja meg a sajátját a [BMR kalkulátor](/health/bmr-calculator) segítségével."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: az igazi napi szükségleted"
+          },
+          {
+            "type": "p",
+            "text": "A teljes napi energiaköltség a BMR-n felül növeli tevékenységét. A [TDEE kalkulátor](/health/tdee-calculator) ezt egy napi célponttá változtatja, amelyhez ténylegesen enni is lehet."
+          },
+          {
+            "type": "h2",
+            "text": "Fogyás vagy hízás"
+          },
+          {
+            "type": "p",
+            "text": "A napi 500 kcal körüli hiány nagyjából heti egy font. Kövesse nyomon ételeit a [Kalória kalkulátor](/health/calorie-calculator) segítségével, a makrókat pedig a [Makró kalkulátor](/health/macro-calculator) segítségével."
+          },
+          {
+            "type": "callout",
+            "text": "Az összeomlott diéták vizet csepegtetnek, nem zsírt. Célozzon egy szerény, fenntartható hiányt, amelyet hónapokig tarthat."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Főzési egységek átváltása: csésze, gramm és uncia a találgatások nélkül",
+        "excerpt": "Egy recepthez 200 g liszt szükséges, de az ön csészéje birodalmi. A főzési egységek átalakítása nem teheti tönkre a vacsorát.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A különböző országokból származó receptek alapján történő főzés azt jelenti, hogy csészével, grammokkal, unciákkal és milliliterekkel zsonglőrködünk. A megbízható lépés az, hogy abbahagyja a térfogat szerinti mérést, és elkezdi a mérést a súly alapján."
+          },
+          {
+            "type": "h2",
+            "text": "A súly veri a térfogatot"
+          },
+          {
+            "type": "p",
+            "text": "Egy csésze liszt 20%-kal változhat attól függően, hogy hogyan kanalazza. A [Főzési egységek átalakító](/cooking/cooking-units) csészéket, grammokat, unciákat és millilitereket kezel, így az eredmények egyenletesek maradnak."
+          },
+          {
+            "type": "h2",
+            "text": "Méretezési receptek"
+          },
+          {
+            "type": "p",
+            "text": "Egy recept kézi megkettőzése hibás. A [Recept Scaler](/cooking/recipe-scaler) automatikusan beállít minden hozzávalót, a [Élelmiszerköltség kalkulátor](/cooking/food-cost) pedig kiárazza, ha tömegre főz."
+          },
+          {
+            "type": "callout",
+            "text": "A liszt és a cukor térfogat szerint nem felcserélhető. Sütéskor mindig súly szerint alakítsuk át."
+          },
+          {
+            "type": "h2",
+            "text": "A konyhán túl"
+          },
+          {
+            "type": "p",
+            "text": "Az általános méréseknél a [Mértékegység-átalakító](/math/unit-converter) a hosszt, a hőmérsékletet és egyebeket fedi le, amikor egy recept nem főzési területre téved."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Adósság hógolyó vs. lavina: melyik kifizetési mód nyer?",
+        "excerpt": "Két népszerű módszer ígéri az adósság leverését. Egy kérdésben különböznek egymástól: érzelmekkel vagy matematikával fizetsz?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ha több adóssága van, akkor a törlesztés sorrendje legalább annyira számít, mint az összeg. A két legismertebb stratégia nagyon eltérő sorrendben támad."
+          },
+          {
+            "type": "h2",
+            "text": "Hógolyó: először a motiváció"
+          },
+          {
+            "type": "p",
+            "text": "Sorolja fel az adósságokat a legkisebb egyenlegtől a legnagyobbig. Fizesse ki a minimumot mindenért, majd dobjon minden extra dollárt a legkisebbre. A gyors győzelmek lendületet adnak. Modellezze az egészet a [Adósság hógolyó és lavina kalkulátor](/finance/debt-snowball-avalanche)-ban."
+          },
+          {
+            "type": "h2",
+            "text": "Lavina: először a matek"
+          },
+          {
+            "type": "p",
+            "text": "Először fizesse ki a legmagasabb kamatot. Ön spórolja meg a legtöbb pénzt, és a leggyorsabban ér célba, de a korai haladás lassúnak tűnhet, mert a nagy egyensúlyok megmaradnak."
+          },
+          {
+            "type": "callout",
+            "text": "Matematikailag a lavina győz. Viselkedési szempontból a hógolyó gyakran tapad. Válassza ki azt, amelyik valóban befejezi."
+          },
+          {
+            "type": "h2",
+            "text": "Ne felejtse el az árfolyamot"
+          },
+          {
+            "type": "p",
+            "text": "Mielőtt választana, hasonlítsa össze adóssága költségét azzal, amit a [ROI kalkulátor](/finance/roi) befektetésével kereshet. Néha megéri a minimális befizetések mellett befektetni."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Utolsó frissítés: 2026. augusztus 11.",

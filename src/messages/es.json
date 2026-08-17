@@ -6607,7 +6607,321 @@
       "cooking": "Cocinar"
     },
     "relatedTitle": "Artículos relacionados",
-    "heroBadge": "Guías prácticas y calculadoras."
+    "heroBadge": "Guías prácticas y calculadoras.",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "El presupuesto 50/30/20: un plan simple que realmente se cumple",
+        "excerpt": "Un presupuesto sólo funciona si puedes mantenerlo. La regla 50/30/20 es popular porque es simple: divida sus ingresos después de impuestos en necesidades, deseos y ahorros.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La mayoría de los presupuestos fracasan no porque sean incorrectos, sino porque son agotadores. La regla 50/30/20 funciona porque exige conciencia, no perfección. Divide su salario neto en tres categorías y lo ajusta a partir de ahí."
+          },
+          {
+            "type": "h2",
+            "text": "los tres cubos"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Necesidades (50%): alquiler o hipoteca, comestibles, servicios públicos, seguros, pagos mínimos de deuda.",
+              "Deseos (30%): salir a cenar, hacer streaming, pasatiempos, viajar, las cosas que hacen que la vida sea agradable.",
+              "Ahorro (20%): fondo de emergencia, jubilación y cualquier pago extra de deuda."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Comience calculando sus ingresos después de impuestos. Si no está seguro de qué llega a su cuenta después de las deducciones, nuestro [Calculadora de Impuesto sobre la Renta](/finance/income-tax) puede estimar su salario neto primero."
+          },
+          {
+            "type": "h2",
+            "text": "Por que funciona"
+          },
+          {
+            "type": "p",
+            "text": "La norma obliga al hábito de ahorrar antes que gastar, no con lo que sobra. Incluso una tasa constante del 20% crea un colchón real sorprendentemente rápido, y la estructura hace que el gasto excesivo sea obvio en el momento en que el cubo se desborda."
+          },
+          {
+            "type": "callout",
+            "text": "Automatiza la transferencia del 20 % el día de pago para que ahorres antes de que puedas gastarlo. Fuera de la vista está el punto."
+          },
+          {
+            "type": "h2",
+            "text": "Cuando ajustar"
+          },
+          {
+            "type": "p",
+            "text": "En las ciudades de alto costo, la división podría necesitar ser 60/20/20 por un tiempo, y eso está bien. El punto es la dirección, no un número rígido. Utilice nuestro [Calculadora de objetivos de ahorro](/finance/savings-goal) para ver cómo su 20% se compone con el tiempo."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Interés compuesto: por qué empezar temprano es mejor que ahorrar más después",
+        "excerpt": "Albert Einstein supuestamente llamó al interés compuesto la octava maravilla del mundo. Ya sea que lo haya dicho o no, las matemáticas son reales: su dinero genera retornos, y luego esos retornos generan retornos.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La capitalización es el motor silencioso detrás de casi todos los objetivos financieros a largo plazo. Inviertes dinero, crece y el crecimiento mismo comienza a generar más ganancias. Cuanto más larga sea la pista, más espectacular será el efecto."
+          },
+          {
+            "type": "h2",
+            "text": "El efecto bola de nieve"
+          },
+          {
+            "type": "p",
+            "text": "Haz los números en nuestro [Calculadora de interés compuesto](/finance/compound-interest): pon 200 por mes al 7% durante 30 años y verás que la mayor parte del saldo final provino del crecimiento, no de tus contribuciones."
+          },
+          {
+            "type": "h2",
+            "text": "El tiempo supera a la cantidad"
+          },
+          {
+            "type": "p",
+            "text": "Invertir 100 al mes a partir de los 25 años a menudo es mejor que invertir 300 al mes a partir de los 40 años. El dinero inicial se acumula durante 15 años adicionales, y esos años hacen el trabajo pesado. Por eso la procrastinación es el hábito más caro en las finanzas personales."
+          },
+          {
+            "type": "callout",
+            "text": "El factor más importante en la capitalización es el momento de inicio. No puedes recuperar los años perdidos, por mucho que añadas después."
+          },
+          {
+            "type": "h2",
+            "text": "Hazlo automático"
+          },
+          {
+            "type": "p",
+            "text": "Combine la composición con coherencia utilizando un [Calculadora de objetivos de ahorro](/finance/savings-goal). Establezca el objetivo, establezca la fecha y deje que las contribuciones periódicas hagan el resto."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "IMC, grasa corporal y lo que realmente significa su peso",
+        "excerpt": "Si te subes a una báscula, el número se sentirá como un veredicto. Pero el peso por sí solo oculta más de lo que revela. El IMC es un punto de partida, no una meta.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tendemos a tratar un único número de peso como toda la historia. No lo es. Dos personas pueden pesar lo mismo y tener cuerpos completamente diferentes. La pregunta útil no es sólo cuánto pesas, sino de qué está hecho ese peso."
+          },
+          {
+            "type": "h2",
+            "text": "Lo que realmente mide el IMC"
+          },
+          {
+            "type": "p",
+            "text": "El índice de masa corporal es el peso dividido por la altura al cuadrado. Lo agrupa en bajo peso, normal, sobrepeso u obesidad. Es una pantalla barata, rápida y podrás encontrar tu número con el [Calculadora de IMC](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Donde el IMC se queda corto"
+          },
+          {
+            "type": "p",
+            "text": "El músculo pesa más que la grasa. Un atleta entrenado puede interpretar como sobrepeso aunque tenga muy poca grasa corporal. Es por eso que [Calculadora de grasa corporal](/health/body-fat) y las estimaciones de masa magra brindan una imagen más completa que el IMC por sí solo."
+          },
+          {
+            "type": "callout",
+            "text": "Utilice el IMC como criterio de evaluación, no como diagnóstico. El tamaño de la cintura y la composición corporal suelen contar la historia más honesta."
+          },
+          {
+            "type": "h2",
+            "text": "Una lente más saludable"
+          },
+          {
+            "type": "p",
+            "text": "En lugar de fijarse en la báscula, combine su [Calculadora de TMB](/health/bmr-calculator) y [Calculadora TDEE](/health/tdee-calculator) para comprender sus necesidades energéticas. El peso es un indicador rezagado; El equilibrio energético es lo que realmente puedes controlar."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Cómo los pagos hipotecarios adicionales le ahorran años de intereses",
+        "excerpt": "Una hipoteca a 30 años genera principalmente intereses en los primeros años. Pequeños pagos adicionales pueden ahorrar años y miles de dólares del préstamo.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Los primeros años de una hipoteca pueden resultar desalentadores: un pago grande, pero el saldo apenas se mueve. Esto se debe a que los pagos anticipados se destinan principalmente a intereses. La buena noticia es que los pagos adicionales afectan más al capital exactamente cuando más importa."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo funciona la amortización"
+          },
+          {
+            "type": "p",
+            "text": "La amortización anticipa los intereses. Nuestro [Calculadora de hipotecas](/finance/mortgage) muestra la división entre capital e intereses de cada mes, para que pueda ver con qué lentitud cae el saldo al principio."
+          },
+          {
+            "type": "h2",
+            "text": "El poder de una pequeña cantidad extra"
+          },
+          {
+            "type": "p",
+            "text": "En un préstamo típico, 100 adicionales por mes pueden reducir de cuatro a seis años el plazo y ahorrar decenas de miles en intereses. Cuanto antes empieces, mayor será el efecto."
+          },
+          {
+            "type": "callout",
+            "text": "Dígale siempre a su prestamista que el pago adicional debe destinarse al capital, no a pagos programados futuros."
+          },
+          {
+            "type": "h2",
+            "text": "Comparar la compensación"
+          },
+          {
+            "type": "p",
+            "text": "Antes de arrojar todo a la hipoteca, compárelo con otros objetivos utilizando [Calculadora de retorno de la inversión](/finance/roi) y [Calculadora de objetivos de ahorro](/finance/savings-goal). A veces, una inversión con mayor rentabilidad es mejor que pagar el préstamo anticipadamente."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Porcentajes en la vida real: descuentos, propinas e impuestos simplificados",
+        "excerpt": "Los porcentajes rigen los cálculos cotidianos del dinero, desde las ventas y las propinas hasta los impuestos y los intereses. Una vez que el patrón hace clic, puedes hacer la mayor parte en tu cabeza.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Porcentaje significa por cien. Ancle cada problema de porcentaje a 100 y la mayoría dejará de ser intimidante. La misma idea impulsa los descuentos, las propinas, los impuestos y el crecimiento."
+          },
+          {
+            "type": "h2",
+            "text": "Descuentos"
+          },
+          {
+            "type": "p",
+            "text": "Un descuento del 30% en un artículo de 80 ahorra 24, lo que deja 56. El atajo es multiplicar el precio (1 menos la tarifa). Nuestro [Calculadora de descuento](/math/discount) lo hace instantáneamente, pero la versión mental es útil en la caja registradora."
+          },
+          {
+            "type": "h2",
+            "text": "Consejos"
+          },
+          {
+            "type": "p",
+            "text": "Una propina del 18% en un billete de 50 es 9. El [Calculadora de propinas](/math/tip) maneja grupos y redondeos, pero aquí está el truco: el 10% es fácil de encontrar y el 20% es simplemente el doble."
+          },
+          {
+            "type": "h2",
+            "text": "Impuestos y crecimiento"
+          },
+          {
+            "type": "p",
+            "text": "La misma lógica porcentual describe el interés y la inflación. Vea cómo una tasa se compone con el tiempo con [Calculadora de porcentaje](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Porcentaje significa literalmente por cien. Ancle cada problema de porcentaje a 100 y se volverá simple rápidamente."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Calorías, TMB y TDEE: planificación de una dieta que realmente funcione",
+        "excerpt": "Comer menos, moverse más es cierto pero inútil sin números. Tus necesidades calóricas son personales y dos calculadoras explican por qué.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Los consejos dietéticos genéricos ignoran el hecho de que cada persona quema una cantidad diferente de energía. La solución es estimar primero sus propios números y luego elaborar un plan en torno a ellos."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: tu quemadura en reposo"
+          },
+          {
+            "type": "p",
+            "text": "La tasa metabólica basal son las calorías que quemas en reposo absoluto, manteniéndote con vida. Encuentra el tuyo con el [Calculadora de TMB](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: tu verdadera necesidad diaria"
+          },
+          {
+            "type": "p",
+            "text": "El gasto energético diario total suma tu actividad además de la TMB. El [Calculadora TDEE](/health/tdee-calculator) convierte eso en un objetivo diario que realmente puedes comer."
+          },
+          {
+            "type": "h2",
+            "text": "Perder o ganar peso"
+          },
+          {
+            "type": "p",
+            "text": "Un déficit de aproximadamente 500 kcal por día equivale aproximadamente a medio kilo por semana. Realice un seguimiento de su comida con el [Calculadora de calorías](/health/calorie-calculator) y de sus macros con el [Calculadora de macros](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Las dietas estrictas arrojan agua, no grasa. Apunte a un déficit modesto y sostenible que pueda mantener durante meses."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Conversiones de unidades de cocción: tazas, gramos y onzas sin conjeturas",
+        "excerpt": "Una receta lleva 200 g de harina pero tus tazas son imperiales. La conversión de unidades de cocina no debería arruinar la cena.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cocinar con recetas de diferentes países significa hacer malabarismos con tazas, gramos, onzas y mililitros. La medida confiable es dejar de medir por volumen y comenzar a medir por peso."
+          },
+          {
+            "type": "h2",
+            "text": "El peso gana al volumen"
+          },
+          {
+            "type": "p",
+            "text": "Una taza de harina puede variar hasta un 20% dependiendo de cómo la saques. Nuestro [Convertidor de unidades de cocción](/cooking/cooking-units) maneja tazas, gramos, onzas y mililitros para que sus resultados sean constantes."
+          },
+          {
+            "type": "h2",
+            "text": "Recetas de escala"
+          },
+          {
+            "type": "p",
+            "text": "Duplicar una receta a mano es propenso a errores. El [Escalador de recetas](/cooking/recipe-scaler) ajusta cada ingrediente automáticamente y el [Calculadora de costos de alimentos](/cooking/food-cost) fija el precio si estás cocinando para una multitud."
+          },
+          {
+            "type": "callout",
+            "text": "La harina y el azúcar no son intercambiables por volumen. Siempre convierta por peso cuando hornee."
+          },
+          {
+            "type": "h2",
+            "text": "Más allá de la cocina"
+          },
+          {
+            "type": "p",
+            "text": "Para mediciones generales, el [Convertidor de unidades](/math/unit-converter) cubre la duración, la temperatura y más cuando una receta se desvía hacia un territorio donde no se cocina."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Bola de nieve frente a avalancha de deuda: ¿qué método de pago gana?",
+        "excerpt": "Dos métodos populares prometen aplastar la deuda. Difieren en una pregunta: ¿se paga por emoción o por matemáticas?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Si tiene varias deudas, el orden en que las cancele importa tanto como el monto. Las dos estrategias más conocidas atacan ese orden de manera muy diferente."
+          },
+          {
+            "type": "h2",
+            "text": "Bola de nieve: la motivación primero"
+          },
+          {
+            "type": "p",
+            "text": "Enumere las deudas del saldo más pequeño al más grande. Pague el mínimo en todos y luego deseche cada dólar extra en el más pequeño. Las victorias rápidas generan impulso. Modele todo en nuestro [Calculadora de bola de nieve y avalancha de deuda](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Avalancha: las matemáticas primero"
+          },
+          {
+            "type": "p",
+            "text": "Pague primero la tasa de interés más alta. Ahorras la mayor cantidad de dinero y terminas más rápido, pero el progreso inicial puede parecer lento porque persisten grandes saldos."
+          },
+          {
+            "type": "callout",
+            "text": "Matemáticamente, la avalancha gana. Desde el punto de vista del comportamiento, la bola de nieve a menudo se queda. Elige el que realmente terminarás."
+          },
+          {
+            "type": "h2",
+            "text": "No olvides la tarifa"
+          },
+          {
+            "type": "p",
+            "text": "Antes de elegir, compara el costo de tu deuda con lo que podrías ganar invirtiendo con el [Calculadora de retorno de la inversión](/finance/roi). A veces vale la pena invertir haciendo pagos mínimos."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Última actualización: 11 de agosto de 2026.",

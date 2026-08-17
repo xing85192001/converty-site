@@ -6585,7 +6585,321 @@
       "cooking": "Yemek Pişirme"
     },
     "relatedTitle": "İlgili makaleler",
-    "heroBadge": "Pratik kılavuzlar ve hesap makineleri"
+    "heroBadge": "Pratik kılavuzlar ve hesap makineleri",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "50/30/20 Bütçesi: Gerçekten Uygulanan Basit Bir Plan",
+        "excerpt": "Bir bütçe ancak onu sürdürebilirseniz işe yarar. 50/30/20 kuralı basit olduğu için popülerdir: Vergi sonrası gelirinizi ihtiyaçlara, isteklere ve tasarruflara bölün.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bütçelerin çoğu yanlış oldukları için değil, yorucu oldukları için başarısız oluyor. 50/30/20 kuralı işe yarıyor çünkü mükemmellik değil farkındalık istiyor. Eve dönüş maaşınızı üç kısma bölersiniz ve oradan ayarlarsınız."
+          },
+          {
+            "type": "h2",
+            "text": "Üç kova"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "İhtiyaçlar (%50): kira veya ipotek, yiyecek, kamu hizmetleri, sigorta, asgari borç ödemeleri.",
+              "İstedikleri (%30): dışarıda yemek yemek, yayın yapmak, hobiler, seyahat, hayatı güzel hissettiren şeyler.",
+              "Tasarruf (%20): acil durum fonu, emeklilik ve ekstra borç ödemeleri."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Vergi sonrası gelirinizi hesaplayarak başlayın. Kesintilerden sonra hesabınıza ne düşeceğinden emin değilseniz, [Gelir Vergisi Hesaplayıcı](/finance/income-tax) ekibimiz öncelikle net maaşınızı tahmin edebilir."
+          },
+          {
+            "type": "h2",
+            "text": "Neden işe yarıyor?"
+          },
+          {
+            "type": "p",
+            "text": "Kural, kalanla değil, harcamadan önce tasarruf alışkanlığını zorluyor. Sabit %20'lik bir oran bile şaşırtıcı derecede hızlı bir şekilde gerçek bir yastık oluşturur ve yapı, kovanın taştığı anda aşırı harcamayı açıkça ortaya koyar."
+          },
+          {
+            "type": "callout",
+            "text": "Maaş gününde %20 transferini otomatik hale getirin, böylece tasarruf siz harcamadan önce gerçekleşir. Bütün mesele gözden uzak olmak."
+          },
+          {
+            "type": "h2",
+            "text": "Ne zaman ayarlama yapılmalı"
+          },
+          {
+            "type": "p",
+            "text": "Yüksek maliyetli şehirlerde bölünmenin bir süreliğine 60/20/20 olması gerekebilir ve bu normaldir. Önemli olan yöndür, katı bir sayı değil. %20'nizin zaman içinde nasıl birleştiğini görmek için [Tasarruf Hedefi Hesaplayıcı](/finance/savings-goal) ürünümüzü kullanın."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Bileşik Faiz: Neden Erken Başlamak Daha Sonra Daha Fazla Tasarruf Etmekten Daha İyidir?",
+        "excerpt": "Albert Einstein'ın bileşik faizi dünyanın sekizinci harikası olarak adlandırdığı iddia ediliyor. O öyle söylesin ya da söylemesin, matematik gerçektir: Paranız getiri sağlar ve sonra bu getiriler getiri kazanır.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bileşik oluşturma neredeyse her uzun vadeli finansal hedefin arkasındaki sessiz motordur. Para yatırırsınız, büyür ve büyümenin kendisi daha fazla kazanmaya başlar. Pist ne kadar uzun olursa, etki o kadar dramatik olur."
+          },
+          {
+            "type": "h2",
+            "text": "Kartopu etkisi"
+          },
+          {
+            "type": "p",
+            "text": "[Bileşik Faiz Hesaplayıcı](/finance/compound-interest)'daki rakamları çalıştırın: 30 yıl boyunca ayda 200'ü %7 olarak koyun ve nihai bakiyenin çoğunun katkılarınızdan değil, büyümeden geldiğini göreceksiniz."
+          },
+          {
+            "type": "h2",
+            "text": "Zaman miktarı yener"
+          },
+          {
+            "type": "p",
+            "text": "25 yaşından itibaren ayda 100 dolar yatırım yapmak, genellikle 40 yaşından itibaren ayda 300 dolar yatırım yapmaktan daha iyidir. Erken para, fazladan 15 yıl daha biriktirir ve bu yıllar işin ağır yükünü taşır. Bu nedenle erteleme, kişisel finanstaki en pahalı alışkanlıktır."
+          },
+          {
+            "type": "callout",
+            "text": "Bileşimdeki en büyük faktör başlangıç zamanıdır. Kaybedilen yılları sonradan ne kadar eklerseniz ekleyin, geri getiremezsiniz."
+          },
+          {
+            "type": "h2",
+            "text": "Otomatik yap"
+          },
+          {
+            "type": "p",
+            "text": "[Tasarruf Hedefi Hesaplayıcı](/finance/savings-goal) kullanarak bileşik oluşturmayı tutarlılıkla eşleştirin. Hedefi belirleyin, tarihi belirleyin ve gerisini düzenli katkılara bırakın."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, Vücut Yağı ve Kilo Numaranızın Gerçekte Anlamı",
+        "excerpt": "Teraziye adım attığınızda sayı bir karar gibi geliyor. Ancak ağırlık tek başına ortaya çıkardığından daha fazlasını gizler. BMI bir bitiş çizgisi değil, bir başlangıç noktasıdır.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hikayenin tamamı olarak tek bir ağırlık sayısını ele alma eğilimindeyiz. Değil. İki kişi aynı ağırlıkta ve tamamen farklı bedenlere sahip olabilir. Yararlı soru sadece kaç kilo olduğunuz değil, bu ağırlığın neden oluştuğudur."
+          },
+          {
+            "type": "h2",
+            "text": "BMI aslında neyi ölçer?"
+          },
+          {
+            "type": "p",
+            "text": "Beden Kitle İndeksi, ağırlığın boyun karesine bölünmesiyle elde edilir. Sizi zayıf, normal, aşırı kilolu veya obez olarak gruplandırır. Ucuz, hızlı bir ekrandır ve numaranızı [BMI Hesaplayıcı](/health/bmi) ile bulabilirsiniz."
+          },
+          {
+            "type": "h2",
+            "text": "BMI'ın yetersiz kaldığı yerler"
+          },
+          {
+            "type": "p",
+            "text": "Kas yağdan daha ağırdır. Eğitimli bir sporcunun vücut yağı çok düşük olmasına rağmen aşırı kilolu olarak değerlendirilebilir. Bu nedenle [Vücut Yağ Hesaplayıcı](/health/body-fat) ve yağsız kütle tahminleri tek başına BMI'dan daha kapsamlı bir tablo sunar."
+          },
+          {
+            "type": "callout",
+            "text": "BMI'yi teşhis olarak değil, ekran olarak kullanın. Bel ölçüsü ve vücut kompozisyonu genellikle daha dürüst hikayeyi anlatır."
+          },
+          {
+            "type": "h2",
+            "text": "Daha sağlıklı bir mercek"
+          },
+          {
+            "type": "p",
+            "text": "Teraziye bağlı kalmak yerine, enerji ihtiyaçlarınızı anlamak için [BMR Hesaplayıcı](/health/bmr-calculator) ve [TDEE Hesaplayıcı](/health/tdee-calculator) değerlerinizi birleştirin. Ağırlık gecikmeli bir göstergedir; Enerji dengesi gerçekte yönlendirebileceğiniz şeydir."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Ekstra Mortgage Ödemeleri Size Yıllarca Faiz Kazandırır",
+        "excerpt": "30 yıllık bir ipotek çoğunlukla ilk yıllardaki faizdir. Küçük ekstra ödemeler, kredinin yıllar ve binlerce dolardan tasarruf etmesini sağlayabilir.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bir ipoteğin ilk birkaç yılı cesaret kırıcı olabilir: büyük bir ödeme, ancak bakiye zar zor hareket ediyor. Çünkü erken ödemeler çoğunlukla faize gidiyor. İyi haber şu ki, ekstra ödemeler anaparayı tam da en önemli olduğu anda en çok etkiliyor."
+          },
+          {
+            "type": "h2",
+            "text": "Amortisman nasıl çalışır?"
+          },
+          {
+            "type": "p",
+            "text": "Amortisman faizi önden yükler. [İpotek Hesaplayıcı](/finance/mortgage) sayfamız her ay için anapara ve faiz arasındaki ayrımı gösterir, böylece bakiyenin ilk başta ne kadar yavaş düştüğünü görebilirsiniz."
+          },
+          {
+            "type": "h2",
+            "text": "Küçük bir ekstra miktarın gücü"
+          },
+          {
+            "type": "p",
+            "text": "Tipik bir kredide, ayda fazladan 100 dolar, vadenin dört ila altı yılını kısaltabilir ve on binlerce liralık faiz tasarrufu sağlayabilir. Ne kadar erken başlarsanız etkisi o kadar büyük olur."
+          },
+          {
+            "type": "callout",
+            "text": "Borç vereninize her zaman ekstra ödemenin gelecekteki planlı ödemelere değil anaparaya gitmesi gerektiğini söyleyin."
+          },
+          {
+            "type": "h2",
+            "text": "Takasları karşılaştırın"
+          },
+          {
+            "type": "p",
+            "text": "Her şeyi ipoteğe atmadan önce, [ROI Hesaplayıcı](/finance/roi) ve [Tasarruf Hedefi Hesaplayıcı](/finance/savings-goal)'yi kullanarak onu diğer hedeflerle karşılaştırın. Bazen daha yüksek getirili bir yatırım, krediyi erken ödemekten daha iyidir."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Gerçek Hayattaki Yüzdeler: İndirimler, İpuçları ve Vergi Artık Daha Kolay",
+        "excerpt": "Yüzdeler, satışlardan bahşişlere, vergi ve faize kadar paranın günlük matematiğini yürütür. Desen tıklandığında, çoğunu kafanızda yapabilirsiniz.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Yüzde yüz anlamına gelir. Her yüzdelik problemi 100'e sabitleyin ve çoğu artık korkutucu olmayı bıraksın. Aynı fikir indirimlere, bahşişlere, vergiye ve büyümeye de güç veriyor."
+          },
+          {
+            "type": "h2",
+            "text": "İndirimler"
+          },
+          {
+            "type": "p",
+            "text": "80 üründe %30 indirim 24 ürün kurtarır ve geriye 56 puan kalır. Kısayol fiyat süreleridir (1 eksi oran). Bizim [İndirim Hesaplayıcı](/math/discount) bunu anında yapar, ancak zihinsel versiyonu kayıtta kullanışlıdır."
+          },
+          {
+            "type": "h2",
+            "text": "İpuçları"
+          },
+          {
+            "type": "p",
+            "text": "50'lik banknotta %18'lik bahşiş 9'dur. [Bahşiş Hesaplayıcı](/math/tip) grupları ve yuvarlamaları yönetir, ancak işin püf noktası şu: %10'u bulmak kolaydır ve %20 bunun iki katıdır."
+          },
+          {
+            "type": "h2",
+            "text": "Vergi ve büyüme"
+          },
+          {
+            "type": "p",
+            "text": "Aynı yüzde mantığı faiz ve enflasyonu da tanımlar. [Yüzde Hesaplayıcı](/math/percentage-calculator) ile bir oranın zaman içinde nasıl birleştiğini görün."
+          },
+          {
+            "type": "callout",
+            "text": "Yüzde kelime anlamı olarak yüz anlamına gelir. Her yüzde problemini 100'e sabitleyin ve hızlı bir şekilde basitleşir."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kaloriler, BMR ve TDEE: Gerçekten İşe Yarayan Bir Diyet Planlamak",
+        "excerpt": "Daha az ye, daha çok hareket et doğrudur ama rakamlar olmadan işe yaramaz. Kalori ihtiyaçlarınız kişiseldir ve iki hesap makinesi bunun nedenini açıklıyor.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Genel diyet tavsiyeleri herkesin farklı miktarda enerji yaktığı gerçeğini göz ardı ediyor. Çözüm, önce kendi sayılarınızı tahmin etmek, ardından bunların etrafında bir plan oluşturmaktır."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: dinlenme yanığınız"
+          },
+          {
+            "type": "p",
+            "text": "Bazal Metabolizma Hızı, tamamen dinlenme halindeyken yaktığınız ve hayatta kalmanızı sağlayan kaloridir. [BMR Hesaplayıcı](/health/bmr-calculator) ile kendinizinkini bulun."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: gerçek günlük ihtiyacınız"
+          },
+          {
+            "type": "p",
+            "text": "Toplam Günlük Enerji Harcaması, etkinliğinizi BMR'nin üstüne ekler. [TDEE Hesaplayıcı](/health/tdee-calculator) bunu gerçekten yiyebileceğiniz günlük bir hedefe dönüştürür."
+          },
+          {
+            "type": "h2",
+            "text": "Kilo vermek veya almak"
+          },
+          {
+            "type": "p",
+            "text": "Günde yaklaşık 500 kcal'lik bir açık, kabaca haftada bir pound'a denk gelir. Yemeğinizi [Kalori Hesaplayıcı](/health/calorie-calculator) ile, makrolarınızı da [Makro Hesaplayıcı](/health/macro-calculator) ile takip edin."
+          },
+          {
+            "type": "callout",
+            "text": "Şok diyetlerde yağ değil su düşer. Aylarca koruyabileceğiniz mütevazı, sürdürülebilir bir açığı hedefleyin."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Pişirme Ünitesi Dönüşümleri: Tahmin Olmadan Bardak, Gram ve Ons",
+        "excerpt": "Tarifte 200 gr un gerekiyor ama sizin fincanlarınız emperyal. Pişirme ünitelerini dönüştürmek akşam yemeğini mahvetmemelidir.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Farklı ülkelerden tarifler arasında yemek pişirmek, bardak, gram, ons ve mililitre arasında hokkabazlık yapmak anlamına gelir. Güvenilir hareket, hacme göre ölçmeyi bırakıp ağırlığa göre ölçmeye başlamaktır."
+          },
+          {
+            "type": "h2",
+            "text": "Ağırlık hacimden üstün gelir"
+          },
+          {
+            "type": "p",
+            "text": "Bir bardak un, nasıl topladığınıza bağlı olarak %20 oranında değişebilir. [Pişirme Üniteleri Dönüştürücü](/cooking/cooking-units) ürünümüz bardakları, gramları, onsları ve mililitreleri işler, böylece sonuçlarınız tutarlı kalır."
+          },
+          {
+            "type": "h2",
+            "text": "Tarifleri ölçeklendirme"
+          },
+          {
+            "type": "p",
+            "text": "Bir tarifi elle iki katına çıkarmak hataya açıktır. [Tarif Ölçekleyici](/cooking/recipe-scaler) her malzemeyi otomatik olarak ayarlar ve kalabalık için yemek pişiriyorsanız [Gıda Maliyeti Hesaplayıcı](/cooking/food-cost) fiyatlandırır."
+          },
+          {
+            "type": "callout",
+            "text": "Un ve şeker hacimce birbirinin yerine kullanılamaz. Pişirirken daima ağırlığa göre dönüştürün."
+          },
+          {
+            "type": "h2",
+            "text": "Mutfağın ötesinde"
+          },
+          {
+            "type": "p",
+            "text": "Genel ölçümler için [Birim Dönüştürücü](/math/unit-converter), bir tarifin pişirme dışı bölgeye sapması durumunda uzunluğu, sıcaklığı ve daha fazlasını kapsar."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Borç Kartopu ve Çığ: Hangi Ödeme Yöntemi Kazanır?",
+        "excerpt": "İki popüler yöntem borcu ezmeyi vaat ediyor. Bir soruda farklılık gösteriyorlar: Duyguya göre mi yoksa matematiğe göre mi ödeme yapıyorsunuz?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Birden fazla borcunuz varsa, miktar kadar bunları ödeme talimatınız da önemlidir. En iyi bilinen iki strateji bu sıraya çok farklı şekilde saldırır."
+          },
+          {
+            "type": "h2",
+            "text": "Kartopu: önce motivasyon"
+          },
+          {
+            "type": "p",
+            "text": "Borçları en küçük bakiyeden en büyüğe doğru sıralayın. Asgari tutarı ödeyin, sonra her ekstra doları en küçüğüne atın. Hızlı zaferler ivme yaratır. Her şeyi [Borç Kartopu ve Çığ Hesaplayıcı](/finance/debt-snowball-avalanche)'da modelleyin."
+          },
+          {
+            "type": "h2",
+            "text": "Çığ: önce matematik"
+          },
+          {
+            "type": "p",
+            "text": "Önce en yüksek faizi ödeyin. En fazla parayı biriktirir ve en hızlı şekilde bitirirsiniz, ancak büyük bakiyeler oyalandığı için erken ilerleme yavaş gelebilir."
+          },
+          {
+            "type": "callout",
+            "text": "Matematiksel olarak çığ kazanır. Davranışsal olarak kartopu sıklıkla yapışır. Gerçekten bitireceğinizi seçin."
+          },
+          {
+            "type": "h2",
+            "text": "Oranı unutma"
+          },
+          {
+            "type": "p",
+            "text": "Seçim yapmadan önce borcunuzun maliyetini [ROI Hesaplayıcı](/finance/roi) ile yatırım yaparak kazanabileceğiniz tutarla karşılaştırın. Bazen asgari ödemeleri yaparken yatırım yapmak da işe yarar."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Son güncelleme: 11 Ağustos 2026.",

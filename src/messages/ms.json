@@ -6600,7 +6600,321 @@
       "cooking": "Memasak"
     },
     "relatedTitle": "Artikel berkaitan",
-    "heroBadge": "Panduan praktikal & kalkulator"
+    "heroBadge": "Panduan praktikal & kalkulator",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Bajet 50/30/20: Pelan Mudah Yang Sebenarnya Tetap",
+        "excerpt": "Belanjawan hanya berfungsi jika anda boleh mengekalkannya. Peraturan 50/30/20 popular kerana ia mudah: bahagikan pendapatan selepas cukai anda kepada keperluan, kehendak dan simpanan.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kebanyakan belanjawan gagal bukan kerana ia salah, tetapi kerana ia meletihkan. Peraturan 50/30/20 berfungsi kerana ia meminta kesedaran, bukan kesempurnaan. Anda membahagikan gaji bawa pulang anda kepada tiga baldi dan laraskan dari sana."
+          },
+          {
+            "type": "h2",
+            "text": "Tiga baldi"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Keperluan (50%): sewa atau gadai janji, barangan runcit, utiliti, insurans, pembayaran hutang minimum.",
+              "Kemahuan (30%): makan di luar, penstriman, hobi, perjalanan, perkara-perkara yang membuatkan hidup terasa menyenangkan.",
+              "Simpanan (20%): dana kecemasan, persaraan dan sebarang pembayaran hutang tambahan."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Mulakan dengan mengira pendapatan selepas cukai anda. Jika anda tidak pasti apa yang terdapat dalam akaun anda selepas potongan, [Kalkulator Cukai Pendapatan](/finance/income-tax) kami boleh menganggarkan gaji bersih anda dahulu."
+          },
+          {
+            "type": "h2",
+            "text": "Mengapa ia berfungsi"
+          },
+          {
+            "type": "p",
+            "text": "Peraturan itu memaksa tabiat menyimpan sebelum berbelanja, bukan dengan apa-apa yang tertinggal. Malah kadar 20% yang stabil membina kusyen sebenar dengan sangat pantas, dan strukturnya menjadikan lebihan perbelanjaan jelas apabila baldi melimpah."
+          },
+          {
+            "type": "callout",
+            "text": "Automatikkan pemindahan 20% pada hari gaji supaya penjimatan berlaku sebelum anda boleh membelanjakannya. Tidak dapat dilihat adalah keseluruhannya."
+          },
+          {
+            "type": "h2",
+            "text": "Bila nak adjust"
+          },
+          {
+            "type": "p",
+            "text": "Di bandar kos tinggi, pemisahan mungkin perlu 60/20/20 untuk seketika, dan itu tidak mengapa. Intinya adalah arah, bukan nombor tegar. Gunakan [Kalkulator Matlamat Simpanan](/finance/savings-goal) kami untuk melihat bagaimana 20% kompaun anda dari semasa ke semasa."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Faedah Kompaun: Mengapa Memulakan Pukulan Awal Menyimpan Lebih Kemudian",
+        "excerpt": "Albert Einstein kononnya memanggil faedah kompaun sebagai keajaiban dunia yang kelapan. Sama ada dia mengatakannya atau tidak, matematiknya adalah nyata: wang anda memperoleh pulangan, dan kemudian pulangan tersebut memperoleh pulangan.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pengkompaunan ialah enjin yang tenang di sebalik hampir setiap matlamat kewangan jangka panjang. Anda melabur wang, ia berkembang, dan pertumbuhan itu sendiri mula memperoleh lebih banyak. Semakin panjang landasan, semakin dramatik kesannya."
+          },
+          {
+            "type": "h2",
+            "text": "Kesan bola salji"
+          },
+          {
+            "type": "p",
+            "text": "Jalankan nombor dalam [Kalkulator Faedah Kompaun](/finance/compound-interest) kami: letakkan 200 sebulan pada 7% selama 30 tahun dan anda akan melihat bahawa kebanyakan baki akhir datang daripada pertumbuhan, bukan daripada sumbangan anda."
+          },
+          {
+            "type": "h2",
+            "text": "Jumlah masa berdegup"
+          },
+          {
+            "type": "p",
+            "text": "Melabur 100 sebulan dari umur 25 selalunya mengatasi pelaburan 300 sebulan dari umur 40 tahun. Wang awal dikompaun untuk tambahan 15 tahun, dan tahun-tahun itu melakukan yang berat. Inilah sebabnya mengapa penangguhan adalah tabiat yang paling mahal dalam kewangan peribadi."
+          },
+          {
+            "type": "callout",
+            "text": "Satu-satunya faktor terbesar dalam pengkompaunan ialah masa mula. Anda tidak boleh memulihkan tahun yang hilang, tidak kira berapa banyak yang anda tambah kemudian."
+          },
+          {
+            "type": "h2",
+            "text": "Jadikannya automatik"
+          },
+          {
+            "type": "p",
+            "text": "Gandingkan pengkompaunan dengan konsisten menggunakan [Kalkulator Matlamat Simpanan](/finance/savings-goal). Tetapkan sasaran, tetapkan tarikh, dan biarkan sumbangan tetap melakukan yang lain."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, Lemak Badan dan Maksud Nombor Berat Anda",
+        "excerpt": "Langkah pada skala dan nombor itu terasa seperti keputusan. Tetapi berat sahaja menyembunyikan lebih daripada yang didedahkan. BMI adalah titik permulaan, bukan garisan penamat.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kami cenderung untuk menganggap nombor berat tunggal sebagai keseluruhan cerita. Ia tidak. Dua orang boleh mempunyai berat yang sama dan mempunyai badan yang sama sekali berbeza. Soalan yang berguna bukan hanya berapa berat anda, tetapi dari apa berat itu dibuat."
+          },
+          {
+            "type": "h2",
+            "text": "Apa yang sebenarnya diukur oleh BMI"
+          },
+          {
+            "type": "p",
+            "text": "Indeks Jisim Badan ialah berat dibahagikan dengan ketinggian kuasa dua. Ia mengelompokkan anda sebagai kurang berat badan, normal, berat badan berlebihan atau obes. Ia adalah skrin yang murah dan pantas, dan anda boleh mencari nombor anda dengan [Kalkulator BMI](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Di mana BMI jatuh pendek"
+          },
+          {
+            "type": "p",
+            "text": "Berat otot lebih daripada lemak. Seorang atlet yang terlatih boleh dikatakan sebagai berat badan berlebihan manakala mempunyai lemak badan yang sangat rendah. Itulah sebabnya [Kalkulator Lemak Badan](/health/body-fat) dan anggaran jisim tanpa lemak memberikan gambaran yang lebih lengkap daripada BMI sahaja."
+          },
+          {
+            "type": "callout",
+            "text": "Gunakan BMI sebagai skrin, bukan diagnosis. Saiz pinggang dan komposisi badan biasanya menceritakan kisah yang lebih jujur."
+          },
+          {
+            "type": "h2",
+            "text": "Lensa yang lebih sihat"
+          },
+          {
+            "type": "p",
+            "text": "Daripada menetapkan pada skala, gabungkan [Kalkulator BMR](/health/bmr-calculator) dan [Kalkulator TDEE](/health/tdee-calculator) anda untuk memahami keperluan tenaga anda. Berat adalah penunjuk ketinggalan; keseimbangan tenaga adalah perkara yang sebenarnya anda boleh kemudi."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Bagaimana Bayaran Gadai Janji Tambahan Menjimatkan Faedah Anda Bertahun-tahun",
+        "excerpt": "Gadai janji 30 tahun kebanyakannya faedah pada tahun-tahun awal. Bayaran tambahan yang kecil boleh mengurangkan tahun, dan beribu-ribu dolar, daripada pinjaman.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beberapa tahun pertama gadai janji boleh berasa mengecewakan: bayaran yang besar, tetapi bakinya hampir tidak bergerak. Ini kerana pembayaran awal kebanyakannya kepada faedah. Berita baiknya ialah pembayaran tambahan mencecah prinsipal paling sukar tepat apabila ia paling penting."
+          },
+          {
+            "type": "h2",
+            "text": "Cara pelunasan berfungsi"
+          },
+          {
+            "type": "p",
+            "text": "Faedah beban hadapan pelunasan. [Kalkulator Gadai Janji](/finance/mortgage) kami menunjukkan pemisahan antara prinsipal dan faedah untuk setiap bulan, jadi anda boleh melihat betapa perlahan baki jatuh pada mulanya."
+          },
+          {
+            "type": "h2",
+            "text": "Kuasa jumlah tambahan yang kecil"
+          },
+          {
+            "type": "p",
+            "text": "Pada pinjaman biasa, tambahan 100 sebulan boleh mengurangkan tempoh empat hingga enam tahun dan menjimatkan berpuluh-puluh ribu faedah. Lagi cepat anda mula, lagi besar kesannya."
+          },
+          {
+            "type": "callout",
+            "text": "Sentiasa beritahu pemberi pinjaman anda bahawa bayaran tambahan harus diberikan kepada prinsipal, bukan kepada pembayaran berjadual pada masa hadapan."
+          },
+          {
+            "type": "h2",
+            "text": "Bandingkan pertukaran"
+          },
+          {
+            "type": "p",
+            "text": "Sebelum membuang segala-galanya pada gadai janji, timbangkannya dengan matlamat lain menggunakan [Kalkulator ROI](/finance/roi) dan [Kalkulator Matlamat Simpanan](/finance/savings-goal). Kadangkala pelaburan pulangan yang lebih tinggi mengatasi pembayaran pinjaman awal."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Peratusan dalam Kehidupan Sebenar: Diskaun, Petua dan Cukai Dipermudahkan",
+        "excerpt": "Peratusan menjalankan matematik harian wang, daripada jualan dan petua kepada cukai dan faedah. Sebaik sahaja corak diklik, anda boleh melakukan kebanyakannya dalam kepala anda.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Peratus bermakna setiap ratus. Menambatkan setiap peratusan masalah kepada 100 dan kebanyakannya berhenti menakutkan. Idea yang sama memberi kuasa kepada diskaun, petua, cukai dan pertumbuhan."
+          },
+          {
+            "type": "h2",
+            "text": "Diskaun"
+          },
+          {
+            "type": "p",
+            "text": "Diskaun 30% pada 80 item menjimatkan 24, meninggalkan 56. Pintasan ialah masa harga (1 tolak kadar). [Kalkulator Diskaun](/math/discount) kami melakukannya serta-merta, tetapi versi mentalnya berguna di daftar."
+          },
+          {
+            "type": "h2",
+            "text": "Petua"
+          },
+          {
+            "type": "p",
+            "text": "Petua 18% pada bil 50 ialah 9. [Kalkulator Petua](/math/tip) mengendalikan kumpulan dan pembundaran, tetapi berikut ialah helahnya: 10% mudah dicari dan 20% adalah dua kali ganda."
+          },
+          {
+            "type": "h2",
+            "text": "Cukai dan pertumbuhan"
+          },
+          {
+            "type": "p",
+            "text": "Logik peratusan yang sama menggambarkan faedah dan inflasi. Lihat bagaimana kadar sebatian dari semasa ke semasa dengan [Kalkulator Peratusan](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Peratus secara literal bermaksud per ratus. Menambatkan setiap peratusan masalah kepada 100 dan ia menjadi mudah dengan cepat."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Kalori, BMR, dan TDEE: Merancang Diet Yang Sebenarnya Berfungsi",
+        "excerpt": "Makan lebih sedikit, bergerak lebih adalah benar tetapi tidak berguna tanpa nombor. Keperluan kalori anda adalah peribadi, dan dua kalkulator menerangkan sebabnya.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nasihat diet generik mengabaikan hakikat bahawa setiap orang membakar jumlah tenaga yang berbeza. Penyelesaiannya adalah untuk menganggarkan nombor anda sendiri dahulu, kemudian membina rancangan di sekelilingnya."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: melecur rehat anda"
+          },
+          {
+            "type": "p",
+            "text": "Kadar Metabolik Basal ialah kalori yang anda bakar semasa rehat lengkap, hanya memastikan anda terus hidup. Cari milik anda dengan [Kalkulator BMR](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: keperluan harian sebenar anda"
+          },
+          {
+            "type": "p",
+            "text": "Jumlah Perbelanjaan Tenaga Harian menambah aktiviti anda di atas BMR. [Kalkulator TDEE](/health/tdee-calculator) mengubahnya menjadi sasaran harian yang sebenarnya anda boleh makan."
+          },
+          {
+            "type": "h2",
+            "text": "Menurun atau menambah berat badan"
+          },
+          {
+            "type": "p",
+            "text": "Defisit kira-kira 500 kcal sehari adalah kira-kira satu paun seminggu. Jejaki makanan anda dengan [Kalkulator Kalori](/health/calorie-calculator) dan makro anda dengan [Kalkulator Makro](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Crash diet menjatuhkan air, bukan lemak. Matlamat untuk defisit yang sederhana dan mampan yang boleh anda simpan selama berbulan-bulan."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Penukaran Unit Memasak: Cawan, Gram dan Auns Tanpa Tekaan",
+        "excerpt": "Resipi memerlukan 200 g tepung tetapi cawan anda adalah imperial. Menukar unit memasak tidak sepatutnya merosakkan makan malam.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Memasak merentas resipi dari negara yang berbeza bermakna mengimbangi cawan, gram, auns dan mililiter. Langkah yang boleh dipercayai ialah berhenti mengukur mengikut isipadu dan mula mengukur mengikut berat."
+          },
+          {
+            "type": "h2",
+            "text": "Berat mengalahkan kelantangan"
+          },
+          {
+            "type": "p",
+            "text": "Secawan tepung boleh berbeza-beza sebanyak 20% bergantung pada cara anda mencedoknya. [Penukar Unit Memasak](/cooking/cooking-units) kami mengendalikan cawan, gram, auns dan mililiter supaya keputusan anda kekal konsisten."
+          },
+          {
+            "type": "h2",
+            "text": "Resipi skala"
+          },
+          {
+            "type": "p",
+            "text": "Menggandakan resipi dengan tangan adalah terdedah kepada kesilapan. [Pengukur Resipi](/cooking/recipe-scaler) melaraskan setiap ramuan secara automatik, dan [Kalkulator Kos Makanan](/cooking/food-cost) memberi harga jika anda memasak untuk orang ramai."
+          },
+          {
+            "type": "callout",
+            "text": "Tepung dan gula tidak boleh ditukar mengikut isipadu. Sentiasa tukar mengikut berat apabila anda membakar."
+          },
+          {
+            "type": "h2",
+            "text": "Di luar dapur"
+          },
+          {
+            "type": "p",
+            "text": "Untuk ukuran umum, [Penukar Unit](/math/unit-converter) meliputi panjang, suhu dan banyak lagi apabila resipi tersasar ke kawasan bukan memasak."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Bola Salji Hutang vs. Avalanche: Kaedah Pembayaran Mana Yang Menang?",
+        "excerpt": "Dua kaedah popular menjanjikan untuk menghancurkan hutang. Mereka berbeza pada satu soalan: adakah anda membayar dengan emosi, atau mengikut matematik?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Jika anda membawa beberapa hutang, pesanan yang anda bayar adalah sama pentingnya dengan jumlahnya. Dua strategi yang paling terkenal menyerang perintah itu dengan sangat berbeza."
+          },
+          {
+            "type": "h2",
+            "text": "Bola salji: motivasi dahulu"
+          },
+          {
+            "type": "p",
+            "text": "Senaraikan hutang baki terkecil hingga terbesar. Bayar minimum pada semua, kemudian buang setiap dolar tambahan pada yang terkecil. Kemenangan cepat membina momentum. Modelkan semuanya dalam [Kalkulator Bola Salji Hutang dan Salji Salji](/finance/debt-snowball-avalanche) kami."
+          },
+          {
+            "type": "h2",
+            "text": "Avalanche: matematik dahulu"
+          },
+          {
+            "type": "p",
+            "text": "Bayar kadar faedah tertinggi dahulu. Anda menjimatkan wang paling banyak dan menyelesaikan paling cepat, tetapi kemajuan awal boleh terasa perlahan kerana baki yang besar berlarutan."
+          },
+          {
+            "type": "callout",
+            "text": "Secara matematik, runtuhan salji menang. Dari segi tingkah laku, bola salji sering melekat. Pilih yang sebenarnya anda akan selesaikan."
+          },
+          {
+            "type": "h2",
+            "text": "Jangan lupa kadarnya"
+          },
+          {
+            "type": "p",
+            "text": "Sebelum memilih, bandingkan kos hutang anda dengan jumlah yang mungkin anda perolehi dengan melabur dengan [Kalkulator ROI](/finance/roi). Kadangkala ia membayar untuk melabur sambil membuat pembayaran minimum."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Kemas kini terakhir: 11 Ogos 2026.",

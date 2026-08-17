@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BlogList } from "@/components/blog/blog-list";
 import { locales } from "@/i18n/config";
-import { type BlogCategory, blogPosts } from "@/lib/blog/posts";
+import type { BlogCategory } from "@/lib/blog/posts";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -59,7 +59,6 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
       {/* Content */}
       <section className="container max-w-6xl py-12 sm:py-16">
         <BlogList
-          posts={blogPosts}
           locale={locale}
           categoryLabels={categoryLabels}
           strings={{

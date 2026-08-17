@@ -1,14 +1,15 @@
 "use client";
 
 import { ArrowRight, CalendarDays, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "@/i18n/navigation";
-import type { BlogCategory, BlogPost } from "@/lib/blog/posts";
+import type { BlogCategory } from "@/lib/blog/posts";
+import { blogPosts, localizePosts } from "@/lib/blog/posts";
 import { getCategoryStyle } from "@/lib/blog/styles";
 
 interface BlogListProps {
-  posts: BlogPost[];
   locale: string;
   categoryLabels: Record<BlogCategory, string>;
   strings: {
@@ -19,8 +20,11 @@ interface BlogListProps {
   };
 }
 
-export function BlogList({ posts, locale, categoryLabels, strings }: BlogListProps) {
+export function BlogList({ locale, categoryLabels, strings }: BlogListProps) {
   const [active, setActive] = useState<BlogCategory | "all">("all");
+  const postsT = useTranslations("blog.posts");
+
+  const posts = useMemo(() => localizePosts(blogPosts, postsT), [postsT]);
 
   const categories = useMemo(
     () => Array.from(new Set(posts.map((p) => p.category))) as BlogCategory[],

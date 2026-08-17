@@ -6600,7 +6600,321 @@
       "cooking": "Cozinhando"
     },
     "relatedTitle": "Artigos relacionados",
-    "heroBadge": "Guias práticos e calculadoras"
+    "heroBadge": "Guias práticos e calculadoras",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "O orçamento 50/30/20: um plano simples que realmente funciona",
+        "excerpt": "Um orçamento só funciona se você conseguir mantê-lo. A regra 50/30/20 é popular porque é simples: divida sua renda após os impostos em necessidades, desejos e poupanças.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A maioria dos orçamentos falha não porque estão errados, mas porque são exaustivos. A regra 50/30/20 funciona porque exige consciência, não perfeição. Você divide seu salário líquido em três grupos e ajusta a partir daí."
+          },
+          {
+            "type": "h2",
+            "text": "Os três baldes"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Necessidades (50%): aluguel ou hipoteca, mantimentos, serviços públicos, seguros, pagamentos mínimos de dívidas.",
+              "Desejos (30%): jantar fora, streaming, hobbies, viagens, coisas que fazem a vida ser boa.",
+              "Poupança (20%): fundo de emergência, aposentadoria e quaisquer pagamentos extras de dívidas."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Comece calculando sua renda após impostos. Se você não tiver certeza do que vai para sua conta após as deduções, nosso [Calculadora de Imposto de Renda](/finance/income-tax) pode estimar seu salário líquido primeiro."
+          },
+          {
+            "type": "h2",
+            "text": "Por que funciona"
+          },
+          {
+            "type": "p",
+            "text": "A regra obriga ao hábito de poupar antes de gastar, e não com o que sobrar. Mesmo uma taxa constante de 20% cria uma almofada real surpreendentemente rápida, e a estrutura torna óbvios os gastos excessivos no momento em que um balde transborda."
+          },
+          {
+            "type": "callout",
+            "text": "Automatize a transferência de 20% no dia do pagamento para que a economia aconteça antes que você possa gastá-la. Fora da vista é o ponto principal."
+          },
+          {
+            "type": "h2",
+            "text": "Quando ajustar"
+          },
+          {
+            "type": "p",
+            "text": "Em cidades de alto custo, a divisão pode precisar ser 60/20/20 por um tempo, e isso é bom. A questão é a direção, não um número rígido. Use nosso [Calculadora de meta de economia](/finance/savings-goal) para ver como seus 20% se acumulam ao longo do tempo."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Juros compostos: por que começar cedo é melhor do que economizar mais depois",
+        "excerpt": "Albert Einstein supostamente chamou os juros compostos de a oitava maravilha do mundo. Quer ele tenha dito isso ou não, a matemática é real: seu dinheiro gera retornos, e então esses retornos geram retornos.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A composição é o motor silencioso por trás de quase todas as metas financeiras de longo prazo. Você investe dinheiro, ele cresce e o próprio crescimento começa a render mais. Quanto mais longa for a pista, mais dramático será o efeito."
+          },
+          {
+            "type": "h2",
+            "text": "O efeito bola de neve"
+          },
+          {
+            "type": "p",
+            "text": "Execute os números em nosso [Calculadora de juros compostos](/finance/compound-interest): coloque 200 por mês em 7% durante 30 anos e você verá que a maior parte do saldo final veio do crescimento, não de suas contribuições."
+          },
+          {
+            "type": "h2",
+            "text": "O tempo supera a quantidade"
+          },
+          {
+            "type": "p",
+            "text": "Investir 100 por mês a partir dos 25 anos geralmente é melhor do que investir 300 por mês a partir dos 40 anos. O dinheiro inicial se acumula por mais 15 anos, e esses anos fazem o trabalho pesado. É por isso que a procrastinação é o hábito mais caro nas finanças pessoais."
+          },
+          {
+            "type": "callout",
+            "text": "O maior fator na composição é o horário de início. Você não pode recuperar anos perdidos, não importa quanto você acrescente depois."
+          },
+          {
+            "type": "h2",
+            "text": "Torne isso automático"
+          },
+          {
+            "type": "p",
+            "text": "Combine composição com consistência usando um [Calculadora de meta de economia](/finance/savings-goal). Defina a meta, defina a data e deixe que as contribuições regulares façam o resto."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "IMC, gordura corporal e o que seu número de peso realmente significa",
+        "excerpt": "Suba em uma balança e o número parecerá um veredicto. Mas o peso por si só esconde mais do que revela. O IMC é um ponto de partida, não uma linha de chegada.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tendemos a tratar um único número de peso como a história toda. Não é. Duas pessoas podem pesar o mesmo e ter corpos completamente diferentes. A questão útil não é apenas quanto você pesa, mas de que é feito esse peso."
+          },
+          {
+            "type": "h2",
+            "text": "O que o IMC realmente mede"
+          },
+          {
+            "type": "p",
+            "text": "O Índice de Massa Corporal é o peso dividido pela altura ao quadrado. Ele agrupa você como abaixo do peso, normal, acima do peso ou obeso. É uma tela barata e rápida, e você pode encontrar seu número com o [Calculadora de IMC](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Onde o IMC fica aquém"
+          },
+          {
+            "type": "p",
+            "text": "O músculo pesa mais que a gordura. Um atleta treinado pode ser considerado acima do peso e ter uma gordura corporal muito baixa. É por isso que [Calculadora de gordura corporal](/health/body-fat) e as estimativas de massa magra fornecem uma imagem mais completa do que apenas o IMC."
+          },
+          {
+            "type": "callout",
+            "text": "Use o IMC como uma triagem, não como um diagnóstico. O tamanho da cintura e a composição corporal geralmente contam uma história mais honesta."
+          },
+          {
+            "type": "h2",
+            "text": "Uma lente mais saudável"
+          },
+          {
+            "type": "p",
+            "text": "Em vez de se fixar na balança, combine seu [Calculadora de TMB](/health/bmr-calculator) e [Calculadora TDEE](/health/tdee-calculator) para entender suas necessidades energéticas. O peso é um indicador de atraso; o equilíbrio energético é o que você pode realmente controlar."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Como os pagamentos extras de hipotecas economizam anos de juros",
+        "excerpt": "Uma hipoteca de 30 anos envolve principalmente juros nos primeiros anos. Pequenos pagamentos extras podem reduzir anos e milhares de dólares do empréstimo.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Os primeiros anos de uma hipoteca podem parecer desanimadores: um grande pagamento, mas o saldo quase não se movimenta. Isso ocorre porque os pagamentos antecipados vão principalmente para juros. A boa notícia é que os pagamentos extras atingem mais o principal exatamente quando são mais importantes."
+          },
+          {
+            "type": "h2",
+            "text": "Como funciona a amortização"
+          },
+          {
+            "type": "p",
+            "text": "A amortização antecipa os juros. Nosso [Calculadora de hipoteca](/finance/mortgage) mostra a divisão entre principal e juros de cada mês, para que você possa ver quão lentamente o saldo cai no início."
+          },
+          {
+            "type": "h2",
+            "text": "O poder de uma pequena quantia extra"
+          },
+          {
+            "type": "p",
+            "text": "Em um empréstimo típico, US$ 100 extras por mês podem reduzir de quatro a seis anos o prazo e economizar dezenas de milhares em juros. Quanto mais cedo você começar, maior será o efeito."
+          },
+          {
+            "type": "callout",
+            "text": "Sempre diga ao seu credor que o pagamento extra deve ir para o principal, e não para pagamentos programados futuros."
+          },
+          {
+            "type": "h2",
+            "text": "Compare a compensação"
+          },
+          {
+            "type": "p",
+            "text": "Antes de jogar tudo na hipoteca, compare com outros objetivos usando [Calculadora de ROI](/finance/roi) e [Calculadora de meta de economia](/finance/savings-goal). Às vezes, um investimento de maior retorno é melhor do que pagar o empréstimo antecipadamente."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Porcentagens na vida real: descontos, gorjetas e impostos facilitados",
+        "excerpt": "As porcentagens determinam a matemática diária do dinheiro, desde vendas e gorjetas até impostos e juros. Depois que o padrão se encaixar, você poderá fazer a maior parte na sua cabeça.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Porcentagem significa por cem. Ancore cada problema percentual em 100 e a maioria deles deixará de ser intimidante. A mesma ideia gera descontos, gorjetas, impostos e crescimento."
+          },
+          {
+            "type": "h2",
+            "text": "Descontos"
+          },
+          {
+            "type": "p",
+            "text": "Um desconto de 30% em 80 itens economiza 24, restando 56. O atalho é o preço vezes (1 menos a taxa). Nosso [Calculadora de descontos](/math/discount) faz isso instantaneamente, mas a versão mental é útil no registro."
+          },
+          {
+            "type": "h2",
+            "text": "Dicas"
+          },
+          {
+            "type": "p",
+            "text": "Uma gorjeta de 18% em uma nota de 50 é 9. O [Calculadora de gorjetas](/math/tip) lida com grupos e arredondamentos, mas aqui está o truque: 10% é fácil de encontrar e 20% é simplesmente o dobro disso."
+          },
+          {
+            "type": "h2",
+            "text": "Imposto e crescimento"
+          },
+          {
+            "type": "p",
+            "text": "A mesma lógica percentual descreve juros e inflação. Veja como uma taxa aumenta ao longo do tempo com o [Calculadora de porcentagem](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Porcentagem significa literalmente por cem. Ancore cada problema de porcentagem em 100 e tudo ficará simples rapidamente."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Calorias, TMB e TDEE: planejando uma dieta que realmente funcione",
+        "excerpt": "Comer menos, movimentar-se mais é verdade, mas inútil sem números. Suas necessidades calóricas são pessoais e duas calculadoras explicam o porquê.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Os conselhos genéricos sobre dieta ignoram o fato de que cada pessoa queima uma quantidade diferente de energia. A solução é estimar primeiro seus próprios números e, em seguida, construir um plano em torno deles."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: sua queimadura de repouso"
+          },
+          {
+            "type": "p",
+            "text": "A Taxa Metabólica Basal são as calorias que você queima em repouso completo, apenas para mantê-lo vivo. Encontre o seu com o [Calculadora de TMB](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: sua real necessidade diária"
+          },
+          {
+            "type": "p",
+            "text": "O gasto diário total de energia adiciona sua atividade à TMB. O [Calculadora TDEE](/health/tdee-calculator) transforma isso em uma meta diária que você realmente pode comer."
+          },
+          {
+            "type": "h2",
+            "text": "Perder ou ganhar peso"
+          },
+          {
+            "type": "p",
+            "text": "Um déficit de cerca de 500 kcal por dia equivale a cerca de meio quilo por semana. Acompanhe sua alimentação com o [Calculadora de calorias](/health/calorie-calculator) e suas macros com o [Calculadora macro](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Dietas radicais deixam cair água, não gordura. Procure um déficit modesto e sustentável que você possa manter por meses."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Conversões de unidades de cozinha: xícaras, gramas e onças sem suposições",
+        "excerpt": "Uma receita pede 200 g de farinha mas suas xícaras são imperiais. A conversão de unidades de cozinha não deve estragar o jantar.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cozinhar com receitas de diferentes países significa fazer malabarismos com xícaras, gramas, onças e mililitros. A atitude confiável é parar de medir por volume e começar a medir por peso."
+          },
+          {
+            "type": "h2",
+            "text": "Peso supera volume"
+          },
+          {
+            "type": "p",
+            "text": "Uma xícara de farinha pode variar em 20% dependendo de como você a pega. Nosso [Conversor de Unidades de Cozinha](/cooking/cooking-units) lida com xícaras, gramas, onças e mililitros para que seus resultados permaneçam consistentes."
+          },
+          {
+            "type": "h2",
+            "text": "Receitas de dimensionamento"
+          },
+          {
+            "type": "p",
+            "text": "Dobrar uma receita manualmente é propenso a erros. O [Escalador de receitas](/cooking/recipe-scaler) ajusta cada ingrediente automaticamente e o [Calculadora de Custo Alimentar](/cooking/food-cost) define o preço se você estiver cozinhando para uma multidão."
+          },
+          {
+            "type": "callout",
+            "text": "Farinha e açúcar não são intercambiáveis em volume. Sempre converta por peso ao assar."
+          },
+          {
+            "type": "h2",
+            "text": "Além da cozinha"
+          },
+          {
+            "type": "p",
+            "text": "Para medições gerais, o [Conversor de unidades](/math/unit-converter) cobre comprimento, temperatura e muito mais quando uma receita se perde em território não culinário."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Bola de neve da dívida vs. Avalanche: qual método de pagamento vence?",
+        "excerpt": "Dois métodos populares prometem acabar com as dívidas. Eles diferem em uma questão: você paga pela emoção ou pela matemática?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Se você tem várias dívidas, a ordem de saldá-las é tão importante quanto o valor. As duas estratégias mais conhecidas atacam essa ordem de maneira muito diferente."
+          },
+          {
+            "type": "h2",
+            "text": "Bola de neve: motivação em primeiro lugar"
+          },
+          {
+            "type": "p",
+            "text": "Liste as dívidas do menor saldo para o maior. Pague o mínimo em todos e depois jogue cada dólar extra no menor. Vitórias rápidas criam impulso. Modele tudo em nosso [Calculadora de bola de neve e avalanche de dívida](/finance/debt-snowball-avalanche)."
+          },
+          {
+            "type": "h2",
+            "text": "Avalanche: matemática primeiro"
+          },
+          {
+            "type": "p",
+            "text": "Pague primeiro a taxa de juros mais alta. Você economiza mais dinheiro e termina mais rápido, mas o progresso inicial pode parecer lento porque grandes saldos permanecem."
+          },
+          {
+            "type": "callout",
+            "text": "Matematicamente, a avalanche vence. Comportamentalmente, a bola de neve geralmente gruda. Escolha aquele que você realmente irá terminar."
+          },
+          {
+            "type": "h2",
+            "text": "Não se esqueça da taxa"
+          },
+          {
+            "type": "p",
+            "text": "Antes de escolher, compare o custo da sua dívida com o que você poderia ganhar investindo com o [Calculadora de ROI](/finance/roi). Às vezes vale a pena investir e ao mesmo tempo fazer pagamentos mínimos."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Última atualização: 11 de agosto de 2026.",

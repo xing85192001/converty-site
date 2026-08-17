@@ -6600,7 +6600,321 @@
       "cooking": "烹飪"
     },
     "relatedTitle": "相關文章",
-    "heroBadge": "實用指南和計算器"
+    "heroBadge": "實用指南和計算器",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "The 50/30/20 Budget: A Simple Plan That Actually Sticks",
+        "excerpt": "A budget only works if you can keep it up. The 50/30/20 rule is popular because it is simple: split your after-tax income into needs, wants, and savings.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Most budgets fail not because they are wrong, but because they are exhausting. The 50/30/20 rule works because it asks for awareness, not perfection. You divide your take-home pay into three buckets and adjust from there."
+          },
+          {
+            "type": "h2",
+            "text": "三個桶"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "需求（50%）：租金或抵押貸款、雜貨、公用事業、保險、最低債務償還。",
+              "想要的（30%）：外食、直播、嗜好、旅行、讓生活感覺美好的事。",
+              "Savings (20%): emergency fund, retirement, and any extra debt payments."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "首先計算您的稅後收入。如果您不确定扣除后帐户中的金额，我们的[所得稅計算器](/finance/income-tax)可以先估算您的净工资。"
+          },
+          {
+            "type": "h2",
+            "text": "為什麼它有效"
+          },
+          {
+            "type": "p",
+            "text": "這個規則迫使人們養成在消費前儲蓄的習慣，而不是剩下的錢。即使是穩定的 20% 利率，也能以驚人的速度建立真正的緩衝，而這種結構在水桶溢出的那一刻就讓超支變得顯而易見。"
+          },
+          {
+            "type": "callout",
+            "text": "在發薪日自動進行 20% 的轉賬，以便在您花掉之前就可以節省金錢。看不見才是重點。"
+          },
+          {
+            "type": "h2",
+            "text": "何時調整"
+          },
+          {
+            "type": "p",
+            "text": "在高成本城市，這一比例可能需要暫時達到 60/20/20，這很好。重點是方向，而不是嚴格的數字。使用我們的 [儲蓄目標計算器](/finance/savings-goal) 查看您的 20% 隨著時間的推移如何複合。"
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "複利：為什麼早開始比晚儲蓄多",
+        "excerpt": "據說阿爾伯特愛因斯坦將複利稱為世界第八大奇蹟。不管他是否這麼說，數學都是真的：你的錢賺取回報，然後這些回報再賺取回報。",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "複利幾乎是所有長期財務目標背後的安靜引擎。你投資錢，它就會成長，而成長本身就會開始賺更多的錢。跑道越長，效果越顯著。"
+          },
+          {
+            "type": "h2",
+            "text": "雪球效應"
+          },
+          {
+            "type": "p",
+            "text": "運行我們的[複利計算器](/finance/compound-interest)中的數字：每月200美元，利率為7%，持續30年，您會發現最終餘額的大部分來自增長，而不是來自您的貢獻。"
+          },
+          {
+            "type": "h2",
+            "text": "時間勝過數量"
+          },
+          {
+            "type": "p",
+            "text": "從 25 歲開始每月投資 100 美元通常比從 40 歲開始每月投資 300 美元要好。早期的錢可以在額外的 15 年復利，而這些年就承擔了繁重的任務。這就是為什麼拖延是個人理財中最昂貴的習慣。"
+          },
+          {
+            "type": "callout",
+            "text": "複利中最大的一個因素是開始時間。無論你後來增加多少，你都無法挽回失去的歲月。"
+          },
+          {
+            "type": "h2",
+            "text": "讓它自動化"
+          },
+          {
+            "type": "p",
+            "text": "使用 [儲蓄目標計算器](/finance/savings-goal) 將複合與一致性配對。設定目標，設定日期，然後讓定期捐款完成剩下的工作。"
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI、體脂以及您的體重數字的真正意義",
+        "excerpt": "站在體重計上，數字就像是個判決。但僅憑體重所隱藏的東西就多於它所揭示的東西。 BMI是起點，不是終點。",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "我們傾向於將單一重量數字視為整個故事。它不是。兩個人可以體重相同，但身體卻完全不同。有用的問題不僅僅是你的體重，還有這個重量是由什麼組成的。"
+          },
+          {
+            "type": "h2",
+            "text": "BMI 實際衡量的是什麼"
+          },
+          {
+            "type": "p",
+            "text": "體重指數是體重除以身高的平方。它将您分为体重不足、正常、超重或肥胖。这是一个便宜、快速的屏幕，您可以使用[體重指數計算器](/health/bmi)找到您的号码。"
+          },
+          {
+            "type": "h2",
+            "text": "Where BMI falls short"
+          },
+          {
+            "type": "p",
+            "text": "肌肉比脂肪重。訓練有素的運動員可以被解讀為超重，但體脂卻很低。這就是為什麼 [體脂計算器](/health/body-fat) 和瘦體重估計值比單獨的 BMI 更全面。"
+          },
+          {
+            "type": "callout",
+            "text": "使用 BMI 作為篩檢，而不是診斷。腰圍尺寸和身體組成通常能說明更真實的情況。"
+          },
+          {
+            "type": "h2",
+            "text": "更健康的鏡片"
+          },
+          {
+            "type": "p",
+            "text": "不要只專注於規模，而是結合您的[基礎代謝率計算器](/health/bmr-calculator)和[TDEE計算器](/health/tdee-calculator)來了解您的能量需求。體重是一個滯後指標；能量平衡是你真正可以掌控的。"
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "額外的抵押貸款付款如何為您節省多年的利息",
+        "excerpt": "30年期的抵押貸款主要是早年的利息。小額額外付款可以減少貸款年限和數千美元。",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "抵押貸款的最初幾年可能會讓人感到沮喪：支付大筆費用，但餘額幾乎沒有變化。這是因為提前付款主要用於利息。好消息是，額外的付款恰恰在最重要的時候對本金造成了最大的打擊。"
+          },
+          {
+            "type": "h2",
+            "text": "攤銷如何運作"
+          },
+          {
+            "type": "p",
+            "text": "攤銷前置利息。我們的[抵押計算器](/finance/mortgage)顯示每個月本金和利息之間的分配，因此您可以看到餘額一開始下降的速度有多慢。"
+          },
+          {
+            "type": "h2",
+            "text": "少量額外金額的力量"
+          },
+          {
+            "type": "p",
+            "text": "對於一般的貸款，每月額外還款 100 元可以縮短四到六年的期限，並節省數萬美元的利息。越早開始，效果越大。"
+          },
+          {
+            "type": "callout",
+            "text": "一定要告訴你的貸方，額外的付款應該轉入本金，而不是未來預定的付款。"
+          },
+          {
+            "type": "h2",
+            "text": "比較權衡"
+          },
+          {
+            "type": "p",
+            "text": "Before throwing everything at the mortgage, weigh it against other goals using the [投資報酬率計算器](/finance/roi) and [儲蓄目標計算器](/finance/savings-goal). Sometimes a higher-return investment beats paying the loan early."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Percentages in Real Life: Discounts, Tips, and Tax Made Easy",
+        "excerpt": "Percentages run the everyday math of money, from sales and tips to tax and interest. Once the pattern clicks, you can do most of it in your head.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "百分比是百分之一的意思。將每個百分比問題固定為 100，大多數問題就不再令人生畏了。同樣的想法也為折扣、小費、稅收和成長提供動力。"
+          },
+          {
+            "type": "h2",
+            "text": "折扣"
+          },
+          {
+            "type": "p",
+            "text": "80 件商品的 30% 折扣可節省 24 美元，剩下 56 美元。捷徑是價格乘以（1 減去費率）。我們的[折扣計算器](/math/discount)可以立即完成，但心理版本在收銀機上很方便。"
+          },
+          {
+            "type": "h2",
+            "text": "尖端"
+          },
+          {
+            "type": "p",
+            "text": "50 美元的鈔票上 18% 的小費是 9。 [小費計算器](/math/tip) 處理分組和四捨五入，但這裡有一個技巧：10% 很容易找到，而 20% 只不過是它的兩倍。"
+          },
+          {
+            "type": "h2",
+            "text": "稅收與成長"
+          },
+          {
+            "type": "p",
+            "text": "同樣的百分比邏輯描述了利息和通貨膨脹。使用 [百分比計算器](/math/percentage-calculator) 查看利率如何隨時間複合。"
+          },
+          {
+            "type": "callout",
+            "text": "百分比的字面意思是百分之一。將每個百分比問題固定為 100，它很快就會變得簡單。"
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "卡路里、BMR 和 TDEE：規劃切實有效的飲食",
+        "excerpt": "少吃多動是對的，但沒有數字就沒用。您的卡路里需求是個人化的，兩個計算器可以解釋原因。",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "一般的飲食建議忽略了每個人消耗的能量不同的事實。解決方法是先估計你自己的數字，然後圍繞它們制定計劃。"
+          },
+          {
+            "type": "h2",
+            "text": "BMR：您的靜止燃燒"
+          },
+          {
+            "type": "p",
+            "text": "基礎代謝率是你在完全休息時燃燒的卡路里，只是為了讓你活著。使用 [基礎代謝率計算器](/health/bmr-calculator) 找到您的。"
+          },
+          {
+            "type": "h2",
+            "text": "TDEE：您真正的日常需求"
+          },
+          {
+            "type": "p",
+            "text": "每日總能量消耗將您的活動添加到 BMR 之上。 [TDEE計算器](/health/tdee-calculator) 將其變成您實際上可以吃的每日目標。"
+          },
+          {
+            "type": "h2",
+            "text": "體重減輕或增加"
+          },
+          {
+            "type": "p",
+            "text": "每天約 500 kcal 的赤字大約相當於每週 1 磅。使用 [卡路里計算器](/health/calorie-calculator) 追蹤您的食物，使用 [巨集計算器](/health/macro-calculator) 追蹤您的巨集。"
+          },
+          {
+            "type": "callout",
+            "text": "速成飲食會減少水分，而不是脂肪。目標是實現可維持數月的適度、可持續的赤字。"
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "烹飪單位換算：杯、克和盎司，無需猜測",
+        "excerpt": "食譜需要 200 克麵粉，但你的杯子是英制的。轉換烹飪設備不應毀掉晚餐。",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "烹飪來自不同國家的食譜意味著要兼顧杯子、克、盎司和毫升。可靠的舉措是停止以體積計量，開始以重量計量。"
+          },
+          {
+            "type": "h2",
+            "text": "重量勝過體積"
+          },
+          {
+            "type": "p",
+            "text": "一杯麵粉的含量可能會相差 20%，具體取決於您舀取麵粉的方式。我們的 [烹飪單位轉換器](/cooking/cooking-units) 可處理杯、克、盎司和毫升，以便您的結果保持一致。"
+          },
+          {
+            "type": "h2",
+            "text": "縮放食譜"
+          },
+          {
+            "type": "p",
+            "text": "手動將食譜加倍很容易出錯。 [配方縮放器](/cooking/recipe-scaler) 会自动调整每种食材，如果您为一群人做饭，[食品成本計算器](/cooking/food-cost) 会为其定价。"
+          },
+          {
+            "type": "callout",
+            "text": "麵粉和糖在體積上不能互換。烘烤時始終按重量換算。"
+          },
+          {
+            "type": "h2",
+            "text": "超越廚房"
+          },
+          {
+            "type": "p",
+            "text": "對於一般測量，當食譜偏離非烹飪領域時，[單位換算](/math/unit-converter) 涵蓋長度、溫度等。"
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "債務雪球與雪崩：哪種支付方式獲勝？",
+        "excerpt": "兩種流行的方法有望減少債務。他們在一個問題上有分歧：你是按情緒付費，還是按數學付費？",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "如果您背負多項債務，償還債務的順序與金額一樣重要。兩種最著名的策略對這一順序的攻擊方式截然不同。"
+          },
+          {
+            "type": "h2",
+            "text": "滾雪球：動機第一"
+          },
+          {
+            "type": "p",
+            "text": "列出債務餘額從最小到最大。付最少的錢，然後把多餘的每一塊錢都花在最少的錢上。快速的勝利可以建立動力。在我們的[債務雪球和雪崩計算器](/finance/debt-snowball-avalanche)中對整個事情進行建模。"
+          },
+          {
+            "type": "h2",
+            "text": "雪崩：數學第一"
+          },
+          {
+            "type": "p",
+            "text": "首先支付最高的利率。你節省了最多的錢並且完成得最快，但早期的進展可能會感覺很慢，因為大量的餘額揮之不去。"
+          },
+          {
+            "type": "callout",
+            "text": "從數學上來說，雪崩獲勝。從行為上來說，雪球經常會黏住。選擇你真正要完成的一個。"
+          },
+          {
+            "type": "h2",
+            "text": "Do not forget the rate"
+          },
+          {
+            "type": "p",
+            "text": "在選擇之前，請將您的債務成本與您透過[投資報酬率計算器](/finance/roi)進行投資可能獲得的收入進行比較。有時，以最低還款額進行投資是值得的。"
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "最後更新時間：2026 年 8 月 11 日。",

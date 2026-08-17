@@ -6600,7 +6600,321 @@
       "cooking": "nấu ăn"
     },
     "relatedTitle": "Bài viết liên quan",
-    "heroBadge": "Hướng dẫn thực hành và tính toán"
+    "heroBadge": "Hướng dẫn thực hành và tính toán",
+    "posts": {
+      "50-30-20-budget": {
+        "title": "Ngân sách 50/30/20: Một kế hoạch đơn giản nhưng thực sự hiệu quả",
+        "excerpt": "Ngân sách chỉ hoạt động nếu bạn có thể duy trì nó. Quy tắc 50/30/20 rất phổ biến vì nó đơn giản: chia thu nhập sau thuế của bạn thành các nhu cầu, mong muốn và tiết kiệm.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hầu hết các ngân sách thất bại không phải vì chúng sai mà vì chúng đang cạn kiệt. Quy tắc 50/30/20 có hiệu quả vì nó yêu cầu sự nhận thức chứ không phải sự hoàn hảo. Bạn chia số tiền lương mang về nhà của mình thành ba nhóm và điều chỉnh từ đó."
+          },
+          {
+            "type": "h2",
+            "text": "Ba cái xô"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Nhu cầu (50%): tiền thuê nhà hoặc thế chấp, hàng tạp hóa, tiện ích, bảo hiểm, thanh toán nợ tối thiểu.",
+              "Mong muốn (30%): đi ăn ngoài, phát trực tuyến, sở thích, du lịch, những điều khiến cuộc sống trở nên tốt đẹp.",
+              "Tiết kiệm (20%): quỹ khẩn cấp, quỹ hưu trí và bất kỳ khoản thanh toán nợ bổ sung nào."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Bắt đầu bằng cách tính thu nhập sau thuế của bạn. Nếu bạn không chắc chắn số tiền sẽ có trong tài khoản của mình sau khi khấu trừ, [Máy tính thuế thu nhập](/finance/income-tax) của chúng tôi có thể ước tính số tiền lương ròng của bạn trước tiên."
+          },
+          {
+            "type": "h2",
+            "text": "Tại sao nó hoạt động"
+          },
+          {
+            "type": "p",
+            "text": "Quy tắc buộc phải có thói quen tiết kiệm trước khi chi tiêu, không phải với những gì còn sót lại. Ngay cả tỷ lệ ổn định 20% cũng tạo ra một khoản đệm thực sự nhanh chóng một cách đáng ngạc nhiên, và cơ cấu này khiến cho tình trạng bội chi trở nên rõ ràng vào thời điểm thùng tràn."
+          },
+          {
+            "type": "callout",
+            "text": "Tự động chuyển khoản 20% vào ngày nhận lương để việc tiết kiệm diễn ra trước khi bạn có thể chi tiêu. Ra khỏi tầm nhìn là toàn bộ vấn đề."
+          },
+          {
+            "type": "h2",
+            "text": "Khi nào cần điều chỉnh"
+          },
+          {
+            "type": "p",
+            "text": "Ở các thành phố có chi phí cao, sự phân chia có thể cần phải là 60/20/20 trong một thời gian và điều đó là ổn. Điểm là phương hướng, không phải là một con số cứng nhắc. Sử dụng [Máy tính mục tiêu tiết kiệm](/finance/savings-goal) của chúng tôi để xem 20% của bạn sẽ tăng lên như thế nào theo thời gian."
+          }
+        ]
+      },
+      "compound-interest-early": {
+        "title": "Lãi kép: Tại sao nên bắt đầu sớm để tiết kiệm nhiều hơn sau này",
+        "excerpt": "Albert Einstein được cho là đã gọi lãi suất kép là kỳ quan thứ tám của thế giới. Cho dù anh ấy có nói điều đó hay không thì phép toán vẫn có thật: tiền của bạn kiếm được tiền lãi, và sau đó những khoản tiền lãi đó sẽ kiếm được tiền lãi.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lãi kép là động cơ thầm lặng đằng sau hầu hết mọi mục tiêu tài chính dài hạn. Bạn đầu tư tiền, số tiền đó tăng lên và bản thân sự tăng trưởng đó bắt đầu kiếm được nhiều tiền hơn. Đường băng càng dài thì hiệu ứng càng ấn tượng."
+          },
+          {
+            "type": "h2",
+            "text": "Hiệu ứng quả cầu tuyết"
+          },
+          {
+            "type": "p",
+            "text": "Chạy các con số trong [Máy tính lãi kép](/finance/compound-interest) của chúng tôi: đặt 200 mỗi tháng ở mức 7% trong 30 năm và bạn sẽ thấy rằng phần lớn số dư cuối cùng đến từ tăng trưởng chứ không phải từ đóng góp của bạn."
+          },
+          {
+            "type": "h2",
+            "text": "Số nhịp thời gian"
+          },
+          {
+            "type": "p",
+            "text": "Đầu tư 100 đô la một tháng từ tuổi 25 thường đánh bại việc đầu tư 300 đô la một tháng từ tuổi 40. Số tiền đầu tư ban đầu sẽ kéo dài thêm 15 năm và những năm đó sẽ mang lại công việc nặng nhọc. Đây là lý do tại sao trì hoãn là thói quen tốn kém nhất trong tài chính cá nhân."
+          },
+          {
+            "type": "callout",
+            "text": "Yếu tố lớn nhất trong việc gộp lãi là thời gian bắt đầu. Bạn không thể lấy lại được những năm tháng đã mất, cho dù sau này bạn có thêm bao nhiêu đi chăng nữa."
+          },
+          {
+            "type": "h2",
+            "text": "Làm cho nó tự động"
+          },
+          {
+            "type": "p",
+            "text": "Ghép nối lãi kép với tính nhất quán bằng cách sử dụng [Máy tính mục tiêu tiết kiệm](/finance/savings-goal). Đặt mục tiêu, đặt ngày và để những đóng góp thường xuyên làm phần còn lại."
+          }
+        ]
+      },
+      "bmi-body-fat-explained": {
+        "title": "BMI, lượng mỡ trong cơ thể và ý nghĩa thực sự của con số cân nặng của bạn",
+        "excerpt": "Bước lên cân và con số có cảm giác giống như một bản án. Nhưng chỉ riêng trọng lượng đã che giấu nhiều điều hơn là nó bộc lộ. BMI là điểm khởi đầu, không phải là đích đến.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Chúng ta có xu hướng coi một con số trọng lượng duy nhất là toàn bộ câu chuyện. Không phải vậy. Hai người có thể nặng như nhau và có cơ thể hoàn toàn khác nhau. Câu hỏi hữu ích không chỉ là bạn nặng bao nhiêu mà còn là cân nặng đó được làm từ gì."
+          },
+          {
+            "type": "h2",
+            "text": "Những gì BMI thực sự đo lường"
+          },
+          {
+            "type": "p",
+            "text": "Chỉ số khối cơ thể là cân nặng chia cho bình phương chiều cao. Nó phân loại bạn thành những nhóm thiếu cân, bình thường, thừa cân hoặc béo phì. Đây là một màn hình rẻ, nhanh và bạn có thể tìm thấy số của mình bằng [Máy tính BMI](/health/bmi)."
+          },
+          {
+            "type": "h2",
+            "text": "Trường hợp BMI giảm"
+          },
+          {
+            "type": "p",
+            "text": "Cơ nặng hơn mỡ. Một vận động viên được đào tạo có thể được coi là thừa cân trong khi lượng mỡ trong cơ thể rất thấp. Đó là lý do tại sao [Máy tính mỡ cơ thể](/health/body-fat) và các ước tính về khối lượng nạc mang lại bức tranh đầy đủ hơn chỉ riêng BMI."
+          },
+          {
+            "type": "callout",
+            "text": "Sử dụng BMI làm công cụ sàng lọc chứ không phải để chẩn đoán. Kích thước vòng eo và thành phần cơ thể thường kể câu chuyện trung thực hơn."
+          },
+          {
+            "type": "h2",
+            "text": "Một ống kính khỏe mạnh hơn"
+          },
+          {
+            "type": "p",
+            "text": "Thay vì cố định trên thang đo, hãy kết hợp [Máy tính BMR](/health/bmr-calculator) và [Máy tính TDEE](/health/tdee-calculator) để hiểu nhu cầu năng lượng của bạn. Cân nặng là một chỉ số tụt hậu; cân bằng năng lượng là thứ bạn thực sự có thể điều khiển."
+          }
+        ]
+      },
+      "extra-mortgage-payments": {
+        "title": "Các khoản thanh toán thế chấp bổ sung giúp bạn tiết kiệm số năm lãi suất như thế nào",
+        "excerpt": "Khoản thế chấp 30 năm chủ yếu là lãi suất trong những năm đầu. Các khoản thanh toán bổ sung nhỏ có thể giúp bạn tiết kiệm hàng năm và hàng nghìn đô la cho khoản vay.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bạn có thể cảm thấy chán nản trong những năm đầu tiên vay thế chấp: một khoản thanh toán lớn nhưng số dư hầu như không thay đổi. Đó là bởi vì các khoản thanh toán sớm chủ yếu là tiền lãi. Tin tốt là các khoản thanh toán bổ sung ảnh hưởng nặng nề nhất đến tiền gốc vào đúng thời điểm quan trọng nhất."
+          },
+          {
+            "type": "h2",
+            "text": "Cách khấu hao hoạt động"
+          },
+          {
+            "type": "p",
+            "text": "Trả trước lãi vay. [Máy tính thế chấp](/finance/mortgage) của chúng tôi hiển thị sự phân chia giữa tiền gốc và lãi hàng tháng, vì vậy ban đầu bạn có thể thấy số dư giảm chậm như thế nào."
+          },
+          {
+            "type": "h2",
+            "text": "Sức mạnh của một lượng nhỏ bổ sung"
+          },
+          {
+            "type": "p",
+            "text": "Đối với một khoản vay thông thường, thêm 100 mỗi tháng có thể cắt giảm thời hạn từ 4 đến 6 năm và tiết kiệm hàng chục nghìn tiền lãi. Bạn bắt đầu càng sớm thì hiệu quả càng lớn."
+          },
+          {
+            "type": "callout",
+            "text": "Luôn nói với người cho vay của bạn rằng khoản thanh toán bổ sung sẽ được chuyển vào tiền gốc chứ không phải vào các khoản thanh toán theo lịch trình trong tương lai."
+          },
+          {
+            "type": "h2",
+            "text": "So sánh sự đánh đổi"
+          },
+          {
+            "type": "p",
+            "text": "Trước khi ném mọi thứ vào thế chấp, hãy cân nhắc nó với các mục tiêu khác bằng cách sử dụng [Công cụ tính ROI](/finance/roi) và [Máy tính mục tiêu tiết kiệm](/finance/savings-goal). Đôi khi một khoản đầu tư mang lại lợi nhuận cao hơn việc trả khoản vay sớm."
+          }
+        ]
+      },
+      "percentages-in-everyday-life": {
+        "title": "Tỷ lệ phần trăm trong cuộc sống thực: Giảm giá, tiền boa và thuế được thực hiện dễ dàng",
+        "excerpt": "Tỷ lệ phần trăm thực hiện phép toán tiền hàng ngày, từ doanh thu và tiền boa đến thuế và lãi suất. Sau khi nhấp chuột vào mẫu, bạn có thể thực hiện hầu hết thao tác đó trong đầu.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Phần trăm có nghĩa là phần trăm. Hãy neo mọi vấn đề phần trăm về 100 và hầu hết chúng sẽ không còn đáng sợ nữa. Ý tưởng tương tự tạo nên sức mạnh cho việc giảm giá, tiền boa, thuế và tăng trưởng."
+          },
+          {
+            "type": "h2",
+            "text": "Giảm giá"
+          },
+          {
+            "type": "p",
+            "text": "Giảm giá 30% cho 80 mặt hàng sẽ tiết kiệm được 24, còn lại 56. Phím tắt là thời gian của giá (1 trừ đi tỷ lệ). [Máy tính giảm giá](/math/discount) của chúng tôi thực hiện điều đó ngay lập tức, nhưng phiên bản tinh thần rất hữu ích khi đăng ký."
+          },
+          {
+            "type": "h2",
+            "text": "Mẹo"
+          },
+          {
+            "type": "p",
+            "text": "Tiền boa 18% trên tờ 50 là 9. [Máy tính tiền boa](/math/tip) xử lý các nhóm và làm tròn, nhưng đây là mẹo: 10% rất dễ tìm và 20% chỉ đơn giản là gấp đôi con số đó."
+          },
+          {
+            "type": "h2",
+            "text": "Thuế và tăng trưởng"
+          },
+          {
+            "type": "p",
+            "text": "Logic tỷ lệ tương tự mô tả lãi suất và lạm phát. Xem cách tỷ giá kết hợp theo thời gian với [Máy tính tỷ lệ phần trăm](/math/percentage-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Phần trăm theo nghĩa đen có nghĩa là phần trăm. Hãy neo mọi vấn đề phần trăm về 100 và nó sẽ trở nên đơn giản nhanh chóng."
+          }
+        ]
+      },
+      "calories-bmr-tdee": {
+        "title": "Calo, BMR và TDEE: Lập kế hoạch ăn kiêng thực sự hiệu quả",
+        "excerpt": "Ăn ít, di chuyển nhiều là đúng nhưng không có số lượng thì vô ích. Nhu cầu calo của bạn là vấn đề cá nhân và hai máy tính sẽ giải thích lý do.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Lời khuyên về chế độ ăn uống chung chung đã bỏ qua thực tế là mỗi người đốt cháy một lượng năng lượng khác nhau. Cách khắc phục là trước tiên hãy ước tính các con số của riêng bạn, sau đó xây dựng kế hoạch xung quanh chúng."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: vết bỏng khi nghỉ ngơi của bạn"
+          },
+          {
+            "type": "p",
+            "text": "Tỷ lệ trao đổi chất cơ bản là lượng calo bạn đốt cháy khi nghỉ ngơi hoàn toàn, giúp bạn duy trì sự sống. Tìm của bạn với [Máy tính BMR](/health/bmr-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: nhu cầu thực sự hàng ngày của bạn"
+          },
+          {
+            "type": "p",
+            "text": "Tổng chi tiêu năng lượng hàng ngày sẽ bổ sung hoạt động của bạn lên trên BMR. [Máy tính TDEE](/health/tdee-calculator) biến điều đó thành mục tiêu hàng ngày mà bạn thực sự có thể thực hiện được."
+          },
+          {
+            "type": "h2",
+            "text": "Giảm hoặc tăng cân"
+          },
+          {
+            "type": "p",
+            "text": "Mức thâm hụt khoảng 500 kcal mỗi ngày là khoảng một pound mỗi tuần. Theo dõi thực phẩm của bạn bằng [Máy tính lượng calo](/health/calorie-calculator) và macro của bạn bằng [Máy tính vĩ mô](/health/macro-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Chế độ ăn kiêng giảm nước, không béo. Hãy nhắm tới mức thâm hụt vừa phải và bền vững mà bạn có thể duy trì trong nhiều tháng."
+          }
+        ]
+      },
+      "cooking-unit-conversions": {
+        "title": "Chuyển đổi đơn vị nấu ăn: Cốc, gam và ounce mà không cần phỏng đoán",
+        "excerpt": "Một công thức yêu cầu 200 g bột mì nhưng cốc của bạn lại quá đắt. Việc chuyển đổi đơn vị nấu ăn sẽ không làm hỏng bữa tối.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nấu ăn theo các công thức nấu ăn từ các quốc gia khác nhau có nghĩa là phải tung hứng các cốc, gam, ounce và mililít. Động thái đáng tin cậy là ngừng đo theo thể tích và bắt đầu đo theo trọng lượng."
+          },
+          {
+            "type": "h2",
+            "text": "Trọng lượng đánh bại khối lượng"
+          },
+          {
+            "type": "p",
+            "text": "Một cốc bột có thể chênh lệch 20% tùy thuộc vào cách bạn múc bột. [Bộ chuyển đổi đơn vị nấu ăn](/cooking/cooking-units) của chúng tôi xử lý cốc, gam, ounce và mililít để kết quả của bạn luôn nhất quán."
+          },
+          {
+            "type": "h2",
+            "text": "Công thức nấu ăn chia tỷ lệ"
+          },
+          {
+            "type": "p",
+            "text": "Việc nhân đôi công thức bằng tay sẽ dễ xảy ra lỗi. [Công cụ chia tỷ lệ công thức](/cooking/recipe-scaler) tự động điều chỉnh mọi thành phần và [Máy tính chi phí thực phẩm](/cooking/food-cost) sẽ định giá nếu bạn nấu ăn cho nhiều người."
+          },
+          {
+            "type": "callout",
+            "text": "Bột và đường không thể thay thế cho nhau về thể tích. Luôn chuyển đổi theo trọng lượng khi bạn nướng."
+          },
+          {
+            "type": "h2",
+            "text": "Ngoài bếp"
+          },
+          {
+            "type": "p",
+            "text": "Đối với các phép đo chung, [Bộ chuyển đổi đơn vị](/math/unit-converter) bao gồm chiều dài, nhiệt độ, v.v. khi một công thức nấu ăn đi lạc vào lãnh thổ không nấu ăn."
+          }
+        ]
+      },
+      "debt-snowball-vs-avalanche": {
+        "title": "Nợ Snowball so với Avalanche: Phương thức thanh toán nào thắng?",
+        "excerpt": "Hai phương pháp phổ biến hứa hẹn sẽ xóa tan nợ nần. Chúng khác nhau ở một câu hỏi: bạn trả tiền bằng cảm xúc hay bằng toán học?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nếu bạn mắc nhiều khoản nợ, thứ tự trả nợ cũng quan trọng như số tiền. Hai chiến lược nổi tiếng nhất tấn công theo thứ tự rất khác nhau."
+          },
+          {
+            "type": "h2",
+            "text": "Snowball: động lực đầu tiên"
+          },
+          {
+            "type": "p",
+            "text": "Liệt kê các khoản nợ có số dư từ nhỏ nhất đến lớn nhất. Trả mức tối thiểu cho tất cả, sau đó ném thêm mỗi đô la ở mức nhỏ nhất. Chiến thắng nhanh chóng xây dựng động lực. Lập mô hình toàn bộ nội dung trong [Máy tính quả cầu tuyết nợ và tuyết lở](/finance/debt-snowball-avalanche) của chúng tôi."
+          },
+          {
+            "type": "h2",
+            "text": "Avalanche: toán học đầu tiên"
+          },
+          {
+            "type": "p",
+            "text": "Trả lãi suất cao nhất trước. Bạn tiết kiệm được nhiều tiền nhất và hoàn thành nhanh nhất, nhưng tiến độ ban đầu có thể chậm lại vì số dư lớn vẫn còn đọng lại."
+          },
+          {
+            "type": "callout",
+            "text": "Về mặt toán học, tuyết lở thắng. Về mặt hành vi, quả cầu tuyết thường dính. Chọn một trong những bạn thực sự sẽ hoàn thành."
+          },
+          {
+            "type": "h2",
+            "text": "Đừng quên tỷ lệ"
+          },
+          {
+            "type": "p",
+            "text": "Trước khi chọn, hãy so sánh chi phí khoản nợ của bạn với số tiền bạn có thể kiếm được khi đầu tư với [Công cụ tính ROI](/finance/roi). Đôi khi nó trả tiền để đầu tư trong khi thực hiện thanh toán tối thiểu."
+          }
+        ]
+      }
+    }
   },
   "ui": {
     "last-updated-august-11-2026": "Cập nhật lần cuối: ngày 11 tháng 8 năm 2026.",
