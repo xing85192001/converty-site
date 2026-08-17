@@ -4573,7 +4573,7 @@
         "calculating": "正在計算...",
         "inputLength": "輸入長度",
         "hashLength": "哈希長度",
-        "characters": "人物",
+        "characters": "字元",
         "hexChars": "十六進位字符",
         "warnings": {
           "md5Title": "安全警告",
@@ -4596,10 +4596,10 @@
         "networkType": "網路類型",
         "checksumValid": "校驗和有效",
         "yes": "是的",
-        "no": "No",
+        "no": "否",
         "warnings": {
           "privateKeyTitle": "偵測到私鑰！",
-          "privateKeyDescription": "這看起來像是私鑰！切勿公开共享私钥。私钥可以完全访问您的资金。",
+          "privateKeyDescription": "這看起來像是私鑰！切勿公開共用私鑰。私鑰可以完全存取您的資金。",
           "testnetTitle": "測試網站位址",
           "testnetDescription": "這是用於開發和測試的測試網位址。它在主區塊鏈上沒有實際價值。"
         }
