@@ -90,7 +90,9 @@
     "financeComingSoon": "Kalkulator keuangan segera hadir!",
     "searchPlaceholder": "Cari kalkulator……",
     "result": "Hasil",
-    "aboutThisCalculator": "Tentang {title}"
+    "aboutThisCalculator": "Tentang {title}",
+    "copySuccess": "Disalin ke papan klip",
+    "copyError": "Gagal menyalin ke papan klip"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemrosesan Gambar & Video",
@@ -7117,6 +7119,456 @@
       "emailTitle": "Surel",
       "emailGeneral": "Umum & dukungan: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Pertanyaan privasi: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "realTimeCalculation": {
+        "title": "Perhitungan waktu nyata",
+        "description": "Hasil diperbarui secara otomatis saat Anda mengetik"
+      },
+      "multiPlatformReady": {
+        "title": "Siap multi-platform",
+        "description": "Bekerja lancar di perangkat desktop dan seluler"
+      },
+      "historyReady": {
+        "title": "Riwayat siap",
+        "description": "Gunakan kembali nilai sebelumnya dengan satu klik"
+      }
+    },
+    "core": {
+      "quickEstimation": {
+        "title": "Estimasi cepat",
+        "description": "Dapatkan hasil dalam hitungan detik tanpa spreadsheet kompleks"
+      },
+      "amortizationView": {
+        "title": "Tampilan amortisasi",
+        "description": "Lihat bagaimana pokok dan bunga berubah seiring waktu"
+      },
+      "scenarioCompare": {
+        "title": "Bandingkan skenario",
+        "description": "Uji suku bunga, jangka waktu, dan uang muka yang berbeda"
+      },
+      "exportReady": {
+        "title": "Siap ekspor",
+        "description": "Salin atau cetak jadwal untuk catatan"
+      },
+      "instantAssessment": {
+        "title": "Penilaian instan",
+        "description": "Periksa metrik seperti BMI, lemak tubuh, dan kalori"
+      },
+      "multipleFormulas": {
+        "title": "Berbagai rumus",
+        "description": "Pilih metode perhitungan yang cocok untuk Anda"
+      },
+      "unitFlexibility": {
+        "title": "Fleksibilitas satuan",
+        "description": "Beralih antara metrik dan imperial dengan bebas"
+      },
+      "guidanceNotes": {
+        "title": "Catatan panduan",
+        "description": "Pahami apa arti setiap hasil"
+      },
+      "stepByStepLogic": {
+        "title": "Logika langkah demi langkah",
+        "description": "Ikuti bagaimana setiap angka diturunkan"
+      },
+      "multipleModes": {
+        "title": "Berbagai mode",
+        "description": "Tangani varian persentase, rasio, dan persamaan"
+      },
+      "precisionControl": {
+        "title": "Kontrol presisi",
+        "description": "Sesuaikan tempat desimal dan aturan pembulatan"
+      },
+      "copyResults": {
+        "title": "Salin hasil",
+        "description": "Ambil jawaban untuk tugas atau laporan"
+      },
+      "unitConversion": {
+        "title": "Konversi satuan",
+        "description": "Konversi cangkir, gram, ons, dan banyak lagi"
+      },
+      "recipeScaling": {
+        "title": "Penskalaan resep",
+        "description": "Ubah ukuran resep untuk jumlah porsi apa pun"
+      },
+      "nutritionLookup": {
+        "title": "Pencarian nutrisi",
+        "description": "Perkirakan kalori dan makro"
+      },
+      "costPlanning": {
+        "title": "Perencanaan biaya",
+        "description": "Hitung biaya bahan per porsi"
+      },
+      "formulaDriven": {
+        "title": "Berbasis rumus",
+        "description": "Dibangun di atas persamaan teknik standar"
+      },
+      "unitAware": {
+        "title": "Sadar satuan",
+        "description": "Menangani satuan SI dan imperial"
+      },
+      "parameterSweep": {
+        "title": "Penyapuan parameter",
+        "description": "Uji nilai di rentang"
+      },
+      "referenceValues": {
+        "title": "Nilai referensi",
+        "description": "Bandingkan dengan bahan khas"
+      },
+      "molarMass": {
+        "title": "Massa molar",
+        "description": "Hitung berat molekul dari rumus"
+      },
+      "concentration": {
+        "title": "Konsentrasi",
+        "description": "Bekerja dengan molaritas, molalitas, dan pengenceran"
+      },
+      "stoichiometry": {
+        "title": "Stoikiometri",
+        "description": "Seimbangkan kuantitas reaksi"
+      },
+      "phTools": {
+        "title": "Alat pH",
+        "description": "Konversi pH, pOH, dan tingkat ion hidrogen"
+      },
+      "colorSpaceConvert": {
+        "title": "Konversi ruang warna",
+        "description": "Beralih antara HEX, RGB, HSL, dan CMYK"
+      },
+      "palettePreview": {
+        "title": "Pratinjau palet",
+        "description": "Lihat kombinasi warna yang harmonis"
+      },
+      "contrastCheck": {
+        "title": "Pemeriksaan kontras",
+        "description": "Verifikasi rasio kontras aksesibilitas"
+      },
+      "copyValues": {
+        "title": "Salin nilai",
+        "description": "Salin CSS atau token desain seketika"
+      },
+      "bandwidthCalc": {
+        "title": "Perhitungan bandwidth",
+        "description": "Perkirakan waktu transfer dan throughput"
+      },
+      "storageConvert": {
+        "title": "Konversi penyimpanan",
+        "description": "Konversi KB, MB, GB, TB, dan lebih banyak lagi"
+      },
+      "networkPlanning": {
+        "title": "Perencanaan jaringan",
+        "description": "Tautan ukuran untuk latensi dan kapasitas"
+      },
+      "downloadEstimate": {
+        "title": "Perkiraan unduhan",
+        "description": "Rencanakan unduhan file berdasarkan kecepatan koneksi"
+      },
+      "dateDiff": {
+        "title": "Selisih tanggal",
+        "description": "Temukan hari, minggu, atau bulan antara tanggal"
+      },
+      "addSubtractTime": {
+        "title": "Tambah/kurangi waktu",
+        "description": "Tambahkan durasi atau hitung mundur"
+      },
+      "timeZoneConvert": {
+        "title": "Konversi zona waktu",
+        "description": "Bandingkan waktu antar wilayah"
+      },
+      "workdayCount": {
+        "title": "Jumlah hari kerja",
+        "description": "Kecualikan akhir pekan dan hari libur"
+      },
+      "subnetting": {
+        "title": "Subnetting",
+        "description": "Hitung CIDR, masker, dan rentang host"
+      },
+      "ipAnalysis": {
+        "title": "Analisis IP",
+        "description": "Validasi dan klasifikasikan IPv4/IPv6"
+      },
+      "wildcardMath": {
+        "title": "Matematika wildcard",
+        "description": "Hitung alamat jaringan dan siaran"
+      },
+      "copyConfig": {
+        "title": "Salin konfigurasi",
+        "description": "Ekspor rentang untuk penggunaan firewall atau router"
+      },
+      "hashGeneration": {
+        "title": "Pembuatan hash",
+        "description": "Buat SHA, MD5, dan hash lainnya"
+      },
+      "addressCheck": {
+        "title": "Pemeriksaan alamat",
+        "description": "Validasi alamat dompet berdasarkan format"
+      },
+      "miningEstimate": {
+        "title": "Perkiraan penambangan",
+        "description": "Perkirakan hadiah dan biaya daya"
+      },
+      "rateConvert": {
+        "title": "Konversi nilai tukar",
+        "description": "Konversi antara crypto dan fiat"
+      },
+      "fuelEconomy": {
+        "title": "Ekonomi bahan bakar",
+        "description": "Bandingkan MPG, L/100km, dan biaya per km"
+      },
+      "loanPlanning": {
+        "title": "Perencanaan pinjaman",
+        "description": "Perkirakan pembayaran mobil bulanan"
+      },
+      "tireSizing": {
+        "title": "Ukuran ban",
+        "description": "Bandingkan dimensi ban dan peringkat kecepatan"
+      },
+      "maintenanceLog": {
+        "title": "Log pemeliharaan",
+        "description": "Lacak interval layanan dan biaya"
+      },
+      "dofCompute": {
+        "title": "Perhitungan DoF",
+        "description": "Hitung kedalaman bidang untuk lensa apa pun"
+      },
+      "exposureMath": {
+        "title": "Matematika paparan",
+        "description": "Seimbangkan rana, apertur, dan ISO"
+      },
+      "printResolution": {
+        "title": "Resolusi cetak",
+        "description": "Temukan DPI dan ukuran cetak dari piksel"
+      },
+      "astroPlanning": {
+        "title": "Perencanaan astro",
+        "description": "Rencanakan foto jejak bintang dan Bima Sakti"
+      },
+      "unitConvert": {
+        "title": "Konversi satuan",
+        "description": "Konversi satuan fisik antar sistem"
+      },
+      "formulaCalc": {
+        "title": "Perhitungan rumus",
+        "description": "Selesaikan persamaan fisika umum"
+      },
+      "constantLookup": {
+        "title": "Pencarian konstanta",
+        "description": "Gunakan konstanta fisik bawaan"
+      },
+      "precisionOutput": {
+        "title": "Output presisi",
+        "description": "Kontrol angka penting"
+      },
+      "mortgageEstimate": {
+        "title": "Perkiraan hipotek",
+        "description": "Hitung pembayaran hipotek bulanan"
+      },
+      "roiAnalysis": {
+        "title": "Analisis ROI",
+        "description": "Bandingkan hasil sewa dan tingkat kapitalisasi"
+      },
+      "affordability": {
+        "title": "Keterjangkauan",
+        "description": "Periksa harga yang sesuai dengan anggaran Anda"
+      },
+      "amortization": {
+        "title": "Amortisasi",
+        "description": "Lihat rincian pinjaman tahunan"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Hitung ketukan per menit"
+      },
+      "frequencyMath": {
+        "title": "Matematika frekuensi",
+        "description": "Konversi nada ke hertz dan sen"
+      },
+      "intervalTool": {
+        "title": "Alat interval",
+        "description": "Temukan interval dan skala musik"
+      },
+      "audioDelay": {
+        "title": "Penundaan audio",
+        "description": "Sinkronkan waktu tunda dengan tempo"
+      },
+      "urlEncode": {
+        "title": "Enkripsi URL",
+        "description": "Enkripsi dan dekode URL dengan aman"
+      },
+      "colorTokenConvert": {
+        "title": "Konversi warna/token",
+        "description": "Beralih antara format warna CSS"
+      },
+      "jsonFormat": {
+        "title": "Format JSON",
+        "description": "Cetak cantik dan validasi JSON"
+      },
+      "regexTest": {
+        "title": "Uji regex",
+        "description": "Uji ekspresi reguler secara langsung"
+      },
+      "capacityPlan": {
+        "title": "Rencana kapasitas",
+        "description": "Ukuran CPU, memori, dan penyimpanan"
+      },
+      "licensing": {
+        "title": "Perizinan",
+        "description": "Perkirakan jumlah lisensi dan inti"
+      },
+      "tcoModel": {
+        "title": "Model TCO",
+        "description": "Bandingkan biaya lokal dan cloud"
+      },
+      "clusterSizing": {
+        "title": "Ukuran klaster",
+        "description": "Rencanakan kumpulan simpul Kubernetes"
+      },
+      "fastInput": {
+        "title": "Input cepat",
+        "description": "Masukkan nilai dan dapatkan jawaban segera"
+      },
+      "accurateResults": {
+        "title": "Hasil akurat",
+        "description": "Dibangun dengan rumus dan konstanta yang telah divalidasi"
+      },
+      "flexibleUnits": {
+        "title": "Satuan fleksibel",
+        "description": "Beralih antara satuan dan format umum"
+      },
+      "clearOutput": {
+        "title": "Output jelas",
+        "description": "Lihat hasil dengan penjelasan bermanfaat"
+      },
+      "basicPercentage": {
+        "title": "Persentase dasar",
+        "description": "Hitung berapa X% dari Y secara instan"
+      },
+      "percentChange": {
+        "title": "Perubahan persen",
+        "description": "Temukan kenaikan atau penurunan antar nilai"
+      },
+      "percentDifference": {
+        "title": "Perbedaan persen",
+        "description": "Bandingkan perbedaan relatif antara dua angka"
+      },
+      "reversePercentage": {
+        "title": "Persentase terbalik",
+        "description": "Temukan nilai asli sebelum persentase berubah"
+      },
+      "futureValue": {
+        "title": "Nilai masa depan",
+        "description": "Lihat seberapa besar investasi Anda akan tumbuh"
+      },
+      "contributionModeling": {
+        "title": "Pemodelan kontribusi",
+        "description": "Tambahkan setoran bulanan atau tahunan"
+      },
+      "interestBreakdown": {
+        "title": "Rincian bunga",
+        "description": "Pisahkan pokok vs. bunga yang diperoleh"
+      },
+      "yearlySchedule": {
+        "title": "Jadwal tahunan",
+        "description": "Tinjau pertumbuhan untuk setiap periode"
+      },
+      "monthlyPayment": {
+        "title": "Pembayaran bulanan",
+        "description": "Perkirakan P&I dengan pajak dan asuransi"
+      },
+      "amortizationTable": {
+        "title": "Tabel amortisasi",
+        "description": "Lihat pokok dan bunga tahunan"
+      },
+      "totalInterest": {
+        "title": "Jumlah bunga",
+        "description": "Lihat biaya bunga seumur hidup"
+      },
+      "rateCompare": {
+        "title": "Bandingkan nilai",
+        "description": "Bandingkan tarif dan persyaratan secara berdampingan"
+      },
+      "bmiCompute": {
+        "title": "menghitung BMI",
+        "description": "Hitung indeks massa tubuh dengan cepat"
+      },
+      "categoryView": {
+        "title": "Tampilan kategori",
+        "description": "Lihat rentang berat badan kurang hingga obesitas"
+      },
+      "idealWeight": {
+        "title": "Berat badan ideal",
+        "description": "Perkirakan kisaran berat badan yang sehat"
+      },
+      "unitToggle": {
+        "title": "Pengalih satuan",
+        "description": "Ganti satuan metrik dan imperial"
+      },
+      "tdeeEstimate": {
+        "title": "perkiraan TDEE",
+        "description": "Perkirakan pengeluaran energi harian"
+      },
+      "macroSplit": {
+        "title": "Perpecahan makro",
+        "description": "Hitung target protein, lemak, dan karbohidrat"
+      },
+      "goalModes": {
+        "title": "Mode tujuan",
+        "description": "Rencanakan penurunan, pemeliharaan, atau penambahan berat badan"
+      },
+      "activityLevels": {
+        "title": "Tingkat aktivitas",
+        "description": "Pertimbangkan olahraga dan gerakan harian"
+      },
+      "volumeConvert": {
+        "title": "Konversi volume",
+        "description": "Ganti cangkir, sendok makan, mililiter"
+      },
+      "weightConvert": {
+        "title": "Konversi berat badan",
+        "description": "Konversi gram, ons, pound"
+      },
+      "ingredientAware": {
+        "title": "Sadar akan bahannya",
+        "description": "Konversi berdasarkan kepadatan bahan"
+      },
+      "scaleRecipes": {
+        "title": "resep skala",
+        "description": "Ubah ukuran dari satu porsi menjadi banyak"
+      },
+      "salePrice": {
+        "title": "Harga jual",
+        "description": "Hitung harga setelah diskon"
+      },
+      "percentOff": {
+        "title": "Diskon persen",
+        "description": "Temukan tingkat diskon dari harga"
+      },
+      "stackSavings": {
+        "title": "Penghematan tumpukan",
+        "description": "Gabungkan kupon dan diskon"
+      },
+      "taxAware": {
+        "title": "Sadar pajak",
+        "description": "Tambahkan pajak penjualan ke harga akhir"
+      },
+      "rateConvert1": {
+        "title": "Konversi nilai tukar",
+        "description": "Konversikan jumlah antar mata uang"
+      },
+      "markupEstimate": {
+        "title": "Perkiraan markup",
+        "description": "Tambahkan margin atau biaya pertukaran"
+      },
+      "bidAskSpread": {
+        "title": "Penyebaran bid-ask",
+        "description": "Bandingkan harga beli dan jual"
+      },
+      "historicalView": {
+        "title": "Pandangan sejarah",
+        "description": "Lacak bagaimana tarif berubah seiring waktu"
+      }
     }
   }
 }

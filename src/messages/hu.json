@@ -90,7 +90,9 @@
     "financeComingSoon": "Pénzügyi kalkulátorok hamarosan!",
     "searchPlaceholder": "Kalkulátorok keresése……",
     "result": "Eredmény",
-    "aboutThisCalculator": "Az {title}-ről"
+    "aboutThisCalculator": "Az {title}-ről",
+    "copySuccess": "Vágólapra másolva",
+    "copyError": "Nem sikerült a vágólapra másolni"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Kép- és videófeldolgozás",
@@ -7102,6 +7104,456 @@
       "emailTitle": "E-mail",
       "emailGeneral": "Általános és támogatás: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Adatvédelmi kérdések: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "A történelem kész",
+        "description": "Használja újra a korábbi értékeket egyetlen kattintással"
+      },
+      "multiPlatformReady": {
+        "title": "Többplatformos használatra kész",
+        "description": "Zökkenőmentesen működik asztali és mobil eszközökön"
+      },
+      "realTimeCalculation": {
+        "title": "Valós idejű számítás",
+        "description": "Az eredmények gépelés közben automatikusan frissülnek"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Pontos eredmények",
+        "description": "Érvényesített képletekkel és konstansokkal készült"
+      },
+      "activityLevels": {
+        "title": "Tevékenységi szintek",
+        "description": "Tényező az edzésben és a napi mozgásban"
+      },
+      "addSubtractTime": {
+        "title": "Idő összeadása/kivonása",
+        "description": "Adjon hozzá időtartamokat, vagy számoljon visszafelé"
+      },
+      "addressCheck": {
+        "title": "Cím ellenőrzése",
+        "description": "Érvényesítse a pénztárcacímeket formátum szerint"
+      },
+      "affordability": {
+        "title": "Megfizethetőség",
+        "description": "Ellenőrizze, hogy melyik ár felel meg a költségvetésének"
+      },
+      "amortization": {
+        "title": "Amortizáció",
+        "description": "Tekintse meg az éves hitelrészletezést"
+      },
+      "amortizationTable": {
+        "title": "Amortizációs táblázat",
+        "description": "Tekintse meg az éves tőkét és kamatokat"
+      },
+      "amortizationView": {
+        "title": "Amortizáció nézet",
+        "description": "Nézze meg, hogyan változik a tőke és a kamat az idő múlásával"
+      },
+      "astroPlanning": {
+        "title": "Asztro tervezés",
+        "description": "Tervezzen csillagnyomokat és Tejútfelvételeket"
+      },
+      "audioDelay": {
+        "title": "Hang késleltetés",
+        "description": "Szinkronizálja a késleltetési időket a tempóhoz"
+      },
+      "bandwidthCalc": {
+        "title": "Sávszélesség kalc",
+        "description": "Becsülje meg az átviteli időt és az áteresztőképességet"
+      },
+      "basicPercentage": {
+        "title": "Alap százalék",
+        "description": "Számítsd ki azonnal Y X%-át"
+      },
+      "bidAskSpread": {
+        "title": "Bid-ask terjedés",
+        "description": "Hasonlítsa össze a vételi és eladási árakat"
+      },
+      "bmiCompute": {
+        "title": "BMI számítás",
+        "description": "Számolja ki gyorsan a testtömegindexet"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempó",
+        "description": "Számítsa ki a percenkénti ütésszámot"
+      },
+      "capacityPlan": {
+        "title": "Kapacitásterv",
+        "description": "CPU, memória és tárhely mérete"
+      },
+      "categoryView": {
+        "title": "Kategória nézet",
+        "description": "Lásd az alulsúlytól az elhízottig terjedő tartományokat"
+      },
+      "clearOutput": {
+        "title": "Tiszta kimenet",
+        "description": "Tekintse meg az eredményeket hasznos magyarázatokkal"
+      },
+      "clusterSizing": {
+        "title": "Klaszter méretezése",
+        "description": "Tervezze meg a Kubernetes csomópontkészleteket"
+      },
+      "colorSpaceConvert": {
+        "title": "Színtér konvertálása",
+        "description": "Váltás HEX, RGB, HSL és CMYK között"
+      },
+      "colorTokenConvert": {
+        "title": "Szín/token konvertálás",
+        "description": "Váltás a CSS színformátumok között"
+      },
+      "concentration": {
+        "title": "Koncentráció",
+        "description": "Dolgozzon molaritással, molalitással és hígítással"
+      },
+      "constantLookup": {
+        "title": "Folyamatos keresés",
+        "description": "Használjon beépített fizikai állandókat"
+      },
+      "contrastCheck": {
+        "title": "Kontraszt ellenőrzés",
+        "description": "Ellenőrizze a kisegítő lehetőségek kontrasztarányait"
+      },
+      "contributionModeling": {
+        "title": "Hozzájárulás modellezése",
+        "description": "Adjon hozzá havi vagy éves betéteket"
+      },
+      "copyConfig": {
+        "title": "Konfig másolása",
+        "description": "Tartományok exportálása tűzfal vagy útválasztó használatához"
+      },
+      "copyResults": {
+        "title": "Eredmények másolása",
+        "description": "Fogadjon válaszokat házi feladathoz vagy jelentésekhez"
+      },
+      "copyValues": {
+        "title": "Értékek másolása",
+        "description": "Másoljon CSS-t vagy tervezzen tokeneket azonnal"
+      },
+      "costPlanning": {
+        "title": "Költségtervezés",
+        "description": "Számítsa ki az összetevők adagonkénti költségét"
+      },
+      "dateDiff": {
+        "title": "Dátum eltérés",
+        "description": "Keressen napokat, heteket vagy hónapokat a dátumok között"
+      },
+      "dofCompute": {
+        "title": "DoF számítás",
+        "description": "Számítsa ki a mélységélességet bármely objektívhez"
+      },
+      "downloadEstimate": {
+        "title": "Töltse le a becslést",
+        "description": "A fájlletöltések tervezése a kapcsolat sebessége szerint"
+      },
+      "exportReady": {
+        "title": "Exportálás kész",
+        "description": "Másolja vagy nyomtassa ki az iratok ütemezését"
+      },
+      "exposureMath": {
+        "title": "Expozíciós matematika",
+        "description": "Kiegyensúlyozza a zárat, a rekeszt és az ISO-t"
+      },
+      "fastInput": {
+        "title": "Gyors bemenet",
+        "description": "Adja meg az értékeket, és azonnal megkapja a válaszokat"
+      },
+      "flexibleUnits": {
+        "title": "Rugalmas egységek",
+        "description": "Váltás a gyakori egységek és formátumok között"
+      },
+      "formulaCalc": {
+        "title": "képlet kalc",
+        "description": "Oldja meg az általános fizikai egyenleteket"
+      },
+      "formulaDriven": {
+        "title": "Formula-vezérelt",
+        "description": "Szabványos mérnöki egyenletekre épül"
+      },
+      "frequencyMath": {
+        "title": "Frekvencia matematika",
+        "description": "A jegyzetek konvertálása hertzre és centre"
+      },
+      "fuelEconomy": {
+        "title": "Üzemanyag-takarékosság",
+        "description": "Hasonlítsa össze az MPG, L/100km és a kilométerenkénti költséget"
+      },
+      "futureValue": {
+        "title": "Jövő érték",
+        "description": "Nézze meg, mennyivel nő a befektetése"
+      },
+      "goalModes": {
+        "title": "Gól módok",
+        "description": "Tervezze meg a fogyást, a tartást vagy a növekedést"
+      },
+      "guidanceNotes": {
+        "title": "Útmutató megjegyzések",
+        "description": "Értse meg, mit jelentenek az egyes eredmények"
+      },
+      "hashGeneration": {
+        "title": "Hash generáció",
+        "description": "SHA, MD5 és egyéb kivonatok létrehozása"
+      },
+      "historicalView": {
+        "title": "Történelmi nézet",
+        "description": "Kövesse nyomon, hogyan változnak az árak az idő múlásával"
+      },
+      "idealWeight": {
+        "title": "Ideális súly",
+        "description": "Becsülje meg az egészséges súlytartományt"
+      },
+      "ingredientAware": {
+        "title": "Összetevő-tudatos",
+        "description": "Átalakítás az összetevők sűrűségével"
+      },
+      "instantAssessment": {
+        "title": "Azonnali értékelés",
+        "description": "Ellenőrizze az olyan mutatókat, mint a BMI, a testzsír és a kalória"
+      },
+      "interestBreakdown": {
+        "title": "Kamatbontás",
+        "description": "Megosztott tőke vs. megkeresett kamat"
+      },
+      "intervalTool": {
+        "title": "Intervallum eszköz",
+        "description": "Keressen zenei intervallumokat és skálákat"
+      },
+      "ipAnalysis": {
+        "title": "IP elemzés",
+        "description": "Az IPv4/IPv6 érvényesítése és osztályozása"
+      },
+      "jsonFormat": {
+        "title": "JSON formátum",
+        "description": "Szépen nyomtasson és ellenőrizze a JSON-t"
+      },
+      "licensing": {
+        "title": "Engedélyezés",
+        "description": "Becsülje meg a licencek és a magszámok számát"
+      },
+      "loanPlanning": {
+        "title": "Hiteltervezés",
+        "description": "Becsülje meg a havi autófizetést"
+      },
+      "macroSplit": {
+        "title": "Makró felosztás",
+        "description": "Számítsa ki a fehérje-, zsír- és szénhidrát-célokat"
+      },
+      "maintenanceLog": {
+        "title": "Karbantartási napló",
+        "description": "Kövesse nyomon a szervizintervallumokat és a költségeket"
+      },
+      "markupEstimate": {
+        "title": "Markup becslés",
+        "description": "Adjon hozzá átváltási árrést vagy díjat"
+      },
+      "miningEstimate": {
+        "title": "Bányászati becslés",
+        "description": "Hozzávetőleges jutalom és energiaköltségek"
+      },
+      "molarMass": {
+        "title": "Moláris tömeg",
+        "description": "Számítsa ki a molekulatömeget a képletekből"
+      },
+      "monthlyPayment": {
+        "title": "Havi fizetés",
+        "description": "Becsülje meg a P&I-t az adókkal és a biztosítással"
+      },
+      "mortgageEstimate": {
+        "title": "Jelzálog becslés",
+        "description": "Számolja ki a havi jelzáloghitel-részleteket"
+      },
+      "multipleFormulas": {
+        "title": "Több képlet",
+        "description": "Válassza ki az Önnek megfelelő számítási módszert"
+      },
+      "multipleModes": {
+        "title": "Több mód",
+        "description": "Százalék-, arány- és egyenletváltozatok kezelése"
+      },
+      "networkPlanning": {
+        "title": "Hálózat tervezés",
+        "description": "Méretlinkek a késleltetéshez és a kapacitáshoz"
+      },
+      "nutritionLookup": {
+        "title": "Táplálkozási keresés",
+        "description": "Becsülje meg a kalóriákat és a makrókat"
+      },
+      "palettePreview": {
+        "title": "Paletta előnézet",
+        "description": "Tekintse meg a harmonikus színkombinációkat"
+      },
+      "parameterSweep": {
+        "title": "Paraméteres sweep",
+        "description": "Tesztelje az értékeket egy tartományban"
+      },
+      "percentChange": {
+        "title": "Százalékos változás",
+        "description": "Keresse meg az értékek közötti növekedést vagy csökkenést"
+      },
+      "percentDifference": {
+        "title": "Százalékos különbség",
+        "description": "Hasonlítsa össze két szám relatív különbségét!"
+      },
+      "percentOff": {
+        "title": "Százalékos kedvezmény",
+        "description": "Keresse meg az árengedményt az árakból"
+      },
+      "phTools": {
+        "title": "pH-eszközök",
+        "description": "A pH, pOH és hidrogénion szintek konvertálása"
+      },
+      "precisionControl": {
+        "title": "Precíziós vezérlés",
+        "description": "Tizedesjegyek és kerekítési szabályok beállítása"
+      },
+      "precisionOutput": {
+        "title": "Precíziós kimenet",
+        "description": "Irányítsd a jelentős számokat"
+      },
+      "printResolution": {
+        "title": "Nyomtatási felbontás",
+        "description": "Keresse meg a DPI-t és a nyomtatási méretet pixelekből"
+      },
+      "quickEstimation": {
+        "title": "Gyors becslés",
+        "description": "Összetett táblázatok nélkül másodpercek alatt elérheti az eredményeket"
+      },
+      "rateCompare": {
+        "title": "Hasonlítsa össze az árakat",
+        "description": "Hasonlítsa össze az árakat és a feltételeket"
+      },
+      "rateConvert": {
+        "title": "Árfolyam konvertálása",
+        "description": "Konvertálás crypto és fiat között"
+      },
+      "rateConvert1": {
+        "title": "Árfolyam konvertálása",
+        "description": "Konvertálja az összegeket a pénznemek között"
+      },
+      "recipeScaling": {
+        "title": "Recept méretezése",
+        "description": "Receptek átméretezése bármilyen adagszámhoz"
+      },
+      "referenceValues": {
+        "title": "Referencia értékek",
+        "description": "Hasonlítsa össze a tipikus anyagokkal"
+      },
+      "regexTest": {
+        "title": "Regex teszt",
+        "description": "Tesztelje a reguláris kifejezéseket élőben"
+      },
+      "reversePercentage": {
+        "title": "Fordított százalék",
+        "description": "Keresse meg az eredeti értéket a százalékos változás előtt"
+      },
+      "roiAnalysis": {
+        "title": "ROI elemzés",
+        "description": "Hasonlítsa össze a bérleti hozamot és a bérleti díj mértékét"
+      },
+      "salePrice": {
+        "title": "Eladási ár",
+        "description": "Számítsa ki az árat a kedvezmény után"
+      },
+      "scaleRecipes": {
+        "title": "Méretreceptek",
+        "description": "Átméretezés egy adagról többre"
+      },
+      "scenarioCompare": {
+        "title": "A forgatókönyv összehasonlítása",
+        "description": "Tesztelje a különböző díjakat, feltételeket és előlegeket"
+      },
+      "stackSavings": {
+        "title": "Stack megtakarítások",
+        "description": "Kombinálja a kuponokat és a kedvezményeket"
+      },
+      "stepByStepLogic": {
+        "title": "Lépésről lépésre logika",
+        "description": "Kövesse az egyes számok származtatását"
+      },
+      "stoichiometry": {
+        "title": "Sztöchiometria",
+        "description": "Egyensúlyozza a reakció mennyiségét"
+      },
+      "storageConvert": {
+        "title": "Tároló konvertálás",
+        "description": "Konvertálhat KB, MB, GB, TB és még tovább"
+      },
+      "subnetting": {
+        "title": "Alhálózatok",
+        "description": "Számítsa ki a CIDR-t, a maszkokat és a gazdagép-tartományokat"
+      },
+      "taxAware": {
+        "title": "Adótudatos",
+        "description": "Adja hozzá a forgalmi adót a végső árhoz"
+      },
+      "tcoModel": {
+        "title": "TCO modell",
+        "description": "Hasonlítsa össze az on-prem és a felhő költségeit"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE becslés",
+        "description": "Becsülje meg a napi energiafogyasztást"
+      },
+      "timeZoneConvert": {
+        "title": "Időzóna konvertálás",
+        "description": "Hasonlítsa össze az időket régiók között"
+      },
+      "tireSizing": {
+        "title": "Gumiabroncs méretezés",
+        "description": "Hasonlítsa össze az abroncsméreteket és a sebességértékeket"
+      },
+      "totalInterest": {
+        "title": "Teljes kamat",
+        "description": "Tekintse meg az élettartamra szóló kamatköltséget"
+      },
+      "unitAware": {
+        "title": "Egységtudatos",
+        "description": "Kezeli az SI és az angolszász mértékegységeket"
+      },
+      "unitConversion": {
+        "title": "Mértékegység átváltás",
+        "description": "Konvertálja a csészéket, grammokat, unciákat és egyebeket"
+      },
+      "unitConvert": {
+        "title": "Mértékegység átváltás",
+        "description": "Fizikai egységek konvertálása rendszerek között"
+      },
+      "unitFlexibility": {
+        "title": "Az egység rugalmassága",
+        "description": "Szabadon válthat a metrikus és az angolszász között"
+      },
+      "unitToggle": {
+        "title": "Mértékegység váltás",
+        "description": "Váltson metrikus és angolszász mértékegységet"
+      },
+      "urlEncode": {
+        "title": "URL kódolás",
+        "description": "Az URL-ek biztonságos kódolása és dekódolása"
+      },
+      "volumeConvert": {
+        "title": "Hangerő konvertálása",
+        "description": "Cserélj csészéket, evőkanálokat, millilitereket"
+      },
+      "weightConvert": {
+        "title": "Súlyátváltás",
+        "description": "Átalakítás grammra, unciára, fontra"
+      },
+      "wildcardMath": {
+        "title": "Helyettesítő matek",
+        "description": "Hálózati és broadcast címek kiszámítása"
+      },
+      "workdayCount": {
+        "title": "Munkanapok száma",
+        "description": "Hétvégék és ünnepnapok kizárása"
+      },
+      "yearlySchedule": {
+        "title": "Éves menetrend",
+        "description": "Tekintse át a növekedést minden időszakban"
+      }
     }
   }
 }

@@ -90,7 +90,9 @@
     "financeComingSoon": "الآلات الحاسبة المالية قريبا!",
     "searchPlaceholder": "ابحث عن الآلات الحاسبة……",
     "result": "النتيجة",
-    "aboutThisCalculator": "حول {title}"
+    "aboutThisCalculator": "حول {title}",
+    "copySuccess": "تم النسخ إلى الحافظة",
+    "copyError": "فشل النسخ إلى الحافظة"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ معالجة الصور والفيديو",
@@ -7117,6 +7119,456 @@
       "emailTitle": "بريد إلكتروني",
       "emailGeneral": "العام والدعم: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "أسئلة الخصوصية: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "التاريخ جاهز",
+        "description": "إعادة استخدام القيم السابقة بنقرة واحدة"
+      },
+      "multiPlatformReady": {
+        "title": "منصة متعددة جاهزة",
+        "description": "يعمل بسلاسة على أجهزة سطح المكتب والأجهزة المحمولة"
+      },
+      "realTimeCalculation": {
+        "title": "الحساب في الوقت الحقيقي",
+        "description": "يتم تحديث النتائج تلقائيًا أثناء الكتابة"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "نتائج دقيقة",
+        "description": "بنيت مع الصيغ والثوابت التحقق من صحتها"
+      },
+      "activityLevels": {
+        "title": "مستويات النشاط",
+        "description": "عامل في ممارسة الرياضة والحركة اليومية"
+      },
+      "addSubtractTime": {
+        "title": "إضافة/طرح الوقت",
+        "description": "إضافة فترات أو العد التنازلي"
+      },
+      "addressCheck": {
+        "title": "التحقق من العنوان",
+        "description": "التحقق من صحة عناوين المحفظة حسب التنسيق"
+      },
+      "affordability": {
+        "title": "القدرة على تحمل التكاليف",
+        "description": "تحقق من السعر الذي يناسب ميزانيتك"
+      },
+      "amortization": {
+        "title": "الاستهلاك",
+        "description": "عرض تفصيل القرض السنوي"
+      },
+      "amortizationTable": {
+        "title": "جدول الإطفاء",
+        "description": "عرض أصل المبلغ والفائدة السنوية"
+      },
+      "amortizationView": {
+        "title": "عرض الاستهلاك",
+        "description": "انظر كيف يتغير أصل الدين والفائدة مع مرور الوقت"
+      },
+      "astroPlanning": {
+        "title": "التخطيط الفلكي",
+        "description": "خطط لقطات لمسار النجوم ودرب التبانة"
+      },
+      "audioDelay": {
+        "title": "تأخير الصوت",
+        "description": "مزامنة أوقات التأخير مع الإيقاع"
+      },
+      "bandwidthCalc": {
+        "title": "حساب عرض النطاق الترددي",
+        "description": "تقدير وقت النقل والإنتاجية"
+      },
+      "basicPercentage": {
+        "title": "النسبة الأساسية",
+        "description": "احسب قيمة X% من Y على الفور"
+      },
+      "bidAskSpread": {
+        "title": "انتشار العرض والطلب",
+        "description": "قارن أسعار الشراء والبيع"
+      },
+      "bmiCompute": {
+        "title": "حساب مؤشر كتلة الجسم",
+        "description": "حساب مؤشر كتلة الجسم بسرعة"
+      },
+      "bpmTempo": {
+        "title": "نبضة في الدقيقة/الإيقاع",
+        "description": "حساب عدد النبضات في الدقيقة"
+      },
+      "capacityPlan": {
+        "title": "خطة القدرات",
+        "description": "حجم وحدة المعالجة المركزية والذاكرة والتخزين"
+      },
+      "categoryView": {
+        "title": "عرض الفئة",
+        "description": "انظر نقص الوزن إلى نطاقات السمنة"
+      },
+      "clearOutput": {
+        "title": "مسح الإخراج",
+        "description": "عرض النتائج مع تفسيرات مفيدة"
+      },
+      "clusterSizing": {
+        "title": "تحجيم الكتلة",
+        "description": "خطة تجمعات عقدة Kubernetes"
+      },
+      "colorSpaceConvert": {
+        "title": "تحويل مساحة اللون",
+        "description": "قم بالتبديل بين HEX وRGB وHSL وCMYK"
+      },
+      "colorTokenConvert": {
+        "title": "تحويل اللون/الرمز المميز",
+        "description": "التبديل بين تنسيقات الألوان CSS"
+      },
+      "concentration": {
+        "title": "التركيز",
+        "description": "العمل مع المولية، المولالية، والتخفيف"
+      },
+      "constantLookup": {
+        "title": "بحث مستمر",
+        "description": "استخدم الثوابت الفيزيائية المضمنة"
+      },
+      "contrastCheck": {
+        "title": "فحص التباين",
+        "description": "التحقق من نسب التباين إمكانية الوصول"
+      },
+      "contributionModeling": {
+        "title": "نمذجة المساهمة",
+        "description": "إضافة الودائع الشهرية أو السنوية"
+      },
+      "copyConfig": {
+        "title": "نسخ التكوين",
+        "description": "نطاقات التصدير لاستخدام جدار الحماية أو جهاز التوجيه"
+      },
+      "copyResults": {
+        "title": "نسخ النتائج",
+        "description": "احصل على إجابات للواجبات المنزلية أو التقارير"
+      },
+      "copyValues": {
+        "title": "نسخ القيم",
+        "description": "انسخ رموز CSS أو رموز التصميم على الفور"
+      },
+      "costPlanning": {
+        "title": "تخطيط التكلفة",
+        "description": "حساب تكلفة العنصر لكل وجبة"
+      },
+      "dateDiff": {
+        "title": "فرق التاريخ",
+        "description": "ابحث عن الأيام أو الأسابيع أو الأشهر بين التواريخ"
+      },
+      "dofCompute": {
+        "title": "حساب وزارة المالية",
+        "description": "حساب عمق المجال لأي عدسة"
+      },
+      "downloadEstimate": {
+        "title": "تنزيل التقدير",
+        "description": "خطة تنزيل الملفات حسب سرعة الاتصال"
+      },
+      "exportReady": {
+        "title": "التصدير جاهز",
+        "description": "نسخ أو طباعة الجداول الزمنية للسجلات"
+      },
+      "exposureMath": {
+        "title": "الرياضيات التعرض",
+        "description": "توازن الغالق وفتحة العدسة وISO"
+      },
+      "fastInput": {
+        "title": "إدخال سريع",
+        "description": "أدخل القيم واحصل على الإجابات على الفور"
+      },
+      "flexibleUnits": {
+        "title": "وحدات مرنة",
+        "description": "التبديل بين الوحدات والأشكال المشتركة"
+      },
+      "formulaCalc": {
+        "title": "حساب الصيغة",
+        "description": "حل المعادلات الفيزيائية الشائعة"
+      },
+      "formulaDriven": {
+        "title": "تعتمد على الصيغة",
+        "description": "بنيت على المعادلات الهندسية القياسية"
+      },
+      "frequencyMath": {
+        "title": "رياضيات التردد",
+        "description": "تحويل الملاحظات إلى هيرتز وسنتا"
+      },
+      "fuelEconomy": {
+        "title": "الاقتصاد في استهلاك الوقود",
+        "description": "قارن ميلا في الغالون، لتر/100 كم، والتكلفة لكل كيلومتر"
+      },
+      "futureValue": {
+        "title": "القيمة المستقبلية",
+        "description": "انظر إلى أي مدى ستنمو استثماراتك"
+      },
+      "goalModes": {
+        "title": "أوضاع الهدف",
+        "description": "خطط لفقدان الوزن أو صيانته أو زيادته"
+      },
+      "guidanceNotes": {
+        "title": "ملاحظات إرشادية",
+        "description": "فهم ماذا تعني كل نتيجة"
+      },
+      "hashGeneration": {
+        "title": "جيل التجزئة",
+        "description": "إنشاء SHA وMD5 والتجزئات الأخرى"
+      },
+      "historicalView": {
+        "title": "وجهة نظر تاريخية",
+        "description": "تتبع كيف تتغير الأسعار مع مرور الوقت"
+      },
+      "idealWeight": {
+        "title": "الوزن المثالي",
+        "description": "تقدير نطاق الوزن الصحي"
+      },
+      "ingredientAware": {
+        "title": "المكونات على علم",
+        "description": "تحويل حسب كثافة المكونات"
+      },
+      "instantAssessment": {
+        "title": "التقييم الفوري",
+        "description": "تحقق من المقاييس مثل مؤشر كتلة الجسم ودهون الجسم والسعرات الحرارية"
+      },
+      "interestBreakdown": {
+        "title": "انهيار الفائدة",
+        "description": "تقسيم رأس المال مقابل الفائدة المكتسبة"
+      },
+      "intervalTool": {
+        "title": "أداة الفاصل",
+        "description": "البحث عن الفترات والمقاييس الموسيقية"
+      },
+      "ipAnalysis": {
+        "title": "تحليل الملكية الفكرية",
+        "description": "التحقق من صحة وتصنيف IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "تنسيق جيسون",
+        "description": "طباعة جميلة والتحقق من صحة JSON"
+      },
+      "licensing": {
+        "title": "الترخيص",
+        "description": "تقدير الترخيص والأعداد الأساسية"
+      },
+      "loanPlanning": {
+        "title": "تخطيط القروض",
+        "description": "تقدير دفعات السيارات الشهرية"
+      },
+      "macroSplit": {
+        "title": "تقسيم الماكرو",
+        "description": "حساب أهداف البروتين والدهون والكربوهيدرات"
+      },
+      "maintenanceLog": {
+        "title": "سجل الصيانة",
+        "description": "تتبع فترات الخدمة والتكاليف"
+      },
+      "markupEstimate": {
+        "title": "تقدير العلامات",
+        "description": "إضافة هامش الصرف أو الرسوم"
+      },
+      "miningEstimate": {
+        "title": "تقدير التعدين",
+        "description": "المكافأة التقريبية وتكاليف الطاقة"
+      },
+      "molarMass": {
+        "title": "الكتلة المولية",
+        "description": "حساب الوزن الجزيئي من الصيغ"
+      },
+      "monthlyPayment": {
+        "title": "الدفع الشهري",
+        "description": "تقدير P&I مع الضرائب والتأمين"
+      },
+      "mortgageEstimate": {
+        "title": "تقدير الرهن العقاري",
+        "description": "حساب أقساط الرهن العقاري الشهرية"
+      },
+      "multipleFormulas": {
+        "title": "صيغ متعددة",
+        "description": "اختر طريقة الحساب التي تناسبك"
+      },
+      "multipleModes": {
+        "title": "أوضاع متعددة",
+        "description": "التعامل مع النسبة المئوية والنسبة ومتغيرات المعادلة"
+      },
+      "networkPlanning": {
+        "title": "تخطيط الشبكة",
+        "description": "روابط الحجم للكمون والقدرة"
+      },
+      "nutritionLookup": {
+        "title": "بحث عن التغذية",
+        "description": "تقدير السعرات الحرارية ووحدات الماكرو"
+      },
+      "palettePreview": {
+        "title": "معاينة اللوحة",
+        "description": "شاهد مجموعات الألوان المتناغمة"
+      },
+      "parameterSweep": {
+        "title": "مسح المعلمة",
+        "description": "اختبار القيم عبر نطاق"
+      },
+      "percentChange": {
+        "title": "التغيير في المئة",
+        "description": "العثور على الزيادة أو النقصان بين القيم"
+      },
+      "percentDifference": {
+        "title": "الفرق في المئة",
+        "description": "مقارنة الفرق النسبي بين رقمين"
+      },
+      "percentOff": {
+        "title": "خصم في المئة",
+        "description": "البحث عن معدل الخصم من الأسعار"
+      },
+      "phTools": {
+        "title": "أدوات الرقم الهيدروجيني",
+        "description": "تحويل مستويات الرقم الهيدروجيني، pOH، وأيونات الهيدروجين"
+      },
+      "precisionControl": {
+        "title": "التحكم الدقيق",
+        "description": "ضبط المنازل العشرية وقواعد التقريب"
+      },
+      "precisionOutput": {
+        "title": "إخراج الدقة",
+        "description": "السيطرة على الشخصيات الهامة"
+      },
+      "printResolution": {
+        "title": "دقة الطباعة",
+        "description": "ابحث عن DPI وحجم الطباعة من البكسل"
+      },
+      "quickEstimation": {
+        "title": "تقدير سريع",
+        "description": "احصل على النتائج في ثوانٍ بدون جداول بيانات معقدة"
+      },
+      "rateCompare": {
+        "title": "مقارنة الأسعار",
+        "description": "قارن الأسعار والشروط جنبًا إلى جنب"
+      },
+      "rateConvert": {
+        "title": "تحويل المعدل",
+        "description": "تحويل بين التشفير والعملات الورقية"
+      },
+      "rateConvert1": {
+        "title": "تحويل المعدل",
+        "description": "تحويل المبالغ بين العملات"
+      },
+      "recipeScaling": {
+        "title": "تحجيم الوصفة",
+        "description": "تغيير حجم الوصفات لأي عدد الحصص"
+      },
+      "referenceValues": {
+        "title": "القيم المرجعية",
+        "description": "قارن مع المواد النموذجية"
+      },
+      "regexTest": {
+        "title": "اختبار ريجكس",
+        "description": "اختبار التعبيرات العادية مباشرة"
+      },
+      "reversePercentage": {
+        "title": "نسبة عكسية",
+        "description": "أوجد القيمة الأصلية قبل تغيير النسبة المئوية"
+      },
+      "roiAnalysis": {
+        "title": "تحليل العائد على الاستثمار",
+        "description": "قارن بين عائد الإيجار ومعدل الحد الأقصى"
+      },
+      "salePrice": {
+        "title": "سعر البيع",
+        "description": "حساب السعر بعد الخصم"
+      },
+      "scaleRecipes": {
+        "title": "وصفات النطاق",
+        "description": "تغيير الحجم من حصة واحدة إلى العديد"
+      },
+      "scenarioCompare": {
+        "title": "مقارنة السيناريو",
+        "description": "اختبر الأسعار والشروط والدفعات المقدمة المختلفة"
+      },
+      "stackSavings": {
+        "title": "كومة الادخار",
+        "description": "الجمع بين القسائم والخصومات"
+      },
+      "stepByStepLogic": {
+        "title": "منطق خطوة بخطوة",
+        "description": "اتبع كيفية اشتقاق كل رقم"
+      },
+      "stoichiometry": {
+        "title": "قياس العناصر الكيميائية",
+        "description": "موازنة كميات التفاعل"
+      },
+      "storageConvert": {
+        "title": "تحويل التخزين",
+        "description": "تحويل كيلوبايت، ميغابايت، غيغابايت، السل، وما بعدها"
+      },
+      "subnetting": {
+        "title": "الشبكات الفرعية",
+        "description": "حساب CIDR والأقنعة ونطاقات المضيف"
+      },
+      "taxAware": {
+        "title": "علم الضرائب",
+        "description": "إضافة ضريبة المبيعات إلى السعر النهائي"
+      },
+      "tcoModel": {
+        "title": "نموذج التكلفة الإجمالية للملكية",
+        "description": "قارن بين التكاليف المحلية والسحابية"
+      },
+      "tdeeEstimate": {
+        "title": "تقدير TDEE",
+        "description": "تقدير نفقات الطاقة اليومية"
+      },
+      "timeZoneConvert": {
+        "title": "تحويل المنطقة الزمنية",
+        "description": "قارن الأوقات عبر المناطق"
+      },
+      "tireSizing": {
+        "title": "تحجيم الإطارات",
+        "description": "قارن أبعاد الإطارات وتقييمات السرعة"
+      },
+      "totalInterest": {
+        "title": "إجمالي الفائدة",
+        "description": "انظر تكلفة الفائدة مدى الحياة"
+      },
+      "unitAware": {
+        "title": "وحدة على علم",
+        "description": "يتعامل مع SI والوحدات الإمبراطورية"
+      },
+      "unitConversion": {
+        "title": "تحويل الوحدة",
+        "description": "تحويل الكؤوس والجرام والأوقية، وأكثر من ذلك"
+      },
+      "unitConvert": {
+        "title": "تحويل الوحدة",
+        "description": "تحويل الوحدات المادية عبر الأنظمة"
+      },
+      "unitFlexibility": {
+        "title": "مرونة الوحدة",
+        "description": "التبديل بين متري والإمبراطوري بحرية"
+      },
+      "unitToggle": {
+        "title": "تبديل الوحدة",
+        "description": "تبديل الوحدات المترية والإمبراطورية"
+      },
+      "urlEncode": {
+        "title": "ترميز URL",
+        "description": "تشفير وفك تشفير عناوين URL بأمان"
+      },
+      "volumeConvert": {
+        "title": "تحويل الحجم",
+        "description": "تبديل الكؤوس، ملاعق كبيرة، ملليلتر"
+      },
+      "weightConvert": {
+        "title": "تحويل الوزن",
+        "description": "تحويل غرام، أوقية، جنيه"
+      },
+      "wildcardMath": {
+        "title": "الرياضيات البدل",
+        "description": "حساب عناوين الشبكة والبث"
+      },
+      "workdayCount": {
+        "title": "عدد أيام العمل",
+        "description": "استبعاد عطلات نهاية الأسبوع والأعياد"
+      },
+      "yearlySchedule": {
+        "title": "الجدول السنوي",
+        "description": "مراجعة النمو لكل فترة"
+      }
     }
   }
 }

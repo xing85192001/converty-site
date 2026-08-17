@@ -90,7 +90,9 @@
     "financeComingSoon": "เครื่องคำนวณการเงินจะมาเร็ว ๆ นี้!",
     "searchPlaceholder": "ค้นหาเครื่องคิดเลข……",
     "result": "ผลลัพธ์",
-    "aboutThisCalculator": "เกี่ยวกับ {title}"
+    "aboutThisCalculator": "เกี่ยวกับ {title}",
+    "copySuccess": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+    "copyError": "คัดลอกไปยังคลิปบอร์ดไม่สำเร็จ"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ การประมวลผลภาพและวิดีโอ",
@@ -7117,6 +7119,456 @@
       "emailTitle": "อีเมล",
       "emailGeneral": "ทั่วไปและการสนับสนุน: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "คำถามเกี่ยวกับความเป็นส่วนตัว: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "ประวัติศาสตร์พร้อมแล้ว",
+        "description": "ใช้ค่าก่อนหน้าซ้ำได้ด้วยคลิกเดียว"
+      },
+      "multiPlatformReady": {
+        "title": "พร้อมสำหรับหลายแพลตฟอร์ม",
+        "description": "ทำงานได้อย่างราบรื่นบนเดสก์ท็อปและอุปกรณ์มือถือ"
+      },
+      "realTimeCalculation": {
+        "title": "การคำนวณแบบเรียลไทม์",
+        "description": "ผลลัพธ์จะอัปเดตโดยอัตโนมัติเมื่อคุณพิมพ์"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "ผลลัพธ์ที่แม่นยำ",
+        "description": "สร้างด้วยสูตรและค่าคงที่ที่ผ่านการตรวจสอบแล้ว"
+      },
+      "activityLevels": {
+        "title": "ระดับกิจกรรม",
+        "description": "ปัจจัยในการออกกำลังกายและการเคลื่อนไหวในแต่ละวัน"
+      },
+      "addSubtractTime": {
+        "title": "บวก/ลบเวลา",
+        "description": "เพิ่มระยะเวลาหรือนับถอยหลัง"
+      },
+      "addressCheck": {
+        "title": "การตรวจสอบที่อยู่",
+        "description": "ตรวจสอบที่อยู่กระเป๋าเงินตามรูปแบบ"
+      },
+      "affordability": {
+        "title": "ความสามารถในการจ่ายได้",
+        "description": "ตรวจสอบราคาที่เหมาะกับงบประมาณของคุณ"
+      },
+      "amortization": {
+        "title": "ค่าตัดจำหน่าย",
+        "description": "ดูรายละเอียดสินเชื่อรายปี"
+      },
+      "amortizationTable": {
+        "title": "ตารางค่าตัดจำหน่าย",
+        "description": "ดูเงินต้นและดอกเบี้ยรายปี"
+      },
+      "amortizationView": {
+        "title": "มุมมองค่าตัดจำหน่าย",
+        "description": "ดูว่าเงินต้นและดอกเบี้ยเปลี่ยนแปลงไปอย่างไรเมื่อเวลาผ่านไป"
+      },
+      "astroPlanning": {
+        "title": "การวางแผนทางดาราศาสตร์",
+        "description": "วางแผนภาพเส้นทางสตาร์เทรลและทางช้างเผือก"
+      },
+      "audioDelay": {
+        "title": "ความล่าช้าของเสียง",
+        "description": "ซิงค์เวลาล่าช้ากับจังหวะ"
+      },
+      "bandwidthCalc": {
+        "title": "การคำนวณแบนด์วิธ",
+        "description": "ประมาณเวลาโอนและปริมาณงาน"
+      },
+      "basicPercentage": {
+        "title": "เปอร์เซ็นต์พื้นฐาน",
+        "description": "คำนวณว่า X% ของ Y เป็นเท่าใดทันที"
+      },
+      "bidAskSpread": {
+        "title": "การแพร่กระจายการเสนอราคา",
+        "description": "เปรียบเทียบอัตราซื้อและขาย"
+      },
+      "bmiCompute": {
+        "title": "การคำนวณค่าดัชนีมวลกาย",
+        "description": "คำนวณดัชนีมวลกายอย่างรวดเร็ว"
+      },
+      "bpmTempo": {
+        "title": "BPM/จังหวะ",
+        "description": "คำนวณจังหวะต่อนาที"
+      },
+      "capacityPlan": {
+        "title": "แผนความจุ",
+        "description": "ขนาด CPU หน่วยความจำ และพื้นที่เก็บข้อมูล"
+      },
+      "categoryView": {
+        "title": "มุมมองหมวดหมู่",
+        "description": "ดูช่วงน้ำหนักน้อยถึงอ้วน"
+      },
+      "clearOutput": {
+        "title": "ล้างเอาต์พุต",
+        "description": "ดูผลลัพธ์พร้อมคำอธิบายที่เป็นประโยชน์"
+      },
+      "clusterSizing": {
+        "title": "การปรับขนาดคลัสเตอร์",
+        "description": "วางแผน Node Pool ของ Kubernetes"
+      },
+      "colorSpaceConvert": {
+        "title": "การแปลงพื้นที่สี",
+        "description": "สลับระหว่าง HEX, RGB, HSL และ CMYK"
+      },
+      "colorTokenConvert": {
+        "title": "การแปลงสี/โทเค็น",
+        "description": "สลับระหว่างรูปแบบสี CSS"
+      },
+      "concentration": {
+        "title": "ความเข้มข้น",
+        "description": "ทำงานด้วยโมลาริตี โมลาลิตี และการเจือจาง"
+      },
+      "constantLookup": {
+        "title": "การค้นหาอย่างต่อเนื่อง",
+        "description": "ใช้ค่าคงที่ทางกายภาพในตัว"
+      },
+      "contrastCheck": {
+        "title": "ตรวจสอบคอนทราสต์",
+        "description": "ตรวจสอบอัตราส่วนคอนทราสต์ของความสามารถในการเข้าถึง"
+      },
+      "contributionModeling": {
+        "title": "การสร้างแบบจำลองการมีส่วนร่วม",
+        "description": "เพิ่มเงินฝากรายเดือนหรือรายปี"
+      },
+      "copyConfig": {
+        "title": "คัดลอกการกำหนดค่า",
+        "description": "ช่วงการส่งออกสำหรับการใช้ไฟร์วอลล์หรือเราเตอร์"
+      },
+      "copyResults": {
+        "title": "คัดลอกผลลัพธ์",
+        "description": "หยิบคำตอบสำหรับการบ้านหรือรายงาน"
+      },
+      "copyValues": {
+        "title": "คัดลอกค่า",
+        "description": "คัดลอก CSS หรือโทเค็นการออกแบบทันที"
+      },
+      "costPlanning": {
+        "title": "การวางแผนต้นทุน",
+        "description": "คำนวณต้นทุนส่วนผสมต่อมื้อ"
+      },
+      "dateDiff": {
+        "title": "วันที่ต่างกัน",
+        "description": "ค้นหาวัน สัปดาห์ หรือเดือนระหว่างวันที่"
+      },
+      "dofCompute": {
+        "title": "การคำนวณของกระทรวงกลาโหม",
+        "description": "คำนวณระยะชัดลึกสำหรับเลนส์ใดๆ"
+      },
+      "downloadEstimate": {
+        "title": "ดาวน์โหลดประมาณการ",
+        "description": "วางแผนการดาวน์โหลดไฟล์ตามความเร็วการเชื่อมต่อ"
+      },
+      "exportReady": {
+        "title": "พร้อมส่งออก",
+        "description": "คัดลอกหรือพิมพ์ตารางเวลาสำหรับบันทึก"
+      },
+      "exposureMath": {
+        "title": "คณิตศาสตร์การสัมผัส",
+        "description": "ปรับสมดุลชัตเตอร์ รูรับแสง และ ISO"
+      },
+      "fastInput": {
+        "title": "ป้อนข้อมูลอย่างรวดเร็ว",
+        "description": "ป้อนค่าและรับคำตอบทันที"
+      },
+      "flexibleUnits": {
+        "title": "หน่วยที่ยืดหยุ่น",
+        "description": "สลับระหว่างหน่วยและรูปแบบทั่วไป"
+      },
+      "formulaCalc": {
+        "title": "สูตรคำนวณ",
+        "description": "แก้สมการฟิสิกส์ทั่วไป"
+      },
+      "formulaDriven": {
+        "title": "ขับเคลื่อนด้วยสูตร",
+        "description": "สร้างขึ้นบนสมการทางวิศวกรรมมาตรฐาน"
+      },
+      "frequencyMath": {
+        "title": "คณิตศาสตร์ความถี่",
+        "description": "แปลงโน้ตเป็นเฮิรตซ์และเซนต์"
+      },
+      "fuelEconomy": {
+        "title": "การประหยัดน้ำมันเชื้อเพลิง",
+        "description": "เปรียบเทียบ MPG, ลิตร/100 กม. และราคาต่อกิโลเมตร"
+      },
+      "futureValue": {
+        "title": "มูลค่าในอนาคต",
+        "description": "ดูว่าการลงทุนของคุณจะเติบโตเท่าใด"
+      },
+      "goalModes": {
+        "title": "โหมดเป้าหมาย",
+        "description": "วางแผนการลดน้ำหนัก คงไว้ หรือเพิ่มน้ำหนัก"
+      },
+      "guidanceNotes": {
+        "title": "บันทึกคำแนะนำ",
+        "description": "เข้าใจว่าผลลัพธ์แต่ละอย่างหมายถึงอะไร"
+      },
+      "hashGeneration": {
+        "title": "การสร้างแฮช",
+        "description": "สร้าง SHA, MD5 และแฮชอื่นๆ"
+      },
+      "historicalView": {
+        "title": "มุมมองทางประวัติศาสตร์",
+        "description": "ติดตามการเปลี่ยนแปลงของอัตราเมื่อเวลาผ่านไป"
+      },
+      "idealWeight": {
+        "title": "น้ำหนักในอุดมคติ",
+        "description": "ประมาณช่วงน้ำหนักที่เหมาะสม"
+      },
+      "ingredientAware": {
+        "title": "ส่วนผสมที่ตระหนัก",
+        "description": "แปลงตามความหนาแน่นของส่วนผสม"
+      },
+      "instantAssessment": {
+        "title": "การประเมินทันที",
+        "description": "ตรวจสอบหน่วยวัดต่างๆ เช่น BMI ไขมันในร่างกาย และแคลอรี่"
+      },
+      "interestBreakdown": {
+        "title": "รายละเอียดดอกเบี้ย",
+        "description": "แยกเงินต้นกับดอกเบี้ยที่ได้รับ"
+      },
+      "intervalTool": {
+        "title": "เครื่องมือช่วงเวลา",
+        "description": "ค้นหาช่วงดนตรีและมาตราส่วน"
+      },
+      "ipAnalysis": {
+        "title": "การวิเคราะห์ทรัพย์สินทางปัญญา",
+        "description": "ตรวจสอบและจัดประเภท IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "รูปแบบ JSON",
+        "description": "พิมพ์สวยและตรวจสอบ JSON"
+      },
+      "licensing": {
+        "title": "การออกใบอนุญาต",
+        "description": "ประมาณการใบอนุญาตและจำนวนคอร์"
+      },
+      "loanPlanning": {
+        "title": "การวางแผนสินเชื่อ",
+        "description": "ประมาณการการชำระเงินอัตโนมัติรายเดือน"
+      },
+      "macroSplit": {
+        "title": "แยกมาโคร",
+        "description": "คำนวณเป้าหมายโปรตีน ไขมัน และคาร์โบไฮเดรต"
+      },
+      "maintenanceLog": {
+        "title": "บันทึกการบำรุงรักษา",
+        "description": "ติดตามช่วงเวลาการให้บริการและต้นทุน"
+      },
+      "markupEstimate": {
+        "title": "การประมาณการมาร์กอัป",
+        "description": "เพิ่มหลักประกันการแลกเปลี่ยนหรือค่าธรรมเนียม"
+      },
+      "miningEstimate": {
+        "title": "ประมาณการการขุด",
+        "description": "รางวัลและค่าพลังงานโดยประมาณ"
+      },
+      "molarMass": {
+        "title": "มวลกราม",
+        "description": "คำนวณน้ำหนักโมเลกุลจากสูตร"
+      },
+      "monthlyPayment": {
+        "title": "การชำระเงินรายเดือน",
+        "description": "ประมาณการ P&I พร้อมภาษีและการประกันภัย"
+      },
+      "mortgageEstimate": {
+        "title": "ประมาณการสินเชื่อที่อยู่อาศัย",
+        "description": "คำนวณการชำระเงินจำนองรายเดือน"
+      },
+      "multipleFormulas": {
+        "title": "หลายสูตร",
+        "description": "เลือกวิธีการคำนวณที่เหมาะกับคุณ"
+      },
+      "multipleModes": {
+        "title": "หลายโหมด",
+        "description": "จัดการตัวแปรเปอร์เซ็นต์ อัตราส่วน และสมการ"
+      },
+      "networkPlanning": {
+        "title": "การวางแผนเครือข่าย",
+        "description": "ลิงก์ขนาดสำหรับเวลาแฝงและความจุ"
+      },
+      "nutritionLookup": {
+        "title": "การค้นหาโภชนาการ",
+        "description": "ประมาณการแคลอรี่และมาโคร"
+      },
+      "palettePreview": {
+        "title": "ดูตัวอย่างจานสี",
+        "description": "ดูการผสมสีที่กลมกลืนกัน"
+      },
+      "parameterSweep": {
+        "title": "การกวาดพารามิเตอร์",
+        "description": "ทดสอบค่าในช่วงต่างๆ"
+      },
+      "percentChange": {
+        "title": "เปอร์เซ็นต์การเปลี่ยนแปลง",
+        "description": "ค้นหาการเพิ่มขึ้นหรือลดลงระหว่างค่าต่างๆ"
+      },
+      "percentDifference": {
+        "title": "เปอร์เซ็นต์ความแตกต่าง",
+        "description": "เปรียบเทียบความแตกต่างสัมพัทธ์ระหว่างตัวเลขสองตัว"
+      },
+      "percentOff": {
+        "title": "เปอร์เซ็นต์ส่วนลด",
+        "description": "ค้นหาอัตราคิดลดจากราคา"
+      },
+      "phTools": {
+        "title": "เครื่องมือวัดค่า pH",
+        "description": "แปลงระดับ pH, pOH และไฮโดรเจนไอออน"
+      },
+      "precisionControl": {
+        "title": "การควบคุมที่แม่นยำ",
+        "description": "ปรับตำแหน่งทศนิยมและกฎการปัดเศษ"
+      },
+      "precisionOutput": {
+        "title": "เอาต์พุตที่แม่นยำ",
+        "description": "ควบคุมตัวเลขสำคัญ"
+      },
+      "printResolution": {
+        "title": "ความละเอียดในการพิมพ์",
+        "description": "ค้นหา DPI และขนาดการพิมพ์จากพิกเซล"
+      },
+      "quickEstimation": {
+        "title": "การประมาณค่าที่รวดเร็ว",
+        "description": "รับผลลัพธ์ในไม่กี่วินาทีโดยไม่ต้องใช้สเปรดชีตที่ซับซ้อน"
+      },
+      "rateCompare": {
+        "title": "อัตราการเปรียบเทียบ",
+        "description": "เปรียบเทียบราคาและเงื่อนไขแบบเคียงข้างกัน"
+      },
+      "rateConvert": {
+        "title": "แปลงอัตรา",
+        "description": "แปลงระหว่าง crypto และ fiat"
+      },
+      "rateConvert1": {
+        "title": "แปลงอัตรา",
+        "description": "แปลงจำนวนเงินระหว่างสกุลเงิน"
+      },
+      "recipeScaling": {
+        "title": "การปรับขนาดสูตร",
+        "description": "ปรับขนาดสูตรอาหารสำหรับการนับจำนวนหน่วยบริโภค"
+      },
+      "referenceValues": {
+        "title": "ค่าอ้างอิง",
+        "description": "เปรียบเทียบกับวัสดุทั่วไป"
+      },
+      "regexTest": {
+        "title": "การทดสอบ Regex",
+        "description": "ทดสอบนิพจน์ทั่วไปแบบสด"
+      },
+      "reversePercentage": {
+        "title": "เปอร์เซ็นต์ย้อนกลับ",
+        "description": "ค้นหาค่าเดิมก่อนเปอร์เซ็นต์การเปลี่ยนแปลง"
+      },
+      "roiAnalysis": {
+        "title": "การวิเคราะห์ผลตอบแทนการลงทุน",
+        "description": "เปรียบเทียบผลตอบแทนค่าเช่าและอัตราสูงสุด"
+      },
+      "salePrice": {
+        "title": "ราคาขาย",
+        "description": "คำนวณราคาหลังหักส่วนลด"
+      },
+      "scaleRecipes": {
+        "title": "สูตรสเกล",
+        "description": "ปรับขนาดจากหนึ่งหน่วยบริโภคเป็นหลายหน่วย"
+      },
+      "scenarioCompare": {
+        "title": "สถานการณ์เปรียบเทียบ",
+        "description": "ทดสอบอัตรา เงื่อนไข และการชำระเงินดาวน์ที่แตกต่างกัน"
+      },
+      "stackSavings": {
+        "title": "ประหยัดสแต็ค",
+        "description": "รวมคูปองและส่วนลด"
+      },
+      "stepByStepLogic": {
+        "title": "ตรรกะทีละขั้นตอน",
+        "description": "มาดูกันว่าแต่ละตัวเลขได้มาอย่างไร"
+      },
+      "stoichiometry": {
+        "title": "ปริมาณสารสัมพันธ์",
+        "description": "ปรับสมดุลปริมาณปฏิกิริยา"
+      },
+      "storageConvert": {
+        "title": "แปลงหน่วยเก็บข้อมูล",
+        "description": "แปลง KB, MB, GB, TB และอื่นๆ"
+      },
+      "subnetting": {
+        "title": "เครือข่ายย่อย",
+        "description": "คำนวณ CIDR มาสก์ และช่วงโฮสต์"
+      },
+      "taxAware": {
+        "title": "ภาษีตระหนักถึง",
+        "description": "เพิ่มภาษีการขายในราคาสุดท้าย"
+      },
+      "tcoModel": {
+        "title": "โมเดล TCO",
+        "description": "เปรียบเทียบต้นทุนภายในองค์กรและคลาวด์"
+      },
+      "tdeeEstimate": {
+        "title": "ค่าประมาณ TDEE",
+        "description": "ประมาณการค่าใช้จ่ายพลังงานรายวัน"
+      },
+      "timeZoneConvert": {
+        "title": "การแปลงโซนเวลา",
+        "description": "เปรียบเทียบเวลาข้ามภูมิภาค"
+      },
+      "tireSizing": {
+        "title": "ขนาดยาง",
+        "description": "เปรียบเทียบขนาดยางและพิกัดความเร็ว"
+      },
+      "totalInterest": {
+        "title": "ดอกเบี้ยรวม",
+        "description": "ดูต้นทุนดอกเบี้ยตลอดชีพ"
+      },
+      "unitAware": {
+        "title": "หน่วยรับรู้",
+        "description": "จัดการ SI และหน่วยอิมพีเรียล"
+      },
+      "unitConversion": {
+        "title": "การแปลงหน่วย",
+        "description": "แปลงถ้วย กรัม ออนซ์ และอื่นๆ"
+      },
+      "unitConvert": {
+        "title": "การแปลงหน่วย",
+        "description": "แปลงหน่วยทางกายภาพข้ามระบบ"
+      },
+      "unitFlexibility": {
+        "title": "ความยืดหยุ่นของหน่วย",
+        "description": "สลับระหว่างหน่วยเมตริกและจักรวรรดิได้อย่างอิสระ"
+      },
+      "unitToggle": {
+        "title": "สลับหน่วย",
+        "description": "สลับหน่วยเมตริกและอิมพีเรียล"
+      },
+      "urlEncode": {
+        "title": "เข้ารหัส URL",
+        "description": "เข้ารหัสและถอดรหัส URL อย่างปลอดภัย"
+      },
+      "volumeConvert": {
+        "title": "แปลงระดับเสียง",
+        "description": "สลับถ้วยช้อนโต๊ะมิลลิลิตร"
+      },
+      "weightConvert": {
+        "title": "แปลงน้ำหนัก",
+        "description": "แปลงหน่วยกรัม ออนซ์ ปอนด์"
+      },
+      "wildcardMath": {
+        "title": "คณิตศาสตร์ตัวแทน",
+        "description": "เครือข่ายคอมพิวเตอร์และที่อยู่การออกอากาศ"
+      },
+      "workdayCount": {
+        "title": "นับวันทำงาน",
+        "description": "ไม่รวมวันหยุดสุดสัปดาห์และวันหยุดนักขัตฤกษ์"
+      },
+      "yearlySchedule": {
+        "title": "กำหนดการประจำปี",
+        "description": "ทบทวนการเติบโตในแต่ละช่วงเวลา"
+      }
     }
   }
 }

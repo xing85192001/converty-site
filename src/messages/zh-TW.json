@@ -90,7 +90,9 @@
     "financeComingSoon": "金融計算機即將推出！",
     "searchPlaceholder": "搜尋計算機……",
     "result": "結果",
-    "aboutThisCalculator": "关于 {title}"
+    "aboutThisCalculator": "关于 {title}",
+    "copySuccess": "已複製到剪貼簿",
+    "copyError": "無法複製到剪貼簿"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 圖片 / 影片處理",
@@ -7117,6 +7119,456 @@
       "emailTitle": "電子郵件",
       "emailGeneral": "一般與支援：<email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "隱私問題：<email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "realTimeCalculation": {
+        "title": "实时计算",
+        "description": "输入时自动更新结果"
+      },
+      "multiPlatformReady": {
+        "title": "多平台适配",
+        "description": "桌面端与移动端均流畅运行"
+      },
+      "historyReady": {
+        "title": "历史记录",
+        "description": "一键复用之前的输入值"
+      }
+    },
+    "core": {
+      "quickEstimation": {
+        "title": "快速估算",
+        "description": "无需复杂电子表格即可在数秒内得到结果"
+      },
+      "amortizationView": {
+        "title": "摊销视图",
+        "description": "查看本金与利息随时间的变化"
+      },
+      "scenarioCompare": {
+        "title": "方案对比",
+        "description": "测试不同利率、期限和首付比例"
+      },
+      "exportReady": {
+        "title": "可导出",
+        "description": "复制或打印还款计划表"
+      },
+      "instantAssessment": {
+        "title": "即时评估",
+        "description": "快速检查 BMI、体脂率与卡路里等指标"
+      },
+      "multipleFormulas": {
+        "title": "多种公式",
+        "description": "选择最适合你的计算方法"
+      },
+      "unitFlexibility": {
+        "title": "单位灵活",
+        "description": "公制与英制单位自由切换"
+      },
+      "guidanceNotes": {
+        "title": "解读说明",
+        "description": "了解每个结果的实际含义"
+      },
+      "stepByStepLogic": {
+        "title": "逐步推导",
+        "description": "跟随每个数字的推导过程"
+      },
+      "multipleModes": {
+        "title": "多种模式",
+        "description": "支持百分比、比率与方程等变体"
+      },
+      "precisionControl": {
+        "title": "精度控制",
+        "description": "调整小数位数与四舍五入规则"
+      },
+      "copyResults": {
+        "title": "复制结果",
+        "description": "一键获取作业或报告所需答案"
+      },
+      "unitConversion": {
+        "title": "单位换算",
+        "description": "换算杯、克、盎司等多种单位"
+      },
+      "recipeScaling": {
+        "title": "食谱缩放",
+        "description": "按需调整食谱份数"
+      },
+      "nutritionLookup": {
+        "title": "营养查询",
+        "description": "估算卡路里和宏量营养素"
+      },
+      "costPlanning": {
+        "title": "成本规划",
+        "description": "计算每份料理的食材成本"
+      },
+      "formulaDriven": {
+        "title": "公式驱动",
+        "description": "基于标准工程方程构建"
+      },
+      "unitAware": {
+        "title": "单位感知",
+        "description": "同时处理 SI 与英制单位"
+      },
+      "parameterSweep": {
+        "title": "参数扫描",
+        "description": "在范围内批量测试数值"
+      },
+      "referenceValues": {
+        "title": "参考数值",
+        "description": "与常见材料属性进行对比"
+      },
+      "molarMass": {
+        "title": "摩尔质量",
+        "description": "根据化学式计算分子量"
+      },
+      "concentration": {
+        "title": "浓度计算",
+        "description": "支持摩尔浓度、质量浓度与稀释"
+      },
+      "stoichiometry": {
+        "title": "化学计量",
+        "description": "配平反应方程与用量"
+      },
+      "phTools": {
+        "title": "pH 工具",
+        "description": "换算 pH、pOH 与氢离子浓度"
+      },
+      "colorSpaceConvert": {
+        "title": "色彩空间转换",
+        "description": "在 HEX、RGB、HSL、CMYK 之间切换"
+      },
+      "palettePreview": {
+        "title": "调色预览",
+        "description": "预览和谐的配色方案"
+      },
+      "contrastCheck": {
+        "title": "对比度检查",
+        "description": "验证无障碍对比度比例"
+      },
+      "copyValues": {
+        "title": "复制数值",
+        "description": "一键复制 CSS 或设计 Token"
+      },
+      "bandwidthCalc": {
+        "title": "带宽计算",
+        "description": "估算传输时间与吞吐量"
+      },
+      "storageConvert": {
+        "title": "存储换算",
+        "description": "换算 KB、MB、GB、TB 等单位"
+      },
+      "networkPlanning": {
+        "title": "网络规划",
+        "description": "根据延迟与容量规划链路"
+      },
+      "downloadEstimate": {
+        "title": "下载估算",
+        "description": "按网速估算文件下载时间"
+      },
+      "dateDiff": {
+        "title": "日期差计算",
+        "description": "计算两日期间的天数、周数或月数"
+      },
+      "addSubtractTime": {
+        "title": "时间加减",
+        "description": "对时间进行加法或减法运算"
+      },
+      "timeZoneConvert": {
+        "title": "时区换算",
+        "description": "跨时区比较时间"
+      },
+      "workdayCount": {
+        "title": "工作日计算",
+        "description": "排除周末与节假日"
+      },
+      "subnetting": {
+        "title": "子网划分",
+        "description": "计算 CIDR、子网掩码与主机范围"
+      },
+      "ipAnalysis": {
+        "title": "IP 分析",
+        "description": "验证并分类 IPv4/IPv6 地址"
+      },
+      "wildcardMath": {
+        "title": "通配符计算",
+        "description": "计算网络地址与广播地址"
+      },
+      "copyConfig": {
+        "title": "配置导出",
+        "description": "导出用于防火墙或路由器的范围"
+      },
+      "hashGeneration": {
+        "title": "哈希生成",
+        "description": "生成 SHA、MD5 等多种哈希"
+      },
+      "addressCheck": {
+        "title": "地址校验",
+        "description": "按格式验证钱包地址"
+      },
+      "miningEstimate": {
+        "title": "挖矿估算",
+        "description": "估算收益与功耗成本"
+      },
+      "rateConvert": {
+        "title": "汇率换算",
+        "description": "在加密货币与法币之间换算"
+      },
+      "fuelEconomy": {
+        "title": "燃油经济性",
+        "description": "对比 MPG、L/100km 与每公里成本"
+      },
+      "loanPlanning": {
+        "title": "贷款规划",
+        "description": "估算每月汽车还款金额"
+      },
+      "tireSizing": {
+        "title": "轮胎规格",
+        "description": "对比轮胎尺寸与速度等级"
+      },
+      "maintenanceLog": {
+        "title": "保养记录",
+        "description": "跟踪保养周期与费用"
+      },
+      "dofCompute": {
+        "title": "景深计算",
+        "description": "为任何镜头计算景深"
+      },
+      "exposureMath": {
+        "title": "曝光计算",
+        "description": "平衡快门、光圈与 ISO"
+      },
+      "printResolution": {
+        "title": "打印分辨率",
+        "description": "从像素计算 DPI 与打印尺寸"
+      },
+      "astroPlanning": {
+        "title": "星空规划",
+        "description": "规划星轨与银河拍摄"
+      },
+      "unitConvert": {
+        "title": "单位换算",
+        "description": "跨体系换算物理单位"
+      },
+      "formulaCalc": {
+        "title": "公式计算",
+        "description": "求解常见物理方程"
+      },
+      "constantLookup": {
+        "title": "常量查询",
+        "description": "使用内置物理常数"
+      },
+      "precisionOutput": {
+        "title": "精度输出",
+        "description": "控制有效数字位数"
+      },
+      "mortgageEstimate": {
+        "title": "房贷估算",
+        "description": "计算每月房贷还款金额"
+      },
+      "roiAnalysis": {
+        "title": "投资回报分析",
+        "description": "对比出租收益率与资本化率"
+      },
+      "affordability": {
+        "title": "可负担性",
+        "description": "根据预算评估可承受房价"
+      },
+      "amortization": {
+        "title": "摊销表",
+        "description": "查看年度贷款明细"
+      },
+      "bpmTempo": {
+        "title": "BPM/节拍速度",
+        "description": "计算每分钟节拍数"
+      },
+      "frequencyMath": {
+        "title": "频率计算",
+        "description": "将音符换算为赫兹与音分"
+      },
+      "intervalTool": {
+        "title": "音程工具",
+        "description": "查找音程与音阶"
+      },
+      "audioDelay": {
+        "title": "音频延迟",
+        "description": "按速度同步延迟时间"
+      },
+      "urlEncode": {
+        "title": "URL 编码",
+        "description": "安全编码与解码 URL"
+      },
+      "colorTokenConvert": {
+        "title": "颜色/Token 转换",
+        "description": "在 CSS 颜色格式之间切换"
+      },
+      "jsonFormat": {
+        "title": "JSON 格式化",
+        "description": "美化与校验 JSON"
+      },
+      "regexTest": {
+        "title": "正则测试",
+        "description": "实时测试正则表达式"
+      },
+      "capacityPlan": {
+        "title": "容量规划",
+        "description": "规划 CPU、内存与存储容量"
+      },
+      "licensing": {
+        "title": "授权估算",
+        "description": "估算许可证与核心数量"
+      },
+      "tcoModel": {
+        "title": "TCO 模型",
+        "description": "对比本地与云端成本"
+      },
+      "clusterSizing": {
+        "title": "集群规划",
+        "description": "规划 Kubernetes 节点池"
+      },
+      "fastInput": {
+        "title": "快速输入",
+        "description": "输入数值立即得到答案"
+      },
+      "accurateResults": {
+        "title": "精准结果",
+        "description": "基于验证过的公式与常量构建"
+      },
+      "flexibleUnits": {
+        "title": "灵活单位",
+        "description": "在常用单位与格式之间切换"
+      },
+      "clearOutput": {
+        "title": "清晰输出",
+        "description": "附带说明帮助理解结果"
+      },
+      "basicPercentage": {
+        "title": "基础百分比",
+        "description": "即时计算 Y 的 X% 是多少"
+      },
+      "percentChange": {
+        "title": "百分比变化",
+        "description": "计算数值之间的增长或下降幅度"
+      },
+      "percentDifference": {
+        "title": "百分比差异",
+        "description": "对比两个数字之间的相对差异"
+      },
+      "reversePercentage": {
+        "title": "反向百分比",
+        "description": "在已知变化率的情况下反推原始值"
+      },
+      "futureValue": {
+        "title": "未来值",
+        "description": "查看投资的增长幅度"
+      },
+      "contributionModeling": {
+        "title": "投入模型",
+        "description": "添加每月或每年的投入"
+      },
+      "interestBreakdown": {
+        "title": "利息拆分",
+        "description": "区分本金与利息"
+      },
+      "yearlySchedule": {
+        "title": "年度明细表",
+        "description": "查看每个周期的增长情况"
+      },
+      "monthlyPayment": {
+        "title": "月供金额",
+        "description": "估算含税费与保险的本息月供"
+      },
+      "amortizationTable": {
+        "title": "摊销表",
+        "description": "查看年度本金与利息明细"
+      },
+      "totalInterest": {
+        "title": "总利息",
+        "description": "查看终身利息成本"
+      },
+      "rateCompare": {
+        "title": "利率对比",
+        "description": "并排对比不同利率与期限"
+      },
+      "bmiCompute": {
+        "title": "BMI 计算",
+        "description": "快速计算身体质量指数"
+      },
+      "categoryView": {
+        "title": "分类视图",
+        "description": "查看从偏瘦到肥胖的区间"
+      },
+      "idealWeight": {
+        "title": "理想体重",
+        "description": "估算健康体重范围"
+      },
+      "unitToggle": {
+        "title": "单位切换",
+        "description": "在公制与英制之间切换"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE 估算",
+        "description": "估算每日能量消耗"
+      },
+      "macroSplit": {
+        "title": "宏量分配",
+        "description": "计算蛋白质、脂肪与碳水目标"
+      },
+      "goalModes": {
+        "title": "目标模式",
+        "description": "为减重、维持或增重做规划"
+      },
+      "activityLevels": {
+        "title": "活动等级",
+        "description": "计入运动与日常活动量"
+      },
+      "volumeConvert": {
+        "title": "体积换算",
+        "description": "换算杯、汤匙、毫升等"
+      },
+      "weightConvert": {
+        "title": "重量换算",
+        "description": "换算克、盎司、磅等"
+      },
+      "ingredientAware": {
+        "title": "按食材换算",
+        "description": "按食材密度进行换算"
+      },
+      "scaleRecipes": {
+        "title": "食谱缩放",
+        "description": "将单份食谱扩展为多份"
+      },
+      "salePrice": {
+        "title": "折后价",
+        "description": "计算折扣后的价格"
+      },
+      "percentOff": {
+        "title": "折扣率",
+        "description": "从价格反推折扣比例"
+      },
+      "stackSavings": {
+        "title": "叠加优惠",
+        "description": "组合优惠券与折扣"
+      },
+      "taxAware": {
+        "title": "含税计算",
+        "description": "在最终价格上加计销售税"
+      },
+      "rateConvert1": {
+        "title": "汇率换算",
+        "description": "在不同货币之间换算金额"
+      },
+      "markupEstimate": {
+        "title": "加价估算",
+        "description": "添加换汇价差或手续费"
+      },
+      "bidAskSpread": {
+        "title": "买卖价差",
+        "description": "对比买入价与卖出价"
+      },
+      "historicalView": {
+        "title": "历史视图",
+        "description": "追踪汇率随时间的变化"
+      }
     }
   }
 }

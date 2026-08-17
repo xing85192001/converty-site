@@ -88,7 +88,9 @@
       "datetime": "Date & Time"
     },
     "financeComingSoon": "Finance calculators coming soon!",
-    "aboutThisCalculator": "About {title}"
+    "aboutThisCalculator": "About {title}",
+    "copySuccess": "Copied to clipboard",
+    "copyError": "Failed to copy to clipboard"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -7097,6 +7099,456 @@
       "emailTitle": "Email",
       "emailGeneral": "General & support: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Privacy questions: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "realTimeCalculation": {
+        "title": "Real-time calculation",
+        "description": "Results update automatically as you type"
+      },
+      "multiPlatformReady": {
+        "title": "Multi-platform ready",
+        "description": "Works smoothly on desktop and mobile devices"
+      },
+      "historyReady": {
+        "title": "History ready",
+        "description": "Reuse previous values with one click"
+      }
+    },
+    "core": {
+      "quickEstimation": {
+        "title": "Quick estimation",
+        "description": "Get results in seconds without complex spreadsheets"
+      },
+      "amortizationView": {
+        "title": "Amortization view",
+        "description": "See how principal and interest change over time"
+      },
+      "scenarioCompare": {
+        "title": "Scenario compare",
+        "description": "Test different rates, terms, and down payments"
+      },
+      "exportReady": {
+        "title": "Export ready",
+        "description": "Copy or print schedules for records"
+      },
+      "instantAssessment": {
+        "title": "Instant assessment",
+        "description": "Check metrics like BMI, body fat, and calories"
+      },
+      "multipleFormulas": {
+        "title": "Multiple formulas",
+        "description": "Choose the calculation method that fits you"
+      },
+      "unitFlexibility": {
+        "title": "Unit flexibility",
+        "description": "Switch between metric and imperial freely"
+      },
+      "guidanceNotes": {
+        "title": "Guidance notes",
+        "description": "Understand what each result means"
+      },
+      "stepByStepLogic": {
+        "title": "Step-by-step logic",
+        "description": "Follow how each number is derived"
+      },
+      "multipleModes": {
+        "title": "Multiple modes",
+        "description": "Handle percentage, ratio, and equation variants"
+      },
+      "precisionControl": {
+        "title": "Precision control",
+        "description": "Adjust decimal places and rounding rules"
+      },
+      "copyResults": {
+        "title": "Copy results",
+        "description": "Grab answers for homework or reports"
+      },
+      "unitConversion": {
+        "title": "Unit conversion",
+        "description": "Convert cups, grams, ounces, and more"
+      },
+      "recipeScaling": {
+        "title": "Recipe scaling",
+        "description": "Resize recipes for any serving count"
+      },
+      "nutritionLookup": {
+        "title": "Nutrition lookup",
+        "description": "Estimate calories and macros"
+      },
+      "costPlanning": {
+        "title": "Cost planning",
+        "description": "Calculate ingredient cost per serving"
+      },
+      "formulaDriven": {
+        "title": "Formula-driven",
+        "description": "Built on standard engineering equations"
+      },
+      "unitAware": {
+        "title": "Unit-aware",
+        "description": "Handles SI and imperial units"
+      },
+      "parameterSweep": {
+        "title": "Parameter sweep",
+        "description": "Test values across a range"
+      },
+      "referenceValues": {
+        "title": "Reference values",
+        "description": "Compare against typical materials"
+      },
+      "molarMass": {
+        "title": "Molar mass",
+        "description": "Calculate molecular weight from formulas"
+      },
+      "concentration": {
+        "title": "Concentration",
+        "description": "Work with molarity, molality, and dilution"
+      },
+      "stoichiometry": {
+        "title": "Stoichiometry",
+        "description": "Balance reaction quantities"
+      },
+      "phTools": {
+        "title": "pH tools",
+        "description": "Convert pH, pOH, and hydrogen ion levels"
+      },
+      "colorSpaceConvert": {
+        "title": "Color space convert",
+        "description": "Switch between HEX, RGB, HSL, and CMYK"
+      },
+      "palettePreview": {
+        "title": "Palette preview",
+        "description": "See harmonious color combinations"
+      },
+      "contrastCheck": {
+        "title": "Contrast check",
+        "description": "Verify accessibility contrast ratios"
+      },
+      "copyValues": {
+        "title": "Copy values",
+        "description": "Copy CSS or design tokens instantly"
+      },
+      "bandwidthCalc": {
+        "title": "Bandwidth calc",
+        "description": "Estimate transfer time and throughput"
+      },
+      "storageConvert": {
+        "title": "Storage convert",
+        "description": "Convert KB, MB, GB, TB, and beyond"
+      },
+      "networkPlanning": {
+        "title": "Network planning",
+        "description": "Size links for latency and capacity"
+      },
+      "downloadEstimate": {
+        "title": "Download estimate",
+        "description": "Plan file downloads by connection speed"
+      },
+      "dateDiff": {
+        "title": "Date diff",
+        "description": "Find days, weeks, or months between dates"
+      },
+      "addSubtractTime": {
+        "title": "Add/subtract time",
+        "description": "Add durations or count backwards"
+      },
+      "timeZoneConvert": {
+        "title": "Time zone convert",
+        "description": "Compare times across regions"
+      },
+      "workdayCount": {
+        "title": "Workday count",
+        "description": "Exclude weekends and holidays"
+      },
+      "subnetting": {
+        "title": "Subnetting",
+        "description": "Calculate CIDR, masks, and host ranges"
+      },
+      "ipAnalysis": {
+        "title": "IP analysis",
+        "description": "Validate and classify IPv4/IPv6"
+      },
+      "wildcardMath": {
+        "title": "Wildcard math",
+        "description": "Compute network and broadcast addresses"
+      },
+      "copyConfig": {
+        "title": "Copy config",
+        "description": "Export ranges for firewall or router use"
+      },
+      "hashGeneration": {
+        "title": "Hash generation",
+        "description": "Generate SHA, MD5, and other hashes"
+      },
+      "addressCheck": {
+        "title": "Address check",
+        "description": "Validate wallet addresses by format"
+      },
+      "miningEstimate": {
+        "title": "Mining estimate",
+        "description": "Approximate reward and power costs"
+      },
+      "rateConvert": {
+        "title": "Rate convert",
+        "description": "Convert between crypto and fiat"
+      },
+      "fuelEconomy": {
+        "title": "Fuel economy",
+        "description": "Compare MPG, L/100km, and cost per km"
+      },
+      "loanPlanning": {
+        "title": "Loan planning",
+        "description": "Estimate monthly auto payments"
+      },
+      "tireSizing": {
+        "title": "Tire sizing",
+        "description": "Compare tire dimensions and speed ratings"
+      },
+      "maintenanceLog": {
+        "title": "Maintenance log",
+        "description": "Track service intervals and costs"
+      },
+      "dofCompute": {
+        "title": "DoF compute",
+        "description": "Calculate depth of field for any lens"
+      },
+      "exposureMath": {
+        "title": "Exposure math",
+        "description": "Balance shutter, aperture, and ISO"
+      },
+      "printResolution": {
+        "title": "Print resolution",
+        "description": "Find DPI and print size from pixels"
+      },
+      "astroPlanning": {
+        "title": "Astro planning",
+        "description": "Plan star-trail and Milky Way shots"
+      },
+      "unitConvert": {
+        "title": "Unit convert",
+        "description": "Convert physical units across systems"
+      },
+      "formulaCalc": {
+        "title": "Formula calc",
+        "description": "Solve common physics equations"
+      },
+      "constantLookup": {
+        "title": "Constant lookup",
+        "description": "Use built-in physical constants"
+      },
+      "precisionOutput": {
+        "title": "Precision output",
+        "description": "Control significant figures"
+      },
+      "mortgageEstimate": {
+        "title": "Mortgage estimate",
+        "description": "Calculate monthly mortgage payments"
+      },
+      "roiAnalysis": {
+        "title": "ROI analysis",
+        "description": "Compare rental yield and cap rate"
+      },
+      "affordability": {
+        "title": "Affordability",
+        "description": "Check what price fits your budget"
+      },
+      "amortization": {
+        "title": "Amortization",
+        "description": "View yearly loan breakdown"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Calculate beats per minute"
+      },
+      "frequencyMath": {
+        "title": "Frequency math",
+        "description": "Convert notes to hertz and cents"
+      },
+      "intervalTool": {
+        "title": "Interval tool",
+        "description": "Find musical intervals and scales"
+      },
+      "audioDelay": {
+        "title": "Audio delay",
+        "description": "Sync delay times to tempo"
+      },
+      "urlEncode": {
+        "title": "URL encode",
+        "description": "Encode and decode URLs safely"
+      },
+      "colorTokenConvert": {
+        "title": "Color/token convert",
+        "description": "Switch between CSS color formats"
+      },
+      "jsonFormat": {
+        "title": "JSON format",
+        "description": "Pretty-print and validate JSON"
+      },
+      "regexTest": {
+        "title": "Regex test",
+        "description": "Test regular expressions live"
+      },
+      "capacityPlan": {
+        "title": "Capacity plan",
+        "description": "Size CPU, memory, and storage"
+      },
+      "licensing": {
+        "title": "Licensing",
+        "description": "Estimate license and core counts"
+      },
+      "tcoModel": {
+        "title": "TCO model",
+        "description": "Compare on-prem and cloud costs"
+      },
+      "clusterSizing": {
+        "title": "Cluster sizing",
+        "description": "Plan Kubernetes node pools"
+      },
+      "fastInput": {
+        "title": "Fast input",
+        "description": "Enter values and get answers immediately"
+      },
+      "accurateResults": {
+        "title": "Accurate results",
+        "description": "Built with validated formulas and constants"
+      },
+      "flexibleUnits": {
+        "title": "Flexible units",
+        "description": "Switch between common units and formats"
+      },
+      "clearOutput": {
+        "title": "Clear output",
+        "description": "View results with helpful explanations"
+      },
+      "basicPercentage": {
+        "title": "Basic percentage",
+        "description": "Calculate what X% of Y is instantly"
+      },
+      "percentChange": {
+        "title": "Percent change",
+        "description": "Find increase or decrease between values"
+      },
+      "percentDifference": {
+        "title": "Percent difference",
+        "description": "Compare relative difference between two numbers"
+      },
+      "reversePercentage": {
+        "title": "Reverse percentage",
+        "description": "Find the original value before a percentage change"
+      },
+      "futureValue": {
+        "title": "Future value",
+        "description": "See how much your investment will grow"
+      },
+      "contributionModeling": {
+        "title": "Contribution modeling",
+        "description": "Add monthly or yearly deposits"
+      },
+      "interestBreakdown": {
+        "title": "Interest breakdown",
+        "description": "Split principal vs. earned interest"
+      },
+      "yearlySchedule": {
+        "title": "Yearly schedule",
+        "description": "Review growth for each period"
+      },
+      "monthlyPayment": {
+        "title": "Monthly payment",
+        "description": "Estimate P&I with taxes and insurance"
+      },
+      "amortizationTable": {
+        "title": "Amortization table",
+        "description": "View yearly principal and interest"
+      },
+      "totalInterest": {
+        "title": "Total interest",
+        "description": "See lifetime interest cost"
+      },
+      "rateCompare": {
+        "title": "Rate compare",
+        "description": "Compare rates and terms side by side"
+      },
+      "bmiCompute": {
+        "title": "BMI compute",
+        "description": "Calculate body mass index quickly"
+      },
+      "categoryView": {
+        "title": "Category view",
+        "description": "See underweight to obese ranges"
+      },
+      "idealWeight": {
+        "title": "Ideal weight",
+        "description": "Estimate a healthy weight range"
+      },
+      "unitToggle": {
+        "title": "Unit toggle",
+        "description": "Switch metric and imperial units"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE estimate",
+        "description": "Estimate daily energy expenditure"
+      },
+      "macroSplit": {
+        "title": "Macro split",
+        "description": "Calculate protein, fat, and carb targets"
+      },
+      "goalModes": {
+        "title": "Goal modes",
+        "description": "Plan for weight loss, maintenance, or gain"
+      },
+      "activityLevels": {
+        "title": "Activity levels",
+        "description": "Factor in exercise and daily movement"
+      },
+      "volumeConvert": {
+        "title": "Volume convert",
+        "description": "Switch cups, tablespoons, milliliters"
+      },
+      "weightConvert": {
+        "title": "Weight convert",
+        "description": "Convert grams, ounces, pounds"
+      },
+      "ingredientAware": {
+        "title": "Ingredient-aware",
+        "description": "Convert by ingredient density"
+      },
+      "scaleRecipes": {
+        "title": "Scale recipes",
+        "description": "Resize from one serving to many"
+      },
+      "salePrice": {
+        "title": "Sale price",
+        "description": "Calculate price after discount"
+      },
+      "percentOff": {
+        "title": "Percent off",
+        "description": "Find discount rate from prices"
+      },
+      "stackSavings": {
+        "title": "Stack savings",
+        "description": "Combine coupons and discounts"
+      },
+      "taxAware": {
+        "title": "Tax aware",
+        "description": "Add sales tax to final price"
+      },
+      "rateConvert1": {
+        "title": "Rate convert",
+        "description": "Convert amounts between currencies"
+      },
+      "markupEstimate": {
+        "title": "Markup estimate",
+        "description": "Add exchange margin or fee"
+      },
+      "bidAskSpread": {
+        "title": "Bid-ask spread",
+        "description": "Compare buy and sell rates"
+      },
+      "historicalView": {
+        "title": "Historical view",
+        "description": "Track how rates change over time"
+      }
     }
   }
 }

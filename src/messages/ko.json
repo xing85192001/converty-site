@@ -91,7 +91,9 @@
     "searchPlaceholder": "계산기를 검색하세요……",
     "result": "결과",
     "results": "결과",
-    "aboutThisCalculator": "{title} 소개"
+    "aboutThisCalculator": "{title} 소개",
+    "copySuccess": "클립보드에 복사됨",
+    "copyError": "클립보드에 복사하지 못했습니다."
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 이미지 / 비디오 처리",
@@ -7118,6 +7120,456 @@
       "emailTitle": "이메일",
       "emailGeneral": "일반 및 지원: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "개인정보 보호 관련 질문: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "기록 준비됨",
+        "description": "한 번의 클릭으로 이전 값을 재사용"
+      },
+      "multiPlatformReady": {
+        "title": "멀티 플랫폼 지원",
+        "description": "데스크톱 및 모바일 장치에서 원활하게 작동합니다."
+      },
+      "realTimeCalculation": {
+        "title": "실시간 계산",
+        "description": "입력하면 결과가 자동으로 업데이트됩니다."
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "정확한 결과",
+        "description": "검증된 공식과 상수로 구축"
+      },
+      "activityLevels": {
+        "title": "활동 수준",
+        "description": "운동과 일상적인 움직임의 요인"
+      },
+      "addSubtractTime": {
+        "title": "시간 더하기/빼기",
+        "description": "기간을 추가하거나 거꾸로 계산하세요."
+      },
+      "addressCheck": {
+        "title": "주소 확인",
+        "description": "형식별로 지갑 주소를 확인하세요."
+      },
+      "affordability": {
+        "title": "경제성",
+        "description": "예산에 맞는 가격을 확인하세요"
+      },
+      "amortization": {
+        "title": "상각",
+        "description": "연간 대출 내역 보기"
+      },
+      "amortizationTable": {
+        "title": "상각 테이블",
+        "description": "연간 원금 및 이자 보기"
+      },
+      "amortizationView": {
+        "title": "상각 보기",
+        "description": "시간이 지남에 따라 원금과 이자가 어떻게 변하는지 확인하세요."
+      },
+      "astroPlanning": {
+        "title": "아스트로 기획",
+        "description": "별 궤적과 은하수 사진을 계획하세요"
+      },
+      "audioDelay": {
+        "title": "오디오 지연",
+        "description": "지연 시간을 템포에 동기화"
+      },
+      "bandwidthCalc": {
+        "title": "대역폭 계산",
+        "description": "전송 시간 및 처리량 추정"
+      },
+      "basicPercentage": {
+        "title": "기본 비율",
+        "description": "Y의 X%가 즉시 계산됩니다."
+      },
+      "bidAskSpread": {
+        "title": "입찰 요청 스프레드",
+        "description": "구매 및 판매 가격 비교"
+      },
+      "bmiCompute": {
+        "title": "BMI 계산",
+        "description": "체질량지수를 빠르게 계산하세요"
+      },
+      "bpmTempo": {
+        "title": "BPM/템포",
+        "description": "분당 비트수 계산"
+      },
+      "capacityPlan": {
+        "title": "용량 계획",
+        "description": "CPU, 메모리, 스토리지 크기"
+      },
+      "categoryView": {
+        "title": "카테고리 보기",
+        "description": "저체중부터 비만 범위까지 확인하세요."
+      },
+      "clearOutput": {
+        "title": "출력 지우기",
+        "description": "유용한 설명과 함께 결과 보기"
+      },
+      "clusterSizing": {
+        "title": "클러스터 크기",
+        "description": "Kubernetes 노드 풀 계획"
+      },
+      "colorSpaceConvert": {
+        "title": "색 공간 변환",
+        "description": "HEX, RGB, HSL, CMYK 간 전환"
+      },
+      "colorTokenConvert": {
+        "title": "색상/토큰 변환",
+        "description": "CSS 색상 형식 간 전환"
+      },
+      "concentration": {
+        "title": "농도",
+        "description": "몰 농도, 몰 농도 및 희석 작업"
+      },
+      "constantLookup": {
+        "title": "지속적인 조회",
+        "description": "내장된 물리 상수 사용"
+      },
+      "contrastCheck": {
+        "title": "대비 확인",
+        "description": "접근성 명암비 확인"
+      },
+      "contributionModeling": {
+        "title": "기여 모델링",
+        "description": "월별 또는 연간 예금 추가"
+      },
+      "copyConfig": {
+        "title": "구성 복사",
+        "description": "방화벽 또는 라우터 사용을 위한 범위 내보내기"
+      },
+      "copyResults": {
+        "title": "결과 복사",
+        "description": "숙제나 보고서에 대한 답을 얻으세요"
+      },
+      "copyValues": {
+        "title": "값 복사",
+        "description": "CSS 또는 디자인 토큰을 즉시 복사하세요."
+      },
+      "costPlanning": {
+        "title": "비용 계획",
+        "description": "서빙 당 재료 비용 계산"
+      },
+      "dateDiff": {
+        "title": "날짜 차이",
+        "description": "날짜 사이의 일, 주 또는 월 찾기"
+      },
+      "dofCompute": {
+        "title": "DoF 계산",
+        "description": "모든 렌즈의 피사계 심도 계산"
+      },
+      "downloadEstimate": {
+        "title": "견적 다운로드",
+        "description": "연결 속도에 따른 파일 다운로드 계획"
+      },
+      "exportReady": {
+        "title": "수출 준비 완료",
+        "description": "기록 일정 복사 또는 인쇄"
+      },
+      "exposureMath": {
+        "title": "노출 수학",
+        "description": "셔터, 조리개, ISO의 균형"
+      },
+      "fastInput": {
+        "title": "빠른 입력",
+        "description": "값을 입력하고 즉시 답변을 얻으세요"
+      },
+      "flexibleUnits": {
+        "title": "유연한 장치",
+        "description": "일반 단위와 형식 간 전환"
+      },
+      "formulaCalc": {
+        "title": "수식 계산",
+        "description": "일반적인 물리 방정식 풀기"
+      },
+      "formulaDriven": {
+        "title": "공식 중심",
+        "description": "표준 엔지니어링 방정식을 기반으로 구축"
+      },
+      "frequencyMath": {
+        "title": "주파수 수학",
+        "description": "메모를 헤르츠와 센트로 변환"
+      },
+      "fuelEconomy": {
+        "title": "연비",
+        "description": "MPG, L/100km 및 km당 비용 비교"
+      },
+      "futureValue": {
+        "title": "미래가치",
+        "description": "투자가 얼마나 증가할지 확인하세요"
+      },
+      "goalModes": {
+        "title": "목표 모드",
+        "description": "체중 감량, 유지 또는 증가 계획"
+      },
+      "guidanceNotes": {
+        "title": "지침사항",
+        "description": "각 결과의 의미를 이해하세요."
+      },
+      "hashGeneration": {
+        "title": "해시 생성",
+        "description": "SHA, MD5 및 기타 해시 생성"
+      },
+      "historicalView": {
+        "title": "역사적 관점",
+        "description": "시간에 따른 요율 변화 추적"
+      },
+      "idealWeight": {
+        "title": "이상적인 체중",
+        "description": "건강한 체중 범위 추정"
+      },
+      "ingredientAware": {
+        "title": "성분 인식",
+        "description": "성분 밀도로 변환"
+      },
+      "instantAssessment": {
+        "title": "즉석 평가",
+        "description": "BMI, 체지방, 칼로리 등의 측정항목을 확인하세요."
+      },
+      "interestBreakdown": {
+        "title": "관심 분석",
+        "description": "원금과 이자 분할"
+      },
+      "intervalTool": {
+        "title": "간격 도구",
+        "description": "음정과 음계 찾기"
+      },
+      "ipAnalysis": {
+        "title": "IP 분석",
+        "description": "IPv4/IPv6 검증 및 분류"
+      },
+      "jsonFormat": {
+        "title": "JSON 형식",
+        "description": "JSON을 예쁘게 인쇄하고 검증합니다."
+      },
+      "licensing": {
+        "title": "라이선스",
+        "description": "라이선스 및 코어 수 추정"
+      },
+      "loanPlanning": {
+        "title": "대출 계획",
+        "description": "월별 자동 결제 예상"
+      },
+      "macroSplit": {
+        "title": "매크로 분할",
+        "description": "단백질, 지방, 탄수화물 목표 계산"
+      },
+      "maintenanceLog": {
+        "title": "유지보수 로그",
+        "description": "서비스 간격 및 비용 추적"
+      },
+      "markupEstimate": {
+        "title": "마크업 추정",
+        "description": "교환 마진 또는 수수료 추가"
+      },
+      "miningEstimate": {
+        "title": "채굴 추정",
+        "description": "대략적인 보상 및 전력 비용"
+      },
+      "molarMass": {
+        "title": "몰 질량",
+        "description": "공식에서 분자량을 계산하세요"
+      },
+      "monthlyPayment": {
+        "title": "월별 결제",
+        "description": "세금 및 보험을 포함한 P&I 견적"
+      },
+      "mortgageEstimate": {
+        "title": "모기지 견적",
+        "description": "월별 모기지 지불금 계산"
+      },
+      "multipleFormulas": {
+        "title": "여러 수식",
+        "description": "자신에게 맞는 계산 방법을 선택하세요"
+      },
+      "multipleModes": {
+        "title": "다양한 모드",
+        "description": "백분율, 비율 및 방정식 변형 처리"
+      },
+      "networkPlanning": {
+        "title": "네트워크 계획",
+        "description": "대기 시간 및 용량에 대한 크기 링크"
+      },
+      "nutritionLookup": {
+        "title": "영양 조회",
+        "description": "칼로리 및 매크로 추정"
+      },
+      "palettePreview": {
+        "title": "팔레트 미리보기",
+        "description": "조화로운 색상 조합 보기"
+      },
+      "parameterSweep": {
+        "title": "매개변수 스윕",
+        "description": "범위 전체의 테스트 값"
+      },
+      "percentChange": {
+        "title": "변화율",
+        "description": "값 사이의 증가 또는 감소 찾기"
+      },
+      "percentDifference": {
+        "title": "백분율 차이",
+        "description": "두 숫자의 상대적인 차이 비교"
+      },
+      "percentOff": {
+        "title": "할인율",
+        "description": "가격에서 할인율 찾기"
+      },
+      "phTools": {
+        "title": "pH 도구",
+        "description": "pH, pOH 및 수소 이온 수준 변환"
+      },
+      "precisionControl": {
+        "title": "정밀 제어",
+        "description": "소수 자릿수 및 반올림 규칙 조정"
+      },
+      "precisionOutput": {
+        "title": "정밀 출력",
+        "description": "유효숫자 통제"
+      },
+      "printResolution": {
+        "title": "인쇄 해상도",
+        "description": "픽셀에서 DPI 및 인쇄 크기 찾기"
+      },
+      "quickEstimation": {
+        "title": "빠른 견적",
+        "description": "복잡한 스프레드시트 없이 몇 초 만에 결과 얻기"
+      },
+      "rateCompare": {
+        "title": "요금 비교",
+        "description": "요율과 조건을 나란히 비교해보세요."
+      },
+      "rateConvert": {
+        "title": "환율변환",
+        "description": "암호화폐와 법정화폐 간 변환"
+      },
+      "rateConvert1": {
+        "title": "환율변환",
+        "description": "통화 간 금액 변환"
+      },
+      "recipeScaling": {
+        "title": "레시피 스케일링",
+        "description": "모든 서빙 횟수에 맞게 레시피 크기 조정"
+      },
+      "referenceValues": {
+        "title": "참고값",
+        "description": "일반 재료와 비교"
+      },
+      "regexTest": {
+        "title": "정규식 테스트",
+        "description": "실시간으로 정규식 테스트"
+      },
+      "reversePercentage": {
+        "title": "역방향 백분율",
+        "description": "백분율 변경 전의 원래 값 찾기"
+      },
+      "roiAnalysis": {
+        "title": "ROI 분석",
+        "description": "임대수익률과 한도율 비교"
+      },
+      "salePrice": {
+        "title": "판매 가격",
+        "description": "할인 후 가격 계산"
+      },
+      "scaleRecipes": {
+        "title": "저울 레시피",
+        "description": "한 개에서 여러 개로 크기 조정"
+      },
+      "scenarioCompare": {
+        "title": "시나리오 비교",
+        "description": "다양한 요율, 조건, 계약금 테스트"
+      },
+      "stackSavings": {
+        "title": "스택 절감",
+        "description": "쿠폰과 할인을 결합하세요"
+      },
+      "stepByStepLogic": {
+        "title": "단계별 논리",
+        "description": "각 숫자가 어떻게 파생되는지 따르세요."
+      },
+      "stoichiometry": {
+        "title": "화학량론",
+        "description": "균형 반응량"
+      },
+      "storageConvert": {
+        "title": "스토리지 변환",
+        "description": "KB, MB, GB, TB 등을 변환하세요"
+      },
+      "subnetting": {
+        "title": "서브넷팅",
+        "description": "CIDR, 마스크 및 호스트 범위 계산"
+      },
+      "taxAware": {
+        "title": "세금 인식",
+        "description": "최종 가격에 판매세 추가"
+      },
+      "tcoModel": {
+        "title": "TCO 모델",
+        "description": "온프레미스와 클라우드 비용 비교"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE 추정",
+        "description": "일일 에너지 소비량 추정"
+      },
+      "timeZoneConvert": {
+        "title": "시간대 변환",
+        "description": "지역 간 시간 비교"
+      },
+      "tireSizing": {
+        "title": "타이어 크기",
+        "description": "타이어 치수 및 속도 등급 비교"
+      },
+      "totalInterest": {
+        "title": "총이자",
+        "description": "평생이자비용 보기"
+      },
+      "unitAware": {
+        "title": "단위 인식",
+        "description": "SI 및 영국식 단위를 처리합니다."
+      },
+      "unitConversion": {
+        "title": "단위변환",
+        "description": "컵, 그램, 온스 등을 변환하세요"
+      },
+      "unitConvert": {
+        "title": "단위 변환",
+        "description": "시스템 전반에 걸쳐 물리적 단위 변환"
+      },
+      "unitFlexibility": {
+        "title": "단위 유연성",
+        "description": "미터법과 영국식 단위 사이를 자유롭게 전환하세요."
+      },
+      "unitToggle": {
+        "title": "단위 토글",
+        "description": "미터법 및 영국식 단위 전환"
+      },
+      "urlEncode": {
+        "title": "URL 인코딩",
+        "description": "URL을 안전하게 인코딩 및 디코딩"
+      },
+      "volumeConvert": {
+        "title": "볼륨 변환",
+        "description": "컵, 테이블스푼, 밀리리터를 바꾸세요"
+      },
+      "weightConvert": {
+        "title": "체중 변환",
+        "description": "그램, 온스, 파운드 변환"
+      },
+      "wildcardMath": {
+        "title": "와일드카드 수학",
+        "description": "네트워크 및 브로드캐스트 주소 계산"
+      },
+      "workdayCount": {
+        "title": "근무일 수",
+        "description": "주말 및 공휴일 제외"
+      },
+      "yearlySchedule": {
+        "title": "연간 일정",
+        "description": "각 기간별 성장 검토"
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
 import { toast } from "sonner";
 
@@ -10,6 +11,7 @@ interface UseCopyToClipboardResult {
 
 export function useCopyToClipboard(timeout = 2000): UseCopyToClipboardResult {
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("common");
 
   const copy = useCallback(
     async (text: string) => {
@@ -17,13 +19,13 @@ export function useCopyToClipboard(timeout = 2000): UseCopyToClipboardResult {
         await navigator.clipboard.writeText(text);
         setCopied(true);
         setTimeout(() => setCopied(false), timeout);
-        toast.success("Copied to clipboard");
+        toast.success(t("copySuccess"));
       } catch (error) {
-        console.error("Failed to copy to clipboard:", error);
-        toast.error("Failed to copy to clipboard");
+        console.error(t("copyError"), error);
+        toast.error(t("copyError"));
       }
     },
-    [timeout]
+    [timeout, t]
   );
 
   return { copied, copy };

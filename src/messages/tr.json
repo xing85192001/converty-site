@@ -90,7 +90,9 @@
     "financeComingSoon": "Finans hesaplayıcıları çok yakında!",
     "searchPlaceholder": "Hesap makinelerini ara……",
     "result": "Sonuç",
-    "aboutThisCalculator": "{title} hakkında"
+    "aboutThisCalculator": "{title} hakkında",
+    "copySuccess": "Panoya kopyalandı",
+    "copyError": "Panoya kopyalanamadı"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Görsel ve Video İşleme",
@@ -7102,6 +7104,456 @@
       "emailTitle": "E-posta",
       "emailGeneral": "Genel ve destek: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Gizlilik soruları: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "Geçmiş hazır",
+        "description": "Önceki değerleri tek tıklamayla yeniden kullanın"
+      },
+      "multiPlatformReady": {
+        "title": "Çoklu platforma hazır",
+        "description": "Masaüstü ve mobil cihazlarda sorunsuz çalışır"
+      },
+      "realTimeCalculation": {
+        "title": "Gerçek zamanlı hesaplama",
+        "description": "Sonuçlar siz yazdıkça otomatik olarak güncellenir"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Doğru sonuçlar",
+        "description": "Doğrulanmış formüller ve sabitlerle oluşturulmuştur"
+      },
+      "activityLevels": {
+        "title": "Etkinlik seviyeleri",
+        "description": "Egzersiz ve günlük hareket faktörü"
+      },
+      "addSubtractTime": {
+        "title": "Zaman ekleme/çıkarma",
+        "description": "Süre ekleyin veya geriye doğru sayın"
+      },
+      "addressCheck": {
+        "title": "Adres kontrolü",
+        "description": "Cüzdan adreslerini formata göre doğrulayın"
+      },
+      "affordability": {
+        "title": "Uygun fiyat",
+        "description": "Bütçenize hangi fiyatın uygun olduğunu kontrol edin"
+      },
+      "amortization": {
+        "title": "Amortisman",
+        "description": "Yıllık kredi dökümünü görüntüleyin"
+      },
+      "amortizationTable": {
+        "title": "Amortisman tablosu",
+        "description": "Yıllık anapara ve faizi görüntüleyin"
+      },
+      "amortizationView": {
+        "title": "Amortisman görünümü",
+        "description": "Anapara ve faizin zaman içinde nasıl değiştiğini görün"
+      },
+      "astroPlanning": {
+        "title": "Astro planlama",
+        "description": "Yıldız izi ve Samanyolu çekimlerini planlayın"
+      },
+      "audioDelay": {
+        "title": "Ses gecikmesi",
+        "description": "Gecikme sürelerini tempoya senkronize edin"
+      },
+      "bandwidthCalc": {
+        "title": "Bant genişliği hesaplaması",
+        "description": "Aktarım süresini ve verimi tahmin edin"
+      },
+      "basicPercentage": {
+        "title": "Temel yüzde",
+        "description": "Y'nin %X'inin ne olduğunu anında hesaplayın"
+      },
+      "bidAskSpread": {
+        "title": "Teklif sorma spreadi",
+        "description": "Alış ve satış oranlarını karşılaştırın"
+      },
+      "bmiCompute": {
+        "title": "BMI hesaplaması",
+        "description": "Vücut kitle indeksini hızlı bir şekilde hesaplayın"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Dakikadaki atım sayısını hesaplayın"
+      },
+      "capacityPlan": {
+        "title": "Kapasite planı",
+        "description": "Boyut CPU, bellek ve depolama"
+      },
+      "categoryView": {
+        "title": "Kategori görünümü",
+        "description": "Zayıf ila obez aralıklarına bakın"
+      },
+      "clearOutput": {
+        "title": "Çıktıyı temizle",
+        "description": "Yararlı açıklamalarla sonuçları görüntüleyin"
+      },
+      "clusterSizing": {
+        "title": "Küme boyutlandırma",
+        "description": "Kubernetes düğüm havuzlarını planlama"
+      },
+      "colorSpaceConvert": {
+        "title": "Renk alanı dönüşümü",
+        "description": "HEX, RGB, HSL ve CMYK arasında geçiş yapın"
+      },
+      "colorTokenConvert": {
+        "title": "Renk/jeton dönüştürme",
+        "description": "CSS renk formatları arasında geçiş yapın"
+      },
+      "concentration": {
+        "title": "Konsantrasyon",
+        "description": "Molarite, molalite ve seyreltme ile çalışma"
+      },
+      "constantLookup": {
+        "title": "Sürekli arama",
+        "description": "Yerleşik fiziksel sabitleri kullanın"
+      },
+      "contrastCheck": {
+        "title": "Kontrast kontrolü",
+        "description": "Erişilebilirlik kontrast oranlarını doğrulayın"
+      },
+      "contributionModeling": {
+        "title": "Katkı modelleme",
+        "description": "Aylık veya yıllık para yatırma ekleyin"
+      },
+      "copyConfig": {
+        "title": "Yapılandırmayı kopyala",
+        "description": "Güvenlik duvarı veya yönlendirici kullanımı için aralıkları dışa aktarma"
+      },
+      "copyResults": {
+        "title": "Sonuçları kopyala",
+        "description": "Ev ödevleri veya raporlar için yanıtları alın"
+      },
+      "copyValues": {
+        "title": "Değerleri kopyala",
+        "description": "Anında CSS kopyalayın veya belirteçleri tasarlayın"
+      },
+      "costPlanning": {
+        "title": "Maliyet planlaması",
+        "description": "Porsiyon başına içerik maliyetini hesaplayın"
+      },
+      "dateDiff": {
+        "title": "Tarih farkı",
+        "description": "Tarihler arasındaki günleri, haftaları veya ayları bulma"
+      },
+      "dofCompute": {
+        "title": "DoF hesaplaması",
+        "description": "Herhangi bir lens için alan derinliğini hesaplayın"
+      },
+      "downloadEstimate": {
+        "title": "Tahmini indir",
+        "description": "Dosya indirme işlemlerini bağlantı hızına göre planlayın"
+      },
+      "exportReady": {
+        "title": "Dışa aktarıma hazır",
+        "description": "Kayıtlar için programları kopyalayın veya yazdırın"
+      },
+      "exposureMath": {
+        "title": "Pozlama matematiği",
+        "description": "Deklanşör, diyafram açıklığı ve ISO'yu dengeleyin"
+      },
+      "fastInput": {
+        "title": "Hızlı giriş",
+        "description": "Değerleri girin ve anında yanıt alın"
+      },
+      "flexibleUnits": {
+        "title": "Esnek üniteler",
+        "description": "Ortak birimler ve formatlar arasında geçiş yapın"
+      },
+      "formulaCalc": {
+        "title": "Formül hesabı",
+        "description": "Yaygın fizik denklemlerini çözün"
+      },
+      "formulaDriven": {
+        "title": "Formül odaklı",
+        "description": "Standart mühendislik denklemleri üzerine inşa edilmiştir"
+      },
+      "frequencyMath": {
+        "title": "Frekans matematik",
+        "description": "Notaları hertz ve sente dönüştürün"
+      },
+      "fuelEconomy": {
+        "title": "Yakıt ekonomisi",
+        "description": "MPG, L/100km ve km başına maliyeti karşılaştırın"
+      },
+      "futureValue": {
+        "title": "Gelecekteki değer",
+        "description": "Yatırımınızın ne kadar büyüyeceğini görün"
+      },
+      "goalModes": {
+        "title": "Hedef modları",
+        "description": "Kilo kaybı, bakımı veya alımı için plan yapın"
+      },
+      "guidanceNotes": {
+        "title": "Rehberlik notları",
+        "description": "Her sonucun ne anlama geldiğini anlayın"
+      },
+      "hashGeneration": {
+        "title": "karma oluşturma",
+        "description": "SHA, MD5 ve diğer karmaları oluşturun"
+      },
+      "historicalView": {
+        "title": "Tarihsel görünüm",
+        "description": "Oranların zaman içinde nasıl değiştiğini takip edin"
+      },
+      "idealWeight": {
+        "title": "İdeal ağırlık",
+        "description": "Sağlıklı bir kilo aralığını tahmin edin"
+      },
+      "ingredientAware": {
+        "title": "İçerik bilincine sahip",
+        "description": "İçerik yoğunluğuna göre dönüştürme"
+      },
+      "instantAssessment": {
+        "title": "Anında değerlendirme",
+        "description": "BMI, vücut yağı ve kalori gibi ölçümleri kontrol edin"
+      },
+      "interestBreakdown": {
+        "title": "Faiz dökümü",
+        "description": "Anapara ve kazanılmış faizin bölünmesi"
+      },
+      "intervalTool": {
+        "title": "Aralık aracı",
+        "description": "Müzik aralıklarını ve ölçeklerini bulun"
+      },
+      "ipAnalysis": {
+        "title": "IP analizi",
+        "description": "IPv4/IPv6'yı doğrulayın ve sınıflandırın"
+      },
+      "jsonFormat": {
+        "title": "JSON biçimi",
+        "description": "JSON'u güzel bir şekilde yazdırın ve doğrulayın"
+      },
+      "licensing": {
+        "title": "Lisanslama",
+        "description": "Lisans ve çekirdek sayılarını tahmin edin"
+      },
+      "loanPlanning": {
+        "title": "Kredi planlaması",
+        "description": "Aylık otomatik ödemeleri tahmin edin"
+      },
+      "macroSplit": {
+        "title": "Makro bölme",
+        "description": "Protein, yağ ve karbonhidrat hedeflerini hesaplayın"
+      },
+      "maintenanceLog": {
+        "title": "Bakım günlüğü",
+        "description": "Servis aralıklarını ve maliyetleri takip edin"
+      },
+      "markupEstimate": {
+        "title": "İşaretleme tahmini",
+        "description": "Değişim marjı veya ücreti ekleyin"
+      },
+      "miningEstimate": {
+        "title": "Madencilik tahmini",
+        "description": "Yaklaşık ödül ve güç maliyetleri"
+      },
+      "molarMass": {
+        "title": "Molar kütle",
+        "description": "Formüllerden moleküler ağırlığı hesaplayın"
+      },
+      "monthlyPayment": {
+        "title": "Aylık ödeme",
+        "description": "Vergiler ve sigorta ile P&I'yi tahmin edin"
+      },
+      "mortgageEstimate": {
+        "title": "İpotek tahmini",
+        "description": "Aylık ipotek ödemelerini hesaplayın"
+      },
+      "multipleFormulas": {
+        "title": "Çoklu formüller",
+        "description": "Size uygun hesaplama yöntemini seçin"
+      },
+      "multipleModes": {
+        "title": "Çoklu modlar",
+        "description": "Yüzde, oran ve denklem değişkenlerini işleme"
+      },
+      "networkPlanning": {
+        "title": "Ağ planlaması",
+        "description": "Gecikme ve kapasite için boyut bağlantıları"
+      },
+      "nutritionLookup": {
+        "title": "Beslenme araması",
+        "description": "Kalorileri ve makroları tahmin edin"
+      },
+      "palettePreview": {
+        "title": "Palet önizlemesi",
+        "description": "Uyumlu renk kombinasyonlarını görün"
+      },
+      "parameterSweep": {
+        "title": "Parametre taraması",
+        "description": "Değerleri bir aralıkta test edin"
+      },
+      "percentChange": {
+        "title": "Yüzde değişim",
+        "description": "Değerler arasındaki artışı veya azalmayı bulma"
+      },
+      "percentDifference": {
+        "title": "Yüzde fark",
+        "description": "İki sayı arasındaki göreli farkı karşılaştırın"
+      },
+      "percentOff": {
+        "title": "Yüzde indirim",
+        "description": "Fiyatlardan indirim oranını bulun"
+      },
+      "phTools": {
+        "title": "pH araçları",
+        "description": "PH, pOH ve hidrojen iyonu seviyelerini dönüştürün"
+      },
+      "precisionControl": {
+        "title": "Hassas kontrol",
+        "description": "Ondalık basamakları ve yuvarlama kurallarını ayarlama"
+      },
+      "precisionOutput": {
+        "title": "Hassas çıktı",
+        "description": "Önemli rakamları kontrol edin"
+      },
+      "printResolution": {
+        "title": "Baskı çözünürlüğü",
+        "description": "Piksel cinsinden DPI ve baskı boyutunu bulun"
+      },
+      "quickEstimation": {
+        "title": "Hızlı tahmin",
+        "description": "Karmaşık e-tablolar olmadan saniyeler içinde sonuç alın"
+      },
+      "rateCompare": {
+        "title": "Oran karşılaştırması",
+        "description": "Oranları ve şartları yan yana karşılaştırın"
+      },
+      "rateConvert": {
+        "title": "Oran dönüşümü",
+        "description": "Kripto ve fiat arasında dönüştürme"
+      },
+      "rateConvert1": {
+        "title": "Oran dönüşümü",
+        "description": "Tutarları para birimleri arasında dönüştürme"
+      },
+      "recipeScaling": {
+        "title": "Tarif ölçeklendirme",
+        "description": "Tarifleri herhangi bir porsiyon sayısına göre yeniden boyutlandırın"
+      },
+      "referenceValues": {
+        "title": "Referans değerleri",
+        "description": "Tipik malzemelerle karşılaştırın"
+      },
+      "regexTest": {
+        "title": "Normal ifade testi",
+        "description": "Normal ifadeleri canlı olarak test edin"
+      },
+      "reversePercentage": {
+        "title": "Ters yüzde",
+        "description": "Yüzde değişikliğinden önceki orijinal değeri bulun"
+      },
+      "roiAnalysis": {
+        "title": "Yatırım getirisi analizi",
+        "description": "Kira getirisini ve tavan oranını karşılaştırın"
+      },
+      "salePrice": {
+        "title": "Satış fiyatı",
+        "description": "İndirimden sonra fiyatı hesapla"
+      },
+      "scaleRecipes": {
+        "title": "Ölçekli tarifler",
+        "description": "Bir porsiyondan birçok porsiyona kadar yeniden boyutlandırın"
+      },
+      "scenarioCompare": {
+        "title": "Senaryo karşılaştırması",
+        "description": "Farklı oranları, koşulları ve peşinatları test edin"
+      },
+      "stackSavings": {
+        "title": "Yığın tasarrufu",
+        "description": "Kuponları ve indirimleri birleştirin"
+      },
+      "stepByStepLogic": {
+        "title": "Adım adım mantık",
+        "description": "Her sayının nasıl türetildiğini takip edin"
+      },
+      "stoichiometry": {
+        "title": "Stokiyometri",
+        "description": "Reaksiyon miktarlarını dengeleyin"
+      },
+      "storageConvert": {
+        "title": "Depolama dönüşümü",
+        "description": "KB, MB, GB, TB ve ötesini dönüştürün"
+      },
+      "subnetting": {
+        "title": "Alt ağ oluşturma",
+        "description": "CIDR'yi, maskeleri ve ana bilgisayar aralıklarını hesaplayın"
+      },
+      "taxAware": {
+        "title": "Vergi bilinci",
+        "description": "Nihai fiyata satış vergisini ekleyin"
+      },
+      "tcoModel": {
+        "title": "TCO modeli",
+        "description": "Şirket içi ve bulut maliyetlerini karşılaştırın"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE tahmini",
+        "description": "Günlük enerji harcamasını tahmin edin"
+      },
+      "timeZoneConvert": {
+        "title": "Saat dilimi dönüşümü",
+        "description": "Bölgeler arasındaki saatleri karşılaştırın"
+      },
+      "tireSizing": {
+        "title": "Lastik boyutlandırma",
+        "description": "Lastik boyutlarını ve hız derecelerini karşılaştırın"
+      },
+      "totalInterest": {
+        "title": "Toplam faiz",
+        "description": "Ömür boyu faiz maliyetini görün"
+      },
+      "unitAware": {
+        "title": "Birim farkındalığı",
+        "description": "SI ve emperyal birimleri yönetir"
+      },
+      "unitConversion": {
+        "title": "Birim dönüştürme",
+        "description": "Bardakları, gramları, onsları ve daha fazlasını dönüştürün"
+      },
+      "unitConvert": {
+        "title": "Birim dönüştürme",
+        "description": "Fiziksel birimleri sistemler arasında dönüştürün"
+      },
+      "unitFlexibility": {
+        "title": "Birim esnekliği",
+        "description": "Metrik ve İngiliz ölçü birimleri arasında serbestçe geçiş yapın"
+      },
+      "unitToggle": {
+        "title": "Birim geçişi",
+        "description": "Metrik ve emperyal birimleri değiştir"
+      },
+      "urlEncode": {
+        "title": "URL kodlaması",
+        "description": "URL'leri güvenli bir şekilde kodlayın ve kodunu çözün"
+      },
+      "volumeConvert": {
+        "title": "Hacim dönüştürme",
+        "description": "Bardakları, yemek kaşığını, mililitreyi değiştirin"
+      },
+      "weightConvert": {
+        "title": "Ağırlık dönüşümü",
+        "description": "Gram, ons, pound'u dönüştürün"
+      },
+      "wildcardMath": {
+        "title": "Joker karakter matematiği",
+        "description": "Bilgi işlem ağı ve yayın adresleri"
+      },
+      "workdayCount": {
+        "title": "İş günü sayısı",
+        "description": "Hafta sonlarını ve tatil günlerini hariç tutun"
+      },
+      "yearlySchedule": {
+        "title": "Yıllık program",
+        "description": "Her dönem için büyümeyi inceleyin"
+      }
     }
   }
 }

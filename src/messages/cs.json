@@ -90,7 +90,9 @@
     "financeComingSoon": "Finanční kalkulačky již brzy!",
     "searchPlaceholder": "Hledat kalkulačky……",
     "result": "Výsledek",
-    "aboutThisCalculator": "O {title}"
+    "aboutThisCalculator": "O {title}",
+    "copySuccess": "Zkopírováno do schránky",
+    "copyError": "Kopírování do schránky se nezdařilo"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Zpracování obrázků a videa",
@@ -7102,6 +7104,456 @@
       "emailTitle": "Email",
       "emailGeneral": "Obecné a podpora: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Otázky týkající se ochrany osobních údajů: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "Historie připravena",
+        "description": "Znovu použijte předchozí hodnoty jedním kliknutím"
+      },
+      "multiPlatformReady": {
+        "title": "Připraveno pro více platforem",
+        "description": "Funguje hladce na stolních i mobilních zařízeních"
+      },
+      "realTimeCalculation": {
+        "title": "Výpočet v reálném čase",
+        "description": "Výsledky se automaticky aktualizují během psaní"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Přesné výsledky",
+        "description": "Postaveno pomocí ověřených vzorců a konstant"
+      },
+      "activityLevels": {
+        "title": "Úrovně aktivity",
+        "description": "Faktor při cvičení a každodenním pohybu"
+      },
+      "addSubtractTime": {
+        "title": "Přidat/odečíst čas",
+        "description": "Přidejte doby trvání nebo počítejte zpětně"
+      },
+      "addressCheck": {
+        "title": "Kontrola adresy",
+        "description": "Ověřte adresy peněženky podle formátu"
+      },
+      "affordability": {
+        "title": "Cenová dostupnost",
+        "description": "Zkontrolujte, jaká cena odpovídá vašemu rozpočtu"
+      },
+      "amortization": {
+        "title": "Amortizace",
+        "description": "Zobrazit roční rozpis půjček"
+      },
+      "amortizationTable": {
+        "title": "Amortizační tabulka",
+        "description": "Zobrazit roční jistinu a úrok"
+      },
+      "amortizationView": {
+        "title": "Pohled na amortizaci",
+        "description": "Podívejte se, jak se jistina a úrok mění v průběhu času"
+      },
+      "astroPlanning": {
+        "title": "Astro plánování",
+        "description": "Naplánujte záběry hvězdných stop a Mléčné dráhy"
+      },
+      "audioDelay": {
+        "title": "Zpoždění zvuku",
+        "description": "Synchronizujte časy zpoždění s tempem"
+      },
+      "bandwidthCalc": {
+        "title": "Šířka pásma calc",
+        "description": "Odhadněte dobu přenosu a propustnost"
+      },
+      "basicPercentage": {
+        "title": "Základní procento",
+        "description": "Okamžitě spočítejte, kolik X % z Y je"
+      },
+      "bidAskSpread": {
+        "title": "Nabídka-ask spread",
+        "description": "Porovnejte ceny nákupu a prodeje"
+      },
+      "bmiCompute": {
+        "title": "Výpočet BMI",
+        "description": "Vypočítejte index tělesné hmotnosti rychle"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Vypočítejte tepy za minutu"
+      },
+      "capacityPlan": {
+        "title": "Plán kapacit",
+        "description": "Velikost CPU, paměti a úložiště"
+      },
+      "categoryView": {
+        "title": "Zobrazení kategorií",
+        "description": "Viz rozsahy podváhy až obezity"
+      },
+      "clearOutput": {
+        "title": "Jasný výstup",
+        "description": "Zobrazit výsledky s užitečným vysvětlením"
+      },
+      "clusterSizing": {
+        "title": "Dimenzování shluků",
+        "description": "Plánujte fondy uzlů Kubernetes"
+      },
+      "colorSpaceConvert": {
+        "title": "Převod barevného prostoru",
+        "description": "Přepínání mezi HEX, RGB, HSL a CMYK"
+      },
+      "colorTokenConvert": {
+        "title": "Převod barvy/tokenu",
+        "description": "Přepínání mezi barevnými formáty CSS"
+      },
+      "concentration": {
+        "title": "Soustředění",
+        "description": "Práce s molaritou, molalitou a ředěním"
+      },
+      "constantLookup": {
+        "title": "Neustálé vyhledávání",
+        "description": "Použijte vestavěné fyzikální konstanty"
+      },
+      "contrastCheck": {
+        "title": "Kontrola kontrastu",
+        "description": "Ověřte kontrastní poměry přístupnosti"
+      },
+      "contributionModeling": {
+        "title": "Příspěvkové modelování",
+        "description": "Přidejte měsíční nebo roční vklady"
+      },
+      "copyConfig": {
+        "title": "Kopírovat konfiguraci",
+        "description": "Exportujte rozsahy pro použití brány firewall nebo směrovače"
+      },
+      "copyResults": {
+        "title": "Zkopírujte výsledky",
+        "description": "Získejte odpovědi pro domácí úkoly nebo zprávy"
+      },
+      "copyValues": {
+        "title": "Kopírovat hodnoty",
+        "description": "Okamžitě zkopírujte CSS nebo designové tokeny"
+      },
+      "costPlanning": {
+        "title": "Plánování nákladů",
+        "description": "Vypočítejte cenu ingrediencí na porci"
+      },
+      "dateDiff": {
+        "title": "Datum rozdíl",
+        "description": "Najděte dny, týdny nebo měsíce mezi daty"
+      },
+      "dofCompute": {
+        "title": "DoF vypočítat",
+        "description": "Vypočítejte hloubku ostrosti pro jakýkoli objektiv"
+      },
+      "downloadEstimate": {
+        "title": "Stáhnout odhad",
+        "description": "Plánujte stahování souborů podle rychlosti připojení"
+      },
+      "exportReady": {
+        "title": "Export připraven",
+        "description": "Kopírování nebo tisk plánů pro záznamy"
+      },
+      "exposureMath": {
+        "title": "Matematika expozice",
+        "description": "Vyvážení závěrky, clony a ISO"
+      },
+      "fastInput": {
+        "title": "Rychlé zadání",
+        "description": "Zadejte hodnoty a okamžitě získejte odpovědi"
+      },
+      "flexibleUnits": {
+        "title": "Flexibilní jednotky",
+        "description": "Přepínání mezi běžnými jednotkami a formáty"
+      },
+      "formulaCalc": {
+        "title": "Vzorec calc",
+        "description": "Řešte běžné fyzikální rovnice"
+      },
+      "formulaDriven": {
+        "title": "Poháněný formulemi",
+        "description": "Postaveno na standardních inženýrských rovnicích"
+      },
+      "frequencyMath": {
+        "title": "Frekvenční matematika",
+        "description": "Převeďte poznámky na hertz a centy"
+      },
+      "fuelEconomy": {
+        "title": "Úspora paliva",
+        "description": "Porovnejte MPG, L/100 km a náklady na km"
+      },
+      "futureValue": {
+        "title": "Budoucí hodnota",
+        "description": "Podívejte se, jak moc vaše investice poroste"
+      },
+      "goalModes": {
+        "title": "Cílové režimy",
+        "description": "Naplánujte si hubnutí, udržování nebo přibírání"
+      },
+      "guidanceNotes": {
+        "title": "Pokyny",
+        "description": "Pochopte, co každý výsledek znamená"
+      },
+      "hashGeneration": {
+        "title": "Generování hash",
+        "description": "Generujte SHA, MD5 a další hashe"
+      },
+      "historicalView": {
+        "title": "Historický pohled",
+        "description": "Sledujte, jak se sazby v průběhu času mění"
+      },
+      "idealWeight": {
+        "title": "Ideální váha",
+        "description": "Odhadněte zdravý rozsah hmotnosti"
+      },
+      "ingredientAware": {
+        "title": "S ohledem na přísady",
+        "description": "Převést podle hustoty přísad"
+      },
+      "instantAssessment": {
+        "title": "Okamžité posouzení",
+        "description": "Zkontrolujte metriky, jako je BMI, tělesný tuk a kalorie"
+      },
+      "interestBreakdown": {
+        "title": "Rozdělení úroků",
+        "description": "Rozdělit jistinu vs. získaný úrok"
+      },
+      "intervalTool": {
+        "title": "Intervalový nástroj",
+        "description": "Najděte hudební intervaly a stupnice"
+      },
+      "ipAnalysis": {
+        "title": "IP analýza",
+        "description": "Ověřte a klasifikujte IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "formát JSON",
+        "description": "Pěkně vytiskněte a ověřte JSON"
+      },
+      "licensing": {
+        "title": "Licencování",
+        "description": "Odhadněte počet licencí a jader"
+      },
+      "loanPlanning": {
+        "title": "Plánování půjček",
+        "description": "Odhadněte měsíční platby za auto"
+      },
+      "macroSplit": {
+        "title": "Makro rozdělení",
+        "description": "Vypočítejte si cílové bílkoviny, tuky a sacharidy"
+      },
+      "maintenanceLog": {
+        "title": "Deník údržby",
+        "description": "Sledujte servisní intervaly a náklady"
+      },
+      "markupEstimate": {
+        "title": "Odhad přirážky",
+        "description": "Přidejte směnnou marži nebo poplatek"
+      },
+      "miningEstimate": {
+        "title": "Odhad těžby",
+        "description": "Přibližná odměna a náklady na energii"
+      },
+      "molarMass": {
+        "title": "Molární hmotnost",
+        "description": "Vypočítejte molekulovou hmotnost ze vzorců"
+      },
+      "monthlyPayment": {
+        "title": "Měsíční platba",
+        "description": "Odhadněte P&I s daněmi a pojištěním"
+      },
+      "mortgageEstimate": {
+        "title": "Odhad hypotéky",
+        "description": "Spočítejte si měsíční splátky hypotéky"
+      },
+      "multipleFormulas": {
+        "title": "Více vzorců",
+        "description": "Vyberte si způsob výpočtu, který vám vyhovuje"
+      },
+      "multipleModes": {
+        "title": "Více režimů",
+        "description": "Zvládněte varianty procent, poměrů a rovnic"
+      },
+      "networkPlanning": {
+        "title": "Plánování sítě",
+        "description": "Velikost odkazů pro latenci a kapacitu"
+      },
+      "nutritionLookup": {
+        "title": "Výživové vyhledávání",
+        "description": "Odhadněte kalorie a makra"
+      },
+      "palettePreview": {
+        "title": "Náhled palety",
+        "description": "Podívejte se na harmonické barevné kombinace"
+      },
+      "parameterSweep": {
+        "title": "Rozmítání parametrů",
+        "description": "Testujte hodnoty v celém rozsahu"
+      },
+      "percentChange": {
+        "title": "Procentuální změna",
+        "description": "Najděte zvýšení nebo snížení mezi hodnotami"
+      },
+      "percentDifference": {
+        "title": "Rozdíl v procentech",
+        "description": "Porovnejte relativní rozdíl mezi dvěma čísly"
+      },
+      "percentOff": {
+        "title": "Procento sleva",
+        "description": "Najděte diskontní sazbu z cen"
+      },
+      "phTools": {
+        "title": "pH nástroje",
+        "description": "Převeďte hodnoty pH, pOH a vodíkových iontů"
+      },
+      "precisionControl": {
+        "title": "Přesné ovládání",
+        "description": "Upravte desetinná místa a pravidla zaokrouhlování"
+      },
+      "precisionOutput": {
+        "title": "Přesný výstup",
+        "description": "Ovládejte významná čísla"
+      },
+      "printResolution": {
+        "title": "Rozlišení tisku",
+        "description": "Najděte DPI a velikost tisku z pixelů"
+      },
+      "quickEstimation": {
+        "title": "Rychlý odhad",
+        "description": "Získejte výsledky během několika sekund bez složitých tabulek"
+      },
+      "rateCompare": {
+        "title": "Porovnejte sazby",
+        "description": "Porovnejte sazby a podmínky vedle sebe"
+      },
+      "rateConvert": {
+        "title": "Hodnotit převod",
+        "description": "Převod mezi krypto a fiat"
+      },
+      "rateConvert1": {
+        "title": "Hodnotit převod",
+        "description": "Převeďte částky mezi měnami"
+      },
+      "recipeScaling": {
+        "title": "Měřítko receptury",
+        "description": "Změňte velikost receptů pro libovolný počet porcí"
+      },
+      "referenceValues": {
+        "title": "Referenční hodnoty",
+        "description": "Porovnejte s typickými materiály"
+      },
+      "regexTest": {
+        "title": "Regex test",
+        "description": "Otestujte regulární výrazy naživo"
+      },
+      "reversePercentage": {
+        "title": "Obrácené procento",
+        "description": "Najděte původní hodnotu před procentuální změnou"
+      },
+      "roiAnalysis": {
+        "title": "Analýza ROI",
+        "description": "Porovnejte výnos z pronájmu a maximální sazbu"
+      },
+      "salePrice": {
+        "title": "Prodejní cena",
+        "description": "Vypočítejte cenu po slevě"
+      },
+      "scaleRecipes": {
+        "title": "Recepty v měřítku",
+        "description": "Změna velikosti z jedné porce na více"
+      },
+      "scenarioCompare": {
+        "title": "Porovnání scénáře",
+        "description": "Vyzkoušejte různé sazby, podmínky a zálohy"
+      },
+      "stackSavings": {
+        "title": "Úspora zásobníku",
+        "description": "Kombinujte kupóny a slevy"
+      },
+      "stepByStepLogic": {
+        "title": "Logika krok za krokem",
+        "description": "Sledujte, jak je každé číslo odvozeno"
+      },
+      "stoichiometry": {
+        "title": "Stechiometrie",
+        "description": "Vyrovnat reakční množství"
+      },
+      "storageConvert": {
+        "title": "Převod úložiště",
+        "description": "Převeďte KB, MB, GB, TB a další"
+      },
+      "subnetting": {
+        "title": "Podsítě",
+        "description": "Vypočítejte CIDR, masky a rozsahy hostitelů"
+      },
+      "taxAware": {
+        "title": "Daňově vědomý",
+        "description": "Ke konečné ceně připočtěte daň z obratu"
+      },
+      "tcoModel": {
+        "title": "Model TCO",
+        "description": "Porovnejte náklady na on-prem a cloud"
+      },
+      "tdeeEstimate": {
+        "title": "odhad TDEE",
+        "description": "Odhadněte denní energetický výdej"
+      },
+      "timeZoneConvert": {
+        "title": "Převod časového pásma",
+        "description": "Porovnejte časy napříč regiony"
+      },
+      "tireSizing": {
+        "title": "Rozměr pneumatik",
+        "description": "Porovnejte rozměry pneumatik a rychlostní kategorie"
+      },
+      "totalInterest": {
+        "title": "Celkový zájem",
+        "description": "Viz doživotní úrokové náklady"
+      },
+      "unitAware": {
+        "title": "Jednotka vědomá",
+        "description": "Zvládá SI a imperiální jednotky"
+      },
+      "unitConversion": {
+        "title": "Převod jednotek",
+        "description": "Převeďte šálky, gramy, unce a další"
+      },
+      "unitConvert": {
+        "title": "Převod jednotek",
+        "description": "Převod fyzických jednotek napříč systémy"
+      },
+      "unitFlexibility": {
+        "title": "Flexibilita jednotky",
+        "description": "Volně přepínat mezi metrickým a britským"
+      },
+      "unitToggle": {
+        "title": "Přepínač jednotky",
+        "description": "Přepínání metrických a imperiálních jednotek"
+      },
+      "urlEncode": {
+        "title": "URL kódování",
+        "description": "Bezpečně zakódujte a dekódujte adresy URL"
+      },
+      "volumeConvert": {
+        "title": "Převod objemu",
+        "description": "Vyměňte šálky, polévkové lžíce, mililitry"
+      },
+      "weightConvert": {
+        "title": "Převod hmotnosti",
+        "description": "Převeďte gramy, unce, libry"
+      },
+      "wildcardMath": {
+        "title": "Matematika se zástupnými znaky",
+        "description": "Vypočítejte síťové a broadcast adresy"
+      },
+      "workdayCount": {
+        "title": "Počet pracovních dnů",
+        "description": "Vyloučit víkendy a svátky"
+      },
+      "yearlySchedule": {
+        "title": "Roční rozvrh",
+        "description": "Zkontrolujte růst pro každé období"
+      }
     }
   }
 }

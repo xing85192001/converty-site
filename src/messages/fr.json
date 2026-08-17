@@ -88,7 +88,9 @@
       "percentage": "Pourcentage",
       "unit": "Convertisseur d’unités"
     },
-    "aboutThisCalculator": "À propos de {title}"
+    "aboutThisCalculator": "À propos de {title}",
+    "copySuccess": "Copié dans le presse-papiers",
+    "copyError": "Échec de la copie dans le presse-papiers"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Traitement d'images & vidéos",
@@ -7113,6 +7115,456 @@
       "emailTitle": "Courriel",
       "emailGeneral": "Général et assistance : <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Questions de confidentialité : <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "L'histoire est prête",
+        "description": "Réutilisez les valeurs précédentes en un seul clic"
+      },
+      "multiPlatformReady": {
+        "title": "Prêt pour plusieurs plateformes",
+        "description": "Fonctionne parfaitement sur les ordinateurs de bureau et les appareils mobiles"
+      },
+      "realTimeCalculation": {
+        "title": "Calcul en temps réel",
+        "description": "Les résultats sont mis à jour automatiquement au fur et à mesure que vous tapez"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Des résultats précis",
+        "description": "Construit avec des formules et des constantes validées"
+      },
+      "activityLevels": {
+        "title": "Niveaux d'activité",
+        "description": "Tenir compte de l’exercice et des mouvements quotidiens"
+      },
+      "addSubtractTime": {
+        "title": "Ajouter/soustraire du temps",
+        "description": "Ajoutez des durées ou comptez à rebours"
+      },
+      "addressCheck": {
+        "title": "Vérification de l'adresse",
+        "description": "Valider les adresses de portefeuille par format"
+      },
+      "affordability": {
+        "title": "Abordabilité",
+        "description": "Vérifiez quel prix correspond à votre budget"
+      },
+      "amortization": {
+        "title": "Amortissement",
+        "description": "Voir la répartition annuelle des prêts"
+      },
+      "amortizationTable": {
+        "title": "Tableau d'amortissement",
+        "description": "Afficher le capital et les intérêts annuels"
+      },
+      "amortizationView": {
+        "title": "Vue d'amortissement",
+        "description": "Découvrez comment le capital et les intérêts évoluent au fil du temps"
+      },
+      "astroPlanning": {
+        "title": "Planification astro",
+        "description": "Planifiez des photos de la traînée d'étoiles et de la Voie lactée"
+      },
+      "audioDelay": {
+        "title": "Retard audio",
+        "description": "Synchroniser les temps de retard avec le tempo"
+      },
+      "bandwidthCalc": {
+        "title": "Calcul de la bande passante",
+        "description": "Estimer le temps et le débit de transfert"
+      },
+      "basicPercentage": {
+        "title": "Pourcentage de base",
+        "description": "Calculez instantanément ce que représente X% de Y"
+      },
+      "bidAskSpread": {
+        "title": "Spread acheteur-vendeur",
+        "description": "Comparez les taux d'achat et de vente"
+      },
+      "bmiCompute": {
+        "title": "Calcul de l'IMC",
+        "description": "Calculez rapidement l'indice de masse corporelle"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Calculer les battements par minute"
+      },
+      "capacityPlan": {
+        "title": "Plan de capacité",
+        "description": "Taille du processeur, de la mémoire et du stockage"
+      },
+      "categoryView": {
+        "title": "Vue par catégorie",
+        "description": "Voir les fourchettes de poids insuffisant à obèse"
+      },
+      "clearOutput": {
+        "title": "Effacer la sortie",
+        "description": "Afficher les résultats avec des explications utiles"
+      },
+      "clusterSizing": {
+        "title": "Dimensionnement des clusters",
+        "description": "Planifier des pools de nœuds Kubernetes"
+      },
+      "colorSpaceConvert": {
+        "title": "Conversion de l'espace colorimétrique",
+        "description": "Basculez entre HEX, RVB, HSL et CMJN"
+      },
+      "colorTokenConvert": {
+        "title": "Conversion couleur/jeton",
+        "description": "Basculer entre les formats de couleurs CSS"
+      },
+      "concentration": {
+        "title": "Concentration",
+        "description": "Travailler avec la molarité, la molalité et la dilution"
+      },
+      "constantLookup": {
+        "title": "Recherche constante",
+        "description": "Utiliser des constantes physiques intégrées"
+      },
+      "contrastCheck": {
+        "title": "Contrôle du contraste",
+        "description": "Vérifier les rapports de contraste d'accessibilité"
+      },
+      "contributionModeling": {
+        "title": "Modélisation des contributions",
+        "description": "Ajoutez des dépôts mensuels ou annuels"
+      },
+      "copyConfig": {
+        "title": "Copier la configuration",
+        "description": "Exporter des plages pour une utilisation par pare-feu ou routeur"
+      },
+      "copyResults": {
+        "title": "Copier les résultats",
+        "description": "Obtenez des réponses pour vos devoirs ou vos rapports"
+      },
+      "copyValues": {
+        "title": "Copier les valeurs",
+        "description": "Copiez instantanément les CSS ou les jetons de conception"
+      },
+      "costPlanning": {
+        "title": "Planification des coûts",
+        "description": "Calculer le coût des ingrédients par portion"
+      },
+      "dateDiff": {
+        "title": "Différence de date",
+        "description": "Rechercher des jours, des semaines ou des mois entre des dates"
+      },
+      "dofCompute": {
+        "title": "Calcul DoF",
+        "description": "Calculer la profondeur de champ pour n'importe quel objectif"
+      },
+      "downloadEstimate": {
+        "title": "Télécharger le devis",
+        "description": "Planifiez les téléchargements de fichiers en fonction de la vitesse de connexion"
+      },
+      "exportReady": {
+        "title": "Prêt à exporter",
+        "description": "Copier ou imprimer les calendriers des enregistrements"
+      },
+      "exposureMath": {
+        "title": "Mathématiques d'exposition",
+        "description": "Équilibrer l'obturateur, l'ouverture et l'ISO"
+      },
+      "fastInput": {
+        "title": "Saisie rapide",
+        "description": "Entrez des valeurs et obtenez des réponses immédiatement"
+      },
+      "flexibleUnits": {
+        "title": "Unités flexibles",
+        "description": "Basculer entre les unités et formats communs"
+      },
+      "formulaCalc": {
+        "title": "Calcul de formule",
+        "description": "Résoudre des équations physiques courantes"
+      },
+      "formulaDriven": {
+        "title": "Basé sur une formule",
+        "description": "Construit sur des équations d'ingénierie standard"
+      },
+      "frequencyMath": {
+        "title": "Mathématiques de fréquence",
+        "description": "Convertir les notes en hertz et en cents"
+      },
+      "fuelEconomy": {
+        "title": "Économie de carburant",
+        "description": "Comparez MPG, L/100 km et coût par km"
+      },
+      "futureValue": {
+        "title": "Valeur future",
+        "description": "Voyez combien votre investissement va croître"
+      },
+      "goalModes": {
+        "title": "Modes d'objectif",
+        "description": "Planifiez une perte, un maintien ou un gain de poids"
+      },
+      "guidanceNotes": {
+        "title": "Notes d'orientation",
+        "description": "Comprendre ce que signifie chaque résultat"
+      },
+      "hashGeneration": {
+        "title": "Génération de hachage",
+        "description": "Générer SHA, MD5 et autres hachages"
+      },
+      "historicalView": {
+        "title": "Vue historique",
+        "description": "Suivez l'évolution des taux au fil du temps"
+      },
+      "idealWeight": {
+        "title": "Poids idéal",
+        "description": "Estimer une fourchette de poids santé"
+      },
+      "ingredientAware": {
+        "title": "Conscient des ingrédients",
+        "description": "Convertir par densité d'ingrédient"
+      },
+      "instantAssessment": {
+        "title": "Évaluation instantanée",
+        "description": "Vérifiez des mesures telles que l'IMC, la graisse corporelle et les calories"
+      },
+      "interestBreakdown": {
+        "title": "Répartition des intérêts",
+        "description": "Diviser le capital et les intérêts gagnés"
+      },
+      "intervalTool": {
+        "title": "Outil d'intervalle",
+        "description": "Trouver des intervalles et des gammes musicales"
+      },
+      "ipAnalysis": {
+        "title": "Analyse IP",
+        "description": "Valider et classer IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "Format JSON",
+        "description": "Joli-imprimer et valider JSON"
+      },
+      "licensing": {
+        "title": "Licence",
+        "description": "Estimer le nombre de licences et de cœurs"
+      },
+      "loanPlanning": {
+        "title": "Planification de prêt",
+        "description": "Estimer les paiements automatiques mensuels"
+      },
+      "macroSplit": {
+        "title": "Division macro",
+        "description": "Calculer les objectifs en matière de protéines, de graisses et de glucides"
+      },
+      "maintenanceLog": {
+        "title": "Journal d'entretien",
+        "description": "Suivez les intervalles et les coûts d’entretien"
+      },
+      "markupEstimate": {
+        "title": "Estimation de majoration",
+        "description": "Ajouter une marge de change ou des frais"
+      },
+      "miningEstimate": {
+        "title": "Estimation minière",
+        "description": "Récompense approximative et coûts d'énergie"
+      },
+      "molarMass": {
+        "title": "Masse molaire",
+        "description": "Calculer le poids moléculaire à partir de formules"
+      },
+      "monthlyPayment": {
+        "title": "Paiement mensuel",
+        "description": "Estimation des P&I avec taxes et assurances"
+      },
+      "mortgageEstimate": {
+        "title": "Estimation hypothécaire",
+        "description": "Calculer les mensualités hypothécaires"
+      },
+      "multipleFormulas": {
+        "title": "Plusieurs formules",
+        "description": "Choisissez la méthode de calcul qui vous convient"
+      },
+      "multipleModes": {
+        "title": "Plusieurs modes",
+        "description": "Gérer les variantes de pourcentage, de ratio et d’équation"
+      },
+      "networkPlanning": {
+        "title": "Planification du réseau",
+        "description": "Liens de taille pour la latence et la capacité"
+      },
+      "nutritionLookup": {
+        "title": "Recherche nutritionnelle",
+        "description": "Estimer les calories et les macros"
+      },
+      "palettePreview": {
+        "title": "Aperçu de la palette",
+        "description": "Voir des combinaisons de couleurs harmonieuses"
+      },
+      "parameterSweep": {
+        "title": "Balayage des paramètres",
+        "description": "Tester les valeurs sur une plage"
+      },
+      "percentChange": {
+        "title": "Changement en pourcentage",
+        "description": "Rechercher une augmentation ou une diminution entre les valeurs"
+      },
+      "percentDifference": {
+        "title": "Différence en pourcentage",
+        "description": "Comparer la différence relative entre deux nombres"
+      },
+      "percentOff": {
+        "title": "Pourcentage de réduction",
+        "description": "Trouver le taux de remise à partir des prix"
+      },
+      "phTools": {
+        "title": "outils pH",
+        "description": "Convertir les niveaux de pH, pOH et d'ions hydrogène"
+      },
+      "precisionControl": {
+        "title": "Contrôle de précision",
+        "description": "Ajuster les décimales et les règles d'arrondi"
+      },
+      "precisionOutput": {
+        "title": "Sortie de précision",
+        "description": "Contrôler les chiffres significatifs"
+      },
+      "printResolution": {
+        "title": "Résolution d'impression",
+        "description": "Trouver le DPI et la taille d'impression à partir des pixels"
+      },
+      "quickEstimation": {
+        "title": "Estimation rapide",
+        "description": "Obtenez des résultats en quelques secondes sans feuilles de calcul complexes"
+      },
+      "rateCompare": {
+        "title": "Comparer les tarifs",
+        "description": "Comparez les tarifs et les conditions côte à côte"
+      },
+      "rateConvert": {
+        "title": "Conversion de taux",
+        "description": "Convertir entre crypto et fiat"
+      },
+      "rateConvert1": {
+        "title": "Conversion de taux",
+        "description": "Convertir des montants entre devises"
+      },
+      "recipeScaling": {
+        "title": "Mise à l'échelle des recettes",
+        "description": "Redimensionnez les recettes pour n'importe quel nombre de portions"
+      },
+      "referenceValues": {
+        "title": "Valeurs de référence",
+        "description": "Comparez avec des matériaux typiques"
+      },
+      "regexTest": {
+        "title": "Test d'expression régulière",
+        "description": "Testez les expressions régulières en direct"
+      },
+      "reversePercentage": {
+        "title": "Pourcentage inversé",
+        "description": "Trouver la valeur d'origine avant un changement en pourcentage"
+      },
+      "roiAnalysis": {
+        "title": "Analyse du retour sur investissement",
+        "description": "Comparez le rendement locatif et le taux plafond"
+      },
+      "salePrice": {
+        "title": "Prix de vente",
+        "description": "Calculer le prix après remise"
+      },
+      "scaleRecipes": {
+        "title": "Recettes à l'échelle",
+        "description": "Redimensionner d'une portion à plusieurs"
+      },
+      "scenarioCompare": {
+        "title": "Comparaison de scénarios",
+        "description": "Testez différents tarifs, conditions et acomptes"
+      },
+      "stackSavings": {
+        "title": "Économies de pile",
+        "description": "Combinez des coupons et des réductions"
+      },
+      "stepByStepLogic": {
+        "title": "Logique étape par étape",
+        "description": "Suivez comment chaque numéro est dérivé"
+      },
+      "stoichiometry": {
+        "title": "Stœchiométrie",
+        "description": "Équilibrer les quantités de réaction"
+      },
+      "storageConvert": {
+        "title": "Conversion de stockage",
+        "description": "Convertissez des Ko, Mo, Go, To et au-delà"
+      },
+      "subnetting": {
+        "title": "Sous-réseau",
+        "description": "Calculer le CIDR, les masques et les plages d'hôtes"
+      },
+      "taxAware": {
+        "title": "Conscient des impôts",
+        "description": "Ajouter la taxe de vente au prix final"
+      },
+      "tcoModel": {
+        "title": "Modèle de coût total de possession",
+        "description": "Comparez les coûts sur site et dans le cloud"
+      },
+      "tdeeEstimate": {
+        "title": "Estimation TDEE",
+        "description": "Estimer la dépense énergétique quotidienne"
+      },
+      "timeZoneConvert": {
+        "title": "Conversion de fuseau horaire",
+        "description": "Comparez les horaires entre les régions"
+      },
+      "tireSizing": {
+        "title": "Dimensionnement des pneus",
+        "description": "Comparez les dimensions des pneus et les indices de vitesse"
+      },
+      "totalInterest": {
+        "title": "Intérêt total",
+        "description": "Voir le coût des intérêts à vie"
+      },
+      "unitAware": {
+        "title": "Conscient de l'unité",
+        "description": "Gère les unités SI et impériales"
+      },
+      "unitConversion": {
+        "title": "Conversion d'unité",
+        "description": "Convertissez des tasses, des grammes, des onces et plus encore"
+      },
+      "unitConvert": {
+        "title": "Conversion d'unité",
+        "description": "Convertir les unités physiques entre les systèmes"
+      },
+      "unitFlexibility": {
+        "title": "Flexibilité de l'unité",
+        "description": "Basculez librement entre les systèmes métriques et impériaux"
+      },
+      "unitToggle": {
+        "title": "Basculement d'unité",
+        "description": "Changer d'unités métriques et impériales"
+      },
+      "urlEncode": {
+        "title": "Encodage d'URL",
+        "description": "Encodez et décodez les URL en toute sécurité"
+      },
+      "volumeConvert": {
+        "title": "Conversion de volume",
+        "description": "Changer de tasse, cuillère à soupe, millilitre"
+      },
+      "weightConvert": {
+        "title": "Conversion de poids",
+        "description": "Convertir des grammes, des onces, des livres"
+      },
+      "wildcardMath": {
+        "title": "Mathématiques génériques",
+        "description": "Réseau de calcul et adresses de diffusion"
+      },
+      "workdayCount": {
+        "title": "Nombre de jours de travail",
+        "description": "Exclure les week-ends et les jours fériés"
+      },
+      "yearlySchedule": {
+        "title": "Calendrier annuel",
+        "description": "Examiner la croissance pour chaque période"
+      }
     }
   }
 }

@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "@/i18n/navigation";
 import { getCategoryById } from "@/lib/registry/categories";
 import { getConvertersByCategory } from "@/lib/registry/converters";
-import { getFeatureColorClasses, getToolFeatures } from "@/lib/registry/tool-features";
+import { getFeatureColorClasses, getToolFeaturesLayout } from "@/lib/registry/tool-features";
 import { cn } from "@/lib/utils";
 import { Breadcrumbs } from "./breadcrumbs";
 
@@ -34,9 +34,20 @@ export function ConverterLayout({
 }: ConverterLayoutProps) {
   const t = useTranslations("common");
   const tc = useTranslations("converter");
+  const tf = useTranslations("toolFeatures");
   const locale = useLocale();
   const category = getCategoryById(categoryId);
-  const { coreFeatures, highlights } = getToolFeatures(toolId ?? "", categoryId, locale);
+  const layout = getToolFeaturesLayout(toolId ?? "", categoryId);
+  const coreFeatures = layout.coreFeatures.map((f) => ({
+    ...f,
+    title: tf(`core.${f.titleKey}.title`),
+    description: tf(`core.${f.titleKey}.description`),
+  }));
+  const highlights = layout.highlights.map((h) => ({
+    ...h,
+    title: tf(`highlights.${h.titleKey}.title`),
+    description: tf(`highlights.${h.titleKey}.description`),
+  }));
 
   const categorySlug = category?.slug ?? categoryId;
   const related = getConvertersByCategory(categoryId)
@@ -83,7 +94,7 @@ export function ConverterLayout({
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {coreFeatures.map((feature) => (
               <Card
-                key={feature.title}
+                key={feature.titleKey}
                 className={cn("border", getFeatureColorClasses(feature.color))}
               >
                 <CardContent className="p-4">
@@ -103,7 +114,7 @@ export function ConverterLayout({
             {highlights.map((highlight, index) => {
               const Icon = highlightIcons[index % highlightIcons.length];
               return (
-                <Card key={highlight.title} className="border-border bg-muted/40">
+                <Card key={highlight.titleKey} className="border-border bg-muted/40">
                   <CardContent className="flex items-start gap-3 p-4">
                     <div className="rounded-full bg-primary/10 p-2 text-primary">
                       <Icon className="h-5 w-5" />

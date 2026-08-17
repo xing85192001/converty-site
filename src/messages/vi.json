@@ -90,7 +90,9 @@
     "financeComingSoon": "Máy tính tài chính sắp ra mắt!",
     "searchPlaceholder": "Tìm kiếm máy tính……",
     "result": "Kết quả",
-    "aboutThisCalculator": "Giới thiệu về {title}"
+    "aboutThisCalculator": "Giới thiệu về {title}",
+    "copySuccess": "Đã sao chép vào bảng nhớ tạm",
+    "copyError": "Không sao chép được vào bảng nhớ tạm"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Xử lý hình ảnh & video",
@@ -7117,6 +7119,456 @@
       "emailTitle": "Email",
       "emailGeneral": "Chung và hỗ trợ: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Câu hỏi về quyền riêng tư: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "realTimeCalculation": {
+        "title": "Tính toán thời gian thực",
+        "description": "Kết quả tự động cập nhật khi bạn nhập"
+      },
+      "multiPlatformReady": {
+        "title": "Sẵn sàng đa nền tảng",
+        "description": "Hoạt động mượt mà trên máy tính và thiết bị di động"
+      },
+      "historyReady": {
+        "title": "Sẵn sàng lịch sử",
+        "description": "Sử dụng lại các giá trị trước đó với một nhấp chuột"
+      }
+    },
+    "core": {
+      "quickEstimation": {
+        "title": "Ước tính nhanh chóng",
+        "description": "Nhận kết quả trong vài giây mà không cần bảng tính phức tạp"
+      },
+      "amortizationView": {
+        "title": "Chế độ khấu hao",
+        "description": "Xem cách nợ gốc và lãi thay đổi theo thời gian"
+      },
+      "scenarioCompare": {
+        "title": "So sánh kịch bản",
+        "description": "Thử nghiệm các mức lãi suất, kỳ hạn và khoản trả trước khác nhau"
+      },
+      "exportReady": {
+        "title": "Sẵn sàng xuất",
+        "description": "Sao chép hoặc in lịch trình để lưu hồ sơ"
+      },
+      "instantAssessment": {
+        "title": "Đánh giá tức thì",
+        "description": "Kiểm tra các chỉ số như BMI, mỡ cơ thể và calo"
+      },
+      "multipleFormulas": {
+        "title": "Nhiều công thức",
+        "description": "Chọn phương pháp tính toán phù hợp với bạn"
+      },
+      "unitFlexibility": {
+        "title": "Linh hoạt đơn vị",
+        "description": "Chuyển đổi tự do giữa hệ mét và hệ Anh"
+      },
+      "guidanceNotes": {
+        "title": "Ghi chú hướng dẫn",
+        "description": "Hiểu ý nghĩa của mỗi kết quả"
+      },
+      "stepByStepLogic": {
+        "title": "Logic từng bước",
+        "description": "Theo dõi cách mỗi số được tính ra"
+      },
+      "multipleModes": {
+        "title": "Nhiều chế độ",
+        "description": "Xử lý các biến thể phần trăm, tỷ lệ và phương trình"
+      },
+      "precisionControl": {
+        "title": "Kiểm soát độ chính xác",
+        "description": "Điều chỉnh số chữ số thập phân và quy tắc làm tròn"
+      },
+      "copyResults": {
+        "title": "Sao chép kết quả",
+        "description": "Lấy câu trả lời cho bài tập hoặc báo cáo"
+      },
+      "unitConversion": {
+        "title": "Chuyển đổi đơn vị",
+        "description": "Chuyển đổi cốc, gam, ounce và nhiều hơn"
+      },
+      "recipeScaling": {
+        "title": "Mở rộng công thức",
+        "description": "Điều chỉnh công thức cho bất kỳ số lượng phần ăn nào"
+      },
+      "nutritionLookup": {
+        "title": "Tra cứu dinh dưỡng",
+        "description": "Ước tính calo và chất dinh dưỡng"
+      },
+      "costPlanning": {
+        "title": "Lập kế hoạch chi phí",
+        "description": "Tính chi phí nguyên liệu cho mỗi phần ăn"
+      },
+      "formulaDriven": {
+        "title": "Theo công thức",
+        "description": "Dựa trên các phương trình kỹ thuật tiêu chuẩn"
+      },
+      "unitAware": {
+        "title": "Nhận thức đơn vị",
+        "description": "Xử lý đơn vị SI và imperial"
+      },
+      "parameterSweep": {
+        "title": "Quét tham số",
+        "description": "Thử nghiệm các giá trị trong một phạm vi"
+      },
+      "referenceValues": {
+        "title": "Giá trị tham khảo",
+        "description": "So sánh với các vật liệu điển hình"
+      },
+      "molarMass": {
+        "title": "Khối lượng mol",
+        "description": "Tính trọng lượng phân tử từ công thức"
+      },
+      "concentration": {
+        "title": "Nồng độ",
+        "description": "Làm việc với độ mol, độ molal và pha loãng"
+      },
+      "stoichiometry": {
+        "title": "Phản ứng hóa học",
+        "description": "Cân bằng lượng phản ứng"
+      },
+      "phTools": {
+        "title": "Công cụ pH",
+        "description": "Chuyển đổi pH, pOH và nồng độ ion hydro"
+      },
+      "colorSpaceConvert": {
+        "title": "Chuyển đổi không gian màu",
+        "description": "Chuyển đổi giữa HEX, RGB, HSL và CMYK"
+      },
+      "palettePreview": {
+        "title": "Xem trước bảng màu",
+        "description": "Xem các kết hợp màu hài hòa"
+      },
+      "contrastCheck": {
+        "title": "Kiểm tra độ tương phản",
+        "description": "Xác minh tỷ lệ tương phản truy cập"
+      },
+      "copyValues": {
+        "title": "Sao chép giá trị",
+        "description": "Sao chép CSS hoặc token thiết kế tức thì"
+      },
+      "bandwidthCalc": {
+        "title": "Tính băng thông",
+        "description": "Ước tính thời gian truyền và thông lượng"
+      },
+      "storageConvert": {
+        "title": "Chuyển đổi lưu trữ",
+        "description": "Chuyển đổi KB, MB, GB, TB và nhiều hơn"
+      },
+      "networkPlanning": {
+        "title": "Lập kế hoạch mạng",
+        "description": "Kích thước liên kết cho độ trễ và dung lượng"
+      },
+      "downloadEstimate": {
+        "title": "Ước tính tải xuống",
+        "description": "Lập kế hoạch tải tệp theo tốc độ kết nối"
+      },
+      "dateDiff": {
+        "title": "Chênh lệch ngày",
+        "description": "Tìm số ngày, tuần hoặc tháng giữa các ngày"
+      },
+      "addSubtractTime": {
+        "title": "Thêm/trừ thời gian",
+        "description": "Thêm thời gian hoặc đếm ngược"
+      },
+      "timeZoneConvert": {
+        "title": "Chuyển đổi múi giờ",
+        "description": "So sánh thời gian giữa các khu vực"
+      },
+      "workdayCount": {
+        "title": "Đếm ngày làm việc",
+        "description": "Loại trừ cuối tuần và ngày lễ"
+      },
+      "subnetting": {
+        "title": "Chia mạng con",
+        "description": "Tính CIDR, mặt nạ và phạm vi máy chủ"
+      },
+      "ipAnalysis": {
+        "title": "Phân tích IP",
+        "description": "Xác minh và phân loại IPv4/IPv6"
+      },
+      "wildcardMath": {
+        "title": "Toán ký tự đại diện",
+        "description": "Tính địa chỉ mạng và địa chỉ phát"
+      },
+      "copyConfig": {
+        "title": "Sao chép cấu hình",
+        "description": "Xuất phạm vi cho tường lửa hoặc bộ định tuyến"
+      },
+      "hashGeneration": {
+        "title": "Tạo băm",
+        "description": "Tạo SHA, MD5 và các băm khác"
+      },
+      "addressCheck": {
+        "title": "Kiểm tra địa chỉ",
+        "description": "Xác minh địa chỉ ví theo định dạng"
+      },
+      "miningEstimate": {
+        "title": "Ước tính khai thác",
+        "description": "Ước tính phần thưởng và chi phí điện"
+      },
+      "rateConvert": {
+        "title": "Chuyển đổi tỷ giá",
+        "description": "Chuyển đổi giữa tiền mã hóa và tiền pháp định"
+      },
+      "fuelEconomy": {
+        "title": "Tiết kiệm nhiên liệu",
+        "description": "So sánh MPG, L/100km và chi phí mỗi km"
+      },
+      "loanPlanning": {
+        "title": "Lập kế hoạch vay",
+        "description": "Ước tính thanh toán ô tô hàng tháng"
+      },
+      "tireSizing": {
+        "title": "Kích thước lốp",
+        "description": "So sánh kích thước lốp và xếp hạng tốc độ"
+      },
+      "maintenanceLog": {
+        "title": "Nhật ký bảo dưỡng",
+        "description": "Theo dõi khoảng cách bảo dưỡng và chi phí"
+      },
+      "dofCompute": {
+        "title": "Tính DoF",
+        "description": "Tính độ sâu trường ảnh cho bất kỳ ống kính nào"
+      },
+      "exposureMath": {
+        "title": "Toán phơi sáng",
+        "description": "Cân bằng cửa chớp, khẩu độ và ISO"
+      },
+      "printResolution": {
+        "title": "Độ phân giải in",
+        "description": "Tìm DPI và kích thước in từ pixel"
+      },
+      "astroPlanning": {
+        "title": "Lập kế hoạch thiên văn",
+        "description": "Lập kế hoạch chụp ảnh sao và dải Ngân hà"
+      },
+      "unitConvert": {
+        "title": "Chuyển đổi đơn vị",
+        "description": "Chuyển đổi đơn vị vật lý giữa các hệ thống"
+      },
+      "formulaCalc": {
+        "title": "Tính công thức",
+        "description": "Giải các phương trình vật lý phổ biến"
+      },
+      "constantLookup": {
+        "title": "Tra cứu hằng số",
+        "description": "Sử dụng các hằng số vật lý tích hợp"
+      },
+      "precisionOutput": {
+        "title": "Đầu ra chính xác",
+        "description": "Kiểm soát chữ số có nghĩa"
+      },
+      "mortgageEstimate": {
+        "title": "Ước tính thế chấp",
+        "description": "Tính thanh toán thế chấp hàng tháng"
+      },
+      "roiAnalysis": {
+        "title": "Phân tích ROI",
+        "description": "So sánh lợi nhuận cho thuê và tỷ lệ vốn"
+      },
+      "affordability": {
+        "title": "Khả năng chi trả",
+        "description": "Kiểm tra giá nào phù hợp với ngân sách của bạn"
+      },
+      "amortization": {
+        "title": "Khấu hao",
+        "description": "Xem phân tích khoản vay hàng năm"
+      },
+      "bpmTempo": {
+        "title": "BPM/nhịp độ",
+        "description": "Tính nhịp độ mỗi phút"
+      },
+      "frequencyMath": {
+        "title": "Toán tần số",
+        "description": "Chuyển đổi nốt nhạc sang hertz và cent"
+      },
+      "intervalTool": {
+        "title": "Công cụ khoảng âm",
+        "description": "Tìm khoảng âm và thang âm"
+      },
+      "audioDelay": {
+        "title": "Độ trễ âm thanh",
+        "description": "Đồng bộ độ trễ với nhịp độ"
+      },
+      "urlEncode": {
+        "title": "Mã hóa URL",
+        "description": "Mã hóa và giải mã URL an toàn"
+      },
+      "colorTokenConvert": {
+        "title": "Chuyển đổi màu/token",
+        "description": "Chuyển đổi giữa các định dạng màu CSS"
+      },
+      "jsonFormat": {
+        "title": "Định dạng JSON",
+        "description": "In đẹp và xác minh JSON"
+      },
+      "regexTest": {
+        "title": "Kiểm tra regex",
+        "description": "Kiểm tra biểu thức chính quy trực tiếp"
+      },
+      "capacityPlan": {
+        "title": "Kế hoạch năng lực",
+        "description": "Kích thước CPU, bộ nhớ và lưu trữ"
+      },
+      "licensing": {
+        "title": "Cấp phép",
+        "description": "Ước tính số lượng giấy phép và lõi"
+      },
+      "tcoModel": {
+        "title": "Mô hình TCO",
+        "description": "So sánh chi phí tại chỗ và đám mây"
+      },
+      "clusterSizing": {
+        "title": "Kích thước cụm",
+        "description": "Lập kế hoạch nhóm nút Kubernetes"
+      },
+      "fastInput": {
+        "title": "Nhập nhanh",
+        "description": "Nhập giá trị và nhận câu trả lời ngay lập tức"
+      },
+      "accurateResults": {
+        "title": "Kết quả chính xác",
+        "description": "Dựa trên các công thức và hằng số đã xác minh"
+      },
+      "flexibleUnits": {
+        "title": "Đơn vị linh hoạt",
+        "description": "Chuyển đổi giữa các đơn vị và định dạng phổ biến"
+      },
+      "clearOutput": {
+        "title": "Đầu ra rõ ràng",
+        "description": "Xem kết quả với giải thích hữu ích"
+      },
+      "basicPercentage": {
+        "title": "Tỷ lệ phần trăm cơ bản",
+        "description": "Tính ngay X% của Y là bao nhiêu"
+      },
+      "percentChange": {
+        "title": "Phần trăm thay đổi",
+        "description": "Tìm mức tăng hoặc giảm giữa các giá trị"
+      },
+      "percentDifference": {
+        "title": "Phần trăm chênh lệch",
+        "description": "So sánh sự khác biệt tương đối giữa hai số"
+      },
+      "reversePercentage": {
+        "title": "Tỷ lệ đảo ngược",
+        "description": "Tìm giá trị ban đầu trước khi thay đổi phần trăm"
+      },
+      "futureValue": {
+        "title": "Giá trị tương lai",
+        "description": "Xem khoản đầu tư của bạn sẽ tăng lên bao nhiêu"
+      },
+      "contributionModeling": {
+        "title": "Mô hình đóng góp",
+        "description": "Thêm tiền gửi hàng tháng hoặc hàng năm"
+      },
+      "interestBreakdown": {
+        "title": "Phân tích lãi suất",
+        "description": "Chia tiền gốc và tiền lãi kiếm được"
+      },
+      "yearlySchedule": {
+        "title": "lịch trình hàng năm",
+        "description": "Đánh giá mức tăng trưởng theo từng thời kỳ"
+      },
+      "monthlyPayment": {
+        "title": "Thanh toán hàng tháng",
+        "description": "Ước tính P&I với thuế và bảo hiểm"
+      },
+      "amortizationTable": {
+        "title": "Bảng khấu hao",
+        "description": "Xem gốc và lãi hàng năm"
+      },
+      "totalInterest": {
+        "title": "Tổng lãi",
+        "description": "Xem chi phí lãi suất trọn đời"
+      },
+      "rateCompare": {
+        "title": "So sánh tỷ lệ",
+        "description": "So sánh tỷ giá và điều khoản cạnh nhau"
+      },
+      "bmiCompute": {
+        "title": "tính toán BMI",
+        "description": "Tính chỉ số khối cơ thể nhanh chóng"
+      },
+      "categoryView": {
+        "title": "Chế độ xem danh mục",
+        "description": "Xem phạm vi từ thiếu cân đến béo phì"
+      },
+      "idealWeight": {
+        "title": "Cân nặng lý tưởng",
+        "description": "Ước tính phạm vi cân nặng khỏe mạnh"
+      },
+      "unitToggle": {
+        "title": "Chuyển đổi đơn vị",
+        "description": "Chuyển đổi đơn vị số liệu và hệ đo lường Anh"
+      },
+      "tdeeEstimate": {
+        "title": "ước tính TDEE",
+        "description": "Ước tính chi tiêu năng lượng hàng ngày"
+      },
+      "macroSplit": {
+        "title": "Phân chia vĩ mô",
+        "description": "Tính toán mục tiêu protein, chất béo và carb"
+      },
+      "goalModes": {
+        "title": "Chế độ mục tiêu",
+        "description": "Lập kế hoạch giảm cân, duy trì hoặc tăng cân"
+      },
+      "activityLevels": {
+        "title": "Mức độ hoạt động",
+        "description": "Yếu tố trong việc tập luyện và vận động hàng ngày"
+      },
+      "volumeConvert": {
+        "title": "Chuyển đổi âm lượng",
+        "description": "Đổi cốc, thìa, ml"
+      },
+      "weightConvert": {
+        "title": "Chuyển đổi trọng lượng",
+        "description": "Chuyển đổi gam, ounce, pound"
+      },
+      "ingredientAware": {
+        "title": "Nhận biết thành phần",
+        "description": "Chuyển đổi theo mật độ thành phần"
+      },
+      "scaleRecipes": {
+        "title": "công thức nấu ăn quy mô",
+        "description": "Thay đổi kích thước từ một khẩu phần thành nhiều khẩu phần"
+      },
+      "salePrice": {
+        "title": "Giá bán",
+        "description": "Tính giá sau khi giảm giá"
+      },
+      "percentOff": {
+        "title": "Phần trăm giảm giá",
+        "description": "Tìm tỷ lệ chiết khấu từ giá"
+      },
+      "stackSavings": {
+        "title": "Tiết kiệm ngăn xếp",
+        "description": "Kết hợp phiếu giảm giá và giảm giá"
+      },
+      "taxAware": {
+        "title": "Nhận thức về thuế",
+        "description": "Thêm thuế bán hàng vào giá cuối cùng"
+      },
+      "rateConvert1": {
+        "title": "Chuyển đổi tỷ giá",
+        "description": "Chuyển đổi số tiền giữa các loại tiền tệ"
+      },
+      "markupEstimate": {
+        "title": "ước tính tăng giá",
+        "description": "Thêm ký quỹ hoặc phí trao đổi"
+      },
+      "bidAskSpread": {
+        "title": "Chênh lệch giá thầu",
+        "description": "So sánh tỷ giá mua và bán"
+      },
+      "historicalView": {
+        "title": "Chế độ xem lịch sử",
+        "description": "Theo dõi mức giá thay đổi theo thời gian"
+      }
     }
   }
 }

@@ -94,7 +94,9 @@
     },
     "result": "結果",
     "results": "結果",
-    "aboutThisCalculator": "{title}について"
+    "aboutThisCalculator": "{title}について",
+    "copySuccess": "クリップボードにコピーされました",
+    "copyError": "クリップボードへのコピーに失敗しました"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 画像 / 動画処理",
@@ -7126,6 +7128,456 @@
       "emailTitle": "電子メール",
       "emailGeneral": "一般およびサポート: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "プライバシーに関する質問: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "履歴の準備完了",
+        "description": "ワンクリックで以前の値を再利用"
+      },
+      "multiPlatformReady": {
+        "title": "マルチプラットフォーム対応",
+        "description": "デスクトップとモバイルデバイスでスムーズに動作します"
+      },
+      "realTimeCalculation": {
+        "title": "リアルタイム計算",
+        "description": "入力すると結果が自動的に更新されます"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "正確な結果",
+        "description": "検証済みの数式と定数を使用して構築"
+      },
+      "activityLevels": {
+        "title": "活動レベル",
+        "description": "運動や日常の動きを考慮する"
+      },
+      "addSubtractTime": {
+        "title": "時間の加算/減算",
+        "description": "期間を追加するか逆算する"
+      },
+      "addressCheck": {
+        "title": "住所確認",
+        "description": "ウォレットアドレスを形式で検証する"
+      },
+      "affordability": {
+        "title": "手頃な価格",
+        "description": "予算に合う価格を確認してください"
+      },
+      "amortization": {
+        "title": "償却",
+        "description": "年間ローンの内訳を表示する"
+      },
+      "amortizationTable": {
+        "title": "償却表",
+        "description": "年間の元本と利息を表示する"
+      },
+      "amortizationView": {
+        "title": "償却ビュー",
+        "description": "元金と利息が時間の経過とともにどのように変化するかを確認する"
+      },
+      "astroPlanning": {
+        "title": "アストロプランニング",
+        "description": "星跡や天の川の撮影を計画する"
+      },
+      "audioDelay": {
+        "title": "音声遅延",
+        "description": "ディレイタイムをテンポに同期させる"
+      },
+      "bandwidthCalc": {
+        "title": "帯域幅の計算",
+        "description": "転送時間とスループットを見積もる"
+      },
+      "basicPercentage": {
+        "title": "基本割合",
+        "description": "Y の X% が何であるかを瞬時に計算します"
+      },
+      "bidAskSpread": {
+        "title": "買値と買値のスプレッド",
+        "description": "売買レートを比較する"
+      },
+      "bmiCompute": {
+        "title": "BMI計算",
+        "description": "BMIを素早く計算"
+      },
+      "bpmTempo": {
+        "title": "BPM/テンポ",
+        "description": "1 分あたりの拍数を計算する"
+      },
+      "capacityPlan": {
+        "title": "容量計画",
+        "description": "CPU、メモリ、ストレージのサイズ"
+      },
+      "categoryView": {
+        "title": "カテゴリビュー",
+        "description": "低体重から肥満までの範囲を参照"
+      },
+      "clearOutput": {
+        "title": "クリアな出力",
+        "description": "役立つ説明付きの結果を表示する"
+      },
+      "clusterSizing": {
+        "title": "クラスターのサイジング",
+        "description": "Kubernetes ノード プールを計画する"
+      },
+      "colorSpaceConvert": {
+        "title": "色空間変換",
+        "description": "HEX、RGB、HSL、CMYK 間の切り替え"
+      },
+      "colorTokenConvert": {
+        "title": "カラー/トークン変換",
+        "description": "CSS カラー形式を切り替える"
+      },
+      "concentration": {
+        "title": "集中力",
+        "description": "モル濃度、モル濃度、希釈を扱う"
+      },
+      "constantLookup": {
+        "title": "定数検索",
+        "description": "組み込みの物理定数を使用する"
+      },
+      "contrastCheck": {
+        "title": "コントラストチェック",
+        "description": "アクセシビリティのコントラスト比を確認する"
+      },
+      "contributionModeling": {
+        "title": "貢献モデリング",
+        "description": "毎月または毎年の入金を追加する"
+      },
+      "copyConfig": {
+        "title": "構成をコピーする",
+        "description": "ファイアウォールまたはルーターで使用するために範囲をエクスポートする"
+      },
+      "copyResults": {
+        "title": "結果をコピーする",
+        "description": "宿題やレポートの答えを得る"
+      },
+      "copyValues": {
+        "title": "値をコピーする",
+        "description": "CSS またはデザイントークンを即座にコピー"
+      },
+      "costPlanning": {
+        "title": "コスト計画",
+        "description": "1食分あたりの材料費を計算する"
+      },
+      "dateDiff": {
+        "title": "日付の差分",
+        "description": "日付の間の日、週、または月を検索します"
+      },
+      "dofCompute": {
+        "title": "自由度の計算",
+        "description": "任意のレンズの被写界深度を計算します"
+      },
+      "downloadEstimate": {
+        "title": "見積もりをダウンロードする",
+        "description": "接続速度に応じてファイルのダウンロードを計画する"
+      },
+      "exportReady": {
+        "title": "輸出準備完了",
+        "description": "レコードのスケジュールをコピーまたは印刷する"
+      },
+      "exposureMath": {
+        "title": "露出の計算",
+        "description": "シャッター、絞り、ISO のバランスを調整する"
+      },
+      "fastInput": {
+        "title": "高速入力",
+        "description": "値を入力するとすぐに回答が得られます"
+      },
+      "flexibleUnits": {
+        "title": "フレキシブルユニット",
+        "description": "一般的な単位と形式を切り替える"
+      },
+      "formulaCalc": {
+        "title": "数式計算",
+        "description": "一般的な物理方程式を解く"
+      },
+      "formulaDriven": {
+        "title": "数式主導",
+        "description": "標準的な工学方程式に基づいて構築"
+      },
+      "frequencyMath": {
+        "title": "周波数の計算",
+        "description": "音符をヘルツとセントに変換する"
+      },
+      "fuelEconomy": {
+        "title": "燃費",
+        "description": "MPG、L/100km、1kmあたりのコストを比較"
+      },
+      "futureValue": {
+        "title": "将来価値",
+        "description": "投資がどの程度増加するかを確認する"
+      },
+      "goalModes": {
+        "title": "目標モード",
+        "description": "体重の減少、維持、増加を計画する"
+      },
+      "guidanceNotes": {
+        "title": "指導ノート",
+        "description": "それぞれの結果が何を意味するのかを理解する"
+      },
+      "hashGeneration": {
+        "title": "ハッシュの生成",
+        "description": "SHA、MD5、およびその他のハッシュを生成する"
+      },
+      "historicalView": {
+        "title": "歴史的見解",
+        "description": "時間の経過とともにレートがどのように変化するかを追跡する"
+      },
+      "idealWeight": {
+        "title": "理想的な体重",
+        "description": "健康的な体重範囲を推定する"
+      },
+      "ingredientAware": {
+        "title": "成分を意識した",
+        "description": "成分濃度で換算"
+      },
+      "instantAssessment": {
+        "title": "即時評価",
+        "description": "BMI、体脂肪、カロリーなどの指標をチェック"
+      },
+      "interestBreakdown": {
+        "title": "利息の内訳",
+        "description": "元金の分割と利息の比較"
+      },
+      "intervalTool": {
+        "title": "インターバルツール",
+        "description": "音程と音階を見つける"
+      },
+      "ipAnalysis": {
+        "title": "知財分析",
+        "description": "IPv4/IPv6の検証と分類"
+      },
+      "jsonFormat": {
+        "title": "JSON形式",
+        "description": "JSON を整形して検証する"
+      },
+      "licensing": {
+        "title": "ライセンス",
+        "description": "ライセンスとコア数の見積もり"
+      },
+      "loanPlanning": {
+        "title": "ローン計画",
+        "description": "毎月の自動支払いの見積もり"
+      },
+      "macroSplit": {
+        "title": "マクロ分割",
+        "description": "タンパク質、脂肪、炭水化物の目標値を計算する"
+      },
+      "maintenanceLog": {
+        "title": "メンテナンスログ",
+        "description": "サービス間隔とコストを追跡する"
+      },
+      "markupEstimate": {
+        "title": "マークアップの見積もり",
+        "description": "為替証拠金または手数料を追加する"
+      },
+      "miningEstimate": {
+        "title": "マイニングの見積もり",
+        "description": "報酬と電力コストの概算"
+      },
+      "molarMass": {
+        "title": "モル質量",
+        "description": "式から分子量を計算する"
+      },
+      "monthlyPayment": {
+        "title": "月々のお支払い",
+        "description": "税金と保険を含めた損益計算書"
+      },
+      "mortgageEstimate": {
+        "title": "住宅ローンの見積もり",
+        "description": "毎月の住宅ローン返済額を計算する"
+      },
+      "multipleFormulas": {
+        "title": "複数の数式",
+        "description": "自分に合った計算方法を選択してください"
+      },
+      "multipleModes": {
+        "title": "複数のモード",
+        "description": "パーセンテージ、比率、方程式のバリアントを処理する"
+      },
+      "networkPlanning": {
+        "title": "ネットワーク計画",
+        "description": "遅延と容量に合わせてリンクのサイズを設定する"
+      },
+      "nutritionLookup": {
+        "title": "栄養検索",
+        "description": "カロリーとマクロを見積もる"
+      },
+      "palettePreview": {
+        "title": "パレットのプレビュー",
+        "description": "調和のとれた色の組み合わせを見る"
+      },
+      "parameterSweep": {
+        "title": "パラメータスイープ",
+        "description": "範囲全体の値をテストする"
+      },
+      "percentChange": {
+        "title": "変化率",
+        "description": "値間の増加または減少を見つける"
+      },
+      "percentDifference": {
+        "title": "差のパーセント",
+        "description": "2 つの数値間の相対的な差を比較する"
+      },
+      "percentOff": {
+        "title": "パーセントオフ",
+        "description": "価格から割引率を調べる"
+      },
+      "phTools": {
+        "title": "pHツール",
+        "description": "pH、pOH、水素イオンレベルを変換"
+      },
+      "precisionControl": {
+        "title": "精密制御",
+        "description": "小数点以下の桁数と四捨五入ルールを調整する"
+      },
+      "precisionOutput": {
+        "title": "高精度の出力",
+        "description": "管理有効数字"
+      },
+      "printResolution": {
+        "title": "印刷解像度",
+        "description": "ピクセルから DPI と印刷サイズを求める"
+      },
+      "quickEstimation": {
+        "title": "クイック見積り",
+        "description": "複雑なスプレッドシートを使用せずに数秒で結果を取得"
+      },
+      "rateCompare": {
+        "title": "料金比較",
+        "description": "料金と条件を並べて比較する"
+      },
+      "rateConvert": {
+        "title": "レート換算",
+        "description": "暗号通貨と法定通貨間の変換"
+      },
+      "rateConvert1": {
+        "title": "レート換算",
+        "description": "通貨間で金額を換算する"
+      },
+      "recipeScaling": {
+        "title": "レシピのスケーリング",
+        "description": "任意の分量に合わせてレシピのサイズを変更します"
+      },
+      "referenceValues": {
+        "title": "参考値",
+        "description": "代表的な材料と比較する"
+      },
+      "regexTest": {
+        "title": "正規表現テスト",
+        "description": "正規表現をライブでテストする"
+      },
+      "reversePercentage": {
+        "title": "逆パーセンテージ",
+        "description": "パーセンテージ変更前の元の値を見つける"
+      },
+      "roiAnalysis": {
+        "title": "ROI分析",
+        "description": "賃貸利回りとキャップレートを比較する"
+      },
+      "salePrice": {
+        "title": "販売価格",
+        "description": "割引後の価格を計算する"
+      },
+      "scaleRecipes": {
+        "title": "スケールレシピ",
+        "description": "1 回分から複数回分までサイズを変更する"
+      },
+      "scenarioCompare": {
+        "title": "シナリオの比較",
+        "description": "さまざまなレート、条件、頭金をテストする"
+      },
+      "stackSavings": {
+        "title": "スタックの節約",
+        "description": "クーポンと割引を組み合わせる"
+      },
+      "stepByStepLogic": {
+        "title": "段階的なロジック",
+        "description": "各数値がどのように導き出されるかを追跡する"
+      },
+      "stoichiometry": {
+        "title": "化学量論",
+        "description": "反応量のバランスをとる"
+      },
+      "storageConvert": {
+        "title": "ストレージ変換",
+        "description": "KB、MB、GB、TB、その他を変換"
+      },
+      "subnetting": {
+        "title": "サブネット化",
+        "description": "CIDR、マスク、ホスト範囲を計算する"
+      },
+      "taxAware": {
+        "title": "税金を意識した",
+        "description": "最終価格に消費税を加算します"
+      },
+      "tcoModel": {
+        "title": "TCO モデル",
+        "description": "オンプレミスとクラウドのコストを比較する"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE 推定値",
+        "description": "1 日のエネルギー消費量を推定する"
+      },
+      "timeZoneConvert": {
+        "title": "タイムゾーンの変換",
+        "description": "地域間の時間を比較する"
+      },
+      "tireSizing": {
+        "title": "タイヤのサイジング",
+        "description": "タイヤの寸法と速度定格を比較する"
+      },
+      "totalInterest": {
+        "title": "利息総額",
+        "description": "生涯金利コストを参照"
+      },
+      "unitAware": {
+        "title": "単位を意識した",
+        "description": "SI および帝国単位を処理します"
+      },
+      "unitConversion": {
+        "title": "単位換算",
+        "description": "カップ、グラム、オンスなどを変換します"
+      },
+      "unitConvert": {
+        "title": "単位換算",
+        "description": "システム間で物理単位を変換する"
+      },
+      "unitFlexibility": {
+        "title": "ユニットの柔軟性",
+        "description": "メートル法とインペリアル法を自由に切り替えます"
+      },
+      "unitToggle": {
+        "title": "単位の切り替え",
+        "description": "メートル単位とヤードポンド法の切り替え"
+      },
+      "urlEncode": {
+        "title": "URLエンコード",
+        "description": "URL を安全にエンコードおよびデコードする"
+      },
+      "volumeConvert": {
+        "title": "ボリューム変換",
+        "description": "カップ、大さじ、ミリリットルを切り替えます"
+      },
+      "weightConvert": {
+        "title": "重量換算",
+        "description": "グラム、オンス、ポンドを変換します"
+      },
+      "wildcardMath": {
+        "title": "ワイルドカード計算",
+        "description": "ネットワークアドレスとブロードキャストアドレスを計算する"
+      },
+      "workdayCount": {
+        "title": "勤務日のカウント",
+        "description": "土日祝日を除く"
+      },
+      "yearlySchedule": {
+        "title": "年間スケジュール",
+        "description": "各期間の成長を確認する"
+      }
     }
   }
 }

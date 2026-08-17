@@ -88,7 +88,9 @@
       "percentage": "Prozent",
       "unit": "Einheitenrechner"
     },
-    "aboutThisCalculator": "Über {title}"
+    "aboutThisCalculator": "Über {title}",
+    "copySuccess": "In die Zwischenablage kopiert",
+    "copyError": "Kopieren in die Zwischenablage fehlgeschlagen"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -7113,6 +7115,456 @@
       "emailTitle": "E-Mail",
       "emailGeneral": "Allgemeines und Support: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Fragen zum Datenschutz: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "Geschichte bereit",
+        "description": "Verwenden Sie vorherige Werte mit einem Klick wieder"
+      },
+      "multiPlatformReady": {
+        "title": "Bereit für mehrere Plattformen",
+        "description": "Funktioniert reibungslos auf Desktop- und Mobilgeräten"
+      },
+      "realTimeCalculation": {
+        "title": "Echtzeitberechnung",
+        "description": "Die Ergebnisse werden während der Eingabe automatisch aktualisiert"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Genaue Ergebnisse",
+        "description": "Gebaut mit validierten Formeln und Konstanten"
+      },
+      "activityLevels": {
+        "title": "Aktivitätsniveaus",
+        "description": "Berücksichtigen Sie Bewegung und tägliche Bewegung"
+      },
+      "addSubtractTime": {
+        "title": "Zeit addieren/subtrahieren",
+        "description": "Fügen Sie Dauern hinzu oder zählen Sie rückwärts"
+      },
+      "addressCheck": {
+        "title": "Adressprüfung",
+        "description": "Validieren Sie Wallet-Adressen nach Format"
+      },
+      "affordability": {
+        "title": "Erschwinglichkeit",
+        "description": "Prüfen Sie, welcher Preis zu Ihrem Budget passt"
+      },
+      "amortization": {
+        "title": "Amortisation",
+        "description": "Sehen Sie sich die jährliche Kreditaufschlüsselung an"
+      },
+      "amortizationTable": {
+        "title": "Tilgungstabelle",
+        "description": "Sehen Sie sich das jährliche Kapital und die Zinsen an"
+      },
+      "amortizationView": {
+        "title": "Amortisationsansicht",
+        "description": "Sehen Sie, wie sich Kapital und Zinsen im Laufe der Zeit ändern"
+      },
+      "astroPlanning": {
+        "title": "Astroplanung",
+        "description": "Planen Sie Sternspur- und Milchstraßenaufnahmen"
+      },
+      "audioDelay": {
+        "title": "Audioverzögerung",
+        "description": "Synchronisieren Sie die Verzögerungszeiten mit dem Tempo"
+      },
+      "bandwidthCalc": {
+        "title": "Bandbreitenberechnung",
+        "description": "Schätzen Sie Übertragungszeit und Durchsatz"
+      },
+      "basicPercentage": {
+        "title": "Grundprozentsatz",
+        "description": "Berechnen Sie sofort, wie viel X % von Y sind"
+      },
+      "bidAskSpread": {
+        "title": "Geld-Brief-Spanne",
+        "description": "Vergleichen Sie Kauf- und Verkaufspreise"
+      },
+      "bmiCompute": {
+        "title": "BMI berechnen",
+        "description": "Berechnen Sie schnell den Body-Mass-Index"
+      },
+      "bpmTempo": {
+        "title": "BPM/Tempo",
+        "description": "Berechnen Sie Schläge pro Minute"
+      },
+      "capacityPlan": {
+        "title": "Kapazitätsplan",
+        "description": "Größe von CPU, Arbeitsspeicher und Massenspeicher"
+      },
+      "categoryView": {
+        "title": "Kategorieansicht",
+        "description": "Siehe Bereiche von Untergewicht bis Fettleibigkeit"
+      },
+      "clearOutput": {
+        "title": "Klare Ausgabe",
+        "description": "Sehen Sie sich die Ergebnisse mit hilfreichen Erklärungen an"
+      },
+      "clusterSizing": {
+        "title": "Clustergröße",
+        "description": "Planen Sie Kubernetes-Knotenpools"
+      },
+      "colorSpaceConvert": {
+        "title": "Farbraum konvertieren",
+        "description": "Wechseln Sie zwischen HEX, RGB, HSL und CMYK"
+      },
+      "colorTokenConvert": {
+        "title": "Farb-/Token-Konvertierung",
+        "description": "Wechseln Sie zwischen CSS-Farbformaten"
+      },
+      "concentration": {
+        "title": "Konzentration",
+        "description": "Arbeiten Sie mit Molarität, Molalität und Verdünnung"
+      },
+      "constantLookup": {
+        "title": "Ständiges Nachschlagen",
+        "description": "Verwenden Sie integrierte physikalische Konstanten"
+      },
+      "contrastCheck": {
+        "title": "Kontrastprüfung",
+        "description": "Überprüfen Sie die Kontrastverhältnisse der Barrierefreiheit"
+      },
+      "contributionModeling": {
+        "title": "Beitragsmodellierung",
+        "description": "Fügen Sie monatliche oder jährliche Einzahlungen hinzu"
+      },
+      "copyConfig": {
+        "title": "Konfiguration kopieren",
+        "description": "Exportbereiche für Firewall- oder Router-Nutzung"
+      },
+      "copyResults": {
+        "title": "Ergebnisse kopieren",
+        "description": "Holen Sie sich Antworten für Hausaufgaben oder Berichte"
+      },
+      "copyValues": {
+        "title": "Werte kopieren",
+        "description": "Kopieren Sie CSS- oder Design-Tokens sofort"
+      },
+      "costPlanning": {
+        "title": "Kostenplanung",
+        "description": "Berechnen Sie die Zutatenkosten pro Portion"
+      },
+      "dateDiff": {
+        "title": "Datumsunterschied",
+        "description": "Finden Sie Tage, Wochen oder Monate zwischen Datumsangaben"
+      },
+      "dofCompute": {
+        "title": "DoF-Berechnung",
+        "description": "Berechnen Sie die Schärfentiefe für jedes Objektiv"
+      },
+      "downloadEstimate": {
+        "title": "Kostenvoranschlag herunterladen",
+        "description": "Planen Sie Dateidownloads nach Verbindungsgeschwindigkeit"
+      },
+      "exportReady": {
+        "title": "Exportbereit",
+        "description": "Kopieren oder drucken Sie Zeitpläne für Aufzeichnungen"
+      },
+      "exposureMath": {
+        "title": "Belichtungsmathematik",
+        "description": "Passen Sie Verschluss, Blende und ISO an"
+      },
+      "fastInput": {
+        "title": "Schnelle Eingabe",
+        "description": "Geben Sie Werte ein und erhalten Sie sofort Antworten"
+      },
+      "flexibleUnits": {
+        "title": "Flexible Einheiten",
+        "description": "Wechseln Sie zwischen gängigen Einheiten und Formaten"
+      },
+      "formulaCalc": {
+        "title": "Formelberechnung",
+        "description": "Lösen Sie gängige physikalische Gleichungen"
+      },
+      "formulaDriven": {
+        "title": "Formelgesteuert",
+        "description": "Basierend auf standardmäßigen technischen Gleichungen"
+      },
+      "frequencyMath": {
+        "title": "Frequenzmathematik",
+        "description": "Konvertieren Sie Noten in Hertz und Cent"
+      },
+      "fuelEconomy": {
+        "title": "Kraftstoffverbrauch",
+        "description": "Vergleichen Sie MPG, l/100 km und Kosten pro km"
+      },
+      "futureValue": {
+        "title": "Zukünftiger Wert",
+        "description": "Sehen Sie, wie stark Ihre Investition wachsen wird"
+      },
+      "goalModes": {
+        "title": "Zielmodi",
+        "description": "Planen Sie Gewichtsverlust, Gewichtserhaltung oder Gewichtszunahme"
+      },
+      "guidanceNotes": {
+        "title": "Hinweise",
+        "description": "Verstehen Sie, was jedes Ergebnis bedeutet"
+      },
+      "hashGeneration": {
+        "title": "Hash-Generierung",
+        "description": "Generieren Sie SHA-, MD5- und andere Hashes"
+      },
+      "historicalView": {
+        "title": "Historischer Blick",
+        "description": "Verfolgen Sie, wie sich die Tarife im Laufe der Zeit ändern"
+      },
+      "idealWeight": {
+        "title": "Idealgewicht",
+        "description": "Schätzen Sie einen gesunden Gewichtsbereich"
+      },
+      "ingredientAware": {
+        "title": "Zutatenbewusst",
+        "description": "Umrechnung nach Zutatendichte"
+      },
+      "instantAssessment": {
+        "title": "Sofortige Beurteilung",
+        "description": "Überprüfen Sie Messwerte wie BMI, Körperfett und Kalorien"
+      },
+      "interestBreakdown": {
+        "title": "Zinsaufschlüsselung",
+        "description": "Geteiltes Kapital vs. verdiente Zinsen"
+      },
+      "intervalTool": {
+        "title": "Intervall-Tool",
+        "description": "Finden Sie musikalische Intervalle und Tonleitern"
+      },
+      "ipAnalysis": {
+        "title": "IP-Analyse",
+        "description": "Validieren und klassifizieren Sie IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "JSON-Format",
+        "description": "JSON hübsch drucken und validieren"
+      },
+      "licensing": {
+        "title": "Lizenzierung",
+        "description": "Schätzen Sie die Anzahl der Lizenzen und Kerne"
+      },
+      "loanPlanning": {
+        "title": "Kreditplanung",
+        "description": "Schätzen Sie die monatlichen automatischen Zahlungen"
+      },
+      "macroSplit": {
+        "title": "Makroaufteilung",
+        "description": "Berechnen Sie Protein-, Fett- und Kohlenhydratziele"
+      },
+      "maintenanceLog": {
+        "title": "Wartungsprotokoll",
+        "description": "Verfolgen Sie Serviceintervalle und Kosten"
+      },
+      "markupEstimate": {
+        "title": "Aufschlagsschätzung",
+        "description": "Fügen Sie eine Wechselkursmarge oder Gebühr hinzu"
+      },
+      "miningEstimate": {
+        "title": "Bergbauschätzung",
+        "description": "Ungefähre Belohnung und Stromkosten"
+      },
+      "molarMass": {
+        "title": "Molmasse",
+        "description": "Berechnen Sie das Molekulargewicht anhand von Formeln"
+      },
+      "monthlyPayment": {
+        "title": "Monatliche Zahlung",
+        "description": "Schätzen Sie P&I mit Steuern und Versicherungen"
+      },
+      "mortgageEstimate": {
+        "title": "Hypothekenschätzung",
+        "description": "Berechnen Sie die monatlichen Hypothekenzahlungen"
+      },
+      "multipleFormulas": {
+        "title": "Mehrere Formeln",
+        "description": "Wählen Sie die für Sie passende Berechnungsmethode"
+      },
+      "multipleModes": {
+        "title": "Mehrere Modi",
+        "description": "Behandeln Sie Prozent-, Verhältnis- und Gleichungsvarianten"
+      },
+      "networkPlanning": {
+        "title": "Netzwerkplanung",
+        "description": "Größenlinks für Latenz und Kapazität"
+      },
+      "nutritionLookup": {
+        "title": "Ernährungssuche",
+        "description": "Schätzen Sie Kalorien und Makros"
+      },
+      "palettePreview": {
+        "title": "Palettenvorschau",
+        "description": "Entdecken Sie harmonische Farbkombinationen"
+      },
+      "parameterSweep": {
+        "title": "Parameter-Sweep",
+        "description": "Testen Sie Werte in einem Bereich"
+      },
+      "percentChange": {
+        "title": "Prozentuale Änderung",
+        "description": "Finden Sie die Zunahme oder Abnahme zwischen Werten"
+      },
+      "percentDifference": {
+        "title": "Prozentualer Unterschied",
+        "description": "Vergleichen Sie die relative Differenz zwischen zwei Zahlen"
+      },
+      "percentOff": {
+        "title": "Prozent Rabatt",
+        "description": "Finden Sie den Rabattsatz anhand der Preise"
+      },
+      "phTools": {
+        "title": "pH-Tools",
+        "description": "Konvertieren Sie pH-, pOH- und Wasserstoffionenwerte"
+      },
+      "precisionControl": {
+        "title": "Präzise Steuerung",
+        "description": "Passen Sie die Dezimalstellen und Rundungsregeln an"
+      },
+      "precisionOutput": {
+        "title": "Präzise Ausgabe",
+        "description": "Kontrollieren Sie wichtige Zahlen"
+      },
+      "printResolution": {
+        "title": "Druckauflösung",
+        "description": "Finden Sie DPI und Druckgröße anhand von Pixeln"
+      },
+      "quickEstimation": {
+        "title": "Schnelle Schätzung",
+        "description": "Erhalten Sie in Sekundenschnelle Ergebnisse ohne komplexe Tabellenkalkulationen"
+      },
+      "rateCompare": {
+        "title": "Tarif vergleichen",
+        "description": "Vergleichen Sie Tarife und Konditionen nebeneinander"
+      },
+      "rateConvert": {
+        "title": "Rate konvertieren",
+        "description": "Konvertieren Sie zwischen Krypto und Fiat"
+      },
+      "rateConvert1": {
+        "title": "Rate konvertieren",
+        "description": "Konvertieren Sie Beträge zwischen Währungen"
+      },
+      "recipeScaling": {
+        "title": "Rezeptskalierung",
+        "description": "Passen Sie die Rezeptgröße für jede Portionsanzahl an"
+      },
+      "referenceValues": {
+        "title": "Referenzwerte",
+        "description": "Vergleichen Sie mit typischen Materialien"
+      },
+      "regexTest": {
+        "title": "Regex-Test",
+        "description": "Testen Sie reguläre Ausdrücke live"
+      },
+      "reversePercentage": {
+        "title": "Umgekehrter Prozentsatz",
+        "description": "Finden Sie den ursprünglichen Wert vor einer prozentualen Änderung"
+      },
+      "roiAnalysis": {
+        "title": "ROI-Analyse",
+        "description": "Vergleichen Sie Mietrendite und Cap-Rate"
+      },
+      "salePrice": {
+        "title": "Verkaufspreis",
+        "description": "Berechnen Sie den Preis nach Rabatt"
+      },
+      "scaleRecipes": {
+        "title": "Rezepte skalieren",
+        "description": "Ändern Sie die Größe von einer Portion auf mehrere"
+      },
+      "scenarioCompare": {
+        "title": "Szenario vergleichen",
+        "description": "Testen Sie verschiedene Tarife, Konditionen und Anzahlungen"
+      },
+      "stackSavings": {
+        "title": "Stapeleinsparungen",
+        "description": "Kombinieren Sie Gutscheine und Rabatte"
+      },
+      "stepByStepLogic": {
+        "title": "Schritt-für-Schritt-Logik",
+        "description": "Verfolgen Sie, wie jede Zahl abgeleitet wird"
+      },
+      "stoichiometry": {
+        "title": "Stöchiometrie",
+        "description": "Reaktionsmengen ausgleichen"
+      },
+      "storageConvert": {
+        "title": "Speicherkonvertierung",
+        "description": "Konvertieren Sie KB, MB, GB, TB und mehr"
+      },
+      "subnetting": {
+        "title": "Subnetzbildung",
+        "description": "Berechnen Sie CIDR, Masken und Hostbereiche"
+      },
+      "taxAware": {
+        "title": "Steuerbewusst",
+        "description": "Fügen Sie zum Endpreis die Umsatzsteuer hinzu"
+      },
+      "tcoModel": {
+        "title": "TCO-Modell",
+        "description": "Vergleichen Sie die Kosten vor Ort und in der Cloud"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE-Schätzung",
+        "description": "Schätzen Sie den täglichen Energieverbrauch"
+      },
+      "timeZoneConvert": {
+        "title": "Zeitzonenkonvertierung",
+        "description": "Vergleichen Sie die Zeiten in verschiedenen Regionen"
+      },
+      "tireSizing": {
+        "title": "Reifengröße",
+        "description": "Vergleichen Sie Reifenabmessungen und Geschwindigkeitswerte"
+      },
+      "totalInterest": {
+        "title": "Gesamtzins",
+        "description": "Siehe lebenslange Zinskosten"
+      },
+      "unitAware": {
+        "title": "Einheitenbewusst",
+        "description": "Behandelt SI- und imperiale Einheiten"
+      },
+      "unitConversion": {
+        "title": "Einheitenumrechnung",
+        "description": "Konvertieren Sie Tassen, Gramm, Unzen und mehr"
+      },
+      "unitConvert": {
+        "title": "Einheitenumrechnung",
+        "description": "Konvertieren Sie physikalische Einheiten systemübergreifend"
+      },
+      "unitFlexibility": {
+        "title": "Flexibilität der Einheit",
+        "description": "Wechseln Sie frei zwischen metrischen und imperialen Maßeinheiten"
+      },
+      "unitToggle": {
+        "title": "Einheitenumschaltung",
+        "description": "Wechseln Sie metrische und imperiale Einheiten"
+      },
+      "urlEncode": {
+        "title": "URL-Kodierung",
+        "description": "URLs sicher kodieren und dekodieren"
+      },
+      "volumeConvert": {
+        "title": "Volumenkonvertierung",
+        "description": "Wechseln Sie zwischen Tassen, Esslöffeln und Millilitern"
+      },
+      "weightConvert": {
+        "title": "Gewicht umrechnen",
+        "description": "Konvertieren Sie Gramm, Unzen, Pfund"
+      },
+      "wildcardMath": {
+        "title": "Wildcard-Mathematik",
+        "description": "Computing-Netzwerk- und Broadcast-Adressen"
+      },
+      "workdayCount": {
+        "title": "Anzahl der Arbeitstage",
+        "description": "Wochenenden und Feiertage ausschließen"
+      },
+      "yearlySchedule": {
+        "title": "Jahresplan",
+        "description": "Überprüfen Sie das Wachstum für jeden Zeitraum"
+      }
     }
   }
 }

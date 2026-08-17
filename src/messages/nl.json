@@ -90,7 +90,9 @@
     "financeComingSoon": "Financiële rekenmachines binnenkort beschikbaar!",
     "searchPlaceholder": "Rekenmachines zoeken……",
     "result": "Resultaat",
-    "aboutThisCalculator": "Over {title}"
+    "aboutThisCalculator": "Over {title}",
+    "copySuccess": "Gekopieerd naar klembord",
+    "copyError": "Kopiëren naar klembord is mislukt"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Afbeelding- & videobewerking",
@@ -7117,6 +7119,456 @@
       "emailTitle": "E-mail",
       "emailGeneral": "Algemeen en ondersteuning: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Privacyvragen: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "Geschiedenis klaar",
+        "description": "Hergebruik eerdere waarden met één klik"
+      },
+      "multiPlatformReady": {
+        "title": "Klaar voor meerdere platforms",
+        "description": "Werkt soepel op desktop en mobiele apparaten"
+      },
+      "realTimeCalculation": {
+        "title": "Realtime berekening",
+        "description": "De resultaten worden automatisch bijgewerkt terwijl u typt"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Nauwkeurige resultaten",
+        "description": "Gebouwd met gevalideerde formules en constanten"
+      },
+      "activityLevels": {
+        "title": "Activiteitsniveaus",
+        "description": "Houd rekening met lichaamsbeweging en dagelijkse beweging"
+      },
+      "addSubtractTime": {
+        "title": "Tijd optellen/aftrekken",
+        "description": "Voeg duur toe of tel terug"
+      },
+      "addressCheck": {
+        "title": "Adrescontrole",
+        "description": "Valideer portemonnee-adressen op formaat"
+      },
+      "affordability": {
+        "title": "Betaalbaarheid",
+        "description": "Bekijk welke prijs binnen uw budget past"
+      },
+      "amortization": {
+        "title": "Afschrijving",
+        "description": "Bekijk de jaarlijkse uitsplitsing van de leningen"
+      },
+      "amortizationTable": {
+        "title": "Afschrijvingstabel",
+        "description": "Bekijk de jaarlijkse hoofdsom en rente"
+      },
+      "amortizationView": {
+        "title": "Afschrijvingsweergave",
+        "description": "Bekijk hoe de hoofdsom en de rente in de loop van de tijd veranderen"
+      },
+      "astroPlanning": {
+        "title": "Astroplanning",
+        "description": "Plan sterrenspoor- en Melkwegopnamen"
+      },
+      "audioDelay": {
+        "title": "Audiovertraging",
+        "description": "Synchroniseer de vertragingstijden met het tempo"
+      },
+      "bandwidthCalc": {
+        "title": "Bandbreedteberekening",
+        "description": "Schat de overdrachtstijd en doorvoer"
+      },
+      "basicPercentage": {
+        "title": "Basispercentage",
+        "description": "Bereken onmiddellijk wat X% van Y is"
+      },
+      "bidAskSpread": {
+        "title": "Bid-laat spread",
+        "description": "Vergelijk koop- en verkooptarieven"
+      },
+      "bmiCompute": {
+        "title": "BMI berekenen",
+        "description": "Bereken snel de body mass index"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Bereken slagen per minuut"
+      },
+      "capacityPlan": {
+        "title": "Capaciteitsplan",
+        "description": "Grootte CPU, geheugen en opslag"
+      },
+      "categoryView": {
+        "title": "Categorieweergave",
+        "description": "Zie het bereik van ondergewicht tot obesitas"
+      },
+      "clearOutput": {
+        "title": "Duidelijke uitvoer",
+        "description": "Bekijk resultaten met nuttige uitleg"
+      },
+      "clusterSizing": {
+        "title": "Clustergrootte",
+        "description": "Plan Kubernetes-knooppuntpools"
+      },
+      "colorSpaceConvert": {
+        "title": "Kleurruimte converteren",
+        "description": "Schakel tussen HEX, RGB, HSL en CMYK"
+      },
+      "colorTokenConvert": {
+        "title": "Kleur/token converteren",
+        "description": "Schakel tussen CSS-kleurformaten"
+      },
+      "concentration": {
+        "title": "Concentratie",
+        "description": "Werk met molariteit, molaliteit en verdunning"
+      },
+      "constantLookup": {
+        "title": "Constant opzoeken",
+        "description": "Gebruik ingebouwde fysieke constanten"
+      },
+      "contrastCheck": {
+        "title": "Contrastcontrole",
+        "description": "Controleer de contrastverhoudingen van de toegankelijkheid"
+      },
+      "contributionModeling": {
+        "title": "Bijdragemodellering",
+        "description": "Voeg maandelijkse of jaarlijkse stortingen toe"
+      },
+      "copyConfig": {
+        "title": "Kopieer configuratie",
+        "description": "Exportbereiken voor firewall- of routergebruik"
+      },
+      "copyResults": {
+        "title": "Kopieer resultaten",
+        "description": "Grijp antwoorden voor huiswerk of rapporten"
+      },
+      "copyValues": {
+        "title": "Kopieer waarden",
+        "description": "Kopieer CSS of ontwerptokens direct"
+      },
+      "costPlanning": {
+        "title": "Kostenplanning",
+        "description": "Bereken de ingrediëntenkosten per portie"
+      },
+      "dateDiff": {
+        "title": "Datum div",
+        "description": "Zoek dagen, weken of maanden tussen datums"
+      },
+      "dofCompute": {
+        "title": "DoF-berekening",
+        "description": "Bereken de scherptediepte voor elke lens"
+      },
+      "downloadEstimate": {
+        "title": "Schatting downloaden",
+        "description": "Plan bestandsdownloads op verbindingssnelheid"
+      },
+      "exportReady": {
+        "title": "Klaar voor exporteren",
+        "description": "Kopieer of print schema's voor records"
+      },
+      "exposureMath": {
+        "title": "Belichtingswiskunde",
+        "description": "Breng sluitertijd, diafragma en ISO in balans"
+      },
+      "fastInput": {
+        "title": "Snelle invoer",
+        "description": "Voer waarden in en ontvang onmiddellijk antwoorden"
+      },
+      "flexibleUnits": {
+        "title": "Flexibele eenheden",
+        "description": "Schakel tussen veelgebruikte eenheden en formaten"
+      },
+      "formulaCalc": {
+        "title": "Formuleberekening",
+        "description": "Los algemene natuurkundige vergelijkingen op"
+      },
+      "formulaDriven": {
+        "title": "Formule-gedreven",
+        "description": "Gebouwd op standaard technische vergelijkingen"
+      },
+      "frequencyMath": {
+        "title": "Frequentie wiskunde",
+        "description": "Converteer bankbiljetten naar hertz en centen"
+      },
+      "fuelEconomy": {
+        "title": "Brandstofverbruik",
+        "description": "Vergelijk MPG, L/100km en kosten per km"
+      },
+      "futureValue": {
+        "title": "Toekomstige waarde",
+        "description": "Bekijk hoeveel uw investering zal groeien"
+      },
+      "goalModes": {
+        "title": "Doelmodi",
+        "description": "Plan voor gewichtsverlies, behoud of gewichtstoename"
+      },
+      "guidanceNotes": {
+        "title": "Begeleidende opmerkingen",
+        "description": "Begrijp wat elk resultaat betekent"
+      },
+      "hashGeneration": {
+        "title": "Hasj-generatie",
+        "description": "Genereer SHA, MD5 en andere hashes"
+      },
+      "historicalView": {
+        "title": "Historisch zicht",
+        "description": "Houd bij hoe tarieven in de loop van de tijd veranderen"
+      },
+      "idealWeight": {
+        "title": "Ideaal gewicht",
+        "description": "Schat een gezond gewichtsbereik in"
+      },
+      "ingredientAware": {
+        "title": "Ingrediëntbewust",
+        "description": "Converteren op basis van ingrediëntendichtheid"
+      },
+      "instantAssessment": {
+        "title": "Directe beoordeling",
+        "description": "Controleer statistieken zoals BMI, lichaamsvet en calorieën"
+      },
+      "interestBreakdown": {
+        "title": "Uitsplitsing van de rente",
+        "description": "Splits hoofdsom versus verdiende rente"
+      },
+      "intervalTool": {
+        "title": "Interval hulpmiddel",
+        "description": "Vind muzikale intervallen en toonladders"
+      },
+      "ipAnalysis": {
+        "title": "IP-analyse",
+        "description": "Valideer en classificeer IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "JSON-formaat",
+        "description": "JSON mooi afdrukken en valideren"
+      },
+      "licensing": {
+        "title": "Licentie",
+        "description": "Schat het aantal licenties en cores"
+      },
+      "loanPlanning": {
+        "title": "Leningplanning",
+        "description": "Schat maandelijkse automatische betalingen"
+      },
+      "macroSplit": {
+        "title": "Macro-splitsing",
+        "description": "Bereken eiwit-, vet- en koolhydraatdoelstellingen"
+      },
+      "maintenanceLog": {
+        "title": "Onderhoudslogboek",
+        "description": "Houd onderhoudsintervallen en kosten bij"
+      },
+      "markupEstimate": {
+        "title": "Schatting van de markup",
+        "description": "Voeg wisselmarge of kosten toe"
+      },
+      "miningEstimate": {
+        "title": "Mijnbouw schatting",
+        "description": "Geschatte belonings- en energiekosten"
+      },
+      "molarMass": {
+        "title": "Molaire massa",
+        "description": "Bereken het molecuulgewicht uit formules"
+      },
+      "monthlyPayment": {
+        "title": "Maandelijkse betaling",
+        "description": "Schat P&I met belastingen en verzekeringen"
+      },
+      "mortgageEstimate": {
+        "title": "Hypotheek schatting",
+        "description": "Bereken de maandelijkse hypotheeklasten"
+      },
+      "multipleFormulas": {
+        "title": "Meerdere formules",
+        "description": "Kies de rekenwijze die bij u past"
+      },
+      "multipleModes": {
+        "title": "Meerdere modi",
+        "description": "Behandel varianten van percentages, verhoudingen en vergelijkingen"
+      },
+      "networkPlanning": {
+        "title": "Netwerkplanning",
+        "description": "Groottekoppelingen voor latentie en capaciteit"
+      },
+      "nutritionLookup": {
+        "title": "Voeding opzoeken",
+        "description": "Schat calorieën en macro's"
+      },
+      "palettePreview": {
+        "title": "Paletvoorbeeld",
+        "description": "Zie harmonieuze kleurencombinaties"
+      },
+      "parameterSweep": {
+        "title": "Parameter-opruiming",
+        "description": "Testwaarden over een bereik"
+      },
+      "percentChange": {
+        "title": "Procentuele verandering",
+        "description": "Zoek toename of afname tussen waarden"
+      },
+      "percentDifference": {
+        "title": "Procentueel verschil",
+        "description": "Vergelijk het relatieve verschil tussen twee getallen"
+      },
+      "percentOff": {
+        "title": "Procent korting",
+        "description": "Vind het kortingspercentage van prijzen"
+      },
+      "phTools": {
+        "title": "pH-hulpmiddelen",
+        "description": "Converteer pH-, pOH- en waterstofionniveaus"
+      },
+      "precisionControl": {
+        "title": "Precisiecontrole",
+        "description": "Pas decimalen en afrondingsregels aan"
+      },
+      "precisionOutput": {
+        "title": "Precisie-uitvoer",
+        "description": "Controle significante cijfers"
+      },
+      "printResolution": {
+        "title": "Afdrukresolutie",
+        "description": "Zoek DPI en afdrukformaat uit pixels"
+      },
+      "quickEstimation": {
+        "title": "Snelle schatting",
+        "description": "Krijg binnen enkele seconden resultaten zonder complexe spreadsheets"
+      },
+      "rateCompare": {
+        "title": "Tarief vergelijken",
+        "description": "Vergelijk tarieven en voorwaarden naast elkaar"
+      },
+      "rateConvert": {
+        "title": "Tarief converteren",
+        "description": "Converteren tussen crypto en fiat"
+      },
+      "rateConvert1": {
+        "title": "Tarief converteren",
+        "description": "Converteer bedragen tussen valuta's"
+      },
+      "recipeScaling": {
+        "title": "Schalen van recepten",
+        "description": "Pas het formaat van recepten aan voor elk aantal porties"
+      },
+      "referenceValues": {
+        "title": "Referentiewaarden",
+        "description": "Vergelijk met typische materialen"
+      },
+      "regexTest": {
+        "title": "Regex-test",
+        "description": "Test reguliere expressies live"
+      },
+      "reversePercentage": {
+        "title": "Omgekeerd percentage",
+        "description": "Zoek de oorspronkelijke waarde vóór een procentuele verandering"
+      },
+      "roiAnalysis": {
+        "title": "ROI-analyse",
+        "description": "Vergelijk huurrendement en maximumtarief"
+      },
+      "salePrice": {
+        "title": "Verkoopprijs",
+        "description": "Bereken de prijs na korting"
+      },
+      "scaleRecipes": {
+        "title": "Schaal recepten",
+        "description": "Formaat wijzigen van één portie naar meerdere"
+      },
+      "scenarioCompare": {
+        "title": "Scenario vergelijken",
+        "description": "Test verschillende tarieven, voorwaarden en aanbetalingen"
+      },
+      "stackSavings": {
+        "title": "Stapel besparingen",
+        "description": "Combineer kortingsbonnen en kortingen"
+      },
+      "stepByStepLogic": {
+        "title": "Stap voor stap logica",
+        "description": "Volg hoe elk getal wordt afgeleid"
+      },
+      "stoichiometry": {
+        "title": "Stoichiometrie",
+        "description": "Evenwicht reactiehoeveelheden"
+      },
+      "storageConvert": {
+        "title": "Opslag converteren",
+        "description": "Converteer KB, MB, GB, TB en meer"
+      },
+      "subnetting": {
+        "title": "Subnetten",
+        "description": "Bereken CIDR, maskers en hostbereiken"
+      },
+      "taxAware": {
+        "title": "Belastingbewust",
+        "description": "Voeg omzetbelasting toe aan de uiteindelijke prijs"
+      },
+      "tcoModel": {
+        "title": "TCO-model",
+        "description": "Vergelijk de kosten op locatie en in de cloud"
+      },
+      "tdeeEstimate": {
+        "title": "TDEE-schatting",
+        "description": "Schat het dagelijkse energieverbruik"
+      },
+      "timeZoneConvert": {
+        "title": "Tijdzone converteren",
+        "description": "Vergelijk tijden in verschillende regio's"
+      },
+      "tireSizing": {
+        "title": "Bandenmaat",
+        "description": "Vergelijk bandenafmetingen en snelheidsclassificaties"
+      },
+      "totalInterest": {
+        "title": "Totale rente",
+        "description": "Zie levenslange rentekosten"
+      },
+      "unitAware": {
+        "title": "Eenheidsbewust",
+        "description": "Verwerkt SI- en imperiale eenheden"
+      },
+      "unitConversion": {
+        "title": "Conversie van eenheden",
+        "description": "Converteer kopjes, grammen, ounces en meer"
+      },
+      "unitConvert": {
+        "title": "Eenheid converteren",
+        "description": "Converteer fysieke eenheden tussen systemen"
+      },
+      "unitFlexibility": {
+        "title": "Flexibiliteit van de eenheid",
+        "description": "Schakel vrijelijk tussen metrisch en imperiaal"
+      },
+      "unitToggle": {
+        "title": "Eenheid schakelen",
+        "description": "Wissel metrische en imperiale eenheden om"
+      },
+      "urlEncode": {
+        "title": "URL-codering",
+        "description": "Codeer en decodeer URL's veilig"
+      },
+      "volumeConvert": {
+        "title": "Volumeconversie",
+        "description": "Wissel kopjes, eetlepels, milliliters"
+      },
+      "weightConvert": {
+        "title": "Gewicht converteren",
+        "description": "Converteer gram, ounces, ponden"
+      },
+      "wildcardMath": {
+        "title": "Wiskunde met jokertekens",
+        "description": "Bereken netwerk- en uitzendadressen"
+      },
+      "workdayCount": {
+        "title": "Aantal werkdagen",
+        "description": "Exclusief weekends en feestdagen"
+      },
+      "yearlySchedule": {
+        "title": "Jaarlijks schema",
+        "description": "Beoordeel de groei voor elke periode"
+      }
     }
   }
 }

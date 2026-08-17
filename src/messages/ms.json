@@ -90,7 +90,9 @@
     "financeComingSoon": "Kalkulator kewangan akan datang tidak lama lagi!",
     "searchPlaceholder": "Cari kalkulator……",
     "result": "Hasil",
-    "aboutThisCalculator": "Mengenai {title}"
+    "aboutThisCalculator": "Mengenai {title}",
+    "copySuccess": "Disalin ke papan keratan",
+    "copyError": "Gagal menyalin ke papan keratan"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemprosesan Imej & Video",
@@ -7117,6 +7119,456 @@
       "emailTitle": "E-mel",
       "emailGeneral": "Umum & sokongan: <email>xingxing85192001@gmail.com</email>",
       "emailPrivacy": "Soalan privasi: <email>85192001@qq.com</email>"
+    }
+  },
+  "toolFeatures": {
+    "highlights": {
+      "historyReady": {
+        "title": "Sejarah sedia",
+        "description": "Gunakan semula nilai sebelumnya dengan satu klik"
+      },
+      "multiPlatformReady": {
+        "title": "Berbilang platform sedia",
+        "description": "Berfungsi dengan lancar pada desktop dan peranti mudah alih"
+      },
+      "realTimeCalculation": {
+        "title": "Pengiraan masa nyata",
+        "description": "Keputusan dikemas kini secara automatik semasa anda menaip"
+      }
+    },
+    "core": {
+      "accurateResults": {
+        "title": "Keputusan yang tepat",
+        "description": "Dibina dengan formula dan pemalar yang disahkan"
+      },
+      "activityLevels": {
+        "title": "Tahap aktiviti",
+        "description": "Faktor dalam senaman dan pergerakan harian"
+      },
+      "addSubtractTime": {
+        "title": "Tambah/tolak masa",
+        "description": "Tambahkan tempoh atau kira ke belakang"
+      },
+      "addressCheck": {
+        "title": "Semakan alamat",
+        "description": "Sahkan alamat dompet mengikut format"
+      },
+      "affordability": {
+        "title": "Keterjangkauan",
+        "description": "Semak harga yang sesuai dengan bajet anda"
+      },
+      "amortization": {
+        "title": "Pelunasan",
+        "description": "Lihat pecahan pinjaman tahunan"
+      },
+      "amortizationTable": {
+        "title": "Jadual pelunasan",
+        "description": "Lihat prinsipal dan faedah tahunan"
+      },
+      "amortizationView": {
+        "title": "Pandangan pelunasan",
+        "description": "Lihat bagaimana prinsipal dan faedah berubah dari semasa ke semasa"
+      },
+      "astroPlanning": {
+        "title": "perancangan Astro",
+        "description": "Rancang tangkapan jejak bintang dan Bima Sakti"
+      },
+      "audioDelay": {
+        "title": "Kelewatan audio",
+        "description": "Segerakkan masa tunda kepada tempo"
+      },
+      "bandwidthCalc": {
+        "title": "Pengiraan lebar jalur",
+        "description": "Anggarkan masa pemindahan dan daya pengeluaran"
+      },
+      "basicPercentage": {
+        "title": "Peratusan asas",
+        "description": "Kira berapa X% daripada Y serta-merta"
+      },
+      "bidAskSpread": {
+        "title": "Spread bid-ask",
+        "description": "Bandingkan harga beli dan jual"
+      },
+      "bmiCompute": {
+        "title": "pengiraan BMI",
+        "description": "Kira indeks jisim badan dengan cepat"
+      },
+      "bpmTempo": {
+        "title": "BPM/tempo",
+        "description": "Kira degupan seminit"
+      },
+      "capacityPlan": {
+        "title": "Pelan kapasiti",
+        "description": "Saiz CPU, memori dan storan"
+      },
+      "categoryView": {
+        "title": "Paparan kategori",
+        "description": "Lihat julat kurang berat badan hingga obes"
+      },
+      "clearOutput": {
+        "title": "Keluaran yang jelas",
+        "description": "Lihat hasil dengan penjelasan yang berguna"
+      },
+      "clusterSizing": {
+        "title": "Saiz kluster",
+        "description": "Rancang kumpulan nod Kubernetes"
+      },
+      "colorSpaceConvert": {
+        "title": "Tukar ruang warna",
+        "description": "Tukar antara HEX, RGB, HSL dan CMYK"
+      },
+      "colorTokenConvert": {
+        "title": "Penukaran warna/token",
+        "description": "Beralih antara format warna CSS"
+      },
+      "concentration": {
+        "title": "penumpuan",
+        "description": "Bekerja dengan kemolaran, kemolaran, dan pencairan"
+      },
+      "constantLookup": {
+        "title": "Carian berterusan",
+        "description": "Gunakan pemalar fizikal terbina dalam"
+      },
+      "contrastCheck": {
+        "title": "Pemeriksaan kontras",
+        "description": "Sahkan nisbah kontras kebolehaksesan"
+      },
+      "contributionModeling": {
+        "title": "Pemodelan sumbangan",
+        "description": "Tambah deposit bulanan atau tahunan"
+      },
+      "copyConfig": {
+        "title": "Salin konfigurasi",
+        "description": "Julat eksport untuk penggunaan tembok api atau penghala"
+      },
+      "copyResults": {
+        "title": "Salin keputusan",
+        "description": "Dapatkan jawapan untuk kerja rumah atau laporan"
+      },
+      "copyValues": {
+        "title": "Salin nilai",
+        "description": "Salin CSS atau token reka bentuk serta-merta"
+      },
+      "costPlanning": {
+        "title": "Perancangan kos",
+        "description": "Kira kos ramuan setiap hidangan"
+      },
+      "dateDiff": {
+        "title": "Perbezaan tarikh",
+        "description": "Cari hari, minggu atau bulan antara tarikh"
+      },
+      "dofCompute": {
+        "title": "pengiraan DoF",
+        "description": "Kira kedalaman medan untuk mana-mana kanta"
+      },
+      "downloadEstimate": {
+        "title": "Muat turun anggaran",
+        "description": "Rancang muat turun fail mengikut kelajuan sambungan"
+      },
+      "exportReady": {
+        "title": "Eksport sedia",
+        "description": "Salin atau cetak jadual untuk rekod"
+      },
+      "exposureMath": {
+        "title": "Matematik pendedahan",
+        "description": "Imbangan pengatup, apertur dan ISO"
+      },
+      "fastInput": {
+        "title": "Input cepat",
+        "description": "Masukkan nilai dan dapatkan jawapan dengan segera"
+      },
+      "flexibleUnits": {
+        "title": "Unit fleksibel",
+        "description": "Beralih antara unit dan format biasa"
+      },
+      "formulaCalc": {
+        "title": "Kalku formula",
+        "description": "Selesaikan persamaan fizik biasa"
+      },
+      "formulaDriven": {
+        "title": "didorong formula",
+        "description": "Dibina pada persamaan kejuruteraan standard"
+      },
+      "frequencyMath": {
+        "title": "Matematik kekerapan",
+        "description": "Tukar nota kepada hertz dan sen"
+      },
+      "fuelEconomy": {
+        "title": "Jimat bahan api",
+        "description": "Bandingkan MPG, L/100km, dan kos setiap km"
+      },
+      "futureValue": {
+        "title": "Nilai masa hadapan",
+        "description": "Lihat berapa banyak pelaburan anda akan berkembang"
+      },
+      "goalModes": {
+        "title": "Mod matlamat",
+        "description": "Rancang untuk penurunan berat badan, penyelenggaraan atau penambahan"
+      },
+      "guidanceNotes": {
+        "title": "Nota panduan",
+        "description": "Fahami maksud setiap keputusan"
+      },
+      "hashGeneration": {
+        "title": "Penjanaan hash",
+        "description": "Hasilkan SHA, MD5 dan cincang lain"
+      },
+      "historicalView": {
+        "title": "Pandangan sejarah",
+        "description": "Jejaki cara kadar berubah dari semasa ke semasa"
+      },
+      "idealWeight": {
+        "title": "Berat badan ideal",
+        "description": "Anggarkan julat berat badan yang sihat"
+      },
+      "ingredientAware": {
+        "title": "Sedar bahan",
+        "description": "Tukar mengikut ketumpatan bahan"
+      },
+      "instantAssessment": {
+        "title": "Penilaian segera",
+        "description": "Semak metrik seperti BMI, lemak badan dan kalori"
+      },
+      "interestBreakdown": {
+        "title": "Pecahan faedah",
+        "description": "Pisahkan prinsipal berbanding faedah yang diperoleh"
+      },
+      "intervalTool": {
+        "title": "Alat selang",
+        "description": "Cari selang dan skala muzik"
+      },
+      "ipAnalysis": {
+        "title": "analisis IP",
+        "description": "Sahkan dan klasifikasikan IPv4/IPv6"
+      },
+      "jsonFormat": {
+        "title": "format JSON",
+        "description": "Cetak cantik dan sahkan JSON"
+      },
+      "licensing": {
+        "title": "Pelesenan",
+        "description": "Anggarkan kiraan lesen dan teras"
+      },
+      "loanPlanning": {
+        "title": "Perancangan pinjaman",
+        "description": "Anggarkan bayaran automatik bulanan"
+      },
+      "macroSplit": {
+        "title": "Pembahagian makro",
+        "description": "Kira sasaran protein, lemak dan karbohidrat"
+      },
+      "maintenanceLog": {
+        "title": "Log penyelenggaraan",
+        "description": "Jejaki selang perkhidmatan dan kos"
+      },
+      "markupEstimate": {
+        "title": "Anggaran penanda",
+        "description": "Tambahkan margin pertukaran atau yuran"
+      },
+      "miningEstimate": {
+        "title": "Anggaran perlombongan",
+        "description": "Anggaran kos ganjaran dan kuasa"
+      },
+      "molarMass": {
+        "title": "Jisim molar",
+        "description": "Kira berat molekul daripada formula"
+      },
+      "monthlyPayment": {
+        "title": "Bayaran bulanan",
+        "description": "Anggarkan P&I dengan cukai dan insurans"
+      },
+      "mortgageEstimate": {
+        "title": "Anggaran gadai janji",
+        "description": "Kira bayaran gadai janji bulanan"
+      },
+      "multipleFormulas": {
+        "title": "Pelbagai formula",
+        "description": "Pilih kaedah pengiraan yang sesuai dengan anda"
+      },
+      "multipleModes": {
+        "title": "Berbilang mod",
+        "description": "Mengendalikan peratusan, nisbah dan varian persamaan"
+      },
+      "networkPlanning": {
+        "title": "Perancangan rangkaian",
+        "description": "Pautan saiz untuk kependaman dan kapasiti"
+      },
+      "nutritionLookup": {
+        "title": "Carian pemakanan",
+        "description": "Anggarkan kalori dan makro"
+      },
+      "palettePreview": {
+        "title": "Pratonton palet",
+        "description": "Lihat kombinasi warna yang harmoni"
+      },
+      "parameterSweep": {
+        "title": "Sapuan parameter",
+        "description": "Uji nilai merentas julat"
+      },
+      "percentChange": {
+        "title": "Perubahan peratus",
+        "description": "Cari kenaikan atau penurunan antara nilai"
+      },
+      "percentDifference": {
+        "title": "Perbezaan peratus",
+        "description": "Bandingkan beza relatif antara dua nombor"
+      },
+      "percentOff": {
+        "title": "Potongan peratus",
+        "description": "Cari kadar diskaun daripada harga"
+      },
+      "phTools": {
+        "title": "alat pH",
+        "description": "Menukar tahap pH, pOH dan ion hidrogen"
+      },
+      "precisionControl": {
+        "title": "Kawalan ketepatan",
+        "description": "Laraskan tempat perpuluhan dan peraturan pembundaran"
+      },
+      "precisionOutput": {
+        "title": "Keluaran ketepatan",
+        "description": "Kawal angka bererti"
+      },
+      "printResolution": {
+        "title": "Resolusi cetakan",
+        "description": "Cari DPI dan saiz cetakan daripada piksel"
+      },
+      "quickEstimation": {
+        "title": "Anggaran pantas",
+        "description": "Dapatkan hasil dalam beberapa saat tanpa hamparan kompleks"
+      },
+      "rateCompare": {
+        "title": "Bandingkan kadar",
+        "description": "Bandingkan kadar dan terma sebelah menyebelah"
+      },
+      "rateConvert": {
+        "title": "Tukar kadar",
+        "description": "Tukar antara crypto dan fiat"
+      },
+      "rateConvert1": {
+        "title": "Tukar kadar",
+        "description": "Menukar amaun antara mata wang"
+      },
+      "recipeScaling": {
+        "title": "Penskalaan resipi",
+        "description": "Ubah saiz resipi untuk sebarang kiraan hidangan"
+      },
+      "referenceValues": {
+        "title": "Nilai rujukan",
+        "description": "Bandingkan dengan bahan biasa"
+      },
+      "regexTest": {
+        "title": "Ujian regex",
+        "description": "Uji ungkapan biasa secara langsung"
+      },
+      "reversePercentage": {
+        "title": "Peratusan terbalik",
+        "description": "Cari nilai asal sebelum perubahan peratusan"
+      },
+      "roiAnalysis": {
+        "title": "analisis ROI",
+        "description": "Bandingkan hasil sewa dan kadar had"
+      },
+      "salePrice": {
+        "title": "Harga jualan",
+        "description": "Kira harga selepas diskaun"
+      },
+      "scaleRecipes": {
+        "title": "Resipi skala",
+        "description": "Ubah saiz daripada satu hidangan kepada banyak"
+      },
+      "scenarioCompare": {
+        "title": "Perbandingan senario",
+        "description": "Uji kadar, syarat dan bayaran muka yang berbeza"
+      },
+      "stackSavings": {
+        "title": "Simpanan timbunan",
+        "description": "Gabungkan kupon dan diskaun"
+      },
+      "stepByStepLogic": {
+        "title": "Logik langkah demi langkah",
+        "description": "Ikuti bagaimana setiap nombor diperoleh"
+      },
+      "stoichiometry": {
+        "title": "Stoikiometri",
+        "description": "Seimbangkan kuantiti tindak balas"
+      },
+      "storageConvert": {
+        "title": "Penukaran storan",
+        "description": "Tukar KB, MB, GB, TB dan seterusnya"
+      },
+      "subnetting": {
+        "title": "Subnet",
+        "description": "Kira CIDR, topeng dan julat hos"
+      },
+      "taxAware": {
+        "title": "Sedar cukai",
+        "description": "Tambahkan cukai jualan pada harga akhir"
+      },
+      "tcoModel": {
+        "title": "model TCO",
+        "description": "Bandingkan kos on-prem dan awan"
+      },
+      "tdeeEstimate": {
+        "title": "anggaran TDEE",
+        "description": "Anggarkan perbelanjaan tenaga harian"
+      },
+      "timeZoneConvert": {
+        "title": "Penukaran zon waktu",
+        "description": "Bandingkan masa merentas wilayah"
+      },
+      "tireSizing": {
+        "title": "Saiz tayar",
+        "description": "Bandingkan dimensi tayar dan penilaian kelajuan"
+      },
+      "totalInterest": {
+        "title": "Jumlah faedah",
+        "description": "Lihat kos faedah seumur hidup"
+      },
+      "unitAware": {
+        "title": "Unit-sedar",
+        "description": "Mengendalikan unit SI dan imperial"
+      },
+      "unitConversion": {
+        "title": "Penukaran unit",
+        "description": "Tukar cawan, gram, auns dan banyak lagi"
+      },
+      "unitConvert": {
+        "title": "Penukaran unit",
+        "description": "Menukar unit fizikal merentas sistem"
+      },
+      "unitFlexibility": {
+        "title": "Fleksibiliti unit",
+        "description": "Beralih antara metrik dan imperial secara bebas"
+      },
+      "unitToggle": {
+        "title": "Togol unit",
+        "description": "Tukar unit metrik dan imperial"
+      },
+      "urlEncode": {
+        "title": "Pengekodan URL",
+        "description": "Mengekod dan menyahkod URL dengan selamat"
+      },
+      "volumeConvert": {
+        "title": "Penukaran volum",
+        "description": "Tukar cawan, sudu besar, mililiter"
+      },
+      "weightConvert": {
+        "title": "Penukaran berat",
+        "description": "Tukar gram, auns, paun"
+      },
+      "wildcardMath": {
+        "title": "Matematik kad bebas",
+        "description": "Kira rangkaian dan alamat siaran"
+      },
+      "workdayCount": {
+        "title": "Kiraan hari kerja",
+        "description": "Kecualikan hujung minggu dan cuti"
+      },
+      "yearlySchedule": {
+        "title": "Jadual tahunan",
+        "description": "Semak pertumbuhan untuk setiap tempoh"
+      }
     }
   }
 }
