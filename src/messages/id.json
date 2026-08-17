@@ -92,7 +92,8 @@
     "result": "Hasil",
     "aboutThisCalculator": "Tentang {title}",
     "copySuccess": "Disalin ke papan klip",
-    "copyError": "Gagal menyalin ke papan klip"
+    "copyError": "Gagal menyalin ke papan klip",
+    "advertisement": "Iklan"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemrosesan Gambar & Video",
@@ -7570,5 +7571,10 @@
         "description": "Lacak bagaimana tarif berubah seiring waktu"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Kalkulator di situs ini memberikan perkiraan untuk tujuan informasi umum saja. Itu bukan nasihat keuangan, investasi, pajak, atau hukum. Konsultasikan dengan profesional yang berkualifikasi sebelum membuat keputusan apa pun.",
+    "health": "Kalkulator ini hanya memberikan informasi umum dan bukan pengganti nasihat, diagnosis, atau perawatan medis profesional. Selalu konsultasikan dengan penyedia layanan kesehatan yang berkualifikasi.",
+    "crypto": "Alat-alat ini hanya untuk tujuan pendidikan dan informasi. Itu bukan nasihat investasi, perdagangan, atau keuangan. Cryptocurrency melibatkan risiko yang signifikan — selalu lakukan riset Anda sendiri."
   }
 }

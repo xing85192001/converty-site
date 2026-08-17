@@ -92,7 +92,8 @@
     "result": "Resultaat",
     "aboutThisCalculator": "Over {title}",
     "copySuccess": "Gekopieerd naar klembord",
-    "copyError": "Kopiëren naar klembord is mislukt"
+    "copyError": "Kopiëren naar klembord is mislukt",
+    "advertisement": "Advertentie"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Afbeelding- & videobewerking",
@@ -7570,5 +7571,10 @@
         "description": "Beoordeel de groei voor elke periode"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Rekenmachines op deze site geven uitsluitend schattingen voor algemene informatiedoeleinden. Het zijn geen financiële, investerings-, belasting- of juridisch advies. Raadpleeg een gekwalificeerde professional voordat u een beslissing neemt.",
+    "health": "Deze rekenmachines bieden alleen algemene informatie en zijn geen vervanging voor professioneel medisch advies, diagnose of behandeling. Raadpleeg altijd een gekwalificeerde zorgverlener.",
+    "crypto": "Deze hulpmiddelen zijn uitsluitend bedoeld voor educatieve en informatieve doeleinden. Het zijn geen beleggings-, handels- of financieel advies. Cryptocurrency brengt aanzienlijke risico’s met zich mee – doe altijd je eigen onderzoek."
   }
 }

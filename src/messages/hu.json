@@ -92,7 +92,8 @@
     "result": "Eredmény",
     "aboutThisCalculator": "Az {title}-ről",
     "copySuccess": "Vágólapra másolva",
-    "copyError": "Nem sikerült a vágólapra másolni"
+    "copyError": "Nem sikerült a vágólapra másolni",
+    "advertisement": "Hirdetés"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Kép- és videófeldolgozás",
@@ -7555,5 +7556,10 @@
         "description": "Tekintse át a növekedést minden időszakban"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Az ezen az oldalon található számológépek csak általános tájékoztatási célokat szolgálnak. Ezek nem pénzügyi, befektetési, adózási vagy jogi tanácsok. Mielőtt bármilyen döntést hozna, konzultáljon képzett szakemberrel.",
+    "health": "Ezek a számológépek csak általános információkat nyújtanak, és nem helyettesítik a professzionális orvosi tanácsot, diagnózist vagy kezelést. Mindig forduljon szakképzett egészségügyi szolgáltatóhoz.",
+    "crypto": "Ezek az eszközök csak oktatási és tájékoztatási célokat szolgálnak. Ezek nem befektetési, kereskedési vagy pénzügyi tanácsok. A kriptovaluta jelentős kockázattal jár – mindig végezzen saját kutatásokat."
   }
 }

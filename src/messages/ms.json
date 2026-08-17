@@ -92,7 +92,8 @@
     "result": "Hasil",
     "aboutThisCalculator": "Mengenai {title}",
     "copySuccess": "Disalin ke papan keratan",
-    "copyError": "Gagal menyalin ke papan keratan"
+    "copyError": "Gagal menyalin ke papan keratan",
+    "advertisement": "Iklan"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Pemprosesan Imej & Video",
@@ -7570,5 +7571,10 @@
         "description": "Semak pertumbuhan untuk setiap tempoh"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Kalkulator di tapak ini menyediakan anggaran untuk tujuan maklumat am sahaja. Mereka bukan nasihat kewangan, pelaburan, cukai atau undang-undang. Rujuk profesional yang berkelayakan sebelum membuat sebarang keputusan.",
+    "health": "Kalkulator ini memberikan maklumat am sahaja dan bukan pengganti nasihat perubatan profesional, diagnosis atau rawatan. Sentiasa berunding dengan pembekal penjagaan kesihatan yang berkelayakan.",
+    "crypto": "Alat ini adalah untuk tujuan pendidikan dan maklumat sahaja. Mereka bukan pelaburan, perdagangan, atau nasihat kewangan. Cryptocurrency melibatkan risiko yang ketara — sentiasa lakukan penyelidikan anda sendiri."
   }
 }

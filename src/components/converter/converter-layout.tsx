@@ -2,6 +2,8 @@
 
 import { Clock, Monitor, Zap } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { AdUnit } from "@/components/ads/ad-unit";
+import { Disclaimer } from "@/components/ads/disclaimer";
 import { CalculatorErrorBoundary } from "@/components/error-boundary/calculator-error-boundary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "@/i18n/navigation";
@@ -82,11 +84,15 @@ export function ConverterLayout({
         <p className="text-muted-foreground">{description}</p>
       </div>
 
+      <Disclaimer categoryId={categoryId} />
+
       <Card className="mb-6 border-border shadow-card">
         <CardContent className="pt-6">
           <CalculatorErrorBoundary>{children}</CalculatorErrorBoundary>
         </CardContent>
       </Card>
+
+      <AdUnit slot="content-top" />
 
       {coreFeatures.length > 0 && (
         <section className="mb-8">
@@ -108,27 +114,32 @@ export function ConverterLayout({
       )}
 
       {highlights.length > 0 && (
-        <section className="mb-8">
-          <h2 className="mb-3 text-lg font-bold tracking-tight">{t("toolHighlights")}</h2>
-          <div className="grid gap-3 sm:grid-cols-3">
-            {highlights.map((highlight, index) => {
-              const Icon = highlightIcons[index % highlightIcons.length];
-              return (
-                <Card key={highlight.titleKey} className="border-border bg-muted/40">
-                  <CardContent className="flex items-start gap-3 p-4">
-                    <div className="rounded-full bg-primary/10 p-2 text-primary">
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">{highlight.title}</h3>
-                      <p className="mt-1 text-sm text-muted-foreground">{highlight.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </section>
+        <>
+          <AdUnit slot="content-mid" />
+          <section className="mb-8">
+            <h2 className="mb-3 text-lg font-bold tracking-tight">{t("toolHighlights")}</h2>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {highlights.map((highlight, index) => {
+                const Icon = highlightIcons[index % highlightIcons.length];
+                return (
+                  <Card key={highlight.titleKey} className="border-border bg-muted/40">
+                    <CardContent className="flex items-start gap-3 p-4">
+                      <div className="rounded-full bg-primary/10 p-2 text-primary">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">{highlight.title}</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {highlight.description}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </section>
+        </>
       )}
 
       {related.length > 0 && (
@@ -156,6 +167,8 @@ export function ConverterLayout({
           </div>
         </section>
       )}
+
+      <AdUnit slot="content-bottom" />
 
       {infoContent && (
         <Card className="border-border">

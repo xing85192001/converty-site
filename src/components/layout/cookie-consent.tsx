@@ -27,7 +27,13 @@ export function CookieConsent() {
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) {
+    if (stored === "granted") {
+      // Returning visitor who already consented — upgrade consent immediately.
+      applyConsent("granted");
+    } else if (stored === "denied") {
+      // Returning visitor who declined — keep denied, no banner.
+      applyConsent("denied");
+    } else {
       setVisible(true);
       // Default to denied until the visitor makes a choice (GDPR safe).
       applyConsent("denied");

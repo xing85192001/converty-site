@@ -90,7 +90,8 @@
     },
     "aboutThisCalculator": "À propos de {title}",
     "copySuccess": "Copié dans le presse-papiers",
-    "copyError": "Échec de la copie dans le presse-papiers"
+    "copyError": "Échec de la copie dans le presse-papiers",
+    "advertisement": "Publicité"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Traitement d'images & vidéos",
@@ -7566,5 +7567,10 @@
         "description": "Examiner la croissance pour chaque période"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Les calculatrices de ce site fournissent des estimations à titre informatif uniquement. Il ne s’agit pas de conseils financiers, d’investissement, fiscaux ou juridiques. Consultez un professionnel qualifié avant de prendre toute décision.",
+    "health": "Ces calculateurs fournissent uniquement des informations générales et ne remplacent pas un avis médical professionnel, un diagnostic ou un traitement. Consultez toujours un professionnel de la santé qualifié.",
+    "crypto": "Ces outils sont uniquement destinés à des fins éducatives et informatives. Il ne s’agit pas de conseils d’investissement, de trading ou financiers. La crypto-monnaie comporte des risques importants : faites toujours vos propres recherches."
   }
 }

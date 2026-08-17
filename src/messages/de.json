@@ -90,7 +90,8 @@
     },
     "aboutThisCalculator": "Über {title}",
     "copySuccess": "In die Zwischenablage kopiert",
-    "copyError": "Kopieren in die Zwischenablage fehlgeschlagen"
+    "copyError": "Kopieren in die Zwischenablage fehlgeschlagen",
+    "advertisement": "Werbung"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -7566,5 +7567,10 @@
         "description": "Überprüfen Sie das Wachstum für jeden Zeitraum"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Die Rechner auf dieser Website liefern Schätzungen nur zu allgemeinen Informationszwecken. Es handelt sich nicht um Finanz-, Anlage-, Steuer- oder Rechtsberatung. Konsultieren Sie einen qualifizierten Fachmann, bevor Sie eine Entscheidung treffen.",
+    "health": "Diese Rechner liefern nur allgemeine Informationen und sind kein Ersatz für professionelle medizinische Beratung, Diagnose oder Behandlung. Konsultieren Sie immer einen qualifizierten Gesundheitsdienstleister.",
+    "crypto": "Diese Tools dienen ausschließlich Bildungs- und Informationszwecken. Es handelt sich nicht um Anlage-, Handels- oder Finanzberatung. Kryptowährungen bergen erhebliche Risiken – recherchieren Sie immer selbst."
   }
 }

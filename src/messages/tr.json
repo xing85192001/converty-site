@@ -92,7 +92,8 @@
     "result": "Sonuç",
     "aboutThisCalculator": "{title} hakkında",
     "copySuccess": "Panoya kopyalandı",
-    "copyError": "Panoya kopyalanamadı"
+    "copyError": "Panoya kopyalanamadı",
+    "advertisement": "Reklamcılık"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Görsel ve Video İşleme",
@@ -7555,5 +7556,10 @@
         "description": "Her dönem için büyümeyi inceleyin"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Bu sitedeki hesap makineleri yalnızca genel bilgilendirme amaçlı tahminler sağlar. Bunlar finansal, yatırım, vergi veya hukuki tavsiye değildir. Herhangi bir karar vermeden önce kalifiye bir uzmana danışın.",
+    "health": "Bu hesap makineleri yalnızca genel bilgi sağlar ve profesyonel tıbbi tavsiye, teşhis veya tedavinin yerini almaz. Daima kalifiye bir sağlık uzmanına danışın.",
+    "crypto": "Bu araçlar yalnızca eğitim ve bilgilendirme amaçlıdır. Bunlar yatırım, ticaret veya finansal tavsiye değildir. Kripto para önemli riskler içerir; her zaman kendi araştırmanızı yapın."
   }
 }

@@ -96,7 +96,8 @@
     "results": "Resultados",
     "aboutThisCalculator": "Acerca de {title}",
     "copySuccess": "Copiado al portapapeles",
-    "copyError": "No se pudo copiar al portapapeles"
+    "copyError": "No se pudo copiar al portapapeles",
+    "advertisement": "Anuncio"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Procesamiento de imágenes y video",
@@ -7577,5 +7578,10 @@
         "description": "Revisar el crecimiento para cada período."
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Las calculadoras de este sitio proporcionan estimaciones únicamente con fines informativos generales. No son asesoramiento financiero, de inversión, fiscal o legal. Consulta a un profesional cualificado antes de tomar cualquier decisión.",
+    "health": "Estas calculadoras proporcionan únicamente información general y no sustituyen el asesoramiento, diagnóstico o tratamiento médico profesional. Consulte siempre a un proveedor de atención médica calificado.",
+    "crypto": "Estas herramientas tienen fines educativos e informativos únicamente. No son asesoramiento de inversión, comercio o financiero. Las criptomonedas implican un riesgo significativo: siempre haga su propia investigación."
   }
 }

@@ -90,7 +90,8 @@
     "financeComingSoon": "Finance calculators coming soon!",
     "aboutThisCalculator": "About {title}",
     "copySuccess": "Copied to clipboard",
-    "copyError": "Failed to copy to clipboard"
+    "copyError": "Failed to copy to clipboard",
+    "advertisement": "Advertisement"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -7550,5 +7551,10 @@
         "description": "Track how rates change over time"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Calculators on this site provide estimates for general informational purposes only. They are not financial, investment, tax, or legal advice. Consult a qualified professional before making any decision.",
+    "health": "These calculators provide general information only and are not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.",
+    "crypto": "These tools are for educational and informational purposes only. They are not investment, trading, or financial advice. Cryptocurrency involves significant risk — always do your own research."
   }
 }

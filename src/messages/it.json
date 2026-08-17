@@ -90,7 +90,8 @@
     },
     "aboutThisCalculator": "Circa {title}",
     "copySuccess": "Copiato negli appunti",
-    "copyError": "Impossibile copiare negli appunti"
+    "copyError": "Impossibile copiare negli appunti",
+    "advertisement": "Annuncio"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Elaborazione immagini e video",
@@ -7565,5 +7566,10 @@
         "description": "Esaminare la crescita per ciascun periodo"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "I calcolatori presenti su questo sito forniscono stime solo a scopo informativo generale. Non si tratta di consulenza finanziaria, di investimento, fiscale o legale. Consultare un professionista qualificato prima di prendere qualsiasi decisione.",
+    "health": "Questi calcolatori forniscono solo informazioni generali e non sostituiscono la consulenza, la diagnosi o il trattamento medico professionale. Consultare sempre un operatore sanitario qualificato.",
+    "crypto": "Questi strumenti sono solo a scopo didattico e informativo. Non costituiscono consulenza in materia di investimenti, negoziazione o finanziaria. La criptovaluta comporta rischi significativi: fai sempre le tue ricerche."
   }
 }

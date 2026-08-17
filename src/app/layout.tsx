@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { siteConfig } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,14 @@ export const metadata: Metadata = {
     apple: "/icons/apple-touch-icon.png",
   },
 };
+
+// Google Consent Mode v2 default — must run before any ad/analytics script so
+// that ad_storage etc. start denied and only upgrade after the visitor chooses.
+// EEA visitors therefore never receive personalized ads without consent.
+const GOOGLE_CONSENT_DEFAULT = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});`;
+
+const adsClientId = siteConfig.adsenseClientId;
 
 // Pre-hydration service-worker cleanup. Loaded with beforeInteractive and
 // inlined (not via a separate public/ file) so it always ships with the HTML
@@ -38,6 +47,17 @@ export default function RootLayout({
         <Script id="sw-cleanup" strategy="beforeInteractive">
           {SW_CLEANUP}
         </Script>
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {GOOGLE_CONSENT_DEFAULT}
+        </Script>
+        {adsClientId ? (
+          <Script
+            id="adsbygoogle"
+            strategy="afterInteractive"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClientId}`}
+            crossOrigin="anonymous"
+          />
+        ) : null}
         {children}
       </body>
     </html>

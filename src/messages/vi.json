@@ -92,7 +92,8 @@
     "result": "Kết quả",
     "aboutThisCalculator": "Giới thiệu về {title}",
     "copySuccess": "Đã sao chép vào bảng nhớ tạm",
-    "copyError": "Không sao chép được vào bảng nhớ tạm"
+    "copyError": "Không sao chép được vào bảng nhớ tạm",
+    "advertisement": "Quảng cáo"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Xử lý hình ảnh & video",
@@ -7570,5 +7571,10 @@
         "description": "Theo dõi mức giá thay đổi theo thời gian"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Máy tính trên trang này chỉ cung cấp ước tính cho mục đích thông tin chung. Chúng không phải là lời khuyên về tài chính, đầu tư, thuế hoặc pháp lý. Hãy tham khảo ý kiến ​​của chuyên gia có trình độ trước khi đưa ra bất kỳ quyết định nào.",
+    "health": "Những máy tính này chỉ cung cấp thông tin chung và không thể thay thế cho lời khuyên, chẩn đoán hoặc điều trị y tế chuyên nghiệp. Luôn luôn tham khảo ý kiến ​​​​của một nhà cung cấp dịch vụ chăm sóc sức khỏe có trình độ.",
+    "crypto": "Những công cụ này chỉ dành cho mục đích giáo dục và thông tin. Chúng không phải là lời khuyên về đầu tư, giao dịch hay tài chính. Tiền điện tử có rủi ro đáng kể — hãy luôn tự nghiên cứu."
   }
 }

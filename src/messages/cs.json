@@ -92,7 +92,8 @@
     "result": "Výsledek",
     "aboutThisCalculator": "O {title}",
     "copySuccess": "Zkopírováno do schránky",
-    "copyError": "Kopírování do schránky se nezdařilo"
+    "copyError": "Kopírování do schránky se nezdařilo",
+    "advertisement": "Inzerát"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Zpracování obrázků a videa",
@@ -7555,5 +7556,10 @@
         "description": "Zkontrolujte růst pro každé období"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "Kalkulačky na této stránce poskytují odhady pouze pro obecné informační účely. Nejedná se o finanční, investiční, daňové nebo právní poradenství. Před jakýmkoli rozhodnutím se poraďte s kvalifikovaným odborníkem.",
+    "health": "Tyto kalkulačky poskytují pouze obecné informace a nenahrazují odbornou lékařskou radu, diagnostiku nebo léčbu. Vždy se poraďte s kvalifikovaným poskytovatelem zdravotní péče.",
+    "crypto": "Tyto nástroje slouží pouze pro vzdělávací a informační účely. Nejedná se o investiční, obchodní nebo finanční poradenství. Kryptoměna zahrnuje značné riziko – vždy si proveďte svůj vlastní průzkum."
   }
 }

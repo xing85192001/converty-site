@@ -90,7 +90,8 @@
     "financeComingSoon": "财务计算器即将上线！",
     "aboutThisCalculator": "关于 {title}",
     "copySuccess": "已复制到剪贴板",
-    "copyError": "无法复制到剪贴板"
+    "copyError": "无法复制到剪贴板",
+    "advertisement": "广告"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ 图片 / 视频处理",
@@ -7670,5 +7671,10 @@
         "description": "追踪汇率随时间的变化"
       }
     }
+  },
+  "disclaimers": {
+    "finance": "本站计算器仅提供一般性估算与参考信息，不构成任何金融、投资、税务或法律建议。在做出任何决定前，请咨询合格的专业人士。",
+    "health": "本计算器仅提供一般性信息，不能替代专业医疗建议、诊断或治疗。请务必咨询合格的医疗提供者。",
+    "crypto": "这些工具仅供教育与信息参考之用，不构成任何投资、交易或金融建议。加密货币风险极高，请务必自行研究。"
   }
 }
