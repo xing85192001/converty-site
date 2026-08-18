@@ -11,7 +11,10 @@
 export const siteConfig = {
   // Canonical site URL. Used for sitemap, robots, canonical/OG tags.
   // Override per-environment (e.g. Vercel) with NEXT_PUBLIC_SITE_URL.
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://allcalc.cc.cd",
+  // Default is the to-be-purchased FORMAL domain (required for Google AdSense
+  // approval — the old free subdomain allcalc.cc.cd is not accepted). Swap the
+  // value once the domain is bought, or just set NEXT_PUBLIC_SITE_URL on Vercel.
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://allcalc.com",
 
   adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "",
 
