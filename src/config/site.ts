@@ -10,11 +10,11 @@
  */
 export const siteConfig = {
   // Canonical site URL. Used for sitemap, robots, canonical/OG tags.
-  // Override per-environment (e.g. Vercel) with NEXT_PUBLIC_SITE_URL.
-  // Default is the to-be-purchased FORMAL domain (required for Google AdSense
-  // approval — the old free subdomain allcalc.cc.cd is not accepted). Swap the
-  // value once the domain is bought, or just set NEXT_PUBLIC_SITE_URL on Vercel.
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://allcalc.com",
+  // Override per-environment (e.g. Cloudflare Pages) with NEXT_PUBLIC_SITE_URL.
+  // The real FORMAL domain is baikecalc.com (required for Google AdSense
+  // approval — the old free subdomain allcalc.cc.cd is not accepted). Still
+  // overridable per-host via NEXT_PUBLIC_SITE_URL if you ever switch providers.
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://baikecalc.com",
 
   adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "",
 
