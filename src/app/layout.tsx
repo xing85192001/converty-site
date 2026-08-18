@@ -7,9 +7,29 @@ import { siteConfig } from "@/config/site";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "baikecalc - Free online calculators and converters",
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: {
+    default: "baikecalc - Free online calculators and converters",
+    template: "%s | baikecalc",
+  },
   description:
     "Free online calculators and converters for finance, health, math, photo, video, and more.",
+  openGraph: {
+    type: "website",
+    siteName: "baikecalc",
+    title: "baikecalc - Free online calculators and converters",
+    description:
+      "Free online calculators and converters for finance, health, math, photo, video, and more.",
+    locale: "en_US",
+    images: [{ url: "/logo.jpg", width: 512, height: 512, alt: "baikecalc" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "baikecalc - Free online calculators and converters",
+    description:
+      "Free online calculators and converters for finance, health, math, photo, video, and more.",
+    images: ["/logo.jpg"],
+  },
   icons: {
     icon: [
       { url: "/logo.jpg", type: "image/jpeg" },

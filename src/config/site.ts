@@ -9,6 +9,10 @@
  * About and Contact pages so the reviewer can confirm who runs the site.
  */
 export const siteConfig = {
+  // Canonical site URL. Used for sitemap, robots, canonical/OG tags.
+  // Override per-environment (e.g. Vercel) with NEXT_PUBLIC_SITE_URL.
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://allcalc.cc.cd",
+
   adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "",
 
   // Manual ad-unit slot ids (created in the AdSense dashboard AFTER approval).
