@@ -9,6 +9,8 @@ import { converterRegistry } from "@/lib/registry/converters";
 
 const SITE = siteConfig.siteUrl.replace(/\/$/, "");
 
+export const dynamic = "force-static";
+
 // Google-friendly hreflang codes. zh -> zh-Hans, zh-TW -> zh-Hant; the rest map
 // to themselves. x-default always points at the default locale.
 const HREFLANG: Record<string, string> = {
