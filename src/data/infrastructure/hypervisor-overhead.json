@@ -1,0 +1,198 @@
+[
+  {
+    "id": "vmware",
+    "name": "VMware vSphere",
+    "cpuOverhead": {
+      "description": "vSphere hypervisor CPU overhead per host",
+      "percent": 5,
+      "notes": "ESXi kernel and vCenter agent consume ~5% of host CPU"
+    },
+    "memoryOverhead": {
+      "description": "Memory reserved for hypervisor and per-VM overhead",
+      "hypervisorReserved": 2048,
+      "perVmOverheadMB": 100,
+      "notes": "ESXi reserves ~2GB + ~100MB per VM for VM overhead"
+    },
+    "diskFormats": {
+      "thick": {
+        "name": "Thick Provisioned",
+        "multiplier": 1.0,
+        "description": "Full space allocated upfront"
+      },
+      "thin": {
+        "name": "Thin Provisioned",
+        "multiplier": 1.5,
+        "description": "Space allocated on demand, plan for 50% growth"
+      }
+    },
+    "snapshotOverhead": {
+      "multiplier": 1.15,
+      "description": "Snapshots consume ~15% additional space on average"
+    },
+    "replicationOverhead": {
+      "multiplier": 1.0,
+      "description": "vSphere Replication stores offsite, no local overhead"
+    },
+    "haOverhead": {
+      "n_plus_1": {
+        "description": "1 host failure tolerance",
+        "formula": "capacity / (hosts - 1)"
+      },
+      "n_plus_2": {
+        "description": "2 host failure tolerance",
+        "formula": "capacity / (hosts - 2)"
+      }
+    }
+  },
+  {
+    "id": "hyperv",
+    "name": "Microsoft Hyper-V",
+    "cpuOverhead": {
+      "description": "Hyper-V hypervisor CPU overhead per host",
+      "percent": 3,
+      "notes": "Hyper-V has lower CPU overhead than VMware (~3%)"
+    },
+    "memoryOverhead": {
+      "description": "Memory reserved for parent partition and per-VM overhead",
+      "hypervisorReserved": 4096,
+      "perVmOverheadMB": 50,
+      "notes": "Parent partition needs 4GB, per-VM overhead ~50MB"
+    },
+    "diskFormats": {
+      "fixed": {
+        "name": "Fixed VHDX",
+        "multiplier": 1.0,
+        "description": "Full space allocated upfront"
+      },
+      "dynamic": {
+        "name": "Dynamic VHDX",
+        "multiplier": 1.5,
+        "description": "Space allocated on demand, plan for 50% growth"
+      }
+    },
+    "snapshotOverhead": {
+      "multiplier": 1.15,
+      "description": "Checkpoints consume ~15% additional space on average"
+    },
+    "replicationOverhead": {
+      "multiplier": 2.0,
+      "description": "Hyper-V Replica stores full copy locally (2× space)"
+    },
+    "haOverhead": {
+      "n_plus_1": {
+        "description": "1 host failure tolerance",
+        "formula": "capacity / (hosts - 1)"
+      },
+      "n_plus_2": {
+        "description": "2 host failure tolerance",
+        "formula": "capacity / (hosts - 2)"
+      }
+    },
+    "licensing": {
+      "datacenter": {
+        "coresPerLicense": 16,
+        "minCoresPerServer": 16,
+        "corePacks": 2,
+        "unlimitedVms": true,
+        "description": "Windows Server Datacenter: 16-core minimum per server, unlimited VMs"
+      },
+      "standard": {
+        "coresPerLicense": 16,
+        "minCoresPerServer": 16,
+        "corePacks": 2,
+        "vmsPerLicense": 2,
+        "description": "Windows Server Standard: 16-core minimum per server, 2 VMs per license"
+      }
+    }
+  },
+  {
+    "id": "proxmox",
+    "name": "Proxmox VE",
+    "cpuOverhead": {
+      "description": "Proxmox (KVM/QEMU) CPU overhead per host",
+      "percent": 2,
+      "notes": "KVM has minimal overhead (~2%)"
+    },
+    "memoryOverhead": {
+      "description": "Memory reserved for host OS and per-VM overhead",
+      "hypervisorReserved": 2048,
+      "perVmOverheadMB": 50,
+      "notes": "Debian-based host needs ~2GB, per-VM overhead ~50MB"
+    },
+    "diskFormats": {
+      "raw": {
+        "name": "Raw Disk",
+        "multiplier": 1.0,
+        "description": "Full space allocated upfront"
+      },
+      "qcow2": {
+        "name": "QCOW2",
+        "multiplier": 1.5,
+        "description": "Space allocated on demand, plan for 50% growth"
+      }
+    },
+    "snapshotOverhead": {
+      "multiplier": 1.15,
+      "description": "QCOW2 snapshots consume ~15% additional space on average"
+    },
+    "replicationOverhead": {
+      "multiplier": 1.0,
+      "description": "Proxmox replication stores offsite, no local overhead"
+    },
+    "haOverhead": {
+      "n_plus_1": {
+        "description": "1 host failure tolerance",
+        "formula": "capacity / (hosts - 1)"
+      },
+      "n_plus_2": {
+        "description": "2 host failure tolerance",
+        "formula": "capacity / (hosts - 2)"
+      }
+    }
+  },
+  {
+    "id": "xcp-ng",
+    "name": "XCP-ng",
+    "cpuOverhead": {
+      "description": "XCP-ng (Xen) CPU overhead per host",
+      "percent": 3,
+      "notes": "Xen hypervisor overhead ~3%"
+    },
+    "memoryOverhead": {
+      "description": "Memory reserved for dom0 and per-VM overhead",
+      "hypervisorReserved": 2048,
+      "perVmOverheadMB": 75,
+      "notes": "Dom0 needs ~2GB, per-VM overhead ~75MB"
+    },
+    "diskFormats": {
+      "thick": {
+        "name": "Thick Provisioned VDI",
+        "multiplier": 1.0,
+        "description": "Full space allocated upfront"
+      },
+      "thin": {
+        "name": "Thin Provisioned VDI",
+        "multiplier": 1.5,
+        "description": "Space allocated on demand, plan for 50% growth"
+      }
+    },
+    "snapshotOverhead": {
+      "multiplier": 1.15,
+      "description": "Snapshots consume ~15% additional space on average"
+    },
+    "replicationOverhead": {
+      "multiplier": 1.0,
+      "description": "XCP-ng replication stores offsite, no local overhead"
+    },
+    "haOverhead": {
+      "n_plus_1": {
+        "description": "1 host failure tolerance",
+        "formula": "capacity / (hosts - 1)"
+      },
+      "n_plus_2": {
+        "description": "2 host failure tolerance",
+        "formula": "capacity / (hosts - 2)"
+      }
+    }
+  }
+]

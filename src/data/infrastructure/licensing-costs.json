@@ -1,0 +1,109 @@
+{
+  "lastUpdated": "2026-01-28",
+  "currency": "USD",
+  "disclaimer": "Prices are estimates for planning purposes. Check vendor websites for current pricing.",
+  "sources": {
+    "microsoft": "https://www.microsoft.com/en-us/licensing/product-licensing/windows-server",
+    "broadcom": "https://www.broadcom.com/products/vmware"
+  },
+  "windowsServer": {
+    "datacenter": {
+      "edition": "Windows Server 2022 Datacenter",
+      "pricePerCorePack": 6155,
+      "coresPerPack": 2,
+      "minCoresPerServer": 16,
+      "unlimitedVms": true,
+      "description": "Unlimited VMs on licensed host",
+      "notes": "16-core minimum per physical server, additional cores in 2-core packs",
+      "breakEvenVms": 13,
+      "vendorUrl": "https://www.microsoft.com/en-us/licensing/product-licensing/windows-server"
+    },
+    "standard": {
+      "edition": "Windows Server 2022 Standard",
+      "pricePerCorePack": 1069,
+      "coresPerPack": 2,
+      "minCoresPerServer": 16,
+      "vmsPerLicense": 2,
+      "description": "2 VMs per license",
+      "notes": "16-core minimum per physical server, additional cores in 2-core packs. Each license grants 2 VMs.",
+      "breakEvenVms": 13,
+      "vendorUrl": "https://www.microsoft.com/en-us/licensing/product-licensing/windows-server"
+    }
+  },
+  "vmware": {
+    "vcf": {
+      "name": "VMware Cloud Foundation (VCF)",
+      "pricePerCore": 375,
+      "minCoresPerCpu": 16,
+      "description": "vSphere, vSAN, NSX, Aria Suite included",
+      "notes": "Subscription-based, 16-core minimum per CPU socket",
+      "vendorUrl": "https://www.broadcom.com/products/vmware/cloud-foundation"
+    },
+    "vvf": {
+      "name": "VMware vSphere Foundation (VVF)",
+      "pricePerCore": 150,
+      "minCoresPerCpu": 16,
+      "description": "vSphere Standard + vSAN Standard",
+      "notes": "Subscription-based, 16-core minimum per CPU socket",
+      "vendorUrl": "https://www.broadcom.com/products/vmware/vsphere-foundation"
+    }
+  },
+  "hyperv": {
+    "free": {
+      "name": "Hyper-V Server (Free)",
+      "price": 0,
+      "description": "Standalone Hyper-V hypervisor, no GUI",
+      "notes": "Requires separate management tools, no Windows Server features",
+      "limitations": "No failover clustering, no live migration without additional licensing"
+    },
+    "windowsServerWithHyperV": {
+      "name": "Windows Server with Hyper-V Role",
+      "description": "Full Windows Server with Hyper-V role enabled",
+      "notes": "Use Datacenter or Standard licensing costs above",
+      "features": "Full clustering, live migration, all Windows Server features"
+    }
+  },
+  "proxmox": {
+    "community": {
+      "name": "Proxmox VE Community",
+      "price": 0,
+      "description": "Free and open-source",
+      "notes": "Community support via forums",
+      "vendorUrl": "https://www.proxmox.com/en/proxmox-virtual-environment/overview"
+    },
+    "subscription": {
+      "name": "Proxmox VE Subscription",
+      "pricePerSocket": {
+        "community": 0,
+        "basic": 90,
+        "standard": 220,
+        "premium": 550
+      },
+      "description": "Enterprise repository access and support",
+      "notes": "Per CPU socket per year, no core minimums",
+      "vendorUrl": "https://www.proxmox.com/en/proxmox-virtual-environment/pricing"
+    }
+  },
+  "xcpng": {
+    "free": {
+      "name": "XCP-ng (Free)",
+      "price": 0,
+      "description": "Free and open-source Xen-based hypervisor",
+      "notes": "Community support",
+      "vendorUrl": "https://xcp-ng.org/"
+    },
+    "proSupport": {
+      "name": "XCP-ng Pro Support",
+      "pricePerHost": {
+        "starter": 500,
+        "standard": 1000,
+        "premium": 2000
+      },
+      "description": "Professional support tiers",
+      "notes": "Per host per year",
+      "vendorUrl": "https://xcp-ng.com/pro-support"
+    }
+  },
+  "staleDays": 180,
+  "staleWarning": "Pricing data may be outdated. Please verify current prices with vendors."
+}

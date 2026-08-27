@@ -1,0 +1,312 @@
+[
+  {
+    "id": "steel-a36",
+    "name": "Structural Steel A36",
+    "category": "Steel",
+    "youngsModulus": 200,
+    "yieldStrength": 250,
+    "ultimateStrength": 400,
+    "density": 7850,
+    "poissonsRatio": 0.26
+  },
+  {
+    "id": "steel-a572-gr50",
+    "name": "High-Strength Steel A572 Gr50",
+    "category": "Steel",
+    "youngsModulus": 200,
+    "yieldStrength": 345,
+    "ultimateStrength": 450,
+    "density": 7850,
+    "poissonsRatio": 0.26
+  },
+  {
+    "id": "steel-a992",
+    "name": "Structural Steel A992",
+    "category": "Steel",
+    "youngsModulus": 200,
+    "yieldStrength": 345,
+    "ultimateStrength": 450,
+    "density": 7850,
+    "poissonsRatio": 0.26
+  },
+  {
+    "id": "steel-304-stainless",
+    "name": "Stainless Steel 304",
+    "category": "Steel",
+    "youngsModulus": 193,
+    "yieldStrength": 215,
+    "ultimateStrength": 505,
+    "density": 8000,
+    "poissonsRatio": 0.29
+  },
+  {
+    "id": "steel-316-stainless",
+    "name": "Stainless Steel 316",
+    "category": "Steel",
+    "youngsModulus": 193,
+    "yieldStrength": 205,
+    "ultimateStrength": 515,
+    "density": 8000,
+    "poissonsRatio": 0.29
+  },
+  {
+    "id": "steel-a500-grade-b",
+    "name": "Steel A500 Grade B (HSS)",
+    "category": "Steel",
+    "youngsModulus": 200,
+    "yieldStrength": 315,
+    "ultimateStrength": 400,
+    "density": 7850,
+    "poissonsRatio": 0.26
+  },
+  {
+    "id": "steel-4140",
+    "name": "Alloy Steel 4140",
+    "category": "Steel",
+    "youngsModulus": 205,
+    "yieldStrength": 415,
+    "ultimateStrength": 655,
+    "density": 7850,
+    "poissonsRatio": 0.29
+  },
+  {
+    "id": "aluminum-6061-t6",
+    "name": "Aluminum 6061-T6",
+    "category": "Aluminum",
+    "youngsModulus": 68.9,
+    "yieldStrength": 276,
+    "ultimateStrength": 310,
+    "density": 2700,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "aluminum-7075-t6",
+    "name": "Aluminum 7075-T6",
+    "category": "Aluminum",
+    "youngsModulus": 71.7,
+    "yieldStrength": 503,
+    "ultimateStrength": 572,
+    "density": 2810,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "aluminum-2024-t3",
+    "name": "Aluminum 2024-T3",
+    "category": "Aluminum",
+    "youngsModulus": 73.1,
+    "yieldStrength": 345,
+    "ultimateStrength": 483,
+    "density": 2780,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "aluminum-5052-h32",
+    "name": "Aluminum 5052-H32",
+    "category": "Aluminum",
+    "youngsModulus": 70.3,
+    "yieldStrength": 193,
+    "ultimateStrength": 228,
+    "density": 2680,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "aluminum-6063-t5",
+    "name": "Aluminum 6063-T5",
+    "category": "Aluminum",
+    "youngsModulus": 68.9,
+    "yieldStrength": 145,
+    "ultimateStrength": 186,
+    "density": 2700,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "wood-douglas-fir",
+    "name": "Douglas Fir (Select Structural)",
+    "category": "Wood",
+    "youngsModulus": 13.4,
+    "yieldStrength": 11.7,
+    "ultimateStrength": 11.7,
+    "density": 530,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "wood-southern-pine",
+    "name": "Southern Pine (Select Structural)",
+    "category": "Wood",
+    "youngsModulus": 14.0,
+    "yieldStrength": 12.7,
+    "ultimateStrength": 12.7,
+    "density": 550,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "wood-spruce-pine-fir",
+    "name": "Spruce-Pine-Fir (Select Structural)",
+    "category": "Wood",
+    "youngsModulus": 11.0,
+    "yieldStrength": 8.3,
+    "ultimateStrength": 8.3,
+    "density": 430,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "wood-red-oak",
+    "name": "Red Oak (Hardwood)",
+    "category": "Wood",
+    "youngsModulus": 12.5,
+    "yieldStrength": 9.0,
+    "ultimateStrength": 9.0,
+    "density": 680,
+    "poissonsRatio": 0.35
+  },
+  {
+    "id": "wood-white-oak",
+    "name": "White Oak (Hardwood)",
+    "category": "Wood",
+    "youngsModulus": 12.3,
+    "yieldStrength": 8.9,
+    "ultimateStrength": 8.9,
+    "density": 770,
+    "poissonsRatio": 0.35
+  },
+  {
+    "id": "concrete-3000-psi",
+    "name": "Concrete 3000 psi",
+    "category": "Concrete",
+    "youngsModulus": 25.3,
+    "yieldStrength": 20.7,
+    "ultimateStrength": 20.7,
+    "density": 2400,
+    "poissonsRatio": 0.2
+  },
+  {
+    "id": "concrete-4000-psi",
+    "name": "Concrete 4000 psi",
+    "category": "Concrete",
+    "youngsModulus": 29.2,
+    "yieldStrength": 27.6,
+    "ultimateStrength": 27.6,
+    "density": 2400,
+    "poissonsRatio": 0.2
+  },
+  {
+    "id": "concrete-5000-psi",
+    "name": "Concrete 5000 psi",
+    "category": "Concrete",
+    "youngsModulus": 32.7,
+    "yieldStrength": 34.5,
+    "ultimateStrength": 34.5,
+    "density": 2400,
+    "poissonsRatio": 0.2
+  },
+  {
+    "id": "concrete-6000-psi",
+    "name": "Concrete 6000 psi",
+    "category": "Concrete",
+    "youngsModulus": 35.8,
+    "yieldStrength": 41.4,
+    "ultimateStrength": 41.4,
+    "density": 2400,
+    "poissonsRatio": 0.2
+  },
+  {
+    "id": "concrete-8000-psi",
+    "name": "High-Strength Concrete 8000 psi",
+    "category": "Concrete",
+    "youngsModulus": 41.3,
+    "yieldStrength": 55.2,
+    "ultimateStrength": 55.2,
+    "density": 2400,
+    "poissonsRatio": 0.2
+  },
+  {
+    "id": "brass-c360",
+    "name": "Brass C360 (Free Cutting)",
+    "category": "Other",
+    "youngsModulus": 97,
+    "yieldStrength": 124,
+    "ultimateStrength": 338,
+    "density": 8500,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "bronze-c932",
+    "name": "Bronze C932 (Bearing Bronze)",
+    "category": "Other",
+    "youngsModulus": 103,
+    "yieldStrength": 172,
+    "ultimateStrength": 379,
+    "density": 8800,
+    "poissonsRatio": 0.34
+  },
+  {
+    "id": "copper-c11000",
+    "name": "Copper C11000 (ETP)",
+    "category": "Other",
+    "youngsModulus": 117,
+    "yieldStrength": 69,
+    "ultimateStrength": 221,
+    "density": 8940,
+    "poissonsRatio": 0.33
+  },
+  {
+    "id": "titanium-grade-5",
+    "name": "Titanium Grade 5 (Ti-6Al-4V)",
+    "category": "Other",
+    "youngsModulus": 113.8,
+    "yieldStrength": 880,
+    "ultimateStrength": 950,
+    "density": 4430,
+    "poissonsRatio": 0.342
+  },
+  {
+    "id": "titanium-grade-2",
+    "name": "Titanium Grade 2 (Commercial Pure)",
+    "category": "Other",
+    "youngsModulus": 102.7,
+    "yieldStrength": 275,
+    "ultimateStrength": 345,
+    "density": 4510,
+    "poissonsRatio": 0.34
+  },
+  {
+    "id": "cast-iron-gray",
+    "name": "Gray Cast Iron (Class 30)",
+    "category": "Other",
+    "youngsModulus": 100,
+    "yieldStrength": 207,
+    "ultimateStrength": 207,
+    "density": 7200,
+    "poissonsRatio": 0.26
+  },
+  {
+    "id": "cast-iron-ductile",
+    "name": "Ductile Cast Iron (Grade 65-45-12)",
+    "category": "Other",
+    "youngsModulus": 169,
+    "yieldStrength": 310,
+    "ultimateStrength": 448,
+    "density": 7100,
+    "poissonsRatio": 0.28
+  },
+  {
+    "id": "magnesium-az31b",
+    "name": "Magnesium AZ31B",
+    "category": "Other",
+    "youngsModulus": 45,
+    "yieldStrength": 220,
+    "ultimateStrength": 290,
+    "density": 1770,
+    "poissonsRatio": 0.35
+  },
+  {
+    "id": "nickel-alloy-625",
+    "name": "Nickel Alloy 625 (Inconel 625)",
+    "category": "Other",
+    "youngsModulus": 207,
+    "yieldStrength": 414,
+    "ultimateStrength": 827,
+    "density": 8440,
+    "poissonsRatio": 0.31
+  }
+]

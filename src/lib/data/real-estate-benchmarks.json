@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-01-24T00:00:00.000Z",
+  "source": "Swiss Federal Housing Office & European Central Bank",
+  "swissMarket": {
+    "averageGrossYield": 2.92,
+    "yieldsByCity": {
+      "zurich": 2.5,
+      "geneva": 2.6,
+      "bern": 3.2,
+      "basel": 3.0,
+      "lausanne": 2.8,
+      "lucerne": 3.4,
+      "zug": 2.4,
+      "national": 2.92
+    },
+    "mortgageRates": {
+      "fixed5Year": 1.44,
+      "fixed10Year": 1.75,
+      "fixed15Year": 1.95,
+      "saron": 0.92
+    },
+    "regulations": {
+      "minDownPayment": 20,
+      "maxLoanToValue": 80,
+      "amortizationTarget": 15
+    },
+    "transactionCosts": {
+      "min": 3,
+      "max": 6,
+      "average": 4.5
+    },
+    "operatingCostRate": 1.5
+  },
+  "europeanComparables": {
+    "germany": {
+      "averageYield": 3.5,
+      "mortgageRate": 2.1
+    },
+    "france": {
+      "averageYield": 3.8,
+      "mortgageRate": 2.3
+    },
+    "austria": {
+      "averageYield": 3.2,
+      "mortgageRate": 2.0
+    },
+    "italy": {
+      "averageYield": 4.2,
+      "mortgageRate": 2.8
+    }
+  },
+  "ratingThresholds": {
+    "excellent": {
+      "minYield": 4.0,
+      "maxCapRate": 5.0
+    },
+    "good": {
+      "minYield": 3.0,
+      "maxCapRate": 4.0
+    },
+    "average": {
+      "minYield": 2.5,
+      "maxCapRate": 3.5
+    },
+    "belowAverage": {
+      "minYield": 2.0,
+      "maxCapRate": 3.0
+    }
+  }
+}

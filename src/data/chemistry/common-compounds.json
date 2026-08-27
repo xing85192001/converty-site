@@ -1,0 +1,302 @@
+[
+  {
+    "id": "water",
+    "name": "Water",
+    "formula": "H2O",
+    "category": "Solvent"
+  },
+  {
+    "id": "sodium-chloride",
+    "name": "Sodium Chloride (Table Salt)",
+    "formula": "NaCl",
+    "category": "Salt"
+  },
+  {
+    "id": "hydrochloric-acid",
+    "name": "Hydrochloric Acid",
+    "formula": "HCl",
+    "category": "Acid"
+  },
+  {
+    "id": "sulfuric-acid",
+    "name": "Sulfuric Acid",
+    "formula": "H2SO4",
+    "category": "Acid"
+  },
+  {
+    "id": "nitric-acid",
+    "name": "Nitric Acid",
+    "formula": "HNO3",
+    "category": "Acid"
+  },
+  {
+    "id": "acetic-acid",
+    "name": "Acetic Acid (Vinegar)",
+    "formula": "CH3COOH",
+    "category": "Acid"
+  },
+  {
+    "id": "sodium-hydroxide",
+    "name": "Sodium Hydroxide (Lye)",
+    "formula": "NaOH",
+    "category": "Base"
+  },
+  {
+    "id": "potassium-hydroxide",
+    "name": "Potassium Hydroxide",
+    "formula": "KOH",
+    "category": "Base"
+  },
+  {
+    "id": "ammonia",
+    "name": "Ammonia",
+    "formula": "NH3",
+    "category": "Base"
+  },
+  {
+    "id": "calcium-carbonate",
+    "name": "Calcium Carbonate (Limestone)",
+    "formula": "CaCO3",
+    "category": "Salt"
+  },
+  {
+    "id": "sodium-bicarbonate",
+    "name": "Sodium Bicarbonate (Baking Soda)",
+    "formula": "NaHCO3",
+    "category": "Salt"
+  },
+  {
+    "id": "calcium-hydroxide",
+    "name": "Calcium Hydroxide (Slaked Lime)",
+    "formula": "Ca(OH)2",
+    "category": "Base"
+  },
+  {
+    "id": "glucose",
+    "name": "Glucose (Dextrose)",
+    "formula": "C6H12O6",
+    "category": "Organic"
+  },
+  {
+    "id": "ethanol",
+    "name": "Ethanol (Ethyl Alcohol)",
+    "formula": "C2H5OH",
+    "category": "Organic"
+  },
+  {
+    "id": "methanol",
+    "name": "Methanol (Methyl Alcohol)",
+    "formula": "CH3OH",
+    "category": "Organic"
+  },
+  {
+    "id": "sucrose",
+    "name": "Sucrose (Table Sugar)",
+    "formula": "C12H22O11",
+    "category": "Organic"
+  },
+  {
+    "id": "carbon-dioxide",
+    "name": "Carbon Dioxide",
+    "formula": "CO2",
+    "category": "Gas"
+  },
+  {
+    "id": "carbon-monoxide",
+    "name": "Carbon Monoxide",
+    "formula": "CO",
+    "category": "Gas"
+  },
+  {
+    "id": "oxygen",
+    "name": "Oxygen Gas",
+    "formula": "O2",
+    "category": "Gas"
+  },
+  {
+    "id": "nitrogen",
+    "name": "Nitrogen Gas",
+    "formula": "N2",
+    "category": "Gas"
+  },
+  {
+    "id": "hydrogen",
+    "name": "Hydrogen Gas",
+    "formula": "H2",
+    "category": "Gas"
+  },
+  {
+    "id": "methane",
+    "name": "Methane (Natural Gas)",
+    "formula": "CH4",
+    "category": "Organic"
+  },
+  {
+    "id": "propane",
+    "name": "Propane",
+    "formula": "C3H8",
+    "category": "Organic"
+  },
+  {
+    "id": "butane",
+    "name": "Butane",
+    "formula": "C4H10",
+    "category": "Organic"
+  },
+  {
+    "id": "benzene",
+    "name": "Benzene",
+    "formula": "C6H6",
+    "category": "Organic"
+  },
+  {
+    "id": "sodium-sulfate",
+    "name": "Sodium Sulfate",
+    "formula": "Na2SO4",
+    "category": "Salt"
+  },
+  {
+    "id": "potassium-chloride",
+    "name": "Potassium Chloride",
+    "formula": "KCl",
+    "category": "Salt"
+  },
+  {
+    "id": "magnesium-sulfate",
+    "name": "Magnesium Sulfate (Epsom Salt)",
+    "formula": "MgSO4",
+    "category": "Salt"
+  },
+  {
+    "id": "calcium-chloride",
+    "name": "Calcium Chloride",
+    "formula": "CaCl2",
+    "category": "Salt"
+  },
+  {
+    "id": "iron-oxide",
+    "name": "Iron(III) Oxide (Rust)",
+    "formula": "Fe2O3",
+    "category": "Oxide"
+  },
+  {
+    "id": "copper-sulfate",
+    "name": "Copper(II) Sulfate",
+    "formula": "CuSO4",
+    "category": "Salt"
+  },
+  {
+    "id": "copper-sulfate-pentahydrate",
+    "name": "Copper(II) Sulfate Pentahydrate",
+    "formula": "CuSO4·5H2O",
+    "category": "Hydrate"
+  },
+  {
+    "id": "silver-nitrate",
+    "name": "Silver Nitrate",
+    "formula": "AgNO3",
+    "category": "Salt"
+  },
+  {
+    "id": "potassium-permanganate",
+    "name": "Potassium Permanganate",
+    "formula": "KMnO4",
+    "category": "Salt"
+  },
+  {
+    "id": "hydrogen-peroxide",
+    "name": "Hydrogen Peroxide",
+    "formula": "H2O2",
+    "category": "Peroxide"
+  },
+  {
+    "id": "sodium-carbonate",
+    "name": "Sodium Carbonate (Washing Soda)",
+    "formula": "Na2CO3",
+    "category": "Salt"
+  },
+  {
+    "id": "ammonium-chloride",
+    "name": "Ammonium Chloride",
+    "formula": "NH4Cl",
+    "category": "Salt"
+  },
+  {
+    "id": "ammonium-nitrate",
+    "name": "Ammonium Nitrate",
+    "formula": "NH4NO3",
+    "category": "Salt"
+  },
+  {
+    "id": "phosphoric-acid",
+    "name": "Phosphoric Acid",
+    "formula": "H3PO4",
+    "category": "Acid"
+  },
+  {
+    "id": "sodium-phosphate",
+    "name": "Sodium Phosphate",
+    "formula": "Na3PO4",
+    "category": "Salt"
+  },
+  {
+    "id": "aluminum-oxide",
+    "name": "Aluminum Oxide (Alumina)",
+    "formula": "Al2O3",
+    "category": "Oxide"
+  },
+  {
+    "id": "silicon-dioxide",
+    "name": "Silicon Dioxide (Silica)",
+    "formula": "SiO2",
+    "category": "Oxide"
+  },
+  {
+    "id": "nitrous-oxide",
+    "name": "Nitrous Oxide (Laughing Gas)",
+    "formula": "N2O",
+    "category": "Gas"
+  },
+  {
+    "id": "sulfur-dioxide",
+    "name": "Sulfur Dioxide",
+    "formula": "SO2",
+    "category": "Gas"
+  },
+  {
+    "id": "sulfur-trioxide",
+    "name": "Sulfur Trioxide",
+    "formula": "SO3",
+    "category": "Gas"
+  },
+  {
+    "id": "nitrogen-dioxide",
+    "name": "Nitrogen Dioxide",
+    "formula": "NO2",
+    "category": "Gas"
+  },
+  {
+    "id": "zinc-sulfate",
+    "name": "Zinc Sulfate",
+    "formula": "ZnSO4",
+    "category": "Salt"
+  },
+  {
+    "id": "barium-sulfate",
+    "name": "Barium Sulfate",
+    "formula": "BaSO4",
+    "category": "Salt"
+  },
+  {
+    "id": "lead-nitrate",
+    "name": "Lead(II) Nitrate",
+    "formula": "Pb(NO3)2",
+    "category": "Salt"
+  },
+  {
+    "id": "iron-sulfate",
+    "name": "Iron(II) Sulfate",
+    "formula": "FeSO4",
+    "category": "Salt"
+  }
+]

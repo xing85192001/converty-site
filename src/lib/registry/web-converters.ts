@@ -1,0 +1,77 @@
+import { Globe } from "lucide-react";
+import type { ConverterMeta } from "@/types";
+
+export const webConverters: Record<string, ConverterMeta> = {
+  "url-encoder": {
+    id: "url-encoder",
+    slug: "url-encoder",
+    category: "web",
+    keywords: ["url", "encode", "decode", "uri", "percent encoding"],
+    icon: Globe,
+    featured: true,
+  },
+  csp: {
+    id: "csp",
+    slug: "csp",
+    category: "web",
+    keywords: ["csp", "content security policy", "security", "headers", "xss"],
+    icon: Globe,
+    featured: false,
+  },
+  "redirect-check": {
+    id: "redirect-check",
+    slug: "redirect-check",
+    category: "web",
+    keywords: ["redirect", "http", "301", "302", "url", "seo"],
+    icon: Globe,
+    featured: false,
+  },
+  "spf-check": {
+    id: "spf-check",
+    slug: "spf-check",
+    category: "web",
+    keywords: ["spf", "email", "dns", "sender policy framework", "security"],
+    icon: Globe,
+    featured: false,
+  },
+  "https-check": {
+    id: "https-check",
+    slug: "https-check",
+    category: "web",
+    keywords: ["https", "ssl", "tls", "security headers", "hsts"],
+    icon: Globe,
+    featured: false,
+  },
+  "html-encoder": {
+    id: "html-encoder",
+    slug: "html-encoder",
+    category: "web",
+    keywords: ["html", "encode", "decode", "entities", "escape"],
+    icon: Globe,
+    featured: false,
+  },
+  "html-chars": {
+    id: "html-chars",
+    slug: "html-chars",
+    category: "web",
+    keywords: ["html", "entities", "characters", "symbols", "unicode"],
+    icon: Globe,
+    featured: false,
+  },
+  "emoji-chars": {
+    id: "emoji-chars",
+    slug: "emoji-chars",
+    category: "web",
+    keywords: ["emoji", "unicode", "html", "copy", "emoticons"],
+    icon: Globe,
+    featured: false,
+  },
+  "seo-performance": {
+    id: "seo-performance",
+    slug: "seo-performance",
+    category: "web",
+    keywords: ["seo", "performance", "optimization", "meta tags", "content"],
+    icon: Globe,
+    featured: false,
+  },
+};

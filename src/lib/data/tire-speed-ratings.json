@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-01-24",
+  "source": "European Tyre and Rim Technical Organisation (ETRTO)",
+  "unit": "km_per_hour",
+  "speedRatings": {
+    "L": 120,
+    "M": 130,
+    "N": 140,
+    "P": 150,
+    "Q": 160,
+    "R": 170,
+    "S": 180,
+    "T": 190,
+    "U": 200,
+    "H": 210,
+    "V": 240,
+    "W": 270,
+    "Y": 300,
+    "ZR": 240
+  },
+  "descriptions": {
+    "L": "Light truck / off-road",
+    "M": "Temporary spare",
+    "N": "Temporary spare",
+    "P": "Passenger cars (older)",
+    "Q": "Winter / studded tires",
+    "R": "Heavy-duty light truck",
+    "S": "Passenger car standard",
+    "T": "Standard passenger / minivan",
+    "U": "Mid-performance",
+    "H": "Sport sedan / touring",
+    "V": "Sport / high-performance",
+    "W": "Ultra high-performance",
+    "Y": "High-performance sports cars",
+    "ZR": "Performance above 240 km/h (older designation)"
+  },
+  "notes": "Speed rating indicates maximum speed capability. ZR is an older designation for tires rated above 240 km/h, usually combined with W (270) or Y (300)."
+}

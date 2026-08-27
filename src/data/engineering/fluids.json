@@ -1,0 +1,222 @@
+[
+  {
+    "id": "water-20c",
+    "name": "Water (20\u00b0C)",
+    "category": "Water",
+    "density": 998.2,
+    "dynamicViscosity": 0.001002,
+    "kinematicViscosity": 1.004e-6,
+    "temperature": 20,
+    "specificHeat": 4182
+  },
+  {
+    "id": "water-4c",
+    "name": "Water (4\u00b0C)",
+    "category": "Water",
+    "density": 999.97,
+    "dynamicViscosity": 0.001567,
+    "kinematicViscosity": 1.567e-6,
+    "temperature": 4,
+    "specificHeat": 4205
+  },
+  {
+    "id": "water-40c",
+    "name": "Water (40\u00b0C)",
+    "category": "Water",
+    "density": 992.2,
+    "dynamicViscosity": 0.000653,
+    "kinematicViscosity": 6.58e-7,
+    "temperature": 40,
+    "specificHeat": 4179
+  },
+  {
+    "id": "water-60c",
+    "name": "Water (60\u00b0C)",
+    "category": "Water",
+    "density": 983.2,
+    "dynamicViscosity": 0.000467,
+    "kinematicViscosity": 4.75e-7,
+    "temperature": 60,
+    "specificHeat": 4185
+  },
+  {
+    "id": "water-80c",
+    "name": "Water (80\u00b0C)",
+    "category": "Water",
+    "density": 971.8,
+    "dynamicViscosity": 0.000355,
+    "kinematicViscosity": 3.65e-7,
+    "temperature": 80,
+    "specificHeat": 4197
+  },
+  {
+    "id": "water-100c",
+    "name": "Water (100\u00b0C)",
+    "category": "Water",
+    "density": 958.4,
+    "dynamicViscosity": 0.000282,
+    "kinematicViscosity": 2.94e-7,
+    "temperature": 100,
+    "specificHeat": 4216
+  },
+  {
+    "id": "seawater-20c",
+    "name": "Seawater (20\u00b0C, 3.5% salinity)",
+    "category": "Water",
+    "density": 1025,
+    "dynamicViscosity": 0.001077,
+    "kinematicViscosity": 1.051e-6,
+    "temperature": 20,
+    "specificHeat": 3993
+  },
+  {
+    "id": "air-20c",
+    "name": "Air (20\u00b0C, 1 atm)",
+    "category": "Gas",
+    "density": 1.204,
+    "dynamicViscosity": 1.825e-5,
+    "kinematicViscosity": 1.516e-5,
+    "temperature": 20,
+    "specificHeat": 1006
+  },
+  {
+    "id": "air-0c",
+    "name": "Air (0\u00b0C, 1 atm)",
+    "category": "Gas",
+    "density": 1.292,
+    "dynamicViscosity": 1.729e-5,
+    "kinematicViscosity": 1.338e-5,
+    "temperature": 0,
+    "specificHeat": 1005
+  },
+  {
+    "id": "air-100c",
+    "name": "Air (100\u00b0C, 1 atm)",
+    "category": "Gas",
+    "density": 0.946,
+    "dynamicViscosity": 2.181e-5,
+    "kinematicViscosity": 2.306e-5,
+    "temperature": 100,
+    "specificHeat": 1009
+  },
+  {
+    "id": "sae-10w-oil",
+    "name": "SAE 10W Motor Oil (40\u00b0C)",
+    "category": "Oil",
+    "density": 870,
+    "dynamicViscosity": 0.065,
+    "kinematicViscosity": 7.47e-5,
+    "temperature": 40,
+    "specificHeat": 1880
+  },
+  {
+    "id": "sae-30-oil",
+    "name": "SAE 30 Motor Oil (40\u00b0C)",
+    "category": "Oil",
+    "density": 876,
+    "dynamicViscosity": 0.29,
+    "kinematicViscosity": 3.31e-4,
+    "temperature": 40,
+    "specificHeat": 1845
+  },
+  {
+    "id": "sae-10w40-oil",
+    "name": "SAE 10W-40 Motor Oil (40\u00b0C)",
+    "category": "Oil",
+    "density": 865,
+    "dynamicViscosity": 0.095,
+    "kinematicViscosity": 1.098e-4,
+    "temperature": 40,
+    "specificHeat": 1860
+  },
+  {
+    "id": "hydraulic-oil-iso32",
+    "name": "Hydraulic Oil ISO 32 (40\u00b0C)",
+    "category": "Oil",
+    "density": 860,
+    "dynamicViscosity": 0.028,
+    "kinematicViscosity": 3.2e-5,
+    "temperature": 40,
+    "specificHeat": 1880
+  },
+  {
+    "id": "glycol-50-20c",
+    "name": "Ethylene Glycol 50% (20\u00b0C)",
+    "category": "Coolant",
+    "density": 1071,
+    "dynamicViscosity": 0.00374,
+    "kinematicViscosity": 3.49e-6,
+    "temperature": 20,
+    "specificHeat": 3350
+  },
+  {
+    "id": "propylene-glycol-50-20c",
+    "name": "Propylene Glycol 50% (20\u00b0C)",
+    "category": "Coolant",
+    "density": 1038,
+    "dynamicViscosity": 0.00605,
+    "kinematicViscosity": 5.83e-6,
+    "temperature": 20,
+    "specificHeat": 3560
+  },
+  {
+    "id": "methanol-20c",
+    "name": "Methanol (20\u00b0C)",
+    "category": "Chemical",
+    "density": 791,
+    "dynamicViscosity": 0.000593,
+    "kinematicViscosity": 7.5e-7,
+    "temperature": 20,
+    "specificHeat": 2510
+  },
+  {
+    "id": "ethanol-20c",
+    "name": "Ethanol (20\u00b0C)",
+    "category": "Chemical",
+    "density": 789,
+    "dynamicViscosity": 0.0012,
+    "kinematicViscosity": 1.52e-6,
+    "temperature": 20,
+    "specificHeat": 2440
+  },
+  {
+    "id": "gasoline-15c",
+    "name": "Gasoline (15\u00b0C)",
+    "category": "Fuel",
+    "density": 720,
+    "dynamicViscosity": 0.00029,
+    "kinematicViscosity": 4.03e-7,
+    "temperature": 15,
+    "specificHeat": 2220
+  },
+  {
+    "id": "diesel-15c",
+    "name": "Diesel Fuel (15\u00b0C)",
+    "category": "Fuel",
+    "density": 830,
+    "dynamicViscosity": 0.003,
+    "kinematicViscosity": 3.61e-6,
+    "temperature": 15,
+    "specificHeat": 2050
+  },
+  {
+    "id": "kerosene-20c",
+    "name": "Kerosene (20\u00b0C)",
+    "category": "Fuel",
+    "density": 800,
+    "dynamicViscosity": 0.00164,
+    "kinematicViscosity": 2.05e-6,
+    "temperature": 20,
+    "specificHeat": 2090
+  },
+  {
+    "id": "mercury-20c",
+    "name": "Mercury (20\u00b0C)",
+    "category": "Other",
+    "density": 13546,
+    "dynamicViscosity": 0.001554,
+    "kinematicViscosity": 1.15e-7,
+    "temperature": 20,
+    "specificHeat": 139
+  }
+]

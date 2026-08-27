@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-11T19:22:32.208Z",
+  "source": "fallback",
+  "difficulty": 75500000000000,
+  "networkHashRate": 550000000,
+  "btcPrice": {
+    "chf": 85000,
+    "eur": 90000,
+    "usd": 95000
+  },
+  "blockReward": 3.125,
+  "blocksPerDay": 144
+}

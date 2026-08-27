@@ -1,0 +1,77 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+manifest.json
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.claude/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# PWA
+# Note: public/sw.js is manually created, not generated
+public/workbox-*.js
+
+# Misc
+*.pem
+.turbo
+routes.json
+public/sitemap.xml
+
+# Husky
+.husky/_
+
+# Local package
+converty-local/
+converty-local.zip
+.grepai/
+
+# Logs & temp analysis files
+*.log
+scripts/*.log
+scripts/*_cache.json
+scripts/*_report.json
+scripts/_*
+remaining*.json
+untranslated*.json
+_live_*.html
+_dep*.json
+_newdep*.json
+_redeploy.json
+_vercel*.json

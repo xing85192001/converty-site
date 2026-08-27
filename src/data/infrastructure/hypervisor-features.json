@@ -1,0 +1,508 @@
+{
+  "hypervisors": [
+    {
+      "id": "vmware",
+      "name": "VMware vSphere",
+      "version": "8.0",
+      "vendor": "Broadcom",
+      "features": {
+        "highAvailability": {
+          "supported": true,
+          "modes": ["HA", "FT", "DRS"],
+          "failoverTime": "< 60s",
+          "notes": "Industry-leading HA with predictive DRS"
+        },
+        "liveMigration": {
+          "supported": true,
+          "technology": "vMotion",
+          "crossHost": true,
+          "crossDatacenter": true,
+          "notes": "Zero-downtime migration with Storage vMotion"
+        },
+        "storage": {
+          "types": ["VMFS", "NFS", "vSAN", "iSCSI", "FC"],
+          "thinProvisioning": true,
+          "deduplication": true,
+          "compression": true,
+          "snapshots": true,
+          "replication": "vSphere Replication",
+          "notes": "vSAN provides HCI storage"
+        },
+        "networking": {
+          "virtualSwitch": "vSphere Distributed Switch",
+          "sdn": "NSX",
+          "networkVirtualization": true,
+          "microSegmentation": true,
+          "notes": "NSX provides full SDN stack"
+        },
+        "backup": {
+          "api": "VADP (vStorage API)",
+          "cbbt": true,
+          "agentless": true,
+          "notes": "Changed Block Tracking for incremental backups"
+        },
+        "automation": {
+          "api": "vSphere API",
+          "cli": "PowerCLI",
+          "terraform": true,
+          "ansible": true,
+          "notes": "Extensive automation ecosystem"
+        },
+        "security": {
+          "encryption": "VM Encryption, vSAN Encryption",
+          "secureboot": true,
+          "tpm": true,
+          "notes": "Comprehensive security features"
+        },
+        "monitoring": {
+          "builtin": "vCenter",
+          "metrics": "vRealize Operations",
+          "logging": "vRealize Log Insight",
+          "notes": "Deep performance analytics"
+        },
+        "scalability": {
+          "maxHostsPerCluster": 96,
+          "maxVmsPerHost": 1024,
+          "maxVmsPerCluster": 8000,
+          "notes": "Enterprise-scale proven"
+        },
+        "licensing": {
+          "model": "Per-core subscription (VCF)",
+          "editions": ["Standard", "Enterprise", "Enterprise Plus"],
+          "notes": "Moved to subscription model under Broadcom"
+        }
+      },
+      "pros": [
+        "Most mature and feature-rich platform",
+        "Best ecosystem and third-party support",
+        "Industry standard for enterprise",
+        "Excellent automation and API coverage",
+        "Advanced DRS and HA capabilities"
+      ],
+      "cons": [
+        "Highest licensing costs",
+        "Vendor lock-in with Broadcom",
+        "Complex licensing under new model",
+        "Requires vCenter for management"
+      ]
+    },
+    {
+      "id": "hyperv",
+      "name": "Microsoft Hyper-V",
+      "version": "2022",
+      "vendor": "Microsoft",
+      "features": {
+        "highAvailability": {
+          "supported": true,
+          "modes": ["Failover Clustering", "Replica"],
+          "failoverTime": "< 90s",
+          "notes": "Windows Server Failover Clustering"
+        },
+        "liveMigration": {
+          "supported": true,
+          "technology": "Live Migration",
+          "crossHost": true,
+          "crossDatacenter": true,
+          "notes": "Requires shared storage or Replica"
+        },
+        "storage": {
+          "types": ["VHDX", "SMB 3.0", "iSCSI", "FC", "Storage Spaces Direct"],
+          "thinProvisioning": true,
+          "deduplication": true,
+          "compression": false,
+          "snapshots": true,
+          "replication": "Hyper-V Replica",
+          "notes": "Storage Spaces Direct for HCI"
+        },
+        "networking": {
+          "virtualSwitch": "Hyper-V Virtual Switch",
+          "sdn": "Network Controller (SDN)",
+          "networkVirtualization": true,
+          "microSegmentation": true,
+          "notes": "Software Defined Networking built-in"
+        },
+        "backup": {
+          "api": "VSS (Volume Shadow Copy)",
+          "cbbt": true,
+          "agentless": true,
+          "notes": "Integration with Windows Backup"
+        },
+        "automation": {
+          "api": "WMI, WinRM",
+          "cli": "PowerShell",
+          "terraform": true,
+          "ansible": true,
+          "notes": "Native PowerShell integration"
+        },
+        "security": {
+          "encryption": "BitLocker, Shielded VMs",
+          "secureboot": true,
+          "tpm": true,
+          "notes": "Shielded VMs with TPM and encryption"
+        },
+        "monitoring": {
+          "builtin": "Hyper-V Manager",
+          "metrics": "System Center VMM",
+          "logging": "Event Viewer",
+          "notes": "System Center for advanced monitoring"
+        },
+        "scalability": {
+          "maxHostsPerCluster": 64,
+          "maxVmsPerHost": 1024,
+          "maxVmsPerCluster": 8000,
+          "notes": "Enterprise-ready scalability"
+        },
+        "licensing": {
+          "model": "Per-core (Windows Server)",
+          "editions": ["Standard (2 VMs)", "Datacenter (unlimited)"],
+          "notes": "16-core minimum per server"
+        }
+      },
+      "pros": [
+        "Included with Windows Server license",
+        "Native Windows integration",
+        "Lower cost than VMware for Windows workloads",
+        "Good performance for Windows VMs",
+        "Azure hybrid benefits"
+      ],
+      "cons": [
+        "Less mature than VMware",
+        "Requires Windows Server knowledge",
+        "Limited Linux guest support",
+        "Management tools less polished",
+        "Smaller ecosystem"
+      ]
+    },
+    {
+      "id": "proxmox",
+      "name": "Proxmox VE",
+      "version": "8.1",
+      "vendor": "Proxmox Server Solutions",
+      "features": {
+        "highAvailability": {
+          "supported": true,
+          "modes": ["HA Manager"],
+          "failoverTime": "< 120s",
+          "notes": "Corosync-based clustering"
+        },
+        "liveMigration": {
+          "supported": true,
+          "technology": "KVM Live Migration",
+          "crossHost": true,
+          "crossDatacenter": false,
+          "notes": "Requires shared storage"
+        },
+        "storage": {
+          "types": ["LVM", "ZFS", "Ceph", "NFS", "iSCSI", "GlusterFS"],
+          "thinProvisioning": true,
+          "deduplication": true,
+          "compression": true,
+          "snapshots": true,
+          "replication": "ZFS Replication",
+          "notes": "Built-in Ceph for distributed storage"
+        },
+        "networking": {
+          "virtualSwitch": "Linux Bridge / Open vSwitch",
+          "sdn": "Proxmox SDN",
+          "networkVirtualization": true,
+          "microSegmentation": false,
+          "notes": "SDN with VLANs and VXLANs"
+        },
+        "backup": {
+          "api": "Proxmox Backup Server",
+          "cbbt": true,
+          "agentless": true,
+          "notes": "Deduplicated incremental backups"
+        },
+        "automation": {
+          "api": "REST API",
+          "cli": "pvesh, qm, pct",
+          "terraform": true,
+          "ansible": true,
+          "notes": "Full REST API with CLI tools"
+        },
+        "security": {
+          "encryption": "LUKS, ZFS encryption",
+          "secureboot": true,
+          "tpm": true,
+          "notes": "TPM 2.0 support for Secure Boot"
+        },
+        "monitoring": {
+          "builtin": "Web UI",
+          "metrics": "Prometheus exporters",
+          "logging": "Syslog",
+          "notes": "Prometheus/Grafana integration"
+        },
+        "scalability": {
+          "maxHostsPerCluster": 32,
+          "maxVmsPerHost": 200,
+          "maxVmsPerCluster": 6400,
+          "notes": "Suitable for SMB to mid-enterprise"
+        },
+        "licensing": {
+          "model": "Subscription (optional)",
+          "editions": ["Community (free)", "Basic", "Standard", "Premium"],
+          "notes": "Free tier fully functional"
+        }
+      },
+      "pros": [
+        "Open source with free tier",
+        "KVM + LXC containers in one platform",
+        "Built-in Ceph for distributed storage",
+        "Modern web UI",
+        "Lower cost than commercial options",
+        "Active community"
+      ],
+      "cons": [
+        "Smaller ecosystem than VMware/Hyper-V",
+        "Less enterprise support",
+        "Limited advanced features",
+        "Requires Linux knowledge",
+        "No live cross-datacenter migration"
+      ]
+    },
+    {
+      "id": "xcpng",
+      "name": "XCP-ng",
+      "version": "8.2 LTS",
+      "vendor": "Vates (XenServer fork)",
+      "features": {
+        "highAvailability": {
+          "supported": true,
+          "modes": ["HA"],
+          "failoverTime": "< 90s",
+          "notes": "Pool-based HA with heartbeat"
+        },
+        "liveMigration": {
+          "supported": true,
+          "technology": "XenMotion",
+          "crossHost": true,
+          "crossDatacenter": true,
+          "notes": "Storage XenMotion for live storage migration"
+        },
+        "storage": {
+          "types": ["LVM", "ext4", "NFS", "iSCSI", "FC", "ZFS", "GlusterFS"],
+          "thinProvisioning": true,
+          "deduplication": false,
+          "compression": false,
+          "snapshots": true,
+          "replication": "Continuous Replication",
+          "notes": "Multiple SR types supported"
+        },
+        "networking": {
+          "virtualSwitch": "Open vSwitch",
+          "sdn": "SDN Controller",
+          "networkVirtualization": true,
+          "microSegmentation": false,
+          "notes": "Open vSwitch for advanced networking"
+        },
+        "backup": {
+          "api": "Xen API",
+          "cbbt": true,
+          "agentless": true,
+          "notes": "Xen Orchestra for backup management"
+        },
+        "automation": {
+          "api": "XAPI",
+          "cli": "xe",
+          "terraform": true,
+          "ansible": true,
+          "notes": "XAPI for programmatic control"
+        },
+        "security": {
+          "encryption": "LUKS",
+          "secureboot": true,
+          "tpm": false,
+          "notes": "Basic encryption support"
+        },
+        "monitoring": {
+          "builtin": "XCP-ng Center",
+          "metrics": "Xen Orchestra",
+          "logging": "Syslog",
+          "notes": "Xen Orchestra provides advanced monitoring"
+        },
+        "scalability": {
+          "maxHostsPerCluster": 64,
+          "maxVmsPerHost": 1000,
+          "maxVmsPerCluster": 64000,
+          "notes": "Enterprise scalability"
+        },
+        "licensing": {
+          "model": "Subscription (optional)",
+          "editions": ["Free", "Pro Support"],
+          "notes": "Fully open source"
+        }
+      },
+      "pros": [
+        "Fully open source (no paid tiers)",
+        "XenServer heritage (proven technology)",
+        "Good performance",
+        "Xen Orchestra management",
+        "No licensing costs",
+        "Strong API"
+      ],
+      "cons": [
+        "Smaller user base",
+        "Fewer integrations than VMware",
+        "Limited commercial support",
+        "Requires Xen knowledge",
+        "Less polished UI than alternatives"
+      ]
+    }
+  ],
+  "comparisonMatrix": {
+    "categories": [
+      {
+        "name": "Licensing",
+        "criteria": [
+          {
+            "name": "Cost",
+            "vmware": "Highest",
+            "hyperv": "Medium",
+            "proxmox": "Low (free tier)",
+            "xcpng": "Free"
+          },
+          {
+            "name": "Model",
+            "vmware": "Per-core subscription",
+            "hyperv": "Per-core perpetual",
+            "proxmox": "Optional subscription",
+            "xcpng": "Optional support"
+          }
+        ]
+      },
+      {
+        "name": "Performance",
+        "criteria": [
+          {
+            "name": "CPU Overhead",
+            "vmware": "~5%",
+            "hyperv": "~3%",
+            "proxmox": "~4%",
+            "xcpng": "~6%"
+          },
+          {
+            "name": "Memory Overhead",
+            "vmware": "Low",
+            "hyperv": "Very Low",
+            "proxmox": "Low",
+            "xcpng": "Medium"
+          }
+        ]
+      },
+      {
+        "name": "Management",
+        "criteria": [
+          {
+            "name": "UI Quality",
+            "vmware": "Excellent",
+            "hyperv": "Good",
+            "proxmox": "Good",
+            "xcpng": "Fair"
+          },
+          {
+            "name": "API Maturity",
+            "vmware": "Excellent",
+            "hyperv": "Good",
+            "proxmox": "Good",
+            "xcpng": "Good"
+          }
+        ]
+      },
+      {
+        "name": "Support",
+        "criteria": [
+          {
+            "name": "Vendor Support",
+            "vmware": "Enterprise",
+            "hyperv": "Enterprise",
+            "proxmox": "Community/Paid",
+            "xcpng": "Community/Paid"
+          },
+          {
+            "name": "Ecosystem",
+            "vmware": "Largest",
+            "hyperv": "Large",
+            "proxmox": "Growing",
+            "xcpng": "Small"
+          }
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "vmware": [
+      "Large enterprises with complex requirements",
+      "Multi-datacenter deployments",
+      "Mission-critical workloads",
+      "Organizations with existing VMware investments",
+      "Regulated industries requiring certification"
+    ],
+    "hyperv": [
+      "Windows-centric environments",
+      "Microsoft shop standardization",
+      "Azure hybrid cloud deployments",
+      "Cost-conscious enterprises",
+      "Organizations with Windows Server licensing"
+    ],
+    "proxmox": [
+      "Small to medium businesses",
+      "Mixed VM and container workloads",
+      "Cost-sensitive deployments",
+      "Linux-savvy IT teams",
+      "Homelab and development environments"
+    ],
+    "xcpng": [
+      "Open-source advocates",
+      "Organizations avoiding vendor lock-in",
+      "Budget-constrained projects",
+      "XenServer migrations",
+      "Service providers"
+    ]
+  },
+  "migrationPaths": {
+    "vmwareToHyperv": {
+      "difficulty": "Medium",
+      "tools": ["Microsoft Virtual Machine Converter", "5nine V2V"],
+      "considerations": [
+        "VMware Tools → Integration Services",
+        "VMDK → VHDX conversion",
+        "Network reconfiguration",
+        "Test thoroughly"
+      ]
+    },
+    "vmwareToProxmox": {
+      "difficulty": "Easy",
+      "tools": ["qemu-img", "Proxmox import wizard"],
+      "considerations": [
+        "VMDK/VMFS supported natively",
+        "VirtIO drivers for performance",
+        "Storage mapping"
+      ]
+    },
+    "vmwareToXcpng": {
+      "difficulty": "Medium",
+      "tools": ["XVA converter", "Xen Orchestra import"],
+      "considerations": [
+        "OVF/OVA export from VMware",
+        "XVA import to XCP-ng",
+        "PV drivers installation"
+      ]
+    },
+    "hypervToVmware": {
+      "difficulty": "Medium",
+      "tools": ["VMware vCenter Converter", "StarWind V2V"],
+      "considerations": [
+        "VHDX → VMDK conversion",
+        "Integration Services → VMware Tools",
+        "Generation 2 → UEFI settings"
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-28",
+    "source": "Vendor documentation and independent benchmarks",
+    "notes": "Feature comparison as of Q1 2026. Check vendor sites for latest capabilities."
+  }
+}

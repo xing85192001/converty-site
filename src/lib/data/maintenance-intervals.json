@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-01-24",
+  "source": "Swiss/European automotive maintenance standards (UPSA, manufacturer guidelines)",
+  "intervals": {
+    "oil_synthetic": {
+      "id": "oil_synthetic",
+      "name": "Oil & Filter (Synthetic)",
+      "intervalKm": 15000,
+      "intervalMonths": 12,
+      "priority": 1,
+      "category": "essential",
+      "description": "Engine oil and filter change with synthetic oil"
+    },
+    "oil_conventional": {
+      "id": "oil_conventional",
+      "name": "Oil & Filter (Conventional)",
+      "intervalKm": 10000,
+      "intervalMonths": 12,
+      "priority": 1,
+      "category": "essential",
+      "description": "Engine oil and filter change with conventional oil"
+    },
+    "air_filter": {
+      "id": "air_filter",
+      "name": "Air Filter",
+      "intervalKm": 25000,
+      "intervalMonths": 24,
+      "priority": 3,
+      "category": "filters",
+      "description": "Engine air filter replacement"
+    },
+    "cabin_filter": {
+      "id": "cabin_filter",
+      "name": "Cabin Air Filter",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "priority": 4,
+      "category": "filters",
+      "description": "Cabin air filter replacement"
+    },
+    "spark_plugs": {
+      "id": "spark_plugs",
+      "name": "Spark Plugs",
+      "intervalKm": 40000,
+      "intervalMonths": 48,
+      "priority": 3,
+      "category": "ignition",
+      "description": "Spark plug replacement"
+    },
+    "brake_fluid": {
+      "id": "brake_fluid",
+      "name": "Brake Fluid",
+      "intervalKm": 40000,
+      "intervalMonths": 24,
+      "priority": 2,
+      "category": "brakes",
+      "description": "Brake fluid flush and replacement"
+    },
+    "coolant": {
+      "id": "coolant",
+      "name": "Coolant",
+      "intervalKm": 100000,
+      "intervalMonths": 60,
+      "priority": 3,
+      "category": "fluids",
+      "description": "Coolant flush and replacement"
+    },
+    "transmission_fluid": {
+      "id": "transmission_fluid",
+      "name": "Transmission Fluid",
+      "intervalKm": 80000,
+      "intervalMonths": 72,
+      "priority": 3,
+      "category": "fluids",
+      "description": "Transmission fluid replacement (if serviceable)"
+    },
+    "timing_belt": {
+      "id": "timing_belt",
+      "name": "Timing Belt",
+      "intervalKm": 120000,
+      "intervalMonths": 96,
+      "priority": 1,
+      "category": "critical",
+      "description": "Timing belt replacement - CRITICAL service item"
+    },
+    "brake_pads_front": {
+      "id": "brake_pads_front",
+      "name": "Front Brake Pads",
+      "intervalKm": 40000,
+      "intervalMonths": null,
+      "priority": 2,
+      "category": "brakes",
+      "description": "Front brake pad replacement (wear-dependent)"
+    },
+    "brake_pads_rear": {
+      "id": "brake_pads_rear",
+      "name": "Rear Brake Pads",
+      "intervalKm": 60000,
+      "intervalMonths": null,
+      "priority": 2,
+      "category": "brakes",
+      "description": "Rear brake pad replacement (wear-dependent)"
+    },
+    "brake_discs_front": {
+      "id": "brake_discs_front",
+      "name": "Front Brake Discs",
+      "intervalKm": 80000,
+      "intervalMonths": null,
+      "priority": 2,
+      "category": "brakes",
+      "description": "Front brake disc replacement"
+    },
+    "tires": {
+      "id": "tires",
+      "name": "Tires",
+      "intervalKm": 50000,
+      "intervalMonths": 72,
+      "priority": 2,
+      "category": "tires",
+      "description": "Tire replacement (or 6 years age limit)"
+    },
+    "battery": {
+      "id": "battery",
+      "name": "Battery",
+      "intervalKm": null,
+      "intervalMonths": 60,
+      "priority": 3,
+      "category": "electrical",
+      "description": "Battery replacement (typically 4-5 years)"
+    },
+    "wiper_blades": {
+      "id": "wiper_blades",
+      "name": "Wiper Blades",
+      "intervalKm": null,
+      "intervalMonths": 12,
+      "priority": 4,
+      "category": "visibility",
+      "description": "Wiper blade replacement"
+    }
+  },
+  "swissMFK": {
+    "firstInspectionMonths": 36,
+    "subsequentInspectionMonths": 24,
+    "oldVehicleInspectionMonths": 12,
+    "oldVehicleAgeYears": 8,
+    "description": "Swiss mandatory technical inspection (Motorfahrzeugkontrolle)"
+  },
+  "categories": {
+    "essential": "Essential Services",
+    "filters": "Filter Replacement",
+    "fluids": "Fluid Services",
+    "brakes": "Brake System",
+    "ignition": "Ignition System",
+    "tires": "Tires & Wheels",
+    "electrical": "Electrical",
+    "visibility": "Visibility",
+    "critical": "Critical Components"
+  },
+  "notes": "Intervals based on Swiss/European standards. Always consult vehicle manual for manufacturer-specific recommendations."
+}

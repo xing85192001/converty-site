@@ -1,0 +1,14 @@
+# Cloudflare Pages headers (read from the output dir at deploy time).
+# Static Next.js export ignores next.config.ts `headers()`, so we declare
+# them here instead. This file is copied from /public into /out on build.
+
+# Keep the service worker uncached so updates always propagate.
+/sw-v8.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Baseline security headers for every response.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=()
