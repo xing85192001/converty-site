@@ -7053,6 +7053,1289 @@
             "text": "Antes de elegir, compara el costo de tu deuda con lo que podrías ganar invirtiendo con el [Calculadora de retorno de la inversión](/finance/roi). A veces vale la pena invertir haciendo pagos mínimos."
           }
         ]
+      },
+      "equal-installment-vs-principal": {
+        "title": "Cuota fija vs amortización constante: qué hipoteca conviene más",
+        "excerpt": "Mismo importe, mismo tipo de interés y, sin embargo, la diferencia en intereses totales puede ser enorme. Así se elige bien.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Al contratar una hipoteca, el banco suele pedirle que elija entre cuota fija y amortización constante. La mensualidad, los intereses totales y el esfuerzo inicial cambian mucho, pero mucha gente firma sin entender la diferencia."
+          },
+          {
+            "type": "h2",
+            "text": "La diferencia esencial"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Cuota fija: mensualidad constante. Al principio predomina el interés; después, el capital.",
+              "Amortización constante: capital devuelto constante cada mes. El interés se calcula sobre el saldo vivo, así que la cuota baja mes a mes."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Con nuestra [calculadora de préstamos](/finance/loan) se ve claro: para 1.000.000 a 30 años al 4 %, la cuota fija ronda los 4.774 al mes. La amortización constante arranca cerca de 6.111 y baja unos 11 cada mes."
+          },
+          {
+            "type": "h2",
+            "text": "Cuánto intereses hay en juego"
+          },
+          {
+            "type": "p",
+            "text": "En ese mismo ejemplo, la cuota fija acumula unos 719.000 de intereses frente a unos 602.000 con amortización constante: una diferencia de unos 117.000. El motivo es la velocidad de amortización: reducir antes el saldo reduce antes la base sobre la que se calculan los intereses."
+          },
+          {
+            "type": "h2",
+            "text": "¿Es siempre mejor la amortización constante?"
+          },
+          {
+            "type": "p",
+            "text": "No necesariamente. Sus cuotas iniciales son unos un 28 % más altas, una presión real para un hogar que acaba de comprar. Si esa cuota extra hunde su calidad de vida o le empuja a la tarjeta de crédito, el ahorro en intereses no compensa."
+          },
+          {
+            "type": "callout",
+            "text": "Una regla sencilla: si puede asumir cómodamente las cuotas iniciales más altas, elija amortización constante. Si no, elija cuota fija y destine el ahorro a amortizar anticipadamente."
+          },
+          {
+            "type": "h2",
+            "text": "¿Y si piensa amortizar antes?"
+          },
+          {
+            "type": "p",
+            "text": "Si prevé liquidar el préstamo en 5 a 10 años, la diferencia entre ambos métodos se reduce mucho, porque gran parte de los intereses nunca llega a devengarse. Fíjese más bien en la comisión por amortización anticipada y en acortar el plazo en lugar de bajar la cuota. Compare escenarios con la [calculadora de hipotecas](/finance/mortgage)."
+          }
+        ]
+      },
+      "credit-card-minimum-payment-trap": {
+        "title": "El verdadero coste de pagar solo el mínimo de la tarjeta",
+        "excerpt": "Pagar el mínimo parece llevadero, pero es una de las formas más caras de financiarse. Una deuda de unos pocos miles puede tardar más de diez años en saldarse.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "En el extracto, el mínimo suele ser solo el 5 % o el 10 % del saldo: parece un colchón amable. En realidad es uno de los mecanismos más rentables para el emisor: el resto devenga intereses a diario y el periodo sin intereses suele desaparecer."
+          },
+          {
+            "type": "h2",
+            "text": "Un ejemplo concreto"
+          },
+          {
+            "type": "p",
+            "text": "Supongamos que debe 10.000 al 18 % TAE (aprox. 0,05 % diario) con un mínimo del 10 %. El primer mes paga 1.000; los 9.000 restantes siguen generando intereses. Al mes siguiente el mínimo baja a 900, así que paga menos mientras los intereses siguen corriendo."
+          },
+          {
+            "type": "p",
+            "text": "Calcúlelo con la [calculadora de tarjeta de crédito](/finance/credit-card): pagando solo el mínimo, saldar esos 10.000 puede llevar más de 14 años y costar más de 8.000 en intereses."
+          },
+          {
+            "type": "h2",
+            "text": "Por qué el mínimo es tan caro"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Desaparece el periodo sin intereses: si no paga el total, los intereses se devengan desde la fecha de cada compra, no tras 20–50 días de gracia.",
+              "Interés diario con capitalización mensual: los intereses se suman al saldo y vuelven a generar intereses.",
+              "El mínimo sigue bajando: al caer el saldo, cae su pago, y el capital apenas se reduce."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Tres alternativas más baratas"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Pago total: la única opción sin intereses y debería ser su opción por defecto.",
+              "Pago a plazos: tiene comisión, pero suele salir más barato que el interés rotativo, con plazo fijo y previsible.",
+              "Traspaso de saldo o préstamo: para saldos grandes, compare el coste anual de un [préstamo personal](/finance/personal-loan)."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "El mínimo es un recurso de emergencia, nunca una costumbre. Incluso 100 más al mes recortan años."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo salir rápido"
+          },
+          {
+            "type": "p",
+            "text": "Deje de usar la tarjeta y fije el orden con la [calculadora bola de nieve vs avalancha](/finance/debt-snowball-avalanche): el método avalancha (primero el interés más alto) es el más barato; el de bola de nieve (primero el saldo menor) es el más fácil de mantener."
+          }
+        ]
+      },
+      "emergency-fund-how-many-months": {
+        "title": "¿Cuántos meses de gastos debe cubrir su fondo de emergencia?",
+        "excerpt": "Lo habitual es decir «de tres a seis meses», pero esa horquilla esconde la verdadera pregunta: su estabilidad laboral y su situación familiar fijan la cifra.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Casi todos los libros de finanzas personales recomiendan guardar de tres a seis meses de gastos. El rango es razonable, pero pasa por alto lo esencial: si necesita tres o seis meses depende de su exposición al riesgo, no de una media."
+          },
+          {
+            "type": "h2",
+            "text": "Qué determina la cifra"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Estabilidad de ingresos: los funcionarios y asalariados fijos apenas varían; los autónomos, los comerciales a comisión y los emprendedores, mucho.",
+              "Mercado laboral: si su sector contrata y podría reubicarse rápido, puede ahorrar menos; si se contrae, guarde más.",
+              "Estructura del hogar: dos ingresos sin hijos es el riesgo menor; un solo ingreso con hijos o dependientes, mayor.",
+              "Gastos fijos: cuanto más pese en hipoteca, coche y seguros –partidas que no se pueden pausar–, mayor debe ser el colchón.",
+              "Redes existentes: sanidad pública, prestación por desempleo y seguros privados absorben parte del riesgo."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Una regla práctica"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "3 meses: dos ingresos, sin hijos, sector sano, seguridad social estable.",
+              "6 meses: hogar con un ingreso, hipoteca, sector medio.",
+              "9–12 meses: autónomo, emprendedor, familia monoparental, sector débil o ingresos muy dependientes de comisiones."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Cómo calcular su importe"
+          },
+          {
+            "type": "p",
+            "text": "El fondo cubre gastos esenciales, no todo su nivel de vida. Sume alquiler o hipoteca, comida, suministros, transporte, seguros y los pagos mínimos de deuda para obtener su base mensual y multiplíquela por los meses objetivo. Con la [calculadora de objetivo de ahorro](/finance/savings-goal) obtiene la cuota mensual necesaria."
+          },
+          {
+            "type": "callout",
+            "text": "Un fondo de emergencia se optimiza para la disponibilidad, no para la rentabilidad: guárdelo en cuenta corriente o fondo monetario, no en plazos fijos ni en activos volátiles."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo usarlo de verdad"
+          },
+          {
+            "type": "p",
+            "text": "Solo cuentan los imprevistos reales: pérdida de empleo, enfermedad grave, reparaciones mayores inevitables. Los gastos planificados –coche nuevo, vacaciones, reforma– se ahorran aparte y nunca deben mermar el colchón. Si lo usa, reponerlo pasa a ser la prioridad número uno."
+          }
+        ]
+      },
+      "inflation-purchasing-power": {
+        "title": "¿Cuánto valdrán sus 100 dentro de 10 años? Inflación y poder adquisitivo",
+        "excerpt": "La inflación no reduce su dinero: reduce lo que puede comprar con él. Entender esa erosión es la primera lección de por qué hay que invertir.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "El efectivo en un cajón no pierde su número, pero dentro de diez años compra menos. Esa es la erosión del poder adquisitivo por la inflación: el riesgo más ignorado y a la vez más seguro de las finanzas personales."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo se calcula el poder adquisitivo"
+          },
+          {
+            "type": "p",
+            "text": "La fórmula es sencilla: poder adquisitivo futuro = importe actual ÷ (1 + inflación) ^ años. Con inflación del 3 %, 100 hoy equivalen a unos 74 dentro de diez años y a unos 55 dentro de veinte."
+          },
+          {
+            "type": "p",
+            "text": "La [calculadora de inflación](/finance/inflation) muestra la erosión para distintas tasas y plazos."
+          },
+          {
+            "type": "h2",
+            "text": "Por qué esto obliga a invertir"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los tipos de las cuentas de ahorro suelen quedar por debajo de la inflación: la rentabilidad real es negativa.",
+              "Aunque su saldo crezca en términos nominales, si la rentabilidad no supera la inflación su poder real sigue cayendo.",
+              "Juzgue una inversión por su rentabilidad real: rentabilidad nominal menos inflación."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Una inflación del 3 % suena suave, pero implica que el poder adquisitivo se reduce a la mitad en unos 24 años. Una cuenta simple que casi nadie hace."
+          },
+          {
+            "type": "p",
+            "text": "Dicho esto, el miedo a la inflación no justifica especular a ciegas. Construya primero su [fondo de emergencia](/blog/emergency-fund-how-many-months), destine el dinero a largo plazo a activos con posibilidades reales de batir la inflación y proyecte el resultado con la [calculadora de interés compuesto](/finance/compound-interest)."
+          },
+          {
+            "type": "h2",
+            "text": "Su salario también debe seguirla"
+          },
+          {
+            "type": "p",
+            "text": "Igual de ignorado es el lado de los ingresos. Si su sueldo lleva años sin moverse, su ingreso real no deja de encogerse. Al valorar un empleo a largo plazo importa más si las subidas superan la inflación que la cifra actual."
+          }
+        ]
+      },
+      "apr-vs-apy-interest-rate-basics": {
+        "title": "Tipo nominal, tipo real y TAE: que no le engañen las cifras",
+        "excerpt": "¿Es lo mismo «12 % anual» que «1 % mensual»? En cuanto entra la capitalización, no — y la diferencia puede salir cara.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La publicidad de préstamos adora el «0,5 % mensual». Los depósitos adoran el «4 % anualizado». Ambas cifras parecen razonables, pero sin entender cómo se calcula el interés subestimará el coste real y sobreestimará la rentabilidad real."
+          },
+          {
+            "type": "h2",
+            "text": "Tres conceptos que debe separar"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Tipo nominal: el interés anual indicado en el contrato, sin considerar la frecuencia de capitalización.",
+              "Tipo por periodo: el interés de cada periodo de liquidación; tipo mensual = tipo nominal anual ÷ 12.",
+              "TAE (tipo anual equivalente): el coste o rendimiento anual real una vez incluida la capitalización."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Cómo cambia todo según la frecuencia"
+          },
+          {
+            "type": "p",
+            "text": "Un 12 % nominal con capitalización anual da una TAE del 12 %. Con capitalización mensual, el tipo por periodo es 1 % y el coste anual real es (1 + 1 %) ^ 12 − 1 ≈ 12,68 %. La capitalización diaria lo eleva aún más."
+          },
+          {
+            "type": "p",
+            "text": "La diferencia parece pequeña, pero con importes grandes y a décadas es dinero real. Antes de comparar, unifique siempre la base de cálculo."
+          },
+          {
+            "type": "callout",
+            "text": "Una frase para recordar: compare préstamos por la TAE y depósitos por la rentabilidad anual equivalente. El tipo nominal solo es comparable si la frecuencia coincide."
+          },
+          {
+            "type": "h2",
+            "text": "Pasos prácticos"
+          },
+          {
+            "type": "p",
+            "text": "Ante una oferta, pregunte tres cosas: cuál es el tipo nominal anual, cada cuánto se liquida y qué comisiones hay. Muchos productos de «tipo bajo» esconden su coste real en las comisiones. Introduzca distintos parámetros en la [calculadora de préstamos](/finance/loan) y compare cuota y coste total."
+          },
+          {
+            "type": "p",
+            "text": "Para ahorro e inversión, use la [calculadora de interés compuesto](/finance/compound-interest) para estimar la rentabilidad real según la frecuencia y no dejarse guiar por el eslogan."
+          }
+        ]
+      },
+      "rent-vs-buy-decision": {
+        "title": "¿Alquilar o comprar? Calcule los números antes de decidir",
+        "excerpt": "«Comprar siempre sale mejor que alquilar» es un mantra extendido, pero la respuesta real depende del ratio precio/alquiler, de cuánto tiempo se quedará y de su ciudad.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Pocas decisiones financieras son tan emocionales como alquilar o comprar. Los mayores dicen que alquilar es «pagar la hipoteca del casero»; las inmobiliarias, que «quien compra pronto, gana pronto». Pero esta cuestión se resuelve con números, no con eslóganes."
+          },
+          {
+            "type": "h2",
+            "text": "Dos métricas clave"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ratio precio/alquiler: precio de la vivienda ÷ alquiler anual. Cuanto más bajo, mejor pinta tiene comprar. Como regla: por debajo de 15 favorece la compra; por encima de 25, el alquiler.",
+              "Horizonte de permanencia: cuántos años seguirá en la ciudad. Los costes de transacción –impuestos, agencia, reforma– necesitan años para amortizarse."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "El coste real de comprar va más allá de la cuota"
+          },
+          {
+            "type": "p",
+            "text": "Muchos comparan solo «cuota vs alquiler», y eso está incompleto. Comprar añade el coste de oportunidad de la entrada, comunidad, reparaciones, impuestos y los futuros gastos de venta. Alquilar cuesta la renta más el coste de oportunidad de la fianza."
+          },
+          {
+            "type": "p",
+            "text": "Calcule cuota e intereses con la [calculadora de hipotecas](/finance/mortgage) y estime con la [calculadora de ROI](/finance/roi) qué podría rendir la entrada si se invirtiera; compare ambos resultados."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo tiene más sentido alquilar"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Va a estar menos de 3 a 5 años en la ciudad.",
+              "Su empleo o sus ingresos son inestables y necesita flexibilidad.",
+              "El ratio precio/alquiler local es claramente alto.",
+              "No puede pagar la entrada sin vaciar su fondo de emergencia."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Recuerde: comprar no es invertir, es consumo más ahorro forzoso. Le da vivienda y disciplina, pero pésima liquidez y altos costes de transacción. Esperar rentabilidades de inversión suele decepcionar."
+          },
+          {
+            "type": "h2",
+            "text": "Una vía intermedia"
+          },
+          {
+            "type": "p",
+            "text": "Alquilar primero no es ninguna deshonra. Reunir la entrada, conocer la ciudad y el barrio y consolidar su trabajo es más sensato que comprar a presión. Cuando esté seguro de echar raíces, haga números con la [calculadora de hipotecas](/finance/mortgage)."
+          }
+        ]
+      },
+      "bmi-limitations-better-metrics": {
+        "title": "El IMC no basta: por qué también importan la grasa corporal y la cintura",
+        "excerpt": "El IMC resume a todo el mundo con una fórmula de peso y altura, así que falla con personas musculadas y mayores. Conozca sus límites para usarlo bien.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "El IMC es una herramienta de cribado, no de diagnóstico. Su valor es que resulta barato, rápido y útil para grandes poblaciones; su precio es que es burdo a nivel individual."
+          },
+          {
+            "type": "h2",
+            "text": "Tres puntos ciegos principales"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "No distingue músculo de grasa: dos personas de 80 kg –un culturista y un oficinista sedentario– pueden tener el mismo IMC con cuerpos totalmente distintos.",
+              "Ignora la distribución de la grasa: la grasa visceral abdominal es mucho más peligrosa que la subcutánea de brazos y piernas, y el IMC no lo capta.",
+              "Pasa por alto edad y sexo: con el mismo IMC, las personas mayores suelen tener más grasa que los jóvenes, y las mujeres más que los hombres por naturaleza."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Dos métricas que lo complementan"
+          },
+          {
+            "type": "p",
+            "text": "Primero, el porcentaje de grasa corporal. Refleja directamente cuánto de su cuerpo es grasa, una señal de salud mucho mejor que el peso. Estímelo con la [calculadora de grasa corporal](/health/body-fat). Las básculas domésticas tienen error, pero la tendencia importa más que una lectura aislada."
+          },
+          {
+            "type": "p",
+            "text": "Segundo, el perímetro de cintura. Refleja la acumulación abdominal y es una señal de alerta clave del síndrome metabólico. En general, el riesgo sube claramente por encima de unos 90 cm en hombres y 80 cm en mujeres (guías de China)."
+          },
+          {
+            "type": "callout",
+            "text": "Trate el IMC como punto de partida, no como conclusión. Si marca sobrepeso pero la grasa corporal y la cintura están bien, seguramente sea músculo. Si el IMC es normal pero la cintura es amplia, no se confíe."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo usarlo correctamente"
+          },
+          {
+            "type": "p",
+            "text": "Obtenga una primera referencia con la [calculadora de IMC](/health/bmi) y combínela con la [grasa corporal](/health/body-fat) y la cintura. Más importante aún: observe la tendencia, porque lo que sube o baja en seis meses dice mucho más que una medición única."
+          },
+          {
+            "type": "p",
+            "text": "Una advertencia: toda calculadora en línea es una estimación. Si sus cifras son anómalas o tiene una enfermedad de base, priorice la consulta médica y las pruebas clínicas."
+          }
+        ]
+      },
+      "bmr-tdee-how-many-calories": {
+        "title": "TMB y TDEE: ¿cuántas calorías debe comer realmente al día?",
+        "excerpt": "Perder grasa es cuestión de déficit calórico, pero déficit respecto a lo que realmente gasta. La TMB y el TDEE responden a esa pregunta.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "No hay una respuesta universal a «¿cuánto debo comer?»: depende de su cuerpo y de su actividad. La TMB y el TDEE son los dos conceptos que convierten esa pregunta en números."
+          },
+          {
+            "type": "h2",
+            "text": "TMB: lo que quema estando tumbado"
+          },
+          {
+            "type": "p",
+            "text": "La tasa metabólica basal es la energía mínima que su cuerpo necesita en reposo absoluto, en ayunas y a temperatura neutra: supone el 60–75 % del gasto diario. Estímela con la [calculadora de TMB](/health/bmr-calculator), basada en la ecuación de Mifflin-St Jeor."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: su gasto real contando la actividad"
+          },
+          {
+            "type": "p",
+            "text": "El gasto energético total diario multiplica la TMB por un factor de actividad: aprox. 1,2 sedentario; 1,375 ligero; 1,55 moderado; 1,725 intenso. La [calculadora de TDEE](/health/tdee-calculator) se lo da directamente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sedentario (oficina, casi sin ejercicio): TMB × 1,2",
+              "Ligero (1–3 días de entrenamiento/semana): TMB × 1,375",
+              "Moderado (3–5 días/semana): TMB × 1,55",
+              "Intenso (6–7 días/semana): TMB × 1,725"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Cómo planificar su ingesta"
+          },
+          {
+            "type": "p",
+            "text": "Para perder grasa: reste 300–500 kcal al TDEE al día, lo que en teoría supone unos 0,3–0,5 kg por semana. Para ganar músculo: sume 200–400 kcal al TDEE con proteína suficiente."
+          },
+          {
+            "type": "callout",
+            "text": "No baje de la TMB de forma prolongada. La restricción severa ralentiza el metabolismo y degrada músculo: perder grasa se vuelve más difícil y el rebote, muy probable."
+          },
+          {
+            "type": "p",
+            "text": "Use la [calculadora de macronutrientes](/health/macro-calculator) para repartir proteína, carbohidratos y grasa: más sostenible y saludable que perseguir solo calorías."
+          },
+          {
+            "type": "h2",
+            "text": "La calculadora es un punto de partida"
+          },
+          {
+            "type": "p",
+            "text": "Las ecuaciones tienen error individual, a veces en torno al 10 %. El método práctico: arranque con la estimación dos semanas, observe la báscula y ajuste. Si el peso no se mueve, recorte otras 100–200 kcal."
+          }
+        ]
+      },
+      "daily-water-intake-guide": {
+        "title": "¿Cuánta agua beber al día? Calcule por peso, no por «8 vasos»",
+        "excerpt": "«Ocho vasos al día» es fácil de recordar, pero una persona de 50 kg no necesita lo mismo que una de 90 kg. El peso y la actividad mandan.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "«Beba ocho vasos (unos 2 litros) al día» está por todas partes, pero es una pauta redondeada y burda que ignora las variables clave: peso corporal, clima y actividad."
+          },
+          {
+            "type": "h2",
+            "text": "Calcule según su peso"
+          },
+          {
+            "type": "p",
+            "text": "Una estimación habitual: agua diaria en ml = peso en kg × 30 a 35. Un adulto de 60 kg necesita unos 1.800–2.100 ml al día. La [calculadora de ingesta de agua](/health/water-intake) le da una cifra personalizada."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo necesita más"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ejercicio y sudor: unos 500–700 ml extra por hora de actividad.",
+              "Calor o humedad: las pérdidas por sudor suben mucho y la ingesta debe seguirlas.",
+              "Altitud o cabinas secas: se pierde más agua al respirar y por la piel.",
+              "Fiebre, diarrea o vómitos: las pérdidas se aceleran; reponga líquidos y electrolitos cuanto antes.",
+              "Embarazo y lactancia: las necesidades suben claramente – confirme la cantidad con su médico."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "El agua no es solo agua del grifo"
+          },
+          {
+            "type": "p",
+            "text": "Muchos creen que solo cuenta el agua pura. En realidad también cuenta la comida –frutas y verduras suelen superar el 90 % de agua– además de sopas, leche, té y café. El leve efecto diurético del café compensa una parte, pero no provoca pérdida neta."
+          },
+          {
+            "type": "callout",
+            "text": "El indicador más sencillo es el color de la orina: amarillo claro significa buena hidratación; amarillo oscuro, que beba más; totalmente incolora, posible exceso."
+          },
+          {
+            "type": "h2",
+            "text": "Más no siempre es mejor"
+          },
+          {
+            "type": "p",
+            "text": "El agua no es «cuanta más, mejor». Beber cantidades enormes en poco tiempo puede provocar hiponatremia, poco frecuente pero potencialmente mortal. Quienes tienen insuficiencia renal o cardíaca deben seguir la pauta médica, no una fórmula genérica."
+          }
+        ]
+      },
+      "waist-circumference-health-risk": {
+        "title": "Perímetro de cintura: predice el riesgo mejor que el peso",
+        "excerpt": "Importa más dónde se acumula la grasa que cuánta hay. La grasa abdominal se asocia directamente a enfermedad cardiovascular y diabetes, y la cintura es la forma más simple de medirla.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dos personas pueden tener el mismo peso y el mismo IMC y riesgos muy distintos: la diferencia está en dónde se acumula la grasa. La grasa visceral abdominal libera señales inflamatorias y altera el metabolismo, y resulta mucho más peligrosa que la grasa subcutánea de brazos y piernas."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo medir correctamente"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Momento: por la mañana, en ayunas, tras vaciar la vejiga, de pie y respirando con normalidad.",
+              "Posición: un método habitual es el punto medio entre el borde inferior de las costillas y la cresta ilíaca (normalmente a la altura del ombligo); la OMS sugiere el punto medio entre el borde costal y la cresta ilíaca.",
+              "Técnica: la cinta se apoya en la piel sin comprimir; lea al final de una espiración normal, con precisión de 0,1 cm.",
+              "Precauciones: no meta el abdomen y no mida justo después de una comida copiosa."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Umbrales de referencia"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Hombres: ≥ 90 cm indica obesidad abdominal (central).",
+              "Mujeres: ≥ 80 cm indica obesidad abdominal.",
+              "Por encima de esas cifras sube de forma clara el riesgo de diabetes tipo 2, hipertensión y enfermedad cardiovascular."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Son umbrales de uso común; países y organismos varían algo. Combine la lectura con la [calculadora de IMC](/health/bmi): juntos dan una imagen más fiable."
+          },
+          {
+            "type": "callout",
+            "text": "La ventaja de la cintura: sin aparatos, en segundos y a menudo con mejor capacidad predictiva que el IMC."
+          },
+          {
+            "type": "h2",
+            "text": "Qué hacer si su cintura es elevada"
+          },
+          {
+            "type": "p",
+            "text": "La buena noticia es que la grasa visceral responde bien a los cambios de hábitos. Reducir carbohidratos refinados y azúcares añadidos, añadir ejercicio aeróbico, cuidar el sueño y beber menos alcohol reduce la grasa abdominal de forma eficaz. Tenga en cuenta que la reducción localizada no existe: el cuerpo moviliza la grasa de forma global y el abdomen suele cambiar primero."
+          },
+          {
+            "type": "p",
+            "text": "Seguirlo con la [calculadora de grasa corporal](/health/body-fat) y con ratios como los de [tipo corporal](/health/body-type) orienta más que mirar solo la báscula."
+          }
+        ]
+      },
+      "percentage-increase-decrease-guide": {
+        "title": "Subidas y bajadas porcentuales: cuidado con la base",
+        "excerpt": "Un +50 % seguido de un −50 % no le devuelve al punto de partida. Entender la trampa de la base evita muchos errores al invertir y al comprar.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Los porcentajes son de lo que peor se calcula en el día a día, y casi siempre por el mismo motivo: equivocarse con la base."
+          },
+          {
+            "type": "h2",
+            "text": "Fórmulas básicas"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Variación = (nuevo − original) ÷ original × 100 %",
+              "Nuevo = original × (1 + aumento%)",
+              "Original = nuevo ÷ (1 + aumento%)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La clave está en la segunda línea: un porcentaje es siempre relativo al valor original. Compruébelo con la [calculadora de porcentajes](/math/percentage-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "La trampa clásica: ganancias y pérdidas no son simétricas"
+          },
+          {
+            "type": "p",
+            "text": "Si una acción pasa de 100 a 150, gana un 50 %. Si luego cae de 150 a 100, la caída es (100 − 150) ÷ 150 = −33,3 %, no −50 %. El mismo movimiento de 50, pero la base pasó de 100 a 150."
+          },
+          {
+            "type": "callout",
+            "text": "Un +50 % seguido de un −50 % deja 100 × 1,5 × 0,5 = 75: una pérdida del 25 %. Ese es el precio de la asimetría."
+          },
+          {
+            "type": "h2",
+            "text": "Otra trampa: puntos porcentuales frente a porcentaje"
+          },
+          {
+            "type": "p",
+            "text": "Si un tipo sube del 4 % al 5 %, puede decirse que subió «1 punto porcentual» o que subió «un 25 %» –(5 − 4) ÷ 4–. Ambas son correctas pero significan cosas distintas, y en los medios se mezclan para exagerar. Compruebe siempre cuál se usa."
+          },
+          {
+            "type": "h2",
+            "text": "Casos prácticos"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Descuentos: un 20 % de descuento significa pagar el 80 % del precio original.",
+              "Propina: un 15 % sobre una cuenta de 200 resulta en 200 × 1,15 = 230.",
+              "Precios con impuestos: con un 5 % de IVA, el precio sin impuestos es el precio con impuestos ÷ 1,05, no multiplicado por 0,95.",
+              "Rentabilidad: (precio de venta − precio de compra + dividendos) ÷ precio de compra × 100 %."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Para más casos de impuestos y descuentos, use la [calculadora de descuentos](/finance/discount) y la [calculadora de porcentajes](/math/percentage-calculator)."
+          }
+        ]
+      },
+      "common-unit-conversion-mistakes": {
+        "title": "Dónde fallan casi siempre las conversiones de unidades",
+        "excerpt": "¿Pies y pulgadas a centímetros? ¿Libras a kilos? ¿Cuántos galones hay? Casi todos los errores no son de cálculo, sino de definición.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Convertir unidades parece mera multiplicación y división, pero la inmensa mayoría de los errores no son fallos aritméticos: vienen de usar el factor equivocado o de confundir unidades con el mismo nombre."
+          },
+          {
+            "type": "h2",
+            "text": "Trampa 1: pies y pulgadas no son decimales"
+          },
+          {
+            "type": "p",
+            "text": "5 pies 8 pulgadas se lee a menudo como 5,8 pies. Lo correcto es dividir las pulgadas entre 12 y sumar: 5 + 8 ÷ 12 = 5,667 pies, y multiplicar por 30,48 para obtener unos 172,7 cm. Un conversor evita el cálculo manual."
+          },
+          {
+            "type": "h2",
+            "text": "Trampa 2: hay tres galones"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Galón estadounidense ≈ 3,785 L",
+              "Galón imperial (británico) ≈ 4,546 L",
+              "Galón seco estadounidense ≈ 4,405 L"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ante la palabra «galón» determine primero si es estadounidense o imperial; de lo contrario el error puede llegar al 20 %."
+          },
+          {
+            "type": "h2",
+            "text": "Trampa 3: la onza es peso y volumen"
+          },
+          {
+            "type": "p",
+            "text": "La onza líquida (fl oz) es volumen: 1 fl oz estadounidense ≈ 29,57 mL. La onza avoirdupois (oz) es peso: 1 oz ≈ 28,35 g. Los valores son parecidos, pero el significado es distinto y no son intercambiables entre sustancias."
+          },
+          {
+            "type": "h2",
+            "text": "Trampa 4: Fahrenheit y Celsius tienen ceros distintos"
+          },
+          {
+            "type": "p",
+            "text": "La temperatura no se convierte por proporción simple porque ambas escalas tienen ceros diferentes: °C = (°F − 32) × 5/9 y, a la inversa, °F = °C × 9/5 + 32. El error típico es multiplicar y olvidar sumar o restar 32."
+          },
+          {
+            "type": "callout",
+            "text": "Ante una unidad desconocida confirme tres cosas: a qué sistema pertenece, si es peso o volumen, y si existen variantes con el mismo nombre. Con eso evita la mayoría de los errores."
+          },
+          {
+            "type": "h2",
+            "text": "Consejo práctico"
+          },
+          {
+            "type": "p",
+            "text": "Use una herramienta en lugar de calcular mentalmente. Nuestro conversor cubre longitud, peso, volumen y temperatura, y para cocinar hay un [conversor de unidades de cocina](/cooking/cooking-units) más ajustado a las cantidades reales de las recetas."
+          }
+        ]
+      },
+      "recipe-scaling-guide": {
+        "title": "Cómo escalar una receta de 8 a 3 raciones",
+        "excerpt": "Los ingredientes escalan linealmente, pero no así la sal, las especias ni el tiempo de horno. Conozca las excepciones y el plato seguirá sabiendo bien.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Para pasar una receta de 8 a 3 raciones, mucha gente multiplica todo por 3/8. Casi siempre funciona, pero con algunos ingredientes el resultado es desastroso."
+          },
+          {
+            "type": "h2",
+            "text": "Qué sí escala linealmente"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ingredientes principales: carne, pescado, verduras, arroz y pasta escalan directamente.",
+              "Líquidos: agua, caldo y leche escalan directamente.",
+              "Azúcar y aceite: normalmente se pueden ajustar de forma proporcional."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Calcule el factor base: raciones deseadas ÷ raciones originales. 3 ÷ 8 = 0,375; multiplique cada elemento por 0,375. El [escalador de recetas](/cooking/recipe-scaler) hace los cálculos."
+          },
+          {
+            "type": "h2",
+            "text": "Qué no escala de forma simple"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sal y condimentos fuertes: el gusto no es lineal, así que escale al 70–80 % primero y después pruebe.",
+              "Especias y guindilla: tampoco son lineales; empiece corto, siempre podrá añadir después.",
+              "Levaduras químicas (polvo de hornear, bicarbonato): dependen de la geometría del molde y de la reacción; escalados extremos fallan, mejor cocinar por tandas.",
+              "Vino y vinagre: su sabor es potente, escale al 50–75 % y ajuste."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Una regla práctica: escale todo con el factor, pero empiece la sal, la guindilla y las especias al 70 % y pruebe antes de servir. Mejor añadir al final que pasarse al principio."
+          },
+          {
+            "type": "h2",
+            "text": "Tiempos y tamaño del molde"
+          },
+          {
+            "type": "p",
+            "text": "Con menos cantidad el horneado suele acortarse, pero no proporcionalmente: compruebe tras unos dos tercios del tiempo original y alargue si hace falta. Con menos líquido la evaporación es más rápida y los guisos se reducen antes."
+          },
+          {
+            "type": "p",
+            "text": "Ajuste el molde al volumen: la misma cantidad se desborda en un molde pequeño y se quema en uno grande. Tanto la profundidad como el diámetro influyen en el calor."
+          },
+          {
+            "type": "h2",
+            "text": "Atajo para las medidas"
+          },
+          {
+            "type": "p",
+            "text": "Con medidas incómodas como «1/3 de taza» o «2 cucharadas», no se complique: 1 taza = 16 cucharadas = 48 cucharaditas. Pase todo a la unidad menor, aplique el factor y vuelva a convertir. Lo más rápido es el [conversor de unidades de cocina](/cooking/cooking-units)."
+          }
+        ]
+      },
+      "cooking-measurement-standards": {
+        "title": "¿Cuánto pesa una taza de harina? Por qué repostería necesita báscula",
+        "excerpt": "La taza de harina de unos pesa 120 g y la de otros, 160 g. Esa incertidumbre del volumen es una causa clásica de fracasos en repostería.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Si alguna vez siguió una receta y salió un bizcocho duro como una piedra, probablemente la receta no fallaba: la duda era cuánto era realmente «una taza»."
+          },
+          {
+            "type": "h2",
+            "text": "De dónde viene el error del volumen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La forma de llenarla: la harina sacada directamente de la bolsa es más densa que la tamizada y nivelada, a menudo más de un 20 %.",
+              "El estado del ingrediente: que la harina esté tamizada, el azúcar compactado o la mantequilla blanda cambia el volumen.",
+              "Tazas distintas: una «taza» no es universal: unos 240 mL en EE. UU., unos 200 mL en Japón."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Conversiones de referencia"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Harina de trigo: 1 taza ≈ 120–130 g (tamizada y nivelada)",
+              "Azúcar granulada: 1 taza ≈ 200 g",
+              "Mantequilla: 1 taza ≈ 227 g; 1 cucharada ≈ 14 g",
+              "Leche/agua: 1 taza ≈ 240 mL ≈ 240 g",
+              "Miel/sirope: 1 taza ≈ 340 g (mucho más denso)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Son valores orientativos: la marca y la técnica los mueven. Para conversiones precisas use el [conversor de unidades de cocina](/cooking/cooking-units)."
+          },
+          {
+            "type": "callout",
+            "text": "La repostería es química, no improvisación. Un 10 % de error en harina o líquido basta para que un bizcocho pase de tierno a apelmazado."
+          },
+          {
+            "type": "h2",
+            "text": "Por qué es mejor pesar"
+          },
+          {
+            "type": "p",
+            "text": "Una báscula digital cuesta poco y suele medir con precisión de 1 g. Los pesos son totalmente reproducibles, no dependen de cómo se llene la taza y permiten compartir una receta sin ambigüedad: por eso las fórmulas profesionales van en gramos."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo bastan las tazas"
+          },
+          {
+            "type": "p",
+            "text": "No todos los platos requieren báscula. Salteados, guisos y sopas toleran mucho: el volumen basta y ajustar al gusto resulta más flexible. Reserve la báscula para repostería, salsas y postres donde las proporciones importan."
+          }
+        ]
+      },
+      "ratio-and-proportion-practical": {
+        "title": "Ratios y proporciones: de mezclar bebidas a leer mapas",
+        "excerpt": "¿Cómo se diluye un concentrado 1:4? ¿Qué significa 1:10000 en un mapa? Las razones son la matemática más útil —y más malinterpretada— del día a día.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Una razón expresa la relación entre dos cantidades. Es tan sencilla que se pasa por alto, pero usarla mal tiene consecuencias reales: desde una bebida imbebible hasta una dosis equivocada."
+          },
+          {
+            "type": "h2",
+            "text": "Dos notaciones habituales"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "a:b — relación entre dos cantidades, p. ej. concentrado:agua = 1:4.",
+              "a:b:c — razón continua con tres o más cantidades, p. ej. hormigón 1:2:3."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La clave: 1:4 significa 1 parte de concentrado por 4 de agua, es decir 5 partes en total, no 4. Es el error más frecuente."
+          },
+          {
+            "type": "h2",
+            "text": "Ejemplos cotidianos"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mezclar bebidas: para 500 mL a 1:4, concentrado = 500 ÷ 5 × 1 = 100 mL y agua = 400 mL.",
+              "Escala del mapa: 1:10000 significa que 1 cm en el mapa equivale a 10.000 cm, es decir 100 m reales.",
+              "Relación de aspecto: 16:9 indica que el ancho es 16/9 de la altura.",
+              "Diluir limpiador: 1:10 es 1 parte de producto más 10 de agua, 11 en total."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Una comprobación fiable: sume las partes de la razón. El total debe coincidir con la cantidad final; si no, algún término está mal."
+          },
+          {
+            "type": "h2",
+            "text": "De razón a porcentaje"
+          },
+          {
+            "type": "p",
+            "text": "Una razón se convierte en porcentaje: en a:b, la parte de a es a ÷ (a + b). Con una proporción de 3:2, los varones son 3/5 = 60 %. A la inversa, el 60 % puede escribirse como 3:2 o 60:40."
+          },
+          {
+            "type": "p",
+            "text": "Para casos complejos, deje el cálculo a la [calculadora de razones](/math/ratio-calculator), sobre todo con tres o más términos o al resolver hacia atrás."
+          },
+          {
+            "type": "h2",
+            "text": "Algo que suele confundirse"
+          },
+          {
+            "type": "p",
+            "text": "Una razón no es una tasa. La razón compara cantidades del mismo tipo y no tiene unidades; la tasa compara tipos distintos y lleva unidad, como la velocidad (km/h) o la densidad (hab./km²). Confundirlas produce errores dimensionales."
+          }
+        ]
+      },
+      "how-much-house-can-you-afford": {
+        "title": "¿Cuánta casa puede permitirse? Tres cifras que el banco no le dará",
+        "excerpt": "Entre lo que el banco aprueba y lo que usted puede sostener de verdad suele haber un trecho. Tres ratios le dan la cifra segura.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cuando un banco aprueba una hipoteca se pregunta «¿podrá pagar?», usando múltiplos de renta y ratios de endeudamiento. Eso es un techo, no la cifra que debe usar. El presupuesto sostenible lo calcula usted."
+          },
+          {
+            "type": "h2",
+            "text": "Cifra uno: la regla 28/36"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Gastos de vivienda por debajo del 28 % del ingreso mensual: cuota, comunidad, IBI y seguro.",
+              "Deuda total por debajo del 36 %: añada coche, tarjetas, préstamos al consumo y obligaciones familiares."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Ejemplo: con 30.000 de ingreso mensual, el tope de vivienda es 8.400 y el de deuda total, 10.800. Si ya paga 3.000 de coche, mantenga la cuota hipotecaria por debajo de 7.800."
+          },
+          {
+            "type": "h2",
+            "text": "Cifra dos: entrada más costes ocultos"
+          },
+          {
+            "type": "p",
+            "text": "La entrada suele ser del 20–30 %, pero dista mucho de ser todo el efectivo necesario. Reserve también para impuestos de transmisión (aprox. 1–3 %), fondo de mantenimiento, agencia, reforma, electrodomésticos y al menos seis mensualidades de colchón."
+          },
+          {
+            "type": "callout",
+            "text": "Un error frecuente es destinar todos los ahorros a la entrada y quedarse sin dinero para reforma ni imprevistos. Guarde en efectivo al menos un 10–15 % del precio además de la entrada."
+          },
+          {
+            "type": "h2",
+            "text": "Cifra tres: la prueba de estrés"
+          },
+          {
+            "type": "p",
+            "text": "Antes de firmar, recalcule la cuota con tipos 1–2 puntos más altos y compruebe si la soporta. Si su presupuesto solo cuadra al tipo actual, no tiene ninguna defensa frente a subidas."
+          },
+          {
+            "type": "p",
+            "text": "Compare cuotas con la [calculadora de hipotecas](/finance/mortgage) según tipo y plazo, y simule amortizaciones con la [calculadora de préstamos](/finance/loan)."
+          },
+          {
+            "type": "h2",
+            "text": "No olvide los costes de mantenimiento"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Comunidad: se calcula por superficie y a la larga pesa.",
+              "Mantenimiento y reformas: la vivienda exige inversión continua con los años.",
+              "Desplazamientos: vivir más lejos abarata el precio, pero el tiempo y el transporte también cuentan.",
+              "Coste de oportunidad: lo que la entrada podría rendir invertida."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La cifra resultante es lo que realmente puede permitirse. Suele quedar un 20–30 % por debajo de lo que el banco prestaría, y es el presupuesto con el que se vive tranquilo."
+          }
+        ]
+      },
+      "protein-intake-how-much": {
+        "title": "¿Cuánta proteína necesita? Calcúlelo por peso corporal",
+        "excerpt": "Una persona sedentaria, un atleta y un mayor necesitan cantidades muy distintas. El peso por un factor es la estimación más práctica.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Los requerimientos de proteína varían de una persona a otra más que casi cualquier otro nutriente. Entre un oficinista sedentario y alguien que entrena cinco días por semana puede haber el doble de diferencia."
+          },
+          {
+            "type": "h2",
+            "text": "Rangos de referencia por peso"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sedentario, sin entrenamiento: 0,8 g por kg – el mínimo para cubrir lo básico.",
+              "Actividad moderada: 1,0–1,2 g por kg.",
+              "Entrenamiento de fuerza regular: 1,4–1,8 g por kg.",
+              "Entrenamiento intenso o definición: 1,8–2,2 g por kg."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Una persona de 70 kg que entrena tres veces por semana necesita unos 98–126 g al día. La [calculadora de proteína](/health/protein-calculator) se lo da directamente."
+          },
+          {
+            "type": "h2",
+            "text": "Por qué subirla en definición"
+          },
+          {
+            "type": "p",
+            "text": "Con déficit calórico el cuerpo tiende a degradar músculo para obtener energía. Más proteína protege la masa muscular, aumenta la saciedad y eleva el efecto termogénico de los alimentos –digerirla ya consume calorías–. Esa es la razón central para elevar la proteína al definir."
+          },
+          {
+            "type": "h2",
+            "text": "Repartirla en las comidas"
+          },
+          {
+            "type": "p",
+            "text": "El aprovechamiento depende en parte de la dosis por comida. Unas 25–40 g por toma se consideran óptimas para estimular la síntesis de proteína muscular. Repartir 120 g en tres comidas supera comer 100 g en la cena."
+          },
+          {
+            "type": "callout",
+            "text": "En lugar de obsesionarse con el total, asegure una fuente de proteína de calidad en cada comida: huevos, carne magra, pescado, soja o lácteos."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo tener cuidado"
+          },
+          {
+            "type": "p",
+            "text": "Quienes tienen función renal reducida deben limitar la proteína bajo control médico; no se les aplica un factor genérico. También importa la calidad: priorice proteínas animales completas o combinaciones vegetales bien planteadas."
+          },
+          {
+            "type": "p",
+            "text": "La [calculadora de macronutrientes](/health/macro-calculator) reparte proteína, carbohidratos y grasa de una vez, más sencillo que calcularlos por separado."
+          }
+        ]
+      },
+      "average-mean-median-mode": {
+        "title": "Las medias engañan: cuándo usar media, mediana y moda",
+        "excerpt": "¿Por qué el «salario medio» siempre parece inflado? Porque los valores extremos arrastran la media. Elija bien el estadístico y verá los datos.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bajo cualquier noticia sobre el «salario medio» siempre alguien dice que se siente excluido de la media. Y suele tener razón: la media es muy sensible a los valores extremos."
+          },
+          {
+            "type": "h2",
+            "text": "Qué es cada estadístico"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Media: la suma de todos los valores dividida por su número. La más usada, pero muy influida por los extremos.",
+              "Mediana: el valor central tras ordenarlos. No le afectan los extremos.",
+              "Moda: el valor más frecuente. Útil para datos categóricos."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Un ejemplo claro"
+          },
+          {
+            "type": "p",
+            "text": "Una empresa tiene 10 empleados: nueve cobran 8.000 al mes y el director, 92.000. La media es (9 × 8.000 + 92.000) ÷ 10 = 16.400, una cifra cómoda. La mediana es 8.000, y esa es la realidad de la mayoría."
+          },
+          {
+            "type": "callout",
+            "text": "Cuando lea «ingreso medio», pregunte: ¿media o mediana? En datos con fuerte sesgo a la derecha, como ingresos o precios de vivienda, la mediana casi siempre representa mejor la realidad."
+          },
+          {
+            "type": "h2",
+            "text": "Cuál usar en cada caso"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Media: cuando la distribución es homogénea, sin extremos, y quiere aprovechar todos los valores (p. ej. nota media).",
+              "Mediana: cuando hay valores atípicos o sesgo claro (ingresos, precios de vivienda, subidas de precio).",
+              "Moda: para datos categóricos, como el color más popular o la talla más frecuente."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Cómo aplicarlo"
+          },
+          {
+            "type": "p",
+            "text": "La [calculadora de promedios](/math/average-calculator) los obtiene al instante. Para conjuntos grandes o para ver la forma de la distribución, combínela con la [calculadora de desviación estándar](/math/standard-deviation-calculator): la misma media con distinta dispersión describe situaciones muy distintas."
+          },
+          {
+            "type": "p",
+            "text": "Adquiera el hábito de preguntar ante cualquier cifra: cómo se calculó, a quién se muestreó y si hay valores extremos. Esas tres preguntas desactivan la mayoría de los datos engañosos."
+          }
+        ]
+      },
+      "car-loan-total-cost": {
+        "title": "El coste real de un préstamo para coche: cuatro gastos además de la cuota",
+        "excerpt": "La «financiación al 0 %» suena a ganga, pero sumando comisiones, seguro, impuestos y depreciación, el coste real suele superar lo previsto.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "La publicidad de préstamos para coche se centra casi por completo en la cuota –«desde solo 80 al día»–. Pero lo que decide si puede permitírselo es el desembolso total; la cuota es solo una parte."
+          },
+          {
+            "type": "h2",
+            "text": "Cuatro gastos además de la cuota"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Entrada: normalmente el 20–30 % del precio, y el mayor desembolso en efectivo.",
+              "Impuesto de matriculación: un pago único, a menudo una parte relevante del precio.",
+              "Seguro: más caro el primer año, luego baja, pero se repite cada año.",
+              "Comisión de apertura o intermediación: la cobra el prestamista, a veces el 2–3 % del préstamo."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "La verdad del «0 % de interés»"
+          },
+          {
+            "type": "p",
+            "text": "Las ofertas al 0 % o con interés bajo suelen recuperar el coste por dos vías: comisiones más altas o renuncia al descuento en efectivo –casi nunca se pueden tener ambos–. A veces sale más barato «gran descuento en efectivo más préstamo al tipo normal»."
+          },
+          {
+            "type": "callout",
+            "text": "La única forma fiable de comparar dos ofertas es calcular el desembolso total: entrada + todas las cuotas + comisiones + intereses − descuento. No se deje guiar por la cuota."
+          },
+          {
+            "type": "h2",
+            "text": "Compare con la calculadora"
+          },
+          {
+            "type": "p",
+            "text": "Introduzca ambos escenarios en la [calculadora de préstamo de coche](/finance/auto-loan) y compare intereses totales y desembolso total. Si el concesionario solo le da la cuota y no el total, tómelo como señal de alerta."
+          },
+          {
+            "type": "h2",
+            "text": "No ignore la depreciación"
+          },
+          {
+            "type": "p",
+            "text": "Un coche es un activo que pierde valor sin parar. Uno nuevo suele perder un 10–20 % nada más salir del concesionario, con la caída más pronunciada en los tres primeros años. Financiar a cinco años un coche que se deprecia rápido puede dejarle debiendo más de lo que vale."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Acorte el plazo para no desajustarlo de la curva de depreciación.",
+              "Considere un vehículo de uno a tres años, que ya pasó la fase más pronunciada.",
+              "No ponga una entrada demasiado baja: evitará el patrimonio neto negativo."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Por último, confirme con la [calculadora de préstamos](/finance/loan) que la cuota cabe en su límite de endeudamiento –véase la regla del 36 % en [¿Cuánta casa puede permitirse?](/blog/how-much-house-can-you-afford)–."
+          }
+        ]
+      },
+      "food-cost-per-serving": {
+        "title": "Coste por ración: ¿realmente sale más barato cocinar en casa?",
+        "excerpt": "Cocinar en casa suele salir más barato que comer fuera, pero cuánto depende de cómo cuente: ingredientes, condimentos y energía entran en el total.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Que «cocinar en casa ahorra» es casi un dogma, pero al sumar condimentos, gas, electricidad y su tiempo, la conclusión puede sorprender. No significa que no valga la pena cocinar, sino que merece la pena hacer bien las cuentas."
+          },
+          {
+            "type": "h2",
+            "text": "Qué cuesta realmente un plato"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ingredientes principales: carne, verduras y básicos, por la cantidad usada, no por el precio del paquete.",
+              "Condimentos: aceite, sal, salsa de soja y especias: poco por uso, pero mucho con el tiempo.",
+              "Energía: gas o electricidad, normalmente una cantidad pequeña por cocinado.",
+              "Mermas: pelar y limpiar suele eliminar entre el 10 % y el 30 % de lo comprado."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "La [calculadora de coste de alimentos](/cooking/food-cost) lo suma todo y muestra el coste real por ración."
+          },
+          {
+            "type": "callout",
+            "text": "Un error frecuente: contar solo los ingredientes principales y olvidar condimentos y energía. En un plato casero sencillo pueden suponer entre el 15 % y el 25 %."
+          },
+          {
+            "type": "h2",
+            "text": "La trampa de comprar a granel"
+          },
+          {
+            "type": "p",
+            "text": "Los formatos grandes tienen mejor precio por unidad, pero hay dos preguntas: ¿lo gastará antes de que se estropee y cuánto cuesta almacenarlo? Lo que ahorra en un saco de arroz de 5 kg no compensa tirar la mitad."
+          },
+          {
+            "type": "h2",
+            "text": "Cuándo cocinar sí sale claramente a cuenta"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Para varias personas: los costes se reparten y cuantas más raciones, mejor precio.",
+              "Con producto de temporada: la verdura fuera de temporada puede costar el doble o el triple.",
+              "En platos de condimentación sencilla: las recetas basadas en salsas caras y especias importadas se disparan.",
+              "Aprovechando sobras: un pollo entero en dos comidas sale mejor que comprar solo pechuga."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "El valor de su tiempo"
+          },
+          {
+            "type": "p",
+            "text": "En rigor, el tiempo de cocina también cuesta, aunque casi nadie lo imputa: para muchos, cocinar es relax o tiempo en familia. Incluirlo o no es decisión suya. Si su tiempo vale mucho, ingredientes semipreparados como verdura ya cortada pueden salir más baratos en conjunto pese a su precio por kilo."
+          }
+        ]
+      },
+      "rounding-and-significant-figures": {
+        "title": "Por qué redondear a veces está mal: cifras significativas y error acumulado",
+        "excerpt": "Redondear en cada paso desvía el resultado final. Entender el error acumulado y el redondeo bancario hace fiables sus cálculos.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Redondear es la primera regla que se enseña, pero en cálculos encadenados o con muchos datos, el redondeo mecánico introduce sesgo sistemático y error acumulado."
+          },
+          {
+            "type": "h2",
+            "text": "Problema uno: no redondee a mitad del cálculo"
+          },
+          {
+            "type": "p",
+            "text": "Calcule 1,4 × 2,6 × 3,8 redondeando a un decimal en cada paso: 1,4 × 2,6 = 3,64 → 3,6 y luego 3,6 × 3,8 = 13,68 → 13,7. Calculado de una vez, 1,4 × 2,6 × 3,8 = 13,832 → 13,8. Redondear a mitad desplazó el resultado 0,1."
+          },
+          {
+            "type": "callout",
+            "text": "Una regla básica: redondee solo en el paso final. Mantenga una o dos cifras significativas extra durante el cálculo."
+          },
+          {
+            "type": "h2",
+            "text": "Problema dos: el sesgo sistemático"
+          },
+          {
+            "type": "p",
+            "text": "Las cifras 1–4 bajan y las 6–9 suben, lo que parece equilibrado, pero el trato del 5 da un caso más al redondeo al alza. Con muchos datos, el resultado queda sistemáticamente alto."
+          },
+          {
+            "type": "p",
+            "text": "En estadística se usa más el «redondeo a la cifra par» (redondeo bancario): por debajo de 5 se baja, por encima se sube y con exactamente 5 se va al número par más cercano. Así, con muchos valores, los sesgos se compensan."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "2,5 → 2 (hacia el par)",
+              "3,5 → 4 (hacia el par)",
+              "1,24 → 1,2",
+              "1,26 → 1,3"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Qué son las cifras significativas"
+          },
+          {
+            "type": "p",
+            "text": "Las cifras significativas se cuentan desde el primer dígito distinto de cero y expresan la precisión de una medida o cálculo. 0,0052 tiene dos y 5,20 tiene tres. El cero final no es decorativo: indica que ese cero se midió."
+          },
+          {
+            "type": "p",
+            "text": "Reglas prácticas: en sumas y restas mandan los decimales, y el resultado conserva los del valor menos preciso; en multiplicaciones y divisiones mandan las cifras significativas, conservándose las del valor que menos tenga."
+          },
+          {
+            "type": "h2",
+            "text": "Uso cotidiano"
+          },
+          {
+            "type": "p",
+            "text": "La [calculadora de redondeo](/math/rounding-calculator) cubre distintos tipos de redondeo. Con datos financieros extreme la cautela: los cálculos monetarios suelen fijar dos decimales y se redondea el resultado final, no cada importe intermedio."
+          }
+        ]
+      },
+      "sleep-cycles-when-to-wake": {
+        "title": "Ciclos de sueño y hora de levantarse: por qué 8 horas pueden dejarle aturdido",
+        "excerpt": "El sueño avanza en ciclos de unos 90 minutos. Despertar en fase profunda deja aturdido aunque hayan bastado las horas. Ajustar la hora ayuda.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A veces ocho horas le dejan aturdido y seis y media, despejado. La diferencia no suele estar en el total de horas, sino en la fase del ciclo en la que se despierta."
+          },
+          {
+            "type": "h2",
+            "text": "Qué es un ciclo de sueño"
+          },
+          {
+            "type": "p",
+            "text": "El sueño no es un estado uniforme: avanza en bloques de unos 90 minutos con sueño ligero, profundo y REM. El sueño profundo domina la primera mitad de la noche y el REM, la segunda. Despertar del sueño profundo provoca una inercia notable y sensación de aturdimiento."
+          },
+          {
+            "type": "h2",
+            "text": "Cómo fijar la hora de levantarse"
+          },
+          {
+            "type": "p",
+            "text": "Como un ciclo dura unos 90 minutos, conviene que el total se acerque a un número entero de ciclos y despertar en el límite entre ellos. Apuntar a 7,5 horas (5 ciclos) o 6 horas (4 ciclos) suele dejarle más despejado que 8 horas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "6 horas = 4 ciclos",
+              "7,5 horas = 5 ciclos",
+              "9 horas = 6 ciclos"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Además, dormirse suele llevar otros 10–20 minutos: cuéntelo al calcular hacia atrás desde la hora de levantarse. La [calculadora de sueño](/health/sleep-calculator) da horas de acostarse y levantarse adecuadas."
+          },
+          {
+            "type": "callout",
+            "text": "La duración del ciclo varía según la persona y 90 minutos es la media. Si con 7,5 horas sigue cansado, ajuste 15 minutos hasta encontrar su ritmo."
+          },
+          {
+            "type": "h2",
+            "text": "Más importante que la duración"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Regularidad: acostarse y levantarse a horas parecidas cada día supera al sueño de recuperación ocasional.",
+              "Presión de sueño: suficiente vigilia y actividad física de día mejoran la calidad del sueño.",
+              "Luz: la luz natural por la mañana y menos luz intensa antes de dormir estabilizan el ritmo circadiano.",
+              "Alcohol: acelera dormirse, pero altera gravemente la arquitectura del sueño en la segunda mitad de la noche."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "No sobrevalore el ciclo"
+          },
+          {
+            "type": "p",
+            "text": "El ajuste por ciclos es una guía útil, pero no una cura universal. Si se despierta agotado de forma habitual, tiene somnolencia diurna o ronca fuerte, podría tratarse de apnea del sueño: eso requiere médico, no un cambio de horario. El cálculo de ciclos resuelve cuándo despertar, no la calidad del sueño."
+          }
+        ]
       }
     },
     "categoryLabels": {

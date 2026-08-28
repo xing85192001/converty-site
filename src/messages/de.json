@@ -7042,6 +7042,1289 @@
             "text": "Bevor Sie sich entscheiden, vergleichen Sie die Kosten Ihrer Schulden mit dem, was Sie mit einer Investition in den [ROI-Rechner](/finance/roi) verdienen könnten. Manchmal lohnt es sich, mit minimalen Zahlungen zu investieren."
           }
         ]
+      },
+      "equal-installment-vs-principal": {
+        "title": "Annuität vs. Tilgungsdarlehen: Welche Rückzahlung spart mehr",
+        "excerpt": "Gleiche Summe, gleicher Zinssatz – und doch können die Zinskosten um Zehntausende auseinanderliegen. So entscheiden Sie richtig.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei einer Baufinanzierung stellt die Bank Sie meist vor die Wahl zwischen Annuitätendarlehen und Tilgungsdarlehen. Rate, Zinslast und Belastung in den ersten Jahren unterscheiden sich deutlich – viele unterschreiben dennoch, ohne den Unterschied zu kennen."
+          },
+          {
+            "type": "h2",
+            "text": "Der wesentliche Unterschied"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Annuitätendarlehen: konstante Monatsrate. Anfangs überwiegt der Zinsanteil, später der Tilgungsanteil.",
+              "Tilgungsdarlehen: gleichbleibender Tilgungsanteil. Die Zinsen berechnen sich aus der Restschuld, die Rate sinkt monatlich."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Mit unserem [Kreditrechner](/finance/loan) wird es greifbar: Bei 1.000.000 über 30 Jahre und 4 % Zins kostet die Annuität rund 4.774 pro Monat. Das Tilgungsdarlehen startet bei etwa 6.111 und sinkt monatlich um rund 11."
+          },
+          {
+            "type": "h2",
+            "text": "Wie groß ist der Zinsunterschied?"
+          },
+          {
+            "type": "p",
+            "text": "Im selben Beispiel summieren sich die Zinsen auf etwa 719.000 bei der Annuität gegenüber rund 602.000 beim Tilgungsdarlehen – ein Unterschied von etwa 117.000. Ursache ist der schnellere Schuldenabbau: Das Tilgungsdarlehen verkleinert die zinspflichtige Restschuld früher."
+          },
+          {
+            "type": "h2",
+            "text": "Ist das Tilgungsdarlehen also immer besser?"
+          },
+          {
+            "type": "p",
+            "text": "Nicht unbedingt. Die Anfangsrate liegt rund 28 % höher – eine echte Belastung für Haushalte, die gerade gekauft haben. Wenn die höhere Rate Ihre Lebensqualität drückt oder Sie in die Kreditkartenschuld treibt, lohnt sich die Zinsersparnis nicht."
+          },
+          {
+            "type": "callout",
+            "text": "Eine einfache Regel: Wer die höhere Anfangsrate problemlos tragen kann, wählt das Tilgungsdarlehen. Alle anderen nehmen die Annuität und nutzen die Ersparnis für Sondertilgungen."
+          },
+          {
+            "type": "h2",
+            "text": "Und bei geplanter Sondertilgung?"
+          },
+          {
+            "type": "p",
+            "text": "Wer den Kredit innerhalb von 5 bis 10 Jahren ablösen will, bei dem schrumpft der Unterschied erheblich, weil ein Großteil der Zinsen gar nicht erst anfällt. Achten Sie stattdessen auf Vorfälligkeitsentschädigung und darauf, die Laufzeit zu verkürzen statt die Rate zu senken. Vergleichen Sie Szenarien mit dem [Hypothekenrechner](/finance/mortgage)."
+          }
+        ]
+      },
+      "credit-card-minimum-payment-trap": {
+        "title": "Was die Kreditkarten-Mindestrate wirklich kostet",
+        "excerpt": "Nur den Mindestbetrag zu zahlen wirkt harmlos, ist aber eine der teuersten Kreditformen überhaupt. Ein paar Tausend Euro können sich über ein Jahrzehnt ziehen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Auf der Abrechnung beträgt die Mindestrate meist nur 5 % oder 10 % der Summe – das wirkt wie ein freundlicher Puffer. Tatsächlich ist es eines der lukrativsten Konstrukte der Kartenanbieter: Der Rest wird täglich verzinst, und die zinsfreie Frist entfällt meist."
+          },
+          {
+            "type": "h2",
+            "text": "Ein konkretes Beispiel"
+          },
+          {
+            "type": "p",
+            "text": "Angenommen, Sie schulden 10.000 bei 18 % Jahreszins (etwa 0,05 % pro Tag) und 10 % Mindestrate. Im ersten Monat zahlen Sie 1.000; die restlichen 9.000 laufen weiter. Im nächsten Monat sinkt die Mindestrate auf 900 – Sie zahlen weniger, während die Zinsen weiterlaufen."
+          },
+          {
+            "type": "p",
+            "text": "Mit dem [Kreditkartenrechner](/finance/credit-card) nachgerechnet: Bei dauerhaft nur der Mindestrate kann das Tilgen dieser 10.000 über 14 Jahre dauern und mehr als 8.000 an Zinsen kosten."
+          },
+          {
+            "type": "h2",
+            "text": "Warum die Mindestrate so teuer ist"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Die zinsfreie Frist entfällt: Wer nicht voll ausgleicht, zahlt Zinsen ab Buchungstag jeder Umsatz – nicht erst nach 20 bis 50 zinsfreien Tagen.",
+              "Tägliche Zinsen, monatliche Zinseszinsen: Zinsen werden dem Saldo zugeschlagen und verzinsen sich weiter.",
+              "Die Mindestrate schrumpft: Mit fallendem Saldo sinkt auch Ihre Zahlung, sodass die Schuld kaum abgebaut wird."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Drei günstigere Alternativen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Voller Ausgleich: die einzige zinsfreie Option – sie sollte Ihr Standard sein.",
+              "Ratenzahlung: zwar mit Gebühren, aber meist günstiger als der revolvierende Zins, mit fester, planbarer Laufzeit.",
+              "Umschuldung oder Ratenkredit: Bei großen Salden lohnt der Vergleich der Jahreskosten eines [Ratenkredits](/finance/personal-loan)."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Die Mindestrate ist ein Notstopp, keine Gewohnheit. Schon 100 mehr pro Monat sparen Jahre."
+          },
+          {
+            "type": "h2",
+            "text": "So kommen Sie schnell heraus"
+          },
+          {
+            "type": "p",
+            "text": "Stoppen Sie neue Umsätze und legen Sie mit dem [Schneeball-vs-Lawine-Rechner](/finance/debt-snowball-avalanche) die Reihenfolge fest: Die Lawine (höchster Zins zuerst) ist am günstigsten, der Schneeball (kleinster Saldo zuerst) am leichtesten durchzuhalten."
+          }
+        ]
+      },
+      "emergency-fund-how-many-months": {
+        "title": "Wie viele Monatsausgaben sollte Ihr Notgroschen decken?",
+        "excerpt": "„Drei bis sechs Monate“ lautet die Standardempfehlung – doch entscheidend sind Ihre berufliche Stabilität und Ihre familiäre Situation.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Fast jedes Finanzratgeber empfiehlt drei bis sechs Monatsausgaben als Reserve. Die Spanne ist vernünftig, verdeckt aber die eigentliche Frage: Ob drei oder sechs Monate nötig sind, hängt von Ihrem Risiko ab, nicht vom Durchschnitt."
+          },
+          {
+            "type": "h2",
+            "text": "Welche Faktoren zählen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Einkommensstabilität: Verbeamtung oder Festanstellung schwanken wenig; Freiberuf, Provisionsvertrieb und Selbstständigkeit stark.",
+              "Arbeitsmarkt: Wer in einer einstellungsfreudigen Branche schnell wieder Fuß fasst, kann weniger halten; in schrumpfenden Branchen braucht es mehr.",
+              "Haushaltsstruktur: zwei Einkommen ohne Kinder ist das geringste Risiko; ein Einkommen mit Kindern oder pflegebedürftigen Angehörigen ist höher.",
+              "Fixkosten: Je höher nicht pausierbare Posten wie Hypothek, Autokredit und Versicherungen, desto größer der Puffer.",
+              "Vorhandene Absicherung: Krankenversicherung, Arbeitslosengeld und private Policen federn einen Teil ab."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Eine brauchbare Faustregel"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "3 Monate: zwei Einkommen, keine Kinder, gesunde Branche, stabile Sozialversicherung.",
+              "6 Monate: Ein-Einkommen-Haushalt, Hypothek, durchschnittliche Branche.",
+              "9–12 Monate: Freiberufler, Gründer, Alleinerziehende, schwache Branche oder stark provisionsabhängiges Einkommen."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "So berechnen Sie Ihren Betrag"
+          },
+          {
+            "type": "p",
+            "text": "Der Notgroschen deckt die notwendigen Ausgaben, nicht Ihren vollen Lebensstandard. Addieren Sie Miete oder Hypothek, Lebensmittel, Energie, Verkehr, Versicherungen und Mindestraten der Schulden zur monatlichen Basis, und multiplizieren Sie mit der Zielmonatszahl. Mit dem [Sparzielrechner](/finance/savings-goal) ermitteln Sie die nötige Monatsrate."
+          },
+          {
+            "type": "callout",
+            "text": "Ein Notgroschen ist auf Verfügbarkeit optimiert, nicht auf Rendite. Parken Sie ihn auf dem Tagesgeldkonto oder in einem Geldmarktfonds – nicht in festverzinslichen oder schwankenden Anlagen."
+          },
+          {
+            "type": "h2",
+            "text": "Wann Sie ihn wirklich nutzen"
+          },
+          {
+            "type": "p",
+            "text": "Nur echte Notfälle zählen: Jobverlust, schwere Krankheit, unvermeidbare Großreparaturen. Geplante Ausgaben wie ein neues Auto, eine Reise oder eine Renovierung werden separat angespart und dürfen den Puffer nicht antasten. Nach einem Griff in die Reserve hat die Wiederauffüllung Priorität."
+          }
+        ]
+      },
+      "inflation-purchasing-power": {
+        "title": "Was sind Ihre 100 in 10 Jahren noch wert? Inflation und Kaufkraft",
+        "excerpt": "Inflation verringert nicht Ihr Geld, sondern das, was es kaufen kann. Wer das versteht, versteht auch, warum Anlegen nötig ist.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bargeld in der Schublade verliert keine Ziffer – aber es kauft in zehn Jahren weniger. Das ist der Kaufkraftschwund durch Inflation: das am meisten übersehene und zugleich sicherste Risiko der privaten Finanzplanung."
+          },
+          {
+            "type": "h2",
+            "text": "Wie man Kaufkraft berechnet"
+          },
+          {
+            "type": "p",
+            "text": "Die Formel ist einfach: künftige Kaufkraft = heutiger Betrag ÷ (1 + Inflationsrate) ^ Jahre. Bei 3 % Inflation entsprechen 100 heute in zehn Jahren einer Kaufkraft von etwa 74, in zwanzig Jahren von etwa 55."
+          },
+          {
+            "type": "p",
+            "text": "Der [Inflationsrechner](/finance/inflation) zeigt den Schwund für verschiedene Raten und Zeiträume."
+          },
+          {
+            "type": "h2",
+            "text": "Warum das zum Anlegen zwingt"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Tagesgeldzinsen liegen meist unter der Inflation – die Realrendite ist negativ.",
+              "Selbst wenn Ihr Saldo nominal wächst: Liegt die Rendite unter der Inflation, sinkt die reale Kaufkraft weiter.",
+              "Bewerten Sie eine Anlage über die Realrendite: Nominalrendite minus Inflation."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "3 % Inflation klingen harmlos, bedeuten aber eine Halbierung der Kaufkraft in rund 24 Jahren. Einfache Mathematik, die kaum jemand rechnet."
+          },
+          {
+            "type": "p",
+            "text": "Angst vor Inflation ist dennoch kein Grund, blind zu spekulieren. Bauen Sie zuerst Ihren [Notgroschen](/blog/emergency-fund-how-many-months) auf, investieren Sie langfristiges Geld in Anlagen mit realistischer Chance, die Inflation zu schlagen, und simulieren Sie das Ergebnis mit dem [Zinseszinsrechner](/finance/compound-interest)."
+          },
+          {
+            "type": "h2",
+            "text": "Auch Ihr Einkommen muss mitziehen"
+          },
+          {
+            "type": "p",
+            "text": "Ebenso übersehen wird die Einkommensseite. Steigt Ihr Gehalt über Jahre nicht, schrumpft Ihr Realeinkommen. Bei der Bewertung eines Jobs zählt, ob Gehaltssprünge die Inflation schlagen – wichtiger als die aktuelle Zahl."
+          }
+        ]
+      },
+      "apr-vs-apy-interest-rate-basics": {
+        "title": "Nominalzins, Realzins und Effektivzins: Lassen Sie sich nicht täuschen",
+        "excerpt": "Ist „12 % pro Jahr“ dasselbe wie „1 % pro Monat“? Sobald Zinseszinsen ins Spiel kommen, nicht – und der Unterschied kostet Geld.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kreditwerbung liebt „0,5 % pro Monat“. Sparkassen lieben „4 % p. a.“. Beides klingt vernünftig – wer die Zinsberechnung nicht versteht, unterschätzt die wahren Kosten und überschätzt den wahren Ertrag."
+          },
+          {
+            "type": "h2",
+            "text": "Drei Begriffe, die Sie trennen müssen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Nominalzins: der im Vertrag ausgewiesene Jahreszins ohne Berücksichtigung der Zinsperioden.",
+              "Periodenzins: der Zins je Zinsperiode – Monatszins = nomineller Jahreszins ÷ 12.",
+              "Effektiver Jahreszins: die tatsächliche Jahresbelastung oder -rendite inklusive Zinseszinseffekt."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Wie die Zinsperiode den Unterschied macht"
+          },
+          {
+            "type": "p",
+            "text": "Ein Nominalzins von 12 % bei jährlicher Zinsrechnung ergibt 12 % effektiv. Bei monatlicher Rechnung beträgt der Periodenzins 1 % und die tatsächliche Jahresbelastung (1 + 1 %) ^ 12 − 1 ≈ 12,68 %. Tägliche Zinsrechnung treibt den Wert weiter nach oben."
+          },
+          {
+            "type": "p",
+            "text": "Der Unterschied wirkt gering, doch bei großen Summen über Jahrzehnte ist es echtes Geld. Rechnen Sie Produkte vor dem Vergleich immer auf dieselbe Basis um."
+          },
+          {
+            "type": "callout",
+            "text": "Merksatz: Kredite vergleicht man über den Effektivzins, Sparen über die Jahresrendite. Ein Nominalzins ist nur bei identischer Zinsperiode direkt vergleichbar."
+          },
+          {
+            "type": "h2",
+            "text": "Praktisches Vorgehen"
+          },
+          {
+            "type": "p",
+            "text": "Fragen Sie bei jedem Angebot dreierlei: Wie hoch ist der nominelle Jahreszins? Wie oft wird abgerechnet? Welche Gebühren fallen an? Viele „Niedrigzins“-Produkte verstecken die wahren Kosten in Gebühren. Geben Sie verschiedene Werte in den [Kreditrechner](/finance/loan) ein und vergleichen Sie Rate und Gesamtkosten."
+          },
+          {
+            "type": "p",
+            "text": "Für Sparen und Anlegen nutzen Sie den [Zinseszinsrechner](/finance/compound-interest), um reale Erträge bei verschiedenen Zinsperioden zu schätzen und sich nicht von Werbeangaben täuschen zu lassen."
+          }
+        ]
+      },
+      "rent-vs-buy-decision": {
+        "title": "Mieten oder kaufen? Rechnen Sie es durch, bevor Sie entscheiden",
+        "excerpt": "„Kaufen schlägt mieten“ hört man oft – die echte Antwort hängt vom Preis-Miet-Verhältnis, Ihrer Wohndauer und Ihrer Stadt ab.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kaum eine Finanzentscheidung ist so emotional wie Miete versus Kauf. Ältere sagen, Miete sei „die Hypothek des Vermieters zahlen“; Makler sagen „früh kaufen, früh profitieren“. Dabei lässt sich die Frage mit Zahlen klären statt mit Parolen."
+          },
+          {
+            "type": "h2",
+            "text": "Zwei Kennzahlen, die zählen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Preis-Miet-Verhältnis: Kaufpreis ÷ Jahresmiete. Je niedriger, desto eher lohnt Kaufen. Faustregel: unter 15 spricht für Kauf, über 25 für Miete.",
+              "Haltedauer: Wie lange bleiben Sie in der Stadt? Transaktionskosten – Steuern, Makler, Renovierung – müssen sich über Jahre amortisieren."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Die wahren Kosten des Kaufs sind mehr als die Rate"
+          },
+          {
+            "type": "p",
+            "text": "Viele vergleichen nur „Rate vs. Miete“ – das ist unvollständig. Kaufen bringt zusätzlich die Opportunitätskosten des Eigenkapitals, Instandhaltung, Reparaturen, Grundsteuer und spätere Verkaufskosten mit sich. Mieten kostet die Miete selbst plus die Opportunitätskosten der Kaution."
+          },
+          {
+            "type": "p",
+            "text": "Nutzen Sie den [Hypothekenrechner](/finance/mortgage) für Rate und Zinssumme und den [ROI-Rechner](/finance/roi) für den möglichen Ertrag des Eigenkapitals am Kapitalmarkt – und stellen Sie beides nebeneinander."
+          },
+          {
+            "type": "h2",
+            "text": "Wann Mieten die bessere Wahl ist"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sie bleiben weniger als 3 bis 5 Jahre in der Stadt.",
+              "Job oder Einkommen sind unsicher und Sie brauchen Flexibilität.",
+              "Das Preis-Miet-Verhältnis vor Ort ist deutlich hoch.",
+              "Sie können die Anzahlung nicht stemmen, ohne Ihren Notgroschen zu leeren."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Merke: Kaufen ist keine Geldanlage, sondern Konsum plus Zwangssparen. Es bringt Wohnrecht und Disziplin, aber sehr schlechte Liquidität und hohe Transaktionskosten. Wer Renditen wie bei einer Anlage erwartet, wird meist enttäuscht."
+          },
+          {
+            "type": "h2",
+            "text": "Ein Mittelweg"
+          },
+          {
+            "type": "p",
+            "text": "Erst mieten ist keine Schande. Eigenkapital aufbauen, Stadt und Viertel kennenlernen, Berufliches festigen – besser als unter Druck zu kaufen. Wenn Sie sicher sind zu bleiben, rechnen Sie es mit dem [Hypothekenrechner](/finance/mortgage) gründlich durch."
+          }
+        ]
+      },
+      "bmi-limitations-better-metrics": {
+        "title": "Der BMI reicht nicht: Warum Körperfett und Taillenumfang zählen",
+        "excerpt": "Der BMI presst alle Menschen in eine Formel – und bewertet daher Muskulöse und Ältere falsch. Wer seine Schwächen kennt, nutzt ihn richtig.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Der BMI ist ein Screening-, kein Diagnoseinstrument. Sein Wert liegt darin, dass er günstig, schnell und für große Gruppen tauglich ist; sein Preis ist die grobe Aussage für den Einzelnen."
+          },
+          {
+            "type": "h2",
+            "text": "Drei wesentliche Schwächen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Er trennt nicht zwischen Muskel und Fett: Zwei Menschen mit 80 kg – Bodybuilder und Büromensch – können denselben BMI haben und völlig unterschiedliche Körper.",
+              "Er ignoriert die Fettverteilung: Viszerales Bauchfett ist weit riskanter als Unterhautfett an Armen und Beinen – der BMI sieht das nicht.",
+              "Er übersieht Alter und Geschlecht: Bei gleichem BMI tragen Ältere meist mehr Fett als Jüngere, und Frauen naturgemäß mehr als Männer."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Zwei sinnvolle Ergänzungen"
+          },
+          {
+            "type": "p",
+            "text": "Erstens der Körperfettanteil. Er zeigt direkt, wie viel Ihres Körpers aus Fett besteht – ein weit besseres Gesundheitssignal als das Gewicht. Schätzen Sie ihn mit dem [Körperfettrechner](/health/body-fat). Heimwaagen messen ungenau, aber der Trend zählt mehr als ein Einzelwert."
+          },
+          {
+            "type": "p",
+            "text": "Zweitens der Taillenumfang. Er spiegelt das Bauchfett und ist ein zentraler Warnhinweis für das metabolische Syndrom. Ab etwa 90 cm bei Männern und 80 cm bei Frauen steigt das Risiko deutlich (China-Leitlinie)."
+          },
+          {
+            "type": "callout",
+            "text": "Verstehen Sie den BMI als Startpunkt, nicht alsUrteil. Sagt der BMI „übergewichtig“, während Körperfett und Taille stimmen, sind es wohl Muskeln. Ist der BMI normal, die Taille aber groß, ist Vorsicht geboten."
+          },
+          {
+            "type": "h2",
+            "text": "Richtige Anwendung"
+          },
+          {
+            "type": "p",
+            "text": "Holen Sie sich eine Einordnung über den [BMI-Rechner](/health/bmi) und kombinieren Sie sie mit [Körperfett](/health/body-fat) und Taillenumfang. Wichtiger noch ist der Verlauf: ob die Werte über ein halbes Jahr steigen oder fallen, sagt mehr als eine Einzelmessung."
+          },
+          {
+            "type": "p",
+            "text": "Ein Hinweis: Jeder Online-Rechner liefert nur Schätzwerte. Bei auffälligen Werten oder Vorerkrankungen zählt die ärztliche Untersuchung."
+          }
+        ]
+      },
+      "bmr-tdee-how-many-calories": {
+        "title": "BMR und TDEE: Wie viele Kalorien sollten Sie wirklich essen?",
+        "excerpt": "Fettabbau heißt Kaloriendefizit – aber relativ zu Ihrem tatsächlichen Verbrauch. BMR und TDEE liefern die Antwort.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Auf die Frage „Wie viel soll ich essen?“ gibt es keine Pauschalantwort; sie hängt von Körper und Aktivität ab. BMR und TDEE machen diese Frage messbar."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: der Verbrauch im Liegen"
+          },
+          {
+            "type": "p",
+            "text": "Der Grundumsatz ist die Energiemenge, die Ihr Körper in völliger Ruhe, nüchtern und bei neutraler Temperatur benötigt. Er macht 60–75 % des Tagesverbrauchs aus. Schätzen Sie ihn mit dem [BMR-Rechner](/health/bmr-calculator) auf Basis der Mifflin-St-Jeor-Formel."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: der echte Verbrauch inklusive Aktivität"
+          },
+          {
+            "type": "p",
+            "text": "Der Gesamtumsatz multipliziert den BMR mit einem Aktivitätsfaktor: etwa 1,2 sitzend, 1,375 leicht, 1,55 moderat, 1,725 intensiv. Der [TDEE-Rechner](/health/tdee-calculator) liefert das Ergebnis direkt."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sitzend (Büro, kaum Sport): BMR × 1,2",
+              "Leicht (1–3 Tage Training/Woche): BMR × 1,375",
+              "Moderat (3–5 Tage/Woche): BMR × 1,55",
+              "Intensiv (6–7 Tage/Woche): BMR × 1,725"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "So planen Sie Ihre Zufuhr"
+          },
+          {
+            "type": "p",
+            "text": "Fettabbau: 300–500 kcal unter dem TDEE pro Tag – theoretisch etwa 0,3–0,5 kg pro Woche. Muskelaufbau: 200–400 kcal über dem TDEE bei ausreichend Eiweiß."
+          },
+          {
+            "type": "callout",
+            "text": "Unterschreiten Sie den BMR nicht dauerhaft. Zu wenig Energie senkt den Umsatz und baut Muskel ab – der Fettabbau wird schwerer und der Jo-Jo-Effekt wahrscheinlich."
+          },
+          {
+            "type": "p",
+            "text": "Nutzen Sie den [Makro-Rechner](/health/macro-calculator) für die Verteilung von Eiweiß, Kohlenhydraten und Fett; das lässt sich besser durchhalten als reines Kalorienzählen."
+          },
+          {
+            "type": "h2",
+            "text": "Der Rechner ist ein Startpunkt"
+          },
+          {
+            "type": "p",
+            "text": "Formeln haben individuelle Abweichungen, teils um 10 %. Praxisnah: Mit dem Schätzwert zwei Wochen starten, die Waage beobachten und nachjustieren. Bewegt sich nichts, weitere 100–200 kcal kürzen."
+          }
+        ]
+      },
+      "daily-water-intake-guide": {
+        "title": "Wie viel Wasser am Tag? Rechnen Sie nach Gewicht, nicht nach „8 Gläsern“",
+        "excerpt": "„Acht Gläser täglich“ ist griffig, aber ein 50-kg-Mensch braucht erkennbar weniger als ein 90-kg-Mensch. Gewicht und Aktivität sind die besseren Größen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "„Acht Gläser (etwa 2 Liter) pro Tag“ ist allgegenwärtig – doch das ist eine gerundete Faustregel, die die wichtigsten Variablen ignoriert: Körpergewicht, Klima und Aktivität."
+          },
+          {
+            "type": "h2",
+            "text": "Berechnung über das Körpergewicht"
+          },
+          {
+            "type": "p",
+            "text": "Gängige Schätzung: Tagesmenge in ml = Körpergewicht in kg × 30 bis 35. Ein 60-kg-Erwachsener benötigt etwa 1.800–2.100 ml. Der [Wasserbedarfsrechner](/health/water-intake) liefert Ihnen einen personalisierten Wert."
+          },
+          {
+            "type": "h2",
+            "text": "Wann der Bedarf steigt"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sport und Schwitzen: etwa 500–700 ml zusätzlich pro Stunde Aktivität.",
+              "Hitze oder hohe Luftfeuchte: die Schweißverluste steigen deutlich – die Zufuhr folgt.",
+              "Höhenluft oder trockene Kabinen: über Atmung und Haut geht mehr Wasser verloren.",
+              "Fieber, Durchfall oder Erbrechen: der Verlust beschleunigt sich, Flüssigkeit und Elektrolyte müssen rasch ersetzt werden.",
+              "Schwangerschaft und Stillzeit: der Bedarf steigt klar – die Menge gehört ärztlich bestätigt."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Wasser ist nicht nur Leitungswasser"
+          },
+          {
+            "type": "p",
+            "text": "Viele glauben, nur reines Wasser zähle. Tatsächlich zählt auch Nahrung – Obst und Gemüse bestehen oft zu über 90 % aus Wasser – sowie Suppe, Milch, Tee und Kaffee. Der milde harntreibende Effekt des Kaffees gleicht einen Teil aus, führt aber zu keinem Nettoverlust."
+          },
+          {
+            "type": "callout",
+            "text": "Der einfachste Check ist die Urinfarbe: hellgelb heißt gut versorgt, dunkelgelb heißt nachtrinken, völlig farblos kann zu viel bedeuten."
+          },
+          {
+            "type": "h2",
+            "text": "Viel hilft nicht viel"
+          },
+          {
+            "type": "p",
+            "text": "Wasser ist nicht beliebig vermehrbar. Sehr große Mengen in kurzer Zeit können eine Hyponatriämie auslösen – selten, aber lebensgefährlich. Bei Niereninsuffizienz oder Herzinsuffizienz legt der Arzt eine Trinkmenge fest; eine pauschale Formel gilt dort nicht."
+          }
+        ]
+      },
+      "waist-circumference-health-risk": {
+        "title": "Taillenumfang: Ein besserer Risikoindikator als das Gewicht",
+        "excerpt": "Wo das Fett sitzt, ist wichtiger als wie viel es ist. Bauchfett hängt direkt mit Herz-Kreislauf- und Diabetesrisiko zusammen – und die Taille misst es am einfachsten.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zwei Menschen können gleiches Gewicht und gleichen BMI haben und doch völlig unterschiedliche Risiken – entscheidend ist, wo das Fett sitzt. Viszerales Bauchfett setzt Entzündungsstoffe frei und stört den Stoffwechsel; es ist weit gefährlicher als Unterhautfett an Armen und Beinen."
+          },
+          {
+            "type": "h2",
+            "text": "Richtig messen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Zeitpunkt: morgens nüchtern, nach dem Toilettengang, stehend und normal atmend.",
+              "Stelle: üblich ist die Mitte zwischen unterem Rippenbogen und Beckenkamm (meist auf Bauchnabelhöhe); die WHO empfiehlt die Mitte zwischen Rippenbogen und Darmbeinkamm.",
+              "Technik: das Maßband liegt auf der Haut, ohne einzudrücken; am Ende einer normalen Ausatmung auf 0,1 cm genau ablesen.",
+              "Achtung: nicht den Bauch einziehen und nicht direkt nach einer großen Mahlzeit messen."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Referenzwerte"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Männer: ≥ 90 cm gelten als abdominale (zentrale) Adipositas.",
+              "Frauen: ≥ 80 cm gelten als abdominale Adipositas.",
+              "Oberhalb dieser Werte steigen die Risiken für Typ-2-Diabetes, Bluthochdruck und Herz-Kreislauf-Erkrankungen deutlich."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Das sind gängige Schwellen; je nach Land und Organisation weichen sie etwas ab. Kombinieren Sie den Wert mit dem [BMI-Rechner](/health/bmi) – beide zusammen ergeben ein verlässlicheres Bild."
+          },
+          {
+            "type": "callout",
+            "text": "Der Vorteil des Taillenumfangs: kein Gerät nötig, wenige Sekunden Aufwand, und oft die bessere Risikoprognose als der BMI."
+          },
+          {
+            "type": "h2",
+            "text": "Was tun bei großem Taillenumfang?"
+          },
+          {
+            "type": "p",
+            "text": "Die gute Nachricht: Viszeralfett reagiert gut auf Lebensstiländerungen. Weniger raffinierte Kohlenhydrate und zugesetzter Zucker, mehr Ausdauertraining, ausreichend Schlaf und weniger Alkohol reduzieren das Bauchfett wirksam. Wichtig: Gezielter Fettabbau an einer Stelle funktioniert nicht – der Körper mobilisiert Fett global, und der Bauch verändert sich meist zuerst."
+          },
+          {
+            "type": "p",
+            "text": "Begleitend sind der [Körperfettrechner](/health/body-fat) und Verhältniswerte wie in [Körperbautyp](/health/body-type) aussagekräftiger als die bloße Waage."
+          }
+        ]
+      },
+      "percentage-increase-decrease-guide": {
+        "title": "Prozentuale Zu- und Abnahme: Achten Sie auf die Bezugsgröße",
+        "excerpt": "Erst +50 %, dann −50 % bringt Sie nicht zum Start zurück. Wer die Basis versteht, vermeidet teure Fehler beim Investieren und Einkaufen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prozentrechnung gehört zu den am häufigsten falsch angewandten Dingen im Alltag – und fast immer aus demselben Grund: der falschen Bezugsgröße."
+          },
+          {
+            "type": "h2",
+            "text": "Die Grundformeln"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Veränderung = (neu − alt) ÷ alt × 100 %",
+              "Neu = alt × (1 + Zunahme%)",
+              "Alt = neu ÷ (1 + Zunahme%)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Entscheidend ist die zweite Zeile: Prozente beziehen sich immer auf den Ausgangswert. Prüfen Sie es mit dem [Prozentrechner](/math/percentage-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "Die klassische Falle: Gewinn und Verlust sind nicht symmetrisch"
+          },
+          {
+            "type": "p",
+            "text": "Eine Aktie steigt von 100 auf 150 – plus 50 %. Fällt sie anschließend von 150 zurück auf 100, beträgt der Verlust (100 − 150) ÷ 150 = −33,3 %, nicht −50 %. Dieselbe Bewegung von 50, aber die Basis hat sich von 100 auf 150 verschoben."
+          },
+          {
+            "type": "callout",
+            "text": "Erst +50 %, dann −50 % ergibt 100 × 1,5 × 0,5 = 75 – also 25 % Verlust. Das ist der Preis der Asymmetrie."
+          },
+          {
+            "type": "h2",
+            "text": "Weitere Falle: Prozentpunkte versus Prozent"
+          },
+          {
+            "type": "p",
+            "text": "Steigt ein Zins von 4 % auf 5 %, kann man von „einem Prozentpunkt mehr“ oder von „25 % mehr“ sprechen – (5 − 4) ÷ 4. Beides ist korrekt, bedeutet aber Unterschiedliches; in den Medien wird das gern zur Dramatisierung vermischt. Prüfen Sie, was gemeint ist."
+          },
+          {
+            "type": "h2",
+            "text": "Praxisbeispiele"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Rabatt: 20 % weniger heißt 80 % des Originalpreises zahlen.",
+              "Trinkgeld: 15 % auf eine Rechnung von 200 ergibt 200 × 1,15 = 230.",
+              "Bruttopreise: bei 5 % Steuer gilt netto = brutto ÷ 1,05 – nicht mit 0,95 multiplizieren.",
+              "Anlagerendite: (Verkaufspreis − Kaufpreis + Dividenden) ÷ Kaufpreis × 100 %."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Für weitere Steuer- und Rabattfälle nutzen Sie den [Rabattrechner](/finance/discount) und den [Prozentrechner](/math/percentage-calculator)."
+          }
+        ]
+      },
+      "common-unit-conversion-mistakes": {
+        "title": "Wo Einheitenumrechnungen am häufigsten schiefgehen",
+        "excerpt": "Fuß und Zoll in Zentimeter? Pfund in Kilo? Wie viele Gallonen gibt es? Die meisten Fehler liegen nicht in der Arithmetik, sondern in der falschen Definition.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Einheitenumrechnung wirkt wie bloßes Multiplizieren und Dividieren – doch die meisten Fehler sind keine Rechenfehler, sondern falsche Faktoren oder gleichnamige, aber verschiedene Einheiten."
+          },
+          {
+            "type": "h2",
+            "text": "Falle 1: Fuß und Zoll sind nicht dezimal"
+          },
+          {
+            "type": "p",
+            "text": "5 Fuß 8 Zoll wird oft als 5,8 Fuß gelesen. Richtig ist: Zoll durch 12 teilen und addieren, also 5 + 8 ÷ 12 = 5,667 Fuß, mal 30,48 ergibt etwa 172,7 cm. Ein Umrechner erspart das Kopfrechnen."
+          },
+          {
+            "type": "h2",
+            "text": "Falle 2: Es gibt drei Gallonen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "US-Gallone ≈ 3,785 L",
+              "Imperiale (britische) Gallone ≈ 4,546 L",
+              "US-Trockengallone ≈ 4,405 L"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Bei „Gallone“ muss zuerst geklärt sein, ob US oder imperial gemeint ist – sonst sind bis zu 20 % Fehler möglich."
+          },
+          {
+            "type": "h2",
+            "text": "Falle 3: Die Unze ist Gewicht und Volumen"
+          },
+          {
+            "type": "p",
+            "text": "Die Fluid Ounce (fl oz) ist ein Volumen: 1 US-fl oz ≈ 29,57 mL. Die Handelsunze (oz) ist ein Gewicht: 1 oz ≈ 28,35 g. Die Werte liegen nah beieinander, bedeuten aber Unterschiedliches und sind nicht austauschbar."
+          },
+          {
+            "type": "h2",
+            "text": "Falle 4: Fahrenheit und Celsius haben verschiedene Nullpunkte"
+          },
+          {
+            "type": "p",
+            "text": "Temperaturen lassen sich nicht proportional umrechnen, weil die Skalen unterschiedliche Nullpunkte haben. Es gilt °C = (°F − 32) × 5/9 und umgekehrt °F = °C × 9/5 + 32. Der typische Fehler: nur multiplizieren und die 32 vergessen."
+          },
+          {
+            "type": "callout",
+            "text": "Prüfen Sie bei unbekannten Einheiten dreierlei: zu welchem System sie gehören, ob Gewicht oder Volumen gemeint ist und ob es gleichnamige Varianten gibt. Damit vermeiden Sie die meisten Fehler."
+          },
+          {
+            "type": "h2",
+            "text": "Praktischer Rat"
+          },
+          {
+            "type": "p",
+            "text": "Nutzen Sie Werkzeuge statt Kopfrechnen. Unser Einheitenrechner deckt Länge, Gewicht, Volumen und Temperatur ab; zum Kochen gibt es einen eigenen [Küchen-Umrechner](/cooking/cooking-units), der besser zu realen Rezeptmengen passt."
+          }
+        ]
+      },
+      "recipe-scaling-guide": {
+        "title": "Rezepte skalieren: von 8 auf 3 Portionen richtig umrechnen",
+        "excerpt": "Zutaten skalieren linear, Gewürze, Kräuter und Backzeit nicht. Wer die Ausnahmen kennt, kocht auch in anderer Menge gut.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Um ein Rezept von 8 auf 3 Portionen zu verkleinern, multiplizieren viele einfach alles mit 3/8. Meist klappt das – bei manchen Zutaten endet es jedoch katastrophal."
+          },
+          {
+            "type": "h2",
+            "text": "Was sich linear skalieren lässt"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Hauptzutaten: Fleisch, Fisch, Gemüse, Reis und Nudeln direkt skalieren.",
+              "Flüssigkeiten: Wasser, Brühe und Milch direkt skalieren.",
+              "Zucker und Öl: meist problemlos proportional anpassbar."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Berechnen Sie den Grundfaktor: Zielportionen ÷ Originalportionen. 3 ÷ 8 = 0,375, also jede Zutat mit 0,375 multiplizieren. Der [Rezept-Skalierer](/cooking/recipe-scaler) übernimmt die Rechnung."
+          },
+          {
+            "type": "h2",
+            "text": "Was sich nicht einfach skalieren lässt"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Salz und kräftige Gewürze: Geschmack ist nicht linear – zuerst auf 70–80 % skalieren, dann abschmecken.",
+              "Gewürze und Chili: ebenfalls nicht linear; lieber sparsam beginnen und nachlegen.",
+              "Triebmittel (Backpulver, Natron): sie hängen an Form und Chemie; extremes Skalieren scheitert, also in Etappen backen.",
+              "Wein und Essig: intensives Aroma, daher auf 50–75 % skalieren und nachjustieren."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Praxisregel: Alles mit dem Faktor skalieren, aber Salz, Chili und Gewürze nur mit 70 % beginnen und vor dem Servieren abschmecken. Lieber am Ende nachlegen als von Anfang an zu viel."
+          },
+          {
+            "type": "h2",
+            "text": "Zeit und Gefäß anpassen"
+          },
+          {
+            "type": "p",
+            "text": "Bei kleinerer Menge verkürzt sich die Backzeit meist, aber nicht proportional – prüfen Sie nach etwa zwei Dritteln der Originalzeit und verlängern Sie dann. Weniger Flüssigkeit verdampft schneller, Schmorgerichte reduzieren also früher."
+          },
+          {
+            "type": "p",
+            "text": "Passen Sie die Form an die Menge an: Dieselbe Menge läuft in zu kleinen Formen über und brennt in zu großen an. Tiefe und Durchmesser beeinflussen die Hitzeverteilung."
+          },
+          {
+            "type": "h2",
+            "text": "Einheiten-Kniff"
+          },
+          {
+            "type": "p",
+            "text": "Bei krummen Maßen wie „1/3 Tasse“ oder „2 Esslöffel“ rechnen Sie nicht mühsam: 1 Tasse = 16 Esslöffel = 48 Teelöffel. Alles auf die kleinste Einheit bringen, Faktor anwenden, zurückrechnen. Am schnellsten geht das mit dem [Küchen-Umrechner](/cooking/cooking-units)."
+          }
+        ]
+      },
+      "cooking-measurement-standards": {
+        "title": "Wie viel wiegt eine Tasse Mehl? Warum Backen eine Küchenwaage braucht",
+        "excerpt": "Bei dem einen wiegt eine Tasse Mehl 120 g, bei dem anderen 160 g. Diese Unsicherheit ist ein klassischer Grund für misslungene Backwaren.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Wer schon einmal nach Rezept einen steinharten Kuchen gebacken hat: Das Rezept war vermutlich nicht falsch – die Frage ist, wie viel „eine Tasse“ tatsächlich war."
+          },
+          {
+            "type": "h2",
+            "text": "Warum Volumenmessung ungenau ist"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Die Füllweise: direkt geschöpftes Mehl ist dichter als gesiebtes, glatt gestrichenes – oft über 20 % Unterschied.",
+              "Der Zustand: ob Mehl gesiebt, Zucker gedrückt oder Butter weich ist, verändert das Volumen.",
+              "Unterschiedliche Tassen: Eine „Tasse“ ist nicht genormt – rund 240 mL in den USA, etwa 200 mL in Japan."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Richtwerte für häufige Zutaten"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Weizenmehl Type 405/550: 1 Tasse ≈ 120–130 g (gesiebt, glatt gestrichen)",
+              "Feiner Zucker: 1 Tasse ≈ 200 g",
+              "Butter: 1 Tasse ≈ 227 g; 1 Esslöffel ≈ 14 g",
+              "Milch/Wasser: 1 Tasse ≈ 240 mL ≈ 240 g",
+              "Honig/Sirup: 1 Tasse ≈ 340 g (deutlich dichter)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Das sind Näherungswerte; Marke und Technik verschieben sie. Für präzises Umrechnen nutzen Sie den [Küchen-Umrechner](/cooking/cooking-units)."
+          },
+          {
+            "type": "callout",
+            "text": "Backen ist Chemie, kein Improvisieren. Schon 10 % Abweichung bei Mehl oder Flüssigkeit machen aus einem lockeren Kuchen einen festen."
+          },
+          {
+            "type": "h2",
+            "text": "Warum Wiegen besser ist"
+          },
+          {
+            "type": "p",
+            "text": "Eine Digitalwaage kostet wenig und misst meist auf 1 g genau. Gewichte sind vollständig reproduzierbar, unabhängig von der Füllweise und lassen Rezepte eindeutig weitergeben – deshalb stehen Profi-Rezepte in Gramm."
+          },
+          {
+            "type": "h2",
+            "text": "Wann Tassen genügen"
+          },
+          {
+            "type": "p",
+            "text": "Nicht jedes Gericht braucht die Waage. Pfannengerichte, Schmorgerichte und Suppen verzeihen viel: Volumen genügt, und nach Gefühl zu arbeiten ist flexibler. Die Waage reservieren Sie fürs Backen, für Saucen und für Desserts mit kritischen Verhältnissen."
+          }
+        ]
+      },
+      "ratio-and-proportion-practical": {
+        "title": "Verhältnisse und Proportionen: Vom Getränkemischen zum Kartenlesen",
+        "excerpt": "Wie verdünnt man ein 1:4-Konzentrat? Was heißt 1:10000 auf einer Karte? Verhältnisse sind die nützlichste – und am häufigsten falsch gelesene – Alltagsmathematik.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein Verhältnis beschreibt die Beziehung zweier Größen. Es ist so einfach, dass man es übersieht, und falsch angewendet hat es reale Folgen: vom ungenießbaren Getränk bis zur falschen Dosierung."
+          },
+          {
+            "type": "h2",
+            "text": "Zwei übliche Schreibweisen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "a:b – das Verhältnis zweier Größen, z. B. Konzentrat:Wasser = 1:4.",
+              "a:b:c – ein fortlaufendes Verhältnis mehrerer Größen, z. B. Beton 1:2:3."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Der entscheidende Punkt: 1:4 heißt 1 Teil Konzentrat auf 4 Teile Wasser – insgesamt also 5 Teile, nicht 4. Das ist der häufigste Fehler."
+          },
+          {
+            "type": "h2",
+            "text": "Beispiele aus dem Alltag"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Getränke mischen: für 500 mL bei 1:4 gilt Konzentrat = 500 ÷ 5 × 1 = 100 mL und Wasser = 400 mL.",
+              "Kartenmaßstab: 1:10000 heißt, 1 cm auf der Karte entspricht 10.000 cm – also 100 m – in der Natur.",
+              "Bildformat: 16:9 bedeutet, die Breite ist das 16/9-Fache der Höhe.",
+              "Reiniger verdünnen: 1:10 heißt 1 Teil Produkt plus 10 Teile Wasser, zusammen 11 Teile."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Eine verlässliche Kontrolle: Addieren Sie die Verhältnisteile. Die Summe muss der Gesamtmenge entsprechen. Ist sie es nicht, stimmt ein Glied nicht."
+          },
+          {
+            "type": "h2",
+            "text": "Umrechnung in Prozent"
+          },
+          {
+            "type": "p",
+            "text": "Aus einem Verhältnis wird ein Prozentwert: bei a:b beträgt der Anteil von a genau a ÷ (a + b). Beim Geschlechterverhältnis 3:2 sind also 3/5 = 60 % männlich. Umgekehrt lässt sich 60 % als 3:2 oder 60:40 schreiben."
+          },
+          {
+            "type": "p",
+            "text": "Bei komplexen Fällen übernimmt der [Verhältnisrechner](/math/ratio-calculator) die Rechnung, besonders ab drei Gliedern oder beim Rückwärtsrechnen."
+          },
+          {
+            "type": "h2",
+            "text": "Ein häufiger Irrtum"
+          },
+          {
+            "type": "p",
+            "text": "Ein Verhältnis ist keine Rate. Das Verhältnis vergleicht zwei gleichartige Größen und ist einheitenlos; eine Rate vergleicht meist ungleichartige Größen und trägt eine Einheit, etwa Geschwindigkeit (km/h) oder Bevölkerungsdichte (Einwohner/km²). Wer beides verwechselt, produziert Einheitenfehler."
+          }
+        ]
+      },
+      "how-much-house-can-you-afford": {
+        "title": "Wie viel Haus können Sie sich leisten? Drei Zahlen, die die Bank nicht freiwillig nennt",
+        "excerpt": "Zwischen dem bewilligten Kreditrahmen und dem wirklich tragfähigen Betrag liegt oft eine große Lücke. Drei Kennzahlen liefern die sichere Zahl.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bei der Kreditprüfung fragt die Bank: „Kann der Kunde zahlen?“ – mit Einkommensfaktoren und Schuldendienstquoten. Das ist eine Obergrenze, nicht Ihr Zielwert. Ein tragfähiges Budget ermitteln Sie selbst."
+          },
+          {
+            "type": "h2",
+            "text": "Zahl eins: die 28/36-Regel"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Wohnkosten unter 28 % des Monatsnetto: Darlehensrate, Hausgeld, Grundsteuer, Versicherung.",
+              "Gesamtschulden unter 36 %: zusätzlich Autokredit, Kreditkarten, Ratenkredite und Unterhalt."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Beispiel: Bei 30.000 Monatseinkommen liegt die Wohnkosten-Grenze bei 8.400 und die Gesamtgrenze bei 10.800. Wer bereits 3.000 fürs Auto zahlt, sollte die Rate unter 7.800 halten."
+          },
+          {
+            "type": "h2",
+            "text": "Zahl zwei: Eigenkapital plus Nebenkosten"
+          },
+          {
+            "type": "p",
+            "text": "Das Eigenkapital beträgt meist 20–30 %, doch das ist längst nicht der ganze Bedarf. Einplanen müssen Sie außerdem Grunderwerbsteuer (etwa 1–3 %), Instandhaltungsrücklage, Makler, Renovierung, Einrichtung sowie eine Reserve von mindestens sechs Raten."
+          },
+          {
+            "type": "callout",
+            "text": "Ein häufiger Fehler: das gesamte Ersparte ins Eigenkapital stecken und danach ohne Renovierungs- und Notreserve dastehen. Halten Sie über das Eigenkapital hinaus mindestens 10–15 % des Kaufpreises in bar."
+          },
+          {
+            "type": "h2",
+            "text": "Zahl drei: der Stresstest"
+          },
+          {
+            "type": "p",
+            "text": "Rechnen Sie vor Vertragsabschluss die Rate mit 1–2 Prozentpunkten höherem Zins nach und prüfen Sie, ob Sie sie tragen. Passt das Budget nur beim heutigen Zins, ist es gegen Zinsbewegungen völlig ungeschützt."
+          },
+          {
+            "type": "p",
+            "text": "Vergleichen Sie Raten mit dem [Hypothekenrechner](/finance/mortgage) über Zinsen und Laufzeiten und simulieren Sie Sondertilgungen mit dem [Kreditrechner](/finance/loan)."
+          },
+          {
+            "type": "h2",
+            "text": "Laufende Kosten nicht vergessen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Hausgeld: berechnet nach Fläche und auf Dauer ein echter Posten.",
+              "Instandhaltung und Renovierung: Immobilien brauchen fortlaufende Investitionen.",
+              "Pendeln: Ein günstigerer Speckgürtel kostet Zeit und Fahrtgeld, die man einpreisen sollte.",
+              "Opportunitätskosten: was das Eigenkapital am Kapitalmarkt erwirtschaften könnte."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Was nach alledem herauskommt, ist der Preis, den Sie sich wirklich leisten können. Er liegt meist 20–30 % unter dem bewilligten Rahmen – und genau das ist das Budget, mit dem Sie ruhig wohnen."
+          }
+        ]
+      },
+      "protein-intake-how-much": {
+        "title": "Wie viel Protein brauchen Sie? Rechnen Sie pro Kilogramm",
+        "excerpt": "Büromensch, Kraftsportler und Senior haben sehr unterschiedliche Bedarfe. Gewicht mal Faktor ist der praktischste Weg.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Der Proteinbedarf schwankt individuell stärker als fast jeder andere Nährstoff. Zwischen einem sitzenden Büroangestellten und jemandem, der fünfmal pro Woche hebt, kann der Bedarf um das Doppelte auseinanderliegen."
+          },
+          {
+            "type": "h2",
+            "text": "Richtwerte pro Kilogramm"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sitzend, kein Training: 0,8 g pro kg – das Minimum zur Grundversorgung.",
+              "Mäßig aktiv: 1,0–1,2 g pro kg.",
+              "Regelmäßiges Krafttraining: 1,4–1,8 g pro kg.",
+              "Intensives Training oder Diät: 1,8–2,2 g pro kg."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Eine 70-kg-Person, die dreimal pro Woche trainiert, benötigt etwa 98–126 g täglich. Der [Proteinrechner](/health/protein-calculator) liefert den Wert direkt."
+          },
+          {
+            "type": "h2",
+            "text": "Warum in der Diät mehr nötig ist"
+          },
+          {
+            "type": "p",
+            "text": "Bei einem Kaloriendefizit neigt der Körper dazu, Muskel zur Energiegewinnung abzubauen. Mehr Protein schützt die Muskulatur, sättigt stärker und erhöht den thermischen Effekt der Nahrung – schon die Verdauung von Eiweiß kostet Energie. Das ist der Hauptgrund für mehr Protein in der Diät."
+          },
+          {
+            "type": "h2",
+            "text": "Über den Tag verteilen"
+          },
+          {
+            "type": "p",
+            "text": "Wie gut Protein genutzt wird, hängt auch von der Menge pro Mahlzeit ab. Etwa 25–40 g pro Mahlzeit gelten als optimal, um die Muskelproteinsynthese anzuregen. 120 g auf drei Mahlzeiten verteilt wirken besser als 100 g am Abend."
+          },
+          {
+            "type": "callout",
+            "text": "Statt auf die Gesamtgramm zu starren, sorgen Sie dafür, dass jede Mahlzeit eine gute Proteinquelle enthält: Eier, mageres Fleisch, Fisch, Sojaprodukte oder Milchprodukte."
+          },
+          {
+            "type": "h2",
+            "text": "Vorsicht ist geboten bei"
+          },
+          {
+            "type": "p",
+            "text": "Bei eingeschränkter Nierenfunktion muss die Proteinzufuhr ärztlich begrenzt werden; pauschale Faktoren gelten dort nicht. Auch die Qualität zählt: Vollständige tierische Proteine oder gut kombinierte pflanzliche sind zu bevorzugen."
+          },
+          {
+            "type": "p",
+            "text": "Der [Makro-Rechner](/health/macro-calculator) verteilt Eiweiß, Kohlenhydrate und Fett in einem Schritt – einfacher als jede Einzelberechnung."
+          }
+        ]
+      },
+      "average-mean-median-mode": {
+        "title": "Mittelwerte täuschen: Mittelwert, Median und Modus richtig wählen",
+        "excerpt": "Warum wirkt das „Durchschnittsgehalt“ oft zu hoch? Weil Extremwerte den Mittelwert verziehen. Die richtige Kennzahl zeigt die Wahrheit.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Unter Meldungen zum „Durchschnittsgehalt“ schreiben viele, sie fühlten sich weggemittelt. Das Gefühl ist oft berechtigt – der Mittelwert reagiert stark auf Ausreißer."
+          },
+          {
+            "type": "h2",
+            "text": "Die drei Kennzahlen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mittelwert: Summe aller Werte geteilt durch ihre Anzahl. Am gebräuchlichsten, aber stark von Extremen beeinflusst.",
+              "Median: der mittlere Wert nach dem Sortieren. Unempfindlich gegen Extreme.",
+              "Modus: der häufigste Wert. Geeignet für kategoriale Daten."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Ein klares Beispiel"
+          },
+          {
+            "type": "p",
+            "text": "Ein Unternehmen hat 10 Beschäftigte: neun verdienen 8.000 im Monat, der Geschäftsführer 92.000. Der Mittelwert ist (9 × 8.000 + 92.000) ÷ 10 = 16.400 – klingt komfortabel. Der Median beträgt 8.000, und das ist die Realität der meisten."
+          },
+          {
+            "type": "callout",
+            "text": "Wenn von „Durchschnittseinkommen“ die Rede ist, fragen Sie: Mittelwert oder Median? Bei stark rechtsschiefen Daten wie Einkommen oder Immobilienpreisen ist der Median fast immer aussagekräftiger."
+          },
+          {
+            "type": "h2",
+            "text": "Wann welche Kennzahl"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mittelwert: bei gleichmäßiger Verteilung ohne Extreme, wenn jeder Wert zählen soll (z. B. Notenschnitt).",
+              "Median: bei Ausreißern oder deutlicher Schiefe (Einkommen, Immobilienpreise, Preisentwicklung).",
+              "Modus: bei kategorialen Daten, etwa beliebteste Farbe oder häufigste Größe."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Praktisch anwenden"
+          },
+          {
+            "type": "p",
+            "text": "Der [Mittelwertrechner](/math/average-calculator) liefert die Kennzahlen schnell. Bei größeren Datenmengen oder Interesse an der Verteilungsform ergänzen Sie den [Standardabweichungsrechner](/math/standard-deviation-calculator) – gleicher Mittelwert bei anderer Streuung kann völlig andere Situationen beschreiben."
+          },
+          {
+            "type": "p",
+            "text": "Gewöhnen Sie sich bei jeder Statistik drei Fragen an: Wie wurde gerechnet? Wer wurde erfasst? Gibt es Ausreißer? Damit entkräften Sie die meisten irreführenden Zahlen."
+          }
+        ]
+      },
+      "car-loan-total-cost": {
+        "title": "Die wahren Kosten eines Autokredits: Vier Posten neben der Rate",
+        "excerpt": "„Null-Prozent-Finanzierung“ klingt günstig, doch mit Gebühren, Versicherung, Steuer und Wertverlust liegt die Realität oft darüber.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Autokredit-Werbung konzentriert sich fast ganz auf die Monatsrate – „schon ab 80 pro Tag“. Entscheidend für die Tragfähigkeit sind aber die Gesamtkosten; die Rate ist nur ein Teil davon."
+          },
+          {
+            "type": "h2",
+            "text": "Vier Posten neben der Rate"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Anzahlung: meist 20–30 % des Preises und die größte Einzelausgabe in bar.",
+              "Zulassungs- oder Verkehrsteuer: einmalig fällig, oft ein spürbarer Anteil.",
+              "Versicherung: im ersten Jahr am teuersten, danach sinkend, aber jährlich fällig.",
+              "Bearbeitungs- oder Vermittlungsgebühr: vom Kreditgeber erhoben, teils 2–3 % der Darlehenssumme."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Die Wahrheit über „Null Prozent“"
+          },
+          {
+            "type": "p",
+            "text": "Null- oder Niedrigzinsangebote holen sich die Kosten auf zwei Wegen zurück: höhere Bearbeitungsgebühren oder der Verzicht auf den Barpreisnachlass – beides zusammen gibt es meist nicht. Mitunter ist „hoher Nachlass plus normal verzinster Kredit“ insgesamt günstiger."
+          },
+          {
+            "type": "callout",
+            "text": "Zwei Angebote vergleicht man nur über die Gesamtkosten: Anzahlung + alle Raten + Gebühren + Zinsen − Nachlass. Lassen Sie sich nicht von der Monatsrate führen."
+          },
+          {
+            "type": "h2",
+            "text": "Mit dem Rechner vergleichen"
+          },
+          {
+            "type": "p",
+            "text": "Geben Sie beide Varianten in den [Autokreditrechner](/finance/auto-loan) ein und vergleichen Sie Zinssumme und Gesamtkosten. Wenn ein Händler nur die Rate nennt und nicht die Gesamtsumme, ist das ein Warnsignal."
+          },
+          {
+            "type": "h2",
+            "text": "Den Wertverlust nicht vergessen"
+          },
+          {
+            "type": "p",
+            "text": "Ein Auto verliert laufend an Wert. Ein Neuwagen büßt beim ersten Verlassen des Hofs meist 10–20 % ein, am stärksten in den ersten drei Jahren. Wer ein schnell an Wert verlierendes Auto über fünf Jahre finanziert, schuldet schnell mehr, als es wert ist."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Halten Sie die Laufzeit kurz, damit sie zum Wertverlust passt.",
+              "Prüfen Sie ein ein- bis dreijähriges Fahrzeug, das die steilste Abwertung hinter sich hat.",
+              "Setzen Sie die Anzahlung nicht zu niedrig an, sonst droht negatives Eigenkapital."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Prüfen Sie abschließend mit dem [Kreditrechner](/finance/loan), ob die Rate innerhalb Ihrer Belastungsgrenze liegt – siehe die 36-Prozent-Gesamtregel in [Wie viel Haus können Sie sich leisten](/blog/how-much-house-can-you-afford)."
+          }
+        ]
+      },
+      "food-cost-per-serving": {
+        "title": "Kosten pro Portion: Ist Selberkochen wirklich günstiger?",
+        "excerpt": "Selberkochen ist meist billiger als auswärts – aber wie viel hängt an der Rechnung. Zutaten, Gewürze und Energie gehören hinein.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "„Selberkochen spart Geld“ gilt als ausgemacht, doch mit Gewürzen, Gas, Strom und Ihrer Zeit kann das Ergebnis überraschen. Das heißt nicht, dass Kochen sich nicht lohnt – sondern dass sich ein genauer Blick lohnt."
+          },
+          {
+            "type": "h2",
+            "text": "Was ein Gericht wirklich kostet"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Hauptzutaten: Fleisch, Gemüse, Beilagen – berechnet nach Verbrauch, nicht nach Packungspreis.",
+              "Gewürze: Öl, Salz, Sojasauce, Gewürze – je Portion klein, auf Dauer beachtlich.",
+              "Energie: Gas oder Strom, pro Kochvorgang meist ein kleiner Betrag.",
+              "Putverlust: Schälen und Putzen entfernen meist 10–30 % der eingekauften Menge."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Der [Lebensmittelkostenrechner](/cooking/food-cost) summiert das und zeigt die wahren Kosten pro Portion."
+          },
+          {
+            "type": "callout",
+            "text": "Häufiger Fehler: nur die Hauptzutaten rechnen und Gewürze sowie Energie vergessen. Bei einem einfachen Hausmannsgericht machen diese 15–25 % aus."
+          },
+          {
+            "type": "h2",
+            "text": "Die Falle beim Großpackungskauf"
+          },
+          {
+            "type": "p",
+            "text": "Großpackungen sind im Stückpreis billiger, aber zwei Fragen zählen: Brauchen Sie alles vor dem Verderb, und was kostet die Lagerung? Was Sie beim 5-kg-Reissack sparen, ist verloren, wenn die Hälfte verdirbt."
+          },
+          {
+            "type": "h2",
+            "text": "Wann Kochen wirklich günstiger ist"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Für mehrere Personen: die Kosten verteilen sich, mehr Portionen heißt besserer Preis.",
+              "Mit Saisongemüse: Gemüse außer der Saison kostet leicht das Zwei- bis Dreifache.",
+              "Bei einfacher Würzung: Rezepte mit teuren Saucen und importierten Gewürzen steigen schnell.",
+              "Mit Resteverwertung: ein ganzes Huhn über zwei Mahlzeiten ist günstiger als nur Brustfilet."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Der Wert Ihrer Zeit"
+          },
+          {
+            "type": "p",
+            "text": "Streng genommen hat Kochzeit einen Preis, den die meisten jedoch nicht ansetzen – für viele ist Kochen Entspannung oder Familienzeit. Ob Sie sie einrechnen, bleibt Ihnen überlassen. Ist Ihre Zeit teuer, können vorbereitete Zutaten wie vorgeschnittenes Gemüse trotz höherem Kilopreis unterm Strich günstiger sein."
+          }
+        ]
+      },
+      "rounding-and-significant-figures": {
+        "title": "Warum Runden manchmal falsch ist: signifikante Stellen und Fehlerfortpflanzung",
+        "excerpt": "Wer in jedem Schritt rundet, landet am Ende daneben. Wer Fehlerfortpflanzung und kaufmännisches Runden kennt, rechnet verlässlicher.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Runden ist die erste Regel der Schule – doch bei Kettenrechnungen oder großen Datenmengen erzeugt mechanisches Runden systematische Verzerrung und Fehlerfortpflanzung."
+          },
+          {
+            "type": "h2",
+            "text": "Problem eins: Zwischenschritte nicht runden"
+          },
+          {
+            "type": "p",
+            "text": "Rechnen Sie 1,4 × 2,6 × 3,8 mit Runden auf eine Dezimale: 1,4 × 2,6 = 3,64 → 3,6, dann 3,6 × 3,8 = 13,68 → 13,7. Direkt gerechnet ergibt 1,4 × 2,6 × 3,8 = 13,832 → 13,8. Das Zwischenrunden verschob das Ergebnis um 0,1."
+          },
+          {
+            "type": "callout",
+            "text": "Grundregel: Runden Sie erst im letzten Schritt. Behalten Sie zwischendurch ein bis zwei signifikante Stellen mehr."
+          },
+          {
+            "type": "h2",
+            "text": "Problem zwei: die systematische Verzerrung"
+          },
+          {
+            "type": "p",
+            "text": "Die Ziffern 1–4 fallen weg, 6–9 runden auf – das wirkt fair, doch durch die Behandlung der 5 erhält das Aufrunden einen Fall mehr. Bei vielen Daten liegt das Ergebnis dadurch systematisch zu hoch."
+          },
+          {
+            "type": "p",
+            "text": "In der Statistik gilt eher „Rundung zur nächsten geraden Zahl“ (kaufmännisches Runden): unter 5 abrunden, über 5 aufrunden, bei genau 5 zur nächsten geraden Zahl. Bei vielen Werten heben sich die Abweichungen auf."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "2,5 → 2 (zur geraden Zahl)",
+              "3,5 → 4 (zur geraden Zahl)",
+              "1,24 → 1,2",
+              "1,26 → 1,3"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Was signifikante Stellen sind"
+          },
+          {
+            "type": "p",
+            "text": "Signifikante Stellen werden ab der ersten von null verschiedenen Ziffer gezählt und geben die Genauigkeit einer Messung oder Rechnung an. 0,0052 hat zwei, 5,20 hat drei. Eine Null am Ende ist kein Beiwerk: sie zeigt, dass diese Null gemessen wurde."
+          },
+          {
+            "type": "p",
+            "text": "Faustregeln: Bei Addition und Subtraction zählen die Dezimalstellen – das Ergebnis behält so viele wie der ungenaueste Wert. Bei Multiplikation und Division zählen die signifikanten Stellen – das Ergebnis behält so viele wie der Wert mit den wenigsten."
+          },
+          {
+            "type": "h2",
+            "text": "Im Alltag"
+          },
+          {
+            "type": "p",
+            "text": "Der [Rundungsrechner](/math/rounding-calculator) deckt verschiedene Rundungsarten ab. Bei Finanzdaten ist besondere Vorsicht nötig: Währungsrechnungen sehen meist zwei Dezimalstellen vor, und gerundet wird das Endergebnis, nicht jeder Zwischenbetrag."
+          }
+        ]
+      },
+      "sleep-cycles-when-to-wake": {
+        "title": "Schlafzyklen und Aufstehzeit: Warum 8 Stunden manchmal nicht reichen",
+        "excerpt": "Schlaf verläuft in etwa 90-Minuten-Zyklen. Wer aus dem Tiefschlaf geweckt wird, ist trotz genügend Stunden benommen – das richtige Timing hilft.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Manchmal sind Sie nach acht Stunden gerädert und nach sechseinhalb hellwach. Der Unterschied liegt meist nicht an der Gesamtdauer, sondern daran, aus welcher Schlafphase Sie geweckt wurden."
+          },
+          {
+            "type": "h2",
+            "text": "Was ein Schlafzyklus ist"
+          },
+          {
+            "type": "p",
+            "text": "Schlaf ist kein gleichmäßiger Zustand, sondern verläuft in Blöcken von etwa 90 Minuten mit Leichtschlaf, Tiefschlaf und REM-Schlaf. In der ersten Nachthälfte überwiegt der Tiefschlaf, in der zweiten der REM-Schlaf. Aus dem Tiefschlaf geweckt entsteht deutliche Schlaftrunkenheit."
+          },
+          {
+            "type": "h2",
+            "text": "Die Aufstehzeit planen"
+          },
+          {
+            "type": "p",
+            "text": "Da ein Zyklus etwa 90 Minuten dauert, sollte die Gesamtdauer nahe bei einem Vielfachen liegen und das Aufwachen an einer Zyklusgrenze erfolgen. 7,5 Stunden (5 Zyklen) oder 6 Stunden (4 Zyklen) führen meist zu klarerem Aufwachen als 8 Stunden."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "6 Stunden = 4 Zyklen",
+              "7,5 Stunden = 5 Zyklen",
+              "9 Stunden = 6 Zyklen"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Das Einschlafen dauert zusätzlich meist 10–20 Minuten; rechnen Sie das beim Zurückrechnen ein. Der [Schlafrechner](/health/sleep-calculator) ermittelt passende Schlafens- und Aufstehzeiten."
+          },
+          {
+            "type": "callout",
+            "text": "Die Zykluslänge ist individuell; 90 Minuten sind ein Mittelwert. Sind Sie nach 7,5 Stunden noch müde, verschieben Sie um 15 Minuten und finden Sie Ihren Rhythmus."
+          },
+          {
+            "type": "h2",
+            "text": "Wichtiger als die Dauer"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Regelmäßigkeit: täglich ähnliche Schlafens- und Aufstehzeiten wirken besser als gelegentliches Ausschlafen.",
+              "Schlafdruck: genügend Wachzeit und körperliche Aktivität am Tag verbessern die Schlafqualität.",
+              "Licht: Tageslicht am Morgen und gedämpftes Licht vor dem Schlafen stabilisieren die innere Uhr.",
+              "Alkohol: er beschleunigt das Einschlafen, stört aber die Schlafarchitektur der zweiten Nachthälfte massiv."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Den Zyklus nicht überbewerten"
+          },
+          {
+            "type": "p",
+            "text": "Zyklus-Timing ist eine nützliche Orientierung, aber kein Allheilmittel. Wer dauerhaft erschöpft aufwacht, tagsüber schläfrig ist oder stark schnarcht, könnte an einer Schlafapnoe leiden – das gehört zum Arzt, nicht in den Kalender. Zyklusrechnung regelt den Wachzeitpunkt, nicht die Schlafqualität."
+          }
+        ]
       }
     },
     "categoryLabels": {

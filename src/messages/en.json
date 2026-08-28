@@ -7026,6 +7026,1289 @@
             "text": "Before choosing, compare the cost of your debt to what you might earn investing with the [ROI Calculator](/finance/roi). Sometimes it pays to invest while making minimum payments."
           }
         ]
+      },
+      "equal-installment-vs-principal": {
+        "title": "Equal Installment vs Equal Principal: Which Mortgage Saves More",
+        "excerpt": "Same loan amount, same rate — yet the two repayment methods can differ by tens of thousands in total interest. Here's how to choose.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "When you take out a mortgage, the bank usually asks you to pick between an equal-installment plan and an equal-principal plan. Monthly payments, total interest, and early-years burden all differ — yet many people sign without understanding the trade-off."
+          },
+          {
+            "type": "h2",
+            "text": "The core difference"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Equal installment: a fixed monthly payment. Early payments are mostly interest; later payments shift toward principal.",
+              "Equal principal: a fixed monthly principal portion. Interest is charged on the remaining balance, so the payment shrinks every month."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Our [Loan Calculator](/finance/loan) makes it concrete: on a $1,000,000 loan over 30 years at 4%, equal installment costs about $4,774/month. Equal principal starts near $6,111/month and drops by roughly $11 each month."
+          },
+          {
+            "type": "h2",
+            "text": "How much interest is at stake"
+          },
+          {
+            "type": "p",
+            "text": "In that same example, equal installment totals about $719,000 in interest while equal principal totals about $602,000 — a gap of roughly $117,000. The difference comes from how fast the balance shrinks: equal principal cuts the interest-bearing base sooner."
+          },
+          {
+            "type": "h2",
+            "text": "So is equal principal always better?"
+          },
+          {
+            "type": "p",
+            "text": "Not necessarily. Its early payments run about 28% higher, which is real pressure for a household that just bought a home. If the extra monthly cost squeezes your lifestyle or pushes you toward credit-card debt, the interest you save isn't worth it."
+          },
+          {
+            "type": "callout",
+            "text": "A simple rule: if you can comfortably afford the higher early payments, choose equal principal. Otherwise take equal installment and use the savings to prepay the loan."
+          },
+          {
+            "type": "h2",
+            "text": "What if you plan to prepay?"
+          },
+          {
+            "type": "p",
+            "text": "If you expect to clear the loan within 5 to 10 years, the gap between the two methods narrows sharply, because much of the interest never accrues. Focus instead on prepayment penalties and on shortening the term rather than lowering the monthly payment. Compare scenarios with the [Mortgage Calculator](/finance/mortgage)."
+          }
+        ]
+      },
+      "credit-card-minimum-payment-trap": {
+        "title": "The Real Cost of Paying Only the Credit Card Minimum",
+        "excerpt": "Paying the minimum feels manageable, but it's one of the most expensive ways to borrow. A few thousand in debt can take over a decade to clear.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "When the statement arrives, the minimum is usually just 5% or 10% of the balance — it looks like a friendly buffer. In reality it's one of the card issuer's most profitable designs: the rest accrues daily interest, and the grace period usually disappears."
+          },
+          {
+            "type": "h2",
+            "text": "A concrete example"
+          },
+          {
+            "type": "p",
+            "text": "Say you owe $10,000 at 18% APR (about 0.05% per day) with a 10% minimum. You pay $1,000 the first month; the remaining $9,000 keeps accruing interest. Next month the minimum drops to $900, so you pay even less while interest keeps running."
+          },
+          {
+            "type": "p",
+            "text": "Run it through the [Credit Card Calculator](/finance/credit-card): paying only the minimum, clearing that $10,000 can take more than 14 years and cost over $8,000 in interest."
+          },
+          {
+            "type": "h2",
+            "text": "Why the minimum is so expensive"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The grace period vanishes: if you don't pay in full, interest is charged from the posting date of each purchase, not after 20–50 interest-free days.",
+              "Daily interest, monthly compounding: interest is added to the balance and then earns interest itself.",
+              "The minimum keeps shrinking: as the balance falls, so does your payment, so principal barely moves."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Three cheaper alternatives"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Pay in full: the only option with zero interest, and it should be your default.",
+              "Installment plans: they carry fees, but the rate is usually below revolving interest, with a fixed, predictable term.",
+              "Balance transfer or a low-rate loan: for large balances, compare the annual cost of a [personal loan](/finance/personal-loan)."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "The minimum should be an emergency stopgap, never a habit. Even $100 extra per month cuts years off the payoff."
+          },
+          {
+            "type": "h2",
+            "text": "How to get out fast"
+          },
+          {
+            "type": "p",
+            "text": "Stop adding new charges, then use the [Debt Snowball vs Avalanche Calculator](/finance/debt-snowball-avalanche) to set your order: avalanche (highest rate first) costs least overall, while snowball (smallest balance first) is easier to stick with."
+          }
+        ]
+      },
+      "emergency-fund-how-many-months": {
+        "title": "How Many Months of Expenses Should Your Emergency Fund Cover?",
+        "excerpt": "“Three to six months” is the standard advice, but that range hides the real question: your job stability and family structure decide the number.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Nearly every personal-finance book says to keep three to six months of expenses in reserve. The range is reasonable, but it glosses over the key issue: whether you need three months or six depends on your exposure to risk, not on an average."
+          },
+          {
+            "type": "h2",
+            "text": "What drives the number"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Income stability: tenured or salaried roles vary little; freelancing, commission-based sales, and entrepreneurship vary a lot.",
+              "Job market: if your industry is hiring and you could re-employ quickly, you can hold less; if it's contracting, hold more.",
+              "Household structure: two incomes with no children is lowest risk; single-income households with children or dependents are higher.",
+              "Fixed obligations: the more you have in mortgage, car loans, and insurance that can't be paused, the bigger the buffer you need.",
+              "Existing safety nets: health insurance, unemployment benefits, and private coverage absorb part of the risk."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "A workable rule of thumb"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "3 months: two incomes, no children, healthy industry, stable social insurance.",
+              "6 months: single-income household, has a mortgage, average industry.",
+              "9–12 months: freelancer, founder, single parent, weak industry, or income heavily dependent on commission."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "How to compute your number"
+          },
+          {
+            "type": "p",
+            "text": "The fund covers essential spending, not your full lifestyle. Add rent or mortgage, food, utilities, transport, insurance, and minimum debt payments to get your monthly baseline, then multiply by your target months. Use the [Savings Goal Calculator](/finance/savings-goal) to work out the monthly deposit needed."
+          },
+          {
+            "type": "callout",
+            "text": "An emergency fund is optimised for access, not return. Keep it in a savings account or money-market fund — not locked in a term deposit or volatile assets."
+          },
+          {
+            "type": "h2",
+            "text": "When to actually use it"
+          },
+          {
+            "type": "p",
+            "text": "Only genuine surprises qualify: job loss, serious illness, essential major repairs. Planned expenses — a new car, a holiday, a renovation — should be saved for separately and never eat into the buffer. After you dip in, refilling it becomes priority one."
+          }
+        ]
+      },
+      "inflation-purchasing-power": {
+        "title": "What Will Your $100 Buy in 10 Years? Inflation and Purchasing Power",
+        "excerpt": "Inflation doesn't shrink your money — it shrinks what your money can buy. Understanding that erosion is lesson one in why you invest.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cash in a drawer doesn't lose its number — but ten years later it buys less. That is inflation eroding purchasing power: the most overlooked yet most certain risk in personal finance."
+          },
+          {
+            "type": "h2",
+            "text": "How to compute purchasing power"
+          },
+          {
+            "type": "p",
+            "text": "The formula is simple: future purchasing power = present amount ÷ (1 + inflation rate) ^ years. At 3% inflation, $100 today has the buying power of about $74 in ten years, and about $55 in twenty."
+          },
+          {
+            "type": "p",
+            "text": "The [Inflation Calculator](/finance/inflation) shows the erosion across different rates and horizons."
+          },
+          {
+            "type": "h2",
+            "text": "Why this forces you to invest"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Savings-account rates usually sit below inflation, so real returns are negative.",
+              "Even if your balance grows in nominal terms, if the return trails inflation your real purchasing power still falls.",
+              "Judge an investment by its real return: nominal return minus inflation."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "3% inflation sounds mild, but it means purchasing power halves in roughly 24 years. Simple arithmetic — and rarely done."
+          },
+          {
+            "type": "p",
+            "text": "That said, fear of inflation is no reason to gamble blindly. Build your [emergency fund](/blog/emergency-fund-how-many-months) first, then put long-horizon money into assets with a chance of beating inflation, and model the outcome with the [Compound Interest Calculator](/finance/compound-interest)."
+          },
+          {
+            "type": "h2",
+            "text": "Your income needs to keep up too"
+          },
+          {
+            "type": "p",
+            "text": "The income side is equally overlooked. If your salary hasn't moved in years, your real income has been shrinking. When weighing a job's long-term value, whether raises outpace inflation matters more than the current number."
+          }
+        ]
+      },
+      "apr-vs-apy-interest-rate-basics": {
+        "title": "Nominal Rate, Real Rate, and EAR: Don't Let the Numbers Fool You",
+        "excerpt": "Is “12% per year” the same as “1% per month”? Not once compounding enters the picture — and the gap can be costly.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Loan ads love “0.5% per month.” Deposit products love “4% annualized.” Both look reasonable, but if you don't understand how interest is compounded, you'll underestimate true cost and overestimate true return."
+          },
+          {
+            "type": "h2",
+            "text": "Three terms you must separate"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Nominal rate: the stated annual rate in the contract, ignoring compounding frequency.",
+              "Periodic rate: the rate per compounding period — monthly rate = nominal annual rate ÷ 12.",
+              "Effective annual rate (EAR/APY): the true annual cost or return once compounding is included."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "How compounding frequency changes things"
+          },
+          {
+            "type": "p",
+            "text": "A 12% nominal rate compounded annually gives an EAR of 12%. Compounded monthly, the periodic rate is 1% and the true annual cost is (1 + 1%) ^ 12 − 1 ≈ 12.68%. Daily compounding pushes it higher still."
+          },
+          {
+            "type": "p",
+            "text": "The gap looks small, but on a large balance over decades it is real money. Always convert products to a common basis before comparing."
+          },
+          {
+            "type": "callout",
+            "text": "One line to remember: compare loans by EAR and deposits by APY. A nominal rate is only directly comparable when compounding frequency matches."
+          },
+          {
+            "type": "h2",
+            "text": "Practical steps"
+          },
+          {
+            "type": "p",
+            "text": "When you get a quote, ask three things: what is the nominal annual rate, how often does it compound, and are there fees? Many “low-rate” products hide their true cost in fees. Enter different parameters in the [Loan Calculator](/finance/loan) to compare monthly payments and total cost."
+          },
+          {
+            "type": "p",
+            "text": "For savings, use the [Compound Interest Calculator](/finance/compound-interest) to estimate actual returns at different compounding frequencies, so marketing language doesn't mislead you."
+          }
+        ]
+      },
+      "rent-vs-buy-decision": {
+        "title": "Rent or Buy? Run the Numbers Before You Decide",
+        "excerpt": "“Buying always beats renting” is a popular claim, but the real answer depends on the price-to-rent ratio, how long you'll stay, and your city.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Few financial decisions are as emotionally loaded as renting versus buying. Elders say renting is “paying your landlord's mortgage”; agents say “buy early, gain early.” But this question can be settled with numbers instead of slogans."
+          },
+          {
+            "type": "h2",
+            "text": "Two metrics that matter"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Price-to-rent ratio: home price ÷ annual rent. The lower, the better buying looks. Roughly, below 15 favors buying; above 25 favors renting.",
+              "Holding period: how long you plan to stay in the city. Transaction costs — taxes, agent fees, renovation — need years to amortize."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "The true cost of buying is more than the mortgage"
+          },
+          {
+            "type": "p",
+            "text": "Many people compare only “mortgage vs rent,” which is incomplete. Buying also carries the opportunity cost of the down payment, maintenance fees, repairs, property taxes, and eventual selling costs. Renting costs the rent itself plus the opportunity cost of the deposit."
+          },
+          {
+            "type": "p",
+            "text": "Use the [Mortgage Calculator](/finance/mortgage) for payments and total interest, then the [ROI Calculator](/finance/roi) to estimate what the down payment could earn if invested — and compare the two together."
+          },
+          {
+            "type": "h2",
+            "text": "When renting makes more sense"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "You'll stay in the city fewer than 3 to 5 years.",
+              "Your job or income is unstable and you need flexibility.",
+              "The local price-to-rent ratio is clearly high.",
+              "You can't afford a down payment without draining your emergency fund."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Remember: buying is not an investment; it's consumption plus forced savings. It gives you housing and discipline, but very poor liquidity and high transaction costs. Expecting investment-grade returns usually disappoints."
+          },
+          {
+            "type": "h2",
+            "text": "A middle path"
+          },
+          {
+            "type": "p",
+            "text": "Renting first is no disgrace. Accumulate a down payment, learn the city and neighborhood, confirm job stability — better than rushing in under pressure. Once you're sure you'll put down roots, model it carefully with the [Mortgage Calculator](/finance/mortgage)."
+          }
+        ]
+      },
+      "bmi-limitations-better-metrics": {
+        "title": "BMI Isn't Enough: Why You Also Need Body Fat and Waist",
+        "excerpt": "BMI summarizes everyone with one height-weight formula, so it inevitably misjudges muscular people and older adults. Know its blind spots to use it well.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BMI is a screening tool, not a diagnostic one. Its value is that it's cheap, fast, and works across large populations; its cost is that it is crude at the individual level."
+          },
+          {
+            "type": "h2",
+            "text": "Three main blind spots"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It can't tell muscle from fat: two people at 80 kg — a bodybuilder and a sedentary office worker — can share the same BMI with completely different bodies.",
+              "It ignores fat distribution: visceral fat around the abdomen carries far more risk than subcutaneous fat in the limbs, and BMI sees none of this.",
+              "It overlooks age and sex: at the same BMI, older adults usually carry more fat than younger people, and women naturally carry more than men."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Two better additions"
+          },
+          {
+            "type": "p",
+            "text": "First, body fat percentage. It directly reflects how much of your body is fat, a far better health signal than weight. Estimate it with the [Body Fat Calculator](/health/body-fat). Home scales have error, but the long-term trend matters more than any single reading."
+          },
+          {
+            "type": "p",
+            "text": "Second, waist circumference. It reflects abdominal fat and is a key warning sign for metabolic syndrome. Generally, risk rises above roughly 90 cm in men and 80 cm in women (China guidelines)."
+          },
+          {
+            "type": "callout",
+            "text": "Treat BMI as a starting point, not a conclusion. If BMI says overweight but body fat and waist are fine, you probably just carry muscle. If BMI is normal but your waist is large, don't be complacent."
+          },
+          {
+            "type": "h2",
+            "text": "How to use it properly"
+          },
+          {
+            "type": "p",
+            "text": "Get an initial read from the [BMI Calculator](/health/bmi), then combine it with [body fat](/health/body-fat) and waist. Better still, watch the trend: whether these numbers rise or fall over six months says far more than one measurement."
+          },
+          {
+            "type": "p",
+            "text": "One caveat: every online calculator is an estimate. If your numbers look abnormal or you have a medical condition, rely on an in-person doctor and clinical testing."
+          }
+        ]
+      },
+      "bmr-tdee-how-many-calories": {
+        "title": "BMR and TDEE: How Many Calories Should You Actually Eat?",
+        "excerpt": "Fat loss comes down to a calorie deficit — but a deficit relative to what you actually burn. BMR and TDEE answer that question.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "There is no universal answer to “how much should I eat” — it depends on your body and your activity. BMR and TDEE are the two concepts that turn that question into numbers."
+          },
+          {
+            "type": "h2",
+            "text": "BMR: the calories you burn lying still"
+          },
+          {
+            "type": "p",
+            "text": "Basal metabolic rate is the minimum energy your body needs at complete rest, fasting, in a neutral-temperature environment. It accounts for 60–75% of daily burn. Estimate it with the [BMR Calculator](/health/bmr-calculator), which uses the Mifflin-St Jeor equation."
+          },
+          {
+            "type": "h2",
+            "text": "TDEE: your true burn once activity counts"
+          },
+          {
+            "type": "p",
+            "text": "Total daily energy expenditure multiplies BMR by an activity factor: about 1.2 sedentary, 1.375 light, 1.55 moderate, 1.725 intense. The [TDEE Calculator](/health/tdee-calculator) gives you the number directly."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sedentary (desk job, little exercise): BMR × 1.2",
+              "Light (training 1–3 days/week): BMR × 1.375",
+              "Moderate (training 3–5 days/week): BMR × 1.55",
+              "Intense (training 6–7 days/week): BMR × 1.725"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "How to plan your intake"
+          },
+          {
+            "type": "p",
+            "text": "To lose fat: subtract 300–500 kcal from TDEE daily, which theoretically yields about 0.3–0.5 kg per week. To build muscle: add 200–400 kcal above TDEE with adequate protein."
+          },
+          {
+            "type": "callout",
+            "text": "Don't cut intake below BMR for long periods. Severe restriction slows metabolism and breaks down muscle, making fat loss harder and rebound very likely."
+          },
+          {
+            "type": "p",
+            "text": "Use the [Macro Calculator](/health/macro-calculator) to split protein, carbs, and fat — easier to sustain and healthier than chasing calories alone."
+          },
+          {
+            "type": "h2",
+            "text": "The calculator is a starting point"
+          },
+          {
+            "type": "p",
+            "text": "Equations carry individual error, sometimes around 10%. The practical method: start with the estimate, run it for two weeks, then adjust based on the scale. If weight hasn't moved, trim another 100–200 kcal."
+          }
+        ]
+      },
+      "daily-water-intake-guide": {
+        "title": "How Much Water Should You Drink? Calculate by Weight, Not by “8 Glasses”",
+        "excerpt": "“Eight glasses a day” is catchy, but a 50 kg person and a 90 kg person clearly don't need the same. Weight and activity are better guides.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "“Drink eight glasses (about 2 liters) a day” is everywhere, but it's a rounded, rough guideline that ignores the variables that matter most: body weight, climate, and activity."
+          },
+          {
+            "type": "h2",
+            "text": "Calculate from body weight"
+          },
+          {
+            "type": "p",
+            "text": "A common estimate: daily water in ml = body weight in kg × 30 to 35. A 60 kg adult needs roughly 1,800–2,100 ml per day. The [Water Intake Calculator](/health/water-intake) gives you a personalized number."
+          },
+          {
+            "type": "h2",
+            "text": "When you need more"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Exercise and sweat: add roughly 500–700 ml per hour of activity.",
+              "Heat or humidity: sweat losses rise sharply, so intake should follow.",
+              "High altitude or dry aircraft cabins: water is lost faster through breathing and skin.",
+              "Fever, diarrhea, or vomiting: losses accelerate, so replace fluids and electrolytes promptly.",
+              "Pregnancy and breastfeeding: needs rise clearly — confirm the amount with your doctor."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Water isn't only plain water"
+          },
+          {
+            "type": "p",
+            "text": "Many assume only plain water counts. In reality food counts too — fruits and vegetables are often over 90% water — as do soup, milk, tea, and coffee. Coffee's mild diuretic effect offsets part of its fluid, but it doesn't cause a net loss."
+          },
+          {
+            "type": "callout",
+            "text": "The simplest adequacy check is urine color: pale yellow means well hydrated, dark yellow means drink more, and completely clear may mean too much."
+          },
+          {
+            "type": "h2",
+            "text": "More isn't always better"
+          },
+          {
+            "type": "p",
+            "text": "Water is not the more the better. Drinking very large amounts quickly can cause hyponatremia, which is rare but can be life-threatening. People with kidney failure or heart failure need doctor-set fluid limits and shouldn't apply a generic formula."
+          }
+        ]
+      },
+      "waist-circumference-health-risk": {
+        "title": "Waist Circumference: A Better Risk Predictor Than Weight",
+        "excerpt": "Where your fat sits matters more than how much you carry. Abdominal fat is directly tied to heart disease and diabetes, and waist is the easiest way to measure it.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Two people can have identical weight and BMI yet vastly different risk profiles — the difference is where the fat is stored. Visceral fat around the abdomen releases inflammatory signals and disrupts metabolism, making it far riskier than fat under the skin of the limbs."
+          },
+          {
+            "type": "h2",
+            "text": "How to measure it correctly"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Timing: in the morning, fasting, after emptying your bladder, standing and breathing normally.",
+              "Position: a common method is the midpoint between the lower rib margin and the top of the hip bone (usually navel level); the WHO suggests the midpoint between the lower rib and the iliac crest.",
+              "Technique: the tape sits on the skin without compressing it; read at the end of a normal exhalation, to the nearest 0.1 cm.",
+              "Cautions: don't suck in your stomach, and don't measure right after a large meal."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Reference thresholds"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Men: ≥ 90 cm indicates abdominal (central) obesity.",
+              "Women: ≥ 80 cm indicates abdominal obesity.",
+              "Above these levels, the risk of type 2 diabetes, hypertension, and cardiovascular disease rises markedly."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "These are commonly used thresholds; different countries and bodies vary slightly. Pair the reading with the [BMI Calculator](/health/bmi) — using both together gives a more reliable picture."
+          },
+          {
+            "type": "callout",
+            "text": "Waist measurement's advantage: no equipment, a few seconds, and it often predicts risk better than BMI."
+          },
+          {
+            "type": "h2",
+            "text": "What to do if your waist is high"
+          },
+          {
+            "type": "p",
+            "text": "The good news is that visceral fat responds readily to lifestyle change. Cutting refined carbohydrates and added sugar, adding aerobic exercise, protecting sleep, and drinking less alcohol all shrink abdominal fat. Note that spot reduction is a myth — the body mobilizes fat overall, and the abdomen usually changes first."
+          },
+          {
+            "type": "p",
+            "text": "Tracking with the [Body Fat Calculator](/health/body-fat) and waist-to-hip measures such as those in [body type](/health/body-type) is far more informative than watching the scale alone."
+          }
+        ]
+      },
+      "percentage-increase-decrease-guide": {
+        "title": "Percent Increase and Decrease: Mind the Base",
+        "excerpt": "Up 50% then down 50% doesn't bring you back to the start. Understanding the base-rate trap prevents a lot of mistakes in investing and shopping.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Percentages are among the most commonly miscalculated things in daily life, and the cause is almost always the same: using the wrong base."
+          },
+          {
+            "type": "h2",
+            "text": "The basic formulas"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Change = (new − original) ÷ original × 100%",
+              "New = original × (1 + increase%)",
+              "Original = new ÷ (1 + increase%)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "The second line is the crux: a percentage is always relative to the original value. Verify quickly with the [Percentage Calculator](/math/percentage-calculator)."
+          },
+          {
+            "type": "h2",
+            "text": "The classic trap: gains and losses aren't symmetric"
+          },
+          {
+            "type": "p",
+            "text": "Say a stock goes from $100 to $150 — a 50% gain. It then falls from $150 back to $100. That drop is (100 − 150) ÷ 150 = −33.3%, not −50%. Same $50 move, but the base shifted from 100 to 150."
+          },
+          {
+            "type": "callout",
+            "text": "Up 50% then down 50% leaves you at 100 × 1.5 × 0.5 = 75 — a 25% loss. That asymmetry is the cost."
+          },
+          {
+            "type": "h2",
+            "text": "Another trap: percentage points vs percent"
+          },
+          {
+            "type": "p",
+            "text": "If a rate rises from 4% to 5%, you can say it rose “1 percentage point” or that it rose 25% — (5 − 4) ÷ 4. Both are correct but mean different things, and news coverage mixes them to exaggerate. Always check which one is meant."
+          },
+          {
+            "type": "h2",
+            "text": "Practical cases"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Discounts: 20% off means paying 80% of the original price.",
+              "Tipping: a 15% tip on a $200 bill comes to 200 × 1.15 = $230.",
+              "Tax-inclusive prices: at a 5% tax rate, pre-tax = tax-inclusive ÷ 1.05 — not multiplied by 0.95.",
+              "Investment return: (sale price − purchase price + dividends) ÷ purchase price × 100%."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "For more tax and discount scenarios, use the [Discount Calculator](/finance/discount) and the [Percentage Calculator](/math/percentage-calculator)."
+          }
+        ]
+      },
+      "common-unit-conversion-mistakes": {
+        "title": "Where Unit Conversions Most Often Go Wrong",
+        "excerpt": "Feet and inches to centimeters? Pounds to kilos? How many gallons are there? Most conversion errors aren't arithmetic — they're the wrong definition.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Unit conversion looks like plain multiplication and division, but the vast majority of mistakes aren't arithmetic slips. They come from using the wrong factor or confusing units that share a name."
+          },
+          {
+            "type": "h2",
+            "text": "Trap 1: feet and inches aren't decimal"
+          },
+          {
+            "type": "p",
+            "text": "5 feet 8 inches is often misread as 5.8 feet. The correct approach is to divide the inches by 12 and add: 5 + 8 ÷ 12 = 5.667 feet, then multiply by 30.48 to get about 172.7 cm. A conversion tool avoids the manual arithmetic entirely."
+          },
+          {
+            "type": "h2",
+            "text": "Trap 2: there are three gallons"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "US gallon ≈ 3.785 L",
+              "Imperial (UK) gallon ≈ 4.546 L",
+              "US dry gallon ≈ 4.405 L"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Whenever you see “gallon,” establish whether it's US or imperial first — otherwise the error can reach 20%."
+          },
+          {
+            "type": "h2",
+            "text": "Trap 3: an ounce is both weight and volume"
+          },
+          {
+            "type": "p",
+            "text": "A fluid ounce (fl oz) is volume: 1 US fl oz ≈ 29.57 mL. An avoirdupois ounce (oz) is weight: 1 oz ≈ 28.35 g. The numbers are close but the meanings differ, and they aren't interchangeable across substances."
+          },
+          {
+            "type": "h2",
+            "text": "Trap 4: Fahrenheit and Celsius have different zeros"
+          },
+          {
+            "type": "p",
+            "text": "Temperature isn't a simple ratio conversion because the two scales have different zero points. The formula is °C = (°F − 32) × 5/9, and conversely °F = °C × 9/5 + 32. The usual error is multiplying without adding or subtracting 32."
+          },
+          {
+            "type": "callout",
+            "text": "For any unfamiliar unit, confirm three things: which system it belongs to, whether it's weight or volume, and whether identically named variants exist. Those three checks prevent most conversion errors."
+          },
+          {
+            "type": "h2",
+            "text": "Practical advice"
+          },
+          {
+            "type": "p",
+            "text": "Use a tool rather than mental math. Our unit converter covers length, weight, volume, and temperature, and cooking has a dedicated [cooking units converter](/cooking/cooking-units) better suited to real recipe quantities."
+          }
+        ]
+      },
+      "recipe-scaling-guide": {
+        "title": "How to Scale a Recipe Down from 8 Servings to 3",
+        "excerpt": "Ingredients scale linearly, but seasoning, spices, and baking time don't. Know the exceptions and your resized dish still tastes right.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "To cut a recipe from 8 servings to 3, most people just multiply every ingredient by 3/8. That works most of the time — but for some ingredients it's a disaster."
+          },
+          {
+            "type": "h2",
+            "text": "What scales linearly"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Main ingredients: meat, fish, vegetables, rice, and noodles scale directly.",
+              "Liquids: water, stock, and milk scale directly.",
+              "Sugar and oil: usually fine to scale proportionally."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Compute the base factor: target servings ÷ original servings. 3 ÷ 8 = 0.375, so multiply each item by 0.375. The [Recipe Scaler](/cooking/recipe-scaler) does the arithmetic for you."
+          },
+          {
+            "type": "h2",
+            "text": "What does not scale simply"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Salt and strong seasonings: taste isn't linear, so scale to about 70–80% first, then taste and adjust.",
+              "Spices and chili: also non-linear — start low, since you can always add more later.",
+              "Leaveners (baking powder, baking soda): they depend on pan geometry and chemical reactions; extreme scaling fails, so cook in batches.",
+              "Wine and vinegar: their flavor is potent, so scale to 50–75% and then adjust."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "A practical rule: scale everything by the factor, but start salt, chili, and spices at 70%, then taste before serving. Add at the end if needed — never overshoot at the start."
+          },
+          {
+            "type": "h2",
+            "text": "Timing and pan size"
+          },
+          {
+            "type": "p",
+            "text": "With a smaller portion, baking time usually shortens, but not proportionally — check at about two-thirds of the original time, then extend. Less liquid also evaporates faster, so braises reduce sooner."
+          },
+          {
+            "type": "p",
+            "text": "Match the pan to the volume: the same amount overflows a pan that's too small and scorches in one that's too large. Both depth and diameter affect heat transfer."
+          },
+          {
+            "type": "h2",
+            "text": "A unit-conversion shortcut"
+          },
+          {
+            "type": "p",
+            "text": "For awkward measures like “1/3 cup” or “2 tablespoons,” don't grind through the math. 1 cup = 16 tablespoons = 48 teaspoons: convert everything to the smallest unit, apply the factor, then convert back. The [cooking units converter](/cooking/cooking-units) handles this fastest."
+          }
+        ]
+      },
+      "cooking-measurement-standards": {
+        "title": "How Much Does a Cup of Flour Weigh? Why Baking Needs a Scale",
+        "excerpt": "One cook's cup of flour is 120 g, another's is 160 g. That uncertainty in volume measures is a classic cause of baking failures.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If you've ever followed a recipe and produced a brick-like cake, the recipe probably wasn't wrong — the question is how much “one cup” really was."
+          },
+          {
+            "type": "h2",
+            "text": "Where volume measurement goes wrong"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "How you fill it: flour scooped straight from the bag is denser than flour sifted and leveled — often by more than 20%.",
+              "Ingredient state: whether flour is sifted, sugar is packed, or butter is softened all change the volume.",
+              "Different cups: a “cup” isn't universal — about 240 mL in the US, about 200 mL in Japan."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Reference conversions"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "All-purpose flour: 1 cup ≈ 120–130 g (sifted and leveled)",
+              "Granulated sugar: 1 cup ≈ 200 g",
+              "Butter: 1 cup ≈ 227 g; 1 tablespoon ≈ 14 g",
+              "Milk/water: 1 cup ≈ 240 mL ≈ 240 g",
+              "Honey/syrup: 1 cup ≈ 340 g (far denser)"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Treat these as approximations; brands and technique shift them. For precise conversion, use the [cooking units converter](/cooking/cooking-units)."
+          },
+          {
+            "type": "callout",
+            "text": "Baking is chemistry, not improvisation. A 10% error in flour or liquid is enough to turn a tender cake dense."
+          },
+          {
+            "type": "h2",
+            "text": "Why weighing is better"
+          },
+          {
+            "type": "p",
+            "text": "A digital scale costs little and usually reads to 1 g. Weights are fully repeatable, unaffected by how you scoop, and let you share a recipe without ambiguity — which is why professional formulas are written in grams."
+          },
+          {
+            "type": "h2",
+            "text": "When cups are fine"
+          },
+          {
+            "type": "p",
+            "text": "Not every dish needs weighing. Stir-fries, stews, and soups are forgiving: volume measures are plenty and adjusting by feel is more flexible. Reserve the scale for baking, sauces, and desserts where ratios matter."
+          }
+        ]
+      },
+      "ratio-and-proportion-practical": {
+        "title": "Ratios and Proportions: From Mixing Drinks to Reading Maps",
+        "excerpt": "How do you dilute a 1:4 concentrate? What does a 1:10000 map mean? Ratios are the most practical — and most misread — math in daily life.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A ratio expresses the relationship between two quantities. It's simple enough to be overlooked, yet misusing it has real consequences, from undrinkable cordial to a wrong dose."
+          },
+          {
+            "type": "h2",
+            "text": "Two common notations"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "a:b — a relationship between two amounts, e.g. concentrate:water = 1:4.",
+              "a:b:c — a continued ratio across three or more amounts, e.g. concrete at 1:2:3."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "The key point: 1:4 means 1 part concentrate to 4 parts water — a total of 5 parts, not 4. That is the most common mistake."
+          },
+          {
+            "type": "h2",
+            "text": "Everyday examples"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mixing drinks: for 500 mL at 1:4, concentrate = 500 ÷ 5 × 1 = 100 mL and water = 400 mL.",
+              "Map scale: 1:10000 means 1 cm on the map equals 10,000 cm — i.e. 100 m — on the ground.",
+              "Aspect ratio: 16:9 means the width is 16/9 of the height.",
+              "Diluting cleaner: 1:10 means 1 part product plus 10 parts water, giving 11 parts total."
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "A reliable check: add the parts of the ratio together. The total parts should match the final total quantity. If it doesn't, one term is wrong."
+          },
+          {
+            "type": "h2",
+            "text": "Converting ratios to percentages"
+          },
+          {
+            "type": "p",
+            "text": "A ratio converts to a percentage: in a:b, a's share is a ÷ (a + b). With a male-to-female ratio of 3:2, men are 3/5 = 60%. Conversely, 60% can be written as 3:2 or 60:40."
+          },
+          {
+            "type": "p",
+            "text": "For complex cases, let the [Ratio Calculator](/math/ratio-calculator) handle the arithmetic, especially with three or more terms or when solving backwards."
+          },
+          {
+            "type": "h2",
+            "text": "One thing people mix up"
+          },
+          {
+            "type": "p",
+            "text": "A ratio is not the same as a rate. A ratio compares two quantities of the same kind and has no unit; a rate usually compares different kinds and carries a unit, like speed (km/h) or population density (people/km²). Confusing them produces dimensional errors."
+          }
+        ]
+      },
+      "how-much-house-can-you-afford": {
+        "title": "How Much House Can You Afford? Three Numbers the Bank Won't Volunteer",
+        "excerpt": "The amount a bank approves and the amount you can truly sustain are usually far apart. Three ratios tell you the safe number.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "When a bank approves a mortgage it asks “can they repay?”, using income multiples and debt ratios. That's a ceiling, not the figure you should use. A sustainable home budget is something you calculate yourself."
+          },
+          {
+            "type": "h2",
+            "text": "Number one: the 28/36 rule"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Housing costs under 28% of monthly income: mortgage payment, HOA fees, property tax, insurance.",
+              "Total debt under 36% of monthly income: add car loans, credit cards, consumer loans, and support obligations."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Example: with $30,000 monthly household income, housing is capped at $8,400 and total debt at $10,800. If you already pay $3,000 for a car, keep the mortgage under $7,800."
+          },
+          {
+            "type": "h2",
+            "text": "Number two: down payment plus hidden costs"
+          },
+          {
+            "type": "p",
+            "text": "A down payment is typically 20–30%, but that's far from your total cash need. Also budget for transfer tax (about 1–3%), a maintenance reserve, agent fees, renovation, appliances, and at least six months of payments in reserve."
+          },
+          {
+            "type": "callout",
+            "text": "A common mistake is pouring every saving into the down payment, leaving nothing for renovation or emergencies. Keep at least 10–15% of the purchase price in cash beyond the down payment."
+          },
+          {
+            "type": "h2",
+            "text": "Number three: the stress test"
+          },
+          {
+            "type": "p",
+            "text": "Before signing, recalculate the payment with rates 1–2 percentage points higher and see if you can still cope. If your budget only works at today's rate, it has no resistance to rate moves."
+          },
+          {
+            "type": "p",
+            "text": "Compare payments with the [Mortgage Calculator](/finance/mortgage) across rates and terms, then model prepayment with the [Loan Calculator](/finance/loan)."
+          },
+          {
+            "type": "h2",
+            "text": "Don't forget holding costs"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "HOA or management fees: charged by area and a real long-term expense.",
+              "Maintenance and renovation: homes need continuous investment as they age.",
+              "Commuting: a cheaper suburb carries time and transport costs worth pricing in.",
+              "Opportunity cost: what the down payment might have earned if invested."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "The figure you reach after all of this is what you can genuinely afford. It usually sits 20–30% below what the bank would lend — and it's the budget you can live with comfortably."
+          }
+        ]
+      },
+      "protein-intake-how-much": {
+        "title": "How Much Protein Do You Need? Calculate by Body Weight",
+        "excerpt": "Sedentary people, lifters, and older adults need very different amounts. Multiplying body weight by a factor is the most practical estimate.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Protein requirements vary more between individuals than almost any other nutrient. A sedentary office worker and someone who lifts five days a week may differ by a factor of two."
+          },
+          {
+            "type": "h2",
+            "text": "Reference ranges by body weight"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sedentary, no training: 0.8 g per kg — the floor for basic needs.",
+              "Moderately active: 1.0–1.2 g per kg.",
+              "Regular resistance training: 1.4–1.8 g per kg.",
+              "Intense training or cutting: 1.8–2.2 g per kg."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "A 70 kg person who lifts three times a week needs roughly 98–126 g per day. The [Protein Calculator](/health/protein-calculator) gives you the number directly."
+          },
+          {
+            "type": "h2",
+            "text": "Why intake should rise during a cut"
+          },
+          {
+            "type": "p",
+            "text": "In a calorie deficit the body tends to break down muscle for energy. Higher protein protects muscle, increases satiety, and raises the thermic effect of food — digesting protein itself burns more calories. That's the core reason to raise protein while cutting."
+          },
+          {
+            "type": "h2",
+            "text": "Spreading it across meals"
+          },
+          {
+            "type": "p",
+            "text": "How well protein is used depends partly on the dose per meal. Roughly 25–40 g per meal is considered optimal for stimulating muscle protein synthesis. Spreading 120 g across three meals beats eating 100 g at dinner."
+          },
+          {
+            "type": "callout",
+            "text": "Rather than obsess over total grams, make sure each meal contains a quality protein source: eggs, lean meat, fish, soy products, or dairy."
+          },
+          {
+            "type": "h2",
+            "text": "When to be careful"
+          },
+          {
+            "type": "p",
+            "text": "People with impaired kidney function must limit protein under medical supervision and can't apply a generic factor. Source quality matters too: prefer complete animal proteins or well-combined plant proteins."
+          },
+          {
+            "type": "p",
+            "text": "The [Macro Calculator](/health/macro-calculator) splits protein, carbs, and fat in one step, which is simpler than calculating each separately."
+          }
+        ]
+      },
+      "average-mean-median-mode": {
+        "title": "Averages Mislead: Choosing Between Mean, Median, and Mode",
+        "excerpt": "Why does “average salary” always feel inflated? Because extreme values pull the mean. Pick the right statistic to see the data clearly.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Under any story about “average salary,” someone always says they feel averaged away. That feeling is often justified — the mean is extremely sensitive to outliers."
+          },
+          {
+            "type": "h2",
+            "text": "What the three statistics are"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mean: the sum of all values divided by the count. The most common, but heavily influenced by extremes.",
+              "Median: the middle value once everything is sorted. Unaffected by extremes.",
+              "Mode: the most frequent value. Best for categorical data."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "A clear example"
+          },
+          {
+            "type": "p",
+            "text": "A company has 10 employees: nine earn $8,000 a month and the CEO earns $92,000. The mean is (9 × 8,000 + 92,000) ÷ 10 = $16,400, which sounds comfortable. The median is $8,000 — and that's the reality for most people there."
+          },
+          {
+            "type": "callout",
+            "text": "Whenever you read “average income,” ask: mean or median? For heavily right-skewed data like income or house prices, the median is almost always the more representative figure."
+          },
+          {
+            "type": "h2",
+            "text": "Which to use when"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mean: when the distribution is fairly even, with no extremes, and you want to use every value (e.g. average test scores).",
+              "Median: when there are outliers or clear skew (income, house prices, price growth).",
+              "Mode: for categorical data, such as the most popular color or the most common size."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Putting it into practice"
+          },
+          {
+            "type": "p",
+            "text": "The [Average Calculator](/math/average-calculator) computes these quickly. For larger sets or to see the shape of the distribution, pair it with the [Standard Deviation Calculator](/math/standard-deviation-calculator) — the same mean with a different standard deviation can describe completely different situations."
+          },
+          {
+            "type": "p",
+            "text": "Build one habit with every statistic you read: ask how it was calculated, who was sampled, and whether outliers exist. Those three questions defuse most misleading numbers."
+          }
+        ]
+      },
+      "car-loan-total-cost": {
+        "title": "The True Cost of a Car Loan: Four Costs Beyond the Monthly Payment",
+        "excerpt": "“Zero-interest financing” sounds like a bargain, but once you add fees, insurance, taxes, and depreciation, the real cost often exceeds expectations.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Car-loan advertising focuses almost entirely on the monthly payment — “just $80 a day.” But what decides affordability is total outlay, and the monthly payment is only part of it."
+          },
+          {
+            "type": "h2",
+            "text": "Four costs besides the monthly payment"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Down payment: usually 20–30% of the price, and the largest single cash outlay.",
+              "Sales tax or registration tax: a one-off payment, often a meaningful share of the price.",
+              "Insurance: priciest in the first year, easing later, but recurring every year.",
+              "Arrangement or financing fees: charged by the lender, sometimes 2–3% of the loan."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "The truth about “zero interest”"
+          },
+          {
+            "type": "p",
+            "text": "Zero- or low-interest offers usually recover the cost in one of two ways: higher arrangement fees, or forfeiting the cash rebate — you typically can't have both. Sometimes taking “a big cash rebate plus a normal-rate loan” is cheaper overall."
+          },
+          {
+            "type": "callout",
+            "text": "The only reliable way to compare two offers is to compute total outlay: down payment + all monthly payments + fees + interest − cash rebate. Don't let the monthly figure lead you."
+          },
+          {
+            "type": "h2",
+            "text": "Compare with a calculator"
+          },
+          {
+            "type": "p",
+            "text": "Enter both scenarios into the [Auto Loan Calculator](/finance/auto-loan) and compare total interest and total outlay. If a dealer gives you only the monthly figure and not the total, treat that as a warning sign."
+          },
+          {
+            "type": "h2",
+            "text": "Don't ignore depreciation"
+          },
+          {
+            "type": "p",
+            "text": "A car is a depreciating asset. A new one typically loses 10–20% of its value the moment it leaves the lot, with the steepest drop in the first three years. Finance a fast-depreciating car over five years and you can easily owe more than it's worth."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Keep the term short to avoid mismatching the depreciation curve.",
+              "Consider a one-to-three-year-old car that has passed the steepest depreciation.",
+              "Don't set the down payment too low, or you risk negative equity."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Finally, confirm with the [Loan Calculator](/finance/loan) that the payment sits within your debt ceiling — see the 36% total-debt rule in [How Much House Can You Afford](/blog/how-much-house-can-you-afford)."
+          }
+        ]
+      },
+      "food-cost-per-serving": {
+        "title": "Cost per Serving: Is Cooking at Home Really Cheaper?",
+        "excerpt": "Cooking at home is usually cheaper than eating out, but the gap depends on how you count. Ingredients, seasonings, and energy all belong in the total.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "“Cooking at home saves money” is near-universal advice, but once you add seasonings, gas, electricity, and your time, the conclusion may surprise you. That doesn't mean cooking isn't worth it — it means the arithmetic deserves a look."
+          },
+          {
+            "type": "h2",
+            "text": "What a dish actually costs"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Main ingredients: meat, vegetables, staples — priced by the amount used, not the whole package.",
+              "Seasonings: oil, salt, soy sauce, spices — small per use, but they add up over time.",
+              "Energy: gas or electricity, usually a small amount per cooking session.",
+              "Trim loss: peeling and trimming typically remove 10–30% of what you bought."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "The [Food Cost Calculator](/cooking/food-cost) adds these up to show the true cost per serving."
+          },
+          {
+            "type": "callout",
+            "text": "A common mistake: counting only main ingredients and ignoring seasonings and energy. For a simple home-cooked dish, those can be 15–25% of the cost."
+          },
+          {
+            "type": "h2",
+            "text": "The bulk-buying trap"
+          },
+          {
+            "type": "p",
+            "text": "Larger packs have a lower unit price, but consider two things: will you finish it before it spoils, and what does storage cost? Saving money on a 5 kg bag of rice doesn't offset throwing half of it away."
+          },
+          {
+            "type": "h2",
+            "text": "When cooking really is cheaper"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Cooking for several people: costs spread out, so more portions means better value.",
+              "Using seasonal produce: out-of-season vegetables can cost two to three times as much.",
+              "Dishes with simple seasoning: recipes built on expensive sauces and imported spices escalate fast.",
+              "Reusing leftovers: a whole chicken across two meals beats buying breast alone."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "The value of your time"
+          },
+          {
+            "type": "p",
+            "text": "Strictly speaking, cooking time has a cost, though most people don't count it — for many, cooking is relaxation or family time. Whether to include it is a personal call. If your time is expensive, partly prepared ingredients such as pre-cut vegetables may cost more per kilo yet still be cheaper overall."
+          }
+        ]
+      },
+      "rounding-and-significant-figures": {
+        "title": "Why Rounding Is Sometimes Wrong: Significant Figures and Error Accumulation",
+        "excerpt": "Round at every step and the final result drifts. Understanding error accumulation and banker's rounding makes your calculations trustworthy.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Rounding is the first rule taught in school, yet in chained calculations or large datasets, mechanical rounding introduces systematic bias and accumulated error."
+          },
+          {
+            "type": "h2",
+            "text": "Problem one: don't round intermediate steps"
+          },
+          {
+            "type": "p",
+            "text": "Compute 1.4 × 2.6 × 3.8, rounding to one decimal each step: 1.4 × 2.6 = 3.64 → 3.6, then 3.6 × 3.8 = 13.68 → 13.7. Computed directly, 1.4 × 2.6 × 3.8 = 13.832 → 13.8. Rounding mid-way shifted the result by 0.1."
+          },
+          {
+            "type": "callout",
+            "text": "A basic principle: round only at the final step. Keep at least one or two extra significant figures throughout."
+          },
+          {
+            "type": "h2",
+            "text": "Problem two: rounding has systematic bias"
+          },
+          {
+            "type": "p",
+            "text": "Digits 1–4 round down and 6–9 round up, which looks fair, but the treatment of 5 gives one extra case to rounding up. Across large datasets that makes results systematically too high."
+          },
+          {
+            "type": "p",
+            "text": "Statistics more often uses “round half to even” (banker's rounding): below 5 rounds down, above 5 rounds up, and exactly 5 goes to the nearest even number. Over many values, positive and negative biases cancel out."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "2.5 → 2 (toward the even number)",
+              "3.5 → 4 (toward the even number)",
+              "1.24 → 1.2",
+              "1.26 → 1.3"
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "What significant figures are"
+          },
+          {
+            "type": "p",
+            "text": "Significant figures are the digits counted from the first non-zero digit, and they express the precision of a measurement or calculation. 0.0052 has two significant figures; 5.20 has three. A trailing zero isn't decorative — it says that zero was actually measured."
+          },
+          {
+            "type": "p",
+            "text": "Rules of thumb: for addition and subtraction, match the fewest decimal places; for multiplication and division, match the fewest significant figures."
+          },
+          {
+            "type": "h2",
+            "text": "Using it day to day"
+          },
+          {
+            "type": "p",
+            "text": "The [Rounding Calculator](/math/rounding-calculator) handles a variety of rounding needs. Be especially careful with financial data: currency calculations typically specify two decimals, and you should round the final result rather than every intermediate amount."
+          }
+        ]
+      },
+      "sleep-cycles-when-to-wake": {
+        "title": "Sleep Cycles and Wake Times: Why 8 Hours Can Still Leave You Groggy",
+        "excerpt": "Sleep runs in roughly 90-minute cycles. Waking from deep sleep leaves you foggy even after enough hours. Timing your wake-up helps.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Sometimes eight hours leaves you groggy, while six and a half leaves you sharp. The difference is usually not total hours but which stage of the sleep cycle you wake from."
+          },
+          {
+            "type": "h2",
+            "text": "What a sleep cycle is"
+          },
+          {
+            "type": "p",
+            "text": "Sleep isn't a uniform state; it cycles in roughly 90-minute blocks containing light sleep, deep sleep, and REM sleep. Deep sleep dominates the first half of the night, REM the second. Being woken from deep sleep produces noticeable sleep inertia and grogginess."
+          },
+          {
+            "type": "h2",
+            "text": "How to time your wake-up"
+          },
+          {
+            "type": "p",
+            "text": "Since a cycle lasts about 90 minutes, aim for a total close to a whole number of cycles and wake at a cycle boundary. Targeting 7.5 hours (5 cycles) or 6 hours (4 cycles) usually leaves you clearer than 8 hours."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "6 hours = 4 cycles",
+              "7.5 hours = 5 cycles",
+              "9 hours = 6 cycles"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Falling asleep usually takes another 10–20 minutes, so allow for that when counting back from your wake time. The [Sleep Calculator](/health/sleep-calculator) works out suitable bedtimes and wake times directly."
+          },
+          {
+            "type": "callout",
+            "text": "Cycle length varies between people; 90 minutes is an average. If 7.5 hours still leaves you tired, adjust by 15 minutes to find your own rhythm."
+          },
+          {
+            "type": "h2",
+            "text": "Matters more than duration"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Regularity: sleeping and waking at roughly the same times daily beats occasional catch-up sleep.",
+              "Sleep pressure: enough waking time and physical activity during the day improves sleep quality.",
+              "Light: natural light in the morning and dimmer light before bed stabilize your circadian rhythm.",
+              "Alcohol: it speeds sleep onset but seriously disrupts sleep architecture in the second half of the night."
+            ]
+          },
+          {
+            "type": "h2",
+            "text": "Don't over-trust the cycle"
+          },
+          {
+            "type": "p",
+            "text": "Cycle timing is a useful guide, not a cure-all. If you regularly wake exhausted, feel sleepy by day, or snore heavily, that may point to something like sleep apnea, which needs a doctor rather than a schedule tweak. Cycle math fixes when you wake, not the quality of the sleep itself."
+          }
+        ]
       }
     },
     "categoryLabels": {
