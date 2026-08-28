@@ -6,7 +6,14 @@
 
 ---
 
-## 一、核心命令（两步走）
+## 一、核心命令（推荐：双击一键完成）
+
+**最简单**：在 `C:\Users\admin\Desktop\kaifa\converty-site` 目录**双击 `deploy.bat`**（或 PowerShell 里 `.\deploy.ps1`）。脚本会自动完成三步：
+1. 清空 `out` / `.next`
+2. `NODE_OPTIONS=` 后执行 `node node_modules/next/dist/bin/next build`
+3. 调用 `deploy_force3.mjs` 把 `out` 上传到 Cloudflare Pages（项目名 `baikecalc`）
+
+如需手动分步，命令如下：
 
 ```bash
 # 1) 进入源码目录，重新构建
