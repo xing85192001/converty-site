@@ -30,14 +30,14 @@ export default async function PrivacyPolicyPage({
 				<p>{t("cookiesBody")}</p>
 				<p>
 					{t.rich("cookiesThirdParty", {
-						link3: () => (
+						link3: (chunks) => (
 							<a
 								className="text-primary underline underline-offset-4"
 								href="https://adssettings.google.com"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								{t("cookiesAdsSettings")}
+								{chunks}
 							</a>
 						),
 					})}

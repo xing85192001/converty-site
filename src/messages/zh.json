@@ -9269,7 +9269,7 @@
       "cookiesAdsLink": "广告设置",
       "yourRightsBody": "根据您所在的地区（例如欧盟 GDPR 或加利福尼亚 CCPA），您可能有权访问、更正或删除个人数据，并反对某些处理。由于本网站不在自己的服务器上存储个人数据，大多数请求涉及我们的服务提供商持有的数据，我们将根据请求协助您处理。",
       "contactBody": "如果您对本政策有任何疑问，请通过 <email>contact@baikecalc.com</email> 联系我们。",
-      "cookiesThirdParty": "包括 Google 在内的第三方供应商会使用 Cookie，根据您此前访问本网站或其他网站的记录来投放广告。Google 投放广告时使用的 DoubleClick Cookie，使其及其合作伙伴能够基于您对本网站以及互联网上其他网站的访问记录，向您展示相关广告。您可以随时访问 {link3} 选择退出个性化广告；若您位于欧盟或英国，也可通过各同意管理平台撤回对广告 Cookie 的授权。",
+      "cookiesThirdParty": "包括 Google 在内的第三方供应商会使用 Cookie，根据您此前访问本网站或其他网站的记录来投放广告。Google 投放广告时使用的 DoubleClick Cookie，使其及其合作伙伴能够基于您对本网站以及互联网上其他网站的访问记录，向您展示相关广告。您可以随时访问 <link3>广告设置</link3> 选择退出个性化广告；若您位于欧盟或英国，也可通过各同意管理平台撤回对广告 Cookie 的授权。",
       "cookiesAdsSettings": "广告设置"
     },
     "contact": {
