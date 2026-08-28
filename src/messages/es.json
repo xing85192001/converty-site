@@ -97,7 +97,8 @@
     "aboutThisCalculator": "Acerca de {title}",
     "copySuccess": "Copiado al portapapeles",
     "copyError": "No se pudo copiar al portapapeles",
-    "advertisement": "Anuncio"
+    "advertisement": "Anuncio",
+    "toolsCount": "herramientas"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Procesamiento de imágenes y video",
@@ -433,7 +434,69 @@
     "bmi": {
       "name": "IMC",
       "description": "Calcula tu Índice de Masa Corporal y categoría de salud",
-      "metaDescription": "Calcula tu Índice de Masa Corporal (IMC) y comprende tu categoría de salud"
+      "metaDescription": "Calcula tu Índice de Masa Corporal (IMC) y comprende tu categoría de salud",
+      "guide": {
+        "steps": [
+          "Elige el sistema de unidades: métrico (centímetros / kilogramos) o imperial (pies y pulgadas / libras).",
+          "Introduce tu altura y tu peso. Los valores se validan mientras escribes, así que puedes ver el resultado antes de enviar.",
+          "Consulta tu IMC, la categoría de la OMS a la que corresponde y el rango de peso saludable para tu altura."
+        ],
+        "explanationTitle": "Qué es el IMC y cómo se calcula",
+        "formula": "IMC = peso (kg) ÷ altura (m)²",
+        "explanation": [
+          "El índice de masa corporal relaciona el peso con el cuadrado de la altura y se usa como aproximación a la grasa corporal. Lo propuso en el siglo XIX el estadístico belga Adolphe Quetelet, por lo que también se conoce como índice de Quetelet. Como solo necesita altura y peso, es la herramienta de cribado de la obesidad más utilizada en el mundo.",
+          "El IMC tiene límites bien documentados. No distingue músculo de grasa, y el músculo es unas 1,2 veces más denso, por lo que los atletas de fuerza suelen aparecer como sobrepeso mientras que las personas mayores con pérdida de masa muscular pueden tener un IMC normal pese a un alto porcentaje de grasa. Además, las poblaciones asiáticas tienden a tener más grasa corporal con el mismo IMC, y por eso varios países usan puntos de corte más bajos. Usa el IMC como cribado inicial y combínalo con porcentaje de grasa, perímetro de cintura, tensión arterial y perfil lipídico."
+        ],
+        "tableTitle": "Categorías de IMC (estándar de la OMS)",
+        "tableHeaders": [
+          "Categoría",
+          "Rango de IMC (kg/m²)"
+        ],
+        "tableRows": [
+          [
+            "Bajo peso",
+            "< 18,5"
+          ],
+          [
+            "Normal",
+            "18,5 – 24,9"
+          ],
+          [
+            "Sobrepeso",
+            "25,0 – 29,9"
+          ],
+          [
+            "Obesidad grado I",
+            "30,0 – 34,9"
+          ],
+          [
+            "Obesidad grado II",
+            "35,0 – 39,9"
+          ],
+          [
+            "Obesidad grado III",
+            "≥ 40,0"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Es fiable el IMC para quien entrena con pesas?",
+            "a": "No del todo. El músculo es más denso que la grasa, así que las personas entrenadas suelen superar 25 teniendo poca grasa corporal. Para ellas es mejor el porcentaje de grasa, idealmente junto con el perímetro de cintura."
+          },
+          {
+            "q": "¿Los niños usan los mismos puntos de corte?",
+            "a": "No. En niños y adolescentes de 2 a 19 años se emplean curvas percentilares de IMC por edad y sexo, no los umbrales fijos de los adultos. La interpretación corresponde al pediatra."
+          },
+          {
+            "q": "¿Puedo usar esta calculadora durante el embarazo?",
+            "a": "No se recomienda. El peso cambia por el bebé, el líquido amniótico y el volumen de sangre, así que el IMC deja de ser válido. Sigue las indicaciones de tu matrona o ginecólogo, que fija objetivos de aumento de peso según el IMC previo al embarazo."
+          },
+          {
+            "q": "¿Un IMC normal garantiza buena salud?",
+            "a": "No. Es frecuente tener un IMC normal con exceso de grasa visceral, y el riesgo metabólico de ese grupo se subestima a menudo. Combina el IMC con el perímetro de cintura y el porcentaje de grasa corporal."
+          }
+        ]
+      }
     },
     "corpulence": {
       "name": "Corpulencia",
@@ -872,17 +935,198 @@
     "mortgage": {
       "name": "Hipoteca",
       "description": "Calcula los pagos mensuales y el plan de amortización",
-      "metaDescription": "Calcula la hipoteca con plan de amortización"
+      "metaDescription": "Calcula la hipoteca con plan de amortización",
+      "guide": {
+        "steps": [
+          "Introduce el precio de la vivienda y el porcentaje o importe de la entrada; el capital del préstamo se calcula automáticamente.",
+          "Indica el plazo y el tipo anual. Añade IBI y seguro de hogar si los conoces, para obtener una cifra mensual realista.",
+          "Consulta el desglose, capital e intereses más impuestos y seguro, y el total de intereses durante toda la vida del préstamo."
+        ],
+        "explanationTitle": "De qué se compone la cuota hipotecaria",
+        "formula": "Cuota = capital e intereses + impuesto mensual + seguro mensual (+ seguro de impago)",
+        "explanation": [
+          "Muchos creen que la cuota es solo capital e intereses, pero los bancos suelen cobrar también el impuesto sobre bienes inmuebles y el seguro de hogar y agruparlo todo en un pago, conocido como PITI: principal, intereses, impuestos y seguros. Si la entrada es inferior al 20%, se añade un seguro de impago que normalmente puede cancelarse cuando el capital pendiente baja del 80% del valor de la vivienda.",
+          "Además de la cuota, comprar implica gastos únicos: entrada, notaría y registro, tasación y comisión de apertura, en conjunto entre el 2% y el 5% del precio. Para saber cuánta casa puedes permitirte se usa la regla del 28/36: los gastos de vivienda no deben superar el 28% de los ingresos mensuales y todas las deudas, incluidos coche y tarjetas, el 36%. Es conservadora, pero evita el sobreendeudamiento."
+        ],
+        "tableTitle": "Efecto de la entrada en la cuota (vivienda de 300.000, 30 años, 4,0%)",
+        "tableHeaders": [
+          "Entrada",
+          "Capital",
+          "Cuota (capital+intereses)",
+          "Seguro de impago",
+          "Intereses totales"
+        ],
+        "tableRows": [
+          [
+            "10%",
+            "270.000",
+            "≈ 1.289",
+            "Obligatorio",
+            "≈ 194.000"
+          ],
+          [
+            "20%",
+            "240.000",
+            "≈ 1.146",
+            "No necesario",
+            "≈ 172.500"
+          ],
+          [
+            "30%",
+            "210.000",
+            "≈ 1.003",
+            "No necesario",
+            "≈ 151.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Cuanta más entrada, mejor?",
+            "a": "No necesariamente. Más entrada significa menos capital, menos intereses totales y sin seguro de impago. Pero hay un coste de oportunidad: destinar todos tus ahorros a la entrada deja el colchón a cero. Si tienes inversiones que superan con fiabilidad el tipo de la hipoteca después de impuestos, o necesitas liquidez para imprevistos, una entrada menor puede ser más sensata. Reserve siempre de tres a seis meses de gastos."
+          },
+          {
+            "q": "¿Tipo fijo o variable?",
+            "a": "El fijo no cambia en todo el plazo, la cuota es previsible y conviene a quien va a quedarse mucho tiempo y valora la certeza. El variable suele empezar más bajo, pero se mueve con el mercado y puede subir; encaja en quien prevé vender o subrogarse en pocos años y puede absorber cuotas mayores. Las claves son cuánto tiempo te quedarás y si tu flujo de caja aguanta una subida de tipos."
+          },
+          {
+            "q": "¿Compensa amortizar anticipadamente?",
+            "a": "Compara el tipo de la hipoteca con tu rentabilidad alternativa después de impuestos. Si el tipo es mayor, amortizar equivale a asegurar esa rentabilidad. Si es menor, el dinero puede rendir mejor invertido o simplemente guardado como fondo de emergencia. En algunos países los intereses hipotecarios son deducibles, un beneficio que se pierde al amortizar y que conviene incluir en el cálculo."
+          },
+          {
+            "q": "¿Qué es la regla del 28/36?",
+            "a": "Una referencia de capacidad de pago: los gastos de vivienda no deben pasar del 28% de los ingresos mensuales y todas las deudas juntas, hipoteca más coche más mínimos de tarjetas, no deben superar el 36%. Los bancos la usan como primer filtro y es deliberadamente conservadora; la aprobación final también pondera historial crediticio, entrada y estabilidad laboral."
+          }
+        ]
+      }
     },
     "compound-interest": {
       "name": "Interés Compuesto",
       "description": "Calcula el interés compuesto de inversiones con aportaciones periódicas",
-      "metaDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo"
+      "metaDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo",
+      "guide": {
+        "steps": [
+          "Introduce el capital inicial, es decir, la cantidad que inviertes al principio.",
+          "Indica la rentabilidad anual, el plazo y la frecuencia de capitalización (anual, semestral, trimestral o mensual).",
+          "Si aportas dinero periódicamente, introduce la aportación para ver el total incluyendo esos ingresos."
+        ],
+        "explanationTitle": "La fórmula del interés compuesto",
+        "formula": "A = P × (1 + r/n)^(n·t)",
+        "explanation": [
+          "A es el importe final, P el capital, r el tipo anual, n cuántas veces se capitaliza al año y t los años. Capitalizar significa que el interés genera interés: el interés de cada periodo se suma al capital y produce rentabilidad en el siguiente, así que la curva se empina con el tiempo. El interés simple, en cambio, se paga solo sobre el capital original y no genera nada por sí mismo.",
+          "Capitalizar más veces aumenta el total, pero con rendimientos decrecientes: pasar de anual a semestral suma alrededor de un 1,1%, y de ahí a mensual apenas otro 1,1%. Lo que de verdad importa son el tiempo y la rentabilidad. Un atajo útil es la regla del 72: años para doblar ≈ 72 ÷ rentabilidad anual en porcentaje, de modo que al 6% se dobla en unos 12 años y al 9% en unos 8."
+        ],
+        "tableTitle": "Efecto de la frecuencia de capitalización (100.000 al 6% durante 20 años)",
+        "tableHeaders": [
+          "Frecuencia",
+          "Veces al año",
+          "Total a 20 años",
+          "Extra vs anual"
+        ],
+        "tableRows": [
+          [
+            "Anual",
+            "1",
+            "≈ 320.714",
+            "—"
+          ],
+          [
+            "Semestral",
+            "2",
+            "≈ 324.340",
+            "≈ 3.626"
+          ],
+          [
+            "Trimestral",
+            "4",
+            "≈ 326.204",
+            "≈ 5.490"
+          ],
+          [
+            "Mensual",
+            "12",
+            "≈ 327.758",
+            "≈ 7.044"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la diferencia entre interés compuesto e interés simple?",
+            "a": "El interés simple se paga solo sobre el capital y no genera nada. El compuesto suma el interés de cada periodo al capital, que a su vez produce rentabilidad. Con 100.000 al 6% durante 20 años, el simple da 220.000 y el compuesto anual ronda 320.700: una diferencia de más de 100.000 que crece con el plazo."
+          },
+          {
+            "q": "¿Qué es la regla del 72?",
+            "a": "Una forma rápida de estimar el tiempo de duplicación: años para doblar ≈ 72 ÷ rentabilidad anual en porcentaje. Al 6% se dobla en unos 12 años, al 9% en unos 8 y al 3% en unos 24. Es más precisa entre el 6% y el 10% y se desvía con rentabilidades mucho mayores."
+          },
+          {
+            "q": "¿Cuánto importa la frecuencia de capitalización?",
+            "a": "Menos de lo que suele creerse. Con 100.000 al 6% y 20 años, la capitalización anual da unos 320.700 y la mensual unos 327.800, apenas un 2,2% más. Invertir cinco años más o ganar un punto porcentual adicional influye mucho más en el resultado."
+          },
+          {
+            "q": "¿La rentabilidad anualizada es lo que recibo realmente?",
+            "a": "Normalmente no. Es una tasa nominal de crecimiento: a tu resultado neto hay que restar comisiones de gestión, de entrada y salida, e impuestos. Además, si aportas o retiras dinero por el camino, tu rentabilidad personal difiere de la cifra anunciada y conviene medirla con la tasa interna de retorno (TIR)."
+          }
+        ]
+      }
     },
     "loan": {
       "name": "Préstamo",
       "description": "Calcula los pagos mensuales de préstamos personales, de auto o cualquier otro tipo",
-      "metaDescription": "Pagos de préstamo y amortización"
+      "metaDescription": "Pagos de préstamo y amortización",
+      "guide": {
+        "steps": [
+          "Introduce el importe del préstamo, es decir, el dinero que recibes realmente, sin comisiones iniciales.",
+          "Indica el tipo de interés anual y el plazo. Si procede, añade entrada o valor residual en los campos correspondientes.",
+          "Calcula para ver la cuota mensual, los intereses totales y el total a devolver, y ajusta los datos para comparar opciones."
+        ],
+        "explanationTitle": "Cómo se calcula la cuota de amortización",
+        "formula": "Cuota = P × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]",
+        "explanation": [
+          "P es el capital, r el tipo mensual (tipo anual ÷ 12) y n el número de cuotas. En el sistema de amortización francés se calcula primero el interés del mes sobre el capital pendiente, el resto de la cuota fija amortiza capital, el pendiente baja y con él el interés del mes siguiente.",
+          "La ventaja es una cuota constante y fácil de presupuestar; el inconveniente, que al principio casi todo es interés. La alternativa es la amortización con capital constante más intereses sobre el pendiente: la primera cuota es la mayor, las siguientes bajan y los intereses totales son menores. Para 1.000.000 a 30 años al 4%, el sistema de capital constante ahorra unos 117.000 de intereses, pero empieza unos 1.300 por mes por encima. La decisión depende de tu flujo de caja, no solo del total de intereses."
+        ],
+        "tableTitle": "Amortización francesa vs capital constante (1.000.000 a 30 años al 4,0%)",
+        "tableHeaders": [
+          "Sistema",
+          "Primera cuota",
+          "Última cuota",
+          "Intereses totales",
+          "Total pagado"
+        ],
+        "tableRows": [
+          [
+            "Francés",
+            "≈ 4.774",
+            "≈ 4.774",
+            "≈ 719.000",
+            "≈ 1.719.000"
+          ],
+          [
+            "Capital constante",
+            "≈ 6.111",
+            "≈ 2.790",
+            "≈ 602.000",
+            "≈ 1.602.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Qué conviene más, sistema francés o capital constante?",
+            "a": "El capital constante paga menos intereses, pero exige bastante más al principio. Si tu flujo de caja está ajustado o prevés mayores ingresos, el sistema francés encaja mejor. Si tus ingresos son estables y quieres minimizar intereses, gana el capital constante. Ninguno es mejor en términos absolutos."
+          },
+          {
+            "q": "¿Compensa amortizar anticipadamente?",
+            "a": "Compara el tipo de tu préstamo con la rentabilidad segura que podrías obtener. Si el tipo es mayor, amortizar equivale a asegurar esa rentabilidad. Si tienes usos mejores para el dinero o necesitas colchón, no hay prisa. Revisa también la comisión por amortización anticipada y los límites de veces al año."
+          },
+          {
+            "q": "¿Cómo se reparte cada cuota entre capital e intereses?",
+            "a": "En el sistema francés predominan los intereses al principio y el capital después. Con 1.000.000 a 30 años y 4%, la primera cuota son unos 3.333 de intereses y solo unos 1.441 de capital; ambos se igualan en torno al décimo año."
+          },
+          {
+            "q": "¿Cómo paso del tipo anual al mensual?",
+            "a": "Dividir entre 12 da el tipo mensual nominal, que es el que suele publicarse. El mensual efectivo exacto es (1 + anual)^(1/12) − 1. La diferencia es mínima, unos 0,006 puntos al 4%, así que basta con anual ÷ 12 en la práctica."
+          }
+        ]
+      }
     },
     "retirement": {
       "name": "Jubilación",
@@ -927,7 +1171,71 @@
     "currency": {
       "name": "Convertidor de Moneda",
       "description": "Convierte las principales monedas mundiales",
-      "metaDescription": "Herramienta de conversión de moneda"
+      "metaDescription": "Herramienta de conversión de moneda",
+      "guide": {
+        "steps": [
+          "Introduce el importe que quieres convertir y elige la moneda de origen y la de destino.",
+          "Comprueba la fuente del tipo de cambio y la hora de actualización. Por defecto se usa el último tipo medio disponible.",
+          "Consulta el resultado. Ten en cuenta que bancos y proveedores de pago aplican un margen, así que el tipo real será peor que esta referencia."
+        ],
+        "explanationTitle": "Cómo se calculan los tipos de cambio",
+        "formula": "Importe destino = importe × (tipo destino ÷ tipo origen)",
+        "explanation": [
+          "Todo se basa en el tipo de cambio, el precio de una moneda expresado en otra. Esta herramienta usa un tipo cruzado referido al dólar: primero se convierte el importe a dólares con el tipo de la moneda de origen y después a la moneda de destino con su tipo frente al dólar. La ventaja es que cualquier par puede convertirse sin mantener una cotización propia para cada combinación.",
+          "En la práctica te encontrarás varios precios. El tipo medio es la media entre compra y venta y es la referencia que se usa aquí. El tipo de transferencia se aplica a envíos entre cuentas y tiene el margen más pequeño. El tipo de efectivo se aplica a billetes físicos y tiene el mayor margen, porque hay que pagar transporte, custodia y riesgo de falsificación. Las operaciones reales suelen situarse entre un 0,5% y un 3% por debajo del tipo medio, y las casas de cambio de aeropuertos u hoteles pueden superar el 5%."
+        ],
+        "tableTitle": "Tipo medio frente al tipo real ( cambio de 10.000 unidades)",
+        "tableHeaders": [
+          "Canal",
+          "Tipo de cambio",
+          "Margen habitual",
+          "Lo que recibes"
+        ],
+        "tableRows": [
+          [
+            "Referencia tipo medio",
+            "Tipo medio",
+            "0%",
+            "Valor de referencia completo"
+          ],
+          [
+            "Transferencia bancaria",
+            "Tipo de venta transferencia",
+            "≈ 0,3% – 0,8%",
+            "Algo menos"
+          ],
+          [
+            "Ventanilla, efectivo",
+            "Tipo de venta efectivo",
+            "≈ 1% – 2%",
+            "Menos"
+          ],
+          [
+            "Aeropuerto / hotel",
+            "Tipo efectivo",
+            "≈ 3% – 8%",
+            "Bastante menos"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Cada cuánto se actualiza el tipo?",
+            "a": "El mercado de divisas opera las 24 horas los días laborables y el tipo de referencia que se usa aquí se renueva normalmente una vez al día. Si necesitas un tipo negociable, consulta la cotización en vivo de tu banco o proveedor de pago."
+          },
+          {
+            "q": "¿Por qué el tipo de mi banco no coincide?",
+            "a": "Porque se miden cosas distintas. Aquí se muestra el tipo medio, el punto intermedio entre compra y venta. Tu banco cotiza un tipo de compra o de venta que incluye sus costes y su margen, el diferencial. Esa diferencia es normal y no es un error de datos."
+          },
+          {
+            "q": "¿En qué se diferencian el tipo medio, el de transferencia y el de efectivo?",
+            "a": "El tipo medio es el punto medio entre compra y venta y sirve de referencia y para contabilidad. El de transferencia se aplica a movimientos electrónicos entre cuentas, no hay billetes de por medio y tiene el diferencial más estrecho. El de efectivo se aplica a billetes y es el más amplio, porque hay que cubrir transporte, custodia y recuento. Para una misma moneda, el tipo de compra en efectivo suele quedar claramente por debajo del de transferencia."
+          },
+          {
+            "q": "¿Qué tipo se aplica al pagar con tarjeta en el extranjero?",
+            "a": "Normalmente el tipo de la red de tarjetas en la fecha de liquidación más una comisión de conversión de divisa de entre el 1% y el 1,5%, a la que tu banco puede añadir una comisión por operación internacional. Si el terminal se ofrece a cobrarte en tu moneda, es conversión dinámica de divisa y su tipo suele ser peor. Elige la moneda local."
+          }
+        ]
+      }
     },
     "auto-loan": {
       "name": "Préstamo para automóvil",
@@ -987,7 +1295,65 @@
     "body-fat": {
       "name": "Grasa corporal",
       "description": "Calcule el porcentaje de grasa corporal utilizando el método de la Marina de los EE. UU.",
-      "metaDescription": "Calcula tu porcentaje de grasa corporal usando el método de la Marina de los EE. UU. con medidas"
+      "metaDescription": "Calcula tu porcentaje de grasa corporal usando el método de la Marina de los EE. UU. con medidas",
+      "guide": {
+        "steps": [
+          "Selecciona tu sexo y el sistema de unidades. El sexo cambia directamente los coeficientes de la fórmula.",
+          "Introduce altura, peso y edad. Si conoces los perímetros de cuello y cintura, añádelos para mejorar mucho la estimación.",
+          "Consulta el porcentaje de grasa estimado, comprueba en qué franja cae y compáralo con la tabla de abajo."
+        ],
+        "explanationTitle": "Cómo se estima el porcentaje de grasa corporal",
+        "formula": "Grasa corporal (%) = masa grasa ÷ peso corporal × 100",
+        "explanation": [
+          "El porcentaje de grasa corporal indica qué parte de tu peso es grasa y describe la composición corporal de forma más directa que el IMC. Esta herramienta usa el método de la Marina de EE. UU., que estima la grasa a partir de la altura y los perímetros de cuello y cintura. Si faltan esos datos, se aplica la ecuación de Deurenberg: grasa = 1,20 × IMC + 0,23 × edad − 10,8 × sexo − 5,4, donde sexo es 1 para hombres y 0 para mujeres.",
+          "Los resultados de distintos métodos pueden diferir entre 3 y 5 puntos porcentuales. Las básculas domésticas usan bioimpedancia, muy sensible a la hidratación, la comida y el ejercicio. El pesaje hidrostático y la DXA son más precisos, pero poco prácticos a diario. Usa el porcentaje de grasa como tendencia a largo plazo: mide siempre en las mismas condiciones, preferiblemente en ayunas por la mañana, y compara la evolución de varias semanas en lugar de una sola lectura."
+        ],
+        "tableTitle": "Rangos de referencia de grasa corporal (ACE)",
+        "tableHeaders": [
+          "Grupo",
+          "Esencial",
+          "Atleta",
+          "Fitness",
+          "Media",
+          "Obesidad"
+        ],
+        "tableRows": [
+          [
+            "Hombres",
+            "2–5%",
+            "6–13%",
+            "14–17%",
+            "18–24%",
+            "≥ 25%"
+          ],
+          [
+            "Mujeres",
+            "10–13%",
+            "14–20%",
+            "21–24%",
+            "25–31%",
+            "≥ 32%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es más preciso, una báscula de grasa corporal o esta calculadora?",
+            "a": "Ambas son estimaciones con fuentes de error distintas. La bioimpedancia reacciona mucho a la hidratación, así que los valores oscilan tras beber o entrenar. El método de perímetros depende de lo bien que midas. Elige un método, mantén condiciones constantes y observa la tendencia a largo plazo."
+          },
+          {
+            "q": "¿Por qué mi porcentaje de grasa no concuerda con mi IMC?",
+            "a": "Ahí reside justamente el valor de medir la grasa. El IMC solo relaciona peso y altura y no distingue músculo de grasa, mientras que el porcentaje estima directamente la proporción de grasa. Las personas musculosas suelen aparecer como sobrepeso en el IMC pese a tener grasa saludable; en ese caso manda el porcentaje de grasa."
+          },
+          {
+            "q": "¿Cuanta menos grasa, mejor?",
+            "a": "No. La grasa participa en la producción de hormonas, la regulación de la temperatura y la absorción de vitaminas liposolubles. Mantenerse de forma prolongada por debajo del 5% en hombres y del 13% en mujeres puede alterar hormonas e inmunidad. Las franjas fitness o media suelen ser el objetivo sostenible."
+          },
+          {
+            "q": "¿Cuándo es mejor medirse?",
+            "a": "Por la mañana, en ayunas y tras ir al baño. Evita medirte justo después de entrenar fuerte: la deshidratación eleva la lectura por impedancia y la inflamación temporal aumenta los perímetros. La media de tres días consecutivos es mucho más fiable que una sola medición."
+          }
+        ]
+      }
     },
     "lean-body-mass": {
       "name": "Masa corporal magra",
@@ -1007,7 +1373,71 @@
     "bmr-calculator": {
       "name": "TMB",
       "description": "Calcular la tasa metabólica basal para la planificación de calorías",
-      "metaDescription": "Calcule su tasa metabólica basal utilizando las fórmulas de Harris-Benedict y Mifflin-St Jeor"
+      "metaDescription": "Calcule su tasa metabólica basal utilizando las fórmulas de Harris-Benedict y Mifflin-St Jeor",
+      "guide": {
+        "steps": [
+          "Selecciona sexo y sistema de unidades. El sexo fija el término constante de la ecuación.",
+          "Introduce edad, altura y peso. La edad influye en el metabolismo basal más de lo que suele pensarse.",
+          "Consulta tus calorías basales diarias y aplícalas un factor de actividad para estimar el gasto total diario."
+        ],
+        "explanationTitle": "Cómo se calcula la tasa metabólica basal",
+        "formula": "Mifflin-St Jeor: hombres TMB = 10W + 6,25H − 5A + 5, mujeres TMB = 10W + 6,25H − 5A − 161",
+        "explanation": [
+          "La tasa metabólica basal es la energía necesaria para mantener el latido, la respiración, la temperatura corporal y la actividad nerviosa básica en estado de vigilia, ayuno y reposo en un entorno neutro. Suele representar entre el 60% y el 75% del gasto energético diario total. Esta herramienta usa por defecto la ecuación de Mifflin-St Jeor, una de las más precisas para la población general. W es el peso en kilogramos, H la altura en centímetros y A la edad en años.",
+          "Otras opciones habituales son la ecuación revisada de Harris-Benedict, que data de 1919 y tiende a sobreestimar a los adultos actuales entre un 5% y un 10%, y Katch-McArdle, la más exacta cuando conoces tu porcentaje de grasa. El error de predicción ronda el ±10% y la variación individual depende sobre todo de la masa muscular, la genética y las hormonas. Usa la TMB como punto de partida para planificar la dieta, no como una medición clínica; para eso se requiere calorimetría indirecta o agua doblemente marcada."
+        ],
+        "tableTitle": "Factores de actividad y gasto energético total",
+        "tableHeaders": [
+          "Nivel de actividad",
+          "Factor",
+          "Descripción",
+          "Ejemplo (TMB 1.500)"
+        ],
+        "tableRows": [
+          [
+            "Sedentario",
+            "1,2",
+            "Trabajo de oficina, poco o ningún ejercicio",
+            "1.800 kcal"
+          ],
+          [
+            "Ligeramente activo",
+            "1,375",
+            "Ejercicio ligero 1–3 días por semana",
+            "2.063 kcal"
+          ],
+          [
+            "Moderadamente activo",
+            "1,55",
+            "Ejercicio moderado 3–5 días por semana",
+            "2.325 kcal"
+          ],
+          [
+            "Muy activo",
+            "1,725",
+            "Ejercicio intenso 6–7 días por semana",
+            "2.588 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la diferencia entre TMB y gasto total?",
+            "a": "La TMB cubre el mínimo para mantenerte vivo en reposo absoluto. El gasto total añade el movimiento diario, el ejercicio y el coste de digerir los alimentos: gasto total = TMB × factor de actividad. Planifica tu ingesta a partir del gasto total, no de la TMB, o acabarás comiendo mucho menos de lo que debes."
+          },
+          {
+            "q": "¿Por qué distintas fórmulas dan cifras distintas?",
+            "a": "Porque se ajustaron con muestras y épocas diferentes. Mifflin-St Jeor procede de 1990 y encaja bien con los adultos actuales. Harris-Benedict es de 1919, revisada en 1984, y sobreestima entre un 5% y un 10%. Katch-McArdle necesita el porcentaje de grasa, pero es la más precisa si lo tienes. Las diferencias suelen quedar entre 100 y 200 kcal, así que elige una y sé constante."
+          },
+          {
+            "q": "¿Hacer dieta ralentiza el metabolismo?",
+            "a": "Sí. Un déficit grande y prolongado provoca termogénesis adaptativa: el cuerpo recorta el movimiento no esencial y reduce la actividad tiroidea, y la TMB puede caer entre un 10% y un 20%, en parte de forma persistente. Mantén el déficit en 300 a 500 kcal diarias y combínalo con entrenamiento de fuerza y proteína suficiente."
+          },
+          {
+            "q": "¿Cuánto debo comer para perder grasa?",
+            "a": "Calcula tu gasto total y réstale entre 300 y 500 kcal, lo que equivale a unos 0,3 a 0,5 kg por semana. No bajes de tu TMB ni te quedes de forma crónica por debajo de 1.200 kcal al día si eres mujer, o 1.500 si eres hombre. Dos o tres sesiones de fuerza por semana y entre 1,6 y 2,2 gramos de proteína por kilo de peso ayudan a conservar el músculo."
+          }
+        ]
+      }
     },
     "tdee-calculator": {
       "name": "TDEE",
@@ -1017,7 +1447,71 @@
     "calorie-calculator": {
       "name": "Caloría",
       "description": "Calcular las necesidades calóricas diarias para los objetivos de peso.",
-      "metaDescription": "Calcule las necesidades calóricas diarias y macros para sus objetivos de pérdida o aumento de peso"
+      "metaDescription": "Calcule las necesidades calóricas diarias y macros para sus objetivos de pérdida o aumento de peso",
+      "guide": {
+        "steps": [
+          "Introduce sexo, edad, altura y peso para establecer tu tasa metabólica basal.",
+          "Elige tu nivel de actividad diaria para estimar el gasto energético total.",
+          "Selecciona un objetivo, pérdida de grasa, mantenimiento o ganancia muscular, y consulta la ingesta y el reparto de macronutrientes."
+        ],
+        "explanationTitle": "Cómo se calculan las calorías diarias",
+        "formula": "Gasto energético total = TMB × factor de actividad (1,2 – 1,725)",
+        "explanation": [
+          "El gasto total tiene cuatro componentes. El metabolismo basal aporta entre el 60% y el 75%. El efecto termogénico de los alimentos ronda el 10%, porque digerir y absorber nutrientes consume energía. La termogénesis por actividad sin ejercicio, caminar, tareas domésticas, moverse sin darse cuenta, suma alrededor del 15%. El ejercicio aporta entre el 0% y el 30% y es lo que más varía. La calculadora obtiene la TMB con Mifflin-St Jeor y la multiplica por el factor de actividad que elijas.",
+          "Perder grasa consiste en mantener un déficit frente a ese gasto. Restar entre 300 y 500 kcal al día equivale a unos 0,3 o 0,5 kg por semana, un ritmo sostenible que preserva el músculo. Un déficit excesivo provoca adaptación metabólica, pérdida de masa muscular y un hambre difícil de sostener, lo que explica el efecto rebote. Para ganar músculo basta con un superávit de 200 a 400 kcal; lo que exceda esa cifra se almacena como grasa, no como tejido muscular."
+        ],
+        "tableTitle": "Objetivos calóricos según meta (para un gasto de 2.200 kcal)",
+        "tableHeaders": [
+          "Objetivo",
+          "Ingesta diaria",
+          "Ritmo esperado",
+          "Proteína"
+        ],
+        "tableRows": [
+          [
+            "Pérdida de grasa rápida",
+            "1.700 kcal",
+            "≈ −0,5 kg por semana",
+            "1,6 – 2,2 g por kg"
+          ],
+          [
+            "Pérdida de grasa suave",
+            "1.900 kcal",
+            "≈ −0,3 kg por semana",
+            "1,6 – 2,2 g por kg"
+          ],
+          [
+            "Mantenimiento",
+            "2.200 kcal",
+            "Más o menos estable",
+            "1,2 – 1,6 g por kg"
+          ],
+          [
+            "Ganancia muscular",
+            "2.500 kcal",
+            "≈ +0,2 kg por semana",
+            "1,6 – 2,2 g por kg"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué no adelgazo si sigo el plan?",
+            "a": "Tres causas son habituales. Subestimar la ingesta, porque el aceite al cocinar, las bebidas y los snacks añaden fácilmente 300 o 500 kcal. Sobreestimar la actividad, porque un trabajo de oficina marcado como moderadamente activo infla el gasto. Y que la pérdida inicial quede enmascarada por retención de líquidos. Registra tu comida con honestidad durante una o dos semanas y ajusta a partir de ahí; es más útil que cambiar de calculadora."
+          },
+          {
+            "q": "¿Cuánta proteína al perder grasa?",
+            "a": "Entre 1,6 y 2,2 gramos por kilo de peso, aproximadamente el 25% al 35% de las calorías. Más proteína protege el músculo en déficit, aumenta la saciedad y tiene un efecto termogénico mayor, ya que digerir proteína consume en torno al 20% o 30% de sus calorías. Elige la franja alta si entrenas con pesas y la baja si eres sedentario. Quien tenga enfermedad renal debe consultar antes con su médico."
+          },
+          {
+            "q": "¿Son fiables las calorías del ejercicio?",
+            "a": "Solo como orientación. Cintas de correr, pulseras y aplicaciones suelen desviarse entre un 20% y un 40%, casi siempre por exceso, y el cuerpo compensa parte moviéndose menos el resto del día. Usa esas cifras como referencia y juzga el progreso por la tendencia de dos semanas en peso y medidas."
+          },
+          {
+            "q": "¿El metabolismo se frena al adelgazar?",
+            "a": "Sí. Cada kilo perdido reduce la TMB en unas 20 o 30 kcal, y una pérdida rápida y grande añade una caída adaptativa del 10% al 20%. Recalcula tus necesidades cada 5 o 10 kilos, sigue entrenando con pesas, mantén la proteína alta e introduce fases cortas de mantenimiento si lo ves necesario."
+          }
+        ]
+      }
     },
     "calories-burned": {
       "name": "Calorías quemadas",
@@ -1127,7 +1621,71 @@
     "percentage-calculator": {
       "name": "Calculadora de Porcentaje",
       "description": "Calcula porcentajes, cambio porcentual y diferencia porcentual",
-      "metaDescription": "Herramienta de porcentaje"
+      "metaDescription": "Herramienta de porcentaje",
+      "guide": {
+        "steps": [
+          "Elige qué quieres calcular: la parte, el porcentaje, el valor original o la variación.",
+          "Introduce los dos valores que conoces y deja vacío el tercer campo.",
+          "Consulta el resultado y el desarrollo, y cambia de modo para resolver la siguiente cuestión."
+        ],
+        "explanationTitle": "Los cuatro cálculos habituales con porcentajes",
+        "formula": "Porcentaje = parte ÷ total × 100%",
+        "explanation": [
+          "Un porcentaje es simplemente una fracción con denominador 100, y el símbolo % significa dividir entre 100. Por tanto 15% es 0,15, y multiplicar cualquier número por 0,15 da su 15%. De ahí salen cuatro casos estándar: hallar la parte a partir del total y el porcentaje, hallar el porcentaje a partir de parte y total, hallar el total a partir de parte y porcentaje, y hallar la variación entre un valor antiguo y uno nuevo.",
+          "Los errores más frecuentes aparecen en la variación. Una subida del 50% seguida de una bajada del 50% no devuelve al punto de partida: 100 sube a 150 y de ahí baja a 75, una pérdida neta del 25%. Los dos porcentajes iguales se aplican sobre bases distintas. El otro tropiezo clásico es la diferencia entre puntos porcentuales y porcentaje. Si un tipo pasa del 4% al 5%, ha subido un punto porcentual y también ha subido un 25%. Ambas cosas son ciertas y significan algo distinto."
+        ],
+        "tableTitle": "Casos habituales con porcentajes y sus fórmulas",
+        "tableHeaders": [
+          "Caso",
+          "Datos conocidos",
+          "Fórmula",
+          "Ejemplo"
+        ],
+        "tableRows": [
+          [
+            "Hallar la parte",
+            "Total y porcentaje",
+            "Total × porcentaje",
+            "15% de 200 = 30"
+          ],
+          [
+            "Hallar el porcentaje",
+            "Parte y total",
+            "Parte ÷ total × 100%",
+            "30 de 200 = 15%"
+          ],
+          [
+            "Hallar el total",
+            "Parte y porcentaje",
+            "Parte ÷ porcentaje",
+            "30 es el 15% de 200"
+          ],
+          [
+            "Hallar la variación",
+            "Valor antiguo y nuevo",
+            "(Nuevo − antiguo) ÷ antiguo × 100%",
+            "100 → 120 = +20%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Si algo sube un 50% y luego baja un 50%, ¿vuelve al valor original?",
+            "a": "No. 100 sube un 50% hasta 150, y bajar un 50% de ahí deja 75, una pérdida neta del 25%. Los dos porcentajes iguales se aplican sobre bases distintas, primero 100 y después 150. Cualquier par simétrico de subida y bajada deja pérdida, y cuanto mayor es la oscilación, mayor es la diferencia."
+          },
+          {
+            "q": "¿Cuál es la diferencia entre puntos porcentuales y porcentaje?",
+            "a": "Los puntos porcentuales son la diferencia aritmética entre dos porcentajes; el porcentaje describe un cambio relativo. Si un tipo pasa del 4% al 5%, ha subido un punto porcentual y también ha subido un 25%, porque 1 es la cuarta parte de 4. Para estadísticas, los puntos porcentuales evitan casi todos los malentendidos."
+          },
+          {
+            "q": "¿Cómo calculo cuánto por ciento es A mayor que B?",
+            "a": "Divide la diferencia por el valor de referencia, el que va después de la palabra que: (A − B) ÷ B × 100%. El denominador es B, no A. Con A = 120 y B = 100, A es un 20% mayor que B, mientras que B es un 16,7% menor que A, porque cambia la base."
+          },
+          {
+            "q": "¿Un 20% de descuento es lo mismo que pagar el 80%?",
+            "a": "Sí, exactamente lo mismo. Quitar un 20% deja el 80% del precio, así que el precio final es el original por 0,8. La confusión suele venir del lenguaje del descuento: una rebaja del 25% significa pagar el 75%, no el 25%."
+          }
+        ]
+      }
     },
     "percent-error": {
       "name": "Error porcentual",
@@ -1541,7 +2099,76 @@
       "from": "De",
       "swap": "Intercambiar",
       "to": "A",
-      "value": "Valor"
+      "value": "Valor",
+      "guide": {
+        "steps": [
+          "Elige una categoría: longitud, peso, temperatura, área, volumen, velocidad, tiempo y más.",
+          "Introduce el valor y elige la unidad de origen y la de destino. Si falta una unidad, cambia primero de categoría.",
+          "Consulta el resultado y el mismo valor expresado en otras unidades habituales."
+        ],
+        "explanationTitle": "Cómo funciona la conversión de unidades",
+        "formula": "Destino = valor × (factor origen ÷ factor destino)",
+        "explanation": [
+          "Cada categoría tiene una unidad base internacional: metros para longitud, kilogramos para masa, kelvin para temperatura, litros para volumen. Las demás unidades se guardan como un factor que indica a cuántas unidades base equivalen. Para convertir, el valor se pasa primero a unidades base y luego se divide por el factor de destino. Añadir una unidad requiere registrar un solo factor en lugar de una regla por cada par, y se evita el arrastre de errores de redondeo de las cadenas de factores.",
+          "La temperatura es la única categoría que no se resuelve multiplicando. Celsius y kelvin se diferencian por un desplazamiento (K = °C + 273,15) y Celsius y Fahrenheit usan una transformación lineal con término independiente (°F = °C × 9/5 + 32), así que necesita su propia rama. Ahí es precisamente donde fallan los conversores simples. Cuidado también con unidades que comparten nombre según la región: el galón estadounidense son unos 3,785 litros y el imperial unos 4,546, cerca de un 20% más."
+        ],
+        "tableTitle": "Conversiones habituales de un vistazo",
+        "tableHeaders": [
+          "Categoría",
+          "Relación",
+          "Ejemplo"
+        ],
+        "tableRows": [
+          [
+            "Longitud",
+            "1 pulgada = 2,54 cm",
+            "10 in = 25,4 cm"
+          ],
+          [
+            "Longitud",
+            "1 pie = 30,48 cm",
+            "6 ft = 182,9 cm"
+          ],
+          [
+            "Masa",
+            "1 libra = 0,4536 kg",
+            "150 lb = 68,04 kg"
+          ],
+          [
+            "Volumen",
+            "1 galón EE. UU. = 3,785 l",
+            "5 gal = 18,93 l"
+          ],
+          [
+            "Temperatura",
+            "°F = °C × 9/5 + 32",
+            "25 °C = 77 °F"
+          ],
+          [
+            "Velocidad",
+            "1 mph = 1,609 km/h",
+            "60 mph = 96,6 km/h"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué la temperatura es distinta de las demás unidades?",
+            "a": "Porque el cero no significa nada. Longitud y masa tienen un cero absoluto y basta un factor. Celsius y Fahrenheit definen el cero de forma distinta, con el punto de congelación en 0 y en 32, así que hacen falta un factor y un término independiente. Multiplicar 25 por 1,8 sin sumar 32 da 45 en lugar de los correctos 77 °F."
+          },
+          {
+            "q": "¿El galón estadounidense y el imperial son iguales?",
+            "a": "No, y la diferencia es apreciable. El galón estadounidense ronda los 3,785 litros y el imperial los 4,546, cerca de un 20% más. Lo mismo ocurre con las onzas líquidas: unos 29,57 ml en EE. UU. y 28,41 ml en el Reino Unido. Comprueba siempre qué sistema usa tu fuente, porque pasar una receta americana a medidas británicas se nota."
+          },
+          {
+            "q": "¿Cuántos decimales debo conservar?",
+            "a": "La herramienta muestra cifras significativas suficientes para que redondees según te convenga. Para uso diario basta un decimal: altura a 0,1 cm y peso a 0,1 kg. En ingeniería o ciencia ajusta las cifras significativas a los datos de entrada y no dejes que una constante definida como 2,54 limite tu precisión."
+          },
+          {
+            "q": "¿Una onza es peso o volumen?",
+            "a": "Puede ser ambas cosas según el contexto. La onza avoirdupois equivale a unos 28,35 gramos de masa. La onza líquida es un volumen de unos 29,57 ml en EE. UU. y 28,41 ml en el Reino Unido. En recetas, oz suele indicar peso; en etiquetas de bebidas, volumen. Fíjate en la abreviatura."
+          }
+        ]
+      }
     },
     "set-calculator": {
       "name": "Establecer calculadora",
@@ -8522,7 +9149,8 @@
     "about-offer-education": "Educación — conversión de unidades, operaciones de conjuntos y una calculadora científica.",
     "about-offer-technology": "Tecnología — conversión de bases/números y herramientas de red.",
     "about-how-it-works": "Todos los cálculos se ejecutan completamente en su navegador. Los resultados se calculan en su dispositivo, lo que significa que sus entradas permanecen privadas y las herramientas funcionan al instante incluso con conexiones lentas. El sitio se construye como una aplicación web estática y rápida para que las páginas carguen rápido en cualquier parte del mundo.",
-    "about-editorial": "Buscamos la corrección y la claridad. Las fórmulas se documentan en cada herramienta y revisamos las matemáticas detrás de cada calculadora. Si encuentra un error o tiene una sugerencia, nos encantaría saber de usted en la página de contacto."
+    "about-editorial": "Buscamos la corrección y la claridad. Las fórmulas se documentan en cada herramienta y revisamos las matemáticas detrás de cada calculadora. Si encuentra un error o tiene una sugerencia, nos encantaría saber de usted en la página de contacto.",
+    "last-updated-august-28-2026": "Última actualización: 28 de agosto de 2026."
   },
   "legal": {
     "terms": {
@@ -8547,7 +9175,9 @@
       "cookiesGoogleLink": "Políticas publicitarias de Google",
       "cookiesAdsLink": "Configuración de anuncios",
       "yourRightsBody": "Dependiendo de dónde viva (por ejemplo, según el RGPD de la UE o la CCPA de California), es posible que tenga derecho a acceder, corregir o eliminar datos personales y a oponerse a determinado procesamiento. Debido a que este sitio no almacena datos personales en sus propios servidores, la mayoría de las solicitudes se relacionan con datos en poder de nuestros proveedores de servicios, que le ayudaremos a abordar si lo solicita.",
-      "contactBody": "Si tiene alguna pregunta sobre esta política, contáctenos en <email>contact@baikecalc.com</email>."
+      "contactBody": "Si tiene alguna pregunta sobre esta política, contáctenos en <email>contact@baikecalc.com</email>.",
+      "cookiesThirdParty": "Proveedores externos, incluido Google, usan cookies para publicar anuncios basados en tus visitas anteriores a este sitio u otros sitios web. El uso que hace Google de la cookie de DoubleClick le permite a ella y a sus socios mostrarte anuncios basados en tu visita a este sitio o a otros sitios de Internet. Puedes excluirte de la publicidad personalizada en cualquier momento desde {link3}. Si resides en la UE o el Reino Unido, también puedes retirar tu consentimiento para las cookies publicitarias desde el banner de consentimiento de este sitio.",
+      "cookiesAdsSettings": "Configuración de anuncios"
     },
     "contact": {
       "description": "¿Preguntas, correcciones o ideas de asociación? Comuníquese en cualquier momento.",
@@ -9011,5 +9641,82 @@
     "finance": "Las calculadoras de este sitio proporcionan estimaciones únicamente con fines informativos generales. No son asesoramiento financiero, de inversión, fiscal o legal. Consulta a un profesional cualificado antes de tomar cualquier decisión.",
     "health": "Estas calculadoras proporcionan únicamente información general y no sustituyen el asesoramiento, diagnóstico o tratamiento médico profesional. Consulte siempre a un proveedor de atención médica calificado.",
     "crypto": "Estas herramientas tienen fines educativos e informativos únicamente. No son asesoramiento de inversión, comercio o financiero. Las criptomonedas implican un riesgo significativo: siempre haga su propia investigación."
+  },
+  "home": {
+    "introTitle": "Acerca de Baike Calc",
+    "intro": "Baike Calc es un conjunto gratuito de 198 calculadoras y conversores en línea repartidos en 19 categorías: matemáticas, finanzas, salud, procesamiento de imágenes, ingeniería y redes, entre otras. Todos los cálculos se ejecutan localmente en tu navegador: lo que escribas no se envía a ningún servidor y no necesitas crear una cuenta para usar ninguna herramienta. Cada página incluye instrucciones paso a paso, una explicación de la fórmula utilizada y una sección de preguntas frecuentes, para que entiendas cómo se obtiene cada resultado en lugar de leer solo un número. Tanto si eres estudiante, ingeniero, profesional de las finanzas como si solo necesitas una cifra rápida, aquí encontrarás una herramienta útil.",
+    "categoriesTitle": "Explorar por categoría",
+    "categoriesDesc": "198 herramientas en 19 categorías. Abre una categoría para ver todas sus calculadoras con explicaciones.",
+    "categoryDesc": {
+      "color": "Conversión de color y paletas: HEX, RGB y HSL, además de contraste y diferencia.",
+      "cooking": "Conversiones de cocina, escalado de recetas y conversión de temperaturas de horno.",
+      "automotive": "Cálculos de automóviles: consumo, neumáticos, intervalos de mantenimiento y préstamos.",
+      "chemistry": "Química: masa molar, preparación de disoluciones, concentración y estequiometría.",
+      "crypto": "Conversión de criptomonedas, estimación de rentabilidad de minería y hashrate.",
+      "data": "Tamaño de datos y ancho de banda: unidades de almacenamiento, descargas y rendimiento.",
+      "datetime": "Fechas y horas: intervalos de días, días laborables y conversión de zonas horarias.",
+      "engineering": "Ingeniería: cargas estructurales, resistencia de materiales y parámetros hidráulicos.",
+      "finance": "Finanzas: amortización de préstamos, interés compuesto, rentabilidad e impuestos.",
+      "realestate": "Inmobiliario: cuota hipotecaria, valoración de inmuebles y análisis de rentabilidad.",
+      "health": "Salud: IMC, porcentaje de grasa corporal, metabolismo basal y calorías diarias.",
+      "infrastructure": "Infraestructura TI: planificación de capacidad, virtualización y estimación de costes.",
+      "math": "Matemáticas: porcentajes, fracciones, estadística, geometría y conversión de bases.",
+      "music": "Música: tempo, duración de notas y conversión de altura a frecuencia.",
+      "network": "Redes: subnetting, planificación de direcciones IP y conversión CIDR.",
+      "photo": "Fotografía: profundidad de campo, exposición, distancia focal equivalente y resolución.",
+      "physics": "Física: velocidad, energía, fuerza y conversiones de unidades habituales.",
+      "video": "Vídeo: bitrate, tamaño de archivo, fotogramas por segundo y compresión.",
+      "web": "Herramientas web: revisión SEO, codificación de URL, tiempo de respuesta y DNS."
+    },
+    "whyTitle": "Por qué usar Baike Calc",
+    "whyItems": [
+      {
+        "title": "Cálculo local, sin rastro de datos",
+        "desc": "Todos los cálculos se realizan en tu navegador. Tus datos no llegan a ningún servidor y desaparecen al cerrar la pestaña."
+      },
+      {
+        "title": "Fórmulas abiertas y verificables",
+        "desc": "Cada página indica el algoritmo, la fórmula y sus supuestos, para que puedas comprobar cada paso por tu cuenta."
+      },
+      {
+        "title": "Sin registro y totalmente gratis",
+        "desc": "Sin cuenta, sin correo electrónico y sin límite diario de uso. Abre la página y empieza a calcular."
+      },
+      {
+        "title": "19 categorías y sigue creciendo",
+        "desc": "Desde porcentajes cotidianos hasta planificación de capacidad para virtualización de servidores, la colección sigue ampliándose."
+      }
+    ],
+    "guidesDesc": "Guías detalladas sobre casos concretos, que explican las fórmulas y las alternativas, cada una enlazada a una herramienta que puedes probar al momento.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      {
+        "q": "¿Son realmente gratuitas estas herramientas?",
+        "a": "Sí. Todas las calculadoras y conversores del sitio son gratuitos, sin necesidad de cuenta y sin límite diario de uso. El sitio se financia con publicidad, que cubre los costes de alojamiento y desarrollo pero nunca afecta a la exactitud de los resultados."
+      },
+      {
+        "q": "¿Se envían mis datos a un servidor?",
+        "a": "No. En la gran mayoría de las herramientas el cálculo se ejecuta por completo en tu navegador y los datos nunca salen de tu dispositivo. Unas pocas herramientas que necesitan datos externos, como los tipos de cambio en vivo, los consultan en fuentes públicas, pero no registran ni almacenan los valores concretos que introduces."
+      },
+      {
+        "q": "¿Puedo usar los resultados para declaraciones fiscales o decisiones médicas?",
+        "a": "No. Las herramientas ofrecen estimaciones con fines orientativos. Los resultados financieros no sustituyen el asesoramiento fiscal profesional y los resultados de salud no constituyen un diagnóstico. Para decisiones importantes consulta a un profesional titulado."
+      }
+    ]
+  },
+  "guide": {
+    "howToUseTitle": "Cómo usar {name}",
+    "faqTitle": "Preguntas frecuentes",
+    "step1": "Introduce los valores que quieres calcular en los campos de la parte superior de la página.",
+    "step2": "Cambia de unidad o ajusta las opciones según necesites. La mayoría de las herramientas actualizan el resultado mientras escribes.",
+    "step3": "Consulta el área de resultados y usa la explicación y las preguntas de abajo para entender su significado y su ámbito de aplicación.",
+    "fallbackIntro": "{name} es una calculadora en línea gratuita. {description} Todo se ejecuta localmente en tu navegador, así que los valores que introduzcas nunca se envían a un servidor.",
+    "fallbackQ1": "¿Son precisos los resultados?",
+    "fallbackA1": "Los resultados se basan en fórmulas estándar y factores de conversión publicados, con precisión suficiente para el uso diario. Para fines profesionales como declaraciones fiscales, diagnósticos médicos o diseño de ingeniería, consulta la norma oficial o a un profesional titulado.",
+    "fallbackQ2": "¿Se guardan mis datos en algún sitio?",
+    "fallbackA2": "No. El cálculo se realiza en tu navegador y tus datos nunca se envían. Al cerrar la página los valores desaparecen y nosotros no podemos ver lo que introdujiste.",
+    "fallbackQ3": "¿Necesito registrarme o pagar para usarlo?",
+    "fallbackA3": "No. Todas las herramientas del sitio son gratuitas, no requieren cuenta y no tienen límite diario de uso.",
+    "howItWorksTitle": "Cómo funciona {name}"
   }
 }

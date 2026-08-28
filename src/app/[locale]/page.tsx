@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { BookOpen, ChevronDown } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MediaToolsSection } from "@/components/media-tools-section";
 import { HeroSearch } from "@/components/search/hero-search";
@@ -6,7 +6,10 @@ import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
 import { blogPosts } from "@/lib/blog/posts";
 import { categories, getCategoryById } from "@/lib/registry/categories";
-import { converterRegistry } from "@/lib/registry/converters";
+import {
+	converterRegistry,
+	getConvertersByCategory,
+} from "@/lib/registry/converters";
 import { cn } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -49,6 +52,7 @@ export default async function Home({
 	const nav = await getTranslations("nav");
 	const tc = await getTranslations("converter");
 	const tBlog = await getTranslations("blog");
+	const th = await getTranslations("home");
 
 	const quickTools = quickToolIds
 		.map((id) => converterRegistry[id])
@@ -88,6 +92,19 @@ export default async function Home({
 		);
 	};
 
+	const whyItems = th.raw("whyItems") as { title: string; desc: string }[];
+	const homeFaq = th.raw("faq") as { q: string; a: string }[];
+
+	const faqJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		mainEntity: homeFaq.map((item) => ({
+			"@type": "Question",
+			name: item.q,
+			acceptedAnswer: { "@type": "Answer", text: item.a },
+		})),
+	};
+
 	return (
 		<div className="mx-auto max-w-6xl px-4">
 			{/* ===== Hero (compact) ===== */}
@@ -117,6 +134,14 @@ export default async function Home({
 				</div>
 			</section>
 
+			{/* ===== About the site (editorial intro) ===== */}
+			<section className="pb-8">
+				<h2 className="mb-2 text-lg font-bold">{th("introTitle")}</h2>
+				<p className="max-w-4xl text-sm leading-relaxed text-muted-foreground">
+					{th("intro")}
+				</p>
+			</section>
+
 			{/* ===== Media tools (preserved feature) ===== */}
 			<MediaToolsSection />
 
@@ -136,20 +161,40 @@ export default async function Home({
 				</div>
 			</section>
 
-			{/* ===== Browse by Category (tabs) ===== */}
+			{/* ===== Browse by Category (descriptive cards) ===== */}
 			<section className="pb-8">
-				<h2 className="mb-3 text-lg font-bold">{t("allCategories")}</h2>
-				<div className="no-scrollbar flex gap-2 overflow-x-auto pb-2">
-					{categories.map((c) => (
-						<Link
-							key={c.id}
-							href={`/${c.slug}`}
-							className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-						>
-							<c.icon className="h-4 w-4" />
-							{nav(`${c.id}.name`)}
-						</Link>
-					))}
+				<h2 className="mb-1 text-lg font-bold">{th("categoriesTitle")}</h2>
+				<p className="mb-3 text-sm text-muted-foreground">
+					{th("categoriesDesc")}
+				</p>
+				<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+					{categories.map((c) => {
+						const count = getConvertersByCategory(c.id).length;
+						return (
+							<Link
+								key={c.id}
+								href={`/${c.slug}`}
+								className="group rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+							>
+								<div className="flex items-center gap-2.5">
+									<div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+										<c.icon className="h-4 w-4" />
+									</div>
+									<div className="min-w-0">
+										<h3 className="truncate font-semibold">
+											{nav(`${c.id}.name`)}
+										</h3>
+										<p className="text-xs text-muted-foreground">
+											{count} {t("toolsCount")}
+										</p>
+									</div>
+								</div>
+								<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+									{th(`categoryDesc.${c.id}`)}
+								</p>
+							</Link>
+						);
+					})}
 				</div>
 			</section>
 
@@ -200,27 +245,45 @@ export default async function Home({
 				</div>
 			</section>
 
+			{/* ===== Why choose us ===== */}
+			<section className="pb-8">
+				<h2 className="mb-3 text-lg font-bold">{th("whyTitle")}</h2>
+				<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+					{whyItems.map((item) => (
+						<div
+							key={item.title}
+							className="rounded-xl border border-border bg-card p-4"
+						>
+							<h3 className="font-semibold">{item.title}</h3>
+							<p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+								{item.desc}
+							</p>
+						</div>
+					))}
+				</div>
+			</section>
+
 			{/* ===== Featured Articles & Guides ===== */}
-			<section className="pb-12">
+			<section className="pb-10">
 				<div className="mb-4 flex items-end justify-between">
 					<div>
 						<h2 className="flex items-center gap-2 text-lg font-bold">
 							<BookOpen className="h-5 w-5 text-primary" />
 							{t("blog")}
 						</h2>
-						<p className="mt-0.5 text-xs text-muted-foreground">
-							{t("homepageViewBlog")}
+						<p className="mt-0.5 max-w-2xl text-xs leading-relaxed text-muted-foreground">
+							{th("guidesDesc")}
 						</p>
 					</div>
 					<Link
 						href="/blog"
-						className="text-sm font-medium text-primary hover:underline"
+						className="shrink-0 text-sm font-medium text-primary hover:underline"
 					>
 						{t("homepageViewAll")}
 					</Link>
 				</div>
 				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-					{blogPosts.slice(0, 4).map((post) => (
+					{blogPosts.slice(0, 8).map((post) => (
 						<Link
 							key={post.slug}
 							href={`/blog/${post.slug}`}
@@ -236,7 +299,7 @@ export default async function Home({
 								<h3 className="line-clamp-2 text-sm font-semibold group-hover:text-primary">
 									{tBlog(`posts.${post.slug}.title`)}
 								</h3>
-								<p className="mt-1.5 line-clamp-2 text-xs text-muted-foreground">
+								<p className="mt-1.5 line-clamp-3 text-xs leading-relaxed text-muted-foreground">
 									{tBlog(`posts.${post.slug}.excerpt`)}
 								</p>
 							</div>
@@ -244,6 +307,31 @@ export default async function Home({
 								{tBlog("readMore")} →
 							</div>
 						</Link>
+					))}
+				</div>
+			</section>
+
+			{/* ===== Homepage FAQ ===== */}
+			<section className="pb-12">
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+				/>
+				<h2 className="mb-3 text-lg font-bold">{th("faqTitle")}</h2>
+				<div className="space-y-2">
+					{homeFaq.map((item) => (
+						<details
+							key={item.q}
+							className="group rounded-xl border border-border bg-card px-4 py-3"
+						>
+							<summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-medium">
+								<span>{item.q}</span>
+								<ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+							</summary>
+							<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+								{item.a}
+							</p>
+						</details>
 					))}
 				</div>
 			</section>

@@ -91,7 +91,8 @@
     "aboutThisCalculator": "Über {title}",
     "copySuccess": "In die Zwischenablage kopiert",
     "copyError": "Kopieren in die Zwischenablage fehlgeschlagen",
-    "advertisement": "Werbung"
+    "advertisement": "Werbung",
+    "toolsCount": "Werkzeuge"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -427,7 +428,69 @@
     "bmi": {
       "name": "BMI",
       "description": "Berechnen Sie Ihren Body-Mass-Index und Ihre Gesundheitskategorie",
-      "metaDescription": "Berechnen Sie Ihren Body-Mass-Index (BMI) und verstehen Sie Ihre Gesundheitskategorie"
+      "metaDescription": "Berechnen Sie Ihren Body-Mass-Index (BMI) und verstehen Sie Ihre Gesundheitskategorie",
+      "guide": {
+        "steps": [
+          "Wählen Sie das Einheitensystem: metrisch (Zentimeter / Kilogramm) oder imperisch (Fuß und Zoll / Pfund).",
+          "Geben Sie Körpergröße und Gewicht ein. Die Werte werden während der Eingabe geprüft, das Ergebnis sehen Sie sofort.",
+          "Lesen Sie Ihren BMI, die WHO-Kategorie und den für Ihre Körpergröße passenden Normalgewichtsbereich ab."
+        ],
+        "explanationTitle": "Was ist der BMI und wie wird er berechnet",
+        "formula": "BMI = Gewicht (kg) ÷ Körpergröße (m)²",
+        "explanation": [
+          "Der Body-Mass-Index setzt das Körpergewicht ins Verhältnis zum Quadrat der Körpergröße und dient als Näherungswert für den Körperfettanteil. Er wurde im 19. Jahrhundert vom belgischen Statistiker Adolphe Quetelet entwickelt und heißt deshalb auch Quetelet-Index. Weil er nur Größe und Gewicht benötigt, ist er weltweit das am häufigsten eingesetzte Screening-Instrument für Übergewicht.",
+          "Der BMI hat bekannte Grenzen. Er unterscheidet nicht zwischen Muskel- und Fettgewebe, und Muskelgewebe ist etwa 1,2-mal dichter als Fett. Kraftsportler gelten daher oft als übergewichtig, während ältere Menschen mit Muskelverlust trotz hohem Körperfettanteil einen normalen BMI haben können. Zudem tragen asiatische Bevölkerungsgruppen bei gleichem BMI meist mehr Körperfett, weshalb einige Länder strengere Grenzwerte verwenden. Verstehen Sie den BMI als ersten Anhaltspunkt und ziehen Sie Körperfettanteil, Taillenumfang, Blutdruck und Blutfettwerte hinzu."
+        ],
+        "tableTitle": "BMI-Kategorien (WHO-Standard)",
+        "tableHeaders": [
+          "Kategorie",
+          "BMI-Bereich (kg/m²)"
+        ],
+        "tableRows": [
+          [
+            "Untergewicht",
+            "< 18,5"
+          ],
+          [
+            "Normalgewicht",
+            "18,5 – 24,9"
+          ],
+          [
+            "Übergewicht",
+            "25,0 – 29,9"
+          ],
+          [
+            "Adipositas Grad I",
+            "30,0 – 34,9"
+          ],
+          [
+            "Adipositas Grad II",
+            "35,0 – 39,9"
+          ],
+          [
+            "Adipositas Grad III",
+            "≥ 40,0"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Ist der BMI für Kraftsportler aussagekräftig?",
+            "a": "Kaum. Muskelgewebe ist dichter als Fett, daher liegen trainierte Menschen oft über 25, obwohl sie wenig Körperfett haben. Für sie ist der Körperfettanteil die bessere Kennzahl, idealerweise ergänzt um den Taillenumfang."
+          },
+          {
+            "q": "Gelten für Kinder dieselben BMI-Grenzwerte?",
+            "a": "Nein. Bei Kindern und Jugendlichen von 2 bis 19 Jahren werden alters- und geschlechtsspezifische BMI-Perzentilenkurven verwendet, keine festen Erwachsenen-Grenzwerte. Die Einordnung gehört in kinderärztliche Hände."
+          },
+          {
+            "q": "Kann ich den Rechner in der Schwangerschaft nutzen?",
+            "a": "Davon ist abzuraten. Das Gewicht in der Schwangerschaft verändert sich durch Kind, Fruchtwasser und Blutvolumen, der BMI verliert seine Aussagekraft. Orientieren Sie sich an den Vorgaben Ihrer Frauenärztin oder Ihres Frauenarztes, die auf dem BMI vor der Schwangerschaft basieren."
+          },
+          {
+            "q": "Bedeutet ein normaler BMI automatisch Gesundheit?",
+            "a": "Nein. Ein normaler BMI bei erhöhtem viszeralem Fett ist häufig, und das metabolische Risiko dieser Gruppe wird oft unterschätzt. Ergänzen Sie den BMI um Taillenumfang und Körperfettanteil."
+          }
+        ]
+      }
     },
     "corpulence": {
       "name": "Korpulenz",
@@ -866,17 +929,198 @@
     "mortgage": {
       "name": "Hypothek",
       "description": "Berechnen Sie monatliche Zahlungen und Tilgungsplan",
-      "metaDescription": "Hypothekenrechner mit Tilgungsplan"
+      "metaDescription": "Hypothekenrechner mit Tilgungsplan",
+      "guide": {
+        "steps": [
+          "Geben Sie den Kaufpreis und die Anzahlung prozentual oder als Betrag ein; die Darlehenssumme wird automatisch ermittelt.",
+          "Tragen Sie Laufzeit und Jahreszins ein. Ergänzen Sie Grundsteuer und Wohngebäudeversicherung, um die echte Monatsbelastung zu sehen.",
+          "Sehen Sie die Aufteilung der Rate aus Zins und Tilgung, Steuern und Versicherung sowie die Zinsen über die gesamte Laufzeit."
+        ],
+        "explanationTitle": "Woraus sich die Monatsrate zusammensetzt",
+        "formula": "Rate = Zins und Tilgung + monatliche Steuer + monatliche Versicherung (+ Kreditversicherung)",
+        "explanation": [
+          "Viele denken, die Rate bestehe nur aus Zins und Tilgung. Tatsächlich ziehen Banken meist Grundsteuer und Wohngebäudeversicherung mit ein und weisen alles zusammen aus, bekannt als PITI: Principal, Interest, Taxes, Insurance. Liegt die Anzahlung unter 20%, kommt eine Kreditausfallversicherung hinzu, die in der Regel entfällt, sobald die Restschuld unter 80% des Beleihungswerts sinkt.",
+          "Neben der laufenden Rate fallen einmalige Kosten an: Anzahlung, Notar- und Grundbuchgebühren, Gutachten und Bearbeitungsentgelt, zusammen meist 2% bis 5% des Kaufpreises. Für die Frage, wie viel Haus Sie sich leisten können, gilt die 28/36-Regel: Die Wohnkosten sollten unter 28% des Monatsnetto bleiben und alle Schuldendienste inklusive Auto- und Kartenkrediten unter 36%. Die Regel ist konservativ, schützt aber vor Überschuldung."
+        ],
+        "tableTitle": "Einfluss der Anzahlung (300.000 Immobilie, 30 Jahre, 4,0%)",
+        "tableHeaders": [
+          "Anzahlung",
+          "Darlehen",
+          "Rate (Zins/Tilgung)",
+          "Kreditversicherung",
+          "Zinsen gesamt"
+        ],
+        "tableRows": [
+          [
+            "10%",
+            "270.000",
+            "≈ 1.289",
+            "erforderlich",
+            "≈ 194.000"
+          ],
+          [
+            "20%",
+            "240.000",
+            "≈ 1.146",
+            "nicht nötig",
+            "≈ 172.500"
+          ],
+          [
+            "30%",
+            "210.000",
+            "≈ 1.003",
+            "nicht nötig",
+            "≈ 151.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Ist eine höhere Anzahlung immer besser?",
+            "a": "Nicht zwingend. Mehr Eigenkapital bedeutet ein kleineres Darlehen, weniger Zinsen und keine Kreditversicherung. Dem steht der Opportunitätsgedanke gegenüber: Wer alles Eigenkapital in die Immobilie steckt, hat keine Reserve mehr. Wenn Sie verlässlich mehr Nachsteuerrendite erzielen als der Darlehenszins kostet, oder Liquidität für Risiken brauchen, kann eine geringere Anzahlung klüger sein. Drei bis sechs Monatsausgaben sollten in jedem Fall als Puffer bleiben."
+          },
+          {
+            "q": "Fester oder variabler Zins?",
+            "a": "Ein fester Zins bleibt über die gesamte Laufzeit konstant, die Rate ist planbar, und das passt zu allen, die lange wohnen bleiben und Sicherheit schätzen. Ein variabler Zins startet meist niedriger, schwankt aber mit dem Markt und kann steigen; das passt, wer in wenigen Jahren verkaufen oder umschulden will und steigende Raten tragen kann. Entscheidend sind die geplante Wohndauer und die Belastbarkeit Ihres Cashflows bei steigenden Zinsen."
+          },
+          {
+            "q": "Lohnt sich eine vorzeitige Rückzahlung?",
+            "a": "Vergleichen Sie den Darlehenszins mit Ihrer alternativen Nachsteuerrendite. Liegt der Zins höher, entspricht die Tilgung einer risikofreien Rendite in dieser Höhe. Liegt er niedriger, ist das Geld investiert oder als Reserve oft besser aufgehoben. In manchen Ländern sind Hypothekenzinsen steuerlich abzugsfähig; dieser Vorteil entfällt bei vorzeitiger Tilgung und gehört in die Rechnung."
+          },
+          {
+            "q": "Was besagt die 28/36-Regel?",
+            "a": "Eine Faustregel zur Tragfähigkeit: Wohnkosten sollten 28% des monatlichen Einkommens nicht übersteigen und alle Schuldendienste zusammen, also Baufinanzierung plus Autokredit plus Kartenraten, nicht mehr als 36%. Banken nutzen sie als ersten Filter; sie ist bewusst konservativ. Die endgültige Prüfung berücksichtigt außerdem Bonität, Eigenkapitalquote und Erwerbssituation."
+          }
+        ]
+      }
     },
     "compound-interest": {
       "name": "Zinseszins",
       "description": "Berechnen Sie den Zinseszins für Investitionen mit regelmäßigen Beiträgen",
-      "metaDescription": "Berechnen Sie das Wachstum des Zinseszinses im Zeitverlauf"
+      "metaDescription": "Berechnen Sie das Wachstum des Zinseszinses im Zeitverlauf",
+      "guide": {
+        "steps": [
+          "Geben Sie das Startkapital ein, also den Betrag, den Sie zu Beginn anlegen.",
+          "Tragen Sie die Jahresrendite, die Laufzeit und die Verzinsungsfrequenz ein (jährlich, halbjährlich, vierteljährlich oder monatlich).",
+          "Wenn Sie regelmäßig einzahlen, geben Sie den Sparbetrag an, um das Gesamtergebnis inklusive Einzahlungen zu sehen."
+        ],
+        "explanationTitle": "Die Zinseszinsformel",
+        "formula": "A = P × (1 + r/n)^(n·t)",
+        "explanation": [
+          "A ist der Endbetrag, P das Startkapital, r der Jahreszins, n die Anzahl der Zinsperioden pro Jahr und t die Laufzeit in Jahren. Zinseszins bedeutet, dass Zinsen selbst wieder Zinsen bringen: Der Zins jeder Periode wird dem Kapital zugeschlagen und erwirtschaftet in der nächsten Periode eine Rendite, wodurch die Kurve immer steiler wird. Einfache Zinsen werden dagegen nur auf das ursprüngliche Kapital gezahlt und bringen nichts ein.",
+          "Häufigere Verzinsung erhöht den Endbetrag, aber mit abnehmendem Effekt: Der Wechsel von jährlich auf halbjährlich bringt etwa 1,1%, der weitere Wechsel auf monatlich nochmals rund 1,1%. Entscheidend sind Zeit und Rendite. Als Faustregel gilt die 72er-Regel: Jahre bis zur Verdopplung ≈ 72 ÷ Jahresrendite in Prozent, also etwa 12 Jahre bei 6% und etwa 8 Jahre bei 9%."
+        ],
+        "tableTitle": "Einfluss der Verzinsungsfrequenz (100.000 bei 6% über 20 Jahre)",
+        "tableHeaders": [
+          "Frequenz",
+          "Perioden/Jahr",
+          "Endbetrag",
+          "Mehr vs. jährlich"
+        ],
+        "tableRows": [
+          [
+            "Jährlich",
+            "1",
+            "≈ 320.714",
+            "—"
+          ],
+          [
+            "Halbjährlich",
+            "2",
+            "≈ 324.340",
+            "≈ 3.626"
+          ],
+          [
+            "Vierteljährlich",
+            "4",
+            "≈ 326.204",
+            "≈ 5.490"
+          ],
+          [
+            "Monatlich",
+            "12",
+            "≈ 327.758",
+            "≈ 7.044"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Worin unterscheiden sich Zinseszins und einfache Zinsen?",
+            "a": "Einfache Zinsen werden nur auf das Kapital gezahlt und erwirtschaften selbst nichts. Beim Zinseszins wird der Zins jeder Periode dem Kapital zugeschlagen und bringt künftig Rendite. Bei 100.000 und 6% über 20 Jahre ergeben einfache Zinsen 220.000, jährlicher Zinseszins dagegen rund 320.700; der Abstand wächst mit der Laufzeit."
+          },
+          {
+            "q": "Was ist die 72er-Regel?",
+            "a": "Eine Faustformel für die Verdopplungszeit: Jahre bis zur Verdopplung ≈ 72 ÷ Jahresrendite in Prozent. Bei 6% verdoppelt sich das Geld in etwa 12 Jahren, bei 9% in etwa 8, bei 3% in etwa 24. Am genauesten ist sie zwischen 6% und 10%."
+          },
+          {
+            "q": "Wie stark wirkt sich die Verzinsungsfrequenz aus?",
+            "a": "Weniger als viele glauben. Bei 100.000, 6% und 20 Jahren ergibt jährliche Verzinsung rund 320.700 und monatliche rund 327.800, also nur etwa 2,2% mehr. Fünf Jahre länger anzulegen oder einen Prozentpunkt mehr Rendite verändert das Ergebnis weitaus stärker."
+          },
+          {
+            "q": "Ist die Jahresrendite das, was ich wirklich erhalte?",
+            "a": "Meist nicht. Die Jahresrendite ist eine nominale Wachstumsrate; netto gehen Verwaltungsgebühren, Ausgabeaufschläge und Steuern ab. Zahlen Sie zwischendurch ein oder entnehmen Sie Geld, weicht Ihre persönliche Rendite ohnehin ab und sollte als interner Zinsfuß (IRR) gemessen werden."
+          }
+        ]
+      }
     },
     "loan": {
       "name": "Kredit",
       "description": "Berechnen Sie monatliche Kreditzahlungen",
-      "metaDescription": "Kreditzahlungen und Tilgung"
+      "metaDescription": "Kreditzahlungen und Tilgung",
+      "guide": {
+        "steps": [
+          "Geben Sie die Darlehenssumme ein, also den Betrag, den Sie tatsächlich erhalten, ohne Bearbeitungsgebühren.",
+          "Tragen Sie den Jahreszins und die Laufzeit ein. Anzahlung oder Restwert können Sie ergänzen, falls die Felder zutreffen.",
+          "Lassen Sie berechnen, welche Monatsrate, welcher Zinsaufwand und welche Gesamtsumme entstehen, und vergleichen Sie Varianten."
+        ],
+        "explanationTitle": "Wie die Annuitätenrate berechnet wird",
+        "formula": "Rate = P × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]",
+        "explanation": [
+          "P ist die Darlehenssumme, r der Monatszins (Jahreszins ÷ 12) und n die Anzahl der Raten. Beim Annuitätendarlehen wird der Monatszins auf die Restschuld berechnet, der verbleibende Teil der konstanten Rate tilgt, die Restschuld sinkt und damit auch der Zinsanteil der nächsten Rate.",
+          "Der Vorteil ist die gleichbleibende Rate, die Planungssicherheit gibt; der Nachteil ist der hohe Zinsanteil zu Beginn. Die Alternative ist das Tilgungsdarlehen mit konstanter Tilgung plus Zins auf die Restschuld: Die erste Rate ist am höchsten, danach sinken sie, und die Zinslast ist insgesamt geringer. Bei 1.000.000 über 30 Jahre und 4% spart das Tilgungsdarlehen rund 117.000 Zinsen, verlangt aber am Anfang etwa 1.300 mehr pro Monat. Entscheidend ist Ihr Cashflow, nicht nur die Zinssumme."
+        ],
+        "tableTitle": "Annuität vs. konstante Tilgung (1.000.000, 30 Jahre, 4,0%)",
+        "tableHeaders": [
+          "Variante",
+          "Erste Rate",
+          "Letzte Rate",
+          "Zinsen gesamt",
+          "Gesamt"
+        ],
+        "tableRows": [
+          [
+            "Annuität",
+            "≈ 4.774",
+            "≈ 4.774",
+            "≈ 719.000",
+            "≈ 1.719.000"
+          ],
+          [
+            "Konstante Tilgung",
+            "≈ 6.111",
+            "≈ 2.790",
+            "≈ 602.000",
+            "≈ 1.602.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Was ist besser, Annuität oder konstante Tilgung?",
+            "a": "Konstante Tilgung kostet weniger Zinsen, verlangt aber am Anfang deutlich mehr. Bei knappem Cashflow oder steigendem Einkommen passt die Annuität besser. Bei stabilem Einkommen und dem Wunsch, Zinsen zu sparen, ist die konstante Tilgung im Vorteil. Pauschal besser ist keine der beiden."
+          },
+          {
+            "q": "Lohnt sich eine vorzeitige Rückzahlung?",
+            "a": "Vergleichen Sie den Darlehenszins mit einer sicheren Alternativrendite. Liegt der Zins höher, entspricht die Rückzahlung einer risikofreien Rendite in dieser Höhe. Haben Sie bessere Verwendung oder brauchen Sie die Reserve, sollten Sie nicht übereilt tilgen. Prüfen Sie außerdem Vorfälligkeitsentschädigung und etwaige Limits für Sondertilgungen."
+          },
+          {
+            "q": "Wie verteilen sich Zins und Tilgung in der Rate?",
+            "a": "Beim Annuitätendarlehen überwiegt anfangs der Zins, später die Tilgung. Bei 1.000.000, 30 Jahre und 4% entfallen auf die erste Rate rund 3.333 Zinsen und nur etwa 1.441 Tilgung; erst um das zehnte Jahr herum halten sich beide in etwa die Waage."
+          },
+          {
+            "q": "Wie rechne ich den Jahreszins in einen Monatszins um?",
+            "a": "Die Division durch 12 ergibt den nominalen Monatszins, den die meisten Banken verwenden. Exakt ist der effektive Monatszins (1 + Jahreszins)^(1/12) − 1. Der Unterschied ist minimal, bei 4% etwa 0,006 Prozentpunkte, daher genügt Jahreszins ÷ 12 für die Praxis."
+          }
+        ]
+      }
     },
     "retirement": {
       "name": "Ruhestand",
@@ -921,7 +1165,71 @@
     "currency": {
       "name": "Währungsumrechner",
       "description": "Konvertiert wichtige Weltwährungen",
-      "metaDescription": "Währungsumrechner"
+      "metaDescription": "Währungsumrechner",
+      "guide": {
+        "steps": [
+          "Geben Sie den umzurechnenden Betrag ein und wählen Sie Ausgangs- und Zielwährung.",
+          "Prüfen Sie Kursquelle und Zeitstempel auf der Seite. Standard ist der zuletzt verfügbare Mittelkurs.",
+          "Lesen Sie das Ergebnis ab. Banken und Zahlungsdienste schlagen eine Marge auf, der tatsächliche Kurs ist also schlechter als dieser Referenzwert."
+        ],
+        "explanationTitle": "Wie Wechselkurse berechnet werden",
+        "formula": "Zielbetrag = Betrag × (Zielkurs ÷ Ausgangskurs)",
+        "explanation": [
+          "Grundlage ist der Wechselkurs, also der Preis einer Währung ausgedrückt in einer anderen. Dieses Werkzeug arbeitet mit einem US-Dollar-basierten Kreuzkurs: Der Betrag wird zunächst über den Ausgangskurs in US-Dollar umgerechnet und dann über den Zielkurs in die Zielwährung. Der Vorteil liegt darin, dass sich jedes Währungspaar umrechnen lässt, ohne jedes Paar einzeln zu pflegen.",
+          "In der Praxis begegnen Ihnen mehrere Preise. Der Mittelkurs ist der Durchschnitt aus An- und Verkauf und der hier verwendete Referenzkurs. Der Devisenkurs für Überweisungen gilt für Konto-zu-Konto-Transfers und hat die geringste Marge. Der Bargeldkurs gilt für Banknoten und hat die größte Marge, weil Transport, Lagerung und Fälschungsrisiko bezahlt werden müssen. Reale Geschäfte liegen meist 0,5% bis 3% vom Mittelkurs entfernt, Wechselstuben an Flughäfen oder in Hotels oft mehr als 5%."
+        ],
+        "tableTitle": "Mittelkurs gegenüber dem tatsächlichen Kurs (Umtausch von 10.000 Einheiten)",
+        "tableHeaders": [
+          "Weg",
+          "Kursart",
+          "Übliche Marge",
+          "Ergebnis"
+        ],
+        "tableRows": [
+          [
+            "Referenz-Mittelkurs",
+            "Mittelkurs",
+            "0%",
+            "Voller Referenzwert"
+          ],
+          [
+            "Banküberweisung",
+            "Devisen-Verkaufskurs",
+            "≈ 0,3% – 0,8%",
+            "Etwas weniger"
+          ],
+          [
+            "Bankschalter, bar",
+            "Bargeld-Verkaufskurs",
+            "≈ 1% – 2%",
+            "Weniger"
+          ],
+          [
+            "Flughafen / Hotel",
+            "Bargeldkurs",
+            "≈ 3% – 8%",
+            "Deutlich weniger"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Wie oft wird der Kurs aktualisiert?",
+            "a": "Der Devisenmarkt handelt an Werktagen rund um die Uhr; der hier genutzte Referenzkurs wird in der Regel einmal täglich erneuert. Wenn Sie einen handelbaren Kurs brauchen, nutzen Sie die Live-Notierung Ihrer Bank oder Ihres Zahlungsdienstes."
+          },
+          {
+            "q": "Warum weicht der Kurs meiner Bank ab?",
+            "a": "Weil andere Preisarten gemeint sind. Hier steht der Mittelkurs, also die Mitte zwischen An- und Verkauf. Ihre Bank nennt einen An- oder Verkaufskurs, der ihre Kosten und Marge enthält, die Spanne. Diese Abweichung ist normal und kein Datenfehler."
+          },
+          {
+            "q": "Worin unterscheiden sich Mittelkurs, Devisen- und Bargeldkurs?",
+            "a": "Der Mittelkurs ist die Mitte aus An- und Verkauf und dient als Referenz und für die Buchhaltung. Der Devisenkurs gilt für elektronische Konto-zu-Konto-Transfers ohne Bargeld und hat die kleinste Spanne. Der Bargeldkurs gilt für Banknoten und ist am weitesten, weil Transport, Lagerung und Zählung bezahlt werden müssen. Der Bargeld-Ankaufskurs liegt meist deutlich unter dem Devisen-Ankaufskurs."
+          },
+          {
+            "q": "Welcher Kurs gilt bei Kartenzahlung im Ausland?",
+            "a": "Üblich ist der Kurs des Kartennetzwerks am Abrechnungstag plus eine Fremdwährungsgebühr von etwa 1% bis 1,5%, gegebenenfalls zuzüglich einer Auslandseinsatzgebühr Ihrer Bank. Bietet das Terminal an, in Ihrer Heimatwährung abzurechnen, handelt es sich um dynamische Währungsumrechnung mit meist schlechterem Kurs. Wählen Sie die Landeswährung."
+          }
+        ]
+      }
     },
     "auto-loan": {
       "name": "Autokredit",
@@ -981,7 +1289,65 @@
     "body-fat": {
       "name": "Koerperfett",
       "description": "Berechnen Sie den Koerperfettanteil mit der US-Navy-Methode",
-      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil mit der US-Navy-Methode"
+      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil mit der US-Navy-Methode",
+      "guide": {
+        "steps": [
+          "Wählen Sie Geschlecht und Einheitensystem. Das Geschlecht wirkt direkt auf die Formelparameter.",
+          "Geben Sie Größe, Gewicht und Alter ein. Wenn Sie Hals- und Taillenumfang kennen, erhöht das die Genauigkeit deutlich.",
+          "Lesen Sie den geschätzten Körperfettanteil ab, sehen Sie, in welchen Bereich er fällt, und vergleichen Sie mit der Tabelle unten."
+        ],
+        "explanationTitle": "Wie der Körperfettanteil geschätzt wird",
+        "formula": "Körperfett (%) = Fettmasse ÷ Körpergewicht × 100",
+        "explanation": [
+          "Der Körperfettanteil gibt an, welcher Teil des Körpergewichts aus Fett besteht, und beschreibt die Körperzusammensetzung direkter als der BMI. Dieses Werkzeug nutzt die US-Navy-Methode, die den Fettanteil aus Körpergröße sowie Hals- und Taillenumfang ableitet. Fehlen die Umfangswerte, greift die Deurenberg-Formel: Körperfett = 1,20 × BMI + 0,23 × Alter − 10,8 × Geschlecht − 5,4, wobei Geschlecht bei Männern 1 und bei Frauen 0 ist.",
+          "Die Ergebnisse verschiedener Methoden liegen oft 3 bis 5 Prozentpunkte auseinander. Heimwaagen arbeiten mit Bioimpedanz, die stark auf Wasserhaushalt, Nahrung und Sport reagiert. Unterwasserwiegen und DXA-Scans sind genauer, aber für den Alltag unpraktisch. Betrachten Sie den Körperfettanteil daher als Langzeittrend: messen Sie unter gleichbleibenden Bedingungen, möglichst morgens nüchtern, und vergleichen Sie Entwicklungen über Wochen statt einzelner Werte."
+        ],
+        "tableTitle": "Referenzbereiche Körperfett (ACE)",
+        "tableHeaders": [
+          "Gruppe",
+          "Essenziell",
+          "Sportler",
+          "Fitness",
+          "Durchschnitt",
+          "Adipös"
+        ],
+        "tableRows": [
+          [
+            "Männer",
+            "2–5%",
+            "6–13%",
+            "14–17%",
+            "18–24%",
+            "≥ 25%"
+          ],
+          [
+            "Frauen",
+            "10–13%",
+            "14–20%",
+            "21–24%",
+            "25–31%",
+            "≥ 32%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Was ist genauer, eine Körperfettwaage oder dieser Rechner?",
+            "a": "Beides sind Schätzungen mit unterschiedlichen Fehlerquellen. Impedanzwaagen reagieren stark auf den Wasserhaushalt, die Werte schwanken nach Trinken oder Sport. Die Umfangsmethode hier hängt von sorgfältigem Messen ab. Wählen Sie eine Methode, halten Sie die Bedingungen konstant und beobachten Sie den Langzeittrend."
+          },
+          {
+            "q": "Warum widersprechen sich Körperfett und BMI bei mir?",
+            "a": "Genau darin liegt der Nutzen der Fettmessung. Der BMI setzt nur Gewicht und Größe ins Verhältnis und kann Muskel nicht von Fett trennen, während der Körperfettanteil den Fettanteil direkt schätzt. Muskulöse Menschen gelten beim BMI oft als übergewichtig, obwohl ihr Fettanteil gesund ist; dann ist der Körperfettwert die bessere Orientierung."
+          },
+          {
+            "q": "Ist weniger Körperfett immer besser?",
+            "a": "Nein. Fett ist an der Hormonbildung, der Temperaturregulation und der Aufnahme fettlöslicher Vitamine beteiligt. Dauerhaft unter etwa 5% bei Männern und 13% bei Frauen kann Hormone und Immunsystem beeinträchtigen. Die Fitness- oder Durchschnittsbereiche sind meist das nachhaltige Ziel."
+          },
+          {
+            "q": "Wann ist der beste Messzeitpunkt?",
+            "a": "Messen Sie morgens nüchtern und nach dem Toilettengang, und vermeiden Sie Messungen direkt nach hartem Training: Dehydrierung treibt die Impedanzwerte nach oben, vorübergehende Schwellung vergrößert den Umfang. Der Mittelwert aus drei aufeinanderfolgenden Tagen ist weitaus verlässlicher als eine Einzelmessung."
+          }
+        ]
+      }
     },
     "lean-body-mass": {
       "name": "Magermasse",
@@ -1001,7 +1367,71 @@
     "bmr-calculator": {
       "name": "Grundumsatz",
       "description": "Berechnen Sie den Grundumsatz fuer Kalorienplanung",
-      "metaDescription": "Berechnen Sie Ihren Grundumsatz mit Harris-Benedict und Mifflin-St Jeor"
+      "metaDescription": "Berechnen Sie Ihren Grundumsatz mit Harris-Benedict und Mifflin-St Jeor",
+      "guide": {
+        "steps": [
+          "Wählen Sie Geschlecht und Einheitensystem. Das Geschlecht bestimmt die Konstante in der Gleichung.",
+          "Geben Sie Alter, Körpergröße und Gewicht ein. Das Alter wirkt stärker auf den Grundumsatz als viele denken.",
+          "Lesen Sie den täglichen Grundumsatz ab und multiplizieren Sie ihn mit einem Aktivitätsfaktor für den Gesamtumsatz."
+        ],
+        "explanationTitle": "Wie der Grundumsatz berechnet wird",
+        "formula": "Mifflin-St Jeor: Männer BMR = 10W + 6,25H − 5A + 5, Frauen BMR = 10W + 6,25H − 5A − 161",
+        "explanation": [
+          "Der Grundumsatz ist die Energie, die Herzschlag, Atmung, Körpertemperatur und grundlegende Nervenaktivität im wachen, nüchternen Ruhezustand bei neutraler Temperatur erfordern. Er macht meist 60% bis 75% des täglichen Gesamtumsatzes aus. Dieses Werkzeug nutzt standardmäßig die Mifflin-St-Jeor-Gleichung, eine der genauesten Schätzformeln für die Allgemeinbevölkerung. W ist das Gewicht in Kilogramm, H die Körpergröße in Zentimetern und A das Alter in Jahren.",
+          "Daneben gibt es die überarbeitete Harris-Benedict-Gleichung, die auf das Jahr 1919 zurückgeht und heute Erwachsene um etwa 5% bis 10% überschätzt, sowie Katch-McArdle, die bei bekanntem Körperfettanteil am genauesten ist. Die Abweichung liegt typischerweise innerhalb von ±10%, bedingt durch Muskelmasse, Gene und Hormone. Verstehen Sie den Grundumsatz als Ausgangspunkt für die Ernährungsplanung, nicht als Messwert; dafür braucht es indirekte Kalorimetrie oder die Doppelmarkierungswasser-Methode."
+        ],
+        "tableTitle": "Aktivitätsfaktoren und Gesamtumsatz",
+        "tableHeaders": [
+          "Aktivität",
+          "Faktor",
+          "Beschreibung",
+          "Beispiel (BMR 1.500)"
+        ],
+        "tableRows": [
+          [
+            "Sitzend",
+            "1,2",
+            "Büroarbeit, kaum zusätzliche Bewegung",
+            "1.800 kcal"
+          ],
+          [
+            "Leicht aktiv",
+            "1,375",
+            "Leichter Sport an 1–3 Tagen pro Woche",
+            "2.063 kcal"
+          ],
+          [
+            "Mäßig aktiv",
+            "1,55",
+            "Mittlerer Sport an 3–5 Tagen pro Woche",
+            "2.325 kcal"
+          ],
+          [
+            "Sehr aktiv",
+            "1,725",
+            "Hartes Training an 6–7 Tagen pro Woche",
+            "2.588 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Worin unterscheiden sich Grundumsatz und Gesamtumsatz?",
+            "a": "Der Grundumsatz deckt die reine Lebenserhaltung in völliger Ruhe. Der Gesamtumsatz addiert Alltagsbewegung, Sport und die Energie für die Verdauung: Gesamtumsatz = Grundumsatz × Aktivitätsfaktor. Planen Sie Ihre Zufuhr nach dem Gesamtumsatz, sonst essen Sie deutlich zu wenig."
+          },
+          {
+            "q": "Warum weichen verschiedene Formeln voneinander ab?",
+            "a": "Sie wurden an unterschiedlichen Stichproben zu unterschiedlichen Zeiten entwickelt. Mifflin-St Jeor stammt von 1990 und passt gut zu heutigen Erwachsenen. Harris-Benedict geht auf 1919 zurück, wurde 1984 überarbeitet und überschätzt um etwa 5% bis 10%. Katch-McArdle benötigt den Körperfettanteil, ist damit aber am treffsichersten. Die Unterschiede liegen meist bei 100 bis 200 kcal, bleiben Sie einfach bei einer Formel."
+          },
+          {
+            "q": "Verlangsamt eine Diät den Stoffwechsel?",
+            "a": "Ja. Ein dauerhaft großes Defizit löst adaptive Thermogenese aus: Der Körper spart unbewusste Bewegung ein und drosselt die Schilddrüsenaktivität, der Grundumsatz kann um 10% bis 20% sinken, teils auch über die Diät hinaus. Halten Sie das Defizit bei 300 bis 500 kcal pro Tag und kombinieren Sie es mit Krafttraining und ausreichend Protein."
+          },
+          {
+            "q": "Wie viel sollte ich zum Abnehmen essen?",
+            "a": "Ermitteln Sie Ihren Gesamtumsatz und ziehen Sie 300 bis 500 kcal ab, das entspricht etwa 0,3 bis 0,5 kg pro Woche. Unterschreiten Sie nicht Ihren Grundumsatz und nicht dauerhaft 1.200 kcal bei Frauen oder 1.500 kcal bei Männern. Zwei bis drei Krafteinheiten pro Woche und 1,6 bis 2,2 Gramm Protein pro Kilogramm Körpergewicht erhalten die Muskulatur."
+          }
+        ]
+      }
     },
     "tdee-calculator": {
       "name": "TDEE",
@@ -1011,7 +1441,71 @@
     "calorie-calculator": {
       "name": "Kalorien",
       "description": "Berechnen Sie den taeglichen Kalorienbedarf fuer Gewichtsziele",
-      "metaDescription": "Berechnen Sie Kalorienbedarf und Makros fuer Gewichtsabnahme oder -zunahme"
+      "metaDescription": "Berechnen Sie Kalorienbedarf und Makros fuer Gewichtsabnahme oder -zunahme",
+      "guide": {
+        "steps": [
+          "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz bestimmt werden kann.",
+          "Wählen Sie Ihren Alltags-Aktivitätsgrad, um den täglichen Gesamtumsatz zu schätzen.",
+          "Wählen Sie ein Ziel, Fettabbau, Halten oder Muskelaufbau, und sehen Sie die empfohlene Zufuhr und Makroverteilung."
+        ],
+        "explanationTitle": "Wie der tägliche Kalorienbedarf entsteht",
+        "formula": "Gesamtumsatz = Grundumsatz × Aktivitätsfaktor (1,2 – 1,725)",
+        "explanation": [
+          "Der Gesamtumsatz besteht aus vier Teilen. Der Grundumsatz macht 60% bis 75% aus. Die nahrungsinduzierte Thermogenese liegt bei etwa 10%, denn Verdauen und Aufnehmen kostet Energie. Alltagsbewegung ohne Sport, also Gehen, Hausarbeit und Zappeln, bringt rund 15%. Sport trägt je nach Trainingsumfang 0% bis 30% bei und schwankt am stärksten. Der Rechner ermittelt den Grundumsatz nach Mifflin-St Jeor und multipliziert ihn mit dem gewählten Aktivitätsfaktor.",
+          "Fettabbau heißt ein dauerhaftes Defizit gegenüber diesem Gesamtumsatz. 300 bis 500 kcal weniger am Tag entsprechen etwa 0,3 bis 0,5 kg pro Woche, ein Tempo, das durchzuhalten ist und Muskelmasse schont. Ein zu großes Defizit löst metabolische Anpassung, Muskelabbau und schwer erträglichen Hunger aus, was den Jo-Jo-Effekt erklärt. Für Muskelaufbau genügen 200 bis 400 kcal Überschuss; alles darüber landet als Fett und nicht als Muskel."
+        ],
+        "tableTitle": "Kalorienziele nach Ziel (bei einem Gesamtumsatz von 2.200 kcal)",
+        "tableHeaders": [
+          "Ziel",
+          "Tageszufuhr",
+          "Erwartetes Tempo",
+          "Proteinziel"
+        ],
+        "tableRows": [
+          [
+            "Zügiger Fettabbau",
+            "1.700 kcal",
+            "≈ −0,5 kg pro Woche",
+            "1,6 – 2,2 g pro kg"
+          ],
+          [
+            "Sanfter Fettabbau",
+            "1.900 kcal",
+            "≈ −0,3 kg pro Woche",
+            "1,6 – 2,2 g pro kg"
+          ],
+          [
+            "Gewicht halten",
+            "2.200 kcal",
+            "etwa stabil",
+            "1,2 – 1,6 g pro kg"
+          ],
+          [
+            "Muskelaufbau",
+            "2.500 kcal",
+            "≈ +0,2 kg pro Woche",
+            "1,6 – 2,2 g pro kg"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Warum nehme ich trotz Plan nicht ab?",
+            "a": "Drei Ursachen sind häufig. Erstens zu niedrig geschätzte Zufuhr: Öl beim Kochen, Getränke und Snacks bringen leicht 300 bis 500 kcal. Zweitens zu hoch angesetzte Aktivität: Wer im Büro arbeitet und mäßig aktiv auswählt, überschätzt seinen Verbrauch. Drittens Wassereinlagerungen, die den ersten Fettabbau verdecken. Protokollieren Sie ein bis zwei Wochen ehrlich und justieren Sie danach statt den Rechner zu wechseln."
+          },
+          {
+            "q": "Wie viel Protein beim Abnehmen?",
+            "a": "Etwa 1,6 bis 2,2 Gramm pro Kilogramm Körpergewicht, also rund 25% bis 35% der Kalorien. Viel Protein schützt im Defizit die Muskulatur, sättigt besser und hat einen hohen thermischen Effekt, da die Verdauung von Protein rund 20% bis 30% seiner Kalorien verbraucht. Wer mit Gewichten trainiert, wählt den oberen Wert, wer sitzt, den unteren. Bei Nierenerkrankungen bitte ärztlich abklären."
+          },
+          {
+            "q": "Kann ich den Kalorienverbrauch beim Sport glauben?",
+            "a": "Nur eingeschränkt. Laufbänder, Armbänder und Apps liegen typischerweise 20% bis 40% daneben, meist nach oben, und der Körper gleicht einen Teil aus, indem er sich im restlichen Tag weniger bewegt. Behandeln Sie diese Werte als Orientierung und beurteilen Sie den Fortschritt am Zwei-Wochen-Trend von Gewicht und Umfängen."
+          },
+          {
+            "q": "Sinkt der Stoffwechsel beim Abnehmen?",
+            "a": "Ja. Jedes verlorene Kilogramm senkt den Grundumsatz um etwa 20 bis 30 kcal, und bei schnellem, großem Verlust kommt eine adaptive Drosselung von 10% bis 20% hinzu. Berechnen Sie Ihren Bedarf deshalb nach jeweils 5 bis 10 Kilogramm neu, trainieren Sie mit Gewichten, essen Sie genug Protein und planen Sie bei Bedarf kurze Erhaltungsphasen ein."
+          }
+        ]
+      }
     },
     "calories-burned": {
       "name": "Kalorienverbrauch",
@@ -1121,7 +1615,71 @@
     "percentage-calculator": {
       "name": "Prozentrechner",
       "description": "Berechnet Prozent, Prozentänderung und Prozentdifferenz",
-      "metaDescription": "Prozentrechner"
+      "metaDescription": "Prozentrechner",
+      "guide": {
+        "steps": [
+          "Wählen Sie, was Sie berechnen möchten: den Anteil, den Prozentsatz, den Grundwert oder die Veränderung.",
+          "Tragen Sie die zwei bekannten Werte ein und lassen Sie das dritte Feld leer.",
+          "Lesen Sie Ergebnis und Rechenweg ab und wechseln Sie den Modus für die nächste Aufgabe."
+        ],
+        "explanationTitle": "Die vier häufigsten Prozentrechnungen",
+        "formula": "Prozentsatz = Anteil ÷ Grundwert × 100%",
+        "explanation": [
+          "Ein Prozentwert ist nichts anderes als ein Bruch mit dem Nenner 100; das Zeichen % bedeutet geteilt durch 100. Also ist 15% gleich 0,15, und jede Zahl mit 0,15 multipliziert ergibt 15% von ihr. Daraus folgen vier Standardfälle: aus Grundwert und Prozentsatz den Anteil, aus Anteil und Grundwert den Prozentsatz, aus Anteil und Prozentsatz den Grundwert und aus Alt- und Neuwert die Veränderung.",
+          "Die meisten Fehler passieren bei der Veränderung. Ein Plus von 50% und danach ein Minus von 50% führt nicht zum Ausgangswert zurück: Aus 100 wird 150, daraus 75, also 25 Verlust. Die beiden gleich großen Prozentsätze wirken auf unterschiedliche Grundwerte. Die zweite Falle ist der Unterschied zwischen Prozentpunkten und Prozent. Steigt ein Zins von 4% auf 5%, ist das ein Prozentpunkt mehr und zugleich ein Plus von 25%. Beides stimmt, bedeutet aber Verschiedenes."
+        ],
+        "tableTitle": "Häufige Prozentfälle und Formeln",
+        "tableHeaders": [
+          "Fall",
+          "Bekannt",
+          "Formel",
+          "Beispiel"
+        ],
+        "tableRows": [
+          [
+            "Anteil finden",
+            "Grundwert und Prozentsatz",
+            "Grundwert × Prozentsatz",
+            "15% von 200 = 30"
+          ],
+          [
+            "Prozentsatz finden",
+            "Anteil und Grundwert",
+            "Anteil ÷ Grundwert × 100%",
+            "30 von 200 = 15%"
+          ],
+          [
+            "Grundwert finden",
+            "Anteil und Prozentsatz",
+            "Anteil ÷ Prozentsatz",
+            "30 sind 15% von 200"
+          ],
+          [
+            "Veränderung finden",
+            "Alt- und Neuwert",
+            "(Neu − Alt) ÷ Alt × 100%",
+            "100 → 120 = +20%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Kommt man nach +50% und −50% wieder auf den alten Wert?",
+            "a": "Nein. Aus 100 wird nach +50% die 150, und 50% davon abgezogen bleiben 75, also 25 Verlust. Die beiden gleich großen Prozentsätze beziehen sich auf unterschiedliche Grundwerte, zuerst 100, dann 150. Jedes symmetrische Auf und Ab bedeutet einen Verlust, und je größer die Schwankung, desto deutlicher."
+          },
+          {
+            "q": "Worin unterscheiden sich Prozentpunkte und Prozent?",
+            "a": "Prozentpunkte sind die einfache Differenz zweier Prozentsätze, Prozent beschreibt die relative Veränderung. Steigt ein Zins von 4% auf 5%, sind das ein Prozentpunkt mehr und zugleich ein Anstieg um 25%, denn 1 ist ein Viertel von 4. Bei Statistiken sind Prozentpunkte deutlich weniger missverständlich."
+          },
+          {
+            "q": "Wie berechne ich, um wie viel Prozent A größer ist als B?",
+            "a": "Teilen Sie die Differenz durch den Vergleichswert, also den Wert nach dem Wort als: (A − B) ÷ B × 100%. Der Nenner ist B, nicht A. Bei A = 120 und B = 100 ist A um 20% größer als B, während B um 16,7% kleiner als A ist, weil sich der Bezugswert ändert."
+          },
+          {
+            "q": "Ist 20% Rabatt dasselbe wie 80% zahlen?",
+            "a": "Ja, exakt. 20% weniger bedeutet, dass 80% des Preises übrig bleiben, der Endpreis ist also der Originalpreis mal 0,8. Verwirrung entsteht meist durch die Rabattsprache: 25% Reduktion heißt 75% zahlen, nicht 25%."
+          }
+        ]
+      }
     },
     "percent-error": {
       "name": "Prozentfehler",
@@ -1535,7 +2093,76 @@
       "from": "Von",
       "swap": "Tauschen",
       "to": "Nach",
-      "value": "Wert"
+      "value": "Wert",
+      "guide": {
+        "steps": [
+          "Wählen Sie eine Kategorie: Länge, Gewicht, Temperatur, Fläche, Volumen, Geschwindigkeit, Zeit und mehr.",
+          "Geben Sie den Wert ein und wählen Sie Ausgangs- und Zieleinheit. Fehlt eine Einheit, wechseln Sie zuerst die Kategorie.",
+          "Lesen Sie das Ergebnis sowie denselben Wert in weiteren gebräuchlichen Einheiten ab."
+        ],
+        "explanationTitle": "Wie die Umrechnung technisch funktioniert",
+        "formula": "Zielwert = Wert × (Faktor Quelle ÷ Faktor Ziel)",
+        "explanation": [
+          "Jede Kategorie hat eine internationale Basiseinheit: Meter für Länge, Kilogramm für Masse, Kelvin für Temperatur, Liter für Volumen. Alle anderen Einheiten sind als Faktor hinterlegt, der angibt, wie viel Basiseinheiten sie entsprechen. Umgerechnet wird, indem der Eingabewert zuerst in Basiseinheiten überführt und dann durch den Zielfaktor geteilt wird. Eine neue Einheit benötigt also nur einen Faktor statt einer Regel pro Paar, und Rundungsfehler aus Faktorenketten entfallen.",
+          "Temperatur ist die einzige Kategorie, die nicht mit reiner Multiplikation auskommt. Celsius und Kelvin unterscheiden sich um einen konstanten Versatz (K = °C + 273,15), Celsius und Fahrenheit sind eine lineare Abbildung mit Achsenabschnitt (°F = °C × 9/5 + 32), weshalb Temperatur einen eigenen Zweig braucht. Genau daran scheitern einfache Umrechner. Vorsicht auch bei gleichnamigen Einheiten: Die US-Gallone hat etwa 3,785 Liter, die britische etwa 4,546, also rund 20% mehr."
+        ],
+        "tableTitle": "Häufige Umrechnungen auf einen Blick",
+        "tableHeaders": [
+          "Kategorie",
+          "Beziehung",
+          "Beispiel"
+        ],
+        "tableRows": [
+          [
+            "Länge",
+            "1 Zoll = 2,54 cm",
+            "10 in = 25,4 cm"
+          ],
+          [
+            "Länge",
+            "1 Fuß = 30,48 cm",
+            "6 ft = 182,9 cm"
+          ],
+          [
+            "Masse",
+            "1 Pfund = 0,4536 kg",
+            "150 lb = 68,04 kg"
+          ],
+          [
+            "Volumen",
+            "1 US-Gallone = 3,785 l",
+            "5 gal = 18,93 l"
+          ],
+          [
+            "Temperatur",
+            "°F = °C × 9/5 + 32",
+            "25 °C = 77 °F"
+          ],
+          [
+            "Geschwindigkeit",
+            "1 mph = 1,609 km/h",
+            "60 mph = 96,6 km/h"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Warum ist Temperatur anders als andere Einheiten?",
+            "a": "Weil null nicht nichts bedeutet. Länge und Masse haben einen absoluten Nullpunkt, ein Faktor genügt. Celsius und Fahrenheit setzen den Nullpunkt unterschiedlich fest, der Gefrierpunkt liegt bei 0 beziehungsweise 32, deshalb braucht es Faktor und Achsenabschnitt. Wer 25 nur mit 1,8 multipliziert, erhält 45 statt der korrekten 77 °F."
+          },
+          {
+            "q": "Sind US-Gallone und britische Gallone identisch?",
+            "a": "Nein, der Unterschied ist deutlich. Die US-Gallone fasst etwa 3,785 Liter, die britische etwa 4,546, also rund 20% mehr. Entsprechendes gilt für Flüssigunzen: etwa 29,57 ml in den USA und 28,41 ml im Vereinigten Königreich. Prüfen Sie, welches System Ihre Quelle verwendet, sonst liegen Rezepte merklich daneben."
+          },
+          {
+            "q": "Wie viele Nachkommastellen soll ich verwenden?",
+            "a": "Dieses Werkzeug liefert genügend gültige Ziffern, damit Sie selbst runden können. Im Alltag reicht eine Nachkommastelle: Körpergröße auf 0,1 cm, Gewicht auf 0,1 kg. In Technik und Wissenschaft richten Sie sich nach den gültigen Ziffern der Eingangsdaten; eine exakt definierte Konstante wie 2,54 sollte nicht Ihre Genauigkeit begrenzen."
+          },
+          {
+            "q": "Ist eine Unze ein Gewicht oder ein Volumen?",
+            "a": "Beides ist möglich, je nach Zusammenhang. Die gewöhnliche Unze entspricht etwa 28,35 Gramm Masse. Die Flüssigunze ist ein Volumen von etwa 29,57 ml in den USA und 28,41 ml im Vereinigten Königreich. In Rezepten ist mit oz meist das Gewicht gemeint, auf Getränkeetiketten das Volumen; achten Sie auf die Abkürzung."
+          }
+        ]
+      }
     },
     "set-calculator": {
       "name": "Mengenrechner",
@@ -8511,7 +9138,8 @@
     "about-offer-education": "Bildung — Einheiten umrechnen, Mengenoperationen und ein wissenschaftlicher Taschenrechner.",
     "about-offer-technology": "Technik — Basis-/Zahlenkonvertierung und Netzwerktools.",
     "about-how-it-works": "Jede Berechnung läuft vollständig in Ihrem Browser. Die Ergebnisse werden auf Ihrem Gerät berechnet, wodurch Ihre Eingaben privat bleiben und die Werkzeuge auch bei langsamen Verbindungen sofort funktionieren. Die Seite ist als schnelle, statische Webanwendung aufgebaut, sodass Seiten überall auf der Welt schnell laden.",
-    "about-editorial": "Wir streben nach Korrektheit und Klarheit. Auf jedem Werkzeug sind die Formeln dokumentiert, und wir überprüfen die Mathematik hinter jedem Rechner. Wenn Sie einen Fehler finden oder einen Vorschlag haben, melden Sie sich gerne über die Kontaktseite."
+    "about-editorial": "Wir streben nach Korrektheit und Klarheit. Auf jedem Werkzeug sind die Formeln dokumentiert, und wir überprüfen die Mathematik hinter jedem Rechner. Wenn Sie einen Fehler finden oder einen Vorschlag haben, melden Sie sich gerne über die Kontaktseite.",
+    "last-updated-august-28-2026": "Letzte Aktualisierung: 28. August 2026."
   },
   "legal": {
     "terms": {
@@ -8536,7 +9164,9 @@
       "cookiesGoogleLink": "Die Werberichtlinien von Google",
       "cookiesAdsLink": "Anzeigeneinstellungen",
       "yourRightsBody": "Abhängig von Ihrem Wohnort (z. B. gemäß der EU-DSGVO oder dem kalifornischen CCPA) haben Sie möglicherweise das Recht, auf personenbezogene Daten zuzugreifen, diese zu korrigieren oder zu löschen und einer bestimmten Verarbeitung zu widersprechen. Da diese Website keine personenbezogenen Daten auf ihren eigenen Servern speichert, beziehen sich die meisten Anfragen auf Daten unserer Dienstleister, bei deren Beantwortung wir Ihnen auf Anfrage behilflich sein können.",
-      "contactBody": "Wenn Sie Fragen zu dieser Richtlinie haben, kontaktieren Sie uns unter <email>contact@baikecalc.com</email>."
+      "contactBody": "Wenn Sie Fragen zu dieser Richtlinie haben, kontaktieren Sie uns unter <email>contact@baikecalc.com</email>.",
+      "cookiesThirdParty": "Drittanbieter, einschließlich Google, verwenden Cookies, um Anzeigen auf Grundlage früherer Besuche dieser oder anderer Websites zu schalten. Durch den Einsatz des DoubleClick-Cookies können Google und seine Partner Anzeigen auf Basis Ihres Besuchs dieser und/oder anderer Websites im Internet ausliefern. Sie können personalisierte Werbung jederzeit über {link3} deaktivieren. Wenn Sie in der EU oder im Vereinigten Königreich leben, können Sie Ihre Einwilligung zu Werbe-Cookies außerdem über das Consent-Banner dieser Website widerrufen.",
+      "cookiesAdsSettings": "Anzeigeneinstellungen"
     },
     "contact": {
       "description": "Fragen, Korrekturen oder Partnerschaftsideen? Kontaktieren Sie uns jederzeit.",
@@ -9000,5 +9630,82 @@
     "finance": "Die Rechner auf dieser Website liefern Schätzungen nur zu allgemeinen Informationszwecken. Es handelt sich nicht um Finanz-, Anlage-, Steuer- oder Rechtsberatung. Konsultieren Sie einen qualifizierten Fachmann, bevor Sie eine Entscheidung treffen.",
     "health": "Diese Rechner liefern nur allgemeine Informationen und sind kein Ersatz für professionelle medizinische Beratung, Diagnose oder Behandlung. Konsultieren Sie immer einen qualifizierten Gesundheitsdienstleister.",
     "crypto": "Diese Tools dienen ausschließlich Bildungs- und Informationszwecken. Es handelt sich nicht um Anlage-, Handels- oder Finanzberatung. Kryptowährungen bergen erhebliche Risiken – recherchieren Sie immer selbst."
+  },
+  "home": {
+    "introTitle": "Über Baike Calc",
+    "intro": "Baike Calc ist eine kostenlose Online-Sammlung mit 198 Rechnern und Umrechnern in 19 Kategorien – von Mathematik und Finanzen über Gesundheit und Bildbearbeitung bis zu Technik und Netzwerk. Alle Berechnungen laufen lokal in Ihrem Browser: Ihre Eingaben werden nicht an einen Server übertragen, und Sie benötigen kein Konto. Jede Werkzeugseite enthält eine Schritt-für-Schritt-Anleitung, eine Erklärung der zugrunde liegenden Formel sowie häufige Fragen, damit Sie nachvollziehen können, wie ein Ergebnis entsteht – statt nur eine Zahl zu lesen. Ob Studierende, Ingenieure, Finanzexperten oder alle, die schnell etwas ausrechnen müssen: Hier finden Sie das passende Werkzeug.",
+    "categoriesTitle": "Nach Kategorie stöbern",
+    "categoriesDesc": "198 Werkzeuge in 19 Kategorien. Öffnen Sie eine Kategorie, um alle Rechner darin mit Erklärungen zu sehen.",
+    "categoryDesc": {
+      "color": "Farbumrechnung und Paletten: HEX, RGB und HSL sowie Kontrast- und Farbabstandsprüfung.",
+      "cooking": "Küchenumrechnungen, Rezeptskalierung und Umrechnung von Backofentemperaturen.",
+      "automotive": "Auto-Berechnungen: Verbrauch, Reifengrößen, Wartungsintervalle und Autokredit.",
+      "chemistry": "Chemie: molare Masse, Lösungen ansetzen, Konzentration und Stöchiometrie.",
+      "crypto": "Kryptowährungen umrechnen, Mining-Erträge schätzen und Hashrate berechnen.",
+      "data": "Datengröße und Bandbreite: Speichereinheiten, Ladezeit und Durchsatz.",
+      "datetime": "Datum und Zeit: Tagesabstände, Werktage zählen und Zeitzonen umrechnen.",
+      "engineering": "Technik: Bauteilbelastung, Werkstofffestigkeit und Hydraulikkennwerte.",
+      "finance": "Finanzen: Kreditraten, Zinseszins, Anlagerendite und Steuern.",
+      "realestate": "Immobilien: monatliche Rate, Immobilienbewertung und Renditeanalyse.",
+      "health": "Gesundheit: BMI, Körperfettanteil, Grundumsatz und täglicher Kalorienbedarf.",
+      "infrastructure": "IT-Infrastruktur: Serverkapazität planen, Virtualisierungsressourcen und Kosten.",
+      "math": "Mathematik: Prozent, Brüche, Statistik, Geometrie und Zahlensysteme.",
+      "music": "Musik: Tempo, Notenwerte und Umrechnung von Tonhöhe in Frequenz.",
+      "network": "Netzwerk: Subnetting, IP-Adressplanung und CIDR-Umrechnung.",
+      "photo": "Fotografie: Schärfentiefe, Belichtung, äquivalente Brennweite und Auflösung.",
+      "physics": "Physik: Geschwindigkeit, Energie, Kraft und gängige Einheiten.",
+      "video": "Video: Bitrate, Dateigröße, Bildrate und Kompressionsparameter.",
+      "web": "Web-Werkzeuge: SEO-Prüfung, URL-Kodierung, Antwortzeit und DNS-Abfrage."
+    },
+    "whyTitle": "Warum Baike Calc",
+    "whyItems": [
+      {
+        "title": "Lokale Berechnung, keine Datenspur",
+        "desc": "Alle Berechnungen laufen in Ihrem Browser. Ihre Eingaben erreichen keinen Server und verschwinden, sobald Sie den Tab schließen."
+      },
+      {
+        "title": "Offene Formeln zum Nachprüfen",
+        "desc": "Jede Werkzeugseite nennt Algorithmus, Formel und Annahmen, damit Sie jeden Schritt selbst nachvollziehen können."
+      },
+      {
+        "title": "Keine Anmeldung, völlig kostenlos",
+        "desc": "Kein Konto, keine E-Mail-Adresse, kein Tageslimit. Einfach Seite öffnen und losrechnen."
+      },
+      {
+        "title": "19 Kategorien und es werden mehr",
+        "desc": "Von der Prozentrechnung im Alltag bis zur Kapazitätsplanung für Servervirtualisierung wächst die Sammlung weiter."
+      }
+    ],
+    "guidesDesc": "Ausführliche Ratgeber für konkrete Szenarien: sie erklären Formeln und Abwägungen und verlinken jeweils auf das passende Werkzeug.",
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Sind diese Werkzeuge wirklich kostenlos?",
+        "a": "Ja. Alle Rechner und Umrechner auf dieser Seite sind kostenlos nutzbar, ohne Konto und ohne Tageslimit. Die Seite wird durch Werbung finanziert, die Hosting- und Entwicklungskosten deckt, aber die Genauigkeit der Ergebnisse in keiner Weise beeinflusst."
+      },
+      {
+        "q": "Werden meine Eingaben auf einen Server hochgeladen?",
+        "a": "Nein. Bei der überwiegenden Mehrheit der Werkzeuge läuft die Berechnung vollständig in Ihrem Browser und Ihre Eingabe verlässt Ihr Gerät nicht. Einige wenige Werkzeuge mit externen Daten, etwa Live-Wechselkurse, fragen diese bei öffentlichen Quellen ab, speichern aber keine Ihrer eingegebenen Werte."
+      },
+      {
+        "q": "Kann ich die Ergebnisse für Steuererklärungen oder medizinische Entscheidungen verwenden?",
+        "a": "Nein. Die Werkzeuge liefern Schätzwerte zur allgemeinen Orientierung. Finanzielle Ergebnisse ersetzen keine steuerliche Beratung, gesundheitliche Ergebnisse sind keine Diagnose. Wenden Sie sich bei wichtigen Entscheidungen an eine zugelassene Fachkraft."
+      }
+    ]
+  },
+  "guide": {
+    "howToUseTitle": "So nutzen Sie {name}",
+    "faqTitle": "Häufige Fragen",
+    "step1": "Geben Sie die zu berechnenden Werte in die Eingabefelder oben auf der Seite ein.",
+    "step2": "Wechseln Sie bei Bedarf die Einheit oder passen Sie die Optionen an. Die meisten Werkzeuge aktualisieren das Ergebnis direkt bei der Eingabe.",
+    "step3": "Lesen Sie das Ergebnis und nutzen Sie die Erklärung sowie die Fragen unten, um Bedeutung und Anwendungsbereich einzuordnen.",
+    "fallbackIntro": "{name} ist ein kostenloser Online-Rechner. {description} Alles läuft lokal in Ihrem Browser, Ihre Eingaben werden nicht an einen Server übertragen.",
+    "fallbackQ1": "Wie genau sind die Ergebnisse?",
+    "fallbackA1": "Die Ergebnisse basieren auf veröffentlichten Standardformeln und Umrechnungsfaktoren und sind für den Alltag genau genug. Für professionelle Zwecke wie Steuererklärungen, medizinische Diagnosen oder technische Auslegung sollten Sie die maßgebliche Norm oder eine zugelassene Fachkraft heranziehen.",
+    "fallbackQ2": "Werden meine Eingaben irgendwo gespeichert?",
+    "fallbackA2": "Nein. Die Berechnung findet in Ihrem Browser statt und Ihre Eingabe wird nicht hochgeladen. Nach dem Schließen der Seite sind die Werte verschwunden, und wir können nicht sehen, was Sie eingegeben haben.",
+    "fallbackQ3": "Muss ich mich registrieren oder bezahlen?",
+    "fallbackA3": "Nein. Alle Werkzeuge auf dieser Seite sind kostenlos, es wird kein Konto benötigt und es gibt kein Tageslimit.",
+    "howItWorksTitle": "So funktioniert {name}"
   }
 }

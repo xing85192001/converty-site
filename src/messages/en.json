@@ -91,7 +91,8 @@
     "aboutThisCalculator": "About {title}",
     "copySuccess": "Copied to clipboard",
     "copyError": "Failed to copy to clipboard",
-    "advertisement": "Advertisement"
+    "advertisement": "Advertisement",
+    "toolsCount": "tools"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -427,7 +428,69 @@
     "bmi": {
       "name": "BMI",
       "description": "Calculate your Body Mass Index and health category",
-      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category"
+      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category",
+      "guide": {
+        "steps": [
+          "Choose your unit system: metric (centimetres / kilograms) or imperial (feet and inches / pounds).",
+          "Enter your height and weight. Values are validated as you type, so you can preview the result before submitting.",
+          "Read your BMI, the WHO category it falls into, and the healthy weight range for your height."
+        ],
+        "explanationTitle": "What is BMI and how is it calculated",
+        "formula": "BMI = weight (kg) ÷ height (m)²",
+        "explanation": [
+          "Body Mass Index relates body weight to the square of height and is used as a proxy for body fatness. It was introduced by the Belgian statistician Adolphe Quetelet in the 19th century and is still known as the Quetelet index. Because it needs only height and weight, it became the most widely used obesity screening tool worldwide.",
+          "BMI has well documented limits. It does not distinguish muscle from fat, and muscle is roughly 1.2 times denser than fat, so muscular athletes are often classed as overweight while older adults who have lost muscle may sit at a normal BMI despite high body fat. Asian populations also tend to carry more body fat at the same BMI, which is why several countries use lower cut-offs. Treat BMI as an initial screen and combine it with body fat percentage, waist circumference, blood pressure and lipid profiles."
+        ],
+        "tableTitle": "BMI categories (WHO standard)",
+        "tableHeaders": [
+          "Category",
+          "BMI range (kg/m²)"
+        ],
+        "tableRows": [
+          [
+            "Underweight",
+            "< 18.5"
+          ],
+          [
+            "Normal",
+            "18.5 – 24.9"
+          ],
+          [
+            "Overweight",
+            "25.0 – 29.9"
+          ],
+          [
+            "Obesity class I",
+            "30.0 – 34.9"
+          ],
+          [
+            "Obesity class II",
+            "35.0 – 39.9"
+          ],
+          [
+            "Obesity class III",
+            "≥ 40.0"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Is BMI accurate for people who train with weights?",
+            "a": "Not really. Muscle is denser than fat, so strength athletes often score above 25 while carrying little body fat. Body fat percentage is a better guide for them, ideally combined with waist circumference."
+          },
+          {
+            "q": "Do children use the same BMI cut-offs?",
+            "a": "No. Children and adolescents aged 2 to 19 are assessed with age- and sex-specific BMI percentile curves rather than fixed adult thresholds. Interpretation belongs in the hands of a paediatrician."
+          },
+          {
+            "q": "Can I use this calculator during pregnancy?",
+            "a": "It is not recommended. Weight changes during pregnancy reflect the baby, amniotic fluid and blood volume, so BMI no longer applies. Follow your obstetrician's guidance, which sets weight-gain targets based on pre-pregnancy BMI."
+          },
+          {
+            "q": "Does a normal BMI guarantee good health?",
+            "a": "No. It is common to have a normal BMI with excess visceral fat, and the metabolic risk in that group is often underestimated. Combine BMI with waist circumference and body fat percentage for a fuller picture."
+          }
+        ]
+      }
     },
     "corpulence": {
       "name": "Corpulence",
@@ -866,17 +929,198 @@
     "mortgage": {
       "name": "Mortgage",
       "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule"
+      "metaDescription": "Calculate mortgage payments with amortization schedule",
+      "guide": {
+        "steps": [
+          "Enter the property price and the down payment percentage or amount; the loan principal is derived automatically.",
+          "Fill in the term and the annual rate. Add property tax and home insurance if you know them, for a realistic monthly figure.",
+          "See the payment breakdown, principal and interest plus taxes and insurance, and the total interest over the life of the loan."
+        ],
+        "explanationTitle": "What a mortgage payment is made of",
+        "formula": "Payment = principal and interest + monthly tax + monthly insurance (+ mortgage insurance)",
+        "explanation": [
+          "Many people assume the payment is only principal and interest, but lenders usually collect property tax and home insurance monthly and bundle them into one figure, known as PITI: principal, interest, taxes and insurance. If the down payment is under 20%, private mortgage insurance is added on top, and it can normally be cancelled once the balance falls below 80% of the property value.",
+          "Beyond the monthly payment, buying involves one-off costs: the down payment, closing costs, appraisal and origination fees, typically 2% to 5% of the price. To gauge how much house you can afford, lenders often apply the 28/36 rule: housing costs should stay under 28% of monthly income and total debt payments, including car loans and credit cards, under 36%. It is conservative, but it keeps you out of over-borrowing territory."
+        ],
+        "tableTitle": "How the down payment changes the payment (300,000 home, 30 years, 4.0%)",
+        "tableHeaders": [
+          "Down payment",
+          "Principal",
+          "Monthly (P&I)",
+          "Mortgage insurance",
+          "Total interest"
+        ],
+        "tableRows": [
+          [
+            "10%",
+            "270,000",
+            "≈ 1,289",
+            "Required",
+            "≈ 194,000"
+          ],
+          [
+            "20%",
+            "240,000",
+            "≈ 1,146",
+            "Not required",
+            "≈ 172,500"
+          ],
+          [
+            "30%",
+            "210,000",
+            "≈ 1,003",
+            "Not required",
+            "≈ 151,000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Is a bigger down payment always better?",
+            "a": "Not always. More down means a smaller loan, less total interest and no mortgage insurance. But there is an opportunity cost: sinking every saving into the deposit wipes out your emergency buffer. If you have investments that reliably beat the mortgage rate after tax, or you need cash for risk, a smaller deposit can be the better call. Keep three to six months of living costs aside regardless."
+          },
+          {
+            "q": "Fixed or variable rate?",
+            "a": "A fixed rate never changes, so the payment is predictable, which suits anyone planning to stay put and valuing certainty. A variable rate usually starts lower but moves with the market and can rise, which suits someone who plans to move or refinance within a few years and can absorb higher payments. The deciding questions are how long you will stay and whether your cash flow survives a rate rise."
+          },
+          {
+            "q": "Is paying the mortgage off early worth it?",
+            "a": "Compare the mortgage rate with your alternative after-tax return. If the rate is higher, prepaying locks in a risk-free return at that rate. If not, your money may do better invested, or simply held as an emergency fund. In some countries mortgage interest is tax deductible, so prepaying also gives up that benefit, which belongs in the calculation."
+          },
+          {
+            "q": "What is the 28/36 rule?",
+            "a": "A rule of thumb for debt capacity: housing costs should not exceed 28% of monthly income, and all debt payments combined, mortgage plus car loan plus minimum credit card payments, should not exceed 36%. Lenders use it as a first screen and it is deliberately conservative; final approval also weighs credit score, down payment and job stability."
+          }
+        ]
+      }
     },
     "compound-interest": {
       "name": "Compound Interest",
       "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time"
+      "metaDescription": "Calculate compound interest growth over time",
+      "guide": {
+        "steps": [
+          "Enter the starting principal, the amount you invest at the beginning.",
+          "Fill in the annual return, the investment horizon and the compounding frequency (yearly, half-yearly, quarterly or monthly).",
+          "If you add money regularly, enter the recurring contribution to see the total including those deposits."
+        ],
+        "explanationTitle": "The compound interest formula",
+        "formula": "A = P × (1 + r/n)^(n·t)",
+        "explanation": [
+          "A is the final amount, P the principal, r the annual rate, n how many times interest compounds per year, and t the number of years. Compounding means interest earns interest: each period's interest joins the principal and earns a return in the next period, so the growth curve steepens over time. Simple interest, by contrast, is paid only on the original principal and never earns anything itself.",
+          "More frequent compounding yields a larger total, but with diminishing returns: moving from yearly to half-yearly adds about 1.1%, and moving on to monthly adds roughly another 1.1%. What really moves the needle is time and rate. A handy shortcut is the rule of 72: years to double ≈ 72 ÷ annual return in percent, so 6% doubles in about 12 years and 9% in about 8."
+        ],
+        "tableTitle": "How compounding frequency changes the total (100,000 at 6% for 20 years)",
+        "tableHeaders": [
+          "Frequency",
+          "Times per year",
+          "Total after 20 years",
+          "Extra vs yearly"
+        ],
+        "tableRows": [
+          [
+            "Yearly",
+            "1",
+            "≈ 320,714",
+            "—"
+          ],
+          [
+            "Half-yearly",
+            "2",
+            "≈ 324,340",
+            "≈ 3,626"
+          ],
+          [
+            "Quarterly",
+            "4",
+            "≈ 326,204",
+            "≈ 5,490"
+          ],
+          [
+            "Monthly",
+            "12",
+            "≈ 327,758",
+            "≈ 7,044"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between compound and simple interest?",
+            "a": "Simple interest is paid only on the principal, so it never earns anything itself. Compound interest adds each period's interest to the principal so it earns a return too. On 100,000 at 6% for 20 years, simple interest totals 220,000 while yearly compounding reaches about 320,700, a gap of more than 100,000 that widens the longer you wait."
+          },
+          {
+            "q": "What is the rule of 72?",
+            "a": "A quick way to estimate doubling time: years to double ≈ 72 ÷ annual return in percent. At 6% money doubles in about 12 years, at 9% in about 8, at 3% in about 24. It is most accurate between 6% and 10% and drifts at much higher rates."
+          },
+          {
+            "q": "Does the compounding frequency matter much?",
+            "a": "It matters, but less than people expect. On 100,000 at 6% over 20 years, yearly compounding gives about 320,700 and monthly about 327,800, only about 2.2% more. Investing five years longer or earning one extra percentage point moves the result far more, so focus on time and rate rather than frequency."
+          },
+          {
+            "q": "Is the annualised return what I actually receive?",
+            "a": "Usually not. The annualised return is a nominal growth rate; your net result is reduced by management fees, entry and exit charges and tax. If you add or withdraw money along the way, your personal return differs from the headline rate and is better measured with an internal rate of return (IRR)."
+          }
+        ]
+      }
     },
     "loan": {
       "name": "Loan",
       "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization"
+      "metaDescription": "Calculate loan payments and amortization",
+      "guide": {
+        "steps": [
+          "Enter the loan principal, meaning the amount you actually receive, excluding upfront fees.",
+          "Fill in the annual interest rate and the loan term. Add a down payment or residual value if the fields apply.",
+          "Calculate to see the monthly payment, total interest and total repayment, then adjust the inputs to compare options."
+        ],
+        "explanationTitle": "How amortised loan payments are calculated",
+        "formula": "Payment = P × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]",
+        "explanation": [
+          "P is the principal, r the monthly rate (annual rate ÷ 12) and n the total number of payments. This is the standard amortising loan: interest for the month is charged on the outstanding balance, the rest of the fixed payment goes to principal, and the balance shrinks so next month's interest is lower.",
+          "With this method the payment stays constant, which makes budgeting easy, but early payments are mostly interest. The alternative is a straight-line or equal-principal loan, where you repay a fixed slice of principal plus interest on the remaining balance: the first payment is the largest, each one after is smaller, and total interest is lower. On a 1,000,000 loan over 30 years at 4%, the equal-principal route saves roughly 117,000 in interest but starts about 1,300 per month higher. The right choice depends on your cash flow, not just the interest total."
+        ],
+        "tableTitle": "Amortised vs equal-principal (1,000,000 over 30 years at 4.0%)",
+        "tableHeaders": [
+          "Method",
+          "First payment",
+          "Last payment",
+          "Total interest",
+          "Total repaid"
+        ],
+        "tableRows": [
+          [
+            "Amortised",
+            "≈ 4,774",
+            "≈ 4,774",
+            "≈ 719,000",
+            "≈ 1,719,000"
+          ],
+          [
+            "Equal principal",
+            "≈ 6,111",
+            "≈ 2,790",
+            "≈ 602,000",
+            "≈ 1,602,000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Which is better, amortised or equal-principal?",
+            "a": "Equal-principal costs less interest but demands noticeably more in the early months. If cash flow is tight now or you expect income to grow, amortised fits better. If your income is stable and you want to minimise interest, equal-principal wins. Neither is universally better; it depends on your cash flow."
+          },
+          {
+            "q": "Is it worth repaying early?",
+            "a": "Compare your loan rate with what you could safely earn elsewhere. If the loan rate is higher, prepaying locks in a risk-free return at that rate. If you have better uses for the money or need an emergency buffer, do not rush. Also check whether your lender charges an early repayment fee or limits how often you can prepay."
+          },
+          {
+            "q": "How is each payment split between principal and interest?",
+            "a": "In an amortising loan, early payments are mostly interest and later ones mostly principal. On a 1,000,000 loan at 4% over 30 years, the first payment is roughly 3,333 interest and only about 1,441 principal; the two only even out around year 10."
+          },
+          {
+            "q": "How do I convert an annual rate to a monthly rate?",
+            "a": "Dividing by 12 gives the nominal monthly rate, which is what most lenders quote. The exact effective monthly rate is (1 + annual)^(1/12) − 1. The difference is tiny, about 0.006 percentage points at 4%, so annual ÷ 12 is fine for everyday estimates."
+          }
+        ]
+      }
     },
     "retirement": {
       "name": "Retirement",
@@ -921,7 +1165,71 @@
     "currency": {
       "name": "Currency Converter",
       "description": "Convert between major world currencies",
-      "metaDescription": "Convert currencies with live exchange rates"
+      "metaDescription": "Convert currencies with live exchange rates",
+      "guide": {
+        "steps": [
+          "Enter the amount you want to convert and pick the source and target currencies.",
+          "Check the rate source and the timestamp shown on the page. The default is the latest available mid-market rate.",
+          "Read the converted amount. Remember that banks and payment providers add a margin, so the rate you actually get will be worse than this reference."
+        ],
+        "explanationTitle": "How exchange rates are calculated",
+        "formula": "Target amount = amount × (target rate ÷ source rate)",
+        "explanation": [
+          "Everything rests on the exchange rate, the price of one currency expressed in another. This tool uses a USD-based cross rate: the amount is first converted into US dollars using the source currency rate, then out again using the target currency rate. The advantage is that any pair can be converted without maintaining a separate quote for every combination.",
+          "In practice you meet several different prices. The mid-market rate is the average of buy and sell and is the reference used here. The telegraphic transfer rate applies to account-to-account transfers and carries a small margin. The cash rate applies to physical banknotes and carries the largest margin, because handling, storage and counterfeit risk all have to be paid for. Real transactions usually land 0.5% to 3% away from the mid-market rate, and airport or hotel bureaux can be 5% or more worse."
+        ],
+        "tableTitle": "Mid-market versus what you actually get (converting 10,000 units)",
+        "tableHeaders": [
+          "Channel",
+          "Rate type",
+          "Typical margin",
+          "What you receive"
+        ],
+        "tableRows": [
+          [
+            "Reference mid-market",
+            "Mid-market",
+            "0%",
+            "Full reference value"
+          ],
+          [
+            "Bank wire transfer",
+            "TT selling rate",
+            "≈ 0.3% – 0.8%",
+            "Slightly less than reference"
+          ],
+          [
+            "Bank counter cash",
+            "Cash selling rate",
+            "≈ 1% – 2%",
+            "Less than reference"
+          ],
+          [
+            "Airport / hotel bureau",
+            "Cash rate",
+            "≈ 3% – 8%",
+            "Clearly less than reference"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "How often is the rate updated?",
+            "a": "The foreign exchange market trades around the clock on business days, and the reference rate used here is typically refreshed once a day. For a price you can trade on, use the live quote from your bank or payment provider."
+          },
+          {
+            "q": "Why is my bank's rate different from the one shown here?",
+            "a": "Different price conventions. This page shows the mid-market rate, the midpoint between buy and sell. Your bank quotes a buying or selling rate that includes its operating cost and margin, the spread. That gap is normal, not a data error."
+          },
+          {
+            "q": "What is the difference between mid-market, transfer and cash rates?",
+            "a": "Mid-market is the buy/sell midpoint, used for reference and accounting. The transfer rate applies to electronic account-to-account moves, involves no physical cash and has the smallest spread. The cash rate applies to banknotes and is the widest, because transport, storage and counting must be paid for. For the same currency, the cash buying rate is usually noticeably below the transfer buying rate."
+          },
+          {
+            "q": "What rate applies when I use my card abroad?",
+            "a": "Usually the card network rate on the settlement date, plus a currency conversion fee of about 1% to 1.5%, and sometimes an extra cross-border fee from your bank. If the terminal offers to charge you in your home currency, that is dynamic currency conversion, and its rate is normally worse. Choose the local currency instead."
+          }
+        ]
+      }
     },
     "auto-loan": {
       "name": "Auto Loan",
@@ -981,7 +1289,65 @@
     "body-fat": {
       "name": "Body Fat",
       "description": "Calculate body fat percentage using the US Navy method",
-      "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements"
+      "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements",
+      "guide": {
+        "steps": [
+          "Select your sex and unit system. Sex directly changes the formula coefficients.",
+          "Enter height, weight and age. If you know your neck and waist circumference, add them for a noticeably better estimate.",
+          "Read the estimated body fat percentage, see which band it falls into, and compare it with the table below."
+        ],
+        "explanationTitle": "How body fat percentage is estimated",
+        "formula": "Body fat (%) = fat mass ÷ body weight × 100",
+        "explanation": [
+          "Body fat percentage is the share of your total weight that is fat, and it describes body composition more directly than BMI. This tool uses the US Navy method, which derives body fat from height, neck and waist circumference. When circumference data is missing it falls back to the Deurenberg equation: body fat = 1.20 × BMI + 0.23 × age − 10.8 × sex − 5.4, where sex is 1 for male and 0 for female.",
+          "Results from different methods can differ by 3 to 5 percentage points. Home scales use bioelectrical impedance, which reacts strongly to hydration, food and exercise. Underwater weighing and DXA scans are more accurate but impractical for daily use. Treat body fat percentage as a long-term trend: measure under consistent conditions, ideally in the morning before eating, and compare changes over several weeks rather than a single reading."
+        ],
+        "tableTitle": "Body fat reference ranges (ACE)",
+        "tableHeaders": [
+          "Group",
+          "Essential",
+          "Athlete",
+          "Fitness",
+          "Average",
+          "Obese"
+        ],
+        "tableRows": [
+          [
+            "Male",
+            "2–5%",
+            "6–13%",
+            "14–17%",
+            "18–24%",
+            "≥ 25%"
+          ],
+          [
+            "Female",
+            "10–13%",
+            "14–20%",
+            "21–24%",
+            "25–31%",
+            "≥ 32%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Which is more accurate, a body fat scale or this calculator?",
+            "a": "Both are estimates with different error sources. Impedance scales react strongly to hydration, so readings swing after drinking or exercising. The circumference method here depends on how carefully you measure. Pick one method, keep conditions consistent, and watch the long-term trend."
+          },
+          {
+            "q": "Why does my body fat reading disagree with my BMI?",
+            "a": "That is exactly the point of measuring body fat. BMI only relates weight to height and cannot tell muscle from fat, while body fat estimates the fat share directly. Muscular people are often labelled overweight by BMI despite healthy body fat, and in that case body fat is the better guide."
+          },
+          {
+            "q": "Is lower body fat always better?",
+            "a": "No. Fat supports hormone production, temperature regulation and absorption of fat-soluble vitamins. Staying below roughly 5% for men and 13% for women over long periods can disrupt hormones and immunity. The fitness or average bands are usually the sustainable target."
+          },
+          {
+            "q": "When is the best time to measure?",
+            "a": "Measure in the morning, fasted and after using the bathroom, and avoid measuring right after hard training: dehydration pushes impedance readings up and temporary swelling inflates circumference. Averaging three consecutive days is far more reliable than one reading."
+          }
+        ]
+      }
     },
     "lean-body-mass": {
       "name": "Lean Body Mass",
@@ -1001,7 +1367,71 @@
     "bmr-calculator": {
       "name": "BMR",
       "description": "Calculate Basal Metabolic Rate for calorie planning",
-      "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas"
+      "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas",
+      "guide": {
+        "steps": [
+          "Select sex and unit system. Sex sets the constant term in the equation.",
+          "Enter age, height and weight. Age affects basal metabolism more than most people expect.",
+          "Read your daily basal calorie need, then apply an activity factor to estimate total daily energy expenditure."
+        ],
+        "explanationTitle": "How basal metabolic rate is calculated",
+        "formula": "Mifflin-St Jeor: men BMR = 10W + 6.25H − 5A + 5, women BMR = 10W + 6.25H − 5A − 161",
+        "explanation": [
+          "Basal metabolic rate is the energy needed to keep your heart beating, lungs working and body temperature stable while awake, fasted and resting in a neutral environment. It usually accounts for 60% to 75% of total daily energy expenditure. This tool uses the Mifflin-St Jeor equation by default, which is among the most accurate predictive formulas for the general population. W is weight in kilograms, H height in centimetres and A age in years.",
+          "Other common options include the revised Harris-Benedict equation, which dates back to 1919 and tends to overestimate modern adults by 5% to 10%, and Katch-McArdle, which is the most accurate when you know your body fat percentage. Prediction error is typically within plus or minus 10%, and individual variation comes mostly from muscle mass, genetics and hormones. Treat BMR as the starting point for a food plan rather than a laboratory measurement; indirect calorimetry or doubly labelled water is needed for that."
+        ],
+        "tableTitle": "Activity factors and total daily energy expenditure",
+        "tableHeaders": [
+          "Activity level",
+          "Factor",
+          "Description",
+          "Example (BMR 1,500)"
+        ],
+        "tableRows": [
+          [
+            "Sedentary",
+            "1.2",
+            "Desk job, little or no exercise",
+            "1,800 kcal"
+          ],
+          [
+            "Lightly active",
+            "1.375",
+            "Light exercise 1–3 days a week",
+            "2,063 kcal"
+          ],
+          [
+            "Moderately active",
+            "1.55",
+            "Moderate exercise 3–5 days a week",
+            "2,325 kcal"
+          ],
+          [
+            "Very active",
+            "1.725",
+            "Hard exercise 6–7 days a week",
+            "2,588 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between BMR and TDEE?",
+            "a": "BMR is the minimum energy needed to stay alive at complete rest. TDEE adds everyday movement, exercise and the cost of digesting food: TDEE = BMR × activity factor. Plan your intake from TDEE, not BMR, or you will end up eating far too little."
+          },
+          {
+            "q": "Why do different formulas give different numbers?",
+            "a": "They were fitted to different populations in different eras. Mifflin-St Jeor was derived in 1990 and suits modern adults well. Harris-Benedict dates from 1919, revised in 1984, and overestimates by roughly 5% to 10%. Katch-McArdle needs body fat percentage but is the most accurate when you have it. Differences are usually within 100 to 200 kcal, so pick one and stay consistent."
+          },
+          {
+            "q": "Does dieting slow down metabolism?",
+            "a": "It does. A sustained large deficit triggers adaptive thermogenesis: the body trims non-essential movement and thyroid output, and basal metabolism can drop 10% to 20%, with part of the drop persisting after you eat normally again. Keep the deficit to 300 to 500 kcal per day and combine it with resistance training and adequate protein to limit the effect."
+          },
+          {
+            "q": "How much should I eat to lose fat?",
+            "a": "Work out your TDEE and subtract 300 to 500 kcal, which corresponds to roughly 0.3 to 0.5 kg per week. Do not eat below your BMR, and stay above about 1,200 kcal a day for women and 1,500 for men. Two or three resistance sessions a week plus 1.6 to 2.2 grams of protein per kilogram of bodyweight will help you keep muscle."
+          }
+        ]
+      }
     },
     "tdee-calculator": {
       "name": "TDEE",
@@ -1011,7 +1441,71 @@
     "calorie-calculator": {
       "name": "Calorie",
       "description": "Calculate daily calorie needs for weight goals",
-      "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals"
+      "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals",
+      "guide": {
+        "steps": [
+          "Enter sex, age, height and weight to establish your basal metabolic rate.",
+          "Pick your everyday activity level so the tool can estimate your total daily energy expenditure.",
+          "Choose a goal, fat loss, maintenance or muscle gain, and read the suggested intake and macronutrient split."
+        ],
+        "explanationTitle": "How daily calorie needs are worked out",
+        "formula": "Total daily energy expenditure = BMR × activity factor (1.2 – 1.725)",
+        "explanation": [
+          "Total expenditure has four components. Basal metabolism accounts for 60% to 75%. The thermic effect of food is about 10%, since digesting and absorbing nutrients costs energy. Non-exercise activity thermogenesis, walking, housework and fidgeting, adds roughly 15%. Exercise contributes anywhere from 0% to 30% and is the most variable. The calculator derives basal metabolism with Mifflin-St Jeor and multiplies it by the activity factor you choose.",
+          "Fat loss comes down to a sustained deficit against that total. A reduction of 300 to 500 kcal a day corresponds to roughly 0.3 to 0.5 kg per week, a pace you can maintain while keeping muscle. Too large a deficit triggers metabolic adaptation, muscle loss and hunger that is hard to live with, which is why crash diets rebound. For muscle gain, a surplus of 200 to 400 kcal is enough; anything beyond that is stored as fat rather than built into tissue."
+        ],
+        "tableTitle": "Calorie targets by goal (for a TDEE of 2,200 kcal)",
+        "tableHeaders": [
+          "Goal",
+          "Daily intake",
+          "Expected pace",
+          "Protein target"
+        ],
+        "tableRows": [
+          [
+            "Faster fat loss",
+            "1,700 kcal",
+            "≈ −0.5 kg per week",
+            "1.6 – 2.2 g per kg"
+          ],
+          [
+            "Gentle fat loss",
+            "1,900 kcal",
+            "≈ −0.3 kg per week",
+            "1.6 – 2.2 g per kg"
+          ],
+          [
+            "Maintenance",
+            "2,200 kcal",
+            "Roughly stable",
+            "1.2 – 1.6 g per kg"
+          ],
+          [
+            "Muscle gain",
+            "2,500 kcal",
+            "≈ +0.2 kg per week",
+            "1.6 – 2.2 g per kg"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Why am I not losing weight despite following the plan?",
+            "a": "Three causes are common. Underestimating intake, because cooking oil, drinks and snacks easily add 300 to 500 kcal. Overestimating activity, because a desk worker selecting moderately active inflates expenditure. And early fat loss being masked by water retention. Log your food honestly for one or two weeks and adjust from there; that beats switching calculators."
+          },
+          {
+            "q": "How much protein during fat loss?",
+            "a": "Aim for 1.6 to 2.2 grams per kilogram of bodyweight, roughly 25% to 35% of calories. Higher protein protects muscle in a deficit, increases satiety and has a larger thermic effect, since digesting protein burns about 20% to 30% of its calories. Take the upper end if you train with weights, the lower end if you are sedentary. Anyone with kidney disease should check with a doctor first."
+          },
+          {
+            "q": "Can I trust the calories burned from exercise?",
+            "a": "Only loosely. Treadmills, bands and apps are typically off by 20% to 40%, usually high, and the body partly compensates by moving less for the rest of the day. Treat exercise figures as a guide and judge progress by the two-week trend in bodyweight and measurements."
+          },
+          {
+            "q": "Does metabolism slow down as I lose weight?",
+            "a": "Yes. Every kilogram lost shaves roughly 20 to 30 kcal off basal metabolism, and rapid large losses add a further adaptive drop of 10% to 20%. Recalculate your needs after every 5 to 10 kilograms, keep lifting, keep protein high, and consider short maintenance phases along the way."
+          }
+        ]
+      }
     },
     "calories-burned": {
       "name": "Calories Burned",
@@ -1121,7 +1615,71 @@
     "percentage-calculator": {
       "name": "Percentage",
       "description": "Calculate percentages, percent change, and percent difference",
-      "metaDescription": "Calculate percentages, find percent change, and percent difference"
+      "metaDescription": "Calculate percentages, find percent change, and percent difference",
+      "guide": {
+        "steps": [
+          "Choose what you want to solve: the part, the share, the original value, or the increase or decrease.",
+          "Fill in the two values you know and leave the third field empty.",
+          "Read the result and the working, then switch the mode to solve the next question."
+        ],
+        "explanationTitle": "The four common percentage calculations",
+        "formula": "Percentage = part ÷ whole × 100%",
+        "explanation": [
+          "A percentage is just a fraction with a denominator of 100, and the % sign means divide by 100. So 15% is 0.15, and multiplying any number by 0.15 gives 15% of it. Four question types follow from that: find the part from the whole and the percentage, find the share from part and whole, find the original value from part and percentage, and find the change between an old and a new value.",
+          "Percentage change is where most mistakes happen. A 50% gain followed by a 50% loss does not return you to the start: 100 rises to 150, then falls to 75, a net loss of 25%. The two symmetric percentages act on different bases. Another common trap is the difference between percentage points and percent. A rate moving from 4% to 5% has risen one percentage point, and it has also risen 25%. Both are true and they mean different things."
+        ],
+        "tableTitle": "Common percentage cases and formulas",
+        "tableHeaders": [
+          "Case",
+          "Known",
+          "Formula",
+          "Example"
+        ],
+        "tableRows": [
+          [
+            "Find the part",
+            "Whole and percentage",
+            "Whole × percentage",
+            "15% of 200 = 30"
+          ],
+          [
+            "Find the share",
+            "Part and whole",
+            "Part ÷ whole × 100%",
+            "30 out of 200 = 15%"
+          ],
+          [
+            "Find the original",
+            "Part and percentage",
+            "Part ÷ percentage",
+            "30 is 15% of 200"
+          ],
+          [
+            "Find the change",
+            "Old and new value",
+            "(New − old) ÷ old × 100%",
+            "100 → 120 = +20%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "If something rises 50% then falls 50%, is it back to the original?",
+            "a": "No. 100 rises 50% to 150, then falls 50% to 75, a net loss of 25%. The two equal percentages apply to different bases, 100 the first time and 150 the second. Any symmetrical rise-and-fall pair leaves you behind, and the bigger the swings, the bigger the gap."
+          },
+          {
+            "q": "What is the difference between percentage points and percent?",
+            "a": "Percentage points are the plain arithmetic difference between two percentages; percent describes a relative change. A rate moving from 4% to 5% has gone up one percentage point, and it has also gone up 25%, since 1 is a quarter of 4. For statistics, percentage points cause far less confusion."
+          },
+          {
+            "q": "How do I calculate how much bigger A is than B, in percent?",
+            "a": "Divide the difference by the reference value, the one after the word than: (A − B) ÷ B × 100%. The denominator is B, not A. With A = 120 and B = 100, A is 20% larger than B, while B is 16.7% smaller than A, because the base changes."
+          },
+          {
+            "q": "Is 20% off the same as paying 80%?",
+            "a": "Yes, exactly the same. Taking 20% off leaves 80% of the price, so the final price is the original times 0.8. Confusion usually comes from discount language: a 25% reduction is the same as paying 75%, not 25%."
+          }
+        ]
+      }
     },
     "percent-error": {
       "name": "Percent Error",
@@ -1535,7 +2093,76 @@
       "value": "Value",
       "from": "From",
       "to": "To",
-      "swap": "Swap"
+      "swap": "Swap",
+      "guide": {
+        "steps": [
+          "Pick a category: length, weight, temperature, area, volume, speed, time and more.",
+          "Enter the value and choose the source and target units. If a unit is missing, switch the category first.",
+          "Read the result along with the same value expressed in other common units."
+        ],
+        "explanationTitle": "How unit conversion works under the hood",
+        "formula": "Target = value × (source factor ÷ target factor)",
+        "explanation": [
+          "Each category has one international base unit: metres for length, kilograms for mass, kelvin for temperature, litres for volume. Every other unit is stored as a single factor saying how many base units it equals. A conversion first turns the input into base units, then divides by the target factor. Adding a unit means registering one factor rather than writing a rule for every pair, and it avoids the rounding drift you get from chaining factors together.",
+          "Temperature is the one category that cannot be handled by multiplication alone. Celsius and kelvin differ by an offset (K = °C + 273.15), and Celsius and Fahrenheit use a linear transform with an intercept (°F = °C × 9/5 + 32), so temperature needs its own branch. That is exactly where simple converters go wrong. Watch out too for units that share a name across regions: a US gallon is about 3.785 litres, an imperial gallon about 4.546, a gap of roughly 20%."
+        ],
+        "tableTitle": "Common conversions at a glance",
+        "tableHeaders": [
+          "Category",
+          "Relationship",
+          "Example"
+        ],
+        "tableRows": [
+          [
+            "Length",
+            "1 inch = 2.54 cm",
+            "10 in = 25.4 cm"
+          ],
+          [
+            "Length",
+            "1 foot = 30.48 cm",
+            "6 ft = 182.9 cm"
+          ],
+          [
+            "Mass",
+            "1 pound = 0.4536 kg",
+            "150 lb = 68.04 kg"
+          ],
+          [
+            "Volume",
+            "1 US gallon = 3.785 L",
+            "5 gal = 18.93 L"
+          ],
+          [
+            "Temperature",
+            "°F = °C × 9/5 + 32",
+            "25 °C = 77 °F"
+          ],
+          [
+            "Speed",
+            "1 mph = 1.609 km/h",
+            "60 mph = 96.6 km/h"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Why is temperature different from other units?",
+            "a": "Because zero is not nothing. Length and mass have absolute zeros, so a single multiplier suffices. Celsius and Fahrenheit define zero differently, with the freezing point of water at 0 and 32, so a conversion needs both a multiplier and an intercept. Multiply 25 by 1.8 without adding 32 and you get 45 instead of the correct 77 °F."
+          },
+          {
+            "q": "Are US and imperial gallons the same?",
+            "a": "No, and the gap is significant. A US gallon is about 3.785 litres while an imperial gallon is about 4.546, roughly 20% more. The same applies to fluid ounces: about 29.57 ml in the US and 28.41 ml in the UK. Always check which system your source uses, because swapping an American recipe into British measures will be visibly off."
+          },
+          {
+            "q": "How many decimal places should I keep?",
+            "a": "This tool keeps enough significant digits for you to round as you like. For everyday use, one decimal is plenty: height to 0.1 cm, weight to 0.1 kg. In engineering or scientific work, match the significant figures of your input data, and do not let an exact defined constant such as 2.54 become the thing that limits your precision."
+          },
+          {
+            "q": "Is an ounce a weight or a volume?",
+            "a": "It can be either, depending on context. The avoirdupois ounce is a mass of about 28.35 grams. The fluid ounce is a volume of about 29.57 ml in the US and 28.41 ml in the UK. Recipes usually mean mass when they write oz, while drink labels mean volume, so read the abbreviation carefully."
+          }
+        ]
+      }
     },
     "set-calculator": {
       "name": "Set Calculator",
@@ -8495,7 +9122,8 @@
     "about-offer-education": "Education — unit conversion, set operations, and a scientific calculator.",
     "about-offer-technology": "Technology — base/number conversion and networking tools.",
     "about-how-it-works": "Every calculation runs entirely in your browser. Results are computed on your device, which means your inputs stay private and the tools work instantly even on slow connections. The site is built as a fast, static web application so pages load quickly anywhere in the world.",
-    "about-editorial": "We aim for correctness and clarity. Formulas are documented on each tool, and we review the math behind every calculator. If you spot an error or have a suggestion, we would love to hear from you on the contact page."
+    "about-editorial": "We aim for correctness and clarity. Formulas are documented on each tool, and we review the math behind every calculator. If you spot an error or have a suggestion, we would love to hear from you on the contact page.",
+    "last-updated-august-28-2026": "Last updated: August 28, 2026."
   },
   "legal": {
     "terms": {
@@ -8520,7 +9148,9 @@
       "cookiesGoogleLink": "Google's Advertising Policies",
       "cookiesAdsLink": "Ads Settings",
       "yourRightsBody": "Depending on where you live (for example under the EU GDPR or the California CCPA), you may have the right to access, correct, or delete personal data and to object to certain processing. Because this site does not store personal data on its own servers, most requests relate to data held by our service providers, which we will help you address on request.",
-      "contactBody": "If you have any questions about this policy, contact us at <email>contact@baikecalc.com</email>."
+      "contactBody": "If you have any questions about this policy, contact us at <email>contact@baikecalc.com</email>.",
+      "cookiesThirdParty": "Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of the DoubleClick cookie enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet. You may opt out of personalized advertising at any time by visiting {link3}. If you are in the EU or UK, you can also withdraw consent for advertising cookies through the consent banner on this site.",
+      "cookiesAdsSettings": "Ads Settings"
     },
     "contact": {
       "description": "Questions, corrections, or partnership ideas? Reach out any time.",
@@ -8984,5 +9614,82 @@
     "finance": "Calculators on this site provide estimates for general informational purposes only. They are not financial, investment, tax, or legal advice. Consult a qualified professional before making any decision.",
     "health": "These calculators provide general information only and are not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.",
     "crypto": "These tools are for educational and informational purposes only. They are not investment, trading, or financial advice. Cryptocurrency involves significant risk — always do your own research."
+  },
+  "home": {
+    "introTitle": "About Baike Calc",
+    "intro": "Baike Calc is a free online toolkit with 198 calculators and converters across 19 categories, including math, finance, health, image processing, engineering, and networking. Every calculation runs locally in your browser: nothing you type is uploaded to a server, and no account is required to use any tool. Each tool page includes step-by-step instructions, an explanation of the underlying formula, and a set of frequently asked questions, so you can understand how a result is derived instead of just reading a number. Whether you are a student, an engineer, a finance professional, or someone who just needs a quick figure, you will find a tool that fits.",
+    "categoriesTitle": "Browse by category",
+    "categoriesDesc": "198 tools across 19 categories. Open any category to see every calculator in it, with explanations.",
+    "categoryDesc": {
+      "color": "Color conversion and palettes: HEX, RGB and HSL, plus contrast and difference checks.",
+      "cooking": "Kitchen unit conversion, recipe scaling and oven temperature conversion.",
+      "automotive": "Car math: fuel consumption, tire sizes, service intervals and auto loans.",
+      "chemistry": "Chemistry: molar mass, solution preparation, concentration and stoichiometry.",
+      "crypto": "Cryptocurrency conversion, mining profitability estimates and hashrate math.",
+      "data": "Data size and bandwidth: storage units, download time and transfer throughput.",
+      "datetime": "Date and time: day intervals, working day counts and timezone conversion.",
+      "engineering": "Engineering: structural loads, material strength and hydraulic parameters.",
+      "finance": "Finance: loan repayment, compound interest, investment returns and taxes.",
+      "realestate": "Real estate: monthly mortgage payments, property valuation and ROI analysis.",
+      "health": "Health: BMI, body fat percentage, basal metabolic rate and daily calorie needs.",
+      "infrastructure": "IT infrastructure: server capacity planning, virtualization resources and cost estimates.",
+      "math": "Math: percentages, fractions, statistics, geometry and number base conversion.",
+      "music": "Music: tempo, note durations and pitch to frequency conversion.",
+      "network": "Networking: subnetting, IP address planning and CIDR conversion.",
+      "photo": "Photography: depth of field, exposure, equivalent focal length and resolution.",
+      "physics": "Physics: speed, energy, force and common unit conversions.",
+      "video": "Video: bitrate, file size, frame rate and compression parameters.",
+      "web": "Web tools: SEO checks, URL encoding, response time and DNS lookups."
+    },
+    "whyTitle": "Why use Baike Calc",
+    "whyItems": [
+      {
+        "title": "Runs locally, no data trail",
+        "desc": "All calculations happen inside your browser. Your inputs never reach a server and vanish when you close the tab."
+      },
+      {
+        "title": "Open formulas you can verify",
+        "desc": "Every tool page states the algorithm, the formula and its assumptions, so you can check each step yourself."
+      },
+      {
+        "title": "No sign-up, completely free",
+        "desc": "No account, no email address, no daily usage cap. Just open the page and start calculating."
+      },
+      {
+        "title": "19 categories and growing",
+        "desc": "From everyday percentage math to server virtualization capacity planning, the library keeps expanding."
+      }
+    ],
+    "guidesDesc": "In-depth guides built around real scenarios, explaining the formulas and the trade-offs, each linked to a tool you can try right away.",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Are these tools really free?",
+        "a": "Yes. Every calculator and converter on this site is free to use, with no account required and no daily usage cap. The site is supported by advertising, which covers hosting and development costs but never affects the accuracy of any result."
+      },
+      {
+        "q": "Is the data I type uploaded to a server?",
+        "a": "No. For the vast majority of tools the calculation runs entirely in your browser and your input never leaves your device. A small number of tools that need external data, such as live exchange rates, request it from public sources, but they do not record or store the specific values you enter."
+      },
+      {
+        "q": "Can I use the results for tax filings or medical decisions?",
+        "a": "No. The tools provide estimates for general reference. Financial results are not a substitute for professional tax advice, and health results are not a diagnosis. For decisions that matter, consult a licensed professional."
+      }
+    ]
+  },
+  "guide": {
+    "howToUseTitle": "How to use {name}",
+    "faqTitle": "Frequently asked questions",
+    "step1": "Enter the values you want to calculate in the input fields at the top of the page.",
+    "step2": "Switch units or adjust the options as needed. Most tools update the result as you type.",
+    "step3": "Read the result area, then use the explanation and the questions below to understand what it means and where it applies.",
+    "fallbackIntro": "{name} is a free online calculator. {description} Everything runs locally in your browser, so the values you enter are never uploaded to a server.",
+    "fallbackQ1": "How accurate are the results?",
+    "fallbackA1": "Results follow published standard formulas and conversion factors and are accurate enough for everyday use. For professional purposes such as tax filings, medical diagnosis or engineering design, rely on the authoritative standard or a licensed professional instead.",
+    "fallbackQ2": "Is the data I enter stored anywhere?",
+    "fallbackA2": "No. The calculation happens inside your browser and your input is never uploaded. Once you close the page the values are gone, and we have no way to see what you entered.",
+    "fallbackQ3": "Do I need to register or pay to use this?",
+    "fallbackA3": "No. Every tool on this site is free, no account is required, and there is no daily usage limit.",
+    "howItWorksTitle": "How {name} works"
   }
 }
