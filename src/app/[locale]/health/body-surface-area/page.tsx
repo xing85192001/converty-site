@@ -27,7 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.body-surface-area" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["body surface area", "bsa", "du bois", "mosteller", "calculator"],
   };

@@ -27,7 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.lean-body-mass" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["lean body mass", "lbm", "fat-free mass", "muscle mass", "calculator"],
   };

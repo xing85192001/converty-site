@@ -27,7 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.image-filesize" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["image", "file size", "resolution", "jpeg", "png", "raw"],
   };

@@ -24,7 +24,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.seo-performance" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["seo", "performance", "analysis", "optimization", "web"],
   };

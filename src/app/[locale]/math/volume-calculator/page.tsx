@@ -27,7 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.volume-calculator" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["volume", "geometry", "cube", "sphere", "cylinder", "cone", "calculator"],
   };

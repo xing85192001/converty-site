@@ -25,7 +25,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "converter.income-tax" });
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["income tax", "tax calculator", "progressive tax", "brackets", "calculator"],
   };

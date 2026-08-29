@@ -95,7 +95,8 @@
     "advertisement": "Advertisement",
     "toolsCount": "tools",
     "sitemapTitle": "Sitemap",
-    "sitemapIntro": "Browse every baikecalc tool, category, and blog post. Indexed by category so you can reach the calculator you need fast."
+    "sitemapIntro": "Browse every baikecalc tool, category, and blog post. Indexed by category so you can reach the calculator you need fast.",
+    "relatedCategories": "Related Categories"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -854,12 +855,66 @@
     "composition": {
       "name": "Composition",
       "description": "Calculate field of view from focal length and distance",
-      "metaDescription": "Calculate photographic field of view and composition"
+      "metaDescription": "Free online composition calculator. Get rule-of-thirds and golden-ratio grid points for any frame size fast, no signup, for better photos.",
+      "guide": {
+        "steps": [
+          "Choose a composition rule you want to apply (rule of thirds, golden ratio, etc.).",
+          "Enter your image's width and height in pixels or mm.",
+          "Read the key grid lines and placement points to position your subject."
+        ],
+        "explanationTitle": "Why Composition Rules Help",
+        "formula": "Rule of thirds divides the frame into a 3×3 grid",
+        "explanation": [
+          "Composition guides place your subject where the eye naturally travels, creating balanced, engaging images instead of a centered, flat look.",
+          "The rule of thirds and the golden ratio are starting points; break them intentionally once you understand why they work."
+        ],
+        "faq": [
+          {
+            "q": "What is the rule of thirds?",
+            "a": "Imagine a 3×3 grid; place key elements on the lines or their intersections to make a photo feel balanced and dynamic."
+          },
+          {
+            "q": "Is the golden ratio better?",
+            "a": "It is a subtler spiral-based guide some find more natural; both are tools, not laws — use what serves the image."
+          },
+          {
+            "q": "Should I always follow the rules?",
+            "a": "No. Learn them, then break them with intent. Centering can be powerful for symmetry and minimalism."
+          }
+        ]
+      }
     },
     "depth-of-field": {
       "name": "Depth of Field",
       "description": "Calculate DoF from aperture, focal length, and distance",
-      "metaDescription": "Calculate depth of field for photography"
+      "metaDescription": "Free online depth of field calculator. Find near and far focus limits and blur for any lens and aperture fast, no signup, with clear steps.",
+      "guide": {
+        "steps": [
+          "Set your camera to aperture-priority or manual mode and pick an f-number.",
+          "Enter the focal length, aperture, and focus distance into the calculator.",
+          "Read the near and far limits plus the total in-focus zone."
+        ],
+        "explanationTitle": "What Is Depth of Field?",
+        "formula": "DoF depends on f-number, focal length, focus distance, and circle of confusion",
+        "explanation": [
+          "Depth of field is the distance range in a photo that appears acceptably sharp. A wide aperture (small f-number) gives a shallow, blurred background; a narrow aperture keeps more in focus.",
+          "Photographers use it creatively for portraits (blurred backgrounds) and landscapes (everything sharp from front to back)."
+        ],
+        "faq": [
+          {
+            "q": "What makes background blur stronger?",
+            "a": "A wider aperture (lower f-number), a longer focal length, and a closer focus distance all increase background separation and blur."
+          },
+          {
+            "q": "Why does stopping down increase sharpness?",
+            "a": "A smaller aperture (higher f-number) widens the acceptable focus range, bringing both near and far subjects into the sharp zone."
+          },
+          {
+            "q": "What is the circle of confusion?",
+            "a": "It is the largest blur spot still perceived as a point. Smaller sensors need a tighter circle, which reduces the apparent depth of field."
+          }
+        ]
+      }
     },
     "dpi": {
       "name": "DPI",
@@ -990,22 +1045,130 @@
     "focal-equivalent": {
       "name": "Focal Length Equivalent",
       "description": "Match settings between different sensor sizes",
-      "metaDescription": "Calculate equivalent focal lengths across sensor sizes"
+      "metaDescription": "Free online focal length equivalent calculator. Convert any lens to full-frame equivalent fast, no signup, compare cameras easily.",
+      "guide": {
+        "steps": [
+          "Enter the actual focal length of your lens.",
+          "Enter the camera sensor crop factor (e.g. 1.5 for APS-C).",
+          "Read the full-frame equivalent focal length and its angle of view."
+        ],
+        "explanationTitle": "What Is a Focal Length Equivalent?",
+        "formula": "equivalent = focal length × crop factor",
+        "explanation": [
+          "Different sensor sizes capture different fields of view for the same lens. The full-frame equivalent tells you what focal length on a full-frame camera gives the same perspective.",
+          "This makes it easy to compare lenses across camera systems and understand how 'zoomed in' a shot will look."
+        ],
+        "faq": [
+          {
+            "q": "Why does sensor size matter?",
+            "a": "Smaller sensors crop the image, effectively magnifying the focal length, so the same lens looks more zoomed in."
+          },
+          {
+            "q": "What is a crop factor?",
+            "a": "It is the ratio of a full-frame sensor's diagonal to your sensor's diagonal; APS-C is about 1.5, Micro Four Thirds about 2.0."
+          },
+          {
+            "q": "Does equivalent focal length change depth of field?",
+            "a": "Perspective stays the same; only the field of view is matched. Depth of field also changes with sensor size at equal framing."
+          }
+        ]
+      }
     },
     "hyperfocal": {
       "name": "Hyperfocal Distance",
       "description": "Calculate hyperfocal distance for maximum depth of field",
-      "metaDescription": "Calculate hyperfocal distance for landscape photography"
+      "metaDescription": "Free online hyperfocal distance calculator. Get the focus point for max depth of field in landscapes fast, no signup, with formula.",
+      "guide": {
+        "steps": [
+          "Enter the focal length and aperture you plan to shoot with.",
+          "Enter the circle of confusion for your camera sensor.",
+          "Read the hyperfocal distance and set focus there for maximum depth of field."
+        ],
+        "explanationTitle": "What Is the Hyperfocal Distance?",
+        "formula": "H = f² / (N · c) + f",
+        "explanation": [
+          "The hyperfocal distance is the focus distance that keeps everything from half that distance to infinity acceptably sharp. It is the secret to maximally deep landscape focus.",
+          "When you focus at the hyperfocal point, the far limit extends to infinity and the near limit is as close as possible."
+        ],
+        "faq": [
+          {
+            "q": "Why focus at the hyperfocal distance?",
+            "a": "It maximizes depth of field: the background reaches infinity and the foreground stays sharp, ideal for landscapes."
+          },
+          {
+            "q": "Does a wider aperture change it a lot?",
+            "a": "Yes. A wider aperture (smaller f-number) pushes the hyperfocal distance farther away, shrinking the near sharp limit."
+          },
+          {
+            "q": "Do I need a tripod?",
+            "a": "For deep landscape focus you usually stop down to small apertures, which needs slower shutter speeds, so a tripod helps."
+          }
+        ]
+      }
     },
     "nd-filter": {
       "name": "ND Filter",
       "description": "Calculate exposure time with ND filters",
-      "metaDescription": "Calculate exposure times with neutral density filters"
+      "metaDescription": "Free online ND filter calculator. Convert shutter speed for any ND stop value fast, no signup, for silky water and long exposures.",
+      "guide": {
+        "steps": [
+          "Enter the shutter speed you would use without the filter.",
+          "Enter the filter strength in stops (e.g. ND8 = 3 stops).",
+          "Read the new shutter speed needed with the ND filter attached."
+        ],
+        "explanationTitle": "What Does an ND Filter Do?",
+        "formula": "exposure time × 2^(stops)",
+        "explanation": [
+          "A neutral density (ND) filter reduces the light entering the lens without changing colors. It lets you use slow shutter speeds in bright light for silky water or motion blur.",
+          "Each stop of ND doubles the required exposure time, so an ND1000 lets you shoot multi-second exposures in daylight."
+        ],
+        "faq": [
+          {
+            "q": "What does ND8, ND64, ND1000 mean?",
+            "a": "The number is the light reduction factor; the stop count is its base-2 log. ND8 = 3 stops, ND64 = 6 stops, ND1000 ≈ 10 stops."
+          },
+          {
+            "q": "Can I stack ND filters?",
+            "a": "Yes, but combined stops add up and can push exposure so long you need a remote shutter and tripod."
+          },
+          {
+            "q": "Why use ND for video?",
+            "a": "It lets you keep a cinematic aperture (shallow depth) in daylight without overexposing the frame."
+          }
+        ]
+      }
     },
     "golden-hour": {
       "name": "Golden Hour Guide",
       "description": "Calculate golden hour times based on your location",
-      "metaDescription": "Find golden hour and blue hour times for your location"
+      "metaDescription": "Free online golden hour calculator. Find golden and blue hour times for your location and date fast, no signup, for better photos.",
+      "guide": {
+        "steps": [
+          "Enter your location (or let the calculator use your device position).",
+          "Pick the date you plan to shoot.",
+          "Read the golden hour and blue hour start/end times for that day."
+        ],
+        "explanationTitle": "What Are Golden and Blue Hour?",
+        "formula": "Derived from solar elevation angle ≈ 6° (golden) and −4° to −6° (blue)",
+        "explanation": [
+          "The golden hour is the period shortly after sunrise and before sunset with warm, soft, directional light that flatters subjects and landscapes.",
+          "The blue hour follows, when the sun is just below the horizon and the sky turns deep blue — perfect for cityscapes and long exposures."
+        ],
+        "faq": [
+          {
+            "q": "How long does golden hour last?",
+            "a": "Usually 20–60 minutes depending on latitude and season; it is longer near the equator and in winter at high latitudes."
+          },
+          {
+            "q": "What is blue hour for?",
+            "a": "Its even, cool light and lit windows make it ideal for architecture, bridges, and reflections after sunset."
+          },
+          {
+            "q": "Does it work for indoor portraits?",
+            "a": "The warm window light during golden hour is excellent for natural-looking indoor portraits near a window."
+          }
+        ]
+      }
     },
     "cooking-units": {
       "name": "Cooking Units",
@@ -1015,22 +1178,130 @@
     "exchange-rate": {
       "name": "Exchange Rate",
       "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
-      "metaDescription": "Free cryptocurrency exchange rate calculator. Convert Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin, and Cardano to CHF, EUR, or USD."
+      "metaDescription": "Free online exchange rate calculator. Convert currencies fast with recent rates, no signup, supports USD EUR GBP JPY CNY CHF and more.",
+      "guide": {
+        "steps": [
+          "Enter the amount you want to convert.",
+          "Pick the source and target currencies from the lists.",
+          "Read the converted amount using the latest available rate."
+        ],
+        "explanationTitle": "How Exchange Rates Work",
+        "formula": "amount × rate = converted amount",
+        "explanation": [
+          "An exchange rate is the price of one currency in another. Rates move constantly with supply, demand, interest rates, and economic news.",
+          "Our calculator uses a recent reference rate for quick estimates; for transactions, your bank or exchange service sets the final rate."
+        ],
+        "faq": [
+          {
+            "q": "Are the rates live?",
+            "a": "The tool uses a recent reference rate for fast estimates. Always confirm the exact rate with your provider before a real transaction."
+          },
+          {
+            "q": "Why do I get a different rate at the bank?",
+            "a": "Banks and exchanges add a spread (margin) on top of the mid-market rate, so the rate you get is slightly worse."
+          },
+          {
+            "q": "Which currencies are supported?",
+            "a": "Major fiat pairs such as USD, EUR, GBP, JPY, CNY and CHF are supported for quick reference conversions."
+          }
+        ]
+      }
     },
     "hash-calculator": {
       "name": "Hash Calculator",
       "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
-      "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text input."
+      "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 digests from text or files fast, no signup, for integrity checks.",
+      "guide": {
+        "steps": [
+          "Type or paste the text or file content you want to hash.",
+          "Choose the algorithm (MD5, SHA-1, SHA-256, SHA-512).",
+          "Copy the resulting digest to verify integrity or store a fingerprint."
+        ],
+        "explanationTitle": "What Is a Hash?",
+        "formula": "hash(message) → fixed-length digest",
+        "explanation": [
+          "A hash function turns any input into a fixed-length string. The same input always produces the same digest, but a tiny change completely changes the output.",
+          "Hashes verify file integrity, store passwords safely, and power blockchains and digital signatures."
+        ],
+        "faq": [
+          {
+            "q": "Which algorithm should I use?",
+            "a": "Use SHA-256 or SHA-512 for security. MD5 and SHA-1 are fast but broken for security and only okay for checksums."
+          },
+          {
+            "q": "Can I recover the original text from a hash?",
+            "a": "No. Hashing is one-way; you cannot reverse it. That is why it is safe for storing passwords."
+          },
+          {
+            "q": "Why does changing one character change everything?",
+            "a": "Hash functions are designed to be avalanche-sensitive: a single bit change spreads to a completely different digest."
+          }
+        ]
+      }
     },
     "mining-calculator": {
       "name": "Mining Profitability",
       "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
-      "metaDescription": "Free Bitcoin mining profitability calculator. Calculate daily, monthly, and yearly profits based on hash rate, power consumption, and electricity costs in CHF, EUR, or USD."
+      "metaDescription": "Free online crypto mining calculator. Estimate profit from hashrate, power and electricity cost fast, no signup, with daily and monthly views.",
+      "guide": {
+        "steps": [
+          "Enter your hardware hashrate and power consumption.",
+          "Enter your electricity cost per kWh and the coin's network difficulty.",
+          "Read the estimated daily, weekly, and monthly profit after power costs."
+        ],
+        "explanationTitle": "What Drives Mining Profit?",
+        "formula": "profit = (reward × price) − (power × hours × price/kWh)",
+        "explanation": [
+          "Mining profit depends on your hardware's hashrate, the coin price, network difficulty, and your electricity cost. Higher difficulty means less reward per unit of work.",
+          "Profitability changes daily with price and difficulty, so estimates are snapshots, not guarantees."
+        ],
+        "faq": [
+          {
+            "q": "Why does profit change daily?",
+            "a": "Coin price and network difficulty move constantly, and your reward is shared among all miners on the network."
+          },
+          {
+            "q": "Is electricity the main cost?",
+            "a": "Usually yes. For many GPUs and ASICs, power cost decides whether mining is profitable at all."
+          },
+          {
+            "q": "Does the calculator include pool fees?",
+            "a": "You can add a pool fee percentage; the estimate then subtracts it from gross rewards for a realistic net figure."
+          }
+        ]
+      }
     },
     "wallet-validator": {
       "name": "Wallet Validator",
       "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
-      "metaDescription": "Free online wallet address validator. Check if Bitcoin, Ethereum, or Litecoin addresses are valid with format detection."
+      "metaDescription": "Free online wallet address validator. Check Bitcoin, Ethereum and more addresses for valid format and checksum fast, no signup.",
+      "guide": {
+        "steps": [
+          "Paste the crypto wallet address you want to check.",
+          "Choose the blockchain (Bitcoin, Ethereum, etc.).",
+          "Read whether the format and checksum are valid."
+        ],
+        "explanationTitle": "Why Validate a Wallet Address?",
+        "formula": "address → checksum + format verification",
+        "explanation": [
+          "A wallet address is a public identifier for receiving funds. A single wrong character sends money to the wrong place with no recovery.",
+          "Validation checks the address length, character set, and checksum so you catch typos before sending."
+        ],
+        "faq": [
+          {
+            "q": "Does validation confirm the owner?",
+            "a": "No. It only confirms the address is well-formed. It cannot tell you who controls it."
+          },
+          {
+            "q": "Can a valid address be wrong?",
+            "a": "Yes — it may be valid but belong to someone else. Always confirm the full address with the recipient."
+          },
+          {
+            "q": "Which blockchains are supported?",
+            "a": "Common ones like Bitcoin (Base58Check), Ethereum (EIP-55 checksum), and similar formats are verified."
+          }
+        ]
+      }
     },
     "mortgage-swiss": {
       "name": "Swiss Mortgage Calculator",
@@ -3216,68 +3487,31 @@
     "percentage-calculator": {
       "name": "Percentage",
       "description": "Calculate percentages, percent change, and percent difference",
-      "metaDescription": "Calculate percentages, find percent change, and percent difference",
+      "metaDescription": "Free online percentage calculator. Find X% of Y, what percent one number is of another, and increases or discounts fast, no signup.",
       "guide": {
         "steps": [
-          "Choose what you want to solve: the part, the share, the original value, or the increase or decrease.",
-          "Fill in the two values you know and leave the third field empty.",
-          "Read the result and the working, then switch the mode to solve the next question."
+          "Pick the percentage operation you need (X% of Y, X is what % of Y, or increase/decrease).",
+          "Enter the numbers into the input fields.",
+          "Read the result instantly below the inputs."
         ],
-        "explanationTitle": "The four common percentage calculations",
-        "formula": "Percentage = part ÷ whole × 100%",
+        "explanationTitle": "How Percentage Calculations Work",
+        "formula": "Part = (Percentage / 100) × Whole",
         "explanation": [
-          "A percentage is just a fraction with a denominator of 100, and the % sign means divide by 100. So 15% is 0.15, and multiplying any number by 0.15 gives 15% of it. Four question types follow from that: find the part from the whole and the percentage, find the share from part and whole, find the original value from part and percentage, and find the change between an old and a new value.",
-          "Percentage change is where most mistakes happen. A 50% gain followed by a 50% loss does not return you to the start: 100 rises to 150, then falls to 75, a net loss of 25%. The two symmetric percentages act on different bases. Another common trap is the difference between percentage points and percent. A rate moving from 4% to 5% has risen one percentage point, and it has also risen 25%. Both are true and they mean different things."
-        ],
-        "tableTitle": "Common percentage cases and formulas",
-        "tableHeaders": [
-          "Case",
-          "Known",
-          "Formula",
-          "Example"
-        ],
-        "tableRows": [
-          [
-            "Find the part",
-            "Whole and percentage",
-            "Whole × percentage",
-            "15% of 200 = 30"
-          ],
-          [
-            "Find the share",
-            "Part and whole",
-            "Part ÷ whole × 100%",
-            "30 out of 200 = 15%"
-          ],
-          [
-            "Find the original",
-            "Part and percentage",
-            "Part ÷ percentage",
-            "30 is 15% of 200"
-          ],
-          [
-            "Find the change",
-            "Old and new value",
-            "(New − old) ÷ old × 100%",
-            "100 → 120 = +20%"
-          ]
+          "A percentage is simply a fraction of 100. Calculating 'X% of Y' means multiplying Y by X divided by 100.",
+          "Percentages are used daily for discounts, tax, tips, interest rates, and comparing changes between two values."
         ],
         "faq": [
           {
-            "q": "If something rises 50% then falls 50%, is it back to the original?",
-            "a": "No. 100 rises 50% to 150, then falls 50% to 75, a net loss of 25%. The two equal percentages apply to different bases, 100 the first time and 150 the second. Any symmetrical rise-and-fall pair leaves you behind, and the bigger the swings, the bigger the gap."
+            "q": "How do I find what percent one number is of another?",
+            "a": "Divide the part by the whole and multiply by 100. For example, 25 of 200 is (25 / 200) × 100 = 12.5%."
           },
           {
-            "q": "What is the difference between percentage points and percent?",
-            "a": "Percentage points are the plain arithmetic difference between two percentages; percent describes a relative change. A rate moving from 4% to 5% has gone up one percentage point, and it has also gone up 25%, since 1 is a quarter of 4. For statistics, percentage points cause far less confusion."
+            "q": "How do I calculate a percentage increase?",
+            "a": "Subtract the original from the new value, divide by the original, then multiply by 100."
           },
           {
-            "q": "How do I calculate how much bigger A is than B, in percent?",
-            "a": "Divide the difference by the reference value, the one after the word than: (A − B) ÷ B × 100%. The denominator is B, not A. With A = 120 and B = 100, A is 20% larger than B, while B is 16.7% smaller than A, because the base changes."
-          },
-          {
-            "q": "Is 20% off the same as paying 80%?",
-            "a": "Yes, exactly the same. Taking 20% off leaves 80% of the price, so the final price is the original times 0.8. Confusion usually comes from discount language: a 25% reduction is the same as paying 75%, not 25%."
+            "q": "Can I use it for discounts?",
+            "a": "Yes. To find a sale price after a discount, calculate the percent of the original price and subtract it."
           }
         ]
       }
@@ -3652,27 +3886,162 @@
     "standard-deviation": {
       "name": "Standard Deviation",
       "description": "Calculate standard deviation and variance",
-      "metaDescription": "Calculate population and sample standard deviation, variance, and mean"
+      "metaDescription": "Free online standard deviation calculator. Find population or sample SD and variance fast, no signup, with clear formula and examples.",
+      "guide": {
+        "steps": [
+          "Enter your data set as a list of numbers separated by commas.",
+          "Choose whether it is a population or a sample.",
+          "Read the result: the calculator shows the standard deviation and the variance."
+        ],
+        "explanationTitle": "What Is Standard Deviation?",
+        "formula": "σ = √( Σ(xᵢ − μ)² / N )   (population)",
+        "explanation": [
+          "Standard deviation measures how spread out the values in a data set are around the mean. A small value means the numbers are clustered closely together, while a large value means they vary widely.",
+          "Use it to compare consistency between groups, assess risk in finance, or understand variation in test scores and scientific measurements."
+        ],
+        "faq": [
+          {
+            "q": "Population or sample — which should I pick?",
+            "a": "Use population when you have every member of the group (e.g. all students in a class). Use sample when your data is only a subset and you want to estimate the whole population."
+          },
+          {
+            "q": "Why is the sample standard deviation larger?",
+            "a": "The sample formula divides by n−1 instead of n, which corrects the bias from estimating the mean from the same data, giving a slightly larger, more honest spread."
+          },
+          {
+            "q": "What unit is the result in?",
+            "a": "The standard deviation always uses the same unit as your original data, which makes it easy to interpret alongside the mean."
+          }
+        ]
+      }
     },
     "statistics-calculator": {
       "name": "Statistics",
       "description": "Calculate comprehensive statistics for a data set",
-      "metaDescription": "Calculate mean, median, mode, quartiles, skewness, and kurtosis"
+      "metaDescription": "Free online statistics calculator. Get mean, median, mode, range and standard deviation from a list fast, no signup, with clear explanation.",
+      "guide": {
+        "steps": [
+          "Enter your numbers as a comma-separated list.",
+          "The calculator computes mean, median, mode, range, and standard deviation.",
+          "Use the summary to understand the shape and spread of your data."
+        ],
+        "explanationTitle": "Key Statistical Measures",
+        "formula": "Mean = Σx / n",
+        "explanation": [
+          "Descriptive statistics summarize a data set with a few meaningful numbers. The mean shows the center, while the range and standard deviation show the spread.",
+          "These measures help you compare groups, spot outliers, and communicate findings clearly without plotting every point."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between mean and median?",
+            "a": "The mean is the average of all values; the median is the middle value when sorted. The median is less affected by extreme outliers."
+          },
+          {
+            "q": "When should I use the mode?",
+            "a": "Use the mode when you want the most frequently occurring value, common in categories and discrete counts."
+          },
+          {
+            "q": "Why does spread matter?",
+            "a": "Two data sets can share the same mean but behave very differently; spread measures reveal that difference."
+          }
+        ]
+      }
     },
     "probability-calculator": {
       "name": "Probability",
       "description": "Calculate probability of events and combinations",
-      "metaDescription": "Calculate probability of events, conditional probability, and Bayes theorem"
+      "metaDescription": "Free online probability calculator. Find the chance of single or combined events fast, no signup, shown as fraction, decimal and percent.",
+      "guide": {
+        "steps": [
+          "Choose the probability scenario (single event, two events, or combinations).",
+          "Enter the numbers of favorable and total outcomes.",
+          "Read the probability as a fraction, decimal, and percentage."
+        ],
+        "explanationTitle": "Understanding Probability",
+        "formula": "P = Favorable outcomes / Total outcomes",
+        "explanation": [
+          "Probability quantifies how likely an event is, from 0 (impossible) to 1 (certain). It is the ratio of favorable outcomes to all possible outcomes.",
+          "It underpins games of chance, risk assessment, quality control, and any decision made under uncertainty."
+        ],
+        "faq": [
+          {
+            "q": "What does a probability of 0.5 mean?",
+            "a": "It means the event is as likely to happen as not — a 50% chance, like a fair coin landing heads."
+          },
+          {
+            "q": "How is probability written?",
+            "a": "As a fraction, a decimal between 0 and 1, or a percentage between 0% and 100%."
+          },
+          {
+            "q": "Can probabilities be added?",
+            "a": "Only for mutually exclusive events. Otherwise you must account for overlap to avoid double-counting."
+          }
+        ]
+      }
     },
     "sample-size": {
       "name": "Sample Size",
       "description": "Calculate required sample size for surveys and studies",
-      "metaDescription": "Calculate sample size needed for surveys with confidence level and margin of error"
+      "metaDescription": "Free online sample size calculator. Find how many responses you need for a given confidence and margin of error, no signup, with steps.",
+      "guide": {
+        "steps": [
+          "Enter your confidence level, margin of error, and an estimate of the population proportion.",
+          "Add the population size if it is small and known.",
+          "Read the required sample size to reach a reliable conclusion."
+        ],
+        "explanationTitle": "Why Sample Size Matters",
+        "formula": "n = z² · p(1−p) / e²   (with finite-population correction)",
+        "explanation": [
+          "Sample size is how many observations you need to estimate a population value within a given margin of error at a chosen confidence level.",
+          "Too small a sample gives unreliable results; too large wastes effort. The calculator balances precision against cost."
+        ],
+        "faq": [
+          {
+            "q": "What confidence level should I use?",
+            "a": "95% is the most common default in research; 99% gives more certainty but requires a larger sample."
+          },
+          {
+            "q": "What if I don't know the population proportion?",
+            "a": "Use 0.5 (50%), which gives the most conservative, largest required sample size."
+          },
+          {
+            "q": "Does a bigger population always need a bigger sample?",
+            "a": "No. Beyond a certain size, the required sample barely changes; only small populations need the finite correction."
+          }
+        ]
+      }
     },
     "z-score-calculator": {
       "name": "Z-Score",
       "description": "Calculate z-score and normal distribution probabilities",
-      "metaDescription": "Calculate z-score and find probabilities from the normal distribution"
+      "metaDescription": "Free online z-score calculator. Standardize any raw score with mean and SD fast, no signup, and see how far it sits from the average.",
+      "guide": {
+        "steps": [
+          "Enter the raw score you want to standardize.",
+          "Enter the mean and the standard deviation of the data set.",
+          "Read the z-score and what it tells you about the value's position."
+        ],
+        "explanationTitle": "What Is a Z-Score?",
+        "formula": "z = (x − μ) / σ",
+        "explanation": [
+          "A z-score tells you how many standard deviations a value sits above or below the mean. A positive score is above average; a negative one is below.",
+          "Z-scores let you compare values from different distributions on a common scale and identify outliers."
+        ],
+        "faq": [
+          {
+            "q": "What does a z-score of 0 mean?",
+            "a": "It means the value is exactly equal to the mean of the data set."
+          },
+          {
+            "q": "Is a higher z-score always better?",
+            "a": "Not necessarily. It only shows distance from the mean; whether that is good depends on the context."
+          },
+          {
+            "q": "How do I use z-scores to find percentiles?",
+            "a": "Look the z-score up in a standard normal table, or use it with the cumulative distribution to get the percentile."
+          }
+        ]
+      }
     },
     "p-value-calculator": {
       "name": "P-Value",
@@ -3692,7 +4061,34 @@
     "ratio-calculator": {
       "name": "Ratio",
       "description": "Calculate and simplify ratios, find equivalent ratios",
-      "metaDescription": "Simplify ratios, find equivalent ratios, and scale proportions"
+      "metaDescription": "Free online ratio calculator. Simplify A:B ratios, find missing values, and scale proportions fast, no signup, with clear steps.",
+      "guide": {
+        "steps": [
+          "Enter the values of your ratio, such as A : B.",
+          "Add a known value for the missing side if you want to scale it.",
+          "Read the simplified ratio and any scaled equivalent instantly."
+        ],
+        "explanationTitle": "What Is a Ratio?",
+        "formula": "A : B  →  divide both by gcd(A, B) to simplify",
+        "explanation": [
+          "A ratio compares two quantities and shows their relative size. Simplifying a ratio keeps the same relationship with the smallest whole numbers.",
+          "Ratios appear in recipes, maps, finance, and mixing — anywhere you need to keep one quantity proportional to another."
+        ],
+        "faq": [
+          {
+            "q": "How do I simplify a ratio?",
+            "a": "Divide both sides by their greatest common divisor so the numbers share no common factor other than 1."
+          },
+          {
+            "q": "Can I scale a ratio to a known total?",
+            "a": "Yes. If you know one part, the calculator finds the matching other part that preserves the same proportion."
+          },
+          {
+            "q": "What is a 1:1 ratio?",
+            "a": "It means the two quantities are equal in size; scaling one scales the other by the same amount."
+          }
+        ]
+      }
     },
     "binary-calculator": {
       "name": "Binary",
@@ -3707,7 +4103,34 @@
     "scientific-notation": {
       "name": "Scientific Notation",
       "description": "Convert to/from scientific notation and perform operations",
-      "metaDescription": "Convert numbers to scientific notation and perform operations"
+      "metaDescription": "Free online scientific notation calculator. Convert any number to or from scientific notation fast, no signup, with mantissa, exponent and examples.",
+      "guide": {
+        "steps": [
+          "Type the number you want to convert into the input field.",
+          "Choose convert to scientific notation, or from scientific notation to decimal.",
+          "Copy the formatted result with its exponent and mantissa."
+        ],
+        "explanationTitle": "What Is Scientific Notation?",
+        "formula": "a × 10ⁿ  where 1 ≤ |a| < 10",
+        "explanation": [
+          "Scientific notation writes numbers as a coefficient between 1 and 10 multiplied by a power of ten. It makes very large or very small values compact and easy to read.",
+          "It is widely used in science, engineering, and computing to handle values like the speed of light or atomic scales without long strings of zeros."
+        ],
+        "faq": [
+          {
+            "q": "What is the mantissa and the exponent?",
+            "a": "The mantissa is the coefficient (the number between 1 and 10) and the exponent is the power of ten that scales it up or down."
+          },
+          {
+            "q": "How do I convert a decimal to scientific notation?",
+            "a": "Move the decimal point so there is one non-zero digit to its left; the number of places moved is the exponent (positive for large numbers, negative for small)."
+          },
+          {
+            "q": "Does the calculator handle negative numbers?",
+            "a": "Yes. The sign stays with the mantissa, and only the magnitude is normalized into the 1–10 range."
+          }
+        ]
+      }
     },
     "big-number": {
       "name": "Big Number",
@@ -11548,7 +11971,9 @@
         "q": "Can I use the results for tax filings or medical decisions?",
         "a": "No. The tools provide estimates for general reference. Financial results are not a substitute for professional tax advice, and health results are not a diagnosis. For decisions that matter, consult a licensed professional."
       }
-    ]
+    ],
+    "popularTitle": "Popular Calculators",
+    "popularDesc": "Jump straight to the calculators our visitors reach for most often."
   },
   "guide": {
     "howToUseTitle": "How to use {name}",

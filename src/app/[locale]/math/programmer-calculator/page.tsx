@@ -25,7 +25,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "converter.programmer-calculator" });
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["programmer calculator", "base converter", "hex", "binary", "bitwise", "calculator"],
   };

@@ -40,6 +40,40 @@ const hotChipCategories = [
 	"photo",
 ];
 
+// Contextual internal-link groups: each links to a category page + its top tools.
+const popularGroups: { categoryId: string; toolIds: string[] }[] = [
+	{
+		categoryId: "math",
+		toolIds: [
+			"percentage-calculator",
+			"scientific-notation",
+			"standard-deviation",
+			"z-score-calculator",
+			"statistics-calculator",
+		],
+	},
+	{
+		categoryId: "finance",
+		toolIds: ["loan", "compound-interest", "currency", "tip", "mortgage"],
+	},
+	{
+		categoryId: "health",
+		toolIds: ["bmi", "body-fat", "ideal-weight", "water-intake"],
+	},
+	{
+		categoryId: "datetime",
+		toolIds: ["age", "time-duration"],
+	},
+	{
+		categoryId: "color",
+		toolIds: ["rgb"],
+	},
+	{
+		categoryId: "photo",
+		toolIds: ["depth-of-field", "hyperfocal", "golden-hour", "nd-filter"],
+	},
+];
+
 export default async function Home({
 	params,
 }: {
@@ -242,6 +276,49 @@ export default async function Home({
 								</Link>
 							);
 						})}
+				</div>
+			</section>
+
+			{/* ===== Popular Calculators (contextual deep links) ===== */}
+			<section className="pb-8">
+				<h2 className="mb-1 text-lg font-bold">{th("popularTitle")}</h2>
+				<p className="mb-4 text-sm text-muted-foreground">
+					{th("popularDesc")}
+				</p>
+				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{popularGroups.map((group) => {
+						const cat = getCategoryById(group.categoryId);
+						if (!cat) return null;
+						const tools = group.toolIds
+							.map((id) => converterRegistry[id])
+							.filter((c): c is NonNullable<typeof c> => Boolean(c));
+						if (!tools.length) return null;
+						return (
+							<div
+								key={group.categoryId}
+								className="rounded-xl border border-border bg-card p-4"
+							>
+								<Link
+									href={`/${cat.slug}`}
+									className="mb-2 block font-semibold text-primary hover:underline"
+								>
+									{nav(`${group.categoryId}.name`)} →
+								</Link>
+								<ul className="space-y-1.5">
+									{tools.map((converter) => (
+										<li key={converter.id}>
+											<Link
+												href={`/${cat.slug}/${converter.slug}`}
+												className="text-sm text-muted-foreground transition-colors hover:text-foreground hover:underline"
+											>
+												{tc(`${converter.id}.name`)}
+											</Link>
+										</li>
+									))}
+								</ul>
+							</div>
+						);
+					})}
 				</div>
 			</section>
 

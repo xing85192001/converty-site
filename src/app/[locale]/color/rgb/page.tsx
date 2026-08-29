@@ -27,7 +27,7 @@ export async function generateMetadata({
   });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["rgb converter", "hex to rgb", "color converter", "hsl converter", "cmyk converter"],
   };

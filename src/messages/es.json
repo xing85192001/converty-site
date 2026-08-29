@@ -101,7 +101,8 @@
     "advertisement": "Anuncio",
     "toolsCount": "herramientas",
     "sitemapTitle": "Mapa del sitio",
-    "sitemapIntro": "Explora cada herramienta, categoría y artículo del blog de baikecalc. Indexado por categoría para llegar rápido a la calculadora que necesitas."
+    "sitemapIntro": "Explora cada herramienta, categoría y artículo del blog de baikecalc. Indexado por categoría para llegar rápido a la calculadora que necesitas.",
+    "relatedCategories": "Categorías Relacionadas"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Procesamiento de imágenes y video",
@@ -860,12 +861,66 @@
     "composition": {
       "name": "Composición",
       "description": "Calcular el campo de visión a partir de la distancia focal y la distancia.",
-      "metaDescription": "Calcular el campo de visión y la composición fotográfica."
+      "metaDescription": "Calculadora de composición gratis en línea. Obtén puntos de tercios y proporción áurea para cualquier tamaño, sin registro.",
+      "guide": {
+        "steps": [
+          "Elige una regla de composición (regla de tercios, proporción áurea, etc.).",
+          "Introduce el ancho y alto de la imagen en píxeles o mm.",
+          "Lee las líneas y puntos clave para colocar tu sujeto."
+        ],
+        "explanationTitle": "Por qué ayudan las reglas de composición",
+        "formula": "La regla de tercios divide el encuadre en una cuadrícula 3×3",
+        "explanation": [
+          "Las guías de composición colocan el sujeto donde la mirada viaja naturalmente, creando imágenes equilibradas en vez de un centro plano.",
+          "La regla de tercios y la proporción áurea son puntos de partida; rompe las a propósito cuando entiendas por qué funcionan."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es la regla de tercios?",
+            "a": "Imagina una cuadrícula 3×3; pon elementos clave en las líneas o intersecciones para un foto equilibrada y dinámica."
+          },
+          {
+            "q": "¿Es mejor la proporción áurea?",
+            "a": "Es una guía más sutil basada en espiral; ambas son herramientas, no leyes — usa lo que sirva a la imagen."
+          },
+          {
+            "q": "¿Debo seguir siempre las reglas?",
+            "a": "No. Aprende y luego rompe con intención. Centrar puede ser potente en simetría y minimalismo."
+          }
+        ]
+      }
     },
     "depth-of-field": {
       "name": "Profundidad de campo",
       "description": "Calcule DoF a partir de apertura, distancia focal y distancia",
-      "metaDescription": "Calcular la profundidad de campo para fotografía."
+      "metaDescription": "Calculadora de profundidad de campo gratis en línea. Halla límites cercano y lejano y bokeh para cualquier lente, sin registro.",
+      "guide": {
+        "steps": [
+          "Pon la cámara en prioridad de apertura o manual y elige un f-stop.",
+          "Introduce la distancia focal, la apertura y la distancia de enfoque.",
+          "Lee los límites cercano y lejano y la zona enfocada total."
+        ],
+        "explanationTitle": "¿Qué es la profundidad de campo?",
+        "formula": "La profundidad de campo depende de la apertura, la focal, el enfoque y el círculo de confusión",
+        "explanation": [
+          "La profundidad de campo es el rango de distancia de la foto que aparece aceptablemente nítido. Una apertura amplia (f pequeña) da poco fondo y fondo borroso; una estrecha mantiene más en foco.",
+          "Los fotógrafos la usan para retratos (fondo difuminado) y paisajes (todo nítido de frente a fondo)."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué aumenta el desenfoque del fondo?",
+            "a": "Una apertura más amplia (f menor), una focal más larga y un enfoque más cercano aumentan la separación y el bokeh."
+          },
+          {
+            "q": "¿Por qué cerrar apertura da más nitidez?",
+            "a": "Una apertura menor (f mayor) ensancha el rango aceptable de enfoque, metiendo cerca y lejos en la zona nítida."
+          },
+          {
+            "q": "¿Qué es el círculo de confusión?",
+            "a": "Es la mancha borrosa más grande todavía percibida como punto. Sensores pequeños exigen círculo menor, lo que reduce la profundidad."
+          }
+        ]
+      }
     },
     "dpi": {
       "name": "PPP",
@@ -996,22 +1051,130 @@
     "focal-equivalent": {
       "name": "Longitud focal equivalente",
       "description": "Haga coincidir la configuración entre diferentes tamaños de sensores",
-      "metaDescription": "Calcule distancias focales equivalentes entre tamaños de sensores"
+      "metaDescription": "Calculadora de focal equivalente gratis en línea. Convierte cualquier objetivo a full-frame, sin registro, compara cámaras fácil.",
+      "guide": {
+        "steps": [
+          "Introduce la distancia focal real de tu objetivo.",
+          "Introduce el factor de recorte del sensor (p. ej. 1,5 para APS-C).",
+          "Lee la focal equivalente a full-frame y su ángulo de visión."
+        ],
+        "explanationTitle": "¿Qué es la focal equivalente?",
+        "formula": "equivalente = focal × factor de recorte",
+        "explanation": [
+          "Distintos tamaños de sensor captan distinto campo con el mismo objetivo. La equivalente a full-frame dice qué focal en full-frame da la misma perspectiva.",
+          "Así comparas objetivos entre sistemas y entiendes cuánto 'zoom' tendrá la toma."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué importa el tamaño del sensor?",
+            "a": "Los sensores pequeños recortan la imagen y amplían la focal, así el mismo objetivo parece más cercano."
+          },
+          {
+            "q": "¿Qué es el factor de recorte?",
+            "a": "Es la razón entre la diagonal full-frame y la de tu sensor; APS-C ≈ 1,5, Micro Four Thirds ≈ 2,0."
+          },
+          {
+            "q": "¿Cambia la profundidad de campo la focal equivalente?",
+            "a": "La perspectiva no cambia, solo se iguala el campo. A igual encuadre, la profundidad también varía con el sensor."
+          }
+        ]
+      }
     },
     "hyperfocal": {
       "name": "Distancia hiperfocal",
       "description": "Calcule la distancia hiperfocal para obtener la máxima profundidad de campo",
-      "metaDescription": "Calcular la distancia hiperfocal para fotografía de paisajes."
+      "metaDescription": "Calculadora de distancia hiperfocal gratis en línea. Obtén el punto de enfoque para máxima profundidad, sin registro, con fórmula.",
+      "guide": {
+        "steps": [
+          "Introduce la distancia focal y la apertura que vas a usar.",
+          "Introduce el círculo de confusión de tu sensor.",
+          "Lee la distancia hiperfocal y enfoca ahí para máxima profundidad."
+        ],
+        "explanationTitle": "¿Qué es la distancia hiperfocal?",
+        "formula": "H = f² / (N · c) + f",
+        "explanation": [
+          "La distancia hiperfocal es el enfoque que mantiene nítido todo desde la mitad de esa distancia hasta el infinito. Es la clave de la máxima profundidad en paisajes.",
+          "Al enfocar en el punto hiperfocal, el límite lejano llega al infinito y el cercano está lo más cerca posible."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué enfocar a la hiperfocal?",
+            "a": "Maximiza la profundidad: el fondo llega al infinito y el primer plano queda nítido, ideal para paisajes."
+          },
+          {
+            "q": "¿Cambia mucho una apertura amplia?",
+            "a": "Sí. Una apertura más abierta (f menor) aleja la hiperfocal y reduce el límite cercano nítido."
+          },
+          {
+            "q": "¿Necesito trípode?",
+            "a": "Para gran profundidad sueles cerrar apertura, lo que exige exposiciones lentas, así que un trípode ayuda."
+          }
+        ]
+      }
     },
     "nd-filter": {
       "name": "Filtro ND",
       "description": "Calcular el tiempo de exposición con filtros ND",
-      "metaDescription": "Calcular tiempos de exposición con filtros de densidad neutra"
+      "metaDescription": "Calculadora de filtros ND gratis en línea. Convierte la obturación para cualquier paso ND, sin registro, para agua sedosa y largas exposiciones.",
+      "guide": {
+        "steps": [
+          "Introduce la velocidad de obturación que usarías sin el filtro.",
+          "Introduce la fuerza del filtro en pasos (p. ej. ND8 = 3 pasos).",
+          "Lee la nueva velocidad de obturación con el ND puesto."
+        ],
+        "explanationTitle": "¿Qué hace un filtro ND?",
+        "formula": "tiempo de exposición × 2^(pasos)",
+        "explanation": [
+          "Un filtro de densidad neutra (ND) reduce la luz que entra sin cambiar los colores. Permite usar obturaciones lentas con luz brillante para agua sedosa o movimiento borroso.",
+          "Cada paso duplica el tiempo; un ND1000 permite exposiciones de varios segundos a plena luz."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significan ND8, ND64, ND1000?",
+            "a": "El número es el factor de reducción; los pasos son su log base 2. ND8 = 3, ND64 = 6, ND1000 ≈ 10 pasos."
+          },
+          {
+            "q": "¿Puedo apilar filtros ND?",
+            "a": "Sí, pero los pasos se suman y pueden exigir obturador remoto y trípode."
+          },
+          {
+            "q": "¿Por qué usar ND en vídeo?",
+            "a": "Mantiene una apertura cinematográfica (poca profundidad) de día sin sobreexponer."
+          }
+        ]
+      }
     },
     "golden-hour": {
       "name": "Guía de la hora dorada",
       "description": "Calcule los tiempos de la hora dorada según su ubicación",
-      "metaDescription": "Encuentre horarios de hora dorada y hora azul para su ubicación"
+      "metaDescription": "Calculadora de hora dorada gratis en línea. Halla horas dorada y azul por ubicación y fecha, sin registro, para mejores fotos.",
+      "guide": {
+        "steps": [
+          "Introduce tu ubicación (o usa la posición del dispositivo).",
+          "Elige la fecha de la sesión.",
+          "Lee los inicios y fines de la hora dorada y azul para ese día."
+        ],
+        "explanationTitle": "¿Qué son la hora dorada y la azul?",
+        "formula": "Derivado de elevación solar ≈ 6° (dorada) y −4° a −6° (azul)",
+        "explanation": [
+          "La hora dorada es el periodo tras el amanecer y antes del atardecer con luz cálida, suave y direccional que favorece sujetos y paisajes.",
+          "La hora azul sigue, cuando el sol está justo bajo el horizonte y el cielo se vuelve azul profundo — perfecta para ciudades y largas exposiciones."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto dura la hora dorada?",
+            "a": "Normalmente 20–60 minutos según latitud y estación; más larga cerca del ecuador y en invierno a altas latitudes."
+          },
+          {
+            "q": "¿Para qué sirve la hora azul?",
+            "a": "Su luz fría y uniforme y las ventanas encendidas la hacen ideal para arquitectura, puentes y reflejos tras el atardecer."
+          },
+          {
+            "q": "¿Sirve para retratos en interior?",
+            "a": "La cálida luz de ventana en la hora dorada es excelente para retratos naturales junto a una ventana."
+          }
+        ]
+      }
     },
     "cooking-units": {
       "name": "Unidades de cocina",
@@ -1021,22 +1184,130 @@
     "exchange-rate": {
       "name": "Tipo de cambio",
       "description": "Convierta entre criptomonedas y monedas fiduciarias (CHF, EUR, USD)",
-      "metaDescription": "Calculadora gratuita de tipos de cambio de criptomonedas. Convierta Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin y Cardano a CHF, EUR o USD."
+      "metaDescription": "Calculadora de divisas gratis en línea. Convierte monedas rápido con tipos recientes, sin registro, USD EUR GBP JPY CNY CHF y más.",
+      "guide": {
+        "steps": [
+          "Introduce la cantidad a convertir.",
+          "Elige la moneda origen y destino de las listas.",
+          "Lee el importe convertido con el tipo disponible más reciente."
+        ],
+        "explanationTitle": "Cómo funcionan los tipos de cambio",
+        "formula": "importe × tipo = importe convertido",
+        "explanation": [
+          "Un tipo de cambio es el precio de una moneda en otra. Se mueve constantemente con oferta, demanda, tipos de interés y noticias económicas.",
+          "Nuestra calculadora usa un tipo de referencia reciente para estimaciones rápidas; en transacciones tu banco fija el tipo final."
+        ],
+        "faq": [
+          {
+            "q": "¿Los tipos son en vivo?",
+            "a": "La herramienta usa un tipo de referencia reciente para estimaciones rápidas. Confirma el tipo exacto con tu proveedor antes de transaccionar."
+          },
+          {
+            "q": "¿Por qué el banco me da otro tipo?",
+            "a": "Bancos y casas de cambio añaden un margen sobre el precio medio, así que tu tipo es algo peor."
+          },
+          {
+            "q": "¿Qué monedas se admiten?",
+            "a": "Pares fiat principales como USD, EUR, GBP, JPY, CNY y CHF para conversiones de referencia rápidas."
+          }
+        ]
+      }
     },
     "hash-calculator": {
       "name": "Calculadora de hash",
       "description": "Calcule los valores hash MD5, SHA-1, SHA-256, SHA-512",
-      "metaDescription": "Calculadora de hash en línea gratuita. Genere hashes criptográficos MD5, SHA-1, SHA-256, SHA-512 a partir de la entrada de texto."
+      "metaDescription": "Calculadora de hash gratis en línea. Genera MD5, SHA-1, SHA-256, SHA-512 desde texto o archivos, sin registro, para integridad.",
+      "guide": {
+        "steps": [
+          "Escribe o pega el texto o contenido de archivo que quieres hashear.",
+          "Elige el algoritmo (MD5, SHA-1, SHA-256, SHA-512).",
+          "Copia el digest para verificar integridad o guardar una huella."
+        ],
+        "explanationTitle": "¿Qué es un hash?",
+        "formula": "hash(mensaje) → resumen de longitud fija",
+        "explanation": [
+          "Una función hash convierte cualquier entrada en una cadena de longitud fija. La misma entrada da siempre el mismo resumen, pero un pequeño cambio altera totalmente la salida.",
+          "Los hashes verifican integridad de archivos, guardan contraseñas con seguridad y alimentan blockchains y firmas digitales."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué algoritmo uso?",
+            "a": "Para seguridad, SHA-256 o SHA-512. MD5 y SHA-1 son rápidos pero rotos; solo valen para sumas de comprobación."
+          },
+          {
+            "q": "¿Puedo recuperar el texto original de un hash?",
+            "a": "No. El hashing es unidireccional; no se puede invertir. Por eso es seguro para contraseñas."
+          },
+          {
+            "q": "¿Por qué un carácter cambia todo?",
+            "a": "Las funciones hash son sensibles a avalancha: un bit cambia se extiende a un resumen completamente distinto."
+          }
+        ]
+      }
     },
     "mining-calculator": {
       "name": "Rentabilidad Minera",
       "description": "Calcule la rentabilidad de la minería de Bitcoin en función de la tasa de hash y el costo de la electricidad",
-      "metaDescription": "Calculadora gratuita de rentabilidad de la minería de Bitcoin. Calcule las ganancias diarias, mensuales y anuales según la tasa de hash, el consumo de energía y los costos de electricidad en CHF, EUR o USD."
+      "metaDescription": "Calculadora de minado cripto gratis en línea. Estima beneficio por hashrate, potencia y luz, sin registro, con vistas diaria y mensual.",
+      "guide": {
+        "steps": [
+          "Introduce la tasa de hash y el consumo de tu hardware.",
+          "Introduce el coste de electricidad por kWh y la dificultad de la red.",
+          "Lee el beneficio diario, semanal y mensual estimado tras restar la luz."
+        ],
+        "explanationTitle": "¿Qué mueve el beneficio del minado?",
+        "formula": "beneficio = (recompensa × precio) − (potencia × horas × precio/kWh)",
+        "explanation": [
+          "El beneficio del minado depende de la tasa de hash, el precio de la moneda, la dificultad de red y tu coste eléctrico. Más dificultad significa menos recompensa por trabajo.",
+          "La rentabilidad cambia cada día con precio y dificultad; las estimaciones son instantáneas, no garantías."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué el beneficio cambia diario?",
+            "a": "El precio y la dificultad se mueven constantemente y tu recompensa se comparte con todos los mineros."
+          },
+          {
+            "q": "¿Es la luz el coste principal?",
+            "a": "Suele serlo. En muchas GPUs y ASIC el coste eléctrico decide si minar es rentable."
+          },
+          {
+            "q": "¿El calculador incluye comisiones de pool?",
+            "a": "Puedes añadir un porcentaje; la estimación lo resta de las recompensas brutas para un neto realista."
+          }
+        ]
+      }
     },
     "wallet-validator": {
       "name": "Validador de billetera",
       "description": "Validar direcciones de billetera Bitcoin, Ethereum y Litecoin",
-      "metaDescription": "Validador de direcciones de billetera en línea gratuito. Compruebe si las direcciones de Bitcoin, Ethereum o Litecoin son válidas con detección de formato."
+      "metaDescription": "Validador de direcciones de wallet gratis en línea. Comprueba formato y checksum de Bitcoin, Ethereum y más, sin registro.",
+      "guide": {
+        "steps": [
+          "Pega la dirección de wallet cripto que quieres comprobar.",
+          "Elige la blockchain (Bitcoin, Ethereum, etc.).",
+          "Lee si el formato y la suma de verificación son válidos."
+        ],
+        "explanationTitle": "¿Por qué validar una dirección de wallet?",
+        "formula": "dirección → verificación de formato y checksum",
+        "explanation": [
+          "Una dirección de wallet es un identificador público para recibir fondos. Un carácter erróneo envía el dinero al lugar equivocado sin recuperación.",
+          "La validación comprueba longitud, juego de caracteres y checksum para detectar erratas antes de enviar."
+        ],
+        "faq": [
+          {
+            "q": "¿La validación confirma el dueño?",
+            "a": "No. Solo confirma que la dirección tiene el formato correcto, no quién la controla."
+          },
+          {
+            "q": "¿Una dirección válida puede estar mal?",
+            "a": "Sí — puede ser válida pero de otro. Confirma siempre la dirección completa con el receptor."
+          },
+          {
+            "q": "¿Qué blockchains se admiten?",
+            "a": "Comunes como Bitcoin (Base58Check), Ethereum (checksum EIP-55) y formatos similares."
+          }
+        ]
+      }
     },
     "mortgage-swiss": {
       "name": "Calculadora de hipotecas suiza",
@@ -3222,68 +3493,31 @@
     "percentage-calculator": {
       "name": "Calculadora de Porcentaje",
       "description": "Calcula porcentajes, cambio porcentual y diferencia porcentual",
-      "metaDescription": "Herramienta de porcentaje",
+      "metaDescription": "Calculadora de porcentajes gratis en línea. Obtén X% de Y, qué porcentaje es un número de otro, y aumentos o descuentos, sin registro.",
       "guide": {
         "steps": [
-          "Elige qué quieres calcular: la parte, el porcentaje, el valor original o la variación.",
-          "Introduce los dos valores que conoces y deja vacío el tercer campo.",
-          "Consulta el resultado y el desarrollo, y cambia de modo para resolver la siguiente cuestión."
+          "Elige la operación que necesitas (X% de Y, qué porcentaje es X de Y, o aumento/descenso).",
+          "Introduce los números en los campos.",
+          "Lee el resultado al instante bajo las entradas."
         ],
-        "explanationTitle": "Los cuatro cálculos habituales con porcentajes",
-        "formula": "Porcentaje = parte ÷ total × 100%",
+        "explanationTitle": "Cómo funcionan los porcentajes",
+        "formula": "Parte = (Porcentaje / 100) × Total",
         "explanation": [
-          "Un porcentaje es simplemente una fracción con denominador 100, y el símbolo % significa dividir entre 100. Por tanto 15% es 0,15, y multiplicar cualquier número por 0,15 da su 15%. De ahí salen cuatro casos estándar: hallar la parte a partir del total y el porcentaje, hallar el porcentaje a partir de parte y total, hallar el total a partir de parte y porcentaje, y hallar la variación entre un valor antiguo y uno nuevo.",
-          "Los errores más frecuentes aparecen en la variación. Una subida del 50% seguida de una bajada del 50% no devuelve al punto de partida: 100 sube a 150 y de ahí baja a 75, una pérdida neta del 25%. Los dos porcentajes iguales se aplican sobre bases distintas. El otro tropiezo clásico es la diferencia entre puntos porcentuales y porcentaje. Si un tipo pasa del 4% al 5%, ha subido un punto porcentual y también ha subido un 25%. Ambas cosas son ciertas y significan algo distinto."
-        ],
-        "tableTitle": "Casos habituales con porcentajes y sus fórmulas",
-        "tableHeaders": [
-          "Caso",
-          "Datos conocidos",
-          "Fórmula",
-          "Ejemplo"
-        ],
-        "tableRows": [
-          [
-            "Hallar la parte",
-            "Total y porcentaje",
-            "Total × porcentaje",
-            "15% de 200 = 30"
-          ],
-          [
-            "Hallar el porcentaje",
-            "Parte y total",
-            "Parte ÷ total × 100%",
-            "30 de 200 = 15%"
-          ],
-          [
-            "Hallar el total",
-            "Parte y porcentaje",
-            "Parte ÷ porcentaje",
-            "30 es el 15% de 200"
-          ],
-          [
-            "Hallar la variación",
-            "Valor antiguo y nuevo",
-            "(Nuevo − antiguo) ÷ antiguo × 100%",
-            "100 → 120 = +20%"
-          ]
+          "Un porcentaje es simplemente una fracción de 100. Calcular 'X% de Y' significa multiplicar Y por X dividido entre 100.",
+          "Los porcentajes se usan a diario para descuentos, impuestos, propinas, intereses y comparar cambios entre dos valores."
         ],
         "faq": [
           {
-            "q": "Si algo sube un 50% y luego baja un 50%, ¿vuelve al valor original?",
-            "a": "No. 100 sube un 50% hasta 150, y bajar un 50% de ahí deja 75, una pérdida neta del 25%. Los dos porcentajes iguales se aplican sobre bases distintas, primero 100 y después 150. Cualquier par simétrico de subida y bajada deja pérdida, y cuanto mayor es la oscilación, mayor es la diferencia."
+            "q": "¿Cómo sé qué porcentaje es un número de otro?",
+            "a": "Divide la parte por el total y multiplica por 100. Por ejemplo, 25 de 200 es (25 / 200) × 100 = 12,5 %."
           },
           {
-            "q": "¿Cuál es la diferencia entre puntos porcentuales y porcentaje?",
-            "a": "Los puntos porcentuales son la diferencia aritmética entre dos porcentajes; el porcentaje describe un cambio relativo. Si un tipo pasa del 4% al 5%, ha subido un punto porcentual y también ha subido un 25%, porque 1 es la cuarta parte de 4. Para estadísticas, los puntos porcentuales evitan casi todos los malentendidos."
+            "q": "¿Cómo calculo un aumento porcentual?",
+            "a": "Resta el valor original del nuevo, divide entre el original y multiplica por 100."
           },
           {
-            "q": "¿Cómo calculo cuánto por ciento es A mayor que B?",
-            "a": "Divide la diferencia por el valor de referencia, el que va después de la palabra que: (A − B) ÷ B × 100%. El denominador es B, no A. Con A = 120 y B = 100, A es un 20% mayor que B, mientras que B es un 16,7% menor que A, porque cambia la base."
-          },
-          {
-            "q": "¿Un 20% de descuento es lo mismo que pagar el 80%?",
-            "a": "Sí, exactamente lo mismo. Quitar un 20% deja el 80% del precio, así que el precio final es el original por 0,8. La confusión suele venir del lenguaje del descuento: una rebaja del 25% significa pagar el 75%, no el 25%."
+            "q": "¿Puedo usarlo para descuentos?",
+            "a": "Sí. Para el precio con descuento, calcula el porcentaje del precio original y réstalo."
           }
         ]
       }
@@ -3658,27 +3892,162 @@
     "standard-deviation": {
       "name": "Desviación estándar",
       "description": "Calcular la desviación estándar y la varianza.",
-      "metaDescription": "Calcular la desviación estándar, la varianza y la media de la población y la muestra."
+      "metaDescription": "Calculadora de desviación típica gratis en línea. Obtén rápido la desviación y varianza de población o muestra, sin registro, con fórmula y ejemplos.",
+      "guide": {
+        "steps": [
+          "Introduce tu conjunto de datos como una lista de números separados por comas.",
+          "Elige si se trata de una población o de una muestra.",
+          "Lee el resultado: la calculadora muestra la desviación típica y la varianza."
+        ],
+        "explanationTitle": "¿Qué es la desviación típica?",
+        "formula": "σ = √( Σ(xᵢ − μ)² / N )   (población)",
+        "explanation": [
+          "La desviación típica mide cuánto se dispersan los valores de un conjunto de datos alrededor de la media. Un valor pequeño indica que los números están muy juntos; uno grande, que varían mucho.",
+          "Se usa para comparar la consistencia entre grupos, evaluar el riesgo financiero o entender la variación en notas de exámenes y mediciones científicas."
+        ],
+        "faq": [
+          {
+            "q": "Población o muestra, ¿cuál elijo?",
+            "a": "Usa población cuando tienes todos los miembros del grupo (por ejemplo, todos los alumnos de una clase). Usa muestra cuando tus datos son solo una parte y quieres estimar el total."
+          },
+          {
+            "q": "¿Por qué la desviación de la muestra es mayor?",
+            "a": "La fórmula de la muestra divide entre n−1 en lugar de n, lo que corrige el sesgo de estimar la media con los mismos datos y da una dispersión algo mayor y más honesta."
+          },
+          {
+            "q": "¿En qué unidad está el resultado?",
+            "a": "La desviación típica siempre usa la misma unidad que tus datos originales, lo que facilita interpretarla junto con la media."
+          }
+        ]
+      }
     },
     "statistics-calculator": {
       "name": "Estadística",
       "description": "Calcular estadísticas completas para un conjunto de datos.",
-      "metaDescription": "Calcule la media, la mediana, la moda, los cuartiles, la asimetría y la curtosis"
+      "metaDescription": "Calculadora de estadística gratis en línea. Obtén media, mediana, moda, rango y desviación de una lista, sin registro, con explicación.",
+      "guide": {
+        "steps": [
+          "Introduce tus números como una lista separada por comas.",
+          "La calculadora obtiene media, mediana, moda, rango y desviación típica.",
+          "Usa el resumen para entender la forma y la dispersión de tus datos."
+        ],
+        "explanationTitle": "Medidas estadísticas clave",
+        "formula": "Media = Σx / n",
+        "explanation": [
+          "La estadística descriptiva resume un conjunto de datos en pocos números significativos. La media muestra el centro, mientras el rango y la desviación muestran la dispersión.",
+          "Estas medidas ayudan a comparar grupos, detectar valores atípicos y comunicar resultados sin plotear cada punto."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la diferencia entre media y mediana?",
+            "a": "La media es el promedio de todos los valores; la mediana es el valor central al ordenar. La mediana se ve menos afectada por valores extremos."
+          },
+          {
+            "q": "¿Cuándo uso la moda?",
+            "a": "Úsala cuando quieras el valor más frecuente, común en categorías y conteos discretos."
+          },
+          {
+            "q": "¿Por qué importa la dispersión?",
+            "a": "Dos conjuntos pueden tener la misma media pero comportarse muy distinto; las medidas de dispersión lo revelan."
+          }
+        ]
+      }
     },
     "probability-calculator": {
       "name": "Probabilidad",
       "description": "Calcular la probabilidad de eventos y combinaciones.",
-      "metaDescription": "Calcular la probabilidad de eventos, probabilidad condicional y teorema de Bayes."
+      "metaDescription": "Calculadora de probabilidad gratis en línea. Halla la chance de eventos simples o combinados, sin registro, en fracción, decimal y porcentaje.",
+      "guide": {
+        "steps": [
+          "Elige el escenario (un evento, dos eventos o combinaciones).",
+          "Introduce el número de casos favorables y totales.",
+          "Lee la probabilidad como fracción, decimal y porcentaje."
+        ],
+        "explanationTitle": "Entender la probabilidad",
+        "formula": "P = Casos favorables / Casos totales",
+        "explanation": [
+          "La probabilidad cuantifica cuán probable es un evento, de 0 (imposible) a 1 (seguro). Es la proporción de casos favorables entre todos los posibles.",
+          "Sostiene juegos de azar, evaluación de riesgos, control de calidad y cualquier decisión bajo incertidumbre."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa una probabilidad de 0,5?",
+            "a": "Significa que el evento es tan probable como no: un 50% de chance, como cara en una moneda justa."
+          },
+          {
+            "q": "¿Cómo se escribe la probabilidad?",
+            "a": "Como fracción, como decimal entre 0 y 1, o como porcentaje entre 0 % y 100 %."
+          },
+          {
+            "q": "¿Se pueden sumar probabilidades?",
+            "a": "Solo para eventos mutuamente excluyentes. Si no, debes considerar el solapamiento para no contar dos veces."
+          }
+        ]
+      }
     },
     "sample-size": {
       "name": "Tamaño de la muestra",
       "description": "Calcular el tamaño de muestra requerido para encuestas y estudios.",
-      "metaDescription": "Calcule el tamaño de muestra necesario para las encuestas con nivel de confianza y margen de error"
+      "metaDescription": "Calculadora de tamaño de muestra gratis en línea. Halla cuántas respuestas necesitas para una confianza y margen dados, sin registro.",
+      "guide": {
+        "steps": [
+          "Introduce el nivel de confianza, el margen de error y una estimación de la proporción.",
+          "Añade el tamaño de la población si es pequeña y conocida.",
+          "Lee el tamaño de muestra necesario para una conclusión fiable."
+        ],
+        "explanationTitle": "Por qué importa el tamaño de muestra",
+        "formula": "n = z² · p(1−p) / e²   (con corrección para población finita)",
+        "explanation": [
+          "El tamaño de muestra es cuántas observaciones necesitas para estimar un valor poblacional dentro de un margen de error y un nivel de confianza dados.",
+          "Una muestra muy pequeña da resultados poco fiables; una muy grande desperdicia esfuerzo. La calculadora equilibra precisión y coste."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué nivel de confianza uso?",
+            "a": "El 95 % es el más común en investigación; el 99 % da más certeza pero exige muestra mayor."
+          },
+          {
+            "q": "Si no sé la proporción poblacional, ¿qué hago?",
+            "a": "Usa 0,5 (50 %), que da el tamaño necesario más conservador y mayor."
+          },
+          {
+            "q": "¿Una población mayor siempre exige muestra mayor?",
+            "a": "No. Pasado cierto tamaño, la muestra barely cambia; solo las poblaciones pequeñas necesitan la corrección."
+          }
+        ]
+      }
     },
     "z-score-calculator": {
       "name": "Puntuación Z",
       "description": "Calcular la puntuación z y las probabilidades de distribución normal.",
-      "metaDescription": "Calcule el puntaje z y encuentre probabilidades de la distribución normal"
+      "metaDescription": "Calculadora de z-score gratis en línea. Estandariza cualquier puntuación con media y DT, sin registro, y ve cuánto se aleja de la media.",
+      "guide": {
+        "steps": [
+          "Introduce la puntuación bruta que quieres estandarizar.",
+          "Introduce la media y la desviación típica del conjunto.",
+          "Lee el z-score y lo que indica sobre la posición del valor."
+        ],
+        "explanationTitle": "¿Qué es un z-score?",
+        "formula": "z = (x − μ) / σ",
+        "explanation": [
+          "Un z-score indica cuántas desviaciones típicas está un valor por encima o por debajo de la media. Positivo está por encima; negativo, por debajo.",
+          "Los z-scores permiten comparar valores de distintas distribuciones en una escala común e identificar valores atípicos."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa un z-score de 0?",
+            "a": "Significa que el valor es exactamente igual a la media del conjunto de datos."
+          },
+          {
+            "q": "¿Un z-score más alto siempre es mejor?",
+            "a": "No necesariamente. Solo muestra la distancia a la media; si es bueno depende del contexto."
+          },
+          {
+            "q": "¿Cómo uso z-scores para percentiles?",
+            "a": "Búscalo en una tabla normal estándar o úsalo con la distribución acumulada para obtener el percentil."
+          }
+        ]
+      }
     },
     "p-value-calculator": {
       "name": "Valor p",
@@ -3698,7 +4067,34 @@
     "ratio-calculator": {
       "name": "Proporción",
       "description": "Calcular y simplificar razones, encontrar razones equivalentes",
-      "metaDescription": "Simplifique razones, encuentre razones equivalentes y escale proporciones"
+      "metaDescription": "Calculadora de razones gratis en línea. Simplifica razones A:B, encuentra valores faltantes y escala proporciones, sin registro.",
+      "guide": {
+        "steps": [
+          "Introduce los valores de tu razón, por ejemplo A : B.",
+          "Añade un valor conocido del lado que falta si quieres escalarla.",
+          "Lee la razón simplificada y cualquier equivalente al instante."
+        ],
+        "explanationTitle": "¿Qué es una razón?",
+        "formula": "A : B  →  divide ambos por mcd(A, B) para simplificar",
+        "explanation": [
+          "Una razón compara dos cantidades y muestra su tamaño relativo. Simplificarla conserva la misma relación con los números enteros más pequeños.",
+          "Las razones aparecen en recetas, mapas, finanzas y mezclas: dondequiera que una cantidad deba ser proporcional a otra."
+        ],
+        "faq": [
+          {
+            "q": "¿Cómo simplifico una razón?",
+            "a": "Divide ambos lados por su máximo común divisor para que no compartan factor salvo el 1."
+          },
+          {
+            "q": "¿Puedo escalar una razón a un total conocido?",
+            "a": "Sí. Si conoces una parte, la calculadora halla la otra que preserva la misma proporción."
+          },
+          {
+            "q": "¿Qué es una razón 1:1?",
+            "a": "Significa que las dos cantidades son iguales; escalar una escala la otra en la misma proporción."
+          }
+        ]
+      }
     },
     "binary-calculator": {
       "name": "Binario",
@@ -3713,7 +4109,34 @@
     "scientific-notation": {
       "name": "Notación científica",
       "description": "Convertir a/desde notación científica y realizar operaciones",
-      "metaDescription": "Convertir números a notación científica y realizar operaciones."
+      "metaDescription": "Calculadora de notación científica gratis en línea. Convierte cualquier número a o desde notación científica, sin registro, con mantisa y exponente.",
+      "guide": {
+        "steps": [
+          "Escribe el número que quieres convertir en el campo de entrada.",
+          "Elige convertir a notación científica, o de notación científica a decimal.",
+          "Copia el resultado formateado con su exponente y mantisa."
+        ],
+        "explanationTitle": "¿Qué es la notación científica?",
+        "formula": "a × 10ⁿ  donde 1 ≤ |a| < 10",
+        "explanation": [
+          "La notación científica escribe los números como un coeficiente entre 1 y 10 multiplicado por una potencia de diez. Hace que los valores muy grandes o muy pequeños sean compactos y fáciles de leer.",
+          "Se usa mucho en ciencia, ingeniería e informática para manejar valores como la velocidad de la luz o escalas atómicas sin largas cadenas de ceros."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué son la mantisa y el exponente?",
+            "a": "La mantisa es el coeficiente (el número entre 1 y 10) y el exponente es la potencia de diez que lo escala."
+          },
+          {
+            "q": "¿Cómo convierto un decimal a notación científica?",
+            "a": "Mueve la coma decimal para que quede un solo dígito distinto de cero a su izquierda; el número de posiciones movidas es el exponente (positivo para números grandes, negativo para pequeños)."
+          },
+          {
+            "q": "¿La calculadora acepta números negativos?",
+            "a": "Sí. El signo se queda en la mantisa y solo se normaliza el valor absoluto al rango 1–10."
+          }
+        ]
+      }
     },
     "big-number": {
       "name": "Número grande",
@@ -11575,7 +11998,9 @@
         "q": "¿Puedo usar los resultados para declaraciones fiscales o decisiones médicas?",
         "a": "No. Las herramientas ofrecen estimaciones con fines orientativos. Los resultados financieros no sustituyen el asesoramiento fiscal profesional y los resultados de salud no constituyen un diagnóstico. Para decisiones importantes consulta a un profesional titulado."
       }
-    ]
+    ],
+    "popularTitle": "Calculadoras Populares",
+    "popularDesc": "Accede directamente a las calculadoras que nuestros visitantes usan más."
   },
   "guide": {
     "howToUseTitle": "Cómo usar {name}",

@@ -3,7 +3,7 @@
 import { ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useMessages, useTranslations } from "next-intl";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getConverterBySlug } from "@/lib/registry/converters";
 
 type FaqItem = { q: string; a: string };
@@ -85,9 +85,9 @@ export function ToolContentSection({
 
 			<Card className="mb-8 border-border">
 				<CardHeader>
-					<CardTitle className="text-lg">
+					<h2 className="text-lg font-semibold tracking-tight">
 						{t("howToUseTitle", { name: toolName })}
-					</CardTitle>
+					</h2>
 				</CardHeader>
 				<CardContent>
 					<ol className="space-y-2.5">
@@ -105,9 +105,9 @@ export function ToolContentSection({
 
 			<Card className="mb-8 border-border">
 				<CardHeader>
-					<CardTitle className="text-lg">
+					<h2 className="text-lg font-semibold tracking-tight">
 						{explanationTitle ?? t("howItWorksTitle", { name: toolName })}
-					</CardTitle>
+					</h2>
 				</CardHeader>
 				<CardContent className="space-y-3">
 					{guide?.formula ? (
@@ -163,7 +163,7 @@ export function ToolContentSection({
 
 			<Card className="mb-8 border-border">
 				<CardHeader>
-					<CardTitle className="text-lg">{t("faqTitle")}</CardTitle>
+					<h2 className="text-lg font-semibold tracking-tight">{t("faqTitle")}</h2>
 				</CardHeader>
 				<CardContent className="space-y-2">
 					{faq.map((item) => (

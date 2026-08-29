@@ -29,7 +29,7 @@ export async function generateMetadata({
   });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: [
       "vmware",

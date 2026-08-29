@@ -30,7 +30,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "converter.bandwidth-delay-product" });
 
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["bandwidth", "delay", "product", "bdp", "tcp", "buffer", "window size", "network"],
   };

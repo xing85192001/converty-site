@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "nav.finance" });
-  return { title: t("name"), description: t("description") };
+  return { title: `Free Online ${t("name")}`, description: t("description") };
 }
 
 export default async function FinancePage({ params }: { params: Promise<{ locale: string }> }) {

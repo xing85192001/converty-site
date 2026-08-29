@@ -95,7 +95,8 @@
     "advertisement": "Werbung",
     "toolsCount": "Werkzeuge",
     "sitemapTitle": "Sitemap",
-    "sitemapIntro": "Durchsuche jedes baikecalc-Werkzeug, jede Kategorie und jeden Blogbeitrag. Nach Kategorie indexiert für schnellen Zugriff."
+    "sitemapIntro": "Durchsuche jedes baikecalc-Werkzeug, jede Kategorie und jeden Blogbeitrag. Nach Kategorie indexiert für schnellen Zugriff.",
+    "relatedCategories": "Verwandte Kategorien"
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -854,12 +855,66 @@
     "composition": {
       "name": "Kompositions",
       "description": "Berechnen Sie das Sichtfeld aus Brennweite und Entfernung",
-      "metaDescription": "Berechnen Sie fotografisches Sichtfeld und Komposition"
+      "metaDescription": "Kostenloser Online-Rechner für Bildkomposition. Hol dir Drittel- und Goldener-Schnitt-Punkte für jede Größe, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Wähle eine Kompositionsregel (Drittelregel, Goldener Schnitt u. a.).",
+          "Gib Breite und Höhe des Bildes in Pixeln oder mm ein.",
+          "Lies die wichtigen Linien und Punkte, um dein Motiv zu platzieren."
+        ],
+        "explanationTitle": "Warum Kompositionsregeln helfen",
+        "formula": "Die Drittelregel teilt das Bild in ein 3×3-Raster",
+        "explanation": [
+          "Kompositionshilfen platzieren dein Motiv dorthin, wohin das Auge natürlich wandert, und schaffen ausgewogene, spannende Bilder statt flacher Zentrierung.",
+          "Drittelregel und Goldener Schnitt sind Startpunkte; brich sie bewusst, sobald du verstehst, warum sie wirken."
+        ],
+        "faq": [
+          {
+            "q": "Was ist die Drittelregel?",
+            "a": "Stell dir ein 3×3-Raster vor; setze Schlüsselelemente auf Linien oder Schnittpunkte für ein ausgewogenes, dynamisches Bild."
+          },
+          {
+            "q": "Ist der Goldene Schnitt besser?",
+            "a": "Er ist eine feinere, spiralige Hilfe, die manche natürlicher finden; beide sind Werkzeuge, keine Gesetze."
+          },
+          {
+            "q": "Sollte man die Regeln immer befolgen?",
+            "a": "Nein. Lerne sie, dann brich sie mit Absicht. Zentrieren wirkt bei Symmetrie und Minimalismus stark."
+          }
+        ]
+      }
     },
     "depth-of-field": {
       "name": "Schaerfentiefe",
       "description": "Berechnen Sie die Schaerfentiefe aus Blende, Brennweite und Entfernung",
-      "metaDescription": "Berechnen Sie die Schaerfentiefe fuer die Fotografie"
+      "metaDescription": "Kostenloser Online-Rechner für Schärfentiefe. Finde Nah- und Fern grenzen und Unschärfe für jedes Objektiv schnell, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Stelle die Kamera auf Blendenautomatik oder Manuell und wähle eine Blende.",
+          "Gib Brennweite, Blende und Fokusabstand in den Rechner ein.",
+          "Lies die Nah- und Fern grenzen sowie die gesamte Schärfentiefe."
+        ],
+        "explanationTitle": "Was ist Schärfentiefe?",
+        "formula": "Schärfentiefe hängt von Blende, Brennweite, Fokusabstand und Zerstreuungskreis ab",
+        "explanation": [
+          "Schärfentiefe ist der Abstandsbereich im Bild, der akzeptabel scharf wirkt. Eine offene Blende (kleine Blendenzahl) liefert geringe Tiefe mit unscharfem Hintergrund; eine geschlossene Blende hält mehr scharf.",
+          "Fotografen nutzen sie kreativ für Porträts (unscharfer Hintergrund) und Landschaften (alles scharf von vorne bis hinten)."
+        ],
+        "faq": [
+          {
+            "q": "Was verstärkt die Hintergrundunschärfe?",
+            "a": "Eine offene Blende (kleinere Blendenzahl), eine längere Brennweite und ein näherer Fokusabstand erhöhen alle die Trennung und Unschärfe."
+          },
+          {
+            "q": "Warum erhöht Abblenden die Schärfe?",
+            "a": "Eine kleinere Blende (höhere Blendenzahl) verbreitert den akzeptablen Schärfebereich, sodass nah und fern scharf wirken."
+          },
+          {
+            "q": "Was ist der Zerstreuungskreis?",
+            "a": "Er ist der größte Unschärfefleck, der noch als Punkt wahrgenommen wird. Kleinere Sensoren brauchen engere Kreise, was die Schärfentiefe reduziert."
+          }
+        ]
+      }
     },
     "dpi": {
       "name": "DPI",
@@ -990,22 +1045,130 @@
     "focal-equivalent": {
       "name": "Brennweiten-Aequivalent",
       "description": "Gleichen Sie Einstellungen zwischen verschiedenen Sensorgroessen an",
-      "metaDescription": "Berechnen Sie aequivalente Brennweiten ueber Sensorgroessen hinweg"
+      "metaDescription": "Kostenloser Online-Rechner für äquivalente Brennweite. Wandle jedes Objektiv schnell auf Vollformat um, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Gib die tatsächliche Brennweite deines Objektivs ein.",
+          "Gib den Crop-Faktor des Sensors ein (z. B. 1,5 für APS-C).",
+          "Lies die Kleinbild-Äquivalenzbrennweite und den Bildwinkel."
+        ],
+        "explanationTitle": "Was ist eine äquivalente Brennweite?",
+        "formula": "äquivalent = Brennweite × Crop-Faktor",
+        "explanation": [
+          "Verschiedene Sensorgrößen erfassen bei gleichem Objektiv unterschiedliche Bildwinkel. Die Kleinbild-Äquivalenz sagt, welche Brennweite an Vollformat denselben Blickwinkel gibt.",
+          "So lassen sich Objektive verschiedener Systeme vergleichen und einschätzen, wie stark herangezoomt ein Bild wirkt."
+        ],
+        "faq": [
+          {
+            "q": "Warum ist die Sensorgröße wichtig?",
+            "a": "Kleinere Sensoren beschneiden das Bild und vergrößern die Brennweite effektiv, sodass dasselbe Objektiv weiter herangezoomt wirkt."
+          },
+          {
+            "q": "Was ist der Crop-Faktor?",
+            "a": "Er ist das Verhältnis der Vollformat-Diagonale zur Sensor-Diagonale; APS-C etwa 1,5, Micro Four Thirds etwa 2,0."
+          },
+          {
+            "q": "Ändert die Äquivalenz die Schärfentiefe?",
+            "a": "Die Perspektive bleibt gleich, nur der Bildwinkel wird angepasst. Bei gleicher Bildausschnitt ändert sich auch die Tiefe."
+          }
+        ]
+      }
     },
     "hyperfocal": {
       "name": "Hyperfokale-Entfernungs",
       "description": "Berechnen Sie die hyperfokale Entfernung fuer maximale Schaerfentiefe",
-      "metaDescription": "Berechnen Sie die hyperfokale Entfernung fuer Landschaftsfotografie"
+      "metaDescription": "Kostenloser Online-Rechner für hyperfokale Distanz. Finde den Fokuspunkt für maximale Tiefe schnell, ohne Anmeldung, mit Formel.",
+      "guide": {
+        "steps": [
+          "Gib die Brennweite und Blende ein, mit denen du fotografieren willst.",
+          "Gib den Zerstreuungskreis deines Sensors ein.",
+          "Lies die hyperfokale Distanz und stelle darauf für maximale Tiefe scharf."
+        ],
+        "explanationTitle": "Was ist die hyperfokale Distanz?",
+        "formula": "H = f² / (N · c) + f",
+        "explanation": [
+          "Die hyperfokale Distanz ist der Fokusabstand, bei dem alles ab der Hälfte dieses Abstands bis unendlich scharf wirkt. Sie ist das Geheimnis maximaler Landschaftstiefe.",
+          "Fokussierst du auf den Hyperfokus, reicht das ferne Ende bis unendlich und das nahe Ende ist so nah wie möglich."
+        ],
+        "faq": [
+          {
+            "q": "Warum auf die hyperfokale Distanz fokussieren?",
+            "a": "Sie maximiert die Schärfentiefe: der Hintergrund reicht bis unendlich und der Vordergrund bleibt scharf — ideal für Landschaften."
+          },
+          {
+            "q": "Ändert eine offene Blende das stark?",
+            "a": "Ja. Eine offene Blende (kleine Blendenzahl) schiebt die hyperfokale Distanz weiter weg und verkleinert die nahe Schärfegrenze."
+          },
+          {
+            "q": "Brauche ich ein Stativ?",
+            "a": "Für tiefe Landschaftsschärfe blendest du meist ab, was lange Verschlusszeiten braucht — ein Stativ hilft."
+          }
+        ]
+      }
     },
     "nd-filter": {
       "name": "ND-Filter",
       "description": "Berechnen Sie die Belichtungszeit mit ND-Filtern",
-      "metaDescription": "Berechnen Sie Belichtungszeiten mit Neutraldichtefiltern"
+      "metaDescription": "Kostenloser Online-ND-Filter-Rechner. Wandle Verschlusszeiten für jede ND-Stufe schnell um, ohne Anmeldung, für Langzeitbelichtungen.",
+      "guide": {
+        "steps": [
+          "Gib die Verschlusszeit ein, die du ohne Filter nutzen würdest.",
+          "Gib die Filterstärke in Blendenstufen ein (z. B. ND8 = 3 Stufen).",
+          "Lies die neue Verschlusszeit mit aufgesetztem ND-Filter."
+        ],
+        "explanationTitle": "Was macht ein ND-Filter?",
+        "formula": "Belichtungszeit × 2^(Stufen)",
+        "explanation": [
+          "Ein Neutralgraufilter (ND) reduziert das einfallende Licht ohne Farbänderung. So kannst du bei hellem Licht lange Verschlusszeiten für seidiges Wasser oder Bewegungsunschärfe nutzen.",
+          "Jede Stufe verdoppelt die nötige Zeit; ein ND1000 erlaubt tagsüber mehrere Sekunden Belichtung."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeuten ND8, ND64, ND1000?",
+            "a": "Die Zahl ist der Lichtreduktionsfaktor; die Stufen sind sein Logarithmus zur Basis 2. ND8 = 3, ND64 = 6, ND1000 ≈ 10 Stufen."
+          },
+          {
+            "q": "Kann ich ND-Filter stapeln?",
+            "a": "Ja, aber die Stufen addieren sich und können die Zeit so verlängern, dass Fernauslöser und Stativ nötig sind."
+          },
+          {
+            "q": "Warum ND beim Video?",
+            "a": "Er hält bei Tageslicht eine filmische Blende (geringe Tiefe) ohne Überbelichtung."
+          }
+        ]
+      }
     },
     "golden-hour": {
       "name": "Goldene-Stunde-Guide",
       "description": "Berechnen Sie die Zeiten der goldenen Stunde basierend auf Ihrem Standort",
-      "metaDescription": "Finden Sie Zeiten der goldenen und blauen Stunde fuer Ihren Standort"
+      "metaDescription": "Kostenloser Online-Rechner für die goldene Stunde. Finde Gold- und Blaue-Stunde für Ort und Datum schnell, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Gib deinen Ort ein (oder erlaube die Standortermittlung).",
+          "Wähle das geplante Aufnahmedatum.",
+          "Lies Goldstunden- und Blaue-Stunde-Start/-Endzeiten für den Tag."
+        ],
+        "explanationTitle": "Was sind Goldene und Blaue Stunde?",
+        "formula": "Abgeleitet von Sonnenhöhe ≈ 6° (golden) und −4° bis −6° (blau)",
+        "explanation": [
+          "Die goldene Stunde ist die Zeit kurz nach Sonnenaufgang und vor Sonnenuntergang mit warmem, weichem, gerichtetem Licht, das Motive und Landschaften schmeichelt.",
+          "Die blaue Stunde folgt, wenn die Sonne knapp unter dem Horizont steht und der Himmel tiefblau wird — ideal für Stadtlandschaften und Langzeitbelichtungen."
+        ],
+        "faq": [
+          {
+            "q": "Wie lange dauert die goldene Stunde?",
+            "a": "Meist 20–60 Minuten je nach Breitengrad und Jahreszeit; näher am Äquator und im Winter bei hohen Breiten länger."
+          },
+          {
+            "q": "Wofür ist die blaue Stunde?",
+            "a": "Ihr gleichmäßiges, kühles Licht und erleuchtete Fenster machen sie ideal für Architektur, Brücken und Spiegelungen nach Sonnenuntergang."
+          },
+          {
+            "q": "Geht das auch bei Indoor-Porträts?",
+            "a": "Das warme Fensterlicht in der goldenen Stunde eignet sich hervorragend für natürliche Indoor-Porträts am Fenster."
+          }
+        ]
+      }
     },
     "cooking-units": {
       "name": "Kocheinheiten",
@@ -1015,22 +1178,130 @@
     "exchange-rate": {
       "name": "Wechselkurs",
       "description": "Konvertieren zwischen Kryptowahrungen und Fiat-Wahrungen (CHF, EUR, USD)",
-      "metaDescription": "Kostenloser Kryptowahrungswechselkursrechner. Konvertieren Sie Bitcoin, Ethereum, Litecoin, Ripple, Dogecoin und Cardano in CHF, EUR oder USD."
+      "metaDescription": "Kostenloser Online-Wechselkursrechner. Rechne Währungen schnell mit aktuellen Kursen um, ohne Anmeldung, USD EUR GBP JPY CNY CHF u. a.",
+      "guide": {
+        "steps": [
+          "Gib den zu konvertierenden Betrag ein.",
+          "Wähle Ausgangs- und Zielwährung aus den Listen.",
+          "Lies den umgerechneten Betrag mit dem aktuell verfügbaren Kurs."
+        ],
+        "explanationTitle": "Wie Wechselkurse funktionieren",
+        "formula": "Betrag × Kurs = umgerechneter Betrag",
+        "explanation": [
+          "Ein Wechselkurs ist der Preis einer Währung in einer anderen. Er ändert sich ständig mit Angebot, Nachfrage, Zinsen und Wirtschaftsnachrichten.",
+          "Unser Rechner nutzt einen aktuellen Referenzkurs für schnelle Schätzungen; bei Transaktionen legt deine Bank den Endkurs fest."
+        ],
+        "faq": [
+          {
+            "q": "Sind die Kurse live?",
+            "a": "Das Tool nutzt einen aktuellen Referenzkurs für schnelle Schätzungen. Bestätige den genauen Kurs bei deinem Anbieter vor der Transaktion."
+          },
+          {
+            "q": "Warum bekomme ich eine andere Rate bei der Bank?",
+            "a": "Banken und Wechselstuben schlagen eine Marge auf den Marktpreis auf, sodass dein Kurs etwas schlechter ist."
+          },
+          {
+            "q": "Welche Währungen werden unterstützt?",
+            "a": "Wichtige Paare wie USD, EUR, GBP, JPY, CNY und CHF für schnelle Referenzumrechnungen."
+          }
+        ]
+      }
     },
     "hash-calculator": {
       "name": "Hash-Rechner",
       "description": "Berechnen Sie MD5, SHA-1, SHA-256, SHA-512 Hash-Werte",
-      "metaDescription": "Kostenloser Online-Hash-Rechner. Generieren Sie MD5, SHA-1, SHA-256, SHA-512 kryptographische Hashes aus Text."
+      "metaDescription": "Kostenloser Online-Hash-Rechner. Erzeuge MD5-, SHA-1-, SHA-256-, SHA-512-Digests aus Text oder Dateien schnell, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Tippe oder füge den Text oder Dateiinhalt ein, den du hashen willst.",
+          "Wähle den Algorithmus (MD5, SHA-1, SHA-256, SHA-512).",
+          "Kopiere den Digest, um Integrität zu prüfen oder einen Fingerabdruck zu speichern."
+        ],
+        "explanationTitle": "Was ist ein Hash?",
+        "formula": "hash(Nachricht) → Digest fester Länge",
+        "explanation": [
+          "Eine Hash-Funktion wandelt beliebige Eingaben in eine Zeichenkette fester Länge um. Gleiche Eingabe liefert immer denselben Digest, eine kleine Änderung ändert die Ausgabe völlig.",
+          "Hashes prüfen Dateiintegrität, speichern Passwörter sicher und bilden die Basis von Blockchains und digitalen Signaturen."
+        ],
+        "faq": [
+          {
+            "q": "Welchen Algorithmus soll ich nutzen?",
+            "a": "Für Sicherheit SHA-256 oder SHA-512. MD5 und SHA-1 sind schnell, aber unsicher, und nur für Checksummen okay."
+          },
+          {
+            "q": "Kann man den Text aus dem Hash rekonstruieren?",
+            "a": "Nein. Hashing ist einweg; man kann es nicht umkehren. Das macht es sicher für Passwörter."
+          },
+          {
+            "q": "Warum ändert ein Zeichen alles?",
+            "a": "Hash-Funktionen sind avalanche-empfindlich: ein einziges Bit breitet sich zu einem völlig anderen Digest aus."
+          }
+        ]
+      }
     },
     "mining-calculator": {
       "name": "Mining-Rentabilitat",
       "description": "Berechnen Sie die Bitcoin-Mining-Rentabilitat basierend auf Hashrate und Stromkosten",
-      "metaDescription": "Kostenloser Bitcoin-Mining-Rentabilitatsrechner. Berechnen Sie tagliche, monatliche und jahrliche Gewinne basierend auf Hashrate, Stromverbrauch und Stromkosten in CHF, EUR oder USD."
+      "metaDescription": "Kostenloser Online-Mining-Rechner. Schätze Gewinn aus Hashrate, Leistung und Stromkosten schnell, ohne Anmeldung, täglich und monatlich.",
+      "guide": {
+        "steps": [
+          "Gib die Hashrate und den Stromverbrauch deiner Hardware ein.",
+          "Gib die Stromkosten pro kWh und die Netzwerkschwierigkeit der Coins ein.",
+          "Lies den geschätzten täglichen, wöchentlichen und monatlichen Gewinn abzüglich Strom."
+        ],
+        "explanationTitle": "Was bestimmt den Mining-Gewinn?",
+        "formula": "Gewinn = (Belohnung × Preis) − (Leistung × Stunden × Preis/kWh)",
+        "explanation": [
+          "Der Mining-Gewinn hängt von Hashrate, Coin-Preis, Netzwerkschwierigkeit und Stromkosten ab. Höhere Schwierigkeit bedeutet weniger Belohnung pro Arbeit.",
+          "Die Rentabilität ändert sich täglich mit Preis und Schwierigkeit; Schätzungen sind Momentaufnahmen, keine Garantie."
+        ],
+        "faq": [
+          {
+            "q": "Warum ändert sich der Gewinn täglich?",
+            "a": "Coin-Preis und Schwierigkeit bewegen sich ständig, und die Belohnung wird unter allen Minern geteilt."
+          },
+          {
+            "q": "Ist Strom die Hauptkosten?",
+            "a": "Meist ja. Bei vielen GPUs und ASICs entscheidet die Stromkosten, ob Mining überhaupt lohnt."
+          },
+          {
+            "q": "Berücksichtigt der Rechner Poolgebühren?",
+            "a": "Du kannst einen Pool-Prozentsatz eingeben; die Schätzung zieht ihn von den Brutto-Belohnungen ab."
+          }
+        ]
+      }
     },
     "wallet-validator": {
       "name": "Wallet-Validator",
       "description": "Validieren Sie Bitcoin-, Ethereum- und Litecoin-Wallet-Adressen",
-      "metaDescription": "Kostenloser Online-Wallet-Adress-Validator. Prufen Sie, ob Bitcoin-, Ethereum- oder Litecoin-Adressen mit Formaterkennung gultig sind."
+      "metaDescription": "Kostenloser Online-Validator für Wallet-Adressen. Prüfe Bitcoin-, Ethereum- und weitere Adressen auf Format und Prüfsumme, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Füge die zu prüfende Krypto-Wallet-Adresse ein.",
+          "Wähle die Blockchain (Bitcoin, Ethereum usw.).",
+          "Lies, ob Format und Prüfsumme gültig sind."
+        ],
+        "explanationTitle": "Warum eine Wallet-Adresse validieren?",
+        "formula": "Adresse → Prüfsummen- und Formatprüfung",
+        "explanation": [
+          "Eine Wallet-Adresse ist ein öffentlicher Empfangsbezeichner. Ein falsches Zeichen schickt Geld an den falschen Ort, ohne Wiederherstellung.",
+          "Die Validierung prüft Länge, Zeichensatz und Prüfsumme, damit Tippfehler vor dem Senden auffallen."
+        ],
+        "faq": [
+          {
+            "q": "Bestätigt die Prüfung den Besitzer?",
+            "a": "Nein. Sie bestätigt nur, dass die Adresse wohlgeformt ist, nicht wer sie kontrolliert."
+          },
+          {
+            "q": "Kann eine gültige Adresse trotzdem falsch sein?",
+            "a": "Ja — sie kann gültig, aber von jemand anderem sein. Immer die volle Adresse mit dem Empfänger abgleichen."
+          },
+          {
+            "q": "Welche Blockchains werden unterstützt?",
+            "a": "Gängige wie Bitcoin (Base58Check), Ethereum (EIP-55-Prüfsumme) und ähnliche Formate."
+          }
+        ]
+      }
     },
     "mortgage-swiss": {
       "name": "Schweizer Hypothekenrechner",
@@ -3216,68 +3487,31 @@
     "percentage-calculator": {
       "name": "Prozentrechner",
       "description": "Berechnet Prozent, Prozentänderung und Prozentdifferenz",
-      "metaDescription": "Prozentrechner",
+      "metaDescription": "Kostenloser Online-Prozentrechner. Ermittle X% von Y, wie viel % eine Zahl von einer anderen ist, sowie Zuwächse oder Rabatte, ohne Anmeldung.",
       "guide": {
         "steps": [
-          "Wählen Sie, was Sie berechnen möchten: den Anteil, den Prozentsatz, den Grundwert oder die Veränderung.",
-          "Tragen Sie die zwei bekannten Werte ein und lassen Sie das dritte Feld leer.",
-          "Lesen Sie Ergebnis und Rechenweg ab und wechseln Sie den Modus für die nächste Aufgabe."
+          "Wähle die gewünschte Prozentrechnung (X% von Y, X ist wie viel % von Y oder Zu-/Abnahme).",
+          "Gib die Zahlen in die Eingabefelder ein.",
+          "Lies das Ergebnis sofort unter den Eingaben ab."
         ],
-        "explanationTitle": "Die vier häufigsten Prozentrechnungen",
-        "formula": "Prozentsatz = Anteil ÷ Grundwert × 100%",
+        "explanationTitle": "So funktioniert die Prozentrechnung",
+        "formula": "Anteil = (Prozent / 100) × Ganzes",
         "explanation": [
-          "Ein Prozentwert ist nichts anderes als ein Bruch mit dem Nenner 100; das Zeichen % bedeutet geteilt durch 100. Also ist 15% gleich 0,15, und jede Zahl mit 0,15 multipliziert ergibt 15% von ihr. Daraus folgen vier Standardfälle: aus Grundwert und Prozentsatz den Anteil, aus Anteil und Grundwert den Prozentsatz, aus Anteil und Prozentsatz den Grundwert und aus Alt- und Neuwert die Veränderung.",
-          "Die meisten Fehler passieren bei der Veränderung. Ein Plus von 50% und danach ein Minus von 50% führt nicht zum Ausgangswert zurück: Aus 100 wird 150, daraus 75, also 25 Verlust. Die beiden gleich großen Prozentsätze wirken auf unterschiedliche Grundwerte. Die zweite Falle ist der Unterschied zwischen Prozentpunkten und Prozent. Steigt ein Zins von 4% auf 5%, ist das ein Prozentpunkt mehr und zugleich ein Plus von 25%. Beides stimmt, bedeutet aber Verschiedenes."
-        ],
-        "tableTitle": "Häufige Prozentfälle und Formeln",
-        "tableHeaders": [
-          "Fall",
-          "Bekannt",
-          "Formel",
-          "Beispiel"
-        ],
-        "tableRows": [
-          [
-            "Anteil finden",
-            "Grundwert und Prozentsatz",
-            "Grundwert × Prozentsatz",
-            "15% von 200 = 30"
-          ],
-          [
-            "Prozentsatz finden",
-            "Anteil und Grundwert",
-            "Anteil ÷ Grundwert × 100%",
-            "30 von 200 = 15%"
-          ],
-          [
-            "Grundwert finden",
-            "Anteil und Prozentsatz",
-            "Anteil ÷ Prozentsatz",
-            "30 sind 15% von 200"
-          ],
-          [
-            "Veränderung finden",
-            "Alt- und Neuwert",
-            "(Neu − Alt) ÷ Alt × 100%",
-            "100 → 120 = +20%"
-          ]
+          "Eine Prozentzahl ist einfach ein Hundertstel. 'X% von Y' bedeutet, Y mit X geteilt durch 100 zu multiplizieren.",
+          "Prozente brauchen wir täglich für Rabatte, Steuern, Trinkgeld, Zinsen und den Vergleich von Veränderungen zwischen zwei Werten."
         ],
         "faq": [
           {
-            "q": "Kommt man nach +50% und −50% wieder auf den alten Wert?",
-            "a": "Nein. Aus 100 wird nach +50% die 150, und 50% davon abgezogen bleiben 75, also 25 Verlust. Die beiden gleich großen Prozentsätze beziehen sich auf unterschiedliche Grundwerte, zuerst 100, dann 150. Jedes symmetrische Auf und Ab bedeutet einen Verlust, und je größer die Schwankung, desto deutlicher."
+            "q": "Wie finde ich heraus, wie viel Prozent eine Zahl von einer anderen ist?",
+            "a": "Teile den Teil durch das Ganze und multipliziere mit 100. Beispiel: 25 von 200 ist (25 / 200) × 100 = 12,5 %."
           },
           {
-            "q": "Worin unterscheiden sich Prozentpunkte und Prozent?",
-            "a": "Prozentpunkte sind die einfache Differenz zweier Prozentsätze, Prozent beschreibt die relative Veränderung. Steigt ein Zins von 4% auf 5%, sind das ein Prozentpunkt mehr und zugleich ein Anstieg um 25%, denn 1 ist ein Viertel von 4. Bei Statistiken sind Prozentpunkte deutlich weniger missverständlich."
+            "q": "Wie berechne ich eine prozentuale Zunahme?",
+            "a": "Subtrahiere den Ursprungswert vom neuen Wert, teile durch den Ursprungswert und multipliziere mit 100."
           },
           {
-            "q": "Wie berechne ich, um wie viel Prozent A größer ist als B?",
-            "a": "Teilen Sie die Differenz durch den Vergleichswert, also den Wert nach dem Wort als: (A − B) ÷ B × 100%. Der Nenner ist B, nicht A. Bei A = 120 und B = 100 ist A um 20% größer als B, während B um 16,7% kleiner als A ist, weil sich der Bezugswert ändert."
-          },
-          {
-            "q": "Ist 20% Rabatt dasselbe wie 80% zahlen?",
-            "a": "Ja, exakt. 20% weniger bedeutet, dass 80% des Preises übrig bleiben, der Endpreis ist also der Originalpreis mal 0,8. Verwirrung entsteht meist durch die Rabattsprache: 25% Reduktion heißt 75% zahlen, nicht 25%."
+            "q": "Kann ich es für Rabatte nutzen?",
+            "a": "Ja. Um einen Sale-Preis nach Rabatt zu finden, berechne den Prozentwert vom Originalpreis und ziehe ihn ab."
           }
         ]
       }
@@ -3607,27 +3841,162 @@
     "standard-deviation": {
       "name": "Standardabweichungs",
       "description": "Berechnen Sie Standardabweichung und Varianz",
-      "metaDescription": "Berechnen Sie Populations- und Stichproben-Standardabweichung und Varianz"
+      "metaDescription": "Kostenloser Online-Standardabweichungsrechner. Ermitteln Sie schnell die Standardabweichung und Varianz von Population oder Stichprobe, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Geben Sie Ihren Datensatz als durch Kommas getrennte Zahlenliste ein.",
+          "Wählen Sie, ob es sich um eine Grundgesamtheit oder eine Stichprobe handelt.",
+          "Lesen Sie das Ergebnis: Der Rechner zeigt Standardabweichung und Varianz."
+        ],
+        "explanationTitle": "Was ist die Standardabweichung?",
+        "formula": "σ = √( Σ(xᵢ − μ)² / N )   (Grundgesamtheit)",
+        "explanation": [
+          "Die Standardabweichung misst, wie stark sich die Werte eines Datensatzes um den Mittelwert streuen. Ein kleiner Wert bedeutet, dass die Zahlen eng beieinanderliegen, ein großer Wert deutet auf starke Schwankungen hin.",
+          "Sie wird genutzt, um Konsistenz zwischen Gruppen zu vergleichen, Finanzrisiken einzuschätzen oder Variationen bei Testergebnissen und Messungen zu verstehen."
+        ],
+        "faq": [
+          {
+            "q": "Grundgesamtheit oder Stichprobe — was wähle ich?",
+            "a": "Wählen Sie Grundgesamtheit, wenn Sie alle Mitglieder der Gruppe haben (z. B. alle Schüler einer Klasse). Wählen Sie Stichprobe, wenn Ihre Daten nur eine Teilmenge sind und Sie die Gesamtheit schätzen möchten."
+          },
+          {
+            "q": "Warum ist die Stichproben-Standardabweichung größer?",
+            "a": "Die Stichprobenformel teilt durch n−1 statt n, was den Bias korrigiert, der durch die Schätzung des Mittelwerts aus denselben Daten entsteht, und liefert eine leicht größere, ehrlichere Streuung."
+          },
+          {
+            "q": "In welcher Einheit ist das Ergebnis?",
+            "a": "Die Standardabweichung hat immer dieselbe Einheit wie Ihre Originaldaten, was die Interpretation zusammen mit dem Mittelwert erleichtert."
+          }
+        ]
+      }
     },
     "statistics-calculator": {
       "name": "Statistik",
       "description": "Berechnen Sie umfassende Statistiken fuer einen Datensatz",
-      "metaDescription": "Berechnen Sie Mittelwert, Median, Modus, Quartile, Schiefe und Woelbung"
+      "metaDescription": "Kostenloser Online-Statistikrechner. Erhalte Mittelwert, Median, Modus, Spannweite und Standardabweichung schnell, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Gib deine Zahlen als kommagetrennte Liste ein.",
+          "Der Rechner ermittelt Mittelwert, Median, Modus, Spannweite und Standardabweichung.",
+          "Nutze die Zusammenfassung, um Form und Streuung deiner Daten zu verstehen."
+        ],
+        "explanationTitle": "Wichtige statistische Kennzahlen",
+        "formula": "Mittelwert = Σx / n",
+        "explanation": [
+          "Beschreibende Statistik fasst einen Datensatz in wenigen aussagekräftigen Zahlen zusammen. Der Mittelwert zeigt das Zentrum, Spannweite und Standardabweichung die Streuung.",
+          "Diese Maße helfen, Gruppen zu vergleichen, Ausreißer zu erkennen und Ergebnisse klar zu kommunizieren, ohne jeden Punkt zu plotten."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Mittelwert und Median?",
+            "a": "Der Mittelwert ist der Durchschnitt aller Werte; der Median ist der mittlere Wert der sortierten Liste. Der Median wird weniger von extremen Ausreißern beeinflusst."
+          },
+          {
+            "q": "Wann verwende ich den Modus?",
+            "a": "Den Modus brauchst du, wenn du den häufigsten Wert willst, typisch bei Kategorien und diskreten Zählungen."
+          },
+          {
+            "q": "Warum ist die Streuung wichtig?",
+            "a": "Zwei Datensätze können denselben Mittelwert haben, sich aber sehr unterschiedlich verhalten; Streuungsmaße zeigen das."
+          }
+        ]
+      }
     },
     "probability-calculator": {
       "name": "Wahrscheinlichkeits",
       "description": "Berechnen Sie Wahrscheinlichkeit von Ereignissen und Kombinationen",
-      "metaDescription": "Berechnen Sie Wahrscheinlichkeit, bedingte Wahrscheinlichkeit und Bayes-Theorem"
+      "metaDescription": "Kostenloser Online-Wahrscheinlichkeitsrechner. Ermittle die Chance einzelner oder kombinierter Ereignisse schnell, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Wähle das Szenario (einzelnes Ereignis, zwei Ereignisse oder Kombinationen).",
+          "Gib die Anzahl der günstigen und der möglichen Ergebnisse ein.",
+          "Lies die Wahrscheinlichkeit als Bruch, Dezimalzahl und Prozent."
+        ],
+        "explanationTitle": "Wahrscheinlichkeit verstehen",
+        "formula": "P = Günstige Ergebnisse / Alle Ergebnisse",
+        "explanation": [
+          "Die Wahrscheinlichkeit quantifiziert, wie wahrscheinlich ein Ereignis ist, von 0 (unmöglich) bis 1 (sicher). Sie ist das Verhältnis günstiger zu allen möglichen Ergebnissen.",
+          "Sie ist die Grundlage für Glücksspiele, Risikobewertung, Qualitätskontrolle und jede Entscheidung unter Unsicherheit."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet eine Wahrscheinlichkeit von 0,5?",
+            "a": "Das Ereignis ist ebenso wahrscheinlich wie nicht — eine 50%-Chance, wie Kopf bei einer fairen Münze."
+          },
+          {
+            "q": "Wie wird Wahrscheinlichkeit geschrieben?",
+            "a": "Als Bruch, als Dezimalzahl zwischen 0 und 1 oder als Prozent zwischen 0 % und 100 %."
+          },
+          {
+            "q": "Können Wahrscheinlichkeiten addiert werden?",
+            "a": "Nur bei sich ausschließenden Ereignissen. Sonst muss die Überschneidung beachtet werden, um Doppelzählung zu vermeiden."
+          }
+        ]
+      }
     },
     "sample-size": {
       "name": "Stichprobengroessen",
       "description": "Berechnen Sie die erforderliche Stichprobengroesse fuer Umfragen und Studien",
-      "metaDescription": "Berechnen Sie Stichprobengroesse mit Konfidenzniveau und Fehlermarge"
+      "metaDescription": "Kostenloser Online-Stichprobenrechner. Finde die nötige Teilnehmerzahl für ein Konfidenzniveau und einen Fehlerbereich, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Gib das Konfidenzniveau, den Fehlerbereich und eine Schätzung des Anteils ein.",
+          "Füge die Grundgesamtheit hinzu, wenn sie klein und bekannt ist.",
+          "Lies die nötige Stichprobengröße für ein verlässliches Ergebnis."
+        ],
+        "explanationTitle": "Warum die Stichprobengröße wichtig ist",
+        "formula": "n = z² · p(1−p) / e²   (mit Korrektur für endliche Grundgesamtheit)",
+        "explanation": [
+          "Die Stichprobengröße ist die Zahl der Beobachtungen, die nötig sind, um einen Populationswert innerhalb eines Fehlerbereichs bei gewähltem Konfidenzniveau zu schätzen.",
+          "Eine zu kleine Stichprobe liefert unzuverlässige Ergebnisse; eine zu große verschwendet Aufwand. Der Rechner balanciert Präzision und Kosten."
+        ],
+        "faq": [
+          {
+            "q": "Welches Konfidenzniveau soll ich wählen?",
+            "a": "95 % ist der üblichste Standard in der Forschung; 99 % ist sicherer, braucht aber eine größere Stichprobe."
+          },
+          {
+            "q": "Was, wenn ich den Anteil nicht kenne?",
+            "a": "Nimm 0,5 (50 %), was die konservativste, also größte nötige Stichprobe liefert."
+          },
+          {
+            "q": "Braucht eine größere Grundgesamtheit immer eine größere Stichprobe?",
+            "a": "Nein. Ab einer gewissen Größe ändert sich die nötige Stichprobe kaum; nur kleine Populationen brauchen die Korrektur."
+          }
+        ]
+      }
     },
     "z-score-calculator": {
       "name": "Z-Wert",
       "description": "Berechnen Sie Z-Wert und Normalverteilungswahrscheinlichkeiten",
-      "metaDescription": "Berechnen Sie Z-Wert und finden Sie Wahrscheinlichkeiten der Normalverteilung"
+      "metaDescription": "Kostenloser Online-z-Wert-Rechner. Standardisiere jeden Rohwert mit Mittelwert und SD schnell, ohne Anmeldung, und sieh die Entfernung zum Durchschnitt.",
+      "guide": {
+        "steps": [
+          "Gib den rohen Wert ein, den du standardisieren willst.",
+          "Gib den Mittelwert und die Standardabweichung des Datensatzes ein.",
+          "Lies den z-Wert und was er über die Position des Werts aussagt."
+        ],
+        "explanationTitle": "Was ist ein z-Wert?",
+        "formula": "z = (x − μ) / σ",
+        "explanation": [
+          "Ein z-Wert gibt an, wie viele Standardabweichungen ein Wert über oder unter dem Mittelwert liegt. Positiv bedeutet über, negativ unter dem Durchschnitt.",
+          "z-Werte erlauben den Vergleich von Werten aus verschiedenen Verteilungen auf einer gemeinsamen Skala und das Erkennen von Ausreißern."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet ein z-Wert von 0?",
+            "a": "Er bedeutet, dass der Wert genau dem Mittelwert des Datensatzes entspricht."
+          },
+          {
+            "q": "Ist ein höherer z-Wert immer besser?",
+            "a": "Nicht unbedingt. Er zeigt nur den Abstand zum Mittelwert; ob das gut ist, hängt vom Kontext ab."
+          },
+          {
+            "q": "Wie finde ich mit z-Werten Perzentile?",
+            "a": "Schlage den z-Wert in einer Standardnormaltabelle nach oder nutze die kumulative Verteilung."
+          }
+        ]
+      }
     },
     "p-value-calculator": {
       "name": "P-Wert",
@@ -3647,7 +4016,34 @@
     "ratio-calculator": {
       "name": "Verhaeltnis",
       "description": "Berechnen und vereinfachen Sie Verhaeltnisse, finden Sie Aequivalente",
-      "metaDescription": "Vereinfachen Sie Verhaeltnisse, finden Sie aequivalente Verhaeltnisse und Proportionen"
+      "metaDescription": "Kostenloser Online-Verhältnisrechner. Kürze A:B-Verhältnisse, finde fehlende Werte und skaliere Proportionen, ohne Anmeldung.",
+      "guide": {
+        "steps": [
+          "Gib die Werte deines Verhältnisses ein, zum Beispiel A : B.",
+          "Füge für die fehlende Seite einen bekannten Wert hinzu, falls du skalieren willst.",
+          "Lies das gekürzte Verhältnis und etwaige Skalierungen sofort ab."
+        ],
+        "explanationTitle": "Was ist ein Verhältnis?",
+        "formula": "A : B  →  beide durch ggT(A, B) kürzen",
+        "explanation": [
+          "Ein Verhältnis vergleicht zwei Größen und zeigt ihre relative Größe. Das Kürzen hält die Beziehung mit den kleinsten ganzen Zahlen.",
+          "Verhältnisse kommen in Rezepten, Karten, Finanzen und Mischungen vor — überall dort, wo eine Größe proportional zu einer anderen bleiben soll."
+        ],
+        "faq": [
+          {
+            "q": "Wie kürze ich ein Verhältnis?",
+            "a": "Teile beide Seiten durch ihren größten gemeinsamen Teiler, sodass außer 1 kein gemeinsamer Faktor bleibt."
+          },
+          {
+            "q": "Kann ich ein Verhältnis auf eine bekannte Summe skalieren?",
+            "a": "Ja. Wenn du eine Seite kennst, findet der Rechner die passende andere Seite, die das gleiche Verhältnis bewahrt."
+          },
+          {
+            "q": "Was bedeutet ein Verhältnis 1:1?",
+            "a": "Es bedeutet, dass beide Größen gleich groß sind; skaliert man eine, skaliert die andere im gleichen Maß."
+          }
+        ]
+      }
     },
     "binary-calculator": {
       "name": "Binaer",
@@ -3662,7 +4058,34 @@
     "scientific-notation": {
       "name": "Wissenschaftliche-Notation",
       "description": "Konvertieren Sie in/aus wissenschaftlicher Notation und fuehren Sie Operationen durch",
-      "metaDescription": "Konvertieren Sie Zahlen in wissenschaftliche Notation und fuehren Sie Operationen durch"
+      "metaDescription": "Kostenloser Online-Rechner für wissenschaftliche Notation. Wandeln Sie Zahlen schnell um, ohne Anmeldung, mit Mantisse, Exponent und Beispielen.",
+      "guide": {
+        "steps": [
+          "Gib die Zahl, die du umwandeln möchtest, in das Eingabefeld ein.",
+          "Wähle die Umwandlung in wissenschaftliche Notation oder zurück in Dezimaldarstellung.",
+          "Kopiere das formatierte Ergebnis mit Mantisse und Exponent."
+        ],
+        "explanationTitle": "Was ist die wissenschaftliche Notation?",
+        "formula": "a × 10ⁿ  mit 1 ≤ |a| < 10",
+        "explanation": [
+          "Die wissenschaftliche Notation schreibt Zahlen als Koeffizient zwischen 1 und 10, multipliziert mit einer Potenz von 10. So werden sehr große oder sehr kleine Werte kompakt und lesbar.",
+          "Sie wird in Wissenschaft, Technik und Informatik genutzt, um Werte wie die Lichtgeschwindigkeit oder atomare Skalen ohne lange Nullenketten darzustellen."
+        ],
+        "faq": [
+          {
+            "q": "Was sind Mantisse und Exponent?",
+            "a": "Die Mantisse ist der Koeffizient (die Zahl zwischen 1 und 10) und der Exponent ist die Zehnerpotenz, die ihn skaliert."
+          },
+          {
+            "q": "Wie wandele ich eine Dezimalzahl in wissenschaftliche Notation um?",
+            "a": "Verschiebe das Komma, sodass links eine einzige von null verschiedene Ziffer steht; die Anzahl der Schritte ist der Exponent (positiv für große, negativ für kleine Zahlen)."
+          },
+          {
+            "q": "Kann der Rechner negative Zahlen?",
+            "a": "Ja. Das Vorzeichen bleibt an der Mantisse, nur der Betrag wird auf den Bereich 1–10 normiert."
+          }
+        ]
+      }
     },
     "big-number": {
       "name": "Grosse-Zahlen",
@@ -11564,7 +11987,9 @@
         "q": "Kann ich die Ergebnisse für Steuererklärungen oder medizinische Entscheidungen verwenden?",
         "a": "Nein. Die Werkzeuge liefern Schätzwerte zur allgemeinen Orientierung. Finanzielle Ergebnisse ersetzen keine steuerliche Beratung, gesundheitliche Ergebnisse sind keine Diagnose. Wenden Sie sich bei wichtigen Entscheidungen an eine zugelassene Fachkraft."
       }
-    ]
+    ],
+    "popularTitle": "Beliebte Rechner",
+    "popularDesc": "Springe direkt zu den Rechnern, die unsere Besucher am häufigsten nutzen."
   },
   "guide": {
     "howToUseTitle": "So nutzen Sie {name}",

@@ -26,7 +26,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "converter.debt-snowball-avalanche" });
   return {
-    title: t("name"),
+    title: `Free Online ${t("name")}`,
     description: t("metaDescription"),
     keywords: ["debt payoff", "snowball", "avalanche", "debt calculator", "payoff plan"],
   };
