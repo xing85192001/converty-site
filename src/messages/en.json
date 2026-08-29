@@ -625,7 +625,34 @@
     "date": {
       "name": "Date",
       "description": "Add or subtract days, weeks, months, and years from a date",
-      "metaDescription": "Add or subtract time periods from any date"
+      "metaDescription": "Add or subtract time periods from any date",
+      "guide": {
+        "steps": [
+          "Enter a start date and choose add or subtract.",
+          "Specify the number of days, weeks, months, or years to shift.",
+          "Read the resulting date, plus the count of days between two dates if comparing."
+        ],
+        "explanationTitle": "Working with calendar dates",
+        "formula": "Result = Start date +/- interval, with month-length and leap-year rules applied",
+        "explanation": [
+          "Date arithmetic must handle months of different lengths and leap years, so the calculator counts actual calendar days rather than assuming 30-day months.",
+          "When subtracting, you get both the target date and the exact number of days elapsed, useful for deadlines and age."
+        ],
+        "faq": [
+          {
+            "q": "Does it count the start day?",
+            "a": "It counts whole intervals; for days between it returns the difference without double-counting endpoints."
+          },
+          {
+            "q": "How are leap years handled?",
+            "a": "Years divisible by 4 are leap, except centuries not divisible by 400."
+          },
+          {
+            "q": "Can I find a due date?",
+            "a": "Add the required number of days to the start date to get the deadline."
+          }
+        ]
+      }
     },
     "time": {
       "name": "Time",
@@ -719,7 +746,34 @@
     "rgb": {
       "name": "RGB Converter",
       "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
-      "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats"
+      "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats",
+      "guide": {
+        "steps": [
+          "Enter values from 0 to 255 for red, green, and blue.",
+          "Adjust sliders to preview the resulting color live.",
+          "Copy the HEX, HSL, or CSS code for use in your project."
+        ],
+        "explanationTitle": "How RGB builds color",
+        "formula": "Color = (R, G, B), each channel 0 to 255; HEX = #RRGGBB",
+        "explanation": [
+          "RGB mixes three light channels; (0,0,0) is black, (255,255,255) is white, and equal values make greys.",
+          "Screens emit light, so RGB is additive: unlike paint, adding all channels moves toward white rather than black."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between RGB and CMYK?",
+            "a": "RGB is for screens (additive light); CMYK is for print (subtractive ink)."
+          },
+          {
+            "q": "Why 0 to 255?",
+            "a": "Each channel is 8 bits, giving 256 levels from 0 to 255, or about 16.7 million colors total."
+          },
+          {
+            "q": "How do I convert to HEX?",
+            "a": "Convert each decimal to two hex digits and join with #, for example 255,0,0 becomes #FF0000."
+          }
+        ]
+      }
     },
     "data-size": {
       "name": "Data Size",
@@ -2346,12 +2400,66 @@
     "student-loan": {
       "name": "Student Loan",
       "description": "Calculate student loan payments with grace period options",
-      "metaDescription": "Calculate student loan payments and repayment schedules"
+      "metaDescription": "Calculate student loan payments and repayment schedules",
+      "guide": {
+        "steps": [
+          "Enter your total loan balance, the fixed interest rate, and the repayment term in years.",
+          "Choose a plan type if your lender offers standard, extended, or income-driven options.",
+          "Read your estimated monthly payment and total interest paid over the life of the loan."
+        ],
+        "explanationTitle": "How student loan interest works",
+        "formula": "M = P * r(1+r)^n / ((1+r)^n - 1), where r = monthly rate, n = months",
+        "explanation": [
+          "Student loans accrue interest daily on the unpaid principal using the simple daily interest method: daily interest = balance x (annual rate / 365).",
+          "Paying more than the minimum or making extra payments early reduces the principal faster, which cuts total interest because interest is always calculated on the remaining balance."
+        ],
+        "faq": [
+          {
+            "q": "Should I pay off student loans early?",
+            "a": "If the rate is high and you have no higher-interest debt, extra payments save interest. Keep an emergency fund and any employer match first."
+          },
+          {
+            "q": "What is an income-driven plan?",
+            "a": "It caps your monthly payment at a percentage of discretionary income and may forgive the balance after 20 to 25 years, though forgiven amounts can be taxable."
+          },
+          {
+            "q": "Are payments tax deductible?",
+            "a": "In some countries interest is deductible up to a limit; check your local rules, as treatment varies by jurisdiction."
+          }
+        ]
+      }
     },
     "home-equity": {
       "name": "Home Equity",
       "description": "Calculate home equity loan or HELOC payments",
-      "metaDescription": "Calculate home equity loan and HELOC payments"
+      "metaDescription": "Calculate home equity loan and HELOC payments",
+      "guide": {
+        "steps": [
+          "Enter your home's current market value and the total balances of any mortgages or liens.",
+          "Pick the loan-to-value limit your lender allows, often 80 to 85 percent.",
+          "Read the usable equity and the maximum home-equity loan or line of credit available."
+        ],
+        "explanationTitle": "What home equity means",
+        "formula": "Equity = Home value - Outstanding mortgage; Usable = Equity x LTV limit",
+        "explanation": [
+          "Equity is the portion of the home you own outright. It grows as you repay the mortgage and as the property's market value rises.",
+          "Lenders usually let you borrow only a fraction of equity to keep a safety buffer, and they require an appraisal to confirm the current value."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between a HELOC and a home-equity loan?",
+            "a": "A HELOC is a revolving line you draw from as needed; a home-equity loan is a lump sum with fixed payments."
+          },
+          {
+            "q": "Can I lose my home?",
+            "a": "Yes. Both are secured by the property, so missed payments can lead to foreclosure. Borrow only what you can repay."
+          },
+          {
+            "q": "Is the interest tax deductible?",
+            "a": "Interest on money used for substantial home improvements may be deductible in some jurisdictions; consult a local tax professional."
+          }
+        ]
+      }
     },
     "debt-payoff": {
       "name": "Debt Payoff",
@@ -2452,12 +2560,66 @@
     "down-payment": {
       "name": "Down Payment",
       "description": "Calculate how much to save for a down payment",
-      "metaDescription": "Calculate monthly savings needed for your down payment goal"
+      "metaDescription": "Calculate monthly savings needed for your down payment goal",
+      "guide": {
+        "steps": [
+          "Enter the home price you are considering and your target down-payment percentage.",
+          "Add your available savings to compare against the required amount.",
+          "See the dollar down payment needed and whether you meet common 20 percent thresholds that avoid mortgage insurance."
+        ],
+        "explanationTitle": "Why the down payment matters",
+        "formula": "Down payment = Home price x percentage; Loan = Home price - Down payment",
+        "explanation": [
+          "A larger down payment lowers the loan amount, reduces monthly payments, and can remove the need for private mortgage insurance.",
+          "Smaller down payments are allowed by many programs but usually cost more over time through insurance and interest on a bigger loan."
+        ],
+        "faq": [
+          {
+            "q": "Is 20 percent always required?",
+            "a": "No. Many loans allow 3 to 5 percent down, but below 20 percent you typically pay mortgage insurance until you build enough equity."
+          },
+          {
+            "q": "Should I drain savings for a bigger down payment?",
+            "a": "Keep a reserve for closing costs and emergencies; an empty emergency fund is riskier than a slightly smaller down payment."
+          },
+          {
+            "q": "Do gifts count toward the down payment?",
+            "a": "Lenders often accept gifted funds but require a signed gift letter stating the money need not be repaid."
+          }
+        ]
+      }
     },
     "retirement-401k": {
       "name": "401(k)",
       "description": "Calculate retirement savings with employer matching",
-      "metaDescription": "Calculate 401k retirement savings with employer match and projections"
+      "metaDescription": "Calculate 401k retirement savings with employer match and projections",
+      "guide": {
+        "steps": [
+          "Enter your current age, planned retirement age, salary, and current 401(k) balance.",
+          "Add your contribution rate and any employer match percentage.",
+          "Read the projected balance at retirement and the estimated annual income it could provide."
+        ],
+        "explanationTitle": "How compounding builds a 401(k)",
+        "formula": "Future value = P(1+r)^n + C x (((1+r)^n - 1) / r)",
+        "explanation": [
+          "A 401(k) grows tax-deferred, so returns reinvest without annual tax drag, and employer matching is effectively free money added to your balance.",
+          "Starting earlier matters more than the amount: contributions in your 20s compound for decades, often outweighing larger late-career contributions."
+        ],
+        "faq": [
+          {
+            "q": "How much should I contribute?",
+            "a": "Aim to capture the full employer match first, then raise toward 10 to 15 percent of salary as you are able."
+          },
+          {
+            "q": "What is the employer match?",
+            "a": "Many employers match a percentage of your contributions up to a limit; not contributing leaves that money on the table."
+          },
+          {
+            "q": "Can I withdraw early?",
+            "a": "Early withdrawals usually trigger taxes and a penalty; some plans allow loans or hardship exceptions with restrictions."
+          }
+        ]
+      }
     },
     "ira-calculator": {
       "name": "IRA",
@@ -3263,7 +3425,34 @@
     "healthy-weight": {
       "name": "Healthy Weight",
       "description": "Calculate your healthy weight range based on height",
-      "metaDescription": "Find your healthy weight range based on your height, age, and frame size"
+      "metaDescription": "Find your healthy weight range based on your height, age, and frame size",
+      "guide": {
+        "steps": [
+          "Enter your height, weight, age, and sex assigned at birth.",
+          "Choose the formula set if multiple are offered for your region.",
+          "Read your healthy weight range and where you currently fall within it."
+        ],
+        "explanationTitle": "Healthy weight ranges, not single numbers",
+        "formula": "Based on BMI 18.5 to 24.9 mapped back to weight = BMI x height^2",
+        "explanation": [
+          "Healthy weight is shown as a range because a single number ignores body composition; muscle, bone, and frame size all shift what is right for you.",
+          "The range is a screening guide, not a diagnosis. Athletes and older adults especially should also consider body fat and waist circumference."
+        ],
+        "faq": [
+          {
+            "q": "Why a range and not one weight?",
+            "a": "People of the same height differ in muscle and bone, so a band captures normal variation better than a point."
+          },
+          {
+            "q": "Is BMI enough?",
+            "a": "It is a useful screen but misses body composition; pair it with waist measurement and fitness."
+          },
+          {
+            "q": "Does the range differ by ethnicity?",
+            "a": "Some guidelines use lower cut-offs for certain populations; check local public-health advice."
+          }
+        ]
+      }
     },
     "army-body-fat": {
       "name": "Army Body Fat",
@@ -3273,7 +3462,34 @@
     "bac-calculator": {
       "name": "BAC",
       "description": "Calculate blood alcohol content",
-      "metaDescription": "Estimate your blood alcohol content based on drinks consumed"
+      "metaDescription": "Estimate your blood alcohol content based on drinks consumed",
+      "guide": {
+        "steps": [
+          "Enter your sex, weight, number of standard drinks, and the hours spent drinking.",
+          "Add the drink strength and duration if a detailed mode is available.",
+          "Read your estimated blood alcohol concentration and the hours to sober up."
+        ],
+        "explanationTitle": "Estimating blood alcohol concentration",
+        "formula": "BAC = (A x 5.14 / W x r) - 0.015 x H  (A=oz alcohol, W=lb, r=0.73/0.66)",
+        "explanation": [
+          "BAC estimates how much alcohol is in the bloodstream using the amount consumed, body water, and time for metabolism, which removes about 0.015 percent per hour.",
+          "It is only an estimate; food, medications, sleep, and tolerance change the real effect. Never use a number to decide if you can drive."
+        ],
+        "faq": [
+          {
+            "q": "What is a standard drink?",
+            "a": "Roughly 14 g of pure alcohol, about 350 ml beer, 150 ml wine, or 45 ml spirits, varying by strength."
+          },
+          {
+            "q": "Can I drive at 0.02 percent?",
+            "a": "Laws differ and impairment begins with the first drink; if you have consumed alcohol, the safe choice is not to drive."
+          },
+          {
+            "q": "Why does sex change the result?",
+            "a": "Average body water differs, so the same drinks produce a higher concentration for those with less water per kilogram."
+          }
+        ]
+      }
     },
     "gfr-calculator": {
       "name": "GFR",
@@ -3445,12 +3661,66 @@
     "pregnancy-weight-gain": {
       "name": "Pregnancy Weight Gain",
       "description": "Calculate recommended weight gain during pregnancy",
-      "metaDescription": "Calculate healthy weight gain recommendations during pregnancy"
+      "metaDescription": "Calculate healthy weight gain recommendations during pregnancy",
+      "guide": {
+        "steps": [
+          "Enter your pre-pregnancy weight and height to compute your starting BMI.",
+          "Select the recommended gain range for your BMI category.",
+          "Track your current gain against the suggested total for each trimester."
+        ],
+        "explanationTitle": "Recommended weight gain in pregnancy",
+        "formula": "Total by BMI: underweight 12.5 to 18 kg, normal 11.5 to 16 kg, overweight 7 to 11.5 kg, obese 5 to 9 kg",
+        "explanation": [
+          "Weight gain supports the baby, placenta, amniotic fluid, and maternal tissue stores; the right amount depends mainly on starting BMI.",
+          "Gaining too little or too much is linked to delivery and infant-health risks, so ranges are guidance, not strict rules, and your clinician individualizes them."
+        ],
+        "faq": [
+          {
+            "q": "What if I am expecting twins?",
+            "a": "Recommended totals are higher for multiples; follow your provider's specific schedule."
+          },
+          {
+            "q": "Can I diet to lose weight while pregnant?",
+            "a": "Pregnancy is not the time for weight-loss dieting; focus on steady, adequate gain with good nutrition."
+          },
+          {
+            "q": "Why does BMI at the start matter?",
+            "a": "It sets the safest gain band because risk patterns differ by starting weight."
+          }
+        ]
+      }
     },
     "basic-calculator": {
       "name": "Basic",
       "description": "Perform arithmetic calculations with expression support",
-      "metaDescription": "Free online basic calculator for arithmetic operations and expressions"
+      "metaDescription": "Free online basic calculator for arithmetic operations and expressions",
+      "guide": {
+        "steps": [
+          "Type numbers using the on-screen pad or your keyboard.",
+          "Use + - x / and parentheses for the order of operations.",
+          "Read the result, and use clear or backspace to start a new calculation."
+        ],
+        "explanationTitle": "Order of operations",
+        "formula": "PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction",
+        "explanation": [
+          "The calculator follows standard precedence, so 2 + 3 x 4 equals 14, not 20; parentheses force a different grouping.",
+          "It is exact for the digits shown, but very long numbers are rounded for display; use scientific mode for high precision."
+        ],
+        "faq": [
+          {
+            "q": "Why is my answer different from expected?",
+            "a": "Check parentheses and operation order; multiplication runs before addition unless you group it."
+          },
+          {
+            "q": "Does it keep history?",
+            "a": "This simple view shows the current line; use the expression history if your version includes it."
+          },
+          {
+            "q": "Can it handle fractions?",
+            "a": "It works in decimals; convert fractions to decimals first for accurate results."
+          }
+        ]
+      }
     },
     "fraction-calculator": {
       "name": "Fraction",

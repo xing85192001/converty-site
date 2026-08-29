@@ -631,7 +631,34 @@
     "date": {
       "name": "Fecha",
       "description": "Sumar o restar días, semanas, meses y años a una fecha",
-      "metaDescription": "Sumar o restar períodos de tiempo de cualquier fecha"
+      "metaDescription": "Sumar o restar períodos de tiempo de cualquier fecha",
+      "guide": {
+        "steps": [
+          "Introduce una fecha de inicio y elige sumar o restar.",
+          "Indica el numero de dias, semanas, meses o anos a desplazar.",
+          "Lee la fecha resultante y, al comparar, los dias entre dos fechas."
+        ],
+        "explanationTitle": "Trabajar con fechas del calendario",
+        "formula": "Resultado = Fecha inicio +/- intervalo, con reglas de dias del mes y anos bisiestos",
+        "explanation": [
+          "La aritmetica de fechas debe manejar meses de distinta longitud y anos bisiestos, asi que la calculadora cuenta dias reales del calendario en vez de suponer meses de 30 dias.",
+          "Al restar obtienes tanto la fecha objetivo como el numero exacto de dias transcurridos, util para plazos y edad."
+        ],
+        "faq": [
+          {
+            "q": "Cuenta el dia de inicio?",
+            "a": "Cuenta intervalos completos; para dias entre devuelve la diferencia sin contar dos veces los extremos."
+          },
+          {
+            "q": "Como se tratan los anos bisiestos?",
+            "a": "Los divisibles por 4 son bisiestos, excepto los siglos no divisibles por 400."
+          },
+          {
+            "q": "Puedo hallar una fecha limite?",
+            "a": "Suma los dias necesarios a la fecha de inicio para obtener el plazo."
+          }
+        ]
+      }
     },
     "time": {
       "name": "Tiempo",
@@ -725,7 +752,34 @@
     "rgb": {
       "name": "Convertidor RGB",
       "description": "Convierta entre formatos de color RGB, HEX, HSL y CMYK",
-      "metaDescription": "Convierta colores entre formatos RGB, HEX, HSL y CMYK"
+      "metaDescription": "Convierta colores entre formatos RGB, HEX, HSL y CMYK",
+      "guide": {
+        "steps": [
+          "Introduce valores del 0 al 255 para rojo, verde y azul.",
+          "Ajusta los deslizadores para previsualizar el color en vivo.",
+          "Copia el codigo HEX, HSL o CSS para usar en tu proyecto."
+        ],
+        "explanationTitle": "Como el RGB construye el color",
+        "formula": "Color = (R, G, B), cada canal 0 a 255; HEX = #RRGGBB",
+        "explanation": [
+          "El RGB mezcla tres canales de luz; (0,0,0) es negro, (255,255,255) es blanco, e iguales valores dan grises.",
+          "Las pantallas emiten luz, asi que el RGB es aditivo: a diferencia de la pintura, sumar todos los canales tiende a blanco en vez de negro."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre RGB y CMYK?",
+            "a": "RGB es para pantallas (luz aditiva); CMYK es para impresion (tinta sustractiva)."
+          },
+          {
+            "q": "Por que del 0 al 255?",
+            "a": "Cada canal son 8 bits, lo que da 256 niveles del 0 al 255, unos 16,7 millones de colores en total."
+          },
+          {
+            "q": "Como lo convierto a HEX?",
+            "a": "Convierte cada decimal en dos digitos hex y une con #, por ejemplo 255,0,0 se vuelve #FF0000."
+          }
+        ]
+      }
     },
     "data-size": {
       "name": "Tamaño de datos",
@@ -2352,12 +2406,66 @@
     "student-loan": {
       "name": "Préstamo estudiantil",
       "description": "Calcule los pagos de préstamos estudiantiles con opciones de período de gracia",
-      "metaDescription": "Calcule los pagos de préstamos estudiantiles y los calendarios de pago"
+      "metaDescription": "Calcule los pagos de préstamos estudiantiles y los calendarios de pago",
+      "guide": {
+        "steps": [
+          "Introduce el saldo total del prestamo, el tipo de interes fijo y el plazo de amortizacion en anos.",
+          "Elige un tipo de plan si tu entidad ofrece opciones estandar, ampliadas o basadas en ingresos.",
+          "Lee tu pago mensual estimado y el interes total pagado durante la vida del prestamo."
+        ],
+        "explanationTitle": "Como funcionan los intereses de los prestamos estudiantiles",
+        "formula": "M = P * r(1+r)^n / ((1+r)^n - 1), r = tipo mensual, n = meses",
+        "explanation": [
+          "Los prestamos estudiantiles acumulan interes diario sobre el principal pendiente con el metodo de interes simple diario: interes diario = saldo x (tipo anual / 365).",
+          "Pagar mas de la cuota minima o hacer aportes extra al principio reduce el principal mas rapido y recorta el interes total, porque siempre se calcula sobre el saldo restante."
+        ],
+        "faq": [
+          {
+            "q": "Deberia pagar el prestamo estudiantil antes?",
+            "a": "Si el tipo es alto y no tienes deudas mas caras, los pagos extra ahorran intereses. Primero guarda un fondo de emergencia y aprovecha la aportacion de tu empleador."
+          },
+          {
+            "q": "Que es un plan basado en ingresos?",
+            "a": "Limita tu pago mensual a un porcentaje de los ingresos disponibles y puede condonar el saldo tras 20 a 25 anos, aunque la cantidad condonada puede tributar."
+          },
+          {
+            "q": "Los pagos son deducibles?",
+            "a": "En algunos paises los intereses son deducibles hasta un limite; consulta tus normas locales, ya que varia segun el pais."
+          }
+        ]
+      }
     },
     "home-equity": {
       "name": "Valor de la vivienda",
       "description": "Calcule el préstamo con garantía hipotecaria o los pagos HELOC",
-      "metaDescription": "Calcule el préstamo con garantía hipotecaria y los pagos HELOC"
+      "metaDescription": "Calcule el préstamo con garantía hipotecaria y los pagos HELOC",
+      "guide": {
+        "steps": [
+          "Introduce el valor de mercado actual de la vivienda y los saldos totales de hipotecas o gravamenes.",
+          "Elige el limite de loan-to-value que permita tu entidad, normalmente 80 a 85 por ciento.",
+          "Lee el capital disponible y el maximo prestamo o linea de credito hipotecario disponible."
+        ],
+        "explanationTitle": "Que significa el capital de la vivienda",
+        "formula": "Capital = Valor de la casa - Hipoteca pendiente; Disponible = Capital x limite LTV",
+        "explanation": [
+          "El capital es la parte de la vivienda que posees por completo. Crece al amortizar la hipoteca y cuando sube el valor de mercado.",
+          "Los prestamistas suelen dejarte usar solo una fraccion del capital como colchon de seguridad, y exigen una tasacion para confirmar el valor."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre una HELOC y un prestamo con garantia?",
+            "a": "La HELOC es una linea revolvente que usas segun necesites; el prestamo es un pago unico con cuotas fijas."
+          },
+          {
+            "q": "Puedo perder mi casa?",
+            "a": "Si. Ambos estan garantizados con el inmueble, asi que los impagos pueden llevar a un desahucio. Pide solo lo que puedas devolver."
+          },
+          {
+            "q": "Los intereses son deducibles?",
+            "a": "Los intereses de dinero usado en mejoras importantes de la casa pueden ser deducibles en algunos paises; consulta a un asesor fiscal local."
+          }
+        ]
+      }
     },
     "debt-payoff": {
       "name": "Pago de deuda",
@@ -2458,12 +2566,66 @@
     "down-payment": {
       "name": "Pago inicial",
       "description": "Calcula cuánto ahorrar para el pago inicial",
-      "metaDescription": "Calcule los ahorros mensuales necesarios para su objetivo de pago inicial"
+      "metaDescription": "Calcule los ahorros mensuales necesarios para su objetivo de pago inicial",
+      "guide": {
+        "steps": [
+          "Introduce el precio de la vivienda que consideras y el porcentaje de entrada que buscas.",
+          "Anade tus ahorros disponibles para compararlos con el importe necesario.",
+          "Ve el importe de la entrada necesaria y si alcanzas el umbral comun del 20 por ciento que evita el seguro hipotecario."
+        ],
+        "explanationTitle": "Por que importa la entrada",
+        "formula": "Entrada = Precio x porcentaje; Prestamo = Precio - Entrada",
+        "explanation": [
+          "Una entrada mayor reduce el importe del prestamo, baja la cuota mensual y puede eliminar la necesidad del seguro de hipoteca privado.",
+          "Las entradas mas pequenas son admitidas por muchos programas pero suelen costar mas a largo plazo por el seguro y los intereses de un prestamo mayor."
+        ],
+        "faq": [
+          {
+            "q": "Siempre se exige el 20 por ciento?",
+            "a": "No. Muchos prestamos admiten un 3 a 5 por ciento, pero por debajo del 20 por ciento normalmente pagas seguro hasta acumular suficiente capital."
+          },
+          {
+            "q": "Debo vaciar ahorros para una entrada mayor?",
+            "a": "Conserva una reserva para gastos de cierre y emergencias; un fondo de emergencia vacio es mas arriesgado que una entrada algo menor."
+          },
+          {
+            "q": "Cuentan los regalos como entrada?",
+            "a": "Los prestamistas suelen aceptar fondos regalados pero exigen una carta de donacion que confirme que no debe devolverse."
+          }
+        ]
+      }
     },
     "retirement-401k": {
       "name": "401(k)",
       "description": "Calcule los ahorros para la jubilación con la contrapartida del empleador",
-      "metaDescription": "Calcule 401k ahorros para la jubilación con igualación y proyecciones del empleador"
+      "metaDescription": "Calcule 401k ahorros para la jubilación con igualación y proyecciones del empleador",
+      "guide": {
+        "steps": [
+          "Introduce tu edad actual, la edad prevista de jubilacion, el salario y el saldo actual de tu 401(k).",
+          "Anade tu tasa de aportacion y cualquier equivalente del empleador en porcentaje.",
+          "Lee el saldo proyectado al jubilarte y los ingresos anuales estimados que podria aportar."
+        ],
+        "explanationTitle": "Como el interes compuesto construye un 401(k)",
+        "formula": "Valor futuro = P(1+r)^n + C x (((1+r)^n - 1) / r)",
+        "explanation": [
+          "Un 401(k) crece con impuestos diferidos, asi que los rendimientos se reinvierten sin el arrastre fiscal anual, y la aportacion del empleador es dinero gratis en tu saldo.",
+          "Empezar antes importa mas que la cantidad: las aportaciones a los 20 anos acumulan decadas de interes compuesto, y suelen superar aportaciones mayores cercanas a la jubilacion."
+        ],
+        "faq": [
+          {
+            "q": "Cuanto debo aportar?",
+            "a": "Primero asegura la aportacion completa del empleador y luego sube hacia un 10 a 15 por ciento del salario segun puedas."
+          },
+          {
+            "q": "Que es la aportacion del empleador?",
+            "a": "Muchos empleadores igualan un porcentaje de tus aportaciones hasta un limite; no aportar deja ese dinero sobre la mesa."
+          },
+          {
+            "q": "Puedo retirar antes?",
+            "a": "Las retiradas anticipadas suelen generar impuestos y una penalizacion; algunos planes permiten prestamos o excepciones por dificultad con restricciones."
+          }
+        ]
+      }
     },
     "ira-calculator": {
       "name": "IRA",
@@ -3269,7 +3431,34 @@
     "healthy-weight": {
       "name": "Peso saludable",
       "description": "Calcule su rango de peso saludable según la altura",
-      "metaDescription": "Encuentre su rango de peso saludable según su altura, edad y tamaño de estructura"
+      "metaDescription": "Encuentre su rango de peso saludable según su altura, edad y tamaño de estructura",
+      "guide": {
+        "steps": [
+          "Introduce tu altura, peso, edad y el sexo asignado al nacer.",
+          "Elige el conjunto de formulas si tu region ofrece varios.",
+          "Lee tu rango de peso saludable y en que punto estas dentro de el."
+        ],
+        "explanationTitle": "El peso saludable es un rango, no un numero",
+        "formula": "Basado en IMC 18,5 a 24,9 despejado: peso = IMC x altura^2",
+        "explanation": [
+          "El peso saludable se muestra como un rango porque un unico numero ignora la composicion corporal; musculo, hueso y estructura cambian lo que te conviene.",
+          "El rango es una guia de cribado, no un diagnostico. Los atletas y los mayores tambien deberian considerar grasa corporal y circunferencia de cintura."
+        ],
+        "faq": [
+          {
+            "q": "Por que un rango y no un peso?",
+            "a": "Personas de la misma altura difieren en musculo y hueso, asi que una banda captura mejor la variacion normal."
+          },
+          {
+            "q": "Basta con el IMC?",
+            "a": "Es una criba util pero no ve la composicion corporal; combinalo con la medida de cintura y la forma fisica."
+          },
+          {
+            "q": "Varía el rango segun la etnia?",
+            "a": "Algunas guias usan umbrales mas bajos para ciertas poblaciones; consulta la orientacion de salud publica local."
+          }
+        ]
+      }
     },
     "army-body-fat": {
       "name": "Grasa corporal del ejército",
@@ -3279,7 +3468,34 @@
     "bac-calculator": {
       "name": "bachillerato",
       "description": "Calcular el contenido de alcohol en sangre.",
-      "metaDescription": "Calcule su contenido de alcohol en sangre según las bebidas consumidas."
+      "metaDescription": "Calcule su contenido de alcohol en sangre según las bebidas consumidas.",
+      "guide": {
+        "steps": [
+          "Introduce sexo, peso, numero de bebidas estandar y las horas transcurridas bebiendo.",
+          "Anade la graduacion y la duracion si hay un modo detallado.",
+          "Lee tu concentracion estimada de alcohol en sangre y las horas para estar sobrio."
+        ],
+        "explanationTitle": "Estimar la concentracion de alcohol en sangre",
+        "formula": "BAC = (A x 5,14 / W x r) - 0,015 x H  (A=oz alcohol, W=lb, r=0,73/0,66)",
+        "explanation": [
+          "El BAC estima el alcohol en la sangre a partir de la cantidad consumida, el agua corporal y el tiempo de metabolismo, que elimina unas 0,015 por ciento por hora.",
+          "Es solo una estimacion; comida, medicamentos, sueno y tolerancia cambian el efecto real. Nunca uses un numero para decidir si puedes conducir."
+        ],
+        "faq": [
+          {
+            "q": "Que es una bebida estandar?",
+            "a": "Unas 14 g de alcohol puro, aproximadamente 350 ml de cerveza, 150 ml de vino o 45 ml de licor, segun la graduacion."
+          },
+          {
+            "q": "Puedo conducir al 0,02 por ciento?",
+            "a": "Las leyes varian y la alteracion empieza con la primera bebida; si has bebido, lo seguro es no conducir."
+          },
+          {
+            "q": "Por que el sexo cambia el resultado?",
+            "a": "El agua corporal media difiere, asi que las mismas bebidas dan mayor concentracion a quienes tienen menos agua por kilo."
+          }
+        ]
+      }
     },
     "gfr-calculator": {
       "name": "TFG",
@@ -3451,12 +3667,66 @@
     "pregnancy-weight-gain": {
       "name": "Aumento de peso durante el embarazo",
       "description": "Calcular el aumento de peso recomendado durante el embarazo",
-      "metaDescription": "Calcular recomendaciones de aumento de peso saludable durante el embarazo"
+      "metaDescription": "Calcular recomendaciones de aumento de peso saludable durante el embarazo",
+      "guide": {
+        "steps": [
+          "Introduce tu peso antes del embarazo y tu altura para calcular tu IMC inicial.",
+          "Selecciona el rango de ganancia recomendado para tu categoria de IMC.",
+          "Compara tu ganancia actual con el total sugerido para cada trimestre."
+        ],
+        "explanationTitle": "Ganancia de peso recomendada en el embarazo",
+        "formula": "Total por IMC: bajo peso 12,5 a 18 kg, normal 11,5 a 16 kg, sobrepeso 7 a 11,5 kg, obeso 5 a 9 kg",
+        "explanation": [
+          "La ganancia sostiene al bebe, la placenta, el liquido amniotico y las reservas maternas; la cantidad adecuada depende sobre todo del IMC inicial.",
+          "Ganar poco o mucho se relaciona con riesgos de parto y salud del bebe, asi que los rangos son guia, no reglas estrictas, y tu medico los individualiza."
+        ],
+        "faq": [
+          {
+            "q": "Que pasa si espero gemelos?",
+            "a": "Los totales recomendados son mayores con multiples; sigue el calendario especifico de tu proveedor."
+          },
+          {
+            "q": "Puedo hacer dieta para adelgazar en el embarazo?",
+            "a": "El embarazo no es momento para dietas de adelgazamiento; enfocate en una ganancia adecuada y estable con buena nutricion."
+          },
+          {
+            "q": "Por que importa el IMC inicial?",
+            "a": "Fija la banda de ganancia mas segura porque los patrones de riesgo difieren segun el peso inicial."
+          }
+        ]
+      }
     },
     "basic-calculator": {
       "name": "Calculadora Básica",
       "description": "Realiza cálculos aritméticos con soporte para expresiones",
-      "metaDescription": "Calculadora básica gratuita"
+      "metaDescription": "Calculadora básica gratuita",
+      "guide": {
+        "steps": [
+          "Escribe numeros con el teclado en pantalla o el de tu ordenador.",
+          "Usa + - x / y parentesis para el orden de las operaciones.",
+          "Lee el resultado y usa borrar o retroceso para una nueva operacion."
+        ],
+        "explanationTitle": "Orden de las operaciones",
+        "formula": "PEMDAS: Parentesis, Exponentes, Multiplicacion/Division, Suma/Resta",
+        "explanation": [
+          "La calculadora sigue la prioridad estandar, asi que 2 + 3 x 4 es 14, no 20; los parentesis fuerzan otro agrupamiento.",
+          "Es exacta para las cifras mostradas, pero las cifras muy largas se redondean para la vista; usa el modo cientifico para alta precision."
+        ],
+        "faq": [
+          {
+            "q": "Por que mi resultado difiere?",
+            "a": "Revisa parentesis y orden; la multiplicacion va antes que la suma salvo que la agrupes."
+          },
+          {
+            "q": "Guarda historial?",
+            "a": "Esta vista simple muestra la linea actual; usa el historial de expresiones si tu version lo incluye."
+          },
+          {
+            "q": "Maneja fracciones?",
+            "a": "Trabaja en decimales; convierte primero las fracciones a decimales para resultados exactos."
+          }
+        ]
+      }
     },
     "fraction-calculator": {
       "name": "Fracción",

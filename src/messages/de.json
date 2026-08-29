@@ -625,7 +625,34 @@
     "date": {
       "name": "Datums",
       "description": "Addieren oder subtrahieren Sie Tage, Wochen, Monate und Jahre von einem Datum",
-      "metaDescription": "Addieren oder subtrahieren Sie Zeitraeume von einem beliebigen Datum"
+      "metaDescription": "Addieren oder subtrahieren Sie Zeitraeume von einem beliebigen Datum",
+      "guide": {
+        "steps": [
+          "Gib ein Startdatum ein und wahle Plus oder Minus.",
+          "Lege die Anzahl Tage, Wochen, Monate oder Jahre fest.",
+          "Lies das Ergebnisdatum und bei Vergleichen die Tage zwischen zwei Daten."
+        ],
+        "explanationTitle": "Arbeiten mit Kalenderdaten",
+        "formula": "Ergebnis = Startdatum +/- Intervall, mit Monatslangen und Schaltjahrregeln",
+        "explanation": [
+          "Datumsrechnung muss Monate unterschiedlicher Lange und Schaltjahre beachten, daher zahlt der Rechner echte Kalendertage statt pauschal 30-Tage-Monate.",
+          "Beim Subtrahieren erhaltst du sowohl das Zieldatum als auch die genaue Zahl vergangener Tage, nutzlich fur Fristen und Alter."
+        ],
+        "faq": [
+          {
+            "q": "Zahlt er den Starttag mit?",
+            "a": "Er zahlt ganze Intervalle; bei Tagen dazwischen gibt er die Differenz ohne Doppelzahlung der Endpunkte."
+          },
+          {
+            "q": "Wie werden Schaltjahre behandelt?",
+            "a": "Jahre durch 4 teilbar sind Schaltjahre, ausser Jahrhunderte ohne Teilbarkeit durch 400."
+          },
+          {
+            "q": "Kann ich ein Enddatum finden?",
+            "a": "Addiere die benotigten Tage zum Startdatum, um die Frist zu erhalten."
+          }
+        ]
+      }
     },
     "time": {
       "name": "Zeit",
@@ -719,7 +746,34 @@
     "rgb": {
       "name": "RGB-Konverter",
       "description": "Konvertieren Sie zwischen RGB-, HEX-, HSL- und CMYK-Farbformaten",
-      "metaDescription": "Konvertieren Sie Farben zwischen RGB-, HEX-, HSL- und CMYK-Formaten"
+      "metaDescription": "Konvertieren Sie Farben zwischen RGB-, HEX-, HSL- und CMYK-Formaten",
+      "guide": {
+        "steps": [
+          "Gib Werte von 0 bis 255 fur Rot, Grun und Blau ein.",
+          "Verschiebe die Regler, um die Farbe live zu sehen.",
+          "Kopiere den HEX-, HSL- oder CSS-Code fur dein Projekt."
+        ],
+        "explanationTitle": "Wie RGB Farbe erzeugt",
+        "formula": "Farbe = (R, G, B), jeder Kanal 0 bis 255; HEX = #RRGGBB",
+        "explanation": [
+          "RGB mischt drei Lichtkanale; (0,0,0) ist schwarz, (255,255,255) weiss, gleiche Werte ergeben Grau.",
+          "Bildschirme senden Licht aus, daher ist RGB additiv: Anders als Farbe bewegt sich das Mischen aller Kanale zu weiss statt zu schwarz."
+        ],
+        "faq": [
+          {
+            "q": "Was unterscheidet RGB und CMYK?",
+            "a": "RGB ist fur Bildschirme (additives Licht); CMYK ist fur Druck (subtraktive Tinte)."
+          },
+          {
+            "q": "Warum 0 bis 255?",
+            "a": "Jeder Kanal hat 8 Bit, also 256 Stufen von 0 bis 255, insgesamt etwa 16,7 Millionen Farben."
+          },
+          {
+            "q": "Wie rechne ich in HEX um?",
+            "a": "Wandle jede Dezimalzahl in zwei Hex-Ziffern um und verbinde sie mit #, zum Beispiel 255,0,0 wird #FF0000."
+          }
+        ]
+      }
     },
     "data-size": {
       "name": "Datengroessen",
@@ -2346,12 +2400,66 @@
     "student-loan": {
       "name": "Studienkredit",
       "description": "Berechnen Sie Studienkreditzahlungen mit Karenzzeit-Optionen",
-      "metaDescription": "Berechnen Sie Studienkreditzahlungen und Tilgungsplaene"
+      "metaDescription": "Berechnen Sie Studienkreditzahlungen und Tilgungsplaene",
+      "guide": {
+        "steps": [
+          "Geben Sie den gesamten Darlehenssaldo, den festen Zinssatz und die Laufzeit in Jahren ein.",
+          "Wahlen Sie eine Planeart, falls die Bank Standard-, verlangerte oder einkommensabhängige Optionen anbietet.",
+          "Lesen Sie die geschatzte monatliche Rate und die gesamten Zinskosten uber die Laufzeit."
+        ],
+        "explanationTitle": "So funktionieren Studienkreditzinsen",
+        "formula": "M = P * r(1+r)^n / ((1+r)^n - 1), r = Monatszins, n = Monate",
+        "explanation": [
+          "Studienkredite berechnen taglich Zinsen auf den offenen Saldo nach der einfachen Tageszinsmethode: Tageszins = Saldo x (Jahreszins / 365).",
+          "Hohere oder fruhe Sonderzahlungen senken den Saldo schneller und damit die Gesamtzinsen, da Zinsen immer auf den Restsaldo berechnet werden."
+        ],
+        "faq": [
+          {
+            "q": "Sollte ich den Studienkredit fruh zuruckzahlen?",
+            "a": "Bei hohem Zins und keinen teureren Schulden sparen Sonderzahlungen Zinsen. Erst Notgroschen und Arbeitgeberzuschuss sichern."
+          },
+          {
+            "q": "Was ist ein einkommensabhangiger Plan?",
+            "a": "Er deckelt die Monatsrate auf einen Prozentsatz des verfugbaren Einkommens und kann nach 20 bis 25 Jahren erlassen, wobei der Erlass steuerpflichtig sein kann."
+          },
+          {
+            "q": "Sind Zahlungen steuerlich absetzbar?",
+            "a": "In einigen Landern sind Zinsen bis zu einer Grenze absetzbar; prufen Sie die lokalen Regeln, da sie variieren."
+          }
+        ]
+      }
     },
     "home-equity": {
       "name": "Eigenkapital",
       "description": "Berechnen Sie Eigenheimkredit- oder HELOC-Zahlungen",
-      "metaDescription": "Berechnen Sie Eigenheimkredit- und HELOC-Zahlungen"
+      "metaDescription": "Berechnen Sie Eigenheimkredit- und HELOC-Zahlungen",
+      "guide": {
+        "steps": [
+          "Geben Sie den aktuellen Marktwert der Immobilie und die gesamten Salden aller Hypotheken oder Pfandrechte ein.",
+          "Wahlen Sie die zulassige Beleihungsgrenze, oft 80 bis 85 Prozent.",
+          "Lesen Sie das verfugbare Eigenkapital und den maximalen Hauskredit oder die Kreditlinie."
+        ],
+        "explanationTitle": "Was Wohneigentumskapital bedeutet",
+        "formula": "Eigenkapital = Immobilienwert - Offene Hypothek; Verfugbar = Eigenkapital x Beleihungsgrenze",
+        "explanation": [
+          "Eigenkapital ist der Anteil, den Sie voll besitzen. Er wachst, wenn Sie die Hypothek tilgen und der Marktwert steigt.",
+          "Banken lassen meist nur einen Teil beleihen, um einen Puffer zu halten, und verlangen eine Bewertung zur Bestatigung des Werts."
+        ],
+        "faq": [
+          {
+            "q": "Was unterscheidet HELOC und Hauskredit?",
+            "a": "Ein HELOC ist eine revolvierende Linie, die Sie bei Bedarf nutzen; ein Hauskredit ist eine Summe mit festen Raten."
+          },
+          {
+            "q": "Kann ich das Haus verlieren?",
+            "a": "Ja. Beide sind durch die Immobilie besichert; ausfallende Zahlungen konnen zur Zwangsversteigerung fuhren. Leihen Sie nur, was Sie zuruckzahlen konnen."
+          },
+          {
+            "q": "Sind die Zinsen steuerlich absetzbar?",
+            "a": "Zinsen fur umfangreiche Hausverbesserungen konnen in einigen Landern absetzbar sein; fragen Sie einen lokalen Steuerberater."
+          }
+        ]
+      }
     },
     "debt-payoff": {
       "name": "Schulden-Tilgungs",
@@ -2452,12 +2560,66 @@
     "down-payment": {
       "name": "Anzahlungs",
       "description": "Berechnen Sie wie viel Sie fuer eine Anzahlung sparen muessen",
-      "metaDescription": "Berechnen Sie die monatlichen Sparbetraege fuer Ihr Anzahlungsziel"
+      "metaDescription": "Berechnen Sie die monatlichen Sparbetraege fuer Ihr Anzahlungsziel",
+      "guide": {
+        "steps": [
+          "Gib den erwogenen Hauspreis und deinen geplanten Anteil in Prozent ein.",
+          "Fuge deine verfugbaren Ersparnisse hinzu, um sie mit dem benotigten Betrag zu vergleichen.",
+          "Sieh den benotigten Betrag und ob du die ubliche 20-Prozent-Schwelle erreichst, die eine Versicherung erspart."
+        ],
+        "explanationTitle": "Warum die Anzahlung wichtig ist",
+        "formula": "Anzahlung = Hauspreis x Prozent; Darlehen = Hauspreis - Anzahlung",
+        "explanation": [
+          "Eine hohere Anzahlung senkt den Darlehensbetrag, reduziert die Monatsrate und kann die private Hypothekenversicherung uberflussig machen.",
+          "Kleinere Anzahlungen sind bei vielen Programmen erlaubt, kosten aber langfristig mehr durch Versicherung und Zinsen auf ein großeres Darlehen."
+        ],
+        "faq": [
+          {
+            "q": "Sind immer 20 Prozent notig?",
+            "a": "Nein. Viele Darlehen erlauben 3 bis 5 Prozent, aber unter 20 Prozent zahlst du meist eine Versicherung, bis genug Eigenkapital da ist."
+          },
+          {
+            "q": "Sollte ich Ersparnisse fur eine hohere Anzahlung aufbrauchen?",
+            "a": "Behalte eine Reserve fur Nebenkosten und Notfalle; ein leerer Notgroschen ist riskanter als eine etwas kleinere Anzahlung."
+          },
+          {
+            "q": "Zahlen Schenkungen zur Anzahlung?",
+            "a": "Banken akzeptieren oft geschenktes Geld, verlangen aber ein Schenkungsschreiben, das die Ruckzahlungsfreiheit bestatigt."
+          }
+        ]
+      }
     },
     "retirement-401k": {
       "name": "401(k)",
       "description": "Berechnen Sie Altersvorsorge mit Arbeitgeberzuschuss",
-      "metaDescription": "Berechnen Sie 401k Altersvorsorge mit Arbeitgeberzuschuss und Prognosen"
+      "metaDescription": "Berechnen Sie 401k Altersvorsorge mit Arbeitgeberzuschuss und Prognosen",
+      "guide": {
+        "steps": [
+          "Gib dein aktuelles Alter, das geplante Rentenalter, dein Gehalt und das aktuelle 401(k)-Guthaben ein.",
+          "Fuge deinen Sparbeitrag und eine eventuelle Arbeitgeberzuwendung in Prozent hinzu.",
+          "Lies den projizierten Kontostand im Ruhestand und die geschatzte jahrliche Einkommenssumme."
+        ],
+        "explanationTitle": "Wie Zinseszins einen 401(k) aufbaut",
+        "formula": "Zukunftswert = P(1+r)^n + C x (((1+r)^n - 1) / r)",
+        "explanation": [
+          "Ein 401(k) wachst steuerdeferiert, sodass Ertrage ohne jahrliche Steuerlast reinvestiert werden, und die Arbeitgeberzuwendung ist effektiv kostenloses Geld.",
+          "Fruher starten zahlt mehr als die Hohe: Beitrage mit 20 verzinsen jahrzehntelang und uberwiegen oft spatere große Einzahlungen."
+        ],
+        "faq": [
+          {
+            "q": "Wie viel sollte ich einzahlen?",
+            "a": "Sichere zuerst die volle Arbeitgeberzuwendung, dann steigere auf 10 bis 15 Prozent des Gehalts, soweit moglich."
+          },
+          {
+            "q": "Was ist die Arbeitgeberzuwendung?",
+            "a": "Viele Arbeitgeber gleichen einen Prozentsatz deiner Beitrage bis zu einer Grenze ab; wer nicht einzahlt, lasst das Geld liegen."
+          },
+          {
+            "q": "Kann ich fruh entnehmen?",
+            "a": "Fruhe Entnahmen lost meist Steuern und eine Strafe aus; einige Plane erlauben Kredite oder Notfallausnahmen mit Auflagen."
+          }
+        ]
+      }
     },
     "ira-calculator": {
       "name": "IRA",
@@ -3152,7 +3314,34 @@
     "bac-calculator": {
       "name": "Blutalkohol",
       "description": "Schaetzen Sie Ihren Blutalkoholspiegel und die Abbauzeit",
-      "metaDescription": "Berechnen Sie Ihren Blutalkoholspiegel und die Zeit bis zur Nuechternheit"
+      "metaDescription": "Berechnen Sie Ihren Blutalkoholspiegel und die Zeit bis zur Nuechternheit",
+      "guide": {
+        "steps": [
+          "Gib Geschlecht, Gewicht, Anzahl Standardgetranke und die Trinkstunden ein.",
+          "Fuge Alkoholgehalt und Dauer hinzu, falls ein Detailmodus verfugbar ist.",
+          "Lies die geschatze Blutalkoholkonzentration und die Stunden bis zur Nuchternheit."
+        ],
+        "explanationTitle": "Blutalkoholkonzentration abschatzen",
+        "formula": "BAC = (A x 5,14 / W x r) - 0,015 x H  (A=Unzen Alkohol, W=Pfund, r=0,73/0,66)",
+        "explanation": [
+          "Der BAC schatzt den Alkohol im Blut aus Menge, Korperwasser und Stoffwechselzeit, der etwa 0,015 Prozent pro Stunde abbaut.",
+          "Es ist nur eine Schatzung; Essen, Medikamente, Schlaf und Toleranz andern die Wirkung. Nutze die Zahl nie, um zu entscheiden, ob du fahren kannst."
+        ],
+        "faq": [
+          {
+            "q": "Was ist ein Standardgetrank?",
+            "a": "Rund 14 g reiner Alkohol, etwa 350 ml Bier, 150 ml Wein oder 45 ml Spirituosen, je nach Starke unterschiedlich."
+          },
+          {
+            "q": "Kann ich bei 0,02 Prozent fahren?",
+            "a": "Gesetze unterscheiden sich, und die Beeintrachtigung beginnt mit dem ersten Drink; wer Alkohol konsumiert hat, fahrt am besten nicht."
+          },
+          {
+            "q": "Warum andert das Geschlecht das Ergebnis?",
+            "a": "Das durchschnittliche Korperwasser unterscheidet sich, sodass gleiche Mengen bei weniger Wasser pro kg eine hohere Konzentration ergeben."
+          }
+        ]
+      }
     },
     "due-date": {
       "name": "Geburtstermin",
@@ -3223,7 +3412,34 @@
     "pregnancy-weight-gain": {
       "name": "Schwangerschafts-Gewichtszunahme",
       "description": "Berechnen Sie die empfohlene Gewichtszunahme waehrend der Schwangerschaft",
-      "metaDescription": "Berechnen Sie eine gesunde Gewichtszunahme in der Schwangerschaft nach BMI"
+      "metaDescription": "Berechnen Sie eine gesunde Gewichtszunahme in der Schwangerschaft nach BMI",
+      "guide": {
+        "steps": [
+          "Gib dein Gewicht vor der Schwangerschaft und deine Grose ein, um den Start-BMI zu berechnen.",
+          "Wahle den empfohlenen Zunahmebereich fur deine BMI-Kategorie.",
+          "Vergleiche deine aktuelle Zunahme mit der empfohlenen Gesamtmenge pro Trimenon."
+        ],
+        "explanationTitle": "Empfohlene Gewichtszunahme in der Schwangerschaft",
+        "formula": "Gesamt nach BMI: untergewichtig 12,5 bis 18 kg, normal 11,5 bis 16 kg, ubergewichtig 7 bis 11,5 kg, adipos 5 bis 9 kg",
+        "explanation": [
+          "Die Zunahme unterstutzt Baby, Plazenta, Fruchtwasser und mutterliche Gewebespeicher; die richtige Menge hangt vor allem vom Start-BMI ab.",
+          "Zu wenig oder zu viel Zunahme hangt mit Risiken fur Geburt und Kind verbunden, daher sind Bereiche Leitlinien, keine strengen Regeln, und dein Arzt passt sie an."
+        ],
+        "faq": [
+          {
+            "q": "Was, wenn ich Zwillinge erwarte?",
+            "a": "Die empfohlenen Mengen sind bei Mehrlingen hoher; folge dem genauen Plan deines Arztes."
+          },
+          {
+            "q": "Kann ich schwanger abnehmen?",
+            "a": "Schwangerschaft ist keine Zeit zum Abnehmen; achte auf stetige, ausreichende Zunahme mit guter Ernahrung."
+          },
+          {
+            "q": "Warum zahlt der Start-BMI?",
+            "a": "Er legt die sicherste Zunahmebandbreite fest, weil Risikomuster je nach Startgewicht verschieden sind."
+          }
+        ]
+      }
     },
     "gfr-calculator": {
       "name": "GFR",
@@ -3238,7 +3454,34 @@
     "healthy-weight": {
       "name": "Gesundes-Gewicht",
       "description": "Finden Sie Ihren gesunden Gewichtsbereich nach Groesse",
-      "metaDescription": "Berechnen Sie Ihren gesunden Gewichtsbereich nach Ihrer Groesse"
+      "metaDescription": "Berechnen Sie Ihren gesunden Gewichtsbereich nach Ihrer Groesse",
+      "guide": {
+        "steps": [
+          "Gib Grose, Gewicht, Alter und das bei der Geburt zugewiesene Geschlecht ein.",
+          "Wahle den Formelsatz, falls fur deine Region mehrere angeboten werden.",
+          "Lies deinen gesunden Gewichtsbereich und wo du darin aktuell liegst."
+        ],
+        "explanationTitle": "Gesundes Gewicht ist ein Bereich, keine Zahl",
+        "formula": "Basiert auf BMI 18,5 bis 24,9 zuruckgerechnet: Gewicht = BMI x Grose^2",
+        "explanation": [
+          "Gesundes Gewicht wird als Bereich gezeigt, weil eine einzelne Zahl die Korperzusammensetzung ignoriert; Muskeln, Knochen und Rahmen verschieben das Richtige fur dich.",
+          "Der Bereich ist eine Screening-Hilfe, keine Diagnose. Sportler und altere Menschen sollten zusatzlich Korperfett und Taillenumfang beachten."
+        ],
+        "faq": [
+          {
+            "q": "Warum ein Bereich und nicht ein Gewicht?",
+            "a": "Gleich große Menschen unterscheiden sich in Muskel und Knochen, daher erfasst eine Bandbreite die normale Streuung besser."
+          },
+          {
+            "q": "Reicht der BMI?",
+            "a": "Er ist ein nutzlicher Screen, aber erfasst die Korperzusammensetzung nicht; kombiniere ihn mit Taillenmass und Fitness."
+          },
+          {
+            "q": "Unterscheidet sich der Bereich nach Ethnie?",
+            "a": "Manche Richtlinien nutzen niedrigere Grenzwerte fur bestimmte Bevolkerungsgruppen; folge lokalen Gesundheitshinweisen."
+          }
+        ]
+      }
     },
     "protein-calculator": {
       "name": "Eiweiß",
@@ -3450,7 +3693,34 @@
     "basic-calculator": {
       "name": "Taschenrechner",
       "description": "Führt arithmetische Berechnungen mit Ausdrucksunterstützung durch",
-      "metaDescription": "Kostenloser Online-Taschenrechner"
+      "metaDescription": "Kostenloser Online-Taschenrechner",
+      "guide": {
+        "steps": [
+          "Tippe Zahlen uber das Bildschirmfeld oder deine Tastatur ein.",
+          "Nutze + - x / und Klammern fur die Reihenfolge der Operationen.",
+          "Lies das Ergebnis und nutze Clear oder Backspace fur eine neue Rechnung."
+        ],
+        "explanationTitle": "Reihenfolge der Operationen",
+        "formula": "PEMDAS: Klammern, Potenzen, Punktrechnung, Strichrechnung",
+        "explanation": [
+          "Der Rechner folgt der ublichen Prioritat, also ist 2 + 3 x 4 gleich 14, nicht 20; Klammern erzwingen eine andere Gruppierung.",
+          "Er ist exakt fur die angezeigten Ziffern, aber sehr lange Zahlen werden zur Anzeige gerundet; nutze den wissenschaftlichen Modus fur hohe Prazision."
+        ],
+        "faq": [
+          {
+            "q": "Warum weicht mein Ergebnis ab?",
+            "a": "Prufe Klammern und Reihenfolge; Multiplikation lauft vor Addition, sofern du sie nicht gruppierst."
+          },
+          {
+            "q": "Speichert er Verlauf?",
+            "a": "Diese einfache Ansicht zeigt die aktuelle Zeile; nutze den Ausdrucksverlauf, falls deine Version ihn bietet."
+          },
+          {
+            "q": "Kann er Bruche?",
+            "a": "Er rechnet mit Dezimalzahlen; wandele Bruche zuerst in Dezimalzahlen um, um genaue Ergebnisse zu erhalten."
+          }
+        ]
+      }
     },
     "fraction-calculator": {
       "name": "Bruch",
