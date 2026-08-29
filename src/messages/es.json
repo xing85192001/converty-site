@@ -1131,7 +1131,71 @@
     "retirement": {
       "name": "Jubilación",
       "description": "Planifica tu jubilación con proyecciones de ahorro y planificación de ingresos",
-      "metaDescription": "Ahorro y planificación de ingresos para la jubilación"
+      "metaDescription": "Ahorro y planificación de ingresos para la jubilación",
+      "guide": {
+        "steps": [
+          "Introduce tu edad actual y la edad prevista de jubilación para fijar el periodo de acumulación.",
+          "Indica los ahorros actuales, la aportación mensual y la rentabilidad anual esperada.",
+          "Consulta el capital previsto y la retirada mensual segura que sugiere la regla del 4%."
+        ],
+        "explanationTitle": "Cómo se proyecta el ahorro para la jubilación",
+        "formula": "Valor futuro = ahorros actuales × (1+r)ⁿ + aportación × [((1+r)ⁿ − 1) ÷ r]",
+        "explanation": [
+          "La fórmula tiene dos partes: los ahorros actuales capitalizando hasta la jubilación, y las aportaciones periódicas acumulándose según la fórmula del valor futuro de una anualidad. r es el tipo mensual, la rentabilidad anual dividida entre 12, y n los meses hasta la jubilación. Supone rentabilidad constante, capitalización mensual y aportaciones al final del periodo, así que el resultado es un escenario, no una predicción, porque los mercados reales fluctúan.",
+          "Una regla práctica es la del 4%: retiras el 4% de la cartera el primer año y ajustas la cantidad cada año con la inflación; con eso es poco probable que el dinero se agote en 30 años de jubilación. Procede de backtests con datos de Estados Unidos e implica ahorrar 25 veces tu gasto anual. Si te jubilas antes o prevés una jubilación más larga, baja la tasa segura al 3,0%–3,5%. El resultado es muy sensible a la rentabilidad supuesta, así que prueba escenarios optimista, neutro y pesimista."
+        ],
+        "tableTitle": "Efecto de la aportación mensual (30 años al 6% anual)",
+        "tableHeaders": [
+          "Mensual",
+          "Aportado",
+          "Valor final",
+          "Crecimiento"
+        ],
+        "tableRows": [
+          [
+            "500",
+            "180.000",
+            "≈ 502.000",
+            "≈ 322.000"
+          ],
+          [
+            "1.000",
+            "360.000",
+            "≈ 1.004.000",
+            "≈ 644.000"
+          ],
+          [
+            "2.000",
+            "720.000",
+            "≈ 2.008.000",
+            "≈ 1.288.000"
+          ],
+          [
+            "3.000",
+            "1.080.000",
+            "≈ 3.012.000",
+            "≈ 1.932.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Sigue vigente la regla del 4%?",
+            "a": "Es un buen punto de partida, no una ley. Se probó con la historia de Estados Unidos: si las rentabilidades futuras son menores, la jubilación dura más de 30 años o tus mercados se comportan distinto, la tasa segura debe bajar. Estudios recientes suelen sugerir entre el 3,0% y el 3,5%, o una retirada dinámica que se reduce en los años de fuertes caídas."
+          },
+          {
+            "q": "¿Qué porcentaje de mis ingresos debo ahorrar?",
+            "a": "Un objetivo habitual es entre el 10% y el 15% del ingreso bruto, incluida la aportación de la empresa. Más importante es la tasa de sustitución: la mayoría necesita entre el 70% y el 80% de sus ingresos previos para mantener su nivel de vida. Empezar a los 30 suele exigir entre el 15% y el 20%; empezar antes de los 25 puede bastar con un 10%."
+          },
+          {
+            "q": "¿Cómo tengo en cuenta la inflación?",
+            "a": "La calculadora muestra importes nominales, sin descontar la inflación. Para ver poder de compra real, resta la inflación esperada de la rentabilidad esperada: con un 7% nominal y un 3% de inflación, usa un 4% real. Al 3% de inflación, un millón dentro de 30 años equivale a unos 410.000 de hoy, así que ignorarla sobrestima mucho tu situación."
+          },
+          {
+            "q": "¿Cuánto cuesta empezar diez años más tarde?",
+            "a": "Muchísimo. Aportando 1.000 al mes al 6% desde los 25 hasta los 60 se llega a unos 1.430.000; empezando a los 35, solo unos 700.000, menos de la mitad. Se pierden diez años de capitalización, y la capitalización trabaja con más fuerza al final. Empezar antes suele pesar más que aportar más."
+          }
+        ]
+      }
     },
     "tip": {
       "name": "Propina",
@@ -1141,17 +1205,203 @@
     "savings-goal": {
       "name": "Meta de Ahorro",
       "description": "Calcula cuánto tiempo se necesita para alcanzar la meta de ahorro",
-      "metaDescription": "Planifica tus ahorros y alcanza tus metas"
+      "metaDescription": "Planifica tus ahorros y alcanza tus metas",
+      "guide": {
+        "steps": [
+          "Introduce el objetivo, como una entrada, un fondo de estudios o un colchón de emergencia, y lo que ya tienes ahorrado.",
+          "Indica el tiempo hasta el objetivo, en meses o años, y la rentabilidad anual esperada.",
+          "Consulta la aportación mensual necesaria y cómo cambia si ajustas el plazo."
+        ],
+        "explanationTitle": "Cuánto debes ahorrar cada mes",
+        "formula": "Aportación = (objetivo − valor actual × (1+r)ⁿ) × r ÷ [(1+r)ⁿ − 1]",
+        "explanation": [
+          "Es la fórmula del valor futuro de una anualidad despejada. Primero se calcula cuánto crecerán tus ahorros actuales, valor actual por (1+r)ⁿ; la diferencia con el objetivo es el hueco; después se resuelve la cuota mensual que lo cubre en n meses. r es el tipo mensual y n el número de periodos. Si el valor futuro de tus ahorros ya supera el objetivo, el resultado es cero o negativo: ya no necesitas aportar más.",
+          "La fórmula deja ver tres palancas: ampliar el plazo, subir la rentabilidad o reducir el objetivo. El plazo es con diferencia la más potente, porque la capitalización se acelera al final. Para un objetivo de 300.000 al 4% anual, conseguirlo en 10 años exige unos 2.036 al mes, mientras que en 20 años bastan unos 819. Duplicar el horizonte reduce la cuota a menos de la mitad: esa es la razón matemática de empezar cuanto antes."
+        ],
+        "tableTitle": "Aportación mensual para un objetivo de 300.000 (al 4% anual)",
+        "tableHeaders": [
+          "Plazo",
+          "Mensual",
+          "Aportado",
+          "Crecimiento"
+        ],
+        "tableRows": [
+          [
+            "5 años",
+            "≈ 4.527",
+            "≈ 271.600",
+            "≈ 28.400"
+          ],
+          [
+            "10 años",
+            "≈ 2.036",
+            "≈ 244.300",
+            "≈ 55.700"
+          ],
+          [
+            "15 años",
+            "≈ 1.220",
+            "≈ 219.600",
+            "≈ 80.400"
+          ],
+          [
+            "20 años",
+            "≈ 819",
+            "≈ 196.600",
+            "≈ 103.400"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Qué rentabilidad debo suponer?",
+            "a": "Depende del destino y del plazo. El dinero que necesitarás en menos de tres años, como una entrada, debe suponerse con rentabilidad baja o nula y mantenerse en depósitos o fondos monetarios. Para importes que pueden permanecer cinco años o más y toleran volatilidad, entre el 4% y el 6% es razonable. No inflies la rentabilidad para que las cifras salgan cómodas: subestimar la aportación significa no llegar al objetivo."
+          },
+          {
+            "q": "¿De cuánto debe ser mi fondo de emergencia?",
+            "a": "Lo habitual son entre tres y seis meses de gastos, ampliables a nueve o doce si tus ingresos son irregulares o tienes personas a tu cargo. Lo esencial es la liquidez y la seguridad, así que guárdalo en una cuenta disponible o en un fondo monetario, sin perseguir rentabilidad. Llena primero este cubo antes de ahorrar para otros objetivos."
+          },
+          {
+            "q": "¿Debe el objetivo tener en cuenta la inflación?",
+            "a": "Sí. Un objetivo a diez años requiere el poder de compra de 300.000 en ese momento, no el de hoy. Con un 3% de inflación, 300.000 dentro de diez años equivalen a unos 223.000 actuales, de modo que el objetivo nominal debería rondar los 403.000. También puedes calcular con la rentabilidad real, nominal menos inflación, y obtendrás lo mismo."
+          },
+          {
+            "q": "¿Y si no puedo ahorrar tanto?",
+            "a": "Tres variables se pueden mover: ampliar el plazo, reducir el objetivo o buscar más rentabilidad asumiendo más riesgo. Conviene además revisar los gastos y localizar recortes. Como comprobación sirve la regla 50/30/20: 50% para necesidades, 30% para deseos y 20% para ahorro y deuda. Si no llegas al 20%, suele funcionar mejor recortar costes fijos como suscripciones, seguros y desplazamientos que recortar pequeños gustos diarios."
+          }
+        ]
+      }
     },
     "inflation": {
       "name": "Inflación",
       "description": "Calcula el impacto de la inflación en el poder adquisitivo",
-      "metaDescription": "Entiende el impacto de la inflación en tu dinero"
+      "metaDescription": "Entiende el impacto de la inflación en tu dinero",
+      "guide": {
+        "steps": [
+          "Introduce un importe junto con el año de inicio y el de fin.",
+          "Indica la tasa de inflación media anual del periodo, como promedio histórico o como supuesto propio.",
+          "Consulta el valor ajustado y cuánto poder de compra se ha perdido."
+        ],
+        "explanationTitle": "Cómo la inflación erosiona el poder de compra",
+        "formula": "Valor real = importe nominal ÷ (1 + inflación)ⁿ",
+        "explanation": [
+          "Inflación significa que la misma cantidad compra cada vez menos. La conversión descuenta el importe nominal con la tasa: una unidad dentro de n años equivale hoy a 1 ÷ (1 + i)ⁿ. En sentido inverso, para saber en qué se convierten nominalmente 100 de hoy se usa 100 × (1 + i)ⁿ. Ambas direcciones emplean la misma fórmula de capitalización, dividiendo o multiplicando.",
+          "Lo decisivo es que la erosión también se capitaliza. Una inflación del 3% parece suave, pero en unos 24 años el poder de compra se reduce a la mitad, porque 1,03 elevado a 24 es aproximadamente 2. Al 5%, bastan unos 14 años. Por eso el ahorro a largo plazo debe medirse por la rentabilidad real, nominal menos inflación: con un 2% de interés y un 3% de inflación pierdes alrededor de un 1% anual en términos reales, y cuanto más tiempo, más caro sale."
+        ],
+        "tableTitle": "Poder de compra de 100 según la inflación",
+        "tableHeaders": [
+          "Horizonte",
+          "Inflación 2%",
+          "Inflación 3%",
+          "Inflación 5%"
+        ],
+        "tableRows": [
+          [
+            "Tras 10 años",
+            "≈ 82,0",
+            "≈ 74,4",
+            "≈ 61,4"
+          ],
+          [
+            "Tras 20 años",
+            "≈ 67,3",
+            "≈ 55,4",
+            "≈ 37,7"
+          ],
+          [
+            "Tras 30 años",
+            "≈ 55,2",
+            "≈ 41,2",
+            "≈ 23,1"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué el IPC oficial no coincide con la inflación que percibo?",
+            "a": "El IPC es una media ponderada de una cesta de bienes y servicios pensada para un hogar representativo. Tu estructura de gasto es distinta: si destinas mucho a alquiler, educación o sanidad y esos conceptos suben por encima de la media, tu inflación personal supera la publicada. Además el IPC ajusta por calidad, así que un móvil más caro pero mucho mejor no cuenta enteramente como inflación."
+          },
+          {
+            "q": "¿Qué inflación debo suponer a largo plazo?",
+            "a": "En la mayoría de economías avanzadas la media de largo plazo se sitúa entre el 2% y el 3%, que es también la banda objetivo de muchos bancos centrales. Para planificar jubilación o estudios, usa el 3% como caso neutro y añade un escenario pesimista del 4% al 5%. La inflación es una de las variables más inciertas de la planificación, y conviene pecar de precavido."
+          },
+          {
+            "q": "¿Qué es la deflación y ocurre de verdad?",
+            "a": "La deflación es una caída generalizada y sostenida de los precios, es decir, inflación negativa. Suena bien, pero es peligrosa: si se esperan precios más bajos se posponen las compras, las empresas bajan precios y recortan empleo, la demanda cae más y el ciclo se alimenta. Japón lo sufrió desde los años noventa, y por eso los bancos centrales apuntan a una inflación moderada en torno al 2%."
+          },
+          {
+            "q": "¿Cómo calculo la rentabilidad real?",
+            "a": "Con precisión: (1 + nominal) ÷ (1 + inflación) − 1; con un 6% nominal y un 3% de inflación resulta un 2,91% real. En la práctica basta con restar, aquí un 3%. Para saber si una inversión aumenta realmente tu patrimonio, mira siempre la rentabilidad real, no la cifra nominal."
+          }
+        ]
+      }
     },
     "roi": {
       "name": "Retorno de Inversión",
       "description": "Calcula el retorno de la inversión y los retornos anualizados",
-      "metaDescription": "Calcula tus retornos de inversión"
+      "metaDescription": "Calcula tus retornos de inversión",
+      "guide": {
+        "steps": [
+          "Introduce el coste de la inversión: precio de compra más todas las comisiones e impuestos.",
+          "Introduce el importe recuperado, ya sea el precio de venta o el valor actual, neto de costes de salida.",
+          "Consulta el retorno, el beneficio neto y la tasa anualizada si indicas un periodo de tenencia."
+        ],
+        "explanationTitle": "Cómo se calcula el retorno de la inversión",
+        "formula": "ROI = (beneficio − coste) ÷ coste × 100%",
+        "explanation": [
+          "El ROI mide la eficiencia: beneficio neto dividido por el importe invertido. Es intuitivo y universal, así que permite comparar inmuebles, acciones, maquinaria o una campaña publicitaria siempre que se usen los mismos criterios. Su gran debilidad es que ignora el tiempo: una inversión que gana un 30% en tres años y otra que lo gana en diez tienen el mismo ROI, pero distan mucho de ser equivalentes.",
+          "Cuando los plazos difieren, usa la tasa anualizada, también llamada CAGR: (valor final ÷ valor inicial)^(1/años) − 1. En el ejemplo, un 30% en tres años equivale a unos 9,1% anuales, mientras que en diez años apenas llega al 2,7%. Otro descuido frecuente es la base de coste: las acciones llevan comisiones e impuestos, los inmuebles impuestos de transmisión, honorarios de agencia, reforma y gastos corrientes, y omitirlos infla bastante la rentabilidad real."
+        ],
+        "tableTitle": "ROI frente a rentabilidad anualizada (CAGR)",
+        "tableHeaders": [
+          "Proyecto",
+          "ROI total",
+          "Periodo",
+          "Anualizada"
+        ],
+        "tableRows": [
+          [
+            "A: operación corta",
+            "+30%",
+            "3 años",
+            "≈ 9,1%"
+          ],
+          [
+            "B: mantenida a largo",
+            "+30%",
+            "10 años",
+            "≈ 2,7%"
+          ],
+          [
+            "C: inmueble",
+            "+45%",
+            "5 años",
+            "≈ 7,7%"
+          ],
+          [
+            "D: fondo indexado",
+            "+80%",
+            "10 años",
+            "≈ 6,1%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Qué ROI se considera bueno?",
+            "a": "No hay una cifra absoluta; depende de la referencia y del plazo. Los depósitos a largo plazo rondan el 1% o 2% anual y los grandes índices bursátiles han dado históricamente entre el 7% y el 10% nominal. Por eso un proyecto plurianual que annualice por encima del 8% suele ser razonable. Pero hay que mirar el riesgo: un ROI alto suele ir acompañado de volatilidad o apalancamiento, así que conviene evaluar medidas ajustadas al riesgo como el ratio de Sharpe."
+          },
+          {
+            "q": "¿Cuál es la diferencia entre ROI y TIR?",
+            "a": "El ROI mira solo el retorno final y encaja con una inversión única sin flujos intermedios. La TIR considera el momento de cada flujo de caja, por lo que es adecuada para aportaciones escalonadas o ingresos intermedios como la inversión periódica, el alquiler o proyectos empresariales. Cuando los flujos son complejos, la TIR es la medida más precisa."
+          },
+          {
+            "q": "¿Por qué mi rentabilidad real es menor que el ROI calculado?",
+            "a": "Tres causas habituales: costes omitidos como comisiones, impuestos y pérdidas por tipo de cambio; la inflación, porque las ganancias nominales deben ajustarse para conocer el poder de compra real; y el coste de oportunidad, lo que ese dinero habría ganado en otro sitio. Con apalancamiento hay que descontar además los intereses, que amplifican tanto los beneficios como las pérdidas."
+          },
+          {
+            "q": "¿Cómo se calcula el ROI con pérdidas?",
+            "a": "La fórmula no cambia y el resultado es negativo. Con un coste de 10.000 y un ingreso de 7.000, ROI = (7.000 − 10.000) ÷ 10.000 = −30%. Fíjate en la asimetría: tras una pérdida del 30% hace falta una subida de alrededor del 42,9% para recuperar el capital, ya que 1 ÷ 0,7 − 1 ≈ 0,429. Cuanto mayor es la caída, más difícil la recuperación, y por eso limitar las pérdidas importa más que perseguir ganancias."
+          }
+        ]
+      }
     },
     "break-even": {
       "name": "Punto de Equilibrio",
@@ -1265,7 +1515,65 @@
     "credit-card": {
       "name": "Tarjeta de crédito",
       "description": "Calcular el tiempo de pago y los intereses de la tarjeta de crédito.",
-      "metaDescription": "Calcule el tiempo de pago de la tarjeta de crédito y el costo total de intereses"
+      "metaDescription": "Calcule el tiempo de pago de la tarjeta de crédito y el costo total de intereses",
+      "guide": {
+        "steps": [
+          "Introduce el saldo actual, la TAE de la tarjeta y la cantidad que piensas pagar cada mes.",
+          "Si solo pagas el mínimo, marca esa opción para ver cuántos años tardarías en liquidar la deuda.",
+          "Consulta los meses necesarios, los intereses totales y cuánto ahorrarías con una cuota fija mensual."
+        ],
+        "explanationTitle": "Cómo se acumulan los intereses de la tarjeta",
+        "formula": "Interés mensual = saldo medio diario × TAE ÷ 365 × días del ciclo",
+        "explanation": [
+          "La mayoría de las tarjetas usan el método del saldo medio diario: el emisor suma el saldo de cada día del ciclo, lo divide entre los días y aplica el tipo diario, es decir la TAE dividida entre 365, multiplicado por los días del ciclo. Pagar al principio del periodo reduce mucho los intereses; esperar al último día los devenga por todo el ciclo.",
+          "La trampa del pago mínimo es que suele ser solo entre el 1% y el 3% del saldo más intereses y comisiones. Con una deuda de 20.000 al 18% pagando el 2% mínimo, de los primeros 400 unos 300 son intereses y solo 100 amortizan, así que se tardan más de 30 años en saldarla y los intereses llegan a casi el triple de la deuda original. Pagar 1.000 fijos al mes la liquida en unos 24 meses con unos 4.000 de intereses. La diferencia es enorme."
+        ],
+        "tableTitle": "Comparativa de formas de pago (deuda de 20.000 al 18%)",
+        "tableHeaders": [
+          "Enfoque",
+          "Cuota mensual",
+          "Tiempo",
+          "Intereses totales"
+        ],
+        "tableRows": [
+          [
+            "Solo mínimo (2%)",
+            "desde ≈ 400",
+            "más de 30 años",
+            "≈ 58.000"
+          ],
+          [
+            "Cuota fija 800",
+            "800",
+            "≈ 32 meses",
+            "≈ 5.600"
+          ],
+          [
+            "Cuota fija 1.500",
+            "1.500",
+            "≈ 16 meses",
+            "≈ 2.800"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Pagar solo el mínimo afecta a mi historial?",
+            "a": "Mientras pagues al menos el mínimo no hay marca de impago y la cuenta sigue figurando como al corriente. Pero mantener un saldo alto eleva tu utilización de crédito, la proporción entre saldo y límite, que supone en torno al 30% de la puntuación. Superar el 30% de forma sostenida la reduce."
+          },
+          {
+            "q": "¿Por qué vuelven a aparecer intereses tras pagar?",
+            "a": "Por los intereses residuales. El saldo siguió devengando intereses entre la fecha de tu pago y la fecha del extracto, y esos intereses se cargan en el siguiente. Para detenerlos por completo, paga el saldo íntegro antes de la fecha del extracto, deja de usar la tarjeta durante un ciclo completo y comprueba que el siguiente extracto marque cero intereses."
+          },
+          {
+            "q": "¿Es mejor un plan a plazos que pagar el mínimo?",
+            "a": "Normalmente sí. Los planes a plazos fijan un tipo más bajo, a menudo entre el 7% y el 12% anual frente al 18% revolving, con cuota constante y fecha de fin clara. Revisa la comisión de apertura y si cancelar antes mantiene los cargos pendientes, y compara el coste anual real antes de contratarlo."
+          },
+          {
+            "q": "¿Cuál es la forma más rápida de salir de la deuda de tarjetas?",
+            "a": "Dos estrategias habituales: con la bola de nieve liquidas primero la deuda más pequeña para ganar impulso; con la avalancha atacas primero el tipo más alto, lo que más intereses ahorra matemáticamente. En ambos casos, deja de gastar con la tarjeta, fija una cuota mensual y prioriza trasladar o fraccionar el saldo más caro."
+          }
+        ]
+      }
     },
     "down-payment": {
       "name": "Pago inicial",
@@ -1368,7 +1676,71 @@
     "ideal-weight": {
       "name": "Peso Ideal",
       "description": "Calcule el peso corporal ideal usando múltiples fórmulas",
-      "metaDescription": "Calcule su peso corporal ideal usando las fórmulas de Robinson, Miller, Devine y Hamwi"
+      "metaDescription": "Calcule su peso corporal ideal usando las fórmulas de Robinson, Miller, Devine y Hamwi",
+      "guide": {
+        "steps": [
+          "Selecciona sexo y sistema de unidades, los coeficientes cambian según el sexo.",
+          "Introduce tu altura; algunas fórmulas piden además edad o complexión.",
+          "Compara el rango que dan varias fórmulas y fíjate en las diferencias sistemáticas entre ellas."
+        ],
+        "explanationTitle": "Las distintas fórmulas de peso ideal",
+        "formula": "Devine (hombres) = 50 + 0,9 × (altura cm − 152,4); Hamwi (mujeres) = 45,5 + 0,9 × (altura cm − 152,4)",
+        "explanation": [
+          "El peso ideal no es un único estándar, sino un conjunto de ecuaciones históricas. La fórmula de Devine, de 1974, se creó para estimar dosis de anestesia y medicamentos y después se adoptó para uso cotidiano. Hamwi y Robinson son algo anteriores y dan resultados parecidos. Todas comparten la forma de un valor base más 0,9 kg por cada centímetro por encima de 152,4 cm, es decir cinco pies.",
+          "Conviene tener presentes dos advertencias. Primero, las ecuaciones se construyeron hace décadas con muestras mayoritariamente occidentales y no consideran la edad, la complexión ni la masa muscular, por lo que tienden a quedar entre un 5% y un 10% por debajo en poblaciones asiáticas. Segundo, sus objetivos difieren: Devine sirve para dosificar, el IMC para cribar riesgos y el porcentaje de grasa para valorar la composición. Entiende el peso ideal como una banda de más o menos un 10% en torno a los resultados, no como una cifra exacta que debas alcanzar."
+        ],
+        "tableTitle": "Peso ideal según la fórmula (hombre 175 cm, mujer 165 cm)",
+        "tableHeaders": [
+          "Fórmula",
+          "Hombre 175 cm",
+          "Mujer 165 cm",
+          "Nota"
+        ],
+        "tableRows": [
+          [
+            "Devine (1974)",
+            "≈ 70,4 kg",
+            "≈ 56,7 kg",
+            "La más usada para dosificar"
+          ],
+          [
+            "Hamwi (1964)",
+            "≈ 70,3 kg",
+            "≈ 56,7 kg",
+            "Cercana a Devine"
+          ],
+          [
+            "Robinson (1983)",
+            "≈ 68,0 kg",
+            "≈ 56,9 kg",
+            "Algo menor en hombres"
+          ],
+          [
+            "Miller (1983)",
+            "≈ 69,4 kg",
+            "≈ 56,8 kg",
+            "Entre ambas"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Coincide el peso ideal con un IMC normal?",
+            "a": "Se corresponden de forma aproximada, no exacta. Los valores de Devine equivalen para la mayoría de las alturas a un IMC de entre 21 y 23, la zona media-baja del intervalo normal, mientras que el IMC normal abarca de 18,5 a 24,9. Para una misma altura, tener un IMC normal es un objetivo mucho más amplio que el peso ideal; son simplemente marcos distintos."
+          },
+          {
+            "q": "¿Cómo deben estimarlo los deportistas?",
+            "a": "Estas fórmulas no sirven en su caso. El músculo es más denso que la grasa, así que los atletas de fuerza suelen superar el valor calculado entre un 15% y un 25% con poca grasa corporal y buenos marcadores metabólicos. Deben fijarse en el porcentaje de grasa y el perímetro de cintura. Del mismo modo, una persona mayor con pérdida de músculo puede alcanzar el peso objetivo y aun así tener demasiada grasa."
+          },
+          {
+            "q": "¿Por qué no coinciden las fórmulas?",
+            "a": "Porque se ajustaron con muestras, épocas y fines distintos. Devine y Hamwi difieren en menos de un 1%, mientras que Robinson y Miller dan entre 2 y 3 kg menos en hombres. Esa dispersión es muy inferior a la variación natural entre personas, así que importa menos elegir una fórmula que mirar el conjunto como un rango."
+          },
+          {
+            "q": "¿Estar por debajo del peso ideal es siempre más sano?",
+            "a": "No. Un IMC inferior a 18,5 se asocia a menor inmunidad, pérdida de masa ósea, alteraciones del ciclo menstrual y riesgo de desnutrición. Además, el peso bajo suele acompañarse de poca masa muscular, y el músculo sostiene la salud metabólica y la autonomía en la vejez. El objetivo es grasa moderada con músculo suficiente, no el número más bajo en la báscula."
+          }
+        ]
+      }
     },
     "bmr-calculator": {
       "name": "TMB",
@@ -1442,7 +1814,77 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Calcular el gasto energético diario total",
-      "metaDescription": "Calcule su gasto energético diario total según el nivel de actividad"
+      "metaDescription": "Calcule su gasto energético diario total según el nivel de actividad",
+      "guide": {
+        "steps": [
+          "Introduce sexo, edad, altura y peso para establecer tu tasa metabólica basal.",
+          "Elige el nivel de actividad que mejor describa una semana habitual, desde sedentario hasta atleta.",
+          "Consulta tu gasto energético total y la ingesta recomendada para perder grasa, mantener o ganar músculo."
+        ],
+        "explanationTitle": "Cómo se calcula el gasto energético total",
+        "formula": "Gasto total = TMB (Mifflin-St Jeor) × factor de actividad (1,2 – 1,9)",
+        "explanation": [
+          "El gasto energético total tiene cuatro componentes: el metabolismo basal, entre el 60% y el 75%; el efecto termogénico de los alimentos, alrededor del 10%, porque digerir también gasta energía; la termogénesis por actividad sin ejercicio, cerca del 15% al caminar, hacer tareas o moverte sin darte cuenta; y el ejercicio, entre el 0% y el 30%. La calculadora obtiene la TMB con Mifflin-St Jeor y la multiplica por el factor elegido.",
+          "El componente más infravalorado es la actividad cotidiana. Dos personas con el mismo entrenamiento, una con una hora de desplazamientos y trabajo de pie, la otra sentada todo el día, pueden distanciarse en 400 o 600 kcal diarias, más que una sesión de ejercicio moderado. Elige el factor según una semana típica, no según tu día más activo, y si el resultado no concuerda con la evolución real de tu peso, ajusta entre un 10% y un 15%."
+        ],
+        "tableTitle": "Factores de actividad (para una TMB de 1.600 kcal)",
+        "tableHeaders": [
+          "Nivel",
+          "Factor",
+          "Situación típica",
+          "Gasto total"
+        ],
+        "tableRows": [
+          [
+            "Sedentario",
+            "1,2",
+            "Trabajo de oficina, poco ejercicio extra",
+            "1.920 kcal"
+          ],
+          [
+            "Ligero",
+            "1,375",
+            "Ejercicio suave 1–3 días por semana",
+            "2.200 kcal"
+          ],
+          [
+            "Moderado",
+            "1,55",
+            "Ejercicio moderado 3–5 días por semana",
+            "2.480 kcal"
+          ],
+          [
+            "Alto",
+            "1,725",
+            "Ejercicio intenso 6–7 días por semana",
+            "2.760 kcal"
+          ],
+          [
+            "Muy alto",
+            "1,9",
+            "Trabajo físico más dos entrenamientos diarios",
+            "3.040 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la diferencia entre gasto total y TMB?",
+            "a": "La TMB cubre el mínimo en reposo absoluto; el gasto total añade el movimiento diario, el ejercicio y la digestión. Planifica tu ingesta con el gasto total, porque refleja la vida que llevas realmente. Usar la TMB como objetivo subestima mucho tus necesidades y provoca ingesta insuficiente, adaptación metabólica y pérdida de músculo."
+          },
+          {
+            "q": "¿Por qué no cambia mi peso si como según mi gasto total?",
+            "a": "Lo más habitual es haber elegido mal el factor de actividad. La mayoría sobreestima su ejercicio, y un trabajador de oficina que se marca como moderado se apunta entre 300 y 500 kcal que no existen. Empieza por sedentario o ligero, registra comida y peso durante dos semanas y ajusta. Si el peso se mantiene, la ingesta iguala el gasto, y esa es la calibración más fiable."
+          },
+          {
+            "q": "¿Qué déficit conviene para perder grasa?",
+            "a": "Unos 300 a 500 kcal diarios por debajo del gasto total, equivalentes a 0,3–0,5 kg por semana. Un déficit mayor acelera la pérdida de músculo y la adaptación metabólica, lo que dificulta el progreso a largo plazo. No bajes de tu TMB y mantente, por norma, por encima de 1.200 kcal si eres mujer y 1.500 si eres hombre. Dos o tres sesiones de fuerza por semana y suficiente proteína conservan el músculo."
+          },
+          {
+            "q": "¿Son fiables las calorías que marcan los dispositivos?",
+            "a": "Poco. Los desvíos del 20% al 40% son normales y suelen ser al alza, porque pulseras y cintas usan el pulso o fórmulas genéricas que no captan las diferencias individuales ni la tendencia a moverse menos después. Toma esas cifras como orientación y juzga el progreso por la tendencia de dos semanas en peso y medidas."
+          }
+        ]
+      }
     },
     "calorie-calculator": {
       "name": "Caloría",
@@ -1516,17 +1958,222 @@
     "calories-burned": {
       "name": "Calorías quemadas",
       "description": "Calcular las calorías quemadas durante diversas actividades.",
-      "metaDescription": "Calcule las calorías quemadas durante el ejercicio y las actividades diarias utilizando valores MET"
+      "metaDescription": "Calcule las calorías quemadas durante el ejercicio y las actividades diarias utilizando valores MET",
+      "guide": {
+        "steps": [
+          "Introduce tu peso: cuanto más pesas, más gastas haciendo la misma actividad.",
+          "Elige la actividad y la duración, los valores MET difieren mucho entre ejercicios.",
+          "Consulta el gasto estimado y úsalo como referencia para planificar dieta y entrenamiento."
+        ],
+        "explanationTitle": "Cómo se estiman las calorías del ejercicio",
+        "formula": "Calorías = MET × peso (kg) × duración (horas)",
+        "explanation": [
+          "El MET, equivalente metabólico, expresa el coste de una actividad como múltiplo del metabolismo en reposo. Estar sentado equivale a 1 MET, caminar deprisa a unos 4, trotar a 8 o 9 y saltar a la comba puede llegar a 12. Multiplicando MET por el peso en kilos y la duración en horas se obtiene el gasto estimado. Los valores proceden del Compendio de Actividades Físicas, la referencia más extendida.",
+          "Conviene tener en cuenta dos cosas. Primero, los MET son promedios poblacionales que ignoran las diferencias individuales: en el mismo trote de 30 minutos, una persona eficiente puede gastar entre un 10% y un 15% menos, y un principiante más. Segundo, la fórmula da calorías brutas, es decir incluye lo que habrías gastado de todos modos en reposo. Para conocer el coste neto, resta el metabolismo basal de ese periodo, unos 1 MET × peso × horas. Para 70 kg trotando 30 minutos, el bruto ronda 315 kcal y el neto 280."
+        ],
+        "tableTitle": "Valores MET de actividades comunes (70 kg, 30 minutos)",
+        "tableHeaders": [
+          "Actividad",
+          "MET",
+          "Bruto",
+          "Neto"
+        ],
+        "tableRows": [
+          [
+            "Caminar 4 km/h",
+            "3,0",
+            "≈ 105 kcal",
+            "≈ 70 kcal"
+          ],
+          [
+            "Caminar rápido 6 km/h",
+            "5,0",
+            "≈ 175 kcal",
+            "≈ 140 kcal"
+          ],
+          [
+            "Trotar 8 km/h",
+            "8,3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Ciclismo moderado",
+            "7,5",
+            "≈ 263 kcal",
+            "≈ 228 kcal"
+          ],
+          [
+            "Natación, crol",
+            "8,3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Comba, ritmo medio",
+            "11,8",
+            "≈ 413 kcal",
+            "≈ 378 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi reloj marca más que esto?",
+            "a": "La mayoría de los wearables sobreestiman entre un 20% y un 40%. Dependen de la frecuencia cardiaca y de algoritmos genéricos, y esa frecuencia cambia con la cafeína, la temperatura, el sueño y el estado de ánimo, mientras que no pueden ver tu eficiencia de movimiento. Algunos dispositivos incluyen además parte del metabolismo basal en el gasto de la actividad. Toma la cifra como una tendencia, no como una contabilidad exacta."
+          },
+          {
+            "q": "¿El metabolismo sigue elevado después de entrenar?",
+            "a": "Sí, por el consumo excesivo de oxígeno post-ejercicio, o EPOC. Los intervalos de alta intensidad y el entrenamiento de fuerza generan el mayor efecto y elevan el metabolismo entre un 5% y un 15% durante unas horas, pero el total suele ser de apenas unas decenas de calorías, muy lejos del reclamo popular de quemar grasa durante 24 horas. El cardio suave produce un EPOC insignificante."
+          },
+          {
+            "q": "Para adelgazar, ¿ejercicio o dieta?",
+            "a": "La dieta hace la mayor parte del trabajo. Treinta minutos de trote aportan unas 250 kcal netas, que un trozo de pastel o una bebida azucarada anula al instante. El valor del ejercicio está más en conservar músculo, mejorar los marcadores metabólicos y mantener el peso perdido que en crear un gran déficit por sí solo. La combinación funciona mejor."
+          },
+          {
+            "q": "¿Entrenar en ayunas quema más grasa?",
+            "a": "El cardio en ayunas usa una proporción mayor de grasa, pero eso no implica un gasto total mayor y puede reducir la intensidad y el volumen de entrenamiento. Los estudios a largo plazo apenas encuentran diferencias en la pérdida de grasa; lo decisivo sigue siendo el balance calórico. Si el ayuno te marea o empeora tu rendimiento, comer antes es mejor opción."
+          }
+        ]
+      }
     },
     "target-heart-rate": {
       "name": "Frecuencia cardíaca objetivo",
       "description": "Calcular zonas de frecuencia cardíaca objetivo para el ejercicio",
-      "metaDescription": "Calcule sus zonas de frecuencia cardíaca objetivo para quemar grasa y hacer ejercicio cardiovascular"
+      "metaDescription": "Calcule sus zonas de frecuencia cardíaca objetivo para quemar grasa y hacer ejercicio cardiovascular",
+      "guide": {
+        "steps": [
+          "Introduce tu edad, la frecuencia cardiaca máxima depende sobre todo de ella.",
+          "Si la conoces, añade tu frecuencia en reposo para usar el método Karvonen, más preciso.",
+          "Consulta las zonas objetivo y compáralas con la banda o el reloj durante el entrenamiento."
+        ],
+        "explanationTitle": "Cómo se calcula la frecuencia cardiaca objetivo",
+        "formula": "Frecuencia máxima = 220 − edad; objetivo = máxima × intensidad %",
+        "explanation": [
+          "La estimación más habitual de la frecuencia cardiaca máxima es 220 menos la edad, un ajuste aproximado de varios estudios de los años setenta. Es cómoda, pero su desviación típica ronda los 10 a 12 latidos por minuto, así que tu máximo real puede quedar más de 10 latidos por encima o por debajo. La ecuación de Tanaka, 208 − 0,7 × edad, suele acertar más, sobre todo en personas de mediana edad y mayores.",
+          "Si conoces tu frecuencia en reposo, el método Karvonen lo personaliza: objetivo = (máxima − reposo) × intensidad% + reposo. Trabaja con la reserva cardiaca y refleja diferencias de forma física. Con cualquier método conviene recordar que la frecuencia responde a la cafeína, el sueño, la temperatura, el estado de ánimo y los medicamentos, de modo que oscilaciones de 5 a 10 latidos con el mismo esfuerzo son normales. Valora la intensidad combinando frecuencia y percepción de esfuerzo."
+        ],
+        "tableTitle": "Zonas de entrenamiento (40 años, frecuencia máxima 180)",
+        "tableHeaders": [
+          "Zona",
+          "% del máximo",
+          "Frecuencia objetivo",
+          "Sensación"
+        ],
+        "tableRows": [
+          [
+            "Calentamiento",
+            "50–60%",
+            "90–108",
+            "Fácil, conversación fluida"
+          ],
+          [
+            "Quema de grasa / aeróbica",
+            "60–70%",
+            "108–126",
+            "Respiración mayor, frases cortas"
+          ],
+          [
+            "Resistencia aeróbica",
+            "70–80%",
+            "126–144",
+            "Claramente sin aire, palabras sueltas"
+          ],
+          [
+            "Anaeróbica / series",
+            "80–90%",
+            "144–162",
+            "Muy duro, imposible hablar"
+          ],
+          [
+            "Máxima",
+            "90–100%",
+            "162–180",
+            "Al límite, insostenible"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Es fiable 220 menos la edad?",
+            "a": "Solo de forma aproximada. La variación entre personas es grande, con una desviación típica de unos 10 a 12 latidos, y la fórmula tiende a sobreestimar en jóvenes y subestimar en mayores. La ecuación de Tanaka, 208 − 0,7 × edad, suele acercarse más. Para entrenar a diario cualquiera de las dos basta para fijar zonas."
+          },
+          {
+            "q": "¿Qué es la zona de quema de grasa y quema más grasa de verdad?",
+            "a": "Es la intensidad en la que la proporción de energía procedente de grasa es mayor, en torno al 60%–70% del máximo. Conviene aclararlo: a baja intensidad la proporción de grasa es alta pero el gasto total es bajo; a alta intensidad la proporción baja, mientras que el gasto total y el consumo de oxígeno post-esfuerzo aumentan. Lo que determina la pérdida de grasa es el balance calórico global, no la mezcla de combustible durante la sesión."
+          },
+          {
+            "q": "¿Por qué mi pulso no sube, o no baja?",
+            "a": "Una respuesta amortiguada suele deberse a fatiga, falta de sueño o deshidratación; los betabloqueantes reducen mucho la frecuencia, así que quien los toma debe guiarse por la percepción. Un pulso elevado puede venir del calor, la cafeína, la deshidratación o el sobreentrenamiento. Si tu frecuencia en reposo supera tu normal en más de un 10% durante varios días, toca descansar."
+          },
+          {
+            "q": "¿Una frecuencia en reposo baja indica un corazón sano?",
+            "a": "Habitualmente sí. El entrenamiento de resistencia aumenta el volumen sistólico, así que valores de 40 a 60 latidos por minuto reflejan un corazón más eficiente. Lo normal en adultos está entre 60 y 100, y mantenerse por debajo sin mareos ni fatiga es una buena adaptación. Si aparecen mareos, debilidad o desmayos, conviene consultarlo."
+          }
+        ]
+      }
     },
     "one-rep-max": {
       "name": "Una repetición máxima",
       "description": "Calcula tu repetición máxima a partir de levantamientos submáximos",
-      "metaDescription": "Calcula tu 1RM usando varias fórmulas de tus levantamientos submáximos"
+      "metaDescription": "Calcula tu 1RM usando varias fórmulas de tus levantamientos submáximos",
+      "guide": {
+        "steps": [
+          "Elige el ejercicio a estimar, como press banca, sentadilla o peso muerto.",
+          "Introduce un peso y las repeticiones limpias que logras, idealmente entre 2 y 10.",
+          "Consulta tu máximo estimado para una repetición y las cargas según porcentaje."
+        ],
+        "explanationTitle": "Cómo se estima el máximo de una repetición",
+        "formula": "Epley: 1RM = peso × (1 + repeticiones ÷ 30)",
+        "explanation": [
+          "El máximo de una repetición es el mayor peso que puedes levantar una vez con técnica correcta y sirve de base para programar la fuerza. Medirlo directamente exige mucho calentamiento y tiene riesgo de lesión, así que en la práctica se estima a partir de una serie de varias repeticiones. La fórmula de Epley, la más usada, asume que cada repetición adicional equivale a un 3,33% menos de peso, es decir una treintava parte.",
+          "Otras fórmulas como Brzycki, Lombardi y O'Conner coinciden bastante entre 1 y 10 repeticiones, normalmente dentro de un 2% a 5%, pero la precisión cae en picado más allá de unas 10 repeticiones, porque entonces dominan la resistencia, la tolerancia al lactato y la condición física en lugar de la fuerza pura. Basa el cálculo en una serie de 2 a 10 repeticiones. Recuerda además que el resultado es una referencia para programar, no una marca de competición: tu máximo real depende mucho de la fatiga, la técnica y el calentamiento del día."
+        ],
+        "tableTitle": "Comparativa de fórmulas (press banca 80 kg × 5)",
+        "tableHeaders": [
+          "Fórmula",
+          "1RM estimado",
+          "Nota"
+        ],
+        "tableRows": [
+          [
+            "Epley",
+            "≈ 93,3 kg",
+            "La más usada, fiable en 1–10 reps"
+          ],
+          [
+            "Brzycki",
+            "≈ 90,3 kg",
+            "Algo conservadora"
+          ],
+          [
+            "Lombardi",
+            "≈ 92,8 kg",
+            "Relación exponencial"
+          ],
+          [
+            "O'Conner",
+            "≈ 92,0 kg",
+            "Más estable con más reps"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Puedo intentar directamente el máximo estimado?",
+            "a": "No es recomendable, sobre todo si tienes poca experiencia. Las estimaciones pueden desviarse entre un 5% y un 10% del máximo real, así que lanzarse al número entraña riesgo. Un camino más seguro es probar el 90% de la estimación, comprobar que la técnica aguanta y subir de 2,5 a 5 kg por intento hasta que falle la forma, siempre con seguridad o con un compañero."
+          },
+          {
+            "q": "¿Por qué la estimación empeora con más repeticiones?",
+            "a": "Porque cambia el factor limitante. Las series de 1 a 5 repeticiones reflejan fuerza máxima, pero a partir de unas 10 o 12 dominan la resistencia muscular, la tolerancia al lactato y la condición física, que no son una prolongación lineal de la fuerza pura. Por eso cada fórmula indica un rango válido, normalmente de 2 a 10 repeticiones, fuera del cual los valores se distorsionan."
+          },
+          {
+            "q": "¿Cómo fijo las cargas según el porcentaje del 1RM?",
+            "a": "Una estructura habitual es 85%–100% para 1 a 5 repeticiones en fuerza, 65%–80% para 6 a 12 en hipertrofia y 60%–70% para 15 a 20 en resistencia. Los principiantes hacen bien en empezar entre el 60% y el 70% mientras afianzan la técnica y subir después. Los porcentajes exactos varían con la experiencia y la capacidad de recuperación."
+          },
+          {
+            "q": "¿Qué proporción entre ejercicios se considera normal?",
+            "a": "La variación individual es grande, pero como referencia para gente entrenada la sentadilla ronda 1,5 veces el peso corporal, el press banca unas 1,0 veces y el peso muerto entre 1,75 y 2,0 veces. Las mujeres suelen alcanzar en torno al 60%–70% de las cifras de un hombre del mismo peso, sobre todo por diferencias en distribución muscular y hormonas. Son datos para contextualizar, no objetivos."
+          }
+        ]
+      }
     },
     "pace-calculator": {
       "name": "Paso",
@@ -1536,7 +2183,69 @@
     "macro-calculator": {
       "name": "Macro",
       "description": "Calcular los objetivos diarios de macronutrientes",
-      "metaDescription": "Calcule su ingesta óptima de proteínas, carbohidratos y grasas para sus objetivos de acondicionamiento físico"
+      "metaDescription": "Calcule su ingesta óptima de proteínas, carbohidratos y grasas para sus objetivos de acondicionamiento físico",
+      "guide": {
+        "steps": [
+          "Introduce sexo, edad, altura y peso para calcular la tasa metabólica basal.",
+          "Elige tu nivel de actividad y tu objetivo, perder grasa, mantener o ganar músculo, para fijar las calorías.",
+          "Consulta los gramos de proteína, carbohidrato y grasa, y ajusta estos dos últimos a tu gusto."
+        ],
+        "explanationTitle": "Cómo se reparten los macronutrientes",
+        "formula": "Proteína g = peso kg × factor; grasa g = calorías × % grasa ÷ 9; carbohidrato g = resto ÷ 4",
+        "explanation": [
+          "La densidad energética varía: proteína y carbohidrato aportan unas 4 kcal por gramo, la grasa unas 9 y el alcohol unas 7. Lo habitual es fijar primero la proteína, después la grasa y dejar el resto al carbohidrato. La razón es que la proteína y la grasa tienen mínimos: la proteína sostiene el músculo y la saciedad, y la grasa interviene en las hormonas y en la absorción de vitaminas liposolubles, mientras que el carbohidrato no tiene un suelo estricto y es el más flexible.",
+          "El factor de proteína cambia con el objetivo: 1,6 a 2,2 g por kg al definir, para proteger el músculo con déficit; 1,2 a 1,6 en mantenimiento; y 1,6 a 2,2 al ganar masa. La grasa suele ocupar entre el 20% y el 35% de las calorías y no conviene bajar del 20% mucho tiempo, porque las hormonas pueden resentirse. El carbohidrato cubre lo que queda y puede moverse con el entrenamiento: más los días de sesión, menos en descanso. El total energético decide el peso; el reparto influye en la composición corporal, el apetito y el rendimiento."
+        ],
+        "tableTitle": "Reparto de macros según objetivo (70 kg, gasto 2.200 kcal)",
+        "tableHeaders": [
+          "Objetivo",
+          "Calorías",
+          "Proteína",
+          "Grasa",
+          "Carbohidrato"
+        ],
+        "tableRows": [
+          [
+            "Perder grasa",
+            "1.750 kcal",
+            "140 g (32%)",
+            "58 g (30%)",
+            "166 g (38%)"
+          ],
+          [
+            "Mantenimiento",
+            "2.200 kcal",
+            "126 g (23%)",
+            "73 g (30%)",
+            "259 g (47%)"
+          ],
+          [
+            "Ganar músculo",
+            "2.500 kcal",
+            "154 g (25%)",
+            "83 g (30%)",
+            "281 g (45%)"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Puede demasiada proteína dañar los riñones?",
+            "a": "En personas sanas, la evidencia actual no muestra daño con ingestas de hasta unos 2 gramos por kilo de peso. Quien tenga enfermedad renal crónica sí debe limitarla y seguir las indicaciones médicas. Al subir la proteína conviene además beber más y cuidar la fibra, para que la carne no desplace a verduras y frutas."
+          },
+          {
+            "q": "¿Engordan más los carbohidratos o las grasas?",
+            "a": "Ninguno por sí solo; el aumento de peso depende de un superávit calórico sostenido. La grasa, con 9 kcal por gramo, es muy densa y se sobrecome sin notarlo, y los carbohidratos refinados sacian poco, así que también es fácil pasarse. En la práctica funciona mejor controlar el total y priorizar alimentos saciantes como proteína, verduras y cereales integrales que demonizar un macronutriente."
+          },
+          {
+            "q": "¿Es adecuada la dieta cetogénica para la mayoría?",
+            "a": "La cetogénica, normalmente por debajo de 50 gramos de carbohidrato al día, se diseñó para tratar epilepsia refractaria. Su ventaja para adelgazar viene sobre todo de la supresión del apetito y de un control calórico más sencillo, no de una ventaja metabólica. Es difícil de sostener, suele dar dolor de cabeza y fatiga al principio, y los datos de seguridad y adherencia a largo plazo son limitados. Sin una razón médica concreta, la mayoría va mejor con un déficit moderado y una alimentación equilibrada."
+          },
+          {
+            "q": "¿Debo cumplir las cifras al detalle cada día?",
+            "a": "No, y obsesionarse resulta contraproducente. Los macros se promedian por día o por semana, así que un día distinto no cambia nada. Revisa la proteína a nivel semanal y deja que el carbohidrato varíe con el entrenamiento. Perseguir gramos exactos suele romper la adherencia, y la constancia durante meses pesa mucho más que la precisión de un día."
+          }
+        ]
+      }
     },
     "protein-calculator": {
       "name": "Proteína",
@@ -1556,7 +2265,65 @@
     "water-intake": {
       "name": "Ingesta de agua",
       "description": "Calcular las necesidades diarias de ingesta de agua.",
-      "metaDescription": "Calcula cuánta agua debes beber diariamente según tu estilo de vida"
+      "metaDescription": "Calcula cuánta agua debes beber diariamente según tu estilo de vida",
+      "guide": {
+        "steps": [
+          "Introduce tu peso y elige kilogramos o libras.",
+          "Indica cuánto entrenas y con qué intensidad, porque el sudor eleva mucho la necesidad.",
+          "Si estás en calor o en altitud, marca esas opciones para incluir la pérdida adicional."
+        ],
+        "explanationTitle": "Cómo se estima la necesidad diaria de agua",
+        "formula": "Necesidad base = peso (kg) × 30–35 ml; ejercicio = minutos de entrenamiento × factor extra",
+        "explanation": [
+          "La regla más extendida es el peso multiplicado por 30 a 35 mililitros, de modo que una persona de 60 kg necesita unos 1,8 a 2,1 litros diarios. El coeficiente procede de medir las pérdidas diarias por orina, respiración, evaporación cutánea y heces. Al hacer ejercicio se añaden unos 350 a 700 ml por hora según la intensidad y la cantidad de sudor.",
+          "Conviene aclarar un malentendido frecuente: los famosos ocho vasos, unos dos litros, son una aproximación fácil de recordar que no considera el peso, el clima ni la actividad. Igual de importante es que ese total no tiene que beberse entero, porque los alimentos, sobre todo frutas, verduras y sopas, aportan entre el 20% y el 30% del agua diaria y el metabolismo genera unos 300 ml. Como agua de bebida suelen bastar entre 500 y 800 ml menos. La señal más sencilla es el color de la orina: amarillo pálido indica buena hidratación; ámbar oscuro, que conviene beber."
+        ],
+        "tableTitle": "Agua diaria recomendada según peso y actividad",
+        "tableHeaders": [
+          "Peso",
+          "Sedentario",
+          "Moderadamente activo",
+          "Entreno intenso 1h+"
+        ],
+        "tableRows": [
+          [
+            "50 kg",
+            "≈ 1,5–1,8 l",
+            "≈ 1,8–2,0 l",
+            "≈ 2,3–2,5 l"
+          ],
+          [
+            "70 kg",
+            "≈ 2,1–2,5 l",
+            "≈ 2,5–2,8 l",
+            "≈ 3,0–3,2 l"
+          ],
+          [
+            "90 kg",
+            "≈ 2,7–3,2 l",
+            "≈ 3,2–3,5 l",
+            "≈ 3,7–4,0 l"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿El café y el té cuentan como hidratación?",
+            "a": "Sí. La cafeína tiene un leve efecto diurético, pero en cantidades habituales el balance neto sigue siendo positivo y los estudios los incluyen en la ingesta diaria de líquidos. Lo que sí conviene vigilar son las bebidas azucaradas y el alcohol: las primeras aportan calorías extra y el segundo es claramente diurético y aumenta la pérdida."
+          },
+          {
+            "q": "¿Si tengo sed ya estoy deshidratado?",
+            "a": "No necesariamente. En adultos sanos la sed es una señal fiable que aparece con una pérdida en torno al 1% o 2%, un nivel sin consecuencias para la salud ni el rendimiento. Con la edad la sensación de sed se atenúa y los niños suelen olvidarse de beber cuando están concentrados, así que ambos grupos se benefician de beber por horario en lugar de esperar."
+          },
+          {
+            "q": "¿Cuanta más agua, mejor?",
+            "a": "No. Los riñones solo pueden eliminar unos 800 a 1.000 ml por hora, de modo que beber volúmenes muy grandes en poco tiempo puede provocar hiponatremia, con dolor de cabeza, náuseas y confusión, y en casos extremos puede ser mortal. Se ve sobre todo tras pruebas de resistencia cuando se repone el sudor solo con agua y sin electrolitos. En el día a día basta con beber de forma regular según la sed."
+          },
+          {
+            "q": "¿Necesito bebida deportiva al entrenar?",
+            "a": "Depende de la duración y la intensidad. Hasta unos 60 minutos de esfuerzo moderado basta con agua. Más allá de 60 o 90 minutos, o si sudas mucho, ayuda una bebida con sodio, unos 300 a 600 mg por litro, y entre un 4% y un 8% de hidratos, para mantener electrolitos y glucógeno. Una referencia práctica es pesarse antes y después: repón unos 1,2 a 1,5 litros por cada kilo perdido."
+          }
+        ]
+      }
     },
     "body-type": {
       "name": "Tipo de cuerpo",
@@ -1586,7 +2353,65 @@
     "sleep-calculator": {
       "name": "Dormir",
       "description": "Calcule los tiempos óptimos de sueño y vigilia",
-      "metaDescription": "Encuentra los mejores momentos para dormir y despertar según los ciclos de sueño"
+      "metaDescription": "Encuentra los mejores momentos para dormir y despertar según los ciclos de sueño",
+      "guide": {
+        "steps": [
+          "Elige la hora a la que vas a dormirte o la hora a la que necesitas levantarte.",
+          "Indica cuánto tardas en dormirte, la mayoría entre 10 y 20 minutos; se descuenta del cálculo.",
+          "Consulta las horas sugeridas, todas alineadas con el final de ciclos completos."
+        ],
+        "explanationTitle": "Cómo se calculan los ciclos de sueño",
+        "formula": "Hora de despertar = hora de acostarse + latencia + ciclos × 90 min (4–6 ciclos)",
+        "explanation": [
+          "El sueño avanza en ciclos de unos 90 minutos, cada uno con sueño ligero (N1 y N2), sueño profundo (N3) y movimientos oculares rápidos. El sueño profundo domina la primera mitad de la noche y se encarga de la reparación física y la hormona del crecimiento, mientras que la fase REM aumenta después y favorece la consolidación de la memoria y la regulación emocional. Despertar al final de un ciclo, cerca de la superficie, deja la mente despejada; hacerlo desde el sueño profundo produce una inercia notable y lentitud.",
+          "La calculadora parte del momento en que te duermes, tras restar la latencia, y avanza en bloques de 90 minutos, mostrando las horas de despertar para cuatro, cinco y seis ciclos, es decir 6, 7,5 y 9 horas. Una salvedad: 90 minutos es la media poblacional, los ciclos individuales van de 70 a 120 minutos y se acortan algo con la edad. Úsala como herramienta práctica de planificación, no como una medición exacta de tu reloj biológico."
+        ],
+        "tableTitle": "Número de ciclos y duración",
+        "tableHeaders": [
+          "Ciclos",
+          "Sueño",
+          "Uso típico",
+          "Indicado para"
+        ],
+        "tableRows": [
+          [
+            "4",
+            "6 horas",
+            "Puntual, emergencias",
+            "No a largo plazo"
+          ],
+          [
+            "5",
+            "7,5 horas",
+            "Diario de la mayoría de adultos",
+            "Recomendado"
+          ],
+          [
+            "6",
+            "9 horas",
+            "Recuperación, tras entrenar fuerte",
+            "Adolescentes o para recuperar"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "¿Realmente necesito ocho horas?",
+            "a": "No necesariamente. Ocho es un número redondo fácil de recordar; la necesidad real varía y la mayoría de adultos se mueve entre siete y nueve horas. Importan más completar ciclos enteros y cómo te sientes al despertar. Si con 7,5 horas estás despejado, no hace falta forzar las ocho. La prueba es si tienes sueño durante el día y te cuesta levantarte."
+          },
+          {
+            "q": "¿Por qué sigo cansado tras una noche larga?",
+            "a": "Suele deberse a que te despertaste en sueño profundo, o a mala calidad. Los despertares frecuentes, los ronquidos con pausas respiratorias, el alcohol antes de dormir y un dormitorio demasiado luminoso o cálido reducen el sueño profundo y el REM. Si pese a dormir suficiente te levantas agotado, sobre todo con ronquidos fuertes y dolor de cabeza matinal, consulta por un estudio del sueño."
+          },
+          {
+            "q": "¿Cuánto debe durar la siesta?",
+            "a": "Lo ideal son de diez a veinte minutos: recuperan el estado de alerta sin entrar en sueño profundo, así que te despiertas despejado. De treinta a sesenta minutos se suele acabar en sueño profundo y deja una somnolencia notable. Si quieres un ciclo completo, reserva 90 minutos. También conviene dormirla antes de las 15:00 para no perjudicar la noche."
+          },
+          {
+            "q": "¿Sirve dormir más el fin de semana?",
+            "a": "Devuelve parte de lo perdido, pero no compensa del todo un déficit crónico, y desplaza el reloj interno, lo que dificulta el lunes, el llamado jet lag social. Mantener la hora de acostarse y levantarse dentro de una hora todos los días funciona mejor. Si realmente debes sueño, acostarte una hora antes sirve más que levantarte tres horas más tarde."
+          }
+        ]
+      }
     },
     "due-date": {
       "name": "Fecha de vencimiento",

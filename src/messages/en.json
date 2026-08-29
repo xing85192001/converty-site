@@ -1125,7 +1125,71 @@
     "retirement": {
       "name": "Retirement",
       "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income"
+      "metaDescription": "Plan your retirement savings and income",
+      "guide": {
+        "steps": [
+          "Enter your current age and planned retirement age to set the accumulation period.",
+          "Fill in existing savings, the monthly amount you can contribute and the expected annual return.",
+          "See the projected total at retirement and the safe monthly withdrawal suggested by the 4% rule."
+        ],
+        "explanationTitle": "How retirement savings are projected",
+        "formula": "Future value = current savings × (1+r)ⁿ + monthly × [((1+r)ⁿ − 1) ÷ r]",
+        "explanation": [
+          "The formula has two parts: existing savings compounding to retirement, and regular contributions accumulating through the annuity formula. Here r is the monthly rate, the annual return divided by 12, and n is the number of months to retirement. It assumes a constant return, monthly compounding and contributions at period end, so treat the output as a scenario rather than a forecast, since real markets fluctuate.",
+          "A useful rule of thumb is the 4% rule: withdraw 4% of the portfolio in the first year of retirement, then adjust the amount for inflation each year, and the money is unlikely to run out over a 30-year retirement. It comes from backtests of US stock and bond history and implies saving 25 times your annual spending. If you retire early or expect a longer retirement, lower the safe withdrawal rate to 3.0% to 3.5%. Results are extremely sensitive to the return assumption, so run optimistic, neutral and pessimistic cases."
+        ],
+        "tableTitle": "Effect of monthly contributions (30 years at 6% a year)",
+        "tableHeaders": [
+          "Monthly",
+          "Total contributed",
+          "Value at retirement",
+          "Investment growth"
+        ],
+        "tableRows": [
+          [
+            "500",
+            "180,000",
+            "≈ 502,000",
+            "≈ 322,000"
+          ],
+          [
+            "1,000",
+            "360,000",
+            "≈ 1,004,000",
+            "≈ 644,000"
+          ],
+          [
+            "2,000",
+            "720,000",
+            "≈ 2,008,000",
+            "≈ 1,288,000"
+          ],
+          [
+            "3,000",
+            "1,080,000",
+            "≈ 3,012,000",
+            "≈ 1,932,000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Does the 4% rule still hold?",
+            "a": "It is a useful starting point, not a law. The rule was backtested on US history, so if future returns are lower, your retirement lasts more than 30 years, or your local markets behave differently, the safe rate should come down. Recent research often suggests 3.0% to 3.5%, or a dynamic approach of withdrawing less in years when markets fall sharply."
+          },
+          {
+            "q": "What share of income should I save?",
+            "a": "A common target is 10% to 15% of pre-tax income, including any employer match. What matters more is your replacement rate: most people need 70% to 80% of pre-retirement income to maintain their standard of living. Starting at 30 usually requires 15% to 20% to catch up, while starting before 25 may be fine at around 10%."
+          },
+          {
+            "q": "How should I handle inflation?",
+            "a": "The calculator produces nominal amounts with inflation not deducted. To see real purchasing power, subtract expected inflation from your expected return before calculating, for instance using 4% real if you expect 7% nominal and 3% inflation. At 3% inflation, 1,000,000 in 30 years buys what about 410,000 buys today, so ignoring inflation badly overstates your position."
+          },
+          {
+            "q": "How much does starting 10 years later cost?",
+            "a": "A great deal. Investing 1,000 a month at 6% from age 25 to 60 produces roughly 1,430,000, while starting at 35 yields only about 700,000, less than half. You lose ten years of compounding, and compounding does its heaviest work late in the period. Starting earlier is usually more powerful than contributing more."
+          }
+        ]
+      }
     },
     "tip": {
       "name": "Tip",
@@ -1135,17 +1199,203 @@
     "savings-goal": {
       "name": "Savings Goal",
       "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals"
+      "metaDescription": "Plan your savings and reach your financial goals",
+      "guide": {
+        "steps": [
+          "Enter the target amount, such as a deposit, study fund or emergency reserve, plus what you already have saved.",
+          "Fill in the time until the target, in months or years, and the expected annual return.",
+          "See the monthly amount required, and how it changes if you adjust the deadline."
+        ],
+        "explanationTitle": "How much you need to save each month",
+        "formula": "Monthly = (target − present × (1+r)ⁿ) × r ÷ [(1+r)ⁿ − 1]",
+        "explanation": [
+          "This is the annuity formula rearranged. First work out what your existing savings will grow to, present value times (1+r)ⁿ, subtract that from the target to get the shortfall, then solve for the monthly deposit that closes the gap over n months. Here r is the monthly rate and n the number of periods. If existing savings already exceed the target, the result is zero or negative, meaning no further saving is needed.",
+          "The formula exposes three levers: extend the horizon, raise the return, or lower the target. Extending time is by far the strongest, because compounding accelerates later on. For a 300,000 target at 4% a year, reaching it in 10 years needs about 2,036 a month, while 20 years needs only about 819. Double the horizon and the monthly amount falls by more than half, which is the mathematical case for starting early."
+        ],
+        "tableTitle": "Monthly saving needed for a 300,000 goal (at 4% a year)",
+        "tableHeaders": [
+          "Horizon",
+          "Monthly",
+          "Total contributed",
+          "Growth"
+        ],
+        "tableRows": [
+          [
+            "5 years",
+            "≈ 4,527",
+            "≈ 271,600",
+            "≈ 28,400"
+          ],
+          [
+            "10 years",
+            "≈ 2,036",
+            "≈ 244,300",
+            "≈ 55,700"
+          ],
+          [
+            "15 years",
+            "≈ 1,220",
+            "≈ 219,600",
+            "≈ 80,400"
+          ],
+          [
+            "20 years",
+            "≈ 819",
+            "≈ 196,600",
+            "≈ 103,400"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "What return should I assume?",
+            "a": "It depends on the purpose and the horizon. Money needed within three years, such as a house deposit, should be assumed to earn little or nothing and sit in savings or a money market fund. Money you can leave for five years or more and can bear some volatility can be modelled at 4% to 6%. Do not inflate the return to make the numbers look comfortable, because underestimating the required contribution means missing the goal."
+          },
+          {
+            "q": "How large should my emergency fund be?",
+            "a": "Usually three to six months of living expenses, rising to nine to twelve if your income is irregular or your family depends on you. What matters most is liquidity and safety, so keep it in instant-access savings or a money market fund rather than chasing yield. Fill this bucket before saving for other goals."
+          },
+          {
+            "q": "Should the target account for inflation?",
+            "a": "Yes. A goal ten years out needs the purchasing power of 300,000 at that time, not today's 300,000. At 3% inflation, 300,000 in ten years buys what about 223,000 buys today, so the nominal target should be roughly 403,000. Alternatively, run the calculation with a real return, nominal minus inflation, which gives the same answer."
+          },
+          {
+            "q": "What if I cannot save that much?",
+            "a": "Three variables can move: extend the deadline, lower the target, or seek a higher return while accepting more risk. It also helps to review spending and find what can be cut. The 50/30/20 rule is a useful check, with 50% on needs, 30% on wants and 20% on saving and debt repayment. If you cannot reach 20%, trimming fixed costs such as subscriptions, insurance and commuting usually beats cutting small daily pleasures."
+          }
+        ]
+      }
     },
     "inflation": {
       "name": "Inflation",
       "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money"
+      "metaDescription": "Understand inflation's impact on your money",
+      "guide": {
+        "steps": [
+          "Enter an amount together with the start and end year.",
+          "Fill in the average annual inflation rate for that period, using a historical average or your own assumption.",
+          "Read the inflation-adjusted value and how much purchasing power has been lost."
+        ],
+        "explanationTitle": "How inflation erodes purchasing power",
+        "formula": "Real value = nominal amount ÷ (1 + inflation rate)ⁿ",
+        "explanation": [
+          "Inflation means the same sum of money buys progressively less. The conversion discounts the nominal amount back by the inflation rate: one unit n years from now is worth 1 ÷ (1 + i)ⁿ in today's terms. To go the other way and ask what today's 100 becomes in nominal terms, use 100 × (1 + i)ⁿ. Both directions use the same compounding formula, one multiplying and one dividing.",
+          "The key insight is that the erosion compounds. Inflation of 3% sounds mild, yet purchasing power halves in about 24 years, since 1.03 to the power of 24 is roughly 2. At 5%, it halves in about 14 years. That is why long-term saving must be judged on real return, nominal return minus inflation: with a 2% deposit rate and 3% inflation, your money loses roughly 1% a year in real terms, and the longer you hold it, the more it costs you."
+        ],
+        "tableTitle": "Purchasing power of 100 under different inflation rates",
+        "tableHeaders": [
+          "Horizon",
+          "2% inflation",
+          "3% inflation",
+          "5% inflation"
+        ],
+        "tableRows": [
+          [
+            "After 10 years",
+            "≈ 82.0",
+            "≈ 74.4",
+            "≈ 61.4"
+          ],
+          [
+            "After 20 years",
+            "≈ 67.3",
+            "≈ 55.4",
+            "≈ 37.7"
+          ],
+          [
+            "After 30 years",
+            "≈ 55.2",
+            "≈ 41.2",
+            "≈ 23.1"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Why does official CPI differ from the inflation I feel?",
+            "a": "CPI is a weighted average across a basket of goods and services meant to represent a typical household. Your own spending mix differs, so if your money goes to rent, education or healthcare and those rise faster than average, your personal inflation will exceed headline CPI. CPI also adjusts for quality; a phone that costs more but does far more is not counted as pure inflation."
+          },
+          {
+            "q": "What inflation rate should I assume long term?",
+            "a": "For most advanced economies the long-run average sits between 2% and 3%, which is also the target band many central banks aim for. For retirement or education planning, use 3% as the neutral case and run a pessimistic 4% to 5% scenario as well. Inflation is among the least predictable inputs in long-range planning, so it is safer to overestimate than to underestimate."
+          },
+          {
+            "q": "What is deflation, and does it happen?",
+            "a": "Deflation is a broad, sustained fall in prices, meaning negative inflation. It sounds welcome but is dangerous: if people expect lower prices they delay purchases, firms cut prices and jobs, demand falls further, and the cycle feeds itself. Japan struggled with this from the 1990s onward, which is why central banks target modest inflation around 2%."
+          },
+          {
+            "q": "How do I calculate a real return?",
+            "a": "Precisely, real return is (1 + nominal) ÷ (1 + inflation) − 1, so 6% nominal with 3% inflation gives about 2.91% real. For quick work, subtracting inflation from the nominal rate is close enough, here 3%. What matters for judging whether an investment truly grows your wealth is always the real return, not the headline nominal figure."
+          }
+        ]
+      }
     },
     "roi": {
       "name": "ROI",
       "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns"
+      "metaDescription": "Calculate your investment returns",
+      "guide": {
+        "steps": [
+          "Enter the cost of the investment, the purchase price plus every fee and tax.",
+          "Enter the amount returned, whether sale proceeds or current market value, net of selling costs.",
+          "Read the return on investment, the net gain, and the annualised rate if you supply a holding period."
+        ],
+        "explanationTitle": "How return on investment is calculated",
+        "formula": "ROI = (gain − cost) ÷ cost × 100%",
+        "explanation": [
+          "Return on investment measures efficiency: net gain divided by cost. It is intuitive and universal, letting you compare property, shares, equipment or an advertising campaign, provided you use the same conventions throughout. Its big weakness is that it ignores time. An investment that makes 30% over three years and one that makes 30% over ten years have identical ROI, yet they are nowhere near equivalent.",
+          "So when horizons differ, use the annualised rate, also called CAGR: (ending value ÷ beginning value)^(1/years) − 1. In the example above, 30% over three years annualises to about 9.1%, while 30% over ten years is only about 2.7%. Another common omission is the cost basis: shares carry commissions and taxes, property carries transfer tax, agency fees, renovation and ongoing service charges, and leaving these out materially overstates the true return."
+        ],
+        "tableTitle": "ROI versus annualised return (CAGR)",
+        "tableHeaders": [
+          "Project",
+          "Total ROI",
+          "Holding period",
+          "Annualised"
+        ],
+        "tableRows": [
+          [
+            "A: short-term trade",
+            "+30%",
+            "3 years",
+            "≈ 9.1%"
+          ],
+          [
+            "B: long hold",
+            "+30%",
+            "10 years",
+            "≈ 2.7%"
+          ],
+          [
+            "C: property",
+            "+45%",
+            "5 years",
+            "≈ 7.7%"
+          ],
+          [
+            "D: index fund",
+            "+80%",
+            "10 years",
+            "≈ 6.1%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "What counts as a good ROI?",
+            "a": "There is no absolute number; it depends on the benchmark and the horizon. Long-term bank deposits yield roughly 1% to 2% a year, while major equity indices have historically returned about 7% to 10% nominal. A multi-year project annualising above 8% is therefore usually decent. Always weigh risk too, since high ROI often comes with volatility or leverage, so look at risk-adjusted measures such as the Sharpe ratio."
+          },
+          {
+            "q": "What is the difference between ROI and IRR?",
+            "a": "ROI looks only at the final total return, which suits a single investment with no intermediate cash flows. IRR accounts for the timing of every cash flow, so it fits staged contributions or interim income such as regular investing, rental income or corporate projects. Whenever cash flows are complex, IRR is the more accurate measure."
+          },
+          {
+            "q": "Why is my realised return below the headline ROI?",
+            "a": "Three usual culprits: missed costs such as fees, taxes and currency losses; inflation, since nominal gains must be adjusted to show real purchasing power; and opportunity cost, what else that money could have earned. With leverage you must also deduct interest, which magnifies gains and losses alike."
+          },
+          {
+            "q": "How is ROI calculated on a loss?",
+            "a": "The formula is unchanged and the result is negative. Cost 10,000 and proceeds 7,000 gives ROI = (7,000 − 10,000) ÷ 10,000 = −30%. Note the asymmetry: after a 30% loss you need roughly a 42.9% gain to return to your starting point, since 1 ÷ 0.7 − 1 ≈ 0.429. The deeper the drawdown, the harder the recovery, which is why limiting losses matters more than chasing gains."
+          }
+        ]
+      }
     },
     "break-even": {
       "name": "Break-Even",
@@ -1259,7 +1509,65 @@
     "credit-card": {
       "name": "Credit Card",
       "description": "Calculate credit card payoff time and interest",
-      "metaDescription": "Calculate credit card payoff time and total interest cost"
+      "metaDescription": "Calculate credit card payoff time and total interest cost",
+      "guide": {
+        "steps": [
+          "Enter the current balance, the card's annual percentage rate and the amount you plan to pay each month.",
+          "If you only pay the minimum, tick that option to see how many years it would take to clear the balance.",
+          "Read the number of months, the total interest, and how much a fixed monthly payment would save you."
+        ],
+        "explanationTitle": "How credit card interest builds up",
+        "formula": "Monthly interest = average daily balance × APR ÷ 365 × days in cycle",
+        "explanation": [
+          "Most cards use the average daily balance method. The issuer adds up each day's balance in the cycle, divides by the number of days, then applies the daily rate, which is the APR divided by 365, multiplied by the days in the cycle. Paying early in the cycle therefore cuts interest noticeably, while paying on the last day leaves the full cycle to accrue.",
+          "The minimum payment trap is that it is usually only 1% to 3% of the balance plus interest and fees. On a balance of 20,000 at 18% APR paying 2% minimum, about 300 of the first 400 payment is interest and only 100 reduces the balance, which takes more than 30 years to clear and costs nearly three times the original balance in interest. Paying a fixed 1,000 a month instead clears it in about 24 months for roughly 4,000 in interest. The gap is dramatic."
+        ],
+        "tableTitle": "Repayment comparison (balance 20,000 at 18% APR)",
+        "tableHeaders": [
+          "Approach",
+          "Monthly payment",
+          "Time to clear",
+          "Total interest"
+        ],
+        "tableRows": [
+          [
+            "Minimum only (2%)",
+            "from ≈ 400",
+            "over 30 years",
+            "≈ 58,000"
+          ],
+          [
+            "Fixed 800",
+            "800",
+            "≈ 32 months",
+            "≈ 5,600"
+          ],
+          [
+            "Fixed 1,500",
+            "1,500",
+            "≈ 16 months",
+            "≈ 2,800"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Does paying only the minimum hurt my credit score?",
+            "a": "As long as you pay at least the minimum, there is no late marker and the account still reports as current. But carrying a high balance keeps your credit utilisation, the ratio of balance to limit, elevated, and utilisation is a major scoring factor at roughly 30% of the score. Staying above 30% utilisation drags it down."
+          },
+          {
+            "q": "Why is there interest again after I paid?",
+            "a": "Residual interest. Balance kept accruing between your payment date and the statement date, and that interest lands on the next statement. To stop interest entirely, pay the full statement balance before the statement date and stop using the card for a full cycle, then confirm the next statement shows zero interest."
+          },
+          {
+            "q": "Is an instalment plan better than paying the minimum?",
+            "a": "Usually yes. Instalment plans lock in a lower rate, often 7% to 12% a year against the 18% revolving rate, with a fixed payment and a clear end date. Watch for arrangement fees, and check whether paying early still leaves remaining charges due, so compare the true annualised cost before signing up."
+          },
+          {
+            "q": "What is the fastest way out of card debt?",
+            "a": "Two common strategies. The snowball clears the smallest balance first for psychological momentum, while the avalanche targets the highest rate first and saves the most interest mathematically. Either way, stop adding new spending, fix your monthly payment, and consider moving the highest-rate balance to a cheaper facility."
+          }
+        ]
+      }
     },
     "down-payment": {
       "name": "Down Payment",
@@ -1362,7 +1670,71 @@
     "ideal-weight": {
       "name": "Ideal Weight",
       "description": "Calculate ideal body weight using multiple formulas",
-      "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas"
+      "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas",
+      "guide": {
+        "steps": [
+          "Select sex and unit system, since the coefficients differ by sex.",
+          "Enter your height; some formulas also ask for age or frame size.",
+          "Compare the range produced by several formulas and note the systematic gaps between them."
+        ],
+        "explanationTitle": "The different ideal body weight formulas",
+        "formula": "Devine (men) = 50 + 0.9 × (height cm − 152.4); Hamwi (women) = 45.5 + 0.9 × (height cm − 152.4)",
+        "explanation": [
+          "Ideal body weight is not a single standard but a family of historical equations. The Devine formula, from 1974, was originally designed to estimate anaesthetic and drug dosages and was later borrowed for everyday use. Hamwi and Robinson came slightly earlier and give similar results. All share the shape of a base value plus 0.9 kg for every centimetre above 152.4 cm, which is five feet.",
+          "Two caveats matter. First, these equations were built decades ago mainly on Western samples and ignore age, frame size and muscle mass, so they tend to run 5% to 10% low for Asian populations. Second, they serve different purposes: Devine for dosing, BMI ranges for health screening, body fat for composition. Treat ideal weight as a reference band, roughly plus or minus 10% around the formula results, rather than a number you must hit."
+        ],
+        "tableTitle": "Ideal weight by formula (man 175 cm, woman 165 cm)",
+        "tableHeaders": [
+          "Formula",
+          "Man 175 cm",
+          "Woman 165 cm",
+          "Note"
+        ],
+        "tableRows": [
+          [
+            "Devine (1974)",
+            "≈ 70.4 kg",
+            "≈ 56.7 kg",
+            "Most used for drug dosing"
+          ],
+          [
+            "Hamwi (1964)",
+            "≈ 70.3 kg",
+            "≈ 56.7 kg",
+            "Close to Devine"
+          ],
+          [
+            "Robinson (1983)",
+            "≈ 68.0 kg",
+            "≈ 56.9 kg",
+            "Slightly lower for men"
+          ],
+          [
+            "Miller (1983)",
+            "≈ 69.4 kg",
+            "≈ 56.8 kg",
+            "Between the two"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Does ideal weight match a normal BMI?",
+            "a": "They correspond roughly but not exactly. Devine's output for most heights converts to a BMI around 21 to 23, the lower-middle part of the normal band, while the normal BMI range spans 18.5 to 24.9. At a given height, therefore, normal BMI is a much wider target than ideal weight; they are simply different reference frames."
+          },
+          {
+            "q": "How should athletes estimate ideal weight?",
+            "a": "These formulas do not apply. Muscle is denser than fat, so strength athletes often exceed the predicted weight by 15% to 25% while carrying low body fat and healthy metabolic markers. They should look at body fat percentage and waist circumference instead. Equally, older adults who have lost muscle may hit the target weight while carrying too much fat."
+          },
+          {
+            "q": "Why do the formulas disagree?",
+            "a": "They were fitted to different samples in different eras for different purposes. Devine and Hamwi differ by under 1%, while Robinson and Miller run 2 to 3 kg lower for men. That spread is far smaller than natural variation between individuals, so arguing over which to use matters less than viewing the results as a band."
+          },
+          {
+            "q": "Is being below ideal weight always healthier?",
+            "a": "No. A BMI under 18.5 is associated with reduced immunity, bone loss, menstrual disruption and malnutrition risk. Low weight often comes with low muscle mass, and muscle underpins metabolic health and independence later in life. The aim is moderate body fat with adequate muscle, not the smallest number on the scale."
+          }
+        ]
+      }
     },
     "bmr-calculator": {
       "name": "BMR",
@@ -1436,7 +1808,77 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Calculate Total Daily Energy Expenditure",
-      "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level"
+      "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level",
+      "guide": {
+        "steps": [
+          "Enter sex, age, height and weight to establish your basal metabolic rate.",
+          "Choose the activity level that best matches a typical week, from sedentary up to athlete.",
+          "Read your total daily energy expenditure and the intake suggested for fat loss, maintenance or muscle gain."
+        ],
+        "explanationTitle": "How total daily energy expenditure is calculated",
+        "formula": "TDEE = BMR (Mifflin-St Jeor) × activity factor (1.2 – 1.9)",
+        "explanation": [
+          "Total daily energy expenditure has four components: basal metabolism at 60% to 75%, the thermic effect of food at about 10% because digestion itself costs energy, non-exercise activity thermogenesis at roughly 15% through walking, housework and fidgeting, and exercise at anywhere from 0% to 30%. The calculator derives BMR with Mifflin-St Jeor and multiplies it by the activity factor you pick.",
+          "The component most often underestimated is NEAT. Two people who train identically, one commuting an hour and standing at a desk, the other seated all day, can differ by 400 to 600 kcal daily, a bigger gap than a moderate training session. Choose the factor that matches a typical week rather than your most active day, and if the result disagrees with how your weight actually moves, adjust by 10% to 15% from there."
+        ],
+        "tableTitle": "Activity factors (for a BMR of 1,600 kcal)",
+        "tableHeaders": [
+          "Level",
+          "Factor",
+          "Typical",
+          "TDEE"
+        ],
+        "tableRows": [
+          [
+            "Sedentary",
+            "1.2",
+            "Desk job, little extra exercise",
+            "1,920 kcal"
+          ],
+          [
+            "Light",
+            "1.375",
+            "Easy exercise 1–3 days a week",
+            "2,200 kcal"
+          ],
+          [
+            "Moderate",
+            "1.55",
+            "Moderate exercise 3–5 days a week",
+            "2,480 kcal"
+          ],
+          [
+            "High",
+            "1.725",
+            "Hard exercise 6–7 days a week",
+            "2,760 kcal"
+          ],
+          [
+            "Very high",
+            "1.9",
+            "Physical job plus twice-daily training",
+            "3,040 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between TDEE and BMR?",
+            "a": "BMR is the minimum needed to stay alive at complete rest, while TDEE adds everyday movement, exercise and the cost of digesting food. Plan your intake from TDEE, because that reflects the life you actually live. Using BMR as your target badly underestimates requirements and leads to under-eating, metabolic adaptation and muscle loss."
+          },
+          {
+            "q": "Why is my weight unchanged if I eat at my TDEE?",
+            "a": "The usual cause is picking the wrong activity factor. Most people overestimate their exercise, and a desk worker selecting moderately active adds 300 to 500 kcal that never happens. Start with sedentary or light, log your food and weight for two weeks, then adjust to what actually occurs. Stable weight means intake equals TDEE, which is the most accurate calibration available."
+          },
+          {
+            "q": "How large should a fat loss deficit be?",
+            "a": "Aim for 300 to 500 kcal below TDEE per day, which works out to about 0.3 to 0.5 kg per week. A bigger deficit accelerates muscle loss and metabolic adaptation, making long-term progress harder. Do not eat below your BMR, and generally stay above 1,200 kcal for women and 1,500 for men. Two or three resistance sessions a week plus enough protein will preserve muscle."
+          },
+          {
+            "q": "Are the calorie readings on fitness devices accurate?",
+            "a": "Not really. Errors of 20% to 40% are normal and usually skew high, because bands and treadmills rely on heart rate or generic formulas that cannot capture individual variation or the way people move less afterwards. Treat the numbers as a rough guide and judge progress by the two-week trend in weight and measurements instead."
+          }
+        ]
+      }
     },
     "calorie-calculator": {
       "name": "Calorie",
@@ -1510,17 +1952,222 @@
     "calories-burned": {
       "name": "Calories Burned",
       "description": "Calculate calories burned during various activities",
-      "metaDescription": "Calculate calories burned during exercise and daily activities using MET values"
+      "metaDescription": "Calculate calories burned during exercise and daily activities using MET values",
+      "guide": {
+        "steps": [
+          "Enter your body weight, since a heavier person burns more doing the same activity.",
+          "Choose the activity and how long you did it, as MET values differ greatly between exercises.",
+          "Read the estimated burn and use it as a reference for diet and training planning."
+        ],
+        "explanationTitle": "How exercise calories are estimated",
+        "formula": "Calories = MET × weight (kg) × duration (hours)",
+        "explanation": [
+          "MET, or metabolic equivalent, expresses an activity's metabolic rate as a multiple of resting metabolism. Sitting quietly is 1 MET, brisk walking roughly 4, jogging 8 to 9, and skipping rope can reach 12. Multiply MET by bodyweight in kilograms and duration in hours to estimate energy cost. The values come from the Compendium of Physical Activities, the most widely used reference.",
+          "Two caveats matter. First, MET values are population averages and ignore individual differences: two people jogging for 30 minutes can differ by 10% to 15% depending on movement efficiency, with beginners typically burning more. Second, the formula gives gross calories, including the energy you would have burned anyway at rest. To find the net cost of the exercise, subtract resting metabolism for the same period, about 1 MET × weight × hours. For a 70 kg person jogging 30 minutes, gross is roughly 315 kcal and net around 280."
+        ],
+        "tableTitle": "MET values for common activities (70 kg, 30 minutes)",
+        "tableHeaders": [
+          "Activity",
+          "MET",
+          "Gross",
+          "Net"
+        ],
+        "tableRows": [
+          [
+            "Walking 4 km/h",
+            "3.0",
+            "≈ 105 kcal",
+            "≈ 70 kcal"
+          ],
+          [
+            "Brisk walking 6 km/h",
+            "5.0",
+            "≈ 175 kcal",
+            "≈ 140 kcal"
+          ],
+          [
+            "Jogging 8 km/h",
+            "8.3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Cycling, moderate",
+            "7.5",
+            "≈ 263 kcal",
+            "≈ 228 kcal"
+          ],
+          [
+            "Swimming, freestyle",
+            "8.3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Skipping, moderate",
+            "11.8",
+            "≈ 413 kcal",
+            "≈ 378 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Why does my watch show more than this?",
+            "a": "Most wearables overestimate by 20% to 40%. They rely on heart rate and generic algorithms, and heart rate shifts with caffeine, temperature, sleep and mood, while the algorithm cannot see how efficient your movement is. Some devices also fold part of your resting metabolism into the activity figure. Treat the reading as a trend rather than an accurate ledger."
+          },
+          {
+            "q": "Does metabolism stay elevated after exercise?",
+            "a": "Yes, through excess post-exercise oxygen consumption, or EPOC. High-intensity intervals and resistance training produce the largest effect, raising metabolism by roughly 5% to 15% for a few hours, but the total is usually only a few dozen calories, far below the popular claim of burning fat for 24 hours. Steady low-intensity cardio produces a negligible EPOC."
+          },
+          {
+            "q": "For fat loss, is exercise or diet more important?",
+            "a": "Diet does most of the work. Thirty minutes of jogging nets about 250 kcal, which a slice of cake or a sugary drink cancels out. Exercise earns its place by preserving muscle, improving metabolic markers and helping you keep the weight off, rather than by creating a large deficit on its own. Combining both works best."
+          },
+          {
+            "q": "Does training fasted burn more fat?",
+            "a": "Fasted cardio does use a higher proportion of fat during the session, but total expenditure is not necessarily greater, and it can lower intensity and total training volume. Long-term studies show little difference in fat loss; total calorie balance remains decisive. If fasting makes you dizzy or weakens your performance, eating beforehand is the better choice."
+          }
+        ]
+      }
     },
     "target-heart-rate": {
       "name": "Target Heart Rate",
       "description": "Calculate target heart rate zones for exercise",
-      "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise"
+      "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise",
+      "guide": {
+        "steps": [
+          "Enter your age, since maximal heart rate is driven mainly by age.",
+          "Optionally enter your resting heart rate to use the Karvonen method for better precision.",
+          "Read the target zones and compare them against a chest strap or watch while training."
+        ],
+        "explanationTitle": "How target heart rate is calculated",
+        "formula": "Max heart rate = 220 − age; target = max heart rate × intensity %",
+        "explanation": [
+          "The most common estimate for maximal heart rate is 220 minus age, a rough fit to several studies from the 1970s. It is convenient, but the standard deviation is about plus or minus 10 to 12 beats per minute, meaning your true maximum may sit more than 10 beats above or below the estimate. The Tanaka equation, 208 − 0.7 × age, is generally a closer fit, particularly for middle-aged and older adults.",
+          "If you know your resting heart rate, the Karvonen method personalises things further: target = (max − resting) × intensity% + resting. It works from heart rate reserve and so reflects differences in fitness. Whichever method you use, remember that heart rate responds to caffeine, sleep, temperature, mood and medication, so swings of 5 to 10 beats at the same effort on different days are normal. Judge intensity by heart rate and perceived exertion together."
+        ],
+        "tableTitle": "Training zones (for age 40, max heart rate 180)",
+        "tableHeaders": [
+          "Zone",
+          "% of max",
+          "Target heart rate",
+          "How it feels"
+        ],
+        "tableRows": [
+          [
+            "Warm-up",
+            "50–60%",
+            "90–108",
+            "Easy, full conversation"
+          ],
+          [
+            "Fat burn / aerobic",
+            "60–70%",
+            "108–126",
+            "Breathing harder, short sentences"
+          ],
+          [
+            "Aerobic endurance",
+            "70–80%",
+            "126–144",
+            "Clearly breathless, single words"
+          ],
+          [
+            "Anaerobic / intervals",
+            "80–90%",
+            "144–162",
+            "Very hard, cannot talk"
+          ],
+          [
+            "Maximal",
+            "90–100%",
+            "162–180",
+            "All-out, unsustainable"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "How accurate is 220 minus age?",
+            "a": "Only roughly. Individual variation is large, with a standard deviation around 10 to 12 beats per minute, and the formula tends to overestimate for younger people and underestimate for older ones. The Tanaka equation, 208 − 0.7 × age, is usually closer. For everyday training, either is good enough to set zones."
+          },
+          {
+            "q": "What is the fat-burning zone, and does it burn more fat?",
+            "a": "It refers to the intensity where the proportion of energy from fat is highest, roughly 60% to 70% of maximum. The key clarification: at low intensity the proportion from fat is high but total calories are low, while at high intensity the fat share falls but total burn and excess post-exercise oxygen consumption rise. Fat loss depends on your overall calorie balance, not on the fuel mix during the session."
+          },
+          {
+            "q": "Why will my heart rate not rise, or not come down?",
+            "a": "A blunted response usually reflects fatigue, poor sleep or dehydration, and beta blockers suppress heart rate markedly, so anyone taking them should use perceived effort instead. An elevated rate can come from heat, caffeine, dehydration or overtraining. If your resting heart rate sits more than 10% above normal for several days, that is a signal to rest."
+          },
+          {
+            "q": "Does a low resting heart rate mean a healthy heart?",
+            "a": "Usually yes. Endurance training raises stroke volume, so resting rates of 40 to 60 beats per minute reflect a more efficient heart. Typical adult resting rates sit between 60 and 100, and a persistently lower value without dizziness or fatigue is a good adaptation. If it comes with dizziness, weakness or fainting, get it checked."
+          }
+        ]
+      }
     },
     "one-rep-max": {
       "name": "One Rep Max",
       "description": "Calculate your one-rep max from submaximal lifts",
-      "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts"
+      "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts",
+      "guide": {
+        "steps": [
+          "Choose the lift you want to estimate, such as bench press, squat or deadlift.",
+          "Enter a weight and the number of clean reps you can do, ideally between 2 and 10.",
+          "Read your estimated one-rep max and the training loads at each percentage."
+        ],
+        "explanationTitle": "How a one-rep max is estimated",
+        "formula": "Epley: 1RM = weight × (1 + reps ÷ 30)",
+        "explanation": [
+          "A one-rep max is the heaviest weight you can lift once with good form, and it anchors most strength programming. Testing it directly demands a long warm-up and carries injury risk, so in practice it is estimated from a set of multiple reps. The widely used Epley formula assumes each additional rep corresponds to roughly 3.33% less weight, which is one thirtieth.",
+          "Other formulas such as Brzycki, Lombardi and O'Conner agree closely between 1 and 10 reps, usually within 2% to 5%, but accuracy collapses beyond about 10 reps because endurance, lactate tolerance and conditioning start to dominate rather than pure strength. Base your estimate on a set of 2 to 10 reps. Remember too that the result is a programming reference, not a competition number: your true max on a given day depends heavily on fatigue, technique and how thoroughly you warmed up."
+        ],
+        "tableTitle": "Formula comparison (bench press 80 kg × 5)",
+        "tableHeaders": [
+          "Formula",
+          "Estimated 1RM",
+          "Note"
+        ],
+        "tableRows": [
+          [
+            "Epley",
+            "≈ 93.3 kg",
+            "Most common, good for 1–10 reps"
+          ],
+          [
+            "Brzycki",
+            "≈ 90.3 kg",
+            "Slightly conservative"
+          ],
+          [
+            "Lombardi",
+            "≈ 92.8 kg",
+            "Exponential relationship"
+          ],
+          [
+            "O'Conner",
+            "≈ 92.0 kg",
+            "More stable at higher reps"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Can I just attempt the estimated max?",
+            "a": "Not recommended, especially if you are relatively new to training. Estimates can sit 5% to 10% away from your true max, so going straight for the number carries real risk. A safer route is to test 90% of the estimate, confirm the technique holds, then add 2.5 to 5 kg per attempt until form breaks, always with a spotter or safety bars."
+          },
+          {
+            "q": "Why does the estimate get worse with more reps?",
+            "a": "Because the limiting factor changes. Sets of 1 to 5 reps reflect maximal strength, but beyond roughly 10 to 12 reps, muscular endurance, lactate tolerance and conditioning take over, and those are not a linear extension of pure strength. Every formula therefore states a valid range, usually 2 to 10 reps, and results distort badly outside it."
+          },
+          {
+            "q": "How should I set training loads from a 1RM percentage?",
+            "a": "A common structure is 85% to 100% for 1 to 5 reps for strength, 65% to 80% for 6 to 12 reps for hypertrophy, and 60% to 70% for 15 to 20 reps for endurance. Beginners do well starting at 60% to 70% while they groove technique, then raising intensity gradually. Exact percentages shift with training age and recovery capacity."
+          },
+          {
+            "q": "What is a normal ratio between lifts?",
+            "a": "Individual variation is large, but rough benchmarks for trained lifters are a squat around 1.5 times bodyweight, a bench around 1.0 times and a deadlift around 1.75 to 2.0 times. Female lifters typically reach about 60% to 70% of the numbers of a male of the same bodyweight, largely because of differences in muscle distribution and hormones. Treat these as context, not targets."
+          }
+        ]
+      }
     },
     "pace-calculator": {
       "name": "Pace",
@@ -1530,7 +2177,69 @@
     "macro-calculator": {
       "name": "Macro",
       "description": "Calculate daily macronutrient targets",
-      "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals"
+      "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals",
+      "guide": {
+        "steps": [
+          "Enter sex, age, height and weight so the basal metabolic rate can be calculated.",
+          "Choose your activity level and goal, whether fat loss, maintenance or muscle gain, to set the calorie target.",
+          "Read the gram splits for protein, carbohydrate and fat, and adjust carbs and fats to taste."
+        ],
+        "explanationTitle": "How macronutrients are split",
+        "formula": "Protein g = weight kg × factor; fat g = calories × fat share ÷ 9; carbs g = remaining ÷ 4",
+        "explanation": [
+          "Macronutrients differ in energy density: protein and carbohydrate provide about 4 kcal per gram, fat about 9, and alcohol about 7. The usual order is to set protein first, then fat, and let carbohydrate fill the remainder. The reason is that protein and fat have minimum requirements, protein for muscle retention and satiety, fat for hormone production and absorption of fat-soluble vitamins, while carbohydrate has no strict floor and is the most flexible.",
+          "Protein factors shift with the goal: 1.6 to 2.2 g per kg while cutting to protect muscle in a deficit, 1.2 to 1.6 at maintenance, and 1.6 to 2.2 when building. Fat typically covers 20% to 35% of calories and should not sit below 20% for long, since hormones can suffer. Carbs absorb what is left and can vary with training, higher on training days and lower on rest days. Total energy drives weight change; the macro split shapes body composition, hunger and performance."
+        ],
+        "tableTitle": "Macro splits by goal (70 kg, TDEE 2,200 kcal)",
+        "tableHeaders": [
+          "Goal",
+          "Calories",
+          "Protein",
+          "Fat",
+          "Carbs"
+        ],
+        "tableRows": [
+          [
+            "Fat loss",
+            "1,750 kcal",
+            "140 g (32%)",
+            "58 g (30%)",
+            "166 g (38%)"
+          ],
+          [
+            "Maintenance",
+            "2,200 kcal",
+            "126 g (23%)",
+            "73 g (30%)",
+            "259 g (47%)"
+          ],
+          [
+            "Muscle gain",
+            "2,500 kcal",
+            "154 g (25%)",
+            "83 g (30%)",
+            "281 g (45%)"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Can too much protein damage the kidneys?",
+            "a": "For healthy people, current evidence does not show harm from intakes up to about 2 grams per kilogram of bodyweight. Anyone diagnosed with chronic kidney disease does need to limit protein and should follow medical advice. Higher intakes also call for more water and enough fibre, so do not let meat crowd out vegetables and fruit."
+          },
+          {
+            "q": "Do carbs or fat cause more weight gain?",
+            "a": "Neither is the culprit on its own; weight gain comes from a sustained calorie surplus. Fat is energy dense at 9 kcal per gram and easy to overeat unnoticed, while refined carbohydrate raises blood sugar quickly and satisfies poorly, so it is easy to overdo as well. In practice, controlling total calories while favouring filling foods such as protein, vegetables and whole grains works better than demonising one macro."
+          },
+          {
+            "q": "Is a ketogenic diet suitable for most people?",
+            "a": "Keto, usually under 50 grams of carbohydrate a day, was developed to treat refractory epilepsy. Any fat loss advantage comes mainly from appetite suppression and easier calorie control rather than a metabolic edge. It is hard to sustain, often causes headache and fatigue at first, and long-term safety and adherence data are limited. Without a specific medical reason, most people do better with a moderate deficit and balanced nutrition."
+          },
+          {
+            "q": "Do I need to hit the numbers exactly every day?",
+            "a": "No, and trying to is counterproductive. Macros average out over a day or a week, so a single day off changes nothing. Aim to hit your protein total across the week and let carbohydrate flex around training. Obsessing over grams tends to destroy adherence, and consistency over months matters far more than precision on any one day."
+          }
+        ]
+      }
     },
     "protein-calculator": {
       "name": "Protein",
@@ -1550,7 +2259,65 @@
     "water-intake": {
       "name": "Water Intake",
       "description": "Calculate daily water intake needs",
-      "metaDescription": "Calculate how much water you should drink daily based on your lifestyle"
+      "metaDescription": "Calculate how much water you should drink daily based on your lifestyle",
+      "guide": {
+        "steps": [
+          "Enter your body weight and choose kilograms or pounds.",
+          "Fill in how long and how hard you train, since sweat losses raise requirements substantially.",
+          "If you are in heat or at altitude, tick those options to account for the extra loss."
+        ],
+        "explanationTitle": "How daily water needs are estimated",
+        "formula": "Base need = weight (kg) × 30–35 ml; exercise = training minutes × extra factor",
+        "explanation": [
+          "The most common rule is body weight times 30 to 35 millilitres, so a 60 kg person needs roughly 1.8 to 2.1 litres a day. That coefficient comes from measured daily losses through urine, breathing, skin evaporation and stool. For exercise, add roughly 350 to 700 ml per hour depending on intensity and how much you sweat.",
+          "One widespread misunderstanding deserves clearing up: the famous eight glasses, about two litres, is a memorable approximation that ignores weight, climate and activity. Just as importantly, that total does not all have to come from drinking, because food, especially fruit, vegetables and soups, supplies 20% to 30% of daily water, and metabolism generates around 300 ml. That means plain drinking water usually accounts for 500 to 800 ml less than the headline total. The simplest check is urine colour: pale straw means you are well hydrated, dark amber means drink more."
+        ],
+        "tableTitle": "Daily water suggestions by weight and activity",
+        "tableHeaders": [
+          "Weight",
+          "Sedentary",
+          "Moderately active",
+          "Hard training 1h+"
+        ],
+        "tableRows": [
+          [
+            "50 kg",
+            "≈ 1.5–1.8 L",
+            "≈ 1.8–2.0 L",
+            "≈ 2.3–2.5 L"
+          ],
+          [
+            "70 kg",
+            "≈ 2.1–2.5 L",
+            "≈ 2.5–2.8 L",
+            "≈ 3.0–3.2 L"
+          ],
+          [
+            "90 kg",
+            "≈ 2.7–3.2 L",
+            "≈ 3.2–3.5 L",
+            "≈ 3.7–4.0 L"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Do coffee and tea count towards hydration?",
+            "a": "Yes. Caffeine has a mild diuretic effect, but at normal intakes the net effect is still hydrating, and research generally counts coffee and tea towards daily fluid intake. What deserves attention are sugary drinks and alcohol: the first add calories, and the second is clearly diuretic and increases fluid loss."
+          },
+          {
+            "q": "If I feel thirsty, am I already dehydrated?",
+            "a": "Not necessarily. Thirst is a reliable signal for most healthy adults and typically kicks in at about 1% to 2% fluid loss, a level that does not harm performance or health. Thirst does blunt with age, however, and children often forget to drink when absorbed in play, so both groups benefit from drinking on a schedule rather than waiting."
+          },
+          {
+            "q": "Is more water always better?",
+            "a": "No. The kidneys can excrete only about 800 to 1,000 ml per hour, so drinking very large volumes quickly can cause hyponatraemia, with headache, nausea and confusion, and in extreme cases it is life threatening. It is most often seen after endurance events when people replace sweat with plain water and no electrolytes. Drinking steadily to thirst is enough for everyday life."
+          },
+          {
+            "q": "Do I need a sports drink when exercising?",
+            "a": "It depends on duration and intensity. Up to about 60 minutes of easy to moderate work, water suffices. Beyond 60 to 90 minutes, or when you sweat heavily, a drink with sodium, around 300 to 600 mg per litre, and 4% to 8% carbohydrate helps maintain electrolyte balance and glycogen. Weighing yourself before and after gives a practical target: replace roughly 1.2 to 1.5 litres for every kilogram lost."
+          }
+        ]
+      }
     },
     "body-type": {
       "name": "Body Type",
@@ -1580,7 +2347,65 @@
     "sleep-calculator": {
       "name": "Sleep",
       "description": "Calculate optimal sleep and wake times",
-      "metaDescription": "Find the best times to sleep and wake up based on sleep cycles"
+      "metaDescription": "Find the best times to sleep and wake up based on sleep cycles",
+      "guide": {
+        "steps": [
+          "Pick the time you plan to fall asleep, or the time you need to wake up.",
+          "Set how long you usually take to fall asleep, most people need 10 to 20 minutes, and the tool subtracts it.",
+          "Read the suggested times, all aligned to the end of complete sleep cycles."
+        ],
+        "explanationTitle": "How sleep cycles are calculated",
+        "formula": "Wake time = bedtime + time to fall asleep + cycles × 90 minutes (4–6 cycles)",
+        "explanation": [
+          "Sleep unfolds in cycles of roughly 90 minutes, each containing light sleep (N1 and N2), deep sleep (N3) and rapid eye movement. Deep sleep dominates the first half of the night and handles physical repair and growth hormone release, while REM increases later and supports memory consolidation and emotional regulation. Waking at the end of a cycle, close to the surface, leaves you clear-headed, whereas being woken from deep sleep produces heavy sleep inertia and sluggishness.",
+          "So the calculator works from the moment you fall asleep, after subtracting the time it takes you to drift off, and steps forward in 90-minute blocks, listing the wake times for four, five and six cycles, which is 6, 7.5 and 9 hours. One caveat: 90 minutes is a population average, individual cycles run anywhere from 70 to 120 minutes and shorten slightly with age. Treat this as a practical scheduling aid rather than a precise read on your body clock."
+        ],
+        "tableTitle": "Cycle counts and total sleep",
+        "tableHeaders": [
+          "Cycles",
+          "Sleep",
+          "Typical use",
+          "Suits"
+        ],
+        "tableRows": [
+          [
+            "4",
+            "6 hours",
+            "Short-term, emergencies",
+            "Not for the long run"
+          ],
+          [
+            "5",
+            "7.5 hours",
+            "Everyday for most adults",
+            "Recommended"
+          ],
+          [
+            "6",
+            "9 hours",
+            "Recovery, after hard training",
+            "Teenagers or catching up"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Do I really need eight hours?",
+            "a": "Not necessarily. Eight is a round number that is easy to remember; real needs vary, and most adults fall somewhere between seven and nine hours. What matters more is completing whole cycles and how you feel on waking. If 7.5 hours leaves you sharp, there is no reason to force eight. The test is whether you feel sleepy during the day and struggle to get up."
+          },
+          {
+            "q": "Why am I still tired after a long night?",
+            "a": "Often because you woke from deep sleep, or because quality was poor. Frequent awakenings, snoring with pauses in breathing, alcohol before bed, and a bedroom that is too bright or warm all reduce deep and REM sleep. If you consistently wake unrefreshed despite adequate hours, especially with loud snoring and morning headaches, ask about a sleep study."
+          },
+          {
+            "q": "How long should a nap be?",
+            "a": "Ten to twenty minutes is ideal: it restores alertness without reaching deep sleep, so you wake clear-headed. Thirty to sixty minutes tends to end in deep sleep and produces noticeable grogginess. If you want a full cycle, allow 90 minutes. It also helps to nap before about 3 pm so night-time sleep is not affected."
+          },
+          {
+            "q": "Does sleeping in at the weekend help?",
+            "a": "It repays part of the debt but cannot fully offset chronic short sleep, and it shifts your body clock, making Monday harder, the so-called social jetlag. Keeping bedtime and wake time within about an hour every day works better. If you are genuinely short, going to bed an hour earlier beats sleeping three hours later."
+          }
+        ]
+      }
     },
     "due-date": {
       "name": "Due Date",

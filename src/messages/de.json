@@ -1125,7 +1125,71 @@
     "retirement": {
       "name": "Ruhestand",
       "description": "Planen Sie Ihren Ruhestand mit Sparprognosen",
-      "metaDescription": "Ruhestandsplanung"
+      "metaDescription": "Ruhestandsplanung",
+      "guide": {
+        "steps": [
+          "Geben Sie Ihr aktuelles Alter und das geplante Rentenalter ein, damit die Ansparphase feststeht.",
+          "Tragen Sie vorhandenes Kapital, den monatlichen Sparbetrag und die erwartete Jahresrendite ein.",
+          "Sehen Sie das voraussichtliche Endkapital und die monatliche Entnahme, die die 4-Prozent-Regel nahelegt."
+        ],
+        "explanationTitle": "Wie die Altersvorsorge projiziert wird",
+        "formula": "Endwert = vorhandenes Kapital × (1+r)ⁿ + Sparrate × [((1+r)ⁿ − 1) ÷ r]",
+        "explanation": [
+          "Die Formel hat zwei Teile: Das vorhandene Kapital wächst mit Zinseszins bis zur Rente, und die laufenden Sparraten summieren sich über die Rentenendwertformel. r ist der Monatszins, also die Jahresrendite geteilt durch 12, und n die Anzahl der Monate bis zur Rente. Unterstellt werden eine konstante Rendite, monatliche Verzinsung und Einzahlungen am Periodenende, sodass das Ergebnis ein Szenario und keine Prognose ist, denn reale Märkte schwanken.",
+          "Eine bewährte Faustregel ist die 4-Prozent-Regel: Im ersten Ruhestandsjahr entnehmen Sie 4% des Depots und passen den Betrag danach jährlich an die Inflation an; über 30 Ruhestandsjahre geht das Geld danach kaum aus. Sie stammt aus Backtests mit US-Daten und bedeutet, dass Sie das 25-Fache Ihrer Jahresausgaben brauchen. Bei frühem Ruhestand oder längerer Auszahlungsphase sollten Sie die sichere Entnahmequote auf 3,0% bis 3,5% senken. Die Renditeannahme wirkt extrem stark, rechnen Sie daher optimistisch, neutral und pessimistisch."
+        ],
+        "tableTitle": "Einfluss der Sparrate (30 Jahre bei 6% pro Jahr)",
+        "tableHeaders": [
+          "Monatlich",
+          "Eingezahlt",
+          "Endwert",
+          "Wertzuwachs"
+        ],
+        "tableRows": [
+          [
+            "500",
+            "180.000",
+            "≈ 502.000",
+            "≈ 322.000"
+          ],
+          [
+            "1.000",
+            "360.000",
+            "≈ 1.004.000",
+            "≈ 644.000"
+          ],
+          [
+            "2.000",
+            "720.000",
+            "≈ 2.008.000",
+            "≈ 1.288.000"
+          ],
+          [
+            "3.000",
+            "1.080.000",
+            "≈ 3.012.000",
+            "≈ 1.932.000"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Gilt die 4-Prozent-Regel noch?",
+            "a": "Sie ist ein brauchbarer Ausgangspunkt, kein Gesetz. Sie wurde mit US-Historie getestet: Sind künftige Renditen niedriger, dauert der Ruhestand länger als 30 Jahre oder verhalten sich Ihre Märkte anders, sollte die sichere Quote sinken. Neuere Studien nennen oft 3,0% bis 3,5%, oder eine dynamische Entnahme, die in Jahren mit starken Kursverlusten reduziert wird."
+          },
+          {
+            "q": "Welchen Anteil meines Einkommens sollte ich sparen?",
+            "a": "Ein üblicher Richtwert sind 10% bis 15% des Bruttoeinkommens, inklusive Arbeitgeberzuschuss. Wichtiger ist die Versorgungsquote: Die meisten brauchen 70% bis 80% des Einkommens vor dem Ruhestand, um ihren Lebensstandard zu halten. Wer mit 30 beginnt, benötigt meist 15% bis 20%; wer vor 25 startet, kommt oft mit rund 10% aus."
+          },
+          {
+            "q": "Wie gehe ich mit der Inflation um?",
+            "a": "Der Rechner liefert Nominalbeträge ohne Inflationsabzug. Für reale Kaufkraft ziehen Sie die erwartete Inflation von der erwarteten Rendite ab, rechnen also mit 4% real, wenn Sie 7% nominal und 3% Inflation erwarten. Bei 3% Inflation entspricht eine Million in 30 Jahren einer heutigen Kaufkraft von etwa 410.000; die Inflation zu ignorieren überzeichnet die Vorsorge deutlich."
+          },
+          {
+            "q": "Was kostet ein Start zehn Jahre später?",
+            "a": "Sehr viel. Wer 1.000 monatlich zu 6% von 25 bis 60 anlegt, erreicht rund 1.430.000; wer mit 35 beginnt, nur etwa 700.000, also weniger als die Hälfte. Es fehlen zehn Jahre Zinseszins, und der Zinseszins wirkt am Ende am stärksten. Früher anfangen schlägt meistens mehr einzahlen."
+          }
+        ]
+      }
     },
     "tip": {
       "name": "Trinkgeld",
@@ -1135,17 +1199,203 @@
     "savings-goal": {
       "name": "Sparziel",
       "description": "Berechnen Sie die Zeit bis zum Sparziel",
-      "metaDescription": "Sparplanung"
+      "metaDescription": "Sparplanung",
+      "guide": {
+        "steps": [
+          "Geben Sie den Zielbetrag ein, etwa Eigenkapital, Studienfonds oder Notgroschen, sowie das vorhandene Guthaben.",
+          "Tragen Sie die verbleibende Zeit in Monaten oder Jahren und die erwartete Jahresrendite ein.",
+          "Sehen Sie den nötigen Monatsbetrag und wie er sich bei veränderter Frist verschiebt."
+        ],
+        "explanationTitle": "Wie viel Sie monatlich sparen müssen",
+        "formula": "Sparrate = (Ziel − Barwert × (1+r)ⁿ) × r ÷ [(1+r)ⁿ − 1]",
+        "explanation": [
+          "Das ist die umgestellte Rentenendwertformel. Zunächst wird berechnet, wohin das vorhandene Guthaben wächst, also Barwert mal (1+r)ⁿ; die Differenz zum Ziel ist die Lücke; dann wird die monatliche Rate bestimmt, die diese Lücke in n Monaten schließt. r ist der Monatszins und n die Anzahl der Perioden. Übersteigt der Endwert des Guthabens bereits das Ziel, ergibt sich null oder ein negativer Wert: Sie müssen nichts mehr sparen.",
+          "Die Formel zeigt drei Stellhebel: Zeit verlängern, Rendite erhöhen oder Ziel senken. Die Zeit wirkt am stärksten, weil der Zinseszins hinten heraus am kräftigsten arbeitet. Für ein Ziel von 300.000 bei 4% pro Jahr sind in 10 Jahren etwa 2.036 pro Monat nötig, in 20 Jahren nur etwa 819. Doppelte Laufzeit, weniger als die halbe Rate, das ist die mathematische Begründung für einen frühen Start."
+        ],
+        "tableTitle": "Monatliche Sparrate für ein Ziel von 300.000 (bei 4% pro Jahr)",
+        "tableHeaders": [
+          "Laufzeit",
+          "Monatlich",
+          "Eingezahlt",
+          "Wertzuwachs"
+        ],
+        "tableRows": [
+          [
+            "5 Jahre",
+            "≈ 4.527",
+            "≈ 271.600",
+            "≈ 28.400"
+          ],
+          [
+            "10 Jahre",
+            "≈ 2.036",
+            "≈ 244.300",
+            "≈ 55.700"
+          ],
+          [
+            "15 Jahre",
+            "≈ 1.220",
+            "≈ 219.600",
+            "≈ 80.400"
+          ],
+          [
+            "20 Jahre",
+            "≈ 819",
+            "≈ 196.600",
+            "≈ 103.400"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Welche Rendite soll ich annehmen?",
+            "a": "Das hängt von Zweck und Laufzeit ab. Geld, das Sie innerhalb von drei Jahren brauchen, etwa Eigenkapital, sollte mit wenig oder keiner Rendite angesetzt und auf dem Tagesgeld oder in einem Geldmarktfonds geparkt werden. Für Beträge, die fünf Jahre und länger liegen bleiben und Schwankungen aushalten, sind 4% bis 6% realistisch. Rechnen Sie die Rendite nicht schön, sonst fehlt am Ende Geld."
+          },
+          {
+            "q": "Wie hoch sollte mein Notgroschen sein?",
+            "a": "Üblich sind drei bis sechs Monatsausgaben, bei unregelmäßigem Einkommen oder Familienverpflichtungen auch neun bis zwölf. Entscheidend sind Verfügbarkeit und Sicherheit, deshalb gehört das Geld auf ein jederzeit zugängliches Konto oder in einen Geldmarktfonds statt in renditestarke Anlagen. Füllen Sie diesen Topf zuerst, bevor Sie andere Ziele besparen."
+          },
+          {
+            "q": "Muss das Ziel inflationsbereinigt werden?",
+            "a": "Ja. Ein Ziel in zehn Jahren erfordert die Kaufkraft von 300.000 zu jener Zeit, nicht die heutige. Bei 3% Inflation entsprechen 300.000 in zehn Jahren etwa 223.000 von heute, das nominelle Ziel läge also bei rund 403.000. Alternativ rechnen Sie mit der Realrendite, also nominal abzüglich Inflation, und erhalten dasselbe Ergebnis."
+          },
+          {
+            "q": "Was, wenn ich so viel nicht sparen kann?",
+            "a": "Drei Stellschrauben bleiben: Frist verlängern, Ziel senken oder eine höhere Rendite bei mehr Risiko anstreben. Sinnvoll ist außerdem ein Blick auf die Ausgaben und darauf, was sich kürzen lässt. Als Prüfmaßstab dient die 50/30/20-Regel: 50% für Notwendiges, 30% für Wünsche, 20% für Sparen und Schuldentilgung. Wer die 20% nicht erreicht, fährt meist besser, feste Kosten wie Abos, Versicherungen und Pendelwege zu reduzieren, als beim täglichen Kleinkram zu sparen."
+          }
+        ]
+      }
     },
     "inflation": {
       "name": "Inflation",
       "description": "Berechnen Sie die Auswirkung der Inflation",
-      "metaDescription": "Inflationsauswirkung"
+      "metaDescription": "Inflationsauswirkung",
+      "guide": {
+        "steps": [
+          "Geben Sie einen Betrag sowie Start- und Endjahr ein.",
+          "Tragen Sie die durchschnittliche jährliche Inflationsrate ein, als historischen Mittelwert oder als eigene Annahme.",
+          "Lesen Sie den inflationsbereinigten Wert und den Verlust an Kaufkraft ab."
+        ],
+        "explanationTitle": "Wie Inflation die Kaufkraft mindert",
+        "formula": "Realwert = Nominalbetrag ÷ (1 + Inflationsrate)ⁿ",
+        "explanation": [
+          "Inflation heißt, dass dieselbe Summe immer weniger kauft. Die Umrechnung diskontiert den Nominalbetrag mit der Inflationsrate zurück: Eine Einheit in n Jahren entspricht heute 1 ÷ (1 + i)ⁿ. In die andere Richtung, was aus heutigen 100 nominal wird, rechnet man mit 100 × (1 + i)ⁿ. Beide Richtungen nutzen dieselbe Zinseszinsformel, einmal geteilt und einmal multipliziert.",
+          "Entscheidend ist der Zinseszinseffekt des Verlusts. 3% Inflation klingen harmlos, doch nach etwa 24 Jahren ist die Kaufkraft halbiert, denn 1,03 hoch 24 ist rund 2. Bei 5% genügen etwa 14 Jahre. Deshalb muss langfristiges Sparen an der Realrendite gemessen werden, also Nominalrendite minus Inflation: Bei 2% Zins und 3% Inflation verliert Ihr Geld real rund 1% pro Jahr, und je länger es liegt, desto teurer wird das."
+        ],
+        "tableTitle": "Kaufkraft von 100 bei verschiedenen Inflationsraten",
+        "tableHeaders": [
+          "Zeithorizont",
+          "2% Inflation",
+          "3% Inflation",
+          "5% Inflation"
+        ],
+        "tableRows": [
+          [
+            "nach 10 Jahren",
+            "≈ 82,0",
+            "≈ 74,4",
+            "≈ 61,4"
+          ],
+          [
+            "nach 20 Jahren",
+            "≈ 67,3",
+            "≈ 55,4",
+            "≈ 37,7"
+          ],
+          [
+            "nach 30 Jahren",
+            "≈ 55,2",
+            "≈ 41,2",
+            "≈ 23,1"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Warum weicht der offizielle VPI von meiner gefühlten Inflation ab?",
+            "a": "Der Verbraucherpreisindex ist ein gewichteter Durchschnitt über einen Warenkorb, der einen repräsentativen Haushalt abbildet. Ihre eigene Ausgabenstruktur weicht ab: Wenn Sie viel für Miete, Bildung oder Gesundheit ausgeben und diese stärker steigen, liegt Ihre persönliche Inflation über der veröffentlichten. Zudem bereinigt der Index um Qualität; ein teureres Handy mit deutlich mehr Leistung gilt nicht vollständig als Inflation."
+          },
+          {
+            "q": "Welchen Wert sollte ich langfristig annehmen?",
+            "a": "In den meisten fortgeschrittenen Volkswirtschaften liegt der langfristige Durchschnitt zwischen 2% und 3%, was auch dem Zielband vieler Zentralbanken entspricht. Für Ruhestands- oder Bildungsplanung sind 3% als neutraler Fall sinnvoll, ergänzt um ein pessimistisches Szenario von 4% bis 5%. Inflation gehört zu den unsichersten Größen der Langfristplanung; lieber zu hoch als zu niedrig ansetzen."
+          },
+          {
+            "q": "Was ist Deflation, und kommt sie vor?",
+            "a": "Deflation ist ein breiter, anhaltender Preisrückgang, also negative Inflation. Sie klingt angenehm, ist aber gefährlich: Wer sinkende Preise erwartet, schiebt Käufe auf, Unternehmen senken Preise und streichen Stellen, die Nachfrage fällt weiter, und der Kreislauf verstärkt sich. Japan kämpfte ab den 1990er-Jahren damit, weshalb Zentralbanken eine moderate Inflation um 2% ansteuern."
+          },
+          {
+            "q": "Wie berechne ich die Realrendite?",
+            "a": "Exakt gilt: (1 + Nominalrendite) ÷ (1 + Inflation) − 1, also bei 6% nominal und 3% Inflation rund 2,91% real. Für die Praxis reicht die Differenz, hier 3%. Ob eine Anlage Ihr Vermögen wirklich vermehrt, zeigt immer die Realrendite, nicht die ausgewiesene Nominalrendite."
+          }
+        ]
+      }
     },
     "roi": {
       "name": "Rendite",
       "description": "Berechnen Sie die Investitionsrendite",
-      "metaDescription": "Investitionsrendite"
+      "metaDescription": "Investitionsrendite",
+      "guide": {
+        "steps": [
+          "Geben Sie die Anschaffungskosten ein, also den Kaufpreis zuzüglich aller Gebühren und Steuern.",
+          "Geben Sie den Rückfluss ein, also Verkaufserlös oder aktuellen Marktwert abzüglich der Verkaufskosten.",
+          "Lesen Sie die Rendite, den Nettogewinn und bei Angabe der Haltedauer die annualisierte Rendite ab."
+        ],
+        "explanationTitle": "Wie die Kapitalrendite berechnet wird",
+        "formula": "ROI = (Ertrag − Kosten) ÷ Kosten × 100%",
+        "explanation": [
+          "Der Return on Investment misst die Effizienz: Nettogewinn geteilt durch Einsatz. Er ist anschaulich und universell, sodass sich Immobilien, Aktien, Maschinen oder Werbebudgets vergleichen lassen, sofern die Abgrenzung einheitlich ist. Die große Schwäche ist die fehlende Zeitkomponente. Eine Anlage mit 30% in drei Jahren und eine mit 30% in zehn Jahren haben denselben ROI und sind trotzdem grundverschieden.",
+          "Bei unterschiedlichen Laufzeiten hilft die annualisierte Rendite, auch CAGR genannt: (Endwert ÷ Anfangswert)^(1/Jahre) − 1. Im Beispiel entsprechen 30% in drei Jahren etwa 9,1% pro Jahr, in zehn Jahren nur etwa 2,7%. Häufig unterschätzt wird außerdem die Kostenbasis: Aktien bringen Orderentgelte und Steuern mit, Immobilien Grunderwerbsteuer, Maklercourtage, Renovierung und laufende Nebenkosten; wer das weglässt, rechnet sich die Rendite deutlich zu schön."
+        ],
+        "tableTitle": "ROI im Vergleich zur annualisierten Rendite (CAGR)",
+        "tableHeaders": [
+          "Projekt",
+          "ROI gesamt",
+          "Haltedauer",
+          "annualisiert"
+        ],
+        "tableRows": [
+          [
+            "A: kurzfristiger Trade",
+            "+30%",
+            "3 Jahre",
+            "≈ 9,1%"
+          ],
+          [
+            "B: langfristig gehalten",
+            "+30%",
+            "10 Jahre",
+            "≈ 2,7%"
+          ],
+          [
+            "C: Immobilie",
+            "+45%",
+            "5 Jahre",
+            "≈ 7,7%"
+          ],
+          [
+            "D: Indexfonds",
+            "+80%",
+            "10 Jahre",
+            "≈ 6,1%"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Wann ist ein ROI gut?",
+            "a": "Eine absolute Zahl gibt es nicht; entscheidend sind Vergleichsmaßstab und Laufzeit. Festgeld bringt langfristig etwa 1% bis 2% pro Jahr, breite Aktienindizes historisch rund 7% bis 10% nominal. Ein mehrjähriges Projekt mit über 8% annualisiert ist daher meist ordentlich. Wichtig bleibt das Risiko, denn hohe Renditen gehen oft mit Schwankung oder Fremdkapital einher; prüfen Sie deshalb risikoadjustierte Kennzahlen wie die Sharpe Ratio."
+          },
+          {
+            "q": "Worin unterscheiden sich ROI und IRR?",
+            "a": "Der ROI betrachtet nur die Endrendite und passt zu einer Einzelanlage ohne zwischenzeitliche Zahlungen. Der interne Zinsfuß berücksichtigt den Zeitpunkt jeder Zahlung und eignet sich für gestückelte Einzahlungen oder laufende Erträge wie Sparpläne, Mieteinnahmen oder Unternehmensprojekte. Bei komplexen Zahlungsströmen ist der IRR die genauere Kennzahl."
+          },
+          {
+            "q": "Warum liegt meine Rendite unter dem ausgewiesenen ROI?",
+            "a": "Drei Gründe sind typisch: nicht eingerechnete Kosten wie Gebühren, Steuern und Währungsverluste; die Inflation, denn nominale Gewinne müssen für reale Kaufkraft bereinigt werden; und Opportunitätskosten, also das, was das Geld anderswo erwirtschaftet hätte. Bei Fremdkapital kommen Zinsen hinzu, die Gewinne wie Verluste verstärken."
+          },
+          {
+            "q": "Wie rechnet man den ROI bei Verlust?",
+            "a": "Die Formel bleibt gleich, das Ergebnis ist negativ. Bei 10.000 Einsatz und 7.000 Rückfluss gilt ROI = (7.000 − 10.000) ÷ 10.000 = −30%. Wichtig ist die Asymmetrie: Nach 30% Verlust sind rund 42,9% Gewinn nötig, um den Einsatz zurückzuholen, denn 1 ÷ 0,7 − 1 ≈ 0,429. Je tiefer der Verlust, desto schwerer die Erholung, weshalb Verlustbegrenzung wichtiger ist als Gewinnmaximierung."
+          }
+        ]
+      }
     },
     "break-even": {
       "name": "Die Gewinnzone erreichen",
@@ -1259,7 +1509,65 @@
     "credit-card": {
       "name": "Kreditkarten",
       "description": "Berechnen Sie die Kreditkarten-Tilgungszeit und Zinsen",
-      "metaDescription": "Berechnen Sie Tilgungszeit und Gesamtzinskosten der Kreditkarte"
+      "metaDescription": "Berechnen Sie Tilgungszeit und Gesamtzinskosten der Kreditkarte",
+      "guide": {
+        "steps": [
+          "Geben Sie den aktuellen Saldo, den effektiven Jahreszins der Karte und den Betrag ein, den Sie monatlich zahlen möchten.",
+          "Wenn Sie nur den Mindestbetrag zahlen, aktivieren Sie die Option, um zu sehen, wie viele Jahre die Tilgung dauert.",
+          "Lesen Sie die Anzahl der Monate, die Zinssumme und die Ersparnis durch eine feste Monatsrate ab."
+        ],
+        "explanationTitle": "Wie Kreditkartenzinsen entstehen",
+        "formula": "Monatszins = durchschnittlicher Tagessaldo × Jahreszins ÷ 365 × Abrechnungstage",
+        "explanation": [
+          "Die meisten Karten rechnen mit dem durchschnittlichen Tagessaldo: Der Anbieter addiert die Tagessalden der Abrechnungsperiode, teilt durch die Tage und wendet den Tageszins an, also den Jahreszins geteilt durch 365, multipliziert mit der Anzahl der Tage. Wer früh in der Periode zahlt, senkt die Zinsen deutlich; wer bis zum letzten Tag wartet, zahlt für die gesamte Periode.",
+          "Die Falle beim Mindestbetrag: Er beträgt meist nur 1% bis 3% der Schuld plus Zinsen und Gebühren. Bei 20.000 Schulden und 18% Zins sind von der ersten Rate von 400 etwa 300 Zinsen und nur 100 Tilgung, die Entschuldung dauert über 30 Jahre und kostet fast das Dreifache der ursprünglichen Schuld an Zinsen. Mit festen 1.000 pro Monat ist die Schuld in rund 24 Monaten getilgt, für etwa 4.000 Zinsen. Der Unterschied ist enorm."
+        ],
+        "tableTitle": "Tilgungswege im Vergleich (20.000 Schulden bei 18%)",
+        "tableHeaders": [
+          "Variante",
+          "Monatsrate",
+          "Laufzeit",
+          "Zinsen gesamt"
+        ],
+        "tableRows": [
+          [
+            "Nur Minimum (2%)",
+            "ab ≈ 400",
+            "über 30 Jahre",
+            "≈ 58.000"
+          ],
+          [
+            "Feste Rate 800",
+            "800",
+            "≈ 32 Monate",
+            "≈ 5.600"
+          ],
+          [
+            "Feste Rate 1.500",
+            "1.500",
+            "≈ 16 Monate",
+            "≈ 2.800"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Schadet es dem Score, nur den Mindestbetrag zu zahlen?",
+            "a": "Solange Sie mindestens den Mindestbetrag zahlen, entsteht kein Verzug und das Konto gilt als vertragsgemäß. Eine dauerhaft hohe Auslastung, also das Verhältnis von Saldo zu Limit, drückt den Score aber deutlich, denn sie geht mit rund 30% in die Bewertung ein. Werte über 30% wirken sich negativ aus."
+          },
+          {
+            "q": "Warum kommen nach meiner Zahlung wieder Zinsen?",
+            "a": "Wegen der Restzinsen. Zwischen Ihrem Zahlungstag und dem Abrechnungsdatum lief der Saldo weiter, diese Zinsen erscheinen auf der nächsten Abrechnung. Um Zinsen ganz zu stoppen, begleichen Sie den vollen Saldo vor dem Abrechnungsdatum, nutzen die Karte eine volle Periode nicht und prüfen, dass die nächste Abrechnung null Zinsen ausweist."
+          },
+          {
+            "q": "Ist eine Ratenzahlung besser als der Mindestbetrag?",
+            "a": "Meistens ja. Ratenpläne fixieren einen niedrigeren Zins, oft 7% bis 12% pro Jahr gegenüber 18% revolvierendem Zins, mit konstanter Rate und klarem Endtermin. Achten Sie auf Bearbeitungsgebühren und darauf, ob bei vorzeitiger Ablösung restliche Gebühren fällig bleiben, und vergleichen Sie die tatsächlichen Jahreskosten."
+          },
+          {
+            "q": "Wie komme ich am schnellsten aus den Kartenschulden?",
+            "a": "Zwei gängige Wege: Bei der Schneeballmethode tilgen Sie zuerst die kleinste Schuld, weil schnelle Erfolge motivieren; bei der Lawinenmethode zuerst die höchste Verzinsung, was rechnerisch am meisten Zinsen spart. In beiden Fällen gilt: keine neuen Ausgaben, feste Monatsrate, und den teuersten Saldo zuerst umschulden oder in Raten zahlen."
+          }
+        ]
+      }
     },
     "down-payment": {
       "name": "Anzahlungs",
@@ -1362,7 +1670,71 @@
     "ideal-weight": {
       "name": "Idealgewicht",
       "description": "Berechnen Sie das ideale Koerpergewicht mit mehreren Formeln",
-      "metaDescription": "Berechnen Sie Ihr Idealgewicht mit Robinson, Miller, Devine und Hamwi"
+      "metaDescription": "Berechnen Sie Ihr Idealgewicht mit Robinson, Miller, Devine und Hamwi",
+      "guide": {
+        "steps": [
+          "Wählen Sie Geschlecht und Einheitensystem, die Koeffizienten unterscheiden sich nach Geschlecht.",
+          "Geben Sie die Körpergröße ein; manche Formeln fragen zusätzlich nach Alter oder Körperbau.",
+          "Vergleichen Sie die Spanne mehrerer Formeln und achten Sie auf die systematischen Unterschiede."
+        ],
+        "explanationTitle": "Die verschiedenen Formeln für das Idealgewicht",
+        "formula": "Devine (Männer) = 50 + 0,9 × (Größe cm − 152,4); Hamwi (Frauen) = 45,5 + 0,9 × (Größe cm − 152,4)",
+        "explanation": [
+          "Das Idealgewicht ist kein einzelner Standard, sondern eine Familie historischer Gleichungen. Die Devine-Formel von 1974 diente ursprünglich der Berechnung von Narkose- und Medikamentendosen und wurde später für den Alltag übernommen. Hamwi und Robinson entstanden etwas früher und liefern ähnliche Werte. Allen gemeinsam ist die Form aus einem Grundwert plus 0,9 kg je Zentimeter über 152,4 cm, also fünf Fuß.",
+          "Zwei Einschränkungen sind wichtig. Erstens stammen die Gleichungen aus Jahrzehnten zurückliegenden, überwiegend westlichen Stichproben und berücksichtigen weder Alter noch Knochenbau noch Muskelmasse, weshalb sie für asiatische Bevölkerungsgruppen um 5% bis 10% zu niedrig liegen. Zweitens dienen sie unterschiedlichen Zwecken: Devine der Dosierung, der BMI der Gesundheitsvorsorge, der Körperfettanteil der Körperzusammensetzung. Verstehen Sie das Idealgewicht als Band von etwa ±10% um die Ergebnisse, nicht als exaktes Ziel."
+        ],
+        "tableTitle": "Idealgewicht nach Formel (Mann 175 cm, Frau 165 cm)",
+        "tableHeaders": [
+          "Formel",
+          "Mann 175 cm",
+          "Frau 165 cm",
+          "Hinweis"
+        ],
+        "tableRows": [
+          [
+            "Devine (1974)",
+            "≈ 70,4 kg",
+            "≈ 56,7 kg",
+            "Meist für Medikamentendosen"
+          ],
+          [
+            "Hamwi (1964)",
+            "≈ 70,3 kg",
+            "≈ 56,7 kg",
+            "Nahe bei Devine"
+          ],
+          [
+            "Robinson (1983)",
+            "≈ 68,0 kg",
+            "≈ 56,9 kg",
+            "Bei Männern etwas niedriger"
+          ],
+          [
+            "Miller (1983)",
+            "≈ 69,4 kg",
+            "≈ 56,8 kg",
+            "Zwischen beiden"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Entspricht das Idealgewicht einem normalen BMI?",
+            "a": "Sie korrespondieren ungefähr, aber nicht exakt. Die Werte der Devine-Formel entsprechen für die meisten Körpergrößen einem BMI von etwa 21 bis 23, also dem unteren Mittelfeld des Normalbereichs, während der normale BMI von 18,5 bis 24,9 reicht. Bei gegebener Größe ist der normale BMI damit ein deutlich breiteres Ziel; es sind schlicht zwei Bezugsrahmen."
+          },
+          {
+            "q": "Wie sollten Sportler ihr Idealgewicht bestimmen?",
+            "a": "Diese Formeln taugen dafür nicht. Muskelgewebe ist dichter als Fett, deshalb liegen Kraftsportler oft 15% bis 25% über dem berechneten Gewicht, bei niedrigem Körperfett und gesunden Stoffwechselwerten. Maßgeblich sind hier Körperfettanteil und Taillenumfang. Ebenso können ältere Menschen mit Muskelverlust das Zielgewicht treffen und trotzdem zu viel Fett tragen."
+          },
+          {
+            "q": "Warum weichen die Formeln voneinander ab?",
+            "a": "Weil sie an anderen Stichproben, in anderen Jahrzehnten und für andere Zwecke entwickelt wurden. Devine und Hamwi liegen unter 1% auseinander, Robinson und Miller bei Männern etwa 2 bis 3 kg niedriger. Diese Spanne ist weit kleiner als die natürliche Streuung zwischen Menschen, weshalb die Wahl der Formel weniger zählt als der Blick auf den Gesamtbereich."
+          },
+          {
+            "q": "Ist ein Gewicht unter dem Ideal automatisch gesünder?",
+            "a": "Nein. Ein BMI unter 18,5 geht mit geschwächtem Immunsystem, Knochenschwund, Zyklusstörungen und Mangelernährung einher. Untergewicht bringt zudem häufig zu wenig Muskelmasse mit sich, und Muskeln tragen Stoffwechselgesundheit und Selbstständigkeit im Alter. Das Ziel lautet moderates Körperfett bei ausreichender Muskulatur, nicht die kleinste Zahl auf der Waage."
+          }
+        ]
+      }
     },
     "bmr-calculator": {
       "name": "Grundumsatz",
@@ -1436,7 +1808,77 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Berechnen Sie den taeglichen Gesamtenergieverbrauch",
-      "metaDescription": "Berechnen Sie Ihren Gesamtenergieverbrauch basierend auf Aktivitaetsniveau"
+      "metaDescription": "Berechnen Sie Ihren Gesamtenergieverbrauch basierend auf Aktivitaetsniveau",
+      "guide": {
+        "steps": [
+          "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz berechnet werden kann.",
+          "Wählen Sie die Aktivitätsstufe, die einer typischen Woche entspricht, von sitzend bis Leistungssport.",
+          "Lesen Sie den Gesamtumsatz und die empfohlene Zufuhr für Fettabbau, Halten oder Muskelaufbau ab."
+        ],
+        "explanationTitle": "Wie der Gesamtumsatz berechnet wird",
+        "formula": "Gesamtumsatz = Grundumsatz (Mifflin-St Jeor) × Aktivitätsfaktor (1,2 – 1,9)",
+        "explanation": [
+          "Der tägliche Gesamtumsatz besteht aus vier Teilen: Grundumsatz mit 60% bis 75%, nahrungsinduzierte Thermogenese mit etwa 10%, weil Verdauen Energie kostet, Alltagsbewegung ohne Sport, also Gehen, Hausarbeit und Zappeln, mit rund 15%, sowie Sport mit 0% bis 30%. Der Rechner ermittelt den Grundumsatz nach Mifflin-St Jeor und multipliziert ihn mit dem gewählten Aktivitätsfaktor.",
+          "Am häufigsten unterschätzt wird die Alltagsbewegung. Zwei Menschen mit identischem Training, einer mit einer Stunde Pendeln und Steharbeit, der andere durchgehend sitzend, liegen leicht 400 bis 600 kcal auseinander, mehr als eine mittlere Trainingseinheit verbraucht. Wählen Sie den Faktor also nach einer typischen Woche, nicht nach Ihrem aktivsten Tag, und korrigieren Sie bei Abweichungen um 10% bis 15%."
+        ],
+        "tableTitle": "Aktivitätsfaktoren (bei einem Grundumsatz von 1.600 kcal)",
+        "tableHeaders": [
+          "Stufe",
+          "Faktor",
+          "Typisch",
+          "Gesamtumsatz"
+        ],
+        "tableRows": [
+          [
+            "Sitzend",
+            "1,2",
+            "Bürojob, kaum Zusatzbewegung",
+            "1.920 kcal"
+          ],
+          [
+            "Leicht",
+            "1,375",
+            "Leichter Sport an 1–3 Tagen",
+            "2.200 kcal"
+          ],
+          [
+            "Mäßig",
+            "1,55",
+            "Mittlerer Sport an 3–5 Tagen",
+            "2.480 kcal"
+          ],
+          [
+            "Hoch",
+            "1,725",
+            "Harter Sport an 6–7 Tagen",
+            "2.760 kcal"
+          ],
+          [
+            "Sehr hoch",
+            "1,9",
+            "Körperliche Arbeit plus zweimal täglich Training",
+            "3.040 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Worin unterscheiden sich Gesamtumsatz und Grundumsatz?",
+            "a": "Der Grundumsatz deckt das Minimum bei völliger Ruhe, der Gesamtumsatz ergänzt Alltag, Sport und Verdauung. Planen Sie Ihre Zufuhr nach dem Gesamtumsatz, denn er entspricht Ihrem wirklichen Leben. Wer den Grundumsatz als Ziel ansetzt, unterschätzt den Bedarf massiv und riskiert Unterversorgung, metabolische Anpassung und Muskelabbau."
+          },
+          {
+            "q": "Warum bleibt mein Gewicht gleich, obwohl ich nach Gesamtumsatz esse?",
+            "a": "Meist ist der Aktivitätsfaktor zu hoch gewählt. Viele überschätzen ihr Training, und wer im Büro arbeitet und mäßig aktiv angibt, rechnet sich 300 bis 500 kcal zu viel heraus. Starten Sie mit sitzend oder leicht, protokollieren Sie zwei Wochen Ernährung und Gewicht und passen Sie dann an. Bleibt das Gewicht stabil, entspricht die Zufuhr dem Gesamtumsatz, und das ist die verlässlichste Kalibrierung."
+          },
+          {
+            "q": "Wie groß sollte das Defizit zum Abnehmen sein?",
+            "a": "Etwa 300 bis 500 kcal unter dem Gesamtumsatz pro Tag, das entspricht rund 0,3 bis 0,5 kg pro Woche. Ein größeres Defizit beschleunigt Muskelabbau und metabolische Anpassung und erschwert langfristig den Erfolg. Unterschreiten Sie nicht Ihren Grundumsatz und bleiben Sie in der Regel über 1.200 kcal bei Frauen und 1.500 bei Männern. Zwei bis drei Krafteinheiten pro Woche und genügend Protein erhalten die Muskulatur."
+          },
+          {
+            "q": "Sind die Kalorienangaben von Fitnessgeräten verlässlich?",
+            "a": "Kaum. Abweichungen von 20% bis 40% sind normal, meist nach oben, weil Armbänder und Laufbänder mit Puls oder Pauschalformeln arbeiten und weder individuelle Unterschiede noch unbewusstes Weniger-Bewegen danach erfassen. Nutzen Sie die Werte als Orientierung und beurteilen Sie den Fortschritt am Zwei-Wochen-Trend von Gewicht und Umfängen."
+          }
+        ]
+      }
     },
     "calorie-calculator": {
       "name": "Kalorien",
@@ -1510,17 +1952,222 @@
     "calories-burned": {
       "name": "Kalorienverbrauch",
       "description": "Berechnen Sie verbrannte Kalorien bei verschiedenen Aktivitaeten",
-      "metaDescription": "Berechnen Sie Kalorienverbrauch beim Training mit MET-Werten"
+      "metaDescription": "Berechnen Sie Kalorienverbrauch beim Training mit MET-Werten",
+      "guide": {
+        "steps": [
+          "Geben Sie Ihr Gewicht ein, wer mehr wiegt, verbraucht bei gleicher Aktivität mehr.",
+          "Wählen Sie die Aktivität und die Dauer, die MET-Werte unterscheiden sich deutlich.",
+          "Lesen Sie den geschätzten Verbrauch ab und nutzen Sie ihn als Orientierung für Ernährung und Training."
+        ],
+        "explanationTitle": "Wie der Energieverbrauch beim Sport geschätzt wird",
+        "formula": "Verbrauch (kcal) = MET × Gewicht (kg) × Dauer (Stunden)",
+        "explanation": [
+          "MET, metabolisches Äquivalent, gibt an, wie vielfach der Ruheumsatz eine Aktivität kostet. Ruhiges Sitzen ist 1 MET, zügiges Gehen etwa 4, Joggen 8 bis 9, Seilspringen erreicht bis zu 12. Multiplikation von MET mit Körpergewicht in Kilogramm und Dauer in Stunden liefert den Schätzwert. Die Werte stammen aus dem Compendium of Physical Activities, dem gängigsten Referenzwerk.",
+          "Zwei Einschränkungen sind wichtig. Erstens sind MET-Werte Bevölkerungsmittel, die individuelle Unterschiede ignorieren: Beim gleichen 30-minütigen Lauf liegen effiziente Bewegungen 10% bis 15% niedriger, Anfänger oft höher. Zweitens liefert die Formel den Bruttoverbrauch, also inklusive dessen, was Sie ohnehin im Ruhezustand verbraucht hätten. Für den Nettoeffekt ziehen Sie den Ruheumsatz der gleichen Zeit ab, etwa 1 MET × Gewicht × Stunden. Bei 70 kg und 30 Minuten Joggen sind das brutto rund 315 kcal und netto etwa 280."
+        ],
+        "tableTitle": "MET-Werte häufiger Aktivitäten (70 kg, 30 Minuten)",
+        "tableHeaders": [
+          "Aktivität",
+          "MET",
+          "brutto",
+          "netto"
+        ],
+        "tableRows": [
+          [
+            "Gehen 4 km/h",
+            "3,0",
+            "≈ 105 kcal",
+            "≈ 70 kcal"
+          ],
+          [
+            "Zügig gehen 6 km/h",
+            "5,0",
+            "≈ 175 kcal",
+            "≈ 140 kcal"
+          ],
+          [
+            "Joggen 8 km/h",
+            "8,3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Radfahren, moderat",
+            "7,5",
+            "≈ 263 kcal",
+            "≈ 228 kcal"
+          ],
+          [
+            "Schwimmen, Freistil",
+            "8,3",
+            "≈ 290 kcal",
+            "≈ 255 kcal"
+          ],
+          [
+            "Seilspringen, moderat",
+            "11,8",
+            "≈ 413 kcal",
+            "≈ 378 kcal"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Warum zeigt meine Uhr mehr an als hier?",
+            "a": "Die meisten Wearables überschätzen um 20% bis 40%. Sie arbeiten mit Herzfrequenz und pauschalen Algorithmen, und die Herzfrequenz schwankt mit Koffein, Temperatur, Schlaf und Stimmung, während die Bewegungseffizienz unsichtbar bleibt. Manche Geräte rechnen zudem einen Teil des Ruheumsatzes in den Aktivitätsverbrauch ein. Nutzen Sie die Werte als Trend, nicht als exakte Buchhaltung."
+          },
+          {
+            "q": "Bleibt der Stoffwechsel nach dem Sport erhöht?",
+            "a": "Ja, durch den Nachbrenneffekt, EPOC genannt. Hochintensive Intervalle und Krafttraining erzeugen den größten Effekt und heben den Umsatz für einige Stunden um grob 5% bis 15%, insgesamt aber meist nur wenige Dutzend Kalorien, weit entfernt von der Werbeaussage eines 24-stündigen Fettstoffwechsels. Bei moderatem Ausdauertraining ist der EPOC praktisch vernachlässigbar."
+          },
+          {
+            "q": "Zum Abnehmen: Sport oder Ernährung?",
+            "a": "Die Ernährung trägt den Löwenanteil. Dreißig Minuten Joggen bringen netto etwa 250 kcal, die ein Stück Kuchen oder ein gesüßtes Getränk sofort ausgleicht. Der Wert des Sports liegt eher im Erhalt von Muskelmasse, besseren Stoffwechselwerten und im Halten des Gewichts als im Erzeugen eines großen Defizits. Die Kombination wirkt am besten."
+          },
+          {
+            "q": "Verbrennt nüchternes Training mehr Fett?",
+            "a": "Nüchterner Ausdauersport nutzt tatsächlich einen höheren Fettanteil, doch der Gesamtverbrauch steigt dadurch nicht zwangsläufig, und Intensität sowie Trainingsumfang können sinken. Langzeitstudien zeigen kaum Unterschiede beim Fettabbau; entscheidend bleibt die Kalorienbilanz. Wenn Nüchternheit Sie schwindelig macht oder die Leistung drückt, ist Training nach dem Essen die bessere Wahl."
+          }
+        ]
+      }
     },
     "target-heart-rate": {
       "name": "Zielherzfrequenz",
       "description": "Berechnen Sie Herzfrequenz-Zonen fuer das Training",
-      "metaDescription": "Berechnen Sie Ihre Zielherzfrequenz-Zonen fuer Fettverbrennung und Cardio"
+      "metaDescription": "Berechnen Sie Ihre Zielherzfrequenz-Zonen fuer Fettverbrennung und Cardio",
+      "guide": {
+        "steps": [
+          "Geben Sie Ihr Alter ein, die maximale Herzfrequenz hängt vor allem daran.",
+          "Geben Sie optional den Ruhepuls ein, um mit der Karvonen-Methode genauer zu rechnen.",
+          "Lesen Sie die Zielbereiche ab und vergleichen Sie sie beim Training mit Gurt oder Uhr."
+        ],
+        "explanationTitle": "Wie die Zielherzfrequenz berechnet wird",
+        "formula": "Maximale Herzfrequenz = 220 − Alter; Ziel = max. Herzfrequenz × Intensität %",
+        "explanation": [
+          "Die gebräuchlichste Schätzung der maximalen Herzfrequenz lautet 220 minus Alter, eine grobe Anpassung an mehrere Studien aus den 1970er-Jahren. Sie ist bequem, hat aber eine Standardabweichung von etwa ±10 bis 12 Schlägen pro Minute; der wahre Maximalwert kann also mehr als 10 Schläge darüber oder darunter liegen. Die Tanaka-Formel, 208 − 0,7 × Alter, trifft es meist besser, besonders bei Menschen mittleren und höheren Alters.",
+          "Wer seinen Ruhepuls kennt, nutzt am besten die Karvonen-Methode: Ziel = (max − Ruhe) × Intensität% + Ruhe. Sie geht von der Herzfrequenzreserve aus und bildet damit Unterschiede in der Fitness ab. Bei allen Methoden gilt: Die Herzfrequenz reagiert auf Koffein, Schlaf, Temperatur, Stimmung und Medikamente, Schwankungen von 5 bis 10 Schlägen bei gleicher Belastung sind normal. Beurteilen Sie die Intensität deshalb aus Herzfrequenz und subjektivem Empfinden gemeinsam."
+        ],
+        "tableTitle": "Belastungsbereiche (Alter 40, maximale Herzfrequenz 180)",
+        "tableHeaders": [
+          "Bereich",
+          "% vom Maximum",
+          "Zielherzfrequenz",
+          "Gefühl"
+        ],
+        "tableRows": [
+          [
+            "Aufwärmen",
+            "50–60%",
+            "90–108",
+            "Leicht, flüssiges Sprechen"
+          ],
+          [
+            "Fettverbrennung / aerob",
+            "60–70%",
+            "108–126",
+            "Stärkere Atmung, kurze Sätze"
+          ],
+          [
+            "Aerobe Ausdauer",
+            "70–80%",
+            "126–144",
+            "Deutlich außer Atem, einzelne Worte"
+          ],
+          [
+            "Anaerob / Intervalle",
+            "80–90%",
+            "144–162",
+            "Sehr hart, kein Sprechen"
+          ],
+          [
+            "Maximal",
+            "90–100%",
+            "162–180",
+            "Volle Kraft, nicht durchzuhalten"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Wie genau ist 220 minus Alter?",
+            "a": "Nur grob. Die Streuung zwischen Menschen ist groß, mit einer Standardabweichung von etwa 10 bis 12 Schlägen, und die Formel überschätzt jüngere, unterschätzt ältere Menschen. Die Tanaka-Formel, 208 − 0,7 × Alter, trifft meist besser. Für das alltägliche Training reicht jede der beiden, um Bereiche festzulegen."
+          },
+          {
+            "q": "Was ist der Fettverbrennungsbereich, und verbrennt er mehr Fett?",
+            "a": "Er bezeichnet die Intensität, bei der der Anteil der Fettverwertung am höchsten ist, etwa 60% bis 70% des Maximums. Wichtig ist die Klarstellung: Bei niedriger Intensität ist der Fettanteil hoch, der Gesamtverbrauch aber niedrig; bei hoher Intensität sinkt der Fettanteil, während Gesamtverbrauch und Nachbrenneffekt steigen. Für die Fettabnahme zählt die Kalorienbilanz insgesamt, nicht der Treibstoffmix während der Einheit."
+          },
+          {
+            "q": "Warum steigt mein Puls nicht, oder nicht mehr ab?",
+            "a": "Eine gedämpfte Reaktion deutet meist auf Müdigkeit, Schlafmangel oder Dehydrierung hin; Betablocker senken die Herzfrequenz deutlich, wer sie nimmt, sollte sich nach dem Empfinden richten. Ein erhöhter Puls kann an Hitze, Koffein, Flüssigkeitsmangel oder Übertraining liegen. Liegt der Ruhepuls mehrere Tage über 10% über dem Normalwert, ist das ein Zeichen für Erholungsbedarf."
+          },
+          {
+            "q": "Bedeutet ein niedriger Ruhepuls ein gesundes Herz?",
+            "a": "Meistens ja. Ausdauertraining erhöht das Schlagvolumen, sodass Ruhewerte von 40 bis 60 Schlägen pro Minute die Effizienz des Herzens zeigen. Üblich sind 60 bis 100; dauerhaft niedrigere Werte ohne Schwindel oder Erschöpfung sind eine gute Anpassung. Treten jedoch Schwindel, Schwäche oder Ohnmacht auf, sollte das abgeklärt werden."
+          }
+        ]
+      }
     },
     "one-rep-max": {
       "name": "1RM",
       "description": "Berechnen Sie Ihr Maximalkraftgewicht aus submaximalen Hebungen",
-      "metaDescription": "Berechnen Sie Ihr 1RM mit verschiedenen Formeln aus submaximalen Hebungen"
+      "metaDescription": "Berechnen Sie Ihr 1RM mit verschiedenen Formeln aus submaximalen Hebungen",
+      "guide": {
+        "steps": [
+          "Wählen Sie die Übung, etwa Bankdrücken, Kniebeuge oder Kreuzheben.",
+          "Geben Sie ein Gewicht und die sauberen Wiederholungen ein, ideal zwischen 2 und 10.",
+          "Lesen Sie das geschätzte Maximalgewicht und die Trainingslasten je Prozentsatz ab."
+        ],
+        "explanationTitle": "Wie das Einerwiederholungsmaximum geschätzt wird",
+        "formula": "Epley: 1RM = Gewicht × (1 + Wiederholungen ÷ 30)",
+        "explanation": [
+          "Das Einerwiederholungsmaximum ist das höchste Gewicht, das Sie einmal technisch sauber bewältigen, und bildet die Grundlage der Trainingssteuerung. Es direkt zu testen erfordert langes Aufwärmen und birgt Verletzungsrisiken, deshalb wird es aus einem Satz mit mehreren Wiederholungen geschätzt. Die verbreitete Epley-Formel nimmt an, dass jede zusätzliche Wiederholung etwa 3,33% weniger Gewicht entspricht, also ein Dreißigstel.",
+          "Andere Formeln wie Brzycki, Lombardi und O'Conner liegen zwischen 1 und 10 Wiederholungen dicht beieinander, meist innerhalb von 2% bis 5%. Jenseits von etwa 10 Wiederholungen wächst der Fehler stark, weil dann Ausdauer, Laktattoleranz und Kondition dominieren statt reiner Kraft. Nutzen Sie also einen Satz mit 2 bis 10 Wiederholungen. Wichtig bleibt: Der Schätzwert ist eine Planungsgröße, kein Wettkampfergebnis, denn Ihr tatsächliches Maximum hängt stark von Tagesform, Technik und Aufwärmzustand ab."
+        ],
+        "tableTitle": "Formelvergleich (Bankdrücken 80 kg × 5)",
+        "tableHeaders": [
+          "Formel",
+          "geschätztes 1RM",
+          "Hinweis"
+        ],
+        "tableRows": [
+          [
+            "Epley",
+            "≈ 93,3 kg",
+            "Am häufigsten, gut für 1–10 Whg."
+          ],
+          [
+            "Brzycki",
+            "≈ 90,3 kg",
+            "Etwas konservativ"
+          ],
+          [
+            "Lombardi",
+            "≈ 92,8 kg",
+            "Exponentieller Ansatz"
+          ],
+          [
+            "O'Conner",
+            "≈ 92,0 kg",
+            "Stabiler bei mehr Whg."
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Kann ich den Schätzwert direkt maximieren?",
+            "a": "Davon ist abzuraten, besonders mit wenig Trainingserfahrung. Schätzwerte liegen oft 5% bis 10% neben dem echten Maximum, ein direkter Versuch birgt also Risiko. Sicherer ist es, 90% des Schätzwerts zu testen, die Technik zu prüfen und dann in Schritten von 2,5 bis 5 kg zu steigern, bis die Ausführung leidet, stets mit Sicherung oder Ablagen."
+          },
+          {
+            "q": "Warum wird die Schätzung bei mehr Wiederholungen ungenauer?",
+            "a": "Weil der begrenzende Faktor wechselt. Sätze von 1 bis 5 Wiederholungen spiegeln Maximalkraft, ab etwa 10 bis 12 übernehmen Ausdauer, Laktattoleranz und Kondition, und die sind keine lineare Fortschreibung reiner Kraft. Jede Formel nennt daher einen Gültigkeitsbereich, meist 2 bis 10 Wiederholungen, außerhalb dessen die Werte stark abweichen."
+          },
+          {
+            "q": "Wie plane ich Trainingslasten über Prozentwerte?",
+            "a": "Üblich sind 85% bis 100% für 1 bis 5 Wiederholungen im Kraftbereich, 65% bis 80% für 6 bis 12 beim Muskelaufbau und 60% bis 70% für 15 bis 20 in der Ausdauer. Einsteiger beginnen sinnvoll bei 60% bis 70%, bis die Technik sitzt, und steigern dann. Die genauen Prozentsätze verschieben sich mit Trainingsalter und Erholungsfähigkeit."
+          },
+          {
+            "q": "Welche Verhältnisse zwischen den Übungen sind normal?",
+            "a": "Die Streuung ist groß, als grobe Anhaltswerte für Trainierte gelten aber Kniebeuge bei etwa dem 1,5-Fachen, Bankdrücken beim 1,0-Fachen und Kreuzheben beim 1,75- bis 2,0-Fachen des Körpergewichts. Frauen erreichen meist rund 60% bis 70% der Werte gleich schwerer Männer, vor allem wegen Unterschieden in Muskelverteilung und Hormonen. Diese Zahlen sind Einordnung, kein Ziel."
+          }
+        ]
+      }
     },
     "pace-calculator": {
       "name": "Tempo",
@@ -1530,7 +2177,69 @@
     "macro-calculator": {
       "name": "Makro",
       "description": "Berechnen Sie Ihren taeglichen Makronaehrstoffbedarf",
-      "metaDescription": "Berechnen Sie Ihre Protein-, Kohlenhydrat- und Fettziele nach Ihren Zielen"
+      "metaDescription": "Berechnen Sie Ihre Protein-, Kohlenhydrat- und Fettziele nach Ihren Zielen",
+      "guide": {
+        "steps": [
+          "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz berechnet werden kann.",
+          "Wählen Sie Aktivitätsniveau und Ziel, Fettabbau, Halten oder Muskelaufbau, um das Kalorienziel zu setzen.",
+          "Lesen Sie die Grammmengen für Protein, Kohlenhydrate und Fett ab und passen Sie sie nach Vorliebe an."
+        ],
+        "explanationTitle": "Wie die Makronährstoffe verteilt werden",
+        "formula": "Protein g = Gewicht kg × Faktor; Fett g = Kalorien × Fettanteil ÷ 9; Kohlenhydrate g = Rest ÷ 4",
+        "explanation": [
+          "Die Energiedichte unterscheidet sich: Protein und Kohlenhydrate liefern etwa 4 kcal pro Gramm, Fett rund 9 und Alkohol etwa 7. Üblich ist, zuerst das Protein festzulegen, dann das Fett, und den Rest mit Kohlenhydraten zu füllen. Der Grund ist, dass Protein und Fett Mindestmengen haben, Protein für Muskelerhalt und Sättigung, Fett für Hormone und die Aufnahme fettlöslicher Vitamine, während Kohlenhydrate keine Untergrenze kennen und am flexibelsten sind.",
+          "Der Proteinfaktor folgt dem Ziel: 1,6 bis 2,2 g pro kg beim Abnehmen, um im Defizit Muskel zu schützen, 1,2 bis 1,6 beim Halten und 1,6 bis 2,2 beim Aufbau. Fett liegt meist bei 20% bis 35% der Kalorien und sollte nicht dauerhaft unter 20% sinken, weil sonst Hormone leiden können. Kohlenhydrate füllen den Rest und dürfen schwanken, mehr an Trainingstagen, weniger an Ruhetagen. Die Energiemenge entscheidet über Gewichtsveränderung, die Verteilung über Körperzusammensetzung, Hunger und Leistung."
+        ],
+        "tableTitle": "Makroverteilung nach Ziel (70 kg, Gesamtumsatz 2.200 kcal)",
+        "tableHeaders": [
+          "Ziel",
+          "Kalorien",
+          "Protein",
+          "Fett",
+          "Kohlenhydrate"
+        ],
+        "tableRows": [
+          [
+            "Fettabbau",
+            "1.750 kcal",
+            "140 g (32%)",
+            "58 g (30%)",
+            "166 g (38%)"
+          ],
+          [
+            "Halten",
+            "2.200 kcal",
+            "126 g (23%)",
+            "73 g (30%)",
+            "259 g (47%)"
+          ],
+          [
+            "Muskelaufbau",
+            "2.500 kcal",
+            "154 g (25%)",
+            "83 g (30%)",
+            "281 g (45%)"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Schadet zu viel Protein den Nieren?",
+            "a": "Für gesunde Menschen zeigen die vorliegenden Daten keine Schädigung bis etwa 2 Gramm pro Kilogramm Körpergewicht. Wer eine chronische Nierenkrankheit hat, muss das Protein jedoch begrenzen und ärztliche Vorgaben befolgen. Bei höherer Zufuhr sollten Sie außerdem mehr trinken und auf Ballaststoffe achten, damit Fleisch nicht Gemüse und Obst verdrängt."
+          },
+          {
+            "q": "Machen Kohlenhydrate oder Fett eher dick?",
+            "a": "Keines von beiden ist der Übeltäter; entscheidend ist ein dauerhafter Kalorienüberschuss. Fett ist mit 9 kcal pro Gramm sehr energiedicht und wird leicht unterschätzt, raffinierte Kohlenhydrate sättigen schlecht und lassen sich ebenfalls überessen. Praktisch bewährt sich eher, die Gesamtmenge zu steuern und sättigende Lebensmittel wie Protein, Gemüse und Vollkorn zu bevorzugen, als einen Nährstoff zu verteufeln."
+          },
+          {
+            "q": "Ist eine ketogene Ernährung für die meisten geeignet?",
+            "a": "Keto, meist unter 50 Gramm Kohlenhydrate täglich, wurde zur Behandlung refraktärer Epilepsie entwickelt. Ein Vorteil beim Abnehmen entsteht vor allem durch Appetitdämpfung und leichtere Kalorienkontrolle, nicht durch einen metabolischen Sonderweg. Sie ist schwer durchzuhalten, macht anfangs oft Kopfdruck und Müdigkeit, und Daten zu Langzeitsicherheit und Adhärenz sind begrenzt. Ohne medizinischen Grund fahren die meisten mit einem moderaten Defizit und ausgewogener Kost besser."
+          },
+          {
+            "q": "Muss ich die Werte jeden Tag exakt treffen?",
+            "a": "Nein, und der Versuch schadet eher. Makros wirken über den Tages- oder Wochendurchschnitt, ein einzelner Tag fällt nicht ins Gewicht. Prüfen Sie lieber die Proteinmenge über die Woche und lassen Sie die Kohlenhydrate mit dem Training schwanken. Wer sich an einzelnen Gramm aufhält, verliert meist die Ausdauer, und Beständigkeit über Monate zählt mehr als Genauigkeit an einem Tag."
+          }
+        ]
+      }
     },
     "bac-calculator": {
       "name": "Blutalkohol",
@@ -1575,12 +2284,128 @@
     "water-intake": {
       "name": "Wasserbedarf",
       "description": "Berechnen Sie Ihren taeglichen Wasserbedarf",
-      "metaDescription": "Berechnen Sie, wie viel Wasser Sie taeglich trinken sollten"
+      "metaDescription": "Berechnen Sie, wie viel Wasser Sie taeglich trinken sollten",
+      "guide": {
+        "steps": [
+          "Geben Sie Ihr Körpergewicht ein und wählen Sie Kilogramm oder Pfund.",
+          "Tragen Sie Dauer und Intensität des Trainings ein, Schwitzen erhöht den Bedarf deutlich.",
+          "Bei Hitze oder Höhenlage aktivieren Sie die Optionen, um den Mehrverlust einzurechnen."
+        ],
+        "explanationTitle": "Wie der tägliche Wasserbedarf geschätzt wird",
+        "formula": "Grundbedarf = Gewicht (kg) × 30–35 ml; Sport = Trainingsminuten × Zuschlagsfaktor",
+        "explanation": [
+          "Die gängige Faustregel lautet Körpergewicht mal 30 bis 35 Milliliter, eine 60 kg schwere Person braucht also etwa 1,8 bis 2,1 Liter pro Tag. Der Faktor stammt aus Messungen der täglichen Verluste über Urin, Atmung, Haut und Stuhl. Für Sport kommen je nach Intensität und Schweißmenge etwa 350 bis 700 ml pro Stunde hinzu.",
+          "Ein häufiges Missverständnis sollte man klären: Die bekannten acht Gläser, rund zwei Liter, sind ein einprägsamer Näherungswert ohne Berücksichtigung von Gewicht, Klima und Aktivität. Ebenso wichtig ist, dass dieser Gesamtbedarf nicht vollständig getrunken werden muss, denn Lebensmittel, vor allem Obst, Gemüse und Suppen, liefern 20% bis 30% des täglichen Wassers, und der Stoffwechsel erzeugt etwa 300 ml. Als Trinkwasser bleiben also meist 500 bis 800 ml weniger übrig. Der einfachste Indikator ist die Urinfarbe: hellgelb heißt gut versorgt, dunkelgelb heißt nachtrinken."
+        ],
+        "tableTitle": "Trinkempfehlung nach Gewicht und Aktivität",
+        "tableHeaders": [
+          "Gewicht",
+          "Sitzend",
+          "Mäßig aktiv",
+          "Hartes Training 1h+"
+        ],
+        "tableRows": [
+          [
+            "50 kg",
+            "≈ 1,5–1,8 l",
+            "≈ 1,8–2,0 l",
+            "≈ 2,3–2,5 l"
+          ],
+          [
+            "70 kg",
+            "≈ 2,1–2,5 l",
+            "≈ 2,5–2,8 l",
+            "≈ 3,0–3,2 l"
+          ],
+          [
+            "90 kg",
+            "≈ 2,7–3,2 l",
+            "≈ 3,2–3,5 l",
+            "≈ 3,7–4,0 l"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Zählen Kaffee und Tee zur Flüssigkeitszufuhr?",
+            "a": "Ja. Koffein wirkt leicht harntreibend, doch in üblichen Mengen überwiegt der Nettoeffekt der Flüssigkeitsaufnahme, und Studien zählen Kaffee und Tee zur täglichen Flüssigkeit. Achten Sie eher auf zuckerhaltige Getränke und Alkohol: Erstere liefern zusätzliche Kalorien, Letzterer wirkt deutlich harntreibend und erhöht den Verlust."
+          },
+          {
+            "q": "Bin ich schon dehydriert, wenn ich Durst habe?",
+            "a": "Nicht zwangsläufig. Durst ist für die meisten gesunden Erwachsenen ein verlässliches Signal und setzt bei etwa 1% bis 2% Flüssigkeitsverlust ein, einem Niveau ohne gesundheitliche Folgen. Im Alter lässt das Durstempfinden jedoch nach, und Kinder vergessen beim Spielen das Trinken, deshalb sollten beide Gruppen besser regelmäßig nach Plan trinken."
+          },
+          {
+            "q": "Ist viel Wasser immer besser?",
+            "a": "Nein. Die Nieren können nur etwa 800 bis 1.000 ml pro Stunde ausscheiden; sehr große Mengen in kurzer Zeit können eine Hyponatriämie auslösen, mit Kopfschmerzen, Übelkeit und Verwirrung, im Extremfall lebensbedrohlich. Das passiert meist nach Ausdauerbelastungen, wenn Schweiß nur mit reinem Wasser und ohne Elektrolyte ersetzt wird. Im Alltag genügt gleichmäßiges Trinken nach Durst."
+          },
+          {
+            "q": "Brauche ich beim Sport ein Sportgetränk?",
+            "a": "Das hängt von Dauer und Intensität ab. Bis etwa 60 Minuten moderater Belastung reicht Wasser. Darüber hinaus, oder bei starkem Schwitzen, hilft ein Getränk mit Natrium, etwa 300 bis 600 mg pro Liter, und 4% bis 8% Kohlenhydraten, um Elektrolyte und Glykogen zu erhalten. Praktisch ist die Waage: Ersetzen Sie pro Kilogramm Gewichtsverlust etwa 1,2 bis 1,5 Liter Flüssigkeit."
+          }
+        ]
+      }
     },
     "sleep-calculator": {
       "name": "Schlaf",
       "description": "Finden Sie optimale Schlaf- und Aufwachzeiten",
-      "metaDescription": "Berechnen Sie optimale Schlaf- und Aufwachzeiten nach Schlafzyklen"
+      "metaDescription": "Berechnen Sie optimale Schlaf- und Aufwachzeiten nach Schlafzyklen",
+      "guide": {
+        "steps": [
+          "Wählen Sie die Zeit, zu der Sie einschlafen möchten, oder die Zeit, zu der Sie aufstehen müssen.",
+          "Geben Sie an, wie lange Sie zum Einschlafen brauchen, meist 10 bis 20 Minuten; die Zeit wird abgezogen.",
+          "Lesen Sie die Vorschläge ab, die jeweils am Ende vollständiger Schlafzyklen liegen."
+        ],
+        "explanationTitle": "Wie Schlafzyklen berechnet werden",
+        "formula": "Aufstehzeit = Schlafenszeit + Einschlafdauer + Zyklen × 90 Minuten (4–6 Zyklen)",
+        "explanation": [
+          "Schlaf verläuft in Zyklen von etwa 90 Minuten, jeder bestehend aus Leichtschlaf (N1 und N2), Tiefschlaf (N3) und REM-Schlaf. Der Tiefschlaf dominiert in der ersten Nachthälfte und dient der körperlichen Reparatur sowie der Ausschüttung von Wachstumshormonen, während der REM-Anteil später zunimmt und Gedächtniskonsolidierung und Emotionsverarbeitung unterstützt. Wer am Ende eines Zyklus nahe der Oberfläche aufwacht, ist klar im Kopf; wer aus dem Tiefschlaf gerissen wird, erlebt deutliche Schlaftrunkenheit.",
+          "Der Rechner geht also vom Einschlafzeitpunkt aus, nach Abzug der Einschlafdauer, und rechnet in 90-Minuten-Blöcken vorwärts; er nennt die Aufstehzeiten für vier, fünf und sechs Zyklen, also 6, 7,5 und 9 Stunden. Einschränkend gilt: 90 Minuten sind ein Bevölkerungsmittelwert, individuelle Zyklen schwanken zwischen 70 und 120 Minuten und verkürzen sich mit dem Alter leicht. Verstehen Sie das Werkzeug als praktische Planungshilfe, nicht als Messung Ihrer inneren Uhr."
+        ],
+        "tableTitle": "Zyklen und Schlafdauer",
+        "tableHeaders": [
+          "Zyklen",
+          "Schlaf",
+          "Typische Nutzung",
+          "Geeignet für"
+        ],
+        "tableRows": [
+          [
+            "4",
+            "6 Stunden",
+            "Kurzfristig, Notlösung",
+            "Nicht dauerhaft"
+          ],
+          [
+            "5",
+            "7,5 Stunden",
+            "Alltag der meisten Erwachsenen",
+            "Empfohlen"
+          ],
+          [
+            "6",
+            "9 Stunden",
+            "Regeneration, nach hartem Training",
+            "Jugendliche oder zum Ausgleich"
+          ]
+        ],
+        "faq": [
+          {
+            "q": "Brauche ich wirklich acht Stunden?",
+            "a": "Nicht zwingend. Acht ist eine gut merkbare Zahl, der tatsächliche Bedarf liegt bei den meisten Erwachsenen zwischen sieben und neun Stunden. Wichtiger sind vollständige Zyklen und wie Sie sich beim Aufwachen fühlen. Wenn Sie nach 7,5 Stunden wach sind, müssen Sie keine acht erzwingen. Maßstab ist, ob Sie tagsüber häufig müde sind und schwer aus dem Bett kommen."
+          },
+          {
+            "q": "Warum bin ich trotz langer Nacht müde?",
+            "a": "Meist wurden Sie aus dem Tiefschlaf geweckt, oder die Schlafqualität war schlecht. Häufiges Aufwachen, Schnarchen mit Atemaussetzern, Alkohol vor dem Schlafen und ein zu helles oder warmes Schlafzimmer verringern den Tief- und REM-Anteil. Wenn Sie trotz ausreichender Stunden dauerhaft unausgeruht sind, besonders mit lautem Schnarchen und morgendlichen Kopfschmerzen, sollten Sie ein Schlaflabor in Erwägung ziehen."
+          },
+          {
+            "q": "Wie lang sollte ein Mittagsschlaf sein?",
+            "a": "Zehn bis zwanzig Minuten sind ideal: Sie stellen die Aufmerksamkeit wieder her, ohne in den Tiefschlaf zu geraten, und Sie wachen klar auf. Dreißig bis sechzig Minuten enden oft im Tiefschlaf und hinterlassen deutliche Trunkenheit. Wer einen ganzen Zyklus will, plant 90 Minuten ein. Zusätzlich hilft es, vor etwa 15 Uhr zu schlafen, damit die Nacht nicht leidet."
+          },
+          {
+            "q": "Hilft Ausschlafen am Wochenende?",
+            "a": "Es gleicht einen Teil aus, kann chronischen Schlafmangel aber nicht vollständig beheben, und es verschiebt die innere Uhr, was den Montag erschwert, der sogenannte soziale Jetlag. Besser ist es, Schlafens- und Aufstehzeit täglich innerhalb etwa einer Stunde zu halten. Bei echtem Defizit hilft eine Stunde früher ins Bett mehr als drei Stunden später aufstehen."
+          }
+        ]
+      }
     },
     "army-body-fat": {
       "name": "US-Armee-Koerperfett",
