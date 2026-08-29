@@ -499,7 +499,34 @@
     "corpulence": {
       "name": "Corpulence",
       "description": "Calculate your Corpulence Index (Ponderal Index)",
-      "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment"
+      "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment",
+      "guide": {
+        "steps": [
+          "Enter your height and weight, and your age and sex if the formula requires them.",
+          "Choose the index or classification system the tool uses.",
+          "Read your category and how it compares to the healthy range."
+        ],
+        "explanationTitle": "What corpulence means",
+        "formula": "Often based on BMI = weight / height^2, or older corpulence index = weight / height^3",
+        "explanation": [
+          "Corpulence is a general term for body fatness; many tools express it through BMI, which relates weight to height squared.",
+          "These categories are screening aids, not diagnoses; body composition and overall health matter more than a single number. Consult a clinician for advice."
+        ],
+        "faq": [
+          {
+            "q": "Is corpulence the same as BMI?",
+            "a": "BMI is the most common way to express corpulence today, though older indices used weight divided by height cubed."
+          },
+          {
+            "q": "Why do categories vary?",
+            "a": "Different health bodies set slightly different cut-offs, and some adjust for age or ethnicity."
+          },
+          {
+            "q": "Should I rely on this number alone?",
+            "a": "No. Pair it with waist size, body fat, and a clinician's advice for a fuller picture."
+          }
+        ]
+      }
     },
     "cpu-comparison-calculator": {
       "name": "CPU Comparison",
@@ -2837,12 +2864,66 @@
     "lean-body-mass": {
       "name": "Lean Body Mass",
       "description": "Calculate lean body mass using multiple formulas",
-      "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas"
+      "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas",
+      "guide": {
+        "steps": [
+          "Enter your weight, body fat percentage (or use a method like skinfold), and your sex.",
+          "Choose the estimation equation if several are offered.",
+          "Read your lean mass, the part of your body that is not fat."
+        ],
+        "explanationTitle": "Lean body mass explained",
+        "formula": "Lean mass = Total weight x (1 - body fat fraction)",
+        "explanation": [
+          "Lean body mass includes muscle, bone, water, and organs; only the fat portion is excluded, so it is higher than just muscle mass.",
+          "It is useful for setting protein targets, dosing some medications, and tracking body-composition changes over time."
+        ],
+        "faq": [
+          {
+            "q": "How is body fat measured?",
+            "a": "Methods range from skinfold calipers and bioimpedance scales to DEXA scans, each with different accuracy."
+          },
+          {
+            "q": "Why does lean mass matter?",
+            "a": "It reflects metabolically active tissue and helps tailor nutrition and training, especially as you age."
+          },
+          {
+            "q": "Is higher lean mass always better?",
+            "a": "More is generally favorable for metabolism and strength, but context and overall health matter more than the number alone."
+          }
+        ]
+      }
     },
     "body-surface-area": {
       "name": "Body Surface Area",
       "description": "Calculate BSA using multiple medical formulas",
-      "metaDescription": "Calculate body surface area for medical dosing using multiple formulas"
+      "metaDescription": "Calculate body surface area for medical dosing using multiple formulas",
+      "guide": {
+        "steps": [
+          "Enter your height and weight.",
+          "Pick a formula such as Du Bois, Mosteller, or Haycock if available.",
+          "Read your BSA in square metres, used for medical dosing."
+        ],
+        "explanationTitle": "Why body surface area matters",
+        "formula": "Mosteller: BSA = sqrt( (height cm x weight kg) / 3600 )",
+        "explanation": [
+          "BSA estimates the total skin area and is used to dose certain drugs, especially chemotherapy, because it scales better than weight alone.",
+          "Different formulas give slightly different results; clinicians pick one consistently. Never adjust prescribed doses yourself."
+        ],
+        "faq": [
+          {
+            "q": "Why use BSA instead of weight?",
+            "a": "Many physiological processes scale with surface area, so BSA gives more consistent dosing across body sizes."
+          },
+          {
+            "q": "Which formula is best?",
+            "a": "They agree closely for average adults; Mosteller is common for its simplicity, Du Bois is a long-standing standard."
+          },
+          {
+            "q": "Can I use BSA to change my medication?",
+            "a": "Never. BSA guides prescribers; do not alter prescribed doses without your clinician."
+          }
+        ]
+      }
     },
     "ideal-weight": {
       "name": "Ideal Weight",
@@ -3482,12 +3563,66 @@
     "carb-calculator": {
       "name": "Carbohydrate",
       "description": "Calculate daily carbohydrate needs",
-      "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance"
+      "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance",
+      "guide": {
+        "steps": [
+          "Enter your daily calorie target and your chosen carbohydrate percentage.",
+          "Add your activity level or goal if the tool uses it to suggest calories.",
+          "Read the grams of carbohydrates to aim for each day."
+        ],
+        "explanationTitle": "Carbohydrates in your daily intake",
+        "formula": "Carb grams = (Calories x carb%) / 4  (carbs = 4 kcal per gram)",
+        "explanation": [
+          "Carbohydrates supply about 4 kilocalories per gram; setting a percentage turns your calorie goal into a gram target.",
+          "The right share depends on your goal, training, and preferences; many people do well across a wide range of carb intakes."
+        ],
+        "faq": [
+          {
+            "q": "How many carbs should I eat?",
+            "a": "It varies; a common range is 45 to 65 percent of calories, but athletes or low-carb dieters may differ."
+          },
+          {
+            "q": "Are all carbs the same?",
+            "a": "No. Whole grains, fruit, and vegetables add fibre and nutrients, while added sugars give quick energy with little else."
+          },
+          {
+            "q": "Why 4 calories per gram?",
+            "a": "That is the average energy yield of carbohydrate; protein is also 4, fat is 9 per gram."
+          }
+        ]
+      }
     },
     "fat-intake": {
       "name": "Fat Intake",
       "description": "Calculate daily fat intake requirements",
-      "metaDescription": "Calculate your daily fat intake needs including healthy fat sources"
+      "metaDescription": "Calculate your daily fat intake needs including healthy fat sources",
+      "guide": {
+        "steps": [
+          "Enter your daily calorie goal and a target fat percentage.",
+          "Choose whether to see grams of total fat or split into saturated and unsaturated.",
+          "Read the grams of fat that fit your plan."
+        ],
+        "explanationTitle": "Dietary fat in context",
+        "formula": "Fat grams = (Calories x fat%) / 9  (fat = 9 kcal per gram)",
+        "explanation": [
+          "Fat provides about 9 kilocalories per gram, more than twice carbs or protein, so small amounts contribute a lot of energy.",
+          "The type of fat matters: unsaturated fats from plants and fish are generally favorable, while excess saturated and trans fats are not."
+        ],
+        "faq": [
+          {
+            "q": "What fat percentage is healthy?",
+            "a": "Many guidelines suggest 20 to 35 percent of calories from fat, emphasising unsaturated sources."
+          },
+          {
+            "q": "Why does fat have more calories?",
+            "a": "Its chemical structure stores more energy per gram, which is why 9 kcal per gram versus 4 for carbs and protein."
+          },
+          {
+            "q": "Should I avoid all fat?",
+            "a": "No. Fat supports hormones, nerves, and vitamin absorption; choose quality sources and watch total amounts."
+          }
+        ]
+      }
     },
     "water-intake": {
       "name": "Water Intake",
@@ -3555,7 +3690,34 @@
     "body-type": {
       "name": "Body Type",
       "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
-      "metaDescription": "Discover your body type and get personalized training and nutrition advice"
+      "metaDescription": "Discover your body type and get personalized training and nutrition advice",
+      "guide": {
+        "steps": [
+          "Answer a few questions about your build, or enter simple measurements.",
+          "Let the tool classify you into a somatotype or a blend.",
+          "Read the description and how it may relate to training and diet."
+        ],
+        "explanationTitle": "Body types, or somatotypes",
+        "formula": "Descriptive classification, not a single formula",
+        "explanation": [
+          "Somatotypes group builds into ectomorph (lean), mesomorph (muscular), and endomorph (rounder), though most people are a mix.",
+          "The model is a rough frame for training and nutrition, not a fixed destiny; genetics, diet, and exercise shape your actual results."
+        ],
+        "faq": [
+          {
+            "q": "Can my body type change?",
+            "a": "Yes. Training and diet shift your composition; the label is a starting point, not a life sentence."
+          },
+          {
+            "q": "Which body type is best?",
+            "a": "None is superior; each has trade-offs, and mixed types are common and completely normal."
+          },
+          {
+            "q": "Should I train only for my type?",
+            "a": "Use it as a guide, then follow evidence-based training and nutrition that fit your goals."
+          }
+        ]
+      }
     },
     "healthy-weight": {
       "name": "Healthy Weight",
@@ -3592,7 +3754,34 @@
     "army-body-fat": {
       "name": "Army Body Fat",
       "description": "Calculate body fat using US Army standards",
-      "metaDescription": "Calculate your body fat percentage using the official US Army tape test method"
+      "metaDescription": "Calculate your body fat percentage using the official US Army tape test method",
+      "guide": {
+        "steps": [
+          "Enter the required measurements such as height, neck, and waist (and hips for some).",
+          "Choose the correct sex-specific formula.",
+          "Read your estimated body fat percentage and whether it meets the standard."
+        ],
+        "explanationTitle": "The Army body-fat method",
+        "formula": "Uses circumference-based equations that differ for men and women",
+        "explanation": [
+          "The method estimates body fat from tape measurements at the neck and waist, with hip circumference added for women, using sex-specific equations.",
+          "It is a field method: quick and repeatable, but less precise than DEXA or hydrostatic weighing, so treat results as estimates."
+        ],
+        "faq": [
+          {
+            "q": "Why measure the neck?",
+            "a": "The neck helps account for upper-body lean tissue, improving the estimate alongside waist size."
+          },
+          {
+            "q": "Is it accurate?",
+            "a": "It is good for screening and tracking, but not a laboratory measurement; small tape errors change the result."
+          },
+          {
+            "q": "Does it apply outside the military?",
+            "a": "The math works for anyone, but pass/fail standards are military-specific; consult your own guidelines."
+          }
+        ]
+      }
     },
     "bac-calculator": {
       "name": "BAC",
@@ -3629,7 +3818,34 @@
     "gfr-calculator": {
       "name": "GFR",
       "description": "Calculate glomerular filtration rate for kidney function",
-      "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula"
+      "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula",
+      "guide": {
+        "steps": [
+          "Enter your serum creatinine, age, and sex (and race coefficient if the older equation uses it).",
+          "Choose the equation, such as CKD-EPI or MDRD.",
+          "Read your estimated GFR and the corresponding kidney stage."
+        ],
+        "explanationTitle": "What eGFR tells you",
+        "formula": "CKD-EPI and MDRD equations estimate GFR from creatinine, age, sex (and historically race)",
+        "explanation": [
+          "eGFR estimates how well your kidneys filter waste; lower numbers mean reduced kidney function, grouped into stages 1 to 5.",
+          "It is a screening estimate from a blood test, not a diagnosis; only a clinician can interpret it alongside other tests."
+        ],
+        "faq": [
+          {
+            "q": "What is a normal eGFR?",
+            "a": "Around 90 or above is generally normal for adults, though it naturally declines a little with age."
+          },
+          {
+            "q": "Why does race appear in some formulas?",
+            "a": "Older equations included a race coefficient, but current guidelines favour race-free versions to reduce bias."
+          },
+          {
+            "q": "Should I worry about one low result?",
+            "a": "A single value can vary; your clinician looks at trends and other tests before drawing conclusions."
+          }
+        ]
+      }
     },
     "sleep-calculator": {
       "name": "Sleep",
@@ -4378,32 +4594,194 @@
     "molecular-weight": {
       "name": "Molecular Weight Calculator",
       "description": "Calculate molar mass and composition from chemical formula",
-      "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024."
+      "metaDescription": "Free molecular weight calculator. Calculate molar mass, element composition, and mass percentage from chemical formulas (H2O, Ca(OH)2, CuSO4·5H2O). Includes 118 elements from IUPAC 2024.",
+      "guide": {
+        "steps": [
+          "Enter a chemical formula such as H2O or C6H12O6.",
+          "Let the tool sum the atomic masses of each element.",
+          "Read the molar mass in grams per mole."
+        ],
+        "explanationTitle": "Counting atoms by mass",
+        "formula": "Molar mass = sum of (atoms of element x atomic mass)",
+        "explanation": [
+          "Molecular weight is the sum of the atomic masses of all atoms in a formula, using standard atomic weights from the periodic table.",
+          "It bridges the microscopic (atoms) and macroscopic (grams) worlds, letting you weigh out a known number of moles."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between mass and weight here?",
+            "a": "In practice the terms are used interchangeably for this value, though strictly mass is the physical quantity."
+          },
+          {
+            "q": "Why does water equal 18?",
+            "a": "H is about 1 and O about 16, so H2O is 2x1 + 16 = 18 grams per mole."
+          },
+          {
+            "q": "Does it work for hydrates?",
+            "a": "Yes, include the water of crystallisation in the formula, for example CuSO4·5H2O."
+          }
+        ]
+      }
     },
     "molarity": {
       "name": "Molarity Calculator",
       "description": "Calculate solution concentration from mass, moles, and volume",
-      "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations."
+      "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations.",
+      "guide": {
+        "steps": [
+          "Enter the moles of solute and the volume of solution in litres.",
+          "Adjust units if the tool lets you switch between molar, millimolar, and so on.",
+          "Read the concentration in moles per litre, or M."
+        ],
+        "explanationTitle": "Concentration as molarity",
+        "formula": "M = moles of solute / litres of solution",
+        "explanation": [
+          "Molarity counts how many moles of a substance are dissolved in one litre of solution, the most common lab concentration unit.",
+          "Because it is per litre of final solution (not solvent), dilution changes molarity while the amount of solute stays the same."
+        ],
+        "faq": [
+          {
+            "q": "Moles vs molar, what is the difference?",
+            "a": "A mole is an amount of substance; molar (M) is that amount per litre of solution."
+          },
+          {
+            "q": "How do I make a solution of a target M?",
+            "a": "Dissolve the needed moles (mass divided by molar mass) and then add solvent up to the final volume."
+          },
+          {
+            "q": "Why does temperature matter?",
+            "a": "Volume changes slightly with temperature, so molarity is technically temperature dependent; molality is not."
+          }
+        ]
+      }
     },
     "dilution": {
       "name": "Dilution Calculator",
       "description": "Calculate dilution parameters using M₁V₁ = M₂V₂ formula",
-      "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings."
+      "metaDescription": "Free dilution calculator. Calculate initial volume, final volume, or final molarity using M₁V₁ = M₂V₂ with serial dilution support and safety warnings.",
+      "guide": {
+        "steps": [
+          "Enter the starting concentration and volume, and either the target concentration or target volume.",
+          "Let the tool compute the missing value using the dilution relationship.",
+          "Read how much solvent to add or what final volume to reach."
+        ],
+        "explanationTitle": "The dilution relationship",
+        "formula": "C1 x V1 = C2 x V2",
+        "explanation": [
+          "Dilution keeps the amount of solute constant while adding solvent, so the product of concentration and volume stays equal before and after.",
+          "It is the backbone of preparing standards and dosing liquids; always add solvent to reach the final volume, not just mix equal parts."
+        ],
+        "faq": [
+          {
+            "q": "What does C1V1 = C2V2 mean?",
+            "a": "The moles of solute before equal the moles after; concentration drops as volume rises."
+          },
+          {
+            "q": "Do units need to match?",
+            "a": "Concentration units must match on both sides, and volume units must match; the ratio is what matters."
+          },
+          {
+            "q": "Can I dilute to any concentration?",
+            "a": "Yes mathematically, but practical limits include measurement precision and solubility."
+          }
+        ]
+      }
     },
     "stoichiometry": {
       "name": "Stoichiometry Calculator",
       "description": "Calculate limiting reactant and theoretical yield from chemical equations",
-      "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations."
+      "metaDescription": "Free stoichiometry calculator. Calculate limiting reactant, theoretical yield, and product masses from balanced chemical equations. Shows mole ratios and step-by-step calculations.",
+      "guide": {
+        "steps": [
+          "Enter a balanced chemical equation and the amount of one reactant or product.",
+          "Let the tool use mole ratios from the coefficients to find the others.",
+          "Read the moles or mass of the substance you asked about."
+        ],
+        "explanationTitle": "Balancing amounts in reactions",
+        "formula": "Amount B = Amount A x (coefficient B / coefficient A)",
+        "explanation": [
+          "Stoichiometry uses the coefficients of a balanced equation as mole ratios to predict how much product forms or reactant is needed.",
+          "It assumes the reaction goes to completion with no side reactions, which real experiments only approximate."
+        ],
+        "faq": [
+          {
+            "q": "Why must the equation be balanced?",
+            "a": "Conservation of mass requires equal atoms on both sides, and the coefficients give the mole ratios."
+          },
+          {
+            "q": "What is the limiting reactant?",
+            "a": "The reactant that runs out first, which caps how much product can form."
+          },
+          {
+            "q": "Does this predict actual yield?",
+            "a": "It gives the theoretical yield; real yield is lower due to losses and incomplete reaction."
+          }
+        ]
+      }
     },
     "ph-calculator": {
       "name": "pH Calculator",
       "description": "Calculate pH, pOH, and ion concentrations for acids, bases, and buffers",
-      "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization."
+      "metaDescription": "Free pH calculator. Calculate pH/pOH from concentration, strong/weak acids/bases, and buffer solutions using Henderson-Hasselbalch equation. Includes pH scale visualization.",
+      "guide": {
+        "steps": [
+          "Enter the hydrogen ion concentration, or the acid and its concentration.",
+          "Choose whether to compute pH, pOH, or convert between them.",
+          "Read the pH and what it implies about acidity or basicity."
+        ],
+        "explanationTitle": "The pH scale",
+        "formula": "pH = -log10[H+]; pOH = 14 - pH (at 25 C)",
+        "explanation": [
+          "pH is the negative base-10 logarithm of hydrogen ion concentration, so each unit is a tenfold change in acidity.",
+          "A pH below 7 is acidic, 7 neutral, above 7 basic; the scale is temperature dependent and the 0 to 14 range is typical for water-based solutions."
+        ],
+        "faq": [
+          {
+            "q": "Why is pH logarithmic?",
+            "a": "Because ion concentrations span many orders of magnitude, a log scale keeps them on a handy 0 to 14 range."
+          },
+          {
+            "q": "Is 7 always neutral?",
+            "a": "Neutral is where pH equals pOH; at 25 C that is 7, but the neutral point shifts with temperature."
+          },
+          {
+            "q": "Can pH be negative?",
+            "a": "Yes, very concentrated strong acids can have pH below 0, though that is unusual in everyday contexts."
+          }
+        ]
+      }
     },
     "periodic-table": {
       "name": "Periodic Table",
       "description": "Interactive periodic table with element properties and search",
-      "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data."
+      "metaDescription": "Interactive periodic table with 118 elements. Search by name, symbol, or atomic number. View atomic mass, electron configuration, and chemical properties from IUPAC 2024 data.",
+      "guide": {
+        "steps": [
+          "Enter an element symbol or atomic number to look it up.",
+          "Browse or filter by group, period, or category if offered.",
+          "Read properties such as atomic mass, group, and classification."
+        ],
+        "explanationTitle": "The periodic table at a glance",
+        "formula": "Organised by increasing atomic number and electron shells",
+        "explanation": [
+          "The table arranges elements by atomic number; rows are periods and columns are groups with similar chemistry.",
+          "Position predicts behaviour: metals, nonmetals, and noble gases cluster in regions, making trends like electronegativity easy to read."
+        ],
+        "faq": [
+          {
+            "q": "What does the atomic number mean?",
+            "a": "It is the count of protons in the nucleus and uniquely identifies each element."
+          },
+          {
+            "q": "Why are some elements grouped?",
+            "a": "Elements in the same column share valence-electron patterns, so they react in similar ways."
+          },
+          {
+            "q": "What are the blocks?",
+            "a": "s, p, d, and f blocks reflect which subshell is being filled, linking position to electron structure."
+          }
+        ]
+      }
     },
     "vm-storage-calculator": {
       "name": "VM Storage Calculator",

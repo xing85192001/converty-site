@@ -505,7 +505,34 @@
     "corpulence": {
       "name": "Corpulencia",
       "description": "Calcula tu Índice de Corpulencia (Índice Ponderal)",
-      "metaDescription": "Calcule su Índice Ponderal para una evaluación de la composición corporal más precisa"
+      "metaDescription": "Calcule su Índice Ponderal para una evaluación de la composición corporal más precisa",
+      "guide": {
+        "steps": [
+          "Introduce altura y peso, y edad y sexo si la formula los requiere.",
+          "Elige el indice o sistema de clasificacion que usa la herramienta.",
+          "Lee tu categoria y como se compara con el rango saludable."
+        ],
+        "explanationTitle": "Que significa corpulencia",
+        "formula": "Suele basarse en IMC = peso / altura^2, o indice antiguo = peso / altura^3",
+        "explanation": [
+          "La corpulencia es un termino general para la grasa corporal; muchas herramientas la expresan por el IMC, que relaciona peso y altura al cuadrado.",
+          "Estas categorias son ayudas de cribado, no diagnosticos; la composicion corporal y la salud global importan mas que un numero. Consulta a un medico."
+        ],
+        "faq": [
+          {
+            "q": "Es la corpulencia lo mismo que el IMC?",
+            "a": "El IMC es hoy la forma mas comun de expresarla, aunque indices antiguos usaban peso entre altura al cubo."
+          },
+          {
+            "q": "Por que varian las categorias?",
+            "a": "Distintos organismos fijan umbrales algo distintos y algunos ajustan por edad o etnia."
+          },
+          {
+            "q": "Debo fiarlo todo a este numero?",
+            "a": "No. Suma la cintura, el porcentaje de grasa y el consejo de un medico para un cuadro completo."
+          }
+        ]
+      }
     },
     "cpu-comparison-calculator": {
       "name": "Comparación de CPU",
@@ -2843,12 +2870,66 @@
     "lean-body-mass": {
       "name": "Masa corporal magra",
       "description": "Calcule la masa corporal magra usando múltiples fórmulas",
-      "metaDescription": "Calcule su masa corporal magra (masa libre de grasa) utilizando múltiples fórmulas médicas"
+      "metaDescription": "Calcule su masa corporal magra (masa libre de grasa) utilizando múltiples fórmulas médicas",
+      "guide": {
+        "steps": [
+          "Introduce peso, porcentaje de grasa corporal (o un metodo como pliegues) y sexo.",
+          "Elige la ecuacion de estimacion si se ofrecen varias.",
+          "Lee tu masa magra, la parte del cuerpo que no es grasa."
+        ],
+        "explanationTitle": "La masa magra explicada",
+        "formula": "Masa magra = Peso total x (1 - fraccion de grasa)",
+        "explanation": [
+          "La masa magra incluye musculo, hueso, agua y organos; solo se excluye la grasa, asi que es mayor que solo musculo.",
+          "Sirve para fijar objetivos de proteina, dosificar algunos medicamentos y seguir cambios de composicion corporal."
+        ],
+        "faq": [
+          {
+            "q": "Como se mide la grasa corporal?",
+            "a": "Hay desde calibres de pliegues y balanzas de bioimpedancia hasta escaneos DEXA, cada uno con distinta precision."
+          },
+          {
+            "q": "Por que importa la masa magra?",
+            "a": "Refleja tejido metabolicamente activo y ayuda a ajustar nutricion y entrenamiento, sobre todo con la edad."
+          },
+          {
+            "q": "Mas masa magra es siempre mejor?",
+            "a": "Suele favorecer metabolismo y fuerza, pero el contexto y la salud global importan mas que la cifra."
+          }
+        ]
+      }
     },
     "body-surface-area": {
       "name": "Área de superficie corporal",
       "description": "Calcule BSA utilizando múltiples fórmulas médicas",
-      "metaDescription": "Calcule el área de superficie corporal para dosis médicas utilizando múltiples fórmulas"
+      "metaDescription": "Calcule el área de superficie corporal para dosis médicas utilizando múltiples fórmulas",
+      "guide": {
+        "steps": [
+          "Introduce altura y peso.",
+          "Elige una formula como Du Bois, Mosteller o Haycock si esta disponible.",
+          "Lee tu BSA en metros cuadrados, usada para dosificar medicamentos."
+        ],
+        "explanationTitle": "Por que importa la superficie corporal",
+        "formula": "Mosteller: BSA = sqrt( (altura cm x peso kg) / 3600 )",
+        "explanation": [
+          "La BSA estima el area total de piel y se usa para dosificar ciertos farmacos, especialmente quimioterapia, porque escala mejor que el peso solo.",
+          "Distintas formulas dan resultados algo distintos; los clinicos eligen una con coherencia. Nunca ajustes tu propia dosis."
+        ],
+        "faq": [
+          {
+            "q": "Por que usar BSA en vez de peso?",
+            "a": "Muchos procesos fisiologicos escalan con la superficie, asi la BSA da dosificacion mas consistente entre tallas."
+          },
+          {
+            "q": "Cual formula es mejor?",
+            "a": "Coinciden bastante en adultos promedio; Mosteller es simple, Du Bois es estandar de larga data."
+          },
+          {
+            "q": "Puedo usar BSA para cambiar mi medicina?",
+            "a": "Nunca. La BSA guia al prescriptor; no alteres dosis recetadas sin tu medico."
+          }
+        ]
+      }
     },
     "ideal-weight": {
       "name": "Peso Ideal",
@@ -3488,12 +3569,66 @@
     "carb-calculator": {
       "name": "Carbohidrato",
       "description": "Calcular las necesidades diarias de carbohidratos.",
-      "metaDescription": "Calcule su ingesta diaria óptima de carbohidratos para obtener energía y rendimiento"
+      "metaDescription": "Calcule su ingesta diaria óptima de carbohidratos para obtener energía y rendimiento",
+      "guide": {
+        "steps": [
+          "Introduce tu objetivo calórico diario y el porcentaje de carbohidratos elegido.",
+          "Anade actividad o meta si la herramienta la usa para sugerir calorias.",
+          "Lee los gramos de carbohidratos a buscar cada dia."
+        ],
+        "explanationTitle": "Carbohidratos en tu ingesta diaria",
+        "formula": "Gramos CH = (Calorias x %CH) / 4  (CH = 4 kcal por gramo)",
+        "explanation": [
+          "Los carbohidratos aportan unas 4 kilocalorias por gramo; un porcentaje convierte el objetivo calórico en un objetivo en gramos.",
+          "La proporcion adecuada depende de tu meta, entrenamiento y preferencias; muchas personas van bien en un amplio rango de CH."
+        ],
+        "faq": [
+          {
+            "q": "Cuantos carbohidratos debo comer?",
+            "a": "Varía; un rango comun es 45 a 65 por ciento de las calorias, pero atletas o dietas bajas en CH difieren."
+          },
+          {
+            "q": "Son iguales todos los CH?",
+            "a": "No. Granos enteros, fruta y verdura aportan fibra y nutrientes, mientras el azucar anadido da energia rapida y poco mas."
+          },
+          {
+            "q": "Por que 4 calorias por gramo?",
+            "a": "Ese es el rendimiento medio de los carbohidratos; la proteina tambien 4, la grasa 9 por gramo."
+          }
+        ]
+      }
     },
     "fat-intake": {
       "name": "Ingesta de grasas",
       "description": "Calcular las necesidades diarias de ingesta de grasas.",
-      "metaDescription": "Calcule sus necesidades diarias de ingesta de grasas, incluidas las fuentes de grasas saludables"
+      "metaDescription": "Calcule sus necesidades diarias de ingesta de grasas, incluidas las fuentes de grasas saludables",
+      "guide": {
+        "steps": [
+          "Introduce tu objetivo calórico diario y un porcentaje de grasa objetivo.",
+          "Elige si ves gramos de grasa total o dividido en saturada e insaturada.",
+          "Lee los gramos de grasa que encajan en tu plan."
+        ],
+        "explanationTitle": "La grasa dietetica en contexto",
+        "formula": "Gramos grasa = (Calorias x %grasa) / 9  (grasa = 9 kcal por gramo)",
+        "explanation": [
+          "La grasa aporta unas 9 kilocalorias por gramo, mas del doble que carbohidratos o proteina, asi poca cantidad suma mucha energia.",
+          "El tipo importa: las grasas insaturadas de plantas y pescado son favorables, mientras el exceso de saturadas y trans no."
+        ],
+        "faq": [
+          {
+            "q": "Que porcentaje de grasa es saludable?",
+            "a": "Muchas guias sugieren 20 a 35 por ciento de las calorias en grasa, enfatizando fuentes insaturadas."
+          },
+          {
+            "q": "Por que la grasa tiene mas calorias?",
+            "a": "Su estructura quimica almacena mas energia por gramo, de ahi 9 kcal frente a 4 de CH y proteina."
+          },
+          {
+            "q": "Debo evitar toda la grasa?",
+            "a": "No. La grasa sostiene hormonas, nervios y absorcion de vitaminas; elige fuentes buenas y vigila la cantidad."
+          }
+        ]
+      }
     },
     "water-intake": {
       "name": "Ingesta de agua",
@@ -3561,7 +3696,34 @@
     "body-type": {
       "name": "Tipo de cuerpo",
       "description": "Determina tu tipo de cuerpo (ectomorfo, mesomorfo, endomorfo)",
-      "metaDescription": "Descubre tu tipo de cuerpo y recibe consejos personalizados de entrenamiento y nutrición."
+      "metaDescription": "Descubre tu tipo de cuerpo y recibe consejos personalizados de entrenamiento y nutrición.",
+      "guide": {
+        "steps": [
+          "Responde algunas preguntas sobre tu complexion o introduce medidas simples.",
+          "Deja que la herramienta te clasifique en un somatotipo o una mezcla.",
+          "Lee la descripcion y como puede relacionarse con entrenamiento y dieta."
+        ],
+        "explanationTitle": "Tipos de cuerpo, o somatotipos",
+        "formula": "Clasificacion descriptiva, no una formula unica",
+        "explanation": [
+          "Los somatotipos agrupan complexiones en ectomorfo (delgado), mesomorfo (musculoso) y endomorfo (mas redondeado), aunque la mayoria son una mezcla.",
+          "El modelo es un marco aproximado para entrenamiento y nutricion, no un destino fijo; genetica, dieta y ejercicio moldean tus resultados."
+        ],
+        "faq": [
+          {
+            "q": "Puede cambiar mi tipo de cuerpo?",
+            "a": "Si. El entrenamiento y la dieta cambian tu composicion; la etiqueta es un punto de partida, no una sentencia."
+          },
+          {
+            "q": "Cual tipo es mejor?",
+            "a": "Ninguno es superior; cada uno tiene compromisos y los tipos mixtos son comunes y normales."
+          },
+          {
+            "q": "Debo entrenar solo para mi tipo?",
+            "a": "Usalo como guia, luego sigue entrenamiento y nutricion basados en evidencia que encajen con tus metas."
+          }
+        ]
+      }
     },
     "healthy-weight": {
       "name": "Peso saludable",
@@ -3598,7 +3760,34 @@
     "army-body-fat": {
       "name": "Grasa corporal del ejército",
       "description": "Calcule la grasa corporal utilizando los estándares del ejército de EE. UU.",
-      "metaDescription": "Calcule su porcentaje de grasa corporal utilizando el método oficial de prueba con cinta del ejército de EE. UU."
+      "metaDescription": "Calcule su porcentaje de grasa corporal utilizando el método oficial de prueba con cinta del ejército de EE. UU.",
+      "guide": {
+        "steps": [
+          "Introduce las medidas requeridas como altura, cuello y cintura (y cadera en algunos).",
+          "Elige la formula correcta segun el sexo.",
+          "Lee tu porcentaje estimado de grasa corporal y si cumple el estandar."
+        ],
+        "explanationTitle": "El metodo de grasa corporal del Ejercito",
+        "formula": "Usa ecuaciones por circunferencia distintas para hombres y mujeres",
+        "explanation": [
+          "El metodo estima la grasa corporal por medidas de cinta en cuello y cintura, con cadera anadida para mujeres, usando ecuaciones por sexo.",
+          "Es un metodo de campo: rapido y repetible, pero menos preciso que DEXA o pesaje hidrostico, asi que tomado como estimacion."
+        ],
+        "faq": [
+          {
+            "q": "Por que medir el cuello?",
+            "a": "El cuello ayuda a contar tejido magro del tren superior, mejorando la estimacion junto con la cintura."
+          },
+          {
+            "q": "Es preciso?",
+            "a": "Buen para cribado y seguimiento, pero no es medida de laboratorio; pequenos errores de cinta cambian el resultado."
+          },
+          {
+            "q": "Aplica fuera del ejercito?",
+            "a": "La matematica sirve a cualquiera, pero los estandares de apto/no apto son militares; consulta tus propias guias."
+          }
+        ]
+      }
     },
     "bac-calculator": {
       "name": "bachillerato",
@@ -3635,7 +3824,34 @@
     "gfr-calculator": {
       "name": "TFG",
       "description": "Calcular la tasa de filtración glomerular para la función renal.",
-      "metaDescription": "Calcule su eGFR para evaluar la función renal utilizando la fórmula CKD-EPI"
+      "metaDescription": "Calcule su eGFR para evaluar la función renal utilizando la fórmula CKD-EPI",
+      "guide": {
+        "steps": [
+          "Introduce creatinina serica, edad y sexo (y coeficiente de raza si la ecuacion antigua lo usa).",
+          "Elige la ecuacion, como CKD-EPI o MDRD.",
+          "Lee tu GFR estimada y el estadio renal correspondiente."
+        ],
+        "explanationTitle": "Que te dice la eGFR",
+        "formula": "CKD-EPI y MDRD estiman GFR por creatinina, edad, sexo (historica raza)",
+        "explanation": [
+          "La eGFR estima cuanto filtran tus rinones los desechos; numeros bajos indican funcion reducida, agrupada en estadios 1 a 5.",
+          "Es una estimacion de cribado de un analisis de sangre, no un diagnostico; solo un medico la interpreta con otras pruebas."
+        ],
+        "faq": [
+          {
+            "q": "Que es una eGFR normal?",
+            "a": "En adultos suele ser 90 o mas, aunque baja un poco con la edad de forma natural."
+          },
+          {
+            "q": "Por que aparece la raza en algunas formulas?",
+            "a": "Las ecuaciones antiguas incluian un coeficiente de raza, pero las guias actuales prefieren versiones sin raza para reducir sesgo."
+          },
+          {
+            "q": "Debo preocuparme por un resultado bajo?",
+            "a": "Un valor unico varia; tu medico mira tendencias y otras pruebas antes de concluir."
+          }
+        ]
+      }
     },
     "sleep-calculator": {
       "name": "Dormir",
@@ -4384,32 +4600,194 @@
     "molecular-weight": {
       "name": "Calculadora de peso molecular",
       "description": "Calcular la masa molar y la composición a partir de la fórmula química.",
-      "metaDescription": "Calculadora de peso molecular gratuita. Calcule la masa molar, la composición de elementos y el porcentaje de masa a partir de fórmulas químicas (H2O, Ca(OH)2, CuSO4·5H2O). Incluye 118 elementos de IUPAC 2024."
+      "metaDescription": "Calculadora de peso molecular gratuita. Calcule la masa molar, la composición de elementos y el porcentaje de masa a partir de fórmulas químicas (H2O, Ca(OH)2, CuSO4·5H2O). Incluye 118 elementos de IUPAC 2024.",
+      "guide": {
+        "steps": [
+          "Introduce una formula quimica como H2O o C6H12O6.",
+          "Deja que la herramienta sume las masas atomicas de cada elemento.",
+          "Lee la masa molar en gramos por mol."
+        ],
+        "explanationTitle": "Contar atomos por masa",
+        "formula": "Masa molar = suma de (atomos del elemento x masa atomica)",
+        "explanation": [
+          "El peso molecular es la suma de las masas atomicas de todos los atomos de una formula, usando pesos atomicos estandar de la tabla periodica.",
+          "Une los mundos microscopico (atomos) y macroscopico (gramos), permitiendote pesar un numero conocido de moles."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre masa y peso aqui?",
+            "a": "En la practica se usan indistintamente, aunque estrictamente la masa es la magnitud fisica."
+          },
+          {
+            "q": "Por que el agua es 18?",
+            "a": "H es cerca de 1 y O cerca de 16, asi H2O = 2x1 + 16 = 18 gramos por mol."
+          },
+          {
+            "q": "Funciona para hidratos?",
+            "a": "Si, incluye el agua de cristalizacion en la formula, por ejemplo CuSO4·5H2O."
+          }
+        ]
+      }
     },
     "molarity": {
       "name": "Calculadora de molaridad",
       "description": "Calcular la concentración de la solución a partir de masa, moles y volumen.",
-      "metaDescription": "Calculadora de molaridad gratuita. Calcule la concentración de la solución (M, mM, µM, nM) a partir de masa/volumen o moles/volumen con cálculos paso a paso."
+      "metaDescription": "Calculadora de molaridad gratuita. Calcule la concentración de la solución (M, mM, µM, nM) a partir de masa/volumen o moles/volumen con cálculos paso a paso.",
+      "guide": {
+        "steps": [
+          "Introduce los moles de soluto y el volumen de disolucion en litros.",
+          "Ajusta unidades si la herramienta permite cambiar entre molar, milimolar, etc.",
+          "Lee la concentracion en moles por litro, o M."
+        ],
+        "explanationTitle": "Concentracion como molaridad",
+        "formula": "M = moles de soluto / litros de disolucion",
+        "explanation": [
+          "La molaridad cuenta cuantos moles de una sustancia estan disueltos en un litro de disolucion, la unidad de concentracion mas comun en lab.",
+          "Como es por litro de disolucion final (no disolvente), la dilucion cambia la molaridad mientras la cantidad de soluto se mantiene."
+        ],
+        "faq": [
+          {
+            "q": "Moles vs molar, cual es la diferencia?",
+            "a": "Un mol es una cantidad de sustancia; molar (M) es esa cantidad por litro de disolucion."
+          },
+          {
+            "q": "Como hago una disolucion de M objetivo?",
+            "a": "Disuelve los moles necesarios (masa entre masa molar) y anade disolvente hasta el volumen final."
+          },
+          {
+            "q": "Por que importa la temperatura?",
+            "a": "El volumen cambia levemente con la temperatura, asi la molaridad es tecnicamente dependiente; la molalidad no."
+          }
+        ]
+      }
     },
     "dilution": {
       "name": "Calculadora de dilución",
       "description": "Calcule los parámetros de dilución usando la fórmula M₁V₁ = M₂V₂",
-      "metaDescription": "Calculadora de dilución gratuita. Calcule el volumen inicial, el volumen final o la molaridad final usando M₁V₁ = M₂V₂ con soporte de dilución en serie y advertencias de seguridad."
+      "metaDescription": "Calculadora de dilución gratuita. Calcule el volumen inicial, el volumen final o la molaridad final usando M₁V₁ = M₂V₂ con soporte de dilución en serie y advertencias de seguridad.",
+      "guide": {
+        "steps": [
+          "Introduce la concentracion y volumen iniciales, y una de las dos: concentracion o volumen objetivo.",
+          "Deja que la herramienta calcule el valor faltante con la relacion de dilucion.",
+          "Lee cuanto disolvente anadir o que volumen final alcanzar."
+        ],
+        "explanationTitle": "La relacion de dilucion",
+        "formula": "C1 x V1 = C2 x V2",
+        "explanation": [
+          "La dilucion mantiene constante la cantidad de soluto mientras anade disolvente, asi el producto de concentracion y volumen se mantiene igual antes y despues.",
+          "Es la base para preparar patrones y dosificar liquidos; siempre anade disolvente hasta el volumen final, no solo mezcles partes iguales."
+        ],
+        "faq": [
+          {
+            "q": "Que significa C1V1 = C2V2?",
+            "a": "Los moles de soluto antes igualan los despues; la concentracion baja al subir el volumen."
+          },
+          {
+            "q": "Deben coincidir las unidades?",
+            "a": "Las unidades de concentracion a ambos lados y las de volumen a ambos lados deben coincidir; la razon es lo que cuenta."
+          },
+          {
+            "q": "Puedo diluir a cualquier concentracion?",
+            "a": "Matematicamente si, pero limites practicos incluyen precision de medida y solubilidad."
+          }
+        ]
+      }
     },
     "stoichiometry": {
       "name": "Calculadora de estequiometría",
       "description": "Calcular el reactivo límite y el rendimiento teórico a partir de ecuaciones químicas.",
-      "metaDescription": "Calculadora de estequiometría gratuita. Calcule el reactivo límite, el rendimiento teórico y las masas de productos a partir de ecuaciones químicas balanceadas. Muestra proporciones molares y cálculos paso a paso."
+      "metaDescription": "Calculadora de estequiometría gratuita. Calcule el reactivo límite, el rendimiento teórico y las masas de productos a partir de ecuaciones químicas balanceadas. Muestra proporciones molares y cálculos paso a paso.",
+      "guide": {
+        "steps": [
+          "Introduce una ecuacion quimica balanceada y la cantidad de un reactivo o producto.",
+          "Deja que la herramienta use las razones molares de los coeficientes para hallar los demas.",
+          "Lee los moles o la masa de la sustancia que pediste."
+        ],
+        "explanationTitle": "Equilibrar cantidades en reacciones",
+        "formula": "Cantidad B = Cantidad A x (coeficiente B / coeficiente A)",
+        "explanation": [
+          "La estequiometria usa los coeficientes de una ecuacion balanceada como razones molares para predecir cuanto producto se forma o reactivo se necesita.",
+          "Asume reaccion completa sin secundarias, lo que los experimentos reales solo aproximan."
+        ],
+        "faq": [
+          {
+            "q": "Por que la ecuacion debe estar balanceada?",
+            "a": "La conservacion de masa exige atomos iguales a ambos lados, y los coeficientes dan las razones molares."
+          },
+          {
+            "q": "Que es el reactivo limitante?",
+            "a": "El reactivo que se agota primero, que capa cuanto producto puede formarse."
+          },
+          {
+            "q": "Esto predice el rendimiento real?",
+            "a": "Da el rendimiento teorico; el real es menor por perdidas y reaccion incompleta."
+          }
+        ]
+      }
     },
     "ph-calculator": {
       "name": "Calculadora de pH",
       "description": "Calcule pH, pOH y concentraciones de iones para ácidos, bases y tampones.",
-      "metaDescription": "Calculadora de pH gratuita. Calcule el pH/pOH a partir de la concentración, ácidos/bases fuertes/débiles y soluciones tampón utilizando la ecuación de Henderson-Hasselbalch. Incluye visualización de escala de pH."
+      "metaDescription": "Calculadora de pH gratuita. Calcule el pH/pOH a partir de la concentración, ácidos/bases fuertes/débiles y soluciones tampón utilizando la ecuación de Henderson-Hasselbalch. Incluye visualización de escala de pH.",
+      "guide": {
+        "steps": [
+          "Introduce la concentracion de iones hidrogeno, o el acido y su concentracion.",
+          "Elige si calculas pH, pOH o la conversion entre ambos.",
+          "Lee el pH y lo que implica sobre acidez o basicidad."
+        ],
+        "explanationTitle": "La escala de pH",
+        "formula": "pH = -log10[H+]; pOH = 14 - pH (a 25 C)",
+        "explanation": [
+          "El pH es el logaritmo en base 10 negativo de la concentracion de iones hidrogeno, asi cada unidad es un cambio de diez veces en acidez.",
+          "pH bajo 7 es acido, 7 neutral, sobre 7 basico; la escala depende de la temperatura y el rango 0 a 14 es tipico en disoluciones acuosas."
+        ],
+        "faq": [
+          {
+            "q": "Por que el pH es logaritmico?",
+            "a": "Como las concentraciones de iones abarcan muchos ordenes de magnitud, una escala log las mantiene en un maneable 0 a 14."
+          },
+          {
+            "q": "Es 7 siempre neutral?",
+            "a": "Neutral es donde pH iguala pOH; a 25 C eso es 7, pero el punto neutral se desplaza con la temperatura."
+          },
+          {
+            "q": "Puede ser negativo el pH?",
+            "a": "Si, acidos fuertes muy concentrados pueden tener pH bajo 0, aunque es raro en la vida diaria."
+          }
+        ]
+      }
     },
     "periodic-table": {
       "name": "Tabla periódica",
       "description": "Tabla periódica interactiva con propiedades de elementos y búsqueda.",
-      "metaDescription": "Tabla periódica interactiva con 118 elementos. Busque por nombre, símbolo o número atómico. Vea la masa atómica, la configuración electrónica y las propiedades químicas a partir de datos IUPAC 2024."
+      "metaDescription": "Tabla periódica interactiva con 118 elementos. Busque por nombre, símbolo o número atómico. Vea la masa atómica, la configuración electrónica y las propiedades químicas a partir de datos IUPAC 2024.",
+      "guide": {
+        "steps": [
+          "Introduce un simbolo elemental o numero atomico para buscarlo.",
+          "Explora o filtra por grupo, periodo o categoria si se ofrece.",
+          "Lee propiedades como masa atomica, grupo y clasificacion."
+        ],
+        "explanationTitle": "La tabla periodica de un vistazo",
+        "formula": "Organizada por numero atomico creciente y capas electronicas",
+        "explanation": [
+          "La tabla ordena los elementos por numero atomico; las filas son periodos y las columnas grupos con quimica similar.",
+          "La posicion predice el comportamiento: metales, no metales y gases nobles se agrupan en regiones, haciendo tendencias como electronegatividad faciles de leer."
+        ],
+        "faq": [
+          {
+            "q": "Que significa el numero atomico?",
+            "a": "Es el conteo de protones en el nucleo y identifica univocamente cada elemento."
+          },
+          {
+            "q": "Por que algunos elementos estan agrupados?",
+            "a": "Los elementos de la misma columna comparten patrones de electrones de valencia, asi reaccionan igual."
+          },
+          {
+            "q": "Que son los bloques?",
+            "a": "Los bloques s, p, d y f reflejan que subcapa se llena, ligando posicion y estructura electronica."
+          }
+        ]
+      }
     },
     "vm-storage-calculator": {
       "name": "Calculadora de almacenamiento de máquinas virtuales",

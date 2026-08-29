@@ -499,7 +499,34 @@
     "corpulence": {
       "name": "Korpulenz",
       "description": "Berechnen Sie Ihren Korpulenz-Index (Ponderal-Index)",
-      "metaDescription": "Berechnen Sie Ihren Ponderal-Index fuer eine genauere Koerperzusammensetzungsbewertung"
+      "metaDescription": "Berechnen Sie Ihren Ponderal-Index fuer eine genauere Koerperzusammensetzungsbewertung",
+      "guide": {
+        "steps": [
+          "Gib Grose und Gewicht ein, sowie Alter und Geschlecht, falls die Formel sie braucht.",
+          "Wahle den Index oder das Klassifikationssystem, das das Werkzeug nutzt.",
+          "Lies deine Kategorie und den Vergleich zum gesunden Bereich."
+        ],
+        "explanationTitle": "Was Korpulenz bedeutet",
+        "formula": "Oft basierend auf BMI = Gewicht / Grose^2, oder altem Index = Gewicht / Grose^3",
+        "explanation": [
+          "Korpulenz ist ein allgemeiner Begriff fur das Korperfett; viele Werkzeuge drücken es uber den BMI aus, also Gewicht geteilt durch Grose quadriert.",
+          "Diese Kategorien sind Screening-Hilfen, keine Diagnosen; Korperzusammensetzung und Gesundheit zahlen mehr als eine Zahl. Fur Rat einen Arzt fragen."
+        ],
+        "faq": [
+          {
+            "q": "Ist Korpulenz dasselbe wie BMI?",
+            "a": "Der BMI ist heute das ubliche Mass, altere Indizes nutzten Gewicht durch Grose hoch 3."
+          },
+          {
+            "q": "Warum unterscheiden sich Kategorien?",
+            "a": "Verschiedene Gesundheitsorganisationen setzen leicht andere Grenzwerte und einige justieren nach Alter oder Ethnie."
+          },
+          {
+            "q": "Sollte ich mich auf diese Zahl allein verlassen?",
+            "a": "Nein. Kombiniere sie mit Taillenmass, Korperfett und der Beratung durch einen Arzt."
+          }
+        ]
+      }
     },
     "cpu-comparison-calculator": {
       "name": "CPU-Vergleich",
@@ -2837,12 +2864,66 @@
     "lean-body-mass": {
       "name": "Magermasse",
       "description": "Berechnen Sie die Magermasse mit verschiedenen Formeln",
-      "metaDescription": "Berechnen Sie Ihre Magermasse (fettfreie Masse) mit medizinischen Formeln"
+      "metaDescription": "Berechnen Sie Ihre Magermasse (fettfreie Masse) mit medizinischen Formeln",
+      "guide": {
+        "steps": [
+          "Gib Gewicht, Korperfettanteil (oder eine Methode wie Hautfalt) und Geschlecht ein.",
+          "Wahle die Schatzgleichung, falls mehrere angeboten werden.",
+          "Lies deine fettfreie Masse, den nicht aus Fett bestehenden Teil."
+        ],
+        "explanationTitle": "Fettfreie Masse erklart",
+        "formula": "Fettfreie Masse = Gesamtgewicht x (1 - Korperfettanteil)",
+        "explanation": [
+          "Die fettfreie Masse umfasst Muskeln, Knochen, Wasser und Organe; nur der Fettanteil entfallt, daher ist sie hoher als nur Muskelmasse.",
+          "Sie hilft bei Proteinzielen, der Dosierung mancher Medikamente und der Verlaufskontrolle der Korperzusammensetzung."
+        ],
+        "faq": [
+          {
+            "q": "Wie misst man Korperfett?",
+            "a": "Methoden reichen von Hautfaltenkalippern und Bioimpedanzwaagen bis DEXA-Scans, jeweils mit anderer Genauigkeit."
+          },
+          {
+            "q": "Warum zahlt fettfreie Masse?",
+            "a": "Sie spiegelt stoffwechselaktives Gewebe wider und hilft bei Ernahrung und Training, besonders im Alter."
+          },
+          {
+            "q": "Ist mehr immer besser?",
+            "a": "Mehr ist meist gunstig fur Stoffwechsel und Kraft, doch Kontext und Gesundheit zahlen mehr als die Zahl."
+          }
+        ]
+      }
     },
     "body-surface-area": {
       "name": "Koerperoberflaechen",
       "description": "Berechnen Sie KOF mit mehreren medizinischen Formeln",
-      "metaDescription": "Berechnen Sie die Koerperoberflaeche fuer Medikamentendosierung"
+      "metaDescription": "Berechnen Sie die Koerperoberflaeche fuer Medikamentendosierung",
+      "guide": {
+        "steps": [
+          "Gib Grose und Gewicht ein.",
+          "Wahle eine Formel wie Du Bois, Mosteller oder Haycock, falls verfugbar.",
+          "Lies deine BSA in Quadratmetern, genutzt fur Medikamentendosierung."
+        ],
+        "explanationTitle": "Warum Korperoberflache zahlt",
+        "formula": "Mosteller: BSA = sqrt( (Grose cm x Gewicht kg) / 3600 )",
+        "explanation": [
+          "Die BSA schatzt die gesamte Hautflache und dient der Dosierung bestimmter Medikamente, vor allem Chemotherapie, da sie besser skaliert als Gewicht allein.",
+          "Verschiedene Formeln liefern leicht abweichende Werte; Kliniker wahlen konsequent eine. Dosen nie selbst andern."
+        ],
+        "faq": [
+          {
+            "q": "Warum BSA statt Gewicht?",
+            "a": "Viele physiologische Prozesse skalieren mit der Flache, daher ist die BSA uber Korpergrosen hinweg konsistenter."
+          },
+          {
+            "q": "Welche Formel ist am besten?",
+            "a": "Bei durchschnittlichen Erwachsenen stimmen sie eng uberein; Mosteller ist einfach, Du Bois ein langjahrigen Standard."
+          },
+          {
+            "q": "Kann ich BSA nutzen, um Medikamente zu andern?",
+            "a": "Niemals. BSA leitet Verschreiber; andere verschriebene Dosen nicht ohne Arzt."
+          }
+        ]
+      }
     },
     "ideal-weight": {
       "name": "Idealgewicht",
@@ -3579,12 +3660,66 @@
     "gfr-calculator": {
       "name": "GFR",
       "description": "Berechnen Sie die glomerulaere Filtrationsrate fuer die Nierenfunktion",
-      "metaDescription": "Berechnen Sie Ihre GFR zur Beurteilung der Nierenfunktion"
+      "metaDescription": "Berechnen Sie Ihre GFR zur Beurteilung der Nierenfunktion",
+      "guide": {
+        "steps": [
+          "Gib Serumkreatinin, Alter und Geschlecht ein (und Rassenkoeffizient bei alter Formel).",
+          "Wahle die Gleichung, wie CKD-EPI oder MDRD.",
+          "Lies deine geschatze GFR und das entsprechende Nierenstadium."
+        ],
+        "explanationTitle": "Was eGFR dir sagt",
+        "formula": "CKD-EPI und MDRD schatzen GFR aus Kreatinin, Alter, Geschlecht (historisch Rasse)",
+        "explanation": [
+          "eGFR schatzt, wie gut die Nieren Abfall filtern; niedrigere Werte bedeuten reduzierte Funktion, eingeteilt in Stadien 1 bis 5.",
+          "Es ist eine Screening-Schatung aus einem Bluttest, keine Diagnose; nur ein Arzt deutet sie mit weiteren Tests."
+        ],
+        "faq": [
+          {
+            "q": "Was ist eine normale eGFR?",
+            "a": "Bei Erwachsenen meist 90 oder mehr, sie sinkt mit dem Alter naturlich leicht."
+          },
+          {
+            "q": "Warum taucht Rasse in Formeln auf?",
+            "a": "Altere Gleichungen hatten einen Rassenkoeffizienten, doch aktuelle Leitlinien bevorzugen rassefreie Versionen."
+          },
+          {
+            "q": "Soll ich mir bei einem niedrigen Wert Sorgen machen?",
+            "a": "Ein Einzelwert schwankt; dein Arzt beachtet Trends und weitere Tests vor Schlussen."
+          }
+        ]
+      }
     },
     "body-type": {
       "name": "Koerpertyp",
       "description": "Bestimmen Sie Ihren Somatotyp (ekto-, meso-, endomorph)",
-      "metaDescription": "Finden Sie Ihren Koerpertyp heraus und erhalten Sie angepasste Trainingstipps"
+      "metaDescription": "Finden Sie Ihren Koerpertyp heraus und erhalten Sie angepasste Trainingstipps",
+      "guide": {
+        "steps": [
+          "Beantworte ein paar Fragen zu deinem Korperbau oder gib einfache Messwerte ein.",
+          "Lass das Werkzeug dich als Somatotyp oder Mischung einordnen.",
+          "Lies die Beschreibung und den Bezug zu Training und Ernahrung."
+        ],
+        "explanationTitle": "Korpertypen, oder Somatotypen",
+        "formula": "Beschreibende Klassifikation, keine einzelne Formel",
+        "explanation": [
+          "Somatotypen gruppieren Korperbau in Ektomorph (schlank), Mesomorph (muskulos) und Endomorph (rundlicher), doch die meisten sind eine Mischung.",
+          "Das Modell ist ein grober Rahmen fur Training und Ernahrung, kein festes Schicksal; Gene, Ernahrung und Sport formen das Ergebnis."
+        ],
+        "faq": [
+          {
+            "q": "Kann sich mein Typ andern?",
+            "a": "Ja. Training und Ernahrung verschieben deine Zusammensetzung; das Label ist ein Startpunkt, kein Urteil."
+          },
+          {
+            "q": "Welcher Typ ist am besten?",
+            "a": "Keiner ist uberlegen; jeder hat Vor- und Nachteile, Mischtypen sind normal."
+          },
+          {
+            "q": "Sollte ich nur fur meinen Typ trainieren?",
+            "a": "Nutze es als Leitfaden, dann evidence-basiertes Training und Ernahrung wahlen, die zu deinen Zielen passen."
+          }
+        ]
+      }
     },
     "healthy-weight": {
       "name": "Gesundes-Gewicht",
@@ -3780,7 +3915,34 @@
     "army-body-fat": {
       "name": "US-Armee-Koerperfett",
       "description": "Berechnen Sie Koerperfett mit der US-Armee-Bandmassmethode",
-      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil nach US-Armee-Standards"
+      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil nach US-Armee-Standards",
+      "guide": {
+        "steps": [
+          "Gib die nötigen Masse ein wie Grose, Hals und Taille (bei einigen Huften).",
+          "Wahle die geschlechtsspezifische Formel.",
+          "Lies deinen geschatzen Korperfettanteil und ob er den Standard erfullt."
+        ],
+        "explanationTitle": "Die Army-Korperfett-Methode",
+        "formula": "Nutzt umfangbasierte Gleichungen, die sich fur Manner und Frauen unterscheiden",
+        "explanation": [
+          "Die Methode schatzt Korperfett aus Bandmassen an Hals und Taille, bei Frauen zusatzlich Huftumfang, mit geschlechtsspezifischen Gleichungen.",
+          "Es ist ein Feldverfahren: schnell und wiederholbar, aber weniger prazise als DEXA oder Hydrostatic-Wagung; Ergebnisse als Schatzung sehen."
+        ],
+        "faq": [
+          {
+            "q": "Warum den Hals messen?",
+            "a": "Der Hals erfasst obere lean tissue und verbessert die Schatzung zusammen mit der Taille."
+          },
+          {
+            "q": "Ist es genau?",
+            "a": "Gut fur Screening und Verlauf, aber keine Labor Messung; kleine Bandfehler andern das Ergebnis."
+          },
+          {
+            "q": "Gilt es ausserhalb des Militars?",
+            "a": "Die Rechnung passt fur alle, doch Bestehen-Grenzen sind militarisch; eigene Richtlinien beachten."
+          }
+        ]
+      }
     },
     "period-calculator": {
       "name": "Perioden",
@@ -3818,12 +3980,66 @@
     "fat-intake": {
       "name": "Fettaufnahme",
       "description": "Berechnen Sie Ihren taeglichen Fettbedarf",
-      "metaDescription": "Berechnen Sie Ihren optimalen Fettbedarf nach Ihren Zielen"
+      "metaDescription": "Berechnen Sie Ihren optimalen Fettbedarf nach Ihren Zielen",
+      "guide": {
+        "steps": [
+          "Gib dein kalorienziel und einen Ziel-Fettanteil ein.",
+          "Wahle, ob du Gramm Gesamtfett siehst oder eine Trennung in gesattigt und ungesattigt.",
+          "Lies die Gramm Fett, die in deinen Plan passen."
+        ],
+        "explanationTitle": "Nahrungsfett im Kontext",
+        "formula": "Fettgramm = (Kalorien x Fett%) / 9  (Fett = 9 kcal pro Gramm)",
+        "explanation": [
+          "Fett liefert etwa 9 Kilokalorien pro Gramm, mehr als doppelt so viel wie Kohlenhydrate oder Protein, daher tragen kleine Mengen viel Energie bei.",
+          "Die Art zahlt: Ungesattigte Fette aus Pflanzen und Fisch sind gunstig, zu viel gesattigtes und trans Fett eher nicht."
+        ],
+        "faq": [
+          {
+            "q": "Welcher Fettanteil ist gesund?",
+            "a": "Viele Leitlinien raten zu 20 bis 35 Prozent der Kalorien aus Fett, mit Fokus auf ungesattigte Quellen."
+          },
+          {
+            "q": "Warum hat Fett mehr Kalorien?",
+            "a": "Seine chemische Struktur speichert mehr Energie pro Gramm, daher 9 kcal statt 4 bei KH und Protein."
+          },
+          {
+            "q": "Sollte ich alles Fett meiden?",
+            "a": "Nein. Fett stutzt Hormone, Nerven und Vitaminaufnahme; wahle gute Quellen und achte auf die Menge."
+          }
+        ]
+      }
     },
     "carb-calculator": {
       "name": "Kohlenhydrat",
       "description": "Berechnen Sie Ihren taeglichen Kohlenhydratbedarf",
-      "metaDescription": "Berechnen Sie Ihren optimalen Kohlenhydratbedarf nach Ihren Zielen"
+      "metaDescription": "Berechnen Sie Ihren optimalen Kohlenhydratbedarf nach Ihren Zielen",
+      "guide": {
+        "steps": [
+          "Gib dein kalorienziel und den gewahlten Kohlenhydratanteil ein.",
+          "Erganze Aktivitat oder Ziel, falls die Kalorien daraus abgeleitet werden.",
+          "Lies die Gramm Kohlenhydrate, die du taglich anvisierst."
+        ],
+        "explanationTitle": "Kohlenhydrate in der taglichen Ernahrung",
+        "formula": "KH-Gramm = (Kalorien x KH%) / 4  (KH = 4 kcal pro Gramm)",
+        "explanation": [
+          "Kohlenhydrate liefern etwa 4 Kilokalorien pro Gramm; eine Prozentangabe verwandelt das Kalorienziel in ein Grammziel.",
+          "Der passende Anteil hangt von Ziel, Training und Praferenzen ab; viele Menschen gedeihen uber ein weites KH-Spektrum."
+        ],
+        "faq": [
+          {
+            "q": "Wie viele KH soll ich essen?",
+            "a": "Das variiert; oft 45 bis 65 Prozent der Kalorien, doch Sportler oder Low-Carb esser weichen ab."
+          },
+          {
+            "q": "Sind alle KH gleich?",
+            "a": "Nein. Vollkorn, Obst und Gemuse liefern Faser und Nahrstoffe, Zucker nur schnelle Energie mit wenig mehr."
+          },
+          {
+            "q": "Warum 4 Kalorien pro Gramm?",
+            "a": "Das ist der mittlere Energieertrag von Kohlenhydraten; Protein hat auch 4, Fett 9 pro Gramm."
+          }
+        ]
+      }
     },
     "basic-calculator": {
       "name": "Taschenrechner",
@@ -4865,32 +5081,194 @@
     "molecular-weight": {
       "name": "Molmassenrechner",
       "description": "Berechnen Sie Molmasse und Zusammensetzung aus der chemischen Formel",
-      "metaDescription": "Kostenloser Molmassenrechner. Berechnen Sie Molmasse, Elementzusammensetzung und Massenanteil aus chemischen Formeln (H2O, Ca(OH)2, CuSO4·5H2O). Enthält 118 Elemente gemäß IUPAC 2024."
+      "metaDescription": "Kostenloser Molmassenrechner. Berechnen Sie Molmasse, Elementzusammensetzung und Massenanteil aus chemischen Formeln (H2O, Ca(OH)2, CuSO4·5H2O). Enthält 118 Elemente gemäß IUPAC 2024.",
+      "guide": {
+        "steps": [
+          "Gib eine chemische Formel ein wie H2O oder C6H12O6.",
+          "Lass das Werkzeug die Atommassen jedes Elements aufsummieren.",
+          "Lies die molare Masse in Gramm pro Mol."
+        ],
+        "explanationTitle": "Atome uber Masse zahlen",
+        "formula": "Molmasse = Summe (Atome des Elements x Atommasse)",
+        "explanation": [
+          "Die Molekularmasse ist die Summe der Atommassen aller Atome in einer Formel, mit Standardatomgewichten aus dem Periodensystem.",
+          "Sie verbindet die mikroskopische (Atome) und makroskopische (Gramm) Welt, sodass du eine bekannte Molzahl abwagen kannst."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Masse und Gewicht hier?",
+            "a": "In der Praxis werden die Begriffe gleichwertig genutzt, streng genommen ist Masse die physikalische Grobe."
+          },
+          {
+            "q": "Warum ist Wasser 18?",
+            "a": "H ist etwa 1 und O etwa 16, also H2O = 2x1 + 16 = 18 Gramm pro Mol."
+          },
+          {
+            "q": "Funktioniert es bei Hydraten?",
+            "a": "Ja, das Kristallwasser in die Formel einbeziehen, zum Beispiel CuSO4·5H2O."
+          }
+        ]
+      }
     },
     "molarity": {
       "name": "Molaritätsrechner",
       "description": "Berechnen Sie die Lösungskonzentration aus Masse, Stoffmenge und Volumen",
-      "metaDescription": "Kostenloser Molaritätsrechner. Berechnen Sie die Konzentration (M, mM, µM, nM) aus Masse/Volumen oder Stoffmenge/Volumen mit schrittweisen Berechnungen."
+      "metaDescription": "Kostenloser Molaritätsrechner. Berechnen Sie die Konzentration (M, mM, µM, nM) aus Masse/Volumen oder Stoffmenge/Volumen mit schrittweisen Berechnungen.",
+      "guide": {
+        "steps": [
+          "Gib die Mol des gelosten Stoffs und das Losungsvolumen in Litern ein.",
+          "Passe Einheiten an, falls das Werkzeug Mol, Millimol und ahnliches umschaltet.",
+          "Lies die Konzentration in Mol pro Liter, also M."
+        ],
+        "explanationTitle": "Konzentration als Molaritat",
+        "formula": "M = Mol des Gelosten / Liter Losung",
+        "explanation": [
+          "Die Molaritat zahlt, wie viele Mol eines Stoffs in einem Liter Losung gelost sind, die haufigste Labor-Konzentrationseinheit.",
+          "Da sie pro Liter Endlosung (nicht Losungsmittel) gilt, andert Verdunnung die Molaritat, wahrend die Stoffmenge gleich bleibt."
+        ],
+        "faq": [
+          {
+            "q": "Mol vs molar, was ist der Unterschied?",
+            "a": "Ein Mol ist eine Stoffmenge; molar (M) ist diese Menge pro Liter Losung."
+          },
+          {
+            "q": "Wie mache ich eine Losung mit Ziel-M?",
+            "a": "Lose die benotigten Mol (Masse durch molare Masse) und fug dann Losungsmittel bis zum Endvolumen hinzu."
+          },
+          {
+            "q": "Warum zahlt Temperatur?",
+            "a": "Volumen andert sich leicht mit Temperatur, also ist Molaritat technisch temperaturabhangig; Molalitat nicht."
+          }
+        ]
+      }
     },
     "dilution": {
       "name": "Verdünnungsrechner",
       "description": "Berechnen Sie Verdünnungsparameter mit der Formel M₁V₁ = M₂V₂",
-      "metaDescription": "Kostenloser Verdünnungsrechner. Berechnen Sie Ausgangsvolumen, Endvolumen oder Endmolarität mit M₁V₁ = M₂V₂, Serienverdünnung und Sicherheitshinweisen."
+      "metaDescription": "Kostenloser Verdünnungsrechner. Berechnen Sie Ausgangsvolumen, Endvolumen oder Endmolarität mit M₁V₁ = M₂V₂, Serienverdünnung und Sicherheitshinweisen.",
+      "guide": {
+        "steps": [
+          "Gib Startkonzentration und Volumen ein sowie entweder Zielkonzentration oder Zielvolumen.",
+          "Lass das Werkzeug den fehlenden Wert uber die Verdunnungsbeziehung berechnen.",
+          "Lies, wie viel Losungsmittel zuzugeben oder welches Endvolumen zu erreichen ist."
+        ],
+        "explanationTitle": "Die Verdunnungsbeziehung",
+        "formula": "C1 x V1 = C2 x V2",
+        "explanation": [
+          "Verdunnung halt die Stoffmenge konstant und fugt Losungsmittel hinzu, daher bleibt das Produkt aus Konzentration und Volumen vor und nachher gleich.",
+          "Sie ist das Ruckgrat beim Ansetzen von Standards und Dosieren von Flussigkeiten; immer auf Endvolumen auffullen, nicht nur gleiche Teile mischen."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet C1V1 = C2V2?",
+            "a": "Die Mol des Soluts vorher gleichen denen nachher; Konzentration sinkt, wenn Volumen steigt."
+          },
+          {
+            "q": "Mussen Einheiten passen?",
+            "a": "Konzentrationseinheiten beidseits und Volumeneinheiten beidseits mussen passen; die Ratio zahlt."
+          },
+          {
+            "q": "Kann ich auf jede Konzentration verdunnen?",
+            "a": "Rechnerisch ja, praktisch grenzen Messgenauigkeit und Loslichkeit."
+          }
+        ]
+      }
     },
     "stoichiometry": {
       "name": "Stöchiometrierechner",
       "description": "Berechnen Sie den begrenzenden Reaktanden und die theoretische Ausbeute aus chemischen Gleichungen",
-      "metaDescription": "Kostenloser Stöchiometrierechner. Berechnen Sie begrenzenden Reaktanden, theoretische Ausbeute und Produktmassen aus ausgeglichenen chemischen Gleichungen. Zeigt Molverhältnisse und schrittweise Berechnungen."
+      "metaDescription": "Kostenloser Stöchiometrierechner. Berechnen Sie begrenzenden Reaktanden, theoretische Ausbeute und Produktmassen aus ausgeglichenen chemischen Gleichungen. Zeigt Molverhältnisse und schrittweise Berechnungen.",
+      "guide": {
+        "steps": [
+          "Gib eine ausgeglichene Reaktionsgleichung und die Menge eines Reaktanten oder Produkts ein.",
+          "Lass das Werkzeug die Stoffmengenverhaltnisse aus den Koeffizienten nutzen.",
+          "Lies die Mol oder Masse der gewunschten Substanz."
+        ],
+        "explanationTitle": "Mengen in Reaktionen ausgleichen",
+        "formula": "Menge B = Menge A x (Koeffizient B / Koeffizient A)",
+        "explanation": [
+          "Stochiometrie nutzt die Koeffizienten einer ausgeglichenen Gleichung als Stoffmengenverhaltnisse, um Produktmengen oder Reaktantenbedarf zu prognostizieren.",
+          "Sie nimmt vollstandigen Umsatz ohne Nebenreaktionen an, was reale Experimente nur naherungsweise erreichen."
+        ],
+        "faq": [
+          {
+            "q": "Warum muss die Gleichung ausgeglichen sein?",
+            "a": "Massenerhalt braucht gleiche Atome beidseits, und die Koeffizienten liefern die Stoffmengenverhaltnisse."
+          },
+          {
+            "q": "Was ist der limitierende Reaktant?",
+            "a": "Der Reaktant, der zuerst aufgebraucht ist und damit die max. Produktmenge deckelt."
+          },
+          {
+            "q": "Sagt das die reale Ausbeute voraus?",
+            "a": "Es gibt die theoretische Ausbeute; die reale ist durch Verluste und unvollstandige Reaktion niedriger."
+          }
+        ]
+      }
     },
     "ph-calculator": {
       "name": "pH-Rechner",
       "description": "Berechnen Sie pH, pOH und Ionenkonzentrationen für Säuren, Basen und Puffer",
-      "metaDescription": "Kostenloser pH-Rechner. Berechnen Sie pH/pOH aus Konzentration, starke/schwache Säuren/Basen und Pufferlösungen mit Henderson-Hasselbalch-Gleichung. Enthält pH-Skala-Visualisierung."
+      "metaDescription": "Kostenloser pH-Rechner. Berechnen Sie pH/pOH aus Konzentration, starke/schwache Säuren/Basen und Pufferlösungen mit Henderson-Hasselbalch-Gleichung. Enthält pH-Skala-Visualisierung.",
+      "guide": {
+        "steps": [
+          "Gib die Wasserstoffionenkonzentration ein oder die Saure und ihre Konzentration.",
+          "Wahle, ob pH, pOH oder die Umrechnung berechnet wird.",
+          "Lies den pH und was er uber Saure oder Base aussagt."
+        ],
+        "explanationTitle": "Die pH-Skala",
+        "formula": "pH = -log10[H+]; pOH = 14 - pH (bei 25 C)",
+        "explanation": [
+          "pH ist der negative Zehnerlogarithmus der Wasserstoffionenkonzentration, daher ist jede Einheit eine zehnfache Anderung der Saure.",
+          "pH unter 7 ist sauer, 7 neutral, uber 7 basisch; die Skala hangt von der Temperatur ab, der Bereich 0 bis 14 ist typisch fur wassrige Losungen."
+        ],
+        "faq": [
+          {
+            "q": "Warum ist pH logarithmisch?",
+            "a": "Da Ionenkonzentrationen viele Grossenordnungen spannen, halt eine Logskala sie im handlichen Bereich 0 bis 14."
+          },
+          {
+            "q": "Ist 7 immer neutral?",
+            "a": "Neutral ist, wo pH gleich pOH ist; bei 25 C ist das 7, der Neutralpunkt verschiebt sich mit Temperatur."
+          },
+          {
+            "q": "Kann pH negativ sein?",
+            "a": "Ja, sehr konzentrierte starke Sauren konnen pH unter 0 haben, was im Alltag selten ist."
+          }
+        ]
+      }
     },
     "periodic-table": {
       "name": "Periodensystem",
       "description": "Interaktives Periodensystem mit Elementeigenschaften und Suche",
-      "metaDescription": "Interaktives Periodensystem mit 118 Elementen. Suche nach Name, Symbol oder Ordnungszahl. Atommasse, Elektronenkonfiguration und chemische Eigenschaften (IUPAC 2024-Daten)."
+      "metaDescription": "Interaktives Periodensystem mit 118 Elementen. Suche nach Name, Symbol oder Ordnungszahl. Atommasse, Elektronenkonfiguration und chemische Eigenschaften (IUPAC 2024-Daten).",
+      "guide": {
+        "steps": [
+          "Gib ein ElementSymbol oder die Ordnungszahl ein, um es zu suchen.",
+          "Durchsuche oder filter nach Gruppe, Periode oder Kategorie, falls angeboten.",
+          "Lies Eigenschaften wie Atommasse, Gruppe und Klassifikation."
+        ],
+        "explanationTitle": "Das Periodensystem auf einen Blick",
+        "formula": "Geordnet nach steigender Ordnungszahl und Elektronenschalen",
+        "explanation": [
+          "Die Tabelle ordnet Elemente nach Ordnungszahl; Zeilen sind Perioden, Spalten Gruppen mit ahnlicher Chemie.",
+          "Die Position sagt Verhalten voraus: Metalle, Nichtmetalle und Edelgase clustern in Regionen, sodass Trends wie Elektronegativitat leicht lesbar sind."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet die Ordnungszahl?",
+            "a": "Sie ist die Zahl der Protonen im Kern und identifiziert jedes Element eindeutig."
+          },
+          {
+            "q": "Warum sind manche Elemente gruppiert?",
+            "a": "Elemente in derselben Spalte teilen Valenzelektronen-Muster, also reagieren sie ahnlich."
+          },
+          {
+            "q": "Was sind die Blocke?",
+            "a": "s-, p-, d- und f-Blocke spiegeln das gefullte Unterschalen-Niveau und verknupfen Position mit Elektronenstruktur."
+          }
+        ]
+      }
     },
     "unit-converter": {
       "name": "Einheitenumrechner",
