@@ -657,17 +657,98 @@
     "time": {
       "name": "Zeit",
       "description": "Addieren oder subtrahieren Sie Stunden, Minuten und Sekunden",
-      "metaDescription": "Fuehren Sie Zeitberechnungen mit Stunden, Minuten und Sekunden durch"
+      "metaDescription": "Fuehren Sie Zeitberechnungen mit Stunden, Minuten und Sekunden durch",
+      "guide": {
+        "steps": [
+          "Gib eine Tageszeit in Stunden, Minuten und Sekunden ein.",
+          "Wechsle bei Bedarf zwischen 12- und 24-Stunden-Anzeige.",
+          "Lies die normalisierte Zeit und ein beliebiges umgewandeltes Format."
+        ],
+        "explanationTitle": "Uhrzeit lesen und umwandeln",
+        "formula": "24h-Zeit = (12h-Stunde mod 12) + Tagesabschnitt; Uberlauf bei 24:00",
+        "explanation": [
+          "Uhrzeit wiederholt sich alle 24 Stunden, also beschreiben 13:00 und 1:00 pm denselben Moment in anderer Schreibweise.",
+          "Sekunden und Minuten umbrechen bei 60, Stunden bei 24, wobei Uberlauf die Anzeige gultig halt."
+        ],
+        "faq": [
+          {
+            "q": "Was unterscheidet 12h und 24h?",
+            "a": "24-Stunden-Zeit zahlt 0 bis 23 ohne am/pm; 12-Stunden-Zeit teilt den Tag in am und pm."
+          },
+          {
+            "q": "Wie wandele ich 2:30 pm in 24h?",
+            "a": "Addiere fur pm-Zeiten nach Mittag 12 zur Stunde, also 14:30."
+          },
+          {
+            "q": "Warum bricht die Uhr bei 60?",
+            "a": "Minuten und Sekunden nutzen Basis 60, eine alte babylonische Konvention, die fur Zeit genutzt wird."
+          }
+        ]
+      }
     },
     "hours": {
       "name": "Stunden",
       "description": "Berechnen Sie die Stunden zwischen zwei Zeiten oder Daten",
-      "metaDescription": "Berechnen Sie die Anzahl der Stunden zwischen zwei Zeiten oder Daten"
+      "metaDescription": "Berechnen Sie die Anzahl der Stunden zwischen zwei Zeiten oder Daten",
+      "guide": {
+        "steps": [
+          "Gib eine Zeit in Stunden und Minuten oder einen dezimalen Stundenwert ein.",
+          "Wahle die Richtung, etwa Stunden zu Minuten oder Dezimal zu hh:mm.",
+          "Lies den gleichwertigen Wert in deinem gewahlten Format."
+        ],
+        "explanationTitle": "Stunden und Minuten umrechnen",
+        "formula": "Minuten = Stunden x 60; Dezimalstunden = Stunden + Minuten/60",
+        "explanation": [
+          "Zeit in Basis 60 bedeutet, dass 1,5 Stunden 1 Stunde 30 Minuten sind, nicht 1:50; die Umrechnung multipliziert oder dividiert durch 60.",
+          "Dezimalstunden sind fur Lohn und Abrechnung praktisch, wahrend hh:mm bei Plänen klarer ist."
+        ],
+        "faq": [
+          {
+            "q": "Sind 1,5 Stunden gleich 1:50?",
+            "a": "Nein. 1,5 Stunden sind 1 Stunde 30 Minuten, da 0,5 die Halfte von 60 Minuten ist."
+          },
+          {
+            "q": "Wie rechne ich 90 Minuten in Stunden?",
+            "a": "Durch 60 teilen ergibt 1,5 Stunden, also 1 Stunde 30 Minuten."
+          },
+          {
+            "q": "Warum uberhaupt Dezimalstunden?",
+            "a": "Tarife mit Dezimalstunden zu multiplizieren ist einfacher als mit hh:mm, weshalb Zeiterfassungen es nutzen."
+          }
+        ]
+      }
     },
     "time-duration": {
       "name": "Zeitdauer",
       "description": "Berechnet die Dauer zwischen zwei Datums- und Zeitangaben",
-      "metaDescription": "Zeitdauer-Rechner"
+      "metaDescription": "Zeitdauer-Rechner",
+      "guide": {
+        "steps": [
+          "Gib Start- und Endzeit ein, mit Datum falls sie die Mitternacht uberschreiten.",
+          "Wahle das Ausgabeformat, etwa Stunden und Minuten oder Gesamtminuten.",
+          "Lies die verstrichene Dauer zwischen den beiden Momenten."
+        ],
+        "explanationTitle": "Verstrichene Zeit messen",
+        "formula": "Dauer = Endzeit - Startzeit, uber Tagesgrenzen hinweg",
+        "explanation": [
+          "Dauer ist die Lucke zwischen zwei Uhrstanden; wer uber Mitternacht geht, addiert vor dem Subtrahieren einen Tag zur Endzeit.",
+          "Mit einer einzelnen Einheit wie Minuten vermeidet man Fehler durch das Basis-60-Wesen von Stunden und Minuten."
+        ],
+        "faq": [
+          {
+            "q": "Was, wenn das Ende nach Mitternacht liegt?",
+            "a": "Addiere vor dem Subtrahieren 24 Stunden (oder einen Tag) zur Endzeit, damit das Ergebnis positiv bleibt."
+          },
+          {
+            "q": "Warum Gesamtminuten nutzen?",
+            "a": "Minuten sind eine einzelne Einheit, daher umgeht man beim Addieren die Ubertragsregeln von hh:mm."
+          },
+          {
+            "q": "Behandelt es Zeitzonen?",
+            "a": "Dieses einfache Werkzeug nimmt beide Zeiten in derselben Zone an; rechne zuerst um, falls sie differieren."
+          }
+        ]
+      }
     },
     "time-zone": {
       "name": "Zeitzonen",
@@ -736,12 +817,66 @@
     "day-of-week": {
       "name": "Wochentag",
       "description": "Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt",
-      "metaDescription": "Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt"
+      "metaDescription": "Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt",
+      "guide": {
+        "steps": [
+          "Gib irgendein Kalenderdatum ein, das dich interessiert.",
+          "Wahle das Kalendersystem, falls angeboten, meist gregorianisch.",
+          "Lies, auf welchen Wochentag das Datum fallt."
+        ],
+        "explanationTitle": "Den Wochentag eines Datums finden",
+        "formula": "Basierend auf Zellers Kongruenz oder einem Anker, mit Berucksichtigung von Schaltjahren",
+        "explanation": [
+          "Die Wochentagsberechnung kettet von einem Referenzdatum und geht durch den bekannten 400-Jahre-Schaltzyklus des gregorianischen Kalenders.",
+          "Da das Muster alle 400 Jahre wiederkehrt, fallt das gleiche Datum in 400 Jahren Abstand auf denselben Wochentag."
+        ],
+        "faq": [
+          {
+            "q": "Funktioniert das fur jedes Jahr?",
+            "a": "Fur den gregorianischen Kalender deckt es moderne und die meisten historischen Daten mehrere Jahrhunderte zuruck ab."
+          },
+          {
+            "q": "Warum sind Schaltjahre wichtig?",
+            "a": "Sie verschieben jedes Datum nach dem 29. Februar um einen Wochentag, also muss die Regel sie erfassen."
+          },
+          {
+            "q": "Was ist mit dem julianischen Kalender?",
+            "a": "Altere Daten nutzten das julianische System mit anderen Schaltregeln; wahle es, falls dein Datum vor dem Wechsel liegt."
+          }
+        ]
+      }
     },
     "duration-converter": {
       "name": "Dauerumrechner",
       "description": "Konvertiert Zeiteinheiten: Sekunden, Minuten, Stunden, Tage, Wochen, Monate, Jahre",
-      "metaDescription": "Zeiteinheiten-Umrechner"
+      "metaDescription": "Zeiteinheiten-Umrechner",
+      "guide": {
+        "steps": [
+          "Gib eine Dauer in einer Einheit ein, etwa Tage, Stunden oder Minuten.",
+          "Wahle die Zieleinheit, in der sie ausgedruckt werden soll.",
+          "Lies die umgerechnete Dauer, die mehrere Einheiten umspannen kann."
+        ],
+        "explanationTitle": "Einheiten der Zeit umrechnen",
+        "formula": "1 Tag = 24 h = 1440 min = 86400 s",
+        "explanation": [
+          "Die Umrechnung von Dauern ist eine Kette fester Verhaltnisse: Tage zu Stunden mal 24, Stunden zu Minuten mal 60 und so weiter.",
+          "Lange Spannen sind in gemischten Einheiten wie '3 Tage 4 Stunden' leichter fassbar als eine einzelne riesige Sekundenzahl."
+        ],
+        "faq": [
+          {
+            "q": "Wie viele Minuten hat ein Tag?",
+            "a": "Genau 1440, denn 24 Stunden mal 60 Minuten ergeben 1440."
+          },
+          {
+            "q": "Sollte ich Wochen oder Fortnights nutzen?",
+            "a": "Wochen (7 Tage) sind Standard; Fortnights (14 Tage) tauchen vor allem in einigen Lohnkontexten auf."
+          },
+          {
+            "q": "Warum uberhaupt umrechnen?",
+            "a": "Verschiedene Bereiche nennen Zeit unterschiedlich; Umrechnen halt Plane, Abrechnung und Logs konsistent."
+          }
+        ]
+      }
     },
     "rgb": {
       "name": "RGB-Konverter",
@@ -3789,12 +3924,66 @@
     "percent-error": {
       "name": "Prozentfehler",
       "description": "Berechnen Sie den Fehler zwischen experimentellen und tatsaechlichen Werten",
-      "metaDescription": "Berechnen Sie den Prozentfehler fuer wissenschaftliche Experimente"
+      "metaDescription": "Berechnen Sie den Prozentfehler fuer wissenschaftliche Experimente",
+      "guide": {
+        "steps": [
+          "Gib den gemessenen (experimentellen) und den akzeptierten (wahren) Wert ein.",
+          "Wahle, ob zusatzlich der absolute Fehler angezeigt wird.",
+          "Lies den Prozentfehler, der angibt, wie weit die Messung von der Referenz abweicht."
+        ],
+        "explanationTitle": "Was der Prozentfehler misst",
+        "formula": "Prozentfehler = |gemessen - akzeptiert| / |akzeptiert| x 100%",
+        "explanation": [
+          "Der Prozentfehler drückt die Grobe eines Fehlers relativ zum wahren Wert aus; 5 Prozent bedeuten denselben Anteil, egal ob Gramm oder Kilometer gemessen wurden.",
+          "Ein kleinerer Prozentfehler bedeutet hohere Genauigkeit. Systematische Fehler eines fehlerhaften Gerats zeigen sich als standig verzerrte Ergebnisse."
+        ],
+        "faq": [
+          {
+            "q": "Kann der Prozentfehler negativ sein?",
+            "a": "Die Formel nutzt den Betrag, daher wird er als positive Grobe gemeldet; das Vorzeichen wird fur die Grobe weggelassen."
+          },
+          {
+            "q": "Was ist ein guter Prozentfehler?",
+            "a": "Das hangt vom Feld ab; Schullabore zielen oft unter 5 Prozent, Prazisionsbau deutlich weniger."
+          },
+          {
+            "q": "Prozentfehler vs. prozentuale Differenz?",
+            "a": "Der Fehler vergleicht eine Messung mit einem wahren Wert; die Differenz vergleicht zwei Messungen miteinander."
+          }
+        ]
+      }
     },
     "rounding-calculator": {
       "name": "Rundungs",
       "description": "Runden Sie Zahlen mit verschiedenen Methoden und Praezision",
-      "metaDescription": "Runden Sie auf Dezimalstellen, signifikante Stellen oder benutzerdefinierte Praezision"
+      "metaDescription": "Runden Sie auf Dezimalstellen, signifikante Stellen oder benutzerdefinierte Praezision",
+      "guide": {
+        "steps": [
+          "Gib die zu rundende Zahl ein und wahle die Ziel-Dezimalstellen oder Signifikanten.",
+          "Wahle eine Rundungsregel wie Aufrunden bei .5 oder Runden zur geraden Zahl, falls angeboten.",
+          "Lies das gerundete Ergebnis und die behaltenen Stellen."
+        ],
+        "explanationTitle": "Warum Rundungsregeln wichtig sind",
+        "formula": "Auf n Nachkommastellen: n Stellen nach dem Punkt behalten, letzte an der Folge anpassen",
+        "explanation": [
+          "Runden reduziert Rauschen ungenauer Messungen, aber wiederholtes Runden kann Ergebnisse verschieben; runde daher erst am Ende.",
+          "Verschiedene Regeln (Aufrunden bei .5 versus zur geraden Zahl) behandeln genau den .5-Fall unterschiedlich, was in Statistik und Finanzen zahlt."
+        ],
+        "faq": [
+          {
+            "q": "Was ist Runden zur geraden Zahl?",
+            "a": "Ist der wegfallende Teil genau .5, wird zur nachstgelegenen geraden Ziffer gerundet; das vermeidet Bias bei vielen .5-Fallen."
+          },
+          {
+            "q": "Sollte ich bei jedem Schritt runden?",
+            "a": "Nein. Behalte volle Prazision und runde erst das Endergebnis, um Fehlerzuwachs zu vermeiden."
+          },
+          {
+            "q": "Was sind signifikante Stellen?",
+            "a": "Es sind die sinnvollen Ziffern einer Messgenauigkeit, gezahlt ab der ersten von null verschiedenen Ziffer."
+          }
+        ]
+      }
     },
     "average-calculator": {
       "name": "Durchschnitts",
@@ -3836,22 +4025,130 @@
     "exponent-calculator": {
       "name": "Exponenten",
       "description": "Berechnen Sie Potenzen und Exponentialausdruecke",
-      "metaDescription": "Berechnen Sie Potenzen, Exponenten und Exponentialausdruecke"
+      "metaDescription": "Berechnen Sie Potenzen, Exponenten und Exponentialausdruecke",
+      "guide": {
+        "steps": [
+          "Gib die Basis und den anzuwendenden Exponenten ein.",
+          "Wahle, ob der Exponent positiv, negativ oder gebrochen ist.",
+          "Lies das Ergebnis; negative Exponenten bedeuten Division durch die Basis."
+        ],
+        "explanationTitle": "Wie Exponenten funktionieren",
+        "formula": "a^n = a x a x ... (n-mal); a^-n = 1 / a^n; a^(1/n) = n-te Wurzel",
+        "explanation": [
+          "Ein Exponent sagt, wie oft die Basis mit sich selbst multipliziert wird; ein negativer Exponent macht daraus einen Bruch, ein gebrochener ist eine Wurzel.",
+          "Exponenten wandeln wiederholte Multiplikation in eine kompakte Potenz, weshalb sie bei Wachstum, Zerfall und wissenschaftlicher Notation auftreten."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet ein negativer Exponent?",
+            "a": "Er meint eins geteilt durch die Basis hoch diesem Exponenten, also ist 2^-3 = 1/8."
+          },
+          {
+            "q": "Wie multipliziere ich Potenzen?",
+            "a": "Basis beibehalten und Exponenten addieren: a^m x a^n = a^(m+n)."
+          },
+          {
+            "q": "Was ist ein gebrochener Exponent?",
+            "a": "Der Nenner ist die Wurzel; x^(1/2) ist zum Beispiel die Quadratwurzel von x."
+          }
+        ]
+      }
     },
     "root-calculator": {
       "name": "Wurzel",
       "description": "Berechnen Sie Quadratwurzeln, Kubikwurzeln und n-te Wurzeln",
-      "metaDescription": "Berechnen Sie Quadratwurzeln, Kubikwurzeln und beliebige n-te Wurzeln"
+      "metaDescription": "Berechnen Sie Quadratwurzeln, Kubikwurzeln und beliebige n-te Wurzeln",
+      "guide": {
+        "steps": [
+          "Gib den Radikanden (Zahl unter der Wurzel) und den Index ein, zum Beispiel 2 fur die Quadratwurzel.",
+          "Wahle, ob bei negativen Eingaben komplexe Ergebnisse erlaubt sind, falls angeboten.",
+          "Lies die Hauptwurzel und bei Quadraten die positiven und negativen Werte."
+        ],
+        "explanationTitle": "Wurzeln verstehen",
+        "formula": "n-te Wurzel aus x = y mit y^n = x; Quadratwurzel hat Index 2",
+        "explanation": [
+          "Eine Wurzel beantwortet 'welche Zahl, hoch diesem Exponenten, ergibt den Radikanden'; die Quadratwurzel ist der haufigste Fall.",
+          "Gerade Wurzeln negativer Zahlen sind nicht reell, daher melden Rechner entweder einen Fehler oder liefern eine komplexe Zahl, je nach Modus."
+        ],
+        "faq": [
+          {
+            "q": "Warum gibt es zwei Quadratwurzeln?",
+            "a": "Sowohl eine positive als auch eine negative Zahl quadrieren zum selben Wert; die gezeigte Hauptwurzel ist die nicht-negative."
+          },
+          {
+            "q": "Kann ich eine Wurzel aus einer negativen Zahl ziehen?",
+            "a": "Ungerade Wurzeln (Kubik etc.) Negativer sind reell, gerade Wurzeln jedoch nicht, es sei denn der Komplexmodus ist an."
+          },
+          {
+            "q": "Was ist der Index?",
+            "a": "Es ist die kleine Zahl, die angibt, welche Wurzel; 2 ist Quadratwurzel, 3 Kubikwurzel und so weiter."
+          }
+        ]
+      }
     },
     "logarithm-calculator": {
       "name": "Logarithmus",
       "description": "Berechnen Sie Logarithmen mit beliebiger Basis",
-      "metaDescription": "Berechnen Sie Logarithmen zur Basis 10, natuerlichen Logarithmus oder benutzerdefinierter Basis"
+      "metaDescription": "Berechnen Sie Logarithmen zur Basis 10, natuerlichen Logarithmus oder benutzerdefinierter Basis",
+      "guide": {
+        "steps": [
+          "Gib die Zahl, deren Logarithmus du brauchst, und die Basis ein, wie 10, e oder 2.",
+          "Wahle naturlichon Logarithmus, Zehnerlogarithmus oder eine eigene Basis, falls verfugbar.",
+          "Lies das Ergebnis, also den Exponenten, der die Zahl erreicht."
+        ],
+        "explanationTitle": "Was ein Logarithmus ist",
+        "formula": "log_b(x) = y bedeutet b^y = x",
+        "explanation": [
+          "Ein Logarithmus ist die Umkehrung der Potenz: er sagt, auf welche Potenz die Basis erhoben werden muss, um die Zahl zu ergeben.",
+          "Logarithmen komprimieren riesige Bereiche in handhabbare Zahlen, weshalb sie bei pH, Dezibel und Erdbebenmagnitude auftreten."
+        ],
+        "faq": [
+          {
+            "q": "Was unterscheidet ln und log?",
+            "a": "ln nutzt Basis e (etwa 2,718); log meint in vielen Kontexten Basis 10, manche Felder nutzen log fur Basis e."
+          },
+          {
+            "q": "Kann ich den Logarithmus von null oder Negativ nehmen?",
+            "a": "Fur null oder Negative gibt es keinen reellen Logarithmus, da er eine unmogliche Potenz erforderte."
+          },
+          {
+            "q": "Wie wechsle ich die Basis?",
+            "a": "Nutze die Basiswechselregel: log_b(x) = log_k(x) / log_k(b) fur beliebige Basis k."
+          }
+        ]
+      }
     },
     "quadratic-calculator": {
       "name": "Quadratische-Formel",
       "description": "Loesen Sie quadratische Gleichungen und finden Sie Nullstellen",
-      "metaDescription": "Loesen Sie quadratische Gleichungen mit schrittweisen Loesungen"
+      "metaDescription": "Loesen Sie quadratische Gleichungen mit schrittweisen Loesungen",
+      "guide": {
+        "steps": [
+          "Gib die Koeffizienten a, b und c deiner quadratischen Gleichung a x^2 + b x + c = 0 ein.",
+          "Achte darauf, dass a nicht null ist, sonst ist die Gleichung linear, nicht quadratisch.",
+          "Lies die Nullstellen, die Diskriminante und ob die Losungen reell oder komplex sind."
+        ],
+        "explanationTitle": "Quadratische Gleichungen losen",
+        "formula": "x = (-b ± √(b² - 4ac)) / (2a); Diskriminante D = b² - 4ac",
+        "explanation": [
+          "Die quadratische Formel findet die beiden x-Werte, an denen die Parabel die Achse kreuzt; die Diskriminante sagt, wie viele reelle Losungen es gibt.",
+          "Ist die Diskriminante positiv, gibt es zwei reelle Nullstellen, bei null eine doppelte, bei negativ zwei komplex konjugierte."
+        ],
+        "faq": [
+          {
+            "q": "Was sagt die Diskriminante?",
+            "a": "Ihr Vorzeichen zeigt die Art der Wurzeln: positiv fur zwei reelle, null fur eine, negativ fur zwei komplexe."
+          },
+          {
+            "q": "Warum gibt es zwei Losungen?",
+            "a": "Ein quadratischer Term liefert meist zwei symmetrische Losungen; das Plus-Minus in der Formel erfasst beide."
+          },
+          {
+            "q": "Was, wenn a null ist?",
+            "a": "Dann ist es eine lineare Gleichung mit einer Losung; nutze stattdessen einen Linearsolver."
+          }
+        ]
+      }
     },
     "factor-calculator": {
       "name": "Faktor",
@@ -3881,7 +4178,34 @@
     "triangle-calculator": {
       "name": "Dreiecks",
       "description": "Berechnen Sie Dreieckseigenschaften aus Seiten und Winkeln",
-      "metaDescription": "Berechnen Sie Flaeche, Umfang, Winkel und Seiten eines Dreiecks"
+      "metaDescription": "Berechnen Sie Flaeche, Umfang, Winkel und Seiten eines Dreiecks",
+      "guide": {
+        "steps": [
+          "Gib drei bekannte Werte eines Dreiecks ein, etwa zwei Seiten und einen Winkel.",
+          "Wahle das Losungsverfahren, falls mehrere moglich sind.",
+          "Lies die fehlenden Seiten, Winkel, Flache und den Umfang."
+        ],
+        "explanationTitle": "Dreiecke losen",
+        "formula": "Sinusatz: a/sin A = b/sin B; Kosinussatz: c² = a² + b² - 2ab cos C",
+        "explanation": [
+          "Bei genugend bekannten Teilen findet die Trigonometrie den Rest; welches Gesetz genutzt wird, hangt davon ab, ob Seiten oder Winkel bekannt sind.",
+          "Die Innenwinkelsumme betragt immer 180 Grad, eine wichtige Kontrolle, ob das geloste Dreieck gultig ist."
+        ],
+        "faq": [
+          {
+            "q": "Welches Gesetz soll ich nutzen?",
+            "a": "Nutze den Sinusatz bei einer Seite und ihrem Gegenwinkel; den Kosinussatz bei zwei Seiten und eingeschlossenem Winkel."
+          },
+          {
+            "q": "Warum ergeben meine Winkel nicht 180?",
+            "a": "Rundung kann kleine Abweichungen geben; behalte volle Prazision und runde erst am Ende."
+          },
+          {
+            "q": "Lasst sich jede Eingabe losen?",
+            "a": "Nein. Manche Kombinationen, etwa nur drei Winkel, lassen die Grobe offen."
+          }
+        ]
+      }
     },
     "right-triangle": {
       "name": "Rechtwinkliges-Dreieck",
@@ -3923,7 +4247,34 @@
     "circle-calculator": {
       "name": "Kreis",
       "description": "Berechnen Sie Kreiseigenschaften aus Radius, Durchmesser oder Umfang",
-      "metaDescription": "Berechnen Sie Flaeche, Umfang, Durchmesser und Radius eines Kreises"
+      "metaDescription": "Berechnen Sie Flaeche, Umfang, Durchmesser und Radius eines Kreises",
+      "guide": {
+        "steps": [
+          "Gib Radius, Durchmesser oder Umfang des Kreises ein.",
+          "Lass das Werkzeug die ubrigen Masse aus dem einen Wert ableiten.",
+          "Lies Durchmesser, Flache und Umfang gemeinsam."
+        ],
+        "explanationTitle": "Kreismasse",
+        "formula": "C = 2πr, A = πr², d = 2r",
+        "explanation": [
+          "Ein Kreis wird vollstandig durch seinen Radius beschrieben, daher lasst sich aus einem Mass mit pi der Rest berechnen.",
+          "Die Flache wachst mit dem Quadrat des Radius, weshalb Verdoppeln des Radius die Flache vervierfacht."
+        ],
+        "faq": [
+          {
+            "q": "Welcher Pi-Wert wird genutzt?",
+            "a": "Berechnungen nutzen pi auf viele Stellen genau; angezeigt wird nur gerundet."
+          },
+          {
+            "q": "Wie bekomme ich die Flache aus dem Durchmesser?",
+            "a": "Halbiere zuerst den Durchmesser zum Radius, dann A = πr²."
+          },
+          {
+            "q": "Warum ist der Umfang proportional zum Radius?",
+            "a": "Das Verhaltnis von Umfang zu Durchmesser ist immer pi, eine Konstante fur jeden Kreis."
+          }
+        ]
+      }
     },
     "area-calculator": {
       "name": "Flächenrechner",
@@ -4380,12 +4731,66 @@
     "distance-calculator": {
       "name": "Entfernungs",
       "description": "Berechnen Sie Entfernungen zwischen Punkten in 2D, 3D und auf der Erde",
-      "metaDescription": "Berechnen Sie euklidische Entfernung, Manhattan-Entfernung und geographische Entfernungen"
+      "metaDescription": "Berechnen Sie euklidische Entfernung, Manhattan-Entfernung und geographische Entfernungen",
+      "guide": {
+        "steps": [
+          "Gib die Koordinaten oder zwei Ortsnamen ein, oder wahle zwei Punkte auf der Karte, falls moglich.",
+          "Wahle das Modell: Luftlinie (Haversine) oder Routenentfernung.",
+          "Lies die Entfernung in deiner bevorzugten Einheit und die ungefahre Reisezeit."
+        ],
+        "explanationTitle": "Luftlinie versus Reiseentfernung",
+        "formula": "Haversine: d = 2R arcsin(√(sin²(Δφ/2) + cosφ₁cosφ₂ sin²(Δλ/2)))",
+        "explanation": [
+          "Die Haversine-Formel liefert die Grosskreisentfernung zwischen zwei Punkten auf einer Kugel uber deren Breiten und Langen.",
+          "Die reale Reiseentfernung ist langer, weil Straßen und Pfade krumm sind; fur Fahrt- oder Gehschatzungen Routing nutzen."
+        ],
+        "faq": [
+          {
+            "q": "Warum weicht die Kartenentfernung von meinem GPS ab?",
+            "a": "GPS folgt Straßen; der Luftlinienwert ist der kürzeste mogliche uber die Oberflache."
+          },
+          {
+            "q": "Welche Einheiten kann ich nutzen?",
+            "a": "Kilometer, Meilen oder Seemeilen je nach Auswahl."
+          },
+          {
+            "q": "Spielt Hohe eine Rolle?",
+            "a": "Haversine ignoriert Hugel; bei kleinen Flachen ist der Fehler vernachlassigbar, Berge addieren echte Distanz."
+          }
+        ]
+      }
     },
     "random-number": {
       "name": "Zufallszahlen-Generator",
       "description": "Generieren Sie Zufallszahlen mit verschiedenen Verteilungen",
-      "metaDescription": "Generieren Sie Zufallszahlen, wuerfeln Sie und mischen Sie Listen"
+      "metaDescription": "Generieren Sie Zufallszahlen, wuerfeln Sie und mischen Sie Listen",
+      "guide": {
+        "steps": [
+          "Lege Mindest- und Hochstwert deines Bereichs fest.",
+          "Wahle, wie viele Zahlen erzeugt werden und ob Wiederholungen erlaubt sind.",
+          "Erzeuge und kopiere das Ergebnis oder wurfle neu fur eine andere Menge."
+        ],
+        "explanationTitle": "Wie Zufall erzeugt wird",
+        "formula": "Ergebnis gleichverteilt aus [min, max] inklusive",
+        "explanation": [
+          "Jede Zahl im Bereich hat die gleiche Chance; der Generator nutzt die Systemuhr als Startwert, daher unterscheiden sich aufeinanderfolgende Wurfe.",
+          "Fur sicherheitskritische Zwecke wie Passworter oder Lotterien nutze einen kryptografisch sicheren Generator statt eines allgemeinen."
+        ],
+        "faq": [
+          {
+            "q": "Kann es doppelte Zahlen geben?",
+            "a": "Schalte Wiederholungen aus, wenn du eindeutige Werte brauchst; standardmaßig fur unabhangige Ziehungen an."
+          },
+          {
+            "q": "Ist es wirklich zufallig?",
+            "a": "Es ist pseudo-zufallig und fur Spiele und Stichproben fein, aber nicht fur Kryptografie."
+          },
+          {
+            "q": "Wie ziehe ich fair einen Gewinner?",
+            "a": "Setze den Bereich auf Teilnehmernummern und ziehe einmal; veroffentliche die Methode fur Transparenz."
+          }
+        ]
+      }
     },
     "tcp-throughput": {
       "name": "TCP-Durchsatz",

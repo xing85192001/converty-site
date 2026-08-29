@@ -663,17 +663,98 @@
     "time": {
       "name": "Tiempo",
       "description": "Sumar o restar horas, minutos y segundos",
-      "metaDescription": "Realizar cálculos de tiempo con horas, minutos y segundos."
+      "metaDescription": "Realizar cálculos de tiempo con horas, minutos y segundos.",
+      "guide": {
+        "steps": [
+          "Introduce una hora del dia en horas, minutos y segundos.",
+          "Cambia entre formato de 12 y 24 horas si hace falta.",
+          "Lee la hora normalizada y cualquier formato convertido."
+        ],
+        "explanationTitle": "Leer y convertir la hora del reloj",
+        "formula": "Hora 24h = (hora 12h mod 12) + offset de periodo; reinicia en 24:00",
+        "explanation": [
+          "La hora del reloj se repite cada 24 horas, asi que 13:00 y 1:00 pm describen el mismo momento en distinta notacion.",
+          "Segundos y minutos reinician en 60 y horas en 24, asi que el arrastre mantiene la visualizacion valida."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre 12h y 24h?",
+            "a": "La hora 24h cuenta de 0 a 23 sin am/pm; la de 12h divide el dia en am y pm."
+          },
+          {
+            "q": "Como convierto 2:30 pm a 24h?",
+            "a": "Sumale 12 a la hora para pm despues del mediodia, dando 14:30."
+          },
+          {
+            "q": "Por que el reloj reinicia en 60?",
+            "a": "Minutos y segundos usan base 60, una antigua convencion babilonica aun usada para el tiempo."
+          }
+        ]
+      }
     },
     "hours": {
       "name": "Horas",
       "description": "Calcular horas entre dos horas o fechas.",
-      "metaDescription": "Calcular el número de horas entre dos horas o fechas."
+      "metaDescription": "Calcular el número de horas entre dos horas o fechas.",
+      "guide": {
+        "steps": [
+          "Introduce una hora en horas y minutos, o un valor decimal de horas.",
+          "Elige la direccion de conversion, como horas a minutos o decimal a hh:mm.",
+          "Lee el valor equivalente en el formato que elegiste."
+        ],
+        "explanationTitle": "Convertir horas y minutos",
+        "formula": "Minutos = horas x 60; Horas decimales = horas + minutos/60",
+        "explanation": [
+          "El tiempo en base 60 significa que 1,5 horas son 1 hora 30 minutos, no 1:50; la conversion multiplica o divide por 60.",
+          "Las horas decimales son utiles para nomina y facturacion, mientras hh:mm es mas claro para horarios."
+        ],
+        "faq": [
+          {
+            "q": "Son 1,5 horas igual a 1:50?",
+            "a": "No. 1,5 horas son 1 hora 30 minutos, porque el 0,5 es la mitad de 60 minutos."
+          },
+          {
+            "q": "Como convierto 90 minutos a horas?",
+            "a": "Divide por 60 para obtener 1,5 horas, o 1 hora 30 minutos."
+          },
+          {
+            "q": "Por que usar horas decimales?",
+            "a": "Multiplicar tarifas por horas decimales es mas facil que por hh:mm, por eso las hojas de tiempo lo usan."
+          }
+        ]
+      }
     },
     "time-duration": {
       "name": "Duración de Tiempo",
       "description": "Calcula la duración entre dos fechas y horas",
-      "metaDescription": "Calculadora de duración"
+      "metaDescription": "Calculadora de duración",
+      "guide": {
+        "steps": [
+          "Introduce una hora de inicio y una de fin, con la fecha si cruzan la medianoche.",
+          "Elige el formato de salida, como horas y minutos o minutos totales.",
+          "Lee la duracion transcurrida entre los dos momentos."
+        ],
+        "explanationTitle": "Medir el tiempo transcurrido",
+        "formula": "Duracion = Hora fin - Hora inicio, cruzando limites de dia",
+        "explanation": [
+          "La duracion es la brecha entre dos lecturas de reloj; cruzar la medianoche simplemente suma un dia al fin antes de restar.",
+          "Trabajar en una sola unidad como minutos evita errores con la naturaleza base 60 de horas y minutos."
+        ],
+        "faq": [
+          {
+            "q": "Que si el fin es pasada la medianoche?",
+            "a": "Suma 24 horas (o un dia) a la hora fin antes de restar para que el resultado quede positivo."
+          },
+          {
+            "q": "Por que usar minutos totales?",
+            "a": "Los minutos son una sola unidad, asi sumar y comparar duraciones evita las reglas de arrastre de hh:mm."
+          },
+          {
+            "q": "Maneja zonas horarias?",
+            "a": "Esta herramienta simple asume que ambas horas estan en la misma zona; convierte primero si difieren."
+          }
+        ]
+      }
     },
     "time-zone": {
       "name": "Huso horario",
@@ -742,12 +823,66 @@
     "day-of-week": {
       "name": "Día de la semana",
       "description": "Encuentra en qué día de la semana cae cualquier fecha",
-      "metaDescription": "Descubra en qué día de la semana cae cualquier fecha"
+      "metaDescription": "Descubra en qué día de la semana cae cualquier fecha",
+      "guide": {
+        "steps": [
+          "Introduce cualquier fecha del calendario que te interese.",
+          "Elige el sistema calendario si se ofrece, usualmente gregoriano.",
+          "Lee en que dia de la semana cae esa fecha."
+        ],
+        "explanationTitle": "Encontrar el dia de la semana de una fecha",
+        "formula": "Basado en la congruencia de Zeller o un ancla conocida, considerando anos bisiestos",
+        "explanation": [
+          "El calculo del dia encadena desde una fecha referencia, recorriendo el ciclo de anos bisiestos de 400 anos del calendario gregoriano.",
+          "Como el patron se repite cada 400 anos, la misma fecha cae en el mismo dia de la semana a 400 anos de distancia."
+        ],
+        "faq": [
+          {
+            "q": "Funciona para cualquier ano?",
+            "a": "Para el calendario gregoriano cubre fechas modernas y la mayoria historicas de varios siglos atras."
+          },
+          {
+            "q": "Por que importan los anos bisiestos?",
+            "a": "Desplazan un dia de la semana a cada fecha tras el 29 de febrero, asi que la regla debe seguirlos."
+          },
+          {
+            "q": "Que hay del calendario juliano?",
+            "a": "Las fechas antiguas usaban el sistema juliano con otras reglas de bisiestos; eligelo si tu fecha es anterior al cambio."
+          }
+        ]
+      }
     },
     "duration-converter": {
       "name": "Convertidor de Duración",
       "description": "Convierte unidades de tiempo: segundos, minutos, horas, días, semanas, meses, años",
-      "metaDescription": "Convertidor de unidades de tiempo"
+      "metaDescription": "Convertidor de unidades de tiempo",
+      "guide": {
+        "steps": [
+          "Introduce una duracion en una unidad, como dias, horas o minutos.",
+          "Elige la unidad destino en la que quieres expresarla.",
+          "Lee la duracion convertida, que puede abarcar varias unidades."
+        ],
+        "explanationTitle": "Convertir entre unidades de tiempo",
+        "formula": "1 dia = 24 h = 1440 min = 86400 s",
+        "explanation": [
+          "La conversion de duraciones es una cadena de razones fijas: dias a horas multiplica por 24, horas a minutos por 60, y asi sucesivamente.",
+          "Los periodos largos se entienden mejor en unidades mixtas, como '3 dias 4 horas', que como una sola cifra enorme de segundos."
+        ],
+        "faq": [
+          {
+            "q": "Cuantos minutos hay en un dia?",
+            "a": "Exactamente 1440, porque 24 horas por 60 minutos igual 1440."
+          },
+          {
+            "q": "Debo usar semanas o quincenas?",
+            "a": "Las semanas (7 dias) son estandar; las quincenas (14 dias) aparecen sobre todo en algunas nomina."
+          },
+          {
+            "q": "Por que convertir?",
+            "a": "Distintos ambitos citan el tiempo de forma distinta; convertir mantiene planes, facturacion y registros coherentes."
+          }
+        ]
+      }
     },
     "rgb": {
       "name": "Convertidor RGB",
@@ -3795,12 +3930,66 @@
     "percent-error": {
       "name": "Error porcentual",
       "description": "Calcular el error porcentual entre los valores experimentales y reales.",
-      "metaDescription": "Calcular el error porcentual para experimentos y mediciones científicas."
+      "metaDescription": "Calcular el error porcentual para experimentos y mediciones científicas.",
+      "guide": {
+        "steps": [
+          "Introduce el valor medido (experimental) y el valor aceptado (real).",
+          "Elige si quieres ver tambien el error absoluto ademas del porcentaje.",
+          "Lee el error porcentual, que indica cuanto se aleja la medida de la referencia."
+        ],
+        "explanationTitle": "Que mide el error porcentual",
+        "formula": "Error porcentual = |medido - aceptado| / |aceptado| x 100%",
+        "explanation": [
+          "El error porcentual expresa el tamano de un error relativo al valor verdadero, asi que un 5 por ciento significa la misma proporcion ya midas gramos o kilometros.",
+          "Un error porcentual menor indica mayor precision. Los errores sistematicos de un instrumento defectuoso aparecen como resultados sistematicamente sesgados."
+        ],
+        "faq": [
+          {
+            "q": "Puede ser negativo el error porcentual?",
+            "a": "La formula usa valor absoluto, asi que se reporta como magnitud positiva; se omite el signo para mostrar tamano, no direccion."
+          },
+          {
+            "q": "Que error porcentual es bueno?",
+            "a": "Depende del campo; los laboratorios escolares suelen buscar menos de 5 por ciento, la ingenieria de precision espera mucho menos."
+          },
+          {
+            "q": "Error porcentual vs diferencia porcentual?",
+            "a": "El error compara una medida con un valor verdadero conocido; la diferencia compara dos medidas entre si."
+          }
+        ]
+      }
     },
     "rounding-calculator": {
       "name": "redondeo",
       "description": "Números redondos usando diferentes métodos y precisión.",
-      "metaDescription": "Redondear números a decimales, cifras significativas o precisión personalizada"
+      "metaDescription": "Redondear números a decimales, cifras significativas o precisión personalizada",
+      "guide": {
+        "steps": [
+          "Introduce el numero que quieres redondear y elige decimales objetivo o cifras significativas.",
+          "Elige una regla como redondeo medio arriba o al par si se ofrece.",
+          "Lee el resultado redondeado y las cifras que se conservaron."
+        ],
+        "explanationTitle": "Por que importan las reglas de redondeo",
+        "formula": "A n decimales: conserva n cifras tras el punto y ajusta la ultima segun la siguiente",
+        "explanation": [
+          "Redondear reduce el ruido de medidas inexactas, pero redondear repetidas veces puede desplazar resultados, asi que redondea solo al final.",
+          "Distintas reglas (medio arriba vs al par) tratan el caso exacto .5 de forma distinta, lo cual importa en estadistica y finanzas."
+        ],
+        "faq": [
+          {
+            "q": "Que es redondear al par?",
+            "a": "Cuando la parte descartada es exactamente .5, se redondea al digito par mas cercano; evita sesgo cuando hay muchos casos .5."
+          },
+          {
+            "q": "Debo redondear en cada paso?",
+            "a": "No. Manten la precision completa y redondea solo la respuesta final para evitar acumular error."
+          },
+          {
+            "q": "Que son cifras significativas?",
+            "a": "Son los digitos con sentido que lleva la precision de una medida, contando desde el primer digito no cero."
+          }
+        ]
+      }
     },
     "average-calculator": {
       "name": "Promedio",
@@ -3842,22 +4031,130 @@
     "exponent-calculator": {
       "name": "Exponente",
       "description": "Calcular potencias y expresiones exponenciales.",
-      "metaDescription": "Calcular potencias, exponentes y expresiones exponenciales."
+      "metaDescription": "Calcular potencias, exponentes y expresiones exponenciales.",
+      "guide": {
+        "steps": [
+          "Introduce la base y el exponente que quieres aplicar.",
+          "Elige si el exponente es positivo, negativo o fraccionario.",
+          "Lee el resultado; los exponentes negativos significan division por la base."
+        ],
+        "explanationTitle": "Como funcionan los exponentes",
+        "formula": "a^n = a x a x ... (n veces); a^-n = 1 / a^n; a^(1/n) = raiz n-esima",
+        "explanation": [
+          "Un exponente indica cuantas veces multiplicar la base por si misma; un exponente negativo la vuelve fraccion, y uno fraccionario es una raiz.",
+          "Los exponentes condensan multiplicaciones repetidas en una potencia compacta, por eso aparecen en crecimiento, decaimiento y notacion cientifica."
+        ],
+        "faq": [
+          {
+            "q": "Que significa un exponente negativo?",
+            "a": "Significa uno dividido por la base elevada a esa potencia, asi 2^-3 equivale a 1/8."
+          },
+          {
+            "q": "Como multiplico potencias?",
+            "a": "Conserva la base y suma exponentes: a^m x a^n = a^(m+n)."
+          },
+          {
+            "q": "Que es un exponente fraccionario?",
+            "a": "El denominador es la raiz; por ejemplo x^(1/2) es la raiz cuadrada de x."
+          }
+        ]
+      }
     },
     "root-calculator": {
       "name": "Raíz",
       "description": "Calcular raíces cuadradas, raíces cúbicas y raíces enésimas",
-      "metaDescription": "Calcula raíces cuadradas, raíces cúbicas y cualquier raíz enésima de números"
+      "metaDescription": "Calcula raíces cuadradas, raíces cúbicas y cualquier raíz enésima de números",
+      "guide": {
+        "steps": [
+          "Introduce el radicando (numero bajo la raiz) y el indice, como 2 para la raiz cuadrada.",
+          "Elige si permitir resultados complejos para entradas negativas, si se ofrece.",
+          "Lee la raiz principal y, para cuadradas, los valores positivo y negativo."
+        ],
+        "explanationTitle": "Entender las raices",
+        "formula": "raiz n-esima de x = y donde y^n = x; raiz cuadrada tiene indice 2",
+        "explanation": [
+          "Una raiz responde 'que numero, elevado a esta potencia, da el radicando'; la raiz cuadrada es el caso mas comun.",
+          "Las raices pares de numeros negativos no son reales, asi que la calculadora reporta error o devuelve un numero complejo segun el modo."
+        ],
+        "faq": [
+          {
+            "q": "Por que hay dos raices cuadradas?",
+            "a": "Tanto un numero positivo como un negativo al cuadrado dan el mismo valor; la raiz principal mostrada es la no negativa."
+          },
+          {
+            "q": "Puedo sacar raiz de un negativo?",
+            "a": "Las raices impares (cubica, etc.) de negativos son reales, pero las pares no lo son salvo que el modo complejo este activo."
+          },
+          {
+            "q": "Que es el indice?",
+            "a": "Es el numero pequeño que indica cual raiz; 2 es cuadrada, 3 cubica, y asi sucesivamente."
+          }
+        ]
+      }
     },
     "logarithm-calculator": {
       "name": "Logaritmo",
       "description": "Calcular logaritmos con cualquier base.",
-      "metaDescription": "Calcular logaritmos con base 10, registro natural o cualquier base personalizada"
+      "metaDescription": "Calcular logaritmos con base 10, registro natural o cualquier base personalizada",
+      "guide": {
+        "steps": [
+          "Introduce el numero cuyo logaritmo necesitas y elige la base, como 10, e o 2.",
+          "Elige logaritmo natural, comun o una base personalizada si esta disponible.",
+          "Lee el resultado, que es el exponente que alcanza tu numero."
+        ],
+        "explanationTitle": "Que es un logaritmo",
+        "formula": "log_b(x) = y significa b^y = x",
+        "explanation": [
+          "Un logaritmo es la inversa de la potenciacion: indica a que potencia debe elevarse la base para igualar el numero.",
+          "Los logaritmos comprimen rangos enormes en numeros manejables, por eso aparecen en pH, decibelios y magnitud de sismos."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre ln y log?",
+            "a": "ln usa base e (cerca de 2,718); log suele significar base 10 en muchos contextos, aunque algunos campos usan log para base e."
+          },
+          {
+            "q": "Puedo sacar logaritmo de cero o negativo?",
+            "a": "No existe logaritmo real para cero o negativos; requeriria una potencia imposible."
+          },
+          {
+            "q": "Como cambio la base?",
+            "a": "Usa la regla de cambio de base: log_b(x) = log_k(x) / log_k(b) para cualquier base k comoda."
+          }
+        ]
+      }
     },
     "quadratic-calculator": {
       "name": "Fórmula cuadrática",
       "description": "Resolver ecuaciones cuadráticas y encontrar raíces.",
-      "metaDescription": "Resuelve ecuaciones cuadráticas usando la fórmula cuadrática con soluciones paso a paso"
+      "metaDescription": "Resuelve ecuaciones cuadráticas usando la fórmula cuadrática con soluciones paso a paso",
+      "guide": {
+        "steps": [
+          "Introduce los coeficientes a, b y c de tu ecuacion cuadratica a x^2 + b x + c = 0.",
+          "Asegurate de que a no sea cero; si lo es, la ecuacion es lineal, no cuadratica.",
+          "Lee las raices, el discriminante y si las soluciones son reales o complejas."
+        ],
+        "explanationTitle": "Resolver cuadraticas",
+        "formula": "x = (-b ± √(b² - 4ac)) / (2a); discriminante D = b² - 4ac",
+        "explanation": [
+          "La formula cuadratica encuentra los dos valores de x donde la parabola cruza el eje; el discriminante dice cuantas soluciones reales hay.",
+          "Si el discriminante es positivo hay dos raices reales, cero da una repetida y negativo da dos raices complejas conjugadas."
+        ],
+        "faq": [
+          {
+            "q": "Que me dice el discriminante?",
+            "a": "Su signo revela la naturaleza de las raices: positivo para dos reales, cero para una, negativo para dos complejas."
+          },
+          {
+            "q": "Por que hay dos respuestas?",
+            "a": "Un termino al cuadrado suele dar dos soluciones simetricas; el mas y menos de la formula captura ambas."
+          },
+          {
+            "q": "Que pasa si a es cero?",
+            "a": "Entonces es una ecuacion lineal con una solucion; usa un solver lineal en su lugar."
+          }
+        ]
+      }
     },
     "factor-calculator": {
       "name": "factores",
@@ -3887,7 +4184,34 @@
     "triangle-calculator": {
       "name": "Triángulo",
       "description": "Calcular las propiedades de un triángulo a partir de lados y ángulos.",
-      "metaDescription": "Calcula el área, el perímetro, los ángulos y los lados de un triángulo con la ley de los cosenos"
+      "metaDescription": "Calcula el área, el perímetro, los ángulos y los lados de un triángulo con la ley de los cosenos",
+      "guide": {
+        "steps": [
+          "Introduce tres valores conocidos de un triangulo, como dos lados y un angulo.",
+          "Elige el metodo de resolucion si hay varios posibles para tus datos.",
+          "Lee los lados, angulos, area y perimetro que faltan."
+        ],
+        "explanationTitle": "Resolver triangulos",
+        "formula": "Ley de senos: a/sin A = b/sin B; Ley de cosenos: c² = a² + b² - 2ab cos C",
+        "explanation": [
+          "Con suficientes partes conocidas, la trigonometria halla el resto; que ley usar depende de si conoces lados o angulos.",
+          "La suma de angulos interiores es siempre 180 grados, una comprobacion clave de que el triangulo resuelto es valido."
+        ],
+        "faq": [
+          {
+            "q": "Cual ley debo usar?",
+            "a": "Usa la ley de senos cuando tienes un lado y su angulo opuesto; la de cosenos para dos lados y el angulo incluido."
+          },
+          {
+            "q": "Por que mis angulos no suman 180?",
+            "a": "El redondeo puede causar pequeño desvio; conserva precision completa y redondea solo al final."
+          },
+          {
+            "q": "Se puede resolver cualquier entrada?",
+            "a": "No. Algunas combinaciones, como solo tres angulos, dejan el tamano indeterminado."
+          }
+        ]
+      }
     },
     "right-triangle": {
       "name": "Triángulo Rectángulo",
@@ -3929,7 +4253,34 @@
     "circle-calculator": {
       "name": "Círculo",
       "description": "Calcular propiedades de círculos a partir de radio, diámetro o circunferencia.",
-      "metaDescription": "Calcular el área, circunferencia, diámetro y radio del círculo."
+      "metaDescription": "Calcular el área, circunferencia, diámetro y radio del círculo.",
+      "guide": {
+        "steps": [
+          "Introduce el radio, diametro o circunferencia del circulo.",
+          "Deja que la herramienta deduzca las demas medidas a partir de la que diste.",
+          "Lee el diametro, el area y la circunferencia juntos."
+        ],
+        "explanationTitle": "Medidas del circulo",
+        "formula": "C = 2πr, A = πr², d = 2r",
+        "explanation": [
+          "Un circulo queda descrito por su radio, asi que cualquier medida permite calcular el resto usando pi.",
+          "El area crece con el cuadrado del radio, por eso duplicar el radio cuadruplica el area."
+        ],
+        "faq": [
+          {
+            "q": "Que valor de pi se usa?",
+            "a": "Los calculos usan pi con muchos digitos para precision; solo ves el redondeo en pantalla."
+          },
+          {
+            "q": "Como obtengo el area desde el diametro?",
+            "a": "Primero divide el diametro a la mitad para el radio, luego aplica A = πr²."
+          },
+          {
+            "q": "Por que la circunferencia es proporcional al radio?",
+            "a": "La razon entre circunferencia y diametro es siempre pi, constante para todo circulo."
+          }
+        ]
+      }
     },
     "area-calculator": {
       "name": "Calculadora de Área",
@@ -4431,12 +4782,66 @@
     "distance-calculator": {
       "name": "Distancia",
       "description": "Calcula distancias entre puntos en 2D, 3D y en la Tierra.",
-      "metaDescription": "Calcular la distancia euclidiana, la distancia de Manhattan y las distancias geográficas"
+      "metaDescription": "Calcular la distancia euclidiana, la distancia de Manhattan y las distancias geográficas",
+      "guide": {
+        "steps": [
+          "Introduce las coordenadas o dos nombres de lugares, o elige dos puntos en el mapa si esta disponible.",
+          "Elige el modelo: distancia en linea recta (haversine) o distancia de ruta.",
+          "Lee la distancia en tus unidades preferidas y el tiempo de viaje aproximado."
+        ],
+        "explanationTitle": "Distancia en linea recta versus de viaje",
+        "formula": "Haversine: d = 2R arcsin(√(sin²(Δφ/2) + cosφ₁cosφ₂ sin²(Δλ/2)))",
+        "explanation": [
+          "La formula haversine da la distancia de gran circulo entre dos puntos sobre una esfera usando sus latitudes y longitudes.",
+          "La distancia real de viaje es mayor porque caminos y rutas se doblan; usa enrutamiento para estimaciones en auto o a pie."
+        ],
+        "faq": [
+          {
+            "q": "Por que la distancia del mapa difiere de mi GPS?",
+            "a": "El GPS sigue caminos; el valor en linea recta es el mas corto posible sobre la superficie."
+          },
+          {
+            "q": "Que unidades puedo usar?",
+            "a": "Kilometros, millas o millas nauticas segun el selector."
+          },
+          {
+            "q": "Importa la elevacion?",
+            "a": "Haversine ignora colinas; en areas pequeñas el error es despreciable, pero las montanas suman distancia real."
+          }
+        ]
+      }
     },
     "random-number": {
       "name": "Generador de números aleatorios",
       "description": "Genera números aleatorios con varias distribuciones.",
-      "metaDescription": "Genera números aleatorios, tira dados y mezcla listas"
+      "metaDescription": "Genera números aleatorios, tira dados y mezcla listas",
+      "guide": {
+        "steps": [
+          "Define el valor minimo y maximo de tu rango.",
+          "Elige cuantos numeros generar y si se permiten repeticiones.",
+          "Genera y copia el resultado, o voltea de nuevo para un nuevo conjunto."
+        ],
+        "explanationTitle": "Como se produce el azar",
+        "formula": "Resultado extraido uniformemente de [min, max] inclusive",
+        "explanation": [
+          "Cada numero del rango tiene la misma probabilidad; el generador usa el reloj del sistema como semilla, asi que tiradas sucesivas diferen.",
+          "Para usos sensibles como contrasenas o sorteos, usa un generador criptograficamente seguro en vez de uno general."
+        ],
+        "faq": [
+          {
+            "q": "Puede repetir numeros?",
+            "a": "Desactiva permitir repeticiones si necesitas valores distintos; activo por defecto para tiradas independientes."
+          },
+          {
+            "q": "Es realmente aleatorio?",
+            "a": "Es pseudoaleatorio y basta para juegos y muestras, pero no para criptografia."
+          },
+          {
+            "q": "Como elijo un ganador con justicia?",
+            "a": "Pon el rango en numeros de participantes y sortea una vez; publica el metodo para ser transparente."
+          }
+        ]
+      }
     },
     "tcp-throughput": {
       "name": "Rendimiento TCP",

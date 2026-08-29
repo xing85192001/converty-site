@@ -657,17 +657,98 @@
     "time": {
       "name": "Time",
       "description": "Add or subtract hours, minutes, and seconds",
-      "metaDescription": "Perform time calculations with hours, minutes, and seconds"
+      "metaDescription": "Perform time calculations with hours, minutes, and seconds",
+      "guide": {
+        "steps": [
+          "Enter a time of day in hours, minutes, and seconds.",
+          "Switch between 12-hour and 24-hour display if needed.",
+          "Read the normalized time and any converted format."
+        ],
+        "explanationTitle": "Reading and converting clock time",
+        "formula": "24h time = (12h hour mod 12) + period offset; wraps at 24:00",
+        "explanation": [
+          "Clock time repeats every 24 hours, so 13:00 and 1:00 pm describe the same moment in different notations.",
+          "Seconds and minutes wrap at 60 and hours at 24, so carrying overflow keeps the display valid."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between 12h and 24h?",
+            "a": "24-hour time avoids am/pm by counting 0 to 23; 12-hour time splits the day into am and pm."
+          },
+          {
+            "q": "How do I convert 2:30 pm to 24h?",
+            "a": "Add 12 to the hour for pm times after noon, giving 14:30."
+          },
+          {
+            "q": "Why does the clock wrap at 60?",
+            "a": "Minutes and seconds use base 60, an ancient Babylonian convention still used for time."
+          }
+        ]
+      }
     },
     "hours": {
       "name": "Hours",
       "description": "Calculate hours between two times or dates",
-      "metaDescription": "Calculate the number of hours between two times or dates"
+      "metaDescription": "Calculate the number of hours between two times or dates",
+      "guide": {
+        "steps": [
+          "Enter a time in hours and minutes, or a decimal hours value.",
+          "Choose the conversion direction, such as hours to minutes or decimal to hh:mm.",
+          "Read the equivalent value in your chosen format."
+        ],
+        "explanationTitle": "Converting hours and minutes",
+        "formula": "Minutes = hours x 60; Decimal hours = hours + minutes/60",
+        "explanation": [
+          "Time in base 60 means 1.5 hours is 1 hour 30 minutes, not 1 hour 50 minutes; conversion multiplies or divides by 60.",
+          "Decimal hours are handy for payroll and billing, while hh:mm is clearer for schedules."
+        ],
+        "faq": [
+          {
+            "q": "Is 1.5 hours equal to 1:50?",
+            "a": "No. 1.5 hours is 1 hour 30 minutes, because the 0.5 is half of 60 minutes."
+          },
+          {
+            "q": "How do I convert 90 minutes to hours?",
+            "a": "Divide by 60 to get 1.5 hours, or 1 hour 30 minutes."
+          },
+          {
+            "q": "Why use decimal hours at all?",
+            "a": "Multiplying rates by decimal hours is easier than by hh:mm, which is why timesheets use it."
+          }
+        ]
+      }
     },
     "time-duration": {
       "name": "Time Duration",
       "description": "Calculate duration between two dates and times",
-      "metaDescription": "Calculate the exact duration between two dates and times"
+      "metaDescription": "Calculate the exact duration between two dates and times",
+      "guide": {
+        "steps": [
+          "Enter a start time and an end time, with the date if they cross midnight.",
+          "Choose the output format, such as hours and minutes or total minutes.",
+          "Read the elapsed duration between the two moments."
+        ],
+        "explanationTitle": "Measuring elapsed time",
+        "formula": "Duration = End time - Start time, across day boundaries",
+        "explanation": [
+          "Duration is the gap between two clock readings; crossing midnight simply adds a day to the end before subtracting.",
+          "Working in a single unit like minutes avoids mistakes with the base-60 nature of hours and minutes."
+        ],
+        "faq": [
+          {
+            "q": "What if the end is past midnight?",
+            "a": "Add 24 hours to the end time (or one day) before subtracting so the result stays positive."
+          },
+          {
+            "q": "Why use total minutes?",
+            "a": "Minutes are a single unit, so adding and comparing durations avoids the carry rules of hh:mm."
+          },
+          {
+            "q": "Does it handle time zones?",
+            "a": "This simple tool assumes both times are in the same zone; convert first if they differ."
+          }
+        ]
+      }
     },
     "time-zone": {
       "name": "Time Zone",
@@ -736,12 +817,66 @@
     "day-of-week": {
       "name": "Day of the Week",
       "description": "Find what day of the week any date falls on",
-      "metaDescription": "Find out what day of the week any date falls on"
+      "metaDescription": "Find out what day of the week any date falls on",
+      "guide": {
+        "steps": [
+          "Enter any calendar date you are curious about.",
+          "Pick the calendar system if a choice is offered, usually Gregorian.",
+          "Read which weekday that date falls on."
+        ],
+        "explanationTitle": "Finding the weekday of a date",
+        "formula": "Based on Zeller's congruence or a known anchor, accounting for leap years",
+        "explanation": [
+          "Weekday calculation chains from a reference date, stepping through the known 400-year leap-year cycle of the Gregorian calendar.",
+          "Because the pattern repeats every 400 years, the same date lands on the same weekday in years 400 years apart."
+        ],
+        "faq": [
+          {
+            "q": "Does it work for any year?",
+            "a": "For the Gregorian calendar it covers modern and most historical dates back several centuries."
+          },
+          {
+            "q": "Why do leap years matter?",
+            "a": "They shift every date after February 29 by one weekday, so the rule must track them."
+          },
+          {
+            "q": "What about the Julian calendar?",
+            "a": "Older dates used the Julian system with different leap rules; pick it if your date predates the switch."
+          }
+        ]
+      }
     },
     "duration-converter": {
       "name": "Duration Converter",
       "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
-      "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output"
+      "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output",
+      "guide": {
+        "steps": [
+          "Enter a duration in one unit, such as days, hours, or minutes.",
+          "Choose the target unit you want it expressed in.",
+          "Read the converted duration, which may span several units."
+        ],
+        "explanationTitle": "Converting between time units",
+        "formula": "1 day = 24 h = 1440 min = 86400 s",
+        "explanation": [
+          "Duration conversion is a chain of fixed ratios: days to hours multiplies by 24, hours to minutes by 60, and so on.",
+          "Long spans are easier to grasp in mixed units, like '3 days 4 hours', than as a single huge seconds count."
+        ],
+        "faq": [
+          {
+            "q": "How many minutes in a day?",
+            "a": "Exactly 1440, because 24 hours times 60 minutes equals 1440."
+          },
+          {
+            "q": "Should I use weeks or fortnights?",
+            "a": "Weeks (7 days) are standard; fortnights (14 days) appear mainly in some payroll contexts."
+          },
+          {
+            "q": "Why convert at all?",
+            "a": "Different domains quote time differently; converting keeps schedules, billing, and logs consistent."
+          }
+        ]
+      }
     },
     "rgb": {
       "name": "RGB Converter",
@@ -3789,12 +3924,66 @@
     "percent-error": {
       "name": "Percent Error",
       "description": "Calculate percent error between experimental and actual values",
-      "metaDescription": "Calculate percent error for scientific experiments and measurements"
+      "metaDescription": "Calculate percent error for scientific experiments and measurements",
+      "guide": {
+        "steps": [
+          "Enter the measured (experimental) value and the accepted (true) value.",
+          "Choose whether to see the absolute error as well as the percentage.",
+          "Read the percent error, which tells you how far the measurement is from the reference."
+        ],
+        "explanationTitle": "What percent error measures",
+        "formula": "Percent error = |measured - accepted| / |accepted| x 100%",
+        "explanation": [
+          "Percent error expresses the size of a mistake relative to the true value, so a 5 percent error means the same proportion whether you measured grams or kilometres.",
+          "A smaller percent error means higher accuracy. Systematic errors from a faulty instrument show up as consistently biased results."
+        ],
+        "faq": [
+          {
+            "q": "Can percent error be negative?",
+            "a": "The formula uses absolute value, so it is reported as a positive magnitude; the sign is dropped to show size, not direction."
+          },
+          {
+            "q": "What is a good percent error?",
+            "a": "It depends on the field; school labs often target under 5 percent, while precision engineering expects far less."
+          },
+          {
+            "q": "Percent error vs percent difference?",
+            "a": "Error compares a measurement to a known true value; difference compares two measurements to each other."
+          }
+        ]
+      }
     },
     "rounding-calculator": {
       "name": "Rounding",
       "description": "Round numbers using different methods and precision",
-      "metaDescription": "Round numbers to decimal places, significant figures, or custom precision"
+      "metaDescription": "Round numbers to decimal places, significant figures, or custom precision",
+      "guide": {
+        "steps": [
+          "Enter the number you want to round and choose the target decimal places or significant figures.",
+          "Pick a rounding rule such as round half up or round to even if offered.",
+          "Read the rounded result and the digits that were kept."
+        ],
+        "explanationTitle": "Why rounding rules matter",
+        "formula": "Round to n decimals: keep n digits after the point, adjust the last kept digit by the next",
+        "explanation": [
+          "Rounding reduces noise from measurements that are not exact, but repeated rounding can drift results, so round only at the final step.",
+          "Different rules (half up versus round to even) handle the exact .5 case differently, which matters in statistics and finance."
+        ],
+        "faq": [
+          {
+            "q": "What is round half to even?",
+            "a": "When the dropped part is exactly .5, round to the nearest even digit; this avoids bias when many .5 cases occur."
+          },
+          {
+            "q": "Should I round during each step?",
+            "a": "No. Keep full precision while calculating and round only the final answer to avoid accumulating error."
+          },
+          {
+            "q": "What are significant figures?",
+            "a": "They are the meaningful digits carried by a measurement's precision, counting from the first non-zero digit."
+          }
+        ]
+      }
     },
     "average-calculator": {
       "name": "Average",
@@ -3836,22 +4025,130 @@
     "exponent-calculator": {
       "name": "Exponent",
       "description": "Calculate powers and exponential expressions",
-      "metaDescription": "Calculate powers, exponents, and exponential expressions"
+      "metaDescription": "Calculate powers, exponents, and exponential expressions",
+      "guide": {
+        "steps": [
+          "Enter the base and the exponent you want to apply.",
+          "Choose whether the exponent is positive, negative, or fractional.",
+          "Read the result, noting that negative exponents mean division by the base."
+        ],
+        "explanationTitle": "How exponents work",
+        "formula": "a^n = a x a x ... (n times); a^-n = 1 / a^n; a^(1/n) = n-th root",
+        "explanation": [
+          "An exponent tells you how many times to multiply the base by itself; a negative exponent flips it to a fraction, and a fractional one is a root.",
+          "Exponents turn repeated multiplication into a compact power, which is why they appear in growth, decay, and scientific notation."
+        ],
+        "faq": [
+          {
+            "q": "What does a negative exponent mean?",
+            "a": "It means one divided by the base raised to that power, so 2^-3 equals 1/8."
+          },
+          {
+            "q": "How do I multiply powers?",
+            "a": "Keep the base and add exponents: a^m x a^n = a^(m+n)."
+          },
+          {
+            "q": "What is a fractional exponent?",
+            "a": "The denominator is the root; for example x^(1/2) is the square root of x."
+          }
+        ]
+      }
     },
     "root-calculator": {
       "name": "Root",
       "description": "Calculate square roots, cube roots, and nth roots",
-      "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers"
+      "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers",
+      "guide": {
+        "steps": [
+          "Enter the radicand (the number under the root) and the index, such as 2 for square root.",
+          "Choose whether to allow complex results for negative inputs if offered.",
+          "Read the principal root and, for squares, the positive and negative values."
+        ],
+        "explanationTitle": "Understanding roots",
+        "formula": "n-th root of x = y where y^n = x; square root means index 2",
+        "explanation": [
+          "A root answers the question 'which number, raised to this power, gives the radicand'; the square root is the most common case.",
+          "Even roots of negative numbers are not real, so calculators either report an error or return a complex number depending on mode."
+        ],
+        "faq": [
+          {
+            "q": "Why are there two square roots?",
+            "a": "Both a positive and a negative number square to the same value; the principal root shown is the non-negative one."
+          },
+          {
+            "q": "Can I take a root of a negative number?",
+            "a": "Odd roots (cube, etc.) of negatives are real, but even roots are not real unless complex mode is on."
+          },
+          {
+            "q": "What is the index?",
+            "a": "It is the small number that says which root; 2 is square root, 3 is cube root, and so on."
+          }
+        ]
+      }
     },
     "logarithm-calculator": {
       "name": "Logarithm",
       "description": "Calculate logarithms with any base",
-      "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base"
+      "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base",
+      "guide": {
+        "steps": [
+          "Enter the number whose logarithm you need and pick the base, such as 10, e, or 2.",
+          "Choose natural log, common log, or a custom base if available.",
+          "Read the result, which is the exponent that reaches your number."
+        ],
+        "explanationTitle": "What a logarithm is",
+        "formula": "log_b(x) = y means b^y = x",
+        "explanation": [
+          "A logarithm is the inverse of exponentiation: it tells you what power the base must be raised to in order to equal the number.",
+          "Logarithms compress huge ranges into manageable numbers, which is why they appear in pH, decibels, and earthquake magnitude."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between ln and log?",
+            "a": "ln uses base e (about 2.718); log usually means base 10 in many contexts, though some fields use log for base e."
+          },
+          {
+            "q": "Can I take the log of zero or a negative?",
+            "a": "No real logarithm exists for zero or negatives; the result would require an impossible power."
+          },
+          {
+            "q": "How do I change the base?",
+            "a": "Use the change-of-base rule: log_b(x) = log_k(x) / log_k(b) for any convenient base k."
+          }
+        ]
+      }
     },
     "quadratic-calculator": {
       "name": "Quadratic Formula",
       "description": "Solve quadratic equations and find roots",
-      "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions"
+      "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions",
+      "guide": {
+        "steps": [
+          "Enter the coefficients a, b, and c from your quadratic equation a x^2 + b x + c = 0.",
+          "Make sure a is not zero, otherwise the equation is linear, not quadratic.",
+          "Read the roots, the discriminant, and whether the solutions are real or complex."
+        ],
+        "explanationTitle": "Solving quadratics",
+        "formula": "x = (-b ± √(b² - 4ac)) / (2a); discriminant D = b² - 4ac",
+        "explanation": [
+          "The quadratic formula finds the two values of x where the parabola crosses the axis; the discriminant tells you how many real solutions exist.",
+          "If the discriminant is positive there are two real roots, zero gives one repeated root, and negative gives two complex conjugate roots."
+        ],
+        "faq": [
+          {
+            "q": "What does the discriminant tell me?",
+            "a": "Its sign reveals the nature of the roots: positive for two real, zero for one, negative for two complex."
+          },
+          {
+            "q": "Why are there two answers?",
+            "a": "A squared term generally yields two symmetric solutions; the plus and minus in the formula captures both."
+          },
+          {
+            "q": "What if a is zero?",
+            "a": "Then it is a linear equation with one solution; enter it into a linear solver instead."
+          }
+        ]
+      }
     },
     "factor-calculator": {
       "name": "Factor",
@@ -3881,7 +4178,34 @@
     "triangle-calculator": {
       "name": "Triangle",
       "description": "Calculate triangle properties from sides and angles",
-      "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines"
+      "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines",
+      "guide": {
+        "steps": [
+          "Enter any three known values of a triangle, such as two sides and an angle.",
+          "Choose the solving method if several are possible for your inputs.",
+          "Read the missing sides, angles, area, and perimeter."
+        ],
+        "explanationTitle": "Solving triangles",
+        "formula": "Law of sines: a/sin A = b/sin B; Law of cosines: c² = a² + b² - 2ab cos C",
+        "explanation": [
+          "Given enough known parts, trigonometry finds the rest; which law to use depends on whether you know sides or angles.",
+          "The sum of interior angles is always 180 degrees, a key check that your solved triangle is valid."
+        ],
+        "faq": [
+          {
+            "q": "Which law should I use?",
+            "a": "Use the sine law when you have a side and its opposite angle; use the cosine law for two sides and the included angle."
+          },
+          {
+            "q": "Why do my angles not add to 180?",
+            "a": "Rounding can cause small drift; keep full precision while solving and round only at the end."
+          },
+          {
+            "q": "Can every set of inputs be solved?",
+            "a": "No. Some combinations, like three angles alone, leave the size undetermined."
+          }
+        ]
+      }
     },
     "right-triangle": {
       "name": "Right Triangle",
@@ -3923,7 +4247,34 @@
     "circle-calculator": {
       "name": "Circle",
       "description": "Calculate circle properties from radius, diameter, or circumference",
-      "metaDescription": "Calculate circle area, circumference, diameter, and radius"
+      "metaDescription": "Calculate circle area, circumference, diameter, and radius",
+      "guide": {
+        "steps": [
+          "Enter the radius, diameter, or circumference of the circle.",
+          "Let the tool derive the other measures from the one you provided.",
+          "Read the diameter, area, and circumference together."
+        ],
+        "explanationTitle": "Circle measurements",
+        "formula": "C = 2πr, A = πr², d = 2r",
+        "explanation": [
+          "A circle is fully described by its radius, so any one measure lets you compute the rest using pi.",
+          "Area grows with the square of the radius, which is why doubling the radius quadruples the area."
+        ],
+        "faq": [
+          {
+            "q": "What value of pi is used?",
+            "a": "Calculations use pi to many digits for accuracy; you only see it rounded in the display."
+          },
+          {
+            "q": "How do I get area from diameter?",
+            "a": "First halve the diameter to get the radius, then apply A = πr²."
+          },
+          {
+            "q": "Why is circumference proportional to radius?",
+            "a": "The ratio of circumference to diameter is always pi, a constant for every circle."
+          }
+        ]
+      }
     },
     "area-calculator": {
       "name": "Area",
@@ -4425,12 +4776,66 @@
     "distance-calculator": {
       "name": "Distance",
       "description": "Calculate distances between points in 2D, 3D, and on Earth",
-      "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances"
+      "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances",
+      "guide": {
+        "steps": [
+          "Enter the coordinates or two place names, or pick two points on the map if available.",
+          "Choose the model: straight-line (haversine) or route distance.",
+          "Read the distance in your preferred units and the approximate travel time."
+        ],
+        "explanationTitle": "Straight-line versus travel distance",
+        "formula": "Haversine: d = 2R arcsin(√(sin²(Δφ/2) + cosφ₁cosφ₂ sin²(Δλ/2)))",
+        "explanation": [
+          "The haversine formula gives the great-circle distance between two points on a sphere using their latitudes and longitudes.",
+          "Real travel distance is longer because roads and paths bend; use routing for driving or walking estimates."
+        ],
+        "faq": [
+          {
+            "q": "Why does the map distance differ from my GPS?",
+            "a": "GPS routes follow roads; the straight-line value is the shortest possible across the surface."
+          },
+          {
+            "q": "What units can I use?",
+            "a": "Kilometres, miles, or nautical miles depending on the selector."
+          },
+          {
+            "q": "Does elevation matter?",
+            "a": "Haversine ignores hills; for small areas the error is negligible but mountains add real distance."
+          }
+        ]
+      }
     },
     "random-number": {
       "name": "Random Number Generator",
       "description": "Generate random numbers with various distributions",
-      "metaDescription": "Generate random numbers, roll dice, and shuffle lists"
+      "metaDescription": "Generate random numbers, roll dice, and shuffle lists",
+      "guide": {
+        "steps": [
+          "Set the minimum and maximum values for your range.",
+          "Choose how many numbers to generate and whether repeats are allowed.",
+          "Generate and copy the result, or re-roll for a new set."
+        ],
+        "explanationTitle": "How randomness is produced",
+        "formula": "Result drawn uniformly from [min, max] inclusive",
+        "explanation": [
+          "Each number in the range has an equal chance; the generator seeds from the system clock so successive rolls differ.",
+          "For security-sensitive uses such as passwords or lottery draws, use a cryptographically secure generator rather than a general one."
+        ],
+        "faq": [
+          {
+            "q": "Can it repeat numbers?",
+            "a": "Toggle allow-repeats off if you need distinct values; on by default for independent draws."
+          },
+          {
+            "q": "Is it truly random?",
+            "a": "It is pseudo-random and fine for games and samples, but not for cryptography."
+          },
+          {
+            "q": "How do I pick a winner fairly?",
+            "a": "Set the range to entrant numbers and draw once; publish the method so the process is transparent."
+          }
+        ]
+      }
     },
     "tcp-throughput": {
       "name": "TCP Throughput",
