@@ -205,6 +205,42 @@ export const blogPosts: BlogPostBase[] = [
 		category: "health",
 		readingMinutes: 4,
 	},
+	{
+		slug: "compound-interest-wealth-building",
+		date: "2026-08-29",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "currency-exchange-how-it-works",
+		date: "2026-08-29",
+		category: "finance",
+		readingMinutes: 4,
+	},
+	{
+		slug: "mortgage-amortization-explained",
+		date: "2026-08-29",
+		category: "finance",
+		readingMinutes: 6,
+	},
+	{
+		slug: "roi-evaluating-investments",
+		date: "2026-08-29",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "calorie-deficit-weight-loss",
+		date: "2026-08-29",
+		category: "health",
+		readingMinutes: 5,
+	},
+	{
+		slug: "heart-rate-training-zones",
+		date: "2026-08-29",
+		category: "health",
+		readingMinutes: 4,
+	},
 ];
 
 export function getPostBySlug(slug: string): BlogPostBase | undefined {

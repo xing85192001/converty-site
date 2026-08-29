@@ -30,7 +30,8 @@
         "about": "Über uns",
         "contact": "Kontakt",
         "terms": "Nutzungsbedingungen",
-        "blog": "Blog"
+        "blog": "Blog",
+        "sitemap": "Sitemap"
       }
     },
     "navigation": {
@@ -92,7 +93,9 @@
     "copySuccess": "In die Zwischenablage kopiert",
     "copyError": "Kopieren in die Zwischenablage fehlgeschlagen",
     "advertisement": "Werbung",
-    "toolsCount": "Werkzeuge"
+    "toolsCount": "Werkzeuge",
+    "sitemapTitle": "Sitemap",
+    "sitemapIntro": "Durchsuche jedes baikecalc-Werkzeug, jede Kategorie und jeden Blogbeitrag. Nach Kategorie indexiert für schnellen Zugriff."
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Bild- & Videobearbeitung",
@@ -589,7 +592,34 @@
     "age": {
       "name": "Alters",
       "description": "Berechnen Sie das genaue Alter ab Geburtsdatum in Jahren, Monaten und Tagen",
-      "metaDescription": "Berechnen Sie Ihr genaues Alter in Jahren, Monaten, Tagen, Stunden und Minuten"
+      "metaDescription": "Berechnen Sie Ihr genaues Alter in Jahren, Monaten, Tagen, Stunden und Minuten",
+      "guide": {
+        "steps": [
+          "Gib das Geburtsdatum (J/M/T) ein; mit Uhrzeit genauer.",
+          "Gib das heutige Datum ein (Standard: heute).",
+          "Lies das genaue Alter in Jahren, Monaten, Tagen und总 Tagen."
+        ],
+        "explanationTitle": "Wie berechnet man das Alter genau?",
+        "formula": "Alter = heutiges Datum − Geburtsdatum (kalendergerecht)",
+        "explanation": [
+          "Das genaue Alter ist keine einfache Jahresdifferenz; man muss Monate und Tage übertragen. Ist der heutige Tag vor dem Geburtstag, wird vom Monat geborgt und in Tage umgerechnet.",
+          "总 Tage nutzt man für Jubiläen, Versicherungen oder das gesetzliche Alter. Beachte Zeitzonen und Schaltjahre: Am 29.2. Geborene werden im Nicht-Schaltjahr meist am 28.2. oder 1.3. gezählt."
+        ],
+        "faq": [
+          {
+            "q": "Warum stimmt Jahresabzug nicht?",
+            "a": "Er ignoriert, ob der Geburtstag schon war. Schrittweise Monate/Tage geben das wahre Alter."
+          },
+          {
+            "q": "Geboren am 29.2. eines Schaltjahrs?",
+            "a": "Im Nicht-Schaltjahr meist am 28.2. oder 1.3. je nach Brauch; das Tool folgt der üblichen Regel."
+          },
+          {
+            "q": "Kann es总 Tage zeigen?",
+            "a": "Ja, das Ergebnis enthält die总 Tage seit Geburt inkl. Schaltjahre."
+          }
+        ]
+      }
     },
     "date": {
       "name": "Datums",
@@ -614,12 +644,66 @@
     "time-zone": {
       "name": "Zeitzonen",
       "description": "Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen",
-      "metaDescription": "Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen weltweit"
+      "metaDescription": "Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen weltweit",
+      "guide": {
+        "steps": [
+          "Wähle Quell- und Zielzeitzone (Städte und UTC-Offsets).",
+          "Gib die umzurechnende Ortszeit ein.",
+          "Lies die Zielzeit und ob Sommerzeit gilt."
+        ],
+        "explanationTitle": "Wie rechnet man Zeitzonen um?",
+        "formula": "Ziel = Quelle + (Zieloffset − Quelloffset)",
+        "explanation": [
+          "Die Erde ist in 24 Zonen je eine Stunde geteilt. Man addiert die Differenz der UTC-Offsets von Ziel und Quelle zur Ausgangszeit.",
+          "Die Sommerzeit (DST) stellt Uhren im Sommer eine Stunde vor, der Offset ändert sich temporär. Grenzüberschreitende Meetings, Flüge und Remotearbeit müssen DST prüfen."
+        ],
+        "faq": [
+          {
+            "q": "Was ist ein UTC-Offset?",
+            "a": "Die Stundendifferenz zu UTC; Peking ist UTC+8, London Winter UTC+0."
+          },
+          {
+            "q": "Beeinflusst DST die Umrechnung?",
+            "a": "Ja. Regionen mit DST sind im Sommer +1 Stunde; datumsspezifisch prüfen."
+          },
+          {
+            "q": "Warum mehrere Zonen in einem Land?",
+            "a": "Große Länder (USA, Russland) spannen viele Längengrade und teilen sich natürlich auf."
+          }
+        ]
+      }
     },
     "day-counter": {
       "name": "Tageszaehler",
       "description": "Zaehlen Sie Tage zwischen Daten oder bis zu einem zukuenftigen Datum",
-      "metaDescription": "Zaehlen Sie die Tage zwischen zwei Daten oder bis zu einem bevorstehenden Ereignis"
+      "metaDescription": "Zaehlen Sie die Tage zwischen zwei Daten oder bis zu einem bevorstehenden Ereignis",
+      "guide": {
+        "steps": [
+          "Gib Start- und Enddatum ein; wähle, ob Endpunkte zählen.",
+          "Das Tool überbrückt Monate/Jahre und behandelt Schaltjahre.",
+          "Lies die Tage und rechne in Wochen oder Arbeitstage um."
+        ],
+        "explanationTitle": "Wie viele Tage zwischen zwei Daten?",
+        "formula": "Abstand = Endordinal − Startordinal",
+        "explanation": [
+          "Eine Datumsdifferenz wandelt jedes Datum in seine 'Tagesnummer ab Epoche' und zieht ab. Schaltjahre und Monatslängen sind automatisch enthalten.",
+          "Nützlich für Vertragslaufzeiten, Projektzyklen, Schwangerschaftswochen oder Countdowns. Arbeitstage brauchen Wochenenden und Feiertage abzüglich."
+        ],
+        "faq": [
+          {
+            "q": "Zählen Endpunkte?",
+            "a": "Umschaltbar 'inkl./exkl. Endpunkte'. Countdowns meist exkl., Pläne meist inkl."
+          },
+          {
+            "q": "Nur Arbeitstage zählbar?",
+            "a": "Das Tool liefert Arbeitstage; Feiertage variieren regional und müssen manuell abgezogen werden."
+          },
+          {
+            "q": "Genau über Schaltjahre?",
+            "a": "Ja. Es nutzt echte Kalenderordinalzahlen inkl. 29. Feb."
+          }
+        ]
+      }
     },
     "day-of-week": {
       "name": "Wochentag",
@@ -649,12 +733,66 @@
     "download-calculator": {
       "name": "Herunterladen",
       "description": "Berechnen Sie die Download-Zeit aus Bandbreite und Dateigroesse",
-      "metaDescription": "Berechnen Sie, wie lange ein Datei-Download dauern wird"
+      "metaDescription": "Berechnen Sie, wie lange ein Datei-Download dauern wird",
+      "guide": {
+        "steps": [
+          "Gib Dateigröße (z. B. 500 MB) und Bandbreite (z. B. 100 Mbps) ein.",
+          "Achte auf Einheiten: Bandbreite in Mbps (Megabit/s), Dateien in MB (Megabyte).",
+          "Lies die geschätzte Zeit und vergleiche Bandbreiten."
+        ],
+        "explanationTitle": "Wie schätzt man Downloadzeit?",
+        "formula": "Zeit(s) = Dateibytes × 8 ÷ Bandbreite(bps)",
+        "explanation": [
+          "Downloadzeit ist die Gesamtzahl der Bits durch die Übertragungsrate. Die Falle sind Einheiten: '100 Mbps' sind Megabit pro Sekunde, Dateien nutzen Megabyte, und 1 Byte = 8 Bit, also echte Speed ÷ 8.",
+          "Realität bremst durch Protokoll-Overhead, Server-Limits und WLAN-Verlust, meist 10–30 % langsamer. Das Tool liefert die Untergrenze zum Planen."
+        ],
+        "faq": [
+          {
+            "q": "Mbps und MB gleich?",
+            "a": "Nein. Mbps sind Megabit/s, MB Megabyte; 1 MB = 8 Mb. Tarife nutzen fast immer kleines b (Bit)."
+          },
+          {
+            "q": "Warum real langsamer?",
+            "a": "Overhead, Server-Drosselung und WLAN-Verlust addieren 10–30 %."
+          },
+          {
+            "q": "Wie schneller downloaden?",
+            "a": "Kabel nutzen, näher am Router, Spitzen meiden oder Bandbreite erhöhen; das Tool schätzt pro Bandbreite."
+          }
+        ]
+      }
     },
     "subnet-calculator": {
       "name": "Visueller Subnetz",
       "description": "Berechnen Sie IPv4- und IPv6-Subnetzdetails mit CIDR-Notation",
-      "metaDescription": "Kostenloser Online-Subnetzrechner für IPv4- und IPv6-Netzwerke. Berechnen Sie Netzwerkadresse, Broadcast, verwendbaren IP-Bereich und Host-Anzahl aus CIDR-Notation oder Subnetzmaske."
+      "metaDescription": "Kostenloser Online-Subnetzrechner für IPv4- und IPv6-Netzwerke. Berechnen Sie Netzwerkadresse, Broadcast, verwendbaren IP-Bereich und Host-Anzahl aus CIDR-Notation oder Subnetzmaske.",
+      "guide": {
+        "steps": [
+          "Gib IP und Subnetzmaske ein (oder CIDR-Präfix wie /24).",
+          "Das Tool ermittelt Netz-, Broadcast-Adresse und nutzbaren Bereich.",
+          "Lies Gesamt-, nutzbare Hosts und die Binäransicht."
+        ],
+        "explanationTitle": "Was sind Subnetze und CIDR?",
+        "formula": "Hosts = 2^(32 − Präfix) − 2 (ohne Netz- und Broadcast)",
+        "explanation": [
+          "Eine IPv4-Adresse hat 32 Bit; die Maske trennt Netz- und Host-Bits. CIDR schreibt die Netzlänge als '/Zahl', z. B. bedeutet /24: 24 Netzbits, 8 Hostbits.",
+          "Jedes Subnetz verliert Netz- und Broadcast-Adresse, also nutzbare Hosts = 2^Hostbits − 2. Gute Unterteilung mindert Broadcast-Stürme."
+        ],
+        "faq": [
+          {
+            "q": "Wie viele IPs in /24 nutzbar?",
+            "a": "8 Hostbits → 256 Adressen; abzüglich Netz/Broadcast bleiben 254."
+          },
+          {
+            "q": "Warum −2?",
+            "a": "Netzadresse (alle 0) und Broadcast (alle 1) sind für Hosts gesperrt."
+          },
+          {
+            "q": "CIDR vs Maske?",
+            "a": "Das CIDR-Präfix ist die Zahl der aufeinanderfolgenden 1en. /24 = 255.255.255.0."
+          }
+        ]
+      }
     },
     "cidr-range": {
       "name": "CIDR-Bereich",
@@ -679,7 +817,34 @@
     "aspect-ratio": {
       "name": "Seitenverhaeltnis",
       "description": "Berechnen Sie Seitenverhaeltnisse aus Breite und Hoehe",
-      "metaDescription": "Berechnen und konvertieren Sie Seitenverhaeltnisse fuer Bilder und Video"
+      "metaDescription": "Berechnen und konvertieren Sie Seitenverhaeltnisse fuer Bilder und Video",
+      "guide": {
+        "steps": [
+          "Gib Breite und Höhe ein oder wähle ein Preset wie 16:9.",
+          "Lege eine Ausgabeseite fest (Breite oder Höhe); die andere ergibt sich aus dem Verhältnis.",
+          "Lies die umgerechneten Maße und vergleiche Beschnitte."
+        ],
+        "explanationTitle": "Was ist das Seitenverhältnis?",
+        "formula": "Breite : Höhe = Ausgabebreite : Ausgabehöhe",
+        "explanation": [
+          "Das Seitenverhältnis ist das Verhältnis von Breite zu Höhe eines Bildes, geschrieben als 'Breite:Höhe'. Beim Skalieren das Verhältnis beibehalten verhindert Verzerrung: Stimmt das Verhältnis, wird nichts gestaucht.",
+          "Üblich sind 16:9 (Breitbild), 4:3 (älteres TV) und 1:1 (quadratische Social-Bilder). Richtiges Verhältnis hält Layouts in Postern, Video und mobil konsistent."
+        ],
+        "faq": [
+          {
+            "q": "Warum verzerrt Strecken das Bild?",
+            "a": "Weil das neue Verhältnis vom Original abweicht. 'Verhältnis beibehalten' berechnet die andere Seite automatisch."
+          },
+          {
+            "q": "Unterschied 16:9 und 4:3?",
+            "a": "16:9 ist breiter (modernes TV/Video); 4:3 näher quadratisch (alter Standard)."
+          },
+          {
+            "q": "Wie mache ich ein Foto 1:1?",
+            "a": "Beschneide die längere Seite auf die kürzere, oder gib Original und Ziel 1:1 ein."
+          }
+        ]
+      }
     },
     "aspect-fit": {
       "name": "Aspect-Fit",
@@ -699,12 +864,66 @@
     "dpi": {
       "name": "DPI",
       "description": "Berechnen Sie Megapixel aus Druckgroesse und DPI",
-      "metaDescription": "Berechnen Sie DPI und Aufloesung fuer den Druck"
+      "metaDescription": "Berechnen Sie DPI und Aufloesung fuer den Druck",
+      "guide": {
+        "steps": [
+          "Wähle die Richtung: Größe → DPI oder DPI → Druckgröße.",
+          "Gib Pixelmaße und physikalische Größe ein (oder DPI und Zielpixel).",
+          "Lies DPI / PPI und erhalte Tipps zur Druckschärfe."
+        ],
+        "explanationTitle": "Was sind DPI und PPI?",
+        "formula": "DPI = Pixel ÷ physikalische Größe (Zoll)",
+        "explanation": [
+          "DPI (Punkte pro Zoll) für Druck, PPI (Pixel pro Zoll) für Bildschirme; oft vermischt. Sie sagen, wie viele Punkte/Pixel pro Zoll passen — höher bedeutet feiner.",
+          "Fotos druckt man meist mit 300 DPI oder mehr für scharfe Nahsicht; Webbilder mit 72–96 PPI reichen. Kleine Pixel groß drucken wird unscharf."
+        ],
+        "faq": [
+          {
+            "q": "Sind DPI und PPI gleich?",
+            "a": "Ähnlich, aber nicht identisch: DPI ist Druckerpunkt-, PPI Bildschirmpixeldichte; im Alltag Synonyme."
+          },
+          {
+            "q": "Wie viel DPI für Fotodruck?",
+            "a": "Meist 300 DPI aufwärts, 600 für hohe Qualität; unter 150 DPI wirkt körnig."
+          },
+          {
+            "q": "Können kleine Pixel groß drucken?",
+            "a": "Knapp, und je größer desto unschärfer. Prüfe zuerst den DPI bei Zielgröße."
+          }
+        ]
+      }
     },
     "image-filesize": {
       "name": "Bilddateigroessen",
       "description": "Schaetzen Sie die Bilddateigroesse fuer JPEG-, PNG-, RAW-Formate",
-      "metaDescription": "Schaetzen Sie Bilddateigroessen fuer verschiedene Formate"
+      "metaDescription": "Schaetzen Sie Bilddateigroessen fuer verschiedene Formate",
+      "guide": {
+        "steps": [
+          "Wähle den Typ: Foto (JPEG), transparent (PNG) oder roh (RAW).",
+          "Gib Auflösung (Breite × Höhe) und geschätzte Qualität/Kompression ein.",
+          "Lies die geschätzte Dateigröße und vergleiche Formate."
+        ],
+        "explanationTitle": "Wie schätzt man Bilddateigröße?",
+        "formula": "Bytes ≈ Pixel gesamt × Bitrate × (1 − Kompression)",
+        "explanation": [
+          "Die Größe hängt von Auflösung, Bitrate und Kompression ab. Ein 12-Megapixel-Foto ist unkomprimiert riesig; JPEG schrumpft es verlustbehaftet auf wenige MB, PNG ist verlustfrei größer, RAW behält alle Sensordaten.",
+          "Meist gilt JPEG < PNG bei Fotos; bei flachen/Lineart-Bildern ist PNG oft kleiner, da verlustfrei passt. Größe vor Upload schätzen spart Limits und Ladezeit."
+        ],
+        "faq": [
+          {
+            "q": "Was ist kleiner, JPEG oder PNG?",
+            "a": "Bei Fotos meist JPEG viel kleiner; bei flachen/Lineart-Bildern kann PNG gewinnen, da verlustfrei passt."
+          },
+          {
+            "q": "Warum sind RAW-Dateien so groß?",
+            "a": "RAW behält unkomprimierte Sensordaten fürs Nachbearbeiten, oft ein Mehrfaches der JPEG-Größe."
+          },
+          {
+            "q": "Verdoppelt Auflösung die Größe?",
+            "a": "Unkomprimierte Daten verdoppeln sich; komprimiert etwas weniger, aber deutlich größer – bei Hi-Res aufpassen."
+          }
+        ]
+      }
     },
     "light-ev": {
       "name": "Licht-EV",
@@ -714,7 +933,34 @@
     "megapixels": {
       "name": "Megapixel",
       "description": "Berechnen Sie Megapixel aus Breite und Hoehe",
-      "metaDescription": "Berechnen Sie Megapixel aus Bildabmessungen"
+      "metaDescription": "Berechnen Sie Megapixel aus Bildabmessungen",
+      "guide": {
+        "steps": [
+          "Gib Sensobreite und -höhe in Pixeln ein oder wähle eine Spezifikation.",
+          "Das Tool summiert die Pixel und rechnet in Megapixel (MP) um.",
+          "Sieh den empfohlenen Druck bei gewähltem DPI."
+        ],
+        "explanationTitle": "Was sind Megapixel?",
+        "formula": "Megapixel = (Breite × Höhe) ÷ 1.000.000",
+        "explanation": [
+          "Ein Megapixel (MP) sind eine Million Pixel; er beschreibt die Auflösung von Kamera oder Bild. Mehr Pixel erlauben größere Vergrößerungen und mehr Detail.",
+          "Aber Pixel sind nicht der einzige Qualitätsfaktor: Linse, Sensorgröße und Verarbeitung zählen. Wenige MP reichen fürs Web; A4-Druck will 12–24 MP."
+        ],
+        "faq": [
+          {
+            "q": "Mehr Pixel = schärfer?",
+            "a": "Bis zu einer Grenze, danach bremsen Linse und Sensor; viele Pixel auf kleinem Sensor machen Rauschen."
+          },
+          {
+            "q": "Wie viele MP zum Drucken?",
+            "a": "Ein 6×4 Bild braucht etwa 4 MP; A4 will 12 MP+, Poster 24 MP+."
+          },
+          {
+            "q": "Bringen Smartphone-MP viel?",
+            "a": "Meist für Mehrfachaufnahmen und Beschnitt; directe Fotos sind optisch begrenzt, der Nutzen ist moderat."
+          }
+        ]
+      }
     },
     "megapixel-aspects": {
       "name": "Megapixel-Aspekte",
@@ -794,12 +1040,68 @@
     "rental-yield": {
       "name": "Mietrendite-Rechner",
       "description": "Berechnen Sie Brutto- und Nettomietrendite fur Schweizer Immobilieninvestitionen",
-      "metaDescription": "Kostenloser Mietrendite-Rechner fur Schweizer Immobilieninvestoren. Berechnen Sie Brutto- und Nettorenditen."
+      "metaDescription": "Kostenloser Mietrendite-Rechner fur Schweizer Immobilieninvestoren. Berechnen Sie Brutto- und Nettorenditen.",
+      "guide": {
+        "steps": [
+          "Preis (oder Anzahlung + Kredit) und Miete eingeben.",
+          "Haltungskosten: Gebühren, Steuern, Leerstand, Reparatur-Rücklage.",
+          "Brutto-/Netto-Rendite und Amortisation sehen."
+        ],
+        "explanationTitle": "Mietrendite: brutto vs netto",
+        "formula": "brutto = Jahresmiete ÷ Preis; netto = (Jahresmiete − Kosten) ÷ Kapital",
+        "explanation": [
+          "Brutto nutzt nur 'Jahresmiete ÷ Preis'—einfach, aber überschätzt, da Steuern, Leerstand, Reparatur fehlen. Netto nach allen Kosten ist die echte Rendite.",
+          "Kapital = 'was du wirklich gabst': bei Barzkauf der Preis, bei Finanzierung Anzahlung + Zinsen—sonst bläht Hebel die Rendite.",
+          "Die Herramienta zeigt Brutto/Netto und Amortisation, um 'Kaufen zur Vermietung' gegen 'Sparen' fair zu vergleichen."
+        ],
+        "faq": [
+          {
+            "q": "Wie weit auseinander?",
+            "a": "Je nach Kosten; netto oft 2–4 Punkte unter brutto. Kosten ignorieren übertreibt stark."
+          },
+          {
+            "q": "Kapital bei Kredit?",
+            "a": "Anzahlung + Zinsen als echtes Kapital; nicht den vollen Preis, sonst Hebel treibt Rendite."
+          },
+          {
+            "q": "Welche Rendite ist gut?",
+            "a": "Kein Standard—örtliches Preis-Miete-Verhältnis, risikofreier Zins, Steuern vergleichen. Tool liefert Zahlen."
+          }
+        ]
+      }
     },
     "property-valuation": {
       "name": "Immobilienbewertungsrechner",
       "description": "Schatzen Sie Schweizer Immobilienwerte mit der hedonischen Methode",
-      "metaDescription": "Kostenloser Schweizer Immobilienbewertungsrechner. Schatzen Sie Wohnungs- und Hauswerte basierend auf Lage, Grosse und Zustand."
+      "metaDescription": "Kostenloser Schweizer Immobilienbewertungsrechner. Schatzen Sie Wohnungs- und Hauswerte basierend auf Lage, Grosse und Zustand.",
+      "guide": {
+        "steps": [
+          "Vergleichspreise und Diffs (Fläche, Alter, Etage) eingeben.",
+          "Methode wählen: Vergleich (Verkäufe) oder Ertrag (Miete).",
+          "Wertband und Gewicht der Anpassungen sehen."
+        ],
+        "explanationTitle": "Immobilienbewertung: Vergleich vs Ertrag",
+        "formula": "Vergleich ≈ Einheitspreis × Fläche ± Diff; Ertrag ≈ Nettomiete ÷ Kapitalisierung",
+        "explanation": [
+          "Das Vergleichswertverfahren ist am üblichsten: ähnliche nahe Verkäufe nehmen und um Fläche, Alter, Lage anpassen.",
+          "Das Ertragswertverfahren passt zu Investments: Nettojahresmiete ÷ Kapitalisierungszins ergibt Wert. Bei Eigennutzung weniger relevant.",
+          "Die Herramienta gibt ein Band, keine Punkt-Zahl—echte Deals schwanken mit Renovierung, Dringlichkeit, Lage, also ehrlicher."
+        ],
+        "faq": [
+          {
+            "q": "Warum ein Band?",
+            "a": "Vergleichsobjekte unterscheiden sich, Stimmung/Finish/Dringlichkeit zählen. Band ist ehrlicher als Pseudogenauigkeit."
+          },
+          {
+            "q": "Welches Verfahren genau?",
+            "a": "Eigennutzung: Vergleich; Investor: Ertrag. Beide kombinieren: mit Vergleich ankern, mit Ertrag prüfen."
+          },
+          {
+            "q": "Woher Kapitalisierungszins?",
+            "a": "Aus lokalen Preis-Miete-Verhältnissen des Marktes; aus Makler- oder Transaktionsdaten ableiten."
+          }
+        ]
+      }
     },
     "sun-position": {
       "name": "Sonnenpositions",
@@ -884,7 +1186,34 @@
     "url-encoder": {
       "name": "URL-Encoder",
       "description": "Kodieren und dekodieren Sie URLs und Sonderzeichen",
-      "metaDescription": "Kodieren und dekodieren Sie URLs und URI-Komponenten"
+      "metaDescription": "Kodieren und dekodieren Sie URLs und URI-Komponenten",
+      "guide": {
+        "steps": [
+          "Füge die zu kodierende URL oder Query ein.",
+          "Wähle Prozentkodierung (URL-Encode) oder Dekodierung.",
+          "Lies das Ergebnis, bei dem unsichere Zeichen als %XX erscheinen."
+        ],
+        "explanationTitle": "Was ist URL-Kodierung?",
+        "formula": "Leerzeichen → %20; Nicht-ASCII → UTF-8-Bytes als %XX",
+        "explanation": [
+          "Eine URL darf nur wenige Zeichen sicher enthalten (Buchstaben, Ziffern, wenige Symbole). Leerzeichen, Chinesisch, & und = haben Sonderbedeutung oder lassen sich nicht übertragen und werden als % plus zwei Hexziffern maskiert.",
+          "Kodierung lässt Links korrekt parsen und übertragen, ohne Parameter abzuschneiden. Dekodieren kehrt es um. Man braucht es bei Formularen, APIs und Queries."
+        ],
+        "faq": [
+          {
+            "q": "Warum wird Leerzeichen %20?",
+            "a": "Leerzeichen ist nicht URL-sicher; Standard-Escape ist %20 (Formulare nutzen auch +)."
+          },
+          {
+            "q": "Warum Chinesisch kodieren?",
+            "a": "URLs sind ASCII; Chinesisch wird erst UTF-8-Bytes, dann je Byte %XX, beim Empfang decodiert."
+          },
+          {
+            "q": "Geht Information verloren?",
+            "a": "Nein. Es ist umkehrbar; Dekodieren stellt den Originaltext exakt her."
+          }
+        ]
+      }
     },
     "csp": {
       "name": "CSP-Generator",
@@ -909,17 +1238,101 @@
     "html-encoder": {
       "name": "HTML-Encoder",
       "description": "Kodieren und dekodieren Sie HTML-Entitaeten",
-      "metaDescription": "Kodieren und dekodieren Sie HTML-Sonderzeichen"
+      "metaDescription": "Kodieren und dekodieren Sie HTML-Sonderzeichen",
+      "guide": {
+        "steps": [
+          "HTML-Text mit < > & einfügen.",
+          "Kodieren (escapen) oder Dekodieren wählen.",
+          "Ergebnis für Code, Formularwerte, Docs kopieren."
+        ],
+        "explanationTitle": "Was ist HTML-Escaping und warum",
+        "formula": "Zuordnung: & → &amp;  < → &lt;  > → &gt;  \" → &quot;  ' → &#39;",
+        "explanation": [
+          "Escaping ersetzt syntaktische Zeichen durch Entities, damit der Browser sie nicht als Tags nimmt. < wird zu &lt;, um ein echtes Kleinerzeichen zu zeigen.",
+          "Beim Zurückgeben von Nutzereingaben verhindert korrektes Escaping XSS—eine Web-Security-Grundlage. Frameworks escapen oft automatisch; manuelle Konkatenation braucht Sorgfalt.",
+          "Die Herramienta kodiert/dekodiert beides, nützlich um zu prüfen, was ein Schnipsel rendert, oder fremdes Escaping rückgängig zu machen."
+        ],
+        "faq": [
+          {
+            "q": "Escaping = Verschlüsselung?",
+            "a": "Nein. Escaping nimmt nur die Syntaxbedeutung; jeder kann dekodieren. Nicht geheim, ersetzt keine Verschlüsselung."
+          },
+          {
+            "q": "Wann muss ich escapen?",
+            "a": "Immer wenn Daten in HTML, Attribute, URLs oder JS kommen. Am riskantesten: Nutzereingabe direkt in Seite—kontextrichtig escapen."
+          },
+          {
+            "q": "Warum weicht Dekodierung ab?",
+            "a": "Hatte die Quelle schon Entities (&amp;), Decoding stellt & her. Erwartet; bei Wiederholung Idempotenz beachten."
+          }
+        ]
+      }
     },
     "html-chars": {
       "name": "HTML-Zeichentabelle",
       "description": "Durchsuchen und kopieren Sie HTML-Zeichenentitaeten",
-      "metaDescription": "Referenzhandbuch fuer HTML-Zeichenentitaeten"
+      "metaDescription": "Referenzhandbuch fuer HTML-Zeichenentitaeten",
+      "guide": {
+        "steps": [
+          "Text mit Sonderzeichen eingeben/einfügen.",
+          "In HTML-Entities wandeln (&copy;) oder zurück.",
+          "Name und Nummer je Zeichen sehen, kopieren."
+        ],
+        "explanationTitle": "HTML-Entities: Namen und Zahlen",
+        "formula": "Zeichen → named (&copy;) oder numeric (&#169; / &#xA9;)",
+        "explanation": [
+          "Entities fügen Zeichen ein, die man nicht tippt oder die als Tags gelesen würden—©, ™, geschütztes Leerzeichen. Formen: named (&copy;) und numeric (&#169; bzw. hex &#xA9;).",
+          "Named lesen sich besser; seltene Symbole gibt es nur numerisch. Numerisch ist am kompatibelsten und deckt jeden Unicode-Punkt.",
+          "Die Herramienta listet Name und Zahl je Zeichen—praktisch für präzise Einfügung in HTML, E-Mail, Rich Text."
+        ],
+        "faq": [
+          {
+            "q": "Named oder numeric?",
+            "a": "Named lesbarer; numeric am kompatibelsten, deckt jeden Code-Punkt. Mischen geht, wenn Tooling mitspielt."
+          },
+          {
+            "q": "Warum fehlt manchen Symbolen der Name?",
+            "a": "HTML definiert nur eine begrenzte Named-Menge; neueres Unicode oft nur numeric. &#xXXXX; deckt es."
+          },
+          {
+            "q": "Konflikt mit UTF-8?",
+            "a": "Nein. Moderne Seiten speichern UTF-8 direkt; Entities nur für Muss-Escapen oder Klarheit."
+          }
+        ]
+      }
     },
     "emoji-chars": {
       "name": "Emoji-Zeichentabelle",
       "description": "Durchsuchen und kopieren Sie Emoji mit Codes",
-      "metaDescription": "Durchsuchen und kopieren Sie Emoji-Zeichen"
+      "metaDescription": "Durchsuchen und kopieren Sie Emoji-Zeichen",
+      "guide": {
+        "steps": [
+          "Text mit Emoji / Sonderzeichen eingeben.",
+          "Code-Punkt (U+XXXX) und UTF-8-Bytes je Zeichen sehen.",
+          "Code-Punkt oder Entity für Code/Docs kopieren."
+        ],
+        "explanationTitle": "Emoji und Unicode: Code-Punkte",
+        "formula": "Code-Punkt: U+1F600 (😀); UTF-8: 0xF0 0x9F 0x98 0x80",
+        "explanation": [
+          "Jedes Emoji hat einen eindeutigen Unicode-Code-Punkt wie U+1F600. Viele Emoji sind Kombinationen (Hautton, ZWJ), daher Länge ≠ sichtbare Zahl.",
+          "UTF-8, die gängige Web-Kodierung, macht aus einem Punkt 1–4 Bytes. Surrogate-Paare lassen BMP-überschreitende Zeichen in UTF-16 existieren—darum '😀'.length = 2 in JS.",
+          "Die Herramienta zerlegt Text in Zeichen mit Punkten und Bytes, nützlich beim Debuggen von Abschneiden, Mojibake oder falscher Länge."
+        ],
+        "faq": [
+          {
+            "q": "Warum zählt Emoji als zwei?",
+            "a": "Jenseits BMP steht ein Surrogat-Paar in UTF-16; JS zählt UTF-16-Einheiten, daher length 2."
+          },
+          {
+            "q": "Code-Punkt vs UTF-8?",
+            "a": "Code-Punkt ist die logische Nummer; UTF-8 die Byte-Form. Ein Punkt → 1–4 Bytes."
+          },
+          {
+            "q": "Warum manche Emoji als Kästchen?",
+            "a": "System/Schrift fehlt der Glyph, Fallback auf Kästchen. Font-Abdeckung, nicht Kodierung."
+          }
+        ]
+      }
     },
     "seo-performance": {
       "name": "SEO-Leistungsanalysator",
@@ -1194,7 +1607,35 @@
     "tip": {
       "name": "Trinkgeld",
       "description": "Berechnen Sie Trinkgeld und teilen Sie die Rechnung",
-      "metaDescription": "Trinkgeldrechner"
+      "metaDescription": "Trinkgeldrechner",
+      "guide": {
+        "steps": [
+          "Wähle die Währung und den üblichen Trinkgeld-Satz (z. B. Restaurant 10–15 %, Lieferung 0–10 %).",
+          "Gib den Rechnungsbetrag ein oder die Personenzahl, damit der Betrag zuerst geteilt wird.",
+          "Sieh Trinkgeld, Gesamtbetrag inkl. Trinkgeld und den Anteil pro Person."
+        ],
+        "explanationTitle": "Wie berechnet man Trinkgeld? Logik und übliche Sätze",
+        "formula": "Trinkgeld = Rechnung × Satz; Gesamt = Rechnung + Trinkgeld",
+        "explanation": [
+          "Trinkgeld ist eine zusätzliche Gratifikation für Servicepersonal, meist ein Prozentsatz der Rechnung. Die Sätze unterscheiden sich stark: In Nordamerika sind 15–20 % üblich, in Japan oder Südkorea gibt man kaum Trinkgeld.",
+          "Am besten zuerst den lokalen Satz festlegen und dann mit dem Betrag vor oder nach Steuer multiplizieren. Bei Gruppen zuerst pro Person teilen, dann jeweils das Trinkgeld berechnen, damit niemand überzahlt.",
+          "Dieses Werkzeug zeigt sowohl das Gesamt- als auch das pro-Kopf-Ergebnis – praktisch für Reisen, Teamevents und Essen gehen."
+        ],
+        "faq": [
+          {
+            "q": "Auf Basis von Netto oder Brutto trinken?",
+            "a": "In den meisten Regionen wird auf Brutto gezählt, manche nehmen die Netto-Zwischensumme. Bei Unsicherheit am ausgewiesenen Zwischenbetrag orientieren und vor der Zahlung klären."
+          },
+          {
+            "q": "Wie teilt man Trinkgeld fair in einer Gruppe?",
+            "a": "Am fairesten trinkt jede Person auf eigenen Verbrauch plus Anteil an Gemeinsamem; einfach durch die Köpfe zu teilen ist einfacher, lässt aber Großverbraucher zahlen."
+          },
+          {
+            "q": "Wo ist Trinkgeld nicht üblich?",
+            "a": "Japan, Südkorea, Neuseeland und Australien haben Service oft in der Rechnung enthalten; einige europäische Länder erheben eine Servicegebühr, sodass kein extra Trinkgeld nötig ist."
+          }
+        ]
+      }
     },
     "savings-goal": {
       "name": "Sparziel",
@@ -1400,17 +1841,101 @@
     "break-even": {
       "name": "Die Gewinnzone erreichen",
       "description": "Berechnen Sie den Break-Even-Punkt",
-      "metaDescription": "Break-Even-Analyse"
+      "metaDescription": "Break-Even-Analyse",
+      "guide": {
+        "steps": [
+          "Fixkosten eingeben (Miete, Gehälter – volumenunabhängig).",
+          "Stückvariable Kosten und Preis bzw. Stückgewinn eingeben.",
+          "Menge, Umsatz und Sicherheitsmarge beim Break-even sehen."
+        ],
+        "explanationTitle": "Break-even: Fix vs. variabel",
+        "formula": "BE-Menge = Fixkosten ÷ (Preis − variabele Stückkosten)",
+        "explanation": [
+          "Der Break-even-Punkt ist die 'ohne Verlust'-Menge, bei der Fixkosten durch die Stückdeckungsbeitrag (Preis − variable Kosten) gedeckt sind.",
+          "Höhere Fixkosten oder niedrigerer Stückgewinn erhöhen den Punkt und das Risiko. Rabatte steigern Volumen, heben aber den Punkt.",
+          "Die Herramienta beantwortet 'wie viele verkaufen, um nicht zu verlieren'—nützlich vor Shop-Start, Produktlaunch oder Projekt."
+        ],
+        "faq": [
+          {
+            "q": "Fix vs. variabel?",
+            "a": "Fix bleibt gleich (Miete, Gehalt, Abos); variabel folgt dem Volumen (Material, Versand). Saubere Trennung gibt genaue Marge."
+          },
+          {
+            "q": "Rabatt erhöht oder senkt Break-even?",
+            "a": "Meist erhöht. Niedrigerer Preis → weniger Stückgewinn → mehr Einheiten nötig."
+          },
+          {
+            "q": "Was ist Sicherheitsmarge?",
+            "a": "Wie weit Ist-Menge über Break-even liegt. Größer = mehr Puffer gegen Nachfrageschwankung."
+          }
+        ]
+      }
     },
     "profit-margin": {
       "name": "Gewinnmargen",
       "description": "Berechnen Sie Brutto-, Betriebs- und Nettogewinnmargen",
-      "metaDescription": "Berechnen Sie Unternehmensgewinnmargen"
+      "metaDescription": "Berechnen Sie Unternehmensgewinnmargen",
+      "guide": {
+        "steps": [
+          "Wähle 'Aufschlag' oder 'Preis rückwärts'.",
+          "Gib Kosten und Zielmarge ein (oder Preis, um Kosten/Gewinn zu lösen).",
+          "Sieh Gewinn, Bruttomarge und den Mindestpreis fürs Ziel."
+        ],
+        "explanationTitle": "So funktioniert Marge: Kosten vs. Preis",
+        "formula": "Marge = (Preis − Kosten) ÷ Preis; Preis = Kosten ÷ (1 − Marge)",
+        "explanation": [
+          "Marge basiert auf Preis, Aufschlag auf Kosten—leicht zu verwechseln. 50 % Aufschlag sind NICHT 50 % Marge: Aufschlag macht halbe Kosten zum Gewinn, Marge halben Preis.",
+          "Zur Preisfindung: Kosten ÷ (1 − Zielmarge). Kosten 80, Ziel 40 % → Preis = 80 ÷ 0.6 ≈ 133.",
+          "Nützlich für E-Commerce, Gastronomie und Freelancer, um Kosten zu decken und echten Gewinn zu sichern."
+        ],
+        "faq": [
+          {
+            "q": "Marge gleich Aufschlag?",
+            "a": "Nein. Marge = Gewinn÷Preis, Aufschlag = Gewinn÷Kosten. Gleiche Zahl → Aufschlag bedeutet niedrigere Marge."
+          },
+          {
+            "q": "Welcher Preis für 40 % Gewinn?",
+            "a": "Preis = Kosten ÷ (1 − 40 %). Bei Kosten 100 → ≈ 167, Gewinn ≈ 67, Marge genau 40 %."
+          },
+          {
+            "q": "Warum ist der reale Gewinn niedriger?",
+            "a": "Plattformgebühren, Versand, Retouren, Steuern fehlen oft. Diese als versteckte Kosten einrechnen, dann Preis rückwärts."
+          }
+        ]
+      }
     },
     "discount": {
       "name": "Rabatt",
       "description": "Berechnen Sie Rabatte, Verkaufspreise und Ersparnisse",
-      "metaDescription": "Berechnen Sie Rabatte und Verkaufspreise"
+      "metaDescription": "Berechnen Sie Rabatte und Verkaufspreise",
+      "guide": {
+        "steps": [
+          "Gib den Originalpreis und den Rabatt (z. B. 20 %) ein, oder den reduzierten Preis zur Rückberechnung.",
+          "Das Werkzeug zeigt sofort Ersparnis, Finalpreis und das Äquivalent in 'fach'.",
+          "Bei gestapelten Gutscheinen oder Schwellen zwei Schritte hintereinander rechnen."
+        ],
+        "explanationTitle": "So funktionieren Rabatte: Logik und Formel",
+        "formula": "Final = Original × (1 − Rabatt%); Ersparnis = Original − Final",
+        "explanation": [
+          "Ein Rabatt ist proportionale Subtraktion: 20 % Rabatt bedeuten Multiplikation mit 0.8, also '80 % zahlen'. 'X % ab' und '(100−X) % zahlen' sind betraglich identisch.",
+          "Beim Stapeln unterscheidet sich 'Rabatt dann Schwelle' von 'Schwelle dann Rabatt'. Meist ist zuerst Rabatt günstiger, doch Plattformregeln variieren.",
+          "In 'fach' umrechnen ist intuitiv: 20 % Rabatt ≈ 0.8×, 35 % ≈ 0.65×. Das Werkzeug zeigt Nettopreis und Stärke zur Preisvergleich."
+        ],
+        "faq": [
+          {
+            "q": "Ist 20 % Rabatt dasselbe wie 80 % zahlen?",
+            "a": "Ja, beides multipliziert mit 0.8. Nur die Wortwahl differiert, der Betrag ist gleich."
+          },
+          {
+            "q": "Was zuerst bei gestapelten Gutscheinen?",
+            "a": "Die Reihenfolge ändert das Ergebnis. Meist wird zuerst rabattiert, dann die Schwelle geprüft; ist die Schwelle auf Originalpreis, ist Schwelle-zuerst günstiger."
+          },
+          {
+            "q": "Wie bewerte ich die Rabattstärke schnell?",
+            "a": "Prozent zu fach: 30 % ≈ 0.7×, 50 % = 0.5×. Niedrigerer Nettopreis = stärker, aber Steuer und Kategoriegrenzen beachten."
+          }
+        ]
+      }
     },
     "currency": {
       "name": "Währungsumrechner",
@@ -1484,12 +2009,68 @@
     "auto-loan": {
       "name": "Autokredit",
       "description": "Berechnen Sie Autokreditzahlungen, Zinsen und Gesamtkosten",
-      "metaDescription": "Berechnen Sie Ihre monatlichen Autokreditzahlungen und Gesamtkosten"
+      "metaDescription": "Berechnen Sie Ihre monatlichen Autokreditzahlungen und Gesamtkosten",
+      "guide": {
+        "steps": [
+          "Auto-Preis, Anzahlung (Prozent oder Betrag), Laufzeit und Zins eingeben.",
+          "Rate (gleich) oder Tilgung (anfangs hoch, später niedrig) wählen.",
+          "Monatsrate, Zinsen gesamt, Gesamtrückzahlung und Vorabtilgung sehen."
+        ],
+        "explanationTitle": "Autokredit: gleichmäßige Rate vs. Tilgung",
+        "formula": "Rate ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Autokredite nutzen meist gleiche Rate: fester Monatsbetrag, Zins zuerst hoch, Tilgung später. Bei Tilgung bleibt die Tilgung gleich, die Rate sinkt.",
+          "Zins und Laufzeit beeinflussen die Gesamtzinsen stark. Bei 200k Kredit verdoppelt 4%→8% die Zinsen; ein Jahr kürzer spart viel.",
+          "Vergleiche Anzahlung, Laufzeit und Zins, um Plan mit tragbarer Rate und niedrigen Zinsen zu wählen."
+        ],
+        "faq": [
+          {
+            "q": "Was ist besser, Rate oder Tilgung?",
+            "a": "Tilgung spart Zinsen, aber hohe Anfangsraten. Rate bei knapper Liquidität; Tilgung wenn früh tragbar und sparend."
+          },
+          {
+            "q": "Ist 0 % Finanzierung wirklich gratis?",
+            "a": "Oft im höheren Preis oder Gebühren versteckt und kurzfristig. '0%-Preis' vs 'Normalpreis' vergleichen."
+          },
+          {
+            "q": "Wie viel spart Vorabtilgung?",
+            "a": "Man zahlt früh Tilgung, später Zinsen entfallen. Ersparnis hängt von Resttilgung und Laufzeit ab—je früher, desto mehr (Strafe beachten)."
+          }
+        ]
+      }
     },
     "personal-loan": {
       "name": "Privatkredit",
       "description": "Berechnen Sie Privatkreditzahlungen mit Gebuehren und effektivem Jahreszins",
-      "metaDescription": "Berechnen Sie Privatkreditzahlungen inklusive Bearbeitungsgebuehren"
+      "metaDescription": "Berechnen Sie Privatkreditzahlungen inklusive Bearbeitungsgebuehren",
+      "guide": {
+        "steps": [
+          "Kreditbetrag, APR und Laufzeit (Monate/Jahre) eingeben.",
+          "Rückzahlung wählen: gleiche Rate am üblichsten.",
+          "Monatsrate, Zinsen, Gesamt und Terminvergleich sehen."
+        ],
+        "explanationTitle": "Privatkredit: APR und Laufzeit",
+        "formula": "Rate ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Privatkredite nutzen meist gleiche Rate. Entscheidend sind APR (Geldkosten) und Laufzeit (Monatsdruck).",
+          "Bei 100k vervielfacht 6%→18% APR die Zinsen. Längere Laufzeit senkt die Rate, erhöht aber die Zinsen—nicht wegen Bequemlichkeit lang wählen.",
+          "Die Herramienta stellt 'Rate' und 'Gesamtkosten' nebeneinander, damit niedrige Rate nicht extra Zinsen verbirgt."
+        ],
+        "faq": [
+          {
+            "q": "APR in Monatszins?",
+            "a": "monatlich = APR ÷ 12. 12 % APR → 1 % monatlich. Manche Werbung nutzt 'Monatsgebühr' statt echter APR, nach Rechnung teurer."
+          },
+          {
+            "q": "Längere Laufzeit besser?",
+            "a": "Niedrigere Rate, aber schlechter—mehr Zinsen. Nur bei Bedarf an niedriger Rate; sonst kurz spart."
+          },
+          {
+            "q": "Warum Auszahlung geringer als Kredit?",
+            "a": "Gebühren oder vorab abgezogene Zinsen. Auf APR und Gesamtrückzahlung achten, nicht nur Rate."
+          }
+        ]
+      }
     },
     "student-loan": {
       "name": "Studienkredit",
@@ -1504,7 +2085,35 @@
     "debt-payoff": {
       "name": "Schulden-Tilgungs",
       "description": "Berechnen Sie die Tilgungszeit mit Sonderzahlungen",
-      "metaDescription": "Berechnen Sie die Tilgungszeit und Ersparnisse durch Sonderzahlungen"
+      "metaDescription": "Berechnen Sie die Tilgungszeit und Ersparnisse durch Sonderzahlungen",
+      "guide": {
+        "steps": [
+          "Alle Schulden auflisten: Saldo, Zins, Mindestrate.",
+          "Strategie wählen: Lawine (höchster Zins zuerst) oder Schneeball (kleinster Saldo).",
+          "Gesamtzeit, Zinsen und Extra-Effekt sehen."
+        ],
+        "explanationTitle": "Schulden am schnellsten tilgen: Lawine vs Schneeball",
+        "formula": "Mindestrate = Saldo×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Beide konzentrieren Extrageld auf eine Schuld: Lawine zuerst hoher Zins (wenigste Zinsen); Schneeball zuerst kleiner Saldo (mehr Motivtion).",
+          "Je größer die Zinslücke, desto mehr spart Lawine; bei ähnlichen Zinsen egal—nimm die, die du durchhältst.",
+          "Die Herramienta simuliert beide Strategien, damit du sparst und dranbleibst, statt im Mindestraten-Zins-Trap."
+        ],
+        "faq": [
+          {
+            "q": "Lawine oder Schneeball?",
+            "a": "Rechnerisch spart Lawine (hoher Zins zuerst) am meisten; Schneeball nutzt frühe Erfolge. Nimm die, die du beendest."
+          },
+          {
+            "q": "Risiko nur Mindestrate?",
+            "a": "Deckt meist nur Zinsen, Saldo sinkt langsam, Kreditkarten-Zinsen lassen den Saldo Jahre wachsen."
+          },
+          {
+            "q": "Hilft Extra-Tilgung?",
+            "a": "Sehr. Trifft Saldo, später keine Zinsen, kürzt Laufzeit und spart (Vorabtilgung prüfen)."
+          }
+        ]
+      }
     },
     "credit-card": {
       "name": "Kreditkarten",
@@ -2172,7 +2781,35 @@
     "pace-calculator": {
       "name": "Tempo",
       "description": "Berechnen Sie Lauftempo, Zwischenzeiten und Zeitvorhersagen",
-      "metaDescription": "Berechnen Sie Lauftempo, Zwischenzeiten und prognostizieren Sie Laufzeiten"
+      "metaDescription": "Berechnen Sie Lauftempo, Zwischenzeiten und prognostizieren Sie Laufzeiten",
+      "guide": {
+        "steps": [
+          "Wähle: Distanz+Zeit → Tempo, oder Tempo+Distanz → Endzeit.",
+          "Distanz (m/km/mi) und Zeit oder Zieltempo eingeben.",
+          "Tempo (min:sek pro km), Endzeit und Split-Vorschlag sehen."
+        ],
+        "explanationTitle": "Lauftempo: Tempo vs Zeit",
+        "formula": "Tempo = Zeit ÷ Distanz; Zeit = Tempo × Distanz",
+        "explanation": [
+          "Tempo ist Zeit pro Distanz, als 'min:sek pro km'. Es misst Intensität: bei gleichem Puls ist langsameres Tempo weniger intensiv.",
+          "Aus Distanz+Zeit das Tempo ableiten zeigt, ob ein Lauf zieltraf; Tempo+Distanz previewt die Endzeit.",
+          "Metrisch/imperial umschalten, um 'Sub-30 5K' in ein alltagstaugliches Tempoband zu wandeln."
+        ],
+        "faq": [
+          {
+            "q": "Tempo vs Speed?",
+            "a": "Speed ist Distanz pro Zeit (12 km/h); Tempo ist Zeit pro Distanz (5:00/km). Läufer nutzen Tempo, da es 'Anstrengung pro km' zeigt."
+          },
+          {
+            "q": "Training mit Tempo planen?",
+            "a": "Easy/tempo/intervall Zonen nutzen. Nach Zieltempo hier feinjustieren per Puls oder Gefühl."
+          },
+          {
+            "q": "Zeit weicht stark ab?",
+            "a": "Gelände, Wind, Müdigkeit bremsen. Tempo ist Ideal-Flachreferenz; bei Berg/Gegenwind Puffer einplanen."
+          }
+        ]
+      }
     },
     "macro-calculator": {
       "name": "Makro",
@@ -2249,12 +2886,68 @@
     "due-date": {
       "name": "Geburtstermin",
       "description": "Berechnen Sie den voraussichtlichen Geburtstermin",
-      "metaDescription": "Berechnen Sie Ihren Geburtstermin mit verschiedenen Methoden"
+      "metaDescription": "Berechnen Sie Ihren Geburtstermin mit verschiedenen Methoden",
+      "guide": {
+        "steps": [
+          "Ersten Tag der letzten Periode (LMP) eingeben.",
+          "Tool addiert 280 Tage (40 Wo.) für den ET.",
+          "ET, aktuelle Woche und Vorsorgetermine sehen."
+        ],
+        "explanationTitle": "Wie wird der ET berechnet? LMP und Wochen",
+        "formula": "ET = LMP + 280 Tage (Naegele: Monat+9, Tag+7)",
+        "explanation": [
+          "Üblich ist Naegele: ab ersten LMP-Tag 280 Tage (40 Wo.) addieren. Kurz: 'Monat+9, Tag+7'.",
+          "Nur ~5 % entbinden am ET; zwei Wochen drumherum sind normal. Früher Ultraschall (CRL) schärft die Woche.",
+          "Die Herramienta zeigt Woche und Screenings (NT, Fehlbildung, Glukose) für den ganzen Zeitstrahl."
+        ],
+        "faq": [
+          {
+            "q": "Ist der ET genau?",
+            "a": "Mittelwert. ~80 % innerhalb zwei Wochen; nur ~5 % am Tag. Als Fenster, nicht Datum sehen."
+          },
+          {
+            "q": "Unregelmäßiger Zyklus?",
+            "a": "LMP dann zu früh. Ultraschall im 1. Trimenon (CRL) genauer."
+          },
+          {
+            "q": "Warum Wochen statt Monate?",
+            "a": "Wochen (7 Tage) feiner; Screenings nach Woche geplant (NT 11–13, Glukose 24–28)."
+          }
+        ]
+      }
     },
     "ovulation-calculator": {
       "name": "Eisprung",
       "description": "Sagen Sie Eisprung und fruchtbare Fenster voraus",
-      "metaDescription": "Sagen Sie Ihre Eisprungtage und fruchtbaren Tage voraus"
+      "metaDescription": "Sagen Sie Ihre Eisprungtage und fruchtbaren Tage voraus",
+      "guide": {
+        "steps": [
+          "Ersten Tag der letzten Periode und Zykluslänge (Standard 28) eingeben.",
+          "Tool schätzt Eisprung (~14 Tage vor Periode) und fruchtbares Fenster.",
+          "Eisprung der nächsten 6 Zyklen sehen."
+        ],
+        "explanationTitle": "Eisprung finden: Zyklus und Tag",
+        "formula": "Eisprung ≈ nächste Periode − 14 Tage; fruchtbar ≈ 5 Tage vor bis 1 nach",
+        "explanation": [
+          "Der Eisprung liegt meist ~14 Tage vor der Periode (Gelbkörperphase fix), die Follikelphase variiert—'Zyklus−14' ist besser als 'Zyklus÷2'.",
+          "Spermien leben ~3–5 Tage, Ei ~12–24 h, daher Fenster ~5 Tage vor bis 1 nach Eisprung.",
+          "Für regelmäßige Zyklen als Schätzung; für Genauigkeit Temperatur, OPK oder App. Unregelmäßig = mehr Fehler."
+        ],
+        "faq": [
+          {
+            "q": "Bei unregelmäßigem Zyklus?",
+            "a": "Schätzbar, aber ungenauer. Je variabler, desto schwerer; mit OPK + Temperatur prüfen."
+          },
+          {
+            "q": "Warum so langes Fenster?",
+            "a": "Spermien überleben Tage und Eisprung schwankt, daher Tage drumherum absichern."
+          },
+          {
+            "q": "Für Wunsch und Vermeidung?",
+            "a": "Ja, gleiches Prinzip: für Kinder timen, sonst verhüten—alleinige Zyklusnachführung ist keine sichere Verhütung."
+          }
+        ]
+      }
     },
     "pregnancy-weight-gain": {
       "name": "Schwangerschafts-Gewichtszunahme",
@@ -2279,7 +2972,35 @@
     "protein-calculator": {
       "name": "Eiweiß",
       "description": "Berechnen Sie Ihren taeglichen Proteinbedarf",
-      "metaDescription": "Berechnen Sie Ihren Proteinbedarf nach Zielen und Aktivitaet"
+      "metaDescription": "Berechnen Sie Ihren Proteinbedarf nach Zielen und Aktivitaet",
+      "guide": {
+        "steps": [
+          "Gewicht (kg) und Ziel/ Aktivität eingeben.",
+          "Ziel wählen: Erhalt / Defizit / Aufbau; Protein skaliert.",
+          "Tägliches Protein (g) und Portionen Alltagslebensmittel sehen."
+        ],
+        "explanationTitle": "Wie viel Protein pro Tag? Gewicht und Ziel",
+        "formula": "Protein(g) ≈ Gewicht(kg) × Faktor (Erhalt 0.8–1.2, Aufbau 1.6–2.2, Defizit 1.8–2.4)",
+        "explanation": [
+          "Proteinbedarf richtet sich nach Gewicht, nicht Kalorien. Sitzend ~0.8 g/kg; Kraftsporter 1.6–2.2 g/kg für Synthese und Regeneration.",
+          "Beim Defizit höher (1.8–2.4 g/kg): mehr Protein erhält Muskeln und sättigt. Ältere sollten leicht erhöhen.",
+          "Die Herramienta wandelt Gramm in Portionen Hähnchen, Eier, Griechisch Joghurt um—aus der Zahl wird ein Teller."
+        ],
+        "faq": [
+          {
+            "q": "Schadet viel Protein den Nieren?",
+            "a": "Bei normaler Nierenfunktion zeigt die Evidenz keinen Schaden; bei chronischer Nierenkrankheit ärztlich begrenzen. Für die meisten sicher."
+          },
+          {
+            "q": "Reicht Pflanzenprotein?",
+            "a": "Ja, aber Quellen mischen (Hülsen + Getreide) für essentielle Aminosäuren. Veganer leicht drüber liegen."
+          },
+          {
+            "q": "Wieviel pro Mahlzeit?",
+            "a": "Etwa 20–40 g pro Mahlzeit nutzt sich gut; 3–4 Mahlzeiten schlagen eine große Dosis."
+          }
+        ]
+      }
     },
     "water-intake": {
       "name": "Wasserbedarf",
@@ -2415,7 +3136,35 @@
     "period-calculator": {
       "name": "Perioden",
       "description": "Verfolgen Sie Ihren Menstruationszyklus und sagen Sie die naechste Periode voraus",
-      "metaDescription": "Verfolgen und prognostizieren Sie Ihren Menstruationszyklus"
+      "metaDescription": "Verfolgen und prognostizieren Sie Ihren Menstruationszyklus",
+      "guide": {
+        "steps": [
+          "Ersten Tag der letzten Periode und Zykluslänge eingeben.",
+          "Tool schätzt nächste Periode und kommende Termine.",
+          "Auch Phase (Follikel / Gelbkörper) abschätzen."
+        ],
+        "explanationTitle": "Periode vorhersagen: Zyklusrechnung",
+        "formula": "nächste = letzter 1. Tag + Zykluslänge; Phase ≈ Tage seit 1. Tag",
+        "explanation": [
+          "Kern ist die Zykluslänge: einen Zyklus zum letzten 1. Tag addieren. Die meisten liegen 21–35 Tage; 28 ist häufig, kein Standard.",
+          "Länge deutet auf Phase: Eisprung ~14 Tage vor Periode, davor Follikel, danach Gelbkörper—erklärt Stimmung/Energie.",
+          "Für regelmäßige Erinnerungen; bei混沌, sehr lang oder schmerzhaft: Arzt (PCOS/Schilddrüse), nicht auf Rechnung verlassen."
+        ],
+        "faq": [
+          {
+            "q": "Welche Länge normal?",
+            "a": "21–35 Tage sind verbreitet, individuell. Stabil ist wichtiger als 28."
+          },
+          {
+            "q": "Warum bei mir nie pünktlich?",
+            "a": "Stress, Gewicht, Schlaf, Krankheit stören. Gelegentlich normal; chronisch = Check."
+          },
+          {
+            "q": "Erkennt das Schwangerschaft?",
+            "a": "Nein. Späte Periode ist nur ein Zeichen; Test bestätigt. Nur Planung, keine Diagnose."
+          }
+        ]
+      }
     },
     "fat-intake": {
       "name": "Fettaufnahme",
@@ -2435,7 +3184,34 @@
     "fraction-calculator": {
       "name": "Bruch",
       "description": "Addieren, subtrahieren, multiplizieren, dividieren und kuerzen Sie Brueche",
-      "metaDescription": "Berechnen Sie Brueche mit schrittweisen Loesungen und gemischten Zahlen"
+      "metaDescription": "Berechnen Sie Brueche mit schrittweisen Loesungen und gemischten Zahlen",
+      "guide": {
+        "steps": [
+          "Wähle die Operation: Addieren, Subtrahieren, Multiplizieren, Dividieren oder nur Kürzen einer gemischten/Echtbruchs.",
+          "Gib Zähler und Nenner ein (mehrere Brüche möglich); das Tool prüft, dass kein Nenner null ist.",
+          "Lies das gekürzte Ergebnis und wechsle zwischen unechtem Bruch und gemischter Zahl."
+        ],
+        "explanationTitle": "Was sind Bruchrechnungen?",
+        "formula": "a/b ± c/d = (ad ± bc)/bd; (a/b) × (c/d) = ac/bd",
+        "explanation": [
+          "Ein Bruch besteht aus Zähler und Nenner: Der Nenner gibt an, in wie viele gleiche Teile das Ganze geteilt wird, der Zähler, wie viele davon genommen werden. Bei Addition/Subtraktion zuerst gleichnamig machen; multipliziere Zähler×Zähler und Nenner×Nenner; dividiere durch Multiplikation mit dem Kehrwert.",
+          "Ergebnisse werden meist gekürzt: Zähler und Nenner durch den größten gemeinsamen Teiler teilen. Ist der Zähler größer, wird aus dem unechten Bruch eine gemischte Zahl. Bruchrechnung ist Grundlage für Verhältnisse, Wahrscheinlichkeit, Rezepte und Technik."
+        ],
+        "faq": [
+          {
+            "q": "Darf der Nenner null sein?",
+            "a": "Nein. Division durch null ist nicht definiert; der Rechner warnt sofort, sobald ein Nenner null ist."
+          },
+          {
+            "q": "Wie gebe ich eine gemischte Zahl ein?",
+            "a": "Zuerst den ganzzahligen Anteil, dann Zähler und Nenner; das Ergebnis lässt sich zwischen unechtem Bruch und gemischter Zahl umschalten."
+          },
+          {
+            "q": "Warum ist das Ergebnis manchmal eine periodische Dezimalzahl?",
+            "a": "Ein Bruch wird periodisch, wenn der Nenner Primfaktoren außer 2 oder 5 enthält. Das ist normal, und du kannst beliebig viele Stellen behalten."
+          }
+        ]
+      }
     },
     "percentage-calculator": {
       "name": "Prozentrechner",
@@ -2519,7 +3295,34 @@
     "average-calculator": {
       "name": "Durchschnitts",
       "description": "Berechnen Sie Mittelwert, Median, Modus und andere Durchschnitte",
-      "metaDescription": "Berechnen Sie arithmetisches, gewichtetes, geometrisches und harmonisches Mittel"
+      "metaDescription": "Berechnen Sie arithmetisches, gewichtetes, geometrisches und harmonisches Mittel",
+      "guide": {
+        "steps": [
+          "Gib die Zahlen zeilenweise oder durch Komma getrennt ein; jederzeit ergänzbar.",
+          "Leere Zellen werden ignoriert, offensichtliche Ausreißer markiert (bei Bedarf beibehalten).",
+          "Lies Mittelwert, Summe und Anzahl und schalte bei Bedarf auf den Median um."
+        ],
+        "explanationTitle": "Wie berechnet man den Durchschnitt?",
+        "formula": "Mittelwert = (x₁ + x₂ + … + xₙ) ÷ n",
+        "explanation": [
+          "Der arithmetische Mittelwert summiert eine Reihe von Werten und teilt durch deren Anzahl. Er ist ein einfaches, anschauliches Maß für die 'Mitte' der Daten, reagiert aber stark auf Extremwerte – ein einzelner sehr großer oder kleiner Wert zieht den Mittelwert spürbar nach oben oder unten.",
+          "Bei schiefer Verteilung oder Ausreißern beschreibt der Median den typischen Wert meist besser. Beispielsweise ziehen wenige sehr hohe Einkommen den Durchschnitt so hoch, dass die meisten 'unterdurchschnittlich' wirken. Betrachte Mittelwert und Median gemeinsam."
+        ],
+        "faq": [
+          {
+            "q": "Unterschied zwischen Mittelwert und Median?",
+            "a": "Der Mittelwert ist die Summe geteilt durch die Anzahl; der Median ist der mittlere Wert nach Sortierung. Bei schiefen Daten weichen sie stark ab, der Median ist robuster."
+          },
+          {
+            "q": "Beeinflussen leere Zellen das Ergebnis?",
+            "a": "Nein. Leere Zellen und nicht erkennbare Texte werden ignoriert; nur gültige Zahlen zählen."
+          },
+          {
+            "q": "Kann man einen gewichteten Durchschnitt berechnen?",
+            "a": "Dieses Tool liefert den einfachen arithmetischen Mittelwert. Bei unterschiedlicher Gewichtung (z. B. Notenanteile) nutze einen gewichteten Durchschnitt."
+          }
+        ]
+      }
     },
     "long-division": {
       "name": "Langdivision",
@@ -2584,7 +3387,34 @@
     "pythagorean-calculator": {
       "name": "Satz-des-Pythagoras",
       "description": "Berechnen Sie die fehlende Seite mit dem Satz des Pythagoras",
-      "metaDescription": "Finden Sie die fehlende Seite eines rechtwinkligen Dreiecks"
+      "metaDescription": "Finden Sie die fehlende Seite eines rechtwinkligen Dreiecks",
+      "guide": {
+        "steps": [
+          "Gib die bekannten Seiten an: Katheten a und b oder eine Kathete und Hypotenuse c.",
+          "Trage die bekannten Werte ein, die Unbekannte leer lassen (auch nur Hypotenuse möglich).",
+          "Lies die dritte Seite und die algebraischen Schritte des Satzes."
+        ],
+        "explanationTitle": "Was ist der Satz des Pythagoras?",
+        "formula": "a² + b² = c² (c ist die Hypotenuse)",
+        "explanation": [
+          "Der Satz des Pythagoras besagt: Im rechtwinkligen Dreieck ist die Summe der Kathetenquadrate gleich dem Hypotenusenquadrat. Er ist Grundlage der euklidischen Geometrie und wird in Bau, Navigation, Grafik und Signalverarbeitung genutzt.",
+          "Für die Hypotenuse √(a²+b²); kennt man Hypotenuse und eine Kathete, ist die andere √(c²−a²). Er gilt nur für rechtwinklige Dreiecke; sonst Kosinussatz."
+        ],
+        "faq": [
+          {
+            "q": "Nur für rechtwinklige Dreiecke?",
+            "a": "Ja. Er gilt nur für rechtwinklige Dreiecke; allgemeine brauchen den Kosinussatz c²=a²+b²−2ab·cosC."
+          },
+          {
+            "q": "Wie finde ich die Hypotenuse?",
+            "a": "Katheten quadrieren, addieren, Wurzel ziehen: c = √(a²+b²)."
+          },
+          {
+            "q": "Müssen Einheiten gleich sein?",
+            "a": "Ja. a, b und c brauchen dieselbe Längeneinheit."
+          }
+        ]
+      }
     },
     "circle-calculator": {
       "name": "Kreis",
@@ -2594,7 +3424,34 @@
     "area-calculator": {
       "name": "Flächenrechner",
       "description": "Berechnet die Fläche verschiedener Formen",
-      "metaDescription": "Flächenrechner"
+      "metaDescription": "Flächenrechner",
+      "guide": {
+        "steps": [
+          "Wähle eine Figur: Rechteck, Kreis, Dreieck, Trapez u. a.",
+          "Gib die geforderten Maße ein (Länge/Breite, Radius, Grundseite/Höhe).",
+          "Lies die Fläche und wechsle die Einheit frei (cm², m², Zoll² usw.)."
+        ],
+        "explanationTitle": "Wie berechnet man Flächen?",
+        "formula": "Rechteck = b×h; Kreis = πr²; Dreieck = Grundseite×Höhe÷2",
+        "explanation": [
+          "Die Fläche misst die von einer zweidimensionalen Figur bedeckte Oberfläche, in Quadratenheiten. Jede Figur hat ihre Formel: Rechteck ist Breite mal Höhe, Kreis π mal Radius quadrat, Dreieck Grundseite mal Höhe durch zwei.",
+          "Einheiten angleichen: Sind Seiten in Zentimetern, ist das Ergebnis in Quadratzentimetern; gemischte Einheiten führen zu Fehlern. Flächen braucht man ständig bei Renovierung, Grundstücken, Stoffzuschnitt und Verpackung."
+        ],
+        "faq": [
+          {
+            "q": "Was, wenn Einheiten unterschiedlich sind?",
+            "a": "Erst die Seitenmaße vereinheitlichen oder die Ergebniseinheit im Tool wechseln, um den 100-fachen Fehler aus cm und m zu vermeiden."
+          },
+          {
+            "q": "Wie flächen einer unregelmäßigen Figur?",
+            "a": "In reguläre Teile zerlegen, Flächen addieren oder ein Raster schätzen; für Präzision CAD nutzen."
+          },
+          {
+            "q": "Wie viele Stellen von π?",
+            "a": "Das Tool nutzt ausreichende Genauigkeit (ca. 3,14159) für den Alltag; mehr nur in der Wissenschaft."
+          }
+        ]
+      }
     },
     "surface-area-calculator": {
       "name": "Oberflaechen",
@@ -2604,7 +3461,34 @@
     "volume-calculator": {
       "name": "Volumen",
       "description": "Berechnen Sie das Volumen von 3D-Formen",
-      "metaDescription": "Berechnen Sie Volumen von Wuerfel, Kugel, Zylinder, Kegel und mehr"
+      "metaDescription": "Berechnen Sie Volumen von Wuerfel, Kugel, Zylinder, Kegel und mehr",
+      "guide": {
+        "steps": [
+          "Wähle einen Körper: Quader, Würfel, Zylinder, Kugel, Kegel u. a.",
+          "Gib die passenden Maße ein (Länge/Breite/Höhe, Radius, Höhe).",
+          "Lies das Volumen und wechsle Einheiten mm³ / cm³ / m³ / L."
+        ],
+        "explanationTitle": "Wie berechnet man Volumen?",
+        "formula": "Quader = l×b×h; Zylinder = πr²h; Kugel = 4/3·πr³",
+        "explanation": [
+          "Volumen ist der Raum, den ein dreidimensionaler Körper einnimmt, in Kubikeinheiten. Ein Quader ist Länge × Breite × Höhe; ein Zylinder Grundfläche πr² mal Höhe; eine Kugel 4/3πr³.",
+          "Achtung Einheit: 1 Kubikmeter = 1000 Liter. Flüssigkeiten nutzen Liter/Milliliter, Feststoffe cm³. Volumen braucht man für Farbe, Kartons und Aquarien."
+        ],
+        "faq": [
+          {
+            "q": "Volumen und Fassungsvermögen gleich?",
+            "a": "Ähnlich. Fassungsvermögen ist, was ein Behälter hält (L/mL); Volumen ist der Raum (m³/cm³). Zahlen lassen sich direkt umrechnen."
+          },
+          {
+            "q": "Liter und Kubikmeter?",
+            "a": "1 m³ = 1000 L, 1 L = 1000 mL = 1000 cm³. Das Tool stellt um."
+          },
+          {
+            "q": "Volumen eines unregelmäßigen Körpers?",
+            "a": "Wasserverdrängung (Eintauchen, Anstieg im Messzylinder) oder 3D-Scan und Berechnung."
+          }
+        ]
+      }
     },
     "moment-of-inertia": {
       "name": "Flächenträgheitsmoment-Rechner",
@@ -3041,7 +3925,35 @@
       "effectiveRate": "Effektiver Zinssatz",
       "marginalRate": "Grenzsatz",
       "net": "Nettoeinkommen",
-      "breakdown": "Aufschlüsselung pro Klammer"
+      "breakdown": "Aufschlüsselung pro Klammer",
+      "guide": {
+        "steps": [
+          "Steuerklasse der Region wählen (z. B. deutsche Stufen, US federal).",
+          "Bruttoeinkommen und Abzüge (Sozialversicherung, etc.) eingeben.",
+          "Steuer, effektiven Satz und Netto sehen."
+        ],
+        "explanationTitle": "Einkommensteuer: progressive Stufen",
+        "formula": "Steuer = Σ(Stufen-Einkommen × Stufensatz) − Tarifabweichung",
+        "explanation": [
+          "Die meisten Länder nutzen progressive Sätze: Einkommen in Stufen, unten niedrig, oben hoch—nicht alles zum Spitzensteuersatz.",
+          "Die Lücke zwischen Brutto und Netto kommt aus Pflichtversicherung, Freibeträgen und der Progressivität. Abzüge senken die Bemessungsgrundlage legal.",
+          "Die Herramienta nutzt vereinfachte Stufen für Planung—für die Steuererklärung gilt lokales Recht."
+        ],
+        "faq": [
+          {
+            "q": "Warum nicht alles zum Spitzensteuersatz?",
+            "a": "Nur der Teil über jeder Schwelle wird höher besteuert; unten bleibt niedrig, daher liegt der effektive Satz darunter."
+          },
+          {
+            "q": "Was bringen Abzüge?",
+            "a": "Sie senken das zu versteuernde Einkommen direkt. Wer sie voll nutzt, spart legal."
+          },
+          {
+            "q": "Ist die Schätzung genau?",
+            "a": "Vereinfachte Stufen zur Planung. Erklärung hat Gutschriften und Sonderregeln—Finanzamt konsultieren."
+          }
+        ]
+      }
     },
     "car-loan": {
       "name": "Autokredit",
@@ -9775,6 +10687,142 @@
           {
             "type": "p",
             "text": "Zyklus-Timing ist eine nützliche Orientierung, aber kein Allheilmittel. Wer dauerhaft erschöpft aufwacht, tagsüber schläfrig ist oder stark schnarcht, könnte an einer Schlafapnoe leiden – das gehört zum Arzt, nicht in den Kalender. Zyklusrechnung regelt den Wachzeitpunkt, nicht die Schlafqualität."
+          }
+        ]
+      },
+      "compound-interest-wealth-building": {
+        "title": "Wie Zinseszins dein Vermögen anwachsen lässt: Die Kraft eines frühen Starts",
+        "excerpt": "Zinseszins wird oft als das achte Weltwunder bezeichnet. Zu verstehen, wie er funktioniert – und die Zahlen mit einem [Zinseszins-Rechner](/finance/compound-interest) zu sehen – ist der wichtigste Schritt für langfristigen Vermögensaufbau.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Beim Zinseszins werden die Erträge wiederangelegt, sodass die Rendite der nächsten Periode auf das Kapital und die bereits angesammelten Zinsen berechnet wird. Je länger der Zeithorizont, desto steiler die Kurve."
+          },
+          {
+            "type": "h2",
+            "text": "Warum ein früher Start so wichtig ist"
+          },
+          {
+            "type": "p",
+            "text": "Angenommen, du investierst 1.000 pro Monat bei 8 % pro Jahr. Ein Start mit 25 statt mit 35 kostet dich nicht 10 Jahre Wachstum, sondern ein Vielfaches, da die früh angesammelten Zinsen jahrzehntelang weiter erwirtschaften."
+          },
+          {
+            "type": "callout",
+            "text": "Die Feinde des Zinseszinses sind Unterbrechungen und Gebühren. Häufiger Handel und hohe Verwaltungsgebühren erodieren die langfristige Rendite. Statt den Markt zu timen, starte früh und bleib beständig."
+          },
+          {
+            "type": "p",
+            "text": "Nutze den [Zinseszins-Rechner](/finance/compound-interest), um deinen monatlichen Beitrag, die Jahre und die erwartete Rendite einzugeben und Zeit und Zinseszins zusammenwirken zu sehen."
+          }
+        ]
+      },
+      "currency-exchange-how-it-works": {
+        "title": "So funktionieren Wechselkurse: Die Logik hinter dem Währungstausch",
+        "excerpt": "Warum entspricht 1 USD etwa 7 CNY? Wechselkurse werden nicht willkürlich festgelegt. Nutze einen [Währungsrechner](/finance/currency), um deinen tatsächlichen Nettobetrag zu sehen und versteckte Gebühren zu vermeiden.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ein Wechselkurs ist im Grunde der relative Preis zweier Währungen, bestimmt von Angebot und Nachfrage, Zinsunterschieden, Inflation und Wirtschaftserwartungen."
+          },
+          {
+            "type": "h2",
+            "text": "Referenzkurs, Bargeldkurs und Gebühren"
+          },
+          {
+            "type": "p",
+            "text": "Der angezeigte Kurs ist oft nicht das, was du am Ende erhältst. Banken und Plattformen schlagen auf den Referenzkurs einen Spread und Gebühren auf. Nutze einen [Währungsrechner](/finance/currency), um den Nettobetrag zu berechnen, bevor du Angebote vergleichst."
+          },
+          {
+            "type": "callout",
+            "text": "Im Ausland ist die dynamische Währungsumrechnung (DCC) meist teurer als die Abrechnung in Landeswährung. Wähle beim Kartenauslandseinsatz die lokale Währung."
+          }
+        ]
+      },
+      "mortgage-amortization-explained": {
+        "title": "Hypotheken-Tilgung verstehen: Wo deine Zinsen wirklich hingehen",
+        "excerpt": "Wie viel von deiner Monatsrate ist Tilgung und wie viel Zins? Anfangs zahlst du fast nur Zinsen. Nutze einen [Hypothekenrechner](/finance/mortgage), um deine Tilgungsstruktur zu sehen und zu beurteilen, ob Sondertilgungen sich lohnen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tilgung bedeutet, dass der Kredit in gleichbleibenden Raten zurückgezahlt wird, wobei sich das Verhältnis von Tilgung und Zinsen jede Periode ändert."
+          },
+          {
+            "type": "h2",
+            "text": "Zuerst Zinsen, später Tilgung"
+          },
+          {
+            "type": "p",
+            "text": "Bei gleichbleibender Rate sind die frühen Raten vor allem Zinsen und wenig Tilgung. Mit sinkendem Saldo schrumpft der Zinsanteil. Nutze einen [Hypothekenrechner](/finance/mortgage), um die jährliche Aufteilung zu sehen."
+          },
+          {
+            "type": "callout",
+            "text": "Bei niedrigen Zinsen bringt Sondertilgung wenig; bei hohen Zinsen oder freiem Kapital kann sie die Gesamtzinsen stark senken. Abwägen gegen deine Anlagerendite."
+          }
+        ]
+      },
+      "roi-evaluating-investments": {
+        "title": "ROI ist nicht die einzige Kennzahl: So bewertest du eine Investition",
+        "excerpt": "Lass dich nicht von „20 % Rendite pro Jahr“ beeindrucken. Nutze einen [ROI-Rechner](/finance/roi), um die echte Rendite zu finden, und berücksichtige Zeit, Risiko und Opportunitätskosten.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ROI (Return on Investment) ist (Gewinn − Kosten) / Kosten. Einfach und intuitiv, aber er ignoriert die Zeit, in der dein Geld gebunden ist."
+          },
+          {
+            "type": "h2",
+            "text": "Zeit macht denselben ROI völlig unterschiedlich"
+          },
+          {
+            "type": "p",
+            "text": "20 % in einem Jahr sind etwas ganz anderes als 20 % über fünf Jahre. Nutze einen [ROI-Rechner](/finance/roi), um die annualisierte Zahl zu sehen und mit einer risikofreien Rendite zu vergleichen."
+          },
+          {
+            "type": "callout",
+            "text": "Ein hoher ROI mit hoher Volatilität oder langer Bindung schlägt nicht unbedingt eine stetigere, niedrigere Rendite. Abwägen gegen deine Risikotoleranz, nicht nur die Zahl."
+          }
+        ]
+      },
+      "calorie-deficit-weight-loss": {
+        "title": "Ein Kaloriendefizit ist die einzige Regel zum Abnehmen: So machst du es richtig",
+        "excerpt": "Abnehmen hat keine Magie – nur eine Energielücke. Nutze einen [Kalorienrechner](/health/calorie-calculator) und einen [BMR-Rechner](/health/bmr-calculator), um deinen Verbrauch zu finden, und baue dann ein sinnvolles Defizit auf.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Wenn die Zufuhr über Zeit unter dem Verbrauch liegt, greift der Körper auf Reserven zurück und das Gewicht sinkt. Das ist ein Kaloriendefizit."
+          },
+          {
+            "type": "h2",
+            "text": "Mach das Defizit nicht zu groß"
+          },
+          {
+            "type": "p",
+            "text": "Eine tägliche Lücke von 300–500 kcal ist meist haltbar und weniger rückfällig. Nutze zuerst einen [BMR-Rechner](/health/bmr-calculator) für den Ruheumsatz, dann addiere Aktivität für den Gesamtverbrauch."
+          },
+          {
+            "type": "callout",
+            "text": "Extreme Diäten senken den Stoffwechsel und bauen Muskeln ab. Nutze einen [Kalorienrechner](/health/calorie-calculator) für ein mildes Defizit, kombiniert mit Protein und Krafttraining."
+          }
+        ]
+      },
+      "heart-rate-training-zones": {
+        "title": "Herzfrequenz-Trainingszonen: Trainiere schlauer mit der richtigen Intensität",
+        "excerpt": "Derselbe Lauf erfüllt verschiedene Ziele – Fettverbrennung und Ausdauer brauchen unterschiedliche Intensitäten. Nutze einen [Ziel-Herzfrequenz-Rechner](/health/target-heart-rate), um deine Zonen zu finden und jede Einheit zielgerichtet zu machen.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Herzfrequenzzonen staffeln die Intensität, von Regeneration und Fettverbrennung bis anaerob, jeweils gekoppelt an ein anderes Energiesystem und Trainingswirkung."
+          },
+          {
+            "type": "h2",
+            "text": "Bestimme zuerst deine maximale Herzfrequenz"
+          },
+          {
+            "type": "p",
+            "text": "Die gängige Schätzung ist 220 − Alter, aber die individuelle Abweichung ist groß. Ein [Ziel-Herzfrequenz-Rechner](/health/target-heart-rate), der Zonen nach Prozent aufteilt, ist zuverlässiger."
+          },
+          {
+            "type": "callout",
+            "text": "Ständig hart trainieren führt zu schlechter Regeneration und Verletzungen. Missche niedrigintensives Cardio mit Intervallen für stetigere Fortschritte."
           }
         ]
       }

@@ -30,7 +30,8 @@
         "about": "About",
         "contact": "Contact",
         "terms": "Terms of Service",
-        "blog": "Blog"
+        "blog": "Blog",
+        "sitemap": "Sitemap"
       }
     },
     "navigation": {
@@ -92,7 +93,9 @@
     "copySuccess": "Copied to clipboard",
     "copyError": "Failed to copy to clipboard",
     "advertisement": "Advertisement",
-    "toolsCount": "tools"
+    "toolsCount": "tools",
+    "sitemapTitle": "Sitemap",
+    "sitemapIntro": "Browse every baikecalc tool, category, and blog post. Indexed by category so you can reach the calculator you need fast."
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Image & Video Processing",
@@ -589,7 +592,34 @@
     "age": {
       "name": "Age",
       "description": "Calculate exact age from birthdate in years, months, and days",
-      "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes"
+      "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes",
+      "guide": {
+        "steps": [
+          "Enter the birth date (Y/M/D); add the time for more precision.",
+          "Enter the current date (defaults to today).",
+          "Read the exact age in years, months, days and total days lived."
+        ],
+        "explanationTitle": "How is age calculated precisely?",
+        "formula": "age = current date − birth date (calendar-aware subtraction)",
+        "explanation": [
+          "Exact age is not a simple year difference; you must handle borrowing between months and days. If today's day is before the birth day, you borrow from the month and convert to days, giving an accurate years/months/days result.",
+          "Total days are useful for milestones, insurance or legal age. Watch time zones and leap years: someone born on 29 Feb is usually counted on 28 Feb or 1 Mar in non-leap years, varying by custom."
+        ],
+        "faq": [
+          {
+            "q": "Why is subtracting years wrong?",
+            "a": "It ignores whether this year's birthday has passed. Step-by-step months/days give the true age."
+          },
+          {
+            "q": "Born on 29 Feb in a leap year?",
+            "a": "In non-leap years it is usually counted on 28 Feb or 1 Mar depending on custom; the tool follows the common rule."
+          },
+          {
+            "q": "Can it show total days lived?",
+            "a": "Yes, the result includes total days from birth to today, with leap-year differences."
+          }
+        ]
+      }
     },
     "date": {
       "name": "Date",
@@ -614,12 +644,66 @@
     "time-zone": {
       "name": "Time Zone",
       "description": "Convert times between different time zones",
-      "metaDescription": "Convert times across different time zones worldwide"
+      "metaDescription": "Convert times across different time zones worldwide",
+      "guide": {
+        "steps": [
+          "Pick the source and target time zones (major cities and UTC offsets).",
+          "Enter the local time to convert.",
+          "Read the target time and whether daylight saving is in effect."
+        ],
+        "explanationTitle": "How are time zones converted?",
+        "formula": "target = source + (target offset − source offset)",
+        "explanation": [
+          "Earth is split into 24 time zones by longitude, each an hour apart. To convert, add the difference between the target and source UTC offsets to the original time.",
+          "Daylight Saving Time (DST) moves clocks forward one hour in summer for some regions, changing the offset temporarily. Cross-border meetings, flights and remote work must check DST on both sides."
+        ],
+        "faq": [
+          {
+            "q": "What is a UTC offset?",
+            "a": "It is the hour difference from Coordinated Universal Time; e.g. Beijing is UTC+8, London winter is UTC+0."
+          },
+          {
+            "q": "Does DST affect conversion?",
+            "a": "Yes. Regions on DST shift +1 hour in summer, so confirm the date's status when converting."
+          },
+          {
+            "q": "Why do some countries have many zones?",
+            "a": "Large countries (USA, Russia) span several longitudes and naturally split into zones."
+          }
+        ]
+      }
     },
     "day-counter": {
       "name": "Day Counter",
       "description": "Count days between dates or until a future date",
-      "metaDescription": "Count the days between two dates or until an upcoming event"
+      "metaDescription": "Count the days between two dates or until an upcoming event",
+      "guide": {
+        "steps": [
+          "Enter the start and end dates; toggle whether endpoints are included.",
+          "The tool spans months and years, handling short/long months and leap years.",
+          "Read the day gap and convert it to weeks or working days."
+        ],
+        "explanationTitle": "How many days between two dates?",
+        "formula": "gap = end ordinal − start ordinal",
+        "explanation": [
+          "A date difference converts each date to its 'day number since an epoch' and subtracts. Leap years and month lengths are handled naturally, no manual rules needed.",
+          "It is used for contract terms, project cycles, pregnancy weeks or event countdowns. Working days need weekends and public holidays excluded."
+        ],
+        "faq": [
+          {
+            "q": "Are endpoints included?",
+            "a": "Toggle 'include/exclude endpoints'. Countdowns usually exclude; schedules usually include."
+          },
+          {
+            "q": "Can it count only workdays?",
+            "a": "The tool can give working-day counts; public holidays vary by region and must be removed manually."
+          },
+          {
+            "q": "Accurate across leap years?",
+            "a": "Yes. It uses true calendar ordinals, including 29 Feb."
+          }
+        ]
+      }
     },
     "day-of-week": {
       "name": "Day of the Week",
@@ -649,12 +733,66 @@
     "download-calculator": {
       "name": "Download",
       "description": "Calculate download time from bandwidth and file size",
-      "metaDescription": "Calculate how long a file download will take"
+      "metaDescription": "Calculate how long a file download will take",
+      "guide": {
+        "steps": [
+          "Enter the file size (e.g. 500 MB) and your download bandwidth (e.g. 100 Mbps).",
+          "Mind the units: bandwidth is Mbps (megabits/s), files are MB (megabytes).",
+          "Read the estimated download time and compare across bandwidths."
+        ],
+        "explanationTitle": "How is download time estimated?",
+        "formula": "time(s) = file bytes × 8 ÷ bandwidth(bps)",
+        "explanation": [
+          "Download time is total bits divided by transfer rate. The key trap is units: a '100 Mbps' plan is megabits per second, while files use megabytes, and 1 byte = 8 bits, so real speed is divided by 8.",
+          "Real time is also hit by protocol overhead, server throttling and Wi-Fi loss, typically 10%–30% slower than theory. The tool gives the theoretical floor to plan your wait."
+        ],
+        "faq": [
+          {
+            "q": "Are Mbps and MB the same?",
+            "a": "No. Mbps is megabits per second, MB is megabytes; 1 MB = 8 Mb. Plans almost always use lowercase b (bits)."
+          },
+          {
+            "q": "Why is real download slower?",
+            "a": "Protocol overhead, server throttling and wireless loss add 10%–30%."
+          },
+          {
+            "q": "How to download faster?",
+            "a": "Use wired, stay near the router, avoid peaks or upgrade bandwidth; the tool estimates time per bandwidth."
+          }
+        ]
+      }
     },
     "subnet-calculator": {
       "name": "Visual Subnet",
       "description": "Calculate IPv4 and IPv6 subnet details with CIDR notation",
-      "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask."
+      "metaDescription": "Free online subnet calculator for IPv4 and IPv6 networks. Calculate network address, broadcast, usable IP range, and host count from CIDR notation or subnet mask.",
+      "guide": {
+        "steps": [
+          "Enter the IP address and subnet mask (or CIDR prefix like /24).",
+          "The tool derives the network address, broadcast address and usable host range.",
+          "Read total hosts, usable hosts and the binary view."
+        ],
+        "explanationTitle": "What are subnets and CIDR?",
+        "formula": "hosts = 2^(32 − prefix) − 2 (minus network and broadcast)",
+        "explanation": [
+          "An IPv4 address is 32 bits; the subnet mask marks how many bits are network and how many are host. CIDR writes the network length as '/number', e.g. /24 means the first 24 bits are network, the last 8 are host.",
+          "Each subnet loses the network and broadcast addresses, so usable hosts = 2^hostbits − 2. Good subnetting cuts broadcast storms and improves address use."
+        ],
+        "faq": [
+          {
+            "q": "How many usable IPs in /24?",
+            "a": "8 host bits → 256 addresses; minus network and broadcast leaves 254 usable."
+          },
+          {
+            "q": "Why subtract 2?",
+            "a": "The network address (all 0s) and broadcast (all 1s) cannot be assigned to hosts."
+          },
+          {
+            "q": "CIDR vs subnet mask?",
+            "a": "The CIDR prefix is the count of consecutive 1s in the mask. /24 equals 255.255.255.0."
+          }
+        ]
+      }
     },
     "cidr-range": {
       "name": "CIDR Range",
@@ -679,7 +817,34 @@
     "aspect-ratio": {
       "name": "Aspect Ratio",
       "description": "Calculate aspect ratios from width and height",
-      "metaDescription": "Calculate and convert aspect ratios for images and video"
+      "metaDescription": "Calculate and convert aspect ratios for images and video",
+      "guide": {
+        "steps": [
+          "Enter the original width and height, or pick a common preset like 16:9.",
+          "Specify one output side (width or height); the other is derived from the ratio.",
+          "Read the converted dimensions and compare cropping across ratios."
+        ],
+        "explanationTitle": "What is aspect ratio?",
+        "formula": "width : height = output width : output height",
+        "explanation": [
+          "Aspect ratio is the width-to-height proportion of a frame or image, written as 'width:height'. Scaling while keeping the ratio avoids distortion: as long as the output sides keep the same proportion, content is neither squashed nor stretched.",
+          "Common ratios are 16:9 (widescreen video), 4:3 (older TV) and 1:1 (square social images). Setting the right ratio in posters, video or mobile layouts keeps composition consistent."
+        ],
+        "faq": [
+          {
+            "q": "Why does stretching distort an image?",
+            "a": "Because the scaled ratio differs from the original. Lock 'keep ratio' so the other side is computed automatically."
+          },
+          {
+            "q": "What is the difference between 16:9 and 4:3?",
+            "a": "16:9 is wider, for modern TV and video; 4:3 is nearer square and was the older standard."
+          },
+          {
+            "q": "How do I make a photo 1:1?",
+            "a": "Crop the longer side to the shorter, or enter the original size and target 1:1 to see the crop needed."
+          }
+        ]
+      }
     },
     "aspect-fit": {
       "name": "Aspect Fit",
@@ -699,12 +864,66 @@
     "dpi": {
       "name": "DPI",
       "description": "Calculate megapixels from print size and DPI",
-      "metaDescription": "Calculate DPI and resolution for printing"
+      "metaDescription": "Calculate DPI and resolution for printing",
+      "guide": {
+        "steps": [
+          "Choose the direction: size → DPI, or DPI → print size.",
+          "Enter pixel dimensions and physical size (or DPI and target pixels).",
+          "Read the DPI / PPI and get print sharpness advice."
+        ],
+        "explanationTitle": "What are DPI and PPI?",
+        "formula": "DPI = pixels ÷ physical size (inches)",
+        "explanation": [
+          "DPI (dots per inch) is used for printing, PPI (pixels per inch) for screens; the terms are often mixed. They express how many dots/pixels fit in one inch — higher means finer detail.",
+          "Photos are usually printed at 300 DPI or more so they look sharp up close; web images at 72–96 PPI are fine. Enlarging low-pixel images prints blurry."
+        ],
+        "faq": [
+          {
+            "q": "Are DPI and PPI the same?",
+            "a": "Close but not identical: DPI is printer dot density, PPI screen pixel density; everyday use treats them as synonyms."
+          },
+          {
+            "q": "How much DPI for a photo print?",
+            "a": "Typically 300 DPI and up, 600 for high quality; below 150 DPI looks grainy up close."
+          },
+          {
+            "q": "Can small pixels print large?",
+            "a": "Barely, and the larger you go the blurrier. Check the DPI at your target size first."
+          }
+        ]
+      }
     },
     "image-filesize": {
       "name": "Image Filesize",
       "description": "Estimate image file size for JPEG, PNG, RAW formats",
-      "metaDescription": "Estimate image file sizes for different formats"
+      "metaDescription": "Estimate image file sizes for different formats",
+      "guide": {
+        "steps": [
+          "Pick the image type: photo (JPEG), transparent (PNG) or raw (RAW).",
+          "Enter resolution (width × height) and estimated quality/compression.",
+          "Read the estimated file size and compare formats."
+        ],
+        "explanationTitle": "How is image file size estimated?",
+        "formula": "bytes ≈ total pixels × bit depth × (1 − compression)",
+        "explanation": [
+          "Image size is driven by resolution, bit depth and compression. A 12-megapixel photo is huge uncompressed; JPEG's lossy compression shrinks it to a few MB, PNG is lossless but larger, and RAW keeps all sensor data.",
+          "Usually JPEG < PNG for photos; but flat/line art is often smaller as PNG because lossless suits it. Estimating size before upload avoids limits and slow loads."
+        ],
+        "faq": [
+          {
+            "q": "Which is smaller, JPEG or PNG?",
+            "a": "For photos JPEG is usually far smaller; for flat/line art PNG can win because lossless compression suits that content."
+          },
+          {
+            "q": "Why are RAW files so big?",
+            "a": "RAW keeps unprocessed sensor data for editing, often several times the JPEG size."
+          },
+          {
+            "q": "Does doubling resolution double the size?",
+            "a": "Uncompressed data doubles; compressed growth is a bit less but still clearly larger, so watch size on hi-res images."
+          }
+        ]
+      }
     },
     "light-ev": {
       "name": "Light EV",
@@ -714,7 +933,34 @@
     "megapixels": {
       "name": "Megapixel",
       "description": "Calculate megapixels from width and height",
-      "metaDescription": "Calculate megapixels from image dimensions"
+      "metaDescription": "Calculate megapixels from image dimensions",
+      "guide": {
+        "steps": [
+          "Enter the sensor width and height in pixels, or pick a common spec.",
+          "The tool totals the pixels and converts to megapixels (MP).",
+          "See the suggested printable size at a chosen DPI."
+        ],
+        "explanationTitle": "What are megapixels?",
+        "formula": "megapixels = (width × height) ÷ 1,000,000",
+        "explanation": [
+          "A megapixel (MP) is one million pixels; it describes a camera or image's resolving power. More pixels mean larger possible enlargements and finer detail.",
+          "But pixels are not the only quality factor: lens, sensor size and processing matter too. A few MP suffice for web sharing; A4 prints benefit from 12–24 MP."
+        ],
+        "faq": [
+          {
+            "q": "More pixels means sharper?",
+            "a": "Up to a point, but lens and sensor size cap it; cramming pixels on a small sensor can add noise."
+          },
+          {
+            "q": "How many MP to print?",
+            "a": "A 6×4 snap needs about 4 MP; A4 prints want 12 MP+, posters 24 MP+."
+          },
+          {
+            "q": "Are tens of MP on phones useful?",
+            "a": "Mostly for multi-frame fusion and cropping; straight-out shots are limited by optics, so real gain is modest."
+          }
+        ]
+      }
     },
     "megapixel-aspects": {
       "name": "Megapixel Aspects",
@@ -794,12 +1040,68 @@
     "rental-yield": {
       "name": "Rental Yield Calculator",
       "description": "Calculate gross and net rental yield for Swiss property investments",
-      "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns."
+      "metaDescription": "Free rental yield calculator for Swiss property investors. Calculate gross and net yields, compare to market averages, and analyze investment returns.",
+      "guide": {
+        "steps": [
+          "Enter property price (or down payment + loan) and monthly/annual rent.",
+          "Enter holding costs: fees, taxes, vacancy and repair reserves.",
+          "See gross and net rental yield, plus payback years."
+        ],
+        "explanationTitle": "Rental yield: gross vs net",
+        "formula": "gross = annual rent ÷ price; net = (annual rent − costs) ÷ invested capital",
+        "explanation": [
+          "Gross yield only uses 'annual rent ÷ price'—simple but overstates, ignoring taxes, vacancy, repairs. Net yield (after all holding costs) is the real return.",
+          "Base capital on 'what you actually put in': full price if cash, or down payment + interest if financed—otherwise leverage inflates your yield.",
+          "This tool gives gross/net yield and payback, helping compare 'buy-to-let' against 'save-and-invest' on equal footing."
+        ],
+        "faq": [
+          {
+            "q": "How far apart are gross and net?",
+            "a": "Depends on costs; net is often 2–4 points below gross. Ignoring costs badly overstates return."
+          },
+          {
+            "q": "How to count capital with a mortgage?",
+            "a": "Use down payment + cumulative interest as your real outlay; not the full price, or leverage inflates yield."
+          },
+          {
+            "q": "What yield is good?",
+            "a": "No universal standard—compare local price-to-rent, risk-free rate, and your taxes. The tool gives numbers; judge with your market."
+          }
+        ]
+      }
     },
     "property-valuation": {
       "name": "Property Valuation Calculator",
       "description": "Estimate Swiss property values using the hedonic method",
-      "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features."
+      "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features.",
+      "guide": {
+        "steps": [
+          "Enter comparable sales prices and key diffs (area, age, floor, etc.).",
+          "Pick method: comparison (nearby sales) or income (rent discounted).",
+          "See a valuation range and the weight of key adjustments."
+        ],
+        "explanationTitle": "Property valuation: comparison vs income",
+        "formula": "comparison ≈ unit price × area ± diff; income ≈ net annual rent ÷ cap rate",
+        "explanation": [
+          "The comparison (market) approach is most common: take recent similar nearby sales and adjust for area, age, orientation, floor, etc., to value the subject.",
+          "The income approach suits investments: annual net rent ÷ capitalization rate (cap rate) gives value, reflecting cash flow. Less relevant for pure owner-occupancy.",
+          "This tool gives a range, not a point—real deals are swayed by renovation, urgency, school district, so a band is more honest than false precision."
+        ],
+        "faq": [
+          {
+            "q": "Why a range, not a number?",
+            "a": "Comps always differ, and mood, finish, urgency matter. A range reflects uncertainty more honestly than a fake point."
+          },
+          {
+            "q": "Which method is accurate?",
+            "a": "Owner-occupier: comparison (local sales). Investor: income (cash flow). Combine both: anchor with comparison, validate with income."
+          },
+          {
+            "q": "Where does cap rate come from?",
+            "a": "From local same-type property price-to-rent ratios set by the market; infer from agent or public transaction data."
+          }
+        ]
+      }
     },
     "sun-position": {
       "name": "Sun Position",
@@ -884,7 +1186,34 @@
     "url-encoder": {
       "name": "URL Encoder",
       "description": "Encode and decode URLs and special characters",
-      "metaDescription": "Encode and decode URLs and URI components"
+      "metaDescription": "Encode and decode URLs and URI components",
+      "guide": {
+        "steps": [
+          "Paste the URL or query string to encode.",
+          "Choose percent-encoding (URL encode) or decode.",
+          "Read the result where unsafe characters become %XX escapes."
+        ],
+        "explanationTitle": "What is URL encoding?",
+        "formula": "space → %20; non-ASCII → UTF-8 bytes as %XX",
+        "explanation": [
+          "A URL may safely contain only a few characters (letters, digits and a few symbols). Spaces, Chinese text, & and = have special meaning or cannot travel, so they must be escaped as % followed by two hex digits.",
+          "Encoding lets links parse and transmit correctly, avoiding truncated parameters or injection. Decoding reverses it, turning %XX back to the original. It appears in form posts, API calls and query building."
+        ],
+        "faq": [
+          {
+            "q": "Why does space become %20?",
+            "a": "Space is not URL-safe; the standard escape is %20 (a + variant exists for form spaces)."
+          },
+          {
+            "q": "Why encode Chinese?",
+            "a": "URLs are ASCII-based; Chinese is first turned into UTF-8 bytes, then each byte into %XX, and decoded back on receipt."
+          },
+          {
+            "q": "Does encoding lose information?",
+            "a": "No. It is reversible; decoding restores the exact original string."
+          }
+        ]
+      }
     },
     "csp": {
       "name": "CSP Generator",
@@ -909,17 +1238,101 @@
     "html-encoder": {
       "name": "HTML Encoder",
       "description": "Encode and decode HTML entities",
-      "metaDescription": "Encode and decode HTML special characters"
+      "metaDescription": "Encode and decode HTML special characters",
+      "guide": {
+        "steps": [
+          "Paste HTML text needing escaping (with < > & etc.).",
+          "Choose encode (escape special chars) or decode (restore).",
+          "Copy the result for web code, form values, or docs."
+        ],
+        "explanationTitle": "What is HTML escaping and why",
+        "formula": "map: & → &amp;  < → &lt;  > → &gt;  \" → &quot;  ' → &#39;",
+        "explanation": [
+          "HTML escaping replaces syntax-meaning chars with entity references so the browser won't treat them as tags or attributes. E.g. write < as &lt; to display a literal less-than.",
+          "When echoing user input back to a page, correct escaping prevents XSS (cross-site scripting)—a Web-security basic. Frameworks often auto-escape; manual HTML concatenation needs care.",
+          "This tool encodes/decodes both ways, handy to check what a snippet really renders as, or to restore someone else's escaped content."
+        ],
+        "faq": [
+          {
+            "q": "Is escaping the same as encryption?",
+            "a": "No. Escaping only strips syntactic meaning; anyone can decode it. It's not secret and doesn't replace encryption."
+          },
+          {
+            "q": "When must I escape?",
+            "a": "Whenever inserting data into HTML, attributes, URLs, or JS contexts. Riskiest is user input concatenated straight into a page—use context-correct escaping."
+          },
+          {
+            "q": "Why does decoding differ from the original?",
+            "a": "If the source already had entities (e.g. &amp;), decoding restores &. Expected; watch idempotency on repeated round-trips."
+          }
+        ]
+      }
     },
     "html-chars": {
       "name": "HTML Character Map",
       "description": "Browse and copy HTML character entities",
-      "metaDescription": "Reference guide for HTML character entities"
+      "metaDescription": "Reference guide for HTML character entities",
+      "guide": {
+        "steps": [
+          "Type or paste text with special characters.",
+          "Choose convert to HTML entities (e.g. © → &copy;) or reverse.",
+          "See each character's named and numeric entity, then copy."
+        ],
+        "explanationTitle": "HTML character entities: names and numbers",
+        "formula": "char → named (&copy;) or numeric (&#169; / &#xA9;)",
+        "explanation": [
+          "Entities let you insert characters you can't type or that would be misread as tags—copyright ©, trademark ™, non-breaking space. Forms: named (&copy;) and numeric (&#169; or hex &#xA9;).",
+          "Named entities read better; some rare symbols exist only as numeric. Numeric entities are maximally compatible and cover any Unicode point.",
+          "This tool lists each character's name and number, handy for precise insertion in HTML, email templates, and rich text without errors."
+        ],
+        "faq": [
+          {
+            "q": "Named or numeric entity?",
+            "a": "Named is more readable and maintainable; numeric has the best compatibility and covers any code point. Mixing is fine if your tooling supports it."
+          },
+          {
+            "q": "Why do some symbols lack a named entity?",
+            "a": "HTML defines a limited set of named entities for standard chars; newer Unicode often only has numeric. Use &#xXXXX; to cover it."
+          },
+          {
+            "q": "Do entities conflict with storing UTF-8 chars?",
+            "a": "No. Modern sites mostly store UTF-8 directly; entities are for must-escape or semantics-clear cases."
+          }
+        ]
+      }
     },
     "emoji-chars": {
       "name": "Emoji Character Map",
       "description": "Browse and copy emoji with codes",
-      "metaDescription": "Browse and copy emoji characters"
+      "metaDescription": "Browse and copy emoji characters",
+      "guide": {
+        "steps": [
+          "Type or paste text with emoji / special symbols.",
+          "See each character's Unicode code point (U+XXXX) and UTF-8 bytes.",
+          "Copy code points or entity form for code and docs."
+        ],
+        "explanationTitle": "Emoji and Unicode: reading code points",
+        "formula": "code point: U+1F600 (😀); UTF-8 bytes: 0xF0 0x9F 0x98 0x80",
+        "explanation": [
+          "Every emoji and character has a unique Unicode code point like U+1F600. Many emoji are actually combinations (skin tone, ZWJ), so string length ≠ visible count.",
+          "UTF-8, the web's common encoding, turns a code point into 1–4 bytes. Surrogate pairs let beyond-BMP chars exist in UTF-16—why '😀'.length is 2 in JS.",
+          "This tool splits text into characters with their points and bytes, great for debugging truncation, mojibake, or wrong length."
+        ],
+        "faq": [
+          {
+            "q": "Why does an emoji count as two characters?",
+            "a": "Chars beyond the BMP use a surrogate pair in UTF-16; JS counts UTF-16 units, so length is 2."
+          },
+          {
+            "q": "Code point vs UTF-8 encoding?",
+            "a": "Code point is the logical number in the Unicode table; UTF-8 is the on-wire byte form. One point maps to 1–4 bytes."
+          },
+          {
+            "q": "Why do some emoji show as boxes?",
+            "a": "The system or font lacks that glyph and falls back to a box/question mark. It's a font-coverage issue, not encoding."
+          }
+        ]
+      }
     },
     "seo-performance": {
       "name": "SEO Performance Analyzer",
@@ -1194,7 +1607,35 @@
     "tip": {
       "name": "Tip",
       "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily"
+      "metaDescription": "Calculate tips and split bills easily",
+      "guide": {
+        "steps": [
+          "Pick the bill currency and the common local tip rate (e.g. restaurant 10%–15%, delivery 0%–10%).",
+          "Enter the bill amount, or enter the number of people so the tool splits the bill before tipping.",
+          "See the tip due, the total with tip, and each person's share when split by headcount."
+        ],
+        "explanationTitle": "How to calculate a tip? Logic and common rates",
+        "formula": "tip = bill × tip rate; total = bill + tip",
+        "explanation": [
+          "A tip is an extra gratuity for service staff, usually a percentage of the bill. Rates vary widely by country and setting: North American restaurants commonly use 15%–20%, while Japan and South Korea generally don't expect tips.",
+          "The sensible approach is to fix the local custom rate first, then multiply by the pre- or post-tax amount. For group dining, split the bill per person first, then tip each share, so nobody overpays by averaging.",
+          "This tool shows both the total-based and per-person results, handy for travel, team events, and dinners—you can settle who owes what in minutes."
+        ],
+        "faq": [
+          {
+            "q": "Should I tip on pre-tax or post-tax?",
+            "a": "Post-tax is more common in most regions, but some use the pre-tax subtotal. When unsure, base it on the subtotal shown and confirm with the establishment before paying."
+          },
+          {
+            "q": "How do I split a tip fairly among a group?",
+            "a": "Fairest is each person tips on their own spend plus a share of shared items; simply dividing the total tip by headcount is easier but makes big spenders subsidize the rest."
+          },
+          {
+            "q": "Where is tipping actually not expected?",
+            "a": "Japan, South Korea, New Zealand and Australia often include service in the bill, so extra tipping is uncommon; some European countries add a service charge, removing the need to tip separately."
+          }
+        ]
+      }
     },
     "savings-goal": {
       "name": "Savings Goal",
@@ -1400,17 +1841,101 @@
     "break-even": {
       "name": "Break-Even",
       "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point"
+      "metaDescription": "Find your business break-even point",
+      "guide": {
+        "steps": [
+          "Enter fixed costs (rent, salaries—costs that don't vary with volume).",
+          "Enter unit variable cost and unit price, or per-unit profit.",
+          "See the break-even quantity, the matching revenue, and a safety-margin hint."
+        ],
+        "explanationTitle": "Break-even: fixed vs variable costs",
+        "formula": "break-even qty = fixed cost ÷ (price − unit variable cost)",
+        "explanation": [
+          "The break-even point is the 'no profit, no loss' volume where total fixed costs are covered by per-unit contribution margin (price − variable cost).",
+          "Higher fixed costs or lower per-unit profit raise the break-even point and the risk. Discounting boosts volume but raises the point, needing more sales to recover.",
+          "This tool answers 'how many must I sell to not lose money'—useful before opening a shop, launching a product, or taking a project."
+        ],
+        "faq": [
+          {
+            "q": "Fixed vs variable cost?",
+            "a": "Fixed stays flat with output (rent, salary, subscriptions); variable moves with volume (materials, packaging, per-order shipping). Clear split gives accurate margin."
+          },
+          {
+            "q": "Does discounting raise or lower break-even?",
+            "a": "Usually raises it. Lower price → lower per-unit profit → more units needed to cover fixed costs."
+          },
+          {
+            "q": "What is safety margin?",
+            "a": "The amount actual sales exceed break-even. Bigger margin means more cushion against falling sales without loss."
+          }
+        ]
+      }
     },
     "profit-margin": {
       "name": "Profit Margin",
       "description": "Calculate gross, operating, and net profit margins",
-      "metaDescription": "Calculate business profit margins"
+      "metaDescription": "Calculate business profit margins",
+      "guide": {
+        "steps": [
+          "Choose 'cost-plus' or 'price-backward' mode.",
+          "Enter cost and target margin (or enter price to solve for cost/profit).",
+          "See profit, gross margin, and the minimum price to hit your target."
+        ],
+        "explanationTitle": "How margin works: cost vs price",
+        "formula": "margin = (price − cost) ÷ price; price = cost ÷ (1 − margin)",
+        "explanation": [
+          "Margin is based on price, markup on cost—easy to confuse. A 50% 'markup' is NOT a 50% 'margin': markup puts half the cost as profit, while margin puts half the price as profit.",
+          "To price, use 'cost ÷ (1 − target margin)'. E.g. cost 80, target margin 40% → price = 80 ÷ 0.6 ≈ 133.",
+          "Useful for e-commerce, restaurants, and freelancers to cover costs and lock in real profit instead of 'selling but not earning'."
+        ],
+        "faq": [
+          {
+            "q": "Is margin the same as markup?",
+            "a": "No. Margin = profit÷price, markup = profit÷cost. At the same number, markup implies a lower margin."
+          },
+          {
+            "q": "What price for 40% profit?",
+            "a": "price = cost ÷ (1 − 40%). At cost 100, price ≈ 167, profit ≈ 67, margin exactly 40%."
+          },
+          {
+            "q": "Why is real profit lower than calculated?",
+            "a": "Hidden costs like platform fees, shipping, refunds, and taxes are often missed. Fold them into cost before pricing back."
+          }
+        ]
+      }
     },
     "discount": {
       "name": "Discount",
       "description": "Calculate discounts, sale prices, and savings",
-      "metaDescription": "Calculate discounts and sale prices"
+      "metaDescription": "Calculate discounts and sale prices",
+      "guide": {
+        "steps": [
+          "Enter the original price and discount percent (e.g. 20%), or enter the sale price to back-calculate the discount.",
+          "The tool instantly shows the saving, the final price, and the equivalent 'fold' discount.",
+          "For stacked coupons or thresholds, chain two steps to get the final price."
+        ],
+        "explanationTitle": "How discounts work: logic and formula",
+        "formula": "final = original × (1 − discount%); saving = original − final",
+        "explanation": [
+          "A discount is proportional subtraction: 20% off means multiplying by 0.8, same as 'pay 80%'. Don't be misled by wording—'X% off' and 'pay (100−X)%' are identical in amount.",
+          "When stacking, 'discount then threshold' differs from 'threshold then discount'. Usually discounting first then checking a spend threshold favors the buyer, but platform rules vary.",
+          "Converting to 'fold' is intuitive: 20% off ≈ 0.8× (8 折), 35% off ≈ 0.65×. This tool shows the net price and discount strength for easy price comparison."
+        ],
+        "faq": [
+          {
+            "q": "Is 20% off the same as paying 80%?",
+            "a": "Yes, exactly—both multiply the price by 0.8. The wording differs but the final amount is identical."
+          },
+          {
+            "q": "Which comes first when stacking coupons and thresholds?",
+            "a": "Order changes the result. Most stores discount first then test the threshold; if the threshold is on the original price, threshold-first is cheaper. Read the rules."
+          },
+          {
+            "q": "How do I gauge discount strength quickly?",
+            "a": "Map percent off to fold: 30% off ≈ 0.7× (7 折), 50% off = 0.5×. Lower net price means stronger discount, but also check tax and category limits."
+          }
+        ]
+      }
     },
     "currency": {
       "name": "Currency Converter",
@@ -1484,12 +2009,68 @@
     "auto-loan": {
       "name": "Auto Loan",
       "description": "Calculate car loan payments, interest, and total cost",
-      "metaDescription": "Calculate your auto loan monthly payments and total cost"
+      "metaDescription": "Calculate your auto loan monthly payments and total cost",
+      "guide": {
+        "steps": [
+          "Enter car price, down payment (percent or amount), term, and annual rate.",
+          "Pick equal-installment (flat monthly) or equal-principal (higher early, lower later).",
+          "See monthly payment, total interest, total repaid, and early-payoff savings."
+        ],
+        "explanationTitle": "Auto loan payment: equal installment vs equal principal",
+        "formula": "payment ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Auto loans usually use equal installment: fixed monthly payment, with interest dominating early and principal later. Equal principal keeps principal flat and payments decline.",
+          "Rate and term hugely affect total interest. On a 200k loan, 4%→8% can double the interest; shortening by a year also saves a lot.",
+          "Compare down-payment, term, and rate combos to pick the plan with both manageable payment and lower total interest."
+        ],
+        "faq": [
+          {
+            "q": "Which is better, equal installment or principal?",
+            "a": "Equal principal pays less total interest but higher early payments. Choose installment if cash-flow tight; principal if you can afford early and want savings."
+          },
+          {
+            "q": "Is 0% financing really free?",
+            "a": "Often the rate is baked into a higher car price or fees, and 0% is short-term. Compare '0% price' vs 'normal loan price' for true cost."
+          },
+          {
+            "q": "How much does early payoff save?",
+            "a": "You pay principal early, so later interest stops. Savings depend on remaining principal and term—earlier pays off more (watch prepayment penalties)."
+          }
+        ]
+      }
     },
     "personal-loan": {
       "name": "Personal Loan",
       "description": "Calculate personal loan payments with fees and APR",
-      "metaDescription": "Calculate personal loan payments including origination fees"
+      "metaDescription": "Calculate personal loan payments including origination fees",
+      "guide": {
+        "steps": [
+          "Enter loan amount, APR, and term (months or years).",
+          "Pick repayment: equal installment is most common.",
+          "See monthly payment, total interest, total repaid, and compare terms."
+        ],
+        "explanationTitle": "Personal loan payment: APR and term",
+        "formula": "payment ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Personal loans usually use equal installment with a fixed monthly payment. The key variables are APR (cost of money) and term (monthly pressure).",
+          "On 100k, APR 6%→18% can multiply total interest several times. Longer term lowers the monthly but raises total interest—don't pick long just because it's easy.",
+          "This tool puts 'payment comfort' and 'total cost' side by side so low monthly payments don't hide extra interest."
+        ],
+        "faq": [
+          {
+            "q": "APR to monthly rate?",
+            "a": "monthly = APR ÷ 12. 12% APR → 1% monthly. Some ads use 'monthly fee rate' not real APR, which is costlier after conversion."
+          },
+          {
+            "q": "Is a longer term better?",
+            "a": "Lower payment but worse—more total interest. Choose long only if you need lower payments; otherwise prefer short to save."
+          },
+          {
+            "q": "Why is the payout less than I borrowed?",
+            "a": "Upfront fees, guarantee fees, or pre-deducted interest. Look at APR and total repaid, not just the monthly."
+          }
+        ]
+      }
     },
     "student-loan": {
       "name": "Student Loan",
@@ -1504,7 +2085,35 @@
     "debt-payoff": {
       "name": "Debt Payoff",
       "description": "Calculate how long to pay off debt with extra payments",
-      "metaDescription": "Calculate debt payoff time and savings from extra payments"
+      "metaDescription": "Calculate debt payoff time and savings from extra payments",
+      "guide": {
+        "steps": [
+          "List all debts: balance, rate, minimum payment.",
+          "Pick a strategy: avalanche (highest rate first) or snowball (smallest balance first).",
+          "See total payoff time, total interest, and the boost from paying extra."
+        ],
+        "explanationTitle": "Pay off debt fastest: avalanche vs snowball",
+        "formula": "each min payment = balance×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Both methods concentrate extra cash on one debt: avalanche goes high-rate first (least total interest); snowball goes small-balance first (more motivation, easier to stick).",
+          "The wider the rate gap, the more avalanche saves; if rates are close, results are similar—pick the one you'll keep doing.",
+          "This tool simulates both strategies' time and interest so you choose a plan that saves money and is sustainable, avoiding minimum-payment compound trap."
+        ],
+        "faq": [
+          {
+            "q": "Avalanche or snowball?",
+            "a": "Math favors avalanche (high rate first) for least interest; snowball (small first) uses early 'one paid off' wins to keep going. Pick what you'll finish."
+          },
+          {
+            "q": "Risk of minimum-only payments?",
+            "a": "Minimums mostly cover interest, principal drops slowly, and credit-card compounding balloons balance for years with huge total interest."
+          },
+          {
+            "q": "Does paying extra help?",
+            "a": "A lot. Any extra hits principal, later interest stops, shortening the cycle and saving interest (check prepayment allowance)."
+          }
+        ]
+      }
     },
     "credit-card": {
       "name": "Credit Card",
@@ -2172,7 +2781,35 @@
     "pace-calculator": {
       "name": "Pace",
       "description": "Calculate running pace, speed, and race times",
-      "metaDescription": "Calculate your running pace, predict race times, and plan your training"
+      "metaDescription": "Calculate your running pace, predict race times, and plan your training",
+      "guide": {
+        "steps": [
+          "Choose: distance+time → pace, or pace+distance → finish time.",
+          "Enter distance (m/km/mi) and time, or your target pace.",
+          "See pace (min:sec per km), finish time, and split suggestions."
+        ],
+        "explanationTitle": "Running pace: pace vs time",
+        "formula": "pace = time ÷ distance; time = pace × distance",
+        "explanation": [
+          "Pace is time per unit distance, shown as 'min:sec per km'. It's the yardstick of training intensity: at the same heart rate, slower pace means lower intensity.",
+          "Deriving pace from distance+time tells if a run met its goal; pace+distance previews finish time for race or training planning.",
+          "Switch metric/imperial to turn a goal like 'sub-30 5K' into a daily executable pace range."
+        ],
+        "faq": [
+          {
+            "q": "Pace vs speed?",
+            "a": "Speed is distance per time (12 km/h); pace is time per distance (5:00/km). Runners use pace because it maps to 'how hard each km feels'."
+          },
+          {
+            "q": "How to plan training with pace?",
+            "a": "Use easy/tempo/interval pace zones. After this tool gives target pace, fine-tune by heart rate or feel."
+          },
+          {
+            "q": "Calculated time far from actual?",
+            "a": "Terrain, wind, fatigue slow you. Pace is the ideal-flat reference; add margin for hills or headwind."
+          }
+        ]
+      }
     },
     "macro-calculator": {
       "name": "Macro",
@@ -2244,7 +2881,35 @@
     "protein-calculator": {
       "name": "Protein",
       "description": "Calculate daily protein requirements",
-      "metaDescription": "Calculate your daily protein needs based on your weight and goals"
+      "metaDescription": "Calculate your daily protein needs based on your weight and goals",
+      "guide": {
+        "steps": [
+          "Enter body weight (kg) and activity or fitness goal.",
+          "Pick goal: maintain / cut / bulk; protein scales accordingly.",
+          "See daily protein (g) and how many common-food servings that equals."
+        ],
+        "explanationTitle": "How much protein per day? Weight and goal",
+        "formula": "protein(g) ≈ weight(kg) × factor (maintain 0.8–1.2, bulk 1.6–2.2, cut 1.8–2.4)",
+        "explanation": [
+          "Protein need is based on body weight, not total calories. Sedentary ~0.8 g/kg; regular lifters need 1.6–2.2 g/kg for synthesis and recovery.",
+          "During a cut, aim higher (1.8–2.4 g/kg): in a deficit, more protein preserves lean mass and boosts satiety. Older adults should also nudge it up.",
+          "The tool converts grams into servings of chicken, eggs, Greek yogurt, etc., turning an abstract number into a plate you can build."
+        ],
+        "faq": [
+          {
+            "q": "Does too much protein hurt kidneys?",
+            "a": "For normal kidney function, evidence doesn't support harm from high protein; those with chronic kidney disease should follow medical limits. For most, weight-based intake is safe."
+          },
+          {
+            "q": "Is plant protein enough?",
+            "a": "Yes, but vary sources (legumes + grains) to cover essential amino acids. If fully vegan, aim slightly above the suggestion."
+          },
+          {
+            "q": "How much per meal absorbs best?",
+            "a": "About 20–40 g quality protein per meal uses well; 3–4 meals beats one large dose for synthesis."
+          }
+        ]
+      }
     },
     "carb-calculator": {
       "name": "Carbohydrate",
@@ -2410,17 +3075,101 @@
     "due-date": {
       "name": "Due Date",
       "description": "Calculate pregnancy due date and milestones",
-      "metaDescription": "Calculate your pregnancy due date and track important milestones"
+      "metaDescription": "Calculate your pregnancy due date and track important milestones",
+      "guide": {
+        "steps": [
+          "Enter the first day of your last menstrual period (LMP).",
+          "The tool adds the standard 280 days (40 weeks) to estimate the due date.",
+          "See due date, current week, and key prenatal checkup milestones."
+        ],
+        "explanationTitle": "How due date is calculated: LMP and weeks",
+        "formula": "due = LMP + 280 days (Naegele: month+9, day+7)",
+        "explanation": [
+          "The common method is Naegele's rule: from the first day of LMP, add 280 days (40 weeks). The shortcut is 'month+9, day+7'.",
+          "Only about 5% deliver exactly on the due date; within two weeks either side is normal. Early ultrasound (esp. CRL) refines the week better.",
+          "The tool also shows current gestational week and key screenings (NT, anatomy, glucose) so you can map the whole pregnancy timeline."
+        ],
+        "faq": [
+          {
+            "q": "Is the due date accurate?",
+            "a": "It's a midpoint estimate. ~80% are born within two weeks of it; only ~5% on the exact day. Treat it as a window, not a date."
+          },
+          {
+            "q": "Irregular cycles?",
+            "a": "Long or irregular cycles make LMP-based dating early. First-trimester ultrasound (CRL) is more accurate."
+          },
+          {
+            "q": "Why weeks, not months?",
+            "a": "Weeks (7-day) are finer; screenings are scheduled by week (NT 11–13, glucose 24–28), so weeks avoid missing windows."
+          }
+        ]
+      }
     },
     "ovulation-calculator": {
       "name": "Ovulation",
       "description": "Calculate ovulation date and fertile window",
-      "metaDescription": "Calculate your ovulation date and most fertile days"
+      "metaDescription": "Calculate your ovulation date and most fertile days",
+      "guide": {
+        "steps": [
+          "Enter first day of last period and average cycle length (default 28).",
+          "The tool estimates ovulation (~14 days before next period) and the fertile window.",
+          "See estimated ovulation for the next 6 cycles to plan or avoid."
+        ],
+        "explanationTitle": "How to find ovulation: cycle and ovulation day",
+        "formula": "ovulation ≈ next period − 14 days; fertile ≈ 5 days before to 1 day after",
+        "explanation": [
+          "Ovulation usually happens ~14 days before the next period (luteal phase is fairly fixed), while follicular length varies, so 'cycle−14' beats 'cycle÷2'.",
+          "Sperm survive ~3–5 days, egg ~12–24 h, so the fertile window spans ~5 days before to 1 day after ovulation—about a week.",
+          "Good for regular cycles as an estimate; for precision use basal temperature, OPKs, or an app. Irregular cycles widen the error."
+        ],
+        "faq": [
+          {
+            "q": "Can I calculate with irregular cycles?",
+            "a": "You can estimate but with larger error. The more variable the cycle, the harder ovulation is to predict—verify with OPK + temperature."
+          },
+          {
+            "q": "Why is the fertile window so long?",
+            "a": "Sperm live for days and ovulation can shift, so covering the days around ovulation is safest."
+          },
+          {
+            "q": "Used for both trying and avoiding?",
+            "a": "Yes, same principle: time intercourse for conception, or use protection to avoid—ovulation tracking alone isn't reliable birth control."
+          }
+        ]
+      }
     },
     "period-calculator": {
       "name": "Period",
       "description": "Track menstrual cycle and predict next period",
-      "metaDescription": "Track your menstrual cycle and predict your next period"
+      "metaDescription": "Track your menstrual cycle and predict your next period",
+      "guide": {
+        "steps": [
+          "Enter first day of last period and average cycle length.",
+          "The tool estimates next period and upcoming cycle dates.",
+          "Also estimates the current phase (follicular / luteal)."
+        ],
+        "explanationTitle": "Predicting periods: cycle math",
+        "formula": "next = last first day + cycle length; phase ≈ days since last first day",
+        "explanation": [
+          "The core is cycle length: add one cycle to the last first day for the next expected date. Most people fall in 21–35 days; 28 is common, not a standard.",
+          "Knowing length also hints at phase: ovulation ~14 days before next period, follicular before, luteal after—helping explain mood/energy swings.",
+          "Good for regular-cycle reminders; if cycles are chaotic, very long, or painful, see a doctor for PCOS/thyroid rather than relying on math."
+        ],
+        "faq": [
+          {
+            "q": "What cycle length is normal?",
+            "a": "21–35 days is common and varies by person. As long as yours is stable, you needn't hit 28."
+          },
+          {
+            "q": "Why is mine never on time?",
+            "a": "Stress, big weight changes, poor sleep, illness all disrupt it. Occasional shifts are normal; chronic irregularity deserves a check."
+          },
+          {
+            "q": "Can this detect pregnancy?",
+            "a": "No. A late period is only one possible sign; confirm with a test. This tool only schedules, not diagnoses."
+          }
+        ]
+      }
     },
     "pregnancy-weight-gain": {
       "name": "Pregnancy Weight Gain",
@@ -2435,7 +3184,34 @@
     "fraction-calculator": {
       "name": "Fraction",
       "description": "Add, subtract, multiply, divide, and simplify fractions",
-      "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers"
+      "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers",
+      "guide": {
+        "steps": [
+          "Pick an operation: add, subtract, multiply, divide, or just simplify a mixed/improper fraction.",
+          "Enter the numerators and denominators (multiple fractions supported); the tool validates that no denominator is zero.",
+          "Read the simplified result and toggle between improper and mixed-number display."
+        ],
+        "explanationTitle": "What are fraction operations?",
+        "formula": "a/b ± c/d = (ad ± bc)/bd; (a/b) × (c/d) = ac/bd",
+        "explanation": [
+          "A fraction has a numerator and a denominator: the denominator is how many equal parts the whole is split into, the numerator is how many of those parts you take. To add or subtract you must first rewrite both with a common denominator; multiply top-by-top and bottom-by-bottom; divide by multiplying by the reciprocal.",
+          "Results are usually reduced: divide numerator and denominator by their greatest common divisor to get the simplest form, and turn an improper fraction into a mixed number when the top is larger. Fraction arithmetic underpins ratios, probability, recipes and engineering measurement."
+        ],
+        "faq": [
+          {
+            "q": "Can the denominator be zero?",
+            "a": "No. Division by zero is undefined, so the calculator warns you the moment a denominator is zero to prevent invalid output."
+          },
+          {
+            "q": "How do I enter a mixed number?",
+            "a": "Enter the whole part first, then the numerator and denominator; results can also be toggled between improper and mixed form for easier reading."
+          },
+          {
+            "q": "Why is the result sometimes a repeating decimal?",
+            "a": "A fraction becomes a repeating decimal when its denominator has prime factors other than 2 or 5. That is normal, and you can keep as many digits as you need."
+          }
+        ]
+      }
     },
     "percentage-calculator": {
       "name": "Percentage",
@@ -2519,7 +3295,34 @@
     "average-calculator": {
       "name": "Average",
       "description": "Calculate mean, median, mode, and other averages",
-      "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean"
+      "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean",
+      "guide": {
+        "steps": [
+          "Enter the numbers line by line or comma separated; add or remove any time.",
+          "The tool ignores blank cells and flags obvious outliers (you can keep them if needed).",
+          "Read the arithmetic mean, the sum and the count, and toggle to see the median."
+        ],
+        "explanationTitle": "How is the average calculated?",
+        "formula": "mean = (x₁ + x₂ + … + xₙ) ÷ n",
+        "explanation": [
+          "The arithmetic mean adds up a set of values and divides by how many there are. It is a simple, intuitive measure of the 'centre' of the data, but it is very sensitive to extremes — a single very large or very small value can pull the mean noticeably up or down.",
+          "When a distribution is skewed or contains outliers, the median usually describes the typical value better than the mean. For example, a few very high incomes pull the average income up so most people appear 'below average'. Check both mean and median together."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between mean and median?",
+            "a": "The mean is the sum divided by the count; the median is the middle value after sorting. They diverge a lot in skewed data, and the median resists extreme values."
+          },
+          {
+            "q": "Do empty cells affect the result?",
+            "a": "No. Blank cells and unrecognised text are ignored; only valid numbers are used."
+          },
+          {
+            "q": "Can it do a weighted average?",
+            "a": "This tool computes the simple arithmetic mean. If each item has a different weight (e.g. exam weights), use a weighted average calculator."
+          }
+        ]
+      }
     },
     "long-division": {
       "name": "Long Division",
@@ -2584,7 +3387,34 @@
     "pythagorean-calculator": {
       "name": "Pythagorean Theorem",
       "description": "Calculate missing side using Pythagorean theorem",
-      "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem"
+      "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem",
+      "guide": {
+        "steps": [
+          "State the known sides: legs a and b, or one leg and hypotenuse c.",
+          "Enter the known values and leave the unknown blank (you can solve for the hypotenuse only).",
+          "Read the third side and see the algebraic steps of the theorem."
+        ],
+        "explanationTitle": "What is the Pythagorean theorem?",
+        "formula": "a² + b² = c² (c is the hypotenuse)",
+        "explanation": [
+          "The Pythagorean theorem says that in a right triangle, the square of the two legs equals the square of the hypotenuse. It is a foundation of Euclidean geometry and is used in construction, navigation, graphics and signal processing.",
+          "For the hypotenuse use √(a²+b²); if you know the hypotenuse and one leg, the other leg is √(c²−a²). It applies only to right triangles; others need the law of cosines."
+        ],
+        "faq": [
+          {
+            "q": "Only for right triangles?",
+            "a": "Yes. The theorem holds only for right triangles; general triangles use the law of cosines c²=a²+b²−2ab·cosC."
+          },
+          {
+            "q": "How do I find the hypotenuse?",
+            "a": "Square the legs, add them, then take the square root: c = √(a²+b²)."
+          },
+          {
+            "q": "Must the units match?",
+            "a": "Yes. a, b and c must share one length unit, or the result is meaningless."
+          }
+        ]
+      }
     },
     "circle-calculator": {
       "name": "Circle",
@@ -2594,7 +3424,34 @@
     "area-calculator": {
       "name": "Area",
       "description": "Calculate area of various shapes",
-      "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more"
+      "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more",
+      "guide": {
+        "steps": [
+          "Pick a shape: rectangle, circle, triangle, trapezoid and more.",
+          "Enter the required dimensions (length/width, radius, base/height) as prompted.",
+          "Read the area and switch the unit freely (cm², m², inch², etc.)."
+        ],
+        "explanationTitle": "How is area calculated?",
+        "formula": "rectangle = w×h; circle = πr²; triangle = base×height÷2",
+        "explanation": [
+          "Area measures how much two-dimensional surface a shape covers, in square units. Each shape has its own formula: a rectangle is width times height, a circle is π times radius squared, a triangle is base times height divided by two.",
+          "Keep units consistent: if sides are in centimetres the result is in square centimetres, and mixing units produces wrong answers. Area comes up constantly in renovation, land, fabric cutting and packaging design."
+        ],
+        "faq": [
+          {
+            "q": "What if my units differ?",
+            "a": "Unify the side units first, or switch the result unit inside the tool, to avoid the 100× error from mixing cm and m."
+          },
+          {
+            "q": "How do I find the area of an irregular shape?",
+            "a": "Split it into regular shapes, sum their areas, or use a grid estimate; for precision use a CAD tool."
+          },
+          {
+            "q": "How many digits of π are used?",
+            "a": "The tool uses enough precision (about 3.14159) for daily use; specify more only in scientific work."
+          }
+        ]
+      }
     },
     "surface-area-calculator": {
       "name": "Surface Area",
@@ -2604,7 +3461,34 @@
     "volume-calculator": {
       "name": "Volume",
       "description": "Calculate volume of 3D shapes",
-      "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more"
+      "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more",
+      "guide": {
+        "steps": [
+          "Pick a solid: cuboid, cube, cylinder, sphere, cone and more.",
+          "Enter the matching dimensions (length/width/height, radius, height).",
+          "Read the volume and switch units among mm³ / cm³ / m³ / L."
+        ],
+        "explanationTitle": "How is volume calculated?",
+        "formula": "cuboid = l×w×h; cylinder = πr²h; sphere = 4/3·πr³",
+        "explanation": [
+          "Volume is the space a three-dimensional object occupies, measured in cubic units. A cuboid is length × width × height; a cylinder is base area πr² times height; a sphere is 4/3πr³.",
+          "Watch the unit conversion: 1 cubic metre = 1000 litres. Liquids are usually given in litres or millilitres, solids in cm³. Volume matters for paint, packing boxes and aquarium capacity."
+        ],
+        "faq": [
+          {
+            "q": "Are volume and capacity the same?",
+            "a": "Close. Capacity is what a container holds (litres/mL); volume is the space an object takes (m³/cm³). The numbers convert directly."
+          },
+          {
+            "q": "How do litres and cubic metres relate?",
+            "a": "1 m³ = 1000 L, and 1 L = 1000 mL = 1000 cm³. The tool switches display for you."
+          },
+          {
+            "q": "How do I measure an irregular object's volume?",
+            "a": "Use water displacement (submerge and read the rise in a graduated cylinder), or 3D scan and compute."
+          }
+        ]
+      }
     },
     "moment-of-inertia": {
       "name": "Moment of Inertia Calculator",
@@ -3041,7 +3925,35 @@
       "effectiveRate": "Effective rate",
       "marginalRate": "Marginal rate",
       "net": "Net income",
-      "breakdown": "Per-bracket breakdown"
+      "breakdown": "Per-bracket breakdown",
+      "guide": {
+        "steps": [
+          "Pick the region's tax brackets or a simplified schedule (e.g. US federal, etc.).",
+          "Enter gross income and deductible items (social insurance, itemized, etc.).",
+          "See tax due, effective rate, and take-home pay."
+        ],
+        "explanationTitle": "How income tax works: progressive brackets",
+        "formula": "tax = Σ(bracket income × bracket rate) − quick deduction",
+        "explanation": [
+          "Most countries use progressive rates: income is split into brackets, lower parts taxed low and higher parts higher—not all at the top rate.",
+          "The gap between gross and net comes from three sources: mandatory insurance, allowances/standard deduction, and the progressive tax itself. Using deductions fully lowers the base legally.",
+          "This tool uses simplified brackets for quick planning—great for yearly estimates and 'how much more I keep after a raise'. For filing, follow local tax law."
+        ],
+        "faq": [
+          {
+            "q": "Why isn't all income taxed at the top rate?",
+            "a": "Progressive tax only applies the higher rate to the portion above each threshold; lower portions stay low, so effective rate is below the top."
+          },
+          {
+            "q": "What do itemized deductions do?",
+            "a": "They directly reduce taxable income, lowering tax. Mortgage interest, donations, insurance—using them fully saves legally."
+          },
+          {
+            "q": "Is this estimate accurate?",
+            "a": "It uses simplified brackets for speed. Real filing involves credits, capital gains, and special rules—consult local tax authority."
+          }
+        ]
+      }
     }
   },
   "calculator": {
@@ -9759,6 +10671,142 @@
           {
             "type": "p",
             "text": "Cycle timing is a useful guide, not a cure-all. If you regularly wake exhausted, feel sleepy by day, or snore heavily, that may point to something like sleep apnea, which needs a doctor rather than a schedule tweak. Cycle math fixes when you wake, not the quality of the sleep itself."
+          }
+        ]
+      },
+      "compound-interest-wealth-building": {
+        "title": "How Compound Interest Makes Wealth Snowball: The Power of Starting Early",
+        "excerpt": "Compound interest is often called the eighth wonder of the world. Understanding how it works—and seeing the numbers with a [compound interest calculator](/finance/compound-interest)—is the single most important step in long-term wealth building.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Compounding means each period's earnings are reinvested, so the next period's return is calculated on both your principal and the interest already accumulated. The longer the horizon, the steeper the curve."
+          },
+          {
+            "type": "h2",
+            "text": "Why starting early matters so much"
+          },
+          {
+            "type": "p",
+            "text": "Suppose you invest 1,000 per month at 8% annually. Starting at 25 versus 35 doesn't cost you 10 years of growth—it can cost you multiples, because the interest accumulated early keeps earning for decades."
+          },
+          {
+            "type": "callout",
+            "text": "The enemies of compounding are interruptions and fees. Frequent trading and high management fees quietly erode long-term returns. Rather than timing the market, start early and stay consistent."
+          },
+          {
+            "type": "p",
+            "text": "Use the [compound interest calculator](/finance/compound-interest) to enter your monthly contribution, years, and expected return, and watch time and compounding work together."
+          }
+        ]
+      },
+      "currency-exchange-how-it-works": {
+        "title": "How Exchange Rates Work: The Logic Behind Currency Conversion",
+        "excerpt": "Why does 1 USD equal roughly 7 CNY? Exchange rates aren't set arbitrarily. Use a [currency calculator](/finance/currency) to see your actual net amount and avoid hidden fees.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "An exchange rate is essentially the relative price of two currencies, shaped by supply and demand, interest-rate gaps, inflation, and economic expectations."
+          },
+          {
+            "type": "h2",
+            "text": "Mid-market rate, cash rate, and fees"
+          },
+          {
+            "type": "p",
+            "text": "The rate you see quoted is often not what you end up with. Banks and platforms add a spread and fees on top of the mid-market rate. Use a [currency calculator](/finance/currency) to compute the net amount before comparing channels."
+          },
+          {
+            "type": "callout",
+            "text": "When spending abroad, dynamic currency conversion (DCC) is usually more expensive than settling in the local currency. On overseas cards, choose to be charged in the local currency."
+          }
+        ]
+      },
+      "mortgage-amortization-explained": {
+        "title": "Understanding Mortgage Amortization: Where Your Interest Really Goes",
+        "excerpt": "Of each monthly payment, how much is principal versus interest? Early on, you're mostly paying interest. Use a [mortgage calculator](/finance/mortgage) to see your repayment structure and judge whether early repayment pays off.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Amortization means the loan is repaid in periodic installments of a fixed amount, but the split between principal and interest shifts every period."
+          },
+          {
+            "type": "h2",
+            "text": "Interest first, principal later"
+          },
+          {
+            "type": "p",
+            "text": "With a fixed monthly payment, early payments are mostly interest and little principal. As the balance falls, the interest portion shrinks. Use a [mortgage calculator](/finance/mortgage) to see the yearly principal/interest breakdown."
+          },
+          {
+            "type": "callout",
+            "text": "When rates are low, the savings from prepayment are limited; at high rates or with spare cash, prepaying can cut total interest substantially. Weigh it against your investment return."
+          }
+        ]
+      },
+      "roi-evaluating-investments": {
+        "title": "ROI Isn't the Only Metric: How to Evaluate an Investment",
+        "excerpt": "Don't get excited by '20% annual return' just yet. Use an [ROI calculator](/finance/roi) to find the real return, and factor in time, risk, and opportunity cost.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "ROI (return on investment) is (gain − cost) / cost. It's simple and intuitive, but it ignores the time your money is tied up."
+          },
+          {
+            "type": "h2",
+            "text": "Time makes the same ROI wildly different"
+          },
+          {
+            "type": "p",
+            "text": "Earning 20% in one year is nothing like 20% over five years. Use an [ROI calculator](/finance/roi) to see the annualized figure and compare it with a risk-free return."
+          },
+          {
+            "type": "callout",
+            "text": "A high ROI with high volatility or a long lock-up may not beat a steadier, lower return. Weigh it against your risk tolerance, not just the headline number."
+          }
+        ]
+      },
+      "calorie-deficit-weight-loss": {
+        "title": "A Calorie Deficit Is the Only Rule for Weight Loss: How to Get It Right",
+        "excerpt": "There's no magic to losing weight—only an energy gap. Use a [calorie calculator](/health/calorie-calculator) and a [BMR calculator](/health/bmr-calculator) to find your expenditure, then build a sensible deficit.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "When intake stays below expenditure over time, the body taps its reserves and weight falls. That's a calorie deficit."
+          },
+          {
+            "type": "h2",
+            "text": "Don't make the deficit too large"
+          },
+          {
+            "type": "p",
+            "text": "A daily gap of 300–500 kcal is usually sustainable and less likely to rebound. First use a [BMR calculator](/health/bmr-calculator) for resting burn, then add activity for total expenditure."
+          },
+          {
+            "type": "callout",
+            "text": "Extreme dieting lowers metabolism and sheds muscle. Use a [calorie calculator](/health/calorie-calculator) to set a gentle deficit, paired with protein and strength training for stability."
+          }
+        ]
+      },
+      "heart-rate-training-zones": {
+        "title": "Heart Rate Training Zones: Train Smarter by Using the Right Intensity",
+        "excerpt": "The same run serves different goals—fat burn versus cardio fitness need different intensities. Use a [target heart rate calculator](/health/target-heart-rate) to find your zones and give every session a purpose.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Heart rate zones layer training intensity, from recovery and fat burn to anaerobic, each tied to a different energy system and training effect."
+          },
+          {
+            "type": "h2",
+            "text": "First find your maximum heart rate"
+          },
+          {
+            "type": "p",
+            "text": "The common estimate is 220 − age, but individual variation is large. A [target heart rate calculator](/health/target-heart-rate) that splits zones by percentage is more reliable."
+          },
+          {
+            "type": "callout",
+            "text": "Training hard all the time leads to poor recovery and injury. Blend low-intensity cardio with intervals for steadier progress."
           }
         ]
       }

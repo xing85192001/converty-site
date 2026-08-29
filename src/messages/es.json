@@ -30,7 +30,8 @@
         "about": "Acerca de",
         "contact": "Contacto",
         "terms": "Términos de Servicio",
-        "blog": "Blog"
+        "blog": "Blog",
+        "sitemap": "Mapa del sitio"
       }
     },
     "navigation": {
@@ -98,7 +99,9 @@
     "copySuccess": "Copiado al portapapeles",
     "copyError": "No se pudo copiar al portapapeles",
     "advertisement": "Anuncio",
-    "toolsCount": "herramientas"
+    "toolsCount": "herramientas",
+    "sitemapTitle": "Mapa del sitio",
+    "sitemapIntro": "Explora cada herramienta, categoría y artículo del blog de baikecalc. Indexado por categoría para llegar rápido a la calculadora que necesitas."
   },
   "mediaTools": {
     "sectionTitle": "🖼️ Procesamiento de imágenes y video",
@@ -595,7 +598,34 @@
     "age": {
       "name": "Edad",
       "description": "Calcule la edad exacta desde la fecha de nacimiento en años, meses y días.",
-      "metaDescription": "Calcula tu edad exacta en años, meses, días, horas y minutos."
+      "metaDescription": "Calcula tu edad exacta en años, meses, días, horas y minutos.",
+      "guide": {
+        "steps": [
+          "Introduce la fecha de nacimiento (A/M/D); añade la hora para más precisión.",
+          "Introduce la fecha actual (por defecto hoy).",
+          "Lee la edad exacta en años, meses, días y días totales vividos."
+        ],
+        "explanationTitle": "¿Cómo se calcula la edad con precisión?",
+        "formula": "edad = fecha actual − fecha de nacimiento (resta calendario)",
+        "explanation": [
+          "La edad exacta no es una simple resta de años; hay que llevar meses y días. Si el día de hoy es anterior al del cumpleaños, se toma del mes y se convierte a días, dando años/meses/días correctos.",
+          "Los días totales sirven para hitos, seguros o edad legal. Ojo con husos y años bisiestos: quien nace 29 feb suele contarse 28 feb o 1 mar en años no bisiestos, según costumbre."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué restar años falla?",
+            "a": "Ignora si el cumpleaños de este año ya pasó. Meses/días paso a paso dan la edad real."
+          },
+          {
+            "q": "¿Nacido el 29 feb de año bisiesto?",
+            "a": "En no bisiestos suele contarse 28 feb o 1 mar según costumbre; la herramienta sigue la regla común."
+          },
+          {
+            "q": "¿Muestra días totales vividos?",
+            "a": "Sí, el resultado incluye los días totales desde el nacimiento, con años bisiestos."
+          }
+        ]
+      }
     },
     "date": {
       "name": "Fecha",
@@ -620,12 +650,66 @@
     "time-zone": {
       "name": "Huso horario",
       "description": "Convertir horas entre diferentes zonas horarias",
-      "metaDescription": "Convierta horas en diferentes zonas horarias en todo el mundo"
+      "metaDescription": "Convierta horas en diferentes zonas horarias en todo el mundo",
+      "guide": {
+        "steps": [
+          "Elige zona origen y destino (ciudades y offsets UTC).",
+          "Introduce la hora local a convertir.",
+          "Lee la hora destino y si rige el horario de verano."
+        ],
+        "explanationTitle": "¿Cómo se convierten husos horarios?",
+        "formula": "destino = origen + (offset destino − offset origen)",
+        "explanation": [
+          "La Tierra se divide en 24 husos por longitud, cada uno una hora. Para convertir sumas la diferencia de offsets UTC de destino y origen a la hora original.",
+          "El horario de verano (DST) adelanta el reloj una hora en verano en algunas regiones, cambiando el offset temporalmente. Reuniones, vuelos y teletrabajo deben comprobar DST en ambos lados."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es un offset UTC?",
+            "a": "La diferencia de horas con el Tiempo Universal Coordinado; Pekín es UTC+8, Londres invierno UTC+0."
+          },
+          {
+            "q": "¿Afecta el horario de verano?",
+            "a": "Sí. Las regiones con DST suman +1 en verano; confirma el estado según la fecha."
+          },
+          {
+            "q": "¿Por qué un país tiene varias zonas?",
+            "a": "Países grandes (EE. UU., Rusia) cubren varias longitudes y se dividen naturalmente."
+          }
+        ]
+      }
     },
     "day-counter": {
       "name": "Contador de días",
       "description": "Contar días entre fechas o hasta una fecha futura",
-      "metaDescription": "Cuente los días entre dos fechas o hasta un próximo evento"
+      "metaDescription": "Cuente los días entre dos fechas o hasta un próximo evento",
+      "guide": {
+        "steps": [
+          "Introduce inicio y fin; alterna si los extremos cuentan.",
+          "La herramienta cruza meses y años y maneja bisiestos.",
+          "Lee la diferencia en días y conviértela a semanas o laborables."
+        ],
+        "explanationTitle": "¿Cuántos días entre dos fechas?",
+        "formula": "diferencia = ordinal fin − ordinal inicio",
+        "explanation": [
+          "La diferencia convierte cada fecha en su 'número de día desde una época' y resta. Bisiestos y largos de mes se manejan solos.",
+          "Sirve para plazos de contrato, ciclos de proyecto, semanas de embarazo o cuentas atrás. Los laborables exigen quitar fines de semana y festivos."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuentan los extremos?",
+            "a": "Conmutable 'incluir/excluir extremos'. Cuentas atrás suelen excluir; cronogramas incluir."
+          },
+          {
+            "q": "¿Solo días laborables?",
+            "a": "La herramienta da laborables; los festivos varían por región y hay que quitarlos a mano."
+          },
+          {
+            "q": "¿Preciso en años bisiestos?",
+            "a": "Sí. Usa ordinales reales del calendario, incluido 29 feb."
+          }
+        ]
+      }
     },
     "day-of-week": {
       "name": "Día de la semana",
@@ -655,12 +739,66 @@
     "download-calculator": {
       "name": "Descargar",
       "description": "Calcule el tiempo de descarga a partir del ancho de banda y el tamaño del archivo",
-      "metaDescription": "Calcule cuánto tiempo tomará la descarga de un archivo"
+      "metaDescription": "Calcule cuánto tiempo tomará la descarga de un archivo",
+      "guide": {
+        "steps": [
+          "Introduce el tamaño (p. ej. 500 MB) y tu ancho de banda (p. ej. 100 Mbps).",
+          "Ojo con unidades: el ancho es Mbps (megabits/s), los archivos MB (megabytes).",
+          "Lee el tiempo estimado y compáralo entre anchos de banda."
+        ],
+        "explanationTitle": "¿Cómo se estima el tiempo de descarga?",
+        "formula": "tiempo(s) = bytes archivo × 8 ÷ ancho(bps)",
+        "explanation": [
+          "El tiempo es el total de bits dividido por la tasa de transferencia. La trampa son las unidades: '100 Mbps' son megabits por segundo, pero los archivos usan megabytes y 1 byte = 8 bits, así que la velocidad real se divide entre 8.",
+          "La realidad añade overhead de protocolo, límites del servidor y pérdida Wi-Fi, típicamente 10–30 % más lenta. La herramienta da el suelo teórico para planear."
+        ],
+        "faq": [
+          {
+            "q": "¿Mbps y MB son iguales?",
+            "a": "No. Mbps son megabits por segundo, MB megabytes; 1 MB = 8 Mb. Las tarifas casi siempre usan b minúscula (bits)."
+          },
+          {
+            "q": "¿Por qué la realidad es más lenta?",
+            "a": "Overhead, límites del servidor y pérdida inalámbrica suman 10–30 %."
+          },
+          {
+            "q": "¿Cómo descargar más rápido?",
+            "a": "Usa cable, acércate al router, evita picos o sube ancho; la herramienta estima por ancho."
+          }
+        ]
+      }
     },
     "subnet-calculator": {
       "name": "Subred visual",
       "description": "Calcule los detalles de las subredes IPv4 e IPv6 con notación CIDR",
-      "metaDescription": "Calculadora de subredes en línea gratuita para redes IPv4 e IPv6. Calcule la dirección de red, la transmisión, el rango de IP utilizable y el recuento de hosts a partir de la notación CIDR o la máscara de subred."
+      "metaDescription": "Calculadora de subredes en línea gratuita para redes IPv4 e IPv6. Calcule la dirección de red, la transmisión, el rango de IP utilizable y el recuento de hosts a partir de la notación CIDR o la máscara de subred.",
+      "guide": {
+        "steps": [
+          "Introduce IP y máscara (o prefijo CIDR como /24).",
+          "La herramienta deduce red, broadcast y rango de hosts usables.",
+          "Lee hosts totales, usables y la vista binaria."
+        ],
+        "explanationTitle": "¿Qué son subredes y CIDR?",
+        "formula": "hosts = 2^(32 − prefijo) − 2 (menos red y broadcast)",
+        "explanation": [
+          "Una IPv4 tiene 32 bits; la máscara marca cuántos son de red y cuántos de host. CIDR escribe la longitud de red como '/número'; /24 son 24 bits de red y 8 de host.",
+          "Cada subred pierde la dirección de red y la de broadcast, así que hosts usables = 2^hostbits − 2. Una buena división reduce tormentas de broadcast."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuántas IP usables en /24?",
+            "a": "8 bits de host → 256 direcciones; menos red y broadcast quedan 254."
+          },
+          {
+            "q": "¿Por qué restar 2?",
+            "a": "La de red (todo 0) y la de broadcast (todo 1) no se asignan a hosts."
+          },
+          {
+            "q": "¿CIDR vs máscara?",
+            "a": "El prefijo CIDR es la cuenta de 1s seguidas en la máscara. /24 equivale a 255.255.255.0."
+          }
+        ]
+      }
     },
     "cidr-range": {
       "name": "Gama CIDR",
@@ -685,7 +823,34 @@
     "aspect-ratio": {
       "name": "Relación de aspecto",
       "description": "Calcular relaciones de aspecto a partir del ancho y el alto.",
-      "metaDescription": "Calcula y convierte relaciones de aspecto para imágenes y videos."
+      "metaDescription": "Calcula y convierte relaciones de aspecto para imágenes y videos.",
+      "guide": {
+        "steps": [
+          "Introduce ancho y alto originales o elige un ajuste común como 16:9.",
+          "Indica un lado de salida (ancho o alto); el otro se deduce de la proporción.",
+          "Lee las dimensiones convertidas y compara recortes según proporción."
+        ],
+        "explanationTitle": "¿Qué es la relación de aspecto?",
+        "formula": "ancho : alto = ancho salida : alto salida",
+        "explanation": [
+          "La relación de aspecto es la proporción entre ancho y alto de un encuadre o imagen, escrita como 'ancho:alto'. Escalar manteniendo la proporción evita distorsión: si la salida conserva la proporción, nada se aplasta.",
+          "Proporciones comunes: 16:9 (vídeo panorámico), 4:3 (TV antigua) y 1:1 (imágenes cuadradas de redes). Fijar la proporción correcta mantiene la composición coherente."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué estirar distorsiona la imagen?",
+            "a": "Porque la proporción resultante difiere de la original. Bloquea 'mantener proporción' para calcular el otro lado."
+          },
+          {
+            "q": "¿Diferencia entre 16:9 y 4:3?",
+            "a": "16:9 es más ancho (TV/vídeo moderno); 4:3 más cuadrado (estándar antiguo)."
+          },
+          {
+            "q": "¿Cómo hago una foto 1:1?",
+            "a": "Recorta el lado largo al corto, o introduce el original y el objetivo 1:1 para ver el recorte."
+          }
+        ]
+      }
     },
     "aspect-fit": {
       "name": "Ajuste de aspecto",
@@ -705,12 +870,66 @@
     "dpi": {
       "name": "PPP",
       "description": "Calcule megapíxeles a partir del tamaño de impresión y DPI",
-      "metaDescription": "Calcular DPI y resolución para imprimir."
+      "metaDescription": "Calcular DPI y resolución para imprimir.",
+      "guide": {
+        "steps": [
+          "Elige la dirección: tamaño → DPI o DPI → tamaño de impresión.",
+          "Introduce píxeles y tamaño físico (o DPI y píxeles objetivo).",
+          "Lee DPI / PPI y recibe consejo de nitidez de impresión."
+        ],
+        "explanationTitle": "¿Qué son DPI y PPI?",
+        "formula": "DPI = píxeles ÷ tamaño físico (pulgadas)",
+        "explanation": [
+          "DPI (puntos por pulgada) se usa en impresión, PPI (píxeles por pulgada) en pantallas; a menudo se mezclan. Indican cuántos puntos/píxeles caben en una pulgada: a más, más detalle.",
+          "Las fotos suelen imprimirse a 300 DPI o más para verse nítidas de cerca; las web con 72–96 PPI bastan. Agrandar pocos píxeles imprime borroso."
+        ],
+        "faq": [
+          {
+            "q": "¿Son iguales DPI y PPI?",
+            "a": "Cercanos pero no idénticos: DPI es densidad de puntos del plotter, PPI de píxeles de pantalla; en el uso diario son sinónimos."
+          },
+          {
+            "q": "¿Cuánto DPI para imprimir fotos?",
+            "a": "Normalmente 300 DPI en adelante, 600 para alta calidad; bajo 150 DPI se ve granulado."
+          },
+          {
+            "q": "¿Pueden píxeles pequeños imprimir grande?",
+            "a": "Apenas, y cuanto más grande más borroso. Verifica el DPI a tu tamaño objetivo."
+          }
+        ]
+      }
     },
     "image-filesize": {
       "name": "Tamaño del archivo de imagen",
       "description": "Estimar el tamaño del archivo de imagen para formatos JPEG, PNG y RAW",
-      "metaDescription": "Calcule el tamaño de los archivos de imagen para diferentes formatos"
+      "metaDescription": "Calcule el tamaño de los archivos de imagen para diferentes formatos",
+      "guide": {
+        "steps": [
+          "Elige el tipo: foto (JPEG), transparente (PNG) o crudo (RAW).",
+          "Introduce resolución (ancho × alto) y calidad/compresión estimada.",
+          "Lee el tamaño estimado y compara formatos."
+        ],
+        "explanationTitle": "¿Cómo se estima el tamaño de imagen?",
+        "formula": "bytes ≈ píxeles totales × profundidad × (1 − compresión)",
+        "explanation": [
+          "El tamaño depende de resolución, profundidad de bits y compresión. Una foto de 12 megapíxeles es enorme sin comprimir; JPEG la reduce a pocos MB con pérdida, PNG es sin pérdida y mayor, RAW guarda todos los datos del sensor.",
+          "Suele cumplirse JPEG < PNG en fotos; pero gráficos/texto planos pueden ser más pequeños en PNG. Estimar antes de subir evita límites y cargas lentas."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es menor, JPEG o PNG?",
+            "a": "En fotos JPEG suele ser mucho menor; en gráficos planos PNG puede ganar porque la compresión sin pérdida le sienta bien."
+          },
+          {
+            "q": "¿Por qué los RAW son tan grandes?",
+            "a": "El RAW guarda datos sin procesar del sensor para edición, a menudo varias veces el tamaño JPEG."
+          },
+          {
+            "q": "¿Duplicar resolución duplica el tamaño?",
+            "a": "Los datos sin comprimir se duplican; comprimido crece algo menos pero sigue creciendo mucho, así que vigila en imágenes de alta resolución."
+          }
+        ]
+      }
     },
     "light-ev": {
       "name": "Vehículo eléctrico ligero",
@@ -720,7 +939,34 @@
     "megapixels": {
       "name": "megapíxel",
       "description": "Calcular megapíxeles a partir de ancho y alto.",
-      "metaDescription": "Calcular megapíxeles a partir de las dimensiones de la imagen."
+      "metaDescription": "Calcular megapíxeles a partir de las dimensiones de la imagen.",
+      "guide": {
+        "steps": [
+          "Introduce ancho y alto del sensor en píxeles o elige una especificación.",
+          "La herramienta suma los píxeles y los convierte a megapíxeles (MP).",
+          "Ve el tamaño imprimible sugerido a un DPI elegido."
+        ],
+        "explanationTitle": "¿Qué son los megapíxeles?",
+        "formula": "megapíxeles = (ancho × alto) ÷ 1.000.000",
+        "explanation": [
+          "Un megapíxel (MP) son un millón de píxeles; describe el poder de resolución de cámara o imagen. Más píxeles permiten ampliaciones mayores y más detalle.",
+          "Pero los píxeles no son el único factor: lente, tamaño de sensor y procesado también cuentan. Pocos MP bastan en web; A4 aprecia 12–24 MP."
+        ],
+        "faq": [
+          {
+            "q": "¿Más píxeles = más nitidez?",
+            "a": "Hasta cierto punto; lente y sensor ponen el límite, y apilar píxeles en sensor pequeño puede sumar ruido."
+          },
+          {
+            "q": "¿Cuántos MP para imprimir?",
+            "a": "Una foto 6×4 quiere unos 4 MP; A4 unos 12 MP+, pósters 24 MP+."
+          },
+          {
+            "q": "¿Sirven los decenas de MP del móvil?",
+            "a": "Mayormente para fusión multi-fotograma y recorte; la foto directa está limitada por la óptica, así que el gain real es modesto."
+          }
+        ]
+      }
     },
     "megapixel-aspects": {
       "name": "Aspectos megapíxeles",
@@ -800,12 +1046,68 @@
     "rental-yield": {
       "name": "Calculadora de rendimiento de alquiler",
       "description": "Calcule el rendimiento de alquiler bruto y neto para inversiones inmobiliarias en Suiza",
-      "metaDescription": "Calculadora de rendimiento de alquiler gratuita para inversores inmobiliarios suizos. Calcule los rendimientos brutos y netos, compárelos con los promedios del mercado y analice los rendimientos de las inversiones."
+      "metaDescription": "Calculadora de rendimiento de alquiler gratuita para inversores inmobiliarios suizos. Calcule los rendimientos brutos y netos, compárelos con los promedios del mercado y analice los rendimientos de las inversiones.",
+      "guide": {
+        "steps": [
+          "Introduce precio (o enganche + préstamo) y renta mensual/anual.",
+          "Costes de tenencia: tarifas, impuestos, vacancia y reparación.",
+          "Ve rendimiento bruto y neto, y años de recuperación."
+        ],
+        "explanationTitle": "Rendimiento de alquiler: bruto vs neto",
+        "formula": "bruto = renta anual ÷ precio; neto = (renta anual − costes) ÷ capital",
+        "explanation": [
+          "El bruto solo usa 'renta anual ÷ precio'—simple pero exagera al omitir impuestos, vacancia, reparaciones. El neto tras costes es el retorno real.",
+          "Capital = 'lo que realmente pusiste': precio al contado, o enganche + intereses si financiado—si no, el apalancamiento infla el rendimiento.",
+          "La herramienta da bruto/neto y recuperación, para comparar 'comprar para alquilar' contra 'ahorrar' en igualdad."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto distan bruto y neto?",
+            "a": "Según costes; neto suele quedar 2–4 puntos bajo bruto. Ignorar costes sobreestima mucho."
+          },
+          {
+            "q": "¿Capital con hipoteca?",
+            "a": "Enganche + intereses como desembolso real; no el precio total, o el apalancamiento infla."
+          },
+          {
+            "q": "¿Qué rendimiento es bueno?",
+            "a": "Sin estándar único—compara precio-renta local, tasa sin riesgo e impuestos. La herramienta da números."
+          }
+        ]
+      }
     },
     "property-valuation": {
       "name": "Calculadora de valoración de propiedades",
       "description": "Calcule el valor de las propiedades suizas utilizando el método hedónico",
-      "metaDescription": "Calculadora gratuita de valoración de propiedades suizas. Calcule el valor de apartamentos y casas según la ubicación, el tamaño, la condición y las características."
+      "metaDescription": "Calculadora gratuita de valoración de propiedades suizas. Calcule el valor de apartamentos y casas según la ubicación, el tamaño, la condición y las características.",
+      "guide": {
+        "steps": [
+          "Introduce precios de comparables y diffs (área, antigüedad, piso).",
+          "Elig método: comparación (ventas) o ingresos (renta).",
+          "Ve un rango de valor y el peso de ajustes."
+        ],
+        "explanationTitle": "Valoración inmobiliaria: comparación vs ingresos",
+        "formula": "comparación ≈ precio unitario × área ± diff; ingresos ≈ renta neta ÷ tasa de capitalización",
+        "explanation": [
+          "El enfoque de comparación es el común: toma ventas recientes similares y ajusta por área, antigüedad, orientación, piso.",
+          "El de ingresos sirve para inversión: renta neta anual ÷ tasa de capitalización da valor, refleja flujo. Menos relevante para uso propio.",
+          "La herramienta da un rango, no un punto—los tratos reales cambian con renovación, urgencia, zona escolar, así es más honesto."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué un rango?",
+            "a": "Los comparables difieren y cuentan ánimo, acabado, urgencia. El rango refleja incertidumbre mejor que falsa precisión."
+          },
+          {
+            "q": "¿Qué método es preciso?",
+            "a": "Uso propio: comparación; inversor: ingresos. Combina ambos: ancla con comparación, valida con ingresos."
+          },
+          {
+            "q": "¿De dónde sale la tasa de capitalización?",
+            "a": "De la relación precio-renta local del mercado; infiere de agente o datos públicos de transacción."
+          }
+        ]
+      }
     },
     "sun-position": {
       "name": "Posición del sol",
@@ -890,7 +1192,34 @@
     "url-encoder": {
       "name": "Codificador de URL",
       "description": "Codificar y decodificar URL y caracteres especiales",
-      "metaDescription": "Codificar y decodificar URL y componentes URI"
+      "metaDescription": "Codificar y decodificar URL y componentes URI",
+      "guide": {
+        "steps": [
+          "Pega la URL o la cadena de consulta a codificar.",
+          "Elige codificación porcentual (URL encode) o decodificación.",
+          "Lee el resultado donde los caracteres inseguros son %XX."
+        ],
+        "explanationTitle": "¿Qué es la codificación URL?",
+        "formula": "espacio → %20; no ASCII → bytes UTF-8 como %XX",
+        "explanation": [
+          "Una URL solo admite de forma segura pocos caracteres (letras, dígitos y pocos símbolos). Espacios, chino, & y = tienen significado especial o no viajan, así que se escapan como % y dos dígitos hex.",
+          "Codificar permite que los enlaces se analicen y transmitan bien, sin truncar parámetros ni inyección. Decodificar invierte el proceso. Aparece en formularios, APIs y consultas."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué el espacio se vuelve %20?",
+            "a": "El espacio no es seguro en URL; el escape estándar es %20 (en formularios también +)."
+          },
+          {
+            "q": "¿Por qué codificar el chino?",
+            "a": "Las URL son ASCII; el chino se vuelve bytes UTF-8 y luego %XX, y se decodifica al recibirse."
+          },
+          {
+            "q": "¿Pierde información la codificación?",
+            "a": "No. Es reversible; decodificar restaura la cadena original exacta."
+          }
+        ]
+      }
     },
     "csp": {
       "name": "Generador CSP",
@@ -915,17 +1244,101 @@
     "html-encoder": {
       "name": "Codificador HTML",
       "description": "Codificar y decodificar entidades HTML",
-      "metaDescription": "Codificar y decodificar caracteres especiales HTML"
+      "metaDescription": "Codificar y decodificar caracteres especiales HTML",
+      "guide": {
+        "steps": [
+          "Pega texto HTML a escapar (con < > & etc.).",
+          "Elig codificar (escapar) o decodificar (restaurar).",
+          "Copia el resultado para código, valores de formulario o docs."
+        ],
+        "explanationTitle": "Qué es el escapado HTML y por qué",
+        "formula": "mapeo: & → &amp;  < → &lt;  > → &gt;  \" → &quot;  ' → &#39;",
+        "explanation": [
+          "El escapado reemplaza caracteres con significado sintáctico por entidades para que el navegador no los tome como etiquetas. Ej. < se escribe &lt; para mostrar el signo.",
+          "Al volver a mostrar entrada del usuario, el escapado correcto previene XSS—un básico de seguridad web. Los frameworks suelen escapar solos; concatenar HTML a mano exige cuidado.",
+          "Esta herramienta codifica/decodifica en ambos sentidos, útil para ver qué renderiza un fragmento o restaurar contenido escapado ajeno."
+        ],
+        "faq": [
+          {
+            "q": "¿Escapar es lo mismo que cifrar?",
+            "a": "No. Escapar solo quita el significado sintáctico; cualquiera puede decodificar. No es secreto ni reemplaza cifrado."
+          },
+          {
+            "q": "¿Cuándo debo escapar?",
+            "a": "Siempre que insertes datos en HTML, atributos, URLs o JS. Lo más arriesgado es entrada de usuario concatenada directo en la página—usa escape según contexto."
+          },
+          {
+            "q": "¿Por qué el decode difiere del original?",
+            "a": "Si la fuente ya tenía entidades (&amp;), decodificar restaura &. Esperado; cuida idempotencia en repeticiones."
+          }
+        ]
+      }
     },
     "html-chars": {
       "name": "Mapa de caracteres HTML",
       "description": "Explorar y copiar entidades de caracteres HTML",
-      "metaDescription": "Guía de referencia para entidades de caracteres HTML"
+      "metaDescription": "Guía de referencia para entidades de caracteres HTML",
+      "guide": {
+        "steps": [
+          "Escribe o pega texto con caracteres especiales.",
+          "Elig convertir a entidades HTML (&copy;) o revertir.",
+          "Ve nombre y número de cada carácter y copia."
+        ],
+        "explanationTitle": "Entidades HTML: nombres y números",
+        "formula": "carácter → nombre (&copy;) o numérico (&#169; / &#xA9;)",
+        "explanation": [
+          "Las entidades insertan caracteres que no tipeas o que se leerían como etiquetas—©, ™, espacio irregular. Formas: nombre (&copy;) y numérico (&#169; o hex &#xA9;).",
+          "Los nombrados se leen mejor; símbolos raros solo numéricos. Los numéricos son máxima compatibilidad y cubren cualquier punto Unicode.",
+          "La herramienta lista nombre y número por carácter, útil para inserción precisa en HTML, correo y rich text."
+        ],
+        "faq": [
+          {
+            "q": "¿Nombre o número?",
+            "a": "Nombre más legible; numérico máxima compatibilidad y cubre cualquier punto. Mezclar está bien si el tooling soporta."
+          },
+          {
+            "q": "¿Por qué falta nombre a algunos símbolos?",
+            "a": "HTML define un conjunto limitado de nombrados; Unicode nuevo suele ser solo numérico. &#xXXXX; lo cubre."
+          },
+          {
+            "q": "¿Conflicto con guardar UTF-8?",
+            "a": "No. Sitios modernos guardan UTF-8 directo; entidades para escapar obligatorio o claridad semántica."
+          }
+        ]
+      }
     },
     "emoji-chars": {
       "name": "Mapa de caracteres emoji",
       "description": "Explora y copia emoji con códigos",
-      "metaDescription": "Explorar y copiar caracteres emoji"
+      "metaDescription": "Explorar y copiar caracteres emoji",
+      "guide": {
+        "steps": [
+          "Escribe o pega texto con emoji / símbolos.",
+          "Ve el punto de código Unicode (U+XXXX) y bytes UTF-8 por carácter.",
+          "Copia puntos o entidad para código y docs."
+        ],
+        "explanationTitle": "Emoji y Unicode: leer puntos de código",
+        "formula": "punto: U+1F600 (😀); bytes UTF-8: 0xF0 0x9F 0x98 0x80",
+        "explanation": [
+          "Cada emoji tiene un punto de código único como U+1F600. Muchos son combinaciones (tono, ZWJ), así longitud ≠ conteo visible.",
+          "UTF-8, la codificación común web, convierte un punto en 1–4 bytes. Los pares sustitutos permiten chars fuera del BMP en UTF-16—por eso '😀'.length es 2 en JS.",
+          "Esta herramienta separa el texto en caracteres con puntos y bytes, ideal para depurar truncado, mojibake o longitud errónea."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué un emoji cuenta como dos?",
+            "a": "Fuera del BMP usa par sustituto en UTF-16; JS cuenta unidades UTF-16, así length es 2."
+          },
+          {
+            "q": "¿Punto de código vs UTF-8?",
+            "a": "El punto es el número lógico; UTF-8 la forma en bytes. Un punto → 1–4 bytes."
+          },
+          {
+            "q": "¿Por qué algunos emoji son cajas?",
+            "a": "El sistema o fuente carece del glifo y cae en caja. Es cobertura de fuente, no codificación."
+          }
+        ]
+      }
     },
     "seo-performance": {
       "name": "Analizador de rendimiento SEO",
@@ -1200,7 +1613,35 @@
     "tip": {
       "name": "Propina",
       "description": "Calcula el monto de la propina y divide la cuenta entre varias personas",
-      "metaDescription": "Calcula propinas y divide cuentas"
+      "metaDescription": "Calcula propinas y divide cuentas",
+      "guide": {
+        "steps": [
+          "Elige la moneda y la propina habitual del lugar (p. ej. restaurante 10–15 %, reparto 0–10 %).",
+          "Introduce el importe de la cuenta o el número de personas para dividir antes de calcular la propina.",
+          "Consulta la propina, el total con propina y lo que paga cada uno al dividir por headcount."
+        ],
+        "explanationTitle": "Cómo calcular la propina: lógica y porcentajes habituales",
+        "formula": "propina = cuenta × porcentaje; total = cuenta + propina",
+        "explanation": [
+          "La propina es una gratificación extra para el servicio, normalmente un porcentaje de la cuenta. Varía mucho: en restaurantes de Norteamérica se usan 15–20 %, mientras que en Japón o Corea del Sur barely se da propina.",
+          "Lo sensato es fijar primero el porcentaje local y multiplicarlo por el importe antes o después de impuestos. En grupos, reparte la cuenta por persona y luego aplica la propina a cada parte para que nadie pague de más.",
+          "Esta herramienta muestra el resultado total y por persona, útil para viajes, eventos y cenas: en minutos sabes quién debe cuánto."
+        ],
+        "faq": [
+          {
+            "q": "¿Con el importe antes o después de impuestos?",
+            "a": "En la mayoría de regiones se usa el importe con impuestos, aunque algunos usan el subtotal sin ellos. Si dudas, basa el cálculo en el subtotal y confírmalo antes de pagar."
+          },
+          {
+            "q": "¿Cómo dividir la propina en un grupo?",
+            "a": "Lo más justo es que cada uno propine sobre su consumo más su parte de lo común; dividir el total por cabeza es más fácil pero hace que los que consumen más paguen menos."
+          },
+          {
+            "q": "¿Dónde no se espera propina?",
+            "a": "Japón, Corea del Sur, Nueva Zelanda y Australia suelen incluir el servicio en la cuenta; algunos países europeos añaden un cargo por servicio, así que no hace falta propina aparte."
+          }
+        ]
+      }
     },
     "savings-goal": {
       "name": "Meta de Ahorro",
@@ -1406,17 +1847,101 @@
     "break-even": {
       "name": "Punto de Equilibrio",
       "description": "Calcula el punto de equilibrio y el análisis de beneficios",
-      "metaDescription": "Análisis del punto de equilibrio"
+      "metaDescription": "Análisis del punto de equilibrio",
+      "guide": {
+        "steps": [
+          "Introduce costes fijos (alquiler, salarios—no varían con el volumen).",
+          "Introduce coste variable unitario y precio, o beneficio por unidad.",
+          "Ve cantidad de equilibrio, ingreso equivalente y una pista de margen de seguridad."
+        ],
+        "explanationTitle": "Punto de equilibrio: fijos vs variables",
+        "formula": "q. equilibrio = coste fijo ÷ (precio − coste variable unit.)",
+        "explanation": [
+          "El punto de equilibrio es el volumen 'sin pérdida' donde los fijos se cubren con el margen unitario (precio − variable).",
+          "Más fijos o menor margen suben el punto y el riesgo. Los descuentos suben volumen pero elevan el punto, exigiendo más ventas.",
+          "Responde 'cuánto vender para no perder'—útil antes de abrir, lanzar o aceptar un proyecto."
+        ],
+        "faq": [
+          {
+            "q": "¿Fijo vs variable?",
+            "a": "Fijo es plano (alquiler, sueldo, suscripciones); variable sigue el volumen (material, envío). La separación da margen exacto."
+          },
+          {
+            "q": "¿El descuento sube o baja el equilibrio?",
+            "a": "Suele subirlo. Menor precio → menor margen → más unidades para cubrir fijos."
+          },
+          {
+            "q": "¿Qué es margen de seguridad?",
+            "a": "Cuánto superan las ventas reales el equilibrio. Mayor margen = más colchón ante caídas."
+          }
+        ]
+      }
     },
     "profit-margin": {
       "name": "Margen de beneficio",
       "description": "Calcular los márgenes de beneficio bruto, operativo y neto.",
-      "metaDescription": "Calcular los márgenes de beneficio empresarial"
+      "metaDescription": "Calcular los márgenes de beneficio empresarial",
+      "guide": {
+        "steps": [
+          "Elig modo 'sobre costo' o 'precio inverso'.",
+          "Introduce coste y margen objetivo (o precio para resolver coste/beneficio).",
+          "Consulta beneficio, margen bruto y el precio mínimo para tu objetivo."
+        ],
+        "explanationTitle": "Cómo funciona el margen: coste vs precio",
+        "formula": "margen = (precio − coste) ÷ precio; precio = coste ÷ (1 − margen)",
+        "explanation": [
+          "El margen se basa en el precio, el recargo en el coste: fácil de confundir. Un recargo del 50 % NO es margen del 50 %: el recargo pone la mitad del coste como beneficio.",
+          "Para fijar precio: coste ÷ (1 − margen objetivo). Coste 80, margen 40 % → precio = 80 ÷ 0.6 ≈ 133.",
+          "Útil para e-commerce, restauración y autónomos para cubrir costes y asegurar beneficio real."
+        ],
+        "faq": [
+          {
+            "q": "¿Margen es lo mismo que recargo?",
+            "a": "No. Margen = beneficio÷precio, recargo = beneficio÷coste. Al mismo número, el recargo implica margen menor."
+          },
+          {
+            "q": "¿Qué precio para 40 % de beneficio?",
+            "a": "precio = coste ÷ (1 − 40 %). Coste 100 → ≈ 167, beneficio ≈ 67, margen exacto 40 %."
+          },
+          {
+            "q": "¿Por qué el beneficio real es menor?",
+            "a": "Suelen faltar comisiones, envío, devoluciones e impuestos. Inclúyelos en el coste antes de calcular a la inversa."
+          }
+        ]
+      }
     },
     "discount": {
       "name": "Descuento",
       "description": "Calcula descuentos, precios de venta y ahorros.",
-      "metaDescription": "Calcular descuentos y precios de venta."
+      "metaDescription": "Calcular descuentos y precios de venta.",
+      "guide": {
+        "steps": [
+          "Introduce el precio original y el descuento (p. ej. 20 %) o el precio rebajado para calcularlo a la inversa.",
+          "La herramienta muestra al instante el ahorro, el precio final y el equivalente en 'pliegues'.",
+          "Para cupones o umbrales acumulados, encadena dos pasos hasta el precio final."
+        ],
+        "explanationTitle": "Cómo funcionan los descuentos: lógica y fórmula",
+        "formula": "final = original × (1 − descuento%); ahorro = original − final",
+        "explanation": [
+          "Un descuento es resta proporcional: 20 % menos equivale a multiplicar por 0.8, lo mismo que 'pagar el 80 %'. 'X % menos' y 'pagar (100−X) %' son iguales en importe.",
+          "Al acumular, 'descuento y luego umbral' difiere de 'umbral y luego descuento'. Normalmente el descuento primero favorece al comprador, pero las reglas varían.",
+          "Convertir a 'pliegues' ayuda: 20 % menos ≈ 0.8×, 35 % ≈ 0.65×. La herramienta muestra el precio neto y la fuerza del descuento para comparar."
+        ],
+        "faq": [
+          {
+            "q": "¿Es lo mismo 20 % menos que pagar 80 %?",
+            "a": "Sí, exacto: ambos multiplican por 0.8. Cambia solo la frase, el importe es idéntico."
+          },
+          {
+            "q": "¿Qué va primero al acumular cupones y umbrales?",
+            "a": "El orden cambia el resultado. Muchas tiendas descuentan primero y luego comprueban el umbral; si el umbral es sobre el original, umbral primero sale más barato."
+          },
+          {
+            "q": "¿Cómo evalúo rápido la fuerza del descuento?",
+            "a": "Mapea porcentaje a pliegue: 30 % ≈ 0.7×, 50 % = 0.5×. Precio neto menor = descuento mayor, pero fíjate en impuestos y límites de categoría."
+          }
+        ]
+      }
     },
     "currency": {
       "name": "Convertidor de Moneda",
@@ -1490,12 +2015,68 @@
     "auto-loan": {
       "name": "Préstamo para automóvil",
       "description": "Calcule los pagos del préstamo del automóvil, los intereses y el costo total",
-      "metaDescription": "Calcule los pagos mensuales de su préstamo para automóvil y el costo total"
+      "metaDescription": "Calcule los pagos mensuales de su préstamo para automóvil y el costo total",
+      "guide": {
+        "steps": [
+          "Introduce precio, enganche (porcentaje o monto), plazo y tasa anual.",
+          "Elig cuota fija o capital fijo (alta al inicio, baja después).",
+          "Ver cuota, interés total, total pagado y ahorro por prepago."
+        ],
+        "explanationTitle": "Pago de auto: cuota fija vs capital fijo",
+        "formula": "cuota ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Los préstamos de auto usan cuota fija: pago mensual constante, con interés alto al inicio y capital al final. Capital fijo mantiene el capital y baja la cuota.",
+          "Tasa y plazo afectan mucho el interés total. En 200k, 4%→8% puede duplicar el interés; un año menos ahorra bastante.",
+          "Compara enganche, plazo y tasa para elegir plan con cuota manejable y menos interés."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuota fija o capital fijo, cuál conviene?",
+            "a": "Capital fijo paga menos interés pero cuotas iniciales altas. Cuota fija si la liquidez aprieta; capital fijo si puedes y quieres ahorrar."
+          },
+          {
+            "q": "¿El 0 % es realmente gratis?",
+            "a": "A menudo está en el precio más alto o comisiones, y es corto. Compara 'precio 0 %' vs 'precio con préstamo'."
+          },
+          {
+            "q": "¿Cuánto ahorra el prepago?",
+            "a": "Pagas capital pronto, el interés posterior se detiene. Depende del capital restante y plazo—antes ahorra más (ojo con penalización)."
+          }
+        ]
+      }
     },
     "personal-loan": {
       "name": "Préstamo personal",
       "description": "Calcular pagos de préstamos personales con tarifas y APR",
-      "metaDescription": "Calcule los pagos de préstamos personales, incluidas las tarifas de originación"
+      "metaDescription": "Calcule los pagos de préstamos personales, incluidas las tarifas de originación",
+      "guide": {
+        "steps": [
+          "Introduce monto, TAE y plazo (meses o años).",
+          "Elig repago: cuota fija es lo común.",
+          "Ver cuota, interés total, total pagado y comparar plazos."
+        ],
+        "explanationTitle": "Préstamo personal: TAE y plazo",
+        "formula": "cuota ≈ P×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Los préstamos personales usan cuota fija. Las claves son TAE (coste) y plazo (presión mensual).",
+          "En 100k, TAE 6%→18% multiplica el interés. Plazo largo baja la cuota pero sube el interés—no elijas largo por comodidad.",
+          "La herramienta pone 'cuota' y 'coste total' juntos para que la cuota baja no oculte interés extra."
+        ],
+        "faq": [
+          {
+            "q": "¿TAE a mensual?",
+            "a": "mensual = TAE ÷ 12. 12 % TAE → 1 % mensual. Algunos anuncios usan 'tasa mensual' no TAE real, más cara al convertir."
+          },
+          {
+            "q": "¿Plazo largo es mejor?",
+            "a": "Cuota menor pero peor—más interés. Elige largo solo si necesitas cuota baja; si no, corto ahorra."
+          },
+          {
+            "q": "¿Por qué recibo menos de lo que pedí?",
+            "a": "Comisiones o intereses anticipados. Mira TAE y total pagado, no solo la cuota."
+          }
+        ]
+      }
     },
     "student-loan": {
       "name": "Préstamo estudiantil",
@@ -1510,7 +2091,35 @@
     "debt-payoff": {
       "name": "Pago de deuda",
       "description": "Calcule en cuánto tiempo saldar la deuda con pagos extras",
-      "metaDescription": "Calcule el tiempo de pago de la deuda y el ahorro por pagos extras"
+      "metaDescription": "Calcule el tiempo de pago de la deuda y el ahorro por pagos extras",
+      "guide": {
+        "steps": [
+          "Lista todas las deudas: saldo, tasa, pago mínimo.",
+          "Elig estrategia: avalancha (mayor tasa primero) o bola de nieve (saldo menor).",
+          "Ve tiempo total, interés total y el efecto de pagar extra."
+        ],
+        "explanationTitle": "Pagar deuda más rápido: avalancha vs bola de nieve",
+        "formula": "pago mínimo = saldo×r×(1+r)^n ÷ ((1+r)^n − 1)",
+        "explanation": [
+          "Ambos concentran el extra en una deuda: avalancha va a mayor tasa (menos interés); bola de nieve a menor saldo (más motivación).",
+          "Cuanto mayor la brecha de tasas, más ahorra avalancha; si son similares, elige la que sostengas.",
+          "La herramienta simula ambas para que ahorres y perdures, evitando la trampa de interés compuesto del mínimo."
+        ],
+        "faq": [
+          {
+            "q": "¿Avalancha o bola de nieve?",
+            "a": "Matemáticamente avalancha (mayor tasa) ahorra más; bola de nieve usa logros tempranos. Elige la que termines."
+          },
+          {
+            "q": "¿Riesgo de solo el mínimo?",
+            "a": "Cubre casi solo intereses, el saldo baja lento y el compuesto de tarjeta infla el saldo años con interés enorme."
+          },
+          {
+            "q": "¿Ayuda pagar extra?",
+            "a": "Mucho. Todo extra va a capital, el interés posterior se detiene, acorta y ahorra (revisa prepago)."
+          }
+        ]
+      }
     },
     "credit-card": {
       "name": "Tarjeta de crédito",
@@ -2178,7 +2787,35 @@
     "pace-calculator": {
       "name": "Paso",
       "description": "Calcula el ritmo de carrera, la velocidad y los tiempos de carrera.",
-      "metaDescription": "Calcula tu ritmo de carrera, predice tiempos de carrera y planifica tu entrenamiento"
+      "metaDescription": "Calcula tu ritmo de carrera, predice tiempos de carrera y planifica tu entrenamiento",
+      "guide": {
+        "steps": [
+          "Elig: distancia+tiempo → ritmo, o ritmo+distancia → tiempo final.",
+          "Introduce distancia (m/km/mi) y tiempo, o tu ritmo objetivo.",
+          "Ve ritmo (min:seg por km), tiempo final y sugerencias de parciales."
+        ],
+        "explanationTitle": "Ritmo de carrera: ritmo vs tiempo",
+        "formula": "ritmo = tiempo ÷ distancia; tiempo = ritmo × distancia",
+        "explanation": [
+          "El ritmo es tiempo por distancia, en 'min:seg por km'. Mide intensidad: a igual pulso, ritmo más lento = menos intenso.",
+          "De distancia+tiempo derivar el ritmo dice si cumpliste; ritmo+distancia previewa el tiempo final.",
+          "Cambia métrico/imperial para convertir 'sub-30 5K' en un rango de ritmo diario."
+        ],
+        "faq": [
+          {
+            "q": "¿Ritmo vs velocidad?",
+            "a": "Velocidad es distancia por tiempo (12 km/h); ritmo es tiempo por distancia (5:00/km). El corredor usa ritmo porque refleja 'lo duro que es cada km'."
+          },
+          {
+            "q": "¿Cómo planear con ritmo?",
+            "a": "Usa zonas easy/tempo/intervalo. Tras el ritmo objetivo, ajusta por pulso o sensación."
+          },
+          {
+            "q": "¿Tiempo real muy distinto?",
+            "a": "Terreno, viento, fatiga frenan. El ritmo es referencia ideal en llano; añade margen en cuesta o contra viento."
+          }
+        ]
+      }
     },
     "macro-calculator": {
       "name": "Macro",
@@ -2250,7 +2887,35 @@
     "protein-calculator": {
       "name": "Proteína",
       "description": "Calcular los requerimientos diarios de proteínas.",
-      "metaDescription": "Calcula tus necesidades proteicas diarias en función de tu peso y objetivos"
+      "metaDescription": "Calcula tus necesidades proteicas diarias en función de tu peso y objetivos",
+      "guide": {
+        "steps": [
+          "Introduce peso (kg) y objetivo o actividad.",
+          "Elig meta: mantener / déficit / volumen; la proteína escala.",
+          "Ve proteína diaria (g) y cuántas raciones de alimentos equivale."
+        ],
+        "explanationTitle": "¿Cuánta proteína al día? Peso y meta",
+        "formula": "proteína(g) ≈ peso(kg) × factor (mantener 0.8–1.2, volumen 1.6–2.2, déficit 1.8–2.4)",
+        "explanation": [
+          "La proteína se basa en el peso, no en las calorías. Sedentario ~0.8 g/kg; quien entrena necesita 1.6–2.2 g/kg para síntesis y recuperación.",
+          "En déficit apunta alto (1.8–2.4 g/kg): más proteína preserva masa y sacia. Los mayores también un poco más.",
+          "La herramienta convierte gramos en raciones de pollo, huevos, yogur griego—el número se vuelve plato."
+        ],
+        "faq": [
+          {
+            "q": "¿Demasiada proteína daña riñones?",
+            "a": "Con función normal, la evidencia no apoya daño; con enfermedad crónica, límites médicos. Para la mayoría es seguro por peso."
+          },
+          {
+            "q": "¿Basta la proteína vegetal?",
+            "a": "Sí, pero mezcla fuentes (legumbres + granos) para aminoácidos esenciales. Vegano, ligeramente por encima."
+          },
+          {
+            "q": "¿Cuánta por comida absorbe mejor?",
+            "a": "Unas 20–40 g por comida se aprovechan bien; 3–4 comidas superan a una dosis grande."
+          }
+        ]
+      }
     },
     "carb-calculator": {
       "name": "Carbohidrato",
@@ -2416,17 +3081,101 @@
     "due-date": {
       "name": "Fecha de vencimiento",
       "description": "Calcular la fecha prevista del embarazo y los hitos",
-      "metaDescription": "Calcule la fecha prevista de su embarazo y realice un seguimiento de los hitos importantes"
+      "metaDescription": "Calcule la fecha prevista de su embarazo y realice un seguimiento de los hitos importantes",
+      "guide": {
+        "steps": [
+          "Introduce el primer día de tu última menstruación (LMP).",
+          "La herramienta suma 280 días (40 sem.) para estimar la fecha.",
+          "Ve fecha probable, semana actual y controles clave."
+        ],
+        "explanationTitle": "Cómo se calcula la fecha: LMP y semanas",
+        "formula": "fecha = LMP + 280 días (Naegele: mes+9, día+7)",
+        "explanation": [
+          "El método común es Naegele: desde el primer día de LMP sumar 280 días (40 sem.). Atajo: 'mes+9, día+7'.",
+          "Solo ~5 % nace exactamente en la fecha; dos semanas alrededor son normales. Ecografía temprana (CRL) afina la semana.",
+          "La herramienta muestra semana y controles (NT, anatomía, glucosa) para mapear todo el embarazo."
+        ],
+        "faq": [
+          {
+            "q": "¿Es exacta la fecha?",
+            "a": "Es un punto medio. ~80 % nace dentro de dos semanas; solo ~5 % el día exacto. Véla como ventana."
+          },
+          {
+            "q": "¿Ciclos irregulares?",
+            "a": "Ciclos largos o irregulares adelantan la fecha por LMP. Ecografía del 1. trimestre (CRL) es más exacta."
+          },
+          {
+            "q": "¿Por qué semanas y no meses?",
+            "a": "Las semanas (7 días) son más finas; los controles se programan por semana (NT 11–13, glucosa 24–28)."
+          }
+        ]
+      }
     },
     "ovulation-calculator": {
       "name": "Ovulación",
       "description": "Calcular fecha de ovulación y ventana fértil",
-      "metaDescription": "Calcula tu fecha de ovulación y días más fértiles"
+      "metaDescription": "Calcula tu fecha de ovulación y días más fértiles",
+      "guide": {
+        "steps": [
+          "Introduce primer día de la última regla y duración media (28 por defecto).",
+          "La herramienta estima ovulación (~14 días antes) y ventana fértil.",
+          "Ve ovulación estimada de los próximos 6 ciclos."
+        ],
+        "explanationTitle": "Cómo hallar la ovulación: ciclo y día",
+        "formula": "ovulación ≈ próxima regla − 14 días; fértil ≈ 5 días antes a 1 después",
+        "explanation": [
+          "La ovulación suele ocurrir ~14 días antes de la regla (fase lútea fija), la folicular varía, así 'ciclo−14' vence a 'ciclo÷2'.",
+          "Los espermatozoides viven ~3–5 días, el óvulo ~12–24 h, por eso la ventana abarca ~5 días antes a 1 después.",
+          "Útil para ciclos regulares como estimación; para precisión, temperatura, OPK o app. Irregular = más error."
+        ],
+        "faq": [
+          {
+            "q": "¿Con ciclos irregulares?",
+            "a": "Se estima pero con más error. Cuanto más variable, más difícil; verifica con OPK + temperatura."
+          },
+          {
+            "q": "¿Por qué la ventana es tan larga?",
+            "a": "Los espermatozoides viven días y la ovulación se mueve, cubrir alrededor es más seguro."
+          },
+          {
+            "q": "¿Para buscar y evitar?",
+            "a": "Sí, mismo principio: timing para concebir, o protección para evitar—solo el ciclo no es anticonceptivo fiable."
+          }
+        ]
+      }
     },
     "period-calculator": {
       "name": "Período",
       "description": "Realice un seguimiento del ciclo menstrual y prediga el próximo período",
-      "metaDescription": "Realice un seguimiento de su ciclo menstrual y prediga su próximo período"
+      "metaDescription": "Realice un seguimiento de su ciclo menstrual y prediga su próximo período",
+      "guide": {
+        "steps": [
+          "Introduce primer día de la última regla y duración media.",
+          "La herramienta estima próxima regla y fechas futuras.",
+          "También fase actual (folicular / lútea)."
+        ],
+        "explanationTitle": "Predecir la regla: matemática del ciclo",
+        "formula": "próxima = último 1.º día + duración; fase ≈ días desde 1.º día",
+        "explanation": [
+          "El núcleo es la duración: suma un ciclo al último 1.º día para la próxima fecha. La mayoría 21–35 días; 28 es común, no estándar.",
+          "La duración también sugiere fase: ovulación ~14 días antes, folicular antes, lútea después—explica ánimo/energía.",
+          "Útil para recordatorios regulares; si es caótico, muy largo o doloroso, consulta (SOP/ tiroides) en vez de la math."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué duración es normal?",
+            "a": "21–35 días es común y varía. Estable importa más que 28."
+          },
+          {
+            "q": "¿Por qué la mía nunca es puntual?",
+            "a": "Estrés, peso, sueño, enfermedad alteran. Ocasional normal; crónico = revisión."
+          },
+          {
+            "q": "¿Detecta embarazo?",
+            "a": "No. La regla tardía es solo una señal; confirma con test. Solo agenda, no diagnostica."
+          }
+        ]
+      }
     },
     "pregnancy-weight-gain": {
       "name": "Aumento de peso durante el embarazo",
@@ -2441,7 +3190,34 @@
     "fraction-calculator": {
       "name": "Fracción",
       "description": "Sumar, restar, multiplicar, dividir y simplificar fracciones",
-      "metaDescription": "Calcula fracciones con soluciones paso a paso y números mixtos."
+      "metaDescription": "Calcula fracciones con soluciones paso a paso y números mixtos.",
+      "guide": {
+        "steps": [
+          "Elige la operación: sumar, restar, multiplicar, dividir o simplemente simplificar una fracción mixta/impropia.",
+          "Introduce numeradores y denominadores (se admiten varias fracciones); la herramienta comprueba que ningún denominador sea cero.",
+          "Lee el resultado simplificado y alterna entre fracción impropia y número mixto."
+        ],
+        "explanationTitle": "¿Qué son las operaciones con fracciones?",
+        "formula": "a/b ± c/d = (ad ± bc)/bd; (a/b) × (c/d) = ac/bd",
+        "explanation": [
+          "Una fracción tiene numerador y denominador: el denominador indica en cuántas partes iguales se divide el entero y el numerador cuántas de esas partes tomas. Para sumar o restar hay que igualar denominadores; se multiplica numerador por numerador y denominador por denominador; se divide multiplicando por el recíproco.",
+          "Los resultados suelen reducirse: divide numerador y denominador por su máximo común divisor. Si el numerador es mayor, la fracción impropia se convierte en número mixto. El cálculo con fracciones es base de proporciones, probabilidad, recetas e ingeniería."
+        ],
+        "faq": [
+          {
+            "q": "¿Puede el denominador ser cero?",
+            "a": "No. La división entre cero no está definida, así que la calculadora avisa en cuanto un denominador es cero."
+          },
+          {
+            "q": "¿Cómo introduzco un número mixto?",
+            "a": "Primero la parte entera y luego numerador y denominador; el resultado también se puede conmutar entre fracción impropia y mixta."
+          },
+          {
+            "q": "¿Por qué a veces el resultado es decimal periódico?",
+            "a": "Una fracción da decimal periódico cuando su denominador tiene factores primos distintos de 2 o 5. Es normal y puedes conservar los decimales que necesites."
+          }
+        ]
+      }
     },
     "percentage-calculator": {
       "name": "Calculadora de Porcentaje",
@@ -2525,7 +3301,34 @@
     "average-calculator": {
       "name": "Promedio",
       "description": "Calcular la media, la mediana, la moda y otros promedios",
-      "metaDescription": "Calcular la media aritmética, la media ponderada, la media geométrica y la media armónica"
+      "metaDescription": "Calcular la media aritmética, la media ponderada, la media geométrica y la media armónica",
+      "guide": {
+        "steps": [
+          "Introduce los números en líneas o separados por comas; añade o quita cuando quieras.",
+          "Se ignoran las celdas vacías y se marcan los valores atípicos evidentes (puedes conservarlos).",
+          "Lee la media aritmética, la suma y el conteo, y alterna para ver la mediana."
+        ],
+        "explanationTitle": "¿Cómo se calcula la media?",
+        "formula": "media = (x₁ + x₂ + … + xₙ) ÷ n",
+        "explanation": [
+          "La media aritmética suma un conjunto de valores y los divide entre cuántos son. Es una medida simple e intuitiva del 'centro' de los datos, pero muy sensible a los extremos: un solo valor muy alto o bajo desplaza la media notablemente.",
+          "Cuando la distribución es asimétrica o tiene valores atípicos, la mediana suele reflejar mejor el valor típico. Por ejemplo, pocos ingresos muy altos elevan la media y hacen que la mayoría parezca 'por debajo'. Conviene ver media y mediana juntas."
+        ],
+        "faq": [
+          {
+            "q": "¿Diferencia entre media y mediana?",
+            "a": "La media es la suma dividida por el conteo; la mediana es el valor central tras ordenar. En datos sesgados divergen mucho, y la mediana resiste valores extremos."
+          },
+          {
+            "q": "¿Afectan las celdas vacías al resultado?",
+            "a": "No. Se ignoran celdas vacías y textos no reconocidos; solo cuentan los números válidos."
+          },
+          {
+            "q": "¿Puede calcular la media ponderada?",
+            "a": "Esta herramienta da la media aritmética simple. Si cada ítem tiene distinto peso (p. ej. porcentaje de notas), usa una media ponderada."
+          }
+        ]
+      }
     },
     "long-division": {
       "name": "División larga",
@@ -2590,7 +3393,34 @@
     "pythagorean-calculator": {
       "name": "Teorema de Pitágoras",
       "description": "Calcular el lado faltante usando el teorema de Pitágoras",
-      "metaDescription": "Encuentra el lado faltante de un triángulo rectángulo usando el teorema de Pitágoras"
+      "metaDescription": "Encuentra el lado faltante de un triángulo rectángulo usando el teorema de Pitágoras",
+      "guide": {
+        "steps": [
+          "Indica los lados conocidos: catetos a y b, o un cateto e hipotenusa c.",
+          "Introduce los valores conocidos y deja en blanco el desconocido (también solo la hipotenusa).",
+          "Lee el tercer lado y los pasos algebraicos del teorema."
+        ],
+        "explanationTitle": "¿Qué es el teorema de Pitágoras?",
+        "formula": "a² + b² = c² (c es la hipotenusa)",
+        "explanation": [
+          "El teorema de Pitágoras dice que en un triángulo rectángulo, el cuadrado de los catetos suma el cuadrado de la hipotenusa. Es base de la geometría euclídea y se usa en construcción, navegación, gráficos y procesamiento de señales.",
+          "Para la hipotenusa usa √(a²+b²); si conoces hipotenusa y un cateto, el otro es √(c²−a²). Solo vale para rectángulos; los demás usan la ley de cosenos."
+        ],
+        "faq": [
+          {
+            "q": "¿Solo para triángulos rectángulos?",
+            "a": "Sí. El teorema solo vale para rectángulos; los generales usan la ley de cosenos c²=a²+b²−2ab·cosC."
+          },
+          {
+            "q": "¿Cómo hallo la hipotenusa?",
+            "a": "Eleva los catetos al cuadrado, súmalos y saca la raíz: c = √(a²+b²)."
+          },
+          {
+            "q": "¿Deben coincidir las unidades?",
+            "a": "Sí. a, b y c deben usar la misma unidad de longitud."
+          }
+        ]
+      }
     },
     "circle-calculator": {
       "name": "Círculo",
@@ -2600,7 +3430,34 @@
     "area-calculator": {
       "name": "Calculadora de Área",
       "description": "Calcula el área de varias formas",
-      "metaDescription": "Herramienta de área"
+      "metaDescription": "Herramienta de área",
+      "guide": {
+        "steps": [
+          "Elige una figura: rectángulo, círculo, triángulo, trapecio y más.",
+          "Introduce las dimensiones que pide (largo/ancho, radio, base/altura).",
+          "Lee el área y cambia la unidad libremente (cm², m², pulg², etc.)."
+        ],
+        "explanationTitle": "¿Cómo se calcula el área?",
+        "formula": "rectángulo = b×h; círculo = πr²; triángulo = base×altura÷2",
+        "explanation": [
+          "El área mide la superficie bidimensional que cubre una figura, en unidades cuadradas. Cada figura tiene su fórmula: el rectángulo es base por altura, el círculo π por radio al cuadrado, el triángulo base por altura entre dos.",
+          "Unifica las unidades: si los lados están en centímetros, el resultado es en cm², y mezclar unidades da errores. El área aparece constantemente en reformas, terrenos, costura y diseño de envases."
+        ],
+        "faq": [
+          {
+            "q": "¿Y si mis unidades difieren?",
+            "a": "Unifica las unidades de los lados antes, o cambia la unidad del resultado en la herramienta, para evitar el error de 100× al mezclar cm y m."
+          },
+          {
+            "q": "¿Cómo obtengo el área de una figura irregular?",
+            "a": "Divídela en figuras regulares, suma sus áreas o usa una estimación por cuadrícula; para precisión usa CAD."
+          },
+          {
+            "q": "¿Cuántos decimales de π se usan?",
+            "a": "La herramienta usa suficiente precisión (unos 3,14159) para el diario; más solo en trabajos científicos."
+          }
+        ]
+      }
     },
     "surface-area-calculator": {
       "name": "Área de superficie",
@@ -2610,7 +3467,34 @@
     "volume-calculator": {
       "name": "Volumen",
       "description": "Calcular el volumen de formas 3D.",
-      "metaDescription": "Calcula el volumen de un cubo, una esfera, un cilindro, un cono, un prisma y más"
+      "metaDescription": "Calcula el volumen de un cubo, una esfera, un cilindro, un cono, un prisma y más",
+      "guide": {
+        "steps": [
+          "Elige un sólido: ortoedro, cubo, cilindro, esfera, cono y más.",
+          "Introduce las dimensiones correspondientes (largo/ancho/alto, radio, altura).",
+          "Lee el volumen y cambia unidades entre mm³ / cm³ / m³ / L."
+        ],
+        "explanationTitle": "¿Cómo se calcula el volumen?",
+        "formula": "ortoedro = l×a×h; cilindro = πr²h; esfera = 4/3·πr³",
+        "explanation": [
+          "El volumen es el espacio que ocupa un objeto tridimensional, en unidades cúbicas. Un ortoedro es largo × ancho × alto; un cilindro base πr² por altura; una esfera 4/3πr³.",
+          "Ojo con las unidades: 1 metro cúbico = 1000 litros. Los líquidos suelen ir en litros o mililitros, los sólidos en cm³. El volumen importa para pintura, cajas y acuarios."
+        ],
+        "faq": [
+          {
+            "q": "¿Volumen y capacidad son iguales?",
+            "a": "Casi. Capacidad es lo que cabe en un recipiente (L/mL); volumen es el espacio que ocupa (m³/cm³). Se convierten directamente."
+          },
+          {
+            "q": "¿Litros y metros cúbicos?",
+            "a": "1 m³ = 1000 L, y 1 L = 1000 mL = 1000 cm³. La herramienta cambia la visualización."
+          },
+          {
+            "q": "¿Cómo mido el volumen de un objeto irregular?",
+            "a": "Por desplazamiento de agua (sumerge y lee el ascenso en una probeta), o escanea en 3D y calcula."
+          }
+        ]
+      }
     },
     "moment-of-inertia": {
       "name": "Calculadora de momento de inercia",
@@ -3047,7 +3931,35 @@
       "effectiveRate": "Tasa efectiva",
       "marginalRate": "tasa marginal",
       "net": "Ingreso neto",
-      "breakdown": "Desglose por soporte"
+      "breakdown": "Desglose por soporte",
+      "guide": {
+        "steps": [
+          "Elig la tabla de la región (p. ej. federal de EE. UU.).",
+          "Introduce ingreso bruto y deducciones (seguridad social, etc.).",
+          "Ver impuesto, tasa efectiva y sueldo neto."
+        ],
+        "explanationTitle": "Impuesto a la renta: tramos progresivos",
+        "formula": "impuesto = Σ(tramo × tasa) − deducción rápida",
+        "explanation": [
+          "La mayoría usa tasas progresivas: el ingreso se divide en tramos, bajos a tasa baja y altos a alta—no todo a la tasa máxima.",
+          "La brecha bruto-neto viene de seguros obligatorios, exenciones y la progresividad. Usar deducciones baja la base legalmente.",
+          "La herramienta usa tramos simplificados para planificar; para declarar, sigue la ley local."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué no todo al tipo máximo?",
+            "a": "Solo la parte sobre cada umbral va a tasa mayor; abajo queda baja, así la tasa efectiva es menor."
+          },
+          {
+            "q": "¿Para qué sirven las deducciones?",
+            "a": "Reducen directamente el ingreso gravable y el impuesto. Usarlas bien ahorra legalmente."
+          },
+          {
+            "q": "¿Es precisa la estimación?",
+            "a": "Tramos simplificados para rapidez. La declaración real tiene créditos y reglas especiales—consulta la autoridad local."
+          }
+        ]
+      }
     },
     "car-loan": {
       "name": "Préstamo de Auto",
@@ -9786,6 +10698,142 @@
           {
             "type": "p",
             "text": "El ajuste por ciclos es una guía útil, pero no una cura universal. Si se despierta agotado de forma habitual, tiene somnolencia diurna o ronca fuerte, podría tratarse de apnea del sueño: eso requiere médico, no un cambio de horario. El cálculo de ciclos resuelve cuándo despertar, no la calidad del sueño."
+          }
+        ]
+      },
+      "compound-interest-wealth-building": {
+        "title": "Cómo el interés compuesto hace crecer tu dinero: el poder de empezar pronto",
+        "excerpt": "El interés compuesto se conoce como la octava maravilla del mundo. Entender cómo funciona —y ver las cifras con una [calculadora de interés compuesto](/finance/compound-interest)— es el paso más importante para construir riqueza a largo plazo.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "El interés compuesto significa que los rendimientos se reinvierten, así que el retorno del siguiente período se calcula sobre el capital y los intereses ya acumulados. Cuanto mayor es el horizonte, más empinada es la curva."
+          },
+          {
+            "type": "h2",
+            "text": "Por qué empezar pronto importa tanto"
+          },
+          {
+            "type": "p",
+            "text": "Supongamos que inviertes 1.000 al mes al 8% anual. Empezar a los 25 en lugar de a los 35 no te cuesta 10 años de crecimiento, sino múltiplos, porque los intereses acumulados al principio siguen generando durante décadas."
+          },
+          {
+            "type": "callout",
+            "text": "Los enemigos del interés compuesto son las interrupciones y las comisiones. Operar con frecuencia y las altas comisiones erosionan silenciosamente el rendimiento a largo plazo. Mejor que intentar predecir el mercado, empieza pronto y sé constante."
+          },
+          {
+            "type": "p",
+            "text": "Usa la [calculadora de interés compuesto](/finance/compound-interest) para introducir tu aportación mensual, los años y el rendimiento esperado, y observa cómo el tiempo y el interés compuesto trabajan juntos."
+          }
+        ]
+      },
+      "currency-exchange-how-it-works": {
+        "title": "Cómo funcionan los tipos de cambio: la lógica detrás de la conversión",
+        "excerpt": "¿Por qué 1 USD equivale a unos 7 CNY? Los tipos de cambio no se fijan al azar. Usa una [calculadora de divisas](/finance/currency) para ver tu importe neto real y evitar comisiones ocultas.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Un tipo de cambio es esencialmente el precio relativo de dos monedas, determinado por oferta y demanda, diferencias de tipos de interés, inflación y expectativas económicas."
+          },
+          {
+            "type": "h2",
+            "text": "Tipo medio, tipo de efectivo y comisiones"
+          },
+          {
+            "type": "p",
+            "text": "El tipo que ves cotizado rara vez es el que recibes. Bancos y plataformas añaden un margen y comisiones sobre el tipo medio. Usa una [calculadora de divisas](/finance/currency) para calcular el importe neto antes de comparar opciones."
+          },
+          {
+            "type": "callout",
+            "text": "En el extranjero, la conversión dinámica de moneda (DCC) suele ser más cara que pagar en moneda local. Con tarjetas en el exterior, elige que te cobren en la moneda local."
+          }
+        ]
+      },
+      "mortgage-amortization-explained": {
+        "title": "Entiende la amortización de tu hipoteca: dónde van realmente tus intereses",
+        "excerpt": "De cada cuota mensual, ¿cuánto es capital y cuánto interés? Al principio pagas sobre todo intereses. Usa una [calculadora de hipoteca](/finance/mortgage) para ver tu estructura de pago y saber si adelantar capital compensa.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Amortizar significa devolver el préstamo en cuotas periódicas de importe fijo, pero la proporción entre capital e intereses cambia en cada periodo."
+          },
+          {
+            "type": "h2",
+            "text": "Primero intereses, después capital"
+          },
+          {
+            "type": "p",
+            "text": "Con cuota fija, las primeras cuotas son sobre todo intereses y poco capital. Según baja el saldo, baja la parte de intereses. Usa una [calculadora de hipoteca](/finance/mortgage) para ver el desglose anual."
+          },
+          {
+            "type": "callout",
+            "text": "Con tipos bajos, adelantar capital ahorra poco; con tipos altos o dinero disponible, puede reducir mucho los intereses totales. Compáralo con tu rentabilidad de inversión."
+          }
+        ]
+      },
+      "roi-evaluating-investments": {
+        "title": "El ROI no es la única métrica: cómo evaluar una inversión",
+        "excerpt": "No te entusiasmes aún con «20% anual». Usa una [calculadora de ROI](/finance/roi) para hallar el retorno real y considera también el tiempo, el riesgo y el coste de oportunidad.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "El ROI (retorno de inversión) es (ganancia − coste) / coste. Es simple e intuitivo, pero ignora el tiempo que tu dinero está inmovilizado."
+          },
+          {
+            "type": "h2",
+            "text": "El tiempo hace que el mismo ROI sea muy distinto"
+          },
+          {
+            "type": "p",
+            "text": "Ganar 20% en un año no es lo mismo que 20% en cinco. Usa una [calculadora de ROI](/finance/roi) para ver la cifra anualizada y compárala con un retorno sin riesgo."
+          },
+          {
+            "type": "callout",
+            "text": "Un ROI alto con mucha volatilidad o largo bloqueo puede no superar un retorno más estable y menor. Compáralo con tu tolerancia al riesgo, no solo con la cifra."
+          }
+        ]
+      },
+      "calorie-deficit-weight-loss": {
+        "title": "El déficit calórico es la única regla para perder peso: cómo hacerlo bien",
+        "excerpt": "Perder peso no tiene magia, solo un hueco energético. Usa una [calculadora de calorías](/health/calorie-calculator) y una [calculadora de TMB](/health/bmr-calculator) para conocer tu gasto y crea un déficit sensato.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Cuando la ingesta se mantiene por debajo del gasto, el cuerpo usa sus reservas y el peso baja. Eso es un déficit calórico."
+          },
+          {
+            "type": "h2",
+            "text": "No hagas el déficit demasiado grande"
+          },
+          {
+            "type": "p",
+            "text": "Un hueco diario de 300–500 kcal suele ser sostenible y menos propenso al rebote. Primero usa una [calculadora de TMB](/health/bmr-calculator) para el gasto en reposo y suma la actividad para el gasto total."
+          },
+          {
+            "type": "callout",
+            "text": "Las dietas extremas bajan el metabolismo y pierden músculo. Usa una [calculadora de calorías](/health/calorie-calculator) para un déficit suave, con proteína y entrenamiento de fuerza."
+          }
+        ]
+      },
+      "heart-rate-training-zones": {
+        "title": "Zonas de entrenamiento por frecuencia cardíaca: entrena mejor con la intensidad adecuada",
+        "excerpt": "La misma carrera sirve para distintos objetivos: quemar grasa o ganar fondo requieren intensidades diferentes. Usa una [calculadora de frecuencia cardíaca objetivo](/health/target-heart-rate) para encontrar tus zonas y darle propósito a cada sesión.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Las zonas de frecuencia cardíaca escalonan la intensidad, desde recuperación y quema de grasa hasta anaeróbico, cada una ligada a un sistema energético distinto."
+          },
+          {
+            "type": "h2",
+            "text": "Primero encuentra tu frecuencia cardíaca máxima"
+          },
+          {
+            "type": "p",
+            "text": "La estimación común es 220 − edad, pero la variación individual es grande. Una [calculadora de frecuencia cardíaca objetivo](/health/target-heart-rate) que divide porcentajes es más fiable."
+          },
+          {
+            "type": "callout",
+            "text": "Entrenar duro siempre lleva a mala recuperación y lesiones. Combina cardio de baja intensidad con intervalos para progresar con estabilidad."
           }
         ]
       }
