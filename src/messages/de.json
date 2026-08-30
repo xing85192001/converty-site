@@ -564,7 +564,34 @@
       "specint2017Peak": "SPECint2017 Peak",
       "perfPerCore": "Leistung / Kern",
       "perfPerWatt": "Leistung / Watt",
-      "sizingRatio": "Skalierungsverhältnis"
+      "sizingRatio": "Skalierungsverhältnis",
+      "guide": {
+        "steps": [
+          "Geben Sie die Spezifikationen von CPU A ein: Kernanzahl, Basis-/Boost-Takt und einen Referenz-Benchmarkwert.",
+          "Geben Sie dieselben Daten für CPU B ein, die Sie vergleichen möchten.",
+          "Lesen Sie den normalisierten Leistungswert und das Preis-Leistungs-Verhältnis, um zu entscheiden, welche CPU mehr bietet."
+        ],
+        "explanationTitle": "CPUs objektiv vergleichen",
+        "formula": "Leistungsindex = Kerne × TaktGHz × IPC-Faktor; Wert = Leistungsindex / PreisUSD",
+        "explanation": [
+          "Die reine Taktfrequenz bestimmt nicht die reale Geschwindigkeit; Kernanzahl, Architektur (IPC) und Cache spielen ebenfalls eine Rolle, sodass ein niedriger getakteter, neuerer Chip einen älteren Hochtakter schlagen kann.",
+          "Das Preis-Leistungs-Verhältnis teilt den Leistungswert durch den Preis und zeigt so, welche CPU fürs Geld mehr Rechenleistung bietet – ideal beim Budget-Build."
+        ],
+        "faq": [
+          {
+            "q": "Ist höherer Takt immer besser?",
+            "a": "Nicht zwingend. Höheres IPC und mehr Kerne wiegen oft einen kleinen Taktvorteil auf, und thermische Limits begrenzen den Boost."
+          },
+          {
+            "q": "Was ist Leistung pro Dollar?",
+            "a": "Der Leistungswert wird durch den Preis geteilt und hebt die kosteneffizienteste Option hervor."
+          },
+          {
+            "q": "Soll man Hersteller-Benchmarks trauen?",
+            "a": "Nutzen Sie nach Möglichkeit unabhängige Benchmarks; Herstellerwerte können optimierte Workloads zeigen."
+          }
+        ]
+      }
     },
     "server-refresh-calculator": {
       "name": "Server-Refresh",
@@ -615,7 +642,34 @@
       "sockets": "Steckdosen",
       "totalCores": "Kerne gesamt",
       "totalTdpW": "TDP gesamt (W)",
-      "totalSpecint": "SPECint gesamt"
+      "totalSpecint": "SPECint gesamt",
+      "guide": {
+        "steps": [
+          "Geben Sie Anzahl und Alter Ihrer Server sowie jährliche Strom- und Supportkosten ein.",
+          "Geben Sie Preis und erwartete Effizienz der Ersatzhardware ein.",
+          "Lesen Sie die Amortisationszeit und die 3-Jahres-Kostendifferenz, um zu entscheiden, ob Sie jetzt erneuern."
+        ],
+        "explanationTitle": "Wann sollten Sie Server erneuern?",
+        "formula": "jährlicheErsparnis = alteOpEx - neueOpEx; AmortYears = (neueCapEx - RestwertAlt) / jährlicheErsparnis",
+        "explanation": [
+          "Alte Server verbrauchen mehr Strom und kosten mehr Wartung, daher senkt ein Austausch die Betriebskosten selbst nach Einrechnen der Anschaffung.",
+          "Eine Erneuerung lohnt sich meist, wenn die jährliche Ersparnis die neuen Hardwarekosten innerhalb des akzeptierten Zeitraums deckt – bei dichten Workloads oft 2–3 Jahre."
+        ],
+        "faq": [
+          {
+            "q": "Was ist eine gute Amortisationszeit?",
+            "a": "Die meisten IT-Teams zielen auf 2–3 Jahre, abhängig von Workload-Dichte und Strompreis."
+          },
+          {
+            "q": "Sollte man den Restwert einbeziehen?",
+            "a": "Ja, jeder Wiederverkaufs- oder Trade-in-Wert senkt die effektiven CapEx."
+          },
+          {
+            "q": "Spart eine Erneuerung immer Strom?",
+            "a": "Neue Nodes sind pro Rack-Einheit viel effizienter, aber nur bei Konsolidierung; Wildwuchs vernichtet den Gewinn."
+          }
+        ]
+      }
     },
     "age": {
       "name": "Alters",
@@ -1741,7 +1795,34 @@
     "cooking-units": {
       "name": "Kocheinheiten",
       "description": "Konvertieren zwischen metrischen und imperialen Kochmassen mit Zutatendichten",
-      "metaDescription": "Kostenloser Kocheinheitenumrechner. Konvertieren Sie Tassen, Essloffel, Teeloffel in ml, Gramm mit dichteabhangigen Umrechnungen fuer Mehl, Zucker und mehr."
+      "metaDescription": "Kostenloser Kocheinheitenumrechner. Konvertieren Sie Tassen, Essloffel, Teeloffel in ml, Gramm mit dichteabhangigen Umrechnungen fuer Mehl, Zucker und mehr.",
+      "guide": {
+        "steps": [
+          "Gib Menge und Ausgangseinheit (Tassen, Gramm, EL) ein.",
+          "Gib die Zieleinheit ein.",
+          "Lies den umgerechneten Wert und das ungefähre Volumen oder Gewicht."
+        ],
+        "explanationTitle": "Kocheinheiten umrechnen",
+        "formula": "ziel = quellMenge × (faktorVon / faktorNach)",
+        "explanation": [
+          "Kochen mischt Volumeneinheiten (Tassen, TL) mit Gewicht (Gramm, oz); der Rechner nutzt Standarddichten häufiger Zutaten für den Übergang.",
+          "Da Dichte je Zutat variiert, sind Umrechnungen zwischen Gewicht und Volumen Näherungen, sofern du nicht die spezifische Zutat wählst."
+        ],
+        "faq": [
+          {
+            "q": "Warum unterscheiden sich Tasse-zu-Gramm Werte?",
+            "a": "Eine Tasse Mehl wiegt viel weniger als eine Tasse Zucker; die Dichte erzeugt den Unterschied."
+          },
+          {
+            "q": "Sind US- und Metrik-Tassen gleich?",
+            "a": "Nein; eine US-Tasse ist 240 ml, eine Metrik-Tasse 250 ml, eine kleine, aber echte Lücke."
+          },
+          {
+            "q": "Wiegen oder volumetrisch messen?",
+            "a": "Wiegen ist beim Backen genauer; Volumen reicht fürs Kochen."
+          }
+        ]
+      }
     },
     "exchange-rate": {
       "name": "Wechselkurs",
@@ -1874,7 +1955,34 @@
     "mortgage-swiss": {
       "name": "Schweizer Hypothekenrechner",
       "description": "Berechnen Sie Hypothekenzahlungen mit CHF/EUR-Unterstutzung und Schweizer Marktzinsen",
-      "metaDescription": "Kostenloser Schweizer Hypothekenrechner mit CHF und EUR. Berechnen Sie monatliche Zahlungen, Amortisationsplane und Gesamtkosten."
+      "metaDescription": "Kostenloser Schweizer Hypothekenrechner mit CHF und EUR. Berechnen Sie monatliche Zahlungen, Amortisationsplane und Gesamtkosten.",
+      "guide": {
+        "steps": [
+          "Gib Kaufpreis, Anzahlung und den Schweizer Referenzzins bzw. SARON-Satz ein.",
+          "Gib Laufzeit und Amortisationspflicht (meist auf 2/3 des Werts) ein.",
+          "Lies Monatsrate, Zinsen gesamt und Restschuldplan."
+        ],
+        "explanationTitle": "Schweizer Hypothekenrechnung",
+        "formula": "jahreszins = zins × schuld; amortisiere auf ≤ 2/3 des Werts",
+        "explanation": [
+          "Schweizer Hypotheken nutzen meist einen Referenzzins (heute SARON, früher Libor) plus Bankmarge.",
+          "Schuldner müssen den Teil über zwei Dritteln des Werts in etwa 15 Jahren amortisieren, was die Rate bestimmt."
+        ],
+        "faq": [
+          {
+            "q": "Welcher Referenzzins in der Schweiz?",
+            "a": "Neue Kredite meist SARON plus Marge; alte evtl. fest oder Libor-basiert."
+          },
+          {
+            "q": "Warum die Zwei-Drittel-Regel?",
+            "a": "Schweizer Regulierung verlangt Amortisation über 2/3 des Werts zur Begrenzung des Beleihungsrisikos."
+          },
+          {
+            "q": "Fest oder variabel?",
+            "a": "Wahl zwischen fest (planbar) und variabel (folgt Referenzzins)."
+          }
+        ]
+      }
     },
     "rental-yield": {
       "name": "Mietrendite-Rechner",
@@ -2169,7 +2277,34 @@
     "bpm": {
       "name": "BPM",
       "description": "Konvertieren Sie BPM in Hz, Taktlaenge und Notendauern",
-      "metaDescription": "Konvertieren Sie Schlaege pro Minute in andere musikalische Zeiteinheiten"
+      "metaDescription": "Konvertieren Sie Schlaege pro Minute in andere musikalische Zeiteinheiten",
+      "guide": {
+        "steps": [
+          "Gib gezählte Schläge und die Zeit in Sekunden (oder Minuten) ein.",
+          "Starte, um Schläge pro Minute zu berechnen.",
+          "Lies BPM und bei Taps das gemittelte Tempo."
+        ],
+        "explanationTitle": "Was BPM bedeutet",
+        "formula": "bpm = schläge / (sekunden / 60) = schläge × 60 / sekunden",
+        "explanation": [
+          "Beats per minute ist die Tempoeinheit in der Musik; sie sagt, wie viele Pulse pro Minute stattfinden.",
+          "Metronom 120 BPM bedeutet zwei Schläge pro Sekunde; doppeltes BPM wirkt doppelt so schnell."
+        ],
+        "faq": [
+          {
+            "q": "BPM per Tippen finden?",
+            "a": "Tippe mit jedem Schlag eine Taste; das Tool mittelt die Intervalle."
+          },
+          {
+            "q": "Höheres BPM immer schneller?",
+            "a": "Ja, mehr Schläge pro Minute heißt dichterer Puls, meist energetischer."
+          },
+          {
+            "q": "Typisches Song-Tempo?",
+            "a": "Pop oft 100–130 BPM; Balladen langsamer, Dance schneller."
+          }
+        ]
+      }
     },
     "video-file-size": {
       "name": "Videodateigroessen",
@@ -2462,22 +2597,130 @@
     "csp": {
       "name": "CSP-Generator",
       "description": "Generieren Sie Content Security Policy-Header",
-      "metaDescription": "Generieren Sie Content Security Policy-Header fuer Websicherheit"
+      "metaDescription": "Generieren Sie Content Security Policy-Header fuer Websicherheit",
+      "guide": {
+        "steps": [
+          "Gib die Richtlinien ein, die du erlauben willst (default-src, script-src, img-src usw.).",
+          "Gib die vertrauenswürdigen Domains oder Schemen ein.",
+          "Lies den generierten Content-Security-Policy-Header zum Einfügen in deine Serverkonfig."
+        ],
+        "explanationTitle": "Eine Content Security Policy erstellen",
+        "formula": "CSP = richtlinie1 wert1 wert2; richtlinie2 wert3; ...",
+        "explanation": [
+          "Eine CSP erlaubt nur noch, wo der Browser Skripte, Styles, Bilder und Verbindungen laden darf, und blockiert Injection unautorisierter Inhalte selbst bei XSS.",
+          "Starte im Report-Only-Modus, um Verstöße zu protokollieren, bevor du erzwingst; sonst kann eine zu strikte Policy legitime Ressourcen brechen."
+        ],
+        "faq": [
+          {
+            "q": "Was macht default-src?",
+            "a": "Es setzt den Fallback für alle nicht explizit genannten Richtlinien; 'self' dort deckt die meisten Tags ab."
+          },
+          {
+            "q": "Sollte ich zuerst Report-Only nutzen?",
+            "a": "Ja, überwache gemeldete Verstöße, um die Policy ohne Site-Ausfall zu justieren."
+          },
+          {
+            "q": "Stoppt CSP alle XSS?",
+            "a": "Sie reduziert die Wirkung drastisch, ist aber Tiefenverteidigung, kein Ersatz für Eingaben-Sanitisierung."
+          }
+        ]
+      }
     },
     "redirect-check": {
       "name": "Weiterleitungs-Pruefer",
       "description": "Ueberpruefen Sie HTTP-Weiterleitungsketten und Statuscodes",
-      "metaDescription": "Ueberpruefen Sie URL-Weiterleitungsketten und HTTP-Statuscodes"
+      "metaDescription": "Ueberpruefen Sie URL-Weiterleitungsketten und HTTP-Statuscodes",
+      "guide": {
+        "steps": [
+          "Gib die zu testende Quell-URL und das erwartete Ziel ein.",
+          "Gib nötige Header wie User-Agent oder Authorization ein.",
+          "Lies die vollständige Redirect-Kette und den finalen HTTP-Status."
+        ],
+        "explanationTitle": "HTTP-Redirects verfolgen",
+        "formula": "kette = URL0 →(301/302) URL1 →(...) → URLn (status)",
+        "explanation": [
+          "Redirect-Ketten addieren Latenz und können Analytics oder SEO brechen, wenn ein Link über mehrere Hops zur Kanonischen Seite springt.",
+          "Ein einzelner sauberer 301 erhält Link-Equity am besten; Mehrfach-Ketten verdünnen sie und verlangsamen die Time-to-First-Byte."
+        ],
+        "faq": [
+          {
+            "q": "301 oder 302, was nutzen?",
+            "a": "301 für dauerhafte Moves zur SEO-Wertweitergabe; 302 für temporär oder A/B-Tests."
+          },
+          {
+            "q": "Warum Redirect-Ketten vermeiden?",
+            "a": "Jeder Hop addiert Round-Trips und kann Referrer und Ranking-Signale verlieren."
+          },
+          {
+            "q": "Wie lang soll ein Redirect warten?",
+            "a": "Redirects sind sofort (kein Body-Delay); der Browser folgt sofort."
+          }
+        ]
+      }
     },
     "spf-check": {
       "name": "SPF-Eintrag-Pruefer",
       "description": "Analysieren Sie SPF-Eintraege fuer E-Mail-Authentifizierung",
-      "metaDescription": "Analysieren Sie SPF-Eintraege fuer E-Mail-Sicherheit"
+      "metaDescription": "Analysieren Sie SPF-Eintraege fuer E-Mail-Sicherheit",
+      "guide": {
+        "steps": [
+          "Gib deine Domain ein, um den veröffentlichten SPF-DNS-Record abzufragen.",
+          "Gib die erwarteten Mailserver oder Include-Mechanismen ein.",
+          "Lies die aufgelöste SPF-Policy und ob sie passt oder zu viele DNS-Lookups hat."
+        ],
+        "explanationTitle": "SPF-Records validieren",
+        "formula": "SPF = 'v=spf1 include:_spf.a include:_spf.b -all' (max 10 DNS-Lookup-Mechanismen)",
+        "explanation": [
+          "SPF sagt empfangenden Mailservern, welche IPs für deine Domain senden dürfen; ein fehlender oder kaputter Record lässt Angreifer deine Adresse spoofen.",
+          "SPF erlaubt maximal 10 DNS-Lookups über alle Include-Mechanismen, zu tiefes Nesting verursacht permerror und Mail kann abgewiesen werden."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet -all?",
+            "a": "Hard fail: Mail von Quellen außerhalb der Policy wird abgelehnt. ~all ist Softfail, permissiver."
+          },
+          {
+            "q": "Warum das 10-Lookup-Limit?",
+            "a": "Um DNS-Last zu begrenzen; Überschreitung gibt permerror, Empfänger lehnen evtl. ab."
+          },
+          {
+            "q": "Stoppt SPF allein Spoofing?",
+            "a": "Nein, kombiniere es mit DKIM und DMARC für echten Schutz und Reporting."
+          }
+        ]
+      }
     },
     "https-check": {
       "name": "HTTPS-Sicherheits-Pruefer",
       "description": "Ueberpruefen Sie Sicherheits-Header und TLS-Konfiguration",
-      "metaDescription": "Ueberpruefen Sie Website-HTTPS und Sicherheits-Header"
+      "metaDescription": "Ueberpruefen Sie Website-HTTPS und Sicherheits-Header",
+      "guide": {
+        "steps": [
+          "Gib den Hostnamen oder die volle HTTPS-URL ein.",
+          "Gib den Port ein, falls nicht der Standard 443.",
+          "Lies Zertifikatsgültigkeit, Kettenvollständigkeit und Protokoll-Grade."
+        ],
+        "explanationTitle": "HTTPS-Gesundheit prüfen",
+        "formula": "note = f(cipherSuites, certExpiry, chainComplete, HSTS)",
+        "explanation": [
+          "HTTPS-Gesundheit vereint gültiges Zertifikat, vollständige Kette, moderne Cipher und HSTS; jede Lücke kann Warnungen oder Downgrade-Angriffe auslösen.",
+          "Abgelaufene oder falsche Zertifikate sind der häufigste Grund für 'nicht sicher'-Banner und vertrauensverlust beim Checkout."
+        ],
+        "faq": [
+          {
+            "q": "Was ist HSTS und warum aktivieren?",
+            "a": "HSTS erzwingt HTTPS und blockt SSL-Strip-Downgrades nach dem ersten Besuch."
+          },
+          {
+            "q": "Was bricht die Vertrauenskette?",
+            "a": "Ein fehlendes Zwischenzertifikat auf dem Server, sodass der Browser Blatt nicht mit Root verknüpfen kann."
+          },
+          {
+            "q": "Wie früh Zertifikate erneuern?",
+            "a": "Automatisieren via ACME (Let's Encrypt) mit Erneuerung 30 Tage vor Ablauf gegen Ausfälle."
+          }
+        ]
+      }
     },
     "html-encoder": {
       "name": "HTML-Encoder",
@@ -2581,7 +2824,34 @@
     "seo-performance": {
       "name": "SEO-Leistungsanalysator",
       "description": "Analysieren Sie Seiten-SEO-Metriken und erhalten Sie Empfehlungen",
-      "metaDescription": "Analysieren Sie SEO-Leistung und erhalten Sie Optimierungstipps"
+      "metaDescription": "Analysieren Sie SEO-Leistung und erhalten Sie Optimierungstipps",
+      "guide": {
+        "steps": [
+          "Gib deine Seiten-URL und das Zielkeyword ein.",
+          "Gib Konkurrenten oder aktuelle Position ein, falls bekannt.",
+          "Lies Vorschläge zu On-Page, Speed und Struktur für mehr Sichtbarkeit."
+        ],
+        "explanationTitle": "SEO-Leistung bewerten",
+        "formula": "sichtbarkeit ∝ (relevanz × autorität) / (ladezeit × crawlFehler)",
+        "explanation": [
+          "SEO-Leistung mischt Relevanz, Autorität, Seitengeschwindigkeit und saubere Crawlbarkeit; nur eines zu fixen bringt wenig.",
+          "Core Web Vitals und eine logische interne Verlinkung bewegen Rankings oft mehr als Mikro-Optimierung von Meta-Tags."
+        ],
+        "faq": [
+          {
+            "q": "Was sind Core Web Vitals?",
+            "a": "Googles LCP-, CLS- und INP-Metriken für Laden, Stabilität und Interaktivität."
+          },
+          {
+            "q": "Beeinflusst Speed das Ranking wirklich?",
+            "a": "Ja, direkt über Signale und indirekt über Absprungrate und Engagement."
+          },
+          {
+            "q": "Wann zeigen sich Änderungen?",
+            "a": "Crawl und Re-Index dauern Tage bis Wochen; nachhaltig braucht Konsistenz."
+          }
+        ]
+      }
     },
     "mortgage": {
       "name": "Hypothek",
@@ -5077,7 +5347,34 @@
     "long-division": {
       "name": "Langdivision",
       "description": "Fuehren Sie Langdivision mit schrittweiser Loesung durch",
-      "metaDescription": "Lernen Sie Langdivision mit detaillierten Schritt-fuer-Schritt-Loesungen"
+      "metaDescription": "Lernen Sie Langdivision mit detaillierten Schritt-fuer-Schritt-Loesungen",
+      "guide": {
+        "steps": [
+          "Gib Dividend und Divisor ein.",
+          "Starte den Rechner, um Quotient und Rest schrittweise zu sehen.",
+          "Lies das volle Dezimalergebnis und, falls nicht glatt, den Rest."
+        ],
+        "explanationTitle": "Wie schriftliche Division funktioniert",
+        "formula": "dividend = divisor × quotient + rest; 0 ≤ rest < divisor",
+        "explanation": [
+          "Schriftliche Division zieht wiederholt das größte passende Vielfache des Divisors ab und holt Ziffern nach, bis kein Rest bleibt oder eine Periode entsteht.",
+          "Der Rest ist das Übrige nach dem ganzzahligen Teil des Quotienten und immer kleiner als der Divisor."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Rest?",
+            "a": "Der übrige Betrag, wenn der Dividend kein ganzzahliges Vielfaches des Divisors ist."
+          },
+          {
+            "q": "Warum wiederholt sich Teilung manchmal?",
+            "a": "Bruchen mit Nennern, die Primfaktoren außer 2 und 5 haben, erzwingen periodische Dezimalbrüche."
+          },
+          {
+            "q": "Kann der Divisor null sein?",
+            "a": "Nein, Division durch null ist undefiniert und wird abgelehnt."
+          }
+        ]
+      }
     },
     "exponent-calculator": {
       "name": "Exponenten",
@@ -5210,27 +5507,162 @@
     "factor-calculator": {
       "name": "Faktor",
       "description": "Finden Sie alle Teiler einer Zahl",
-      "metaDescription": "Finden Sie alle Teiler, Teilerpaare und Primfaktoren einer Zahl"
+      "metaDescription": "Finden Sie alle Teiler, Teilerpaare und Primfaktoren einer Zahl",
+      "guide": {
+        "steps": [
+          "Gib eine positive ganze Zahl ein.",
+          "Starte, um alle Teiler oder Primfaktoren zu listen.",
+          "Lies Teilerpaare und bei Primfaktorzerlegung die Exponentenform."
+        ],
+        "explanationTitle": "Teiler einer Zahl finden",
+        "formula": "wenn n mod d = 0, dann ist d Teiler; prim: n = p1^a1 × p2^a2 × ...",
+        "explanation": [
+          "Ein Teiler geht ohne Rest auf; der Rechner testet Teiler bis zur Wurzel, um effizient zu finden.",
+          "Primfaktorzerlegung schreibt die Zahl als Primprodukt, die Basis für ggT, kgV und Bruchkürzen."
+        ],
+        "faq": [
+          {
+            "q": "Unterschied Teiler vs Primfaktoren?",
+            "a": "Teiler umfassen Komposita wie 6; Primfaktoren sind nur 2 und 3."
+          },
+          {
+            "q": "Zählt 1 als Teiler?",
+            "a": "Ja, 1 und die Zahl selbst sind stets Teiler, aber keine Primzahlen."
+          },
+          {
+            "q": "Warum bis Wurzel aufhören?",
+            "a": "Jeder Teiler über √n paart mit einem unter √n, danach ist es redundant."
+          }
+        ]
+      }
     },
     "gcd-calculator": {
       "name": "GGT",
       "description": "Berechnen Sie den groessten gemeinsamen Teiler mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie den GGT von zwei oder mehr Zahlen"
+      "metaDescription": "Berechnen Sie den GGT von zwei oder mehr Zahlen",
+      "guide": {
+        "steps": [
+          "Gib zwei oder mehr ganze Zahlen ein.",
+          "Starte, um den ggT zu finden.",
+          "Lies den ggT und bei Bedarf die Schritte nach Euklid."
+        ],
+        "explanationTitle": "Größter gemeinsamer Teiler",
+        "formula": "ggT(a,b) = ggT(b, a mod b) bis Rest 0; letzter Rest ≠ 0 ist ggT",
+        "explanation": [
+          "Der ggT ist die größte Zahl, die alle Eingaben ohne Rest teilt; er kürzt Brüche aufs Kleinstee.",
+          "Euklids Algorithmus ersetzt die größere Zahl wiederholt durch den Rest, viel schneller als alle Teiler zu testen."
+        ],
+        "faq": [
+          {
+            "q": "Wofür ggT?",
+            "a": "Bruchkürzen und als Schritt für kgV und Modulo."
+          },
+          {
+            "q": "Gibt es ggT bei negativen?",
+            "a": "Ja, mit Betrag, Vorzeichen ändern nichts."
+          },
+          {
+            "q": "Kein gemeinsamer Faktor?",
+            "a": "Dann ist ggT = 1, die Zahlen heißen teilerfremd."
+          }
+        ]
+      }
     },
     "lcm-calculator": {
       "name": "KGV",
       "description": "Berechnen Sie das kleinste gemeinsame Vielfache mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie das KGV von zwei oder mehr Zahlen"
+      "metaDescription": "Berechnen Sie das KGV von zwei oder mehr Zahlen",
+      "guide": {
+        "steps": [
+          "Gib zwei oder mehr ganze Zahlen ein.",
+          "Starte, um das kgV zu finden.",
+          "Lies das kgV, nützlich zum Addieren ungleicher Brüche."
+        ],
+        "explanationTitle": "Kleinstes gemeinsames Vielfaches",
+        "formula": "kgV(a,b) = |a × b| / ggT(a,b); paarweise erweitern",
+        "explanation": [
+          "Das kgV ist die kleinste positive Zahl, durch die alle Eingaben teilbar sind, nützlich bei Zyklen oder Bruchaddition.",
+          "Es wird über den ggT berechnet, also effizient selbst für große Zahlen."
+        ],
+        "faq": [
+          {
+            "q": "Wann kgV nötig?",
+            "a": "Bruchaddition mit verschiedenen Nennern und gemeinsame Perioden."
+          },
+          {
+            "q": "Eine Zahl null?",
+            "a": "kgV mit null ist 0 definiert, da null Vielfaches jeder Zahl ist."
+          },
+          {
+            "q": "kgV und ggT Zusammenhang?",
+            "a": "Ihr Produkt gleich Zahlenprodukt, also kgV = |a×b| / ggT."
+          }
+        ]
+      }
     },
     "gcd-lcm": {
       "name": "GGT & KGV",
       "description": "Berechnen Sie GGT und KGV mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie GGT und KGV von zwei oder mehr Zahlen"
+      "metaDescription": "Berechnen Sie GGT und KGV von zwei oder mehr Zahlen",
+      "guide": {
+        "steps": [
+          "Gib zwei ganze Zahlen ein.",
+          "Starte, um ggT und kgV zusammen zu erhalten.",
+          "Lies beide und prüfe a × b = ggT × kgV."
+        ],
+        "explanationTitle": "ggT und kgV zusammen",
+        "formula": "ggT(a,b) × kgV(a,b) = |a × b|",
+        "explanation": [
+          "Beide auf einmal spart Zeit; viele Bruch- und Taktprobleme brauchen ggT zum Kürzen und kgV zum Angleichen.",
+          "Die Identität ggT × kgV = |a×b| ist ein schneller Plausibilitätscheck."
+        ],
+        "faq": [
+          {
+            "q": "Warum beide?",
+            "a": "Bruchkürzen braucht ggT; Hauptnenner braucht kgV."
+          },
+          {
+            "q": "Gilt die Identität immer?",
+            "a": "Ja für genau zwei positive ganze; bei mehr paarweise."
+          },
+          {
+            "q": "Eingaben gleich?",
+            "a": "Dann ggT = kgV = die Zahl selbst."
+          }
+        ]
+      }
     },
     "prime-factorization": {
       "name": "Primfaktorzerlegung",
       "description": "Finden Sie Primfaktoren und Teiler beliebiger Zahlen",
-      "metaDescription": "Finden Sie Primfaktorzerlegung, Faktorbaum und alle Teiler"
+      "metaDescription": "Finden Sie Primfaktorzerlegung, Faktorbaum und alle Teiler",
+      "guide": {
+        "steps": [
+          "Gib eine ganze Zahl > 1 ein.",
+          "Starte, um sie in Primfaktoren zu zerlegen.",
+          "Lies die Primliste mit Exponenten, z. B. 360 = 2³ × 3² × 5."
+        ],
+        "explanationTitle": "Primfaktorzerlegung erklärt",
+        "formula": "n = p1^a1 × p2^a2 × ... wobei jedes p prim",
+        "explanation": [
+          "Die Primfaktorzerlegung stellt eine Zahl als Primprodukt dar, die einzigartigen Bausteine jeder ganzen Zahl über 1.",
+          "Sie ist Grundlage für ggT, kgV, Kryptografie und das Prüfen auf Primzahl oder Potenz."
+        ],
+        "faq": [
+          {
+            "q": "Warum eindeutig?",
+            "a": "Der Fundamentalsatz der Arithmetik sagt: jede ganze Zahl hat genau eine Primzerlegung."
+          },
+          {
+            "q": "Was ist mit 1?",
+            "a": "1 ist nicht prim und hat keine Primfaktoren; Zerlegung beginnt bei 2."
+          },
+          {
+            "q": "Wie große Zahlen?",
+            "a": "Probedivision reicht bis Millionen; Riesenzahlen brauchen andere Verfahren."
+          }
+        ]
+      }
     },
     "triangle-calculator": {
       "name": "Dreiecks",
@@ -5267,7 +5699,34 @@
     "right-triangle": {
       "name": "Rechtwinkliges-Dreieck",
       "description": "Berechnen Sie Seiten und Winkel eines rechtwinkligen Dreiecks",
-      "metaDescription": "Berechnen Sie Dimensionen eines rechtwinkligen Dreiecks mit Trigonometrie"
+      "metaDescription": "Berechnen Sie Dimensionen eines rechtwinkligen Dreiecks mit Trigonometrie",
+      "guide": {
+        "steps": [
+          "Gib zwei bekannte Seiten oder eine Seite und einen spitzen Winkel ein.",
+          "Starte, um fehlende Seiten und Winkel zu lösen.",
+          "Lies Hypotenuse, Katheten, Fläche und Umfang."
+        ],
+        "explanationTitle": "Rechtwinkliges Dreieck lösen",
+        "formula": "a² + b² = c²; sin θ = a/c, cos θ = b/c, tan θ = a/b",
+        "explanation": [
+          "Ein rechtwinkliges Dreieck hat einen 90°-Winkel, daher fixieren Satz des Pythagoras und Trig-Funktionen die übrigen Seiten und Winkel.",
+          "Mit zwei Informationen (nicht beide Winkel) ist es eindeutig lösbar; nur Winkel reichen ohne Seite nicht."
+        ],
+        "faq": [
+          {
+            "q": "Was brauche ich?",
+            "a": "Zwei von: zwei Seiten, oder eine Seite und ein spitzer Winkel."
+          },
+          {
+            "q": "Warum eine Seite nötig?",
+            "a": "Nur Winkel geben Form, aber unendlich viele Größen; eine Seite setzt Maßstab."
+          },
+          {
+            "q": "Ist die Hypotenuse immer längst?",
+            "a": "Ja, sie liegt dem 90°-Winkel gegenüber und ist stets die größte Seite."
+          }
+        ]
+      }
     },
     "pythagorean-calculator": {
       "name": "Satz-des-Pythagoras",
@@ -5368,7 +5827,34 @@
     "surface-area-calculator": {
       "name": "Oberflaechen",
       "description": "Berechnen Sie die Oberflaeche von 3D-Formen",
-      "metaDescription": "Berechnen Sie Oberflaeche von Wuerfel, Kugel, Zylinder, Kegel und Pyramide"
+      "metaDescription": "Berechnen Sie Oberflaeche von Wuerfel, Kugel, Zylinder, Kegel und Pyramide",
+      "guide": {
+        "steps": [
+          "Wähle die 3D-Form (Quader, Kugel, Zylinder, Kegel).",
+          "Gib Maße wie Radius, Höhe oder Kanten ein.",
+          "Lies die Oberfläche und ggf. getrennt die Mantelfläche."
+        ],
+        "explanationTitle": "Oberfläche berechnen",
+        "formula": "quader = 2(lb + lh + bh); kugel = 4πr²; zylinder = 2πr(r + h)",
+        "explanation": [
+          "Die Oberfläche ist die Summe aller Außenflächen eines Körpers, in Quadratseinheiten.",
+          "Sie zählt für Material zum Bauen, Streichen oder Verpacken, während das Volumen das Fassungsvermögen misst."
+        ],
+        "faq": [
+          {
+            "q": "Oberfläche vs Volumen?",
+            "a": "Fläche deckt Außen (Quadrat), Volumen füllt Innen (Kubik)."
+          },
+          {
+            "q": "Was ist Mantelfläche?",
+            "a": "Nur die Seitenflächen, ohne obere und untere Basen."
+          },
+          {
+            "q": "Warum Einheit quadriert?",
+            "a": "Fläche ist zweidimensional, also Einheit hoch 2."
+          }
+        ]
+      }
     },
     "volume-calculator": {
       "name": "Volumen",
@@ -5504,37 +5990,226 @@
     "vm-storage-calculator": {
       "name": "VM-Speicherrechner",
       "description": "Berechnen Sie den Speicherbedarf für vSphere ESX-Cluster",
-      "metaDescription": "Kostenloser VMware vSphere Speicherrechner. Berechnen Sie VM-Speicherkapazität einschließlich bereitgestellter Festplatten, Swap-Dateien, Snapshots und Wachstumszuweisung."
+      "metaDescription": "Kostenloser VMware vSphere Speicherrechner. Berechnen Sie VM-Speicherkapazität einschließlich bereitgestellter Festplatten, Swap-Dateien, Snapshots und Wachstumszuweisung.",
+      "guide": {
+        "steps": [
+          "Geben Sie die VM-Anzahl, die durchschnittliche Festplattengröße pro VM und den RAID/EC-Overhead-Faktor ein.",
+          "Geben Sie Wachstumsrate und Snapshot-Aufbewahrung ein.",
+          "Lesen Sie den benötigten gesamten Roh- und Nutzkapazität vor der Bereitstellung."
+        ],
+        "explanationTitle": "Speicher für virtuelle Maschinen dimensionieren",
+        "formula": "nutzbar = VMs × diskGB × (1 + overhead); roh = nutzbar / raidEffizienz",
+        "explanation": [
+          "Virtualisierung braucht Overhead für Snapshots, Replikate und RAID-Parität, daher ist Nutzkapazität immer kleiner als Rohplatten.",
+          "Planen Sie 20–30% freien Spielraum ein, damit Live-Migration und Patching nicht stocken, wenn ein Datastore vollläuft."
+        ],
+        "faq": [
+          {
+            "q": "Warum ist nutzbar kleiner als roh?",
+            "a": "RAID-Parität, Erasure Coding und Snapshots belegen Kapazität, bevor Gastdaten gespeichert werden."
+          },
+          {
+            "q": "Wie viel Puffer sollte ich halten?",
+            "a": "Ziel sind 20–30% frei, um Spitzen, Snapshots und Wartung aufzufangen."
+          },
+          {
+            "q": "Sparen Thin Provisioning Platten ein?",
+            "a": "Es verschiebt die Nutzung, aber die logische Gesamtgröße muss beim vollen Schreiben passen."
+          }
+        ]
+      }
     },
     "k8s-capacity-calculator": {
       "name": "Kubernetes-Kapazitätsrechner",
       "description": "Berechnen Sie die Knotenanforderungen für Ihren Kubernetes-Cluster",
-      "metaDescription": "Kostenloser Kubernetes-Kapazitätsplaner. Berechnen Sie die benötigten Knoten für K8s-Cluster basierend auf Pod-CPU/Speicher-Anforderungen, reservierten Systemressourcen und Zielauslastung."
+      "metaDescription": "Kostenloser Kubernetes-Kapazitätsplaner. Berechnen Sie die benötigten Knoten für K8s-Cluster basierend auf Pod-CPU/Speicher-Anforderungen, reservierten Systemressourcen und Zielauslastung.",
+      "guide": {
+        "steps": [
+          "Gib die CPU- und Memory-Requests eines Pods und die Replica-Anzahl ein.",
+          "Gib Knotengröße (CPU/Speicher) und den System-Reservierungs-Overhead ein.",
+          "Lies, wie viele Knoten nötig sind und wie hoch die Cluster-Auslastung vor dem Deploy ist."
+        ],
+        "explanationTitle": "Kubernetes-Clusterkapazität abschätzen",
+        "formula": "knoten = ceil(gesReq / (knotCap × (1 - sysRes))) ; auslast = gesReq / (knoten × knotCap)",
+        "explanation": [
+          "Kubernetes plant nach Requests, nicht Limits, also muss man die Summe der Requests plus Puffer für System-Pods und Packing-Verluste dimensionieren.",
+          "10–20% Reservierung pro Knoten für kube-system und Eviction-Schwellen verhindert, dass Knoten unter Last als unschedulbar markiert werden."
+        ],
+        "faq": [
+          {
+            "q": "Treiben Requests oder Limits die Planung?",
+            "a": "Die Planung nutzt Requests; Limits deckeln nur und können bei zu niedrigem Wert OOM auslösen."
+          },
+          {
+            "q": "Warum Kapazität reservieren?",
+            "a": "kube-system-Pods und Eviction-Schwellen brauchen Spielraum, sonst werden Knoten unschedulbar."
+          },
+          {
+            "q": "Wie verbessere ich das Packing?",
+            "a": "Requests passend setzen, Topology Spread nutzen und kleine Knoten vermeiden, die Reservierung verschwenden."
+          }
+        ]
+      }
     },
     "server-virtualization-calculator": {
       "name": "Server-Virtualisierungsrechner",
       "description": "Berechnen Sie ESX-Host-Anforderungen für VM-Workloads",
-      "metaDescription": "Kostenloser VMware ESX-Host-Dimensionierungsrechner. Berechnen Sie erforderliche Hosts basierend auf VM-CPU/RAM-Anforderungen mit N+1-Hochverfügbarkeitsunterstützung."
+      "metaDescription": "Kostenloser VMware ESX-Host-Dimensionierungsrechner. Berechnen Sie erforderliche Hosts basierend auf VM-CPU/RAM-Anforderungen mit N+1-Hochverfügbarkeitsunterstützung.",
+      "guide": {
+        "steps": [
+          "Gib die Anzahl physischer Server und deren durchschnittliche CPU/RAM-Auslastung ein.",
+          "Gib das Konsolidierungsverhältnis und die Specs des neuen Virtual-Hosts ein.",
+          "Lies die reduzierte Host-Anzahl, Stromeinsparung und freien Rack-Platz."
+        ],
+        "explanationTitle": "Server-Virtualisierung modellieren",
+        "formula": "hosts = ceil(physLast / (hostCap × konsol)); gespartStrom = physPower - hosts × hostPower",
+        "explanation": [
+          "Virtualisierung lässt viele schwach ausgelastete physische Server wenige, größere Hosts teilen und hebt die Auslastung von oft unter 15% auf 60–80%.",
+          "Der größte Gewinn sind weniger zu versorgende Geräte, weniger Rack-Platz und einfachere Hardware-Lifecycle-Verwaltung."
+        ],
+        "faq": [
+          {
+            "q": "Welches Konsolidierungsverhältnis ist realistisch?",
+            "a": "10:1 bis 20:1 sind üblich für Standardlasten, weniger für latenzkritische."
+          },
+          {
+            "q": "Senkt Virtualisierung immer Strom?",
+            "a": "Ja bei der Gesamtanlage, auch wenn jeder Host mehr zieht als die alten Server."
+          },
+          {
+            "q": "Wie sieht es mit Lizenzen aus?",
+            "a": "Hypervisor- und Gast-Lizenzen können sparen aufzehren, also vorher einrechnen."
+          }
+        ]
+      }
     },
     "vmware-licensing-calculator": {
       "name": "VMware-Lizenzrechner",
       "description": "Berechnen Sie VMware VCF/VVF-Lizenzkosten",
-      "metaDescription": "Kostenloser VMware-Lizenzkostenrechner. Berechnen Sie VMware Cloud Foundation- und vSphere Foundation-Abonnementkosten mit 16-Kern-Minimum-Durchsetzung."
+      "metaDescription": "Kostenloser VMware-Lizenzkostenrechner. Berechnen Sie VMware Cloud Foundation- und vSphere Foundation-Abonnementkosten mit 16-Kern-Minimum-Durchsetzung.",
+      "guide": {
+        "steps": [
+          "Gib die Anzahl der CPU-Prozessoren (Sockets) und Kerne pro Prozessor über alle Hosts ein.",
+          "Wähle die VMware-Edition und benötigte Add-on-Packs.",
+          "Lies die Gesamtzahl der Lizenzen und die geschätzten Abo-Kosten vor dem Kauf."
+        ],
+        "explanationTitle": "VMware-Lizenzierung dimensionieren",
+        "formula": "lizenzen = Σ(hostProz × kerneProProz, gedeckelt pro Key); kosten = lizenzen × edPreis",
+        "explanation": [
+          "VMware wird meist pro physischem Prozessor (Socket) lizenziert mit einer Mindestkernzahl pro Socket, daher vermeidet korrekte Kernzählung teure Lücken.",
+          "Edition und Support-Stufe treiben den Preis weit mehr als die Kernzahl, also Standard vs Enterprise plus Add-ons wie vSAN oder NSX vergleichen."
+        ],
+        "faq": [
+          {
+            "q": "Wird VMware pro Kern oder pro Socket lizenziert?",
+            "a": "Pro CPU-Socket, mit einer Mindestkernzahl pro Socket, die auch bei Nichtnutzung lizenziert werden muss."
+          },
+          {
+            "q": "Lizenziert man vCenter separat?",
+            "a": "Ja, vCenter Server wird pro Instanz zusätzlich zu den ESXi-Host-Lizenzen lizenziert."
+          },
+          {
+            "q": "Was ist mit SnS-Verträgen?",
+            "a": "Support- und Abo-Verlängerungen (SnS) dominieren oft die Lebensdauerkosten, also über 3–5 Jahre modellieren."
+          }
+        ]
+      }
     },
     "virtualization-cost": {
       "name": "Virtualisierungskostenrechner",
       "description": "Berechnen Sie die Gesamtbetriebskosten für Virtualisierungsinfrastruktur",
-      "metaDescription": "Kostenloser Virtualisierungs-TCO-Rechner. Berechnen Sie die Gesamtbetriebskosten einschließlich CAPEX und OPEX für Virtualisierungsinfrastruktur."
+      "metaDescription": "Kostenloser Virtualisierungs-TCO-Rechner. Berechnen Sie die Gesamtbetriebskosten einschließlich CAPEX und OPEX für Virtualisierungsinfrastruktur.",
+      "guide": {
+        "steps": [
+          "Gib die Host-Anzahl, den Kaufpreis und die erwartete Nutzungsdauer ein.",
+          "Gib jährliche Strom-, Kühl-, Lizenz- und Admin-Stundenkosten ein.",
+          "Lies die Gesamtbetriebskosten (TCO) und die Kosten pro VM über den Zeitraum."
+        ],
+        "explanationTitle": "Totale Virtualisierungskosten",
+        "formula": "tco = capEx + jahre × (strom + kühlung + lizenzen + arbeit); kostenProVM = tco / vmAnzahl",
+        "explanation": [
+          "Die TCO umfasst einmalige Hardware plus laufende Strom, Kühlung, Lizenzen und Personal; ignoriert man eines, verzerrt das den Vergleich.",
+          "TCO durch die Zahl der VMs geteilt zeigt, ob Konsolidierung auf weniger, dichtere Hosts die Kosten pro Workload wirklich senkt."
+        ],
+        "faq": [
+          {
+            "q": "Was ist die größte versteckte Kost?",
+            "a": "Lizenzen und Admin-Arbeit übersteigen meist die Hardware selbst über 3–5 Jahre."
+          },
+          {
+            "q": "Sollte man Strom und Kühlung einbeziehen?",
+            "a": "Ja, im Rechenzentrum entsprechen sie jährlich oft der Hardware-Abschreibung."
+          },
+          {
+            "q": "Senkt mehr VMs immer die Kosten pro VM?",
+            "a": "Nur bis Dichte Performance oder Zuverlässigkeit schädigt; dann kosten Ausfälle mehr als Hardware."
+          }
+        ]
+      }
     },
     "hyperv-consolidation": {
       "name": "Hyper-V Konsolidierungsrechner",
       "description": "Berechnen Sie Hyper-V Host-Anforderungen mit HA und Windows-Lizenzierung",
-      "metaDescription": "Kostenloser Hyper-V Konsolidierungsrechner. Berechnen Sie erforderliche Hosts mit N+1/N+2 HA, Speicher-Stacking und Windows Server-Lizenzkosten."
+      "metaDescription": "Kostenloser Hyper-V Konsolidierungsrechner. Berechnen Sie erforderliche Hosts mit N+1/N+2 HA, Speicher-Stacking und Windows Server-Lizenzkosten.",
+      "guide": {
+        "steps": [
+          "Gib die aktuelle Zahl physischer Server und deren CPU/RAM-Nutzung ein.",
+          "Gib die Ziel-Host-Größe und gewünschte Reserve ein.",
+          "Lies die prognostizierte Host-Anzahl, Konsolidierungsrate und freien Rack-Einheiten."
+        ],
+        "explanationTitle": "Hyper-V-Konsolidierung planen",
+        "formula": "hosts = ceil(last / (hostCap × (1 - reserve))); ratio = physServer / hosts",
+        "explanation": [
+          "Hyper-V erlaubt es, viele schwach genutzte physische Kisten auf wenige Hosts mit Windows Server und Hyper-V-Rolle zu verdichten.",
+          "15–25% Reserve pro Host erhalten die Live-Migration, sodass Wartung oder Ausfall keine laufenden VMs stören."
+        ],
+        "faq": [
+          {
+            "q": "Welche Reserve pro Host?",
+            "a": "Plane 15–25% frei, damit Failover-Cluster einen Ausfallknoten ohne Overcommit aufnehmen."
+          },
+          {
+            "q": "Auswirkung auf Core-Lizenzierung?",
+            "a": "Windows Server wird pro Kern lizenziert, also steigen OS-Kosten mit größeren Hosts, selbst wenn VMs sinken."
+          },
+          {
+            "q": "Ist Failover-Clustering nötig?",
+            "a": "Nicht zwingend, aber es macht Konsolidierung sicher durch automatischen VM-Neustart."
+          }
+        ]
+      }
     },
     "windows-licensing": {
       "name": "Windows Server Lizenzrechner",
       "description": "Vergleichen Sie Datacenter- vs. Standard-Lizenzkosten",
-      "metaDescription": "Kostenloser Windows Server-Lizenzrechner. Vergleichen Sie Datacenter- und Standard-Editionen mit Break-Even-Analyse und 16-Kern-Minimum."
+      "metaDescription": "Kostenloser Windows Server-Lizenzrechner. Vergleichen Sie Datacenter- und Standard-Editionen mit Break-Even-Analyse und 16-Kern-Minimum.",
+      "guide": {
+        "steps": [
+          "Gib die physischen Kerne pro Windows Server Host ein.",
+          "Wähle Edition und Modell (pro Kern mit CALs oder Abo).",
+          "Lies die mindestens nötigen Core-Lizenzen und Gesamtkosten inkl. CALs."
+        ],
+        "explanationTitle": "Windows Server Lizenzierung Grundlagen",
+        "formula": "coreLiz = max(16, kerneHost) × hosts; kosten = coreLiz × corePreis + cals × calPreis",
+        "explanation": [
+          "Windows Server wird pro physischem Kern lizenziert, mindestens 16 Kerne pro Server, also kauft auch ein kleiner Server ein 16-Core-Paket.",
+          "User/Device CALs werden separat lizenziert und gern vergessen; das gewählte Modell verschiebt den Break-even stark bei Skalierung."
+        ],
+        "faq": [
+          {
+            "q": "Was ist das Minimum an Kernen pro Server?",
+            "a": "16 Kerne; selbst eine 4-Core-Box braucht 16 Core-Lizenzen."
+          },
+          {
+            "q": "Sind CALs immer nötig?",
+            "a": "Bei den meisten On-Prem-Zugriffsmodellen ja, Azure Stack HCI und Abo unterscheiden sich."
+          },
+          {
+            "q": "Standard vs Datacenter?",
+            "a": "Standard deckt begrenzte OSEs pro Host; Datacenter lohnt bei vielen VMs pro Host."
+          }
+        ]
+      }
     },
     "hypervisor-comparison": {
       "name": "Hypervisor-Vergleichsrechner",
@@ -5593,12 +6268,66 @@
         "datacenter": "Datacenter (unbegrenzte VMs)"
       },
       "windowsEditionHint": "Standard ist günstiger bei <13 VMs/Host, Datacenter darüber.",
-      "featureComparison": "Funktionsvergleich"
+      "featureComparison": "Funktionsvergleich",
+      "guide": {
+        "steps": [
+          "Gib dein Workload-Profil ein: VM-Zahl, OS-Mix und ob Live-Migration nötig ist.",
+          "Wähle Kandidaten-Hypervisoren und deren Lizenz- oder Supportkosten.",
+          "Lies den Funktions- und Kostenvergleich für die beste Wahl."
+        ],
+        "explanationTitle": "Hypervisoren vergleichen",
+        "formula": "score = w1×features + w2×(1/kosten) + w3×support; max(score)",
+        "explanation": [
+          "Hypervisoren unterscheiden sich im Lizenzmodell (frei, pro Kern, Abo), Ökosystem-Reife und Management-Tools, nicht nur in nackter Performance.",
+          "Die billigste Option wird teuer, wenn ihr die Automatisierung, Backups oder Support fehlen, auf die das Team täglich angewiesen ist."
+        ],
+        "faq": [
+          {
+            "q": "Reicht ein kostenloser Hypervisor?",
+            "a": "Für Labs ja, aber Produktion braucht meist Support, Live-Migration und Backup-APIs, die Gratis-Stufen weglassen."
+          },
+          {
+            "q": "Was zählt bei der Auswahl am meisten?",
+            "a": "Funktions­tiefe an deinen Betrieb anpassen: Backups, HA und Tooling schlagen oft nackte Geschwindigkeit."
+          },
+          {
+            "q": "Sollte man Lock-in beachten?",
+            "a": "Ja, VM-Format und Management-Portabilität beeinflussen künftige Migrationskosten."
+          }
+        ]
+      }
     },
     "slope-calculator": {
       "name": "Steigungs",
       "description": "Berechnen Sie Steigung, Gleichung und Winkel einer Geraden",
-      "metaDescription": "Berechnen Sie Steigung, y-Achsenabschnitt und lineare Gleichung"
+      "metaDescription": "Berechnen Sie Steigung, y-Achsenabschnitt und lineare Gleichung",
+      "guide": {
+        "steps": [
+          "Gib zwei Punkte (x1,y1) und (x2,y2) ein.",
+          "Starte, um Steigung und Achsenabschnitt zu erhalten.",
+          "Lies m, b und die Geradengleichung y = mx + b."
+        ],
+        "explanationTitle": "Steigung einer Linie finden",
+        "formula": "m = (y2 - y1) / (x2 - x1); b = y1 - m × x1",
+        "explanation": [
+          "Die Steigung misst die Neigung: Anstieg durch Laufweite, also Änderung von y pro x.",
+          "Positive Steigung steigt, negative fällt, null ist flach, undefiniert ist eine Senkrechte."
+        ],
+        "faq": [
+          {
+            "q": "Was wenn x gleich?",
+            "a": "Die Linie ist vertikal und die Steigung undefiniert (Division durch null)."
+          },
+          {
+            "q": "Was bedeutet Steigung 1?",
+            "a": "Sie steigt 1 hoch pro 1 waagerecht, also 45°."
+          },
+          {
+            "q": "Wie die Gleichung?",
+            "a": "Mit m ist b = y − mx an einem Punkt, gibt y = mx + b."
+          }
+        ]
+      }
     },
     "standard-deviation": {
       "name": "Standardabweichungs",
@@ -5763,17 +6492,98 @@
     "p-value-calculator": {
       "name": "P-Wert",
       "description": "Berechnen Sie P-Werte fuer statistische Hypothesentests",
-      "metaDescription": "Berechnen Sie P-Werte aus z-, t-, Chi-Quadrat- und F-Werten"
+      "metaDescription": "Berechnen Sie P-Werte aus z-, t-, Chi-Quadrat- und F-Werten",
+      "guide": {
+        "steps": [
+          "Gib Teststatistik und Freiheitsgrade (oder Effektstärke und n) ein.",
+          "Wähle ein- oder zweiseitig.",
+          "Lies p und ob das Ergebnis bei deinem Alpha signifikant ist."
+        ],
+        "explanationTitle": "p-Werte verstehen",
+        "formula": "p = P(Teststatistik ≥ beobachtet | H0 wahr)",
+        "explanation": [
+          "Ein p-Wert ist die Wahrscheinlichkeit, mindestens so extreme Ergebnisse zu sehen, wenn die Nullhypothese gilt.",
+          "Ein kleiner p (unter Alpha, oft 0,05) spricht gegen H0, also wird H0 verworfen."
+        ],
+        "faq": [
+          {
+            "q": "Beweist p < 0,05 meine Theorie?",
+            "a": "Nein, es spricht nur gegen H0, nicht für die Wahrscheinlichkeit deiner Theorie."
+          },
+          {
+            "q": "Ein- oder zweiseitig?",
+            "a": "Zweiseitig teilt Alpha auf beide Enden; einseitig nur mit vorgegebener Richtung."
+          },
+          {
+            "q": "Was ist Alpha?",
+            "a": "Die vorab gesetzte Signifikanzschwelle, meist 0,05, gegen falsch-positive Rate."
+          }
+        ]
+      }
     },
     "confidence-interval": {
       "name": "Konfidenzintervall",
       "description": "Berechnen Sie Konfidenzintervalle fuer Mittelwerte und Anteile",
-      "metaDescription": "Berechnen Sie Konfidenzintervalle fuer Populationsmittelwert und Anteil"
+      "metaDescription": "Berechnen Sie Konfidenzintervalle fuer Populationsmittelwert und Anteil",
+      "guide": {
+        "steps": [
+          "Gib Mittelwert, Standardabweichung und n ein.",
+          "Wähle das Konfidenzniveau (90%, 95%, 99%).",
+          "Lies Fehlerrahmen sowie untere und obere Grenze."
+        ],
+        "explanationTitle": "Was ein Konfidenzintervall sagt",
+        "formula": "KI = mittel ± z × (s / √n); rand = z × s / √n",
+        "explanation": [
+          "Ein KI liefert einen Bereich, der bei wiederholter Stichprobe den wahren Parameter zu einem gesetzten Anteil enthält.",
+          "Breitere Intervalle bedeuten mehr Unsicherheit; größere n oder niedrigeres Niveau verkleinern den Fehlerrahmen."
+        ],
+        "faq": [
+          {
+            "q": "Bedeutet 95% eine 95%-Chance?",
+            "a": "Nicht genau; 95% solcher Intervalle aus Wiederholungen würden die Wahrheit enthalten."
+          },
+          {
+            "q": "Warum n unter Wurzel?",
+            "a": "Präzision wächst mit √n, also vierfache Stichprobe für halben Rand."
+          },
+          {
+            "q": "z oder t?",
+            "a": "t bei unbekannter σ und kleinem n; z bei großem n oder bekannter σ."
+          }
+        ]
+      }
     },
     "permutation-combination": {
       "name": "Permutations- und Kombinations",
       "description": "Berechnen Sie Permutationen und Kombinationen mit und ohne Wiederholung",
-      "metaDescription": "Berechnen Sie nPr und nCr fuer Zaehlprobleme"
+      "metaDescription": "Berechnen Sie nPr und nCr fuer Zaehlprobleme",
+      "guide": {
+        "steps": [
+          "Gib n (Gesamtzahl) und k (Auswahl) ein.",
+          "Wähle Permutation (Reihenfolge zählt) oder Kombination (egal).",
+          "Lies die Anzahl und ggf. die Formel."
+        ],
+        "explanationTitle": "Permutationen vs Kombinationen",
+        "formula": "perm P(n,k) = n! / (n-k)!; komb C(n,k) = n! / (k!(n-k)!)",
+        "explanation": [
+          "Permutationen zählen Anordnungen mit Reihenfolge, wie ein Podest; Kombinationen zählen Gruppen ohne Reihenfolge, wie eine Karte.",
+          "Da Kombinationen die Reihenfolge ignorieren, ist C(n,k) stets ≤ P(n,k) bei gleichem n, k."
+        ],
+        "faq": [
+          {
+            "q": "Wann zählt Reihenfolge?",
+            "a": "Wenn Tausch zweier gewählter Objekte ein anderes Ergebnis gibt, wie Rankings oder Passwörter."
+          },
+          {
+            "q": "Warum Kombination kleiner?",
+            "a": "Jede k-Gruppe entspricht k! Permutationen, also teilt Kombination durch k!."
+          },
+          {
+            "q": "Was wenn k = n?",
+            "a": "Beide gleich 1: genau eine Möglichkeit, alle Objekte zu ordnen oder zu wählen."
+          }
+        ]
+      }
     },
     "ratio-calculator": {
       "name": "Verhaeltnis",
@@ -5810,12 +6620,66 @@
     "binary-calculator": {
       "name": "Binaer",
       "description": "Konvertieren und fuehren Sie Operationen in Binaer durch",
-      "metaDescription": "Konvertieren Sie zwischen Binaer, Dezimal, Oktal und Hexadezimal"
+      "metaDescription": "Konvertieren Sie zwischen Binaer, Dezimal, Oktal und Hexadezimal",
+      "guide": {
+        "steps": [
+          "Gib eine Zahl binär, dezimal oder hex im passenden Modus ein.",
+          "Wähle die Zielbasis.",
+          "Lies den Wert und ggf. die Bitlänge."
+        ],
+        "explanationTitle": "Zwischen Zahlensystemen umrechnen",
+        "formula": "dezimal = Σ(ziffer_i × basis^i); binär nutzt 0–1, Basis 2",
+        "explanation": [
+          "Binär stellt Zahlen nur mit 0 und 1 dar, jede Stelle eine Zweierpotenz, so speichern Computer Daten.",
+          "Zu Dezimal summiert man Ziffer mal Stellenwert; von Dezimal teilt man wiederholt durch die Basis und sammelt Reste."
+        ],
+        "faq": [
+          {
+            "q": "Warum Binär bei Computern?",
+            "a": "Elektronik stellt zuverlässig zwei Zustände (an/aus) dar, Basis 2 ist natürlich für Gatter."
+          },
+          {
+            "q": "Was sind Bit und Byte?",
+            "a": "Ein Bit ist eine Binärziffer; ein Byte sind acht Bits, die übliche Einheit."
+          },
+          {
+            "q": "Dezimal zu Binär?",
+            "a": "Wiederholt durch 2 teilen; Reste von unten nach oben ergeben die Binärziffern."
+          }
+        ]
+      }
     },
     "hex-calculator": {
       "name": "Hexadezimal",
       "description": "Konvertieren und rechnen Sie in Hexadezimal",
-      "metaDescription": "Konvertieren und fuehren Sie arithmetische Operationen in Hexadezimal durch"
+      "metaDescription": "Konvertieren und fuehren Sie arithmetische Operationen in Hexadezimal durch",
+      "guide": {
+        "steps": [
+          "Gib einen Hex-Wert (0–9, A–F) oder andere Basis ein.",
+          "Wähle Zielbasis wie Dezimal oder Binär.",
+          "Lies das Ergebnis und prüfe die Gruppierung."
+        ],
+        "explanationTitle": "Hexadezimal einfach",
+        "formula": "jede Hex-Ziffer = 4 Bits; wert = Σ(ziffer_i × 16^i)",
+        "explanation": [
+          "Basis 16 packt vier Binärbits in eine Ziffer, daher ist Hex die kompakte Schreibweise für Adressen und Farben wie #FF8800.",
+          "Hex zu Dezimal multipliziert jede Ziffer mit 16 hoch Position; A–F stehen für zehn bis fünfzehn."
+        ],
+        "faq": [
+          {
+            "q": "Warum Hex statt Binär?",
+            "a": "Es ist viel kürzer und fehlerärmer für lange Bitfolgen, eine Ziffer pro Nibble."
+          },
+          {
+            "q": "Was bedeuten A–F?",
+            "a": "Sie stehen für Dezimal 10–15 als Hex-Ziffer."
+          },
+          {
+            "q": "Wo wird Hex täglich genutzt?",
+            "a": "CSS-Farben, MAC-Adressen und Speicherauszüge nutzen Hex."
+          }
+        ]
+      }
     },
     "scientific-notation": {
       "name": "Wissenschaftliche-Notation",
@@ -5852,22 +6716,130 @@
     "big-number": {
       "name": "Grosse-Zahlen",
       "description": "Fuehren Sie Arithmetik mit beliebig grossen Ganzzahlen durch",
-      "metaDescription": "Rechnen Sie mit sehr grossen Zahlen ueber Standardrechner-Grenzen hinaus"
+      "metaDescription": "Rechnen Sie mit sehr grossen Zahlen ueber Standardrechner-Grenzen hinaus",
+      "guide": {
+        "steps": [
+          "Gib eine oder zwei sehr große Ganzzahlen ein, über Taschenrechnergrenzen.",
+          "Wähle Operation: addieren, subtrahieren, multiplizieren, vergleichen.",
+          "Lies das exakte Ergebnis ohne wissenschaftliche Rundung."
+        ],
+        "explanationTitle": "Rechnen mit großen Zahlen",
+        "formula": "Operationen folgen Standard-Ganzzahl-Arithmetik mit beliebiger Genauigkeit",
+        "explanation": [
+          "Normale Fließkomma überläuft oder verliert ab etwa 15–16 Stellen Präzision, daher nutzt ein Big-Number-Tool beliebige Genauigkeit.",
+          "Das ist für Kryptografie, Kombinatorik und jede Rechnung nötig, wo jede Ziffer stimmen muss."
+        ],
+        "faq": [
+          {
+            "q": "Warum nicht wissenschaftliche Notation?",
+            "a": "Notation nähert an; exakte Ziffern zählen bei Schlüsseln, IDs und Modulo."
+          },
+          {
+            "q": "Wie viele Stellen?",
+            "a": "Beliebige Genauigkeit meistert Tausende Stellen, nur durch Speicher begrenzt."
+          },
+          {
+            "q": "Ist es langsamer?",
+            "a": "Ja, Big-Int ist schwerer, aber nötig wenn Präzision nicht rutschen darf."
+          }
+        ]
+      }
     },
     "number-sequence": {
       "name": "Zahlenfolgen",
       "description": "Analysieren und generieren Sie arithmetische, geometrische und Fibonacci-Folgen",
-      "metaDescription": "Finden Sie Muster in Zahlenfolgen und generieren Sie Reihen"
+      "metaDescription": "Finden Sie Muster in Zahlenfolgen und generieren Sie Reihen",
+      "guide": {
+        "steps": [
+          "Gib die bekannten Folgenglieder komma-getrennt ein.",
+          "Starte, um das Muster zu erkennen (arithmetisch, geometrisch, Fibonacci-artig).",
+          "Lies die nächsten Glieder und die Regel."
+        ],
+        "explanationTitle": "Musterverhalten von Zahlenfolgen finden",
+        "formula": "arithm: a_n = a_1 + (n-1)d; geom: a_n = a_1 × r^(n-1)",
+        "explanation": [
+          "Eine Folge folgt einer Regel, die jedes Glied mit seiner Position verknüpft; häufig sind arithmetisch (konstante Differenz) und geometrisch (konstantes Verhältnis).",
+          "Das Muster erlaubt Vorhersage künftiger Glieder, doch kurze Folgen passen oft auf mehrere Regeln."
+        ],
+        "faq": [
+          {
+            "q": "Muster unklar?",
+            "a": "Mehr Glieder liefern; kurze Folgen passen oft auf mehrere Regeln."
+          },
+          {
+            "q": "Arithmetisch vs geometrisch?",
+            "a": "Arithmetisch addiert festen Betrag; geometrisch multipliziert mit Faktor."
+          },
+          {
+            "q": "Fibonacci möglich?",
+            "a": "Ja, Rekursion erkennbar, bei der jedes Glied die beiden vorigen summiert."
+          }
+        ]
+      }
     },
     "matrix-calculator": {
       "name": "Matrix",
       "description": "Fuehren Sie Matrixoperationen durch: Addition, Multiplikation, Transposition, Determinante",
-      "metaDescription": "Berechnen Sie Matrixaddition, Multiplikation, Determinante, Inverse und Transposition"
+      "metaDescription": "Berechnen Sie Matrixaddition, Multiplikation, Determinante, Inverse und Transposition",
+      "guide": {
+        "steps": [
+          "Gib Dimensionen und Werte einer oder zweier Matrizen ein.",
+          "Wähle Operation: addieren, multiplizieren, transponieren, Determinante oder Inverse.",
+          "Lies das Ergebnis mit allen Zellen."
+        ],
+        "explanationTitle": "Grundlagen von Matrixoperationen",
+        "formula": "mult: C_ij = Σ A_ik × B_kj; det 2x2 = ad − bc",
+        "explanation": [
+          "Matrizen sind Zahlenraster; Multiplikation ist kein Elementweise, sondern Zeile-mal-Spalte, daher müssen Dimensionen passen.",
+          "Nur quadratische Matrizen haben Determinante und Inverse; Determinante null bedeutet nicht invertierbar."
+        ],
+        "faq": [
+          {
+            "q": "Warum Größen wichtig?",
+            "a": "Multiplikation braucht Spalten von A = Zeilen von B, sonst undefiniert."
+          },
+          {
+            "q": "Wann keine Inverse?",
+            "a": "Bei Determinante null ist die Matrix singulär, keine Inverse."
+          },
+          {
+            "q": "Wozu Determinante?",
+            "a": "Zeigt Invertierbarkeit und skaliert Fläche/Volumen der linearen Abbildung."
+          }
+        ]
+      }
     },
     "half-life-calculator": {
       "name": "Halbwertszeit",
       "description": "Berechnen Sie radioaktiven Zerfall und verbleibende Menge",
-      "metaDescription": "Berechnen Sie radioaktiven Zerfall, verbleibende Menge und C14-Datierung"
+      "metaDescription": "Berechnen Sie radioaktiven Zerfall, verbleibende Menge und C14-Datierung",
+      "guide": {
+        "steps": [
+          "Gib Anfangsmenge und Halbwertszeit ein.",
+          "Gib verstrichene Zeit oder verbleibende Menge ein.",
+          "Lies Restmenge und Anzahl der Halbwertszeiten."
+        ],
+        "explanationTitle": "Wie Halbwertszeit-Zerfall funktioniert",
+        "formula": "N(t) = N0 × (1/2)^(t / t_half)",
+        "explanation": [
+          "Halbwertszeit ist die Zeit, bis eine Menge auf die Hälfte sinkt; radioaktiver und chemischer Zerfall folgen diesem Gesetz.",
+          "Da exponentiell, halbiert sich der Betrag in jedem Intervall und erreicht nie ganz null in endlicher Zeit."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet Halbwertszeit?",
+            "a": "Die Zeit, bis die Hälfte des Materials zerfallen ist."
+          },
+          {
+            "q": "Erreicht es null?",
+            "a": "Nur asymptotisch; nach n Halbwertszeiten bleibt 1/2^n."
+          },
+          {
+            "q": "Nur für Strahlung?",
+            "a": "Nein, auch für Medikamentenabbau, Kühlung und viele Prozesse erster Ordnung."
+          }
+        ]
+      }
     },
     "distance-calculator": {
       "name": "Entfernungs",
@@ -6064,37 +7036,226 @@
     "food-cost": {
       "name": "Lebensmittelkostenrechner",
       "description": "Berechnen Sie die Gesamtrezeptkosten und Kosten pro Portion aus den Zutatenpreisen",
-      "metaDescription": "Kostenloser Lebensmittelkostenrechner. Berechnen Sie Rezeptkosten, Kosten pro Portion und Aufschlusselung der Zutatenkosten."
+      "metaDescription": "Kostenloser Lebensmittelkostenrechner. Berechnen Sie Rezeptkosten, Kosten pro Portion und Aufschlusselung der Zutatenkosten.",
+      "guide": {
+        "steps": [
+          "Gib Kaufpreis und Packungsgröße einer Zutat ein.",
+          "Gib die im Rezept tatsächlich genutzte Menge ein.",
+          "Lies die Kosten pro Portion, die diese Zutat beisteuert."
+        ],
+        "explanationTitle": "Lebensmittelkosten berechnen",
+        "formula": "kostenGenutzt = kaufpreis × (mengeGenutzt / packungsGröße)",
+        "explanation": [
+          "Lebensmittelkosten verknüpfen den Ladenpreis mit der im Rezept verbrauchten Portion und zeigen die wahren Kosten je Gericht.",
+          "Kosten pro Portion helfen bei Preisfindung und beim Erkennen von Zutaten, die heimlich Marge fressen."
+        ],
+        "faq": [
+          {
+            "q": "Abfall und Trim verrechnen?",
+            "a": "Ja, nutze Ausbeute-Prozent, damit Schalen und Knochen die echten Kosten nicht verstecken."
+          },
+          {
+            "q": "Was ist ein guter Food-Cost-Anteil?",
+            "a": "Viele Restaurants zielen auf 28–35% des Menüpreises, je nach Konzept."
+          },
+          {
+            "q": "Wie preise ich ein Gericht?",
+            "a": "Teile die Ziel-Food-Cost-Quote in die gesamten Zutatenkosten, um den Minimalpreis zu erhalten."
+          }
+        ]
+      }
     },
     "recipe-scaler": {
       "name": "Rezeptskalierung",
       "description": "Rezeptzutaten mit intelligenten Anpassungen fur Salz, Gewurze und Backtriebmittel skalieren",
-      "metaDescription": "Kostenlose Rezeptskalierung. Verdoppeln oder halbieren Sie Rezepte mit intelligenter Skalierung fur perfekte Ergebnisse."
+      "metaDescription": "Kostenlose Rezeptskalierung. Verdoppeln oder halbieren Sie Rezepte mit intelligenter Skalierung fur perfekte Ergebnisse.",
+      "guide": {
+        "steps": [
+          "Gib die Originalmengen und die Ursprungsportionen ein.",
+          "Gib die gewünschten Zielportionen ein.",
+          "Lies die skalierten Mengen für jede Zutat."
+        ],
+        "explanationTitle": "Rezept skalieren",
+        "formula": "skaliert = originalMenge × (zielPortionen / originalPortionen)",
+        "explanation": [
+          "Skalieren multipliziert jede Zutat mit demselben Verhältnis und hält so das Aroma gleich bei mehr oder weniger Personen.",
+          "Manche Schritte wie Ofentemperatur bleiben fix, während die Garzeit leicht, nicht streng proportional, angepasst werden kann."
+        ],
+        "faq": [
+          {
+            "q": "Skaliert die Garzeit linear?",
+            "a": "Nein, größere Mengen brauchen etwas mehr Zeit, aber nicht direkt proportional."
+          },
+          {
+            "q": "Wie mit TL-Mengen umgehen?",
+            "a": "Sinnvoll runden; ein Rezept braucht selten exakt 1,833 TL."
+          },
+          {
+            "q": "Auf eine Portion runterskalieren?",
+            "a": "Ja, aber sehr kleine Mengen lassen sich schwer genau abmessen."
+          }
+        ]
+      }
     },
     "nutrition-calculator": {
       "name": "Ernahrungsrechner",
       "description": "Berechnen Sie Kalorien, Makros und Nahrwerte aus ausgewahlten Lebensmitteln",
-      "metaDescription": "Kostenloser Ernahrungsrechner. Verfolgen Sie Kalorien, Protein, Kohlenhydrate, Fett und andere Nahrstoffe."
+      "metaDescription": "Kostenloser Ernahrungsrechner. Verfolgen Sie Kalorien, Protein, Kohlenhydrate, Fett und andere Nahrstoffe.",
+      "guide": {
+        "steps": [
+          "Gib Zutaten und Gewichte deiner Mahlzeit ein.",
+          "Gib Nährwerte pro 100 g ein oder wähle aus einer Datenbank.",
+          "Lies Kalorien, Protein, Kohlenhydrate, Fett und Ballaststoffe gesamt."
+        ],
+        "explanationTitle": "Nährwerte einer Mahlzeit schätzen",
+        "formula": "nährstoff = Σ(gewicht_g / 100 × wertPro100g)",
+        "explanation": [
+          "Ein Ernährungsrechner summiert die Makros jeder Zutat nach Gewicht und liefert Totals für ein selbst gemachtes Gericht ohne Label.",
+          "Genauigkeit hängt von korrektem Gewicht und richtigem Datenbankeintrag ab; Marken- und Rohform unterscheiden sich pro Gramm."
+        ],
+        "faq": [
+          {
+            "q": "Warum wiegen statt schätzen?",
+            "a": "Augenmaß kann 50% daneben liegen und Kalorien total verzerren."
+          },
+          {
+            "q": "Unterscheiden sich gekocht und roh?",
+            "a": "Ja, Garen ändert Wassergewicht, also den Zustand wiegen, den du hast."
+          },
+          {
+            "q": "Wie genau ist die Datenbank?",
+            "a": "Seröse Einträge sind nah dran, aber Ergebnisse sind Schätzungen, keine Medizin."
+          }
+        ]
+      }
     },
     "fuel-efficiency": {
       "name": "Kraftstoffeffizienz",
       "description": "Berechnen Sie den Kraftstoffverbrauch",
-      "metaDescription": "Kraftstoffrechner"
+      "metaDescription": "Kraftstoffrechner",
+      "guide": {
+        "steps": [
+          "Gib die gefahrene Distanz und den verbrauchten Kraftstoff ein.",
+          "Wähle die Einheiten (mpg, L/100km, km/L).",
+          "Lies den Wirkungsgrad und den Umrechnungswert."
+        ],
+        "explanationTitle": "Kraftstoffeffizienz messen",
+        "formula": "mpg = meilen / gallonen; L/100km = (L × 100) / km; km/L = km / L",
+        "explanation": [
+          "Kraftstoffeffizienz drückt die Distanz pro Brennstoffeinheit aus; niedriger L/100km ist besser, höheres mpg oder km/L ebenfalls.",
+          "Die reale Effizienz sinkt in Stadt, Kälte und bei aggressivem Beschleunigen, also unter ähnlichen Bedingungen vergleichen."
+        ],
+        "faq": [
+          {
+            "q": "Welche Einheit ist beste?",
+            "a": "US nutzt mpg, der Rest meist L/100km; nimm, was deine Region liest."
+          },
+          {
+            "q": "Warum schlägt mein Auto das Label?",
+            "a": "Labels nutzen Zyklen; echtes Fahren mit AC und Bergen weicht ab."
+          },
+          {
+            "q": "Wie verbessere ich mpg?",
+            "a": "Reifendruck halten, Leerlauf und Last reduzieren, sanft fahren."
+          }
+        ]
+      }
     },
     "vehicle-financing": {
       "name": "Fahrzeugfinanzierung",
       "description": "Fahrzeugfinanzierungsrechner",
-      "metaDescription": "Fahrzeugfinanzierungsrechner"
+      "metaDescription": "Fahrzeugfinanzierungsrechner",
+      "guide": {
+        "steps": [
+          "Gib Fahrzeugpreis, Anzahlung und Inzahlungnahme ein.",
+          "Gib Jahreszins und Laufzeit in Monaten ein.",
+          "Lies Monatsrate, Zinsen gesamt und Gesamtkosten."
+        ],
+        "explanationTitle": "Autokredit-Raten berechnen",
+        "formula": "monat = P × r / (1 - (1+r)^-n); r = apr/12; P = preis - anz - inz",
+        "explanation": [
+          "Auto financing streckt den Nettopreis über die Laufzeit; höhere Anzahlung oder kürzere Laufzeit senken die Gesamtzinsen.",
+          "Der APR, nicht nur die Monatsrate, treibt die Lebensdauerkosten, also nach Gesamtzahlung inkl. Zinsen vergleichen."
+        ],
+        "faq": [
+          {
+            "q": "Senkt längere Laufzeit die Kosten?",
+            "a": "Sie senkt die Rate, erhöht aber die Zinsen über mehr Monate."
+          },
+          {
+            "q": "APR vs Zinssatz?",
+            "a": "APR inkludiert Gebühren, ist also der echtere Vergleichswert."
+          },
+          {
+            "q": "Lieber bar zahlen?",
+            "a": "Wenn dein Barbestand nach Risiko weniger bringt als der APR, kann Finanzierung sinnvoll sein."
+          }
+        ]
+      }
     },
     "tire-sizing": {
       "name": "Reifengröße",
       "description": "Reifengrößenwechsel-Rechner",
-      "metaDescription": "Reifengrößenrechner"
+      "metaDescription": "Reifengrößenrechner",
+      "guide": {
+        "steps": [
+          "Gib den aktuellen Reifencode (z. B. 205/55R16) und die Kandidatengröße ein.",
+          "Gib den Felgendurchmesser ein, falls abweichend.",
+          "Lies Durchmesser, Flanke und Tacho-Fehler der neuen Größe."
+        ],
+        "explanationTitle": "Reifengrößen vergleichen",
+        "formula": "durchmesser = felge + 2 × (sectionWidth × aspect / 100 / 25.4) in zoll",
+        "explanation": [
+          "Reifencodes kodieren Breite, Querschnitt und Felgendurchmesser; Änderungen verändern Höhe, Freiraum und Tachoanzeige.",
+          "Bleib innerhalb etwa 3% des originalen Rollumfangs, um ABS-, Getriebe- und Odometer-Fehler zu vermeiden."
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet 55 bei 205/55R16?",
+            "a": "Die Flankenhöhe ist 55% der 205 mm Breite."
+          },
+          {
+            "q": "Warum Durchmesser nahe Serie halten?",
+            "a": "Große Abweichungen verfälschen Tacho, Getriebe und Bremsverhalten."
+          },
+          {
+            "q": "Darf ich breitere Reifen?",
+            "a": "Nur mit Kotflügelfreiheit und passender Felgenbreite."
+          }
+        ]
+      }
     },
     "maintenance-intervals": {
       "name": "Wartungsintervall-Rechner",
       "description": "Verfolgen Sie Fahrzeug-Wartungsplane und berechnen Sie nachste Falligkeiten mit Schweizer MFK-Erinnerungen",
-      "metaDescription": "Kostenloser Fahrzeug-Wartungsrechner - verfolgen Sie Olwechsel, Filter, Bremsen und Schweizer MFK-Inspektionen. Km-basierte Intervalle."
+      "metaDescription": "Kostenloser Fahrzeug-Wartungsrechner - verfolgen Sie Olwechsel, Filter, Bremsen und Schweizer MFK-Inspektionen. Km-basierte Intervalle.",
+      "guide": {
+        "steps": [
+          "Gib Kilometerstand und Herstellerintervall ein (km oder Meilen).",
+          "Gib Servicestand und fälligen Service ein.",
+          "Lies Distanz oder Zeit bis zur nächsten Wartung."
+        ],
+        "explanationTitle": "Fahrzeugwartung planen",
+        "formula": "fällig = letzterService + intervall - aktuell; negativ = überfällig",
+        "explanation": [
+          "Wartungsintervalle gelten nach Distanz oder Zeit, was zuerst eintritt, also brauchen wenig gefahrene Autos trotzdem Ölwechsel.",
+          "Schwere Nutzung (Anhänger, Kurzstrecken, Staub) verkürzt Intervalle; Einhaltung schützt Wert und Zuverlässigkeit."
+        ],
+        "faq": [
+          {
+            "q": "km oder Zeit, was zuerst?",
+            "a": "Was zuerst eintritt; wenig gefahrene Autos altern Öl trotzdem."
+          },
+          {
+            "q": "Was ist schwere Nutzung?",
+            "a": "Häufige Kurzstrecken, Anhänger, Hitze oder Staub belasten schneller."
+          },
+          {
+            "q": "Warum Intervalle einhalten?",
+            "a": "Verhindert teure Ausfälle und erhält Garantie sowie Wiederverkaufswert."
+          }
+        ]
+      }
     },
     "column-buckling": {
       "name": "Knickrechner für Stützen",
@@ -6475,7 +7636,34 @@
       "operation": "Betrieb",
       "hint": "Geben Sie durch Kommas getrennte Elemente ein (z. B. 1, 2, 3).",
       "cardinality": "Kardinalität",
-      "resultSet": "Ergebnissatz"
+      "resultSet": "Ergebnissatz",
+      "guide": {
+        "steps": [
+          "Gib Elemente von A und B komma-getrennt ein.",
+          "Wähle Operation: Vereinigung, Schnitt, Differenz, symmetrische Differenz.",
+          "Lies die Ergebnismenge mit eindeutigen Mitgliedern."
+        ],
+        "explanationTitle": "Mengenoperationen erklärt",
+        "formula": "vereinigung A∪B, schnitt A∩B, differenz A−B, symmetrisch (A−B)∪(B−A)",
+        "explanation": [
+          "Eine Menge ist eine Sammlung verschiedener Elemente; Operationen kombinieren ohne Duplikate zu zählen.",
+          "Vereinigung behält alles, Schnitt nur Gemeinsames, Differenz das, was nur in einer, nicht der anderen ist."
+        ],
+        "faq": [
+          {
+            "q": "Warum keine Duplikate?",
+            "a": "Per Definition hat eine Menge jedes Element höchstens einmal."
+          },
+          {
+            "q": "Was ist symmetrische Differenz?",
+            "a": "Elemente in genau einer der beiden Mengen, ohne Gemeinsame."
+          },
+          {
+            "q": "Sind Mengen geordnet?",
+            "a": "Nein, {1,2,3} = {3,2,1}; nur Zugehörigkeit zählt."
+          }
+        ]
+      }
     },
     "programmer-calculator": {
       "name": "Programmierer-Rechner",
@@ -6489,7 +7677,34 @@
       "right": "Rechts (>>)",
       "shift": "Verschieben",
       "valueA": "Wert A",
-      "valueB": "Wert B"
+      "valueB": "Wert B",
+      "guide": {
+        "steps": [
+          "Gib einen Wert in deiner Basis ein (bin, dez, hex, okt).",
+          "Wechsle zur Zielbasis.",
+          "Lies den Wert und ggf. bitweise Operationen (AND, OR, XOR, Shift)."
+        ],
+        "explanationTitle": "Ein Taschenrechner für Programmierer",
+        "formula": "bitweise: a AND b behält Bits, die in beiden gesetzt sind; a XOR nur in genau einem",
+        "explanation": [
+          "Ein Programmierer-Rechner arbeitet über Binär, Oktal, Dezimal und Hex und zeigt bitweise Logik aus tiefem Code.",
+          "Bitweise AND/OR/XOR und Shifts manipulieren einzelne Bits, Grundlage für Flags, Masken und Embedded-Steuerung."
+        ],
+        "faq": [
+          {
+            "q": "Wozu bitwise AND?",
+            "a": "Maskiert einen Wert, behält nur Bits, die auch in der Maske gesetzt sind."
+          },
+          {
+            "q": "Warum Shift statt mal?",
+            "a": "Links-Shift um n Bits multipliziert mit 2^n, auf Hardware oft schneller."
+          },
+          {
+            "q": "Was ist Zweierkomplement?",
+            "a": "Standard für negative ganze Zahlen: Bits invertieren und eins addieren."
+          }
+        ]
+      }
     },
     "debt-snowball-avalanche": {
       "name": "Schulden-Tilgungsplaner",

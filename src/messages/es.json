@@ -570,7 +570,34 @@
       "specint2017Peak": "Pico SPECint2017",
       "perfPerCore": "Rendimiento/Núcleo",
       "perfPerWatt": "Rendimiento/vatio",
-      "sizingRatio": "Relación de tamaño"
+      "sizingRatio": "Relación de tamaño",
+      "guide": {
+        "steps": [
+          "Introduce las especificaciones de la CPU A: núcleos, reloj base/boost y una puntuación de referencia.",
+          "Introduce los mismos datos de la CPU B que quieres comparar.",
+          "Lee la puntuación de rendimiento normalizada y el rendimiento por dólar para decidir qué CPU ofrece mejor valor."
+        ],
+        "explanationTitle": "Cómo comparar CPUs con objetividad",
+        "formula": "índiceRend = núcleos × relojGHz × factorIPC; valor = índiceRend / precioUSD",
+        "explanation": [
+          "La frecuencia de reloj por sí sola no determina la velocidad real; los núcleos, la arquitectura (IPC) y la caché también importan, por lo que un chip nuevo de menor reloj puede superar a uno antiguo de mayor reloj.",
+          "El rendimiento por dólar normaliza la puntuación entre el precio para ver qué CPU da más potencia por el dinero, ideal para presupuestos ajustados."
+        ],
+        "faq": [
+          {
+            "q": "¿A más reloj, mejor siempre?",
+            "a": "No necesariamente. Un IPC más alto y más núcleos suelen pesar más que una pequeña ventaja de reloj, y el boost se limita por temperatura."
+          },
+          {
+            "q": "¿Qué es rendimiento por dólar?",
+            "a": "Divide la puntuación normalizada entre el precio y resalta la opción más rentable."
+          },
+          {
+            "q": "¿Debo creer las cifras del fabricante?",
+            "a": "Usa benchmarks independientes cuando puedas; las del fabricante pueden reflejar cargas optimizadas."
+          }
+        ]
+      }
     },
     "server-refresh-calculator": {
       "name": "Actualización del servidor",
@@ -621,7 +648,34 @@
       "sockets": "Enchufes",
       "totalCores": "Núcleos totales",
       "totalTdpW": "TDP total (W)",
-      "totalSpecint": "ESPECINT TOTAL"
+      "totalSpecint": "ESPECINT TOTAL",
+      "guide": {
+        "steps": [
+          "Introduce la cantidad y antigüedad de tus servidores, más sus costes anuales de energía y soporte.",
+          "Introduce el precio y la eficiencia esperada del hardware de reemplazo.",
+          "Lee el periodo de recuperación y la diferencia de coste total a 3 años para decidir si renovar ya."
+        ],
+        "explanationTitle": "¿Cuándo renovar los servidores?",
+        "formula": "ahorroAnual = OpExViejo - OpExNuevo; añosRecuper = (CapExNuevo - valorResidual) / ahorroAnual",
+        "explanation": [
+          "Los servidores antiguos consumen más y cuestan más mantener, así que sustituirlos puede bajar los gastos operativos incluso pagando la compra.",
+          "Una renovación suele justificarse cuando el ahorro anual recupera el coste del hardware nuevo dentro de tu ventana aceptable, a menudo 2–3 años en cargas densas."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué periodo de recuperación es bueno?",
+            "a": "La mayoría de equipos TI apuntan a 2–3 años, pero depende de la densidad y el precio de la energía."
+          },
+          {
+            "q": "¿Debo incluir el valor de rescate?",
+            "a": "Sí, cualquier reventa o trade-in reduce el coste de capital efectivo."
+          },
+          {
+            "q": "¿Renovar siempre ahorra energía?",
+            "a": "Los nodos nuevos son mucho más eficientes por unidad de rack, pero solo si se consolida; la expansión lo borra."
+          }
+        ]
+      }
     },
     "age": {
       "name": "Edad",
@@ -1747,7 +1801,34 @@
     "cooking-units": {
       "name": "Unidades de cocina",
       "description": "Convierta entre medidas de cocción métricas e imperiales con densidades de ingredientes",
-      "metaDescription": "Conversor de unidades de cocción gratuito. Convierta tazas, cucharadas, cucharaditas a ml, gramos con conversiones basadas en la densidad para harina, azúcar y más."
+      "metaDescription": "Conversor de unidades de cocción gratuito. Convierta tazas, cucharadas, cucharaditas a ml, gramos con conversiones basadas en la densidad para harina, azúcar y más.",
+      "guide": {
+        "steps": [
+          "Introduce la cantidad y la unidad que tienes (tazas, gramos, cucharadas).",
+          "Introduce la unidad a la que quieres convertir.",
+          "Lee el valor convertido y el volumen o peso aproximado."
+        ],
+        "explanationTitle": "Convertir unidades de cocina",
+        "formula": "destino = cantidadOrigen × (factorDesde / factorHasta)",
+        "explanation": [
+          "En cocina se mezclan volumen (tazas, cditas) y peso (gramos, oz); el conversor usa densidades estándar de ingredientes comunes para unirlos.",
+          "Como la densidad varía, las conversiones entre peso y volumen son aproximadas salvo que elijas el alimento concreto."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué taza-a-gramos cambia según el ingrediente?",
+            "a": "Una taza de harina pesa mucho menos que una de azúcar; la densidad causa la diferencia."
+          },
+          {
+            "q": "¿Son iguales la taza US y la métrica?",
+            "a": "No; la taza US es 240 ml y la métrica 250 ml, una diferencia pequeña pero real."
+          },
+          {
+            "q": "¿Pesar o medir por volumen?",
+            "a": "Pesar es más exacto para hornear; el volumen basta para cocinar."
+          }
+        ]
+      }
     },
     "exchange-rate": {
       "name": "Tipo de cambio",
@@ -1880,7 +1961,34 @@
     "mortgage-swiss": {
       "name": "Calculadora de hipotecas suiza",
       "description": "Calcule los pagos de la hipoteca con soporte de CHF/EUR y tasas del mercado suizo",
-      "metaDescription": "Calculadora de hipotecas suiza gratuita con soporte para CHF y EUR. Calcule pagos mensuales, calendarios de amortización y costos totales con las tasas del mercado suizo."
+      "metaDescription": "Calculadora de hipotecas suiza gratuita con soporte para CHF y EUR. Calcule pagos mensuales, calendarios de amortización y costos totales con las tasas del mercado suizo.",
+      "guide": {
+        "steps": [
+          "Introduce precio, enganche y la tasa de referencia suiza o basada en SARON.",
+          "Introduce plazo y requisito de amortización (normalmente a 2/3 del valor).",
+          "Lee la cuota mensual, interés total y calendario de deuda."
+        ],
+        "explanationTitle": "Cálculo de hipoteca suiza",
+        "formula": "interésAnual = tasa × deuda; amortizar hasta ≤ 2/3 del valor",
+        "explanation": [
+          "Las hipotecas suizas usan una tasa de referencia (hoy SARON, antes Libor) más el margen del banco.",
+          "El deudor debe amortizar la parte sobre dos tercios del valor en unos 15 años, lo que fija el pago."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tasa de referencia usa Suiza?",
+            "a": "Préstamos nuevos usan SARON más margen; viejos pueden usar fija o Libor."
+          },
+          {
+            "q": "¿Por qué la regla de dos tercios?",
+            "a": "La regulación suiza exige amortizar la deuda sobre 2/3 del valor para limitar el riesgo LTV."
+          },
+          {
+            "q": "¿Fija o variable?",
+            "a": "El deudor elige entre fija (previsible) y variable (sigue la referencia)."
+          }
+        ]
+      }
     },
     "rental-yield": {
       "name": "Calculadora de rendimiento de alquiler",
@@ -2175,7 +2283,34 @@
     "bpm": {
       "name": "BPM",
       "description": "Convierta BPM a Hz, longitud de compás y duraciones de notas",
-      "metaDescription": "Convierta latidos por minuto a otras unidades de tiempo musicales"
+      "metaDescription": "Convierta latidos por minuto a otras unidades de tiempo musicales",
+      "guide": {
+        "steps": [
+          "Introduce los golpes contados y el tiempo en segundos (o minutos).",
+          "Ejecuta para calcular golpes por minuto.",
+          "Lee las BPM y, si pulsaste, el tempo promedio."
+        ],
+        "explanationTitle": "Qué significa BPM",
+        "formula": "bpm = golpes / (segundos / 60) = golpes × 60 / segundos",
+        "explanation": [
+          "Beats per minute es la unidad de tempo en música; dice cuántos pulsos ocurren por minuto.",
+          "Un metrónomo a 120 BPM son dos golpes por segundo; duplicar BPM suena al doble de rápido."
+        ],
+        "faq": [
+          {
+            "q": "¿Cómo hallo BPM pulsando?",
+            "a": "Pulsa una tecla en cada golpe un rato; la herramienta promedia los intervalos."
+          },
+          {
+            "q": "¿Más BPM siempre más rápido?",
+            "a": "Sí, más golpes por minuto es pulso más denso y suele sentirse más enérgico."
+          },
+          {
+            "q": "¿Tempo típico de una canción?",
+            "a": "Pop suele estar en 100–130 BPM; baladas más lentas, dance más rápido."
+          }
+        ]
+      }
     },
     "video-file-size": {
       "name": "Tamaño del archivo de vídeo",
@@ -2468,22 +2603,130 @@
     "csp": {
       "name": "Generador CSP",
       "description": "Generar encabezados de política de seguridad de contenido",
-      "metaDescription": "Genere encabezados de política de seguridad de contenido para seguridad web"
+      "metaDescription": "Genere encabezados de política de seguridad de contenido para seguridad web",
+      "guide": {
+        "steps": [
+          "Introduce las directivas que planeas permitir (default-src, script-src, img-src, etc.).",
+          "Introduce los dominios o esquemas de confianza como fuentes.",
+          "Lee la cabecera Content-Security-Policy generada para pegarla en tu config del servidor."
+        ],
+        "explanationTitle": "Crear una Content Security Policy",
+        "formula": "CSP = directiva1 valor1 valor2; directiva2 valor3; ...",
+        "explanation": [
+          "Una CSP permite solo de dónde el navegador puede cargar scripts, estilos, imágenes y conexiones, bloqueando la inyección de contenido no autorizado aunque exista XSS.",
+          "Empieza en modo report-only para registrar violaciones antes de forzar; si no, una política muy estricta puede romper recursos legítimos."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hace default-src?",
+            "a": "Fija el respaldo para cualquier directiva no especificada; 'self' allí cubre la mayoría de etiquetas."
+          },
+          {
+            "q": "¿Debo usar report-only primero?",
+            "a": "Sí, monitoriza las violaciones reportadas para ajustar la política sin romper el sitio."
+          },
+          {
+            "q": "¿Detiene CSP todo XSS?",
+            "a": "Reduce drásticamente el impacto, pero es defensa en profundidad, no sustituye la sanitización de entradas."
+          }
+        ]
+      }
     },
     "redirect-check": {
       "name": "Comprobador de redireccionamiento",
       "description": "Verifique las cadenas de redireccionamiento HTTP y los códigos de estado",
-      "metaDescription": "Verifique las cadenas de redireccionamiento de URL y los códigos de estado HTTP"
+      "metaDescription": "Verifique las cadenas de redireccionamiento de URL y los códigos de estado HTTP",
+      "guide": {
+        "steps": [
+          "Introduce la URL origen a probar y el destino final esperado.",
+          "Introduce cabeceras necesarias como User-Agent o Authorization.",
+          "Lee la cadena completa de redirecciones y el código HTTP final."
+        ],
+        "explanationTitle": "Rastrear redirecciones HTTP",
+        "formula": "cadena = URL0 →(301/302) URL1 →(...) → URLn (estado)",
+        "explanation": [
+          "Las cadenas de redirección añaden latencia y pueden romper analíticas o SEO si un enlace salta varios hops antes de la página canónica.",
+          "Un solo 301 limpio preserva mejor la equidad de enlaces; las cadenas multi-salto la diluyen y ralentizan el primer byte."
+        ],
+        "faq": [
+          {
+            "q": "¿301 o 302, cuál usar?",
+            "a": "Usa 301 para movimientos permanentes y pasar valor SEO; 302 para temporal o pruebas A/B."
+          },
+          {
+            "q": "¿Por qué evitar cadenas de redirección?",
+            "a": "Cada salto añade round-trips y puede soltar datos de referencia y señales de ranking."
+          },
+          {
+            "q": "¿Cuánto debe esperar una redirección?",
+            "a": "Debe ser instantánea (sin retraso de cuerpo); el navegador la sigue de inmediato."
+          }
+        ]
+      }
     },
     "spf-check": {
       "name": "Comprobador de registros SPF",
       "description": "Analizar registros SPF para autenticación de correo electrónico",
-      "metaDescription": "Analice registros SPF para la seguridad del correo electrónico"
+      "metaDescription": "Analice registros SPF para la seguridad del correo electrónico",
+      "guide": {
+        "steps": [
+          "Introduce tu dominio para consultar su registro SPF publicado en DNS.",
+          "Introduce los servidores de correo o mecanismos include que esperas ver.",
+          "Lee la política SPF resuelta y si pasa o tiene demasiadas consultas DNS."
+        ],
+        "explanationTitle": "Validar registros SPF",
+        "formula": "SPF = 'v=spf1 include:_spf.a include:_spf.b -all' (máx 10 mecanismos DNS-lookup)",
+        "explanation": [
+          "SPF dice a los servidores receptores qué IPs pueden enviar correo por tu dominio; un registro roto permite a atacantes suplantar tu dirección.",
+          "SPF permite como máximo 10 consultas DNS en todos los mecanismos include; anidar demasiado causa permerror y el correo puede rechazarse."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa -all?",
+            "a": "Hard fail: rechaza correo de fuentes fuera de la política. ~all es softfail, más permisivo."
+          },
+          {
+            "q": "¿Por qué el límite de 10 consultas?",
+            "a": "Para acotar la carga DNS; superarlo da permerror y el receptor puede rechazar."
+          },
+          {
+            "q": "¿SPF solo detiene el spoofing?",
+            "a": "No, combínalo con DKIM y DMARC para protección y reportes reales."
+          }
+        ]
+      }
     },
     "https-check": {
       "name": "Comprobador de seguridad HTTPS",
       "description": "Verifique los encabezados de seguridad y la configuración de TLS",
-      "metaDescription": "Verifique el HTTPS del sitio web y los encabezados de seguridad"
+      "metaDescription": "Verifique el HTTPS del sitio web y los encabezados de seguridad",
+      "guide": {
+        "steps": [
+          "Introduce el nombre de host o la URL completa a probar por HTTPS.",
+          "Introduce el puerto si no es el 443 por defecto.",
+          "Lee validez del certificado, cadena completa y grado del protocolo."
+        ],
+        "explanationTitle": "Comprobar salud HTTPS",
+        "formula": "grado = f(cipherSuites, caducidadCert, cadenaCompleta, HSTS)",
+        "explanation": [
+          "La salud HTTPS suma certificado válido, cadena de confianza completa, cifrados modernos y HSTS; cualquier hueco dispara avisos o ataques de downgrade.",
+          "Los certificados caducados o incorrectos son la causa más común del banner 'no seguro' y la pérdida de confianza en el checkout."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es HSTS y por qué activarlo?",
+            "a": "HSTS fuerza HTTPS y bloquea ataques de SSL-strip tras la primera visita."
+          },
+          {
+            "q": "¿Qué rompe la cadena de confianza?",
+            "a": "Un certificado intermedio ausente en el servidor, así el navegador no enlaza hoja con raíz."
+          },
+          {
+            "q": "¿Con cuánta antelación renovar certificados?",
+            "a": "Automatiza vía ACME (Let's Encrypt) con renovación 30 días antes de caducar para evitar caídas."
+          }
+        ]
+      }
     },
     "html-encoder": {
       "name": "Codificador HTML",
@@ -2587,7 +2830,34 @@
     "seo-performance": {
       "name": "Analizador de rendimiento SEO",
       "description": "Analice las métricas de SEO de la página y obtenga recomendaciones",
-      "metaDescription": "Analice el rendimiento de SEO y obtenga consejos de optimización"
+      "metaDescription": "Analice el rendimiento de SEO y obtenga consejos de optimización",
+      "guide": {
+        "steps": [
+          "Introduce la URL de tu página y la palabra clave objetivo.",
+          "Introduce competidores o posición actual si la conoces.",
+          "Lee sugerencias de on-page, velocidad y estructura para mejorar visibilidad."
+        ],
+        "explanationTitle": "Evaluar rendimiento SEO",
+        "formula": "visibilidad ∝ (relevancia × autoridad) / (tiempoCarga × erroresCrawl)",
+        "explanation": [
+          "El SEO mezcla relevancia, autoridad, velocidad y rastreo limpio; arreglar uno solo da ganancias limitadas.",
+          "Core Web Vitals y una estructura de enlaces internos lógica suelen mover rankings más que micro-optimizar meta tags."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué son Core Web Vitals?",
+            "a": "Las métricas LCP, CLS e INP de Google sobre carga, estabilidad e interactividad."
+          },
+          {
+            "q": "¿La velocidad afecta el ranking?",
+            "a": "Sí, directo por señales e indirecto por rebote y engagement."
+          },
+          {
+            "q": "¿Cuándo se notan los cambios?",
+            "a": "El rastreo y re-indexado tardan días a semanas; mejorar requiere constancia."
+          }
+        ]
+      }
     },
     "mortgage": {
       "name": "Hipoteca",
@@ -5083,7 +5353,34 @@
     "long-division": {
       "name": "División larga",
       "description": "Realiza una división larga con una solución paso a paso",
-      "metaDescription": "Aprenda la división larga con soluciones y restos detallados paso a paso"
+      "metaDescription": "Aprenda la división larga con soluciones y restos detallados paso a paso",
+      "guide": {
+        "steps": [
+          "Introduce el dividendo y el divisor.",
+          "Ejecuta la calculadora para ver cociente y residuo paso a paso.",
+          "Lee el resultado decimal completo y, si no es exacta, el residuo."
+        ],
+        "explanationTitle": "Cómo funciona la división larga",
+        "formula": "dividendo = divisor × cociente + residuo; 0 ≤ residuo < divisor",
+        "explanation": [
+          "La división larga resta repetidamente el mayor múltiplo del divisor que cabe, bajando cifras hasta que no hay residuo o aparece decimal periódico.",
+          "El residuo es lo que queda tras la parte entera del cociente y siempre es menor que el divisor."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es el residuo?",
+            "a": "El monto sobrante cuando el dividendo no es múltiplo entero del divisor."
+          },
+          {
+            "q": "¿Por qué a veces se repite?",
+            "a": "Fracciones con denominadores que tienen factores primos distintos de 2 y 5 dan decimal periódico."
+          },
+          {
+            "q": "¿Puede ser cero el divisor?",
+            "a": "No, la división por cero es indefinida y el calculador la rechaza."
+          }
+        ]
+      }
     },
     "exponent-calculator": {
       "name": "Exponente",
@@ -5216,27 +5513,162 @@
     "factor-calculator": {
       "name": "factores",
       "description": "Encuentra todos los factores de un número.",
-      "metaDescription": "Encuentra todos los factores, pares de factores y factores primos de cualquier número."
+      "metaDescription": "Encuentra todos los factores, pares de factores y factores primos de cualquier número.",
+      "guide": {
+        "steps": [
+          "Introduce un entero positivo a factorizar.",
+          "Ejecuta para listar todos los factores o factores primos.",
+          "Lee los pares de factores y, en factorización prima, la forma con exponentes."
+        ],
+        "explanationTitle": "Encontrar factores de un número",
+        "formula": "si n mod d = 0 entonces d es factor; primos: n = p1^a1 × p2^a2 × ...",
+        "explanation": [
+          "Un factor divide sin residuo; el calculador prueba divisores hasta la raíz para hallarlos rápido.",
+          "La factorización prima reescribe como producto de primos, base de MCD, mcm y simplificar fracciones."
+        ],
+        "faq": [
+          {
+            "q": "¿Diferencia entre factores y primos?",
+            "a": "Los factores incluyen compuestos como 6; los primos son solo 2 y 3."
+          },
+          {
+            "q": "¿Cuenta 1 como factor?",
+            "a": "Sí, 1 y el número siempre son factores, pero ninguno es primo."
+          },
+          {
+            "q": "¿Por qué parar en la raíz?",
+            "a": "Todo factor mayor que √n se empareja con uno menor, así que seguir es redundante."
+          }
+        ]
+      }
     },
     "gcd-calculator": {
       "name": "MCD",
       "description": "Calcular el máximo común divisor de varios números",
-      "metaDescription": "Calcular el máximo común divisor (MCD/MCD) de dos o más números"
+      "metaDescription": "Calcular el máximo común divisor (MCD/MCD) de dos o más números",
+      "guide": {
+        "steps": [
+          "Introduce dos o más enteros.",
+          "Ejecuta para hallar el máximo común divisor.",
+          "Lee el MCD y, si quieres, los pasos con Euclides."
+        ],
+        "explanationTitle": "Máximo común divisor",
+        "formula": "mcd(a,b) = mcd(b, a mod b) hasta residuo 0; último residuo no nulo es mcd",
+        "explanation": [
+          "El MCD es el mayor entero que divide a todas las entradas sin residuo; sirve para reducir fracciones.",
+          "Euclides reemplaza el mayor por el residuo repetidamente, mucho más rápido que probar divisores."
+        ],
+        "faq": [
+          {
+            "q": "¿Para qué sirve el MCD?",
+            "a": "Reducir fracciones y como paso para mcm y aritmética modular."
+          },
+          {
+            "q": "¿MCD con negativos?",
+            "a": "Sí, usa valores absolutos, el signo no cambia el resultado."
+          },
+          {
+            "q": "¿Sin factor común?",
+            "a": "Entonces el MCD es 1 y se llaman coprimos."
+          }
+        ]
+      }
     },
     "lcm-calculator": {
       "name": "LCM",
       "description": "Calcular el mínimo común múltiplo de varios números",
-      "metaDescription": "Calcular el mínimo común múltiplo (MCM) de dos o más números"
+      "metaDescription": "Calcular el mínimo común múltiplo (MCM) de dos o más números",
+      "guide": {
+        "steps": [
+          "Introduce dos o más enteros.",
+          "Ejecuta para hallar el mínimo común múltiplo.",
+          "Lee el mcm, útil para sumar fracciones con distinto denominador."
+        ],
+        "explanationTitle": "Mínimo común múltiplo",
+        "formula": "mcm(a,b) = |a × b| / mcd(a,b); extender por pares",
+        "explanation": [
+          "El mcm es el menor entero positivo divisible por cada entrada, útil al alinear ciclos o sumar fracciones.",
+          "Se calcula vía MCD, así sigue siendo eficiente incluso con números grandes."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo necesito mcm?",
+            "a": "Sumar fracciones con distinto denominador y hallar periodos comunes."
+          },
+          {
+            "q": "¿Una cifra es cero?",
+            "a": "El mcm con cero es 0, pues cero es múltiplo de toda cifra."
+          },
+          {
+            "q": "¿mcm y MCD relacionados?",
+            "a": "Su producto es el de los números, así mcm = |a×b| / MCD."
+          }
+        ]
+      }
     },
     "gcd-lcm": {
       "name": "MCD y MCM",
       "description": "Calcular MCD y MCM de varios números",
-      "metaDescription": "Calcular tanto el máximo común divisor como el mínimo común múltiplo de dos o más números"
+      "metaDescription": "Calcular tanto el máximo común divisor como el mínimo común múltiplo de dos o más números",
+      "guide": {
+        "steps": [
+          "Introduce dos enteros para los que necesitas ambos.",
+          "Ejecuta para obtener MCD y mcm juntos.",
+          "Lee ambos y confirma a × b = MCD × mcm."
+        ],
+        "explanationTitle": "MCD y mcm juntos",
+        "formula": "MCD(a,b) × mcm(a,b) = |a × b|",
+        "explanation": [
+          "Calcular ambos a la vez ahorra tiempo; muchos problemas de fracciones y tiempos necesitan MCD para simplificar y mcm para alinear.",
+          "La identidad MCD × mcm = |a×b| es una verificación rápida de consistencia."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué ambos?",
+            "a": "Simplificar fracciones usa MCD; denominador común usa mcm."
+          },
+          {
+            "q": "¿Siempre vale la identidad?",
+            "a": "Sí para exactamente dos enteros positivos; con más, aplícala por pares."
+          },
+          {
+            "q": "¿Entradas iguales?",
+            "a": "Entonces MCD = mcm = el número mismo."
+          }
+        ]
+      }
     },
     "prime-factorization": {
       "name": "Factorización prima",
       "description": "Encuentra factores primos y divisores de cualquier número.",
-      "metaDescription": "Encuentra la factorización prima, el árbol de factores y todos los divisores de cualquier número."
+      "metaDescription": "Encuentra la factorización prima, el árbol de factores y todos los divisores de cualquier número.",
+      "guide": {
+        "steps": [
+          "Introduce un entero positivo mayor que 1.",
+          "Ejecuta para descomponerlo en factores primos.",
+          "Lee la lista de primos con exponentes, p. ej. 360 = 2³ × 3² × 5."
+        ],
+        "explanationTitle": "Factorización prima explicada",
+        "formula": "n = p1^a1 × p2^a2 × ... donde cada p es primo",
+        "explanation": [
+          "La factorización prima expresa un número como producto de primos, los bloques únicos de todo entero mayor que 1.",
+          "Sustenta MCD, mcm, criptografía y comprobar si un número es primo o potencia perfecta."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué es única?",
+            "a": "El Teorema Fundamental de la Aritmética dice que todo entero tiene exactamente una factorización prima."
+          },
+          {
+            "q": "¿Qué pasa con 1?",
+            "a": "1 no es primo y no tiene factores primos; se empieza en 2."
+          },
+          {
+            "q": "¿Qué tamaño soporta?",
+            "a": "La división por prueba basta hasta millones; números enormes necesitan algoritmos avanzados."
+          }
+        ]
+      }
     },
     "triangle-calculator": {
       "name": "Triángulo",
@@ -5273,7 +5705,34 @@
     "right-triangle": {
       "name": "Triángulo Rectángulo",
       "description": "Calcular lados y ángulos de un triángulo rectángulo.",
-      "metaDescription": "Calcular las dimensiones de un triángulo rectángulo usando trigonometría y el teorema de Pitágoras."
+      "metaDescription": "Calcular las dimensiones de un triángulo rectángulo usando trigonometría y el teorema de Pitágoras.",
+      "guide": {
+        "steps": [
+          "Introduce dos lados conocidos o un lado y un ángulo agudo.",
+          "Ejecuta para resolver lados y ángulos faltantes.",
+          "Lee hipotenusa, catetos, área y perímetro."
+        ],
+        "explanationTitle": "Resolver un triángulo rectángulo",
+        "formula": "a² + b² = c²; sen θ = a/c, cos θ = b/c, tan θ = a/b",
+        "explanation": [
+          "Un triángulo rectángulo tiene un ángulo de 90°, así el teorema de Pitágoras y las razones trig determinan lados y ángulos.",
+          "Con dos datos (no ambos ángulos) queda resuelto; solo ángulos sin lado no basta."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué necesito para resolverlo?",
+            "a": "Cualquiera dos de: dos lados, o un lado y un ángulo agudo."
+          },
+          {
+            "q": "¿Por qué necesita un lado?",
+            "a": "Solo ángulos dan forma pero tamaño infinito; un lado fija la escala."
+          },
+          {
+            "q": "¿La hipotenusa es siempre la mayor?",
+            "a": "Sí, está opuesta al ángulo de 90° y es siempre el lado mayor."
+          }
+        ]
+      }
     },
     "pythagorean-calculator": {
       "name": "Teorema de Pitágoras",
@@ -5374,7 +5833,34 @@
     "surface-area-calculator": {
       "name": "Área de superficie",
       "description": "Calcular el área de superficie de formas 3D",
-      "metaDescription": "Calcular el área de superficie de cubo, esfera, cilindro, cono y pirámide."
+      "metaDescription": "Calcular el área de superficie de cubo, esfera, cilindro, cono y pirámide.",
+      "guide": {
+        "steps": [
+          "Elige la forma 3D (caja, esfera, cilindro, cono).",
+          "Introduce dimensiones como radio, altura o lados.",
+          "Lee el área total y, si aplica, la lateral por separado."
+        ],
+        "explanationTitle": "Calcular área superficial",
+        "formula": "caja = 2(la + al + an); esfera = 4πr²; cilindro = 2πr(r + h)",
+        "explanation": [
+          "El área superficial es la suma de las caras exteriores de un sólido, en unidades cuadradas.",
+          "Importa para material al construir, pintar o envolver, a diferencia del volumen que mide capacidad."
+        ],
+        "faq": [
+          {
+            "q": "¿Área vs volumen?",
+            "a": "Área cubre afuera (cuadrado); volumen llena adentro (cúbico)."
+          },
+          {
+            "q": "¿Qué es área lateral?",
+            "a": "Solo las caras laterales, sin bases superior e inferior."
+          },
+          {
+            "q": "¿Por qué unidades al cuadrado?",
+            "a": "El área es bidimensional, así la unidad va al cuadrado."
+          }
+        ]
+      }
     },
     "volume-calculator": {
       "name": "Volumen",
@@ -5801,37 +6287,226 @@
     "vm-storage-calculator": {
       "name": "Calculadora de almacenamiento de máquinas virtuales",
       "description": "Calcule los requisitos de capacidad de almacenamiento del clúster vSphere ESX",
-      "metaDescription": "Calculadora de almacenamiento VMware vSphere gratuita. Calcule la capacidad de almacenamiento de VM, incluido el disco aprovisionado, los archivos de intercambio, las instantáneas y la asignación de crecimiento. Admite aprovisionamiento grueso y fino."
+      "metaDescription": "Calculadora de almacenamiento VMware vSphere gratuita. Calcule la capacidad de almacenamiento de VM, incluido el disco aprovisionado, los archivos de intercambio, las instantáneas y la asignación de crecimiento. Admite aprovisionamiento grueso y fino.",
+      "guide": {
+        "steps": [
+          "Introduce el número de VMs, el tamaño medio de disco por VM y el factor de sobrecarga RAID/EC.",
+          "Introduce la tasa de crecimiento y la retención de snapshots.",
+          "Lee la capacidad bruta y utilizable total necesaria antes de aprovisionar almacenamiento."
+        ],
+        "explanationTitle": "Dimensionar almacenamiento para máquinas virtuales",
+        "formula": "utilizable = VMs × discoGB × (1 + overhead); bruta = utilizable / eficienciaRAID",
+        "explanation": [
+          "Los entornos virtuales necesitan sobrecarga para snapshots, réplicas y paridad RAID, así que la capacidad utilizable siempre es menor que la bruta.",
+          "Deja al menos 20–30% libre para que la migración en vivo y los parches no se detengan cuando un datastore se llena."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué utilizable es menor que bruta?",
+            "a": "La paridad RAID, el erasure coding y los snapshots consumen capacidad antes de guardar datos de invitado."
+          },
+          {
+            "q": "¿Cuánto margen debo dejar?",
+            "a": "Apunta a 20–30% libre para absorber picos, snapshots y mantenimiento."
+          },
+          {
+            "q": "¿Ahorran espacio los discos thin?",
+            "a": "Solo retrasan el uso; el tamaño lógico total debe caber en el datastore al escribirse todo."
+          }
+        ]
+      }
     },
     "k8s-capacity-calculator": {
       "name": "Calculadora de capacidad de Kubernetes",
       "description": "Calcule los requisitos de nodos del clúster de Kubernetes para su carga de trabajo",
-      "metaDescription": "Calculadora gratuita de planificación de capacidad de Kubernetes. Calcule los nodos necesarios para el clúster K8 en función de las solicitudes de memoria/CPU del pod, los recursos reservados del sistema y la utilización objetivo. Muestra el factor limitante (CPU vs memoria)."
+      "metaDescription": "Calculadora gratuita de planificación de capacidad de Kubernetes. Calcule los nodos necesarios para el clúster K8 en función de las solicitudes de memoria/CPU del pod, los recursos reservados del sistema y la utilización objetivo. Muestra el factor limitante (CPU vs memoria).",
+      "guide": {
+        "steps": [
+          "Introduce la CPU y memoria solicitadas por pod y el número de réplicas.",
+          "Introduce el tamaño del nodo (CPU/memoria) y la reserva de sistema.",
+          "Lee cuántos nodos necesitas y la utilización del clúster antes de desplegar."
+        ],
+        "explanationTitle": "Estimar capacidad de un clúster de Kubernetes",
+        "formula": "nodos = ceil(reqTot / (capNodo × (1 - reserva))) ; util = reqTot / (nodos × capNodo)",
+        "explanation": [
+          "Kubernetes planifica por requests, no por límites, así que hay que dimensionar la suma de requests más margen para pods de sistema y empaquetado.",
+          "Reservar 10–20% de cada nodo para kube-system y umbrales de evicción evita que el scheduler marque nodos como no programables bajo carga."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué dirige la planificación, requests o límites?",
+            "a": "La planificación usa requests; los límites solo capan y pueden causar OOM si son muy bajos."
+          },
+          {
+            "q": "¿Por qué reservar capacidad de nodo?",
+            "a": "Los pods kube-system y los umbrales de evicción necesitan margen o los nodos quedan no programables."
+          },
+          {
+            "q": "¿Cómo mejoro el bin-packing?",
+            "a": "Ajusta requests, usa topology spread y evita nodos pequeños que desperdician reserva."
+          }
+        ]
+      }
     },
     "server-virtualization-calculator": {
       "name": "Calculadora de virtualización de servidores",
       "description": "Calcule los requisitos del host ESX para cargas de trabajo de VM",
-      "metaDescription": "Calculadora de tamaño de host VMware ESX gratuita. Calcule los hosts necesarios en función de los requisitos de CPU/RAM de la máquina virtual con soporte de alta disponibilidad N+1."
+      "metaDescription": "Calculadora de tamaño de host VMware ESX gratuita. Calcule los hosts necesarios en función de los requisitos de CPU/RAM de la máquina virtual con soporte de alta disponibilidad N+1.",
+      "guide": {
+        "steps": [
+          "Introduce el número de servidores físicos y su uso medio de CPU/RAM actual.",
+          "Introduce la ratio de consolidación objetivo y las specs del nuevo host virtual.",
+          "Lee el menor número de hosts, ahorro de energía y espacio de rack liberado."
+        ],
+        "explanationTitle": "Modelar la virtualización de servidores",
+        "formula": "hosts = ceil(cargaFis / (capHost × consol)) ; ahorroPower = powerFis - hosts × powerHost",
+        "explanation": [
+          "La virtualización permite que muchos servidores físicos infrautilizados compartan hosts más grandes y pocos, subiendo la utilización de menos del 15% a 60–80%.",
+          "El mayor beneficio son menos equipos que alimentar y refrigerar, menos espacio de rack y un ciclo de hardware más simple."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué ratio de consolidación es realista?",
+            "a": "10:1 a 20:1 es común para cargas generales, menos para las sensibles a latencia."
+          },
+          {
+            "q": "¿La virtualización siempre ahorra energía?",
+            "a": "Sí en el total de la instalación, aunque cada host consume más que los viejos servidores."
+          },
+          {
+            "q": "¿Qué pasa con las licencias?",
+            "a": "Las licencias de hipervisor y SO invitado pueden comer el ahorro, así que inclúyelas antes."
+          }
+        ]
+      }
     },
     "vmware-licensing-calculator": {
       "name": "Calculadora de licencias de VMware",
       "description": "Calcule los costos de licencia de VMware VCF/VVF",
-      "metaDescription": "Calculadora gratuita de costes de licencias de VMware. Calcule los costos de suscripción de VMware Cloud Foundation y vSphere Foundation con una aplicación mínima de 16 núcleos."
+      "metaDescription": "Calculadora gratuita de costes de licencias de VMware. Calcule los costos de suscripción de VMware Cloud Foundation y vSphere Foundation con una aplicación mínima de 16 núcleos.",
+      "guide": {
+        "steps": [
+          "Introduce el número de procesadores (sockets) de CPU y núcleos por procesador en todos tus hosts.",
+          "Selecciona la edición de VMware y los packs adicionales que necesites.",
+          "Lee el total de claves de licencia y el coste estimado de suscripción antes de comprar."
+        ],
+        "explanationTitle": "Dimensionar la licencia de VMware",
+        "formula": "licencias = Σ(hostProc × nucleosProc, tope por clave); coste = licencias × precioEdicion",
+        "explanation": [
+          "VMware suele licenciarse por procesador físico (socket) con un mínimo de núcleos por socket, así que contar bien los núcleos evita déficits costosos.",
+          "La edición y el nivel de soporte influyen mucho más que el número de núcleos, así que compara Standard vs Enterprise y complementos como vSAN o NSX."
+        ],
+        "faq": [
+          {
+            "q": "¿VMware se licencia por núcleo o por socket?",
+            "a": "Por socket de CPU, con un mínimo de núcleos por socket que deben licenciarse aunque no se usen."
+          },
+          {
+            "q": "¿vCenter se licencia aparte?",
+            "a": "Sí, vCenter Server se licencia por instancia además de las licencias de host ESXi."
+          },
+          {
+            "q": "¿Qué pasa con los contratos SnS?",
+            "a": "Las renovaciones de soporte y suscripción (SnS) suelen dominar el coste total, así que modélalas a 3–5 años."
+          }
+        ]
+      }
     },
     "virtualization-cost": {
       "name": "Calculadora de costos de virtualización",
       "description": "Calcule el costo total de propiedad de la infraestructura de virtualización",
-      "metaDescription": "Calculadora gratuita de TCO de virtualización. Calcule el costo total de propiedad, incluidos CAPEX y OPEX para la infraestructura de virtualización."
+      "metaDescription": "Calculadora gratuita de TCO de virtualización. Calcule el costo total de propiedad, incluidos CAPEX y OPEX para la infraestructura de virtualización.",
+      "guide": {
+        "steps": [
+          "Introduce el número de hosts, su precio de compra y vida útil esperada.",
+          "Introduce energía, refrigeración, licencias y horas de administración anuales.",
+          "Lee el coste total de propiedad y el coste por VM en el periodo."
+        ],
+        "explanationTitle": "Coste total de la virtualización",
+        "formula": "tco = capEx + años × (energía + refrigeración + licencias + labor); costePorVM = tco / vmTotales",
+        "explanation": [
+          "El TCO de la virtualización incluye hardware único más energía, refrigeración, licencias y personal recurrentes; ignorar uno distorsiona la comparación.",
+          "Dividir el TCO por las VMs que ejecutas muestra si consolidar en hosts más densos y pocos baja realmente el coste por carga."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es el mayor coste oculto?",
+            "a": "Licencias y mano de obra suelen superar el hardware en un plazo de 3–5 años."
+          },
+          {
+            "q": "¿Debo incluir energía y refrigeración?",
+            "a": "Sí, en un centro de datos pueden igualar o superar la depreciación anual del hardware."
+          },
+          {
+            "q": "¿Más VMs siempre baja el coste por VM?",
+            "a": "Solo hasta que la densidad daña rendimiento o fiabilidad; entonces las caídas cuestan más que el hardware."
+          }
+        ]
+      }
     },
     "hyperv-consolidation": {
       "name": "Calculadora de consolidación de Hyper-V",
       "description": "Calcule los requisitos del host Hyper-V con licencias HA y Windows",
-      "metaDescription": "Calculadora de consolidación de Hyper-V gratuita. Calcule los hosts necesarios con N+1/N+2 HA, apilamiento de almacenamiento y costos de licencia de Windows Server."
+      "metaDescription": "Calculadora de consolidación de Hyper-V gratuita. Calcule los hosts necesarios con N+1/N+2 HA, apilamiento de almacenamiento y costos de licencia de Windows Server.",
+      "guide": {
+        "steps": [
+          "Introduce tu conteo actual de servidores físicos y su uso medio de CPU/RAM.",
+          "Introduce el tamaño objetivo del host Hyper-V y el margen de reserva deseado.",
+          "Lee el conteo proyectado de hosts, la ratio de consolidación y las unidades de rack liberadas."
+        ],
+        "explanationTitle": "Planificación de consolidación Hyper-V",
+        "formula": "hosts = ceil(cargaTot / (capHost × (1 - reserva))); ratio = servFisicos / hosts",
+        "explanation": [
+          "Hyper-V te permite colapsar muchas cajas físicas poco usadas en pocos hosts con Windows Server y el rol Hyper-V.",
+          "Mantener 15–25% de margen por host preserva capacidad de migración en vivo para que el mantenimiento o un fallo nunca interrumpa las VMs."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué reserva debe tener cada host?",
+            "a": "Planifica 15–25% libre para que el clúster de conmutación absorb a un nodo caído sin sobrecompromiso."
+          },
+          {
+            "q": "¿Implicaciones de licencias de núcleo?",
+            "a": "Windows Server se licencia por núcleo, así que hosts grandes suben el coste de licencia OS aunque bajen las VMs."
+          },
+          {
+            "q": "¿Es obligatorio el clúster de conmutación?",
+            "a": "No, pero es lo que hace segura la consolidación al permitir reinicio automático de VM."
+          }
+        ]
+      }
     },
     "windows-licensing": {
       "name": "Calculadora de licencias de Windows Server",
       "description": "Compare los costos de licencia de centro de datos con los de licencia estándar",
-      "metaDescription": "Calculadora de licencias de Windows Server gratuita. Compare las ediciones Datacenter y Standard con análisis de equilibrio y cumplimiento mínimo de 16 núcleos."
+      "metaDescription": "Calculadora de licencias de Windows Server gratuita. Compare las ediciones Datacenter y Standard con análisis de equilibrio y cumplimiento mínimo de 16 núcleos.",
+      "guide": {
+        "steps": [
+          "Introduce el número de núcleos físicos de cada host Windows Server.",
+          "Selecciona la edición y el modelo (por núcleo con CALs, o suscripción).",
+          "Lee las licencias de núcleo mínimas y el coste total incluyendo CALs."
+        ],
+        "explanationTitle": "Fundamentos de licencias Windows Server",
+        "formula": "licCore = max(16, nucleosHost) × hosts; coste = licCore × precioCore + cals × precioCal",
+        "explanation": [
+          "Windows Server se licencia por núcleo físico con un mínimo de 16 núcleos por servidor, así que los servidores pequeños compran igual un pack de 16.",
+          "Las CAL de usuario/dispositivo se licencian aparte y se olvidan fácilmente; el modelo elegido cambia mucho el punto de equilibrio a escala."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es el mínimo de núcleos por servidor?",
+            "a": "16 núcleos; incluso una caja de 4 núcleos requiere 16 licencias de núcleo."
+          },
+          {
+            "q": "¿Siempre se necesitan CAL?",
+            "a": "Para la mayoría de modelos on-prem sí, aunque Azure Stack HCI y suscripción difieren."
+          },
+          {
+            "q": "¿Standard o Datacenter?",
+            "a": "Standard cubre OSE limitados por host; Datacenter conviene cuando ejecutas muchas VMs por host."
+          }
+        ]
+      }
     },
     "hypervisor-comparison": {
       "name": "Calculadora de comparación de hipervisores",
@@ -5890,12 +6565,66 @@
         "datacenter": "Centro de datos (VM ilimitadas)"
       },
       "windowsEditionHint": "El estándar es más barato para <13 VM/host, el centro de datos para más.",
-      "featureComparison": "Comparación de características"
+      "featureComparison": "Comparación de características",
+      "guide": {
+        "steps": [
+          "Introduce tu perfil de carga: número de VMs, mezcla de SO y si necesitas migración en vivo.",
+          "Selecciona hipervisores candidatos y sus costes de licencia o soporte.",
+          "Lee la comparativa de funciones y coste para elegir el mejor ajuste."
+        ],
+        "explanationTitle": "Comparar hipervisores",
+        "formula": "score = w1×funciones + w2×(1/coste) + w3×soporte; elige max(score)",
+        "explanation": [
+          "Los hipervisores difieren en modelo de licencia (gratis, por núcleo, suscripción), madurez del ecosistema y herramientas de gestión, no solo en rendimiento bruto.",
+          "La opción más barata puede volverse la más cara si le faltan la automatización, los backups o el soporte de los que tu equipo depende a diario."
+        ],
+        "faq": [
+          {
+            "q": "¿Basta con un hipervisor gratis?",
+            "a": "Para labs sí, pero producción suele necesitar soporte, migración en vivo y APIs de backup que los niveles gratis omiten."
+          },
+          {
+            "q": "¿Qué importa más al elegir?",
+            "a": "Ajusta la profundidad de funciones a tus operaciones reales: backups, HA y tooling suelen batir la velocidad bruta."
+          },
+          {
+            "q": "¿Debo considerar el lock-in?",
+            "a": "Sí, el formato de VM y la portabilidad de gestión afectan el coste futuro de migración."
+          }
+        ]
+      }
     },
     "slope-calculator": {
       "name": "Pendiente",
       "description": "Calcular pendiente, ecuación y ángulo de una recta.",
-      "metaDescription": "Calcular la pendiente, la intersección con el eje y y la ecuación lineal desde dos puntos"
+      "metaDescription": "Calcular la pendiente, la intersección con el eje y y la ecuación lineal desde dos puntos",
+      "guide": {
+        "steps": [
+          "Introduce dos puntos (x1,y1) y (x2,y2).",
+          "Ejecuta para obtener pendiente e intercepto.",
+          "Lee m, b y la ecuación y = mx + b."
+        ],
+        "explanationTitle": "Hallar la pendiente de una recta",
+        "formula": "m = (y2 - y1) / (x2 - x1); b = y1 - m × x1",
+        "explanation": [
+          "La pendiente mide la inclinación: ascenso sobre avance, el cambio de y por unidad de x.",
+          "Positiva sube, negativa baja, cero es plana y no definida es una vertical."
+        ],
+        "faq": [
+          {
+            "q": "¿Si x son iguales?",
+            "a": "La recta es vertical y la pendiente no está definida (división por cero)."
+          },
+          {
+            "q": "¿Qué significa pendiente 1?",
+            "a": "Sube una unidad por cada una horizontal, un ángulo de 45°."
+          },
+          {
+            "q": "¿Cómo obtengo la ecuación?",
+            "a": "Con m, b = y − mx en cualquier punto da y = mx + b."
+          }
+        ]
+      }
     },
     "standard-deviation": {
       "name": "Desviación estándar",
@@ -6060,17 +6789,98 @@
     "p-value-calculator": {
       "name": "Valor p",
       "description": "Calcular valores p para pruebas de hipótesis estadísticas",
-      "metaDescription": "Calcule los valores p a partir de puntuaciones z, puntuaciones t, chi-cuadrado y estadísticas F"
+      "metaDescription": "Calcule los valores p a partir de puntuaciones z, puntuaciones t, chi-cuadrado y estadísticas F",
+      "guide": {
+        "steps": [
+          "Introduce el estadístico y grados de libertad (o tamaño del efecto y muestra).",
+          "Elige una o dos colas.",
+          "Lee el p-value y si es significativo a tu alpha."
+        ],
+        "explanationTitle": "Entender los p-values",
+        "formula": "p = P(estadístico ≥ observado | H0 cierta)",
+        "explanation": [
+          "Un p-value es la probabilidad de ver resultados al menos tan extremos si la hipótesis nula fuera cierta.",
+          "Un p pequeño (bajo tu alpha, a menudo 0,05) sugiere que el efecto es improbable bajo H0, así rechazas H0."
+        ],
+        "faq": [
+          {
+            "q": "¿p < 0,05 prueba mi teoría?",
+            "a": "No, solo argumenta contra H0; no es la probabilidad de que tu teoría sea cierta."
+          },
+          {
+            "q": "¿Una o dos colas?",
+            "a": "Dos colas reparte alpha en ambos extremos; una cola solo con dirección pre declarada."
+          },
+          {
+            "q": "¿Qué es alpha?",
+            "a": "El umbral de significancia fijado de antemano, común 0,05, controla falsos positivos."
+          }
+        ]
+      }
     },
     "confidence-interval": {
       "name": "Intervalo de confianza",
       "description": "Calcular intervalos de confianza para medias y proporciones.",
-      "metaDescription": "Calcular intervalos de confianza para la media y la proporción de la población."
+      "metaDescription": "Calcular intervalos de confianza para la media y la proporción de la población.",
+      "guide": {
+        "steps": [
+          "Introduce media, desviación y tamaño de muestra.",
+          "Elige el nivel de confianza (90%, 95%, 99%).",
+          "Lee el margen de error y los límites del intervalo."
+        ],
+        "explanationTitle": "Qué te dice un intervalo de confianza",
+        "formula": "IC = media ± z × (s / √n); margen = z × s / √n",
+        "explanation": [
+          "Un IC da un rango que, en muestreo repetido, contendría el parámetro real el porcentaje fijado de las veces.",
+          "Intervalos más anchos indican más incertidumbre; muestras mayores o menor confianza reducen el margen."
+        ],
+        "faq": [
+          {
+            "q": "¿95% significa 95% de probabilidad?",
+            "a": "No exactamente; significa que 95% de tales intervalos de muestras repetidas capturarían la verdad."
+          },
+          {
+            "q": "¿Por qué n bajo raíz?",
+            "a": "La precisión crece con √n, así necesitas cuatro veces la muestra para la mitad del margen."
+          },
+          {
+            "q": "¿z o t?",
+            "a": "Usa t si sigma es desconocida y n pequeña; z para n grande o sigma conocida."
+          }
+        ]
+      }
     },
     "permutation-combination": {
       "name": "Permutación y combinación",
       "description": "Calcular permutaciones y combinaciones con y sin repetición.",
-      "metaDescription": "Calcula permutaciones y combinaciones de nPr y nCr para problemas de conteo."
+      "metaDescription": "Calcula permutaciones y combinaciones de nPr y nCr para problemas de conteo.",
+      "guide": {
+        "steps": [
+          "Introduce n (total) y k (elegidos).",
+          "Elige permutaciones (orden cuenta) o combinaciones (no cuenta).",
+          "Lee el conteo y, si quieres, la fórmula."
+        ],
+        "explanationTitle": "Permutaciones vs combinaciones",
+        "formula": "perm P(n,k) = n! / (n-k)!; comb C(n,k) = n! / (k!(n-k)!)",
+        "explanation": [
+          "Permutaciones cuentan arreglos donde el orden importa, como un podio; combinaciones cuentan grupos sin orden, como una mano.",
+          "Como las combinaciones ignoran orden, C(n,k) siempre es ≤ P(n,k) para igual n, k."
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo importa el orden?",
+            "a": "Cuando intercambiar dos elegidos da distinto resultado, como rankings o contraseñas."
+          },
+          {
+            "q": "¿Por qué combinación es menor?",
+            "a": "Cada grupo de k items mapea a k! permutaciones, así se divide por k!."
+          },
+          {
+            "q": "¿Qué si k = n?",
+            "a": "Ambas valen 1: exactamente una forma de ordenar o elegir todos."
+          }
+        ]
+      }
     },
     "ratio-calculator": {
       "name": "Proporción",
@@ -6107,12 +6917,66 @@
     "binary-calculator": {
       "name": "Binario",
       "description": "Convertir y realizar operaciones en binario.",
-      "metaDescription": "Convertir entre sistemas numéricos binario, decimal, octal y hexadecimal"
+      "metaDescription": "Convertir entre sistemas numéricos binario, decimal, octal y hexadecimal",
+      "guide": {
+        "steps": [
+          "Introduce un número binario, decimal o hex en el modo correcto.",
+          "Elige la base destino.",
+          "Lee el valor convertido y la longitud de bits si aplica."
+        ],
+        "explanationTitle": "Convertir entre bases",
+        "formula": "decimal = Σ(digito_i × base^i); binario usa 0–1, base 2",
+        "explanation": [
+          "Binario representa con solo 0 y 1, cada posición potencia de dos, así las computadoras guardan datos.",
+          "A decimal sumas dígito por valor de lugar; desde decimal divides repetidamente y recoges residuos."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué binario en computadoras?",
+            "a": "La electrónica representa fiablemente dos estados (on/off), base 2 es natural para compuertas."
+          },
+          {
+            "q": "¿Qué es bit y byte?",
+            "a": "Un bit es un dígito binario; un byte son ocho bits, la unidad común."
+          },
+          {
+            "q": "¿Decimal a binario?",
+            "a": "Divide repetidamente por 2; los residuos de abajo hacia arriba dan los dígitos."
+          }
+        ]
+      }
     },
     "hex-calculator": {
       "name": "hexadecimal",
       "description": "Convertir y calcular en hexadecimal",
-      "metaDescription": "Convertir y realizar operaciones aritméticas en hexadecimal"
+      "metaDescription": "Convertir y realizar operaciones aritméticas en hexadecimal",
+      "guide": {
+        "steps": [
+          "Introduce un valor hex (0–9 y A–F) u otra base.",
+          "Elige base destino como decimal o binario.",
+          "Lee el resultado y verifica la agrupación."
+        ],
+        "explanationTitle": "Hexadecimal simplificado",
+        "formula": "cada dígito hex = 4 bits; valor = Σ(digito_i × 16^i)",
+        "explanation": [
+          "Base 16 empaqueta cuatro bits en un dígito, por eso es la forma compacta de escribir direcciones y colores como #FF8800.",
+          "Hex a decimal multiplica cada dígito por 16 elevado a su posición; A–F valen diez a quince."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué hex en vez de binario?",
+            "a": "Es mucho más corto y menos propenso a error para cadenas largas, un dígito por nibble."
+          },
+          {
+            "q": "¿Qué son A–F?",
+            "a": "Representan del 10 al 15 como dígitos hex."
+          },
+          {
+            "q": "¿Dónde se usa hex diario?",
+            "a": "Colores CSS, direcciones MAC y volcados de memoria usan hex."
+          }
+        ]
+      }
     },
     "scientific-notation": {
       "name": "Notación científica",
@@ -6149,22 +7013,130 @@
     "big-number": {
       "name": "Número grande",
       "description": "Realizar aritmética con números enteros arbitrariamente grandes",
-      "metaDescription": "Calcule con números muy grandes más allá de los límites de la calculadora estándar"
+      "metaDescription": "Calcule con números muy grandes más allá de los límites de la calculadora estándar",
+      "guide": {
+        "steps": [
+          "Introduce uno o dos enteros muy grandes que superan la calculadora normal.",
+          "Elige operación: sumar, restar, multiplicar o comparar.",
+          "Lee el resultado exacto sin redondeo científico."
+        ],
+        "explanationTitle": "Aritmética con números grandes",
+        "formula": "las operaciones siguen la aritmética entera de precisión arbitraria",
+        "explanation": [
+          "Los tipos flotantes desbordan o pierden precisión pasadas unas 15–16 cifras, así que una herramienta big-number usa precisión arbitraria para ser exacta.",
+          "Esto es esencial para criptografía, combinatoria y cualquier cálculo donde cada dígito debe ser correcto."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué no notación científica?",
+            "a": "La notación aproxima; en claves, IDs y módulo importa cada dígito."
+          },
+          {
+            "q": "¿Cuántas cifras soporta?",
+            "a": "Precisión arbitraria maneja miles, limitada solo por memoria."
+          },
+          {
+            "q": "¿Es más lento?",
+            "a": "Sí, los rutinas big-int son más pesadas, pero necesarias cuando la precisión no puede fallar."
+          }
+        ]
+      }
     },
     "number-sequence": {
       "name": "Secuencia numérica",
       "description": "Analizar y generar secuencias aritméticas, geométricas y de Fibonacci.",
-      "metaDescription": "Encuentra patrones en secuencias numéricas y genera series aritméticas o geométricas."
+      "metaDescription": "Encuentra patrones en secuencias numéricas y genera series aritméticas o geométricas.",
+      "guide": {
+        "steps": [
+          "Introduce los términos conocidos separados por comas.",
+          "Ejecuta para detectar el patrón (aritmética, geométrica, tipo Fibonacci).",
+          "Lee los siguientes términos y la regla inferida."
+        ],
+        "explanationTitle": "Encontrar patrones en secuencias",
+        "formula": "aritm: a_n = a_1 + (n-1)d; geom: a_n = a_1 × r^(n-1)",
+        "explanation": [
+          "Una secuencia sigue una regla que liga cada término con su posición; familias comunes son aritmética (diferencia constante) y geométrica (razón constante).",
+          "Detectar el patrón predice términos futuros, pero secuencias cortas ambiguas pueden coincidir con varias reglas."
+        ],
+        "faq": [
+          {
+            "q": "¿Patrón poco claro?",
+            "a": "Da más términos; las cortas suelen caber en varias reglas."
+          },
+          {
+            "q": "¿Aritmética vs geométrica?",
+            "a": "Aritmética suma monto fijo; geométrica multiplica por factor fijo."
+          },
+          {
+            "q": "¿Fibonacci posible?",
+            "a": "Sí, reconoce recurrencias donde cada término suma los dos previos."
+          }
+        ]
+      }
     },
     "matrix-calculator": {
       "name": "Matriz",
       "description": "Realizar operaciones matriciales: sumar, multiplicar, transponer, determinante",
-      "metaDescription": "Calcular la suma, multiplicación, determinante, inversa y transposición de matrices."
+      "metaDescription": "Calcular la suma, multiplicación, determinante, inversa y transposición de matrices.",
+      "guide": {
+        "steps": [
+          "Introduce dimensiones y valores de una o dos matrices.",
+          "Elige operación: sumar, multiplicar, transponer, determinante o inversa.",
+          "Lee la matriz o escalar resultado con cada celda."
+        ],
+        "explanationTitle": "Operaciones básicas de matrices",
+        "formula": "mult: C_ij = Σ A_ik × B_kj; det 2x2 = ad − bc",
+        "explanation": [
+          "Las matrices son cuadrículas; la multiplicación no es elemento a elemento sino producto punto fila por columna, así las dimensiones deben alinearse.",
+          "Solo las cuadradas tienen determinante e inversa; determinante cero significa que no se puede invertir."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué importan tamaños?",
+            "a": "Multiplicar exige columnas de A = filas de B; si no, indefinido."
+          },
+          {
+            "q": "¿Cuándo no hay inversa?",
+            "a": "Si el determinante es cero, la matriz es singular y no tiene inversa."
+          },
+          {
+            "q": "¿Para qué el determinante?",
+            "a": "Señala invertibilidad y escala área/volumen de la transformación lineal."
+          }
+        ]
+      }
     },
     "half-life-calculator": {
       "name": "Media vida",
       "description": "Calcular la desintegración radiactiva y la cantidad restante.",
-      "metaDescription": "Calcular la desintegración radiactiva, la cantidad restante y la datación por carbono."
+      "metaDescription": "Calcular la desintegración radiactiva, la cantidad restante y la datación por carbono.",
+      "guide": {
+        "steps": [
+          "Introduce la cantidad inicial y la vida media.",
+          "Introduce el tiempo transcurrido o la cantidad restante.",
+          "Lee la cantidad restante y los semividas pasados."
+        ],
+        "explanationTitle": "Cómo funciona el decaimiento de vida media",
+        "formula": "N(t) = N0 × (1/2)^(t / t_half)",
+        "explanation": [
+          "La vida media es el tiempo para caer a la mitad; el decaimiento radiactivo y químico sigue esta ley exponencial.",
+          "Como es exponencial, la cantidad se reduce a la mitad en cada intervalo igual, nunca llegando a cero en tiempo finito."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa vida media?",
+            "a": "El tiempo que tarda en decaer la mitad del material."
+          },
+          {
+            "q": "¿Llega a cero?",
+            "a": "Solo asintóticamente; tras n vidas medias queda 1/2^n."
+          },
+          {
+            "q": "¿Solo para radiación?",
+            "a": "No, también describe aclaramiento de fármacos, enfriamiento y procesos de primer orden."
+          }
+        ]
+      }
     },
     "distance-calculator": {
       "name": "Distancia",
@@ -6361,37 +7333,226 @@
     "food-cost": {
       "name": "Calculadora de costos de alimentos",
       "description": "Calcule el costo total de la receta y el costo por porción a partir de los precios de los ingredientes",
-      "metaDescription": "Calculadora de costos de alimentos gratuita. Calcule el costo de la receta, el costo por porción y el desglose de los gastos de los ingredientes para planificar y presupuestar las comidas."
+      "metaDescription": "Calculadora de costos de alimentos gratuita. Calcule el costo de la receta, el costo por porción y el desglose de los gastos de los ingredientes para planificar y presupuestar las comidas.",
+      "guide": {
+        "steps": [
+          "Introduce el precio de compra y el tamaño del paquete de un ingrediente.",
+          "Introduce la cantidad que usa realmente la receta.",
+          "Lee el coste por ración que aporta ese ingrediente."
+        ],
+        "explanationTitle": "Calcular coste de alimentos",
+        "formula": "costeUsado = precioCompra × (cantidadUsada / tamañoPaquete)",
+        "explanation": [
+          "El coste de alimentos liga el precio de tienda con la porción que consume la receta, revelando el coste real de cada plato.",
+          "Seguir el coste por ración ayuda a fijar precios y detectar ingredientes que restan margen en silencio."
+        ],
+        "faq": [
+          {
+            "q": "¿Incluyo desperdicio y recortes?",
+            "a": "Sí, aplica porcentaje de rendimiento para que cáscaras y huesos no oculten el coste real."
+          },
+          {
+            "q": "¿Qué porcentaje de food cost es bueno?",
+            "a": "Muchos restaurantes apuntan a 28–35% del precio de menú, según el concepto."
+          },
+          {
+            "q": "¿Cómo precio un plato?",
+            "a": "Divide el coste total de ingredientes entre el porcentaje objetivo de food cost para el precio mínimo."
+          }
+        ]
+      }
     },
     "recipe-scaler": {
       "name": "Escalador de recetas",
       "description": "Escale los ingredientes de las recetas con ajustes inteligentes de sal, especias y agentes leudantes.",
-      "metaDescription": "Escalador de recetas gratuito. Duplica o reduce a la mitad recetas con escalado inteligente que ajusta los condimentos y la levadura para obtener resultados perfectos."
+      "metaDescription": "Escalador de recetas gratuito. Duplica o reduce a la mitad recetas con escalado inteligente que ajusta los condimentos y la levadura para obtener resultados perfectos.",
+      "guide": {
+        "steps": [
+          "Introduce las cantidades originales y las raciones originales.",
+          "Introduce las raciones objetivo que quieres hacer.",
+          "Lee las cantidades escaladas de cada ingrediente."
+        ],
+        "explanationTitle": "Escalar una receta",
+        "formula": "escalado = cantidadOriginal × (racionesObj / racionesOrig)",
+        "explanation": [
+          "Escalar multiplica cada ingrediente por la misma razón, manteniendo el equilibrio de sabor al cocinar para más o menos gente.",
+          "Algunos pasos como la temperatura del horno se mantienen fijos, mientras el tiempo puede necesitar ajuste pequeño, no estricto."
+        ],
+        "faq": [
+          {
+            "q": "¿El tiempo de cocción escala lineal?",
+            "a": "No, lotes grandes pueden necesitar algo más, pero no en proporción directa."
+          },
+          {
+            "q": "¿Qué hago con cucharaditas?",
+            "a": "Redondea con sentido; una receta rara vez necesita 1,833 cucharaditas exactas."
+          },
+          {
+            "q": "¿Puedo bajar a una ración?",
+            "a": "Sí, pero cantidades muy pequeñas son difíciles de medir bien."
+          }
+        ]
+      }
     },
     "nutrition-calculator": {
       "name": "Calculadora de nutrición",
       "description": "Calcule calorías, macros e información nutricional de alimentos seleccionados",
-      "metaDescription": "Calculadora de nutrición gratuita. Realice un seguimiento de las calorías, proteínas, carbohidratos, grasas y otros nutrientes de una base de datos de más de 100 alimentos comunes."
+      "metaDescription": "Calculadora de nutrición gratuita. Realice un seguimiento de las calorías, proteínas, carbohidratos, grasas y otros nutrientes de una base de datos de más de 100 alimentos comunes.",
+      "guide": {
+        "steps": [
+          "Introduce los ingredientes y pesos de tu comida.",
+          "Introduce valores por 100 g o elige de una base de alimentos.",
+          "Lee calorías, proteína, carbohidratos, grasa y fibra totales."
+        ],
+        "explanationTitle": "Estimar nutrición de la comida",
+        "formula": "nutriente = Σ(peso_g / 100 × valorPor100g)",
+        "explanation": [
+          "Un calculadora de nutrición suma los macros de cada ingrediente por peso, dando totales para un plato casero que las etiquetas no cubren.",
+          "La precisión depende de pesos correctos y la entrada correcta de la base; las formas de marca y cruda difieren en calorías por gramo."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué pesar en vez de estimar?",
+            "a": "Ojo de buen cubero puede errar 50%, distorsionando el total de calorías."
+          },
+          {
+            "q": "¿Difieren cocido y crudo?",
+            "a": "Sí, cocinar cambia el agua, usa el estado que realmente pesas."
+          },
+          {
+            "q": "¿Qué tan exacta es la base?",
+            "a": "Las entradas serias están cerca, pero trata resultados como estimaciones, no hecho médico."
+          }
+        ]
+      }
     },
     "fuel-efficiency": {
       "name": "Eficiencia de Combustible",
       "description": "Calcula la eficiencia de combustible de tu auto",
-      "metaDescription": "Herramienta de eficiencia de combustible"
+      "metaDescription": "Herramienta de eficiencia de combustible",
+      "guide": {
+        "steps": [
+          "Introduce la distancia recorrida y el combustible consumido.",
+          "Elige las unidades (mpg, L/100km, km/L).",
+          "Lee la eficiencia y su equivalente en tu sistema."
+        ],
+        "explanationTitle": "Medir eficiencia de combustible",
+        "formula": "mpg = millas / galones; L/100km = (L × 100) / km; km/L = km / L",
+        "explanation": [
+          "La eficiencia expresa distancia por unidad de combustible; menor L/100km es mejor, mayor mpg o km/L también.",
+          "La eficiencia real baja en ciudad, frío y aceleración brusca, así que compara en condiciones similares."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué unidad es mejor?",
+            "a": "EE.UU. usa mpg, el resto suele usar L/100km; elige la de tu región."
+          },
+          {
+            "q": "¿Por qué mi coche supera la etiqueta?",
+            "a": "Las etiquetas usan ciclos; la conducción real con AC y cuestas difiere."
+          },
+          {
+            "q": "¿Cómo mejorar mpg?",
+            "a": "Mantén la presión de neumáticos, reduce ralenti y peso, y conduce suave."
+          }
+        ]
+      }
     },
     "vehicle-financing": {
       "name": "Financiación de Vehículos",
       "description": "Herramienta de cálculo de financiación de vehículos",
-      "metaDescription": "Calculadora de financiación de vehículos"
+      "metaDescription": "Calculadora de financiación de vehículos",
+      "guide": {
+        "steps": [
+          "Introduce precio, enganche y valor de trade-in.",
+          "Introduce tasa anual y plazo en meses.",
+          "Lee pago mensual, interés total y coste total."
+        ],
+        "explanationTitle": "Calcular pagos de auto",
+        "formula": "mensual = P × r / (1 - (1+r)^-n); r = tasa/12; P = precio - enganche - trade",
+        "explanation": [
+          "La financiación estira el precio neto sobre el plazo; más enganche o plazo corto recorta el interés total.",
+          "La TAE, no solo la cuota publicitada, mueve el coste vital, así que compara por total pagado con interés."
+        ],
+        "faq": [
+          {
+            "q": "¿Plazo largo baja el coste?",
+            "a": "Baja la cuota pero sube el interés total por más meses."
+          },
+          {
+            "q": "¿TAE vs tasa de interés?",
+            "a": "La TAE incluye comisiones, es el coste real a comparar."
+          },
+          {
+            "q": "¿Pagar al contado?",
+            "a": "Si tu efectivo rinde menos que la TAE tras riesgo, financiar puede tener sentido."
+          }
+        ]
+      }
     },
     "tire-sizing": {
       "name": "Tamaño de Neumático",
       "description": "Herramienta de cálculo de cambio de tamaño de neumático",
-      "metaDescription": "Calculadora de tamaño de neumático"
+      "metaDescription": "Calculadora de tamaño de neumático",
+      "guide": {
+        "steps": [
+          "Introduce el código actual (p. ej. 205/55R16) y la talla candidata.",
+          "Introduce el diámetro de llanta si difiere.",
+          "Lee diámetro, altura de flanco y error de velocímetro de la nueva talla."
+        ],
+        "explanationTitle": "Comparar tallas de neumático",
+        "formula": "diámetro = llanta + 2 × (anchoSección × perfil / 100 / 25.4) en pulgadas",
+        "explanation": [
+          "Los códigos codifican ancho, perfil y diámetro de llanta; cambiarlos altera altura, clearance y lectura del velocímetro.",
+          "Mantente dentro de ~3% del diámetro original para evitar errores de ABS, relación y odómetro."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa 55 en 205/55R16?",
+            "a": "La altura del flanco es 55% del ancho de 205 mm."
+          },
+          {
+            "q": "¿Por qué acercar el diámetro al original?",
+            "a": "Desviaciones grandes desajustan velocímetro, relación y frenos."
+          },
+          {
+            "q": "¿Puedo usar neumático más ancho?",
+            "a": "Solo si hay clearance y la llanta soporta la nueva sección."
+          }
+        ]
+      }
     },
     "maintenance-intervals": {
       "name": "Calculadora de Mantenimiento",
       "description": "Intervalos de servicio para su vehículo",
-      "metaDescription": "Calculadora gratuita de mantenimiento de vehículos: realice un seguimiento de los cambios de aceite, filtros, frenos y programas de inspección de Swiss MFK. Intervalos basados en kilómetros."
+      "metaDescription": "Calculadora gratuita de mantenimiento de vehículos: realice un seguimiento de los cambios de aceite, filtros, frenos y programas de inspección de Swiss MFK. Intervalos basados en kilómetros.",
+      "guide": {
+        "steps": [
+          "Introduce el odómetro actual y el intervalo del fabricante (km o millas).",
+          "Introduce el servicio anterior y el tipo de servicio debido.",
+          "Lee distancia o tiempo hasta el próximo servicio."
+        ],
+        "explanationTitle": "Planificar mantenimiento del vehículo",
+        "formula": "debido = ultimoServ + intervalo - actual; si negativo, vencido en esa cantidad",
+        "explanation": [
+          "Los intervalos se rigen por distancia o tiempo, lo que ocurra primero, así que coches con pocos km igual necesitan aceite y revisión.",
+          "Uso severo (remolque, trayectos cortos, polvo) acorta intervalos; seguirlos protege valor y fiabilidad."
+        ],
+        "faq": [
+          {
+            "q": "¿km o tiempo, cuál primero?",
+            "a": "El que ocurra primero; un coche poco usado también envejece aceites."
+          },
+          {
+            "q": "¿Qué es uso severo?",
+            "a": "Trayectos cortos frecuentes, remolque, calor o polvo extremos que estresan piezas."
+          },
+          {
+            "q": "¿Por qué seguir intervalos?",
+            "a": "Evita fallos costosos y mantiene garantía y reventa."
+          }
+        ]
+      }
     },
     "unit-converter": {
       "name": "Convertidor de Unidades",
@@ -6481,7 +7642,34 @@
       "operation": "Operación",
       "hint": "Introduzca elementos separados por comas (por ejemplo, 1, 2, 3).",
       "cardinality": "Cardinalidad",
-      "resultSet": "Conjunto de resultados"
+      "resultSet": "Conjunto de resultados",
+      "guide": {
+        "steps": [
+          "Introduce los elementos de A y B separados por comas.",
+          "Elige operación: unión, intersección, diferencia o diferencia simétrica.",
+          "Lee el conjunto resultado con miembros únicos."
+        ],
+        "explanationTitle": "Operaciones de conjuntos explicadas",
+        "formula": "unión A∪B, intersección A∩B, diferencia A−B, simétrica (A−B)∪(B−A)",
+        "explanation": [
+          "Un conjunto es colección de elementos distintos; las operaciones combinan sin contar duplicados.",
+          "Unión conserva todo, intersección solo lo común, diferencia lo que está en uno pero no en el otro."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué sin duplicados?",
+            "a": "Por definición un conjunto tiene cada elemento a lo sumo una vez."
+          },
+          {
+            "q": "¿Qué es diferencia simétrica?",
+            "a": "Elementos en exactamente uno de los dos conjuntos, sin los comunes."
+          },
+          {
+            "q": "¿Los conjuntos tienen orden?",
+            "a": "No, {1,2,3} = {3,2,1}; solo importa la pertenencia."
+          }
+        ]
+      }
     },
     "programmer-calculator": {
       "name": "Calculadora de Programador",
@@ -6495,7 +7683,34 @@
       "right": "Derecha (>>)",
       "shift": "Desplazamiento",
       "valueA": "Valor A",
-      "valueB": "Valor B"
+      "valueB": "Valor B",
+      "guide": {
+        "steps": [
+          "Introduce un valor en tu base (bin, dec, hex u oct).",
+          "Cambia a la base destino.",
+          "Lee el valor y, si quieres, operaciones bit a bit (AND, OR, XOR, shift)."
+        ],
+        "explanationTitle": "Una calculadora para programadores",
+        "formula": "bitwise: a AND b mantiene bits en ambos; a XOR en exactamente uno",
+        "explanation": [
+          "Una calculadora de programador trabaja en binario, octal, decimal y hex y expone la lógica bit a bit del código de bajo nivel.",
+          "AND/OR/XOR y shifts manipulan bits individuales, base de flags, máscaras y control embebido."
+        ],
+        "faq": [
+          {
+            "q": "¿Para qué AND bit a bit?",
+            "a": "Enmascara un valor, conservando solo bits también activos en la máscara."
+          },
+          {
+            "q": "¿Por qué shift en vez de multiplicar?",
+            "a": "Desplazar n bits a la izquierda multiplica por 2^n, a menudo más rápido en hardware."
+          },
+          {
+            "q": "¿Qué es complemento a dos?",
+            "a": "El estándar para negativos en enteros con signo: invertir bits y sumar uno."
+          }
+        ]
+      }
     },
     "debt-snowball-avalanche": {
       "name": "Planificador de pago de deuda",

@@ -564,7 +564,34 @@
       "specint2017Peak": "SPECint2017 Peak",
       "perfPerCore": "Perf / Core",
       "perfPerWatt": "Perf / Watt",
-      "sizingRatio": "Sizing Ratio"
+      "sizingRatio": "Sizing Ratio",
+      "guide": {
+        "steps": [
+          "Enter the specifications of CPU A: core count, base/boost clock, and a reference benchmark score.",
+          "Enter the same details for CPU B you want to compare against.",
+          "Read the normalized performance score and performance-per-dollar rating to decide which offers better value."
+        ],
+        "explanationTitle": "How to compare CPUs objectively",
+        "formula": "perfIndex = cores × clockGHz × ipcFactor; value = perfIndex / priceUSD",
+        "explanation": [
+          "Clock speed alone does not determine real-world speed; core count, architecture (IPC) and cache also matter, so a lower-clocked newer chip can beat an older high-clocked one.",
+          "Performance-per-dollar normalizes the score by price so you can see which CPU gives more compute for the money, which is especially useful when building on a budget."
+        ],
+        "faq": [
+          {
+            "q": "Is higher clock speed always better?",
+            "a": "Not necessarily. Higher IPC and more cores often outweigh a small clock advantage, and thermals limit sustained boost."
+          },
+          {
+            "q": "What is performance per dollar?",
+            "a": "It divides a normalized performance score by the price, highlighting the most cost-effective option."
+          },
+          {
+            "q": "Should I trust vendor benchmark numbers?",
+            "a": "Use independent benchmarks where possible; vendor figures can reflect optimized workloads that differ from yours."
+          }
+        ]
+      }
     },
     "server-refresh-calculator": {
       "name": "Server Refresh",
@@ -615,7 +642,34 @@
       "sockets": "Sockets",
       "totalCores": "Total Cores",
       "totalTdpW": "Total TDP (W)",
-      "totalSpecint": "Total SPECint"
+      "totalSpecint": "Total SPECint",
+      "guide": {
+        "steps": [
+          "Enter the count and current age of your servers, plus their annual power and support costs.",
+          "Enter the price and expected efficiency of the replacement hardware.",
+          "Read the payback period and 3-year total cost difference to decide whether to refresh now."
+        ],
+        "explanationTitle": "When should you refresh servers?",
+        "formula": "annualSaving = oldOpEx - newOpEx; paybackYears = (newCapEx - salvageOld) / annualSaving",
+        "explanation": [
+          "Older servers draw more power and cost more to maintain, so replacing them can lower operating expenses even after the purchase cost is included.",
+          "A refresh is usually justified when the annual savings recover the new hardware cost within your acceptable payback window, often 2–3 years for dense workloads."
+        ],
+        "faq": [
+          {
+            "q": "What is a good payback period?",
+            "a": "Most IT teams target 2–3 years, but it depends on workload density and power prices."
+          },
+          {
+            "q": "Should I include salvage value?",
+            "a": "Yes, any resale or trade-in value of old gear reduces the effective capital cost."
+          },
+          {
+            "q": "Does refresh always save power?",
+            "a": "Newer nodes are far more efficient per rack unit, but only if consolidated; sprawl can erase the gain."
+          }
+        ]
+      }
     },
     "age": {
       "name": "Age",
@@ -1741,7 +1795,34 @@
     "cooking-units": {
       "name": "Cooking Units",
       "description": "Convert between metric and imperial cooking measurements with ingredient densities",
-      "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more."
+      "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more.",
+      "guide": {
+        "steps": [
+          "Enter the quantity and the unit you have (cups, grams, tablespoons, etc.).",
+          "Enter the unit you want to convert to.",
+          "Read the converted amount and the approximate volume or weight."
+        ],
+        "explanationTitle": "Converting cooking units",
+        "formula": "target = sourceAmount × (factorFrom / factorTo)",
+        "explanation": [
+          "Cooking mixes volume units (cups, tsp) with weight units (grams, oz); the converter uses standard densities for common ingredients to bridge them.",
+          "Because density varies by ingredient, conversions between weight and volume are approximate unless you pick the specific food."
+        ],
+        "faq": [
+          {
+            "q": "Why do cup-to-gram values differ by ingredient?",
+            "a": "A cup of flour weighs far less than a cup of sugar; density drives the difference."
+          },
+          {
+            "q": "Are US and metric cups the same?",
+            "a": "No; a US cup is 240 ml while a metric cup is 250 ml, a small but real gap."
+          },
+          {
+            "q": "Should I weigh or measure by volume?",
+            "a": "Weighing is more accurate for baking; volume is fine for casual cooking."
+          }
+        ]
+      }
     },
     "exchange-rate": {
       "name": "Exchange Rate",
@@ -1874,7 +1955,34 @@
     "mortgage-swiss": {
       "name": "Swiss Mortgage Calculator",
       "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
-      "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates."
+      "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates.",
+      "guide": {
+        "steps": [
+          "Enter the property price, down payment and the Swiss reference or SARON-based rate.",
+          "Enter the term and any amortization requirements (typically to 2/3 of value).",
+          "Read the monthly installment, total interest and remaining debt schedule."
+        ],
+        "explanationTitle": "Swiss mortgage calculation",
+        "formula": "annualInterest = rate × debt; amortize to ≤ 2/3 of property value per rules",
+        "explanation": [
+          "Swiss mortgages commonly use a reference rate (historically SARON or formerly Libor) plus a bank margin to set the interest.",
+          "Borrowers must amortize the portion above two-thirds of the property value within about 15 years, which drives the required payment."
+        ],
+        "faq": [
+          {
+            "q": "What reference rate is used in Switzerland?",
+            "a": "Most new loans use SARON plus a margin; older ones may still reference a fixed or Libor-based rate."
+          },
+          {
+            "q": "Why the two-thirds rule?",
+            "a": "Swiss regulation requires amortizing debt above 2/3 of value to limit loan-to-value risk."
+          },
+          {
+            "q": "Fixed or variable rate?",
+            "a": "Borrowers choose between fixed (predictable) and variable (tracks reference rate) structures."
+          }
+        ]
+      }
     },
     "rental-yield": {
       "name": "Rental Yield Calculator",
@@ -2169,7 +2277,34 @@
     "bpm": {
       "name": "BPM",
       "description": "Convert BPM to Hz, bar length, and note durations",
-      "metaDescription": "Convert beats per minute to other musical timing units"
+      "metaDescription": "Convert beats per minute to other musical timing units",
+      "guide": {
+        "steps": [
+          "Enter the number of beats counted and the time in seconds (or minutes) it took.",
+          "Run the calculator to compute beats per minute.",
+          "Read the BPM and, if tapped, the average tempo from your taps."
+        ],
+        "explanationTitle": "What BPM means",
+        "formula": "bpm = beats / (seconds / 60) = beats × 60 / seconds",
+        "explanation": [
+          "Beats per minute is the tempo unit in music; it tells how many steady pulses occur each minute.",
+          "A metronome marking of 120 BPM means two beats per second; doubling BPM makes the music feel twice as fast."
+        ],
+        "faq": [
+          {
+            "q": "How do I find BPM by tapping?",
+            "a": "Tap a key on each beat for a while; the tool averages the intervals into a tempo."
+          },
+          {
+            "q": "Is higher BPM always faster?",
+            "a": "Yes, more beats per minute means a quicker pulse and usually a more energetic feel."
+          },
+          {
+            "q": "What is a typical song tempo?",
+            "a": "Pop often sits around 100–130 BPM; ballads are slower, dance tracks faster."
+          }
+        ]
+      }
     },
     "video-file-size": {
       "name": "Video File Size",
@@ -2462,22 +2597,130 @@
     "csp": {
       "name": "CSP Generator",
       "description": "Generate Content Security Policy headers",
-      "metaDescription": "Generate Content Security Policy headers for web security"
+      "metaDescription": "Generate Content Security Policy headers for web security",
+      "guide": {
+        "steps": [
+          "Enter the policy directives you plan to allow (default-src, script-src, img-src, etc.).",
+          "Enter the domains or schemes you trust as sources.",
+          "Read the generated Content-Security-Policy header to paste into your server config."
+        ],
+        "explanationTitle": "Building a Content Security Policy",
+        "formula": "CSP = directive1 value1 value2; directive2 value3; ...",
+        "explanation": [
+          "A CSP whitelists where the browser may load scripts, styles, images and connections, blocking injection of unauthorized content even if an XSS bug exists.",
+          "Start in report-only mode to log violations before enforcing, otherwise a too-strict policy can break legitimate resources on your site."
+        ],
+        "faq": [
+          {
+            "q": "What does default-src do?",
+            "a": "It sets the fallback for any directive you do not specify explicitly, so 'self' there covers most tags."
+          },
+          {
+            "q": "Should I use report-only first?",
+            "a": "Yes, monitor reported violations for a while so you can tune the policy without breaking the site."
+          },
+          {
+            "q": "Does CSP stop all XSS?",
+            "a": "It drastically reduces impact but is a defense-in-depth layer, not a replacement for input sanitization."
+          }
+        ]
+      }
     },
     "redirect-check": {
       "name": "Redirect Checker",
       "description": "Check HTTP redirect chains and status codes",
-      "metaDescription": "Check URL redirect chains and HTTP status codes"
+      "metaDescription": "Check URL redirect chains and HTTP status codes",
+      "guide": {
+        "steps": [
+          "Enter the source URL you want to test and the expected final destination.",
+          "Enter any required headers such as User-Agent or Authorization.",
+          "Read the full redirect chain and the final HTTP status code."
+        ],
+        "explanationTitle": "Tracing HTTP redirects",
+        "formula": "chain = URL0 →(301/302) URL1 →(...) → URLn (status)",
+        "explanation": [
+          "Redirect chains add latency and can break analytics or SEO if a link 301-redirects through several hops before reaching the canonical page.",
+          "A single clean 301 preserves link equity best; multi-hop chains dilute it and slow first-byte time for users."
+        ],
+        "faq": [
+          {
+            "q": "301 vs 302, which to use?",
+            "a": "Use 301 for permanent moves to pass SEO value; 302 for temporary or A/B tests."
+          },
+          {
+            "q": "Why avoid redirect chains?",
+            "a": "Each hop adds round-trips and can drop referrer data and ranking signals."
+          },
+          {
+            "q": "How long should a redirect wait?",
+            "a": "Redirects should be instant (no body delay); the browser follows immediately."
+          }
+        ]
+      }
     },
     "spf-check": {
       "name": "SPF Record Checker",
       "description": "Analyze SPF records for email authentication",
-      "metaDescription": "Analyze SPF records for email security"
+      "metaDescription": "Analyze SPF records for email security",
+      "guide": {
+        "steps": [
+          "Enter your domain name to query its published SPF DNS record.",
+          "Enter the mail servers or include mechanisms you expect to see.",
+          "Read the resolved SPF policy and whether it passes or has too many DNS lookups."
+        ],
+        "explanationTitle": "Validating SPF records",
+        "formula": "SPF = 'v=spf1 include:_spf.a include:_spf.b -all' (max 10 DNS-lookup mechanisms)",
+        "explanation": [
+          "SPF tells receiving mail servers which IPs may send mail for your domain; a missing or broken record lets attackers spoof your address.",
+          "SPF allows at most 10 DNS lookups across all include mechanisms, so over-nesting includes causes permerror and mail may be rejected."
+        ],
+        "faq": [
+          {
+            "q": "What does -all mean?",
+            "a": "A hard fail: reject mail from sources not in the policy. ~all is softfail, more permissive."
+          },
+          {
+            "q": "Why the 10-lookup limit?",
+            "a": "To bound DNS query load; exceeding it yields permerror and receivers may reject."
+          },
+          {
+            "q": "Can SPF alone stop spoofing?",
+            "a": "No, pair it with DKIM and DMARC for real protection and reporting."
+          }
+        ]
+      }
     },
     "https-check": {
       "name": "HTTPS Security Checker",
       "description": "Check security headers and TLS configuration",
-      "metaDescription": "Check website HTTPS and security headers"
+      "metaDescription": "Check website HTTPS and security headers",
+      "guide": {
+        "steps": [
+          "Enter the hostname or full URL you want to test over HTTPS.",
+          "Enter the port if it is not the default 443.",
+          "Read the certificate validity, chain completeness and protocol grade."
+        ],
+        "explanationTitle": "Checking HTTPS health",
+        "formula": "grade = f(cipherSuites, certExpiry, chainComplete, HSTS)",
+        "explanation": [
+          "HTTPS health combines a valid certificate, a complete trust chain, modern ciphers and HSTS; any gap can trigger browser warnings or downgrade attacks.",
+          "Expired or mismatched certificates are the most common cause of 'not secure' banners and lost user trust at checkout."
+        ],
+        "faq": [
+          {
+            "q": "What is HSTS and why enable it?",
+            "a": "HSTS forces HTTPS and blocks SSL-strip downgrade attacks after the first visit."
+          },
+          {
+            "q": "What breaks the trust chain?",
+            "a": "A missing intermediate certificate on the server, so the browser cannot link leaf to root."
+          },
+          {
+            "q": "How early renew certificates?",
+            "a": "Automate via ACME (Let's Encrypt) with renewal 30 days before expiry to avoid outages."
+          }
+        ]
+      }
     },
     "html-encoder": {
       "name": "HTML Encoder",
@@ -2581,7 +2824,34 @@
     "seo-performance": {
       "name": "SEO Performance Analyzer",
       "description": "Analyze page SEO metrics and get recommendations",
-      "metaDescription": "Analyze SEO performance and get optimization tips"
+      "metaDescription": "Analyze SEO performance and get optimization tips",
+      "guide": {
+        "steps": [
+          "Enter your page URL and the target keyword or phrase you want to rank for.",
+          "Enter the main competitors or current ranking position if known.",
+          "Read the on-page, speed and structure suggestions to improve visibility."
+        ],
+        "explanationTitle": "Assessing SEO performance",
+        "formula": "visibility ∝ (contentRelevance × authority) / (loadTime × crawlErrors)",
+        "explanation": [
+          "SEO performance blends content relevance, site authority, page speed and clean crawlability; fixing one without the others yields limited gains.",
+          "Core Web Vitals and a logical internal link structure often move rankings more than micro-optimizing meta tags once the basics are covered."
+        ],
+        "faq": [
+          {
+            "q": "What are Core Web Vitals?",
+            "a": "Google's LCP, CLS and INP metrics measuring loading, visual stability and interactivity."
+          },
+          {
+            "q": "Does speed really affect ranking?",
+            "a": "Yes, both directly via signals and indirectly via bounce rate and engagement."
+          },
+          {
+            "q": "How long until changes show?",
+            "a": "Crawl and re-index can take days to weeks; sustained improvement needs consistency."
+          }
+        ]
+      }
     },
     "mortgage": {
       "name": "Mortgage",
@@ -5077,7 +5347,34 @@
     "long-division": {
       "name": "Long Division",
       "description": "Perform long division with step-by-step solution",
-      "metaDescription": "Learn long division with detailed step-by-step solutions and remainders"
+      "metaDescription": "Learn long division with detailed step-by-step solutions and remainders",
+      "guide": {
+        "steps": [
+          "Enter the dividend (the number being divided) and the divisor (the number you divide by).",
+          "Run the calculator to see the quotient and the remainder step by step.",
+          "Read the full decimal result and, if it does not divide evenly, the remainder."
+        ],
+        "explanationTitle": "How long division works",
+        "formula": "dividend = divisor × quotient + remainder; 0 ≤ remainder < divisor",
+        "explanation": [
+          "Long division repeatedly subtracts the largest multiple of the divisor that fits, bringing down digits until no remainder or a repeating decimal appears.",
+          "The remainder is what is left after the whole-number part of the quotient; it is always smaller than the divisor."
+        ],
+        "faq": [
+          {
+            "q": "What is the remainder?",
+            "a": "The leftover amount when the dividend is not a whole multiple of the divisor."
+          },
+          {
+            "q": "Why does division sometimes repeat?",
+            "a": "Some fractions have denominators with prime factors other than 2 and 5, forcing a repeating decimal."
+          },
+          {
+            "q": "Can the divisor be zero?",
+            "a": "No, division by zero is undefined and the calculator will reject it."
+          }
+        ]
+      }
     },
     "exponent-calculator": {
       "name": "Exponent",
@@ -5210,27 +5507,162 @@
     "factor-calculator": {
       "name": "Factor",
       "description": "Find all factors of a number",
-      "metaDescription": "Find all factors, factor pairs, and prime factors of any number"
+      "metaDescription": "Find all factors, factor pairs, and prime factors of any number",
+      "guide": {
+        "steps": [
+          "Enter a positive integer you want to factor.",
+          "Run the calculator to list all factors or prime factors.",
+          "Read the factor pairs and, for prime factorization, the exponent form."
+        ],
+        "explanationTitle": "Finding factors of a number",
+        "formula": "if n mod d = 0 then d is a factor; prime factors: n = p1^a1 × p2^a2 × ...",
+        "explanation": [
+          "A factor divides a number with no remainder; the calculator tests divisors up to the square root to find them efficiently.",
+          "Prime factorization rewrites the number as a product of primes, which is the basis for GCD, LCM and simplifying fractions."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between factors and prime factors?",
+            "a": "Factors include composites like 6; prime factors are only the irreducible primes such as 2 and 3."
+          },
+          {
+            "q": "Does 1 count as a factor?",
+            "a": "Yes, 1 and the number itself are always factors, but neither is prime."
+          },
+          {
+            "q": "Why stop at the square root?",
+            "a": "Any factor larger than √n pairs with one smaller than √n, so testing beyond is redundant."
+          }
+        ]
+      }
     },
     "gcd-calculator": {
       "name": "GCD",
       "description": "Calculate Greatest Common Divisor of multiple numbers",
-      "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers"
+      "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers",
+      "guide": {
+        "steps": [
+          "Enter two or more integers.",
+          "Run the calculator to find their greatest common divisor.",
+          "Read the GCD and, if needed, the steps using Euclid's algorithm."
+        ],
+        "explanationTitle": "Greatest common divisor",
+        "formula": "gcd(a,b) = gcd(b, a mod b) until remainder is 0; last non-zero remainder is the gcd",
+        "explanation": [
+          "The GCD is the largest integer that divides every input with no remainder; it is used to simplify fractions to lowest terms.",
+          "Euclid's algorithm replaces the larger number with the remainder repeatedly, which is far faster than testing every divisor."
+        ],
+        "faq": [
+          {
+            "q": "What is gcd used for?",
+            "a": "Simplifying fractions, and as a step in LCM and modular arithmetic."
+          },
+          {
+            "q": "Is gcd of a negative number defined?",
+            "a": "Yes, gcd uses absolute values, so signs do not change the result."
+          },
+          {
+            "q": "What if the numbers share no factor?",
+            "a": "Then the gcd is 1, and the numbers are called coprime."
+          }
+        ]
+      }
     },
     "lcm-calculator": {
       "name": "LCM",
       "description": "Calculate Least Common Multiple of multiple numbers",
-      "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers"
+      "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers",
+      "guide": {
+        "steps": [
+          "Enter two or more integers.",
+          "Run the calculator to find their least common multiple.",
+          "Read the LCM, useful for adding fractions with different denominators."
+        ],
+        "explanationTitle": "Least common multiple",
+        "formula": "lcm(a,b) = |a × b| / gcd(a,b); extend by pairing",
+        "explanation": [
+          "The LCM is the smallest positive integer divisible by every input, handy when aligning cycles or adding unlike fractions.",
+          "It is computed via the GCD so it stays efficient even for large numbers, instead of listing multiples."
+        ],
+        "faq": [
+          {
+            "q": "When do I need LCM?",
+            "a": "Adding fractions with different denominators and finding common periods."
+          },
+          {
+            "q": "What if one number is zero?",
+            "a": "LCM with zero is defined as zero, since zero is a multiple of every number."
+          },
+          {
+            "q": "How is LCM linked to GCD?",
+            "a": "Their product equals the product of the numbers, so lcm = |a×b| / gcd."
+          }
+        ]
+      }
     },
     "gcd-lcm": {
       "name": "GCD & LCM",
       "description": "Calculate GCD and LCM of multiple numbers",
-      "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers"
+      "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers",
+      "guide": {
+        "steps": [
+          "Enter two integers for which you need both values.",
+          "Run the calculator to return the GCD and LCM together.",
+          "Read both results and confirm they satisfy a × b = gcd × lcm."
+        ],
+        "explanationTitle": "GCD and LCM together",
+        "formula": "gcd(a,b) × lcm(a,b) = |a × b|",
+        "explanation": [
+          "Computing both at once saves time; many fraction and timing problems need the GCD to simplify and the LCM to align.",
+          "The identity gcd × lcm = |a×b| is a quick sanity check that both values are consistent."
+        ],
+        "faq": [
+          {
+            "q": "Why compute both?",
+            "a": "Fraction simplification needs gcd; finding a common denominator needs lcm."
+          },
+          {
+            "q": "Does the identity always hold?",
+            "a": "Yes for exactly two positive integers; for more, apply pairwise."
+          },
+          {
+            "q": "What if inputs are equal?",
+            "a": "Then gcd = lcm = the number itself."
+          }
+        ]
+      }
     },
     "prime-factorization": {
       "name": "Prime Factorization",
       "description": "Find prime factors and divisors of any number",
-      "metaDescription": "Find prime factorization, factor tree, and all divisors of any number"
+      "metaDescription": "Find prime factorization, factor tree, and all divisors of any number",
+      "guide": {
+        "steps": [
+          "Enter a positive integer greater than 1.",
+          "Run the calculator to break it into prime factors.",
+          "Read the prime list with exponents, e.g. 360 = 2³ × 3² × 5."
+        ],
+        "explanationTitle": "Prime factorization explained",
+        "formula": "n = p1^a1 × p2^a2 × ... where each p is prime",
+        "explanation": [
+          "Prime factorization expresses a number as a product of primes, the unique building blocks of every integer above 1.",
+          "It underpins GCD, LCM, cryptography and checking whether a number is prime or a perfect power."
+        ],
+        "faq": [
+          {
+            "q": "Why is it unique?",
+            "a": "The Fundamental Theorem of Arithmetic says every integer has exactly one prime factorization."
+          },
+          {
+            "q": "What about 1?",
+            "a": "1 is not prime and has no prime factors; factorization starts at 2."
+          },
+          {
+            "q": "How large a number can it handle?",
+            "a": "Trial division is fine up to millions; huge numbers need advanced algorithms."
+          }
+        ]
+      }
     },
     "triangle-calculator": {
       "name": "Triangle",
@@ -5267,7 +5699,34 @@
     "right-triangle": {
       "name": "Right Triangle",
       "description": "Calculate right triangle sides and angles",
-      "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem"
+      "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem",
+      "guide": {
+        "steps": [
+          "Enter any two known sides or one side and an acute angle.",
+          "Run the calculator to solve for the missing sides and angles.",
+          "Read the hypotenuse, legs, area and perimeter of the triangle."
+        ],
+        "explanationTitle": "Solving a right triangle",
+        "formula": "a² + b² = c²; sin θ = a/c, cos θ = b/c, tan θ = a/b",
+        "explanation": [
+          "A right triangle has one 90° angle, so the Pythagorean theorem and trigonometric ratios fully determine the other sides and angles.",
+          "Given two pieces of information (not both angles), the triangle is uniquely solved; knowing two angles alone is not enough without a side."
+        ],
+        "faq": [
+          {
+            "q": "What do I need to solve it?",
+            "a": "Any two of: two sides, or one side and one acute angle."
+          },
+          {
+            "q": "Why does it need a side?",
+            "a": "Angles alone give shape but infinite sizes; a side sets the scale."
+          },
+          {
+            "q": "Is the hypotenuse always longest?",
+            "a": "Yes, it is opposite the 90° angle and is always the largest side."
+          }
+        ]
+      }
     },
     "pythagorean-calculator": {
       "name": "Pythagorean Theorem",
@@ -5368,7 +5827,34 @@
     "surface-area-calculator": {
       "name": "Surface Area",
       "description": "Calculate surface area of 3D shapes",
-      "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid"
+      "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid",
+      "guide": {
+        "steps": [
+          "Select the 3D shape (box, sphere, cylinder, cone, etc.).",
+          "Enter its dimensions such as radius, height or side lengths.",
+          "Read the total surface area and, where useful, the lateral area separately."
+        ],
+        "explanationTitle": "Computing surface area",
+        "formula": "box = 2(lw + lh + wh); sphere = 4πr²; cylinder = 2πr(r + h)",
+        "explanation": [
+          "Surface area is the sum of the areas of all outer faces of a solid, measured in square units.",
+          "It matters for material needed to build, paint or wrap an object, unlike volume which measures capacity."
+        ],
+        "faq": [
+          {
+            "q": "Surface area vs volume?",
+            "a": "Area covers the outside (square units); volume fills the inside (cubic units)."
+          },
+          {
+            "q": "What is lateral area?",
+            "a": "The side surfaces only, excluding top and bottom bases."
+          },
+          {
+            "q": "Why units squared?",
+            "a": "Area is two-dimensional, so the unit is raised to the second power."
+          }
+        ]
+      }
     },
     "volume-calculator": {
       "name": "Volume",
@@ -5795,37 +6281,226 @@
     "vm-storage-calculator": {
       "name": "VM Storage Calculator",
       "description": "Calculate vSphere ESX cluster storage capacity requirements",
-      "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning."
+      "metaDescription": "Free VMware vSphere storage calculator. Calculate VM storage capacity including provisioned disk, swap files, snapshots, and growth allocation. Supports thick and thin provisioning.",
+      "guide": {
+        "steps": [
+          "Enter the number of VMs, average disk size per VM, and the RAID/erasure overhead factor.",
+          "Enter growth rate and snapshot retention you plan to keep.",
+          "Read the total raw and usable capacity required before provisioning storage."
+        ],
+        "explanationTitle": "Sizing storage for virtual machines",
+        "formula": "usable = VMs × diskGB × (1 + overhead); raw = usable / raidEfficiency",
+        "explanation": [
+          "Virtual environments need overhead for snapshots, replicas and RAID parity, so usable capacity is always less than raw disks.",
+          "Plan for at least 20–30% free headroom so live migration and patching never stall when a datastore fills up."
+        ],
+        "faq": [
+          {
+            "q": "Why is usable less than raw?",
+            "a": "RAID parity, erasure coding and snapshots consume capacity before any guest data is stored."
+          },
+          {
+            "q": "How much headroom should I keep?",
+            "a": "Aim for 20–30% free to absorb spikes, snapshots and maintenance operations."
+          },
+          {
+            "q": "Do thin provisioned disks save space?",
+            "a": "They delay usage but the total logical size still must fit the datastore when fully written."
+          }
+        ]
+      }
     },
     "k8s-capacity-calculator": {
       "name": "Kubernetes Capacity Calculator",
       "description": "Calculate Kubernetes cluster node requirements for your workload",
-      "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory)."
+      "metaDescription": "Free Kubernetes capacity planning calculator. Calculate nodes needed for K8s cluster based on pod CPU/memory requests, system reserved resources, and target utilization. Shows limiting factor (CPU vs memory).",
+      "guide": {
+        "steps": [
+          "Enter the CPU and memory requests of a single pod and how many replicas you run.",
+          "Enter node size (CPU/memory) and the system reservation overhead.",
+          "Read how many nodes are needed and the cluster utilization before deploying."
+        ],
+        "explanationTitle": "Estimating Kubernetes cluster capacity",
+        "formula": "nodes = ceil(totalReq / (nodeCap × (1 - sysReserve))); util = totalReq / (nodes × nodeCap)",
+        "explanation": [
+          "Kubernetes schedules on requests, not limits, so you must size for the sum of requests plus a buffer for system pods and bin-packing inefficiency.",
+          "Reserving 10–20% of each node for kube-system and eviction thresholds prevents the scheduler from marking nodes unschedulable under load."
+        ],
+        "faq": [
+          {
+            "q": "Requests or limits drive scheduling?",
+            "a": "Scheduling uses requests; limits only cap usage and can cause OOM if set too low."
+          },
+          {
+            "q": "Why reserve node capacity?",
+            "a": "kube-system pods and eviction thresholds need headroom or nodes become unschedulable."
+          },
+          {
+            "q": "How do I improve bin-packing?",
+            "a": "Right-size requests, use topology spread and avoid tiny nodes that waste reservation overhead."
+          }
+        ]
+      }
     },
     "server-virtualization-calculator": {
       "name": "Server Virtualization Calculator",
       "description": "Calculate ESX host requirements for VM workloads",
-      "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support."
+      "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support.",
+      "guide": {
+        "steps": [
+          "Enter the number of physical servers and their average CPU/RAM utilization today.",
+          "Enter target consolidation ratio and the specs of the new virtual host.",
+          "Read the reduced host count, power savings and rack space freed."
+        ],
+        "explanationTitle": "Modeling server virtualization",
+        "formula": "hostsNeeded = ceil(physicalLoad / (hostCap × consolRatio)); savedPower = physicalPower - hostsNeeded × hostPower",
+        "explanation": [
+          "Virtualization lets many underused physical servers share fewer, larger hosts, raising utilization from often under 15% to 60–80%.",
+          "The biggest wins are fewer units to power and cool, less rack space, and simpler hardware lifecycle management."
+        ],
+        "faq": [
+          {
+            "q": "What consolidation ratio is realistic?",
+            "a": "Ratios of 10:1 to 20:1 are common for general workloads, less for latency-sensitive ones."
+          },
+          {
+            "q": "Does virtualization always cut power?",
+            "a": "Yes on total facility power, though each host draws more than the old servers it replaces."
+          },
+          {
+            "q": "What about licensing?",
+            "a": "Hypervisor and guest OS licenses can offset savings, so model them before committing."
+          }
+        ]
+      }
     },
     "vmware-licensing-calculator": {
       "name": "VMware Licensing Calculator",
       "description": "Calculate VMware VCF/VVF licensing costs",
-      "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement."
+      "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement.",
+      "guide": {
+        "steps": [
+          "Enter the number of CPU cores or processors across your hosts that need licensing.",
+          "Select the VMware edition and any add-on packs you require.",
+          "Read the total license key count and estimated subscription cost before purchase."
+        ],
+        "explanationTitle": "Sizing VMware licensing",
+        "formula": "licenses = sum(hostProcessors × coresPerProc, capped per key); cost = licenses × editionPrice",
+        "explanation": [
+          "VMware is typically licensed per physical processor (socket) with a minimum core count per socket, so counting cores correctly avoids costly shortfalls.",
+          "Edition and support tier drive price far more than raw core count, so compare Standard vs Enterprise plus required add-ons like vSAN or NSX."
+        ],
+        "faq": [
+          {
+            "q": "Is VMware licensed per core or per socket?",
+            "a": "Per CPU socket, with a minimum number of cores per socket that must be licensed even if unused."
+          },
+          {
+            "q": "Do I license vCenter separately?",
+            "a": "Yes, vCenter Server is licensed per instance on top of the ESXi host licenses."
+          },
+          {
+            "q": "What about stagnant SNL contracts?",
+            "a": "Support and subscription (SnS) renewals often dominate lifetime cost, so model them over 3–5 years."
+          }
+        ]
+      }
     },
     "virtualization-cost": {
       "name": "Virtualization Cost Calculator",
       "description": "Calculate total cost of ownership for virtualization infrastructure",
-      "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure."
+      "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure.",
+      "guide": {
+        "steps": [
+          "Enter the number of hosts, their purchase price and expected lifespan.",
+          "Enter power, cooling, licensing and admin hours per year.",
+          "Read the total cost of ownership and cost per VM over the period."
+        ],
+        "explanationTitle": "Total cost of virtualization",
+        "formula": "tco = capEx + years × (power + cooling + licenses + labor); costPerVM = tco / totalVMs",
+        "explanation": [
+          "Virtualization TCO includes one-time hardware plus recurring power, cooling, software licenses and staff time, and ignoring any one distorts the comparison.",
+          "Dividing TCO by the number of VMs you run shows whether consolidating onto fewer, denser hosts actually lowers cost per workload."
+        ],
+        "faq": [
+          {
+            "q": "What is the biggest hidden cost?",
+            "a": "Software licensing and admin labor usually exceed the hardware itself over a 3–5 year span."
+          },
+          {
+            "q": "Should I include power and cooling?",
+            "a": "Yes, in a data center they can equal or exceed hardware depreciation annually."
+          },
+          {
+            "q": "Does more VMs always lower cost per VM?",
+            "a": "Only up to the point where density hurts performance or reliability; then outages cost more than hardware."
+          }
+        ]
+      }
     },
     "hyperv-consolidation": {
       "name": "Hyper-V Consolidation Calculator",
       "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
-      "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs."
+      "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs.",
+      "guide": {
+        "steps": [
+          "Enter your current count of physical servers and their average CPU/RAM usage.",
+          "Enter the target Hyper-V host size and desired reserve headroom.",
+          "Read the projected host count, consolidation ratio and freed rack units."
+        ],
+        "explanationTitle": "Hyper-V consolidation planning",
+        "formula": "hosts = ceil(totalLoad / (hostCap × (1 - reserve))); ratio = physicalServers / hosts",
+        "explanation": [
+          "Hyper-V lets you collapse many lightly used physical boxes onto a few hosts running Windows Server with the Hyper-V role.",
+          "Keeping 15–25% headroom per host preserves live-migration capacity so maintenance or a host failure never disrupts running VMs."
+        ],
+        "faq": [
+          {
+            "q": "What reserve should each host keep?",
+            "a": "Plan 15–25% free so failover clusters can absorb a downed node without overcommit."
+          },
+          {
+            "q": "Core licensing implications?",
+            "a": "Windows Server is licensed per core, so larger hosts raise OS license cost even as VM count drops."
+          },
+          {
+            "q": "Is failover clustering required?",
+            "a": "Not required, but it is what makes consolidation safe by allowing automatic VM restart."
+          }
+        ]
+      }
     },
     "windows-licensing": {
       "name": "Windows Server Licensing Calculator",
       "description": "Compare Datacenter vs Standard licensing costs",
-      "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement."
+      "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement.",
+      "guide": {
+        "steps": [
+          "Enter the number of physical cores in each Windows Server host.",
+          "Select the edition and the licensing model (per core with CALs, or subscription).",
+          "Read the minimum core licenses required and total cost including CALs."
+        ],
+        "explanationTitle": "Windows Server licensing basics",
+        "formula": "coreLicenses = max(16, coresPerHost) × hosts; cost = coreLicenses × corePrice + cals × calPrice",
+        "explanation": [
+          "Windows Server is licensed per physical core with a minimum of 16 cores per server, so small servers still buy a 16-core pack.",
+          "User/Device CALs are licensed separately and are easy to forget; the model you pick changes the breakeven dramatically at scale."
+        ],
+        "faq": [
+          {
+            "q": "What is the minimum cores per server?",
+            "a": "16 cores; even a 4-core box requires 16 core licenses."
+          },
+          {
+            "q": "Are CALs always required?",
+            "a": "For most on-prem access models yes, though Azure Stack HCI and subscription options differ."
+          },
+          {
+            "q": "Standard vs Datacenter?",
+            "a": "Standard covers limited OSEs per host; Datacenter is better when you run many VMs per host."
+          }
+        ]
+      }
     },
     "hypervisor-comparison": {
       "name": "Hypervisor Comparison Calculator",
@@ -5884,12 +6559,66 @@
         "datacenter": "Datacenter (unlimited VMs)"
       },
       "windowsEditionHint": "Standard is cheaper for <13 VMs/host, Datacenter for more.",
-      "featureComparison": "Feature Comparison"
+      "featureComparison": "Feature Comparison",
+      "guide": {
+        "steps": [
+          "Enter your workload profile: VM count, OS mix, and whether you need live migration.",
+          "Select candidate hypervisors and their licensing or support costs.",
+          "Read the feature and cost comparison to pick the best fit."
+        ],
+        "explanationTitle": "Comparing hypervisors",
+        "formula": "score = w1×features + w2×(1/cost) + w3×support; pick max(score)",
+        "explanation": [
+          "Hypervisors differ in licensing model (free, per-core, subscription), ecosystem maturity and management tooling, not just raw performance.",
+          "The cheapest option can become the most expensive if it lacks the automation, backup or support your team depends on daily."
+        ],
+        "faq": [
+          {
+            "q": "Is free hypervisor good enough?",
+            "a": "For labs yes, but production usually needs support, live migration and backup APIs that free tiers omit."
+          },
+          {
+            "q": "What matters most for selection?",
+            "a": "Match feature depth to your actual ops: backups, HA, and management tooling often beat raw speed."
+          },
+          {
+            "q": "Should I consider lock-in?",
+            "a": "Yes, VM format and management portability affect future migration cost between platforms."
+          }
+        ]
+      }
     },
     "slope-calculator": {
       "name": "Slope",
       "description": "Calculate slope, equation, and angle of a line",
-      "metaDescription": "Calculate slope, y-intercept, and linear equation from two points"
+      "metaDescription": "Calculate slope, y-intercept, and linear equation from two points",
+      "guide": {
+        "steps": [
+          "Enter the coordinates of two points, (x1, y1) and (x2, y2).",
+          "Run the calculator to compute the slope and y-intercept.",
+          "Read the slope m, intercept b and the line equation y = mx + b."
+        ],
+        "explanationTitle": "Finding the slope of a line",
+        "formula": "m = (y2 - y1) / (x2 - x1); b = y1 - m × x1",
+        "explanation": [
+          "Slope measures how steep a line is: rise over run, or the change in y per unit change in x.",
+          "A positive slope rises left to right, negative falls, zero is flat, and an undefined slope is a vertical line."
+        ],
+        "faq": [
+          {
+            "q": "What if x values are equal?",
+            "a": "The line is vertical and slope is undefined (division by zero)."
+          },
+          {
+            "q": "What does a slope of 1 mean?",
+            "a": "The line rises one unit vertically for every one unit horizontally, a 45° angle."
+          },
+          {
+            "q": "How do I get the equation?",
+            "a": "Once m is known, b = y − mx at either point gives y = mx + b."
+          }
+        ]
+      }
     },
     "standard-deviation": {
       "name": "Standard Deviation",
@@ -6054,17 +6783,98 @@
     "p-value-calculator": {
       "name": "P-Value",
       "description": "Calculate p-values for statistical hypothesis testing",
-      "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics"
+      "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics",
+      "guide": {
+        "steps": [
+          "Enter your test statistic and degrees of freedom (or the effect size and sample size).",
+          "Select the tail type: one-tailed or two-tailed.",
+          "Read the p-value and whether the result is significant at your chosen alpha."
+        ],
+        "explanationTitle": "Understanding p-values",
+        "formula": "p = P(test statistic ≥ observed | H0 true)",
+        "explanation": [
+          "A p-value is the probability of seeing results at least as extreme as yours if the null hypothesis were true.",
+          "A small p-value (below your alpha, often 0.05) suggests the observed effect is unlikely under the null, so you reject H0."
+        ],
+        "faq": [
+          {
+            "q": "Does p < 0.05 prove my theory?",
+            "a": "No, it only argues against the null; it is not the probability that your theory is true."
+          },
+          {
+            "q": "One-tailed vs two-tailed?",
+            "a": "Two-tailed splits the alpha on both ends; use one-tailed only with a pre-stated direction."
+          },
+          {
+            "q": "What is alpha?",
+            "a": "The significance threshold you set beforehand, commonly 0.05, controlling false-positive rate."
+          }
+        ]
+      }
     },
     "confidence-interval": {
       "name": "Confidence Interval",
       "description": "Calculate confidence intervals for means and proportions",
-      "metaDescription": "Calculate confidence intervals for population mean and proportion"
+      "metaDescription": "Calculate confidence intervals for population mean and proportion",
+      "guide": {
+        "steps": [
+          "Enter the sample mean, standard deviation and sample size.",
+          "Select the confidence level (90%, 95% or 99%).",
+          "Read the margin of error and the lower and upper bounds of the interval."
+        ],
+        "explanationTitle": "What a confidence interval tells you",
+        "formula": "CI = mean ± z × (s / √n); margin = z × s / √n",
+        "explanation": [
+          "A confidence interval gives a range that, under repeated sampling, would contain the true population parameter a set percentage of the time.",
+          "Wider intervals mean more uncertainty; larger samples or lower confidence shrink the margin of error."
+        ],
+        "faq": [
+          {
+            "q": "Does 95% mean 95% chance the true value is inside?",
+            "a": "Not exactly; it means 95% of such intervals from repeated samples would capture the truth."
+          },
+          {
+            "q": "Why does n appear under a square root?",
+            "a": "Precision improves with √n, so you need four times the sample for half the margin."
+          },
+          {
+            "q": "z vs t, which to use?",
+            "a": "Use t when the population standard deviation is unknown and n is small; z for large n or known sigma."
+          }
+        ]
+      }
     },
     "permutation-combination": {
       "name": "Permutation & Combination",
       "description": "Calculate permutations and combinations with and without repetition",
-      "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems"
+      "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems",
+      "guide": {
+        "steps": [
+          "Enter the total number of items n and how many you choose k.",
+          "Select permutations (order matters) or combinations (order does not).",
+          "Read the count and, if needed, the formula expansion."
+        ],
+        "explanationTitle": "Permutations vs combinations",
+        "formula": "permutations P(n,k) = n! / (n-k)!; combinations C(n,k) = n! / (k!(n-k)!)",
+        "explanation": [
+          "Permutations count arrangements where order matters, like a podium finish; combinations count groups where order is irrelevant, like a hand of cards.",
+          "Because combinations ignore order, C(n,k) is always smaller than or equal to P(n,k) for the same n and k."
+        ],
+        "faq": [
+          {
+            "q": "When does order matter?",
+            "a": "When swapping two chosen items produces a different outcome, like rankings or passwords."
+          },
+          {
+            "q": "Why is combination smaller?",
+            "a": "Each group of k items maps to k! permutations, so combinations divide by k!."
+          },
+          {
+            "q": "What if k = n?",
+            "a": "Both equal 1: there is exactly one way to arrange or select all items."
+          }
+        ]
+      }
     },
     "ratio-calculator": {
       "name": "Ratio",
@@ -6101,12 +6911,66 @@
     "binary-calculator": {
       "name": "Binary",
       "description": "Convert and perform operations in binary",
-      "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems"
+      "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems",
+      "guide": {
+        "steps": [
+          "Enter a number in binary, decimal, or hex using the matching mode.",
+          "Select the target base you want to convert to.",
+          "Read the converted value and the bit length if relevant."
+        ],
+        "explanationTitle": "Converting between number bases",
+        "formula": "decimal = Σ(digit_i × base^i); binary uses digits 0–1, base 2",
+        "explanation": [
+          "Binary represents numbers using only 0 and 1, with each position a power of two, which is how computers store data.",
+          "Converting to decimal sums each digit times its place value; converting from decimal repeatedly divides by the base and collects remainders."
+        ],
+        "faq": [
+          {
+            "q": "Why do computers use binary?",
+            "a": "Electronics reliably represent two states (on/off), making base 2 natural for logic gates."
+          },
+          {
+            "q": "What is a bit and a byte?",
+            "a": "A bit is one binary digit; a byte is eight bits, the common storage unit."
+          },
+          {
+            "q": "How do I convert decimal to binary?",
+            "a": "Repeatedly divide by 2; the remainders read bottom-up give the binary digits."
+          }
+        ]
+      }
     },
     "hex-calculator": {
       "name": "Hexadecimal",
       "description": "Convert and calculate in hexadecimal",
-      "metaDescription": "Convert and perform arithmetic operations in hexadecimal"
+      "metaDescription": "Convert and perform arithmetic operations in hexadecimal",
+      "guide": {
+        "steps": [
+          "Enter a value in hex (using 0–9 and A–F) or another base.",
+          "Select the target base such as decimal or binary.",
+          "Read the converted result and verify digit grouping."
+        ],
+        "explanationTitle": "Hexadecimal made simple",
+        "formula": "each hex digit = 4 bits; value = Σ(digit_i × 16^i)",
+        "explanation": [
+          "Hexadecimal base 16 packs four binary bits into one digit, which is why it is the compact way to write memory addresses and colors like #FF8800.",
+          "Converting hex to decimal multiplies each digit by 16 raised to its position; A–F stand for ten through fifteen."
+        ],
+        "faq": [
+          {
+            "q": "Why use hex instead of binary?",
+            "a": "It is far shorter and less error-prone for long bit strings, one digit per nibble."
+          },
+          {
+            "q": "What do A–F mean?",
+            "a": "They represent decimal 10–15 as single hex digits."
+          },
+          {
+            "q": "Where is hex used daily?",
+            "a": "CSS colors, MAC addresses and memory dumps all use hex notation."
+          }
+        ]
+      }
     },
     "scientific-notation": {
       "name": "Scientific Notation",
@@ -6143,22 +7007,130 @@
     "big-number": {
       "name": "Big Number",
       "description": "Perform arithmetic on arbitrarily large integers",
-      "metaDescription": "Calculate with very large numbers beyond standard calculator limits"
+      "metaDescription": "Calculate with very large numbers beyond standard calculator limits",
+      "guide": {
+        "steps": [
+          "Enter one or two very large integers that exceed normal calculator limits.",
+          "Select the operation: add, subtract, multiply or compare.",
+          "Read the exact result without scientific notation rounding."
+        ],
+        "explanationTitle": "Arithmetic with big numbers",
+        "formula": "operations follow standard integer arithmetic on arbitrary-precision values",
+        "explanation": [
+          "Normal floating-point types overflow or lose precision past about 15–16 digits, so a big-number tool uses arbitrary precision to stay exact.",
+          "This is essential for cryptography, combinatorics and any calculation where every digit must be correct."
+        ],
+        "faq": [
+          {
+            "q": "Why not just use scientific notation?",
+            "a": "Notation approximates; exact digits matter in keys, IDs and modular math."
+          },
+          {
+            "q": "How many digits can it handle?",
+            "a": "Arbitrary precision handles thousands of digits, limited only by memory."
+          },
+          {
+            "q": "Is it slower than normal math?",
+            "a": "Yes, big-integer routines are heavier, but necessary when precision cannot slip."
+          }
+        ]
+      }
     },
     "number-sequence": {
       "name": "Number Sequence",
       "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
-      "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series"
+      "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series",
+      "guide": {
+        "steps": [
+          "Enter the known terms of your sequence, separated by commas.",
+          "Run the calculator to detect the pattern (arithmetic, geometric, Fibonacci-like).",
+          "Read the next terms and the rule or formula it inferred."
+        ],
+        "explanationTitle": "Finding number sequence patterns",
+        "formula": "arithmetic: a_n = a_1 + (n-1)d; geometric: a_n = a_1 × r^(n-1)",
+        "explanation": [
+          "A number sequence follows a rule linking each term to its position; common families are arithmetic (constant difference) and geometric (constant ratio).",
+          "Detecting the pattern lets you predict future terms, but ambiguous short sequences can match more than one valid rule."
+        ],
+        "faq": [
+          {
+            "q": "What if the pattern is unclear?",
+            "a": "Provide more terms; short sequences often fit multiple rules."
+          },
+          {
+            "q": "Arithmetic vs geometric?",
+            "a": "Arithmetic adds a fixed amount; geometric multiplies by a fixed factor."
+          },
+          {
+            "q": "Can it handle Fibonacci?",
+            "a": "Yes, it can recognize recurrence rules where each term sums the previous two."
+          }
+        ]
+      }
     },
     "matrix-calculator": {
       "name": "Matrix",
       "description": "Perform matrix operations: add, multiply, transpose, determinant",
-      "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose"
+      "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose",
+      "guide": {
+        "steps": [
+          "Enter the dimensions and values of one or two matrices.",
+          "Select the operation: add, multiply, transpose, determinant or inverse.",
+          "Read the resulting matrix or scalar with each cell shown."
+        ],
+        "explanationTitle": "Matrix operations basics",
+        "formula": "multiply: C_ij = Σ A_ik × B_kj; determinant 2x2 = ad − bc",
+        "explanation": [
+          "Matrices are grids of numbers; multiplication is not element-wise but a row-by-column dot product, so dimensions must align.",
+          "Only square matrices have a determinant and inverse; a zero determinant means the matrix cannot be inverted."
+        ],
+        "faq": [
+          {
+            "q": "Why do matrix sizes matter?",
+            "a": "Multiplication needs columns of A to equal rows of B; otherwise it is undefined."
+          },
+          {
+            "q": "When does an inverse not exist?",
+            "a": "When the determinant is zero, the matrix is singular and has no inverse."
+          },
+          {
+            "q": "What is the determinant for?",
+            "a": "It signals invertibility and scales area/volume under the linear transform."
+          }
+        ]
+      }
     },
     "half-life-calculator": {
       "name": "Half-Life",
       "description": "Calculate radioactive decay and remaining quantity",
-      "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating"
+      "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating",
+      "guide": {
+        "steps": [
+          "Enter the initial quantity and the half-life of the substance.",
+          "Enter the elapsed time or the remaining quantity you want to find.",
+          "Read the remaining amount and the number of half-lives passed."
+        ],
+        "explanationTitle": "How half-life decay works",
+        "formula": "N(t) = N0 × (1/2)^(t / t_half)",
+        "explanation": [
+          "Half-life is the time for a quantity to fall to half its value; radioactive and chemical decay follow this exponential law.",
+          "Because it is exponential, the amount drops by half in each equal interval, never quite reaching zero in finite time."
+        ],
+        "faq": [
+          {
+            "q": "What does half-life mean?",
+            "a": "The time needed for half of the material to decay away."
+          },
+          {
+            "q": "Does it ever reach zero?",
+            "a": "Only asymptotically; after n half-lives 1/2^n remains."
+          },
+          {
+            "q": "Is half-life only for radiation?",
+            "a": "No, it also describes drug clearance, cooling and many first-order processes."
+          }
+        ]
+      }
     },
     "distance-calculator": {
       "name": "Distance",
@@ -6355,37 +7327,226 @@
     "food-cost": {
       "name": "Food Cost Calculator",
       "description": "Calculate total recipe cost and cost per serving from ingredient prices",
-      "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting."
+      "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting.",
+      "guide": {
+        "steps": [
+          "Enter the purchase price and package size of an ingredient.",
+          "Enter the amount the recipe actually uses.",
+          "Read the cost per serving contributed by that ingredient."
+        ],
+        "explanationTitle": "Calculating food cost",
+        "formula": "costUsed = purchasePrice × (amountUsed / packageSize)",
+        "explanation": [
+          "Food cost links the price you pay at the store to the portion a recipe consumes, revealing the true cost of each dish.",
+          "Tracking cost per serving helps set menu prices and spot ingredients that quietly drain margin."
+        ],
+        "faq": [
+          {
+            "q": "Should I include waste and trim?",
+            "a": "Yes, factor yield percentage so peels and bones don't hide real cost."
+          },
+          {
+            "q": "What is a good food cost percentage?",
+            "a": "Many restaurants target 28–35% of menu price, varying by concept."
+          },
+          {
+            "q": "How do I price a dish?",
+            "a": "Divide target food-cost percentage into the total ingredient cost to get the minimum price."
+          }
+        ]
+      }
     },
     "recipe-scaler": {
       "name": "Recipe Scaler",
       "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
-      "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results."
+      "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results.",
+      "guide": {
+        "steps": [
+          "Enter the original recipe ingredient amounts and the number of original servings.",
+          "Enter how many servings you want to make instead.",
+          "Read the scaled amounts for every ingredient."
+        ],
+        "explanationTitle": "Scaling a recipe",
+        "formula": "scaled = originalAmount × (targetServings / originalServings)",
+        "explanation": [
+          "Scaling multiplies each ingredient by the same ratio, keeping the flavor balance intact when you cook for more or fewer people.",
+          "Some steps like oven temperature stay fixed, while cooking time may need a small adjustment rather than a strict ratio."
+        ],
+        "faq": [
+          {
+            "q": "Does cooking time scale linearly?",
+            "a": "No, larger batches may need a bit more time but not in direct proportion."
+          },
+          {
+            "q": "What about teaspoon amounts?",
+            "a": "Round sensibly; a recipe rarely needs 1.833 teaspoons precisely."
+          },
+          {
+            "q": "Can I scale down to one serving?",
+            "a": "Yes, but very small quantities become hard to measure accurately."
+          }
+        ]
+      }
     },
     "nutrition-calculator": {
       "name": "Nutrition Calculator",
       "description": "Calculate calories, macros, and nutrition facts from selected foods",
-      "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods."
+      "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods.",
+      "guide": {
+        "steps": [
+          "Enter the ingredients and their weights from your meal.",
+          "Enter the per-100g nutrition values or pick from a common food database.",
+          "Read total calories, protein, carbs, fat and fiber for the meal."
+        ],
+        "explanationTitle": "Estimating meal nutrition",
+        "formula": "nutrient = Σ(weight_g / 100 × valuePer100g)",
+        "explanation": [
+          "A nutrition calculator sums each ingredient's macros by weight, giving the totals for a homemade meal that labels never cover.",
+          "Accuracy depends on correct weights and the right database entry; branded and raw forms differ in calories per gram."
+        ],
+        "faq": [
+          {
+            "q": "Why weigh instead of estimate?",
+            "a": "Eyeballing portions can be off by 50%, distorting calorie totals."
+          },
+          {
+            "q": "Do cooked and raw values differ?",
+            "a": "Yes, cooking changes water weight, so use the state you actually weigh."
+          },
+          {
+            "q": "How accurate is the database?",
+            "a": "Reputable entries are close, but treat results as estimates, not medical fact."
+          }
+        ]
+      }
     },
     "fuel-efficiency": {
       "name": "Fuel Efficiency Calculator",
       "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates."
+      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates.",
+      "guide": {
+        "steps": [
+          "Enter the distance traveled and the fuel consumed for that trip.",
+          "Enter the fuel unit and distance unit you prefer (mpg, L/100km, km/L).",
+          "Read the efficiency and the equivalent value in your chosen unit system."
+        ],
+        "explanationTitle": "Measuring fuel efficiency",
+        "formula": "mpg = miles / gallons; L/100km = (L × 100) / km; km/L = km / L",
+        "explanation": [
+          "Fuel efficiency expresses how far a vehicle travels per unit of fuel; lower L/100km is better, while higher mpg or km/L is better.",
+          "Real-world efficiency drops in city traffic, cold weather and with aggressive acceleration, so compare under similar conditions."
+        ],
+        "faq": [
+          {
+            "q": "Which unit is best?",
+            "a": "US uses mpg, most of the world uses L/100km; pick what your region reads natively."
+          },
+          {
+            "q": "Why does my car beat the label?",
+            "a": "Labels use standardized cycles; real driving with AC and hills differs."
+          },
+          {
+            "q": "How to improve mpg?",
+            "a": "Keep tires inflated, reduce idling and excess weight, and drive smoothly."
+          }
+        ]
+      }
     },
     "vehicle-financing": {
       "name": "Vehicle Financing Calculator",
       "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT."
+      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT.",
+      "guide": {
+        "steps": [
+          "Enter the vehicle price, down payment and trade-in value.",
+          "Enter the annual interest rate and loan term in months.",
+          "Read the monthly payment, total interest and total cost."
+        ],
+        "explanationTitle": "Calculating car loan payments",
+        "formula": "monthly = P × r / (1 - (1+r)^-n); r = apr/12; P = price - down - trade",
+        "explanation": [
+          "Auto financing spreads the net price over a term; a larger down payment or shorter term cuts the total interest you pay.",
+          "The APR, not just the advertised monthly figure, drives lifetime cost, so compare offers by total paid including interest."
+        ],
+        "faq": [
+          {
+            "q": "Does a longer term lower cost?",
+            "a": "It lowers the monthly bill but raises total interest paid across more months."
+          },
+          {
+            "q": "What is APR vs interest rate?",
+            "a": "APR includes fees, so it is the truer borrowing cost to compare."
+          },
+          {
+            "q": "Should I pay cash instead?",
+            "a": "If your cash earns less than the loan APR after risk, financing can make sense."
+          }
+        ]
+      }
     },
     "tire-sizing": {
       "name": "Tire Size Calculator",
       "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16)."
+      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16).",
+      "guide": {
+        "steps": [
+          "Enter your current tire code (e.g., 205/55R16) and the candidate size.",
+          "Enter the wheel diameter if it differs.",
+          "Read the diameter, sidewall height and speedometer error of the new size."
+        ],
+        "explanationTitle": "Comparing tire sizes",
+        "formula": "diameter = wheel + 2 × (sectionWidth × aspect / 100 / 25.4) in inches",
+        "explanation": [
+          "Tire size codes encode section width, aspect ratio and rim diameter; changing them alters ride height, clearance and how fast the speedometer reads.",
+          "Stay within about 3% of the original rolling diameter to avoid ABS, gearing and odometer errors."
+        ],
+        "faq": [
+          {
+            "q": "What does 55 in 205/55R16 mean?",
+            "a": "The sidewall height is 55% of the 205 mm section width."
+          },
+          {
+            "q": "Why keep diameter close to stock?",
+            "a": "Large deviations throw off speedometer, gearing and brake behavior."
+          },
+          {
+            "q": "Can I fit a wider tire?",
+            "a": "Only if you have arch clearance and the rim width supports the new section."
+          }
+        ]
+      }
     },
     "maintenance-intervals": {
       "name": "Maintenance Intervals Calculator",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
-      "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals."
+      "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals.",
+      "guide": {
+        "steps": [
+          "Enter current odometer reading and the manufacturer's interval (miles or km).",
+          "Enter the last service mileage and the type of service due.",
+          "Read the distance or time remaining until the next service."
+        ],
+        "explanationTitle": "Planning vehicle maintenance",
+        "formula": "due = lastService + interval - current; if negative, overdue by that amount",
+        "explanation": [
+          "Maintenance intervals are set by distance or time, whichever comes first, so low-mileage cars still need periodic oil and inspection.",
+          "Severe duty (towing, short trips, dust) shortens intervals; following them protects resale value and reliability."
+        ],
+        "faq": [
+          {
+            "q": "Miles or time, which first?",
+            "a": "Whichever comes first; a car rarely driven still ages oil and fluids."
+          },
+          {
+            "q": "What is severe duty?",
+            "a": "Frequent short trips, towing, extreme heat or dust that stress components faster."
+          },
+          {
+            "q": "Why follow intervals strictly?",
+            "a": "Prevents costly failures and keeps warranty and resale intact."
+          }
+        ]
+      }
     },
     "unit-converter": {
       "name": "Unit Converter",
@@ -6475,7 +7636,34 @@
       "operation": "Operation",
       "hint": "Enter elements separated by commas (e.g. 1, 2, 3).",
       "cardinality": "Cardinality",
-      "resultSet": "Result set"
+      "resultSet": "Result set",
+      "guide": {
+        "steps": [
+          "Enter the elements of set A and set B, separated by commas.",
+          "Select the operation: union, intersection, difference or symmetric difference.",
+          "Read the resulting set listed as its unique members."
+        ],
+        "explanationTitle": "Set operations explained",
+        "formula": "union A∪B, intersection A∩B, difference A−B, symmetric (A−B)∪(B−A)",
+        "explanation": [
+          "A set is a collection of distinct elements; operations combine or compare sets without counting duplicates.",
+          "Union keeps everything, intersection keeps only shared items, and difference keeps what is in one but not the other."
+        ],
+        "faq": [
+          {
+            "q": "Why no duplicates in a set?",
+            "a": "By definition a set holds each element at most once; duplicates collapse."
+          },
+          {
+            "q": "What is symmetric difference?",
+            "a": "Elements in exactly one of the two sets, excluding their shared members."
+          },
+          {
+            "q": "Are sets ordered?",
+            "a": "No, {1,2,3} equals {3,2,1}; only membership matters."
+          }
+        ]
+      }
     },
     "programmer-calculator": {
       "name": "Programmer Calculator",
@@ -6489,7 +7677,34 @@
       "left": "Left (<<)",
       "right": "Right (>>)",
       "reprA": "A representations",
-      "reprB": "B representations"
+      "reprB": "B representations",
+      "guide": {
+        "steps": [
+          "Enter a value in your current base (bin, dec, hex or oct).",
+          "Switch the view to the target base you want to see.",
+          "Read the converted value and the bitwise operations (AND, OR, XOR, shift) if needed."
+        ],
+        "explanationTitle": "A calculator for programmers",
+        "formula": "bitwise: a AND b keeps bits set in both; a XOR b keeps bits set in exactly one",
+        "explanation": [
+          "A programmer calculator works across binary, octal, decimal and hexadecimal and exposes bitwise logic used in low-level code.",
+          "Bitwise AND/OR/XOR and shifts manipulate individual bits, which underpins flags, masks and embedded control."
+        ],
+        "faq": [
+          {
+            "q": "What is a bitwise AND for?",
+            "a": "It masks a value, keeping only bits also set in the mask."
+          },
+          {
+            "q": "Why shift instead of multiply?",
+            "a": "Shifting left by n bits multiplies by 2^n, often faster at the hardware level."
+          },
+          {
+            "q": "What is two's complement?",
+            "a": "The standard way signed integers represent negatives by inverting bits and adding one."
+          }
+        ]
+      }
     },
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
