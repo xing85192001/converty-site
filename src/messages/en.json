@@ -1029,7 +1029,35 @@
     "speed": {
       "name": "Speed Converter",
       "description": "Convert between m/s, km/h, mph, knots, and more",
-      "metaDescription": "Convert speed between meters per second, km/h, mph, and more"
+      "metaDescription": "Convert speed between meters per second, km/h, mph, and more",
+      "guide": {
+        "steps": [
+          "Enter the speed value and select the current unit, such as meters per second or miles per hour.",
+          "Choose the target unit for conversion.",
+          "Review the converted speed and a few common reference values for context."
+        ],
+        "explanationTitle": "Speed, velocity, and unit conversion",
+        "formula": "Speed in target = speed in source × (source_unit_in_mps / target_unit_in_mps)",
+        "explanation": [
+          "Speed is the magnitude of how fast an object moves, while velocity also includes direction.",
+          "Common units differ by country and field: km/h for vehicles, m/s for physics, knots for maritime and aviation.",
+          "Converting through a base unit like meters per second keeps the math simple and avoids accumulated rounding errors."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between speed and velocity?",
+            "a": "Speed is a scalar with magnitude only; velocity is a vector that adds direction to the magnitude."
+          },
+          {
+            "q": "Why do ships and planes use knots?",
+            "a": "A knot is one nautical mile per hour; nautical miles relate directly to latitude, making navigation simpler."
+          },
+          {
+            "q": "Can I convert between pace and speed?",
+            "a": "Yes; pace is the inverse of speed expressed as time per unit distance, such as minutes per kilometer."
+          }
+        ]
+      }
     },
     "aspect-ratio": {
       "name": "Aspect Ratio",
@@ -2786,17 +2814,101 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Compare Traditional vs Roth IRA retirement accounts",
-      "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits"
+      "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits",
+      "guide": {
+        "steps": [
+          "Select whether you want to compare Traditional IRA, Roth IRA, or both.",
+          "Enter your current age, planned retirement age, annual contribution, and expected rate of return.",
+          "Review the estimated after-tax balance and compare which account may leave you with more spendable money."
+        ],
+        "explanationTitle": "Traditional IRA vs Roth IRA",
+        "formula": "Future value = contribution × (((1 + r)^n - 1) / r) × (1 - tax_rate_or_0)",
+        "explanation": [
+          "A Traditional IRA gives you a tax deduction today, but withdrawals in retirement are taxed as ordinary income.",
+          "A Roth IRA uses after-tax dollars, so qualified withdrawals in retirement are usually tax-free.",
+          "The better choice depends on whether your current tax rate is higher or lower than the rate you expect in retirement."
+        ],
+        "faq": [
+          {
+            "q": "Can I contribute to both a Traditional and Roth IRA?",
+            "a": "Yes, but your combined annual contribution cannot exceed the IRS limit for your filing status and income."
+          },
+          {
+            "q": "Are IRA withdrawals always penalty-free after age 59½?",
+            "a": "Traditional withdrawals are taxed; Roth qualified withdrawals are tax-free. Non-qualified withdrawals may trigger taxes and penalties."
+          },
+          {
+            "q": "Does the calculator include required minimum distributions?",
+            "a": "No; it is a simplified projection. Use detailed planning software or a tax advisor for RMD and complex scenarios."
+          }
+        ]
+      }
     },
     "bond-calculator": {
       "name": "Bond",
       "description": "Calculate bond prices, yields, and returns",
-      "metaDescription": "Calculate bond prices, current yield, and yield to maturity"
+      "metaDescription": "Calculate bond prices, current yield, and yield to maturity",
+      "guide": {
+        "steps": [
+          "Enter the bond face value, coupon rate, years to maturity, and current market price.",
+          "Add the payment frequency and any call or tax assumptions if applicable.",
+          "Review the yield to maturity, current yield, and estimated total return."
+        ],
+        "explanationTitle": "How bond yields work",
+        "formula": "Approx YTM = (annual coupon + (face - price) / years) / ((face + price) / 2)",
+        "explanation": [
+          "The coupon rate tells you the annual interest payment as a percentage of face value.",
+          "Yield to maturity reflects the total return if you hold the bond until it matures, including price changes and reinvested coupons.",
+          "When market interest rates rise, existing bond prices usually fall, and vice versa."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between coupon and yield?",
+            "a": "Coupon is the fixed interest payment; yield is the effective return based on the price you actually paid."
+          },
+          {
+            "q": "Why does the bond price move opposite to interest rates?",
+            "a": "New bonds pay the market rate, so an older bond with a lower coupon must trade at a discount to compete."
+          },
+          {
+            "q": "Is this calculator suitable for zero-coupon bonds?",
+            "a": "It works best for coupon bonds; zero-coupon bonds need a different reinvestment assumption."
+          }
+        ]
+      }
     },
     "annuity-calculator": {
       "name": "Annuity",
       "description": "Calculate annuity payments and retirement income",
-      "metaDescription": "Calculate annuity payments and retirement income projections"
+      "metaDescription": "Calculate annuity payments and retirement income projections",
+      "guide": {
+        "steps": [
+          "Choose the annuity type: ordinary annuity (payments at end of period) or annuity due (payments at beginning).",
+          "Enter the periodic payment, annual interest rate, number of periods, and starting principal if any.",
+          "Review the future value, present value, and total interest earned."
+        ],
+        "explanationTitle": "Ordinary annuity vs annuity due",
+        "formula": "FV ordinary = PMT × (((1 + r)^n - 1) / r); FV due = FV ordinary × (1 + r)",
+        "explanation": [
+          "An ordinary annuity assumes each payment occurs at the end of a period, like a typical loan payment.",
+          "An annuity due assumes payments at the start of each period, which earns one extra period of interest.",
+          "The same payment stream is worth more in an annuity due because each cash flow is invested sooner."
+        ],
+        "faq": [
+          {
+            "q": "What is a real-world example of an annuity due?",
+            "a": "Apartment rent and gym memberships are common examples because payment is due at the beginning of each month."
+          },
+          {
+            "q": "Can I use this for retirement income planning?",
+            "a": "Yes; it gives a first-order estimate for structured payouts, though real products may include fees and riders."
+          },
+          {
+            "q": "Does the calculator handle inflation?",
+            "a": "No; the rate entered is nominal. For real value, subtract expected inflation from the rate."
+          }
+        ]
+      }
     },
     "body-fat": {
       "name": "Body Fat",
@@ -4564,32 +4676,200 @@
     "moment-of-inertia": {
       "name": "Moment of Inertia Calculator",
       "description": "Calculate second moment of area for various cross-sections",
-      "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem."
+      "metaDescription": "Free moment of inertia calculator. Calculate second moment of area for rectangular, circular, I-beam, hollow, and custom cross-sections. Includes parallel axis theorem.",
+      "guide": {
+        "steps": [
+          "Select the cross-section shape from the list or choose custom input.",
+          "Enter the required dimensions such as width, height, diameter, or radius.",
+          "Review the area moment of inertia and radius of gyration for bending and deflection calculations."
+        ],
+        "explanationTitle": "Area moment of inertia in beams",
+        "formula": "Rectangle: I = b × h^3 / 12; Circle: I = π × d^4 / 64",
+        "explanation": [
+          "The area moment of inertia measures how a cross-section resists bending; larger values mean less deflection under the same load.",
+          "It depends on the shape and orientation of the cross-section, not on the material itself.",
+          "The radius of gyration relates the moment of inertia to the cross-sectional area and is useful for buckling analysis."
+        ],
+        "faq": [
+          {
+            "q": "Is this the same as mass moment of inertia?",
+            "a": "No; area moment of inertia relates to bending stiffness, while mass moment of inertia relates to rotational inertia."
+          },
+          {
+            "q": "Why does orientation matter for a rectangle?",
+            "a": "A beam laid flat has a much lower I about the bending axis than the same beam standing upright."
+          },
+          {
+            "q": "Can I use this for composite shapes?",
+            "a": "Yes, by splitting the section into simple shapes and applying the parallel axis theorem."
+          }
+        ]
+      }
     },
     "beam-deflection": {
       "name": "Beam Deflection Calculator",
       "description": "Calculate beam deflection, shear, and bending moment with diagrams",
-      "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams."
+      "metaDescription": "Free beam deflection calculator. Analyze simply supported, cantilever, and fixed-fixed beams with point or distributed loads. Includes shear and moment diagrams.",
+      "guide": {
+        "steps": [
+          "Select the beam support condition: cantilever, simply supported, or fixed ends.",
+          "Enter beam length, load magnitude, load position, and material properties like Young's modulus and moment of inertia.",
+          "Review the maximum deflection, reaction forces, and bending moment diagram summary."
+        ],
+        "explanationTitle": "Deflection of elastic beams",
+        "formula": "Max deflection depends on load case; common case: δ_max = P × L^3 / (48 × E × I) for center point load",
+        "explanation": [
+          "Beam deflection describes how much a structural member bends under applied loads without permanent deformation.",
+          "The deflection depends on load type, support conditions, span length, material stiffness, and cross-section shape.",
+          "Staying within allowable deflection limits prevents cracks in finishes and ensures serviceability."
+        ],
+        "faq": [
+          {
+            "q": "What is allowable deflection?",
+            "a": "Typical limits range from L/180 to L/360 of the span, depending on the building code and use."
+          },
+          {
+            "q": "Does this calculator replace structural engineering review?",
+            "a": "No; it is an educational tool. Real designs require code checks for strength, stability, and safety factors."
+          },
+          {
+            "q": "Can I combine multiple loads?",
+            "a": "Yes by superposition: calculate deflection for each load case and add the results if the system remains elastic."
+          }
+        ]
+      }
     },
     "stress-strain": {
       "name": "Stress-Strain Calculator",
       "description": "Calculate stress, strain, and Young's modulus with material database",
-      "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete)."
+      "metaDescription": "Free stress-strain calculator. Calculate engineering stress, strain, Young's modulus, and safety factor. Includes material database with 30+ materials (steel, aluminum, wood, concrete).",
+      "guide": {
+        "steps": [
+          "Enter the applied force and the original cross-sectional area to compute stress.",
+          "Enter the change in length and original length to compute strain.",
+          "Review stress, strain, and Young's modulus if both stress and strain are provided."
+        ],
+        "explanationTitle": "Stress, strain, and Young's modulus",
+        "formula": "Stress = force / area; Strain = change_in_length / original_length; E = stress / strain",
+        "explanation": [
+          "Stress is the internal force distributed over a cross-section, measured in pascals or psi.",
+          "Strain is the deformation per unit length; it is dimensionless because it is a ratio of lengths.",
+          "Young's modulus is the slope of the elastic region and describes how stiff a material is under tension or compression."
+        ],
+        "faq": [
+          {
+            "q": "What units should I use?",
+            "a": "Use consistent units: newtons with square meters give pascals; pounds with square inches give psi."
+          },
+          {
+            "q": "Can strain be greater than 1?",
+            "a": "Yes, but most engineering materials are designed to stay well below 1 in the elastic range."
+          },
+          {
+            "q": "Is Young's modulus the same in tension and compression?",
+            "a": "For many materials it is approximately the same, but brittle materials can behave differently in compression."
+          }
+        ]
+      }
     },
     "column-buckling": {
       "name": "Column Buckling Calculator",
       "description": "Calculate Euler critical load, AISC allowable load, and slenderness ratio for columns",
-      "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases."
+      "metaDescription": "Free column buckling calculator. Compute Euler critical load, AISC allowable stress, slenderness ratio, and effective length with material and section databases.",
+      "guide": {
+        "steps": [
+          "Enter the column length, end fixity factor, cross-sectional area, and least moment of inertia.",
+          "Provide the material's modulus of elasticity and any applied axial load.",
+          "Review the critical buckling load and slenderness ratio to judge stability."
+        ],
+        "explanationTitle": "Euler buckling of columns",
+        "formula": "P_cr = π^2 × E × I / (K × L)^2",
+        "explanation": [
+          "Euler buckling occurs when a slender column under compression suddenly deflects sideways.",
+          "The effective length factor K depends on how the ends are restrained; pinned ends use K=1.0, fixed ends use K=0.5.",
+          "The slenderness ratio tells you whether Euler theory applies; very short columns fail by crushing rather than buckling."
+        ],
+        "faq": [
+          {
+            "q": "What is the slenderness ratio limit for Euler buckling?",
+            "a": "Euler is generally valid when the slenderness ratio is above about 100 for steel, but codes provide specific transition limits."
+          },
+          {
+            "q": "Does material strength affect Euler buckling?",
+            "a": "Not directly; Euler critical load depends only on elastic modulus, geometry, and length. Yield strength matters for inelastic buckling."
+          },
+          {
+            "q": "Can I account for self-weight?",
+            "a": "This calculator uses an axial load you provide; add the column's self-weight to the applied load if it is significant."
+          }
+        ]
+      }
     },
     "pipe-flow": {
       "name": "Pipe Flow Calculator",
       "description": "Calculate pressure drop, Reynolds number, and friction factor for pipe flow",
-      "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases."
+      "metaDescription": "Free pipe flow calculator. Compute Darcy-Weisbach pressure drop, Reynolds number, Colebrook-White friction factor, and head loss with pipe material and fluid databases.",
+      "guide": {
+        "steps": [
+          "Enter the pipe inner diameter, pipe length, and roughness for the material.",
+          "Provide the fluid properties: density and dynamic viscosity, plus either flow rate or pressure drop.",
+          "Review the Reynolds number, friction factor, head loss, and velocity."
+        ],
+        "explanationTitle": "Pressure drop in pipe flow",
+        "formula": "Head loss = f × (L/D) × (v^2 / (2g)); Reynolds number = ρ × v × D / μ",
+        "explanation": [
+          "The Reynolds number tells you whether the flow is laminar, transitional, or turbulent.",
+          "The Darcy friction factor depends on Reynolds number and pipe roughness; it links velocity to pressure drop.",
+          "Head loss is the energy lost per unit weight of fluid due to friction along the pipe."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between Darcy and Fanning friction factor?",
+            "a": "Darcy-Weisbach uses the Darcy friction factor, which is four times the Fanning friction factor."
+          },
+          {
+            "q": "Can I use this for gases?",
+            "a": "Yes for incompressible approximations; for long pipelines or high pressure drops, compressible flow corrections are needed."
+          },
+          {
+            "q": "Does the calculator include minor losses from fittings?",
+            "a": "No; it computes major frictional losses only. Add fitting losses separately using loss coefficients."
+          }
+        ]
+      }
     },
     "engineering-unit-converter": {
       "name": "Engineering Unit Converter",
       "description": "Convert between engineering units: force, pressure, stress, torque, and more",
-      "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus."
+      "metaDescription": "Free engineering unit converter with NIST-precision factors. Convert force, pressure, stress, torque, density, length, area, moment of inertia, and section modulus.",
+      "guide": {
+        "steps": [
+          "Select the physical quantity you want to convert, such as force, pressure, stress, torque, density, or energy.",
+          "Enter the value and choose the source unit and target unit.",
+          "Review the converted value and the conversion factor used."
+        ],
+        "explanationTitle": "Engineering unit consistency",
+        "formula": "Result = input_value × (target_unit_in_base / source_unit_in_base)",
+        "explanation": [
+          "Engineering calculations fail when units are mixed; converting everything to a consistent system avoids order-of-magnitude errors.",
+          "The SI system uses newtons, pascals, and meters, while the US customary system uses pounds, psi, and inches.",
+          "Some units like mass density and specific weight look similar but have different dimensions and must not be interchanged."
+        ],
+        "faq": [
+          {
+            "q": "What is the difference between mass and force units?",
+            "a": "Mass is measured in kilograms or slugs; force is measured in newtons or pounds. On Earth, weight is a force equal to mass times gravity."
+          },
+          {
+            "q": "Can I convert between SI and US units?",
+            "a": "Yes; the calculator handles common conversions between metric and US customary engineering units."
+          },
+          {
+            "q": "Why does pressure use both Pa and N/m^2?",
+            "a": "Pascal and newton per square meter are the same unit; different names are used in different engineering fields."
+          }
+        ]
+      }
     },
     "molecular-weight": {
       "name": "Molecular Weight Calculator",
@@ -5387,7 +5667,35 @@
       "totalInterest": "Total interest",
       "totalPaid": "Total paid",
       "order": "Payoff order",
-      "savings": "Avalanche saves {months} months and {interest} in interest versus snowball."
+      "savings": "Avalanche saves {months} months and {interest} in interest versus snowball.",
+      "guide": {
+        "steps": [
+          "List each debt with its current balance, minimum payment, and interest rate.",
+          "Choose a strategy: snowball (pay smallest balance first) or avalanche (pay highest interest first).",
+          "Enter any extra monthly amount you can add above the minimums, then review the estimated payoff date and total interest."
+        ],
+        "explanationTitle": "Snowball vs avalanche payoff strategy",
+        "formula": "Monthly surplus = extra_payment + minimums_of_paid_off_debts",
+        "explanation": [
+          "The snowball method gives quick wins by clearing the smallest debt first, which can help maintain motivation.",
+          "The avalanche method minimizes total interest by attacking the highest-rate debt first, saving money mathematically.",
+          "Both methods use the same core idea: once a debt is gone, redirect its payment to the next target debt."
+        ],
+        "faq": [
+          {
+            "q": "Which method saves more money?",
+            "a": "Avalanche usually saves more interest overall, but snowball may be easier to stick with if motivation is a challenge."
+          },
+          {
+            "q": "Should I stop saving while paying off debt?",
+            "a": "Keep a small emergency fund first; then direct extra cash toward high-interest debt before long-term investing."
+          },
+          {
+            "q": "Does this calculator include fees or penalties?",
+            "a": "No; it uses balance, rate, and payment only. Check your loan terms for prepayment penalties."
+          }
+        ]
+      }
     },
     "income-tax": {
       "name": "Income Tax Calculator",

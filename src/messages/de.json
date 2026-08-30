@@ -1029,7 +1029,35 @@
     "speed": {
       "name": "Geschwindigkeits-Konverter",
       "description": "Konvertieren Sie zwischen m/s, km/h, mph, Knoten und mehr",
-      "metaDescription": "Konvertieren Sie Geschwindigkeit zwischen Meter pro Sekunde, km/h, mph und mehr"
+      "metaDescription": "Konvertieren Sie Geschwindigkeit zwischen Meter pro Sekunde, km/h, mph und mehr",
+      "guide": {
+        "steps": [
+          "Gib den Geschwindigkeitswert ein und wahle die aktuelle Einheit, z. B. Meter pro Sekunde oder Meilen pro Stunde.",
+          "Wahle die Zieleinheit fur die Umrechnung.",
+          "Prufe die umgerechnete Geschwindigkeit und einige gangige Referenzwerte."
+        ],
+        "explanationTitle": "Geschwindigkeit, Geschwindigkeitsvektor und Einheitenumrechnung",
+        "formula": "Zielgeschwindigkeit = Ausgangsgeschwindigkeit × (Ausgangseinheit_in_m/s / Zieleinheit_in_m/s)",
+        "explanation": [
+          "Geschwindigkeit ist der skalare Betrag der Bewegung; der Geschwindigkeitsvektor enthalt zusatzlich die Richtung.",
+          "Gangige Einheiten variieren nach Land und Fachgebiet: km/h fur Fahrzeuge, m/s in der Physik, Knoten in Schifffahrt und Luftfahrt.",
+          "Die Umrechnung uber eine Basiseinheit wie m/s halt die Rechnung einfach und vermeidet akkumulierte Rundungsfehler."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Geschwindigkeit und Geschwindigkeitsvektor?",
+            "a": "Geschwindigkeit ist ein Skalar mit nur einer Grosse; der Vektor fugt eine Richtung hinzu."
+          },
+          {
+            "q": "Warum nutzen Schiffe und Flugzeuge Knoten?",
+            "a": "Ein Knoten ist eine Seemeile pro Stunde; Seemeilen hangen direkt mit der Breite zusammen, was die Navigation vereinfacht."
+          },
+          {
+            "q": "Kann ich zwischen Pace und Geschwindigkeit umrechnen?",
+            "a": "Ja; Pace ist die Umkehrung der Geschwindigkeit, ausgedruckt als Zeit pro Distanz, z. B. Minuten pro Kilometer."
+          }
+        ]
+      }
     },
     "aspect-ratio": {
       "name": "Seitenverhaeltnis",
@@ -2786,17 +2814,101 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Vergleichen Sie Traditional vs Roth IRA Altersvorsorgekonten",
-      "metaDescription": "Vergleichen Sie Traditional und Roth IRA Altersvorsorge und Steuervorteile"
+      "metaDescription": "Vergleichen Sie Traditional und Roth IRA Altersvorsorge und Steuervorteile",
+      "guide": {
+        "steps": [
+          "Wahle, ob du Traditional IRA, Roth IRA oder beide vergleichen mochtest.",
+          "Gib dein aktuelles Alter, geplantes Rentenalter, jahrliche Einzahlung und erwartete Rendite ein.",
+          "Vergleiche den geschatzten steuerbereinigten Endbetrag und prufe, welches Konto mehr verfugbares Geld liefert."
+        ],
+        "explanationTitle": "Traditional IRA vs. Roth IRA",
+        "formula": "Zukunftswert = Einzahlung × (((1 + r)^n - 1) / r) × (1 - Steuersatz_oder_0)",
+        "explanation": [
+          "Eine Traditional IRA gewahrt heute einen Steuerabzug, aber Auszahlungen im Ruhestand werden als normales Einkommen besteuert.",
+          "Eine Roth IRA nutzt versteuerte Euros, daher sind qualifizierte Auszahlungen im Ruhestand in der Regel steuerfrei.",
+          "Die bessere Wahl hangt davon ab, ob dein aktueller Steuersatz hoher oder niedriger als der erwartete Steuersatz im Ruhestand ist."
+        ],
+        "faq": [
+          {
+            "q": "Kann ich gleichzeitig in Traditional und Roth IRA einzahlen?",
+            "a": "Ja, aber die Summe darf das jahrliche IRS-Limit fur deinen Status und Einkommen nicht uberschreiten."
+          },
+          {
+            "q": "Sind Auszahlungen nach 59½ immer straffrei?",
+            "a": "Traditional-Auszahlungen werden versteuert; qualifizierte Roth-Auszahlungen sind steuerfrei. Nicht qualifizierte Auszahlungen konnen Steuern und Strafen auslosen."
+          },
+          {
+            "q": "Sind Required Minimum Distributions enthalten?",
+            "a": "Nein; es ist eine vereinfachte Projektion. RMD und komplexe Szenarien gehoren in eine detaillierte Steuerplanung."
+          }
+        ]
+      }
     },
     "bond-calculator": {
       "name": "Anleihen",
       "description": "Berechnen Sie Anleihenpreise, Renditen und Ertraege",
-      "metaDescription": "Berechnen Sie Anleihenpreise, aktuelle Rendite und Endfaelligkeitsrendite"
+      "metaDescription": "Berechnen Sie Anleihenpreise, aktuelle Rendite und Endfaelligkeitsrendite",
+      "guide": {
+        "steps": [
+          "Gib Nennwert, Kuponsatz, Restlaufzeit und aktuellen Marktpreis der Anleihe ein.",
+          "Ergänze Zinszahlungshaufigkeit, Tilgungsannahmen und Steuerannahmen falls zutreffend.",
+          "Prufe Rendite bis zur Falligkeit, aktuelle Rendite und geschatzte Gesamtrendite."
+        ],
+        "explanationTitle": "Wie Anleiherenditen funktionieren",
+        "formula": "Naherungsweise YTM = (jahrlicher Kupon + (Nennwert - Preis) / Jahre) / ((Nennwert + Preis) / 2)",
+        "explanation": [
+          "Der Kuponsatz zeigt die jahrliche Zinszahlung als Prozentsatz des Nennwerts.",
+          "Die Yield-to-Maturity spiegelt die Gesamtrendite bis zur Falligkeit wider, inklusive Kursveranderungen und wiederanlegten Kupons.",
+          "Steigen Marktzinsen, sinken Kurse bestehender Anleihen, und umgekehrt."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Kupon und Rendite?",
+            "a": "Der Kupon ist die feste Zinszahlung; die Rendite ist die effektive Verzinsung basierend auf dem tatsachlichen Kaufpreis."
+          },
+          {
+            "q": "Warum bewegen sich Anleihekurse entgegengesetzt zu Zinsen?",
+            "a": "Neue Anleihen zahlen den Marktzins, daher muss eine altere Anleihe mit niedrigerem Kupon mit Abschlag gehandelt werden."
+          },
+          {
+            "q": "Ist der Rechner fur Nullkupon-Anleihen geeignet?",
+            "a": "Er eignet sich am besten fur Kuponanleihen; Nullkupon-Anleihen benotigen eine andere Wiederanlageannahme."
+          }
+        ]
+      }
     },
     "annuity-calculator": {
       "name": "Renten",
       "description": "Berechnen Sie Rentenzahlungen und Ruhestandseinkommen",
-      "metaDescription": "Berechnen Sie Rentenzahlungen und Ruhestandseinkommensprognosen"
+      "metaDescription": "Berechnen Sie Rentenzahlungen und Ruhestandseinkommensprognosen",
+      "guide": {
+        "steps": [
+          "Wahle die Rentenart: nachschussige Rente (Zahlung am Periodenende) oder vorschussige Rente (am Periodenanfang).",
+          "Gib die periodische Zahlung, den Jahreszins, die Periodenanzahl und gegebenenfalls das Startkapital ein.",
+          "Prufe Endwert, Barwert und gesamte Zinsen."
+        ],
+        "explanationTitle": "Nachschussige vs. vorschussige Rente",
+        "formula": "FV nachschussig = PMT × (((1 + r)^n - 1) / r); FV vorschussig = FV nachschussig × (1 + r)",
+        "explanation": [
+          "Eine nachschussige Rente geht davon aus, dass die Zahlung am Periodenende erfolgt, wie bei einer typischen Kreditrate.",
+          "Eine vorschussige Rente setzt Zahlungen am Periodenanfang an und verdient so eine zusatzliche Periode Zinsen.",
+          "Der gleiche Zahlungsstrom ist als vorschussige Rente wertvoller, weil jeder Cashflow fruher angelegt wird."
+        ],
+        "faq": [
+          {
+            "q": "Was ist ein reales Beispiel fur eine vorschussige Rente?",
+            "a": "Miete und Fitnessstudio-Mitgliedschaften sind ublich, weil die Zahlung zu Monatsbeginn fallig ist."
+          },
+          {
+            "q": "Kann ich das fur Rentenplanung nutzen?",
+            "a": "Ja; es liefert eine erste Schatzung fur strukturierte Auszahlungen, echte Produkte konnen aber Gebuhren enthalten."
+          },
+          {
+            "q": "Berucksichtigt der Rechner Inflation?",
+            "a": "Nein; der eingegebene Zinssatz ist nominal. Fur reale Werte ziehe die erwartete Inflation ab."
+          }
+        ]
+      }
     },
     "body-fat": {
       "name": "Koerperfett",
@@ -4564,17 +4676,101 @@
     "moment-of-inertia": {
       "name": "Flächenträgheitsmoment-Rechner",
       "description": "Berechnen Sie das Flächenträgheitsmoment für verschiedene Querschnitte",
-      "metaDescription": "Kostenloser Flächenträgheitsmoment-Rechner. Berechnen Sie das Trägheitsmoment für rechteckige, kreisförmige, I-Träger, hohle und benutzerdefinierte Querschnitte. Enthält Steinerschen Satz."
+      "metaDescription": "Kostenloser Flächenträgheitsmoment-Rechner. Berechnen Sie das Trägheitsmoment für rechteckige, kreisförmige, I-Träger, hohle und benutzerdefinierte Querschnitte. Enthält Steinerschen Satz.",
+      "guide": {
+        "steps": [
+          "Wahle die Querschnittsform aus der Liste oder nutze benutzerdefinierte Eingaben.",
+          "Gib die benotigten Abmessungen wie Breite, Hohe, Durchmesser oder Radius ein.",
+          "Prufe Flachentragheitsmoment und Tragheitsradius fur Biegungs- und Durchbiegungsberechnungen."
+        ],
+        "explanationTitle": "Flachentragheitsmoment bei Tragern",
+        "formula": "Rechteck: I = b × h^3 / 12; Kreis: I = π × d^4 / 64",
+        "explanation": [
+          "Das Flachentragheitsmoment beschreibt den Widerstand eines Querschnitts gegen Biegung; grossere Werte bedeuten geringere Durchbiegung.",
+          "Es hangt von Form und Ausrichtung des Querschnitts ab, nicht vom Material.",
+          "Der Tragheitsradius verknupft das Flachentragheitsmoment mit der Querschnittsflache und ist nutzlich fur Knicknachweise."
+        ],
+        "faq": [
+          {
+            "q": "Ist das gleich wie das Massentragheitsmoment?",
+            "a": "Nein; das Flachentragheitsmoment beschreibt die Biegesteifigkeit, das Massentragheitsmoment die Rotations-Tragheit."
+          },
+          {
+            "q": "Warum spielt die Ausrichtung bei Rechtecken eine Rolle?",
+            "a": "Ein flach liegender Trager hat ein deutlich kleineres I um die Biegeachse als derselbe Trager aufrecht."
+          },
+          {
+            "q": "Kann ich es fur zusammengesetzte Querschnitte verwenden?",
+            "a": "Ja, indem der Querschnitt in einfache Formen zerlegt und der Satz von Steiner angewendet wird."
+          }
+        ]
+      }
     },
     "beam-deflection": {
       "name": "Trägerdurchbiegungs-Rechner",
       "description": "Berechnen Sie Trägerdurchbiegung, Querkraft und Biegemoment mit Diagrammen",
-      "metaDescription": "Kostenloser Trägerdurchbiegungs-Rechner. Analysieren Sie einfach gestützte, freitragende und beidseitig eingespannte Träger mit Einzellasten oder Streckenlasten. Enthält Querkraft- und Momentendiagramme."
+      "metaDescription": "Kostenloser Trägerdurchbiegungs-Rechner. Analysieren Sie einfach gestützte, freitragende und beidseitig eingespannte Träger mit Einzellasten oder Streckenlasten. Enthält Querkraft- und Momentendiagramme.",
+      "guide": {
+        "steps": [
+          "Wahle die Lagerungsart des Tragers: Kragarm, einfach gelagert oder beidseitig eingespannt.",
+          "Gib Tragerlange, Lastgrosse, Lastposition und Materialkennwerte wie Elastizitatsmodul und Tragheitsmoment ein.",
+          "Prufe maximale Durchbiegung, Auflagerkrafte und eine Zusammenfassung des Biegemomentenverlaufs."
+        ],
+        "explanationTitle": "Durchbiegung elastischer Trager",
+        "formula": "Max. Durchbiegung hangt von der Laststellung ab; einfach gelagert mit Mittellast: δ_max = P × L^3 / (48 × E × I)",
+        "explanation": [
+          "Die Tragerdurchbiegung beschreibt, wie stark ein Bauteil unter Last biegt, ohne bleibende Verformung.",
+          "Sie hangt von Lasttyp, Lagerung, Spannweite, Materialsteifigkeit und Querschnittsform ab.",
+          "Die Einhaltung zulassiger Durchbiegungswerte verhindert Risse im Ausbau und gewahrleistet Gebrauchstauglichkeit."
+        ],
+        "faq": [
+          {
+            "q": "Was ist eine zulassige Durchbiegung?",
+            "a": "Gangige Grenzen liegen zwischen L/180 und L/360 der Spannweite, je nach Norm und Nutzung."
+          },
+          {
+            "q": "Ersetzt der Rechner eine statische Prufung?",
+            "a": "Nein; er ist ein Lernwerkzeug. Reale Konstruktionen erfordern Nachweise fur Festigkeit, Stabilitat und Sicherheit."
+          },
+          {
+            "q": "Kann ich mehrere Lasten kombinieren?",
+            "a": "Ja, durch Superposition: Durchbiegungen jeder Lastfall einzeln berechnen und im elastischen Bereich addieren."
+          }
+        ]
+      }
     },
     "stress-strain": {
       "name": "Spannungs-Dehnungs-Rechner",
       "description": "Berechnen Sie Spannung, Dehnung und Elastizitätsmodul mit Materialdatenbank",
-      "metaDescription": "Kostenloser Spannungs-Dehnungs-Rechner. Berechnen Sie Spannung, Dehnung, Elastizitätsmodul und Sicherheitsfaktor. Enthält Datenbank mit 30+ Materialien (Stahl, Aluminium, Holz, Beton)."
+      "metaDescription": "Kostenloser Spannungs-Dehnungs-Rechner. Berechnen Sie Spannung, Dehnung, Elastizitätsmodul und Sicherheitsfaktor. Enthält Datenbank mit 30+ Materialien (Stahl, Aluminium, Holz, Beton).",
+      "guide": {
+        "steps": [
+          "Gib die wirkende Kraft und die ursprungliche Querschnittsflache ein, um die Spannung zu berechnen.",
+          "Gib die Langenanderung und die ursprungliche Lange ein, um die Dehnung zu berechnen.",
+          "Werden Spannung und Dehnung angegeben, wird das Elastizitatsmodul angezeigt."
+        ],
+        "explanationTitle": "Spannung, Dehnung und Elastizitatsmodul",
+        "formula": "Spannung = Kraft / Flache; Dehnung = Langenanderung / Ursprungslange; E = Spannung / Dehnung",
+        "explanation": [
+          "Spannung ist die uber den Querschnitt verteilte innere Kraft, gemessen in Pascal oder psi.",
+          "Dehnung ist die Formanderung pro Langeneinheit und dimensionslos, da sie ein Langenverhaltnis ist.",
+          "Das Elastizitatsmodul ist die Steigung im elastischen Bereich und beschreibt die Steifigkeit eines Materials unter Zug oder Druck."
+        ],
+        "faq": [
+          {
+            "q": "Welche Einheiten soll ich verwenden?",
+            "a": "Nutze konsistente Einheiten: Newton mit Quadratmetern ergeben Pascal; Pfund mit Quadratzoll ergeben psi."
+          },
+          {
+            "q": "Kann Dehnung grosser als 1 sein?",
+            "a": "Ja, aber die meisten technischen Werkstoffe werden so ausgelegt, dass sie im elastischen Bereich deutlich unter 1 bleiben."
+          },
+          {
+            "q": "Ist das Elastizitatsmodul unter Zug und Druck gleich?",
+            "a": "Bei vielen Materialen naherungsweise ja, bei sproden Werkstoffen kann es unter Druck anders aussehen."
+          }
+        ]
+      }
     },
     "vm-storage-calculator": {
       "name": "VM-Speicherrechner",
@@ -5066,17 +5262,101 @@
     "column-buckling": {
       "name": "Knickrechner für Stützen",
       "description": "Berechnen Sie die Euler-Knicklast, die zulässige AISC-Last und das Schlankheitsverhältnis von Stützen",
-      "metaDescription": "Kostenloser Knickrechner für Stützen. Berechnen Sie Euler-Knicklast, zulässige AISC-Spannung, Schlankheitsverhältnis und effektive Länge mit Material- und Querschnittsdatenbanken."
+      "metaDescription": "Kostenloser Knickrechner für Stützen. Berechnen Sie Euler-Knicklast, zulässige AISC-Spannung, Schlankheitsverhältnis und effektive Länge mit Material- und Querschnittsdatenbanken.",
+      "guide": {
+        "steps": [
+          "Gib die Saulenlange, den Lagerungsfaktor, die Querschnittsflache und das kleinste Tragheitsmoment ein.",
+          "Gib den Elastizitatsmodul des Materials und die vorhandene axiale Last an.",
+          "Prufe die kritische Knicklast und die Schlankheit, um die Stabilitat zu beurteilen."
+        ],
+        "explanationTitle": "Eulersches Knicken von Stutzen",
+        "formula": "P_cr = π^2 × E × I / (K × L)^2",
+        "explanation": [
+          "Beim Euler-Knicken biegt sich eine schlanke Druckstutze plotzlich seitlich durch.",
+          "Der Knicklängenbeiwert K hangt von der Lagerung der Enden ab; gelenkig K=1.0, eingespannt K=0.5.",
+          "Die Schlankheit gibt an, ob die Euler-Theorie gilt; kurze Stutzen versagen durch Quetschung statt Knicken."
+        ],
+        "faq": [
+          {
+            "q": "Welche Schlankheit ist fur Euler-Knicken erforderlich?",
+            "a": "Fur Stahl gilt Euler meist oberhalb Schlankheit 100, aber Normen geben genaue Ubergangsgrenzen."
+          },
+          {
+            "q": "Beeinflusst die Materialfestigkeit das Euler-Knicken?",
+            "a": "Nicht direkt; die kritische Euler-Last hangt nur vom Elastizitatsmodul, der Geometrie und der Lange ab. Streckgrenze zahlt bei inelastischem Knicken."
+          },
+          {
+            "q": "Kann ich das Eigengewicht berucksichtigen?",
+            "a": "Der Rechner nutzt die von dir angegebene Achslast; addiere das Eigengewicht, wenn es signifikant ist."
+          }
+        ]
+      }
     },
     "pipe-flow": {
       "name": "Rohrströmungsrechner",
       "description": "Berechnen Sie Druckverlust, Reynoldszahl und Reibungsbeiwert für Rohrströmungen",
-      "metaDescription": "Kostenloser Rohrströmungsrechner. Berechnen Sie Darcy-Weisbach-Druckverlust, Reynoldszahl, Colebrook-White-Reibungsbeiwert und Verlusthöhe mit Rohrmaterial- und Fluiddatenbanken."
+      "metaDescription": "Kostenloser Rohrströmungsrechner. Berechnen Sie Darcy-Weisbach-Druckverlust, Reynoldszahl, Colebrook-White-Reibungsbeiwert und Verlusthöhe mit Rohrmaterial- und Fluiddatenbanken.",
+      "guide": {
+        "steps": [
+          "Gib den Innendurchmesser, die Rohrlange und die Rauigkeit des Materials ein.",
+          "Gib die Stoffeigenschaften Dichte und dynamische Viskositat an sowie Volumenstrom oder Druckverlust.",
+          "Prufe Reynolds-Zahl, Reibungsbeiwert, Druckhohenverlust und Stromungsgeschwindigkeit."
+        ],
+        "explanationTitle": "Druckverlust in Rohrstromungen",
+        "formula": "Druckhohenverlust = f × (L/D) × (v^2 / (2g)); Reynolds-Zahl = ρ × v × D / μ",
+        "explanation": [
+          "Die Reynolds-Zahl zeigt, ob die Stromung laminar, transitional oder turbulent ist.",
+          "Der Darcy-Reibungsbeiwert hangt von Reynolds-Zahl und Rohrrauigkeit ab und verknupft Geschwindigkeit mit Druckverlust.",
+          "Der Druckhohenverlust ist die durch Reibung entlang des Rohrs verlorene Energie pro Gewichtseinheit des Fluids."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Darcy- und Fanning-Reibungsbeiwert?",
+            "a": "Darcy-Weisbach verwendet den Darcy-Beiwert, der viermal so gross wie der Fanning-Beiwert ist."
+          },
+          {
+            "q": "Kann ich es fur Gase verwenden?",
+            "a": "Bei inkompressibler Naherung ja; bei langen Rohrleitungen oder grossem Druckverlust sind kompressible Korrekturen notig."
+          },
+          {
+            "q": "Sind Einzelverluste durch Armaturen enthalten?",
+            "a": "Nein; es werden nur Reibungsverluste berechnet. Armaturenverluste musst du getrennt mit Widerstandsbeiwerten addieren."
+          }
+        ]
+      }
     },
     "engineering-unit-converter": {
       "name": "Technischer Einheitenumrechner",
       "description": "Umrechnung zwischen technischen Einheiten: Kraft, Druck, Spannung, Drehmoment und mehr",
-      "metaDescription": "Kostenloser technischer Einheitenumrechner mit NIST-Präzision. Umrechnung von Kraft, Druck, Spannung, Drehmoment, Dichte, Länge, Fläche, Flächenträgheitsmoment und Widerstandsmoment."
+      "metaDescription": "Kostenloser technischer Einheitenumrechner mit NIST-Präzision. Umrechnung von Kraft, Druck, Spannung, Drehmoment, Dichte, Länge, Fläche, Flächenträgheitsmoment und Widerstandsmoment.",
+      "guide": {
+        "steps": [
+          "Wahle die physikalische Grosse, die du umrechnen mochtest: Kraft, Druck, Spannung, Drehmoment, Dichte oder Energie.",
+          "Gib den Wert ein und wahle Ausgangs- und Zieleinheit.",
+          "Prufe das umgerechnete Ergebnis und den verwendeten Umrechnungsfaktor."
+        ],
+        "explanationTitle": "Konsistenz technischer Einheiten",
+        "formula": "Ergebnis = Eingabewert × (Zieleinheit_in_Basis / Ausgangseinheit_in_Basis)",
+        "explanation": [
+          "Ingenieurberechnungen scheitern bei gemischten Einheiten; das Umrechnen in ein konsistentes System vermeidet Grossenordnungsfehler.",
+          "Das SI-System nutzt Newton, Pascal und Meter; das US-System nutzt Pfund, psi und Zoll.",
+          "Einige Einheiten wie Massendichte und Wichte sehen ahnlich aus, haben aber unterschiedliche Dimensionen und durfen nicht vertauscht werden."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Masse- und Krafteinheiten?",
+            "a": "Masse wird in Kilogramm oder Slugs gemessen; Kraft in Newton oder Pfund. Auf der Erde ist Gewicht eine Kraft gleich Masse mal Gravitation."
+          },
+          {
+            "q": "Kann ich zwischen SI und US-Einheiten umrechnen?",
+            "a": "Ja; der Rechner unterstutzt gangige Umrechnungen zwischen metrischen und US-technischen Einheiten."
+          },
+          {
+            "q": "Warum gibt es Druck sowohl in Pa als auch in N/m^2?",
+            "a": "Pascal und Newton pro Quadratmeter sind dieselbe Einheit; verschiedene Fachgebiete nutzen unterschiedliche Namen."
+          }
+        ]
+      }
     },
     "molecular-weight": {
       "name": "Molmassenrechner",
@@ -5387,7 +5667,35 @@
       "totalInterest": "Gesamtzinsen",
       "totalPaid": "Insgesamt bezahlt",
       "order": "Auszahlungsauftrag",
-      "savings": "Avalanche spart {months} Monate und {interest} an Zinsen im Vergleich zu Schneeball."
+      "savings": "Avalanche spart {months} Monate und {interest} an Zinsen im Vergleich zu Schneeball.",
+      "guide": {
+        "steps": [
+          "Liste jede Schuld mit Restbetrag, Mindestzahlung und Zinssatz auf.",
+          "Wahle eine Strategie: Schneeball (kleinste Schuld zuerst) oder Lawine (hochster Zins zuerst).",
+          "Gib einen monatlichen Zusatzbetrag ein und prufe das geschatzte Ablosedatum sowie die Gesamtzinsen."
+        ],
+        "explanationTitle": "Schneeball- vs. Lawinenstrategie",
+        "formula": "Monatlicher Uberschuss = Zusatzzahlung + Mindestzahlungen_abgeloster_Schulden",
+        "explanation": [
+          "Die Schneeballmethode schafft schnelle Erfolge durch die kleinste Schuld zuerst und hilft, motiviert zu bleiben.",
+          "Die Lawinenmethode minimiert die Gesamtzinsen, indem die Schulden mit dem hochsten Zins zuerst angegriffen werden.",
+          "Beide Methoden basieren auf dem gleichen Prinzip: Ist eine Schuld getilgt, wird deren Rate auf die nachste Zielschuld umgeleitet."
+        ],
+        "faq": [
+          {
+            "q": "Welche Methode spart mehr Geld?",
+            "a": "Lawine spart meist mehr Zinsen, aber Schneeball ist einfacher durchzuhalten, wenn Motivation ein Problem ist."
+          },
+          {
+            "q": "Sollte ich wahrend der Schuldenabzahlung sparen?",
+            "a": "Behalte zuerst einen kleinen Notfallfonds; dann flieBt zusatzliches Geld in Hochzins-Schulden vor langfristigen Anlagen."
+          },
+          {
+            "q": "Sind Gebuhren oder Vorfalligkeitsentschadigungen enthalten?",
+            "a": "Nein; es werden nur Saldo, Zins und Zahlung verwendet. Prufe deine Vertrage auf Vorfalligkeitskosten."
+          }
+        ]
+      }
     },
     "income-tax": {
       "name": "Einkommensteuer-Rechner",

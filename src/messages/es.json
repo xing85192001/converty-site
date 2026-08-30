@@ -1035,7 +1035,35 @@
     "speed": {
       "name": "Convertidor de velocidad",
       "description": "Convierte entre m/s, km/h, mph, nudos y más",
-      "metaDescription": "Convierta la velocidad entre metros por segundo, km/h, mph y más"
+      "metaDescription": "Convierta la velocidad entre metros por segundo, km/h, mph y más",
+      "guide": {
+        "steps": [
+          "Ingresa el valor de velocidad y selecciona la unidad actual, como metros por segundo o millas por hora.",
+          "Elige la unidad de destino para la conversion.",
+          "Revisa la velocidad convertida y algunos valores de referencia comunes."
+        ],
+        "explanationTitle": "Rapidez, velocidad y conversion de unidades",
+        "formula": "Velocidad destino = velocidad fuente × (unidad_fuente_en_m/s / unidad_destino_en_m/s)",
+        "explanation": [
+          "La rapidez es la magnitud de cuan rapido se mueve un objeto, mientras que la velocidad tambien incluye la direccion.",
+          "Las unidades comunes varian por pais y campo: km/h para vehiculos, m/s para fisica, nudos para maritimo y aviacion.",
+          "Convertir a traves de una unidad base como metros por segundo simplifica la matematica y evita errores de redondeo acumulados."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre rapidez y velocidad?",
+            "a": "La rapidez es un escalar con solo magnitud; la velocidad es un vector que anade direccion a la magnitud."
+          },
+          {
+            "q": "Por que los barcos y aviones usan nudos?",
+            "a": "Un nudo es una milla nautica por hora; las millas nauticas se relacionan directamente con la latitud, facilitando la navegacion."
+          },
+          {
+            "q": "Puedo convertir entre ritmo y velocidad?",
+            "a": "Si; el ritmo es el inverso de la velocidad expresado como tiempo por unidad de distancia, como minutos por kilometro."
+          }
+        ]
+      }
     },
     "aspect-ratio": {
       "name": "Relación de aspecto",
@@ -2792,17 +2820,101 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Compare las cuentas de jubilación IRA tradicional y Roth",
-      "metaDescription": "Compare las cuentas de jubilación y los beneficios fiscales de las IRA tradicionales y Roth"
+      "metaDescription": "Compare las cuentas de jubilación y los beneficios fiscales de las IRA tradicionales y Roth",
+      "guide": {
+        "steps": [
+          "Selecciona si quieres comparar IRA tradicional, Roth IRA o ambas.",
+          "Ingresa tu edad actual, edad de retiro planificada, contribucion anual y rendimiento esperado.",
+          "Revisa el saldo estimado despues de impuestos y compara cual cuenta puede dejarte mas dinero disponible."
+        ],
+        "explanationTitle": "IRA tradicional vs Roth IRA",
+        "formula": "Valor futuro = aporte × (((1 + r)^n - 1) / r) × (1 - tasa_impuestos_o_0)",
+        "explanation": [
+          "La IRA tradicional te da una deduccion fiscal hoy, pero los retiros en el retiro se gravan como ingreso ordinario.",
+          "La Roth IRA usa dolares despues de impuestos, por lo que los retiros calificados suelen ser libres de impuestos.",
+          "La mejor opcion depende de si tu tasa actual es mayor o menor que la tasa esperada en el retiro."
+        ],
+        "faq": [
+          {
+            "q": "Puedo contribuir a una IRA tradicional y una Roth IRA?",
+            "a": "Si, pero tu aporte anual combinado no puede superar el limite del IRS segun tu estado civil e ingresos."
+          },
+          {
+            "q": "Los retiros despues de los 59½ siempre son libres de penalizacion?",
+            "a": "Los retiros tradicionales se gravan; los Roth calificados son libres de impuestos. Los retiros no calificados pueden generar impuestos y penalizaciones."
+          },
+          {
+            "q": "El calculador incluye distribuciones minimas requeridas?",
+            "a": "No; es una proyeccion simplificada. Consulta a un asesor fiscal para RMD y escenarios complejos."
+          }
+        ]
+      }
     },
     "bond-calculator": {
       "name": "Vínculo",
       "description": "Calcule los precios, rendimientos y rentabilidades de los bonos",
-      "metaDescription": "Calcule los precios de los bonos, el rendimiento actual y el rendimiento al vencimiento."
+      "metaDescription": "Calcule los precios de los bonos, el rendimiento actual y el rendimiento al vencimiento.",
+      "guide": {
+        "steps": [
+          "Ingresa el valor nominal, tasa cupon, anos al vencimiento y precio de mercado actual del bono.",
+          "Agrega la frecuencia de pago y supuestos de impuestos o rescate si aplica.",
+          "Revisa el rendimiento al vencimiento, rendimiento actual y retorno total estimado."
+        ],
+        "explanationTitle": "Como funcionan los rendimientos de bonos",
+        "formula": "YTM aproximada = (cupon anual + (nominal - precio) / anos) / ((nominal + precio) / 2)",
+        "explanation": [
+          "La tasa cupon indica el pago de interes anual como porcentaje del valor nominal.",
+          "El rendimiento al vencimiento refleja el retorno total si mantienes el bono hasta su vencimiento, incluyendo cambios de precio y cupones reinvertidos.",
+          "Cuando las tasas de interes del mercado suben, los precios de los bonos existentes suelen caer, y viceversa."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre cupon y rendimiento?",
+            "a": "El cupon es el pago de interes fijo; el rendimiento es el retorno efectivo basado en el precio que realmente pagaste."
+          },
+          {
+            "q": "Por que el precio del bono se mueve en contra de las tasas de interes?",
+            "a": "Los bonos nuevos pagan la tasa de mercado, por lo que un bono viejo con cupon mas bajo debe cotizar con descuento para competir."
+          },
+          {
+            "q": "Es adecuado para bonos cupon cero?",
+            "a": "Funciona mejor para bonos con cupon; los cupon cero requieren un supuesto diferente de reinversion."
+          }
+        ]
+      }
     },
     "annuity-calculator": {
       "name": "Anualidad",
       "description": "Calcular pagos de anualidades e ingresos de jubilación.",
-      "metaDescription": "Calcular pagos de anualidades y proyecciones de ingresos de jubilación."
+      "metaDescription": "Calcular pagos de anualidades y proyecciones de ingresos de jubilación.",
+      "guide": {
+        "steps": [
+          "Elige el tipo de anualidad: ordinaria (pagos al final del periodo) o vencida (pagos al inicio).",
+          "Ingresa el pago periodico, tasa de interes anual, numero de periodos y capital inicial si lo hay.",
+          "Revisa el valor futuro, valor presente e intereses totales ganados."
+        ],
+        "explanationTitle": "Anualidad ordinaria vs vencida",
+        "formula": "VF ordinaria = PMT × (((1 + r)^n - 1) / r); VF vencida = VF ordinaria × (1 + r)",
+        "explanation": [
+          "Una anualidad ordinaria asume que cada pago ocurre al final del periodo, como un pago de prestamo tipico.",
+          "Una anualidad vencida asume pagos al inicio de cada periodo, lo que genera un periodo extra de interes.",
+          "El mismo flujo de pagos vale mas en anualidad vencida porque cada efectivo se invierte antes."
+        ],
+        "faq": [
+          {
+            "q": "Cual es un ejemplo real de anualidad vencida?",
+            "a": "El alquiler de un apartamento y las membresias de gimnasio son comunes porque se pagan al inicio de cada mes."
+          },
+          {
+            "q": "Puedo usarlo para planificar ingresos de retiro?",
+            "a": "Si; ofrece una estimacion de primer orden para pagos estructurados, aunque los productos reales pueden incluir comisiones."
+          },
+          {
+            "q": "Maneja la inflacion?",
+            "a": "No; la tasa ingresada es nominal. Para valor real, resta la inflacion esperada de la tasa."
+          }
+        ]
+      }
     },
     "body-fat": {
       "name": "Grasa corporal",
@@ -4570,32 +4682,200 @@
     "moment-of-inertia": {
       "name": "Calculadora de momento de inercia",
       "description": "Calcular el segundo momento de área para varias secciones transversales.",
-      "metaDescription": "Calculadora de momento libre de inercia. Calcule el segundo momento del área para secciones transversales rectangulares, circulares, de vigas en I, huecas y personalizadas. Incluye el teorema de los ejes paralelos."
+      "metaDescription": "Calculadora de momento libre de inercia. Calcule el segundo momento del área para secciones transversales rectangulares, circulares, de vigas en I, huecas y personalizadas. Incluye el teorema de los ejes paralelos.",
+      "guide": {
+        "steps": [
+          "Selecciona la forma de la seccion transversal de la lista o elige entrada personalizada.",
+          "Ingresa las dimensiones requeridas como ancho, altura, diametro o radio.",
+          "Revisa el momento de inercia del area y el radio de giro para calculos de flexion y deflexion."
+        ],
+        "explanationTitle": "Momento de inercia del area en vigas",
+        "formula": "Rectangulo: I = b × h^3 / 12; Circulo: I = π × d^4 / 64",
+        "explanation": [
+          "El momento de inercia del area mide como una seccion resiste la flexion; valores mayores significan menos deflexion bajo la misma carga.",
+          "Depende de la forma y orientacion de la seccion, no del material en si.",
+          "El radio de giro relaciona el momento de inercia con el area de la seccion y es util para analisis de pandeo."
+        ],
+        "faq": [
+          {
+            "q": "Es lo mismo que el momento de inercia de masa?",
+            "a": "No; el momento de inercia del area se relaciona con la rigidez a la flexion, mientras que el de masa se relaciona con la inercia rotacional."
+          },
+          {
+            "q": "Por que importa la orientacion de un rectangulo?",
+            "a": "Una viga colocada plana tiene un I mucho menor respecto al eje de flexion que la misma viga en posicion vertical."
+          },
+          {
+            "q": "Puedo usarlo para secciones compuestas?",
+            "a": "Si, dividiendo la seccion en formas simples y aplicando el teorema de ejes paralelos."
+          }
+        ]
+      }
     },
     "beam-deflection": {
       "name": "Calculadora de deflexión de haz",
       "description": "Calcule la deflexión, el corte y el momento flector de la viga con diagramas",
-      "metaDescription": "Calculadora de deflexión de haz libre. Analizar vigas simplemente apoyadas, voladizas y fijo-fijas con cargas puntuales o distribuidas. Incluye diagramas de cortante y momento."
+      "metaDescription": "Calculadora de deflexión de haz libre. Analizar vigas simplemente apoyadas, voladizas y fijo-fijas con cargas puntuales o distribuidas. Incluye diagramas de cortante y momento.",
+      "guide": {
+        "steps": [
+          "Selecciona la condicion de soporte de la viga: voladizo, simplemente apoyada o extremos fijos.",
+          "Ingresa la longitud de la viga, magnitud de carga, posicion de la carga y propiedades del material como modulo de Young y momento de inercia.",
+          "Revisa la deflexion maxima, fuerzas de reaccion y resumen del diagrama de momento flector."
+        ],
+        "explanationTitle": "Deflexion de vigas elasticas",
+        "formula": "Deflexion maxima depende del caso; carga puntual central: δ_max = P × L^3 / (48 × E × I)",
+        "explanation": [
+          "La deflexion de vigas describe cuanto se dobla un elemento estructural bajo cargas sin deformacion permanente.",
+          "La deflexion depende del tipo de carga, condiciones de soporte, longitud del claro, rigidez del material y forma de la seccion.",
+          "Mantenerse dentro de los limites de deflexion permisibles evita grietas en acabados y asegura la funcionalidad."
+        ],
+        "faq": [
+          {
+            "q": "Que es la deflexion admisible?",
+            "a": "Los limites tipicos van de L/180 a L/360 del claro, segun el codigo de construccion y el uso."
+          },
+          {
+            "q": "Este calculador reemplaza la revision de un ingeniero estructural?",
+            "a": "No; es una herramienta educativa. Los disenos reales requieren verificaciones de codigo para resistencia, estabilidad y factores de seguridad."
+          },
+          {
+            "q": "Puedo combinar multiples cargas?",
+            "a": "Si, por superposicion: calcular la deflexion para cada caso de carga y sumar los resultados si el sistema permanece elastico."
+          }
+        ]
+      }
     },
     "stress-strain": {
       "name": "Calculadora de tensión-deformación",
       "description": "Calcule la tensión, la deformación y el módulo de Young con la base de datos de materiales",
-      "metaDescription": "Calculadora de tensión-deformación gratuita. Calcule la tensión de ingeniería, la deformación, el módulo de Young y el factor de seguridad. Incluye base de datos de materiales con más de 30 materiales (acero, aluminio, madera, hormigón)."
+      "metaDescription": "Calculadora de tensión-deformación gratuita. Calcule la tensión de ingeniería, la deformación, el módulo de Young y el factor de seguridad. Incluye base de datos de materiales con más de 30 materiales (acero, aluminio, madera, hormigón).",
+      "guide": {
+        "steps": [
+          "Ingresa la fuerza aplicada y el area de seccion transversal original para calcular el esfuerzo.",
+          "Ingresa el cambio en longitud y la longitud original para calcular la deformacion.",
+          "Si proporcionas esfuerzo y deformacion, revisa el modulo de Young."
+        ],
+        "explanationTitle": "Esfuerzo, deformacion y modulo de Young",
+        "formula": "Esfuerzo = fuerza / area; Deformacion = cambio_longitud / longitud_original; E = esfuerzo / deformacion",
+        "explanation": [
+          "El esfuerzo es la fuerza interna distribuida sobre una seccion, medido en pascales o psi.",
+          "La deformacion es la deformacion por unidad de longitud; es adimensional porque es una razon de longitudes.",
+          "El modulo de Young es la pendiente de la region elastica y describe la rigidez de un material bajo tension o compresion."
+        ],
+        "faq": [
+          {
+            "q": "Que unidades debo usar?",
+            "a": "Usa unidades consistentes: newton con metros cuadrados dan pascales; libras con pulgadas cuadradas dan psi."
+          },
+          {
+            "q": "La deformacion puede ser mayor que 1?",
+            "a": "Si, pero la mayoria de materiales de ingenieria se disenan para mantenerse bien por debajo de 1 en el rango elastico."
+          },
+          {
+            "q": "El modulo de Young es igual en tension y compresion?",
+            "a": "Para muchos materiales es aproximadamente igual, pero los materiales fragiles pueden comportarse diferente en compresion."
+          }
+        ]
+      }
     },
     "column-buckling": {
       "name": "Calculadora de pandeo de columnas",
       "description": "Calcule la carga crítica de Euler, la carga permitida por AISC y la relación de esbeltez para columnas",
-      "metaDescription": "Calculadora gratuita de pandeo de columnas. Calcule la carga crítica de Euler, la tensión permitida por AISC, la relación de esbeltez y la longitud efectiva con bases de datos de materiales y secciones."
+      "metaDescription": "Calculadora gratuita de pandeo de columnas. Calcule la carga crítica de Euler, la tensión permitida por AISC, la relación de esbeltez y la longitud efectiva con bases de datos de materiales y secciones.",
+      "guide": {
+        "steps": [
+          "Ingresa la longitud de la columna, factor de extremos, area de seccion y momento de inercia minimo.",
+          "Proporciona el modulo de elasticidad del material y cualquier carga axial aplicada.",
+          "Revisa la carga critica de pandeo y la relacion de esbeltez para juzgar la estabilidad."
+        ],
+        "explanationTitle": "Pandeo de Euler en columnas",
+        "formula": "P_cr = π^2 × E × I / (K × L)^2",
+        "explanation": [
+          "El pandeo de Euler ocurre cuando una columna esbelta bajo compresion se deflexiona lateralmente de repente.",
+          "El factor de longitud efectiva K depende de como esten restringidos los extremos; extremos articulados K=1.0, fijos K=0.5.",
+          "La relacion de esbeltez indica si la teoria de Euler aplica; columnas muy cortas fallan por aplastamiento mas que por pandeo."
+        ],
+        "faq": [
+          {
+            "q": "Cual es el limite de esbeltez para pandeo de Euler?",
+            "a": "Euler generalmente es valido cuando la esbeltez esta por encima de 100 para acero, aunque los codigos dan limites especificos."
+          },
+          {
+            "q": "La resistencia del material afecta el pandeo de Euler?",
+            "a": "No directamente; la carga critica de Euler depende solo del modulo elastico, geometria y longitud. La resistencia a la fluencia importa para pandeo inelastico."
+          },
+          {
+            "q": "Puedo incluir el peso propio?",
+            "a": "Este calculador usa la carga axial que proporcionas; agrega el peso propio de la columna si es significativo."
+          }
+        ]
+      }
     },
     "pipe-flow": {
       "name": "Calculadora de flujo de tubería",
       "description": "Calcule la caída de presión, el número de Reynolds y el factor de fricción para el flujo de la tubería",
-      "metaDescription": "Calculadora de caudal de tubería gratuita. Calcule la caída de presión de Darcy-Weisbach, el número de Reynolds, el factor de fricción de Colebrook-White y la pérdida de carga con bases de datos de fluidos y materiales de tuberías."
+      "metaDescription": "Calculadora de caudal de tubería gratuita. Calcule la caída de presión de Darcy-Weisbach, el número de Reynolds, el factor de fricción de Colebrook-White y la pérdida de carga con bases de datos de fluidos y materiales de tuberías.",
+      "guide": {
+        "steps": [
+          "Ingresa el diametro interno de la tuberia, la longitud y la rugosidad del material.",
+          "Proporciona las propiedades del fluido: densidad y viscosidad dinamica, mas el caudal o la caida de presion.",
+          "Revisa el numero de Reynolds, factor de friccion, perdida de carga y velocidad."
+        ],
+        "explanationTitle": "Caida de presion en flujo de tuberias",
+        "formula": "Perdida de carga = f × (L/D) × (v^2 / (2g)); Numero de Reynolds = ρ × v × D / μ",
+        "explanation": [
+          "El numero de Reynolds indica si el flujo es laminar, transicional o turbulento.",
+          "El factor de friccion de Darcy depende del numero de Reynolds y la rugosidad de la tuberia; relaciona velocidad y caida de presion.",
+          "La perdida de carga es la energia perdida por unidad de peso del fluido debido a la friccion a lo largo de la tuberia."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre factor de friccion Darcy y Fanning?",
+            "a": "Darcy-Weisbach usa el factor de Darcy, que es cuatro veces el factor de Fanning."
+          },
+          {
+            "q": "Puedo usarlo para gases?",
+            "a": "Si para aproximaciones incompresibles; para tuberias largas o grandes caidas de presion se necesitan correcciones de flujo compresible."
+          },
+          {
+            "q": "Incluye perdidas menores por accesorios?",
+            "a": "No; solo calcula perdidas por friccion mayor. Agrega las perdidas de accesorios por separado con coeficientes de perdida."
+          }
+        ]
+      }
     },
     "engineering-unit-converter": {
       "name": "Convertidor de unidades de ingeniería",
       "description": "Convierta entre unidades de ingeniería: fuerza, presión, tensión, torsión y más",
-      "metaDescription": "Conversor de unidades de ingeniería gratuito con factores de precisión NIST. Convierta fuerza, presión, tensión, par, densidad, longitud, área, momento de inercia y módulo de sección."
+      "metaDescription": "Conversor de unidades de ingeniería gratuito con factores de precisión NIST. Convierta fuerza, presión, tensión, par, densidad, longitud, área, momento de inercia y módulo de sección.",
+      "guide": {
+        "steps": [
+          "Selecciona la cantidad fisica que deseas convertir: fuerza, presion, esfuerzo, torque, densidad o energia.",
+          "Ingresa el valor y elige la unidad de origen y destino.",
+          "Revisa el valor convertido y el factor de conversion utilizado."
+        ],
+        "explanationTitle": "Consistencia de unidades de ingenieria",
+        "formula": "Resultado = valor_entrada × (unidad_destino_en_base / unidad_origen_en_base)",
+        "explanation": [
+          "Los calculos de ingenieria fallan cuando se mezclan unidades; convertir todo a un sistema consistente evita errores de orden de magnitud.",
+          "El sistema SI usa newtons, pascales y metros; el sistema estadounidense usa libras, psi y pulgadas.",
+          "Algunas unidades como densidad de masa y peso especifico parecen similares pero tienen dimensiones diferentes y no deben intercambiarse."
+        ],
+        "faq": [
+          {
+            "q": "Cual es la diferencia entre unidades de masa y fuerza?",
+            "a": "La masa se mide en kilogramos o slugs; la fuerza en newtons o libras. En la Tierra, el peso es una fuerza igual a masa por gravedad."
+          },
+          {
+            "q": "Puedo convertir entre SI y unidades estadounidenses?",
+            "a": "Si; el calculador maneja conversiones comunes entre unidades metricas y de ingenieria estadounidense."
+          },
+          {
+            "q": "Por que la presion usa Pa y N/m^2?",
+            "a": "Pascal y newton por metro cuadrado son la misma unidad; se usan diferentes nombres en distintos campos de ingenieria."
+          }
+        ]
+      }
     },
     "molecular-weight": {
       "name": "Calculadora de peso molecular",
@@ -5393,7 +5673,35 @@
       "totalInterest": "Intereses totales",
       "totalPaid": "Total pagado",
       "order": "orden de pago",
-      "savings": "Avalanche ahorra {months} meses y {interest} en intereses frente a bola de nieve."
+      "savings": "Avalanche ahorra {months} meses y {interest} en intereses frente a bola de nieve.",
+      "guide": {
+        "steps": [
+          "Lista cada deuda con su saldo actual, pago minimo y tasa de interes.",
+          "Elige una estrategia: bola de nieve (pagar el saldo mas pequeno primero) o avalancha (pagar el mayor interes primero).",
+          "Ingresa cualquier monto extra mensual que puedas agregar y revisa la fecha estimada de pago y el interes total."
+        ],
+        "explanationTitle": "Estrategia bola de nieve vs avalancha",
+        "formula": "Superavit mensual = pago_extra + minimos_de_deudas_pagadas",
+        "explanation": [
+          "El metodo bola de nieve da victorias rapidas al eliminar la deuda mas pequena primero, ayudando a mantener la motivacion.",
+          "El metodo avalancha minimiza los intereses totales atacando primero la deuda con mayor tasa.",
+          "Ambos metodos usan la misma idea central: cuando una deuda desaparece, rediriges su pago a la siguiente deuda objetivo."
+        ],
+        "faq": [
+          {
+            "q": "Cual metodo ahorra mas dinero?",
+            "a": "Avalancha usualmente ahorra mas interes, pero bola de nieve puede ser mas facil de mantener si la motivacion es un desafio."
+          },
+          {
+            "q": "Deberia dejar de ahorrar mientras pago deudas?",
+            "a": "Manten primero un pequeno fondo de emergencia; luego dirige el efectivo extra a deudas de alto interes antes de invertir a largo plazo."
+          },
+          {
+            "q": "Incluye comisiones o penalizaciones?",
+            "a": "No; usa solo saldo, tasa y pago. Consulta los terminos de tu prestamo por penalizaciones por pago anticipado."
+          }
+        ]
+      }
     },
     "income-tax": {
       "name": "Calculadora de Impuesto sobre la Renta",
