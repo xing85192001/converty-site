@@ -30,6 +30,8 @@ export interface MediaToolMeta {
   titleKey: string;
   /** Full i18n key under the `mediaTools` namespace, e.g. "videoWatermark.desc" */
   descKey: string;
+  /** Full i18n key under the `mediaTools` namespace for the A-layer guide, e.g. "videoWatermark.guide" */
+  guideKey: string;
   icon: LucideIcon;
   /** Homepage tab categories this tool belongs to */
   categories: MediaCategory[];
@@ -41,6 +43,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "video-watermark",
     titleKey: "videoWatermark.title",
     descKey: "videoWatermark.desc",
+    guideKey: "videoWatermark.guide",
     icon: Video,
     categories: ["watermark"],
   },
@@ -49,6 +52,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "image-watermark",
     titleKey: "imageWatermark.title",
     descKey: "imageWatermark.desc",
+    guideKey: "imageWatermark.guide",
     icon: Sparkles,
     categories: ["watermark"],
   },
@@ -57,6 +61,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "ico-converter",
     titleKey: "ico.title",
     descKey: "ico.desc",
+    guideKey: "ico.guide",
     icon: ImageIcon,
     categories: ["icon"],
   },
@@ -65,6 +70,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "image-format-converter",
     titleKey: "formatConvert.title",
     descKey: "formatConvert.desc",
+    guideKey: "formatConvert.guide",
     icon: LayoutGrid,
     categories: ["format"],
   },
@@ -73,6 +79,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "image-compress",
     titleKey: "imageCompress.title",
     descKey: "imageCompress.desc",
+    guideKey: "imageCompress.guide",
     icon: Database,
     categories: ["compress"],
   },
@@ -81,6 +88,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "video-compress",
     titleKey: "videoCompress.title",
     descKey: "videoCompress.desc",
+    guideKey: "videoCompress.guide",
     icon: Zap,
     categories: ["compress"],
   },
@@ -89,6 +97,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "image-upscale",
     titleKey: "imageUpscale.title",
     descKey: "imageUpscale.desc",
+    guideKey: "imageUpscale.guide",
     icon: Wand2,
     categories: ["format"],
   },
@@ -97,6 +106,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "image-to-pdf",
     titleKey: "imageToPdf.title",
     descKey: "imageToPdf.desc",
+    guideKey: "imageToPdf.guide",
     icon: ArrowRight,
     categories: ["format"],
   },
@@ -105,6 +115,7 @@ export const mediaTools: MediaToolMeta[] = [
     slug: "video-to-gif",
     titleKey: "videoToGif.title",
     descKey: "videoToGif.desc",
+    guideKey: "videoToGif.guide",
     icon: Video,
     categories: ["format"],
   },

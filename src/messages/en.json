@@ -112,31 +112,220 @@
     },
     "videoWatermark": {
       "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM."
+      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM.",
+      "guide": {
+        "steps": [
+          "Click \"Upload video\" to choose a local MP4 / MOV / WebM file, or drag the file into the drop zone.",
+          "On the preview, drag a box around the watermark. Zoom in for precision, or click \"Auto-detect watermark\" to let the system locate it.",
+          "Click \"Start processing\". The in-browser AI model removes the watermark, then preview and download the clean video."
+        ],
+        "explanationTitle": "How video watermark removal works and its core strengths",
+        "formula": "output video = source video − watermark pixels in selection (rebuilt from neighbor frames & surrounding texture)",
+        "explanation": [
+          "The video watermark remover runs an AI inpainting model entirely inside your browser. For the selected region it reconstructs content using neighboring frames and surrounding texture, seamlessly erasing logos, subtitle bars, or time stamps.",
+          "Everything happens locally, so the video is never uploaded to a server — protecting privacy and allowing offline use. Speed depends on your device; modern hardware usually finishes within seconds to a minute."
+        ],
+        "faq": [
+          {
+            "q": "Which formats are supported?",
+            "a": "MP4, MOV and WebM are supported. If your source is MKV or AVI, convert it to one of these first."
+          },
+          {
+            "q": "Does it reduce quality?",
+            "a": "Only the watermark region is rebuilt; the rest stays intact. For best results keep the box tight — an oversized box may add slight blur."
+          },
+          {
+            "q": "Is my video uploaded?",
+            "a": "No. All processing runs locally in your browser and the file never leaves your device."
+          }
+        ]
+      }
     },
     "imageWatermark": {
       "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP."
+      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP.",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" to choose a local JPG / PNG / WEBP file, or drag it into the drop zone.",
+          "Draw a box over the watermark. Zoom in to refine, or use \"Auto-detect watermark\" to locate it quickly.",
+          "Click \"Remove watermark\". The local AI rebuilds the selection, then preview and download the clean image."
+        ],
+        "explanationTitle": "The core technology behind image watermark removal",
+        "formula": "output = source − watermark pixels in selection (rebuilt from surrounding texture)",
+        "explanation": [
+          "Image watermark removal uses an inpainting algorithm that analyzes the structure and texture around the mark, filling the selection with content that matches the background. It is ideal for logos, dates, spots, or messy text.",
+          "Processing runs locally in your browser, so images never pass through a server — safe and usable offline. Results are best on clear-edged marks over simple backgrounds."
+        ],
+        "faq": [
+          {
+            "q": "Which image formats are supported?",
+            "a": "JPG, PNG and WEBP. The output keeps a similar format; PNG can preserve transparency."
+          },
+          {
+            "q": "Does it work on complex backgrounds?",
+            "a": "Yes, but simpler and more regular backgrounds heal more naturally. Very busy areas may show slight mismatch."
+          },
+          {
+            "q": "Will my image be leaked?",
+            "a": "No. All computation happens locally in your browser; the file is never uploaded."
+          }
+        ]
+      }
     },
     "ico": {
       "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px)."
+      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px).",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" and pick a PNG / JPG source (a square, high-res image works best).",
+          "The tool auto-generates 16 / 32 / 64 / 128 / 256 px icons and packs them into a single .ico file.",
+          "Click \"Download ICO\" to get a favicon compatible with Windows and browsers."
+        ],
+        "explanationTitle": "Why ICO conversion matters and where to use it",
+        "formula": "ICO file = multi-resolution frames of one image (16/32/64/128/256px)",
+        "explanation": [
+          "ICO is a container that embeds several bitmap sizes, so the system can pick the sharpest one at any scale. Unlike simply renaming an extension, a multi-size package stays crisp in the taskbar, desktop, and browser address bar.",
+          "Conversion and packing happen locally in your browser with no upload, ideal for website favicons, app icons, and Windows shortcut icons."
+        ],
+        "faq": [
+          {
+            "q": "Why multiple sizes?",
+            "a": "Different places (desktop, taskbar, browser tab) show different sizes; multi-size ICO avoids stretching and blur."
+          },
+          {
+            "q": "Is transparency supported?",
+            "a": "Yes. Transparent areas in a PNG source are preserved as an alpha channel in the ICO."
+          },
+          {
+            "q": "Where do I use the ICO?",
+            "a": "As a website favicon, a Windows program icon, or a shortcut icon."
+          }
+        ]
+      }
     },
     "formatConvert": {
       "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion."
+      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion.",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" to batch-select multiple PNG / JPG / WEBP / BMP / GIF files.",
+          "Pick a target format (e.g. PNG or WEBP); it applies to all images at once.",
+          "Click \"Start conversion\". The browser encodes locally, then download one by one or as a zip."
+        ],
+        "explanationTitle": "Key points about image format conversion",
+        "formula": "output format: PNG (lossless) · JPG (lossy) · WEBP (high compression) · BMP (uncompressed) · GIF (animation)",
+        "explanation": [
+          "Formats trade off size and quality: PNG suits transparency and crisp graphics; JPG suits photos; WEBP is smaller at similar quality; BMP is raw uncompressed; GIF supports simple animation.",
+          "The tool decodes and re-encodes locally with no upload, ideal for batch organizing assets, unifying website resources, and reducing load size."
+        ],
+        "faq": [
+          {
+            "q": "Does conversion lose quality?",
+            "a": "JPG/WEBP are lossy and may lose a little; PNG/BMP are lossless and keep all detail."
+          },
+          {
+            "q": "Can it convert in bulk?",
+            "a": "Yes, select many images at once and output a uniform target format."
+          },
+          {
+            "q": "Does it need internet?",
+            "a": "No. All encoding runs locally in the browser; images are never uploaded."
+          }
+        ]
+      }
     },
     "imageCompress": {
       "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality."
+      "desc": "Lossy / lossless compression. Reduce file size while preserving quality.",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" and choose JPG / PNG / WEBP (batch supported).",
+          "Drag the quality slider or pick \"lossy / lossless\", watch the size preview update live.",
+          "Compare original vs compressed, then click \"Download\"."
+        ],
+        "explanationTitle": "How image compression works and which mode to pick",
+        "formula": "lossy: output ≈ source × quality factor; lossless: drops only redundant data, pixels unchanged",
+        "explanation": [
+          "Lossy compression drops high-frequency detail the eye barely notices to shrink size a lot — great for photos. Lossless removes file redundancy without altering any pixel, ideal when every detail must survive.",
+          "Compression runs locally with no upload, so you can quickly slim images for the web, email attachments, or storage, and compare before/after visually."
+        ],
+        "faq": [
+          {
+            "q": "Lossy or lossless?",
+            "a": "Use lossy for photos and banners where looks matter; lossless for screenshots, line art, or assets you will edit again."
+          },
+          {
+            "q": "Can I recover after compression?",
+            "a": "Lossy is irreversible — keep the original. Lossless can be re-exported with no detail change."
+          },
+          {
+            "q": "Is my image leaked?",
+            "a": "No. All compression is local in your browser; nothing is uploaded."
+          }
+        ]
+      }
     },
     "videoCompress": {
       "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size."
+      "desc": "Adjust resolution & bitrate to quickly shrink video file size.",
+      "guide": {
+        "steps": [
+          "Click \"Upload video\" and choose MP4 / MOV / WebM.",
+          "Pick a target resolution and quality tier (e.g. 720p / high compression) and preview the estimated size.",
+          "Click \"Start compression\". The local encoder produces a smaller video to download."
+        ],
+        "explanationTitle": "The key parameters of video compression",
+        "formula": "output size ≈ duration × resolution × bitrate; lowering resolution or bitrate shrinks size a lot",
+        "explanation": [
+          "Video size is driven mainly by resolution, frame rate and bitrate. Dropping resolution (e.g. 1080p→720p) or bitrate slims the file with almost no perceived change — ideal for social upload, email, or phone storage.",
+          "Transcoding runs locally in your browser with no upload, protecting privacy and working offline."
+        ],
+        "faq": [
+          {
+            "q": "Will it look blurry?",
+            "a": "A moderate bitrate drop is barely visible; only heavy compression causes blocking. Try a medium tier first."
+          },
+          {
+            "q": "Does it change length or content?",
+            "a": "No. Only quality parameters are re-encoded; the footage and duration stay the same."
+          },
+          {
+            "q": "Is my video sent anywhere?",
+            "a": "No. All transcoding is local; the file is never uploaded."
+          }
+        ]
+      }
     },
     "imageUpscale": {
       "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again."
+      "desc": "AI super-resolution — make blurry images clear again.",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" and choose a JPG / PNG / WEBP to enlarge.",
+          "Pick a scale factor (2× / 4×); the local AI super-resolution model rebuilds detail.",
+          "Compare the preview, then click \"Download\" for the high-res result."
+        ],
+        "explanationTitle": "How AI super-resolution works",
+        "formula": "output pixels = source pixels × scale; missing detail is predicted from texture and edges",
+        "explanation": [
+          "Plain stretching only interpolates pixels and blurs. AI super-resolution trains on massive image data to predict and generate the high-frequency detail that was never there — hair, text edges, textures — making the upscaled image sharper.",
+          "The model runs locally in your browser with no upload, great for restoring old photos, polishing e-commerce shots, or pre-press enlargement."
+        ],
+        "faq": [
+          {
+            "q": "How is it different from stretching?",
+            "a": "Stretching interpolates and blurs; AI super-resolution predicts new detail, so edges and texture stay crisp."
+          },
+          {
+            "q": "Which factor is best?",
+            "a": "2× looks most natural; 4× works for large posters but benefits from a sharp source."
+          },
+          {
+            "q": "Is my image leaked?",
+            "a": "No. All inference runs locally in your browser; the file is never uploaded."
+          }
+        ]
+      }
     },
     "imageToPdf": {
       "loadError": "Failed to load image",
@@ -146,7 +335,34 @@
       "mergeBtn": "Merge to PDF",
       "downloadBtn": "Download PDF",
       "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file."
+      "desc": "Merge multiple images into a single PDF file.",
+      "guide": {
+        "steps": [
+          "Click \"Upload image\" to pick multiple JPG / PNG / WEBP files at once.",
+          "Reorder (drag) and set page orientation (portrait/landscape) and margins as needed.",
+          "Click \"Merge to PDF\". The browser builds and downloads a single PDF locally."
+        ],
+        "explanationTitle": "Uses and benefits of image-to-PDF",
+        "formula": "each PDF page = one image (embedded at original resolution, no quality loss)",
+        "explanation": [
+          "Merging images into a PDF makes archiving, printing, and sharing easier than loose files. PDF wraps bitmaps in vector pages, preserving full clarity and rendering consistently across devices.",
+          "The PDF is generated locally with no upload, ideal for invoices, IDs, scans, or portfolios of private or bulk material."
+        ],
+        "faq": [
+          {
+            "q": "Does it lose clarity?",
+            "a": "No. Images embed at original resolution, so print and screen match the source."
+          },
+          {
+            "q": "Which images are supported?",
+            "a": "JPG, PNG, WEBP and more, mixed together in one merge."
+          },
+          {
+            "q": "Is my image uploaded?",
+            "a": "No. The PDF is built locally in your browser; nothing is sent."
+          }
+        ]
+      }
     },
     "fileDrop": {
       "clickOrDrag": "Click or drag to upload files",
@@ -278,7 +494,34 @@
       "errorEmpty": "Output file is empty",
       "errorNetwork": "Network error: failed to download the processing core. Check your connection and retry.",
       "errorFailed": "Conversion failed, please retry",
-      "desc": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click."
+      "desc": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click.",
+      "guide": {
+        "steps": [
+          "Click \"Upload video\" and choose MP4 / MOV / WebM.",
+          "Drag the timeline to set start/end, and pick frame rate and size (e.g. 10fps, 480px wide).",
+          "Click \"Generate GIF\". The browser encodes locally and downloads the animation."
+        ],
+        "explanationTitle": "Key points for video to GIF",
+        "formula": "GIF frames ≈ duration × frame rate; smaller size and lower fps mean a lighter file",
+        "explanation": [
+          "GIF is a widely supported looping format, great for memes, tutorial clips, or social posts. Since GIF has no efficient compression, keep clips short (a few seconds) and lower the frame rate and resolution to avoid huge files.",
+          "Trimming and encoding run locally with no upload, so you can quickly turn highlights into shareable animations."
+        ],
+        "faq": [
+          {
+            "q": "The GIF is too big?",
+            "a": "Shorten the clip, lower the frame rate (10–15fps), or reduce width to shrink it noticeably."
+          },
+          {
+            "q": "How long a video?",
+            "a": "A few seconds is best; very long clips make oversized GIFs that load slowly."
+          },
+          {
+            "q": "Is my video uploaded?",
+            "a": "No. All trimming and encoding happen locally in your browser."
+          }
+        ]
+      }
     },
     "watermarkDisclaimer": "This tool is only for removing watermarks from content you own or are authorized to use. Removing watermarks from copyrighted content belonging to others is prohibited; users are solely responsible for any consequences."
   },

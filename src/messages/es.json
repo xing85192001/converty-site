@@ -118,31 +118,220 @@
     },
     "videoWatermark": {
       "title": "Eliminador de marca de agua de video",
-      "desc": "Sube un video y selecciona el área de la marca de agua. Procesamiento IA en el navegador. Soporta MP4 / MOV / WebM."
+      "desc": "Sube un video y selecciona el área de la marca de agua. Procesamiento IA en el navegador. Soporta MP4 / MOV / WebM.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir vídeo\" para elegir un archivo MP4, MOV o WebM local, o arrastra el archivo al área.",
+          "En la vista previa, dibuja un cuadro sobre la marca de agua. Acerca el zoom para mayor precisión o usa \"Detectar marca automáticamente\".",
+          "Haz clic en \"Iniciar proceso\". El modelo de IA del navegador elimina la marca y podrás guardar el vídeo limpio."
+        ],
+        "explanationTitle": "Cómo funciona la eliminación de marcas de agua en vídeo",
+        "formula": "vídeo salida = vídeo original − píxeles de marca en la selección (reconstruidos con frames vecinos)",
+        "explanation": [
+          "La herramienta ejecuta un modelo de IA de retoque íntegramente en el navegador. En la zona seleccionada reconstruye el contenido usando fotogramas vecinos y la textura circundante, borrando logos, barras de subtítulos o marcas de tiempo sin rastro.",
+          "Todo ocurre en local, por lo que el vídeo nunca se sube a un servidor: protege tu privacidad y funciona sin conexión. La velocidad depende del dispositivo."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué formatos admite?",
+            "a": "MP4, MOV y WebM. Si tu fuente es MKV o AVI, conviértela primero a uno de estos."
+          },
+          {
+            "q": "¿Baja la calidad?",
+            "a": "Solo se reconstruye la zona de la marca; el resto se mantiene. Mantén el cuadro ajustado para mejores resultados."
+          },
+          {
+            "q": "¿Se sube mi vídeo?",
+            "a": "No. Todo el proceso es local en tu navegador y el archivo no sale de tu dispositivo."
+          }
+        ]
+      }
     },
     "imageWatermark": {
       "title": "Eliminador de marca de agua de imagen",
-      "desc": "Selecciona el área de la marca de agua. Eliminación inteligente con IA. Soporta JPG / PNG / WEBP."
+      "desc": "Selecciona el área de la marca de agua. Eliminación inteligente con IA. Soporta JPG / PNG / WEBP.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" para elegir un JPG, PNG o WEBP local, o arrástrala al área.",
+          "Dibuja un cuadro sobre la marca de agua. Acerca el zoom para afinar o usa \"Detectar marca automáticamente\".",
+          "Haz clic en \"Quitar marca\". La IA local reconstruye la selección y podrás guardar la imagen limpia."
+        ],
+        "explanationTitle": "La tecnología del retoque de marcas en imágenes",
+        "formula": "salida = original − píxeles de marca en la selección (reconstruidos de la textura circundante)",
+        "explanation": [
+          "La eliminación de marcas usa un algoritmo de inpainting que analiza la estructura y textura alrededor de la marca, rellenando la selección con contenido coherente con el fondo. Ideal para logos, fechas, manchas o texto.",
+          "El proceso es local en el navegador, así que la imagen no pasa por ningún servidor: seguro y usable sin conexión. Mejor sobre fondos simples y bordes nítidos."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué formatos de imagen admite?",
+            "a": "JPG, PNG y WEBP. PNG puede conservar transparencia."
+          },
+          {
+            "q": "¿Funciona en fondos complejos?",
+            "a": "Sí, pero los fondos simples y regulares quedan más naturales. Zonas muy cargadas pueden variar levemente."
+          },
+          {
+            "q": "¿Se sube mi imagen?",
+            "a": "No. Todo ocurre en tu navegador; el archivo no se envía a ningún servidor."
+          }
+        ]
+      }
     },
     "ico": {
       "title": "Convertidor de iconos ICO",
-      "desc": "Convierte imágenes a .ico con empaquetado de múltiples tamaños (16/32/64/128/256px)."
+      "desc": "Convierte imágenes a .ico con empaquetado de múltiples tamaños (16/32/64/128/256px).",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" y elige un PNG o JPG (una imagen cuadrada y nítida da el mejor resultado).",
+          "La herramienta genera automáticamente 16 / 32 / 64 / 128 / 256 px y los empaqueta en un único .ico.",
+          "Haz clic en \"Descargar ICO\" para obtener un favicon compatible con Windows y los navegadores."
+        ],
+        "explanationTitle": "Por qué convierte a ICO y para qué sirve",
+        "formula": "archivo ICO = varias resoluciones de una imagen (16/32/64/128/256px)",
+        "explanation": [
+          "ICO es un contenedor que incluye varios tamaños de mapa de bits, de modo que el sistema elige el más nítido a cada escala. A diferencia de solo cambiar la extensión, un paquete multitarmaña se ve claro en barra de tareas, escritorio y barra de direcciones.",
+          "La conversión y el empaquetado son locales en el navegador, sin subidas: ideal para favicons, iconos de apps y accesos directos de Windows."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué varios tamaños?",
+            "a": "Escritorio, barra de tareas y pestaña muestran tamaños distintos; el ICO multitarmaña evita estiramientos y borrosidad."
+          },
+          {
+            "q": "¿Soporta transparencia?",
+            "a": "Sí. Las zonas transparentes de un PNG se conservan como canal alfa en el ICO."
+          },
+          {
+            "q": "¿Para qué uso el ICO?",
+            "a": "Como favicon web, icono de programa de Windows o icono de acceso directo."
+          }
+        ]
+      }
     },
     "formatConvert": {
       "title": "Convertidor de formato de imagen",
-      "desc": "Conversión por lotes PNG / JPG / WEBP / BMP / GIF."
+      "desc": "Conversión por lotes PNG / JPG / WEBP / BMP / GIF.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" para seleccionar varias PNG / JPG / WEBP / BMP / GIF a la vez.",
+          "Elige un formato de salida (p. ej. PNG o WEBP); se aplica a todas las imágenes.",
+          "Haz clic en \"Iniciar conversión\". El navegador codifica localmente y descargas una a una o en zip."
+        ],
+        "explanationTitle": "Claves de la conversión de formatos de imagen",
+        "formula": "formatos: PNG (sin pérdida) · JPG (con pérdida) · WEBP (alta compresión) · BMP (sin comprimir) · GIF (animación)",
+        "explanation": [
+          "Cada formato equilibra tamaño y calidad: PNG para transparencia y gráficos nítidos, JPG para fotos, WEBP más pequeño con calidad similar, BMP sin comprimir, GIF para animaciones simples.",
+          "La herramienta decodifica y recodifica en local sin subidas, ideal para organizar material, unificar recursos web y reducir la carga."
+        ],
+        "faq": [
+          {
+            "q": "¿Baja la calidad?",
+            "a": "JPG/WEBP son con pérdida; PNG/BMP son sin pérdida y conservan el detalle."
+          },
+          {
+            "q": "¿Conversión en lote?",
+            "a": "Sí, selecciona muchas imágenes y produce un formato de salida uniforme."
+          },
+          {
+            "q": "¿Necesita internet?",
+            "a": "No. Toda la codificación es local; las imágenes no se suben."
+          }
+        ]
+      }
     },
     "imageCompress": {
       "title": "Compresor de imágenes",
-      "desc": "Compresión con o sin pérdida. Reduce el tamaño del archivo conservando la calidad."
+      "desc": "Compresión con o sin pérdida. Reduce el tamaño del archivo conservando la calidad.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" y elige JPG / PNG / WEBP (admite lote).",
+          "Mueve el control de calidad o elige \"con pérdida / sin pérdida\" y observa el tamaño en vivo.",
+          "Compara original y comprimida y haz clic en \"Descargar\"."
+        ],
+        "explanationTitle": "Cómo funciona la compresión de imágenes",
+        "formula": "con pérdida: salida ≈ origen × factor de calidad; sin pérdida: solo datos redundantes, píxeles iguales",
+        "explanation": [
+          "La compresión con pérdida descarta detalle de alta frecuencia barely visible y ahorra mucho espacio — ideal para fotos. Sin pérdida elimina redundancia sin tocar píxeles, perfecto cuando todo detalle importa.",
+          "La compresión es local sin subidas, así que puedes aligerar imágenes para web, correos o almacenamiento y comparar antes/después."
+        ],
+        "faq": [
+          {
+            "q": "¿Con o sin pérdida?",
+            "a": "Fotos y banners: con pérdida. Capturas, líneas o assets a editar: sin pérdida."
+          },
+          {
+            "q": "¿Se puede recuperar?",
+            "a": "Con pérdida es irreversible — guarda el original. Sin pérdida se reexporta igual."
+          },
+          {
+            "q": "¿Se sube mi imagen?",
+            "a": "No. Todo es local en el navegador; nada se envía."
+          }
+        ]
+      }
     },
     "videoCompress": {
       "title": "Compresor de video",
-      "desc": "Ajusta resolución y bitrate para reducir rápidamente el tamaño del video."
+      "desc": "Ajusta resolución y bitrate para reducir rápidamente el tamaño del video.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir vídeo\" y elige MP4 / MOV / WebM.",
+          "Elige resolución y nivel de calidad (p. ej. 720p / alta compresión) y prevé el tamaño estimado.",
+          "Haz clic en \"Iniciar compresión\". El codificador local genera un vídeo más pequeño."
+        ],
+        "explanationTitle": "Los parámetros clave de la compresión de vídeo",
+        "formula": "tamaño salida ≈ duración × resolución × bitrate; bajar resolución o bitrate ahorra mucho",
+        "explanation": [
+          "El tamaño del vídeo depende sobre todo de resolución, fps y bitrate. Reducir resolución (1080p→720p) o bitrate adelgaza el archivo casi sin cambio visible — ideal para redes, correo o almacenamiento.",
+          "La transcodificación es local sin subidas, protege tu privacidad y funciona sin conexión."
+        ],
+        "faq": [
+          {
+            "q": "¿Quedará borroso?",
+            "a": "Bajar poco el bitrate apenas se nota; solo una compresión fuerte bloquea. Prueba un nivel medio primero."
+          },
+          {
+            "q": "¿Cambia la duración o el contenido?",
+            "a": "No. Solo se recodifican parámetros de calidad; el clip y la duración siguen igual."
+          },
+          {
+            "q": "¿Se envía mi vídeo?",
+            "a": "No. Todo es local; el archivo no se sube."
+          }
+        ]
+      }
     },
     "imageUpscale": {
       "title": "Ampliador de imágenes",
-      "desc": "Superresolución con IA — haz que las imágenes borrosas se vean nítidas."
+      "desc": "Superresolución con IA — haz que las imágenes borrosas se vean nítidas.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" y elige un JPG / PNG / WEBP para ampliar.",
+          "Elige un factor (2× / 4×); el modelo de superresolución local reconstruye el detalle.",
+          "Compara la vista previa y haz clic en \"Descargar\" para el resultado en alta resolución."
+        ],
+        "explanationTitle": "Cómo funciona la superresolución con IA",
+        "formula": "píxeles salida = píxeles origen × factor; el detalle faltante se predice de textura y bordes",
+        "explanation": [
+          "Estirar solo interpola píxeles y emborrona. La superresolución con IA aprende de enormes bases de imágenes para predecir y generar el detalle de alta frecuencia que faltaba — cabello, bordes de texto, texturas — dejando la imagen más nítida.",
+          "El modelo corre en local sin subidas, ideal para restaurar fotos antiguas, retocar imágenes de tienda o ampliar antes de imprimir."
+        ],
+        "faq": [
+          {
+            "q": "¿En qué difiere de estirar?",
+            "a": "Estirar interpola y emborrona; la IA predice detalle nuevo, así bordes y textura quedan nítidos."
+          },
+          {
+            "q": "¿Qué factor usar?",
+            "a": "2× se ve más natural; 4× sirve para pósters grandes pero aprecia una fuente nítida."
+          },
+          {
+            "q": "¿Se sube mi imagen?",
+            "a": "No. Toda la inferencia es local; el archivo no se envía."
+          }
+        ]
+      }
     },
     "imageToPdf": {
       "loadError": "Error al cargar la imagen",
@@ -152,7 +341,34 @@
       "mergeBtn": "Fusionar en PDF",
       "downloadBtn": "Descargar PDF",
       "title": "Imagen a PDF",
-      "desc": "Combina varias imágenes en un solo archivo PDF."
+      "desc": "Combina varias imágenes en un solo archivo PDF.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir imagen\" para elegir varias JPG / PNG / WEBP a la vez.",
+          "Reordena (arrastrando) y define orientación (vertical/horizontal) y márgenes.",
+          "Haz clic en \"Unir a PDF\". El navegador crea y descarga un único PDF en local."
+        ],
+        "explanationTitle": "Usos y ventajas de imagen a PDF",
+        "formula": "cada página PDF = una imagen (incrustada en resolución original, sin pérdida)",
+        "explanation": [
+          "Unir imágenes en un PDF facilita archivar, imprimir y compartir frente a archivos sueltos. El PDF envuelve mapas de bits en páginas vectoriales, conservando la nitidez y mostrándose igual en cualquier dispositivo.",
+          "El PDF se genera en local sin subidas, ideal para facturas, documentos, escaneos o portafolios."
+        ],
+        "faq": [
+          {
+            "q": "¿Baja la nitidez?",
+            "a": "No. Las imágenes se incrustan en resolución original; impresión y pantalla igualan la fuente."
+          },
+          {
+            "q": "¿Qué imágenes admite?",
+            "a": "JPG, PNG, WEBP y más, incluso mezcladas en un mismo PDF."
+          },
+          {
+            "q": "¿Se sube mi imagen?",
+            "a": "No. El PDF se construye localmente; nada se envía."
+          }
+        ]
+      }
     },
     "fileDrop": {
       "clickOrDrag": "Haz clic o arrastra para subir archivos",
@@ -284,7 +500,34 @@
       "errorEmpty": "El archivo de salida está vacío",
       "errorNetwork": "Error de red: no se pudo descargar el núcleo de procesamiento. Verifique su conexión y vuelva a intentarlo.",
       "errorFailed": "Error de conversión. Vuelva a intentarlo.",
-      "desc": "Sube un vídeo, ajusta FPS y ancho y conviértelo en un GIF animado con un solo clic."
+      "desc": "Sube un vídeo, ajusta FPS y ancho y conviértelo en un GIF animado con un solo clic.",
+      "guide": {
+        "steps": [
+          "Haz clic en \"Subir vídeo\" y elige MP4 / MOV / WebM.",
+          "Arrastra la línea de tiempo para inicio/fin y elige fps y tamaño (p. ej. 10fps, 480px).",
+          "Haz clic en \"Generar GIF\". El navegador codifica localmente y descarga la animación."
+        ],
+        "explanationTitle": "Claves de vídeo a GIF",
+        "formula": "frames GIF ≈ duración × fps; menos tamaño y menos fps = archivo más ligero",
+        "explanation": [
+          "GIF es un formato de bucle muy compatible, ideal para memes, clips de tutorial o redes. Como no comprime bien, mantén clips cortos y baja fps y resolución para evitar archivos enormes.",
+          "El recorte y la codificación son locales sin subidas, así conviertes momentos en animaciones compartibles al instante."
+        ],
+        "faq": [
+          {
+            "q": "El GIF es muy grande?",
+            "a": "Acorta el clip, baja los fps (10–15) o reduce el ancho para aligerarlo mucho."
+          },
+          {
+            "q": "¿Qué duración usar?",
+            "a": "Unos segundos es lo mejor; clips largos dan GIF gigantes y lentos."
+          },
+          {
+            "q": "¿Se sube mi vídeo?",
+            "a": "No. Todo el recorte y la codificación son locales en tu navegador."
+          }
+        ]
+      }
     },
     "watermarkDisclaimer": "Esta herramienta solo sirve para eliminar marcas de agua de contenido que usted posee o para el que tiene autorización. Está prohibido eliminar marcas de agua de contenido protegido por derechos de autor de terceros; el usuario asume toda la responsabilidad."
   },

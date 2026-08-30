@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
+import { MediaToolContentSection } from "@/components/media-tool-content-section";
 import {
 	getMediaToolBySlug,
 	mediaToolComponents,
@@ -71,6 +72,11 @@ export default async function MediaToolPage({ params }: PageProps) {
 			<div className="rounded-2xl border border-white/10 bg-card/50 p-5">
 				<ToolComponent />
 			</div>
+
+			<MediaToolContentSection
+				toolKey={tool.guideKey.split(".")[0]}
+				toolName={t(tool.titleKey)}
+			/>
 		</div>
 	);
 }

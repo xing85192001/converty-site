@@ -112,31 +112,220 @@
     },
     "videoWatermark": {
       "title": "Video-Wasserzeichen-Entferner",
-      "desc": "Video hochladen und Wasserzeichenbereich auswählen. KI-Verarbeitung im Browser. Unterstützt MP4 / MOV / WebM."
+      "desc": "Video hochladen und Wasserzeichenbereich auswählen. KI-Verarbeitung im Browser. Unterstützt MP4 / MOV / WebM.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Video hochladen\" und wähle eine lokale MP4-, MOV- oder WebM-Datei aus, oder ziehe die Datei in den Bereich.",
+          "Markiere im Vorschaufenster das Wasserzeichen mit der Maus. Zoome für Genauigkeit heran oder klicke auf \"Wasserzeichen automatisch erkennen\".",
+          "Klicke auf \"Verarbeitung starten\". Das KI-Modell im Browser entfernt das Wasserzeichen, dann kannst du das Video speichern."
+        ],
+        "explanationTitle": "So funktioniert die Video-Wasserzeichenentfernung",
+        "formula": "Ausgabevideo = Quellvideo − Wasserzeichen-Pixel im Bereich (aus Nachbarframes rekonstruiert)",
+        "explanation": [
+          "Das Tool führt ein KI-Inpainting-Modell vollständig im Browser aus. Im markierten Bereich wird der Inhalt anhand benachbarter Frames und umliegender Textur rekonstruiert, sodass Logos, Untertitel oder Zeitstempel Spurenlos verschwinden.",
+          "Da alles lokal geschieht, wird das Video niemals hochgeladen — Datenschutz bleibt gewahrt und die Nutzung funktioniert offline. Die Geschwindigkeit hängt vom Gerät ab."
+        ],
+        "faq": [
+          {
+            "q": "Welche Formate werden unterstützt?",
+            "a": "MP4, MOV und WebM. Bei MKV oder AVI konvertiere die Datei zunächst in eines dieser Formate."
+          },
+          {
+            "q": "Leidet die Qualität?",
+            "a": "Nur der Wasserzeichenbereich wird neu erzeugt, der Rest bleibt unverändert. Wähle die Box möglichst eng."
+          },
+          {
+            "q": "Wird mein Video hochgeladen?",
+            "a": "Nein. Alle Schritte laufen lokal im Browser, die Datei verlässt dein Gerät nicht."
+          }
+        ]
+      }
     },
     "imageWatermark": {
       "title": "Bild-Wasserzeichen-Entferner",
-      "desc": "Wasserzeichenbereich auswählen. KI-basierte intelligente Entfernung. Unterstützt JPG / PNG / WEBP."
+      "desc": "Wasserzeichenbereich auswählen. KI-basierte intelligente Entfernung. Unterstützt JPG / PNG / WEBP.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\" und wähle eine lokale JPG-, PNG- oder WEBP-Datei aus, oder ziehe sie in den Bereich.",
+          "Markiere das Wasserzeichen mit der Maus. Zoome für Feinheiten oder nutze \"Wasserzeichen automatisch erkennen\".",
+          "Klicke auf \"Wasserzeichen entfernen\". Die lokale KI rekonstruiert die Auswahl, dann speichern."
+        ],
+        "explanationTitle": "Die Technik hinter der Bild-Wasserzeichenentfernung",
+        "formula": "Ausgabe = Quelle − Wasserzeichen-Pixel im Bereich (aus Umgebungstextur rekonstruiert)",
+        "explanation": [
+          "Die Bild-Wasserzeichenentfernung nutzt einen Inpainting-Algorithmus, der Struktur und Textur rund um die Marke analysiert und die Auswahl mit zum Hintergrund passendem Inhalt füllt. Ideal für Logos, Datum, Flecken oder Text.",
+          "Die Verarbeitung läuft lokal im Browser, sodass Bilder nie einen Server passieren — sicher und offline nutzbar. Am besten bei klaren Rändern auf einfachem Hintergrund."
+        ],
+        "faq": [
+          {
+            "q": "Welche Bildformate werden unterstützt?",
+            "a": "JPG, PNG und WEBP. PNG behält bei Bedarf Transparenz."
+          },
+          {
+            "q": "Funktioniert es bei komplexem Hintergrund?",
+            "a": "Ja, aber einfache, regelmäßige Hintergründe wirken natürlicher. Sehr unruhige Stellen können leicht abweichen."
+          },
+          {
+            "q": "Wird mein Bild hochgeladen?",
+            "a": "Nein. Alles läuft lokal im Browser, die Datei verlässt dein Gerät nicht."
+          }
+        ]
+      }
     },
     "ico": {
       "title": "ICO-Icon-Konverter",
-      "desc": "Bilder in .ico mit Mehrfachgrößen-Paketierung (16/32/64/128/256px) umwandeln."
+      "desc": "Bilder in .ico mit Mehrfachgrößen-Paketierung (16/32/64/128/256px) umwandeln.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\" und wähle eine PNG-/JPG-Quelle (quadratisch und hochauflösend ist ideal).",
+          "Das Tool erzeugt automatisch 16 / 32 / 64 / 128 / 256 px und packt sie in eine .ico-Datei.",
+          "Klicke auf \"ICO herunterladen\" für ein Windows- und browserkompatibles Favicon."
+        ],
+        "explanationTitle": "Warum ICO-Umwandlung sinnvoll ist",
+        "formula": "ICO-Datei = mehrere Auflösungen eines Bildes (16/32/64/128/256px)",
+        "explanation": [
+          "ICO ist ein Container, der verschiedene Bitmaps enthält, sodass das System die schärfste Variante wählt. Im Gegensatz zum bloßen Umbenennen bleibt das Symbol in Taskleiste, Desktop und Adresszeile scharf.",
+          "Umwandlung und Paketierung laufen lokal im Browser ohne Upload — ideal für Favicons, App-Symbole und Windows-Verknüpfungen."
+        ],
+        "faq": [
+          {
+            "q": "Warum mehrere Größen?",
+            "a": "Desktop, Taskleiste und Browser-Tab zeigen unterschiedliche Größen; Mehrgrößen-ICO verhindert Streckung und Unschärfe."
+          },
+          {
+            "q": "Ist Transparenz möglich?",
+            "a": "Ja. Transparente Bereiche einer PNG-Quelle bleiben als Alpha-Kanal erhalten."
+          },
+          {
+            "q": "Wofür nutze ich die ICO?",
+            "a": "Als Favicon, Windows-Programmsymbol oder Verknüpfungssymbol."
+          }
+        ]
+      }
     },
     "formatConvert": {
       "title": "Bildformat-Konverter",
-      "desc": "Stapelkonvertierung PNG / JPG / WEBP / BMP / GIF."
+      "desc": "Stapelkonvertierung PNG / JPG / WEBP / BMP / GIF.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\", um mehrere PNG-/JPG-/WEBP-/BMP-/GIF-Dateien gleichzeitig auszuwählen.",
+          "Wähle ein Zielformat (z. B. PNG oder WEBP); es gilt für alle Bilder.",
+          "Klicke auf \"Konvertierung starten\". Der Browser codiert lokal, dann einzeln oder als Zip speichern."
+        ],
+        "explanationTitle": "Wichtiges zur Bildformat-Umwandlung",
+        "formula": "Zielformate: PNG (verlustfrei) · JPG (verlustbehaftet) · WEBP (hohe Komprimierung) · BMP (unkomprimiert) · GIF (Animation)",
+        "explanation": [
+          "Formate tauschen Größe gegen Qualität: PNG für Transparenz und klare Grafik, JPG für Fotos, WEBP kleiner bei ähnlicher Qualität, BMP roh, GIF für einfache Animationen.",
+          "Das Tool decodiert und codiert lokal ohne Upload — ideal, um Medien zu sortieren, Web-Ressourcen zu vereinheitlichen und Ladezeiten zu verkürzen."
+        ],
+        "faq": [
+          {
+            "q": "Geht Qualität verloren?",
+            "a": "JPG/WEBP sind verlustbehaftet; PNG/BMP sind verlustfrei und behalten Details."
+          },
+          {
+            "q": "Geht das in Masse?",
+            "a": "Ja, wähle viele Bilder auf einmal und gib ein einheitliches Zielformat aus."
+          },
+          {
+            "q": "Braucht es Internet?",
+            "a": "Nein. Alles läuft lokal im Browser; Bilder werden nicht hochgeladen."
+          }
+        ]
+      }
     },
     "imageCompress": {
       "title": "Bildkompressor",
-      "desc": "Verlustbehaftete / verlustfreie Komprimierung. Dateigröße reduzieren bei Qualitätserhalt."
+      "desc": "Verlustbehaftete / verlustfreie Komprimierung. Dateigröße reduzieren bei Qualitätserhalt.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\" und wähle JPG / PNG / WEBP (Massenverarbeitung möglich).",
+          "Ziehe den Qualitätsregler oder wähle \"verlustbehaftet / verlustfrei\" und sieh die Größe live.",
+          "Vergleiche Original und komprimiert, dann \"Speichern\"."
+        ],
+        "explanationTitle": "So funktioniert Bildkomprimierung",
+        "formula": "verlustbehaftet: Ausgabe ≈ Quelle × Qualitätsfaktor; verlustfrei: nur redundante Daten weg, Pixel gleich",
+        "explanation": [
+          "Verlustbehaftet entfernt kaum sichtbare Hochfrequenzdetails und spart viel Platz — ideal für Fotos. Verlustfrei entfernt Dateiredundanz, ohne Pixel zu ändern,gut wenn jedes Detail erhalten bleiben muss.",
+          "Die Komprimierung läuft lokal ohne Upload, sodass du Bilder für Web, E-Mail oder Speicher verkleinern und vorher/nachher vergleichen kannst."
+        ],
+        "faq": [
+          {
+            "q": "Verlustbehaftet oder verlustfrei?",
+            "a": "Fotos/Banner: verlustbehaftet. Screenshots, Linienzeichnungen, weiterzubearbeitende Assets: verlustfrei."
+          },
+          {
+            "q": "Lässt sich das rückgängig machen?",
+            "a": "Verlustbehaftet ist irreversibel — Original behalten. Verlustfrei bleibt detailgleich."
+          },
+          {
+            "q": "Wird mein Bild hochgeladen?",
+            "a": "Nein. Alles lokal im Browser, nichts wird gesendet."
+          }
+        ]
+      }
     },
     "videoCompress": {
       "title": "Videokompressor",
-      "desc": "Auflösung und Bitrate anpassen, um die Videodateigröße schnell zu verkleinern."
+      "desc": "Auflösung und Bitrate anpassen, um die Videodateigröße schnell zu verkleinern.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Video hochladen\" und wähle MP4 / MOV / WebM.",
+          "Wähle Auflösung und Qualitätsstufe (z. B. 720p / hohe Komprimierung) und sieh die geschätzte Größe.",
+          "Klicke auf \"Kompression starten\". Der lokale Encoder liefert ein kleineres Video."
+        ],
+        "explanationTitle": "Die wichtigen Parameter der Videokompression",
+        "formula": "Ausgabegröße ≈ Dauer × Auflösung × Bitrate; weniger Auflösung/Bitrate spart viel Platz",
+        "explanation": [
+          "Die Videogröße hängt vor allem von Auflösung, Bildrate und Bitrate ab. Weniger Auflösung (z. B. 1080p→720p) oder Bitrate verkleinert die Datei kaum sichtbar — ideal für Social Upload, E-Mail oder Speicher.",
+          "Das Transcodieren läuft lokal ohne Upload, schont die Privatsphäre und funktioniert offline."
+        ],
+        "faq": [
+          {
+            "q": "Wird es unscharf?",
+            "a": "Ein mäßiger Bitratenverlust fällt kaum auf; erst starke Komprimierung blockt. Teste zuerst eine mittlere Stufe."
+          },
+          {
+            "q": "Ändert es Länge oder Inhalt?",
+            "a": "Nein. Nur Qualitätsparameter werden neu codiert; Bild und Dauer bleiben gleich."
+          },
+          {
+            "q": "Wird mein Video gesendet?",
+            "a": "Nein. Alles lokal; die Datei wird nicht hochgeladen."
+          }
+        ]
+      }
     },
     "imageUpscale": {
       "title": "Bild-Hochskalierung",
-      "desc": "KI-Superauflösung — verwischte Bilder wieder scharf machen."
+      "desc": "KI-Superauflösung — verwischte Bilder wieder scharf machen.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\" und wähle ein JPG / PNG / WEBP zum Vergrößern.",
+          "Wähle einen Faktor (2× / 4×); das lokale KI-Super-Resolution-Modell rekonstruiert Details.",
+          "Vergleiche die Vorschau und klicke \"Speichern\" für das hochauflösende Ergebnis."
+        ],
+        "explanationTitle": "So funktioniert KI-Super-Resolution",
+        "formula": "Ausgabepixel = Quellpixel × Faktor; fehlendes Detail wird aus Textur und Kanten vorhergesagt",
+        "explanation": [
+          "Einfaches Strecken interpoliert nur und wird unscharf. KI-Super-Resolution lernt aus riesigen Bildmengen und erzeugt fehlende Hochfrequenzdetails — Haare, Textkanten, Strukturen — für ein schärferes Bild.",
+          "Das Modell läuft lokal im Browser ohne Upload, ideal zum Restaurieren alter Fotos, Optimieren von Shop-Bildern oder für den Druckvorstufe."
+        ],
+        "faq": [
+          {
+            "q": "Unterschied zum Strecken?",
+            "a": "Strecken interpoliert und weicht aus; KI sagt neues Detail voraus, Kanten bleiben scharf."
+          },
+          {
+            "q": "Welcher Faktor?",
+            "a": "2× wirkt am natürlichsten; 4× für Poster, besser mit scharfer Quelle."
+          },
+          {
+            "q": "Wird mein Bild hochgeladen?",
+            "a": "Nein. Alle Berechnungen lokal im Browser, nichts wird gesendet."
+          }
+        ]
+      }
     },
     "imageToPdf": {
       "loadError": "Bild konnte nicht geladen werden",
@@ -146,7 +335,34 @@
       "mergeBtn": "Zu PDF zusammenführen",
       "downloadBtn": "PDF herunterladen",
       "title": "Bild zu PDF",
-      "desc": "Mehrere Bilder in eine einzige PDF-Datei zusammenführen."
+      "desc": "Mehrere Bilder in eine einzige PDF-Datei zusammenführen.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Bild hochladen\", um mehrere JPG / PNG / WEBP auszuwählen.",
+          "Sortiere (Drag) und wähle Ausrichtung (Hoch/Quer) sowie Ränder.",
+          "Klicke auf \"Zu PDF zusammenführen\". Der Browser erstellt und lädt das PDF lokal."
+        ],
+        "explanationTitle": "Nutzen und Vorteile von Bild-zu-PDF",
+        "formula": "jede PDF-Seite = ein Bild (in Originalauflösung eingebettet, keine Qualitätsverluste)",
+        "explanation": [
+          "Bilder zu einem PDF zusammenzuführen erleichtert Archivierung, Druck und Versand gegenüber einzelnen Dateien. PDF umschließt Bitmaps in Vektorseiten und bewahrt die Schärfe geräteübergreifend.",
+          "Das PDF entsteht lokal ohne Upload, ideal für Rechnungen, Ausweise, Scans oder Portfolios."
+        ],
+        "faq": [
+          {
+            "q": "Geht Schärfe verloren?",
+            "a": "Nein. Bilder werden in Originalauflösung eingebettet; Druck und Bildschirm entsprechen der Quelle."
+          },
+          {
+            "q": "Welche Bilder?",
+            "a": "JPG, PNG, WEBP u. a., auch gemischt in einem PDF."
+          },
+          {
+            "q": "Wird mein Bild hochgeladen?",
+            "a": "Nein. Das PDF wird lokal erstellt; nichts wird gesendet."
+          }
+        ]
+      }
     },
     "fileDrop": {
       "clickOrDrag": "Klicken oder ziehen Sie Dateien zum Hochladen",
@@ -278,7 +494,34 @@
       "errorEmpty": "Die Ausgabedatei ist leer",
       "errorNetwork": "Netzwerkfehler: Der Prozessorkern konnte nicht heruntergeladen werden. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "errorFailed": "Die Konvertierung ist fehlgeschlagen. Bitte versuchen Sie es erneut",
-      "desc": "Laden Sie ein Video hoch, passen Sie FPS und Breite an und konvertieren Sie es mit einem Klick in ein animiertes GIF."
+      "desc": "Laden Sie ein Video hoch, passen Sie FPS und Breite an und konvertieren Sie es mit einem Klick in ein animiertes GIF.",
+      "guide": {
+        "steps": [
+          "Klicke auf \"Video hochladen\" und wähle MP4 / MOV / WebM.",
+          "Ziehe die Timeline für Start/Ende und wähle Bildrate und Größe (z. B. 10fps, 480px).",
+          "Klicke auf \"GIF erzeugen\". Der Browser codiert lokal und lädt das Bild herunter."
+        ],
+        "explanationTitle": "Wichtiges zur Umwandlung Video zu GIF",
+        "formula": "GIF-Frames ≈ Dauer × Bildrate; kleinere Größe und weniger fps = leichtere Datei",
+        "explanation": [
+          "GIF ist ein weit verbreitetes Schleifenformat, gut für Memes, Kurztutorials oder Social Posts. Da GIF nicht effizient komprimiert, halte Clips kurz und senke Bildrate sowie Auflösung.",
+          "Zuschneiden und Codieren laufen lokal ohne Upload, sodass du Highlights schnell in teilbare Animationen verwandelst."
+        ],
+        "faq": [
+          {
+            "q": "Das GIF ist zu groß?",
+            "a": "Kürze den Clip, senke die Bildrate (10–15fps) oder die Breite, um es spürbar zu verkleinern."
+          },
+          {
+            "q": "Wie langes Video?",
+            "a": "Ein paar Sekunden sind ideal; sehr lange Clips ergeben riesige, langsame GIFs."
+          },
+          {
+            "q": "Wird mein Video hochgeladen?",
+            "a": "Nein. Zuschneiden und Codieren laufen lokal im Browser."
+          }
+        ]
+      }
     },
     "watermarkDisclaimer": "Dieses Werkzeug dient nur dem Entfernen von Wasserzeichen von Inhalten, die Ihnen gehören oder für die Sie eine Lizenz haben. Das Entfernen von Wasserzeichen aus urheberrechtlich geschütztem Material anderer ist untersagt; die alleinige Haftung liegt beim Nutzer."
   },
