@@ -946,12 +946,66 @@
     "data-size": {
       "name": "Tamaño de datos",
       "description": "Convierte entre bytes, KB, MB, GB, TB y más",
-      "metaDescription": "Convierta tamaños de datos entre bytes, kilobytes, megabytes y más"
+      "metaDescription": "Convierta tamaños de datos entre bytes, kilobytes, megabytes y más",
+      "guide": {
+        "steps": [
+          "Introduce un valor en byte, KB, MB, GB o TB.",
+          "Elige binario (1024) o decimal (1000).",
+          "Lee el tamaño equivalente en las demás unidades."
+        ],
+        "explanationTitle": "Conversión de unidades de datos",
+        "formula": "1 GiB = 1024 MiB; 1 GB = 1000 MB (decimal); MiB = 1024² bytes",
+        "explanation": [
+          "El almacenamiento usa dos sistemas: binario (KiB/MiB/GiB, 1024) en el SO, decimal (KB/MB/GB, 1000) en fabricantes.",
+          "Por eso un disco '1 TB' muestra ~931 GiB en el gestor."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué 1 TB muestra 931 GB?",
+            "a": "Fabricante decimal (10^12 bytes); SO binario, 10^12 / 1024³ ≈ 931 GiB."
+          },
+          {
+            "q": "¿Cuál es correcto?",
+            "a": "Ambos en su sistema; la confusión es solo la etiqueta."
+          },
+          {
+            "q": "¿Bits vs bytes?",
+            "a": "Velocidades de red en bits (Mbps); divide entre 8 para bytes."
+          }
+        ]
+      }
     },
     "bandwidth": {
       "name": "Convertidor de ancho de banda",
       "description": "Convierta Mbps a KB/s, GB/día, TB/semana y más",
-      "metaDescription": "Convertir ancho de banda entre diferentes unidades"
+      "metaDescription": "Convertir ancho de banda entre diferentes unidades",
+      "guide": {
+        "steps": [
+          "Introduce ancho de banda y unidad (bps, Kbps, Mbps, Gbps).",
+          "Elige la unidad destino.",
+          "Lee la tasa equivalente para comparar."
+        ],
+        "explanationTitle": "Conversión de ancho de banda",
+        "formula": "1 Gbps = 1000 Mbps = 1.000.000 Kbps; 1 byte/s = 8 bps",
+        "explanation": [
+          "El ancho de banda es la capacidad del enlace, siempre en bits por segundo.",
+          "Red usa pasos de 1000 (Kbps=10³, Mbps=10⁶, Gbps=10⁹), a diferencia del almacenamiento que mezcla 1024/1000."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué 1000 y no 1024?",
+            "a": "Las tasas de red siguen prefijos SI; solo el almacenamiento usa 1024."
+          },
+          {
+            "q": "¿1 Gbps en MB/s?",
+            "a": "División por 8: 1 Gbps ≈ 125 MB/s de datos."
+          },
+          {
+            "q": "¿Ancho de banda = velocidad?",
+            "a": "Es capacidad; la real depende de latencia, congestión y protocolo."
+          }
+        ]
+      }
     },
     "download-calculator": {
       "name": "Descargar",
@@ -1020,17 +1074,98 @@
     "cidr-range": {
       "name": "Gama CIDR",
       "description": "Calcule rangos de IP a partir de la notación CIDR y verifique si una IP está dentro del rango",
-      "metaDescription": "Calculadora de rango CIDR gratuita. Vea la primera y la última dirección IP en un bloque CIDR y verifique si hay IP específicas dentro del rango. Soporta IPv4 e IPv6."
+      "metaDescription": "Calculadora de rango CIDR gratuita. Vea la primera y la última dirección IP en un bloque CIDR y verifique si hay IP específicas dentro del rango. Soporta IPv4 e IPv6.",
+      "guide": {
+        "steps": [
+          "Introduce IPv4/IPv6 con prefijo, p. ej. 10.0.0.0/24.",
+          "Lee la red, primer/último host y broadcast (IPv4).",
+          "Lee el total de direcciones y el rango cubierto."
+        ],
+        "explanationTitle": "Rango CIDR y límites de subred",
+        "formula": "direcciones = 2^(bitsHost); bitsHost = 32 − prefijo (IPv4)",
+        "explanation": [
+          "CIDR expresa una red como dirección más prefijo que marca la parte de red de los bits.",
+          "Un /24 deja 8 bits de host, 256 direcciones (254 usables en IPv4 tras red y broadcast). Prefijos mayores = subredes menores."
+        ],
+        "faq": [
+          {
+            "q": "¿Diferencia /24 y /16?",
+            "a": "/16 cubre 65536 direcciones; /24 solo 256."
+          },
+          {
+            "q": "¿Por qué usables = total − 2?",
+            "a": "IPv4 reserva la red y el broadcast."
+          },
+          {
+            "q": "¿Usa IPv6 broadcast?",
+            "a": "No; IPv6 no tiene broadcast, todas las direcciones son usables."
+          }
+        ]
+      }
     },
     "ip-calculator": {
       "name": "Dirección IP",
       "description": "Clasifique direcciones IP por clase (A-E) e identifique el estado público/privado",
-      "metaDescription": "Clasificador de direcciones IP gratuito. Detecte la clase de IP (A, B, C, D, E), identifique direcciones públicas y privadas y valide el formato IPv4/IPv6."
+      "metaDescription": "Clasificador de direcciones IP gratuito. Detecte la clase de IP (A, B, C, D, E), identifique direcciones públicas y privadas y valide el formato IPv4/IPv6.",
+      "guide": {
+        "steps": [
+          "Introduce una IPv4, p. ej. 192.168.1.10.",
+          "Lee clase (A/B/C), privada/pública y máscara.",
+          "Usa los detalles para direccionar o solucionar conectividad."
+        ],
+        "explanationTitle": "Clasificación de direcciones IP",
+        "formula": "Clase por 1.º octeto: 1–126 A, 128–191 B, 192–223 C, 224–239 D (multicast)",
+        "explanation": [
+          "La clasificación agrupa direcciones por el primer octeto según bits de red/host y uso.",
+          "Los rangos privados (10/8, 172.16/12, 192.168/16) son para LAN y no enrutable en internet público."
+        ],
+        "faq": [
+          {
+            "q": "¿Es pública 192.168.x.x?",
+            "a": "No; es privada y solo alcanzable en LAN salvo por NAT."
+          },
+          {
+            "q": "¿Qué es loopback?",
+            "a": "127.0.0.0/8 (sobre todo 127.0.0.1) apunta al propio host para pruebas."
+          },
+          {
+            "q": "¿Por qué aún clases?",
+            "a": "Casi no; CIDR las reemplazó, pero ayuda con rangos heredados."
+          }
+        ]
+      }
     },
     "throughput-calculator": {
       "name": "Rendimiento",
       "description": "Calcule el rendimiento de la red a partir de los datos transferidos y el tiempo",
-      "metaDescription": "Calculadora de rendimiento de red gratuita. Calcule la velocidad de transferencia de datos real a partir del tamaño del archivo y el tiempo de transferencia con comparaciones de velocidad."
+      "metaDescription": "Calculadora de rendimiento de red gratuita. Calcule la velocidad de transferencia de datos real a partir del tamaño del archivo y el tiempo de transferencia con comparaciones de velocidad.",
+      "guide": {
+        "steps": [
+          "Introduce datos transferidos y tiempo.",
+          "Elige unidades (MB/GB y s/min).",
+          "Lee el rendimiento en Mbps o MB/s y compáralo con la capacidad."
+        ],
+        "explanationTitle": "Rendimiento vs ancho de banda",
+        "formula": "rendimiento = datos / tiempo; 1 MB/s = 8 Mbps",
+        "explanation": [
+          "El rendimiento es la tasa real de entrega; el ancho de banda es la capacidad teórica.",
+          "El rendimiento real suele ser menor por sobrecarga, congestión y TCP (retransmisiones)."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué la mitad del plan?",
+            "a": "Sobrecarga, contención y TCP slow-start reducen el rendimiento real."
+          },
+          {
+            "q": "¿Mbps o MB/s?",
+            "a": "ISP cita Mbps (bits); transferencias muestran MB/s (bytes). Divide entre 8."
+          },
+          {
+            "q": "¿Wi-Fi igual que Ethernet?",
+            "a": "Normalmente no; interferencia RF y half-duplex reducen el rendimiento Wi-Fi."
+          }
+        ]
+      }
     },
     "speed": {
       "name": "Convertidor de velocidad",
@@ -1100,7 +1235,34 @@
     "aspect-fit": {
       "name": "Ajuste de aspecto",
       "description": "Ajustar una imagen en una pantalla con formato letterboxing",
-      "metaDescription": "Calcule el formato letterboxing y pillarboxing para el ajuste de imágenes"
+      "metaDescription": "Calcule el formato letterboxing y pillarboxing para el ajuste de imágenes",
+      "guide": {
+        "steps": [
+          "Introduce el ancho y alto original de tu imagen o vídeo.",
+          "Introduce el ancho y alto del marco de destino.",
+          "Lee el tamaño ajustado, el factor de escala y si hacen falta barras."
+        ],
+        "explanationTitle": "¿Qué es el escalado aspect-fit?",
+        "formula": "escala = min(destW / origW, destH / origH); ajustW = origW × escala; ajustH = origH × escala",
+        "explanation": [
+          "Aspect-fit escala el contenido para que quepa entero en el marco destino sin cambiar su proporción.",
+          "El espacio sobrante forma barras letterbox (arriba/abajo) o pillarbox (izquierda/derecha). Aspect-fill hace lo contrario y recorta."
+        ],
+        "faq": [
+          {
+            "q": "¿Diferencia entre fit y fill?",
+            "a": "Fit muestra todo con posibles barras; fill llena el marco pero recorta el desbordamiento."
+          },
+          {
+            "q": "¿Por qué salen barras negras?",
+            "a": "Aparecen cuando difieren las proporciones; mantienen la imagen sin distorsión."
+          },
+          {
+            "q": "¿Cambia aspect-fit la resolución?",
+            "a": "No; solo cambia cómo se mapea al marco, no los píxeles originales."
+          }
+        ]
+      }
     },
     "composition": {
       "name": "Composición",
@@ -1233,7 +1395,34 @@
     "light-ev": {
       "name": "Vehículo eléctrico ligero",
       "description": "Calcular el valor de exposición a partir de la configuración de la cámara",
-      "metaDescription": "Calcular el valor de exposición a partir de la configuración de la cámara"
+      "metaDescription": "Calcular el valor de exposición a partir de la configuración de la cámara",
+      "guide": {
+        "steps": [
+          "Introduce apertura, velocidad y ISO.",
+          "Lee el EV en el ISO elegido.",
+          "Compara con el EV objetivo de tu luz."
+        ],
+        "explanationTitle": "Valor de exposición (EV)",
+        "formula": "EV = log2(N² / t);  EV100 = EV − log2(S / 100)",
+        "explanation": [
+          "El valor de exposición combina apertura y tiempo en un número; +1 EV duplica la luz.",
+          "El EV a ISO 100 (EV100) es la referencia estándar de los fotómetros."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hace +1 EV?",
+            "a": "Duplica la exposición; −1 EV la reduce a la mitad."
+          },
+          {
+            "q": "¿Por qué ISO 100?",
+            "a": "EV100 normaliza todas las lecturas a igual sensibilidad."
+          },
+          {
+            "q": "¿Tiempo desde EV?",
+            "a": "Sí; con apertura e ISO fijos: t = N² / 2^EV."
+          }
+        ]
+      }
     },
     "megapixels": {
       "name": "megapíxel",
@@ -1270,27 +1459,162 @@
     "megapixel-aspects": {
       "name": "Aspectos megapíxeles",
       "description": "Ver megapíxeles en diferentes relaciones de aspecto",
-      "metaDescription": "Ver recuentos de megapíxeles en diferentes relaciones de aspecto"
+      "metaDescription": "Ver recuentos de megapíxeles en diferentes relaciones de aspecto",
+      "guide": {
+        "steps": [
+          "Introduce los megapíxeles del sensor o imagen.",
+          "Elige la proporción, como 3:2, 4:3 o 16:9.",
+          "Lee el ancho y alto en píxeles para esa proporción."
+        ],
+        "explanationTitle": "Megapíxeles a dimensiones en píxeles",
+        "formula": "pixelesTot = MP × 1.000.000; ancho = √(pixTot × (W/(W+H))); alto normalizado",
+        "explanation": [
+          "Un megapíxel son un millón de píxeles. La misma cifra da distintos anchos y altos según la proporción.",
+          "Las cámaras usan 3:2 (réflex), 4:3 (MFT, móviles) y 16:9 (vídeo)."
+        ],
+        "faq": [
+          {
+            "q": "¿Más megapíxeles = mejor calidad?",
+            "a": "No siempre; el tamaño del sensor, la óptica y la calidad de píxel también cuentan."
+          },
+          {
+            "q": "¿Por qué el móvil graba 16:9 si la foto es 4:3?",
+            "a": "El vídeo recorta el sensor a 16:9, por eso cambian las resoluciones."
+          },
+          {
+            "q": "¿Cómo obtengo medidas exactas?",
+            "a": "El calculador resuelve ancho × alto = píxeles totales bajo tu proporción."
+          }
+        ]
+      }
     },
     "portrait-distance": {
       "name": "Distancia vertical",
       "description": "Calcule la distancia de disparo ideal para retratos",
-      "metaDescription": "Calcula la distancia ideal para la fotografía de retratos."
+      "metaDescription": "Calcula la distancia ideal para la fotografía de retratos.",
+      "guide": {
+        "steps": [
+          "Introduce la distancia focal y la altura del sensor.",
+          "Introduce la altura del sujeto que quieres encuadrar.",
+          "Lee la distancia de disparo necesaria."
+        ],
+        "explanationTitle": "Distancia de retrato",
+        "formula": "distancia = focal × (alturaSujeto / alturaSensor)",
+        "explanation": [
+          "Por triángulos semejantes, la distancia escala con la focal y la relación tamaño sujeto a tamaño sensor.",
+          "Lentes más largas permiten más distancia con el mismo encuadre y aplanan la perspectiva para retratos favorecedores."
+        ],
+        "faq": [
+          {
+            "q": "¿Incluye recorte?",
+            "a": "No; asume sensor lleno. Recortar luego equivale a focal más larga."
+          },
+          {
+            "q": "¿Por qué 85mm para retratos?",
+            "a": "Da compresión agradable y distancia cómoda llenando el encuadre."
+          },
+          {
+            "q": "¿Factor de recorte?",
+            "a": "Usa la focal efectiva (lente × recorte) para distancia exacta."
+          }
+        ]
+      }
     },
     "star-trails": {
       "name": "Senderos de estrellas",
       "description": "Calcular el tiempo de exposición para la rotación del rastro de estrellas.",
-      "metaDescription": "Calcular tiempos de exposición para fotografía de rastros de estrellas"
+      "metaDescription": "Calcular tiempos de exposición para fotografía de rastros de estrellas",
+      "guide": {
+        "steps": [
+          "Introduce focal y factor de recorte.",
+          "Lee la exposición máxima antes de rastros.",
+          "Usa tiempo más corto o usa rastros como arte."
+        ],
+        "explanationTitle": "Límite de rastros estelares",
+        "formula": "t_max = 500 / (focal_mm × recorte)  (s)",
+        "explanation": [
+          "La regla 500 estima el tiempo máximo antes de que la rotación vuelva estrellas en rayas.",
+          "Es una regla práctica; sensores de más MP muestran rastros antes, algunos usan 300."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué dividir por recorte?",
+            "a": "Los sensores recortados amplifican el movimiento aparente."
+          },
+          {
+            "q": "¿500 o 300?",
+            "a": "300 es más estricto y seguro para sensores de alta resolución."
+          },
+          {
+            "q": "¿Estrellas puntuales en larga?",
+            "a": "Sí, con montura ecuatorial; si no, los rastros son creativos."
+          }
+        ]
+      }
     },
     "spot-stars": {
       "name": "Estrellas puntuales",
       "description": "Calcule la exposición máxima para evitar el seguimiento de estrellas (Regla NPF)",
-      "metaDescription": "Calcula el tiempo máximo de exposición para estrellas nítidas"
+      "metaDescription": "Calcula el tiempo máximo de exposición para estrellas nítidas",
+      "guide": {
+        "steps": [
+          "Introduce focal, apertura y paso de píxel.",
+          "Lee el tiempo máximo para estrellas puntuales.",
+          "Ajusta el obturador a ese valor o menos."
+        ],
+        "explanationTitle": "Regla NPF para estrellas nítidas",
+        "formula": "t = (35 × apertura + 30 × pasoPixel[µm]) / focal[mm]  (s)",
+        "explanation": [
+          "La regla NPF refina la de 500 incluyendo apertura y tamaño de píxel, no solo focal.",
+          "Suele dar tiempos más cortos y seguros, sobre todo en cámaras de alta resolución."
+        ],
+        "faq": [
+          {
+            "q": "NPF vs 500?",
+            "a": "NPF es más precisa al incluir apertura y paso de píxel."
+          },
+          {
+            "q": "¿Qué es paso de píxel?",
+            "a": "Ancho físico de un píxel en µm; píxeles menores exigen tiempos cortos."
+          },
+          {
+            "q": "¿Aún usar tracker?",
+            "a": "Para deep-sky sí; NPF solo evita rastros visibles."
+          }
+        ]
+      }
     },
     "time-lapse": {
       "name": "Lapso de tiempo",
       "description": "Calcule el intervalo, la duración del clip y la memoria para el lapso de tiempo",
-      "metaDescription": "Planifica tus proyectos de fotografía time-lapse"
+      "metaDescription": "Planifica tus proyectos de fotografía time-lapse",
+      "guide": {
+        "steps": [
+          "Introduce la duración real a capturar.",
+          "Introduce intervalo y fps del clip.",
+          "Lee el número de frames y la duración del clip."
+        ],
+        "explanationTitle": "Cálculo de frames y clip en time-lapse",
+        "formula": "frames = duración / intervalo; clipSeg = frames / fps",
+        "explanation": [
+          "El time-lapse comprime cambios lentos muestreando a intervalos amplios.",
+          "Se busca 24–30 fps; el intervalo define cuánto tiempo real representa cada frame."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué intervalo?",
+            "a": "Según movimiento: nubes 2–5s, estrellas 15–30s, plantas minutos u horas."
+          },
+          {
+            "q": "¿Cuánto dura el clip?",
+            "a": "ClipSeg = frames ÷ fps; más frames = más largo y fluido."
+          },
+          {
+            "q": "¿Importa la velocidad?",
+            "a": "Mantén el obturador bien por debajo del intervalo para evitar huecos y parpadeo."
+          }
+        ]
+      }
     },
     "focal-equivalent": {
       "name": "Longitud focal equivalente",
@@ -1627,37 +1951,226 @@
     "sun-position": {
       "name": "Posición del sol",
       "description": "Calcula la posición del sol, las horas del crepúsculo y las fases de luz para fotografía.",
-      "metaDescription": "Calcule la altitud del sol, el azimut, la hora del crepúsculo, la hora dorada y la hora azul para la planificación fotográfica."
+      "metaDescription": "Calcule la altitud del sol, el azimut, la hora del crepúsculo, la hora dorada y la hora azul para la planificación fotográfica.",
+      "guide": {
+        "steps": [
+          "Introduce latitud, longitud, fecha y hora local.",
+          "Lee altura y acimut del sol.",
+          "Usa los ángulos para golden hour, sombras o alineaciones."
+        ],
+        "explanationTitle": "Posición solar: altura y acimut",
+        "formula": "sin(alt) = sin(lat)·sin(dec) + cos(lat)·cos(dec)·cos(horaAng)",
+        "explanation": [
+          "La posición solar depende de lugar, fecha (declinación) y hora (ángulo horario).",
+          "Altura es el ángulo sobre el horizonte; acimut la dirección de la brújula."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es declinación?",
+            "a": "Es la 'latitud' del sol en el cielo, de −23,4° a +23,4° al año."
+          },
+          {
+            "q": "¿Qué precisión?",
+            "a": "Para planear ~1°; refracción cerca del horizonte no se modela."
+          },
+          {
+            "q": "¿Por qué acimut?",
+            "a": "Predice dónde estará el sol para alineaciones y sombras."
+          }
+        ]
+      }
     },
     "circle-of-confusion": {
       "name": "Círculo de confusión",
       "description": "Calcule CoC a partir del sensor, el tamaño de impresión y la distancia de visualización",
-      "metaDescription": "Calcular el círculo de confusión para la profundidad de campo."
+      "metaDescription": "Calcular el círculo de confusión para la profundidad de campo.",
+      "guide": {
+        "steps": [
+          "Introduce distancia de visión y tamaño de imagen.",
+          "Introduce la agudeza visual (ángulo resoluble).",
+          "Lee el diámetro del círculo de confusión para la DoF."
+        ],
+        "explanationTitle": "Círculo de confusión explicado",
+        "formula": "c = distVisión × tan(ánguloResoluble)  (escalado al sensor)",
+        "explanation": [
+          "El círculo de confusión es la mancha borrosa más grande que aún parece un punto.",
+          "Depende del tamaño mostrado y la distancia; impresiones grandes vistas de cerca necesitan CoC menor."
+        ],
+        "faq": [
+          {
+            "q": "¿Qué CoC uso?",
+            "a": "Común: 0,03 mm (full frame), 0,02 mm (APS-C), 0,015 mm (M4/3)."
+          },
+          {
+            "q": "¿El tamaño de impresión cambia CoC?",
+            "a": "Sí; impresiones grandes de cerca exigen CoC menor."
+          },
+          {
+            "q": "¿Es CoC un punto físico?",
+            "a": "Es una tolerancia derivada que alimenta las fórmulas DoF."
+          }
+        ]
+      }
     },
     "advanced-dof": {
       "name": "DoF avanzado",
       "description": "Profundidad de campo con CoC ajustable para tamaño de impresión y visualización",
-      "metaDescription": "Cálculos avanzados de profundidad de campo."
+      "metaDescription": "Cálculos avanzados de profundidad de campo.",
+      "guide": {
+        "steps": [
+          "Introduce focal, apertura, distancia de enfoque y CoC.",
+          "Elige el tamaño del sensor para un CoC por defecto razonable.",
+          "Lee el límite cercano, lejano y la profundidad total."
+        ],
+        "explanationTitle": "Profundidad de campo avanzada",
+        "formula": "DoF = (2 · N · c · d² · (m + 1)) / (f²)  (aprox.), m = magnificación",
+        "explanation": [
+          "La profundidad de campo es el rango delante y detrás del foco que parece nítido.",
+          "Menor apertura, focal más corta y mayor distancia aumentan la DoF. Este calculador usa un modelo más preciso que el atajo hiperfocal."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué no usar hiperfocal?",
+            "a": "Hiperfocal es estimación rápida para paisaje; aquí hay límites exactos a cualquier distancia."
+          },
+          {
+            "q": "¿Importa el tamaño del sensor?",
+            "a": "Sí; sensores grandes necesitan CoC mayor, cambiando la DoF."
+          },
+          {
+            "q": "¿Incluye difracción?",
+            "a": "No; con aperturas muy pequeñas la difracción reduce la nitidez."
+          }
+        ]
+      }
     },
     "macro-dof": {
       "name": "Macro de campo de visión",
       "description": "Profundidad de campo precisa para fotografía macro",
-      "metaDescription": "Calcular la profundidad de campo para fotografía macro."
+      "metaDescription": "Calcular la profundidad de campo para fotografía macro.",
+      "guide": {
+        "steps": [
+          "Introduce apertura y la relación de ampliación macro.",
+          "Introduce el círculo de confusión de tu sensor.",
+          "Lee la profundidad de campo muy reducida del primer plano."
+        ],
+        "explanationTitle": "Profundidad de campo macro",
+        "formula": "DoF ≈ (2 · N · c · (m + 1)) / m²",
+        "explanation": [
+          "En macro la profundidad se vuelve extremadamente fina y depende de la ampliación, no de la focal.",
+          "Como la apertura efectiva crece a N × (m + 1), cerrar poco ayuda; el apilado de enfoque suele ser la solución."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi macro sale borroso?",
+            "a": "La DoF puede ser fracción de mm; el apilado de enfoque ayuda."
+          },
+          {
+            "q": "¿Importa la focal en macro?",
+            "a": "A igual ampliación, apenas; la ampliación es lo que cuenta."
+          },
+          {
+            "q": "¿Cómo ganar nitidez?",
+            "a": "Apila varios fotogramas enfocados, usa trípode y buena luz."
+          }
+        ]
+      }
     },
     "dof-table": {
       "name": "Tabla de grados de libertad",
       "description": "Tabla interactiva que muestra DoF en aperturas y distancias",
-      "metaDescription": "Tabla de referencia para profundidad de campo."
+      "metaDescription": "Tabla de referencia para profundidad de campo.",
+      "guide": {
+        "steps": [
+          "Elige focal y apertura.",
+          "Elige la distancia de enfoque de tu escena.",
+          "Lee límite cercano, lejano y DoF en la tabla."
+        ],
+        "explanationTitle": "Leer una tabla de profundidad de campo",
+        "formula": "Usa el mismo modelo que DoF avanzada; valores precalculados por celda.",
+        "explanation": [
+          "Una tabla de DoF lista los rangos nítidos para planear el enfoque sin calculadora.",
+          "Las tablas son específicas del sensor; usa la de tu cámara o ajusta el CoC."
+        ],
+        "faq": [
+          {
+            "q": "¿Tabla en vez de calculadora?",
+            "a": "Las tablas son rápidas para ajustes comunes y útiles al planear."
+          },
+          {
+            "q": "¿Son precisas?",
+            "a": "Tan precisas como el modelo; solo empareja el sensor."
+          },
+          {
+            "q": "¿Cómo leer límites?",
+            "a": "Cercano = distancia nítida más próxima; lejano = más lejana."
+          }
+        ]
+      }
     },
     "diffraction": {
       "name": "Difracción",
       "description": "Calcule cuándo su cámara se vuelve limitada en difracción",
-      "metaDescription": "Calcula los límites de difracción de tu cámara"
+      "metaDescription": "Calcula los límites de difracción de tu cámara",
+      "guide": {
+        "steps": [
+          "Introduce apertura y longitud de onda.",
+          "Introduce paso de píxel para ver el desenfoque.",
+          "Lee el disco de Airy y si la difracción limita."
+        ],
+        "explanationTitle": "Límite de difracción y disco de Airy",
+        "formula": "radioAiry = 1,22 × λ × N; desenfoquePix = 2,44 × λ × N / pasoPixel",
+        "explanation": [
+          "Incluso un objetivo perfecto curva la luz en un patrón pequeño (disco de Airy) limitado por la apertura.",
+          "Pasado un f-number, el disco supera el paso de píxel y la imagen se ablanda pese a más DoF."
+        ],
+        "faq": [
+          {
+            "q": "¿Menor apertura siempre más nítida?",
+            "a": "No; más allá del límite, cerrar ablanda el detalle a pesar de más DoF."
+          },
+          {
+            "q": "¿Qué longitud de onda?",
+            "a": "Verde ~550 nm es un buen promedio visible."
+          },
+          {
+            "q": "¿Evitar ablandamiento?",
+            "a": "Usa la apertura más nítida (f/5,6–f/8) y evita extremos."
+          }
+        ]
+      }
     },
     "macro-diffraction": {
       "name": "Macrodifracción",
       "description": "Calcular apertura y difracción efectivas en fotografía macro.",
-      "metaDescription": "Calcular efectos de difracción en fotografía macro."
+      "metaDescription": "Calcular efectos de difracción en fotografía macro.",
+      "guide": {
+        "steps": [
+          "Introduce apertura y ampliación macro.",
+          "Introduce paso de píxel.",
+          "Lee la apertura efectiva y el desenfoque por difracción."
+        ],
+        "explanationTitle": "Difracción en macro",
+        "formula": "Nef = N × (1 + m); desenfoquePix = 2,44 × λ × Nef / pasoPixel",
+        "explanation": [
+          "En macro la apertura efectiva crece a N × (1 + m), así la difracción ablanda antes.",
+          "Por eso los macro se usan casi abiertos y bien iluminados, no cerrados."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué tan limitado por difracción?",
+            "a": "La apertura efectiva multiplica por (1 + m), creciendo el disco de Airy rápido."
+          },
+          {
+            "q": "¿Cerrar para DoF en macro?",
+            "a": "Solo un poco; la ganancia de DoF es mínima y la pérdida por difracción grande. Mejor apilar."
+          },
+          {
+            "q": "¿Mejor práctica?",
+            "a": "Luz suficiente cerca de la apertura más nítida y apilar enfoque."
+          }
+        ]
+      }
     },
     "bpm": {
       "name": "BPM",
@@ -1667,42 +2180,258 @@
     "video-file-size": {
       "name": "Tamaño del archivo de vídeo",
       "description": "Calcule el tamaño del archivo de video a partir de la resolución y la duración",
-      "metaDescription": "Calcule el tamaño de los archivos de video según la configuración"
+      "metaDescription": "Calcule el tamaño de los archivos de video según la configuración",
+      "guide": {
+        "steps": [
+          "Introduce duración, resolución y calidad.",
+          "Introduce códec y fps, o elige un ajuste.",
+          "Lee el tamaño estimado y ajusta el bitrate."
+        ],
+        "explanationTitle": "Estimar tamaño de vídeo",
+        "formula": "tamaño = bitrate × duración; bitrate ≈ resolución × fps × factorCalidad",
+        "explanation": [
+          "El tamaño depende sobre todo de bitrate y duración; resolución y fps fijan el bitrate necesario.",
+          "Codecs como H.265/HEVC y AV1 comprimen mucho más que H.264 a igual calidad."
+        ],
+        "faq": [
+          {
+            "q": "¿4K es 4 veces 1080p?",
+            "a": "No exacto; codecs eficientes y límites de bitrate reducen el aumento."
+          },
+          {
+            "q": "¿Qué códec ahorra más?",
+            "a": "AV1 y H.265 suelen batir a H.264 un 30–50% a igual calidad."
+          },
+          {
+            "q": "¿Por qué el audio es pequeño?",
+            "a": "Sus bitrates (128–320 kbps) son minúsculos frente a los Mbps de vídeo."
+          }
+        ]
+      }
     },
     "audio-filesize": {
       "name": "Tamaño del archivo de audio",
       "description": "Calcule el tamaño del archivo de audio a partir de la duración y el formato",
-      "metaDescription": "Calcule el tamaño de los archivos de audio para diferentes formatos"
+      "metaDescription": "Calcule el tamaño de los archivos de audio para diferentes formatos",
+      "guide": {
+        "steps": [
+          "Introduce duración y frecuencia de muestreo (p. ej. 44,1 kHz).",
+          "Elige profundidad de bits o bitrate (sin/Con pérdida).",
+          "Lee el tamaño estimado de archivo."
+        ],
+        "explanationTitle": "Estimar tamaño de audio",
+        "formula": "tamaño = muestreo × bits × canales × duración (PCM); o bitrate × duración",
+        "explanation": [
+          "El audio sin comprimir crece con muestreo, profundidad y canales; estéreo duplica el mono.",
+          "MP3/AAC apuntan a un bitrate; FLAC comprime PCM sin pérdida de información."
+        ],
+        "faq": [
+          {
+            "q": "¿WAV vs FLAC?",
+            "a": "WAV es PCM crudo (mayor); FLAC sin pérdida suele ser 50–60% menor."
+          },
+          {
+            "q": "¿Más muestreo = mejor sonido?",
+            "a": "Solo si la fuente y el oído lo aprovechan; 44,1/48 kHz basta a menudo."
+          },
+          {
+            "q": "¿Por qué estéreo es el doble?",
+            "a": "Dos canales guardan muestras independientes, duplicando la tasa."
+          }
+        ]
+      }
     },
     "common-bitrates": {
       "name": "Referencia de velocidades de bits comunes",
       "description": "Guía de referencia para velocidades de bits ProRes, DNxHD, DCP y MPEG",
-      "metaDescription": "Guía de referencia para velocidades de bits de códecs de vídeo"
+      "metaDescription": "Guía de referencia para velocidades de bits de códecs de vídeo",
+      "guide": {
+        "steps": [
+          "Elige destino: streaming, broadcast, disco o máster.",
+          "Elige resolución y fps.",
+          "Lee el rango típico y elige según calidad/ancho de banda."
+        ],
+        "explanationTitle": "Bitrates comunes por caso",
+        "formula": "Referencia: 1080p ≈ 5–8 Mbps (H.264), 4K ≈ 15–25 Mbps (H.264), menos con H.265/AV1",
+        "explanation": [
+          "Las tablas son puntos de partida; el valor depende de códec, complejidad y artefactos aceptables.",
+          "El streaming usa escalones adaptativos; disco y broadcast tienen normas estrictas como Blu-ray o ATSC."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué varían las tablas?",
+            "a": "Asumen códecs/contenidos distintos; la acción rápida necesita más bits."
+          },
+          {
+            "q": "¿Más bitrate siempre mejor?",
+            "a": "Hasta cierto punto; luego pierdes ancho de banda sin ganancia visible."
+          },
+          {
+            "q": "¿H.265/AV1?",
+            "a": "Logran la misma calidad a la mitad del bitrate de H.264."
+          }
+        ]
+      }
     },
     "dcp-filesize": {
       "name": "Tamaño del archivo DCP",
       "description": "Calcular el tamaño de los archivos del paquete de cine digital",
-      "metaDescription": "Calcule el tamaño de los archivos DCP para la distribución cinematográfica"
+      "metaDescription": "Calcule el tamaño de los archivos DCP para la distribución cinematográfica",
+      "guide": {
+        "steps": [
+          "Introduce duración y resolución (2K/4K).",
+          "Elige fps (24/25/30/48/60) y bitrate J2K.",
+          "Lee el tamaño del DCP con audio y subtítulos."
+        ],
+        "explanationTitle": "Tamaño de un Digital Cinema Package",
+        "formula": "tamaño ≈ (videoBitrate + audioBitrate) × duración; 4K@24 ≈ 250 Mbps",
+        "explanation": [
+          "Un DCP guarda cada fotograma como JPEG 2000 más audio PCM, por eso es enorme vs formatos consumer.",
+          "Los DCP se construyen por versión (2D/3D, idiomas); cada versión multiplica almacenamiento e ingest."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué tan grandes?",
+            "a": "J2K casi sin pérdida a bitrate de cine, muy por encima del streaming."
+          },
+          {
+            "q": "¿Recargo 3D?",
+            "a": "El 3D duplica los datos de imagen, aproximadamente el doble del vídeo."
+          },
+          {
+            "q": "¿Cuánto tarda el ingest?",
+            "a": "Según disco; 200 GB pueden tardar 20–40 min en copiarse."
+          }
+        ]
+      }
     },
     "foot-lambert": {
       "name": "Pie-Lambert",
       "description": "Calcular la luminancia de la pantalla para proyección de cine.",
-      "metaDescription": "Calcular el brillo de la pantalla para proyección de cine."
+      "metaDescription": "Calcular el brillo de la pantalla para proyección de cine.",
+      "guide": {
+        "steps": [
+          "Introduce la luminancia en fL o nits.",
+          "Elige la dirección.",
+          "Lee el valor equivalente."
+        ],
+        "explanationTitle": "Foot-lambert y nits",
+        "formula": "1 fL = 3,426 nits (cd/m²); 1 nit = 0,2919 fL",
+        "explanation": [
+          "El foot-lambert es una unidad de luminancia de EE. UU. para cine; el nit (cd/m²) es SI.",
+          "Una sala oscura ronda 14–16 fL, mientras TVs brillantes superan 500–1000 nits."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué fL en cine?",
+            "a": "Unidad tradicional de brillo de pantalla proyectada en EE. UU."
+          },
+          {
+            "q": "¿Cuántos nits son 14 fL?",
+            "a": "Unos 48 nits (14 × 3,426), el objetivo SMPTE clásico."
+          },
+          {
+            "q": "¿Comparables nits HDR y fL?",
+            "a": "No; los nits pico HDR miden brillo de altas luces, no fL estable."
+          }
+        ]
+      }
     },
     "screen-size": {
       "name": "Tamaño de pantalla",
       "description": "Calcule las dimensiones de la pantalla a partir de la diagonal y la relación de aspecto",
-      "metaDescription": "Calcular las dimensiones de la pantalla a partir del tamaño diagonal."
+      "metaDescription": "Calcular las dimensiones de la pantalla a partir del tamaño diagonal.",
+      "guide": {
+        "steps": [
+          "Introduce la diagonal en pulgadas o cm.",
+          "Introduce la proporción (16:9, 21:9, 4:3…).",
+          "Lee el ancho y alto del área visible."
+        ],
+        "explanationTitle": "Tamaño de pantalla desde la diagonal",
+        "formula": "ancho = diagonal / √(1 + (H/W)²); alto = ancho × (H/W)",
+        "explanation": [
+          "El tamaño se da por la diagonal, pero el ancho y alto visibles dependen de la proporción.",
+          "Un TV de 65 pulgadas 16:9 mide ~56,7 pulgadas de ancho; igual diagonal en 21:9 es más ancho y bajo."
+        ],
+        "faq": [
+          {
+            "q": "¿La diagonal incluye el marco?",
+            "a": "No; es el panel visible, aunque algunos lo difuminan."
+          },
+          {
+            "q": "¿Por qué 21:9 es distinto?",
+            "a": "Misma diagonal pero rectángulo más ancho y bajo; cine sí, documentos no."
+          },
+          {
+            "q": "¿cm a pulgadas?",
+            "a": "Centímetros dividido 2,54."
+          }
+        ]
+      }
     },
     "video-bitrate": {
       "name": "Velocidad de bits de vídeo",
       "description": "Estimar la tasa de bits de video según la resolución y el códec",
-      "metaDescription": "Calcular tasas de bits de vídeo óptimas"
+      "metaDescription": "Calcular tasas de bits de vídeo óptimas",
+      "guide": {
+        "steps": [
+          "Introduce tamaño objetivo y duración.",
+          "Introduce el bitrate de audio.",
+          "Lee el bitrate de vídeo necesario."
+        ],
+        "explanationTitle": "Bitrate de vídeo desde tamaño objetivo",
+        "formula": "videoBitrate = (bytesObj × 8 / duración) − audioBitrate",
+        "explanation": [
+          "Si el vídeo debe caber en un presupuesto fijo, calcula el bitrate a partir del tamaño.",
+          "Deja margen para contenedor y audio; la calculadora resta audio y da el resto al vídeo."
+        ],
+        "faq": [
+          {
+            "q": "¿Archivo mayor que el objetivo?",
+            "a": "El contenedor, los keyframes y el audio ocupan espacio extra."
+          },
+          {
+            "q": "¿Bajar resolución o bitrate?",
+            "a": "Primero bitrate; bajar resolución pierde detalle para siempre."
+          },
+          {
+            "q": "¿Bitrate para 1 GB/hora?",
+            "a": "Con audio ~128 kbps, vídeo ~2,2 Mbps."
+          }
+        ]
+      }
     },
     "frame-rate": {
       "name": "Convertidor de velocidad de fotogramas",
       "description": "Convierta entre velocidades de fotogramas con comandos ffmpeg",
-      "metaDescription": "Convertir vídeo entre velocidades de fotogramas"
+      "metaDescription": "Convertir vídeo entre velocidades de fotogramas",
+      "guide": {
+        "steps": [
+          "Introduce la fps de origen.",
+          "Introduce la fps destino.",
+          "Lee el cambio de velocidad y si hay que soltar/mezclar frames."
+        ],
+        "explanationTitle": "Conversión de frame rate",
+        "formula": "velocidad = fpsDest / fpsOrig; duraciónNueva = duración / velocidad",
+        "explanation": [
+          "Cambiar fps sin ajustar velocidad altera la reproducción; 30→24 fps ralentiza un 20%.",
+          "24→60 fps necesita interpolación o frames duplicados; el resampleo simple da tirones."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué 24→30 se ve mal?",
+            "a": "Sin pulldown/interpolación, 24 no divide 30 parejo y salta."
+          },
+          {
+            "q": "¿60 fps siempre más fluido?",
+            "a": "En movimiento sí, pero a los cinéfilos les disgusta el efecto 'telefilme'."
+          },
+          {
+            "q": "¿Qué es 3:2 pulldown?",
+            "a": "Patrón que mapea cine 24 fps a 60 Hz entrelazado repitiendo campos."
+          }
+        ]
+      }
     },
     "url-encoder": {
       "name": "Codificador de URL",
@@ -5504,22 +6233,130 @@
     "tcp-throughput": {
       "name": "Rendimiento TCP",
       "description": "Calcule el rendimiento teórico de TCP utilizando la fórmula de Mathis",
-      "metaDescription": "Calcule el rendimiento máximo de TCP según MSS, RTT y la tasa de pérdida de paquetes utilizando la fórmula de Mathis"
+      "metaDescription": "Calcule el rendimiento máximo de TCP según MSS, RTT y la tasa de pérdida de paquetes utilizando la fórmula de Mathis",
+      "guide": {
+        "steps": [
+          "Introduce RTT y pérdida de paquetes.",
+          "Introduce la MSS (usualmente 1460 bytes).",
+          "Lee el rendimiento TCP máximo sostenible."
+        ],
+        "explanationTitle": "Rendimiento TCP (ecuación de Mathis)",
+        "formula": "Rendimiento ≤ (MSS / RTT) × C / √(pérdida),  C ≈ 0,93",
+        "explanation": [
+          "La ecuación de Mathis modela el techo de rendimiento de TCP limitado por pérdida y RTT.",
+          "Incluso pérdida mínima (0,1%) limita mucho el rendimiento en enlaces de RTT largo."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué 1% de pérdida duele?",
+            "a": "Rendimiento ∝ 1/√pérdida; 1% puede bajarlo a ~10% del caso sin pérdida."
+          },
+          {
+            "q": "¿Ayuda ventana mayor?",
+            "a": "Solo hasta BDP; la pérdida sigue limitando el techo de Mathis."
+          },
+          {
+            "q": "¿Cómo mejorar?",
+            "a": "Reduce RTT o pérdida (ruta, FEC, BBR), no solo subir ancho de banda."
+          }
+        ]
+      }
     },
     "bandwidth-delay-product": {
       "name": "Producto de retardo de ancho de banda",
       "description": "Calcule BDP y el tamaño óptimo del búfer TCP",
-      "metaDescription": "Calcule el producto de retardo de ancho de banda y el tamaño de ventana TCP requerido para un rendimiento óptimo de la red"
+      "metaDescription": "Calcule el producto de retardo de ancho de banda y el tamaño de ventana TCP requerido para un rendimiento óptimo de la red",
+      "guide": {
+        "steps": [
+          "Introduce ancho de banda y RTT.",
+          "Lee el BDP en bits y bytes.",
+          "Úsalo para dimensionar ventana y búfer TCP."
+        ],
+        "explanationTitle": "Producto ancho de banda-retraso (BDP)",
+        "formula": "BDP = ancho(bits/s) × RTT(s)",
+        "explanation": [
+          "El BDP es la cantidad de datos 'en vuelo'; fija la ventana TCP mínima para llenar el enlace.",
+          "100 Mbps con RTT 100 ms da BDP ≈ 1,25 MB; la ventana debe superarlo."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué importa BDP?",
+            "a": "Si la ventana es menor que BDP, el emisor espera ACK y el enlace no se llena."
+          },
+          {
+            "q": "¿Cómo dimensionar búfer?",
+            "a": "Ventana TCP y búferes intermedios al menos igual al BDP."
+          },
+          {
+            "q": "¿BDP crece con distancia?",
+            "a": "Sí; RTT sube con distancia, enlaces largos necesitan ventanas mayores."
+          }
+        ]
+      }
     },
     "bb-credit-calculator": {
       "name": "Calculadora de crédito BB",
       "description": "Calcule los créditos BB de Fibre Channel para enlaces ISL según la velocidad y la distancia",
-      "metaDescription": "Calculadora de crédito SAN BB gratuita: calcula créditos de búfer a búfer para enlaces Brocade FOS y Cisco MDS ISL según la velocidad de FC y la distancia del cable"
+      "metaDescription": "Calculadora de crédito SAN BB gratuita: calcula créditos de búfer a búfer para enlaces Brocade FOS y Cisco MDS ISL según la velocidad de FC y la distancia del cable",
+      "guide": {
+        "steps": [
+          "Introduce la línea en Gbps (16, 32, 64).",
+          "Introduce el tiempo de ida y vuelta en ms.",
+          "Lee el valor recomendado de BB_Credit."
+        ],
+        "explanationTitle": "Dimensionar BB_Credit de Fibre Channel",
+        "formula": "BB_Credit ≈ RTT(ms) × línea(Gbps) / 10",
+        "explanation": [
+          "BB_Credit es el número de créditos buffer-a-buffer que anuncia un puerto FC para mantener el enlace lleno sin esperar ACK.",
+          "Pocos créditos ahogan enlaces largos; la fórmula llena la tubería durante un round-trip."
+        ],
+        "faq": [
+          {
+            "q": "¿Pocos créditos?",
+            "a": "El emisor se detiene esperando ACK; enlaces largos subutilizados."
+          },
+          {
+            "q": "¿Más siempre mejor?",
+            "a": "Demasiados desperdician búfer; ajústalo al RTT real."
+          },
+          {
+            "q": "¿Aplica a TCP?",
+            "a": "TCP usa ventana/BDP similar; BB_Credit es el equivalente en SAN."
+          }
+        ]
+      }
     },
     "latency-converter": {
       "name": "Convertidor de latencia",
       "description": "Convertir entre unidades de tiempo de ping (segundos, milisegundos, microsegundos, nanosegundos)",
-      "metaDescription": "Conversor de latencia de red gratuito. Convierta los tiempos de ping entre segundos, milisegundos, microsegundos y nanosegundos con el contexto de la categoría de latencia."
+      "metaDescription": "Conversor de latencia de red gratuito. Convierta los tiempos de ping entre segundos, milisegundos, microsegundos y nanosegundos con el contexto de la categoría de latencia.",
+      "guide": {
+        "steps": [
+          "Introduce latencia en ms, µs o ns.",
+          "Elige la unidad destino.",
+          "Lee la latencia equivalente para ajustar red/almacenamiento."
+        ],
+        "explanationTitle": "Conversión de unidades de latencia",
+        "formula": "1 ms = 1000 µs = 1.000.000 ns; 1 µs = 1000 ns",
+        "explanation": [
+          "La latencia es el tiempo de viaje de un paquete o I/O, citada en distintas escalas.",
+          "RTT de red suele ser ms, I/O de SSD µs, caché de CPU ns."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué importa la unidad?",
+            "a": "10 ms vs 10 µs es 1000x; mezclarlos causa errores graves."
+          },
+          {
+            "q": "¿Latencia y velocidad luz?",
+            "a": "En fibra ~200.000 km/s, así ~5 ms por 1000 km es suelo físico."
+          },
+          {
+            "q": "¿Siempre mejor baja?",
+            "a": "Para interactividad sí, pero la física pone mínimo por distancia."
+          }
+        ]
+      }
     },
     "food-cost": {
       "name": "Calculadora de costos de alimentos",

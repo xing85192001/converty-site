@@ -940,12 +940,66 @@
     "data-size": {
       "name": "Datengroessen",
       "description": "Konvertieren Sie zwischen Bytes, KB, MB, GB, TB und mehr",
-      "metaDescription": "Konvertieren Sie Datengroessen zwischen Bytes, Kilobytes, Megabytes und mehr"
+      "metaDescription": "Konvertieren Sie Datengroessen zwischen Bytes, Kilobytes, Megabytes und mehr",
+      "guide": {
+        "steps": [
+          "Gib einen Wert in Byte, KB, MB, GB oder TB ein.",
+          "Wähle binär (1024) oder dezimal (1000).",
+          "Lies die Größe in allen anderen Einheiten."
+        ],
+        "explanationTitle": "Datengrößen umrechnen",
+        "formula": "1 GiB = 1024 MiB; 1 GB = 1000 MB (dezimal); MiB = 1024² Byte",
+        "explanation": [
+          "Speicher nutzt zwei Systeme: binär (KiB/MiB/GiB, 1024er) beim OS, dezimal (KB/MB/GB, 1000er) bei Herstellern.",
+          "Daher zeigt eine '1 TB'-Platte im Manager etwa 931 GiB."
+        ],
+        "faq": [
+          {
+            "q": "Warum zeigt 1 TB nur 931 GB?",
+            "a": "Hersteller dezimal (10^12 Byte); OS binär, 10^12 / 1024³ ≈ 931 GiB."
+          },
+          {
+            "q": "Was ist richtig?",
+            "a": "Beides in seinem System; Verwirrung nur durch Label."
+          },
+          {
+            "q": "Bits vs Bytes?",
+            "a": "Netzraten in Bits (Mbps); durch 8 für Bytes."
+          }
+        ]
+      }
     },
     "bandwidth": {
       "name": "Bandbreiten-Konverter",
       "description": "Konvertieren Sie Mbps in KB/s, GB/Tag, TB/Woche und mehr",
-      "metaDescription": "Konvertieren Sie Bandbreite zwischen verschiedenen Einheiten"
+      "metaDescription": "Konvertieren Sie Bandbreite zwischen verschiedenen Einheiten",
+      "guide": {
+        "steps": [
+          "Gib eine Bandbreite mit Einheit ein (bps, Kbps, Mbps, Gbps).",
+          "Wähle die Zieleinheit.",
+          "Lies die äquivalente Rate zum Vergleich."
+        ],
+        "explanationTitle": "Bandbreite umrechnen",
+        "formula": "1 Gbps = 1000 Mbps = 1.000.000 Kbps; 1 Byte/s = 8 bps",
+        "explanation": [
+          "Bandbreite ist die Kapazität, im Netz stets in Bit pro Sekunde.",
+          "Netz nutzt 1000er-Schritte (Kbps=10³, Mbps=10⁶, Gbps=10⁹), anders als Storage mit 1024/1000."
+        ],
+        "faq": [
+          {
+            "q": "Warum 1000 statt 1024?",
+            "a": "Netzraten folgen SI-Präfixen; nur Storage nutzt 1024."
+          },
+          {
+            "q": "1 Gbps in MB/s?",
+            "a": "Durch 8: 1 Gbps ≈ 125 MB/s Daten."
+          },
+          {
+            "q": "Bandbreite = Speed?",
+            "a": "Es ist Kapazität; echte Speed hängt an Latenz, Congestion, Protokoll."
+          }
+        ]
+      }
     },
     "download-calculator": {
       "name": "Herunterladen",
@@ -1014,17 +1068,98 @@
     "cidr-range": {
       "name": "CIDR-Bereich",
       "description": "Berechnen Sie IP-Bereiche aus CIDR-Notation und überprüfen Sie, ob eine IP im Bereich liegt",
-      "metaDescription": "Kostenloser CIDR-Bereichsrechner. Sehen Sie erste und letzte IP-Adressen in einem CIDR-Block und prüfen Sie, ob bestimmte IPs im Bereich liegen. Unterstützt IPv4 und IPv6."
+      "metaDescription": "Kostenloser CIDR-Bereichsrechner. Sehen Sie erste und letzte IP-Adressen in einem CIDR-Block und prüfen Sie, ob bestimmte IPs im Bereich liegen. Unterstützt IPv4 und IPv6.",
+      "guide": {
+        "steps": [
+          "Gib IPv4/IPv6 mit Präfix ein, z. B. 10.0.0.0/24.",
+          "Lies Netzadresse, erste/letzte Host- und Broadcast-Adresse (IPv4).",
+          "Lies die Gesamtzahl und den abgedeckten Bereich."
+        ],
+        "explanationTitle": "CIDR-Bereich und Subnetzgrenzen",
+        "formula": "adressen = 2^(hostBits); hostBits = 32 − präfix (IPv4)",
+        "explanation": [
+          "CIDR drückt ein Netz als Adresse plus Präfixlänge aus, die den Netzteil der Bits markiert.",
+          "Ein /24 lässt 8 Host-Bits, also 256 Adressen (IPv4 nach Netz/Broadcast 254 nutzbar). Größere Präfixe = kleinere Subnetze."
+        ],
+        "faq": [
+          {
+            "q": "Unterschied /24 und /16?",
+            "a": "/16 deckt 65536 Adressen, /24 nur 256."
+          },
+          {
+            "q": "Warum nutzbar = gesamt − 2?",
+            "a": "IPv4 reserviert Netz- und Broadcast-Adresse."
+          },
+          {
+            "q": "Nutzt IPv6 Broadcast?",
+            "a": "Nein; IPv6 hat keinen Broadcast, alle Adressen sind nutzbar."
+          }
+        ]
+      }
     },
     "ip-calculator": {
       "name": "IP-Adresse",
       "description": "Klassifizieren Sie IP-Adressen nach Klasse (A-E) und identifizieren Sie öffentlichen/privaten Status",
-      "metaDescription": "Kostenloser IP-Adressen-Klassifizierer. Erkennen Sie IP-Klasse (A, B, C, D, E), identifizieren Sie öffentliche vs. private Adressen und validieren Sie IPv4/IPv6-Format."
+      "metaDescription": "Kostenloser IP-Adressen-Klassifizierer. Erkennen Sie IP-Klasse (A, B, C, D, E), identifizieren Sie öffentliche vs. private Adressen und validieren Sie IPv4/IPv6-Format.",
+      "guide": {
+        "steps": [
+          "Gib eine IPv4-Adresse ein, z. B. 192.168.1.10.",
+          "Lies Klasse (A/B/C), privat/öffentlich und Subnetzmaske.",
+          "Nutze die Details für Adressplanung oder Fehlersuche."
+        ],
+        "explanationTitle": "IP-Adressklassifizierung",
+        "formula": "Klasse nach 1. Oktett: 1–126 A, 128–191 B, 192–223 C, 224–239 D (Multicast)",
+        "explanation": [
+          "Die Klassifizierung gruppiert Adressen nach dem ersten Oktett bezüglich Netz-/Host-Bits und Zweck.",
+          "Private Bereiche (10/8, 172.16/12, 192.168/16) sind für LANs reserviert und im Internet nicht routbar."
+        ],
+        "faq": [
+          {
+            "q": "Ist 192.168.x.x öffentlich?",
+            "a": "Nein; privat, nur im LAN erreichbar außer via NAT."
+          },
+          {
+            "q": "Was ist Loopback?",
+            "a": "127.0.0.0/8 (v. a. 127.0.0.1) meint den eigenen Host zum Testen."
+          },
+          {
+            "q": "Warum noch Klassen?",
+            "a": "Kaum noch; CIDR ersetzte sie, hilft aber bei Legacy-Bereichen."
+          }
+        ]
+      }
     },
     "throughput-calculator": {
       "name": "Durchsatz",
       "description": "Netzwerkdurchsatz aus übertragenen Daten und Zeit berechnen",
-      "metaDescription": "Kostenloser Netzwerk-Durchsatz-Rechner. Berechnen Sie die tatsächliche Übertragungsgeschwindigkeit aus Dateigröße und Übertragungszeit."
+      "metaDescription": "Kostenloser Netzwerk-Durchsatz-Rechner. Berechnen Sie die tatsächliche Übertragungsgeschwindigkeit aus Dateigröße und Übertragungszeit.",
+      "guide": {
+        "steps": [
+          "Gib übertragene Daten und Zeit ein.",
+          "Wähle Einheiten (MB/GB und s/min).",
+          "Lies Durchsatz in Mbps oder MB/s und vergleiche mit der Kapazität."
+        ],
+        "explanationTitle": "Durchsatz vs Bandbreite",
+        "formula": "durchsatz = daten / zeit; 1 MB/s = 8 Mbps",
+        "explanation": [
+          "Durchsatz ist die tatsächliche Rate der Datenübertragung; Bandbreite ist die theoretische Kapazität.",
+          "Realer Durchsatz liegt oft darunter wegen Overhead, Congestion und Protokollverlusten (TCP, Retransmits)."
+        ],
+        "faq": [
+          {
+            "q": "Warum halbe Tarifgeschwindigkeit?",
+            "a": "Overhead, Teilung und TCP Slow-Start senken den Durchsatz stark."
+          },
+          {
+            "q": "Mbps oder MB/s?",
+            "a": "ISP nennt Mbps (Bit); Dateitransfer zeigt MB/s (Byte). Durch 8 teilen."
+          },
+          {
+            "q": "Wi-Fi wie Ethernet?",
+            "a": "Meist nein; Funkstörungen und Halbduplex senken Wi-Fi-Durchsatz."
+          }
+        ]
+      }
     },
     "speed": {
       "name": "Geschwindigkeits-Konverter",
@@ -1094,7 +1229,34 @@
     "aspect-fit": {
       "name": "Aspect-Fit",
       "description": "Passen Sie ein Bild mit Letterboxing auf einen Bildschirm an",
-      "metaDescription": "Berechnen Sie Letterboxing und Pillarboxing fuer Bildanpassung"
+      "metaDescription": "Berechnen Sie Letterboxing und Pillarboxing fuer Bildanpassung",
+      "guide": {
+        "steps": [
+          "Gib Breite und Höhe deines Bildes oder Videos ein.",
+          "Gib die Zielrahmen-Breite und -Höhe ein.",
+          "Lies die angepasste Größe, den Skalierungsfaktor und ob Balken nötig sind."
+        ],
+        "explanationTitle": "Was ist Aspect-Fit-Skalierung?",
+        "formula": "scale = min(zielW / quW, zielH / quH); passW = quW × scale; passH = quH × scale",
+        "explanation": [
+          "Aspect-Fit skaliert Inhalte so, dass das gesamte Original in den Zielrahmen passt, ohne das Seitenverhältnis zu ändern.",
+          "Der verbleibende Raum wird zu Letterbox-Streifen (oben/unten) oder Pillarbox-Streifen (links/rechts). Aspect-Fill füllt stattdessen und schneidet überflüssiges ab."
+        ],
+        "faq": [
+          {
+            "q": "Was ist der Unterschied zwischen Fit und Fill?",
+            "a": "Fit zeigt das ganze Bild mit möglichen Balken; Fill füllt den Rahmen, schneidet aber überstehende Teile ab."
+          },
+          {
+            "q": "Warum erscheinen schwarze Balken?",
+            "a": "Balken entstehen bei unterschiedlichen Seitenverhältnissen und halten das Bild verzerrungsfrei."
+          },
+          {
+            "q": "Ändert Aspect-Fit die Auflösung?",
+            "a": "Nein; es ändert nur die Abbildung auf den Zielrahmen, nicht die Quellpixel."
+          }
+        ]
+      }
     },
     "composition": {
       "name": "Kompositions",
@@ -1227,7 +1389,34 @@
     "light-ev": {
       "name": "Licht-EV",
       "description": "Berechnen Sie den Belichtungswert aus Kameraeinstellungen",
-      "metaDescription": "Berechnen Sie den Belichtungswert aus Kameraeinstellungen"
+      "metaDescription": "Berechnen Sie den Belichtungswert aus Kameraeinstellungen",
+      "guide": {
+        "steps": [
+          "Gib Blende, Verschlusszeit und ISO ein.",
+          "Lies den EV bei gewähltem ISO.",
+          "Vergleiche mit Ziel-EV für dein Licht."
+        ],
+        "explanationTitle": "Belichtungswert (EV)",
+        "formula": "EV = log2(N² / t);  EV100 = EV − log2(S / 100)",
+        "explanation": [
+          "Der Belichtungswert bündelt Blende und Zeit in einer Zahl; +1 EV verdoppelt das Licht.",
+          "EV bei ISO 100 (EV100) ist der Standardbezug von Belichtungsmessern."
+        ],
+        "faq": [
+          {
+            "q": "Was macht +1 EV?",
+            "a": "Verdoppelt die Belichtung; −1 EV halbiert sie."
+          },
+          {
+            "q": "Warum ISO 100?",
+            "a": "EV100 normiert alle Werte auf gleiche Empfindlichkeit."
+          },
+          {
+            "q": "Zeit aus EV?",
+            "a": "Ja; bei fester Blende/ISO: t = N² / 2^EV."
+          }
+        ]
+      }
     },
     "megapixels": {
       "name": "Megapixel",
@@ -1264,27 +1453,162 @@
     "megapixel-aspects": {
       "name": "Megapixel-Aspekte",
       "description": "Zeigen Sie Megapixel in verschiedenen Seitenverhaeltnissen an",
-      "metaDescription": "Zeigen Sie Megapixel-Zahlen in verschiedenen Seitenverhaeltnissen an"
+      "metaDescription": "Zeigen Sie Megapixel-Zahlen in verschiedenen Seitenverhaeltnissen an",
+      "guide": {
+        "steps": [
+          "Gib die Megapixel des Sensors oder Bildes ein.",
+          "Wähle das Seitenverhältnis, z. B. 3:2, 4:3 oder 16:9.",
+          "Lies Breite und Höhe in Pixeln für dieses Verhältnis."
+        ],
+        "explanationTitle": "Megapixel in Pixelmaße umrechnen",
+        "formula": "gesamtPixel = MP × 1.000.000; breite = √(gesamtPixel × (B/(B+H))); höhe normiert",
+        "explanation": [
+          "Ein Megapixel sind eine Million Pixel. Dieselbe Zahl ergibt je nach Seitenverhältnis andere Breiten und Höhen.",
+          "Kameras nutzen meist 3:2 (Spiegelreflex), 4:3 (MFT, Handys) und 16:9 (Video)."
+        ],
+        "faq": [
+          {
+            "q": "Mehr Megapixel = bessere Qualität?",
+            "a": "Nicht zwingend; Sensorgröße, Objektiv und Pixelqualität zählen ebenso."
+          },
+          {
+            "q": "Warum filmen Handys 16:9 bei 4:3 Fotos?",
+            "a": "Video beschneidet den Sensor auf 16:9, daher unterscheiden sich die Auflösungen."
+          },
+          {
+            "q": "Wie erhalte ich exakte Maße?",
+            "a": "Der Rechner löst Breite × Höhe = Gesamtpixel unter dem gewählten Verhältnis."
+          }
+        ]
+      }
     },
     "portrait-distance": {
       "name": "Portrait-Entfernungs",
       "description": "Berechnen Sie die ideale Aufnahmeentfernung fuer Portraits",
-      "metaDescription": "Berechnen Sie die ideale Entfernung fuer Portraitfotografie"
+      "metaDescription": "Berechnen Sie die ideale Entfernung fuer Portraitfotografie",
+      "guide": {
+        "steps": [
+          "Gib Brennweite und Sensormöhe ein.",
+          "Gib die gewünschte Motivhöhe im Bild ein.",
+          "Lies den nötigen Aufnahmeabstand."
+        ],
+        "explanationTitle": "Portrait-Aufnahmeabstand",
+        "formula": "abstand = brennweite × (motivHöhe / sensorHöhe)",
+        "explanation": [
+          "Über ähnliche Dreiecke skaliert der Abstand mit der Brennweite und dem Verhältnis Motivgröße zu Sensorgröße.",
+          "Längere Brennweiten erlauben mehr Abstand bei gleicher Bildfüllung und glätten die Perspektive für schmeichelhafte Porträts."
+        ],
+        "faq": [
+          {
+            "q": "Berücksichtigt das Beschnitt?",
+            "a": "Nein; es geht von gefülltem Sensor aus. Beschnitt wirkt wie längere Brennweite."
+          },
+          {
+            "q": "Warum 85mm für Porträts?",
+            "a": "85mm gibt angenehme Kompression und komfortablen Abstand bei gefülltem Bild."
+          },
+          {
+            "q": "Crop-Faktor beachten?",
+            "a": "Nimm die effektive Brennweite (Objektiv × Crop) für genauen Abstand."
+          }
+        ]
+      }
     },
     "star-trails": {
       "name": "Sternspuren",
       "description": "Berechnen Sie die Belichtungszeit fuer Sternenspuren-Rotation",
-      "metaDescription": "Berechnen Sie Belichtungszeiten fuer Sternenspuren-Fotografie"
+      "metaDescription": "Berechnen Sie Belichtungszeiten fuer Sternenspuren-Fotografie",
+      "guide": {
+        "steps": [
+          "Gib Brennweite und Crop-Faktor ein.",
+          "Lies die max. Belichtung vor Sternstreifen.",
+          "Kürzere Zeit nutzen oder Streifen künstlerisch nutzen."
+        ],
+        "explanationTitle": "Grenze für Sternstreifen",
+        "formula": "t_max = 500 / (brennweite_mm × cropFaktor)  (s)",
+        "explanation": [
+          "Die 500-Regel schätzt die längste Zeit, bevor Sterne durch Erdrotation streifen.",
+          "Eine Faustregel; hochauflösende Sensoren zeigen Streifen früher, manche nutzen 300."
+        ],
+        "faq": [
+          {
+            "q": "Warum durch Crop teilen?",
+            "a": "Crop-Sensoren verstärken die scheinbare Bewegung."
+          },
+          {
+            "q": "500 oder 300?",
+            "a": "300 ist strenger und sicherer für hochauflösende Sensoren."
+          },
+          {
+            "q": "Runde Sterne bei Langzeit?",
+            "a": "Ja, mit Äquatorialmontierung; sonst sind Streifen kreativ."
+          }
+        ]
+      }
     },
     "spot-stars": {
       "name": "Punktsterne",
       "description": "Berechnen Sie die maximale Belichtung zur Vermeidung von Sternenspuren (NPF-Regel)",
-      "metaDescription": "Berechnen Sie die maximale Belichtungszeit fuer scharfe Sterne"
+      "metaDescription": "Berechnen Sie die maximale Belichtungszeit fuer scharfe Sterne",
+      "guide": {
+        "steps": [
+          "Gib Brennweite, Blende und Pixelabstand ein.",
+          "Lies max. Zeit für punktförmige Sterne.",
+          "Setze Verschluss auf oder unter diesem Wert."
+        ],
+        "explanationTitle": "NPF-Regel für Punktsterne",
+        "formula": "t = (35 × blende + 30 × pixelAbstand[µm]) / brennweite[mm]  (s)",
+        "explanation": [
+          "Die NPF-Regel verfeinert die 500-Regel um Blende und Pixelgröße, nicht nur Brennweite.",
+          "Sie liefert meist kürzere, sicherere Zeiten, besonders bei hochauflösenden Kameras."
+        ],
+        "faq": [
+          {
+            "q": "NPF vs 500?",
+            "a": "NPF ist genauer, da Blende und Pixelabstand einfließen."
+          },
+          {
+            "q": "Was ist Pixelabstand?",
+            "a": "Physikalische Pixelbreite in µm; kleinere Pixel brauchen kürzere Zeiten."
+          },
+          {
+            "q": "Trotzdem Tracker?",
+            "a": "Für Deep-Sky ja; NPF vermeidet nur sichtbare Streifen."
+          }
+        ]
+      }
     },
     "time-lapse": {
       "name": "Zeitraffer",
       "description": "Berechnen Sie Intervall, Cliplaenge und Speicher fuer Zeitraffer",
-      "metaDescription": "Planen Sie Ihre Zeitraffer-Fotografie-Projekte"
+      "metaDescription": "Planen Sie Ihre Zeitraffer-Fotografie-Projekte",
+      "guide": {
+        "steps": [
+          "Gib die reale Aufnahmedauer ein.",
+          "Gib Intervall und Bildrate des Clips ein.",
+          "Lies Anzahl Frames und Clip-Länge."
+        ],
+        "explanationTitle": "Time-Lapse Frame- und Clip-Rechnung",
+        "formula": "frames = dauer / intervall; clipSek = frames / fps",
+        "explanation": [
+          "Time-Lapse komprimiert langsame Vorgänge durch weit auseinanderliegende Intervalle.",
+          "Ziel sind oft 24–30 fps; das Intervall legt fest, wie viel Zeit pro Frame dargestellt wird."
+        ],
+        "faq": [
+          {
+            "q": "Welches Intervall?",
+            "a": "Je nach Bewegung: Wolken 2–5s, Sterne 15–30s, Pflanzen Minuten bis Stunden."
+          },
+          {
+            "q": "Wie lang der Clip?",
+            "a": "ClipSek = Frames ÷ fps; mehr Frames = länger und flüssiger."
+          },
+          {
+            "q": "Verschlusszeit wichtig?",
+            "a": "Bleib deutlich unter dem Intervall, um Lücken und Flimmern zu vermeiden."
+          }
+        ]
+      }
     },
     "focal-equivalent": {
       "name": "Brennweiten-Aequivalent",
@@ -1621,37 +1945,226 @@
     "sun-position": {
       "name": "Sonnenpositions",
       "description": "Berechnen Sie Sonnenposition, Daemmerungszeiten und Lichtphasen fuer Fotografie",
-      "metaDescription": "Berechnen Sie Sonnenhoehe, Azimut, Daemmerungszeiten, goldene und blaue Stunde fuer Fotoplanung"
+      "metaDescription": "Berechnen Sie Sonnenhoehe, Azimut, Daemmerungszeiten, goldene und blaue Stunde fuer Fotoplanung",
+      "guide": {
+        "steps": [
+          "Gib Breite, Länge, Datum und Ortszeit ein.",
+          "Lies Höhe und Azimut der Sonne.",
+          "Nutze die Winkel für Golden Hour, Schatten oder Ausrichtung."
+        ],
+        "explanationTitle": "Sonnenstand: Höhe und Azimut",
+        "formula": "sin(höhe) = sin(breite)·sin(dekl) + cos(breite)·cos(dekl)·cos(stundenwinkel)",
+        "explanation": [
+          "Die Sonnenposition hängt von Ort, Jahreszeit (Deklination) und Zeit (Stundenwinkel) ab.",
+          "Höhe ist der Winkel über dem Horizont; Azimut die Himmelsrichtung der Sonne."
+        ],
+        "faq": [
+          {
+            "q": "Was ist Deklination?",
+            "a": "Die 'Breite' der Sonne am Himmel, −23,4° bis +23,4° im Jahr."
+          },
+          {
+            "q": "Wie genau?",
+            "a": "Für Planung ~1°; Refraktion am Horizont nicht modelliert."
+          },
+          {
+            "q": "Warum Azimut nutzen?",
+            "a": "Azimut sagt voraus, wo die Sonne für Ausrichtungen steht."
+          }
+        ]
+      }
     },
     "circle-of-confusion": {
       "name": "Zerstreuungskreis",
       "description": "Berechnen Sie den Zerstreuungskreis aus Sensor, Druckgroesse und Betrachtungsabstand",
-      "metaDescription": "Berechnen Sie den Zerstreuungskreis fuer die Schaerfentiefe"
+      "metaDescription": "Berechnen Sie den Zerstreuungskreis fuer die Schaerfentiefe",
+      "guide": {
+        "steps": [
+          "Gib Betrachtungsabstand und Bildgröße ein.",
+          "Gib die Sehschärfe (auflösbarer Winkel) ein.",
+          "Lies den CoC-Durchmesser für die DoF-Rechnung."
+        ],
+        "explanationTitle": "Kreis der Verwirrung erklärt",
+        "formula": "c = betrachtAbstand × tan(auflösWinkel)  (auf Sensor skaliert)",
+        "explanation": [
+          "Der CoC ist der größte Unschärfefleck, der noch wie ein Punkt wirkt.",
+          "Er hängt von Bildgröße und Abstand ab; große, nah betrachtete Prints brauchen kleineren CoC."
+        ],
+        "faq": [
+          {
+            "q": "Welchen CoC nutzen?",
+            "a": "Üblich: 0,03 mm (Vollformat), 0,02 mm (APS-C), 0,015 mm (MFT)."
+          },
+          {
+            "q": "Ändert Druckgröße den CoC?",
+            "a": "Ja; große, nah gesehene Drucke brauchen kleineren CoC."
+          },
+          {
+            "q": "Ist CoC ein physischer Fleck?",
+            "a": "Nein, eine abgeleitete Toleranz, die die DoF-Formeln speist."
+          }
+        ]
+      }
     },
     "advanced-dof": {
       "name": "Erweiterter Schaerfentiefe",
       "description": "Schaerfentiefe mit einstellbarem Zerstreuungskreis fuer Druckgroesse und Betrachtung",
-      "metaDescription": "Erweiterte Schaerfentiefe-Berechnungen"
+      "metaDescription": "Erweiterte Schaerfentiefe-Berechnungen",
+      "guide": {
+        "steps": [
+          "Gib Brennweite, Blende, Fokusabstand und CoC ein.",
+          "Wähle die Sensorgröße für einen sinnvollen CoC-Standard.",
+          "Lies Nahgrenze, Fern Grenze und Gesamt-Schärfentiefe."
+        ],
+        "explanationTitle": "Erweiterte Schärfentiefe",
+        "formula": "DoF = (2 · N · c · d² · (m + 1)) / (f²)  (ca.), m = Abbildungsmaßstab",
+        "explanation": [
+          "Schärfentiefe ist der Bereich vor und hinter dem Fokus, der noch akzeptabel scharf wirkt.",
+          "Kleinere Blende, kürzere Brennweite und größerer Abstand erhöhen die Schärfentiefe. Dieser Rechner nutzt ein genaueres Modell als der Hyperfokal-Kurzweg."
+        ],
+        "faq": [
+          {
+            "q": "Warum nicht Hyperfokal?",
+            "a": "Hyperfokal ist eine Schätzung für Landschaft; hier gibt es exakte Nah-/Fern-Grenzen."
+          },
+          {
+            "q": "Einfluss der Sensorgröße?",
+            "a": "Ja; größere Sensoren brauchen größeren CoC, was die DoF ändert."
+          },
+          {
+            "q": "Beachtet Beugung?",
+            "a": "Nein; bei sehr kleinen Blenden sinkt die Schärfe durch Beugung."
+          }
+        ]
+      }
     },
     "macro-dof": {
       "name": "Makro-Schaerfentiefe",
       "description": "Genaue Schaerfentiefe fuer Makrofotografie",
-      "metaDescription": "Berechnen Sie die Schaerfentiefe fuer Makrofotografie"
+      "metaDescription": "Berechnen Sie die Schaerfentiefe fuer Makrofotografie",
+      "guide": {
+        "steps": [
+          "Gib Blende und Abbildungsmaßstab der Makroaufnahme ein.",
+          "Gib den CoC deines Sensors ein.",
+          "Lies die sehr geringe Schärfentiefe der Nahaufnahme."
+        ],
+        "explanationTitle": "Makro-Schärfentiefe",
+        "formula": "DoF ≈ (2 · N · c · (m + 1)) / m²",
+        "explanation": [
+          "Bei Makro-Abbildung wird die Schärfentiefe extrem dünn und hängt stark vom Abbildungsmaßstab ab, nicht von der Brennweite.",
+          "Da die effektive Blende auf N × (m + 1) wächst, bringt Abblenden weniger als erwartet; Fokus-Stacking ist oft die Lösung."
+        ],
+        "faq": [
+          {
+            "q": "Warum ist Makro oft unscharf?",
+            "a": "DoF kann Bruchteile eines Millimeters sein; Fokus-Stacking hilft."
+          },
+          {
+            "q": "Brennweite wichtig im Makro?",
+            "a": "Bei gleichem Maßstab kaum; der Maßstab entscheidet."
+          },
+          {
+            "q": "Schärfe erhöhen?",
+            "a": "Mehrere Fokusebenen stapeln, stabil montieren, gut ausleuchten."
+          }
+        ]
+      }
     },
     "dof-table": {
       "name": "Schaerfentiefe-Tabelle",
       "description": "Interaktive Tabelle mit Schaerfentiefe ueber Blenden und Entfernungen",
-      "metaDescription": "Referenztabelle fuer Schaerfentiefe"
+      "metaDescription": "Referenztabelle fuer Schaerfentiefe",
+      "guide": {
+        "steps": [
+          "Wähle Brennweite und Blende.",
+          "Wähle den Fokusabstand deiner Szene.",
+          "Lies Nah-, Fern-Grenze und DoF aus der Tabelle."
+        ],
+        "explanationTitle": "Eine Schärfentiefe-Tabelle lesen",
+        "formula": "Nutzt dasselbe Modell wie erweiterte DoF; Werte sind je Zelle vorberechnet.",
+        "explanation": [
+          "Eine DoF-Tabelle listet scharfe Bereiche, damit du im Feld ohne Rechner planen kannst.",
+          "Tabellen sind sensorabhängig; nimm die passende oder setze den CoC entsprechend."
+        ],
+        "faq": [
+          {
+            "q": "Tabelle statt Rechner?",
+            "a": "Tabellen sind schnell für übliche Settings und gut zur Planung."
+          },
+          {
+            "q": "Sind Tabellen genau?",
+            "a": "So genau wie das Modell; nur Sensor anpassen."
+          },
+          {
+            "q": "Nah/Fern-Grenze lesen?",
+            "a": "Nahgrenze = nächster scharfer Abstand; Ferngrenze = fernster scharfer Abstand."
+          }
+        ]
+      }
     },
     "diffraction": {
       "name": "Beugungs",
       "description": "Berechnen Sie, wann Ihre Kamera beugungsbegrenzt wird",
-      "metaDescription": "Berechnen Sie Beugungsgrenzen fuer Ihre Kamera"
+      "metaDescription": "Berechnen Sie Beugungsgrenzen fuer Ihre Kamera",
+      "guide": {
+        "steps": [
+          "Gib Blende und Wellenlänge ein.",
+          "Gib Pixelabstand für Unschärfe in Pixeln ein.",
+          "Lies Airy-Scheibe und ob Beugung begrenzt."
+        ],
+        "explanationTitle": "Beugungsgrenze und Airy-Scheibe",
+        "formula": "airyRadius = 1,22 × λ × N; unschärfePix = 2,44 × λ × N / pixelAbstand",
+        "explanation": [
+          "Selbst ein perfektes Objektiv beugt Licht zu einem kleinen Muster (Airy-Scheibe), begrenzt durch die Blende.",
+          "Über einer bestimmten Blende übersteigt die Airy-Scheibe den Pixelabstand und das Bild wirkt weicher."
+        ],
+        "faq": [
+          {
+            "q": "Kleinere Blende immer schärfer?",
+            "a": "Nein; jenseits der Beugungsgrenze weicht es trotz mehr DoF auf."
+          },
+          {
+            "q": "Welche Wellenlänge?",
+            "a": "Grün ~550 nm ist ein guter Mittelwert."
+          },
+          {
+            "q": "Beugungsweichheit vermeiden?",
+            "a": "Schärfste Blende nutzen (oft f/5,6–f/8) und Extreme meiden."
+          }
+        ]
+      }
     },
     "macro-diffraction": {
       "name": "Makro-Beugungs",
       "description": "Berechnen Sie die effektive Blende und Beugung in der Makrofotografie",
-      "metaDescription": "Berechnen Sie Beugungseffekte in der Makrofotografie"
+      "metaDescription": "Berechnen Sie Beugungseffekte in der Makrofotografie",
+      "guide": {
+        "steps": [
+          "Gib Blende und Makro-Abbildung ein.",
+          "Gib Pixelabstand ein.",
+          "Lies effektive Blende und Beugungsunschärfe."
+        ],
+        "explanationTitle": "Beugung im Makrobereich",
+        "formula": "effN = N × (1 + m); unschärfePix = 2,44 × λ × effN / pixelAbstand",
+        "explanation": [
+          "Im Makro wächst die effektive Blende auf N × (1 + m); Beugung weicht das Bild früher auf.",
+          "Daher werden Makro-Objektive oft fast offen und hell beleuchtet genutzt, statt abzublenden."
+        ],
+        "faq": [
+          {
+            "q": "Warum so beugungslimitiert?",
+            "a": "Die effektive Blende multipliziert mit (1 + m), die Airy-Scheibe wächst schnell."
+          },
+          {
+            "q": "Für DoF abblenden?",
+            "a": "Nur leicht; DoF-Gewinn gering, Beugungsverlust groß. Lieber Stacking."
+          },
+          {
+            "q": "Beste Praxis?",
+            "a": "Genug Licht für nahezu schärfste Blende, dann Fokus-Stacking."
+          }
+        ]
+      }
     },
     "bpm": {
       "name": "BPM",
@@ -1661,42 +2174,258 @@
     "video-file-size": {
       "name": "Videodateigroessen",
       "description": "Schaetzen Sie die Videodateigroesse aus Aufloesung und Dauer",
-      "metaDescription": "Schaetzen Sie Videodateigroessen basierend auf Einstellungen"
+      "metaDescription": "Schaetzen Sie Videodateigroessen basierend auf Einstellungen",
+      "guide": {
+        "steps": [
+          "Gib Dauer, Auflösung und Qualität ein.",
+          "Gib Codec und Bildrate ein oder wähle ein Preset.",
+          "Lies die geschätzte Dateigröße und passe die Bitrate an."
+        ],
+        "explanationTitle": "Videodateigröße schätzen",
+        "formula": "größe = bitrate × dauer; bitrate ≈ auflösung × fps × qualitätsFaktor",
+        "explanation": [
+          "Die Dateigröße hängt vor allem von Bitrate und Dauer ab; Auflösung und Bildrate bestimmen die nötige Bitrate.",
+          "Moderne Codecs wie H.265/HEVC und AV1 komprimieren bei gleicher Qualität viel stärker als H.264."
+        ],
+        "faq": [
+          {
+            "q": "Ist 4K viermal so groß wie 1080p?",
+            "a": "Nicht genau; effiziente Codecs und Bitrate-Caps halten den Zuwachs kleiner."
+          },
+          {
+            "q": "Welcher Codec spart am meisten?",
+            "a": "AV1 und H.265 schlagen H.264 oft um 30–50% bei gleicher Qualität."
+          },
+          {
+            "q": "Warum ist Audio klein?",
+            "a": "Audio-Bitraten (128–320 kbps) sind winzig neben Video-Mbps."
+          }
+        ]
+      }
     },
     "audio-filesize": {
       "name": "Audiodateigroessen",
       "description": "Schaetzen Sie die Audiodateigroesse aus Dauer und Format",
-      "metaDescription": "Schaetzen Sie Audiodateigroessen fuer verschiedene Formate"
+      "metaDescription": "Schaetzen Sie Audiodateigroessen fuer verschiedene Formate",
+      "guide": {
+        "steps": [
+          "Gib Dauer und Samplerate ein (z. B. 44,1 kHz).",
+          "Wähle Bit-Tiefe oder Bitrate (verlustfrei/verlustbehaftet).",
+          "Lies die geschätzte Dateigröße."
+        ],
+        "explanationTitle": "Audiodateigröße schätzen",
+        "formula": "größe = samplerate × bitTiefe × kanäle × dauer (PCM); oder bitrate × dauer",
+        "explanation": [
+          "Unkomprimierte Audio größe wächst mit Samplerate, Bit-Tiefe und Kanälen; Stereo verdoppelt Mono.",
+          "MP3/AAC zielen auf Bitrate, FLAC komprimiert PCM verlustfrei ohne Informationsverlust."
+        ],
+        "faq": [
+          {
+            "q": "WAV vs FLAC?",
+            "a": "WAV ist Roh-PCM (größte); FLAC verlustfrei ~50–60% kleiner."
+          },
+          {
+            "q": "Höhere Samplerate = besser?",
+            "a": "Nur wenn Quelle und Ohr es nutzen; 44,1/48 kHz reichen meist."
+          },
+          {
+            "q": "Warum Stereo doppelt?",
+            "a": "Zwei Kanäle speichern eigene Samples, doppelte Datenrate."
+          }
+        ]
+      }
     },
     "common-bitrates": {
       "name": "Gaengige Bitraten-Referenz",
       "description": "Referenzhandbuch fuer ProRes-, DNxHD-, DCP- und MPEG-Bitraten",
-      "metaDescription": "Referenzhandbuch fuer Video-Codec-Bitraten"
+      "metaDescription": "Referenzhandbuch fuer Video-Codec-Bitraten",
+      "guide": {
+        "steps": [
+          "Wähle Ziel: Streaming, Broadcast, Disc oder Master.",
+          "Wähle Auflösung und Bildrate.",
+          "Lies typische Bitrate und wähle abwägend."
+        ],
+        "explanationTitle": "Übliche Bitraten nach Anwendung",
+        "formula": "Referenz: 1080p ≈ 5–8 Mbps (H.264), 4K ≈ 15–25 Mbps (H.264), mit H.265/AV1 weniger",
+        "explanation": [
+          "Bitraten-Tabellen sind Startpunkte; der Wert hängt von Codec, Bewegung und Artefakt-Toleranz ab.",
+          "Streaming nutzt adaptives Bitrate; Disc/Broadcast haben strengere Normen wie Blu-ray oder ATSC."
+        ],
+        "faq": [
+          {
+            "q": "Warum schwanken Tabellen?",
+            "a": "Verschiedene Codecs/Inhalte; Action braucht mehr Bits als Interviews."
+          },
+          {
+            "q": "Mehr Bitrate immer besser?",
+            "a": "Bis zu einem Punkt; danach verschwendete Bandbreite."
+          },
+          {
+            "q": "H.265/AV1?",
+            "a": "Erreichen gleiche Qualität bei etwa halber H.264-Bitrate."
+          }
+        ]
+      }
     },
     "dcp-filesize": {
       "name": "DCP-Dateigroessen",
       "description": "Berechnen Sie Digital Cinema Package-Dateigroessen",
-      "metaDescription": "Berechnen Sie DCP-Dateigroessen fuer Kinovertrieb"
+      "metaDescription": "Berechnen Sie DCP-Dateigroessen fuer Kinovertrieb",
+      "guide": {
+        "steps": [
+          "Gib Dauer und Auflösung (2K/4K) ein.",
+          "Wähle fps (24/25/30/48/60) und J2K-Bitrate.",
+          "Lies die DCP-Größe inkl. Audio/Untertitel."
+        ],
+        "explanationTitle": "Größe eines Digital Cinema Package",
+        "formula": "größe ≈ (videoBitrate + audioBitrate) × dauer; 4K@24 ≈ 250 Mbps",
+        "explanation": [
+          "Ein DCP speichert jeden Frame als JPEG-2000 plus PCM-Audio, daher viel größer als Consumer-Formate.",
+          "DCPs werden pro Version (2D/3D, Sprachen) gebaut; jede Version multipliziert Speicher und Ingest."
+        ],
+        "faq": [
+          {
+            "q": "Warum so groß?",
+            "a": "Nahzu verlustfreies J2K in Kino-Bitraten, weit über Streaming."
+          },
+          {
+            "q": "3D-Aufschlag?",
+            "a": "3D verdoppelt die Bilddaten, also etwa das Doppelte des Videoanteils."
+          },
+          {
+            "q": "Ingest-Dauer?",
+            "a": "Je nach Laufwerk; 200 GB können 20–40 Min dauern."
+          }
+        ]
+      }
     },
     "foot-lambert": {
       "name": "Fuß-Lambert",
       "description": "Berechnen Sie die Bildschirmleuchtdichte fuer Kinoprojektion",
-      "metaDescription": "Berechnen Sie die Bildschirmhelligkeit fuer Kinoprojektion"
+      "metaDescription": "Berechnen Sie die Bildschirmhelligkeit fuer Kinoprojektion",
+      "guide": {
+        "steps": [
+          "Gib die Leuchtdichte in fL oder nits ein.",
+          "Wähle die Richtung.",
+          "Lies den äquivalenten Wert."
+        ],
+        "explanationTitle": "Foot-Lambert und Nits",
+        "formula": "1 fL = 3,426 nits (cd/m²); 1 nit = 0,2919 fL",
+        "explanation": [
+          "Foot-Lambert ist eine US-Einheit für Leuchtdichte in Kino/Projektion; Nits (cd/m²) ist SI-Einheit.",
+          "Ein dunkles Kino läuft etwa 14–16 fL, helle TVs übertreffen 500–1000 nits."
+        ],
+        "faq": [
+          {
+            "q": "Warum fL im Kino?",
+            "a": "Traditionelle Einheit für projizierte Bildhelligkeit in den USA."
+          },
+          {
+            "q": "Wie viele nits sind 14 fL?",
+            "a": "Etwa 48 nits (14 × 3,426), das klassische SMPTE-Ziel."
+          },
+          {
+            "q": "Sind HDR-nits mit fL vergleichbar?",
+            "a": "Nein; HDR-Spitzen messen Highlight-Helligkeit, nicht steady fL."
+          }
+        ]
+      }
     },
     "screen-size": {
       "name": "Bildschirmgroessen",
       "description": "Berechnen Sie Bildschirmabmessungen aus Diagonale und Seitenverhaeltnis",
-      "metaDescription": "Berechnen Sie Bildschirmabmessungen aus der Diagonalgroesse"
+      "metaDescription": "Berechnen Sie Bildschirmabmessungen aus der Diagonalgroesse",
+      "guide": {
+        "steps": [
+          "Gib die Diagonale in Zoll oder cm ein.",
+          "Gib das Seitenverhältnis ein.",
+          "Lies Breite und Höhe der Fläche."
+        ],
+        "explanationTitle": "Bildschirmgröße aus Diagonale",
+        "formula": "breite = diagonale / √(1 + (H/B)²); höhe = breite × (H/B)",
+        "explanation": [
+          "Bildschirme werden über die Diagonale angegeben; sichtbare Maße hängen vom Format ab.",
+          "Ein 65-Zoll 16:9 TV ist ~56,7 Zoll breit; bei 21:9 ist er breiter und flacher."
+        ],
+        "faq": [
+          {
+            "q": "Diagonale mit Rahmen?",
+            "a": "Nein; es ist das sichtbare Panel, manche Händler verwischen das."
+          },
+          {
+            "q": "Warum wirkt 21:9 anders?",
+            "a": "Gleiche Diagonale, aber breiter/flacher; gut für Film, weniger für Text."
+          },
+          {
+            "q": "cm in Zoll?",
+            "a": "Zentimeter durch 2,54 teilen."
+          }
+        ]
+      }
     },
     "video-bitrate": {
       "name": "Video-Bitraten",
       "description": "Schaetzen Sie die Videobitrate basierend auf Aufloesung und Codec",
-      "metaDescription": "Berechnen Sie optimale Videobitraten"
+      "metaDescription": "Berechnen Sie optimale Videobitraten",
+      "guide": {
+        "steps": [
+          "Gib Zielgröße und Dauer ein.",
+          "Gib die Audio-Bitrate ein.",
+          "Lies die nötige Video-Bitrate."
+        ],
+        "explanationTitle": "Video-Bitrate aus Zielgröße",
+        "formula": "videoBitrate = (zielBytes × 8 / dauer) − audioBitrate",
+        "explanation": [
+          "Muss ein Video in ein festes Upload- oder Speicherbudget passen, rechne von der Größe zurück.",
+          "Lass Puffer für Container und Audio; der Rechner zieht Audio ab, Video bekommt den Rest."
+        ],
+        "faq": [
+          {
+            "q": "Datei größer als Ziel?",
+            "a": "Container-Overhead, Keyframes und Audio brauchen zusätzlich Platz."
+          },
+          {
+            "q": "Auflösung oder Bitrate senken?",
+            "a": "Erst Bitrate; Auflösung senken verliert dauerhaft Detail."
+          },
+          {
+            "q": "Bitrate für 1 GB/Stunde?",
+            "a": "Bei ~128 kbps Audio etwa 2,2 Mbps Video."
+          }
+        ]
+      }
     },
     "frame-rate": {
       "name": "Bildrate-Konverter",
       "description": "Konvertieren Sie zwischen Bildraten mit ffmpeg-Befehlen",
-      "metaDescription": "Konvertieren Sie Video zwischen Bildraten"
+      "metaDescription": "Konvertieren Sie Video zwischen Bildraten",
+      "guide": {
+        "steps": [
+          "Gib die Quell-Bildrate ein.",
+          "Gib die Ziel-Bildrate ein.",
+          "Lies die Tempoproportionalität und ob Frames fallen/gemixt werden."
+        ],
+        "explanationTitle": "Bildraten-Umwandlung",
+        "formula": "tempo = zielFps / quellFps; dauerNeu = dauer / tempo",
+        "explanation": [
+          "Bildrate ohne Tempokorrektur ändert die Geschwindigkeit; 30→24 fps verlangsamt um 20%.",
+          "24→60 fps braucht Interpolation oder Doppel-Frames; einfaches Resampling ruckelt."
+        ],
+        "faq": [
+          {
+            "q": "Warum wirkt 24→30 falsch?",
+            "a": "Ohne Pulldown/Interpolation teilt 24 nicht glatt durch 30, Judder entsteht."
+          },
+          {
+            "q": "60 fps immer flüssiger?",
+            "a": "Bei Bewegung ja, doch Filmliebhaber hassen den 'Soap-Opera'-Effekt."
+          },
+          {
+            "q": "Was ist 3:2 Pulldown?",
+            "a": "Muster, das 24 fps Film auf 60 Hz interlaced abbildet."
+          }
+        ]
+      }
     },
     "url-encoder": {
       "name": "URL-Encoder",
@@ -5207,22 +5936,130 @@
     "tcp-throughput": {
       "name": "TCP-Durchsatz",
       "description": "Berechnen Sie den theoretischen TCP-Durchsatz mit der Mathis-Formel",
-      "metaDescription": "Berechnen Sie maximalen TCP-Durchsatz basierend auf MSS, RTT und Paketverlustrate"
+      "metaDescription": "Berechnen Sie maximalen TCP-Durchsatz basierend auf MSS, RTT und Paketverlustrate",
+      "guide": {
+        "steps": [
+          "Gib RTT und Paketverlust ein.",
+          "Gib die MSS ein (meist 1460 Byte).",
+          "Lies den maximalen TCP-Durchsatz der Strecke."
+        ],
+        "explanationTitle": "TCP-Durchsatz (Mathis-Gleichung)",
+        "formula": "Durchsatz ≤ (MSS / RTT) × C / √(verlust),  C ≈ 0,93",
+        "explanation": [
+          "Die Mathis-Gleichung modelliert das Durchsatzlimit einer TCP-Verbindung bei Verlust und RTT.",
+          "Schon kleiner Verlust (0,1%) deckelt den Durchsatz auf langen Strecken stark."
+        ],
+        "faq": [
+          {
+            "q": "Warum tut 1% Verlust weh?",
+            "a": "Durchsatz ∝ 1/√verlust; 1% kann auf ~10% des verlustfreien Werts senken."
+          },
+          {
+            "q": "Hilft größeres Fenster?",
+            "a": "Nur bis BDP; Verlust deckelt das Mathis-Limit unabhängig davon."
+          },
+          {
+            "q": "Wie verbessern?",
+            "a": "RTT oder Verlust senken (Pfad, FEC, BBR), nicht nur Bandbreite."
+          }
+        ]
+      }
     },
     "bandwidth-delay-product": {
       "name": "Bandbreite-Verzoegerung-Produkt",
       "description": "Berechnen Sie BDP und optimale TCP-Puffergroesse",
-      "metaDescription": "Berechnen Sie das Bandbreite-Verzoegerung-Produkt und TCP-Fenstergroesse"
+      "metaDescription": "Berechnen Sie das Bandbreite-Verzoegerung-Produkt und TCP-Fenstergroesse",
+      "guide": {
+        "steps": [
+          "Gib Bandbreite und RTT ein.",
+          "Lies BDP in Bit und Byte.",
+          "Nutze es zur TCP-Fenster-/Puffer-Planung."
+        ],
+        "explanationTitle": "Bandbreite-Latenz-Produkt (BDP)",
+        "formula": "BDP = bandbreite(bit/s) × RTT(s)",
+        "explanation": [
+          "Das BDP ist die Menge an Daten 'in der Leitung'; es setzt das minimale TCP-Fenster für volle Auslastung.",
+          "100 Mbps bei 100 ms RTT ergibt BDP ≈ 1,25 MB; das Fenster muss darüber liegen."
+        ],
+        "faq": [
+          {
+            "q": "Warum BDP wichtig?",
+            "a": "Ist das Fenster kleiner als BDP, wartet der Sender auf ACK und die Leitung füllt nie."
+          },
+          {
+            "q": "Puffer dimensionieren?",
+            "a": "TCP-Fenster und Zwischenpuffer mindestens auf BDP setzen."
+          },
+          {
+            "q": "Wächst BDP mit Distanz?",
+            "a": "Ja; RTT steigt mit Distanz, also größere Fenster nötig."
+          }
+        ]
+      }
     },
     "bb-credit-calculator": {
       "name": "BB-Credit-Rechner",
       "description": "Fibre-Channel-BB-Credits für ISL-Links nach Geschwindigkeit und Distanz berechnen",
-      "metaDescription": "Kostenloser SAN-BB-Credit-Rechner — Buffer-to-Buffer-Credits für Brocade-FOS- und Cisco-MDS-ISL-Links anhand von FC-Geschwindigkeit und Kabeldistanz berechnen"
+      "metaDescription": "Kostenloser SAN-BB-Credit-Rechner — Buffer-to-Buffer-Credits für Brocade-FOS- und Cisco-MDS-ISL-Links anhand von FC-Geschwindigkeit und Kabeldistanz berechnen",
+      "guide": {
+        "steps": [
+          "Gib die Line-Rate in Gbps ein (16, 32, 64).",
+          "Gib die Round-Trip-Zeit in ms ein.",
+          "Lies den empfohlenen BB_Credit-Wert."
+        ],
+        "explanationTitle": "Fibre-Channel BB_Credit dimensionieren",
+        "formula": "BB_Credit ≈ RTT(ms) × lineRate(Gbps) / 10",
+        "explanation": [
+          "BB_Credit ist die Zahl der Buffer-to-Buffer-Credits, die ein FC-Port bewirbt, damit die Leitung ohne ACK-Warten voll bleibt.",
+          "Zu wenig Credits drosselt Fernlinks; die Formel füllt die Pipeline während eines Round-Trips."
+        ],
+        "faq": [
+          {
+            "q": "Zu wenig Credits?",
+            "a": "Sender wartet auf ACK und stallt; Link bei Distanz unterausgelastet."
+          },
+          {
+            "q": "Mehr immer besser?",
+            "a": "Zu viele verschwenden Puffer; auf tatsächliche RTT dimensionieren."
+          },
+          {
+            "q": "Gilt das für TCP?",
+            "a": "TCP nutzt Fenster/BDP ähnlich; BB_Credit ist das FC-Pendant."
+          }
+        ]
+      }
     },
     "latency-converter": {
       "name": "Latenz-Konverter",
       "description": "Zwischen Ping-Zeiteinheiten umrechnen (Sekunden, Millisekunden, Mikrosekunden, Nanosekunden)",
-      "metaDescription": "Kostenloser Netzwerk-Latenz-Konverter. Ping-Zeiten zwischen Sekunden, Millisekunden, Mikrosekunden und Nanosekunden umrechnen."
+      "metaDescription": "Kostenloser Netzwerk-Latenz-Konverter. Ping-Zeiten zwischen Sekunden, Millisekunden, Mikrosekunden und Nanosekunden umrechnen.",
+      "guide": {
+        "steps": [
+          "Gib Latenz in ms, µs oder ns ein.",
+          "Wähle die Zieleinheit.",
+          "Lies die äquivalente Latenz für Netz-/Speicher-Tuning."
+        ],
+        "explanationTitle": "Latenz-Einheiten umrechnen",
+        "formula": "1 ms = 1000 µs = 1.000.000 ns; 1 µs = 1000 ns",
+        "explanation": [
+          "Latenz ist die Reisezeit eines Pakets oder I/O-Requests, oft in verschiedenen Skalen angegeben.",
+          "Netz-RTT meist ms, SSD-I/O µs, Speicher/CPU-Cache ns."
+        ],
+        "faq": [
+          {
+            "q": "Warum Einheit wichtig?",
+            "a": "10 ms vs 10 µs ist 1000x; Vermischung gibt riesige Fehler."
+          },
+          {
+            "q": "Latenz und Lichtgeschwindigkeit?",
+            "a": "In Glas ~200.000 km/s, also ~5 ms pro 1000 km als Untergrenze."
+          },
+          {
+            "q": "Immer besser niedriger?",
+            "a": "Für Interaktion ja, aber Physik setzt Minimum via Distanz."
+          }
+        ]
+      }
     },
     "food-cost": {
       "name": "Lebensmittelkostenrechner",
