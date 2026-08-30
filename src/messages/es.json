@@ -5606,38 +5606,6 @@
         ]
       }
     },
-    "gcd-lcm": {
-      "name": "MCD y MCM",
-      "description": "Calcular MCD y MCM de varios números",
-      "metaDescription": "Calcular tanto el máximo común divisor como el mínimo común múltiplo de dos o más números",
-      "guide": {
-        "steps": [
-          "Introduce dos enteros para los que necesitas ambos.",
-          "Ejecuta para obtener MCD y mcm juntos.",
-          "Lee ambos y confirma a × b = MCD × mcm."
-        ],
-        "explanationTitle": "MCD y mcm juntos",
-        "formula": "MCD(a,b) × mcm(a,b) = |a × b|",
-        "explanation": [
-          "Calcular ambos a la vez ahorra tiempo; muchos problemas de fracciones y tiempos necesitan MCD para simplificar y mcm para alinear.",
-          "La identidad MCD × mcm = |a×b| es una verificación rápida de consistencia."
-        ],
-        "faq": [
-          {
-            "q": "¿Por qué ambos?",
-            "a": "Simplificar fracciones usa MCD; denominador común usa mcm."
-          },
-          {
-            "q": "¿Siempre vale la identidad?",
-            "a": "Sí para exactamente dos enteros positivos; con más, aplícala por pares."
-          },
-          {
-            "q": "¿Entradas iguales?",
-            "a": "Entonces MCD = mcm = el número mismo."
-          }
-        ]
-      }
-    },
     "prime-factorization": {
       "name": "Factorización prima",
       "description": "Encuentra factores primos y divisores de cualquier número.",
@@ -5698,38 +5666,6 @@
           {
             "q": "Se puede resolver cualquier entrada?",
             "a": "No. Algunas combinaciones, como solo tres angulos, dejan el tamano indeterminado."
-          }
-        ]
-      }
-    },
-    "right-triangle": {
-      "name": "Triángulo Rectángulo",
-      "description": "Calcular lados y ángulos de un triángulo rectángulo.",
-      "metaDescription": "Calcular las dimensiones de un triángulo rectángulo usando trigonometría y el teorema de Pitágoras.",
-      "guide": {
-        "steps": [
-          "Introduce dos lados conocidos o un lado y un ángulo agudo.",
-          "Ejecuta para resolver lados y ángulos faltantes.",
-          "Lee hipotenusa, catetos, área y perímetro."
-        ],
-        "explanationTitle": "Resolver un triángulo rectángulo",
-        "formula": "a² + b² = c²; sen θ = a/c, cos θ = b/c, tan θ = a/b",
-        "explanation": [
-          "Un triángulo rectángulo tiene un ángulo de 90°, así el teorema de Pitágoras y las razones trig determinan lados y ángulos.",
-          "Con dos datos (no ambos ángulos) queda resuelto; solo ángulos sin lado no basta."
-        ],
-        "faq": [
-          {
-            "q": "¿Qué necesito para resolverlo?",
-            "a": "Cualquiera dos de: dos lados, o un lado y un ángulo agudo."
-          },
-          {
-            "q": "¿Por qué necesita un lado?",
-            "a": "Solo ángulos dan forma pero tamaño infinito; un lado fija la escala."
-          },
-          {
-            "q": "¿La hipotenusa es siempre la mayor?",
-            "a": "Sí, está opuesta al ángulo de 90° y es siempre el lado mayor."
           }
         ]
       }
@@ -7796,21 +7732,6 @@
           }
         ]
       }
-    },
-    "car-loan": {
-      "name": "Préstamo de Auto",
-      "description": "Calcula los pagos mensuales del préstamo de auto",
-      "metaDescription": "Calculadora de préstamo de auto"
-    },
-    "lease": {
-      "name": "Leasing",
-      "description": "Calcula los pagos de leasing de auto",
-      "metaDescription": "Calculadora de leasing"
-    },
-    "trade-in": {
-      "name": "Valor de Canje",
-      "description": "Calcula el valor de canje de tu auto",
-      "metaDescription": "Calculadora de valor de canje"
     }
   },
   "calculator": {

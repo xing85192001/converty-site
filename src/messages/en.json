@@ -5600,38 +5600,6 @@
         ]
       }
     },
-    "gcd-lcm": {
-      "name": "GCD & LCM",
-      "description": "Calculate GCD and LCM of multiple numbers",
-      "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers",
-      "guide": {
-        "steps": [
-          "Enter two integers for which you need both values.",
-          "Run the calculator to return the GCD and LCM together.",
-          "Read both results and confirm they satisfy a × b = gcd × lcm."
-        ],
-        "explanationTitle": "GCD and LCM together",
-        "formula": "gcd(a,b) × lcm(a,b) = |a × b|",
-        "explanation": [
-          "Computing both at once saves time; many fraction and timing problems need the GCD to simplify and the LCM to align.",
-          "The identity gcd × lcm = |a×b| is a quick sanity check that both values are consistent."
-        ],
-        "faq": [
-          {
-            "q": "Why compute both?",
-            "a": "Fraction simplification needs gcd; finding a common denominator needs lcm."
-          },
-          {
-            "q": "Does the identity always hold?",
-            "a": "Yes for exactly two positive integers; for more, apply pairwise."
-          },
-          {
-            "q": "What if inputs are equal?",
-            "a": "Then gcd = lcm = the number itself."
-          }
-        ]
-      }
-    },
     "prime-factorization": {
       "name": "Prime Factorization",
       "description": "Find prime factors and divisors of any number",
@@ -5692,38 +5660,6 @@
           {
             "q": "Can every set of inputs be solved?",
             "a": "No. Some combinations, like three angles alone, leave the size undetermined."
-          }
-        ]
-      }
-    },
-    "right-triangle": {
-      "name": "Right Triangle",
-      "description": "Calculate right triangle sides and angles",
-      "metaDescription": "Calculate right triangle dimensions using trigonometry and Pythagorean theorem",
-      "guide": {
-        "steps": [
-          "Enter any two known sides or one side and an acute angle.",
-          "Run the calculator to solve for the missing sides and angles.",
-          "Read the hypotenuse, legs, area and perimeter of the triangle."
-        ],
-        "explanationTitle": "Solving a right triangle",
-        "formula": "a² + b² = c²; sin θ = a/c, cos θ = b/c, tan θ = a/b",
-        "explanation": [
-          "A right triangle has one 90° angle, so the Pythagorean theorem and trigonometric ratios fully determine the other sides and angles.",
-          "Given two pieces of information (not both angles), the triangle is uniquely solved; knowing two angles alone is not enough without a side."
-        ],
-        "faq": [
-          {
-            "q": "What do I need to solve it?",
-            "a": "Any two of: two sides, or one side and one acute angle."
-          },
-          {
-            "q": "Why does it need a side?",
-            "a": "Angles alone give shape but infinite sizes; a side sets the scale."
-          },
-          {
-            "q": "Is the hypotenuse always longest?",
-            "a": "Yes, it is opposite the 90° angle and is always the largest side."
           }
         ]
       }

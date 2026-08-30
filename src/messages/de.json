@@ -5600,38 +5600,6 @@
         ]
       }
     },
-    "gcd-lcm": {
-      "name": "GGT & KGV",
-      "description": "Berechnen Sie GGT und KGV mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie GGT und KGV von zwei oder mehr Zahlen",
-      "guide": {
-        "steps": [
-          "Gib zwei ganze Zahlen ein.",
-          "Starte, um ggT und kgV zusammen zu erhalten.",
-          "Lies beide und prüfe a × b = ggT × kgV."
-        ],
-        "explanationTitle": "ggT und kgV zusammen",
-        "formula": "ggT(a,b) × kgV(a,b) = |a × b|",
-        "explanation": [
-          "Beide auf einmal spart Zeit; viele Bruch- und Taktprobleme brauchen ggT zum Kürzen und kgV zum Angleichen.",
-          "Die Identität ggT × kgV = |a×b| ist ein schneller Plausibilitätscheck."
-        ],
-        "faq": [
-          {
-            "q": "Warum beide?",
-            "a": "Bruchkürzen braucht ggT; Hauptnenner braucht kgV."
-          },
-          {
-            "q": "Gilt die Identität immer?",
-            "a": "Ja für genau zwei positive ganze; bei mehr paarweise."
-          },
-          {
-            "q": "Eingaben gleich?",
-            "a": "Dann ggT = kgV = die Zahl selbst."
-          }
-        ]
-      }
-    },
     "prime-factorization": {
       "name": "Primfaktorzerlegung",
       "description": "Finden Sie Primfaktoren und Teiler beliebiger Zahlen",
@@ -5692,38 +5660,6 @@
           {
             "q": "Lasst sich jede Eingabe losen?",
             "a": "Nein. Manche Kombinationen, etwa nur drei Winkel, lassen die Grobe offen."
-          }
-        ]
-      }
-    },
-    "right-triangle": {
-      "name": "Rechtwinkliges-Dreieck",
-      "description": "Berechnen Sie Seiten und Winkel eines rechtwinkligen Dreiecks",
-      "metaDescription": "Berechnen Sie Dimensionen eines rechtwinkligen Dreiecks mit Trigonometrie",
-      "guide": {
-        "steps": [
-          "Gib zwei bekannte Seiten oder eine Seite und einen spitzen Winkel ein.",
-          "Starte, um fehlende Seiten und Winkel zu lösen.",
-          "Lies Hypotenuse, Katheten, Fläche und Umfang."
-        ],
-        "explanationTitle": "Rechtwinkliges Dreieck lösen",
-        "formula": "a² + b² = c²; sin θ = a/c, cos θ = b/c, tan θ = a/b",
-        "explanation": [
-          "Ein rechtwinkliges Dreieck hat einen 90°-Winkel, daher fixieren Satz des Pythagoras und Trig-Funktionen die übrigen Seiten und Winkel.",
-          "Mit zwei Informationen (nicht beide Winkel) ist es eindeutig lösbar; nur Winkel reichen ohne Seite nicht."
-        ],
-        "faq": [
-          {
-            "q": "Was brauche ich?",
-            "a": "Zwei von: zwei Seiten, oder eine Seite und ein spitzer Winkel."
-          },
-          {
-            "q": "Warum eine Seite nötig?",
-            "a": "Nur Winkel geben Form, aber unendlich viele Größen; eine Seite setzt Maßstab."
-          },
-          {
-            "q": "Ist die Hypotenuse immer längst?",
-            "a": "Ja, sie liegt dem 90°-Winkel gegenüber und ist stets die größte Seite."
           }
         ]
       }
@@ -7790,21 +7726,6 @@
           }
         ]
       }
-    },
-    "car-loan": {
-      "name": "Autokredit",
-      "description": "Berechnen Sie monatliche Autokreditzahlungen",
-      "metaDescription": "Autokreditrechner"
-    },
-    "lease": {
-      "name": "Leasing",
-      "description": "Berechnen Sie Leasingzahlungen",
-      "metaDescription": "Leasingrechner"
-    },
-    "trade-in": {
-      "name": "Inzahlungnahme",
-      "description": "Berechnen Sie den Inzahlungnahmewert",
-      "metaDescription": "Inzahlungnahmerechner"
     }
   },
   "calculator": {
