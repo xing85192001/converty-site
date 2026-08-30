@@ -140,6 +140,12 @@ export function Header() {
 					>
 						{t("blog")}
 					</Link>
+					<Link
+						href="/about"
+						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+					>
+						{t("footer.links.about")}
+					</Link>
 				</nav>
 
 				{/* Actions */}

@@ -54,6 +54,32 @@ const adsClientId = siteConfig.adsenseClientId;
 // here previously clobbered hydration and broke video/image tool pages.
 const SW_CLEANUP = `(function(){try{if(!('serviceWorker' in navigator))return;navigator.serviceWorker.getRegistrations().then(function(regs){if(!regs||!regs.length)return;Promise.all(regs.map(function(r){return r.unregister().catch(function(){});})).then(function(){if(window.caches&&window.caches.keys){return window.caches.keys().then(function(keys){return Promise.all(keys.map(function(key){return window.caches.delete(key).catch(function(){});}));});}}).catch(function(){});}).catch(function(){});}catch(e){}})();`;
 
+// 结构化数据：在每页注入 Organization + WebSite 实体，帮助 Google 将 "baikecalc" 识别为品牌实体，提升纯品牌词（不带 .com）的搜索召回。
+const SITE_HREF = siteConfig.siteUrl.replace(/\/$/, "");
+const brandJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_HREF}/#organization`,
+      name: siteConfig.operator.organization,
+      url: SITE_HREF,
+      logo: `${SITE_HREF}/logo.jpg`,
+      email: siteConfig.operator.email,
+      sameAs: [],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_HREF}/#website`,
+      url: SITE_HREF,
+      name: siteConfig.operator.name,
+      description:
+        "Free online calculators and converters for finance, health, math, photo, video, and more.",
+      publisher: { "@id": `${SITE_HREF}/#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,6 +103,10 @@ export default function RootLayout({
           />
         ) : null}
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(brandJsonLd) }}
+        />
       </body>
     </html>
   );
