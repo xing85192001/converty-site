@@ -7975,6 +7975,38 @@
           }
         ]
       }
+    },
+    "gcd-lcm": {
+      "name": "MCD y MCM",
+      "description": "Calcular MCD y MCM de varios números",
+      "metaDescription": "Calcular tanto el máximo común divisor como el mínimo común múltiplo de dos o más números",
+      "guide": {
+        "steps": [
+          "Introduce dos enteros para los que necesitas ambos.",
+          "Ejecuta para obtener MCD y mcm juntos.",
+          "Lee ambos y confirma a × b = MCD × mcm."
+        ],
+        "explanationTitle": "MCD y mcm juntos",
+        "formula": "MCD(a,b) × mcm(a,b) = |a × b|",
+        "explanation": [
+          "Calcular ambos a la vez ahorra tiempo; muchos problemas de fracciones y tiempos necesitan MCD para simplificar y mcm para alinear.",
+          "La identidad MCD × mcm = |a×b| es una verificación rápida de consistencia."
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué ambos?",
+            "a": "Simplificar fracciones usa MCD; denominador común usa mcm."
+          },
+          {
+            "q": "¿Siempre vale la identidad?",
+            "a": "Sí para exactamente dos enteros positivos; con más, aplícala por pares."
+          },
+          {
+            "q": "¿Entradas iguales?",
+            "a": "Entonces MCD = mcm = el número mismo."
+          }
+        ]
+      }
     }
   },
   "calculator": {

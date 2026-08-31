@@ -7969,6 +7969,38 @@
           }
         ]
       }
+    },
+    "gcd-lcm": {
+      "name": "GGT & KGV",
+      "description": "Berechnen Sie GGT und KGV mehrerer Zahlen",
+      "metaDescription": "Berechnen Sie GGT und KGV von zwei oder mehr Zahlen",
+      "guide": {
+        "steps": [
+          "Gib zwei ganze Zahlen ein.",
+          "Starte, um ggT und kgV zusammen zu erhalten.",
+          "Lies beide und prüfe a × b = ggT × kgV."
+        ],
+        "explanationTitle": "ggT und kgV zusammen",
+        "formula": "ggT(a,b) × kgV(a,b) = |a × b|",
+        "explanation": [
+          "Beide auf einmal spart Zeit; viele Bruch- und Taktprobleme brauchen ggT zum Kürzen und kgV zum Angleichen.",
+          "Die Identität ggT × kgV = |a×b| ist ein schneller Plausibilitätscheck."
+        ],
+        "faq": [
+          {
+            "q": "Warum beide?",
+            "a": "Bruchkürzen braucht ggT; Hauptnenner braucht kgV."
+          },
+          {
+            "q": "Gilt die Identität immer?",
+            "a": "Ja für genau zwei positive ganze; bei mehr paarweise."
+          },
+          {
+            "q": "Eingaben gleich?",
+            "a": "Dann ggT = kgV = die Zahl selbst."
+          }
+        ]
+      }
     }
   },
   "calculator": {

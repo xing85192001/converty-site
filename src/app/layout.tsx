@@ -86,8 +86,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning translate="no">
+      <body className={`${inter.className} notranslate`} suppressHydrationWarning>
         <Script id="sw-cleanup" strategy="beforeInteractive">
           {SW_CLEANUP}
         </Script>

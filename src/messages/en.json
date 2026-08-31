@@ -7969,6 +7969,38 @@
           }
         ]
       }
+    },
+    "gcd-lcm": {
+      "name": "GCD & LCM",
+      "description": "Calculate GCD and LCM of multiple numbers",
+      "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers",
+      "guide": {
+        "steps": [
+          "Enter two integers for which you need both values.",
+          "Run the calculator to return the GCD and LCM together.",
+          "Read both results and confirm they satisfy a × b = gcd × lcm."
+        ],
+        "explanationTitle": "GCD and LCM together",
+        "formula": "gcd(a,b) × lcm(a,b) = |a × b|",
+        "explanation": [
+          "Computing both at once saves time; many fraction and timing problems need the GCD to simplify and the LCM to align.",
+          "The identity gcd × lcm = |a×b| is a quick sanity check that both values are consistent."
+        ],
+        "faq": [
+          {
+            "q": "Why compute both?",
+            "a": "Fraction simplification needs gcd; finding a common denominator needs lcm."
+          },
+          {
+            "q": "Does the identity always hold?",
+            "a": "Yes for exactly two positive integers; for more, apply pairwise."
+          },
+          {
+            "q": "What if inputs are equal?",
+            "a": "Then gcd = lcm = the number itself."
+          }
+        ]
+      }
     }
   },
   "calculator": {
