@@ -14856,8 +14856,236 @@
             "text": "Training hard all the time leads to poor recovery and injury. Blend low-intensity cardio with intervals for steadier progress."
           }
         ]
+      },
+      "high-yield-savings-vs-regular": {
+        "title": "High-Yield vs Regular Savings: Is the Switch Worth It?",
+        "excerpt": "A high-yield savings account can earn 10-20x the interest of a traditional one. Here is how to decide whether moving your cash is worth the effort.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Traditional savings accounts at big brick-and-mortar banks often pay around 0.01% APY. High-yield savings accounts (HYSA), usually from online banks, commonly pay 4-5% APY in today's rate environment. On a $10,000 balance that difference is roughly $400-$500 a year for doing almost nothing."
+          },
+          {
+            "type": "h2",
+            "text": "Where the extra interest comes from"
+          },
+          {
+            "type": "p",
+            "text": "Online banks have no branch network to maintain, so they pass the savings to you as higher rates. The deposits are still insured up to the usual limits, so safety is generally comparable."
+          },
+          {
+            "type": "h2",
+            "text": "When it is worth switching"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Your emergency fund is sitting in a 0.01% account - this is the clearest win.",
+              "You have short-term savings (house down payment, wedding, tax bill) you will not touch for a year or more.",
+              "You want a separate sinking-fund account that earns something while you wait."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Run your numbers in our [Savings Goal Calculator](/finance/savings-goal) to see how a higher rate changes your timeline, or use the [Compound Interest Calculator](/finance/compound-interest) to project the gap over several years."
+          },
+          {
+            "type": "callout",
+            "text": "The rate on a HYSA is variable - it can fall when the central bank cuts rates. Lock in certainty with a CD or ladder if you need a guaranteed return."
+          },
+          {
+            "type": "p",
+            "text": "Switching takes an afternoon: open the account, link your old bank, move the cash, and set up direct deposit. The interest starts accruing immediately."
+          }
+        ]
+      },
+      "pay-yourself-first-system": {
+        "title": "Pay Yourself First: The Automation Trick That Builds Wealth",
+        "excerpt": "Saving what is left over rarely works. Pay yourself first flips the order - and automation makes it stick.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Most people save what remains after spending. The problem: there is rarely anything left. Pay-yourself-first reverses the flow: you move money to savings and investing the moment you are paid, then spend what is left."
+          },
+          {
+            "type": "h2",
+            "text": "Why the order matters"
+          },
+          {
+            "type": "p",
+            "text": "When saving is the first line item, it competes with nothing. When it is the last, it loses to every impulse purchase and subscription that came before it."
+          },
+          {
+            "type": "h2",
+            "text": "How to automate it"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Set up an automatic transfer to savings on payday - the same day, before you can spend.",
+              "Route a second transfer to an investment or retirement account.",
+              "Keep the fun account separate so you are not policing every purchase."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Start small if 20% feels impossible; even 5% compounds. Use our [Savings Goal Calculator](/finance/savings-goal) to see where a modest monthly transfer gets you, and the [Retirement Calculator](/finance/retirement) to project the long game."
+          },
+          {
+            "type": "callout",
+            "text": "Treat the transfer like a bill that must be paid - because your future self is a creditor you cannot default on."
+          },
+          {
+            "type": "p",
+            "text": "Review the amount every six months as income rises. The goal is to raise the saving rate automatically, not just once."
+          }
+        ]
+      },
+      "vo2-max-cardio-fitness": {
+        "title": "VO2 Max: The Number That Tracks Real Cardio Fitness",
+        "excerpt": "VO2 max is one of the best predictors of cardiovascular health. Here is what it means and how to improve it without living at the gym.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VO2 max measures the maximum amount of oxygen your body can use during intense exercise. Higher generally means a more efficient heart and lungs - and studies link it to lower risk of heart disease and early death."
+          },
+          {
+            "type": "h2",
+            "text": "How it is estimated"
+          },
+          {
+            "type": "p",
+            "text": "Laboratory tests are most accurate, but wearables and simple field tests give a useful estimate. The key input is your heart rate during hard effort, which is why knowing your zones helps."
+          },
+          {
+            "type": "h2",
+            "text": "Training to raise it"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Add one or two interval sessions a week - short hard bursts with recovery.",
+              "Keep most other cardio in the easy zone so you can stay consistent.",
+              "Track progress with pace or heart-rate workouts rather than just duration."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Find your effort zones first with our [Target Heart Rate Calculator](/health/target-heart-rate), then measure improvement with the [Pace Calculator](/health/pace-calculator) on the same route over time."
+          },
+          {
+            "type": "callout",
+            "text": "VO2 max declines with age, but training can slow - and partly reverse - the drop well into later decades."
+          },
+          {
+            "type": "p",
+            "text": "Consistency beats intensity. A modest weekly habit sustained for a year beats a heroic month that you quit."
+          }
+        ]
+      },
+      "body-fat-vs-bmi": {
+        "title": "Body Fat Percentage vs BMI: Which Should You Trust?",
+        "excerpt": "BMI is quick but blind to muscle. Body fat percentage tells a richer story - here is when each one matters.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "BMI only uses height and weight, so a muscular athlete and a sedentary person with the same BMI can have very different health. Body fat percentage measures the actual proportion of fat, which is often what people really care about."
+          },
+          {
+            "type": "h2",
+            "text": "Strengths and blind spots"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "BMI: free, instant, great for population-level trends - useless for individuals with high muscle.",
+              "Body fat %: reflects composition, but home methods vary in accuracy (calipers, scales, tapes).",
+              "Waist circumference: a simple, powerful red-flag check for internal fat."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Start with our [BMI Calculator](/health/bmi) for the quick screen, then estimate composition with the [Body Fat Calculator](/health/body-fat) to see the fuller picture."
+          },
+          {
+            "type": "callout",
+            "text": "Two people can share a healthy BMI yet have opposite risk profiles. Combine metrics before drawing conclusions."
+          },
+          {
+            "type": "p",
+            "text": "Whichever number you track, trend matters more than a single reading. Measure under the same conditions each time."
+          }
+        ]
+      },
+      "mental-percentage-tricks": {
+        "title": "Mental Percentage Tricks You Can Do Without a Calculator",
+        "excerpt": "Tips, discounts, and tax estimates are easier than they look. A few swaps let you compute percentages in your head.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "You rarely need exact precision for everyday percentages - you need a fast, good-enough number. A handful of swaps make that possible."
+          },
+          {
+            "type": "h2",
+            "text": "The tricks that actually stick"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "X% of Y = Y% of X. Need 8% of 50? That is 50% of 8 = 4. Instant.",
+              "10% is just move the decimal. 15% = 10% + half of 10%.",
+              "For a 20% discount, find 10% twice and subtract from the price."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "When accuracy matters - splits, grades, error margins - let our [Percentage Calculator](/math/percentage-calculator) do it, or check a result with the [Percent Error Calculator](/math/percent-error-calculator)."
+          },
+          {
+            "type": "callout",
+            "text": "Memorize X% of Y = Y% of X. It turns awkward numbers into easy ones more often than you would expect."
+          },
+          {
+            "type": "p",
+            "text": "Practice on real life: restaurant bills, store markdowns, and subscription price hikes. The patterns become automatic fast."
+          }
+        ]
+      },
+      "grams-to-cups-conversion": {
+        "title": "Grams to Cups: Why Weight Beats Volume in the Kitchen",
+        "excerpt": "A cup of flour can vary by 30% depending on how you scoop. Weighing in grams is the fix - and it is easier than it sounds.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Volume measures like cups are inconsistent: the same cup of flour can weigh noticeably more or less based on packing and humidity. Grams remove that guesswork entirely."
+          },
+          {
+            "type": "h2",
+            "text": "When to switch to grams"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Baking, where small errors compound into flat cakes or tough cookies.",
+              "Scaling a recipe up or down - multiply the grams, no re-converting.",
+              "Following recipes from another country that already use weight."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Convert any amount with our [Cooking Units Converter](/cooking/cooking-units), and when you are scaling a dish for more people, the [Recipe Scaler](/cooking/recipe-scaler) keeps every ingredient in proportion."
+          },
+          {
+            "type": "callout",
+            "text": "If a recipe lists cups, weigh one cup once, write the gram number on the page, and never scoop-guess again."
+          },
+          {
+            "type": "p",
+            "text": "A cheap kitchen scale pays for itself in saved disasters and consistent results week after week."
+          }
+        ]
       }
-    },
+},
     "categoryLabels": {
       "finance": "Finance",
       "health": "Health",

@@ -241,6 +241,42 @@ export const blogPosts: BlogPostBase[] = [
 		category: "health",
 		readingMinutes: 4,
 	},
+	{
+		slug: "high-yield-savings-vs-regular",
+		date: "2026-08-30",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "pay-yourself-first-system",
+		date: "2026-08-30",
+		category: "finance",
+		readingMinutes: 4,
+	},
+	{
+		slug: "vo2-max-cardio-fitness",
+		date: "2026-08-30",
+		category: "health",
+		readingMinutes: 5,
+	},
+	{
+		slug: "body-fat-vs-bmi",
+		date: "2026-08-30",
+		category: "health",
+		readingMinutes: 5,
+	},
+	{
+		slug: "mental-percentage-tricks",
+		date: "2026-08-30",
+		category: "math",
+		readingMinutes: 4,
+	},
+	{
+		slug: "grams-to-cups-conversion",
+		date: "2026-08-30",
+		category: "cooking",
+		readingMinutes: 4,
+	},
 ];
 
 export function getPostBySlug(slug: string): BlogPostBase | undefined {
