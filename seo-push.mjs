@@ -18,6 +18,18 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// 极简 .env 加载（不依赖 dotenv 包）：把 .env 注入 process.env（仅在未设置时覆盖），
+// 这样任意机器直接 `node seo-push.mjs` 即可，无需先 export 变量。
+try {
+  const envText = fs.readFileSync(".env", "utf8");
+  for (const line of envText.split("\n")) {
+    const m = line.match(/^\s*([\w.]+)\s*=\s*(.*?)\s*$/);
+    if (m && process.env[m[1]] === undefined) {
+      process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    }
+  }
+} catch {}
+
 const SITE = (process.env.SITE_URL ?? "https://baikecalc.com").replace(/\/$/, "");
 const OUT_DIR = path.join(process.cwd(), "out");
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY ?? "";
