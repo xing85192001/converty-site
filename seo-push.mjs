@@ -69,6 +69,7 @@ async function pushIndexNow() {
   const body = JSON.stringify({
     host: new URL(SITE).host,
     key: INDEXNOW_KEY,
+    keyLocation: `${SITE}/${INDEXNOW_KEY}.txt`,
     urlList: urls,
   });
   try {
