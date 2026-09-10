@@ -4,7 +4,6 @@ import { AlertCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { CurrencySelector, formatCurrencyValue } from "@/components/converter/currency-selector";
-import { ToolContentSection } from "@/components/converter/tool-content-section";
 import {
   calculatePropertyValuation,
   getConditions,
@@ -76,12 +75,6 @@ export function PropertyValuationCalculator() {
 
   return (
     <div className="w-full max-w-4xl mx-auto p-6 space-y-6">
-      {/* Header */}
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold">{t("title")}</h1>
-        <p className="text-gray-600">{t("description")}</p>
-      </div>
-
       {/* Disclaimer Alert */}
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 flex gap-3">
         <AlertCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
@@ -351,12 +344,6 @@ export function PropertyValuationCalculator() {
         </div>
       )}
 
-      {/* A 层深度内容：如何使用 / 原理 / 数据表 / FAQ（取自 converter.property-valuation.guide） */}
-      <ToolContentSection
-        toolId="property-valuation"
-        toolName={t("title")}
-        toolDescription={t("description")}
-      />
     </div>
   );
 }

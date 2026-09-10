@@ -4,7 +4,6 @@ import { AlertCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { CurrencySelector, formatCurrencyValue } from "@/components/converter/currency-selector";
-import { ToolContentSection } from "@/components/converter/tool-content-section";
 import {
   calculateRentalYield,
   getSwissBenchmarks,
@@ -76,12 +75,6 @@ export function RentalYieldCalculator() {
 
   return (
     <div className="w-full max-w-4xl mx-auto p-6 space-y-6">
-      {/* Header */}
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold">{t("title")}</h1>
-        <p className="text-gray-600">{t("description")}</p>
-      </div>
-
       {/* Market Context Info */}
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
         <p className="text-sm text-gray-700">
@@ -373,12 +366,6 @@ export function RentalYieldCalculator() {
         </div>
       )}
 
-      {/* A 层深度内容：如何使用 / 原理 / 数据表 / FAQ（取自 converter.rental-yield.guide） */}
-      <ToolContentSection
-        toolId="rental-yield"
-        toolName={t("title")}
-        toolDescription={t("description")}
-      />
     </div>
   );
 }
