@@ -1,6 +1,5 @@
 "use client";
 
-import { Clock, Monitor, Zap } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { AdUnit } from "@/components/ads/ad-unit";
 import { Disclaimer } from "@/components/ads/disclaimer";
@@ -9,11 +8,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "@/i18n/navigation";
 import { getCategoryById } from "@/lib/registry/categories";
 import { getConvertersByCategory } from "@/lib/registry/converters";
-import {
-	getFeatureColorClasses,
-	getToolFeaturesLayout,
-} from "@/lib/registry/tool-features";
-import { cn } from "@/lib/utils";
 import { Breadcrumbs } from "./breadcrumbs";
 import { ToolContentSection } from "./tool-content-section";
 
@@ -27,8 +21,6 @@ interface ConverterLayoutProps {
 	toolId?: string;
 }
 
-const highlightIcons = [Zap, Monitor, Clock];
-
 export function ConverterLayout({
 	title,
 	description,
@@ -40,20 +32,8 @@ export function ConverterLayout({
 }: ConverterLayoutProps) {
 	const t = useTranslations("common");
 	const tc = useTranslations("converter");
-	const tf = useTranslations("toolFeatures");
 	const locale = useLocale();
 	const category = getCategoryById(categoryId);
-	const layout = getToolFeaturesLayout(toolId ?? "", categoryId);
-	const coreFeatures = layout.coreFeatures.map((f) => ({
-		...f,
-		title: tf(`core.${f.titleKey}.title`),
-		description: tf(`core.${f.titleKey}.description`),
-	}));
-	const highlights = layout.highlights.map((h) => ({
-		...h,
-		title: tf(`highlights.${h.titleKey}.title`),
-		description: tf(`highlights.${h.titleKey}.description`),
-	}));
 
 	const categorySlug = category?.slug ?? categoryId;
 	const related = getConvertersByCategory(categoryId)
@@ -102,62 +82,15 @@ export function ConverterLayout({
 
 			<AdUnit slot="content-top" />
 
-			{coreFeatures.length > 0 && (
-				<section className="mb-8">
-					<h2 className="mb-3 text-lg font-bold tracking-tight">
-						{t("coreFeatures")}
-					</h2>
-					<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-						{coreFeatures.map((feature) => (
-							<Card
-								key={feature.titleKey}
-								className={cn("border", getFeatureColorClasses(feature.color))}
-							>
-								<CardContent className="p-4">
-									<h3 className="font-semibold">{feature.title}</h3>
-									<p className="mt-1 text-sm opacity-90">
-										{feature.description}
-									</p>
-								</CardContent>
-							</Card>
-						))}
-					</div>
-				</section>
-			)}
+			{/* 已移除全站通用的「核心功能」模板段落。
+			    原因：这组内容从 toolFeatures.core 共享池里挑选，在所有计算器之间完全重复
+			    （boilerplate），不提供任何页面独有信息，是 AdSense「低价值内容」判定的主要来源。
+			    每个工具的独特深度内容由下方 <ToolContentSection /> 承载。 */}
 
-			{highlights.length > 0 && (
-				<>
-					<AdUnit slot="content-mid" />
-					<section className="mb-8">
-						<h2 className="mb-3 text-lg font-bold tracking-tight">
-							{t("toolHighlights")}
-						</h2>
-						<div className="grid gap-3 sm:grid-cols-3">
-							{highlights.map((highlight, index) => {
-								const Icon = highlightIcons[index % highlightIcons.length];
-								return (
-									<Card
-										key={highlight.titleKey}
-										className="border-border bg-muted/40"
-									>
-										<CardContent className="flex items-start gap-3 p-4">
-											<div className="rounded-full bg-primary/10 p-2 text-primary">
-												<Icon className="h-5 w-5" />
-											</div>
-											<div>
-												<h3 className="font-semibold">{highlight.title}</h3>
-												<p className="mt-1 text-sm text-muted-foreground">
-													{highlight.description}
-												</p>
-											</div>
-										</CardContent>
-									</Card>
-								);
-							})}
-						</div>
-					</section>
-				</>
-			)}
+			{/* 已移除全站通用的「工具特点」模板段落（实时计算 / 多平台适配 / 历史记录）。
+			    这三条在任何网站上都能写，零信息量，同样属于 boilerplate。
+			    广告位 content-mid 保留。 */}
+			<AdUnit slot="content-mid" />
 
 			<ToolContentSection
 				toolId={toolId ?? ""}

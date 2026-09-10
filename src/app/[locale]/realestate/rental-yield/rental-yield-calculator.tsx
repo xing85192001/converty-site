@@ -4,6 +4,7 @@ import { AlertCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { CurrencySelector, formatCurrencyValue } from "@/components/converter/currency-selector";
+import { ToolContentSection } from "@/components/converter/tool-content-section";
 import {
   calculateRentalYield,
   getSwissBenchmarks,
@@ -66,7 +67,8 @@ export function RentalYieldCalculator() {
     mounted,
   ]);
 
-  if (!mounted) return null;
+  // 注意：这里曾因 `if (!mounted) return null;` 导致静态导出时整页为空白（SSR 拿不到内容）。
+  // 现在改为始终渲染 UI，计算结果在 mount 后填充（result 初始为 null，结果区走条件渲染）。
 
   const benchmarks = getSwissBenchmarks();
   const cityYields = getSwissCityYields();
@@ -370,6 +372,13 @@ export function RentalYieldCalculator() {
           </button>
         </div>
       )}
+
+      {/* A 层深度内容：如何使用 / 原理 / 数据表 / FAQ（取自 converter.rental-yield.guide） */}
+      <ToolContentSection
+        toolId="rental-yield"
+        toolName={t("title")}
+        toolDescription={t("description")}
+      />
     </div>
   );
 }
