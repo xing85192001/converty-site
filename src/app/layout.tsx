@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 
-const inter = Inter({ subsets: ["latin"] });
+// 字体已落到本地仓库（src/app/fonts/Inter-latin.woff2），避免构建期访问
+// fonts.gstatic.com（沙箱/Turbopack 抓取字体偶发失败导致整构建中断）。
+const inter = localFont({
+  src: "./fonts/Inter-latin.woff2",
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
