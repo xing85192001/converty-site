@@ -18118,862 +18118,862 @@
         ]
       },
       "recipe-scaling-basics": {
-        "title": "Recipe Scaling Basics: Going from Four Servings to Two Isn't Just Halving",
-        "excerpt": "Scaling the main ingredients linearly works, but seasonings, fermentation, and cooking time need separate judgment — otherwise the flavor falls apart.",
+        "title": "Formula scale-up base: four to two instead of a simple halving",
+        "excerpt": "Linear scaling is feasible, but the temperature, fermentation and heating times are judged separately, otherwise the taste changes.",
         "blocks": [
           {
             "type": "p",
-            "text": "The easiest way to turn a four-serving recipe into a two-serving one is to multiply by 0.5, but reality is far more complex than multiplication. Staples like flour, water, and meat can be scaled linearly with the number of servings, but salt, sugar, and spices lean on subjective taste — simply halving them often leaves the dish bland or too salty. In baking, the amount of yeast is also tied to temperature and time, so it isn't a pure ratio problem."
+            "text": "The formula was changed from a four-person to a two-person formulation, and the least cost-effective approach was to multiply the factor of 0.5, but the reality was far more complex than the multiplier. The staples, such as flour, water and meat, can be scaled in linear terms, with salt, sugar and spices being more subjective, and cutting them directly in half often light or salty; yeasts in baking are also co-ordinated with temperature, time, and not a pure proportion."
           },
           {
             "type": "h2",
-            "text": "What to Scale by Ratio, and What to Adjust Separately"
+            "text": "Which should be proportional and which should be adjusted separately"
           },
           {
             "type": "ul",
             "items": [
-              "Flours and liquid staples: scale strictly by ratio",
-              "Salt, spices, chili: follow the ratio but add in stages and taste as you go",
-              "Fermented dough: reassess the yeast and timing",
-              "Pot capacity caps batch size — split into batches if it's too large"
+              "Powders, liquid mains: strictly proportionally scaled",
+              "Salt, spices, peppers: proportional, but in turn, taste.",
+              "Fermented pasta: yeast and time need to be reassessed",
+              "The capacity limit for the pan is one batch, it's too big to split."
             ]
           },
           {
             "type": "p",
-            "text": "Before scaling, set a base quantity first, then convert — that is the thinking behind [Practical Ratios and Proportioning](/ratio-and-scaling). If the original recipe uses cups and spoons but you want grams, first go through [How to Convert Grams to Cups](/grams-to-cups) to unify the units. The precision issue after scaling is the same as in [Rounding and Significant Figures](/rounding-significant-figures) — don't write down an unusable amount like 0.3333 teaspoons."
+            "text": "The scaling is based on the determination of the baseline and the conversion of the base amount, which is followed by the idea of [proportional versus matching] (/ratio-and-scaling). If the original formula uses a spoon and you want to use a gram, go through it first. The problem of precision after scaling is the same as [rounding-significant-figures], so do not write an inoperable amount of 0.333 tea spoons."
           },
           {
             "type": "callout",
-            "text": "Baking is extremely sensitive to ratios. If you scale by more than double, recalculate the flour-to-water ratio and do a small test batch before mass production."
+            "text": "The baking is extremely sensitive to the scale, with more than twice the scale suggested to recalculate the flour water ratio and try to produce a small batch at a time."
           },
           {
             "type": "h2",
-            "text": "The Non-Linearity of Heat and Time"
+            "text": "Non-linear between heat and time"
           },
           {
             "type": "p",
-            "text": "Doubling a pot of soup doesn't make the boiling and reduction times exactly double — a deeper container and slower heat dissipation both change the pace, so judge by state rather than clinging to the clock. Similarly, a fuller baking tray takes longer for the center to cook through. Master these, and combined with [Common Conversion Mistakes](/common-conversion-mistakes), you'll fail far less often."
+            "text": "A Tongan double, boiling and collecting time does not exactly double, and a deeper, slower heat can change the rhythm, depending on the state rather than on the dead. Similarly, it takes longer for the grill to become more fully fledged at the centre. With this in hand, a combination of [common conversion errors] (/common-conversion-mistakes) would reduce the number of overturns."
           }
         ]
       },
       "measuring-cups-spoons-standard": {
-        "title": "Measuring Cup and Spoon Standards: Exactly How Many Milliliters Is One Cup?",
-        "excerpt": "A US cup is about 240 ml, but cup sizes differ by country — mixing standards silently ruins a recipe.",
+        "title": "Measurement of the cup: How many milligrams of a glass is it?",
+        "excerpt": "An American-style glass of about 240 milligrams, but different countries have different cup sizes.",
         "blocks": [
           {
             "type": "p",
-            "text": "Measuring cups and spoons look simple, but hide standard differences. In US recipes, 1 cup is about 240 milliliters, 1 tablespoon (tbsp) about 15 ml, and 1 teaspoon (tsp) about 5 ml; but British, Japanese, and Australian cup sizes are not all the same. Copying a foreign recipe while using the wrong cup, the accumulated error is enough to ruin your baking."
+            "text": "The scalding spoon looks simple and hides standard differences behind it. In the United States recipe, 1 cup equals about 240 ml, 1 spoon equals about 15 ml, 1 tea spoon equals about 5 ml; and the British, Japanese, Australian cups do not agree. The foreign formula was reproduced in the wrong cup, and the cumulative deviation was enough to make the bake fail."
           },
           {
             "type": "h2",
-            "text": "Common Standards Compared"
+            "text": "Common Standard Contrast"
           },
           {
             "type": "ul",
             "items": [
-              "US: 1 cup = 240 ml, 1 tbsp = 15 ml, 1 tsp = 5 ml",
-              "Imperial: 1 cup ≈ 284 ml, different from US",
-              "Japanese: 1 go ≈ 180 ml, used for measuring rice",
-              "Dry and liquid measuring cups work on different principles — don't mix them up"
+              "1 cup = 240 ml, 1 tbsp = 15 ml, 1 tsp = 5 ml",
+              "British 1 cup about 284 ml, unlike American",
+              "Day 1 contract 180 ml for rice measurement",
+              "Dryness and wetness are different scales."
             ]
           },
           {
             "type": "p",
-            "text": "The safest approach is to convert everything to grams, because weight is absolute and doesn't change with the standard. That is exactly the value of [How to Convert Grams to Cups](/grams-to-cups). When converting, watch out for the [Unit Conversion Pitfalls](/unit-conversion-pitfalls) — volume conversion depends on density, and one 'cup' of different ingredients can weigh wildly differently. For proportioning logic, also see [Recipe Scaling Basics](/recipe-scaling-basics)."
+            "text": "The most prudent approach would be to convert all quantities into grams, as the weight is absolute and does not vary by standard. This is the value of [grams-to-cups]. In conversions, care is taken [unit-conversion-pitfalls] (/unit-conversion-pitfalls) — volume conversion depends on density, with a difference in weight between different foods and a cup. Matching logic may also refer to [formulation scaling base] (/recipe-scaling-basics)."
           },
           {
             "type": "callout",
-            "text": "When measuring flour by cup, always 'level it off' — a heaping cup can hold nearly 20% more than a leveled one, a common culprit behind collapsed cakes."
+            "text": "Flour must be scraped when measured in cups, with a tipping glass almost 20% more than scratched, a common killer of cake collapses."
           },
           {
             "type": "h2",
-            "text": "Measure Dry and Wet Separately"
+            "text": "Dry-wet-separated"
           },
           {
             "type": "p",
-            "text": "For wet ingredients (water, oil, milk), use a clear measuring cup and read the bottom of the meniscus; for dry powders, scoop full and level off. Mixing the two standards amplifies error. To control cost precisely, pair this with [How to Calculate Cost per Serving](/cost-per-serving), and for an error-avoidance checklist see [Common Conversion Mistakes](/common-conversion-mistakes)."
+            "text": "Wet material (water, oil, milk) is read at the bottom of the dent of the surface with a transparent glass of mass; dry powder is covered with a spoon. The combination of the two criteria magnifies the error. Accurate control of costs can be combined with [how each cost is calculated] (/cost-per-service), while the list of errors is avoided by [common conversion errors] (/compon-conversion-mistakes)."
           }
         ]
       },
       "nutrition-conversion-guide": {
-        "title": "Nutrition Conversion Guide: How to Convert Calories and Protein from Raw to Cooked Weight",
-        "excerpt": "Ingredients lose water when cooked, changing their weight; if you log nutrition by cooked weight you overstate calories per unit — distinguish raw from cooked before converting.",
+        "title": "Nutritional conversion guidelines: how to recalculate the calorie protein from birth to ripening Heavy",
+        "excerpt": "Water loss becomes heavy after cooking the food, which overestimates the amount of heat per unit by well-recognised nutrients, then separates it and converts it.",
         "blocks": [
           {
             "type": "p",
-            "text": "Nutrition labels list calories and protein mostly 'per 100 g,' but whether that's raw weight or cooked weight is often overlooked. Chicken breast loses water when cooked — 100 g of raw meat may shrink to just 70 g cooked — so if you calculate by cooked weight, the calories per unit are severely overestimated. The correct approach is to record consistently by raw weight, or look up the conversion factor for cooked weight."
+            "text": "The heat and proteins on the nutrition label are mostly given `per 100 grams', but the indication is often ignored whether it is reborn or sophisticated. When the chicken gravy is cooked and water is lost, 100 grams of raw meat may only have 70 grams of cooked meat, and if recalculated, the unit heat will be significantly overestimated. The correct approach would be to use the same life-recycling or to check the corresponding conversion factors."
           },
           {
             "type": "h2",
-            "text": "Key Conversion Points"
+            "text": "Common conversion elements"
           },
           {
             "type": "ul",
             "items": [
-              "Rice and noodles: raw-to-cooked ratio about 1:2.5 to 3; raw weight is safest",
-              "Meat: loses about 20–30% water when cooked; record raw weight",
-              "Oil is calorie-dense; one miscalculated spoonful makes a visible difference",
-              "On packaged nutrition tables, prefer 'per 100 g' over 'per serving'"
+              "Meow noodles: Boiled to about 1:2.5 to 3, most stable by birth",
+              "Meat: About 20 to 30% of the cooked water is lost and reborn.",
+              "The oil's heat is high and the calculus effect is clear.",
+              "Packed nutrition tables give priority to every 100 grams instead of every one."
             ]
           },
           {
             "type": "p",
-            "text": "Converting nutrition shares the 'mass' basis with [How to Convert Grams to Cups](/grams-to-cups) — first turn volume into grams, then look it up for the most reliable result. To control total calories, plan meals together with [How to Calculate Cost per Serving](/cost-per-serving). For macro proportioning, see [Practical Ratios and Proportioning](/ratio-and-scaling), and for precision when reporting numbers, see [Rounding and Significant Figures](/rounding-significant-figures)."
+            "text": "Conversion of nutrition and [g and cups and how] (/grams-to-cups) to the `quality' benchmark, first converting volume to gram and then showing the most reliable. The total calorie control can be planned together with [how to calculate each cost] (/cost-per-serving). Macro-scales are set with reference [scales versus matching] (/ratio-and-scaling), while the accuracy of the figures reported is shown in [rounded and valid] (/rounding-significant-figures)."
           },
           {
             "type": "callout",
-            "text": "During fat loss, you must distinguish raw from cooked weight — otherwise 'you think you ate 300 kcal' but it may actually be over 400, and your calorie deficit quietly vanishes."
+            "text": "It is important to distinguish between retrenchment periods, otherwise `the thought of eating 300 kilocalories' could actually be over 400, and the gap could be eaten quietly."
           },
           {
             "type": "h2",
-            "text": "How to Align Dining Out with Home Cooking"
+            "text": "How to match food and homemade"
           },
           {
             "type": "p",
-            "text": "Dining-out labels are usually based on the edible portion at cooked weight, which can't be directly added to home cooking logged at raw weight — you need to unify them to the same basis before comparing. Build your own raw-to-cooked reference table for common ingredients; sticking with it long term beats repeatedly checking an app. For a roundup of related pitfalls, see [Common Conversion Mistakes](/common-conversion-mistakes)."
+            "text": "Extra-eat signs are more heavily heavy on the edible and cannot be directly added to home-made re-entry records and need to be harmonized to the same benchmark for comparison. It's more efficient to build a table of common food products, and to insist on it in the long term, than to double-check the APP. A summary of relevant errors is provided in [common conversion errors] (/common-conversion-mistakes)."
           }
         ]
       },
       "cost-per-serving": {
-        "title": "How to Calculate Cost per Serving: Don't Be Fooled by Unit Price — Look at Actual Usage",
-        "excerpt": "A bottle of oil has a low unit price but is used sparingly; what really drives a dish's cost is usually the main ingredients and waste.",
+        "title": "How do you calculate each cost?",
+        "excerpt": "The price of a bottle of oil is low in unit price but small in quantity, and it is often the staple food and the loss that really determines the price.",
         "blocks": [
           {
             "type": "p",
-            "text": "To cost a dish, you can't just look at the purchase unit price — you must multiply each ingredient's 'actual usage' by its unit price and sum them up. For example, a bottle of soy sauce is cheap, but a dish uses only 10 ml of it, so its allocated cost is tiny; it's the meat and fresh vegetables, with high unit prices and large usage, that form the bulk of the cost. Ignoring usage leads to completely wrong conclusions."
+            "text": "Counting the cost of a dish does not depend solely on the unit price, but on the `actual usage' of each food item multiplied by the corresponding unit price. For example, a bottle of soy sauce is cheap, but a dish uses only 10 ml at a very low cost of sharing; rather, meat and fresh vegetables are the main cost. Neglecting usage leads to an entirely erroneous conclusion."
           },
           {
             "type": "h2",
-            "text": "Calculation Steps"
+            "text": "Accounting steps"
           },
           {
             "type": "ul",
             "items": [
-              "List all ingredients and their amounts, unified into grams or milliliters",
-              "Package total price ÷ total net content = unit price",
-              "Unit price × actual usage = cost of that ingredient",
-              "Sum all items ÷ number of servings = cost per serving"
+              "List all foods and quantities used, in a single g or ml",
+              "Total package price ÷ unit price for total net content",
+              "Unit price x actual usage = cost of the food",
+              "= cost per item"
             ]
           },
           {
             "type": "p",
-            "text": "This step depends on accurate [How to Convert Grams to Cups](/grams-to-cups) to turn cups and spoons into grams, otherwise the usage is distorted. The ingredient ratios themselves come from [Recipe Scaling Basics](/recipe-scaling-basics). If nutrition labeling is involved, also combine with [Nutrition Conversion Guide](/nutrition-conversion-guide). For numeric precision when recording, see [Rounding and Significant Figures](/rounding-significant-figures) — two decimal places are enough."
+            "text": "This step depends on the precise [grams-to-cups] (/grams-to-cups) to turn the spoon into grams, otherwise the amount is incorrect. The ratio itself is derived from the [formulation scaling base] (/recipe-scaling-basics). If nutritional indications are involved, they can also be combined with [nutrient conversion-conversion-guide]. Two references to the accuracy of the numbers at the time of recording [rounded and valid figures] (/rounding-significant-figures) are sufficient."
           },
           {
             "type": "callout",
-            "text": "Don't forget that seasonings and energy (gas and electricity) are small, but when you cook often they add up over time and deserve to be counted in the true cost."
+            "text": "It should be borne in mind that, despite the small cost of cooking and energy (gas and electricity), the accumulation of long-term high-frequency cooking is worth taking into account the real cost."
           },
           {
             "type": "h2",
-            "text": "Levers to Lower Cost"
+            "text": "Leverage to reduce costs"
           },
           {
             "type": "p",
-            "text": "Prioritize optimizing the main ingredients that are 'high usage, high unit price': bulk buying, seasonal vegetables, reducing waste. By comparison, fussing over the unit price of a few milliliters of oil yields almost nothing. Only by avoiding [Common Conversion Mistakes](/common-conversion-mistakes) does the accounting become trustworthy."
+            "text": "Priority is given to the “high-utilized, high- unit-priced” staple foods: bulk purchasing, seasonal vegetables, and reduced wear and tear. This compares with a very low unit price return for a few milligrams of oil. Accounting is credible by circumventing [common conversion errors] (/compon-conversion-mistakes)."
           }
         ]
       },
       "grams-to-cups": {
-        "title": "How to Convert Grams to Cups: A Cup of Flour and a Cup of Sugar Weigh Very Differently",
-        "excerpt": "Volume conversion depends on density; the same cup is about 120 g for flour but about 200 g for sugar — never apply the same number to both.",
+        "title": "How do you translate a cup of flour and a cup of sugar?",
+        "excerpt": "Volume conversion depends on density, same as a glass of flour, about 120 grams and sugar, about 200 grams, which must never be applied to the same number.",
         "blocks": [
           {
             "type": "p",
-            "text": "You can't use one universal factor to convert 'cups' to 'grams,' because different ingredients have completely different densities. Taking a US cup of 240 ml: loose flour is about 120 g, white sugar about 200 g, water exactly 240 g, and butter about 227 g. Use the wrong factor and the recipe ratios fall apart."
+            "text": "Turning the cup into a gram doesn't allow for an all-power coefficient, because the density of different foods is completely different. A glass of 240 ml in American: flour is loose about 120 g, white sugar about 200 g, water is just 240 g, butter about 227 g. If you have a wrong coefficient, the formula ratio is confused."
           },
           {
             "type": "h2",
-            "text": "How Much Does One Cup of Common Ingredients Weigh?"
+            "text": "It's about a glass of common food."
           },
           {
             "type": "ul",
             "items": [
-              "All-purpose flour: about 120 g (leveled)",
-              "White sugar: about 200 g",
-              "Brown sugar (packed): about 220 g",
-              "Water / milk: about 240 g",
-              "Butter: about 227 g"
+              "General flour: about 120 g (shaving)",
+              "White sugar: around 200 g",
+              "Red sugar (pressure): about 220 g",
+              "Water / Milk: around 240 g",
+              "Butter: About 227 g"
             ]
           },
           {
             "type": "p",
-            "text": "So in baking, 'using grams' beats 'using cups' by far, eliminating density uncertainty entirely. Measuring-cup standards themselves differ by country — see [Measuring Cup and Spoon Standards](/measuring-cups-spoons-standard). The conversion is essentially the volume-to-mass conversion covered in [Unit Conversion Pitfalls](/unit-conversion-pitfalls), so always check density first. When scaling recipes, pair this with [Recipe Scaling Basics](/recipe-scaling-basics)."
+            "text": "So it's better to use the gram in the baking than the cup, and it'll eliminate the density uncertainty. There are also country differences in the measure cups themselves, as detailed in [measuring-cups-spoons-standard]. The volume mass conversions in the [unit-conversion-pitfalls] by nature must be based on density. Zoom formulations with [formulate-scaling-basics] basis."
           },
           {
             "type": "callout",
-            "text": "The same ingredient weighs differently by state: packed flour or clumped sugar both make 'one cup' heavier — weighing is the safest bet."
+            "text": "The same food is of different weights: flour is compacted and sugar bars make a glass heavier and the most secure."
           },
           {
             "type": "h2",
-            "text": "Approximations When You Have No Scale"
+            "text": "No approximation of scales"
           },
           {
             "type": "p",
-            "text": "If you temporarily have no kitchen scale, you can memorize the cup-to-gram equivalents of common ingredients, but this is only suitable for stir-fries that aren't precision-sensitive; baking must be weighed. For nutrition calculations see [Nutrition Conversion Guide](/nutrition-conversion-guide), for cost allocation see [How to Calculate Cost per Serving](/cost-per-serving), and for error-avoidance methods see [Common Conversion Mistakes](/common-conversion-mistakes)."
+            "text": "In the absence of a kitchen scale for a temporary period, the crayons of common foods can be remembered, but only for scoffing that is not sensitive to accuracy; the baking must be weighed. Nutrient calculations are provided in the [nutrient-conversion-guide] (/nutrition-conversion-guide), cost-sharing in [how each cost is calculated] (/cost-per-service) and methods to avoid errors are aggregated in [common conversion errors] (/compon-conversion-mistakes)."
           }
         ]
       },
       "common-conversion-mistakes": {
-        "title": "Common Conversion Mistakes: These Pitfalls Ruin Half of Home Cooking",
-        "excerpt": "Mixing cup standards, ignoring density, and clinging to time are the three most frequent errors in kitchen conversions.",
+        "title": "Common conversion errors: These pits turn over half the usual food.",
+        "excerpt": "The three most high-frequency faults in the kitchen conversion are mixed standards, neglected density and static.",
         "blocks": [
           {
             "type": "p",
-            "text": "Kitchen conversion errors are often not calculation mistakes but wrong assumptions. The three most typical types: first, mixing cup standards from different countries without noticing; second, assuming 'one cup' weighs the same for anything, ignoring density; third, treating recipe times as absolute truth instead of adjusting by state. Stack all three and the result is naturally inconsistent."
+            "text": "Miscalculation of kitchens is often not a miscalculation, but a mistake of premise. The three most typical categories: first, the mix of cups in different countries without notice; second, the thought that \"one glass\" weighs the same weight and ignores density; and third, the use of formula time as absolute truth, without a state-of-the-art adjustment. Three folds, and the finished product is naturally unstable."
           },
           {
             "type": "h2",
-            "text": "High-Frequency Error Checklist"
+            "text": "HF error list"
           },
           {
             "type": "ul",
             "items": [
-              "Confusing US and imperial cups — nearly a 20% difference",
-              "Heaping flour not leveled off — inflated usage",
-              "Converting salt and sugar by volume with the wrong density",
-              "Treating fluid ounces and weight ounces as the same",
-              "Copying times without checking actual doneness"
+              "The U.S. Cup mixed up with the British Cup.",
+              "Flour piles are not even, they're too high.",
+              "Salt sugar is converted by volume and misdensed.",
+              "Liquid ounces mix with weight ounces.",
+              "The time of the move doesn't look at the actual maturity."
             ]
           },
           {
             "type": "p",
-            "text": "Fluid ounces measure volume and avoirdupois ounces measure weight — the two are easily confused in a recipe, exactly the dimensional awareness in [Unit Conversion Pitfalls](/unit-conversion-pitfalls). Switching to grams avoids most problems at once; the method is in [How to Convert Grams to Cups](/grams-to-cups) and [Measuring Cup and Spoon Standards](/measuring-cups-spoons-standard). For scaling and proportioning, see [Recipe Scaling Basics](/recipe-scaling-basics)."
+            "text": "Liquid ounce volume, constant ounce weight, both of which are highly misleading in the formulation and correspond to the dimensions of [unit-conversion-pitfalls] (/unit-conversion-pitfalls). The change to grams can circumvent most problems once and for all, see [grams-to-cups] (/grams-to-cups) and [measuring-cups-spoons-standards]. Scale and ratio reference [formulate-scaling-basics base]."
           },
           {
             "type": "callout",
-            "text": "A budget kitchen scale solves over 80% of conversion failures — easier than memorizing any reference table."
+            "text": "Buying a 10-dollar kitchen scale would solve more than 80 per cent of the conversions, which would be less than any comparison."
           },
           {
             "type": "h2",
-            "text": "Build Your Own Pitfall-Avoidance Routine"
+            "text": "Create your own pit-shelter process"
           },
           {
             "type": "p",
-            "text": "I recommend fixing three principles: 'always use grams, stick to one cup standard, judge doneness by state,' and keep a note on your phone of raw/cooked weights and cup-to-gram equivalents for common ingredients. For nutrition and cost dimensions, combine [Nutrition Conversion Guide](/nutrition-conversion-guide) and [How to Calculate Cost per Serving](/cost-per-serving), and revisit numeric precision in [Rounding and Significant Figures](/rounding-significant-figures)."
+            "text": "It is recommended that the three principles of \"full use of grams, fixed one cup standard, and state-of-the-art fire\" be fixed, and that the raw weight of common food be recorded in the phone. Nutrition and cost dimensions can be combined with [nutrient-conversion-guide] and [how each cost is calculated] (/cost-per-serving), and a review of numerical accuracy [. Rounded and valid [/rounding-significant-figures]."
           }
         ]
       },
       "compare-loan-interest-rates": {
-        "title": "How to Compare Mortgage Rates: Choosing Between Equal Principal and Interest, Equal Principal, and LPR",
-        "excerpt": "Comparing mortgage rates isn't just about the numbers — the repayment method decides your actual total interest paid.",
+        "title": "How does the mortgage rate compare: Equivalent principal, Equivalent principal and LPR? Organisation",
+        "excerpt": "The comparison of interest rates on mortgages cannot be based on figures alone, and the repayment method determines the total interest on your actual expenditure.",
         "blocks": [
           {
             "type": "p",
-            "text": "Many people comparing loans only look at the annual rate the bank quotes, ignoring the decisive impact of the repayment method on total interest. Take a 1,000,000-yuan mortgage at 4.2% annual rate over 30 years: with equal principal and interest (annuity repayment), the monthly payment is fixed, but little principal is repaid early, so total interest is highest; with equal principal (linear repayment), the monthly principal is fixed and interest declines, giving lower total interest but heavier early monthly pressure. To see the difference clearly, first use the approach in [Loan Rate Comparison](/finance) to calculate the monthly payment and total interest of both plans."
+            "text": "Many compare the annual interest rate of the loan to that reported by the bank, while ignoring the decisive impact of repayment on total interest. It is also a loan with a fixed monthly repayment of the principal equivalent of one million dollars, with a yearly interest rate of 4.2 years and a term of 30 years, but the principal repayment of the prior period is small and the total interest is the highest; the principal equivalent is fixed and interest is declining, and total interest is lower but the previous period is under pressure. In order to see the differences, it is suggested that the monthly provision and total interest for both options be calculated using the [lending rate comparison] (/finance) approach."
           },
           {
             "type": "h2",
-            "text": "The Essential Difference Between LPR and a Fixed Rate"
+            "text": "The essence of LPR and fixed interest rates"
           },
           {
             "type": "p",
-            "text": "Currently most mortgages are linked to LPR (Loan Prime Rate), repriced once a year, falling when the market rate drops and rising when it climbs. If you expect rates to trend lower overall, a floating rate is more cost-effective; if you want absolute stability in monthly payments and dislike volatility, you can choose a fixed rate. Note that the repricing date and the markup (basis points added) are usually fixed long-term once signed, so clarify these details before signing."
+            "text": "Currently, most mortgages are linked to LPR (interest rate on loan market quotations), which is re-pricing once a year, and interest rates decline and increase as the market goes down. If you judge that future interest rates will be lower as a whole, the floating rate will be more economical; if you seek absolute stability in the monthly supply and are unwilling to withstand fluctuations, you can choose a fixed rate. Note that once the weighting date and additional value are signed, they are usually fixed for a long period of time, and the details are clarified before the contract is signed."
           },
           {
             "type": "ul",
             "items": [
-              "Equal principal and interest: fixed monthly payment, suits salaried workers with stable cash flow",
-              "Equal principal: lower total interest, suits those who can afford heavier early repayments",
-              "Floating rate: varies with LPR, potentially cheaper in the long run",
-              "Fixed rate: locked monthly payment, suits risk-averse borrowers"
+              "Equivalent principal: a fixed monthly job suitable for a stable cash flow Group",
+              "Equivalent principal: Total interest is lower and suitable for prior repayments People",
+              "Floating interest rates: subject to LPR changes, may be more economical in the long term",
+              "Fixed interest rate: month-specific, suitable for risk-averse borrowing People"
             ]
           },
           {
             "type": "callout",
-            "text": "When comparing rates, separate the 'nominal annual rate' from the 'actual annualized cost (APR)' — only the latter includes hidden expenses like fees and insurance."
+            "text": "The interest rate is compared with the `nominal annual interest rate' and `real annualized cost (APR)', which includes hidden expenses such as fees, insurance, etc."
           },
           {
             "type": "h2",
-            "text": "Three Common Pitfalls When Comparing Across Lenders"
+            "text": "Three common traps for horizontal comparison"
           },
           {
             "type": "p",
-            "text": "First, don't be fooled by an 'introductory rate for the first N years' — the standard rate that returns after the promo ends is your long-term cost. Second, prepayment penalties differ greatly between banks and directly affect your flexibility to optimize debt later; for related points see [Early Loan Repayment Strategy](/early-loan-repayment-strategy). Third, replacing a mortgage with a business loan may look cheaper in rate but carries compliance risk over fund usage — ordinary people should be cautious. Calculate monthly payment, total interest, and penalty together to get a truly money-saving plan."
+            "text": "First, let's not be confused by the former N-year preferential rate, which is the standard rate to be restored after the preference expires. Second, early repayment of defaults, which vary widely from bank to bank, will have a direct impact on the flexibility of your subsequent optimization of liabilities, which can be referred to in the [advance repayment strategy] (/early-loan-repayment-strategy). Thirdly, while operating on a loan-for-housing loan appears to be at a lower interest rate, it involves a risk of compliance with the use of funds, and ordinary people should be cautious. The calculation of monthly contributions, total interest, and default money together is the only way to arrive at a real cost-saving solution."
           }
         ]
       },
       "early-loan-repayment-strategy": {
-        "title": "Should You Repay Your Loan Early? Calculate the Opportunity Cost First",
-        "excerpt": "Early repayment saves interest but gives up other investment opportunities for that money — the key is the gap between the two.",
+        "title": "Whether or not to pay in advance: calculate the opportunity cost before deciding",
+        "excerpt": "Interest was saved on early repayments and other investment possibilities for the money were abandoned, depending on the difference between the two.",
         "blocks": [
           {
             "type": "p",
-            "text": "With some spare cash on hand, should you repay the mortgage early? There's no standard answer; the core is comparing 'the rate saved by early repayment' with 'the return you could earn by investing that money.' If your mortgage rate is 4.5% but you can only get 2.5% annualized from deposits or wealth products, early repayment is like a guaranteed 2-point gain and is usually worth doing. Conversely, if you're confident of investment returns above the mortgage rate, keeping the cash is better."
+            "text": "Do you want to pay the mortgage in advance? There is no standard answer to this question, and the core is to compare `the interest rate saved by early repayments' to `the return on the investment'. If the mortgage rate is 4:05, and you can only buy an annual savings or a bank account at 2:05, then early repayment is equivalent to a steady profit of two points, which is usually worth doing. On the other hand, if you are certain of the return on the investment above the mortgage rate, then the cash is retained for the better."
           },
           {
             "type": "h2",
-            "text": "Shorten the Term or Reduce the Monthly Payment?"
+            "text": "Shorter duration or less month"
           },
           {
             "type": "ul",
             "items": [
-              "Shorten the loan term: greatest drop in total interest, suits those who want to be debt-free fast",
-              "Reduce the monthly payment: less monthly pressure, but limited total-interest savings",
-              "After a partial early repayment, proactively ask the bank to 'shorten the term' rather than the default 'reduce payment'",
-              "Prioritize repaying the highest-rate debt first — order matters more than amount"
+              "Shortening the duration of the loan: Total interest has dropped most, suitable for debt-free as soon as possible People",
+              "Reduction in monthly supply: reduced monthly pressure, with limited savings on total interest",
+              "After partial early repayment, make sure you apply to the bank for a reduction instead of a default reduction.",
+              "Give priority to the highest-interest-rate debt, the order is more important than the amount."
             ]
           },
           {
             "type": "p",
-            "text": "The bank's default action is usually 'reduce the monthly payment,' because that lowers total interest less and favors the bank. You must proactively request 'shorten the term' to truly save interest. For the underlying logic of rate comparison, read more in [How to Compare Mortgage Rates](/compare-loan-interest-rates). Early repayment may also involve a penalty; the contract usually states that repaying within one to three years of disbursement incurs a fee, free after that."
+            "text": "Bank default operations are often `reduced monthly supply', as this reduces the total interest and is more favourable to banks. You have to take the initiative to ask for a \"shorter term\" in order to really save interest. For the bottom logic of interest rate comparison, it is extended to read [how the mortgage rate compares] (/compare-loan-interest-rates). Advance repayments may also involve default payments, and the terms of the contract usually include a charge for early repayment within one to three years of the release, which is free of charge."
           },
           {
             "type": "callout",
-            "text": "Keep three to six months of emergency funds before making early repayments; don't pour all your cash savings into the loan, or you'll be vulnerable if you lose your job or face a major illness."
+            "text": "Retention of emergency funds for three to six months before early repayment, so as not to release all current deposits for repayment or otherwise be passive in case of unemployment or serious illness."
           },
           {
             "type": "h2",
-            "text": "When Early Repayment Is Not Advised"
+            "text": "Under what circumstances?"
           },
           {
             "type": "p",
-            "text": "If you're enjoying a very low historical rate (e.g., below 3%) and have stable investment channels returning more than that, early repayment is actually unwise. Also, housing-fund loan rates are usually far below commercial loans, so prioritize repaying the commercial loan and keep the housing-fund loan. For more foundational planning, see [Personal Tax Basics](/personal-tax-basics) and [Build an Emergency Fund](/build-emergency-fund)."
+            "text": "If you are enjoying very low historical interest rates (e.g. below three o'clock) and you have a channel of stable return above that, early repayment is not cost-effective. In addition, interest rates on Provident Fund loans are usually much lower than those on commercial loans, and priority should be given to repaying loans and retaining them. More basic planning lines can be found in [individual-tax-basics] and [establishing a contingency fund] (/build-emergency-fund)."
           }
         ]
       },
       "compound-interest-investing": {
-        "title": "The Power of Compound Interest: Use the Rule of 72 to Estimate When Wealth Doubles",
-        "excerpt": "Compound interest isn't magic — the Rule of 72 lets you mentally calculate how many years it takes principal to double at any annual return.",
+        "title": "The power of the compound: 72 laws to estimate the time when wealth doubles",
+        "excerpt": "It's not hysteria, but the law of 72 makes you count how many years it takes to double the principal under any annualized gain.",
         "blocks": [
           {
             "type": "p",
-            "text": "Compound interest means 'interest earns interest too,' and over time returns grow exponentially. A simple estimation tool is the Rule of 72: divide 72 by the annual return percentage to get the years for principal to double. For example, at 6% annual return, 72 ÷ 6 = 12 years to double; at 8% it's about 9 years. This rule is very practical for planning retirement and children's education funds."
+            "text": "The compound interest means `interest is also interest', and the long-term insistence will result in an exponential increase. A simple estimation tool is rule 72: the number of years required to double the principal amount by dividing it by the percentage of annualized return. For example, the annualization rate is six percent, 72 percent, divided by six percent, equals 12 years, and eight percent is about nine years. This law is very practical in planning old-age and child education benefits."
           },
           {
             "type": "h2",
-            "text": "How Regular Investing Amplifies Compound Interest"
+            "text": "Sets how to magnify the compound effect"
           },
           {
             "type": "ul",
             "items": [
-              "Invest a fixed amount regularly to smooth market swings — buy more at lows, less at highs",
-              "Time is compound interest's best friend; the earlier you start, the bigger the edge",
-              "Set dividends and interest to auto-reinvest; don't let returns sit idle",
-              "Every point you cut in fees significantly amplifies the final amount over time"
+              "Fixed-term inputs, smoothing market fluctuations, low and high",
+              "Time is the best friend of the compound. The sooner the better.",
+              "Set the dividends and interest as automatic reinvestments, and don't let the proceeds lie on the books.",
+              "For each point of reduction, the final amount will be significantly increased over the long term"
             ]
           },
           {
             "type": "p",
-            "text": "The flip side of compounding is 'negative compounding': high fees, frequent trading, and inflation all erode principal. Many ignore fees — yet a 1% annual management fee can eat nearly a quarter of final returns over 30 years. To understand asset allocation systematically, refer to the regular-investment logic in [Introduction to Compound Interest Investing](/compound-interest-investing), and combine it with [Currency Exchange Tips](/currency-exchange-tips) to avoid hidden cross-border investment costs."
+            "text": "The negative side of the compound interest is \"negative co-benefits\": high fees, frequent trading and inflation erode the principal. Many ignore the rate and, in fact, one per cent of the annual management fee eats nearly a quarter of the final gain on a 30-year scale. To understand asset allocation in a systematic manner, reference can be made to the investment logic in [the Introduction to Retributive Investments] (/compund-interest-investing) and to avoid hidden costs of cross-border investments in combination with [currency-exchange-exchange-tips]."
           },
           {
             "type": "callout",
-            "text": "The trap of compound interest lies in 'linear intuition' — the human brain thinks linearly and often severely underestimates exponential growth beyond twenty years."
+            "text": "The pitfall of compoundity is the \"linear intuition\" — the human brain is accustomed to linear thinking, which tends to seriously underestimate the exponential growth of more than 20 years."
           },
           {
             "type": "h2",
-            "text": "The Smallest Action to Start Today"
+            "text": "Minimum action from today."
           },
           {
             "type": "p",
-            "text": "You don't need to wait until you've saved a large sum to invest. Put a fixed 10% of your income into index-fund regular investing every month and stick with it for 20 years — compound interest will do most of the work for you. Returning to the overall financial-planning framework, I suggest first reading [Build an Emergency Fund](/build-emergency-fund) to secure your basic safety cushion before increasing your investment ratio."
+            "text": "We don't have to wait for enough money to invest. A fixed 10 per cent of income per month is invested in an index fund, which lasts for 20 years and is expected to complete most of your work. Returning to the overall framework of financial planning, it is proposed to read the [establishment of contingency fund] (/build-emergency-fund) to ensure that the basic security cushion is in place before increasing the proportion of investments."
           }
         ]
       },
       "build-emergency-fund": {
-        "title": "Build an Emergency Fund: How Many Months of Expenses Is Enough?",
-        "excerpt": "An emergency fund is the foundation of financial security; the amount and where you park it matter more than you think.",
+        "title": "Establishment of a contingency fund: a few months to secure expenditure",
+        "excerpt": "The contingency fund is the foundation of financial security and the choice of amounts and target accounts is more important than you think.",
         "blocks": [
           {
             "type": "p",
-            "text": "An emergency fund is a cash reserve that covers sudden events like unemployment, illness, and unexpected expenses. The common advice is to save three to six times your monthly living expenses: those with stable jobs and side income can aim at the lower end of three to four months; freelancers or those with volatile income should aim for six months or more. The point of this money isn't growth — it's so that when the storm hits, you don't have to sell assets cheaply or borrow at high interest."
+            "text": "The contingency fund is a cash reserve that covers contingencies such as unemployment, disease and unforeseen expenses. The generic proposal is to keep three to six times the cost of living: people with stable jobs and secondary jobs are offered a minimum of three to four months; and people with free professions or high income fluctuations should work for six months or more. The value of the money is not added, but rather that you need not sell your assets or borrow high interest."
           },
           {
             "type": "h2",
-            "text": "Where Should the Money Go?"
+            "text": "Where should I put the money?"
           },
           {
             "type": "ul",
             "items": [
-              "Demand deposit or money-market fund: accessible anytime, liquidity first",
-              "A small amount in innovative bank deposits: slightly higher return, watch redemption rules",
-              "Never put it in stocks or long-locked wealth products",
-              "Open a separate account to avoid it being spent through mixing with daily consumption"
+              "Current or IMF: Any time is desirable, liquidity first",
+              "Small amounts of innovative bank deposits: slightly higher returns, pay attention to foreclosure rules",
+              "Don't put it in stocks or in long-term closed-off financial management.",
+              "Opening a separate account to avoid mixing with daily consumption leading to being spent"
             ]
           },
           {
             "type": "p",
-            "text": "An emergency fund pursues certainty and liquidity, not yield. Rather than worry about earning those extra fraction of a percent, ensure it can arrive within a day. Only after building the safety cushion should remaining funds go into long-term growth tools like [Introduction to Compound Interest Investing](/compound-interest-investing). If your household has multiple income sources, see [Early Loan Repayment Strategy](/early-loan-repayment-strategy) to rebalance the priority of saving versus debt repayment."
+            "text": "The Fund sought certainty and liquidity rather than a rate of return. Instead of trying to make more than a few percentage points, it should be ensured that it is available in one day. Once the security pads are in place, the remaining funds will be suitable for investment.[ Long-term value-added tools such as Retrieving Investment. If households have multiple sources of income, they can rebalance their savings and debt-servicing priorities by reference to [early-loan-repayment-strategy]."
           },
           {
             "type": "callout",
-            "text": "Before the emergency fund is fully funded, don't prepay loans or invest aggressively; building a house before the foundation is laid means one accident can bring the whole thing down."
+            "text": "The contingency fund was not recommended for early repayment of loans or ventured into investments until it reached its target; the building would be built without the foundation being filled, and an unexpected event would take its toll."
           },
           {
             "type": "h2",
-            "text": "How Long to Save Enough?"
+            "text": "How long will it last?"
           },
           {
             "type": "p",
-            "text": "Suppose monthly expenses are 10,000 yuan and the goal is six months, i.e., 60,000 yuan. If you can save 2,000 yuan a month, it takes about 30 months to reach the goal. I suggest setting an automatic transfer on payday as your first expense, ahead of any spending. For more household-finance basics, see [Personal Tax Basics](/personal-tax-basics) and [Currency Exchange Tips](/currency-exchange-tips)."
+            "text": "Assuming a monthly expenditure of $10,000 and a target of $660,000 for six months, the target would have been achieved in about 30 months if 2,000 dollars had been saved each month. It is recommended that the automatic transfer of wages on the day of payment be set as the first expenditure, with priority over any consumption. More family financial bases are found in [personal-tax-basics] and [currency-exchange-related] (/currency-exchange-tips)."
           }
         ]
       },
       "currency-exchange-tips": {
-        "title": "Currency Exchange Pitfalls: Exchange Rates, Fees, and Airport Traps",
-        "excerpt": "The same money exchanged through different channels can arrive with several percentage points of difference — the key is seeing the hidden costs.",
+        "title": "Currency exchange pits: exchange rates, fees and airport traps",
+        "excerpt": "The same money is exchanged through different channels, and the difference in the amount to be paid may be several percentage points, and the key is to see hidden costs.",
         "blocks": [
           {
             "type": "p",
-            "text": "When traveling abroad or making cross-border transfers, the real cost isn't just the posted exchange rate — it also includes fees, spreads, and intermediary-bank charges. There is already a gap between a bank's cash buy and sell rates, and adding a fixed per-transaction fee makes small exchanges especially poor value. When comparing channels, calculate the 'actual amount received,' not which rate number looks nicer."
+            "text": "When travelling abroad or cross-border remittances, the real cost is not just the exchange rate on the price of the card, but also the cost of handling, differentials and intermediary costs. The price difference between the bank's cash purchase price and the offer price, together with a fixed fee, makes small conversions particularly uneconomical. It's a \"actual amount\" to compare the channels, not to look at which exchange rate figures are good."
           },
           {
             "type": "h2",
-            "text": "Common High-Cost Scenarios"
+            "text": "Common high-cost scenarios"
           },
           {
             "type": "ul",
             "items": [
-              "Airport and hotel counters: worst rates, highest fees — use only in emergencies",
-              "Dynamic Currency Conversion (DCC): settling in RMB actually loses out — choose the local currency",
-              "Small frequent exchanges: the fixed fee per transaction hurts more",
-              "Exchanging without comparing banks: the spread can differ by fractions of a percent"
+              "Airports and hotel counters: worst exchange rates, highest handling fees, emergency response",
+              "Dynamic currency conversion (DCC): local currency should be selected for settlement in the renminbi, which is a loss",
+              "Small multiple exchange: more painful per fixed fee",
+              "Non-comparison to multiple banks or exchange: the difference could be a few percentage points"
             ]
           },
           {
             "type": "p",
-            "text": "Paying by credit card usually settles at the international network rate, better than cash exchange, but confirm the card waives the currency-conversion fee. Cross-border investing must also note that exchange-rate swings can offset part of the return — the same fee-erosion logic discussed in [Introduction to Compound Interest Investing](/compound-interest-investing). If you spend overseas often, apply the thinking from [How to Compare Mortgage Rates](/compare-loan-interest-rates) and fold exchange cost into your overall financial comparison."
+            "text": "Credit card swipe consumption is usually settled at the international organization ' s exchange rate, which is better than the exchange of cash, provided that the card is recognized as free of currency conversion fees. Cross-border investments also need to note that exchange rate fluctuations offset some of the gains, which is in line with the tariff erosion discussed in [the introduction to compound-investment] (/compunding-interest-investing). If you often consume overseas, you can integrate the cost of exchange into the overall financial comparison along the lines of [how does the mortgage rate compare to] (/compare-loan-interest-rates)."
           },
           {
             "type": "callout",
-            "text": "When a POS terminal asks 'Settle in RMB?', always choose 'No' — letting the issuer process in the local currency saves money."
+            "text": "On the POS machine, there is a hint that the billing will be made in the RMB."
           },
           {
             "type": "h2",
-            "text": "Practical Checklist"
+            "text": "Operational checklist"
           },
           {
             "type": "p",
-            "text": "Before departure, book and exchange major banknotes at a domestic bank; keep a small amount of local currency for emergencies. Use a no-conversion-fee credit card for large purchases. After returning, settle leftover change promptly to avoid further rate swings. For complete financial planning, see [Build an Emergency Fund](/build-emergency-fund) and [Personal Tax Basics](/personal-tax-basics)."
+            "text": "Prior to the trip, key banknotes were exchanged in domestic banks, leaving a small amount of local currency contingency; large consumption was free of conversion credit cards; and the balance of the money deposited on return was timely to avoid further exchange rate fluctuations. Full financial planning can be found in [establishment of contingency fund] (/build-emergency-fund) and [personal-tax-basics base]."
           }
         ]
       },
       "personal-tax-basics": {
-        "title": "Personal Income Tax Basics: How to Fully Use the Threshold and Special Additional Deductions",
-        "excerpt": "Many people overpay tax simply because they didn't claim each special additional deduction — legal tax saving starts with the form.",
+        "title": "The basis of personal income tax: where to start, how to use the special deductions",
+        "excerpt": "Many have paid unjust taxes, but only because no special deductions have been declared on a case-by-case basis, and legal tax avoidance begins with the filing of a form.",
         "blocks": [
           {
             "type": "p",
-            "text": "For residents in China, the personal income tax threshold is 5,000 yuan per month, with the excess taxed under a seven-tier progressive rate. But what really affects the tax burden is the deductions: beyond special deductions like social insurance and housing fund, there are special additional deductions for children's education, continuing education, serious illness medical costs, mortgage interest or rent, supporting elderly parents, and care for infants under three — claiming each one legally lowers your taxable amount."
+            "text": "The starting point for the personal income tax of our residents is $5,000 per month, which is partially based on the seven-degree excess progressive tax rate. But what really affects the tax burden is deductions: in addition to special deductions such as five insurance premiums, there are special deductions for children ' s education, continuing education, medical care, interest or rent on housing loans, old-age maintenance, and care for children under three years of age, which can be legally reduced by a declaration."
           },
           {
             "type": "h2",
-            "text": "The Easiest Deductions to Miss"
+            "text": "The most easily omitted deductions."
           },
           {
             "type": "ul",
             "items": [
-              "Mortgage interest and rent: choose only one, claim the higher amount",
-              "Supporting elderly: non-only children must split the allowance with siblings",
-              "Serious illness: the portion beyond medical-insurance reimbursement is deductible within the limit",
-              "Continuing education: academic education and professional certificates each have a fixed allowance"
+              "Interest and rent on housing loans can only be divided into one and declared to the highest amount",
+              "Old-age support: the share of a non-independent child with a brother or sister",
+              "Medical treatment for major diseases: deduction of over-insured reimbursement within limit",
+              "Continuing education: Qualifications for academic education and vocational qualifications"
             ]
           },
           {
             "type": "p",
-            "text": "Special additional deductions are filed through the tax app during the annual reconciliation. If missed, you can still claim them before June 30 of the following year. Using deductions well is like a raise; the saved money can go to [Build an Emergency Fund](/build-emergency-fund) or [Introduction to Compound Interest Investing](/compound-interest-investing). For loan-related deduction details, plan together with [Early Loan Repayment Strategy](/early-loan-repayment-strategy), because repaying a mortgage itself generates deductible interest."
+            "text": "Specific deductions are made through a tax APP, which is reported at the time of the annual remittance, and may be added before 30 June of the following year. Reasonable use of the deduction is equivalent to a disguised increase, and the savings can be shifted to [establishment of contingency fund] (/building-emergency-fund) or [initiation of a compound investment] (/compund-interest-investing). The credit-related deduction details are proposed to be planned against the [early-loan-repayment-strategy] (/early-loan-repayment-strategy) because the repayment itself can generate deductible interest."
           },
           {
             "type": "callout",
-            "text": "The year-end bonus can be taxed separately or merged into comprehensive income — calculate both ways and pick the cheaper one; the difference can reach over a thousand yuan."
+            "text": "The end-of-year awards may be taxed separately or combined, and the difference may be as high as thousands of dollars, depending on which one is more provincial."
           },
           {
             "type": "h2",
-            "text": "Notes Across Income Types"
+            "text": "Cross-income type focus"
           },
           {
             "type": "p",
-            "text": "Wages, labor service remuneration, author's remuneration, and royalty income are merged into comprehensive income and taxed annually, so people with multiple income channels must pay attention to the annual reconciliation to avoid under-withholding that triggers top-up tax or even late penalties. For exchange-rate-related overseas income reporting, see [Currency Exchange Tips](/currency-exchange-tips). For the overall planning approach, see [How to Compare Mortgage Rates](/compare-loan-interest-rates)."
+            "text": "The combination of wages, labour payments, manuscripts and royalties is a year-on-year tax on the combined proceeds, so that those with multiple sources of income are more concerned with calculating their contributions, avoiding prepayment and even stalling. For exchange rate-related offshore income declarations, reference is made to [currency-exchange notes] (/currency-exchange-tips). The overall planning approach can be found in [how to compare interest rates on mortgages] (/compare-loan-interest-rates)."
           }
         ]
       },
       "body-fat-percentage-guide": {
-        "title": "How to Read Body Fat Percentage: Standards Differ by Sex — Don't Be Fooled by Weight",
-        "excerpt": "A normal weight doesn't equal a healthy body — body fat percentage is the key indicator of fat content.",
+        "title": "What do you think of the lipid rate?",
+        "excerpt": "Normal body weight is not equal to body body health, and the lipid ratio is the key indicator of fat content.",
         "blocks": [
           {
             "type": "p",
-            "text": "Many people stare at the scale every day but ignore a more important number — body fat percentage. Weight includes muscle, water, bone, and fat, so two people with the same weight can have vastly different body fat percentages. Body fat percentage directly reflects the proportion of body fat, telling you better than weight alone whether you have 'hidden obesity.'"
+            "text": "Many people stare at the weight scales every day, ignoring a more important figure — the lipid rate. The body weight consists of muscles, moisture, bones and fat, two persons of the same weight, and the lipid ratio may vary significantly. The lipid rate is a direct reflection of the body's fat content, which is more an indication of your \"hidden obesity\" than your mere body weight."
           },
           {
             "type": "h2",
-            "text": "Healthy Ranges Differ by Sex"
+            "text": "There's a difference between men's and women's health zones"
           },
           {
             "type": "ul",
             "items": [
-              "Adult men: healthy body fat percentage about 10%–20%",
-              "Adult women: about 18%–28%, with larger swings from the menstrual cycle",
-              "Above 25% for men and 32% for women is generally considered obese",
-              "Athletes have lower body fat, but pursuing the extreme long-term isn't advisable"
+              "Adult males have about 10 to 20 percent lipid.",
+              "About 18 to 28 percent of adult women are more affected by the biological cycle.",
+              "Over 25% male and 32% female are usually considered obese.",
+              "Athletes have lower lipid rates, but it's not appropriate to pursue them in the long term."
             ]
           },
           {
             "type": "p",
-            "text": "There are many ways to measure body fat percentage: gym calipers, home bioelectrical-impedance scales, and hospital DXA scans, in rising order of accuracy. Home scales are heavily affected by drinking, exercise, and time of day — measure fixed each morning fasting at the same time, and watch the trend rather than a single absolute value. Once you understand body fat, set goals with [How to Calculate the Fat-Loss Calorie Deficit](/fat-loss-calorie-deficit) and preserve muscle by referring to [How Much Daily Protein to Eat](/daily-protein-intake)."
+            "text": "There are many ways to measure lipid rates: gymnasium fattens, household biotemporometer scales, and hospital DXA scan accuracy in turn. The household scales are heavily influenced by water consumption, exercise and time periods, and it is recommended that the morning be measured at the same time, in the light of trends rather than single absolute values. After understanding the lipid, targets can be set in combination with [fat-loss-calorie-deficit] (/fat-calorie-deficit) and with reference to [the daily protein intake] (/daily-protein-intake)."
           },
           {
             "type": "callout",
-            "text": "Too-low body fat disrupts women's hormones and can even stop menstruation; lower isn't always better — a healthy curve matters more than the number."
+            "text": "The low fat of women disrupts the endocrines and even stops. The lower the fat, the better, the more important the health curve is."
           },
           {
             "type": "h2",
-            "text": "How to Read Body Fat and Weight Together"
+            "text": "How's the fat and weight fit? Look."
           },
           {
             "type": "p",
-            "text": "A common sign during fat loss: weight stays the same but waist shrinks — a good signal of fat down, muscle up. So record weight, body fat percentage, and measurements together, and don't be scared off by short-term weight swings. For full body-metric management, read more in [How to Calculate Basal Metabolic Rate](/basal-metabolic-rate) and [Introduction to Heart Rate Training Zones](/heart-rate-training-zones)."
+            "text": "Fatty reduction is common: body weight is not changed but the waist is smaller, which is a good sign of loss of fat and muscles. Please therefore record the weight, lipid ratio and condensation at the same time and do not be deterred by short-term body weight fluctuations. In order to manage the body indicators in a comprehensive manner, they can be extended to read [basal-metabolic-rate] and [heart-rate-training-zones]."
           }
         ]
       },
       "basal-metabolic-rate": {
-        "title": "How to Calculate Basal Metabolic Rate: Your Body Burns Calories Even at Rest",
-        "excerpt": "Basal metabolic rate accounts for over 60% of daily expenditure — calculate it accurately to set science-based calorie goals.",
+        "title": "What about base metabolic rate: you burn the heat when your body is still.",
+        "excerpt": "Basic metabolism accounts for more than 60 per cent of daily consumption, allowing it to determine the scientific caloric target.",
         "blocks": [
           {
             "type": "p",
-            "text": "Basal metabolic rate (BMR) is the calories the body burns to sustain life activities like heartbeat and breathing while awake, lying still, fasting, and at a constant temperature. It usually accounts for 60%–70% of total daily expenditure. Knowing your BMR and multiplying by an activity factor estimates your total daily energy expenditure (TDEE) — the starting point of any diet plan."
+            "text": "Basic metabolism (BMR) refers to the amount of heat consumed by the human body in life activities such as saneness, silentness, empty abdominals and the maintenance of heartbeats at constant temperature, which usually accounts for 60 to 70 per cent of total daily consumption. Know your own BMR, with a factor of activity, can estimate total daily consumption (TDEE), which is the starting point for all dietary plans."
           },
           {
             "type": "h2",
-            "text": "Common Estimation Formulas"
+            "text": "Common estimation formula"
           },
           {
             "type": "ul",
             "items": [
-              "Mifflin-St Jeor equation: currently the most accepted, needs weight, height, age, sex",
-              "Male BMR ≈ 10 × kg + 6.25 × cm − 5 × age + 5",
-              "Female BMR ≈ 10 × kg + 6.25 × cm − 5 × age − 161",
-              "Activity factor ranges from 1.2 (sedentary) to 1.9 (very active)"
+              "Mifflin-StJeor formula: currently accepted, with weight, height, age, sex",
+              "Men BMR equals about 10 x kg + 6.25 x cm - 5 x age + 5",
+              "Female BMR equals approximately 10 x kg + 6.25 x cm - 5 x age - 161",
+              "Activity factor from long sitting 1.2 to high intensity 1.9"
             ]
           },
           {
             "type": "p",
-            "text": "After calculating BMR, you can create a deficit on top of total expenditure during fat loss, but the deficit shouldn't be too large or you'll lose muscle and wreck your metabolism. For how to set the deficit, see [How to Calculate the Fat-Loss Calorie Deficit](/fat-loss-calorie-deficit). Also, more muscle means a higher BMR, so [How Much Daily Protein to Eat](/daily-protein-intake) and strength training matter equally. To check if training intensity is sufficient, see [Introduction to Heart Rate Training Zones](/heart-rate-training-zones)."
+            "text": "After BMR is calculated, a gap can be created on a total consumption basis, but it should not be too large to remove muscles and slow down metabolism. What are the specific gaps and what is the reference to [fat-loss-calorie-deficit]? At the same time, the higher the muscle mass, the higher the basic metabolism, so [the daily protein intake] (/daily-protein-intake) is as critical as force training. In order to verify the strength of the exercise, the [heart-rate training area entry] (/heart-rate-training-zones) is available."
           },
           {
             "type": "callout",
-            "text": "Prolonged very-low-calorie dieting makes the body switch to an energy-saving 'conservation mode,' and the rebound is often fiercer than before — don't push the deficit to the extreme."
+            "text": "Long-term, very low-calorie diets allow the body to downgrade the `energy-saving model', and the rebound tends to be stronger than before, so that the gap is not pushed to the extreme."
           },
           {
             "type": "h2",
-            "text": "Variables That Affect Metabolism"
+            "text": "Variables affecting metabolism"
           },
           {
             "type": "p",
-            "text": "Muscle mass, age, thyroid function, even body temperature affect BMR. After 30, metabolism naturally dips slightly each decade, so midlife needs more help from training and diet. For integrated body-metric management, combine [How to Read Body Fat Percentage](/body-fat-percentage-guide) and [The Science of Sleep Cycles](/sleep-cycle-explained) to optimize together."
+            "text": "Muscle mass, age, thyroid function and even body temperature affect BMR. After the age of 30, metabolism decreases naturally every 10 years, making it more important to rely on training and dietary support in the middle years. Integrated body indicator management, recommended for optimization with [sleep-cycle-explained] [sleep-cycle science]."
           }
         ]
       },
       "fat-loss-calorie-deficit": {
-        "title": "How to Calculate the Fat-Loss Calorie Deficit: How Much Less per Day Keeps Muscle?",
-        "excerpt": "Fat loss is fundamentally a calorie deficit, but its size decides whether you lose fat or muscle.",
+        "title": "What do you mean by \"fat-down\"?",
+        "excerpt": "It's essentially a heat gap, but the size of the gap determines whether you lose fat or muscle.",
         "blocks": [
           {
             "type": "p",
-            "text": "The underlying logic of fat loss is just one line: keep intake consistently below expenditure to form a deficit, and the body taps fat for fuel. Theoretically one kilogram of fat holds about 7,700 kcal, so a 500-kcal daily deficit loses about one kilogram of fat in roughly 15 days. But going too fast often sheds water and muscle, not pure fat."
+            "text": "The bottom logic of lipid loss is only one: the consumption of heat is chronically lower than the consumption of heat, creating a gap where the body uses fat for energy. Theoretically, one kilogram of fat contains approximately 7,700 kilocalories, and if a 500 kilocalorie gap is created per day, about 15 days will be lost by one kilogram of fat. Too fast, however, tends to decrease moisture and muscles rather than pure fat."
           },
           {
             "type": "h2",
-            "text": "How Large a Deficit Is Safe?"
+            "text": "It's a safer gap."
           },
           {
             "type": "ul",
             "items": [
-              "Keep the daily deficit at 15%–20% of total expenditure",
-              "For ordinary people, about 300–500 kcal a day is safe",
-              "Lose no more than 1% of body weight per week to avoid metabolic damage",
-              "At a plateau, first recheck your calorie log rather than blindly cutting more"
+              "It is recommended that the daily gap be kept at 15 to 20 per cent of total consumption",
+              "The average man is about 300 to 500 kilocalories a day.",
+              "Weight loss does not exceed 1 per cent of weight per week to avoid metabolic damage",
+              "The heat record is reviewed during the platform period, not blindly before cutting."
             ]
           },
           {
             "type": "p",
-            "text": "There are two paths to a deficit: eat less or move more — best to do both. First calculate total expenditure via [How to Calculate Basal Metabolic Rate](/basal-metabolic-rate), then set target intake. Enough protein preserves muscle — see [How Much Daily Protein to Eat](/daily-protein-intake); solid sleep also stabilizes appetite hormones, see [The Science of Sleep Cycles](/sleep-cycle-explained). Track progress with body fat data from [How to Read Body Fat Percentage](/body-fat-percentage-guide)."
+            "text": "There are two paths to the manufacturing gap: less food or more, and it is best to go both ways. Calculate total consumption by [basal-metabolic-rate] before target intake. Combining sufficient proteins keeps muscles as detailed in [the daily protein intake] (/daily-protein-intake); ensuring sleep also stabilizes anorexic hormones by reference to [sleep-cycle-explained] science. The lipid data can track progress by [how do you see the body-fat-percentage-guide]."
           },
           {
             "type": "callout",
-            "text": "Many underestimate intake and overestimate expenditure; logging honestly in an app for three days often reveals they actually ate 20% more."
+            "text": "Many have underestimated food consumption, overestimated consumption and recorded it with an abbreviated AP for three days, often finding that 20 percent more was actually eaten."
           },
           {
             "type": "h2",
-            "text": "What to Do at a Plateau"
+            "text": "What happens when you meet a platform?"
           },
           {
             "type": "p",
-            "text": "As weight drops, total expenditure falls too, so the original deficit naturally shrinks — that's the physiological cause of a plateau. Then you can fine-tune diet or add non-exercise activity thermogenesis (more walking, more standing) rather than extreme dieting. Whether training intensity is enough can be judged with [Introduction to Heart Rate Training Zones](/heart-rate-training-zones)."
+            "text": "The reduction in total consumption following the loss of body weight will naturally reduce the original gap, which is the biological cause of the platform period. At this point, diets can be fine-tuned or non-movement consumption (long walking, standing) can be increased rather than extreme diets. The strength of the movement is sufficient to be judged by [the introduction to the heart rate training area] (/heart-rate-training-zones)."
           }
         ]
       },
       "daily-protein-intake": {
-        "title": "How Much Daily Protein to Eat: Essential for Both Fitness and Fat Loss",
-        "excerpt": "Protein determines muscle retention and satiety — intake should scale with body weight, not be guessed.",
+        "title": "The daily protein intake: physical fitness and lipid loss.",
+        "excerpt": "Protein determines muscle retention and abdominal saturation, with intake estimates based on weight rather than random.",
         "blocks": [
           {
             "type": "p",
-            "text": "Protein is the basic raw material for muscle, enzymes, and immune cells. Ordinary sedentary adults are advised about 0.8–1 g per kilogram of body weight daily; during strength training or fat loss, raise it to 1.6–2.2 g, because higher intake preserves muscle, boosts the thermic effect of food, and increases satiety."
+            "text": "Protein is the basic material that makes up muscles, enzymes and immune cells. The average sitting adult recommends approximately 8 to 1 g/kg weight per day; the period of force training or lipid reduction should be increased to 1 6 to 2 2 g/kg/kg because higher intakes keep muscles, increase food heat and increase abdominal satuation."
           },
           {
             "type": "h2",
-            "text": "How to Distribute Across Three Meals"
+            "text": "How do we get three meals?"
           },
           {
             "type": "ul",
             "items": [
-              "25–40 g protein per meal maximizes absorption and utilization",
-              "Breakfast is often neglected; enough protein reduces all-day bingeing",
-              "Topping up within two hours after exercise works best",
-              "Pairing plant and animal protein completes the amino acids"
+              "25 to 40 grams of protein absorbed highest per meal",
+              "Breakfast is often neglected. Filling with protein reduces all-day hunger.",
+              "After two hours of exercise, it works better.",
+              "Plants and animal proteins can complement full amino acid"
             ]
           },
           {
             "type": "p",
-            "text": "Take a 70 kg person in fat loss: at 1.8 g per kg, that's about 126 g of protein a day, split across three meals plus one snack. Enough protein is the key to preventing muscle loss in [How to Calculate the Fat-Loss Calorie Deficit](/fat-loss-calorie-deficit), and supports the muscle mass that [How to Calculate Basal Metabolic Rate](/basal-metabolic-rate) depends on. For training-intensity planning, see [Introduction to Heart Rate Training Zones](/heart-rate-training-zones)."
+            "text": "In the case of a person who is in the process of defamining 70 kg, it would be sufficient if approximately one hundred and twenty-six grams of protein were to be distributed to three meals and one extra meal per kilogram. Sufficient protein is the key to preventing muscle loss in [fat-loss-calorie-deficit] and supports the muscle mass on which [basal-metabolic-rate] [basal-metabolic-rate] depends. Training intensity arrangements can be referred to [the introduction to the heart rate training area] (/heart-rate-training-zones)."
           },
           {
             "type": "callout",
-            "text": "Those with impaired kidney function must limit protein per a doctor's advice; for ordinary people, a high-protein diet shows no clear harm to the kidneys."
+            "text": "Renal abnormalities are restricted to proteins according to medical instructions, and the diet of high proteins in the general population is not clearly harmful to the kidneys."
           },
           {
             "type": "h2",
-            "text": "High-Quality Protein Sources"
+            "text": "Source of quality protein"
           },
           {
             "type": "p",
-            "text": "Chicken breast, fish, eggs, dairy, tofu, and soy milk are all high-quality sources, with animal protein having a more complete amino-acid profile. If plant-based, combine grains and legumes for complementarity. To understand body-composition changes, combine [How to Read Body Fat Percentage](/body-fat-percentage-guide) and [The Science of Sleep Cycles](/sleep-cycle-explained) for a full assessment."
+            "text": "Chicken breasts, fish, eggs, dairy products, tofu and soy milk are all high-quality sources, in which the amino acid rating for animal protein is more complete. When plant-based, attention is paid to the complementarities of cereals and beans. The change in disassembly composition can be combined with a comprehensive assessment of [body-fat-percentage-guide] and [sleep cycle science] (/sleep-cycle-explained)."
           }
         ]
       },
       "sleep-cycle-explained": {
-        "title": "The Science of Sleep Cycles: Why You're Still Tired After Eight Hours",
-        "excerpt": "Sleep quality is about cycles, not just duration — waking at the wrong stage leaves you groggy.",
+        "title": "Sleep cycle science: Why are you sleepy enough to sleep for eight hours?",
+        "excerpt": "Sleep quality looks at cycles rather than mere lengths and wakes up at the wrong stage.",
         "blocks": [
           {
             "type": "p",
-            "text": "An adult's nightly sleep consists of four to six cycles, each about 90–110 minutes, passing through light sleep, deep sleep, and REM (rapid eye movement). Deep sleep repairs the body; REM consolidates memory and emotion. If the alarm rings during deep sleep, even after eight hours you'll feel foggy — the common reason for 'slept enough but still tired.'"
+            "text": "The adult sleep consists of four to six cycles, each of about 90 to 110 minutes, which go through three stages of sleep, deep sleep and rapid eye movement (REM). Sleep well to repair the body, rem consolidate memories and emotions. The alarm rings during the deep sleep, and even after eight hours of sleep, it's a common reason for \"sleeping enough and tired\"."
           },
           {
             "type": "h2",
-            "text": "Use Cycles to Time Your Wake-Up"
+            "text": "Use the cycle to get up."
           },
           {
             "type": "ul",
             "items": [
-              "Work backward from wake-up time in whole multiples of 90 minutes",
-              "E.g., 5 cycles ≈ 7.5 hours leaves you clearer than forcing 8",
-              "A fixed wake time stabilizes the body clock better than a fixed bedtime",
-              "Deep sleep clusters in the first half of the night; staying up late sacrifices the most precious repair window"
+              "In 90 minutes the whole number is pushed back to sleep.",
+              "For example, five cycles, about 7.5 hours, more sober than eight hours.",
+              "It's more stable to get up when you're asleep. Bell",
+              "Sleeping is mostly concentrated in the middle of the night."
             ]
           },
           {
             "type": "p",
-            "text": "A regular schedule affects recovery quality more than total duration. Sleep is also directly tied to metabolism and appetite: with too little, ghrelin rises and leptin falls, indirectly sabotaging [How to Calculate the Fat-Loss Calorie Deficit](/fat-loss-calorie-deficit). Meanwhile, poor recovery drags down training performance — compare with [Introduction to Heart Rate Training Zones](/heart-rate-training-zones) and watch resting-heart-rate changes. For nutritional support, see [How Much Daily Protein to Eat](/daily-protein-intake)."
+            "text": "Regularity affects quality recovery more than total duration. Sleep is also directly associated with metabolic and appetite: hunger rises and thinness declines when sleep is not enough, which indirectly undermines the implementation of [fat-loss-calorie-deficit] [fat-loss-calorie-deficit]. At the same time, inadequate recovery reduces the performance of training and allows for the observation of changes in static heart rate against [the introduction to the heart rate training area] (/heart-rate-training-zones). In combination with nutrition, reference is made to [the daily protein intake] (/daily-protein-intake)."
           },
           {
             "type": "callout",
-            "text": "An hour before bed, avoid blue light and caffeine; a slightly cool bedroom (about 18–20°C) best aids entry into deep sleep."
+            "text": "An hour before sleep is away from blue light and caffeine, and a slightly lower temperature (about 18 to 20 degrees) in the bedroom is most conducive to entering deep sleep."
           },
           {
             "type": "h2",
-            "text": "How to Tell If You're Sleeping Well"
+            "text": "How do you sleep?"
           },
           {
             "type": "p",
-            "text": "Beyond duration, pay more attention to: whether you're naturally alert in the day, how quickly you fall asleep, and whether you wake often at night. Keep a two-week sleep log to find patterns. For overall health metrics, also combine [How to Read Body Fat Percentage](/body-fat-percentage-guide) and [How to Calculate Basal Metabolic Rate](/basal-metabolic-rate)."
+            "text": "In addition to the length of time, it is more important to focus on whether the day is natural and sober, whether it is possible to sleep quickly and whether it is frequent at night. A two-week sleep log search can be recorded. Overall health indicators can also be combined with a combination of [body-fat-percentage-guide] and [basal-metabolic-rate] judgement."
           }
         ]
       },
       "percentage-increase-decrease": {
-        "title": "How to Calculate Percentage Increase and Decrease: Why a Rise Then a Fall Doesn't Return to Base",
-        "excerpt": "The base of a percentage change shifts — up 50% then down 50% ends in a loss, not flat.",
+        "title": "How does the percentage increase or decrease count: why does it fall back?",
+        "excerpt": "The base for percentage increases and decreases will change, with a 50 per cent increase and a 50 per cent drop, resulting in losses rather than even.",
         "blocks": [
           {
             "type": "p",
-            "text": "The easiest place to err in increase/decrease calculation is the 'base.' Gains and losses are relative to the current value, so when the base changes, the same percentage maps to a different absolute amount. Take an item that first rises 50% to 150 yuan, then falls 50% — the fall is off 150, becoming 75 yuan, not back to 100. A rise then an equal-percentage fall always ends below the start."
+            "text": "The most prone to errors in calculating increases or decreases is the base figure. Both increases and decreases are relative to current values, and the base figure has changed, with the same percentage corresponding to absolute amounts. For example, when a commodity goes up 50 to 150% and falls to 50%, it falls to 75 instead of 100. The same percentage rises and falls, always below the starting point."
           },
           {
             "type": "h2",
-            "text": "Standard Formulas"
+            "text": "Standard formulae"
           },
           {
             "type": "ul",
             "items": [
-              "Growth rate = (new value − original value) ÷ original value × 100%",
-              "Decline rate also uses the original value as denominator, not the new value",
-              "For consecutive changes use multiplication: final = original × (1+10%) × (1−10%)",
-              "To return to base, the rise percentage must exceed the prior fall percentage"
+              "Growth rate = (New - Original) ÷ Original value x 100%",
+              "The drop rate is also based on the original value as the denominator, not the new value",
+              "Multiplication of consecutive changes: Final = original value x (1+10%) x (1-10%)",
+              "The percentage that needs to be increased to get back to square one is higher than the percentage that fell earlier. That's right."
             ]
           },
           {
             "type": "p",
-            "text": "This illusion is extremely common in investing and discounts: after a stock falls 20%, it needs a 25% rise to break even. Once you grasp the base concept, you can also avoid being misled by 'average growth' when reading [Mean, Median, Mode](/mean-median-mode). For discount and proportioning conversions, see [Practical Ratios and Proportioning](/ratio-and-scaling). For daily mental-math tricks, see [Mental Percentage Tricks](/mental-percentage-tricks)."
+            "text": "Such delusions are common in investment and discounts: after a 20 per cent drop in equities, a 25 per cent increase is required to return the capital. The concept of the base figure is understood, and it is possible to avoid being misled by the `average increase' when looking at the [average median number] (/mean-median-mode). The conversion of discounts to matching can be referred to [proportional versus matching] (/ratio-and-scaling). The day-to-day mind-to-heart skills are found in [percentage mind-to-heart] techniques (/mental-percentage-tricks)."
           },
           {
             "type": "callout",
-            "text": "A '30% growth' in the news, with no base stated, may just mean 100 to 130 — always check the denominator first."
+            "text": "The \"30% increase\" in the news, if not the base figure, could have gone from 100 to 130; it's always the denominator."
           },
           {
             "type": "h2",
-            "text": "How to Handle Consecutive Percentages"
+            "text": "What about the successive percentages?"
           },
           {
             "type": "p",
-            "text": "For multiple changes, don't simply add or subtract percentages — multiply each factor. For example, two years of +10% then −10% give the original × 1.1 × 0.9 = 0.99, a net −1%. This shares the logic of accumulated error in [Rounding and Significant Figures](/rounding-significant-figures) — more measurements, more quietly stacked error."
+            "text": "Multiple changes do not simply add or decrease by percentage, but multiply each factor. For example, the increase of 10 per cent and the drop of 10 per cent in two years, respectively, resulted in a net drop of 1 per cent at the original value of 1.1 x 0.9 = 0.99. This is consistent with the logic of cumulative errors in [rounding-significant-figures] (/rounding-significant-figures), which can be easily added to the measurement."
           }
         ]
       },
       "unit-conversion-pitfalls": {
-        "title": "Unit Conversion Pitfalls: Don't Use the Same Factor for Length, Area, and Volume",
-        "excerpt": "A centimeter-to-meter gap is 100×, but square centimeter-to-square meter is 10,000× — area and volume conversions are where people crash.",
+        "title": "Unit conversion trap: same factor for length area size",
+        "excerpt": "A 100-fold gap between centimetres and metres and 10,000-fold gap between square centimetres and square metres is the most easily converted volume.",
         "blocks": [
           {
             "type": "p",
-            "text": "Unit conversion is an everyday high-frequency operation, yet many apply the length factor directly to area and volume. One meter is 100 centimeters — that's length. But one square meter is 100 squared, i.e., 10,000 square centimeters — the gap is squared. Volume is more extreme: one cubic meter is 1,000,000 cubic centimeters. Use the wrong dimensional factor and the result is off by orders of magnitude."
+            "text": "The unit conversion is a routine high frequency operation, but many apply the length factor directly to area and volume. One metre is equal to 100 centimetres, which is the length; but one square metre is equal to 100 per cent, i.e. 10,000 centimetres of centimetres, and the difference is square relationships. The volume is more exaggerated, with one cubic metre equal to 1 million cubic centimetres. Using an error dimension factor, the result is several orders of magnitude."
           },
           {
             "type": "h2",
-            "text": "Apply Factors by Dimension"
+            "text": "Application factor by dimension"
           },
           {
             "type": "ul",
             "items": [
-              "Length: 1 m = 100 cm (×100)",
-              "Area: 1 m² = 10,000 cm² (×100²)",
-              "Volume: 1 m³ = 1,000,000 cm³ (×100³)",
-              "Speed-unit conversion must handle numerator and denominator together"
+              "Length: 1 m = 100 cm (× 100)",
+              "Area: 1 m2 = 10000 cm2 (x 1002)",
+              "Volume: 1 cubic metre = 1,000,000 cubic centimetres (x 1003)",
+              "velocity units are to process the molecular denominator simultaneously."
             ]
           },
           {
             "type": "p",
-            "text": "The grams-to-cups conversion in cooking is also a disaster zone — see [How to Convert Grams to Cups](/grams-to-cups). Precision in physical-unit conversion also involves [Rounding and Significant Figures](/rounding-significant-figures): too many digits fake precision, too few distorts. When scaling recipes, also pair with [Practical Ratios and Proportioning](/ratio-and-scaling) to grasp the multiple relationships."
+            "text": "The g and cup conversion in cooking is also a disaster-prone area, as detailed in [g and cup conversion] (/grams-to-cups). The accuracy of the physical volume conversion is also associated with [rounding-significant-figures] (/rounding-significant-figures) and retention of too many digits is false and too few are incorrect. The formulation scaling also needs to be matched by a multiplication of the understanding of the [scale versus match] (/ratio-and-scaling)."
           },
           {
             "type": "callout",
-            "text": "Write down the units before calculating: when converting 'cm/s' to 'm/h,' handle length and time separately — don't mix them in your head."
+            "text": "Write units before conversion: When `cm/s' is converted to `m/h', process length and time, respectively, and do not mix."
           },
           {
             "type": "h2",
-            "text": "Speed and Time Traps"
+            "text": "Speed and time trap"
           },
           {
             "type": "p",
-            "text": "A common mistake is treating 'km/h' as 'm/s' directly. The correct approach: 1 km/h = 1000 m / 3600 s ≈ 0.278 m/s. For cases where two units change at once, apply the formula step by step and avoid relying on intuition. For quick magnitude estimates, combine with [Mental Percentage Tricks](/mental-percentage-tricks)."
+            "text": "The common mistake is to use \"kilometres per hour\" directly as \"metres per second\". The correct approach is 1 km/h = 1000 m/ 3600 seconds ≈ 0.278 m/s. In such cases, which involve a simultaneous change between the two units, it is suggested that the formula should move step by step to avoid intuitiveness. Where a rapid determination of the ratio is required, the [percentage heart calculation techniques] (/mental-percentage-tricks) estimation scale may be combined."
           }
         ]
       },
       "ratio-and-scaling": {
-        "title": "Practical Ratios and Proportioning: Why Doubling a Recipe Changes the Taste",
-        "excerpt": "Linear scaling works for dry and wet ingredients, but salt, spices, and fermentation are non-linear and need separate judgment.",
+        "title": "Ratio versus match: Why does it taste different?",
+        "excerpt": "Linear scaling is available for dry and wet formulations, but salt, spices and fermentation are to be judged separately from non-linear effects.",
         "blocks": [
           {
             "type": "p",
-            "text": "A ratio is a tool expressing the multiple relationship between two quantities; proportioning is common in recipes and mixing. Turning a four-serving recipe into two by multiplying by 0.5 looks simple, but some components don't scale linearly with servings: salt, chili, and spices lean on subjective taste and may get too salty when doubled; a fermented dough's proofing time depends more on total amount and ambient temperature than on a simple ratio."
+            "text": "The ratio is a tool that represents a two-volume-multiple relationship, and the ratio is common for formulations and redeployments. The four-person diet is converted to a two-person diet, with a direct factor of zero-point-five, which appears to be simple, but certain ingredients do not change linearly with the number of people: salt, pepper, spices tend to be subjectivity, which may be too salty after doubling; the waking time of fermented noodles is more related to totals, ambient temperatures than simple proportionality."
           },
           {
             "type": "h2",
-            "text": "The Right Way to Proportion"
+            "text": "The right way to match"
           },
           {
             "type": "ul",
             "items": [
-              "Find a 'base quantity' first; express everything else relative to it",
-              "Unify units before comparing; avoid mixing grams and milliliters",
-              "Keep reasonable significant figures after scaling; don't write 1.3333 g",
-              "For seasonings, add in stages and adjust by taste rather than all at once"
+              "Let's look for the baseline. The rest of it is expressed against it.",
+              "Unified units and then compare to avoid mixing g with ml",
+              "Keep a reasonable number after scaling, do not write 1.3333 g",
+              "The spices are more likely to be added and adapted."
             ]
           },
           {
             "type": "p",
-            "text": "In practice, dry staples can be scaled by ratio, while liquids and seasonings should follow the ratio but leave room to adjust. This shares the same thread as the volume-to-mass conversion in [How to Convert Grams to Cups](/grams-to-cups) and the dimensional awareness in [Unit Conversion Pitfalls](/unit-conversion-pitfalls). If you report results as statistics, see [Mean, Median, Mode](/mean-median-mode) for choosing the right central value."
+            "text": "In practice, dry mains can be scaled up proportionately, and liquids and spices are recommended proportionally but leave room for adjustment. This goes hand in hand with the conversion of volume weights in [grams-to-cups] and the dimensions of [unit-conversion-pitfalls] (/unit-conversion-pitfalls). If the results are to be reported as statistics, the appropriate centre value may be selected by reference to [average median numbers] (/mean-median-mode)."
           },
           {
             "type": "callout",
-            "text": "Baking relies more on precise proportioning than stir-frying — small deviations in the flour-water-yeast ratio can fail, so be more careful when scaling."
+            "text": "Baking is more dependent on precise matching than cooking, and a small deviation in the ratio of flour, water and yeast may fail, with more caution in scaling."
           },
           {
             "type": "h2",
-            "text": "Concentration and Dilution"
+            "text": "Concentration and dilution"
           },
           {
             "type": "p",
-            "text": "Diluting disinfectant or pesticide is essentially a ratio problem: a 1:100 proportioning means one part concentrate to one hundred parts water. Confusing '1:100' with '1%' can cause accidents. Estimate dilution multiples with [Mental Percentage Tricks](/mental-percentage-tricks), and for measurement precision return to [Rounding and Significant Figures](/rounding-significant-figures)."
+            "text": "The dilution of disinfectant fluids and pesticides is by nature a problem of proportion: the ratio 1:100 indicates a source of 100 water. The confusion between \"1:100\" and \"1 percent\" could have caused an accident. Estimating dilution multiples can be used (/mental-percentage-tricks), while the accuracy of the measurements returns to [rounding-significant-figures]."
           }
         ]
       },
       "mean-median-mode": {
-        "title": "Mean, Median, Mode: Check the Distribution Before Being 'Averaged'",
-        "excerpt": "When a few people pull the average salary up, the median represents ordinary people's true level better than the mean.",
+        "title": "Median number of averages: first read distribution before average",
+        "excerpt": "When the average wage is raised by a few, the median is more representative of the true level of the average.",
         "blocks": [
           {
             "type": "p",
-            "text": "Three common indicators describe the 'center' of a data set. The mean is the sum divided by the count and is most easily swayed by extreme values; the median is the middle number once sorted and is immune to outliers; the mode is the most frequent value. Pick the wrong one and the conclusion can flip entirely — that's where the phrase 'being averaged' comes from."
+            "text": "There are three commonly used indicators that describe a set of data `centres'. The average is the sum divided by the number, which is the most vulnerable to heat; the median is the number that ranks behind and is immune to extremes; the number is the highest. Selecting the wrong indicator, the conclusion may be the exact opposite, which is also the source of the term `average'."
           },
           {
             "type": "h2",
-            "text": "How to Choose Among the Three"
+            "text": "What are the three indicators?"
           },
           {
             "type": "ul",
             "items": [
-              "Skewed data like income and house prices: median is more truthful",
-              "Report cards, if rewarding the general level: mean works",
-              "Clothing sizes and best-seller options: mode fits",
-              "The wider the gap among the three, the more uneven the distribution"
+              "Moderate data on income, housing prices, etc. are more realistic",
+              "If you want to reward the general level, you can see the average.",
+              "The size of the costume, the implosion option.",
+              "The greater the gap, the more uneven the distribution of data."
             ]
           },
           {
             "type": "p",
-            "text": "For example, nine of ten people earn 8,000 a month and one earns 80,000; the mean is about 15,000, but the median is 8,000 — the latter matches most people's lived experience. Grasping this avoids being misled by 'average growth' in [How to Calculate Percentage Increase and Decrease](/percentage-increase-decrease). Reporting statistical results also demands precision — see [Rounding and Significant Figures](/rounding-significant-figures)."
+            "text": "For example, nine out of ten people go to 8,000 a month and 80,000 a month, averaging about 15,000, but the median is 8,000 — the latter is close to the sense of the majority. Understanding this would avoid being misled by the `average increase' in [percentage increase/decrease] (/percentage-increase-decrease). The report on the results will also be accurate, with reference to [rounded and valid figures] (/rounding-significant-figures)."
           },
           {
             "type": "callout",
-            "text": "When you see 'average,' ask about the distribution first: if a few extremes exist, the median is often more informative than the mean."
+            "text": "See the `average' distribution first: if a few extremes exist, the median is often more relevant than the average."
           },
           {
             "type": "h2",
-            "text": "Real-World Applications"
+            "text": "Practical application scene"
           },
           {
             "type": "p",
-            "text": "In business and national statistics, median income and median house price are often released first by official bodies precisely because they resist distortion. When writing a research report, give both the mean and the median and explain the gap. For proportioning-style data organization, combine [Practical Ratios and Proportioning](/ratio-and-scaling), and for quick estimates use [Mental Percentage Tricks](/mental-percentage-tricks)."
+            "text": "In business and national statistics, median income and median housing prices are often given official priority because of their resistance to interference. When conducting the study, it is recommended that both averages and medians be given and that differences be indicated. Comparable data can be collated to combine [ratio-and-scaling] (/ratio-and-scaling), while rapid estimates can be based on [percentage calculations] (/mental-percentage-tricks)."
           }
         ]
       },
       "rounding-significant-figures": {
-        "title": "Rounding and Significant Figures: One Extra Digit May Be False Precision",
-        "excerpt": "The number of significant figures in a measurement is set by instrument precision; blindly keeping decimals misleads.",
+        "title": "Rounded and valid figures: one more may be false",
+        "excerpt": "The valid digital digits of the measurements are determined by the precision of the instrument, and blind retention of decimals is misleading.",
         "blocks": [
           {
             "type": "p",
-            "text": "Rounding looks simple, but the real difficulty is 'how many digits to keep.' Significant figures are all the reliable digits from the first non-zero digit onward, reflecting the true precision of a measurement. Weighing 52.317 g on a scale accurate only to the gram is absurd — the scale itself has just two significant figures, so the extra digits are pure imagination."
+            "text": "Rounded to the point that it seemed simple, the real difficulty was to keep a few. Valid figures refer to all reliable figures from the first non-zero figure, which reflects the true accuracy of the measurements. It would be absurd to use a scale that can only be precise to the grams, because the scales themselves have only two valid numbers, and the numeric numbers are purely imaginary."
           },
           {
             "type": "h2",
-            "text": "Rules and Common Mistakes"
+            "text": "Rules and common errors"
           },
           {
             "type": "ul",
             "items": [
-              "Round by the digit after the kept place; 5 or above rounds up",
-              "When the middle is exactly 5 with all zeros after, banker's rounding goes to the even neighbor",
-              "In addition/subtraction, decimal places don't exceed the least precise term",
-              "In multiplication/division, significant figures don't exceed the fewest-figure term"
+              "Rounded to see one after the reservation. Five to one.",
+              "The middle is five and the back is zero, and the banker is rounded to even.",
+              "Number of decimal places not exceeding the least accurate entry",
+              "The valid number of multiplier results does not exceed the minimum number of valid numbers"
             ]
           },
           {
             "type": "p",
-            "text": "Many calculation errors stem from insensitivity to precision: multiplying 1.2 m (two sig figs) by 3.45 m gives 4.140 m, but it should actually round to 4.1 m. This is similar to the stacked dimensional factors in [Unit Conversion Pitfalls](/unit-conversion-pitfalls) — the more operations, the more easily errors accumulate. For proportioning and scaling precision, see [Practical Ratios and Proportioning](/ratio-and-scaling)."
+            "text": "Many computational errors stem from insensitivity to accuracy: the ratio of 1.2 m (two valid numbers) to 3.45 m is 4.140 m, which is actually about 4.1 m. This is similar to the logic of supersing the dimensional coefficients in [unit-conversion-pitfalls], which tends to accumulate with more errors. Accuracy of ratio and scaling is found in [ratio-and-scaling] (/ratio-and-scaling)."
           },
           {
             "type": "callout",
-            "text": "The significant figures of a result shouldn't exceed the least precise original data — that's the most common root of 'false precision.'"
+            "text": "The results should not be more valid than the least accurate of the original data, which is the most common source of `false accuracy'."
           },
           {
             "type": "h2",
-            "text": "Trade-offs in Engineering and Daily Life"
+            "text": "Engineering versus day-to-day trade-offs"
           },
           {
             "type": "p",
-            "text": "Daily reporting needn't chase long decimals — a recipe saying 1.3 g is both more honest and more practical than 1.3333 g. But finance and science must keep digits per the rules. For quick estimates, use [Mental Percentage Tricks](/mental-percentage-tricks) to set the magnitude first, then decide how many digits to keep. For statistical description, see [Mean, Median, Mode](/mean-median-mode)."
+            "text": "Day-to-day calculations do not have to pursue long decimals, such as cooking recipes with 1.3 grams more honest and practical than 1.333 grams. However, the financial and scientific scene is to be kept in accordance with the norms. Quick estimates can be accompanied by [percentage heart calculation techniques] (/mental-percentage-tricks) Quantifications, followed by decisions to retain several. The statistical description is given in [median number of averages] (/mean-median-mode)."
           }
         ]
       }
@@ -19812,4 +19812,4 @@
       "intro": "The Web tool is open to front-end and whole house development and provides easy calculation of coding, units, colours and layouts, etc., and integrates the petty conversions in development into a single page."
     }
   }
-}
+}

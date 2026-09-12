@@ -1,0 +1,884 @@
+{
+  "recipe-scaling-basics": {
+    "title": "Fundamentos del redimensionado de recetas: pasar de 4 a 2 porciones no es simplemente dividir a la mitad",
+    "excerpt": "Escalar linealmente los ingredientes principales funciona, pero condimentos, fermentación y tiempos de cocción requieren un juicio aparte; si no, el sabor cambia por completo.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La forma más cómoda de pasar una receta de 4 a 2 porciones es multiplicar por 0,5, pero la realidad es mucho más compleja que una simple multiplicación. Ingredientes como harina, agua y carne se pueden escalar linealmente según el número de comensales; sin embargo, sal, azúcar y especias dependen más del gusto subjetivo, y reducirlos a la mitad a menudo da como resultado un plato insípido o demasiado salado. En repostería, además, la cantidad de levadura está acoplada a la temperatura y al tiempo, y no es un problema de proporción pura."
+      },
+      {
+        "type": "h2",
+        "text": "Qué escalar por proporción y qué ajustar por separado"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Harinas y líquidos principales: se pueden escalar estrictamente por proporción",
+          "Sal, especias y guindillas: según proporción, pero añadir en varias tandas y probar",
+          "Masas fermentadas: la levadura y el tiempo deben reevaluarse",
+          "La capacidad del utensilio limita el lote máximo; si es demasiado grande, hay que hacerlo en varias tandas"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Al escalar, primero define la cantidad base y luego convierte; detrás de esto está el enfoque de [proporciones y dosificación en la práctica](/ratio-and-scaling). Si la receta original usa tazas y cucharas pero prefieres gramos, revisa primero [cómo convertir gramos y tazas](/grams-to-cups) para unificar unidades. El problema de precisión al escalar es análogo al de [redondeo y cifras significativas](/rounding-significant-figures): no escribas cantidades impracticables como 0,3333 cucharaditas."
+      },
+      {
+        "type": "callout",
+        "text": "La repostería es muy sensible a las proporciones; si escalas por más de dos veces, conviene recalcular la relación harina-agua y hacer una prueba en pequeño lote antes de producir en masa."
+      },
+      {
+        "type": "h2",
+        "text": "El calor y el tiempo no son lineales"
+      },
+      {
+        "type": "p",
+        "text": "Duplicar una sopa no duplica exactamente el tiempo de ebullición ni de reducción: un recipiente más profundo y una disipación de calor más lenta cambian el ritmo, así que hay que guiarase por el estado y no aferrarse al reloj. Del mismo modo, una bandeja de horno más llena tarda más en cocer el centro. Dominando esto y sumando [errores comunes de conversión](/common-conversion-mistakes), fallarás menos."
+      }
+    ],
+    "category": "cooking"
+  },
+  "measuring-cups-spoons-standard": {
+    "title": "Estándares de tazas y cucharas: ¿cuántos mililitros tiene realmente una taza?",
+    "excerpt": "Una taza estadounidense son unos 240 ml, pero la capacidad de la taza varía según el país; mezclar estándares arruina la receta sin que te des cuenta.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Las tazas y cucharas parecen simples, pero esconden diferencias de estándar. En recetas estadounidenses, 1 cup son unos 240 ml, 1 cucharada (tbsp) unos 15 ml y 1 cucharadita (tsp) unos 5 ml; sin embargo, las tazas británicas, japonesas y australianas no coinciden exactamente. Copiar una receta extranjera pero usar la taza equivocada basta, por error acumulado, para arruinar la repostería."
+      },
+      {
+        "type": "h2",
+        "text": "Equivalencias de estándares comunes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sistema estadounidense: 1 cup = 240 ml, 1 tbsp = 15 ml, 1 tsp = 5 ml",
+          "Sistema británico: 1 cup son unos 284 ml, distinto del estadounidense",
+          "Sistema japonés: 1 taza (gō) son unos 180 ml, usada para medir arroz",
+          "Las tazas para sólidos y para líquidos funcionan diferente; no las mezcles"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La forma más segura es convertir todas las cantidades a gramos, porque el peso es absoluto y no cambia con el estándar. Ahí radica el valor de [cómo convertir gramos y tazas](/grams-to-cups). Al convertir, ojo con [las trampas de la conversión de unidades](/unit-conversion-pitfalls): la conversión de volumen depende de la densidad, y el peso de una «taza» varía enormemente según el ingrediente. Para la lógica de dosificación, también puedes ver [fundamentos del redimensionado de recetas](/recipe-scaling-basics)."
+      },
+      {
+        "type": "callout",
+        "text": "Al medir harina con taza, siempre «nivela»: una taza colmada puede llevar casi un 20 % más que una nivelada, y es la causa frecuente de que los bizcochos se hundan."
+      },
+      {
+        "type": "h2",
+        "text": "Mide sólidos y líquidos por separado"
+      },
+      {
+        "type": "p",
+        "text": "Para líquidos (agua, aceite, leche) usa una taza transparente y lee por el fondo del menisco; para polvos, llena la cuchara medidora y nivela. Mezclar estándares entre ambos amplifica el error. Para controlar el coste con precisión, úsalo junto con [cómo calcular el coste por ración](/cost-per-serving), y la lista de errores a evitar está en [errores comunes de conversión](/common-conversion-mistakes)."
+      }
+    ],
+    "category": "cooking"
+  },
+  "nutrition-conversion-guide": {
+    "title": "Guía de conversión nutricional: cómo pasar calorías y proteína de peso crudo a peso cocido",
+    "excerpt": "Al cocinar, los alimentos pierden agua y su peso baja; registrar la nutrición por peso cocido sobreestima las calorías por unidad. Distingue primero crudo de cocido antes de convertir.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Las etiquetas nutricionales suelen dar calorías y proteína «por cada 100 g», pero a menudo se ignora si la cifra es por peso crudo o por peso cocido. Al cocerse, la pechuga de pollo pierde agua: 100 g en crudo pueden quedar en solo 70 g cocidos; si cuentas por peso cocido, sobreestimas mucho las calorías por unidad. Lo correcto es registrar siempre por peso crudo o usar el coeficiente de conversión correspondiente al peso cocido."
+      },
+      {
+        "type": "h2",
+        "text": "Puntos clave de conversión"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Arroz y pasta: la relación crudo-cocido es aproximadamente 1:2,5 a 3; lo más fiable es usar el peso crudo",
+          "Carnes: al cocer pierden un 20-30 % de agua; registra el peso crudo",
+          "El aceite tiene muchas calorías y alta densidad; un error de una cucharada se nota mucho",
+          "En las tablas nutricionales del envase, prioriza «por 100 g» antes que por porción"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Convertir nutrición comparte con [cómo convertir gramos y tazas](/grams-to-cups) la base de la «masa»: primero pasa el volumen a gramos y luego consulta la tabla, que es lo más fiable. Para controlar las calorías totales, combínalo con [cómo calcular el coste por ración](/cost-per-serving) al planificar las comidas. Para fijar proporciones de macronutrientes, consulta [proporciones y dosificación en la práctica](/ratio-and-scaling), y el tema de la precisión al reportar cifras está en [redondeo y cifras significativas](/rounding-significant-figures)."
+      },
+      {
+        "type": "callout",
+        "text": "En la pérdida de grasa, distingue siempre crudo de cocido; si no, «crees haber comido 300 kcal» y en realidad fueron más de 400, y el déficit se esfuma sin que te des cuenta."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo alinear comida fuera de casa y casera"
+      },
+      {
+        "type": "p",
+        "text": "La comida fuera de casa suele etiquetarse por la parte comestible en peso cocido, y no se suma directamente con lo casero registrado por peso crudo; hay que unificar la base antes de comparar. Crea tu propia tabla de equivalencias crudo-cocido para ingredientes habituales: a la larga es más eficaz que consultar la app una y otra vez. Un resumen de errores relacionados está en [errores comunes de conversión](/common-conversion-mistakes)."
+      }
+    ],
+    "category": "cooking"
+  },
+  "cost-per-serving": {
+    "title": "Cómo calcular el coste por ración: no te engañes con el precio unitario, mira el uso real",
+    "excerpt": "Una botella de aceite tiene precio unitario bajo pero se usa poco; quien realmente define el precio del plato son los ingredientes principales y la merma.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Para calcular el coste de un plato no basta con mirar el precio de compra; hay que multiplicar la «cantidad real usada» de cada ingrediente por su precio unitario y sumar todo. Por ejemplo, una botella de salsa de soja es barata, pero un plato usa solo 10 ml, así que su coste repartido es mínimo; en cambio, carnes y verduras frescas tienen precio alto y gran cantidad, y son el grueso del coste. Ignorar el uso lleva a conclusiones totalmente erróneas."
+      },
+      {
+        "type": "h2",
+        "text": "Pasos del cálculo"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Enumera todos los ingredientes y sus cantidades, unificadas en gramos o mililitros",
+          "Precio total del envase ÷ contenido neto total = precio unitario",
+          "Precio unitario × cantidad real usada = coste de ese ingrediente",
+          "Suma de todos ÷ número de raciones = coste por ración"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Este paso depende de [cómo convertir gramos y tazas](/grams-to-cups) para pasar tazas y cucharas a gramos con exactitud; si no, la cantidad se distorsiona. Las proporciones de los ingredientes vienen de [fundamentos del redimensionado de recetas](/recipe-scaling-basics). Si entra la etiqueta nutricional, también puedes sumar [guía de conversión nutricional](/nutrition-conversion-guide). Para la precisión de las cifras al registrar, consulta [redondeo y cifras significativas](/rounding-significant-figures): dos decimales bastan."
+      },
+      {
+        "type": "callout",
+        "text": "No olvides que condimentos y energía (gas, electricidad), aunque pequeños, se acumulan a la larga si cocinas a menudo, y merece la pena incluirles en el coste real."
+      },
+      {
+        "type": "h2",
+        "text": "Palancas para reducir el coste"
+      },
+      {
+        "type": "p",
+        "text": "Optimiza primero los ingredientes principales de «alto uso y alto precio»: compra a granel, verduras de temporada, menos merma. En comparación, preocuparse por el precio de unos pocos mililitros de aceite da muy poco beneficio. Evita [errores comunes de conversión](/common-conversion-mistakes) y el cálculo será creíble."
+      }
+    ],
+    "category": "cooking"
+  },
+  "grams-to-cups": {
+    "title": "Cómo convertir gramos y tazas: una taza de harina y una de azúcar pesan muy distinto",
+    "excerpt": "La conversión de volumen depende de la densidad: con la misma taza, la harina son unos 120 g y el azúcar unos 200 g; jamás uses el mismo número para ambas.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Para pasar «tazas» a «gramos» no sirve un coeficiente universal, porque la densidad de cada ingrediente es distinta. Con la taza estadounidense de 240 ml: harina suelta unos 120 g, azúcar blanca unos 200 g, agua justo 240 g, mantequilla unos 227 g. Usar el coeficiente equivocado desbarata las proporciones de la receta."
+      },
+      {
+        "type": "h2",
+        "text": "Cuánto pesa aproximadamente una taza de ingredientes comunes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Harina de uso general: unos 120 g (nivelada)",
+          "Azúcar blanca: unos 200 g",
+          "Azúcar moreno (compactado): unos 220 g",
+          "Agua / leche: unos 240 g",
+          "Mantequilla: unos 227 g"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Por eso en repostería «usar gramos» supera con creces a «usar tazas», pues elimina del todo la incertidumbre de la densidad. El propio estándar de las tazas varía según el país; ver [estándares de tazas y cucharas](/measuring-cups-spoons-standard). La conversión en esencia es una transformación volumen-masa dentro de [las trampas de la conversión de unidades](/unit-conversion-pitfalls): mira siempre primero la densidad. Al escalar recetas, úsalo con [fundamentos del redimensionado de recetas](/recipe-scaling-basics)."
+      },
+      {
+        "type": "callout",
+        "text": "Un mismo ingrediente pesa distinto según su estado: harina compactada o azúcar apelmazada hacen que «una taza» pese más; pesar es lo más seguro."
+      },
+      {
+        "type": "h2",
+        "text": "Aproximaciones sin báscula"
+      },
+      {
+        "type": "p",
+        "text": "Si no tienes báscula a mano, puedes memorizar las equivalencias taza-gramo de ingredientes comunes, pero solo sirve para saltear platillos poco sensibles a la precisión; en repostería, pesa sí o sí. Para cálculo nutricional, ver [guía de conversión nutricional](/nutrition-conversion-guide); para reparto de costes, [cómo calcular el coste por ración](/cost-per-serving); y los métodos para evitar errores están resumidos en [errores comunes de conversión](/common-conversion-mistakes)."
+      }
+    ],
+    "category": "cooking"
+  },
+  "common-conversion-mistakes": {
+    "title": "Errores comunes de conversión: estas trampas arruinan la mitad de los platos caseros",
+    "excerpt": "Mezclar estándares de tazas, ignorar la densidad y aferrarse al tiempo son los tres errores más frecuentes en la conversión de cocina.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Los errores de conversión en cocina rara vez son de cálculo: suelen ser un error de premisa. Los tres más típicos: uno, mezclar sin notarlo estándares de taza de distintos países; dos, creer que «una taza» pesa lo mismo para cualquier cosa e ignorar la densidad; tres, tomar el tiempo de la receta como una verdad absoluta sin ajustar según el estado. Los tres juntos hacen que el resultado sea inestable."
+      },
+      {
+        "type": "h2",
+        "text": "Lista de errores frecuentes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Confundir taza estadounidense con británica: diferencia de casi un 20 %",
+          "Harina colmada sin nivelar: cantidad ficticiamente alta",
+          "Sal y azúcar convertidas por volumen pero con la densidad equivocada",
+          "Confundir onza líquida con onza de peso",
+          "Copiar el tiempo sin mirar el punto de cocción real"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La onza líquida mide volumen y la onza avoirdupois mide peso; en una receta es muy fácil confundirlas, y eso responde justo a la noción de dimensión de [las trampas de la conversión de unidades](/unit-conversion-pitfalls). Pasar a gramos evita de golpe la mayoría de los problemas; el método está en [cómo convertir gramos y tazas](/grams-to-cups) y [estándares de tazas y cucharas](/measuring-cups-spoons-standard). Para escalado y dosificación, ver [fundamentos del redimensionado de recetas](/recipe-scaling-basics)."
+      },
+      {
+        "type": "callout",
+        "text": "Comprar una báscula de cocina de pocos euros resuelve más del 80 % de los fallos de conversión, y da menos trabajo que memorizar cualquier tabla."
+      },
+      {
+        "type": "h2",
+        "text": "Crea tu propio flujo para evitar trampas"
+      },
+      {
+        "type": "p",
+        "text": "Conviene fijar tres principios: «todo en gramos, un solo estándar de taza, juzgar el fuego por el estado», y anotar en el móvil las equivalencias crudo-cocido y taza-gramo de ingredientes habituales. Para las dimensiones de nutrición y coste, combina [guía de conversión nutricional](/nutrition-conversion-guide) y [cómo calcular el coste por ración](/cost-per-serving); y el tema de la precisión de las cifras, repásalo en [redondeo y cifras significativas](/rounding-significant-figures)."
+      }
+    ],
+    "category": "cooking"
+  },
+  "compare-loan-interest-rates": {
+    "title": "Cómo comparar los tipos de interés hipotecarios: cuota constante, capital constante y cómo elegir el LPR",
+    "excerpt": "Comparar tipos hipotecarios no es solo mirar números: el sistema de amortización decide el total de intereses que pagas en realidad.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Muchos al comparar préstamos solo miran la tasa anual que da el banco, pero ignoran el efecto decisivo del sistema de amortización sobre el interés total. Con la misma hipoteca de 1 millón de yuanes, tasa anual del 4,2 % y plazo de 30 años, la cuota de capital e intereses constante (amortización francesa) tiene una cuota fija cada mes, pero al principio se amortiza muy poco capital y el interés total es el máximo; el capital constante (amortización lineal) amortiza el mismo capital cada mes con interés decreciente, así que el interés total es menor, pero la cuota inicial pesa más. Para ver la diferencia, conviene aplicar primero el enfoque de [comparación de tipos de préstamo](/finance) y calcular la cuota mensual y el interés total de ambos esquemas."
+      },
+      {
+        "type": "h2",
+        "text": "La diferencia esencial entre el LPR y el tipo fijo"
+      },
+      {
+        "type": "p",
+        "text": "Hoy la mayoría de las hipotecas se vinculan al LPR (tipo de interés de referencia del mercado de préstamos), que se reprecia una vez al año: el tipo baja si el mercado cae y sube si este sube. Si crees que los tipos bajarán en el futuro, el tipo variable sale más a cuenta; si buscas la estabilidad absoluta de la cuota y no quieres soportar la volatilidad, elige el tipo fijo. Ojo: la fecha de reprecio y el margen añadido, una vez firmados, suelen mantenerse sin cambios a largo plazo; pregunta estos detalles antes de firmar."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Cuota de capital e intereses constante: cuota fija, ideal para asalariados con flujo de caja estable",
+          "Capital constante: menos interés total, apto para quien puede pagar mucho al principio",
+          "Tipo variable: fluctúa con el LPR; a largo plazo puede salir más barato",
+          "Tipo fijo: cuota bloqueada, apto para prestatarios que evitan el riesgo"
+        ]
+      },
+      {
+        "type": "callout",
+        "text": "Al comparar tipos, separa la «tasa anual nominal» del «coste anual real (APR)»; solo este último incluye gastos ocultos como comisiones y seguros."
+      },
+      {
+        "type": "h2",
+        "text": "Tres trampas comunes al comparar en horizontal"
+      },
+      {
+        "type": "p",
+        "text": "Primero, no te dejes engañar por la «tasa promocional de N años»: una vez acabada la promoción, la tasa estándar que se restablece es el coste a largo plazo. Segundo, la comisión por amortización anticipada varía mucho entre bancos y afecta directamente a tu flexibilidad para optimizar la deuda más adelante; ver [estrategia de amortización anticipada](/early-loan-repayment-strategy). Tercero, sustituir la hipoteca por un préstamo empresarial parece tener un tipo menor, pero implica riesgo de cumplimiento en el uso de los fondos; quien no sea experto debe ser prudente. Calcula junto la cuota mensual, el interés total y la comisión, y así obtendrás el esquema que de verdad ahorra."
+      }
+    ],
+    "category": "finance"
+  },
+  "early-loan-repayment-strategy": {
+    "title": "¿Conviene amortizar la hipoteca por anticipado?: calcula el coste de oportunidad antes de decidir",
+    "excerpt": "Amortizar por anticipado ahorra intereses, pero renuncia a otras posibilidades de inversión con ese dinero; la clave está en la diferencia entre ambos.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Tienes dinero libre y te preguntas si amortizar la hipoteca por anticipado. No hay una respuesta única: el núcleo es comparar «el tipo que ahorras amortizando» con «el rendimiento que obtendrías invirtiendo ese dinero». Si tu hipoteca está al 4,5 % pero solo encuentras depósitos o fondos al 2,5 % anual, amortizar por anticipado equivale a ganar dos puntos seguros, y suele merecer la pena. Al revés, si confías en obtener un rendimiento superior al tipo de la hipoteca, es mejor conservar el efectivo."
+      },
+      {
+        "type": "h2",
+        "text": "¿Acortar el plazo o reducir la cuota?"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Acortar el plazo: baja al máximo el interés total; para quien quiere quedar libre de deuda cuanto antes",
+          "Reducir la cuota: menos presión mensual, pero el ahorro de interés total es limitado",
+          "Tras una amortización parcial, pide activamente al banco el «acortamiento de plazo» en vez del «recorte de cuota» que ponen por defecto",
+          "Prioriza la deuda con el tipo más alto; el orden importa más que el importe"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La operación por defecto del banco suele ser «reducir la cuota», porque así baja menos el interés total y le conviene al banco. Tú debes pedir activamente «acortar el plazo» para ahorrar de verdad. Sobre la lógica de fondo de comparar tipos, amplía con [cómo comparar los tipos hipotecarios](/compare-loan-interest-rates). La amortización anticipada también puede llevar comisión: el contrato suele decir que amortizar en los uno a tres años tras el desembolso cuesta, y pasado ese plazo es gratis."
+      },
+      {
+        "type": "callout",
+        "text": "Conserva un fondo de emergencia de 3 a 6 meses antes de amortizar por anticipado; no destines todos tus ahorros a pagar la deuda, o quedarás en apuros si hay desempleo o una enfermedad grave."
+      },
+      {
+        "type": "h2",
+        "text": "Cuándo NO conviene amortizar por anticipado"
+      },
+      {
+        "type": "p",
+        "text": "Si disfrutas de un tipo histórico muy bajo (por ejemplo, por debajo del 3 %) y tienes canales de inversión con rendimiento estable superior, amortizar por anticipado sale a cuenta negativa. Además, el tipo del fondo de vivienda suele ser mucho menor que el de la hipoteca comercial: prioriza pagar esta y conserva el préstamo del fondo. Para más ideas de planificación básica, ver [bases del impuesto personal](/personal-tax-basics) y [cómo crear un fondo de emergencia](/build-emergency-fund)."
+      }
+    ],
+    "category": "finance"
+  },
+  "compound-interest-investing": {
+    "title": "El poder del interés compuesto: usa la regla del 72 para estimar cuándo se duplica tu dinero",
+    "excerpt": "El interés compuesto no es magia: la regla del 72 te deja calcular de cabeza en cuántos años se duplica el capital con cualquier rendimiento anual.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "El interés compuesto significa que «los intereses también generan intereses»; mantenido en el tiempo, el rendimiento crece de forma exponencial. Una herramienta sencilla de estimación es la regla del 72: divide 72 entre el porcentaje de rendimiento anual y obtienes los años para duplicar el capital. Por ejemplo, al 6 % anual, 72 ÷ 6 = 12 años para duplicarse; al 8 % anual, unos 9 años. Esta regla es muy útil para planificar la jubilación y el fondo de estudios de los hijos."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo amplifica el interés compuesto la inversión periódica"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Aportaciones periódicas y constantes: suavizan la volatilidad del mercado, comprando más cuando está bajo y menos cuando está alto",
+          "El tiempo es el mejor amigo del interés compuesto; cuanto antes empieces, mayor ventaja",
+          "Configura dividendos e intereses para reinvertirse solos; no dejes el rendimiento parado en la cuenta",
+          "Cada punto menos de comisión amplifica mucho el importe final a largo plazo"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La cara opuesta del interés compuesto es el «interés compuesto negativo»: las comisiones altas, el trading frecuente y la inflación erosionan el capital. Muchos ignoran las comisiones: una gestión del 1 % anual puede comerse casi una cuarta parte del rendimiento final a lo largo de 30 años. Para entender la asignación de activos en sistema, puedes ver la lógica de inversión periódica en [iniciación a la inversión con interés compuesto](/compound-interest-investing) y sumar [precauciones en el cambio de divisas](/currency-exchange-tips) para evitar los costes ocultos de la inversión transfronteriza."
+      },
+      {
+        "type": "callout",
+        "text": "La trampa del interés compuesto está en la «intuición lineal»: el cerebro piensa de forma lineal y suele subestimar gravemente el crecimiento exponencial a más de veinte años."
+      },
+      {
+        "type": "h2",
+        "text": "El paso mínimo para empezar hoy"
+      },
+      {
+        "type": "p",
+        "text": "No hace falta esperar a juntar una gran suma para invertir. Destina el 10 % de tus ingresos cada mes a una inversión periódica en fondos indexados y, si lo mantienes 20 años, el interés compuesto hará la mayor parte del trabajo. Volviendo al marco general de planificación financiera, conviene leer primero [cómo crear un fondo de emergencia](/build-emergency-fund) y, una vez asegurado el colchón básico, aumentar la proporción de inversión."
+      }
+    ],
+    "category": "finance"
+  },
+  "build-emergency-fund": {
+    "title": "Cómo crear un fondo de emergencia: ¿cuántos meses de gastos es suficiente?",
+    "excerpt": "El fondo de emergencia es la base de la seguridad financiera; la cantidad y la cuenta de destino importan más de lo que crees.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "El fondo de emergencia es una reserva de efectivo que cubre contingencias como el desempleo, la enfermedad o gastos imprevistos. La recomendación general es ahorrar de 3 a 6 veces el gasto mensual: quien tiene trabajo estable y un segundo ingreso puede quedarse en el límite inferior de 3-4 meses; los autónomos o quienes tienen ingresos muy variables deberían apuntar a 6 meses o más. El sentido de este dinero no es crecer, sino que en la tormenta no tengas que vender activos a precio de saldo ni pedir deuda cara."
+      },
+      {
+        "type": "h2",
+        "text": "Dónde guardar el dinero"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Cuenta corriente o fondo del mercado monetario: disponible en cualquier momento; la liquidez es lo primero",
+          "Algún depósito innovador del banco: rendimiento algo mayor, ojo con las reglas de rescate",
+          "Nunca lo metas en acciones ni en productos cerrados a largo plazo",
+          "Una cuenta aparte, para no mezclarlo con el consumo diario y terminarlo gastando"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "El fondo de emergencia busca certeza y liquidez, no rentabilidad. Mejor asegurarte de que llegue en un día que preocuparte por ganar esa décima de punto. Solo tras montar el colchón, el dinero restante es apto para herramientas de crecimiento a largo plazo como [iniciación a la inversión con interés compuesto](/compound-interest-investing). Si el hogar tiene varias fuentes de ingreso, puedes ver [estrategia de amortización anticipada](/early-loan-repayment-strategy) para reequilibrar la prioridad entre ahorro y pago de deuda."
+      },
+      {
+        "type": "callout",
+        "text": "Hasta no alcanzar el fondo de emergencia, no conviene amortizar por anticipado ni invertir a la brava: si construyes sin cimentar, un solo imprevisto tira abajo todo lo demás."
+      },
+      {
+        "type": "h2",
+        "text": "Cuánto tardas en juntarlo"
+      },
+      {
+        "type": "p",
+        "text": "Supongamos un gasto mensual de 10 000 yuanes y un objetivo de 6 meses, es decir 60 000 yuanes; si logras ahorrar 2 000 al mes, tardarás unos 30 meses. Recomiendo programar una transferencia automática el día de cobro como primer gasto, antes que cualquier consumo. Para más bases de finanzas familiares, ver [bases del impuesto personal](/personal-tax-basics) y [precauciones en el cambio de divisas](/currency-exchange-tips)."
+      }
+    ],
+    "category": "finance"
+  },
+  "currency-exchange-tips": {
+    "title": "Cómo evitar trampas en el cambio de divisas: tipo de cambio, comisiones y las trampas del aeropuerto",
+    "excerpt": "El mismo dinero cambiado por distintos canales puede dar un importe recibido que difiere en varios puntos porcentuales; la clave es ver los costes ocultos.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Viajar al extranjero o enviar dinero al extranjero tiene un coste real que no es solo el tipo de cambio del tablero, sino también comisiones, diferenciales y gastos de bancos intermediarios. Entre el precio de compra y el de venta de efectivo del banco ya hay un diferencial, y sumando la comisión fija por operación, los cambios pequeños salen especialmente caros. Al comparar canales, calcula el «importe realmente recibido», no te quedes mirando qué tipo de cambio parece más bonito."
+      },
+      {
+        "type": "h2",
+        "text": "Situaciones de alto coste frecuentes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Mostradores de aeropuerto y hotel: el peor tipo y las comisiones más altas; solo para emergencias",
+          "Conversión de divisa dinámica (DCC): pagar en yuanes sale a cuenta negativa; elige la moneda local",
+          "Cambios pequeños y repetidos: la comisión fija de cada uno duele más",
+          "Cambiar sin comparar bancos: el diferencial puede diferir en décimas de punto"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Pagar con tarjeta de crédito suele liquidarse al tipo de las organizaciones internacionales, mejor que el efectivo, pero confirma que la tarjeta no cobre comisión por conversión de moneda. En la inversión transfronteriza, además, la volatilidad del tipo de cambio puede comer parte del rendimiento, igual que la erosión por comisiones que se menciona en [iniciación a la inversión con interés compuesto](/compound-interest-investing). Si consumes mucho en el extranjero, aplica el enfoque de [cómo comparar los tipos hipotecarios](/compare-loan-interest-rates) e incluye el coste de cambio en la comparación financiera global."
+      },
+      {
+        "type": "callout",
+        "text": "Si en el datáfono sale la pregunta «¿liquidar en yuanes?», elige siempre «no»: deja que el emisor lo haga en la moneda local y ahorras."
+      },
+      {
+        "type": "h2",
+        "text": "Lista práctica de acciones"
+      },
+      {
+        "type": "p",
+        "text": "Antes de viajar, reserva en el banco local el efectivo principal; deja un poco de moneda local para emergencias; para gastos grandes usa tarjeta sin comisión de conversión; al volver, cambia pronto las monedas sobrantes para evitar más volatilidad. Para una planificación financiera completa, ver [cómo crear un fondo de emergencia](/build-emergency-fund) y [bases del impuesto personal](/personal-tax-basics)."
+      }
+    ],
+    "category": "finance"
+  },
+  "personal-tax-basics": {
+    "title": "Bases del impuesto sobre la renta personal: umbral de exención y cómo aprovechar al máximo las deducciones especiales",
+    "excerpt": "Muchos pagan impuestos de más solo por no declarar una a una las deducciones adicionales; ahorrar legalmente empieza por rellenar el formulario.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "En nuestro país, el umbral de exención del impuesto sobre la renta para residentes es de 5 000 yuanes al mes; lo que excede se grava por una tarifa progresiva por tramos de siete niveles. Pero lo que de verdad afecta la carga fiscal son las deducciones: además de las deducciones específicas como la seguridad social, hay deducciones adicionales por educación de hijos, educación continua, gastos médicos graves, intereses de la hipoteca o alquiler, cuidado de ancianos y cuidado de niños menores de tres años; declararlas una a una reduce legalmente el importe a pagar."
+      },
+      {
+        "type": "h2",
+        "text": "Deducciones que más se olvidan declarar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Intereses de hipoteca y alquiler: solo uno de los dos; declara el de mayor importe",
+          "Cuidado de ancianos: los no hijos únicos deben repartir el límite con los hermanos",
+          "Gastos médicos graves: lo que excede el reembolso del seguro se deduce dentro del límite",
+          "Educación continua: estudios académicos y certificaciones profesionales tienen cuotas propias"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Las deducciones adicionales se rellenan en la app del impuesto personal durante la liquidación anual; si te las saltas, puedes disfrutarlas hasta el 30 de junio del año siguiente. Usarlas bien equivale a un aumento indirecto de sueldo; el dinero ahorrado puede ir a [cómo crear un fondo de emergencia](/build-emergency-fund) o a [iniciación a la inversión con interés compuesto](/compound-interest-investing). Para los detalles de deducción ligados a préstamos, conviene planificarlos junto con [estrategia de amortización anticipada](/early-loan-repayment-strategy), porque pagar la hipoteca también genera intereses deducibles."
+      },
+      {
+        "type": "callout",
+        "text": "El bono de fin de año puede tributar por separado o integrarse en la renta global; calcúlalo de las dos formas y elige la que ahorra más: la diferencia puede superar los mil yuanes."
+      },
+      {
+        "type": "h2",
+        "text": "Puntos a tener en cuenta con distintos tipos de ingreso"
+      },
+      {
+        "type": "p",
+        "text": "El salario, la retribución por trabajo, los derechos de autor y las regalías se suman como renta global y se gravan anualmente; por eso quien tiene ingresos de varios canales debe cuidar la liquidación anual para no pagar menos de la cuenta y enfrentar un recargo. Para declarar ingresos extranjeros ligados al tipo de cambio, ver [precauciones en el cambio de divisas](/currency-exchange-tips). El enfoque de planificación global está en [cómo comparar los tipos hipotecarios](/compare-loan-interest-rates)."
+      }
+    ],
+    "category": "finance"
+  },
+  "body-fat-percentage-guide": {
+    "title": "Cómo interpretar el porcentaje de grasa corporal: hombres y mujeres tienen distintos rangos, no te engañe el peso",
+    "excerpt": "Un peso normal no equivale a estar sano; el porcentaje de grasa corporal es el indicador clave de la grasa.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Muchos miran la báscula cada día, pero ignoran una cifra más importante: el porcentaje de grasa corporal. El peso incluye músculo, agua, hueso y grasa; dos personas con el mismo peso pueden tener porcentajes de grasa muy distintos. El porcentaje de grasa corporal refleja directamente la proporción de grasa, y dice más que el peso solo sobre si tienes «obesidad oculta»."
+      },
+      {
+        "type": "h2",
+        "text": "Hombres y mujeres tienen distintos rangos sanos"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Hombres adultos sanos: aproximadamente 10 % a 20 %",
+          "Mujeres adultas sanas: aproximadamente 18 % a 28 %; fluctúa más por el ciclo fisiológico",
+          "Por encima del 25 % en hombres y del 32 % en mujeres suele considerarse obesidad",
+          "Los atletas tienen grasa aún menor, pero no conviene buscar el extremo a largo plazo"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Hay muchos métodos para medir la grasa corporal: el calibre de gimnasio, la báscula de bioimpedancia doméstica y la exploración DXA hospitalaria, con precisión creciente. La báscula doméstica se ve muy afectada por la hidratación, el ejercicio y la hora; conviene medir siempre en ayunas por la mañana a la misma hora, y mirar la tendencia en vez del valor absoluto de una vez. Entendida la grasa, puedes fijar metas con [cómo calcular el déficit calórico para perder grasa](/fat-loss-calorie-deficit) y ver [cuánta proteína tomar al día](/daily-protein-intake) para conservar músculo."
+      },
+      {
+        "type": "callout",
+        "text": "En las mujeres, una grasa corporal demasiado baja desordena las hormonas e incluso detiene la menstruación; menos grasa no siempre es mejor: la curva de salud importa más que el número."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo leer grasa corporal y peso juntos"
+      },
+      {
+        "type": "p",
+        "text": "En la pérdida de grasa es frecuente que el peso no baje pero la cintura sí se reduzca: esa es la buena señal de menos grasa y más músculo. Por eso registra a la vez peso, porcentaje de grasa corporal y circunferencias, y no te asustes por las fluctuaciones a corto plazo. Para gestionar los indicadores corporales en conjunto, amplía con [cómo calcular la tasa metabólica basal](/basal-metabolic-rate) y [iniciación a las zonas de frecuencia cardíaca](/heart-rate-training-zones)."
+      }
+    ],
+    "category": "health"
+  },
+  "basal-metabolic-rate": {
+    "title": "Cómo calcular la tasa metabólica basal: tu cuerpo quema calorías incluso en reposo",
+    "excerpt": "La tasa metabólica basal supone más del 60 % del gasto diario; calcularla bien es la base para fijar metas calóricas con método.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La tasa metabólica basal (BMR) es el calor quemado por el cuerpo en reposo, despierto, tumbado, en ayunas y a temperatura constante, solo para mantener latido y respiración. Suele ser el 60-70 % del gasto total diario. Con tu BMR y un coeficiente de actividad obtienes el gasto total diario (TDEE), que es el punto de partida de cualquier plan de alimentación."
+      },
+      {
+        "type": "h2",
+        "text": "Fórmulas de estimación comunes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Fórmula de Mifflin-St Jeor: hoy se considera la más precisa; necesita peso, altura, edad y sexo",
+          "BMR hombre ≈ 10×kg + 6,25×cm − 5×edad + 5",
+          "BMR mujer ≈ 10×kg + 6,25×cm − 5×edad − 161",
+          "El coeficiente de actividad va de 1,2 (sedentario) a 1,9 (alta intensidad)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Con el BMR calculado, en la pérdida de grasa puedes crear un déficit sobre el gasto total, pero sin pasarte para no perder músculo ni hundir el metabolismo. Cómo fijar el déficit exacto, ver [cómo calcular el déficit calórico para perder grasa](/fat-loss-calorie-deficit). Además, a más músculo, más alto el metabolismo basal, así que [cuánta proteína tomar al día](/daily-protein-intake) y el entrenamiento de fuerza son igual de clave. Para confirmar si la intensidad de ejercicio es la adecuada, mira [iniciación a las zonas de frecuencia cardíaca](/heart-rate-training-zones)."
+      },
+      {
+        "type": "callout",
+        "text": "Una dieta muy baja en calorías a largo plazo hace que el cuerpo baje al «modo ahorro» y el rebote suele ser peor; no lleves el déficit al extremo."
+      },
+      {
+        "type": "h2",
+        "text": "Variables que afectan el metabolismo"
+      },
+      {
+        "type": "p",
+        "text": "La masa muscular, la edad, la tiroides e incluso la temperatura corporal afectan el BMR. Tras los 30 el metabolismo baja algo cada década, así que en la mediana edad hay que sostenerlo con entrenamiento y dieta. Para gestionar los indicadores en conjunto, conviene sumar [cómo interpretar el porcentaje de grasa corporal](/body-fat-percentage-guide) y [la ciencia del ciclo del sueño](/sleep-cycle-explained)."
+      }
+    ],
+    "category": "health"
+  },
+  "fat-loss-calorie-deficit": {
+    "title": "Cómo calcular el déficit calórico para perder grasa: cuánto menos al día para no perder músculo",
+    "excerpt": "La pérdida de grasa es un déficit calórico, pero el tamaño del déficit decide si pierdes grasa o músculo.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La lógica de la pérdida de grasa es una sola: comer a largo plazo por debajo de lo que gastas crea un déficit y el cuerpo usa grasa para obtener energía. En teoría, 1 kg de grasa tiene unas 7 700 kcal; con un déficit de 500 kcal al día pierdes unos 1 kg de grasa en unas 15 días. Pero si vas demasiado rápido sueles perder agua y músculo, no grasa pura."
+      },
+      {
+        "type": "h2",
+        "text": "Qué tamaño de déficit es seguro"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Mantén el déficit diario en el 15-20 % del gasto total",
+          "Para la mayoría, unas 300-500 kcal al día es prudente",
+          "No bajes más del 1 % del peso por semana, para evitar dañar el metabolismo",
+          "En el estancamiento, revisa primero el registro calórico, en vez de recortar a ciegas"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Hay dos caminos para el déficit: comer menos o moverte más; lo ideal es combinar ambos. Primero calcula el gasto total con [cómo calcular la tasa metabólica basal](/basal-metabolic-rate) y luego fija la ingesta objetivo. Bastante proteína conserva el músculo; ver [cuánta proteína tomar al día](/daily-protein-intake). Dormir bien también estabiliza las hormonas del apetito; ver [la ciencia del ciclo del sueño](/sleep-cycle-explained). Para seguir la grasa, usa [cómo interpretar el porcentaje de grasa corporal](/body-fat-percentage-guide)."
+      },
+      {
+        "type": "callout",
+        "text": "Muchos subestiman lo que comen y sobreestiman lo que gastan; registra con la app tres días con honestidad y a menudo descubrirás que comiste un 20 % de más."
+      },
+      {
+        "type": "h2",
+        "text": "Qué hacer en el estancamiento"
+      },
+      {
+        "type": "p",
+        "text": "Al bajar de peso, el gasto total también baja y el déficit original se reduce solo; esa es la causa fisiológica del estancamiento. Entonces ajusta un poco la dieta o sube el gasto sin ejercicio (más caminar, más estar de pie), en vez de hacer una dieta extrema. Si la intensidad de ejercicio basta, lo juzgas con [iniciación a las zonas de frecuencia cardíaca](/heart-rate-training-zones)."
+      }
+    ],
+    "category": "health"
+  },
+  "daily-protein-intake": {
+    "title": "Cuánta proteína tomar al día: imprescindible para entrenar y para perder grasa",
+    "excerpt": "La proteína decide cuánto músculo conservas y la sensación de saciedad; la ingesta debe basarse en el peso, no en estimaciones al azar.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La proteína es la materia básica de músculos, enzimas y células inmunes. Para un adulto sedentario se recomiendan unas 0,8-1 g por kg de peso al día; en entrenamiento de fuerza o pérdida de grasa hay que subir a 1,6-2,2 g, porque una ingesta mayor conserva músculo, aumenta el efecto térmico de los alimentos y refuerza la saciedad."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo repartirla en las comidas"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "25-40 g de proteína por comida aprovechan mejor la absorción",
+          "El desayuno suele ignorarse; completar proteína reduce los atracones del día",
+          "Completar en las 2 horas tras el ejercicio da mejor resultado",
+          "Combinar proteína vegetal y animal completa los aminoácidos"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Toma un caso de 70 kg en pérdida de grasa: a 1,8 g por kg son unas 126 g de proteína al día, que repartes en tres comidas más un tentempié. Bastante proteína es la clave para no perder músculo en [cómo calcular el déficit calórico para perder grasa](/fat-loss-calorie-deficit), y sostiene la masa muscular de la que depende [cómo calcular la tasa metabólica basal](/basal-metabolic-rate). Para planificar la intensidad de entrenamiento, ver [iniciación a las zonas de frecuencia cardíaca](/heart-rate-training-zones)."
+      },
+      {
+        "type": "callout",
+        "text": "Quien tiene la función renal alterada debe limitar la proteína según el médico; en personas sanas, una dieta alta en proteína no daña claramente los riñones."
+      },
+      {
+        "type": "h2",
+        "text": "Fuentes de proteína de calidad"
+      },
+      {
+        "type": "p",
+        "text": "Pechuga, pescado, huevos, lácteos, tofu y leche de soja son fuentes de calidad; la proteína animal tiene una puntuación de aminoácidos más completa. Si tu dieta es mayormente vegetal, combina cereales y legumbres para complementar. Para entender los cambios de composición corporal, suma [cómo interpretar el porcentaje de grasa corporal](/body-fat-percentage-guide) y [la ciencia del ciclo del sueño](/sleep-cycle-explained)."
+      }
+    ],
+    "category": "health"
+  },
+  "sleep-cycle-explained": {
+    "title": "La ciencia del ciclo del sueño: por qué sigues cansado aunque duermas ocho horas",
+    "excerpt": "La calidad del sueño se mide por los ciclos, no solo por la duración; despertar en la fase equivocada deja aturdido.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "El sueño de un adulto por la noche se compone de 4 a 6 ciclos, cada uno de unos 90 a 110 minutos, que pasan por sueño ligero, sueño profundo y movimiento rápido de ojos (REM). El sueño profundo repara el cuerpo y el REM fija la memoria y las emociones. Si la alarma suena en sueño profundo, aunque hayas dormido ocho horas te levantas aturdido; esa es la causa común de «dormí suficiente y sigo cansado»."
+      },
+      {
+        "type": "h2",
+        "text": "Usa los ciclos para planear el despertar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Cuenta hacia atrás desde el inicio del sueño en múltiplos de 90 minutos",
+          "Por ejemplo, 5 ciclos son unas 7,5 h, y despiertas más despejado que forzando 8 h",
+          "Fijar la hora de levantarse estabiliza más el reloj biológico que fijar la de dormir",
+          "El sueño profundo se concentra en la primera mitad de la noche; trasnochar sacrifica la fase reparadora más valiosa"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Un horario regular afecta más la recuperación que la duración total. El sueño también se liga directamente al metabolismo y el apetito: si duermes poco, sube la grelina y baja la leptina, lo que socava indirectamente [cómo calcular el déficit calórico para perder grasa](/fat-loss-calorie-deficit). Además, la mala recuperación baja el rendimiento de entrenamiento; compáralo con [iniciación a las zonas de frecuencia cardíaca](/heart-rate-training-zones) observando la frecuencia cardíaca en reposo. Para acompañar desde la nutrición, ver [cuánta proteína tomar al día](/daily-protein-intake)."
+      },
+      {
+        "type": "callout",
+        "text": "Una hora antes de dormir, aleja la luz azul y la cafeína; una habitación algo fresca (unos 18-20 °C) favorece el sueño profundo."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo saber si duermes bien"
+      },
+      {
+        "type": "p",
+        "text": "Además de la duración, fíjate en si estás despierto de forma natural de día, si te duermes rápido y si te despiertas a menudo de noche. Anota un diario de sueño dos semanas para ver el patrón. Los indicadores de salud en conjunto también se juzgan con [cómo interpretar el porcentaje de grasa corporal](/body-fat-percentage-guide) y [cómo calcular la tasa metabólica basal](/basal-metabolic-rate)."
+      }
+    ],
+    "category": "health"
+  },
+  "percentage-increase-decrease": {
+    "title": "Cómo calcular el aumento y la bajada porcentual: por qué tras subir y bajar no vuelves al punto de partida",
+    "excerpt": "La base del porcentaje cambia: subir un 50 % y luego bajar un 50 % da pérdida, no equilibrio.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "El mayor error al calcular aumentos y bajadas está en la «base». Las subidas y bajadas se miden sobre el valor actual; cambia la base y el mismo porcentaje representa otra cantidad absoluta. Por ejemplo, un producto sube un 50 % a 150 yuanes, y luego baja un 50 % sobre esos 150, quedando en 75 yuanes, no en 100. Subir y bajar el mismo porcentaje siempre queda por debajo del inicio."
+      },
+      {
+        "type": "h2",
+        "text": "Fórmulas estándar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Tasa de crecimiento = (valor nuevo − valor original) ÷ valor original × 100 %",
+          "La tasa de bajada también usa el valor original como denominador, no el nuevo",
+          "Cambios seguidos usan multiplicación: final = original × (1+10 %) × (1−10 %)",
+          "Para volver al inicio, el % a subir debe ser mayor que el % que bajó"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Esta ilusión es muy común en inversiones y descuentos: tras bajar un 20 %, la acción necesita subir un 25 % para recuperarse. Entendida la base, al ver [media, mediana y moda](/mean-median-mode) también evitas que te engañe el «aumento medio». Para conversiones de descuentos y proporciones, ver [proporciones y dosificación en la práctica](/ratio-and-scaling). Trucos de cálculo mental diario en [trucos mentales con porcentajes](/mental-percentage-tricks)."
+      },
+      {
+        "type": "callout",
+        "text": "Si en las noticias dicen «sube un 30 %» sin base, puede ser solo de 100 a 130; mira siempre primero cuál es el denominador."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo tratar porcentajes seguidos"
+      },
+      {
+        "type": "p",
+        "text": "Varios cambios no se suman ni restan a simple; hay que multiplicar los factores. Por ejemplo, dos años con +10 % y −10 % dan 1,1×0,9 = 0,99 del valor original, es decir una bajada neta del 1 %. Esto se entiende igual que el error acumulado en [redondeo y cifras significativas](/rounding-significant-figures): cuantas más medidas, más se suma el error en silencio."
+      }
+    ],
+    "category": "math"
+  },
+  "unit-conversion-pitfalls": {
+    "title": "Trampas de la conversión de unidades: no uses el mismo coeficiente para longitud, área y volumen",
+    "excerpt": "Centímetro y metro difieren por 100, pero cm² y m² por 10 000; la conversión de área y volumen es donde más se falla.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Convertir unidades es una operación cotidiana, pero muchos aplican el coeficiente de longitud directo al área y al volumen. Un metro son 100 cm, eso es longitud; pero un m² son 100×100, es decir 10 000 cm², por la relación al cuadrado. El volumen es más extremo: un m³ son 1 000 000 de cm³. Usar mal el coeficiente de dimensión desvía el resultado por órdenes de magnitud."
+      },
+      {
+        "type": "h2",
+        "text": "Aplica el coeficiente según la dimensión"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Longitud: 1 m = 100 cm (×100)",
+          "Área: 1 m² = 10 000 cm² (×100²)",
+          "Volumen: 1 m³ = 1 000 000 cm³ (×100³)",
+          "Para convertir velocidad hay que tratar numerador y denominador a la vez"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La conversión de gramos y tazas en cocina también es un polvorín; ver [cómo convertir gramos y tazas](/grams-to-cups). La precisión de la conversión de magnitudes físicas también toca [redondeo y cifras significativas](/rounding-significant-figures): demasiados decimales finge precisión y muy pocos distorsiona. Al escalar recetas, úsalo con [proporciones y dosificación en la práctica](/ratio-and-scaling) para entender los múltiplos."
+      },
+      {
+        "type": "callout",
+        "text": "Antes de convertir, escribe las unidades y luego calcula: para pasar cm/s a m/h, trata longitud y tiempo por separado; no los mezcles en la cabeza."
+      },
+      {
+        "type": "h2",
+        "text": "Trampas de velocidad y tiempo"
+      },
+      {
+        "type": "p",
+        "text": "Un error común es tomar «km/h» directamente como «m/s». Lo correcto es 1 km/h = 1 000 m / 3 600 s ≈ 0,278 m/s. En estos casos donde cambian dos unidades a la vez, aplica la fórmula paso a paso y no vayas por intuición. Para juzgar la proporción deprisa, suma [trucos mentales con porcentajes](/mental-percentage-tricks) para estimar el orden de magnitud."
+      }
+    ],
+    "category": "math"
+  },
+  "ratio-and-scaling": {
+    "title": "Proporciones y dosificación en la práctica: por qué un plato duplicado cambia de sabor",
+    "excerpt": "El escalado lineal sirve para ingredientes secos y húmedos, pero sal, especias y fermentación son no lineales y hay que juzgarlas aparte.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La proporción expresa la relación de múltiplo entre dos cantidades; la dosificación es común en recetas y mezclas. Pasar una receta de 4 a 2 porciones multiplicando por 0,5 parece simple, pero algunos componentes no varían en lineal con el número de comensales: sal, guindilla y especias dependen del gusto subjetivo y al duplicar pueden quedar demasiado salados; el tiempo de reposo de una masa fermentada depende más del volumen total y la temperatura que de una simple proporción."
+      },
+      {
+        "type": "h2",
+        "text": "La forma correcta de dosificar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Primero busca la «cantidad base» y expresa el resto en relación a ella",
+          "Unifica unidades antes de comparar; evita mezclar gramos y mililitros",
+          "Tras escalar, conserva cifras significativas razonables; no escribas 1,3333 g",
+          "Mejor añade los condimentos en tandas y ajusta probando"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "En la práctica, los sólidos principales se escalan por proporción; para líquidos y condimentos conviene seguir la proporción pero dejar margen de ajuste. Esto va de la mano de la conversión volumen-peso en [cómo convertir gramos y tazas](/grams-to-cups) y de la noción de dimensión en [las trampas de la conversión de unidades](/unit-conversion-pitfalls). Si reportas el resultado como estadística, ver [media, mediana y moda](/mean-median-mode) para elegir el valor central adecuado."
+      },
+      {
+        "type": "callout",
+        "text": "La repostería depende más que el saltear de una dosificación precisa; una pequeña desviación en la proporción de harina, agua y levadura puede fallar; sé más cuidadoso al escalar."
+      },
+      {
+        "type": "h2",
+        "text": "Concentración y dilución"
+      },
+      {
+        "type": "p",
+        "text": "Diluir desinfectante o pesticida es en el fondo un problema de proporción: la dosificación 1:100 significa una parte de concentrado por cien de agua. Confundir «1:100» con «un 1 %» puede causar un accidente. Para estimar el factor de dilución usa [trucos mentales con porcentajes](/mental-percentage-tricks), y la precisión de la medida vuelve a [redondeo y cifras significativas](/rounding-significant-figures)."
+      }
+    ],
+    "category": "math"
+  },
+  "mean-median-mode": {
+    "title": "Media, mediana y moda: antes de dejarte «promediar», mira la distribución",
+    "excerpt": "Cuando unos pocos inflan el salario medio, la mediana representa mejor el nivel real de la gente corriente.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Para describir el «centro» de un conjunto de datos hay tres indicadores comunes. La media es la suma dividida por la cantidad y la más sensible a los valores extremos; la mediana es el valor central al ordenar y es inmune a los extremos; la moda es el valor que más se repite. Elegir mal el indicador puede dar la conclusión opuesta; de ahí viene lo de «quedarse promediado»."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo elegir entre los tres"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Ingresos, precios de vivienda y otros datos sesgados: la mediana es más real",
+          "Expedientes: si quieres premiar el nivel general, mira la media",
+          "Tallas de ropa u opciones más vendidas: usa la moda",
+          "Cuanto mayor la diferencia entre los tres, más desigual es la distribución"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Por ejemplo, si 9 de 10 ganan 8 000 al mes y uno gana 80 000, la media es unas 15 000, pero la mediana es 8 000: esta última se acerca a la sensación de la mayoría. Entender esto evita que te engañe el «aumento medio» en [cómo calcular el aumento y la bajada porcentual](/percentage-increase-decrease). Al reportar resultados estadísticos, cuida también la precisión; ver [redondeo y cifras significativas](/rounding-significant-figures)."
+      },
+      {
+        "type": "callout",
+        "text": "Ante una «media», pregunta primero por la distribución: si hay pocos valores extremos, la mediana suele ser más útil que la media."
+      },
+      {
+        "type": "h2",
+        "text": "Casos de uso reales"
+      },
+      {
+        "type": "p",
+        "text": "En estadísticas comerciales y nacionales, la mediana de ingresos y la mediana de precios de vivienda se publican primero precisamente por su resistencia a ruido. En un informe de investigación, conviene dar a la vez media y mediana y explicar la diferencia. Para ordenar datos de dosificación, suma [proporciones y dosificación en la práctica](/ratio-and-scaling); y para estimar deprisa, usa [trucos mentales con porcentajes](/mental-percentage-tricks)."
+      }
+    ],
+    "category": "math"
+  },
+  "rounding-significant-figures": {
+    "title": "Redondeo y cifras significativas: un decimal de más puede ser falsa precisión",
+    "excerpt": "Las cifras significativas de una medida las fija la precisión del instrumento; conservar decimales a ciegas engaña.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "El redondeo parece simple, pero lo difícil es «cuántos conservar». Las cifras significativas son todos los dígitos fiables desde el primer no cero, y reflejan la precisión real de la medida. Pesar 52,317 g en una báscula que solo llega al gramo es absurdo, porque la báscula tiene solo dos cifras significativas; los dígitos de más son pura imaginación."
+      },
+      {
+        "type": "h2",
+        "text": "Reglas y errores comunes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Para redondear, mira el dígito siguiente; si llega a 5, suma uno",
+          "Si el valor es exactamente 5 y lo demás son ceros, el redondeo bancario va al par más cercano",
+          "En suma y resta, los decimales no superan al término menos preciso",
+          "En multiplicación y división, las cifras significativas no superan a la cifra significativa menor"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Muchos errores de cálculo vienen de no ser sensibles a la precisión: multiplicar 1,2 m (dos cifras significativas) por 3,45 m da 4,140 m, pero en realidad debe quedar en 4,1 m. Esto se parece a la suma de coeficientes de dimensión en [las trampas de la conversión de unidades](/unit-conversion-pitfalls): cuantas más operaciones, más se acumula el error. La precisión en dosificación y escalado está en [proporciones y dosificación en la práctica](/ratio-and-scaling)."
+      },
+      {
+        "type": "callout",
+        "text": "Las cifras significativas del resultado no deben superar a las del dato original menos preciso; ese es el origen más común de la «falsa precisión»."
+      },
+      {
+        "type": "h2",
+        "text": "Compromisos en ingeniería y en el día a día"
+      },
+      {
+        "type": "p",
+        "text": "En el día a día no hace falta perseguir decimales largos: en una receta, escribir 1,3 g es más honesto y útil que 1,3333 g. Pero en finanzas y ciencia hay que conservar según la norma. Para estimar deprisa, suma [trucos mentales con porcentajes](/mental-percentage-tricks) para fijar el orden de magnitud y luego decidir cuántos conservar. Para descripción estadística, ver [media, mediana y moda](/mean-median-mode)."
+      }
+    ],
+    "category": "math"
+  }
+}

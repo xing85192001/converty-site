@@ -5,14 +5,22 @@ import { useMemo, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { categories, getCategoryBySlug } from "@/lib/registry/categories";
 import { getConvertersByCategoryGrouped } from "@/lib/registry/converters";
+import { blogPosts } from "@/lib/blog/posts";
 import { cn } from "@/lib/utils";
 
 export function CategoryView({ categorySlug }: { categorySlug: string }) {
 	const t = useTranslations("common");
 	const nav = useTranslations("nav");
 	const tc = useTranslations("converter");
+	const tcat = useTranslations("category");
+	const tb = useTranslations("blog.posts");
 	const category = getCategoryBySlug(categorySlug);
 	const grouped = getConvertersByCategoryGrouped(category?.id ?? categorySlug);
+	const catDesc = tcat(`${category?.id}.description`);
+	const catIntro = tcat(`${category?.id}.intro`);
+	const description =
+		catDesc && catDesc !== `${category?.id}.description` ? catDesc : category?.description ?? "";
+	const relatedPosts = blogPosts.filter((p) => p.category === category?.id);
 
 	const [query, setQuery] = useState("");
 	const [drawerOpen, setDrawerOpen] = useState(false);
@@ -159,7 +167,12 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 							</h1>
 						</div>
 					</div>
-					<p className="mb-4 text-muted-foreground">{category.description}</p>
+					<p className="mb-4 text-muted-foreground">{description}</p>
+					{catIntro && catIntro !== `${category?.id}.intro` && (
+						<div className="mb-6 rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground">
+							{catIntro}
+						</div>
+					)}
 
 					<div className="relative mb-4 max-w-md">
 						<input
@@ -203,6 +216,26 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 							</p>
 						)}
 					</div>
+
+					{/* Related articles (content cluster -> internal links) */}
+					{relatedPosts.length > 0 && (
+						<div className="mt-8 border-t border-border pt-6">
+							<h2 className="mb-3 text-base font-semibold">{t("relatedArticles")}</h2>
+							<ul className="grid gap-2 sm:grid-cols-2">
+								{relatedPosts.map((p) => (
+									<li key={p.slug}>
+										<Link
+											href={`/blog/${p.slug}`}
+											className="block rounded-xl border border-border bg-card p-3 text-sm transition-colors hover:border-primary"
+										>
+											<span className="font-medium">{tb(`${p.slug}.title`)}</span>
+											<span className="ml-2 text-xs text-muted-foreground">{p.readingMinutes} min</span>
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+					)}
 
 					{/* Related categories + sitemap (contextual internal links) */}
 					<div className="mt-8 border-t border-border pt-6">

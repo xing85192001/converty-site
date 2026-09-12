@@ -1,0 +1,27 @@
+# 自动化：baikecalc.com IndexNow URL 推送
+
+## 任务概要
+在 `C:/Users/admin/Desktop/kaifa/converty-site` 运行 `node seo-push.mjs`，把全站 URL 通过 IndexNow 推送给 Bing / Yandex / Seznam。
+
+## 执行记录
+
+### 2026-09-01 01:25（首次运行，成功）
+- 前置检查：https://baikecalc.com 返回 200；key 文件 `https://baikecalc.com/e766f0006821d88c4e25afc855c2e9e0.txt` 返回 200，内容等于 key 本身 → 校验通过。
+- 执行结果：收集 **1646** 个 URL（源自 out/ 目录）→ IndexNow 返回 **200**（提交成功）。
+- 已知非故障：百度推送 `fetch failed`（站点无 ICP 备案，百度 API 配额为 0），无需处理。
+
+## 复用的检查清单
+1. `curl -o /dev/null -w "%{http_code}" -L https://baikecalc.com/` 应为 200。
+2. key 文件内容必须严格等于 `e766f0006821d88c4e25afc855c2e9e0`（无换行/BOM），否则 IndexNow 会返回 403。
+3. 成功判据：`[seo-push] IndexNow -> 200`。
+4. 返回 `403` = key 文件校验失败；`429` = 限流，属正常，无需处理。
+
+### 2026-09-07 13:07（第二次运行，成功）
+- 前置检查：站点 200；key 文件 200 且内容严格等于 key → 校验通过。
+- 执行结果：收集 **1646** 个 URL → IndexNow 返回 **200**（提交成功）。
+- 已知非故障：百度推送 `fetch failed`（无 ICP 备案，配额 0），未处理。
+- URL 数量与上次持平（1646），站点页面数无变化。
+
+## 备注
+- 脚本会读取 `.env`（INDEXNOW_KEY / BAIDU_SITE / BAIDU_TOKEN），缺失凭证的通道自动跳过。
+- URL 数量随站点页面增长而变化（本次 1646），可作为后续对比基线。

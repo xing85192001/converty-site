@@ -24,7 +24,139 @@ export interface LocalizedBlogPost extends BlogPostBase {
 	blocks: BlogBlock[];
 }
 
-export const blogPosts: BlogPostBase[] = [
+export const blogPosts: BlogPostBase[] = [	{
+		slug: "recipe-scaling-basics",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 6,
+	},
+	{
+		slug: "measuring-cups-spoons-standard",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 5,
+	},
+	{
+		slug: "nutrition-conversion-guide",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 6,
+	},
+	{
+		slug: "cost-per-serving",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 5,
+	},
+	{
+		slug: "grams-to-cups",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 6,
+	},
+	{
+		slug: "common-conversion-mistakes",
+		date: "2026-09-11",
+		category: "cooking",
+		readingMinutes: 5,
+	},
+	{
+		slug: "compare-loan-interest-rates",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 6,
+	},
+	{
+		slug: "early-loan-repayment-strategy",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "compound-interest-investing",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 6,
+	},
+	{
+		slug: "build-emergency-fund",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "currency-exchange-tips",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 5,
+	},
+	{
+		slug: "personal-tax-basics",
+		date: "2026-09-11",
+		category: "finance",
+		readingMinutes: 6,
+	},
+	{
+		slug: "body-fat-percentage-guide",
+		date: "2026-09-11",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "basal-metabolic-rate",
+		date: "2026-09-11",
+		category: "health",
+		readingMinutes: 5,
+	},
+	{
+		slug: "fat-loss-calorie-deficit",
+		date: "2026-09-11",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "daily-protein-intake",
+		date: "2026-09-11",
+		category: "health",
+		readingMinutes: 5,
+	},
+	{
+		slug: "sleep-cycle-explained",
+		date: "2026-09-11",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "percentage-increase-decrease",
+		date: "2026-09-11",
+		category: "math",
+		readingMinutes: 5,
+	},
+	{
+		slug: "unit-conversion-pitfalls",
+		date: "2026-09-11",
+		category: "math",
+		readingMinutes: 6,
+	},
+	{
+		slug: "ratio-and-scaling",
+		date: "2026-09-11",
+		category: "math",
+		readingMinutes: 5,
+	},
+	{
+		slug: "mean-median-mode",
+		date: "2026-09-11",
+		category: "math",
+		readingMinutes: 5,
+	},
+	{
+		slug: "rounding-significant-figures",
+		date: "2026-09-11",
+		category: "math",
+		readingMinutes: 6,
+	},
+
 	{
 		slug: "50-30-20-budget",
 		date: "2026-08-11",
