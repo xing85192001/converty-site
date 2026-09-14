@@ -62,7 +62,7 @@
     },
     "metadata": {
       "titleSuffix": "baikecalc",
-      "defaultDescription": "Calculadoras y convertidores en línea gratuitos para las necesidades diarias"
+      "defaultDescription": "baikecalc ofrece más de 190 calculadoras y convertidores en línea gratuitos para finanzas, salud, matemáticas, color, cocina, cripto y medios. Rápido, preciso y privado, sin registro."
     },
     "cookieConsent": {
       "title": "Valoramos tu privacidad",
@@ -119,7 +119,7 @@
     },
     "videoWatermark": {
       "title": "Eliminador de marca de agua de video",
-      "desc": "Sube un video y selecciona el área de la marca de agua. Procesamiento IA en el navegador. Soporta MP4 / MOV / WebM.",
+      "desc": "Sube un video y selecciona el área de la marca de agua. Procesamiento IA en el navegador. Soporta MP4 / MOV / WebM. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir vídeo\" para elegir un archivo MP4, MOV o WebM local, o arrastra el archivo al área.",
@@ -150,7 +150,7 @@
     },
     "imageWatermark": {
       "title": "Eliminador de marca de agua de imagen",
-      "desc": "Selecciona el área de la marca de agua. Eliminación inteligente con IA. Soporta JPG / PNG / WEBP.",
+      "desc": "Selecciona el área de la marca de agua. Eliminación inteligente con IA. Soporta JPG / PNG / WEBP. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" para elegir un JPG, PNG o WEBP local, o arrástrala al área.",
@@ -181,7 +181,7 @@
     },
     "ico": {
       "title": "Convertidor de iconos ICO",
-      "desc": "Convierte imágenes a .ico con empaquetado de múltiples tamaños (16/32/64/128/256px).",
+      "desc": "Convierte imágenes a .ico con empaquetado de múltiples tamaños (16/32/64/128/256px). Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" y elige un PNG o JPG (una imagen cuadrada y nítida da el mejor resultado).",
@@ -212,7 +212,7 @@
     },
     "formatConvert": {
       "title": "Convertidor de formato de imagen",
-      "desc": "Conversión por lotes PNG / JPG / WEBP / BMP / GIF.",
+      "desc": "Conversión por lotes PNG / JPG / WEBP / BMP / GIF. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" para seleccionar varias PNG / JPG / WEBP / BMP / GIF a la vez.",
@@ -243,7 +243,7 @@
     },
     "imageCompress": {
       "title": "Compresor de imágenes",
-      "desc": "Compresión con o sin pérdida. Reduce el tamaño del archivo conservando la calidad.",
+      "desc": "Compresión con o sin pérdida. Reduce el tamaño del archivo conservando la calidad. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" y elige JPG / PNG / WEBP (admite lote).",
@@ -274,7 +274,7 @@
     },
     "videoCompress": {
       "title": "Compresor de video",
-      "desc": "Ajusta resolución y bitrate para reducir rápidamente el tamaño del video.",
+      "desc": "Ajusta resolución y bitrate para reducir rápidamente el tamaño del video. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir vídeo\" y elige MP4 / MOV / WebM.",
@@ -305,7 +305,7 @@
     },
     "imageUpscale": {
       "title": "Ampliador de imágenes",
-      "desc": "Superresolución con IA — haz que las imágenes borrosas se vean nítidas.",
+      "desc": "Superresolución con IA — haz que las imágenes borrosas se vean nítidas. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" y elige un JPG / PNG / WEBP para ampliar.",
@@ -342,7 +342,7 @@
       "mergeBtn": "Fusionar en PDF",
       "downloadBtn": "Descargar PDF",
       "title": "Imagen a PDF",
-      "desc": "Combina varias imágenes en un solo archivo PDF.",
+      "desc": "Combina varias imágenes en un solo archivo PDF. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir imagen\" para elegir varias JPG / PNG / WEBP a la vez.",
@@ -501,7 +501,7 @@
       "errorEmpty": "El archivo de salida está vacío",
       "errorNetwork": "Error de red: no se pudo descargar el núcleo de procesamiento. Verifique su conexión y vuelva a intentarlo.",
       "errorFailed": "Error de conversión. Vuelva a intentarlo.",
-      "desc": "Sube un vídeo, ajusta FPS y ancho y conviértelo en un GIF animado con un solo clic.",
+      "desc": "Sube un vídeo, ajusta FPS y ancho y conviértelo en un GIF animado con un solo clic. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Haz clic en \"Subir vídeo\" y elige MP4 / MOV / WebM.",
@@ -535,35 +535,35 @@
   "nav": {
     "color": {
       "name": "Color",
-      "description": "Conversión de color y paletas"
+      "description": "Color: Conversión de color y paletas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "cooking": {
       "name": "Cocina",
-      "description": "Cocina y recetas"
+      "description": "Cocina: Cocina y recetas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "crypto": {
       "name": "Criptomonedas",
-      "description": "Cripto y minería"
+      "description": "Criptomonedas: Cripto y minería Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "data": {
       "name": "Datos",
-      "description": "Datos y ancho de banda"
+      "description": "Datos: Datos y ancho de banda Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "datetime": {
       "name": "Fecha y Hora",
-      "description": "Fechas y tiempos"
+      "description": "Fecha y Hora: Fechas y tiempos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "finance": {
       "name": "Finanzas",
-      "description": "Calculadoras financieras"
+      "description": "Finanzas: Calculadoras financieras Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "health": {
       "name": "Salud",
-      "description": "Salud y fitness"
+      "description": "Salud: Salud y fitness Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "infrastructure": {
       "name": "Infraestructura",
-      "description": "IT y virtualización",
+      "description": "Infraestructura: IT y virtualización Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hiper-V",
@@ -574,7 +574,7 @@
     },
     "engineering": {
       "name": "Ingeniería",
-      "description": "Ingeniería y física",
+      "description": "Ingeniería: Ingeniería y física Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "subcategories": {
         "structural": "estructural",
         "materials": "Materiales",
@@ -584,7 +584,7 @@
     },
     "chemistry": {
       "name": "Química",
-      "description": "Calculadoras de química",
+      "description": "Química: Calculadoras de química Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "subcategories": {
         "general": "generales",
         "solutions": "Soluciones",
@@ -594,40 +594,40 @@
     },
     "math": {
       "name": "Matemáticas",
-      "description": "Calculadoras matemáticas"
+      "description": "Matemáticas: Calculadoras matemáticas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "music": {
       "name": "Música",
-      "description": "Audio y música",
+      "description": "Música: Audio y música Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "comingSoon": "¡Próximamente calculadoras de música!"
     },
     "network": {
       "name": "Redes",
-      "description": "Herramientas de red"
+      "description": "Redes: Herramientas de red Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "photo": {
       "name": "Fotografía",
-      "description": "Herramientas para fotos"
+      "description": "Fotografía: Herramientas para fotos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "physics": {
       "name": "Física",
-      "description": "Física y mecánica"
+      "description": "Física: Física y mecánica Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "realestate": {
       "name": "Inmobiliario",
-      "description": "Hipotecas y alquiler"
+      "description": "Inmobiliario: Hipotecas y alquiler Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "video": {
       "name": "Vídeo",
-      "description": "Herramientas para vídeo"
+      "description": "Vídeo: Herramientas para vídeo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "web": {
       "name": "Web",
-      "description": "Herramientas web y SEO"
+      "description": "Web: Herramientas web y SEO Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "automotive": {
       "name": "Automoción",
-      "description": "Calculadoras para combustible, neumáticos, mantenimiento y financiación"
+      "description": "Automoción: Calculadoras para combustible, neumáticos, mantenimiento y financiación Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos."
     },
     "subcategories": {
       "date-time": "Fecha y hora",
@@ -682,7 +682,7 @@
     "bmi": {
       "name": "IMC",
       "description": "Calcula tu Índice de Masa Corporal y categoría de salud",
-      "metaDescription": "Calcula tu Índice de Masa Corporal (IMC) y comprende tu categoría de salud",
+      "metaDescription": "IMC: Calcula tu Índice de Masa Corporal y categoría de salud Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige el sistema de unidades: métrico (centímetros / kilogramos) o imperial (pies y pulgadas / libras).",
@@ -749,7 +749,7 @@
     "corpulence": {
       "name": "Corpulencia",
       "description": "Calcula tu Índice de Corpulencia (Índice Ponderal)",
-      "metaDescription": "Calcule su Índice Ponderal para una evaluación de la composición corporal más precisa",
+      "metaDescription": "Corpulencia: Calcula tu Índice de Corpulencia (Índice Ponderal) Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce altura y peso, y edad y sexo si la formula los requiere.",
@@ -924,7 +924,7 @@
     "age": {
       "name": "Edad",
       "description": "Calcule la edad exacta desde la fecha de nacimiento en años, meses y días.",
-      "metaDescription": "Calcula tu edad exacta en años, meses, días, horas y minutos.",
+      "metaDescription": "Edad: Calcule la edad exacta desde la fecha de nacimiento en años, meses y días. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la fecha de nacimiento (A/M/D); añade la hora para más precisión.",
@@ -956,7 +956,7 @@
     "date": {
       "name": "Fecha",
       "description": "Sumar o restar días, semanas, meses y años a una fecha",
-      "metaDescription": "Sumar o restar períodos de tiempo de cualquier fecha",
+      "metaDescription": "Fecha: Sumar o restar días, semanas, meses y años a una fecha Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce una fecha de inicio y elige sumar o restar.",
@@ -988,7 +988,7 @@
     "time": {
       "name": "Tiempo",
       "description": "Sumar o restar horas, minutos y segundos",
-      "metaDescription": "Realizar cálculos de tiempo con horas, minutos y segundos.",
+      "metaDescription": "Tiempo: Sumar o restar horas, minutos y segundos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el tiempo del día, incluyendo horas, minutos, segundos.",
@@ -1087,7 +1087,7 @@
     "hours": {
       "name": "Horas",
       "description": "Calcular horas entre dos horas o fechas.",
-      "metaDescription": "Calcular el número de horas entre dos horas o fechas.",
+      "metaDescription": "Horas: Calcular horas entre dos horas o fechas. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el tiempo en forma de \"horas + minutos\", o el valor de hora de un decimal.",
@@ -1174,7 +1174,7 @@
     "time-duration": {
       "name": "Duración de Tiempo",
       "description": "Calcula la duración entre dos fechas y horas",
-      "metaDescription": "Calculadora de duración",
+      "metaDescription": "Duración de Tiempo: Calcula la duración entre dos fechas y horas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce una hora de inicio y una de fin, con la fecha si cruzan la medianoche.",
@@ -1206,7 +1206,7 @@
     "time-zone": {
       "name": "Huso horario",
       "description": "Convertir horas entre diferentes zonas horarias",
-      "metaDescription": "Convierta horas en diferentes zonas horarias en todo el mundo",
+      "metaDescription": "Huso horario: Convertir horas entre diferentes zonas horarias Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige zona origen y destino (ciudades y offsets UTC).",
@@ -1238,7 +1238,7 @@
     "day-counter": {
       "name": "Contador de días",
       "description": "Contar días entre fechas o hasta una fecha futura",
-      "metaDescription": "Cuente los días entre dos fechas o hasta un próximo evento",
+      "metaDescription": "Contador de días: Contar días entre fechas o hasta una fecha futura Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingrese la fecha de inicio y la fecha final (con o sin puntos finales).",
@@ -1331,7 +1331,7 @@
     "day-of-week": {
       "name": "Día de la semana",
       "description": "Encuentra en qué día de la semana cae cualquier fecha",
-      "metaDescription": "Descubra en qué día de la semana cae cualquier fecha",
+      "metaDescription": "Día de la semana: Encuentra en qué día de la semana cae cualquier fecha Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce cualquier fecha del calendario que te interese.",
@@ -1363,7 +1363,7 @@
     "duration-converter": {
       "name": "Convertidor de Duración",
       "description": "Convierte unidades de tiempo: segundos, minutos, horas, días, semanas, meses, años",
-      "metaDescription": "Convertidor de unidades de tiempo",
+      "metaDescription": "Convertidor de Duración: Convierte unidades de tiempo: segundos, minutos, horas, días, semanas, meses, años Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce una duracion en una unidad, como dias, horas o minutos.",
@@ -1395,7 +1395,7 @@
     "rgb": {
       "name": "Convertidor RGB",
       "description": "Convierta entre formatos de color RGB, HEX, HSL y CMYK",
-      "metaDescription": "Convierta colores entre formatos RGB, HEX, HSL y CMYK",
+      "metaDescription": "Convertidor RGB: Convierta entre formatos de color RGB, HEX, HSL y CMYK Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce valores del 0 al 255 para rojo, verde y azul.",
@@ -1427,7 +1427,7 @@
     "data-size": {
       "name": "Tamaño de datos",
       "description": "Convierte entre bytes, KB, MB, GB, TB y más",
-      "metaDescription": "Convierta tamaños de datos entre bytes, kilobytes, megabytes y más",
+      "metaDescription": "Tamaño de datos: Convierte entre bytes, KB, MB, GB, TB y más Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca los valores bytes, KB, MB, GB o TB.",
@@ -1508,7 +1508,7 @@
     "bandwidth": {
       "name": "Convertidor de ancho de banda",
       "description": "Convierta Mbps a KB/s, GB/día, TB/semana y más",
-      "metaDescription": "Convertir ancho de banda entre diferentes unidades",
+      "metaDescription": "Convertidor de ancho de banda: Convierta Mbps a KB/s, GB/día, TB/semana y más Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el valor ancho de banda y sus unidades (bps, Kbps, Mbps, Gbps).",
@@ -1595,7 +1595,7 @@
     "download-calculator": {
       "name": "Descargar",
       "description": "Calcule el tiempo de descarga a partir del ancho de banda y el tamaño del archivo",
-      "metaDescription": "Calcule cuánto tiempo tomará la descarga de un archivo",
+      "metaDescription": "Descargar: Calcule el tiempo de descarga a partir del ancho de banda y el tamaño del archivo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el tamaño (p. ej. 500 MB) y tu ancho de banda (p. ej. 100 Mbps).",
@@ -1999,7 +1999,7 @@
     "speed": {
       "name": "Convertidor de velocidad",
       "description": "Convierte entre m/s, km/h, mph, nudos y más",
-      "metaDescription": "Convierta la velocidad entre metros por segundo, km/h, mph y más",
+      "metaDescription": "Convertidor de velocidad: Convierte entre m/s, km/h, mph, nudos y más Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingresa el valor de velocidad y selecciona la unidad actual, como metros por segundo o millas por hora.",
@@ -2032,7 +2032,7 @@
     "aspect-ratio": {
       "name": "Relación de aspecto",
       "description": "Calcular relaciones de aspecto a partir del ancho y el alto.",
-      "metaDescription": "Calcula y convierte relaciones de aspecto para imágenes y videos.",
+      "metaDescription": "Relación de aspecto: Calcular relaciones de aspecto a partir del ancho y el alto. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce ancho y alto originales o elige un ajuste común como 16:9.",
@@ -2064,7 +2064,7 @@
     "aspect-fit": {
       "name": "Ajuste de aspecto",
       "description": "Ajustar una imagen en una pantalla con formato letterboxing",
-      "metaDescription": "Calcule el formato letterboxing y pillarboxing para el ajuste de imágenes",
+      "metaDescription": "Ajuste de aspecto: Ajustar una imagen en una pantalla con formato letterboxing Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el ancho y alto original de tu imagen o vídeo.",
@@ -2096,7 +2096,7 @@
     "composition": {
       "name": "Composición",
       "description": "Calcular el campo de visión a partir de la distancia focal y la distancia.",
-      "metaDescription": "Calculadora de composición gratis en línea. Obtén puntos de tercios y proporción áurea para cualquier tamaño, sin registro.",
+      "metaDescription": "Composición: Calcular el campo de visión a partir de la distancia focal y la distancia. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige una regla de composición (regla de tercios, proporción áurea, etc.).",
@@ -2128,7 +2128,7 @@
     "depth-of-field": {
       "name": "Profundidad de campo",
       "description": "Calcule DoF a partir de apertura, distancia focal y distancia",
-      "metaDescription": "Calculadora de profundidad de campo gratis en línea. Halla límites cercano y lejano y bokeh para cualquier lente, sin registro.",
+      "metaDescription": "Profundidad de campo: Calcule DoF a partir de apertura, distancia focal y distancia Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Pon la cámara en prioridad de apertura o manual y elige un f-stop.",
@@ -2160,7 +2160,7 @@
     "dpi": {
       "name": "PPP",
       "description": "Calcule megapíxeles a partir del tamaño de impresión y DPI",
-      "metaDescription": "Calcular DPI y resolución para imprimir.",
+      "metaDescription": "PPP: Calcule megapíxeles a partir del tamaño de impresión y DPI Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige la dirección: tamaño → DPI o DPI → tamaño de impresión.",
@@ -2192,7 +2192,7 @@
     "image-filesize": {
       "name": "Tamaño del archivo de imagen",
       "description": "Estimar el tamaño del archivo de imagen para formatos JPEG, PNG y RAW",
-      "metaDescription": "Calcule el tamaño de los archivos de imagen para diferentes formatos",
+      "metaDescription": "Tamaño del archivo de imagen: Estimar el tamaño del archivo de imagen para formatos JPEG, PNG y RAW Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige el tipo: foto (JPEG), transparente (PNG) o crudo (RAW).",
@@ -2224,7 +2224,7 @@
     "light-ev": {
       "name": "Vehículo eléctrico ligero",
       "description": "Calcular el valor de exposición a partir de la configuración de la cámara",
-      "metaDescription": "Calcular el valor de exposición a partir de la configuración de la cámara",
+      "metaDescription": "Vehículo eléctrico ligero: Calcular el valor de exposición a partir de la configuración de la cámara Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el radio (f), velocidad de puerta rápida e ISO.",
@@ -2323,7 +2323,7 @@
     "megapixels": {
       "name": "megapíxel",
       "description": "Calcular megapíxeles a partir de ancho y alto.",
-      "metaDescription": "Calcular megapíxeles a partir de las dimensiones de la imagen.",
+      "metaDescription": "megapíxel: Calcular megapíxeles a partir de ancho y alto. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce ancho y alto del sensor en píxeles o elige una especificación.",
@@ -2355,7 +2355,7 @@
     "megapixel-aspects": {
       "name": "Aspectos megapíxeles",
       "description": "Ver megapíxeles en diferentes relaciones de aspecto",
-      "metaDescription": "Ver recuentos de megapíxeles en diferentes relaciones de aspecto",
+      "metaDescription": "Aspectos megapíxeles: Ver megapíxeles en diferentes relaciones de aspecto Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el total de millones de píxeles (MP) de un sensor o imagen.",
@@ -2436,7 +2436,7 @@
     "portrait-distance": {
       "name": "Distancia vertical",
       "description": "Calcule la distancia de disparo ideal para retratos",
-      "metaDescription": "Calcula la distancia ideal para la fotografía de retratos.",
+      "metaDescription": "Distancia vertical: Calcule la distancia de disparo ideal para retratos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la longitud focal del objetivo y la altura del sensor de cámara.",
@@ -2511,7 +2511,7 @@
     "star-trails": {
       "name": "Senderos de estrellas",
       "description": "Calcular el tiempo de exposición para la rotación del rastro de estrellas.",
-      "metaDescription": "Calcular tiempos de exposición para fotografía de rastros de estrellas",
+      "metaDescription": "Senderos de estrellas: Calcular el tiempo de exposición para la rotación del rastro de estrellas. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la longitud focal de la lente y el coeficiente de escucha de la cámara.",
@@ -2586,7 +2586,7 @@
     "spot-stars": {
       "name": "Estrellas puntuales",
       "description": "Calcule la exposición máxima para evitar el seguimiento de estrellas (Regla NPF)",
-      "metaDescription": "Calcula el tiempo máximo de exposición para estrellas nítidas",
+      "metaDescription": "Estrellas puntuales: Calcule la exposición máxima para evitar el seguimiento de estrellas (Regla NPF) Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca longitud focal, abertura y espaciamiento de píxel sensor.",
@@ -2673,7 +2673,7 @@
     "time-lapse": {
       "name": "Lapso de tiempo",
       "description": "Calcule el intervalo, la duración del clip y la memoria para el lapso de tiempo",
-      "metaDescription": "Planifica tus proyectos de fotografía time-lapse",
+      "metaDescription": "Lapso de tiempo: Calcule el intervalo, la duración del clip y la memoria para el lapso de tiempo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Entra el tiempo que quieres filmar el mundo real.",
@@ -2767,7 +2767,7 @@
     "focal-equivalent": {
       "name": "Longitud focal equivalente",
       "description": "Haga coincidir la configuración entre diferentes tamaños de sensores",
-      "metaDescription": "Calculadora de focal equivalente gratis en línea. Convierte cualquier objetivo a full-frame, sin registro, compara cámaras fácil.",
+      "metaDescription": "Longitud focal equivalente: Haga coincidir la configuración entre diferentes tamaños de sensores Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la distancia focal real de tu objetivo.",
@@ -2799,7 +2799,7 @@
     "hyperfocal": {
       "name": "Distancia hiperfocal",
       "description": "Calcule la distancia hiperfocal para obtener la máxima profundidad de campo",
-      "metaDescription": "Calculadora de distancia hiperfocal gratis en línea. Obtén el punto de enfoque para máxima profundidad, sin registro, con fórmula.",
+      "metaDescription": "Distancia hiperfocal: Calcule la distancia hiperfocal para obtener la máxima profundidad de campo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la distancia focal y la apertura que vas a usar.",
@@ -2831,7 +2831,7 @@
     "nd-filter": {
       "name": "Filtro ND",
       "description": "Calcular el tiempo de exposición con filtros ND",
-      "metaDescription": "Calculadora de filtros ND gratis en línea. Convierte la obturación para cualquier paso ND, sin registro, para agua sedosa y largas exposiciones.",
+      "metaDescription": "Filtro ND: Calcular el tiempo de exposición con filtros ND Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la velocidad de la puerta que utilizará cuando no se filtra.",
@@ -2912,7 +2912,7 @@
     "golden-hour": {
       "name": "Guía de la hora dorada",
       "description": "Calcule los tiempos de la hora dorada según su ubicación",
-      "metaDescription": "Calculadora de hora dorada gratis en línea. Halla horas dorada y azul por ubicación y fecha, sin registro, para mejores fotos.",
+      "metaDescription": "Guía de la hora dorada: Calcule los tiempos de la hora dorada según su ubicación Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu ubicación (o usa la posición del dispositivo).",
@@ -2976,7 +2976,7 @@
     "exchange-rate": {
       "name": "Tipo de cambio",
       "description": "Convierta entre criptomonedas y monedas fiduciarias (CHF, EUR, USD)",
-      "metaDescription": "Calculadora de divisas gratis en línea. Convierte monedas rápido con tipos recientes, sin registro, USD EUR GBP JPY CNY CHF y más.",
+      "metaDescription": "Tipo de cambio: Convierta entre criptomonedas y monedas fiduciarias (CHF, EUR, USD) Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la cantidad a convertir.",
@@ -3008,7 +3008,7 @@
     "hash-calculator": {
       "name": "Calculadora de hash",
       "description": "Calcule los valores hash MD5, SHA-1, SHA-256, SHA-512",
-      "metaDescription": "Calculadora de hash gratis en línea. Genera MD5, SHA-1, SHA-256, SHA-512 desde texto o archivos, sin registro, para integridad.",
+      "metaDescription": "Calculadora de hash: Calcule los valores hash MD5, SHA-1, SHA-256, SHA-512 Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Escribe o pega el texto o contenido de archivo que quieres hashear.",
@@ -3040,7 +3040,7 @@
     "mining-calculator": {
       "name": "Rentabilidad Minera",
       "description": "Calcule la rentabilidad de la minería de Bitcoin en función de la tasa de hash y el costo de la electricidad",
-      "metaDescription": "Calculadora de minado cripto gratis en línea. Estima beneficio por hashrate, potencia y luz, sin registro, con vistas diaria y mensual.",
+      "metaDescription": "Rentabilidad Minera: Calcule la rentabilidad de la minería de Bitcoin en función de la tasa de hash y el costo de la electricidad Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la tasa de hash y el consumo de tu hardware.",
@@ -3072,7 +3072,7 @@
     "wallet-validator": {
       "name": "Validador de billetera",
       "description": "Validar direcciones de billetera Bitcoin, Ethereum y Litecoin",
-      "metaDescription": "Validador de direcciones de wallet gratis en línea. Comprueba formato y checksum de Bitcoin, Ethereum y más, sin registro.",
+      "metaDescription": "Validador de billetera: Validar direcciones de billetera Bitcoin, Ethereum y Litecoin Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Pega la dirección de wallet cripto que quieres comprobar.",
@@ -3251,7 +3251,7 @@
     "sun-position": {
       "name": "Posición del sol",
       "description": "Calcula la posición del sol, las horas del crepúsculo y las fases de luz para fotografía.",
-      "metaDescription": "Calcule la altitud del sol, el azimut, la hora del crepúsculo, la hora dorada y la hora azul para la planificación fotográfica.",
+      "metaDescription": "Posición del sol: Calcula la posición del sol, las horas del crepúsculo y las fases de luz para fotografía. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la latitud, longitud, fecha y hora local.",
@@ -3332,7 +3332,7 @@
     "circle-of-confusion": {
       "name": "Círculo de confusión",
       "description": "Calcule CoC a partir del sensor, el tamaño de impresión y la distancia de visualización",
-      "metaDescription": "Calcular el círculo de confusión para la profundidad de campo.",
+      "metaDescription": "Círculo de confusión: Calcule CoC a partir del sensor, el tamaño de impresión y la distancia de visualización Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la distancia de vista y el tamaño de la imagen.",
@@ -3425,7 +3425,7 @@
     "advanced-dof": {
       "name": "DoF avanzado",
       "description": "Profundidad de campo con CoC ajustable para tamaño de impresión y visualización",
-      "metaDescription": "Cálculos avanzados de profundidad de campo.",
+      "metaDescription": "DoF avanzado: Profundidad de campo con CoC ajustable para tamaño de impresión y visualización Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca longitud focal, abertura (f), distancia focal y círculo dispersivo (CAC).",
@@ -3506,7 +3506,7 @@
     "macro-dof": {
       "name": "Macro de campo de visión",
       "description": "Profundidad de campo precisa para fotografía macro",
-      "metaDescription": "Calcular la profundidad de campo para fotografía macro.",
+      "metaDescription": "Macro de campo de visión: Profundidad de campo precisa para fotografía macro Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca una tasa de aumento para el radio (valor f) y microrange.",
@@ -3593,7 +3593,7 @@
     "dof-table": {
       "name": "Tabla de grados de libertad",
       "description": "Tabla interactiva que muestra DoF en aperturas y distancias",
-      "metaDescription": "Tabla de referencia para profundidad de campo.",
+      "metaDescription": "Tabla de grados de libertad: Tabla interactiva que muestra DoF en aperturas y distancias Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Seleccione la longitud focal y el radio que planea utilizar.",
@@ -3680,7 +3680,7 @@
     "diffraction": {
       "name": "Difracción",
       "description": "Calcule cuándo su cámara se vuelve limitada en difracción",
-      "metaDescription": "Calcula los límites de difracción de tu cámara",
+      "metaDescription": "Difracción: Calcule cuándo su cámara se vuelve limitada en difracción Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el radio (f) y longitud de onda ligera.",
@@ -3773,7 +3773,7 @@
     "macro-diffraction": {
       "name": "Macrodifracción",
       "description": "Calcular apertura y difracción efectivas en fotografía macro.",
-      "metaDescription": "Calcular efectos de difracción en fotografía macro.",
+      "metaDescription": "Macrodifracción: Calcular apertura y difracción efectivas en fotografía macro. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el radio (valor f) y la tasa de aumento de microrange.",
@@ -3860,7 +3860,7 @@
     "bpm": {
       "name": "BPM",
       "description": "Convierta BPM a Hz, longitud de compás y duraciones de notas",
-      "metaDescription": "Convierta latidos por minuto a otras unidades de tiempo musicales",
+      "metaDescription": "BPM: Convierta BPM a Hz, longitud de compás y duraciones de notas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el número de golpes y el tiempo (segundos o minutos) a tomar.",
@@ -3953,7 +3953,7 @@
     "video-file-size": {
       "name": "Tamaño del archivo de vídeo",
       "description": "Calcule el tamaño del archivo de video a partir de la resolución y la duración",
-      "metaDescription": "Calcule el tamaño de los archivos de video según la configuración",
+      "metaDescription": "Tamaño del archivo de vídeo: Calcule el tamaño del archivo de video a partir de la resolución y la duración Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la longitud, resolución y calidad de destino del vídeo.",
@@ -4054,7 +4054,7 @@
     "audio-filesize": {
       "name": "Tamaño del archivo de audio",
       "description": "Calcule el tamaño del archivo de audio a partir de la duración y el formato",
-      "metaDescription": "Calcule el tamaño de los archivos de audio para diferentes formatos",
+      "metaDescription": "Tamaño del archivo de audio: Calcule el tamaño del archivo de audio a partir de la duración y el formato Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la longitud de audio y la velocidad de muestreo (por ejemplo, 44.1 kHz).",
@@ -4153,7 +4153,7 @@
     "common-bitrates": {
       "name": "Referencia de velocidades de bits comunes",
       "description": "Guía de referencia para velocidades de bits ProRes, DNxHD, DCP y MPEG",
-      "metaDescription": "Guía de referencia para velocidades de bits de códecs de vídeo",
+      "metaDescription": "Referencia de velocidades de bits comunes: Guía de referencia para velocidades de bits ProRes, DNxHD, DCP y MPEG Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Selección del objetivo de entrega: medios de transmisión, radio, CD-ROM o maestro.",
@@ -4246,7 +4246,7 @@
     "dcp-filesize": {
       "name": "Tamaño del archivo DCP",
       "description": "Calcular el tamaño de los archivos del paquete de cine digital",
-      "metaDescription": "Calcule el tamaño de los archivos DCP para la distribución cinematográfica",
+      "metaDescription": "Tamaño del archivo DCP: Calcular el tamaño de los archivos del paquete de cine digital Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la longitud y la resolución seleccionada (2K o 4K).",
@@ -4333,7 +4333,7 @@
     "foot-lambert": {
       "name": "Pie-Lambert",
       "description": "Calcular la luminancia de la pantalla para proyección de cine.",
-      "metaDescription": "Calcular el brillo de la pantalla para proyección de cine.",
+      "metaDescription": "Pie-Lambert: Calcular la luminancia de la pantalla para proyección de cine. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el brillo (fL o nits) medido.",
@@ -4420,7 +4420,7 @@
     "screen-size": {
       "name": "Tamaño de pantalla",
       "description": "Calcule las dimensiones de la pantalla a partir de la diagonal y la relación de aspecto",
-      "metaDescription": "Calcular las dimensiones de la pantalla a partir del tamaño diagonal.",
+      "metaDescription": "Tamaño de pantalla: Calcule las dimensiones de la pantalla a partir de la diagonal y la relación de aspecto Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el tamaño de la esquina de la pantalla ( pulgadas o centímetros).",
@@ -4513,7 +4513,7 @@
     "video-bitrate": {
       "name": "Velocidad de bits de vídeo",
       "description": "Estimar la tasa de bits de video según la resolución y el códec",
-      "metaDescription": "Calcular tasas de bits de vídeo óptimas",
+      "metaDescription": "Velocidad de bits de vídeo: Estimar la tasa de bits de video según la resolución y el códec Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el tamaño del archivo objetivo y la duración del vídeo.",
@@ -4607,7 +4607,7 @@
     "frame-rate": {
       "name": "Convertidor de velocidad de fotogramas",
       "description": "Convierta entre velocidades de fotogramas con comandos ffmpeg",
-      "metaDescription": "Convertir vídeo entre velocidades de fotogramas",
+      "metaDescription": "Convertidor de velocidad de fotogramas: Convierta entre velocidades de fotogramas con comandos ffmpeg Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingrese la tasa de marco fuente.",
@@ -4700,7 +4700,7 @@
     "url-encoder": {
       "name": "Codificador de URL",
       "description": "Codificar y decodificar URL y caracteres especiales",
-      "metaDescription": "Codificar y decodificar URL y componentes URI",
+      "metaDescription": "Codificador de URL: Codificar y decodificar URL y caracteres especiales Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Pega la URL o la cadena de consulta a codificar.",
@@ -4732,7 +4732,7 @@
     "csp": {
       "name": "Generador CSP",
       "description": "Generar encabezados de política de seguridad de contenido",
-      "metaDescription": "Genere encabezados de política de seguridad de contenido para seguridad web",
+      "metaDescription": "Generador CSP: Generar encabezados de política de seguridad de contenido Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce las directivas que planeas permitir (default-src, script-src, img-src, etc.).",
@@ -4764,7 +4764,7 @@
     "redirect-check": {
       "name": "Comprobador de redireccionamiento",
       "description": "Verifique las cadenas de redireccionamiento HTTP y los códigos de estado",
-      "metaDescription": "Verifique las cadenas de redireccionamiento de URL y los códigos de estado HTTP",
+      "metaDescription": "Comprobador de redireccionamiento: Verifique las cadenas de redireccionamiento HTTP y los códigos de estado Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la URL origen a probar y el destino final esperado.",
@@ -4796,7 +4796,7 @@
     "spf-check": {
       "name": "Comprobador de registros SPF",
       "description": "Analizar registros SPF para autenticación de correo electrónico",
-      "metaDescription": "Analice registros SPF para la seguridad del correo electrónico",
+      "metaDescription": "Comprobador de registros SPF: Analizar registros SPF para autenticación de correo electrónico Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu dominio para consultar su registro SPF publicado en DNS.",
@@ -4828,7 +4828,7 @@
     "https-check": {
       "name": "Comprobador de seguridad HTTPS",
       "description": "Verifique los encabezados de seguridad y la configuración de TLS",
-      "metaDescription": "Verifique el HTTPS del sitio web y los encabezados de seguridad",
+      "metaDescription": "Comprobador de seguridad HTTPS: Verifique los encabezados de seguridad y la configuración de TLS Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el nombre de host o la URL completa a probar por HTTPS.",
@@ -4860,7 +4860,7 @@
     "html-encoder": {
       "name": "Codificador HTML",
       "description": "Codificar y decodificar entidades HTML",
-      "metaDescription": "Codificar y decodificar caracteres especiales HTML",
+      "metaDescription": "Codificador HTML: Codificar y decodificar entidades HTML Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Pega texto HTML a escapar (con < > & etc.).",
@@ -4893,7 +4893,7 @@
     "html-chars": {
       "name": "Mapa de caracteres HTML",
       "description": "Explorar y copiar entidades de caracteres HTML",
-      "metaDescription": "Guía de referencia para entidades de caracteres HTML",
+      "metaDescription": "Mapa de caracteres HTML: Explorar y copiar entidades de caracteres HTML Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Escribe o pega texto con caracteres especiales.",
@@ -4926,7 +4926,7 @@
     "emoji-chars": {
       "name": "Mapa de caracteres emoji",
       "description": "Explora y copia emoji con códigos",
-      "metaDescription": "Explorar y copiar caracteres emoji",
+      "metaDescription": "Mapa de caracteres emoji: Explora y copia emoji con códigos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Escribe o pega texto con emoji / símbolos.",
@@ -4959,7 +4959,7 @@
     "seo-performance": {
       "name": "Analizador de rendimiento SEO",
       "description": "Analice las métricas de SEO de la página y obtenga recomendaciones",
-      "metaDescription": "Analice el rendimiento de SEO y obtenga consejos de optimización",
+      "metaDescription": "Analizador de rendimiento SEO: Analice las métricas de SEO de la página y obtenga recomendaciones Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca su URL de página con la palabra clave o frase que desee clasificar.",
@@ -5053,7 +5053,7 @@
     "mortgage": {
       "name": "Hipoteca",
       "description": "Calcula los pagos mensuales y el plan de amortización",
-      "metaDescription": "Calcula la hipoteca con plan de amortización",
+      "metaDescription": "Hipoteca: Calcula los pagos mensuales y el plan de amortización Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el precio de la vivienda y el porcentaje o importe de la entrada; el capital del préstamo se calcula automáticamente.",
@@ -5120,7 +5120,7 @@
     "compound-interest": {
       "name": "Interés Compuesto",
       "description": "Calcula el interés compuesto de inversiones con aportaciones periódicas",
-      "metaDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo",
+      "metaDescription": "Interés Compuesto: Calcula el interés compuesto de inversiones con aportaciones periódicas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el capital inicial, es decir, la cantidad que inviertes al principio.",
@@ -5189,7 +5189,7 @@
     "loan": {
       "name": "Préstamo",
       "description": "Calcula los pagos mensuales de préstamos personales, de auto o cualquier otro tipo",
-      "metaDescription": "Pagos de préstamo y amortización",
+      "metaDescription": "Préstamo: Calcula los pagos mensuales de préstamos personales, de auto o cualquier otro tipo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el importe del préstamo, es decir, el dinero que recibes realmente, sin comisiones iniciales.",
@@ -5249,7 +5249,7 @@
     "retirement": {
       "name": "Jubilación",
       "description": "Planifica tu jubilación con proyecciones de ahorro y planificación de ingresos",
-      "metaDescription": "Ahorro y planificación de ingresos para la jubilación",
+      "metaDescription": "Jubilación: Planifica tu jubilación con proyecciones de ahorro y planificación de ingresos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu edad actual y la edad prevista de jubilación para fijar el periodo de acumulación.",
@@ -5318,7 +5318,7 @@
     "tip": {
       "name": "Propina",
       "description": "Calcula el monto de la propina y divide la cuenta entre varias personas",
-      "metaDescription": "Calcula propinas y divide cuentas",
+      "metaDescription": "Propina: Calcula el monto de la propina y divide la cuenta entre varias personas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige la moneda y la propina habitual del lugar (p. ej. restaurante 10–15 %, reparto 0–10 %).",
@@ -5351,7 +5351,7 @@
     "savings-goal": {
       "name": "Meta de Ahorro",
       "description": "Calcula cuánto tiempo se necesita para alcanzar la meta de ahorro",
-      "metaDescription": "Planifica tus ahorros y alcanza tus metas",
+      "metaDescription": "Meta de Ahorro: Calcula cuánto tiempo se necesita para alcanzar la meta de ahorro Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el objetivo, como una entrada, un fondo de estudios o un colchón de emergencia, y lo que ya tienes ahorrado.",
@@ -5420,7 +5420,7 @@
     "inflation": {
       "name": "Inflación",
       "description": "Calcula el impacto de la inflación en el poder adquisitivo",
-      "metaDescription": "Entiende el impacto de la inflación en tu dinero",
+      "metaDescription": "Inflación: Calcula el impacto de la inflación en el poder adquisitivo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce un importe junto con el año de inicio y el de fin.",
@@ -5483,7 +5483,7 @@
     "roi": {
       "name": "Retorno de Inversión",
       "description": "Calcula el retorno de la inversión y los retornos anualizados",
-      "metaDescription": "Calcula tus retornos de inversión",
+      "metaDescription": "Retorno de Inversión: Calcula el retorno de la inversión y los retornos anualizados Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el coste de la inversión: precio de compra más todas las comisiones e impuestos.",
@@ -5552,7 +5552,7 @@
     "break-even": {
       "name": "Punto de Equilibrio",
       "description": "Calcula el punto de equilibrio y el análisis de beneficios",
-      "metaDescription": "Análisis del punto de equilibrio",
+      "metaDescription": "Punto de Equilibrio: Calcula el punto de equilibrio y el análisis de beneficios Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce costes fijos (alquiler, salarios—no varían con el volumen).",
@@ -5585,7 +5585,7 @@
     "profit-margin": {
       "name": "Margen de beneficio",
       "description": "Calcular los márgenes de beneficio bruto, operativo y neto.",
-      "metaDescription": "Calcular los márgenes de beneficio empresarial",
+      "metaDescription": "Margen de beneficio: Calcular los márgenes de beneficio bruto, operativo y neto. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elig modo 'sobre costo' o 'precio inverso'.",
@@ -5618,7 +5618,7 @@
     "discount": {
       "name": "Descuento",
       "description": "Calcula descuentos, precios de venta y ahorros.",
-      "metaDescription": "Calcular descuentos y precios de venta.",
+      "metaDescription": "Descuento: Calcula descuentos, precios de venta y ahorros. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el precio original y el descuento (p. ej. 20 %) o el precio rebajado para calcularlo a la inversa.",
@@ -5651,7 +5651,7 @@
     "currency": {
       "name": "Convertidor de Moneda",
       "description": "Convierte las principales monedas mundiales",
-      "metaDescription": "Herramienta de conversión de moneda",
+      "metaDescription": "Convertidor de Moneda: Convierte las principales monedas mundiales Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el importe que quieres convertir y elige la moneda de origen y la de destino.",
@@ -5720,7 +5720,7 @@
     "auto-loan": {
       "name": "Préstamo para automóvil",
       "description": "Calcule los pagos del préstamo del automóvil, los intereses y el costo total",
-      "metaDescription": "Calcule los pagos mensuales de su préstamo para automóvil y el costo total",
+      "metaDescription": "Préstamo para automóvil: Calcule los pagos del préstamo del automóvil, los intereses y el costo total Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce precio, enganche (porcentaje o monto), plazo y tasa anual.",
@@ -5753,7 +5753,7 @@
     "personal-loan": {
       "name": "Préstamo personal",
       "description": "Calcular pagos de préstamos personales con tarifas y APR",
-      "metaDescription": "Calcule los pagos de préstamos personales, incluidas las tarifas de originación",
+      "metaDescription": "Préstamo personal: Calcular pagos de préstamos personales con tarifas y APR Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce monto, TAE y plazo (meses o años).",
@@ -5786,7 +5786,7 @@
     "student-loan": {
       "name": "Préstamo estudiantil",
       "description": "Calcule los pagos de préstamos estudiantiles con opciones de período de gracia",
-      "metaDescription": "Calcule los pagos de préstamos estudiantiles y los calendarios de pago",
+      "metaDescription": "Préstamo estudiantil: Calcule los pagos de préstamos estudiantiles con opciones de período de gracia Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el saldo total del prestamo, el tipo de interes fijo y el plazo de amortizacion en anos.",
@@ -5818,7 +5818,7 @@
     "home-equity": {
       "name": "Valor de la vivienda",
       "description": "Calcule el préstamo con garantía hipotecaria o los pagos HELOC",
-      "metaDescription": "Calcule el préstamo con garantía hipotecaria y los pagos HELOC",
+      "metaDescription": "Valor de la vivienda: Calcule el préstamo con garantía hipotecaria o los pagos HELOC Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el valor de mercado actual de la vivienda y los saldos totales de hipotecas o gravamenes.",
@@ -5850,7 +5850,7 @@
     "debt-payoff": {
       "name": "Pago de deuda",
       "description": "Calcule en cuánto tiempo saldar la deuda con pagos extras",
-      "metaDescription": "Calcule el tiempo de pago de la deuda y el ahorro por pagos extras",
+      "metaDescription": "Pago de deuda: Calcule en cuánto tiempo saldar la deuda con pagos extras Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Lista todas las deudas: saldo, tasa, pago mínimo.",
@@ -5883,7 +5883,7 @@
     "credit-card": {
       "name": "Tarjeta de crédito",
       "description": "Calcular el tiempo de pago y los intereses de la tarjeta de crédito.",
-      "metaDescription": "Calcule el tiempo de pago de la tarjeta de crédito y el costo total de intereses",
+      "metaDescription": "Tarjeta de crédito: Calcular el tiempo de pago y los intereses de la tarjeta de crédito. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el saldo actual, la TAE de la tarjeta y la cantidad que piensas pagar cada mes.",
@@ -5946,7 +5946,7 @@
     "down-payment": {
       "name": "Pago inicial",
       "description": "Calcula cuánto ahorrar para el pago inicial",
-      "metaDescription": "Calcule los ahorros mensuales necesarios para su objetivo de pago inicial",
+      "metaDescription": "Pago inicial: Calcula cuánto ahorrar para el pago inicial Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el precio de la vivienda que consideras y el porcentaje de entrada que buscas.",
@@ -5978,7 +5978,7 @@
     "retirement-401k": {
       "name": "401(k)",
       "description": "Calcule los ahorros para la jubilación con la contrapartida del empleador",
-      "metaDescription": "Calcule 401k ahorros para la jubilación con igualación y proyecciones del empleador",
+      "metaDescription": "401(k): Calcule los ahorros para la jubilación con la contrapartida del empleador Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu edad actual, la edad prevista de jubilacion, el salario y el saldo actual de tu 401(k).",
@@ -6010,7 +6010,7 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Compare las cuentas de jubilación IRA tradicional y Roth",
-      "metaDescription": "Compare las cuentas de jubilación y los beneficios fiscales de las IRA tradicionales y Roth",
+      "metaDescription": "IRA: Compare las cuentas de jubilación IRA tradicional y Roth Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Selecciona si quieres comparar IRA tradicional, Roth IRA o ambas.",
@@ -6043,7 +6043,7 @@
     "bond-calculator": {
       "name": "Vínculo",
       "description": "Calcule los precios, rendimientos y rentabilidades de los bonos",
-      "metaDescription": "Calcule los precios de los bonos, el rendimiento actual y el rendimiento al vencimiento.",
+      "metaDescription": "Vínculo: Calcule los precios, rendimientos y rentabilidades de los bonos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingresa el valor nominal, tasa cupon, anos al vencimiento y precio de mercado actual del bono.",
@@ -6076,7 +6076,7 @@
     "annuity-calculator": {
       "name": "Anualidad",
       "description": "Calcular pagos de anualidades e ingresos de jubilación.",
-      "metaDescription": "Calcular pagos de anualidades y proyecciones de ingresos de jubilación.",
+      "metaDescription": "Anualidad: Calcular pagos de anualidades e ingresos de jubilación. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige el tipo de anualidad: ordinaria (pagos al final del periodo) o vencida (pagos al inicio).",
@@ -6109,7 +6109,7 @@
     "body-fat": {
       "name": "Grasa corporal",
       "description": "Calcule el porcentaje de grasa corporal utilizando el método de la Marina de los EE. UU.",
-      "metaDescription": "Calcula tu porcentaje de grasa corporal usando el método de la Marina de los EE. UU. con medidas",
+      "metaDescription": "Grasa corporal: Calcule el porcentaje de grasa corporal utilizando el método de la Marina de los EE. UU. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Selecciona tu sexo y el sistema de unidades. El sexo cambia directamente los coeficientes de la fórmula.",
@@ -6172,7 +6172,7 @@
     "lean-body-mass": {
       "name": "Masa corporal magra",
       "description": "Calcule la masa corporal magra usando múltiples fórmulas",
-      "metaDescription": "Calcule su masa corporal magra (masa libre de grasa) utilizando múltiples fórmulas médicas",
+      "metaDescription": "Masa corporal magra: Calcule la masa corporal magra usando múltiples fórmulas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce peso, porcentaje de grasa corporal (o un metodo como pliegues) y sexo.",
@@ -6204,7 +6204,7 @@
     "body-surface-area": {
       "name": "Área de superficie corporal",
       "description": "Calcule BSA utilizando múltiples fórmulas médicas",
-      "metaDescription": "Calcule el área de superficie corporal para dosis médicas utilizando múltiples fórmulas",
+      "metaDescription": "Área de superficie corporal: Calcule BSA utilizando múltiples fórmulas médicas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce altura y peso.",
@@ -6236,7 +6236,7 @@
     "ideal-weight": {
       "name": "Peso Ideal",
       "description": "Calcule el peso corporal ideal usando múltiples fórmulas",
-      "metaDescription": "Calcule su peso corporal ideal usando las fórmulas de Robinson, Miller, Devine y Hamwi",
+      "metaDescription": "Peso Ideal: Calcule el peso corporal ideal usando múltiples fórmulas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Selecciona sexo y sistema de unidades, los coeficientes cambian según el sexo.",
@@ -6305,7 +6305,7 @@
     "bmr-calculator": {
       "name": "TMB",
       "description": "Calcular la tasa metabólica basal para la planificación de calorías",
-      "metaDescription": "Calcule su tasa metabólica basal utilizando las fórmulas de Harris-Benedict y Mifflin-St Jeor",
+      "metaDescription": "TMB: Calcular la tasa metabólica basal para la planificación de calorías Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Selecciona sexo y sistema de unidades. El sexo fija el término constante de la ecuación.",
@@ -6374,7 +6374,7 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Calcular el gasto energético diario total",
-      "metaDescription": "Calcule su gasto energético diario total según el nivel de actividad",
+      "metaDescription": "TDEE: Calcular el gasto energético diario total Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce sexo, edad, altura y peso para establecer tu tasa metabólica basal.",
@@ -6449,7 +6449,7 @@
     "calorie-calculator": {
       "name": "Caloría",
       "description": "Calcular las necesidades calóricas diarias para los objetivos de peso.",
-      "metaDescription": "Calcule las necesidades calóricas diarias y macros para sus objetivos de pérdida o aumento de peso",
+      "metaDescription": "Caloría: Calcular las necesidades calóricas diarias para los objetivos de peso. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce sexo, edad, altura y peso para establecer tu tasa metabólica basal.",
@@ -6518,7 +6518,7 @@
     "calories-burned": {
       "name": "Calorías quemadas",
       "description": "Calcular las calorías quemadas durante diversas actividades.",
-      "metaDescription": "Calcule las calorías quemadas durante el ejercicio y las actividades diarias utilizando valores MET",
+      "metaDescription": "Calorías quemadas: Calcular las calorías quemadas durante diversas actividades. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu peso: cuanto más pesas, más gastas haciendo la misma actividad.",
@@ -6599,7 +6599,7 @@
     "target-heart-rate": {
       "name": "Frecuencia cardíaca objetivo",
       "description": "Calcular zonas de frecuencia cardíaca objetivo para el ejercicio",
-      "metaDescription": "Calcule sus zonas de frecuencia cardíaca objetivo para quemar grasa y hacer ejercicio cardiovascular",
+      "metaDescription": "Frecuencia cardíaca objetivo: Calcular zonas de frecuencia cardíaca objetivo para el ejercicio Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu edad, la frecuencia cardiaca máxima depende sobre todo de ella.",
@@ -6674,7 +6674,7 @@
     "one-rep-max": {
       "name": "Una repetición máxima",
       "description": "Calcula tu repetición máxima a partir de levantamientos submáximos",
-      "metaDescription": "Calcula tu 1RM usando varias fórmulas de tus levantamientos submáximos",
+      "metaDescription": "Una repetición máxima: Calcula tu repetición máxima a partir de levantamientos submáximos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige el ejercicio a estimar, como press banca, sentadilla o peso muerto.",
@@ -6738,7 +6738,7 @@
     "pace-calculator": {
       "name": "Paso",
       "description": "Calcula el ritmo de carrera, la velocidad y los tiempos de carrera.",
-      "metaDescription": "Calcula tu ritmo de carrera, predice tiempos de carrera y planifica tu entrenamiento",
+      "metaDescription": "Paso: Calcula el ritmo de carrera, la velocidad y los tiempos de carrera. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elig: distancia+tiempo → ritmo, o ritmo+distancia → tiempo final.",
@@ -6771,7 +6771,7 @@
     "macro-calculator": {
       "name": "Macro",
       "description": "Calcular los objetivos diarios de macronutrientes",
-      "metaDescription": "Calcule su ingesta óptima de proteínas, carbohidratos y grasas para sus objetivos de acondicionamiento físico",
+      "metaDescription": "Macro: Calcular los objetivos diarios de macronutrientes Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce sexo, edad, altura y peso para calcular la tasa metabólica basal.",
@@ -6838,7 +6838,7 @@
     "protein-calculator": {
       "name": "Proteína",
       "description": "Calcular los requerimientos diarios de proteínas.",
-      "metaDescription": "Calcula tus necesidades proteicas diarias en función de tu peso y objetivos",
+      "metaDescription": "Proteína: Calcular los requerimientos diarios de proteínas. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce peso (kg) y objetivo o actividad.",
@@ -6871,7 +6871,7 @@
     "carb-calculator": {
       "name": "Carbohidrato",
       "description": "Calcular las necesidades diarias de carbohidratos.",
-      "metaDescription": "Calcule su ingesta diaria óptima de carbohidratos para obtener energía y rendimiento",
+      "metaDescription": "Carbohidrato: Calcular las necesidades diarias de carbohidratos. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu objetivo calórico diario y el porcentaje de carbohidratos elegido.",
@@ -6903,7 +6903,7 @@
     "fat-intake": {
       "name": "Ingesta de grasas",
       "description": "Calcular las necesidades diarias de ingesta de grasas.",
-      "metaDescription": "Calcule sus necesidades diarias de ingesta de grasas, incluidas las fuentes de grasas saludables",
+      "metaDescription": "Ingesta de grasas: Calcular las necesidades diarias de ingesta de grasas. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu objetivo calórico diario y un porcentaje de grasa objetivo.",
@@ -6935,7 +6935,7 @@
     "water-intake": {
       "name": "Ingesta de agua",
       "description": "Calcular las necesidades diarias de ingesta de agua.",
-      "metaDescription": "Calcula cuánta agua debes beber diariamente según tu estilo de vida",
+      "metaDescription": "Ingesta de agua: Calcular las necesidades diarias de ingesta de agua. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu peso y elige kilogramos o libras.",
@@ -6998,7 +6998,7 @@
     "body-type": {
       "name": "Tipo de cuerpo",
       "description": "Determina tu tipo de cuerpo (ectomorfo, mesomorfo, endomorfo)",
-      "metaDescription": "Descubre tu tipo de cuerpo y recibe consejos personalizados de entrenamiento y nutrición.",
+      "metaDescription": "Tipo de cuerpo: Determina tu tipo de cuerpo (ectomorfo, mesomorfo, endomorfo) Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Responde algunas preguntas sobre tu complexion o introduce medidas simples.",
@@ -7030,7 +7030,7 @@
     "healthy-weight": {
       "name": "Peso saludable",
       "description": "Calcule su rango de peso saludable según la altura",
-      "metaDescription": "Encuentre su rango de peso saludable según su altura, edad y tamaño de estructura",
+      "metaDescription": "Peso saludable: Calcule su rango de peso saludable según la altura Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu altura, peso, edad y el sexo asignado al nacer.",
@@ -7062,7 +7062,7 @@
     "army-body-fat": {
       "name": "Grasa corporal del ejército",
       "description": "Calcule la grasa corporal utilizando los estándares del ejército de EE. UU.",
-      "metaDescription": "Calcule su porcentaje de grasa corporal utilizando el método oficial de prueba con cinta del ejército de EE. UU.",
+      "metaDescription": "Grasa corporal del ejército: Calcule la grasa corporal utilizando los estándares del ejército de EE. UU. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce las medidas requeridas como altura, cuello y cintura (y cadera en algunos).",
@@ -7094,7 +7094,7 @@
     "bac-calculator": {
       "name": "bachillerato",
       "description": "Calcular el contenido de alcohol en sangre.",
-      "metaDescription": "Calcule su contenido de alcohol en sangre según las bebidas consumidas.",
+      "metaDescription": "bachillerato: Calcular el contenido de alcohol en sangre. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce sexo, peso, numero de bebidas estandar y las horas transcurridas bebiendo.",
@@ -7126,7 +7126,7 @@
     "gfr-calculator": {
       "name": "TFG",
       "description": "Calcular la tasa de filtración glomerular para la función renal.",
-      "metaDescription": "Calcule su eGFR para evaluar la función renal utilizando la fórmula CKD-EPI",
+      "metaDescription": "TFG: Calcular la tasa de filtración glomerular para la función renal. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce creatinina serica, edad y sexo (y coeficiente de raza si la ecuacion antigua lo usa).",
@@ -7158,7 +7158,7 @@
     "sleep-calculator": {
       "name": "Dormir",
       "description": "Calcule los tiempos óptimos de sueño y vigilia",
-      "metaDescription": "Encuentra los mejores momentos para dormir y despertar según los ciclos de sueño",
+      "metaDescription": "Dormir: Calcule los tiempos óptimos de sueño y vigilia Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige la hora a la que vas a dormirte o la hora a la que necesitas levantarte.",
@@ -7221,7 +7221,7 @@
     "due-date": {
       "name": "Fecha de vencimiento",
       "description": "Calcular la fecha prevista del embarazo y los hitos",
-      "metaDescription": "Calcule la fecha prevista de su embarazo y realice un seguimiento de los hitos importantes",
+      "metaDescription": "Fecha de vencimiento: Calcular la fecha prevista del embarazo y los hitos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el primer día de tu última menstruación (LMP).",
@@ -7254,7 +7254,7 @@
     "ovulation-calculator": {
       "name": "Ovulación",
       "description": "Calcular fecha de ovulación y ventana fértil",
-      "metaDescription": "Calcula tu fecha de ovulación y días más fértiles",
+      "metaDescription": "Ovulación: Calcular fecha de ovulación y ventana fértil Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce primer día de la última regla y duración media (28 por defecto).",
@@ -7287,7 +7287,7 @@
     "period-calculator": {
       "name": "Período",
       "description": "Realice un seguimiento del ciclo menstrual y prediga el próximo período",
-      "metaDescription": "Realice un seguimiento de su ciclo menstrual y prediga su próximo período",
+      "metaDescription": "Período: Realice un seguimiento del ciclo menstrual y prediga el próximo período Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce primer día de la última regla y duración media.",
@@ -7320,7 +7320,7 @@
     "pregnancy-weight-gain": {
       "name": "Aumento de peso durante el embarazo",
       "description": "Calcular el aumento de peso recomendado durante el embarazo",
-      "metaDescription": "Calcular recomendaciones de aumento de peso saludable durante el embarazo",
+      "metaDescription": "Aumento de peso durante el embarazo: Calcular el aumento de peso recomendado durante el embarazo Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu peso antes del embarazo y tu altura para calcular tu IMC inicial.",
@@ -7352,7 +7352,7 @@
     "basic-calculator": {
       "name": "Calculadora Básica",
       "description": "Realiza cálculos aritméticos con soporte para expresiones",
-      "metaDescription": "Calculadora básica gratuita",
+      "metaDescription": "Calculadora Básica: Realiza cálculos aritméticos con soporte para expresiones Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Escribe numeros con el teclado en pantalla o el de tu ordenador.",
@@ -7384,7 +7384,7 @@
     "fraction-calculator": {
       "name": "Fracción",
       "description": "Sumar, restar, multiplicar, dividir y simplificar fracciones",
-      "metaDescription": "Calcula fracciones con soluciones paso a paso y números mixtos.",
+      "metaDescription": "Fracción: Sumar, restar, multiplicar, dividir y simplificar fracciones Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige la operación: sumar, restar, multiplicar, dividir o simplemente simplificar una fracción mixta/impropia.",
@@ -7416,7 +7416,7 @@
     "percentage-calculator": {
       "name": "Calculadora de Porcentaje",
       "description": "Calcula porcentajes, cambio porcentual y diferencia porcentual",
-      "metaDescription": "Calculadora de porcentajes gratis en línea. Obtén X% de Y, qué porcentaje es un número de otro, y aumentos o descuentos, sin registro.",
+      "metaDescription": "Calculadora de Porcentaje: Calcula porcentajes, cambio porcentual y diferencia porcentual Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige la operación que necesitas (X% de Y, qué porcentaje es X de Y, o aumento/descenso).",
@@ -7448,7 +7448,7 @@
     "percent-error": {
       "name": "Error porcentual",
       "description": "Calcular el error porcentual entre los valores experimentales y reales.",
-      "metaDescription": "Calcular el error porcentual para experimentos y mediciones científicas.",
+      "metaDescription": "Error porcentual: Calcular el error porcentual entre los valores experimentales y reales. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el valor medido (experimental) y el valor aceptado (real).",
@@ -7480,7 +7480,7 @@
     "rounding-calculator": {
       "name": "redondeo",
       "description": "Números redondos usando diferentes métodos y precisión.",
-      "metaDescription": "Redondear números a decimales, cifras significativas o precisión personalizada",
+      "metaDescription": "redondeo: Números redondos usando diferentes métodos y precisión. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el numero que quieres redondear y elige decimales objetivo o cifras significativas.",
@@ -7512,7 +7512,7 @@
     "average-calculator": {
       "name": "Promedio",
       "description": "Calcular la media, la mediana, la moda y otros promedios",
-      "metaDescription": "Calcular la media aritmética, la media ponderada, la media geométrica y la media armónica",
+      "metaDescription": "Promedio: Calcular la media, la mediana, la moda y otros promedios Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce los números en líneas o separados por comas; añade o quita cuando quieras.",
@@ -7544,7 +7544,7 @@
     "long-division": {
       "name": "División larga",
       "description": "Realiza una división larga con una solución paso a paso",
-      "metaDescription": "Aprenda la división larga con soluciones y restos detallados paso a paso",
+      "metaDescription": "División larga: Realiza una división larga con una solución paso a paso Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el número dividido (número dividido) y el número dividido (número utilizado).",
@@ -7619,7 +7619,7 @@
     "exponent-calculator": {
       "name": "Exponente",
       "description": "Calcular potencias y expresiones exponenciales.",
-      "metaDescription": "Calcular potencias, exponentes y expresiones exponenciales.",
+      "metaDescription": "Exponente: Calcular potencias y expresiones exponenciales. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce la base y el exponente que quieres aplicar.",
@@ -7651,7 +7651,7 @@
     "root-calculator": {
       "name": "Raíz",
       "description": "Calcular raíces cuadradas, raíces cúbicas y raíces enésimas",
-      "metaDescription": "Calcula raíces cuadradas, raíces cúbicas y cualquier raíz enésima de números",
+      "metaDescription": "Raíz: Calcular raíces cuadradas, raíces cúbicas y raíces enésimas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el radicando (numero bajo la raiz) y el indice, como 2 para la raiz cuadrada.",
@@ -7683,7 +7683,7 @@
     "logarithm-calculator": {
       "name": "Logaritmo",
       "description": "Calcular logaritmos con cualquier base.",
-      "metaDescription": "Calcular logaritmos con base 10, registro natural o cualquier base personalizada",
+      "metaDescription": "Logaritmo: Calcular logaritmos con cualquier base. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el numero cuyo logaritmo necesitas y elige la base, como 10, e o 2.",
@@ -7715,7 +7715,7 @@
     "quadratic-calculator": {
       "name": "Fórmula cuadrática",
       "description": "Resolver ecuaciones cuadráticas y encontrar raíces.",
-      "metaDescription": "Resuelve ecuaciones cuadráticas usando la fórmula cuadrática con soluciones paso a paso",
+      "metaDescription": "Fórmula cuadrática: Resolver ecuaciones cuadráticas y encontrar raíces. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce los coeficientes a, b y c de tu ecuacion cuadratica a x^2 + b x + c = 0.",
@@ -7747,7 +7747,7 @@
     "factor-calculator": {
       "name": "factores",
       "description": "Encuentra todos los factores de un número.",
-      "metaDescription": "Encuentra todos los factores, pares de factores y factores primos de cualquier número.",
+      "metaDescription": "factores: Encuentra todos los factores de un número. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca un entero positivo para descomponerse.",
@@ -7840,7 +7840,7 @@
     "gcd-calculator": {
       "name": "MCD",
       "description": "Calcular el máximo común divisor de varios números",
-      "metaDescription": "Calcular el máximo común divisor (MCD/MCD) de dos o más números",
+      "metaDescription": "MCD: Calcular el máximo común divisor de varios números Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca dos o más enteros.",
@@ -7915,7 +7915,7 @@
     "lcm-calculator": {
       "name": "LCM",
       "description": "Calcular el mínimo común múltiplo de varios números",
-      "metaDescription": "Calcular el mínimo común múltiplo (MCM) de dos o más números",
+      "metaDescription": "LCM: Calcular el mínimo común múltiplo de varios números Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca dos o más enteros.",
@@ -7995,7 +7995,7 @@
     "prime-factorization": {
       "name": "Factorización prima",
       "description": "Encuentra factores primos y divisores de cualquier número.",
-      "metaDescription": "Encuentra la factorización prima, el árbol de factores y todos los divisores de cualquier número.",
+      "metaDescription": "Factorización prima: Encuentra factores primos y divisores de cualquier número. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca un número positivo superior a 1.",
@@ -8082,7 +8082,7 @@
     "triangle-calculator": {
       "name": "Triángulo",
       "description": "Calcular las propiedades de un triángulo a partir de lados y ángulos.",
-      "metaDescription": "Calcula el área, el perímetro, los ángulos y los lados de un triángulo con la ley de los cosenos",
+      "metaDescription": "Triángulo: Calcular las propiedades de un triángulo a partir de lados y ángulos. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tres valores conocidos de un triangulo, como dos lados y un angulo.",
@@ -8114,7 +8114,7 @@
     "pythagorean-calculator": {
       "name": "Teorema de Pitágoras",
       "description": "Calcular el lado faltante usando el teorema de Pitágoras",
-      "metaDescription": "Encuentra el lado faltante de un triángulo rectángulo usando el teorema de Pitágoras",
+      "metaDescription": "Teorema de Pitágoras: Calcular el lado faltante usando el teorema de Pitágoras Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Indica los lados conocidos: catetos a y b, o un cateto e hipotenusa c.",
@@ -8146,7 +8146,7 @@
     "circle-calculator": {
       "name": "Círculo",
       "description": "Calcular propiedades de círculos a partir de radio, diámetro o circunferencia.",
-      "metaDescription": "Calcular el área, circunferencia, diámetro y radio del círculo.",
+      "metaDescription": "Círculo: Calcular propiedades de círculos a partir de radio, diámetro o circunferencia. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el radio, diámetro o perímetro del círculo.",
@@ -8227,7 +8227,7 @@
     "area-calculator": {
       "name": "Calculadora de Área",
       "description": "Calcula el área de varias formas",
-      "metaDescription": "Herramienta de área",
+      "metaDescription": "Calculadora de Área: Calcula el área de varias formas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige una figura: rectángulo, círculo, triángulo, trapecio y más.",
@@ -8259,7 +8259,7 @@
     "surface-area-calculator": {
       "name": "Área de superficie",
       "description": "Calcular el área de superficie de formas 3D",
-      "metaDescription": "Calcular el área de superficie de cubo, esfera, cilindro, cono y pirámide.",
+      "metaDescription": "Área de superficie: Calcular el área de superficie de formas 3D Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Seleccione una forma tridimensional (cuna, bola, cilindro, cono, etc.).",
@@ -8340,7 +8340,7 @@
     "volume-calculator": {
       "name": "Volumen",
       "description": "Calcular el volumen de formas 3D.",
-      "metaDescription": "Calcula el volumen de un cubo, una esfera, un cilindro, un cono, un prisma y más",
+      "metaDescription": "Volumen: Calcular el volumen de formas 3D. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige un sólido: ortoedro, cubo, cilindro, esfera, cono y más.",
@@ -8969,7 +8969,7 @@
     "virtualization-cost": {
       "name": "Calculadora de costos de virtualización",
       "description": "Calcule el costo total de propiedad de la infraestructura de virtualización",
-      "metaDescription": "Calculadora gratuita de TCO de virtualización. Calcule el costo total de propiedad, incluidos CAPEX y OPEX para la infraestructura de virtualización.",
+      "metaDescription": "Calculadora de costos de virtualización: Calcule el costo total de propiedad de la infraestructura de virtualización Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el número de hosts, su precio de compra y vida útil esperada.",
@@ -9151,7 +9151,7 @@
     "slope-calculator": {
       "name": "Pendiente",
       "description": "Calcular pendiente, ecuación y ángulo de una recta.",
-      "metaDescription": "Calcular la pendiente, la intersección con el eje y y la ecuación lineal desde dos puntos",
+      "metaDescription": "Pendiente: Calcular pendiente, ecuación y ángulo de una recta. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca dos coordenadas punto (x1, y1) y (x2, y2).",
@@ -9244,7 +9244,7 @@
     "standard-deviation": {
       "name": "Desviación estándar",
       "description": "Calcular la desviación estándar y la varianza.",
-      "metaDescription": "Calculadora de desviación típica gratis en línea. Obtén rápido la desviación y varianza de población o muestra, sin registro, con fórmula y ejemplos.",
+      "metaDescription": "Desviación estándar: Calcular la desviación estándar y la varianza. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tu conjunto de datos como una lista de números separados por comas.",
@@ -9276,7 +9276,7 @@
     "statistics-calculator": {
       "name": "Estadística",
       "description": "Calcular estadísticas completas para un conjunto de datos.",
-      "metaDescription": "Calculadora de estadística gratis en línea. Obtén media, mediana, moda, rango y desviación de una lista, sin registro, con explicación.",
+      "metaDescription": "Estadística: Calcular estadísticas completas para un conjunto de datos. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce tus números como una lista separada por comas.",
@@ -9308,7 +9308,7 @@
     "probability-calculator": {
       "name": "Probabilidad",
       "description": "Calcular la probabilidad de eventos y combinaciones.",
-      "metaDescription": "Calculadora de probabilidad gratis en línea. Halla la chance de eventos simples o combinados, sin registro, en fracción, decimal y porcentaje.",
+      "metaDescription": "Probabilidad: Calcular la probabilidad de eventos y combinaciones. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Elige el escenario (un evento, dos eventos o combinaciones).",
@@ -9340,7 +9340,7 @@
     "sample-size": {
       "name": "Tamaño de la muestra",
       "description": "Calcular el tamaño de muestra requerido para encuestas y estudios.",
-      "metaDescription": "Calculadora de tamaño de muestra gratis en línea. Halla cuántas respuestas necesitas para una confianza y margen dados, sin registro.",
+      "metaDescription": "Tamaño de la muestra: Calcular el tamaño de muestra requerido para encuestas y estudios. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce el nivel de confianza, el margen de error y una estimación de la proporción.",
@@ -9372,7 +9372,7 @@
     "z-score-calculator": {
       "name": "Puntuación Z",
       "description": "Calcular la puntuación z y las probabilidades de distribución normal.",
-      "metaDescription": "Calculadora de z-score gratis en línea. Estandariza cualquier puntuación con media y DT, sin registro, y ve cuánto se aleja de la media.",
+      "metaDescription": "Puntuación Z: Calcular la puntuación z y las probabilidades de distribución normal. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la fracción original que desea estandarizar.",
@@ -9459,7 +9459,7 @@
     "p-value-calculator": {
       "name": "Valor p",
       "description": "Calcular valores p para pruebas de hipótesis estadísticas",
-      "metaDescription": "Calcule los valores p a partir de puntuaciones z, puntuaciones t, chi-cuadrado y estadísticas F",
+      "metaDescription": "Valor p: Calcular valores p para pruebas de hipótesis estadísticas Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingrese una prueba de estadística y libertad (o efecto y muestra).",
@@ -9540,7 +9540,7 @@
     "confidence-interval": {
       "name": "Intervalo de confianza",
       "description": "Calcular intervalos de confianza para medias y proporciones.",
-      "metaDescription": "Calcular intervalos de confianza para la media y la proporción de la población.",
+      "metaDescription": "Intervalo de confianza: Calcular intervalos de confianza para medias y proporciones. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el promedio de la muestra, desviación estándar y volumen de la muestra.",
@@ -9613,7 +9613,7 @@
     "permutation-combination": {
       "name": "Permutación y combinación",
       "description": "Calcular permutaciones y combinaciones con y sin repetición.",
-      "metaDescription": "Calcula permutaciones y combinaciones de nPr y nCr para problemas de conteo.",
+      "metaDescription": "Permutación y combinación: Calcular permutaciones y combinaciones con y sin repetición. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el número total de artículos n con el número seleccionado k.",
@@ -9700,7 +9700,7 @@
     "ratio-calculator": {
       "name": "Proporción",
       "description": "Calcular y simplificar razones, encontrar razones equivalentes",
-      "metaDescription": "Calculadora de razones gratis en línea. Simplifica razones A:B, encuentra valores faltantes y escala proporciones, sin registro.",
+      "metaDescription": "Proporción: Calcular y simplificar razones, encontrar razones equivalentes Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce los valores de tu razón, por ejemplo A : B.",
@@ -9732,7 +9732,7 @@
     "binary-calculator": {
       "name": "Binario",
       "description": "Convertir y realizar operaciones en binario.",
-      "metaDescription": "Convertir entre sistemas numéricos binario, decimal, octal y hexadecimal",
+      "metaDescription": "Binario: Convertir y realizar operaciones en binario. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca un número binario, decimal o hexadecimal en el modo correspondiente.",
@@ -9831,7 +9831,7 @@
     "hex-calculator": {
       "name": "hexadecimal",
       "description": "Convertir y calcular en hexadecimal",
-      "metaDescription": "Convertir y realizar operaciones aritméticas en hexadecimal",
+      "metaDescription": "hexadecimal: Convertir y calcular en hexadecimal Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Ingrese un valor hexadecimal (utilizando 0-9 y A-F) u otro ánodo.",
@@ -9930,7 +9930,7 @@
     "scientific-notation": {
       "name": "Notación científica",
       "description": "Convertir a/desde notación científica y realizar operaciones",
-      "metaDescription": "Calculadora de notación científica gratis en línea. Convierte cualquier número a o desde notación científica, sin registro, con mantisa y exponente.",
+      "metaDescription": "Notación científica: Convertir a/desde notación científica y realizar operaciones Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Escribe el número que quieres convertir en el campo de entrada.",
@@ -9962,7 +9962,7 @@
     "big-number": {
       "name": "Número grande",
       "description": "Realizar aritmética con números enteros arbitrariamente grandes",
-      "metaDescription": "Calcule con números muy grandes más allá de los límites de la calculadora estándar",
+      "metaDescription": "Número grande: Realizar aritmética con números enteros arbitrariamente grandes Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca uno o más enteros grandes que exceden los límites normales de la calculadora.",
@@ -10043,7 +10043,7 @@
     "number-sequence": {
       "name": "Secuencia numérica",
       "description": "Analizar y generar secuencias aritméticas, geométricas y de Fibonacci.",
-      "metaDescription": "Encuentra patrones en secuencias numéricas y genera series aritméticas o geométricas.",
+      "metaDescription": "Secuencia numérica: Analizar y generar secuencias aritméticas, geométricas y de Fibonacci. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el número de columnas que conoce, separadas por comas.",
@@ -10124,7 +10124,7 @@
     "matrix-calculator": {
       "name": "Matriz",
       "description": "Realizar operaciones matriciales: sumar, multiplicar, transponer, determinante",
-      "metaDescription": "Calcular la suma, multiplicación, determinante, inversa y transposición de matrices.",
+      "metaDescription": "Matriz: Realizar operaciones matriciales: sumar, multiplicar, transponer, determinante Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca las dimensiones y los valores de uno o dos arrays.",
@@ -10205,7 +10205,7 @@
     "half-life-calculator": {
       "name": "Media vida",
       "description": "Calcular la desintegración radiactiva y la cantidad restante.",
-      "metaDescription": "Calcular la desintegración radiactiva, la cantidad restante y la datación por carbono.",
+      "metaDescription": "Media vida: Calcular la desintegración radiactiva y la cantidad restante. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la cantidad inicial y la media vida de la sustancia.",
@@ -10298,7 +10298,7 @@
     "distance-calculator": {
       "name": "Distancia",
       "description": "Calcula distancias entre puntos en 2D, 3D y en la Tierra.",
-      "metaDescription": "Calcular la distancia euclidiana, la distancia de Manhattan y las distancias geográficas",
+      "metaDescription": "Distancia: Calcula distancias entre puntos en 2D, 3D y en la Tierra. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduce las coordenadas o dos nombres de lugares, o elige dos puntos en el mapa si esta disponible.",
@@ -10330,7 +10330,7 @@
     "random-number": {
       "name": "Generador de números aleatorios",
       "description": "Genera números aleatorios con varias distribuciones.",
-      "metaDescription": "Genera números aleatorios, tira dados y mezcla listas",
+      "metaDescription": "Generador de números aleatorios: Genera números aleatorios con varias distribuciones. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Define el valor minimo y maximo de tu rango.",
@@ -10362,7 +10362,7 @@
     "tcp-throughput": {
       "name": "Rendimiento TCP",
       "description": "Calcule el rendimiento teórico de TCP utilizando la fórmula de Mathis",
-      "metaDescription": "Calcule el rendimiento máximo de TCP según MSS, RTT y la tasa de pérdida de paquetes utilizando la fórmula de Mathis",
+      "metaDescription": "Rendimiento TCP: Calcule el rendimiento teórico de TCP utilizando la fórmula de Mathis Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca RTT (tiempo de giro) y tasa de caída.",
@@ -10449,7 +10449,7 @@
     "bandwidth-delay-product": {
       "name": "Producto de retardo de ancho de banda",
       "description": "Calcule BDP y el tamaño óptimo del búfer TCP",
-      "metaDescription": "Calcule el producto de retardo de ancho de banda y el tamaño de ventana TCP requerido para un rendimiento óptimo de la red",
+      "metaDescription": "Producto de retardo de ancho de banda: Calcule BDP y el tamaño óptimo del búfer TCP Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el ancho de banda de la cadena y el tiempo de regreso.",
@@ -10989,7 +10989,7 @@
     "fuel-efficiency": {
       "name": "Eficiencia de Combustible",
       "description": "Calcula la eficiencia de combustible de tu auto",
-      "metaDescription": "Herramienta de eficiencia de combustible",
+      "metaDescription": "Eficiencia de Combustible: Calcula la eficiencia de combustible de tu auto Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca la distancia entre el viaje y el combustible consumido.",
@@ -11088,7 +11088,7 @@
     "vehicle-financing": {
       "name": "Financiación de Vehículos",
       "description": "Herramienta de cálculo de financiación de vehículos",
-      "metaDescription": "Calculadora de financiación de vehículos",
+      "metaDescription": "Financiación de Vehículos: Herramienta de cálculo de financiación de vehículos Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el precio del coche, el pago inicial y el crédito de cambio.",
@@ -11175,7 +11175,7 @@
     "tire-sizing": {
       "name": "Tamaño de Neumático",
       "description": "Herramienta de cálculo de cambio de tamaño de neumático",
-      "metaDescription": "Calculadora de tamaño de neumático",
+      "metaDescription": "Tamaño de Neumático: Herramienta de cálculo de cambio de tamaño de neumático Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el código de neumático actual (por ejemplo 205/55R16) y el tamaño del candidato.",
@@ -11384,7 +11384,7 @@
     "unit-converter": {
       "name": "Convertidor de Unidades",
       "description": "Convierte unidades de longitud, masa, temperatura, área, volumen, velocidad, tiempo, datos, energía, potencia y presión",
-      "metaDescription": "Herramienta de conversión de unidades",
+      "metaDescription": "Convertidor de Unidades: Convierte unidades de longitud, masa, temperatura, área, volumen, velocidad, tiempo, datos, energía, potencia y presión Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "category": "Categoría",
       "from": "De",
       "swap": "Intercambiar",
@@ -11550,7 +11550,7 @@
     "programmer-calculator": {
       "name": "Calculadora de Programador",
       "description": "Convierte entre decimal, hexadecimal, octal y binario",
-      "metaDescription": "Calculadora para programadores",
+      "metaDescription": "Calculadora de Programador: Convierte entre decimal, hexadecimal, octal y binario Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "bitwise": "Operación bit a bit",
       "left": "Izquierda (<<)",
       "none": "Ninguno",
@@ -11660,7 +11660,7 @@
     "debt-snowball-avalanche": {
       "name": "Planificador de pago de deuda",
       "description": "Compare las estrategias de pago de deudas de bola de nieve y avalancha y vea cuál liquida su deuda más rápido.",
-      "metaDescription": "Planificador de pago de deuda gratuito que compara los métodos de bola de nieve y de avalancha con el interés total y el orden de pago.",
+      "metaDescription": "Planificador de pago de deuda: Compare las estrategias de pago de deudas de bola de nieve y avalancha y vea cuál liquida su deuda más rápido. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "debts": "Deudas",
       "hint": "Una deuda por línea: Nombre, Saldo, Tasa Anual %, Pago Mínimo.",
       "extra": "Pago mensual adicional",
@@ -11703,7 +11703,7 @@
     "income-tax": {
       "name": "Calculadora de Impuesto sobre la Renta",
       "description": "Calcule el impuesto sobre la renta progresivo con ajustes preestablecidos o sus propios tramos impositivos personalizados.",
-      "metaDescription": "Calculadora gratuita de impuesto sobre la renta progresivo con soporte para EE. UU., Reino Unido y tramos personalizados.",
+      "metaDescription": "Calculadora de Impuesto sobre la Renta: Calcule el impuesto sobre la renta progresivo con ajustes preestablecidos o sus propios tramos impositivos personalizados. Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "system": "Sistema tributario",
       "income": "Ingreso imponible",
       "brackets": "Soportes personalizados",
@@ -11745,7 +11745,7 @@
     "gcd-lcm": {
       "name": "MCD y MCM",
       "description": "Calcular MCD y MCM de varios números",
-      "metaDescription": "Calcular tanto el máximo común divisor como el mínimo común múltiplo de dos o más números",
+      "metaDescription": "MCD y MCM: Calcular MCD y MCM de varios números Usa nuestra calculadora en línea gratuita para obtener resultados rápidos y precisos sin registro. Sencilla, privada y lista para usar en segundos.",
       "guide": {
         "steps": [
           "Introduzca el entero de dos valores.",
@@ -16944,7 +16944,7 @@
   },
   "blog": {
     "title": "Artículos y guías",
-    "subtitle": "Explicaciones prácticas sobre dinero, salud y matemáticas cotidianas, combinadas con nuestras calculadoras gratuitas.",
+    "subtitle": "Explicaciones prácticas sobre dinero, salud y matemáticas cotidianas, combinadas con nuestras calculadoras gratuitas. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
     "readMore": "Leer artículo",
     "publishedOn": "Publicado",
     "minRead": "lectura mínima",
@@ -17159,7 +17159,7 @@
       },
       "calories-bmr-tdee": {
         "title": "Calorías, TMB y TDEE: planificación de una dieta que realmente funcione",
-        "excerpt": "Comer menos, moverse más es cierto pero inútil sin números. Tus necesidades calóricas son personales y dos calculadoras explican por qué.",
+        "excerpt": "Comer menos, moverse más es cierto pero inútil sin números. Tus necesidades calóricas son personales y dos calculadoras explican por qué. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17197,7 +17197,7 @@
       },
       "cooking-unit-conversions": {
         "title": "Conversiones de unidades de cocción: tazas, gramos y onzas sin conjeturas",
-        "excerpt": "Una receta lleva 200 g de harina pero tus tazas son imperiales. La conversión de unidades de cocina no debería arruinar la cena.",
+        "excerpt": "Una receta lleva 200 g de harina pero tus tazas son imperiales. La conversión de unidades de cocina no debería arruinar la cena. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17235,7 +17235,7 @@
       },
       "debt-snowball-vs-avalanche": {
         "title": "Bola de nieve frente a avalancha de deuda: ¿qué método de pago gana?",
-        "excerpt": "Dos métodos populares prometen aplastar la deuda. Difieren en una pregunta: ¿se paga por emoción o por matemáticas?",
+        "excerpt": "Dos métodos populares prometen aplastar la deuda. Difieren en una pregunta: ¿se paga por emoción o por matemáticas? Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17273,7 +17273,7 @@
       },
       "equal-installment-vs-principal": {
         "title": "Cuota fija vs amortización constante: qué hipoteca conviene más",
-        "excerpt": "Mismo importe, mismo tipo de interés y, sin embargo, la diferencia en intereses totales puede ser enorme. Así se elige bien.",
+        "excerpt": "Mismo importe, mismo tipo de interés y, sin embargo, la diferencia en intereses totales puede ser enorme. Así se elige bien. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17440,7 +17440,7 @@
       },
       "inflation-purchasing-power": {
         "title": "¿Cuánto valdrán sus 100 dentro de 10 años? Inflación y poder adquisitivo",
-        "excerpt": "La inflación no reduce su dinero: reduce lo que puede comprar con él. Entender esa erosión es la primera lección de por qué hay que invertir.",
+        "excerpt": "La inflación no reduce su dinero: reduce lo que puede comprar con él. Entender esa erosión es la primera lección de por qué hay que invertir. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17490,7 +17490,7 @@
       },
       "apr-vs-apy-interest-rate-basics": {
         "title": "Tipo nominal, tipo real y TAE: que no le engañen las cifras",
-        "excerpt": "¿Es lo mismo «12 % anual» que «1 % mensual»? En cuanto entra la capitalización, no — y la diferencia puede salir cara.",
+        "excerpt": "¿Es lo mismo «12 % anual» que «1 % mensual»? En cuanto entra la capitalización, no — y la diferencia puede salir cara. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17648,7 +17648,7 @@
       },
       "bmr-tdee-how-many-calories": {
         "title": "TMB y TDEE: ¿cuántas calorías debe comer realmente al día?",
-        "excerpt": "Perder grasa es cuestión de déficit calórico, pero déficit respecto a lo que realmente gasta. La TMB y el TDEE responden a esa pregunta.",
+        "excerpt": "Perder grasa es cuestión de déficit calórico, pero déficit respecto a lo que realmente gasta. La TMB y el TDEE responden a esa pregunta. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17707,7 +17707,7 @@
       },
       "daily-water-intake-guide": {
         "title": "¿Cuánta agua beber al día? Calcule por peso, no por «8 vasos»",
-        "excerpt": "«Ocho vasos al día» es fácil de recordar, pero una persona de 50 kg no necesita lo mismo que una de 90 kg. El peso y la actividad mandan.",
+        "excerpt": "«Ocho vasos al día» es fácil de recordar, pero una persona de 50 kg no necesita lo mismo que una de 90 kg. El peso y la actividad mandan. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17814,7 +17814,7 @@
       },
       "percentage-increase-decrease-guide": {
         "title": "Subidas y bajadas porcentuales: cuidado con la base",
-        "excerpt": "Un +50 % seguido de un −50 % no le devuelve al punto de partida. Entender la trampa de la base evita muchos errores al invertir y al comprar.",
+        "excerpt": "Un +50 % seguido de un −50 % no le devuelve al punto de partida. Entender la trampa de la base evita muchos errores al invertir y al comprar. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -17877,7 +17877,7 @@
       },
       "common-unit-conversion-mistakes": {
         "title": "Dónde fallan casi siempre las conversiones de unidades",
-        "excerpt": "¿Pies y pulgadas a centímetros? ¿Libras a kilos? ¿Cuántos galones hay? Casi todos los errores no son de cálculo, sino de definición.",
+        "excerpt": "¿Pies y pulgadas a centímetros? ¿Libras a kilos? ¿Cuántos galones hay? Casi todos los errores no son de cálculo, sino de definición. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18002,7 +18002,7 @@
       },
       "cooking-measurement-standards": {
         "title": "¿Cuánto pesa una taza de harina? Por qué repostería necesita báscula",
-        "excerpt": "La taza de harina de unos pesa 120 g y la de otros, 160 g. Esa incertidumbre del volumen es una causa clásica de fracasos en repostería.",
+        "excerpt": "La taza de harina de unos pesa 120 g y la de otros, 160 g. Esa incertidumbre del volumen es una causa clásica de fracasos en repostería. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18062,7 +18062,7 @@
       },
       "ratio-and-proportion-practical": {
         "title": "Ratios y proporciones: de mezclar bebidas a leer mapas",
-        "excerpt": "¿Cómo se diluye un concentrado 1:4? ¿Qué significa 1:10000 en un mapa? Las razones son la matemática más útil —y más malinterpretada— del día a día.",
+        "excerpt": "¿Cómo se diluye un concentrado 1:4? ¿Qué significa 1:10000 en un mapa? Las razones son la matemática más útil —y más malinterpretada— del día a día. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18124,7 +18124,7 @@
       },
       "how-much-house-can-you-afford": {
         "title": "¿Cuánta casa puede permitirse? Tres cifras que el banco no le dará",
-        "excerpt": "Entre lo que el banco aprueba y lo que usted puede sostener de verdad suele haber un trecho. Tres ratios le dan la cifra segura.",
+        "excerpt": "Entre lo que el banco aprueba y lo que usted puede sostener de verdad suele haber un trecho. Tres ratios le dan la cifra segura. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18190,7 +18190,7 @@
       },
       "protein-intake-how-much": {
         "title": "¿Cuánta proteína necesita? Calcúlelo por peso corporal",
-        "excerpt": "Una persona sedentaria, un atleta y un mayor necesitan cantidades muy distintas. El peso por un factor es la estimación más práctica.",
+        "excerpt": "Una persona sedentaria, un atleta y un mayor necesitan cantidades muy distintas. El peso por un factor es la estimación más práctica. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18249,7 +18249,7 @@
       },
       "average-mean-median-mode": {
         "title": "Las medias engañan: cuándo usar media, mediana y moda",
-        "excerpt": "¿Por qué el «salario medio» siempre parece inflado? Porque los valores extremos arrastran la media. Elija bien el estadístico y verá los datos.",
+        "excerpt": "¿Por qué el «salario medio» siempre parece inflado? Porque los valores extremos arrastran la media. Elija bien el estadístico y verá los datos. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18307,7 +18307,7 @@
       },
       "car-loan-total-cost": {
         "title": "El coste real de un préstamo para coche: cuatro gastos además de la cuota",
-        "excerpt": "La «financiación al 0 %» suena a ganga, pero sumando comisiones, seguro, impuestos y depreciación, el coste real suele superar lo previsto.",
+        "excerpt": "La «financiación al 0 %» suena a ganga, pero sumando comisiones, seguro, impuestos y depreciación, el coste real suele superar lo previsto. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18370,7 +18370,7 @@
       },
       "food-cost-per-serving": {
         "title": "Coste por ración: ¿realmente sale más barato cocinar en casa?",
-        "excerpt": "Cocinar en casa suele salir más barato que comer fuera, pero cuánto depende de cómo cuente: ingredientes, condimentos y energía entran en el total.",
+        "excerpt": "Cocinar en casa suele salir más barato que comer fuera, pero cuánto depende de cómo cuente: ingredientes, condimentos y energía entran en el total. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18430,7 +18430,7 @@
       },
       "rounding-and-significant-figures": {
         "title": "Por qué redondear a veces está mal: cifras significativas y error acumulado",
-        "excerpt": "Redondear en cada paso desvía el resultado final. Entender el error acumulado y el redondeo bancario hace fiables sus cálculos.",
+        "excerpt": "Redondear en cada paso desvía el resultado final. Entender el error acumulado y el redondeo bancario hace fiables sus cálculos. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18493,7 +18493,7 @@
       },
       "sleep-cycles-when-to-wake": {
         "title": "Ciclos de sueño y hora de levantarse: por qué 8 horas pueden dejarle aturdido",
-        "excerpt": "El sueño avanza en ciclos de unos 90 minutos. Despertar en fase profunda deja aturdido aunque hayan bastado las horas. Ajustar la hora ayuda.",
+        "excerpt": "El sueño avanza en ciclos de unos 90 minutos. Despertar en fase profunda deja aturdido aunque hayan bastado las horas. Ajustar la hora ayuda. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18888,7 +18888,7 @@
       },
       "common-conversion-mistakes": {
         "title": "Errores comunes de conversión: estas trampas arruinan la mitad de los platos caseros",
-        "excerpt": "Mezclar estándares de tazas, ignorar la densidad y aferrarse al tiempo son los tres errores más frecuentes en la conversión de cocina.",
+        "excerpt": "Mezclar estándares de tazas, ignorar la densidad y aferrarse al tiempo son los tres errores más frecuentes en la conversión de cocina. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -18928,7 +18928,7 @@
       },
       "compare-loan-interest-rates": {
         "title": "Cómo comparar los tipos de interés hipotecarios: cuota constante, capital constante y cómo elegir el LPR",
-        "excerpt": "Comparar tipos hipotecarios no es solo mirar números: el sistema de amortización decide el total de intereses que pagas en realidad.",
+        "excerpt": "Comparar tipos hipotecarios no es solo mirar números: el sistema de amortización decide el total de intereses que pagas en realidad. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19006,7 +19006,7 @@
       },
       "compound-interest-investing": {
         "title": "El poder del interés compuesto: usa la regla del 72 para estimar cuándo se duplica tu dinero",
-        "excerpt": "El interés compuesto no es magia: la regla del 72 te deja calcular de cabeza en cuántos años se duplica el capital con cualquier rendimiento anual.",
+        "excerpt": "El interés compuesto no es magia: la regla del 72 te deja calcular de cabeza en cuántos años se duplica el capital con cualquier rendimiento anual. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19045,7 +19045,7 @@
       },
       "build-emergency-fund": {
         "title": "Cómo crear un fondo de emergencia: ¿cuántos meses de gastos es suficiente?",
-        "excerpt": "El fondo de emergencia es la base de la seguridad financiera; la cantidad y la cuenta de destino importan más de lo que crees.",
+        "excerpt": "El fondo de emergencia es la base de la seguridad financiera; la cantidad y la cuenta de destino importan más de lo que crees. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19123,7 +19123,7 @@
       },
       "personal-tax-basics": {
         "title": "Bases del impuesto sobre la renta personal: umbral de exención y cómo aprovechar al máximo las deducciones especiales",
-        "excerpt": "Muchos pagan impuestos de más solo por no declarar una a una las deducciones adicionales; ahorrar legalmente empieza por rellenar el formulario.",
+        "excerpt": "Muchos pagan impuestos de más solo por no declarar una a una las deducciones adicionales; ahorrar legalmente empieza por rellenar el formulario. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19162,7 +19162,7 @@
       },
       "body-fat-percentage-guide": {
         "title": "Cómo interpretar el porcentaje de grasa corporal: hombres y mujeres tienen distintos rangos, no te engañe el peso",
-        "excerpt": "Un peso normal no equivale a estar sano; el porcentaje de grasa corporal es el indicador clave de la grasa.",
+        "excerpt": "Un peso normal no equivale a estar sano; el porcentaje de grasa corporal es el indicador clave de la grasa. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19201,7 +19201,7 @@
       },
       "basal-metabolic-rate": {
         "title": "Cómo calcular la tasa metabólica basal: tu cuerpo quema calorías incluso en reposo",
-        "excerpt": "La tasa metabólica basal supone más del 60 % del gasto diario; calcularla bien es la base para fijar metas calóricas con método.",
+        "excerpt": "La tasa metabólica basal supone más del 60 % del gasto diario; calcularla bien es la base para fijar metas calóricas con método. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19240,7 +19240,7 @@
       },
       "fat-loss-calorie-deficit": {
         "title": "Cómo calcular el déficit calórico para perder grasa: cuánto menos al día para no perder músculo",
-        "excerpt": "La pérdida de grasa es un déficit calórico, pero el tamaño del déficit decide si pierdes grasa o músculo.",
+        "excerpt": "La pérdida de grasa es un déficit calórico, pero el tamaño del déficit decide si pierdes grasa o músculo. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19279,7 +19279,7 @@
       },
       "daily-protein-intake": {
         "title": "Cuánta proteína tomar al día: imprescindible para entrenar y para perder grasa",
-        "excerpt": "La proteína decide cuánto músculo conservas y la sensación de saciedad; la ingesta debe basarse en el peso, no en estimaciones al azar.",
+        "excerpt": "La proteína decide cuánto músculo conservas y la sensación de saciedad; la ingesta debe basarse en el peso, no en estimaciones al azar. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19318,7 +19318,7 @@
       },
       "sleep-cycle-explained": {
         "title": "La ciencia del ciclo del sueño: por qué sigues cansado aunque duermas ocho horas",
-        "excerpt": "La calidad del sueño se mide por los ciclos, no solo por la duración; despertar en la fase equivocada deja aturdido.",
+        "excerpt": "La calidad del sueño se mide por los ciclos, no solo por la duración; despertar en la fase equivocada deja aturdido. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19357,7 +19357,7 @@
       },
       "percentage-increase-decrease": {
         "title": "Cómo calcular el aumento y la bajada porcentual: por qué tras subir y bajar no vuelves al punto de partida",
-        "excerpt": "La base del porcentaje cambia: subir un 50 % y luego bajar un 50 % da pérdida, no equilibrio.",
+        "excerpt": "La base del porcentaje cambia: subir un 50 % y luego bajar un 50 % da pérdida, no equilibrio. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19396,7 +19396,7 @@
       },
       "unit-conversion-pitfalls": {
         "title": "Trampas de la conversión de unidades: no uses el mismo coeficiente para longitud, área y volumen",
-        "excerpt": "Centímetro y metro difieren por 100, pero cm² y m² por 10 000; la conversión de área y volumen es donde más se falla.",
+        "excerpt": "Centímetro y metro difieren por 100, pero cm² y m² por 10 000; la conversión de área y volumen es donde más se falla. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19435,7 +19435,7 @@
       },
       "ratio-and-scaling": {
         "title": "Proporciones y dosificación en la práctica: por qué un plato duplicado cambia de sabor",
-        "excerpt": "El escalado lineal sirve para ingredientes secos y húmedos, pero sal, especias y fermentación son no lineales y hay que juzgarlas aparte.",
+        "excerpt": "El escalado lineal sirve para ingredientes secos y húmedos, pero sal, especias y fermentación son no lineales y hay que juzgarlas aparte. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19474,7 +19474,7 @@
       },
       "mean-median-mode": {
         "title": "Media, mediana y moda: antes de dejarte «promediar», mira la distribución",
-        "excerpt": "Cuando unos pocos inflan el salario medio, la mediana representa mejor el nivel real de la gente corriente.",
+        "excerpt": "Cuando unos pocos inflan el salario medio, la mediana representa mejor el nivel real de la gente corriente. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -19513,7 +19513,7 @@
       },
       "rounding-significant-figures": {
         "title": "Redondeo y cifras significativas: un decimal de más puede ser falsa precisión",
-        "excerpt": "Las cifras significativas de una medida las fija la precisión del instrumento; conservar decimales a ciegas engaña.",
+        "excerpt": "Las cifras significativas de una medida las fija la precisión del instrumento; conservar decimales a ciegas engaña. Lee la guía completa con ejemplos paso a paso y consejos prácticos.",
         "blocks": [
           {
             "type": "p",
@@ -20385,4 +20385,4 @@
       "intro": "La herramienta Web está abierta al desarrollo de la casa en primera línea y ofrece fácil cálculo de codificación, unidades, colores y diseños, etc., e integra las conversiones pequeñas en desarrollo en una sola página."
     }
   }
-}
+}

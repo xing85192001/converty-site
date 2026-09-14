@@ -62,7 +62,7 @@
     },
     "metadata": {
       "titleSuffix": "baikecalc",
-      "defaultDescription": "Kostenlose Online-Rechner und Konverter fuer den taeglichen Bedarf"
+      "defaultDescription": "baikecalc bietet über 190 kostenlose Online-Rechner und Umrechner für Finanzen, Gesundheit, Mathe, Farben, Kochen, Krypto und Medien. Schnell, genau und privat – ohne Registrierung."
     },
     "cookieConsent": {
       "title": "Wir schätzen Ihre Privatsphäre",
@@ -113,7 +113,7 @@
     },
     "videoWatermark": {
       "title": "Video-Wasserzeichen-Entferner",
-      "desc": "Video hochladen und Wasserzeichenbereich auswählen. KI-Verarbeitung im Browser. Unterstützt MP4 / MOV / WebM.",
+      "desc": "Video hochladen und Wasserzeichenbereich auswählen. KI-Verarbeitung im Browser. Unterstützt MP4 / MOV / WebM. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Video hochladen\" und wähle eine lokale MP4-, MOV- oder WebM-Datei aus, oder ziehe die Datei in den Bereich.",
@@ -144,7 +144,7 @@
     },
     "imageWatermark": {
       "title": "Bild-Wasserzeichen-Entferner",
-      "desc": "Wasserzeichenbereich auswählen. KI-basierte intelligente Entfernung. Unterstützt JPG / PNG / WEBP.",
+      "desc": "Wasserzeichenbereich auswählen. KI-basierte intelligente Entfernung. Unterstützt JPG / PNG / WEBP. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\" und wähle eine lokale JPG-, PNG- oder WEBP-Datei aus, oder ziehe sie in den Bereich.",
@@ -175,7 +175,7 @@
     },
     "ico": {
       "title": "ICO-Icon-Konverter",
-      "desc": "Bilder in .ico mit Mehrfachgrößen-Paketierung (16/32/64/128/256px) umwandeln.",
+      "desc": "Bilder in .ico mit Mehrfachgrößen-Paketierung (16/32/64/128/256px) umwandeln. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\" und wähle eine PNG-/JPG-Quelle (quadratisch und hochauflösend ist ideal).",
@@ -206,7 +206,7 @@
     },
     "formatConvert": {
       "title": "Bildformat-Konverter",
-      "desc": "Stapelkonvertierung PNG / JPG / WEBP / BMP / GIF.",
+      "desc": "Stapelkonvertierung PNG / JPG / WEBP / BMP / GIF. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\", um mehrere PNG-/JPG-/WEBP-/BMP-/GIF-Dateien gleichzeitig auszuwählen.",
@@ -237,7 +237,7 @@
     },
     "imageCompress": {
       "title": "Bildkompressor",
-      "desc": "Verlustbehaftete / verlustfreie Komprimierung. Dateigröße reduzieren bei Qualitätserhalt.",
+      "desc": "Verlustbehaftete / verlustfreie Komprimierung. Dateigröße reduzieren bei Qualitätserhalt. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\" und wähle JPG / PNG / WEBP (Massenverarbeitung möglich).",
@@ -268,7 +268,7 @@
     },
     "videoCompress": {
       "title": "Videokompressor",
-      "desc": "Auflösung und Bitrate anpassen, um die Videodateigröße schnell zu verkleinern.",
+      "desc": "Auflösung und Bitrate anpassen, um die Videodateigröße schnell zu verkleinern. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Video hochladen\" und wähle MP4 / MOV / WebM.",
@@ -299,7 +299,7 @@
     },
     "imageUpscale": {
       "title": "Bild-Hochskalierung",
-      "desc": "KI-Superauflösung — verwischte Bilder wieder scharf machen.",
+      "desc": "KI-Superauflösung — verwischte Bilder wieder scharf machen. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\" und wähle ein JPG / PNG / WEBP zum Vergrößern.",
@@ -336,7 +336,7 @@
       "mergeBtn": "Zu PDF zusammenführen",
       "downloadBtn": "PDF herunterladen",
       "title": "Bild zu PDF",
-      "desc": "Mehrere Bilder in eine einzige PDF-Datei zusammenführen.",
+      "desc": "Mehrere Bilder in eine einzige PDF-Datei zusammenführen. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Bild hochladen\", um mehrere JPG / PNG / WEBP auszuwählen.",
@@ -495,7 +495,7 @@
       "errorEmpty": "Die Ausgabedatei ist leer",
       "errorNetwork": "Netzwerkfehler: Der Prozessorkern konnte nicht heruntergeladen werden. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "errorFailed": "Die Konvertierung ist fehlgeschlagen. Bitte versuchen Sie es erneut",
-      "desc": "Laden Sie ein Video hoch, passen Sie FPS und Breite an und konvertieren Sie es mit einem Klick in ein animiertes GIF.",
+      "desc": "Laden Sie ein Video hoch, passen Sie FPS und Breite an und konvertieren Sie es mit einem Klick in ein animiertes GIF. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Klicke auf \"Video hochladen\" und wähle MP4 / MOV / WebM.",
@@ -529,35 +529,35 @@
   "nav": {
     "color": {
       "name": "Farbe",
-      "description": "Farbkonvertierung und Paletten"
+      "description": "Farbe: Farbkonvertierung und Paletten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "cooking": {
       "name": "Kochen",
-      "description": "Kochen und Rezepte"
+      "description": "Kochen: Kochen und Rezepte Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "crypto": {
       "name": "Krypto",
-      "description": "Krypto und Mining"
+      "description": "Krypto: Krypto und Mining Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "data": {
       "name": "Daten",
-      "description": "Daten und Bandbreite"
+      "description": "Daten: Daten und Bandbreite Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "datetime": {
       "name": "Datum/Zeit",
-      "description": "Datum und Zeit"
+      "description": "Datum/Zeit: Datum und Zeit Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "finance": {
       "name": "Finanzen",
-      "description": "Finanzrechner"
+      "description": "Finanzen: Finanzrechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "health": {
       "name": "Gesundheit",
-      "description": "Gesundheit und Fitness"
+      "description": "Gesundheit: Gesundheit und Fitness Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "infrastructure": {
       "name": "Infrastruktur",
-      "description": "IT und Virtualisierung",
+      "description": "Infrastruktur: IT und Virtualisierung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -568,7 +568,7 @@
     },
     "engineering": {
       "name": "Ingenieurwesen",
-      "description": "Ingenieurwesen und Physik",
+      "description": "Ingenieurwesen: Ingenieurwesen und Physik Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "subcategories": {
         "structural": "Strukturell",
         "materials": "Materialien",
@@ -578,44 +578,44 @@
     },
     "math": {
       "name": "Mathematik",
-      "description": "Mathematische Rechner"
+      "description": "Mathematik: Mathematische Rechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "music": {
       "name": "Musik",
-      "description": "Audio und Musik",
+      "description": "Musik: Audio und Musik Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "comingSoon": "Musikrechner in Kürze verfügbar!"
     },
     "network": {
       "name": "Netzwerk",
-      "description": "Netzwerk-Werkzeuge"
+      "description": "Netzwerk: Netzwerk-Werkzeuge Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "photo": {
       "name": "Foto",
-      "description": "Foto-Werkzeuge"
+      "description": "Foto: Foto-Werkzeuge Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "physics": {
       "name": "Physik",
-      "description": "Physik und Mechanik"
+      "description": "Physik: Physik und Mechanik Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "realestate": {
       "name": "Immobilien",
-      "description": "Hypotheken und Miete"
+      "description": "Immobilien: Hypotheken und Miete Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "video": {
       "name": "Video",
-      "description": "Video-Werkzeuge"
+      "description": "Video: Video-Werkzeuge Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "web": {
       "name": "Web",
-      "description": "Web-Werkzeuge und SEO"
+      "description": "Web: Web-Werkzeuge und SEO Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "automotive": {
       "name": "Auto",
-      "description": "Kraftstoff-, Reifen-, Wartungs- und Finanzierungsrechner"
+      "description": "Auto: Kraftstoff-, Reifen-, Wartungs- und Finanzierungsrechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar."
     },
     "chemistry": {
       "name": "Chemie",
-      "description": "Chemische Rechner",
+      "description": "Chemie: Chemische Rechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "subcategories": {
         "general": "Allgemein",
         "solutions": "Lösungen",
@@ -676,7 +676,7 @@
     "bmi": {
       "name": "BMI",
       "description": "Berechnen Sie Ihren Body-Mass-Index und Ihre Gesundheitskategorie",
-      "metaDescription": "Berechnen Sie Ihren Body-Mass-Index (BMI) und verstehen Sie Ihre Gesundheitskategorie",
+      "metaDescription": "BMI: Berechnen Sie Ihren Body-Mass-Index und Ihre Gesundheitskategorie Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie das Einheitensystem: metrisch (Zentimeter / Kilogramm) oder imperisch (Fuß und Zoll / Pfund).",
@@ -743,7 +743,7 @@
     "corpulence": {
       "name": "Korpulenz",
       "description": "Berechnen Sie Ihren Korpulenz-Index (Ponderal-Index)",
-      "metaDescription": "Berechnen Sie Ihren Ponderal-Index fuer eine genauere Koerperzusammensetzungsbewertung",
+      "metaDescription": "Korpulenz: Berechnen Sie Ihren Korpulenz-Index (Ponderal-Index) Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Grose und Gewicht ein, sowie Alter und Geschlecht, falls die Formel sie braucht.",
@@ -775,7 +775,7 @@
     "cpu-comparison-calculator": {
       "name": "CPU-Vergleich",
       "description": "Bis zu 4 CPUs nach SPECint2017-Score, Leistung pro Kern und pro Watt vergleichen",
-      "metaDescription": "Kostenloser CPU-Vergleichsrechner. Intel Xeon, AMD EPYC und Ampere Altra nach SPECint2017-Benchmark, Leistung pro Kern und pro Watt vergleichen.",
+      "metaDescription": "CPU-Vergleich: Bis zu 4 CPUs nach SPECint2017-Score, Leistung pro Kern und pro Watt vergleichen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "filterPanel": "Filtern",
       "vendorFilter": "Hersteller",
       "generationFilter": "Generation",
@@ -918,7 +918,7 @@
     "age": {
       "name": "Alters",
       "description": "Berechnen Sie das genaue Alter ab Geburtsdatum in Jahren, Monaten und Tagen",
-      "metaDescription": "Berechnen Sie Ihr genaues Alter in Jahren, Monaten, Tagen, Stunden und Minuten",
+      "metaDescription": "Alters: Berechnen Sie das genaue Alter ab Geburtsdatum in Jahren, Monaten und Tagen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib das Geburtsdatum (J/M/T) ein; mit Uhrzeit genauer.",
@@ -950,7 +950,7 @@
     "date": {
       "name": "Datums",
       "description": "Addieren oder subtrahieren Sie Tage, Wochen, Monate und Jahre von einem Datum",
-      "metaDescription": "Addieren oder subtrahieren Sie Zeitraeume von einem beliebigen Datum",
+      "metaDescription": "Datums: Addieren oder subtrahieren Sie Tage, Wochen, Monate und Jahre von einem Datum Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib ein Startdatum ein und wahle Plus oder Minus.",
@@ -982,7 +982,7 @@
     "time": {
       "name": "Zeit",
       "description": "Addieren oder subtrahieren Sie Stunden, Minuten und Sekunden",
-      "metaDescription": "Fuehren Sie Zeitberechnungen mit Stunden, Minuten und Sekunden durch",
+      "metaDescription": "Zeit: Addieren oder subtrahieren Sie Stunden, Minuten und Sekunden Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Tageszeit ein, einschließlich Stunden, Minuten, Sekunden.",
@@ -1081,7 +1081,7 @@
     "hours": {
       "name": "Stunden",
       "description": "Berechnen Sie die Stunden zwischen zwei Zeiten oder Daten",
-      "metaDescription": "Berechnen Sie die Anzahl der Stunden zwischen zwei Zeiten oder Daten",
+      "metaDescription": "Stunden: Berechnen Sie die Stunden zwischen zwei Zeiten oder Daten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib eine Zeit in Stunden und Minuten oder einen dezimalen Stundenwert ein.",
@@ -1113,7 +1113,7 @@
     "time-duration": {
       "name": "Zeitdauer",
       "description": "Berechnet die Dauer zwischen zwei Datums- und Zeitangaben",
-      "metaDescription": "Zeitdauer-Rechner",
+      "metaDescription": "Zeitdauer: Berechnet die Dauer zwischen zwei Datums- und Zeitangaben Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Start- und Endzeit ein, mit Datum falls sie die Mitternacht uberschreiten.",
@@ -1145,7 +1145,7 @@
     "time-zone": {
       "name": "Zeitzonen",
       "description": "Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen",
-      "metaDescription": "Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen weltweit",
+      "metaDescription": "Zeitzonen: Konvertieren Sie Zeiten zwischen verschiedenen Zeitzonen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie die Quellzeitzone und die Zielzeitzone (unterstützen Sie Großstädte und UTC-Abweichungen).",
@@ -1244,7 +1244,7 @@
     "day-counter": {
       "name": "Tageszaehler",
       "description": "Zaehlen Sie Tage zwischen Daten oder bis zu einem zukuenftigen Datum",
-      "metaDescription": "Zaehlen Sie die Tage zwischen zwei Daten oder bis zu einem bevorstehenden Ereignis",
+      "metaDescription": "Tageszaehler: Zaehlen Sie Tage zwischen Daten oder bis zu einem zukuenftigen Datum Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie das Startdatum und das Enddatum ein (mit oder ohne Endpunkte umschalten).",
@@ -1337,7 +1337,7 @@
     "day-of-week": {
       "name": "Wochentag",
       "description": "Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt",
-      "metaDescription": "Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt",
+      "metaDescription": "Wochentag: Finden Sie heraus, auf welchen Wochentag ein beliebiges Datum faellt Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib irgendein Kalenderdatum ein, das dich interessiert.",
@@ -1369,7 +1369,7 @@
     "duration-converter": {
       "name": "Dauerumrechner",
       "description": "Konvertiert Zeiteinheiten: Sekunden, Minuten, Stunden, Tage, Wochen, Monate, Jahre",
-      "metaDescription": "Zeiteinheiten-Umrechner",
+      "metaDescription": "Dauerumrechner: Konvertiert Zeiteinheiten: Sekunden, Minuten, Stunden, Tage, Wochen, Monate, Jahre Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib eine Dauer in einer Einheit ein, etwa Tage, Stunden oder Minuten.",
@@ -1401,7 +1401,7 @@
     "rgb": {
       "name": "RGB-Konverter",
       "description": "Konvertieren Sie zwischen RGB-, HEX-, HSL- und CMYK-Farbformaten",
-      "metaDescription": "Konvertieren Sie Farben zwischen RGB-, HEX-, HSL- und CMYK-Formaten",
+      "metaDescription": "RGB-Konverter: Konvertieren Sie zwischen RGB-, HEX-, HSL- und CMYK-Farbformaten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Werte zwischen 0 und 255 für Rot, Grün, Blau ein.",
@@ -1500,7 +1500,7 @@
     "data-size": {
       "name": "Datengroessen",
       "description": "Konvertieren Sie zwischen Bytes, KB, MB, GB, TB und mehr",
-      "metaDescription": "Konvertieren Sie Datengroessen zwischen Bytes, Kilobytes, Megabytes und mehr",
+      "metaDescription": "Datengroessen: Konvertieren Sie zwischen Bytes, KB, MB, GB, TB und mehr Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Werte Bytes, KB, MB, GB oder TB ein.",
@@ -1581,7 +1581,7 @@
     "bandwidth": {
       "name": "Bandbreiten-Konverter",
       "description": "Konvertieren Sie Mbps in KB/s, GB/Tag, TB/Woche und mehr",
-      "metaDescription": "Konvertieren Sie Bandbreite zwischen verschiedenen Einheiten",
+      "metaDescription": "Bandbreiten-Konverter: Konvertieren Sie Mbps in KB/s, GB/Tag, TB/Woche und mehr Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Bandbreitenwert und seine Einheiten (bps, Kbps, Mbps, Gbps) ein.",
@@ -1668,7 +1668,7 @@
     "download-calculator": {
       "name": "Herunterladen",
       "description": "Berechnen Sie die Download-Zeit aus Bandbreite und Dateigroesse",
-      "metaDescription": "Berechnen Sie, wie lange ein Datei-Download dauern wird",
+      "metaDescription": "Herunterladen: Berechnen Sie die Download-Zeit aus Bandbreite und Dateigroesse Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Dateigröße (z. B. 500 MB) und Bandbreite (z. B. 100 Mbps) ein.",
@@ -1985,7 +1985,7 @@
     "throughput-calculator": {
       "name": "Durchsatz",
       "description": "Netzwerkdurchsatz aus übertragenen Daten und Zeit berechnen",
-      "metaDescription": "Kostenloser Netzwerk-Durchsatz-Rechner. Berechnen Sie die tatsächliche Übertragungsgeschwindigkeit aus Dateigröße und Übertragungszeit.",
+      "metaDescription": "Durchsatz: Netzwerkdurchsatz aus übertragenen Daten und Zeit berechnen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Betrag und die Zeit ein, die Sie übertragen möchten.",
@@ -2072,7 +2072,7 @@
     "speed": {
       "name": "Geschwindigkeits-Konverter",
       "description": "Konvertieren Sie zwischen m/s, km/h, mph, Knoten und mehr",
-      "metaDescription": "Konvertieren Sie Geschwindigkeit zwischen Meter pro Sekunde, km/h, mph und mehr",
+      "metaDescription": "Geschwindigkeits-Konverter: Konvertieren Sie zwischen m/s, km/h, mph, Knoten und mehr Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den Geschwindigkeitswert ein und wahle die aktuelle Einheit, z. B. Meter pro Sekunde oder Meilen pro Stunde.",
@@ -2105,7 +2105,7 @@
     "aspect-ratio": {
       "name": "Seitenverhaeltnis",
       "description": "Berechnen Sie Seitenverhaeltnisse aus Breite und Hoehe",
-      "metaDescription": "Berechnen und konvertieren Sie Seitenverhaeltnisse fuer Bilder und Video",
+      "metaDescription": "Seitenverhaeltnis: Berechnen Sie Seitenverhaeltnisse aus Breite und Hoehe Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Breite und Höhe ein oder wähle ein Preset wie 16:9.",
@@ -2137,7 +2137,7 @@
     "aspect-fit": {
       "name": "Aspect-Fit",
       "description": "Passen Sie ein Bild mit Letterboxing auf einen Bildschirm an",
-      "metaDescription": "Berechnen Sie Letterboxing und Pillarboxing fuer Bildanpassung",
+      "metaDescription": "Aspect-Fit: Passen Sie ein Bild mit Letterboxing auf einen Bildschirm an Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Breite und Höhe deines Bildes oder Videos ein.",
@@ -2169,7 +2169,7 @@
     "composition": {
       "name": "Kompositions",
       "description": "Berechnen Sie das Sichtfeld aus Brennweite und Entfernung",
-      "metaDescription": "Kostenloser Online-Rechner für Bildkomposition. Hol dir Drittel- und Goldener-Schnitt-Punkte für jede Größe, ohne Anmeldung.",
+      "metaDescription": "Kompositions: Berechnen Sie das Sichtfeld aus Brennweite und Entfernung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle eine Kompositionsregel (Drittelregel, Goldener Schnitt u. a.).",
@@ -2201,7 +2201,7 @@
     "depth-of-field": {
       "name": "Schaerfentiefe",
       "description": "Berechnen Sie die Schaerfentiefe aus Blende, Brennweite und Entfernung",
-      "metaDescription": "Kostenloser Online-Rechner für Schärfentiefe. Finde Nah- und Fern grenzen und Unschärfe für jedes Objektiv schnell, ohne Anmeldung.",
+      "metaDescription": "Schaerfentiefe: Berechnen Sie die Schaerfentiefe aus Blende, Brennweite und Entfernung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Stelle die Kamera auf Blendenautomatik oder Manuell und wähle eine Blende.",
@@ -2233,7 +2233,7 @@
     "dpi": {
       "name": "DPI",
       "description": "Berechnen Sie Megapixel aus Druckgroesse und DPI",
-      "metaDescription": "Berechnen Sie DPI und Aufloesung fuer den Druck",
+      "metaDescription": "DPI: Berechnen Sie Megapixel aus Druckgroesse und DPI Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle die Richtung: Größe → DPI oder DPI → Druckgröße.",
@@ -2265,7 +2265,7 @@
     "image-filesize": {
       "name": "Bilddateigroessen",
       "description": "Schaetzen Sie die Bilddateigroesse fuer JPEG-, PNG-, RAW-Formate",
-      "metaDescription": "Schaetzen Sie Bilddateigroessen fuer verschiedene Formate",
+      "metaDescription": "Bilddateigroessen: Schaetzen Sie die Bilddateigroesse fuer JPEG-, PNG-, RAW-Formate Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle den Typ: Foto (JPEG), transparent (PNG) oder roh (RAW).",
@@ -2297,7 +2297,7 @@
     "light-ev": {
       "name": "Licht-EV",
       "description": "Berechnen Sie den Belichtungswert aus Kameraeinstellungen",
-      "metaDescription": "Berechnen Sie den Belichtungswert aus Kameraeinstellungen",
+      "metaDescription": "Licht-EV: Berechnen Sie den Belichtungswert aus Kameraeinstellungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Radium (f), schnelle Türgeschwindigkeit und ISO ein.",
@@ -2396,7 +2396,7 @@
     "megapixels": {
       "name": "Megapixel",
       "description": "Berechnen Sie Megapixel aus Breite und Hoehe",
-      "metaDescription": "Berechnen Sie Megapixel aus Bildabmessungen",
+      "metaDescription": "Megapixel: Berechnen Sie Megapixel aus Breite und Hoehe Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Sensobreite und -höhe in Pixeln ein oder wähle eine Spezifikation.",
@@ -2428,7 +2428,7 @@
     "megapixel-aspects": {
       "name": "Megapixel-Aspekte",
       "description": "Zeigen Sie Megapixel in verschiedenen Seitenverhaeltnissen an",
-      "metaDescription": "Zeigen Sie Megapixel-Zahlen in verschiedenen Seitenverhaeltnissen an",
+      "metaDescription": "Megapixel-Aspekte: Zeigen Sie Megapixel in verschiedenen Seitenverhaeltnissen an Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Gesamtmillion Pixel (MP) eines Sensors oder Bildes ein.",
@@ -2509,7 +2509,7 @@
     "portrait-distance": {
       "name": "Portrait-Entfernungs",
       "description": "Berechnen Sie die ideale Aufnahmeentfernung fuer Portraits",
-      "metaDescription": "Berechnen Sie die ideale Entfernung fuer Portraitfotografie",
+      "metaDescription": "Portrait-Entfernungs: Berechnen Sie die ideale Aufnahmeentfernung fuer Portraits Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Brennweite des Objektivs und die Höhe des Kamerasensors ein.",
@@ -2584,7 +2584,7 @@
     "star-trails": {
       "name": "Sternspuren",
       "description": "Berechnen Sie die Belichtungszeit fuer Sternenspuren-Rotation",
-      "metaDescription": "Berechnen Sie Belichtungszeiten fuer Sternenspuren-Fotografie",
+      "metaDescription": "Sternspuren: Berechnen Sie die Belichtungszeit fuer Sternenspuren-Rotation Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Brennweite des Objektivs und des Kamerahörkoeffizienten ein.",
@@ -2659,7 +2659,7 @@
     "spot-stars": {
       "name": "Punktsterne",
       "description": "Berechnen Sie die maximale Belichtung zur Vermeidung von Sternenspuren (NPF-Regel)",
-      "metaDescription": "Berechnen Sie die maximale Belichtungszeit fuer scharfe Sterne",
+      "metaDescription": "Punktsterne: Berechnen Sie die maximale Belichtung zur Vermeidung von Sternenspuren (NPF-Regel) Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Brennweite, Apertur und Sensorpixelabstand ein.",
@@ -2746,7 +2746,7 @@
     "time-lapse": {
       "name": "Zeitraffer",
       "description": "Berechnen Sie Intervall, Cliplaenge und Speicher fuer Zeitraffer",
-      "metaDescription": "Planen Sie Ihre Zeitraffer-Fotografie-Projekte",
+      "metaDescription": "Zeitraffer: Berechnen Sie Intervall, Cliplaenge und Speicher fuer Zeitraffer Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Zeit ein, in der Sie die reale Welt filmen möchten.",
@@ -2840,7 +2840,7 @@
     "focal-equivalent": {
       "name": "Brennweiten-Aequivalent",
       "description": "Gleichen Sie Einstellungen zwischen verschiedenen Sensorgroessen an",
-      "metaDescription": "Kostenloser Online-Rechner für äquivalente Brennweite. Wandle jedes Objektiv schnell auf Vollformat um, ohne Anmeldung.",
+      "metaDescription": "Brennweiten-Aequivalent: Gleichen Sie Einstellungen zwischen verschiedenen Sensorgroessen an Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die tatsächliche Brennweite deines Objektivs ein.",
@@ -2872,7 +2872,7 @@
     "hyperfocal": {
       "name": "Hyperfokale-Entfernungs",
       "description": "Berechnen Sie die hyperfokale Entfernung fuer maximale Schaerfentiefe",
-      "metaDescription": "Kostenloser Online-Rechner für hyperfokale Distanz. Finde den Fokuspunkt für maximale Tiefe schnell, ohne Anmeldung, mit Formel.",
+      "metaDescription": "Hyperfokale-Entfernungs: Berechnen Sie die hyperfokale Entfernung fuer maximale Schaerfentiefe Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Brennweite und Blende ein, mit denen du fotografieren willst.",
@@ -2904,7 +2904,7 @@
     "nd-filter": {
       "name": "ND-Filter",
       "description": "Berechnen Sie die Belichtungszeit mit ND-Filtern",
-      "metaDescription": "Kostenloser Online-ND-Filter-Rechner. Wandle Verschlusszeiten für jede ND-Stufe schnell um, ohne Anmeldung, für Langzeitbelichtungen.",
+      "metaDescription": "ND-Filter: Berechnen Sie die Belichtungszeit mit ND-Filtern Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Verschlusszeit ein, die du ohne Filter nutzen würdest.",
@@ -2936,7 +2936,7 @@
     "golden-hour": {
       "name": "Goldene-Stunde-Guide",
       "description": "Berechnen Sie die Zeiten der goldenen Stunde basierend auf Ihrem Standort",
-      "metaDescription": "Kostenloser Online-Rechner für die goldene Stunde. Finde Gold- und Blaue-Stunde für Ort und Datum schnell, ohne Anmeldung.",
+      "metaDescription": "Goldene-Stunde-Guide: Berechnen Sie die Zeiten der goldenen Stunde basierend auf Ihrem Standort Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib deinen Ort ein (oder erlaube die Standortermittlung).",
@@ -3061,7 +3061,7 @@
     "exchange-rate": {
       "name": "Wechselkurs",
       "description": "Konvertieren zwischen Kryptowahrungen und Fiat-Wahrungen (CHF, EUR, USD)",
-      "metaDescription": "Kostenloser Online-Wechselkursrechner. Rechne Währungen schnell mit aktuellen Kursen um, ohne Anmeldung, USD EUR GBP JPY CNY CHF u. a.",
+      "metaDescription": "Wechselkurs: Konvertieren zwischen Kryptowahrungen und Fiat-Wahrungen (CHF, EUR, USD) Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den zu konvertierenden Betrag ein.",
@@ -3093,7 +3093,7 @@
     "hash-calculator": {
       "name": "Hash-Rechner",
       "description": "Berechnen Sie MD5, SHA-1, SHA-256, SHA-512 Hash-Werte",
-      "metaDescription": "Kostenloser Online-Hash-Rechner. Erzeuge MD5-, SHA-1-, SHA-256-, SHA-512-Digests aus Text oder Dateien schnell, ohne Anmeldung.",
+      "metaDescription": "Hash-Rechner: Berechnen Sie MD5, SHA-1, SHA-256, SHA-512 Hash-Werte Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Tippe oder füge den Text oder Dateiinhalt ein, den du hashen willst.",
@@ -3125,7 +3125,7 @@
     "mining-calculator": {
       "name": "Mining-Rentabilitat",
       "description": "Berechnen Sie die Bitcoin-Mining-Rentabilitat basierend auf Hashrate und Stromkosten",
-      "metaDescription": "Kostenloser Online-Mining-Rechner. Schätze Gewinn aus Hashrate, Leistung und Stromkosten schnell, ohne Anmeldung, täglich und monatlich.",
+      "metaDescription": "Mining-Rentabilitat: Berechnen Sie die Bitcoin-Mining-Rentabilitat basierend auf Hashrate und Stromkosten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Hashrate und den Stromverbrauch deiner Hardware ein.",
@@ -3157,7 +3157,7 @@
     "wallet-validator": {
       "name": "Wallet-Validator",
       "description": "Validieren Sie Bitcoin-, Ethereum- und Litecoin-Wallet-Adressen",
-      "metaDescription": "Kostenloser Online-Validator für Wallet-Adressen. Prüfe Bitcoin-, Ethereum- und weitere Adressen auf Format und Prüfsumme, ohne Anmeldung.",
+      "metaDescription": "Wallet-Validator: Validieren Sie Bitcoin-, Ethereum- und Litecoin-Wallet-Adressen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Fügen Sie die verschlüsselte Währung Wallet-Adresse zu überprüfen.",
@@ -3250,7 +3250,7 @@
     "mortgage-swiss": {
       "name": "Schweizer Hypothekenrechner",
       "description": "Berechnen Sie Hypothekenzahlungen mit CHF/EUR-Unterstutzung und Schweizer Marktzinsen",
-      "metaDescription": "Kostenloser Schweizer Hypothekenrechner mit CHF und EUR. Berechnen Sie monatliche Zahlungen, Amortisationsplane und Gesamtkosten.",
+      "metaDescription": "Schweizer Hypothekenrechner: Berechnen Sie Hypothekenzahlungen mit CHF/EUR-Unterstutzung und Schweizer Marktzinsen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Hauspreis, den Schweizer Referenzzinssatz oder den auf SARON basierenden Zinssatz ein.",
@@ -3331,7 +3331,7 @@
     "rental-yield": {
       "name": "Mietrendite-Rechner",
       "description": "Berechnen Sie Brutto- und Nettomietrendite fur Schweizer Immobilieninvestitionen",
-      "metaDescription": "Kostenloser Mietrendite-Rechner fur Schweizer Immobilieninvestoren. Berechnen Sie Brutto- und Nettorenditen.",
+      "metaDescription": "Mietrendite-Rechner: Berechnen Sie Brutto- und Nettomietrendite fur Schweizer Immobilieninvestitionen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Preis (oder Anzahlung + Kredit) und Miete eingeben.",
@@ -3364,7 +3364,7 @@
     "property-valuation": {
       "name": "Immobilienbewertungsrechner",
       "description": "Schatzen Sie Schweizer Immobilienwerte mit der hedonischen Methode",
-      "metaDescription": "Kostenloser Schweizer Immobilienbewertungsrechner. Schatzen Sie Wohnungs- und Hauswerte basierend auf Lage, Grosse und Zustand.",
+      "metaDescription": "Immobilienbewertungsrechner: Schatzen Sie Schweizer Immobilienwerte mit der hedonischen Methode Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Vergleichspreise und Diffs (Fläche, Alter, Etage) eingeben.",
@@ -3397,7 +3397,7 @@
     "sun-position": {
       "name": "Sonnenpositions",
       "description": "Berechnen Sie Sonnenposition, Daemmerungszeiten und Lichtphasen fuer Fotografie",
-      "metaDescription": "Berechnen Sie Sonnenhoehe, Azimut, Daemmerungszeiten, goldene und blaue Stunde fuer Fotoplanung",
+      "metaDescription": "Sonnenpositions: Berechnen Sie Sonnenposition, Daemmerungszeiten und Lichtphasen fuer Fotografie Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Breitengrad, Längengrad, Datum und Ortszeit ein.",
@@ -3478,7 +3478,7 @@
     "circle-of-confusion": {
       "name": "Zerstreuungskreis",
       "description": "Berechnen Sie den Zerstreuungskreis aus Sensor, Druckgroesse und Betrachtungsabstand",
-      "metaDescription": "Berechnen Sie den Zerstreuungskreis fuer die Schaerfentiefe",
+      "metaDescription": "Zerstreuungskreis: Berechnen Sie den Zerstreuungskreis aus Sensor, Druckgroesse und Betrachtungsabstand Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Sichtweite und die Größe des Bildes ein.",
@@ -3571,7 +3571,7 @@
     "advanced-dof": {
       "name": "Erweiterter Schaerfentiefe",
       "description": "Schaerfentiefe mit einstellbarem Zerstreuungskreis fuer Druckgroesse und Betrachtung",
-      "metaDescription": "Erweiterte Schaerfentiefe-Berechnungen",
+      "metaDescription": "Erweiterter Schaerfentiefe: Schaerfentiefe mit einstellbarem Zerstreuungskreis fuer Druckgroesse und Betrachtung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Brennweite, die Apertur (f), die Brennweite und den dispersiven Kreis (CoC) ein.",
@@ -3652,7 +3652,7 @@
     "macro-dof": {
       "name": "Makro-Schaerfentiefe",
       "description": "Genaue Schaerfentiefe fuer Makrofotografie",
-      "metaDescription": "Berechnen Sie die Schaerfentiefe fuer Makrofotografie",
+      "metaDescription": "Makro-Schaerfentiefe: Genaue Schaerfentiefe fuer Makrofotografie Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie eine Vergrößerungsrate für Radium (f-Wert) und Mikrobereich ein.",
@@ -3739,7 +3739,7 @@
     "dof-table": {
       "name": "Schaerfentiefe-Tabelle",
       "description": "Interaktive Tabelle mit Schaerfentiefe ueber Blenden und Entfernungen",
-      "metaDescription": "Referenztabelle fuer Schaerfentiefe",
+      "metaDescription": "Schaerfentiefe-Tabelle: Interaktive Tabelle mit Schaerfentiefe ueber Blenden und Entfernungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie die Brennweite und das Radium, das Sie verwenden möchten.",
@@ -3826,7 +3826,7 @@
     "diffraction": {
       "name": "Beugungs",
       "description": "Berechnen Sie, wann Ihre Kamera beugungsbegrenzt wird",
-      "metaDescription": "Berechnen Sie Beugungsgrenzen fuer Ihre Kamera",
+      "metaDescription": "Beugungs: Berechnen Sie, wann Ihre Kamera beugungsbegrenzt wird Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Radium (f) und Lichtwellenlänge ein.",
@@ -3919,7 +3919,7 @@
     "macro-diffraction": {
       "name": "Makro-Beugungs",
       "description": "Berechnen Sie die effektive Blende und Beugung in der Makrofotografie",
-      "metaDescription": "Berechnen Sie Beugungseffekte in der Makrofotografie",
+      "metaDescription": "Makro-Beugungs: Berechnen Sie die effektive Blende und Beugung in der Makrofotografie Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Radium (f-Wert) und Mikrobereichsvergrößerungsrate ein.",
@@ -4006,7 +4006,7 @@
     "bpm": {
       "name": "BPM",
       "description": "Konvertieren Sie BPM in Hz, Taktlaenge und Notendauern",
-      "metaDescription": "Konvertieren Sie Schlaege pro Minute in andere musikalische Zeiteinheiten",
+      "metaDescription": "BPM: Konvertieren Sie BPM in Hz, Taktlaenge und Notendauern Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Anzahl der Schläge und die Zeit (Sekunden oder Minuten) ein.",
@@ -4099,7 +4099,7 @@
     "video-file-size": {
       "name": "Videodateigroessen",
       "description": "Schaetzen Sie die Videodateigroesse aus Aufloesung und Dauer",
-      "metaDescription": "Schaetzen Sie Videodateigroessen basierend auf Einstellungen",
+      "metaDescription": "Videodateigroessen: Schaetzen Sie die Videodateigroesse aus Aufloesung und Dauer Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Länge, Auflösung und Zielqualität des Videos ein.",
@@ -4200,7 +4200,7 @@
     "audio-filesize": {
       "name": "Audiodateigroessen",
       "description": "Schaetzen Sie die Audiodateigroesse aus Dauer und Format",
-      "metaDescription": "Schaetzen Sie Audiodateigroessen fuer verschiedene Formate",
+      "metaDescription": "Audiodateigroessen: Schaetzen Sie die Audiodateigroesse aus Dauer und Format Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Audiolänge und die Abtastrate ein (z. B. 44,1 kHz).",
@@ -4299,7 +4299,7 @@
     "common-bitrates": {
       "name": "Gaengige Bitraten-Referenz",
       "description": "Referenzhandbuch fuer ProRes-, DNxHD-, DCP- und MPEG-Bitraten",
-      "metaDescription": "Referenzhandbuch fuer Video-Codec-Bitraten",
+      "metaDescription": "Gaengige Bitraten-Referenz: Referenzhandbuch fuer ProRes-, DNxHD-, DCP- und MPEG-Bitraten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Auswahl des Lieferziels: Stream-Medien, Radio, CD-ROM oder Master.",
@@ -4392,7 +4392,7 @@
     "dcp-filesize": {
       "name": "DCP-Dateigroessen",
       "description": "Berechnen Sie Digital Cinema Package-Dateigroessen",
-      "metaDescription": "Berechnen Sie DCP-Dateigroessen fuer Kinovertrieb",
+      "metaDescription": "DCP-Dateigroessen: Berechnen Sie Digital Cinema Package-Dateigroessen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Länge und die gewählte Auflösung (2K oder 4K) ein.",
@@ -4479,7 +4479,7 @@
     "foot-lambert": {
       "name": "Fuß-Lambert",
       "description": "Berechnen Sie die Bildschirmleuchtdichte fuer Kinoprojektion",
-      "metaDescription": "Berechnen Sie die Bildschirmhelligkeit fuer Kinoprojektion",
+      "metaDescription": "Fuß-Lambert: Berechnen Sie die Bildschirmleuchtdichte fuer Kinoprojektion Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die gemessene Helligkeit (fL oder nits) ein.",
@@ -4566,7 +4566,7 @@
     "screen-size": {
       "name": "Bildschirmgroessen",
       "description": "Berechnen Sie Bildschirmabmessungen aus Diagonale und Seitenverhaeltnis",
-      "metaDescription": "Berechnen Sie Bildschirmabmessungen aus der Diagonalgroesse",
+      "metaDescription": "Bildschirmgroessen: Berechnen Sie Bildschirmabmessungen aus Diagonale und Seitenverhaeltnis Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Größe der Bildschirmecke (Zoll oder Zentimeter) ein.",
@@ -4659,7 +4659,7 @@
     "video-bitrate": {
       "name": "Video-Bitraten",
       "description": "Schaetzen Sie die Videobitrate basierend auf Aufloesung und Codec",
-      "metaDescription": "Berechnen Sie optimale Videobitraten",
+      "metaDescription": "Video-Bitraten: Schaetzen Sie die Videobitrate basierend auf Aufloesung und Codec Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Zieldateigröße und Videodauer ein.",
@@ -4753,7 +4753,7 @@
     "frame-rate": {
       "name": "Bildrate-Konverter",
       "description": "Konvertieren Sie zwischen Bildraten mit ffmpeg-Befehlen",
-      "metaDescription": "Konvertieren Sie Video zwischen Bildraten",
+      "metaDescription": "Bildrate-Konverter: Konvertieren Sie zwischen Bildraten mit ffmpeg-Befehlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Source Frame Rate ein.",
@@ -4846,7 +4846,7 @@
     "url-encoder": {
       "name": "URL-Encoder",
       "description": "Kodieren und dekodieren Sie URLs und Sonderzeichen",
-      "metaDescription": "Kodieren und dekodieren Sie URLs und URI-Komponenten",
+      "metaDescription": "URL-Encoder: Kodieren und dekodieren Sie URLs und Sonderzeichen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Füge die zu kodierende URL oder Query ein.",
@@ -4878,7 +4878,7 @@
     "csp": {
       "name": "CSP-Generator",
       "description": "Generieren Sie Content Security Policy-Header",
-      "metaDescription": "Generieren Sie Content Security Policy-Header fuer Websicherheit",
+      "metaDescription": "CSP-Generator: Generieren Sie Content Security Policy-Header Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Richtlinien ein, die du erlauben willst (default-src, script-src, img-src usw.).",
@@ -4910,7 +4910,7 @@
     "redirect-check": {
       "name": "Weiterleitungs-Pruefer",
       "description": "Ueberpruefen Sie HTTP-Weiterleitungsketten und Statuscodes",
-      "metaDescription": "Ueberpruefen Sie URL-Weiterleitungsketten und HTTP-Statuscodes",
+      "metaDescription": "Weiterleitungs-Pruefer: Ueberpruefen Sie HTTP-Weiterleitungsketten und Statuscodes Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Quell-URL ein, um mit der gewünschten endgültigen Zieladresse zu testen.",
@@ -5004,7 +5004,7 @@
     "spf-check": {
       "name": "SPF-Eintrag-Pruefer",
       "description": "Analysieren Sie SPF-Eintraege fuer E-Mail-Authentifizierung",
-      "metaDescription": "Analysieren Sie SPF-Eintraege fuer E-Mail-Sicherheit",
+      "metaDescription": "SPF-Eintrag-Pruefer: Analysieren Sie SPF-Eintraege fuer E-Mail-Authentifizierung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib deine Domain ein, um den veröffentlichten SPF-DNS-Record abzufragen.",
@@ -5036,7 +5036,7 @@
     "https-check": {
       "name": "HTTPS-Sicherheits-Pruefer",
       "description": "Ueberpruefen Sie Sicherheits-Header und TLS-Konfiguration",
-      "metaDescription": "Ueberpruefen Sie Website-HTTPS und Sicherheits-Header",
+      "metaDescription": "HTTPS-Sicherheits-Pruefer: Ueberpruefen Sie Sicherheits-Header und TLS-Konfiguration Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den Hostnamen oder die volle HTTPS-URL ein.",
@@ -5068,7 +5068,7 @@
     "html-encoder": {
       "name": "HTML-Encoder",
       "description": "Kodieren und dekodieren Sie HTML-Entitaeten",
-      "metaDescription": "Kodieren und dekodieren Sie HTML-Sonderzeichen",
+      "metaDescription": "HTML-Encoder: Kodieren und dekodieren Sie HTML-Entitaeten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "HTML-Text mit < > & einfügen.",
@@ -5101,7 +5101,7 @@
     "html-chars": {
       "name": "HTML-Zeichentabelle",
       "description": "Durchsuchen und kopieren Sie HTML-Zeichenentitaeten",
-      "metaDescription": "Referenzhandbuch fuer HTML-Zeichenentitaeten",
+      "metaDescription": "HTML-Zeichentabelle: Durchsuchen und kopieren Sie HTML-Zeichenentitaeten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Text mit Sonderzeichen eingeben/einfügen.",
@@ -5134,7 +5134,7 @@
     "emoji-chars": {
       "name": "Emoji-Zeichentabelle",
       "description": "Durchsuchen und kopieren Sie Emoji mit Codes",
-      "metaDescription": "Durchsuchen und kopieren Sie Emoji-Zeichen",
+      "metaDescription": "Emoji-Zeichentabelle: Durchsuchen und kopieren Sie Emoji mit Codes Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Text mit Emoji / Sonderzeichen eingeben.",
@@ -5167,7 +5167,7 @@
     "seo-performance": {
       "name": "SEO-Leistungsanalysator",
       "description": "Analysieren Sie Seiten-SEO-Metriken und erhalten Sie Empfehlungen",
-      "metaDescription": "Analysieren Sie SEO-Leistung und erhalten Sie Optimierungstipps",
+      "metaDescription": "SEO-Leistungsanalysator: Analysieren Sie Seiten-SEO-Metriken und erhalten Sie Empfehlungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Ihre Seiten-URL mit dem Ziel-Keyword oder der Phrase ein, die Sie ranken möchten.",
@@ -5261,7 +5261,7 @@
     "mortgage": {
       "name": "Hypothek",
       "description": "Berechnen Sie monatliche Zahlungen und Tilgungsplan",
-      "metaDescription": "Hypothekenrechner mit Tilgungsplan",
+      "metaDescription": "Hypothek: Berechnen Sie monatliche Zahlungen und Tilgungsplan Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Kaufpreis und die Anzahlung prozentual oder als Betrag ein; die Darlehenssumme wird automatisch ermittelt.",
@@ -5328,7 +5328,7 @@
     "compound-interest": {
       "name": "Zinseszins",
       "description": "Berechnen Sie den Zinseszins für Investitionen mit regelmäßigen Beiträgen",
-      "metaDescription": "Berechnen Sie das Wachstum des Zinseszinses im Zeitverlauf",
+      "metaDescription": "Zinseszins: Berechnen Sie den Zinseszins für Investitionen mit regelmäßigen Beiträgen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie das Startkapital ein, also den Betrag, den Sie zu Beginn anlegen.",
@@ -5397,7 +5397,7 @@
     "loan": {
       "name": "Kredit",
       "description": "Berechnen Sie monatliche Kreditzahlungen",
-      "metaDescription": "Kreditzahlungen und Tilgung",
+      "metaDescription": "Kredit: Berechnen Sie monatliche Kreditzahlungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Darlehenssumme ein, also den Betrag, den Sie tatsächlich erhalten, ohne Bearbeitungsgebühren.",
@@ -5457,7 +5457,7 @@
     "retirement": {
       "name": "Ruhestand",
       "description": "Planen Sie Ihren Ruhestand mit Sparprognosen",
-      "metaDescription": "Ruhestandsplanung",
+      "metaDescription": "Ruhestand: Planen Sie Ihren Ruhestand mit Sparprognosen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Ihr aktuelles Alter und das geplante Rentenalter ein, damit die Ansparphase feststeht.",
@@ -5526,7 +5526,7 @@
     "tip": {
       "name": "Trinkgeld",
       "description": "Berechnen Sie Trinkgeld und teilen Sie die Rechnung",
-      "metaDescription": "Trinkgeldrechner",
+      "metaDescription": "Trinkgeld: Berechnen Sie Trinkgeld und teilen Sie die Rechnung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle die Währung und den üblichen Trinkgeld-Satz (z. B. Restaurant 10–15 %, Lieferung 0–10 %).",
@@ -5559,7 +5559,7 @@
     "savings-goal": {
       "name": "Sparziel",
       "description": "Berechnen Sie die Zeit bis zum Sparziel",
-      "metaDescription": "Sparplanung",
+      "metaDescription": "Sparziel: Berechnen Sie die Zeit bis zum Sparziel Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Zielbetrag ein, etwa Eigenkapital, Studienfonds oder Notgroschen, sowie das vorhandene Guthaben.",
@@ -5628,7 +5628,7 @@
     "inflation": {
       "name": "Inflation",
       "description": "Berechnen Sie die Auswirkung der Inflation",
-      "metaDescription": "Inflationsauswirkung",
+      "metaDescription": "Inflation: Berechnen Sie die Auswirkung der Inflation Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie einen Betrag sowie Start- und Endjahr ein.",
@@ -5691,7 +5691,7 @@
     "roi": {
       "name": "Rendite",
       "description": "Berechnen Sie die Investitionsrendite",
-      "metaDescription": "Investitionsrendite",
+      "metaDescription": "Rendite: Berechnen Sie die Investitionsrendite Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Anschaffungskosten ein, also den Kaufpreis zuzüglich aller Gebühren und Steuern.",
@@ -5760,7 +5760,7 @@
     "break-even": {
       "name": "Die Gewinnzone erreichen",
       "description": "Berechnen Sie den Break-Even-Punkt",
-      "metaDescription": "Break-Even-Analyse",
+      "metaDescription": "Die Gewinnzone erreichen: Berechnen Sie den Break-Even-Punkt Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Fixkosten eingeben (Miete, Gehälter – volumenunabhängig).",
@@ -5793,7 +5793,7 @@
     "profit-margin": {
       "name": "Gewinnmargen",
       "description": "Berechnen Sie Brutto-, Betriebs- und Nettogewinnmargen",
-      "metaDescription": "Berechnen Sie Unternehmensgewinnmargen",
+      "metaDescription": "Gewinnmargen: Berechnen Sie Brutto-, Betriebs- und Nettogewinnmargen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle 'Aufschlag' oder 'Preis rückwärts'.",
@@ -5826,7 +5826,7 @@
     "discount": {
       "name": "Rabatt",
       "description": "Berechnen Sie Rabatte, Verkaufspreise und Ersparnisse",
-      "metaDescription": "Berechnen Sie Rabatte und Verkaufspreise",
+      "metaDescription": "Rabatt: Berechnen Sie Rabatte, Verkaufspreise und Ersparnisse Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den Originalpreis und den Rabatt (z. B. 20 %) ein, oder den reduzierten Preis zur Rückberechnung.",
@@ -5859,7 +5859,7 @@
     "currency": {
       "name": "Währungsumrechner",
       "description": "Konvertiert wichtige Weltwährungen",
-      "metaDescription": "Währungsumrechner",
+      "metaDescription": "Währungsumrechner: Konvertiert wichtige Weltwährungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den umzurechnenden Betrag ein und wählen Sie Ausgangs- und Zielwährung.",
@@ -5928,7 +5928,7 @@
     "auto-loan": {
       "name": "Autokredit",
       "description": "Berechnen Sie Autokreditzahlungen, Zinsen und Gesamtkosten",
-      "metaDescription": "Berechnen Sie Ihre monatlichen Autokreditzahlungen und Gesamtkosten",
+      "metaDescription": "Autokredit: Berechnen Sie Autokreditzahlungen, Zinsen und Gesamtkosten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Auto-Preis, Anzahlung (Prozent oder Betrag), Laufzeit und Zins eingeben.",
@@ -5961,7 +5961,7 @@
     "personal-loan": {
       "name": "Privatkredit",
       "description": "Berechnen Sie Privatkreditzahlungen mit Gebuehren und effektivem Jahreszins",
-      "metaDescription": "Berechnen Sie Privatkreditzahlungen inklusive Bearbeitungsgebuehren",
+      "metaDescription": "Privatkredit: Berechnen Sie Privatkreditzahlungen mit Gebuehren und effektivem Jahreszins Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Kreditbetrag, APR und Laufzeit (Monate/Jahre) eingeben.",
@@ -5994,7 +5994,7 @@
     "student-loan": {
       "name": "Studienkredit",
       "description": "Berechnen Sie Studienkreditzahlungen mit Karenzzeit-Optionen",
-      "metaDescription": "Berechnen Sie Studienkreditzahlungen und Tilgungsplaene",
+      "metaDescription": "Studienkredit: Berechnen Sie Studienkreditzahlungen mit Karenzzeit-Optionen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den gesamten Darlehenssaldo, den festen Zinssatz und die Laufzeit in Jahren ein.",
@@ -6026,7 +6026,7 @@
     "home-equity": {
       "name": "Eigenkapital",
       "description": "Berechnen Sie Eigenheimkredit- oder HELOC-Zahlungen",
-      "metaDescription": "Berechnen Sie Eigenheimkredit- und HELOC-Zahlungen",
+      "metaDescription": "Eigenkapital: Berechnen Sie Eigenheimkredit- oder HELOC-Zahlungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den aktuellen Marktwert der Immobilie und die gesamten Salden aller Hypotheken oder Pfandrechte ein.",
@@ -6058,7 +6058,7 @@
     "debt-payoff": {
       "name": "Schulden-Tilgungs",
       "description": "Berechnen Sie die Tilgungszeit mit Sonderzahlungen",
-      "metaDescription": "Berechnen Sie die Tilgungszeit und Ersparnisse durch Sonderzahlungen",
+      "metaDescription": "Schulden-Tilgungs: Berechnen Sie die Tilgungszeit mit Sonderzahlungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Alle Schulden auflisten: Saldo, Zins, Mindestrate.",
@@ -6091,7 +6091,7 @@
     "credit-card": {
       "name": "Kreditkarten",
       "description": "Berechnen Sie die Kreditkarten-Tilgungszeit und Zinsen",
-      "metaDescription": "Berechnen Sie Tilgungszeit und Gesamtzinskosten der Kreditkarte",
+      "metaDescription": "Kreditkarten: Berechnen Sie die Kreditkarten-Tilgungszeit und Zinsen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den aktuellen Saldo, den effektiven Jahreszins der Karte und den Betrag ein, den Sie monatlich zahlen möchten.",
@@ -6154,7 +6154,7 @@
     "down-payment": {
       "name": "Anzahlungs",
       "description": "Berechnen Sie wie viel Sie fuer eine Anzahlung sparen muessen",
-      "metaDescription": "Berechnen Sie die monatlichen Sparbetraege fuer Ihr Anzahlungsziel",
+      "metaDescription": "Anzahlungs: Berechnen Sie wie viel Sie fuer eine Anzahlung sparen muessen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den erwogenen Hauspreis und deinen geplanten Anteil in Prozent ein.",
@@ -6186,7 +6186,7 @@
     "retirement-401k": {
       "name": "401(k)",
       "description": "Berechnen Sie Altersvorsorge mit Arbeitgeberzuschuss",
-      "metaDescription": "Berechnen Sie 401k Altersvorsorge mit Arbeitgeberzuschuss und Prognosen",
+      "metaDescription": "401(k): Berechnen Sie Altersvorsorge mit Arbeitgeberzuschuss Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib dein aktuelles Alter, das geplante Rentenalter, dein Gehalt und das aktuelle 401(k)-Guthaben ein.",
@@ -6218,7 +6218,7 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Vergleichen Sie Traditional vs Roth IRA Altersvorsorgekonten",
-      "metaDescription": "Vergleichen Sie Traditional und Roth IRA Altersvorsorge und Steuervorteile",
+      "metaDescription": "IRA: Vergleichen Sie Traditional vs Roth IRA Altersvorsorgekonten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wahle, ob du Traditional IRA, Roth IRA oder beide vergleichen mochtest.",
@@ -6251,7 +6251,7 @@
     "bond-calculator": {
       "name": "Anleihen",
       "description": "Berechnen Sie Anleihenpreise, Renditen und Ertraege",
-      "metaDescription": "Berechnen Sie Anleihenpreise, aktuelle Rendite und Endfaelligkeitsrendite",
+      "metaDescription": "Anleihen: Berechnen Sie Anleihenpreise, Renditen und Ertraege Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Nennwert, Kuponsatz, Restlaufzeit und aktuellen Marktpreis der Anleihe ein.",
@@ -6284,7 +6284,7 @@
     "annuity-calculator": {
       "name": "Renten",
       "description": "Berechnen Sie Rentenzahlungen und Ruhestandseinkommen",
-      "metaDescription": "Berechnen Sie Rentenzahlungen und Ruhestandseinkommensprognosen",
+      "metaDescription": "Renten: Berechnen Sie Rentenzahlungen und Ruhestandseinkommen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wahle die Rentenart: nachschussige Rente (Zahlung am Periodenende) oder vorschussige Rente (am Periodenanfang).",
@@ -6317,7 +6317,7 @@
     "body-fat": {
       "name": "Koerperfett",
       "description": "Berechnen Sie den Koerperfettanteil mit der US-Navy-Methode",
-      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil mit der US-Navy-Methode",
+      "metaDescription": "Koerperfett: Berechnen Sie den Koerperfettanteil mit der US-Navy-Methode Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie Geschlecht und Einheitensystem. Das Geschlecht wirkt direkt auf die Formelparameter.",
@@ -6380,7 +6380,7 @@
     "lean-body-mass": {
       "name": "Magermasse",
       "description": "Berechnen Sie die Magermasse mit verschiedenen Formeln",
-      "metaDescription": "Berechnen Sie Ihre Magermasse (fettfreie Masse) mit medizinischen Formeln",
+      "metaDescription": "Magermasse: Berechnen Sie die Magermasse mit verschiedenen Formeln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Gewicht, Korperfettanteil (oder eine Methode wie Hautfalt) und Geschlecht ein.",
@@ -6412,7 +6412,7 @@
     "body-surface-area": {
       "name": "Koerperoberflaechen",
       "description": "Berechnen Sie KOF mit mehreren medizinischen Formeln",
-      "metaDescription": "Berechnen Sie die Koerperoberflaeche fuer Medikamentendosierung",
+      "metaDescription": "Koerperoberflaechen: Berechnen Sie KOF mit mehreren medizinischen Formeln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Grose und Gewicht ein.",
@@ -6444,7 +6444,7 @@
     "ideal-weight": {
       "name": "Idealgewicht",
       "description": "Berechnen Sie das ideale Koerpergewicht mit mehreren Formeln",
-      "metaDescription": "Berechnen Sie Ihr Idealgewicht mit Robinson, Miller, Devine und Hamwi",
+      "metaDescription": "Idealgewicht: Berechnen Sie das ideale Koerpergewicht mit mehreren Formeln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie Geschlecht und Einheitensystem, die Koeffizienten unterscheiden sich nach Geschlecht.",
@@ -6513,7 +6513,7 @@
     "bmr-calculator": {
       "name": "Grundumsatz",
       "description": "Berechnen Sie den Grundumsatz fuer Kalorienplanung",
-      "metaDescription": "Berechnen Sie Ihren Grundumsatz mit Harris-Benedict und Mifflin-St Jeor",
+      "metaDescription": "Grundumsatz: Berechnen Sie den Grundumsatz fuer Kalorienplanung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie Geschlecht und Einheitensystem. Das Geschlecht bestimmt die Konstante in der Gleichung.",
@@ -6582,7 +6582,7 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Berechnen Sie den taeglichen Gesamtenergieverbrauch",
-      "metaDescription": "Berechnen Sie Ihren Gesamtenergieverbrauch basierend auf Aktivitaetsniveau",
+      "metaDescription": "TDEE: Berechnen Sie den taeglichen Gesamtenergieverbrauch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz berechnet werden kann.",
@@ -6657,7 +6657,7 @@
     "calorie-calculator": {
       "name": "Kalorien",
       "description": "Berechnen Sie den taeglichen Kalorienbedarf fuer Gewichtsziele",
-      "metaDescription": "Berechnen Sie Kalorienbedarf und Makros fuer Gewichtsabnahme oder -zunahme",
+      "metaDescription": "Kalorien: Berechnen Sie den taeglichen Kalorienbedarf fuer Gewichtsziele Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz bestimmt werden kann.",
@@ -6726,7 +6726,7 @@
     "calories-burned": {
       "name": "Kalorienverbrauch",
       "description": "Berechnen Sie verbrannte Kalorien bei verschiedenen Aktivitaeten",
-      "metaDescription": "Berechnen Sie Kalorienverbrauch beim Training mit MET-Werten",
+      "metaDescription": "Kalorienverbrauch: Berechnen Sie verbrannte Kalorien bei verschiedenen Aktivitaeten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Ihr Gewicht ein, wer mehr wiegt, verbraucht bei gleicher Aktivität mehr.",
@@ -6807,7 +6807,7 @@
     "target-heart-rate": {
       "name": "Zielherzfrequenz",
       "description": "Berechnen Sie Herzfrequenz-Zonen fuer das Training",
-      "metaDescription": "Berechnen Sie Ihre Zielherzfrequenz-Zonen fuer Fettverbrennung und Cardio",
+      "metaDescription": "Zielherzfrequenz: Berechnen Sie Herzfrequenz-Zonen fuer das Training Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Ihr Alter ein, die maximale Herzfrequenz hängt vor allem daran.",
@@ -6882,7 +6882,7 @@
     "one-rep-max": {
       "name": "1RM",
       "description": "Berechnen Sie Ihr Maximalkraftgewicht aus submaximalen Hebungen",
-      "metaDescription": "Berechnen Sie Ihr 1RM mit verschiedenen Formeln aus submaximalen Hebungen",
+      "metaDescription": "1RM: Berechnen Sie Ihr Maximalkraftgewicht aus submaximalen Hebungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie die Übung, etwa Bankdrücken, Kniebeuge oder Kreuzheben.",
@@ -6946,7 +6946,7 @@
     "pace-calculator": {
       "name": "Tempo",
       "description": "Berechnen Sie Lauftempo, Zwischenzeiten und Zeitvorhersagen",
-      "metaDescription": "Berechnen Sie Lauftempo, Zwischenzeiten und prognostizieren Sie Laufzeiten",
+      "metaDescription": "Tempo: Berechnen Sie Lauftempo, Zwischenzeiten und Zeitvorhersagen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle: Distanz+Zeit → Tempo, oder Tempo+Distanz → Endzeit.",
@@ -6979,7 +6979,7 @@
     "macro-calculator": {
       "name": "Makro",
       "description": "Berechnen Sie Ihren taeglichen Makronaehrstoffbedarf",
-      "metaDescription": "Berechnen Sie Ihre Protein-, Kohlenhydrat- und Fettziele nach Ihren Zielen",
+      "metaDescription": "Makro: Berechnen Sie Ihren taeglichen Makronaehrstoffbedarf Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Geschlecht, Alter, Größe und Gewicht ein, damit der Grundumsatz berechnet werden kann.",
@@ -7046,7 +7046,7 @@
     "bac-calculator": {
       "name": "Blutalkohol",
       "description": "Schaetzen Sie Ihren Blutalkoholspiegel und die Abbauzeit",
-      "metaDescription": "Berechnen Sie Ihren Blutalkoholspiegel und die Zeit bis zur Nuechternheit",
+      "metaDescription": "Blutalkohol: Schaetzen Sie Ihren Blutalkoholspiegel und die Abbauzeit Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Geschlecht, Gewicht, Anzahl Standardgetranke und die Trinkstunden ein.",
@@ -7078,7 +7078,7 @@
     "due-date": {
       "name": "Geburtstermin",
       "description": "Berechnen Sie den voraussichtlichen Geburtstermin",
-      "metaDescription": "Berechnen Sie Ihren Geburtstermin mit verschiedenen Methoden",
+      "metaDescription": "Geburtstermin: Berechnen Sie den voraussichtlichen Geburtstermin Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie das Datum des ersten Tages der letzten Periode (LMP) ein.",
@@ -7172,7 +7172,7 @@
     "ovulation-calculator": {
       "name": "Eisprung",
       "description": "Sagen Sie Eisprung und fruchtbare Fenster voraus",
-      "metaDescription": "Sagen Sie Ihre Eisprungtage und fruchtbaren Tage voraus",
+      "metaDescription": "Eisprung: Sagen Sie Eisprung und fruchtbare Fenster voraus Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Ersten Tag der letzten Periode und Zykluslänge (Standard 28) eingeben.",
@@ -7205,7 +7205,7 @@
     "pregnancy-weight-gain": {
       "name": "Schwangerschafts-Gewichtszunahme",
       "description": "Berechnen Sie die empfohlene Gewichtszunahme waehrend der Schwangerschaft",
-      "metaDescription": "Berechnen Sie eine gesunde Gewichtszunahme in der Schwangerschaft nach BMI",
+      "metaDescription": "Schwangerschafts-Gewichtszunahme: Berechnen Sie die empfohlene Gewichtszunahme waehrend der Schwangerschaft Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib dein Gewicht vor der Schwangerschaft und deine Grose ein, um den Start-BMI zu berechnen.",
@@ -7237,7 +7237,7 @@
     "gfr-calculator": {
       "name": "GFR",
       "description": "Berechnen Sie die glomerulaere Filtrationsrate fuer die Nierenfunktion",
-      "metaDescription": "Berechnen Sie Ihre GFR zur Beurteilung der Nierenfunktion",
+      "metaDescription": "GFR: Berechnen Sie die glomerulaere Filtrationsrate fuer die Nierenfunktion Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Serumkreatinin, Alter und Geschlecht ein (und Rassenkoeffizient bei alter Formel).",
@@ -7269,7 +7269,7 @@
     "body-type": {
       "name": "Koerpertyp",
       "description": "Bestimmen Sie Ihren Somatotyp (ekto-, meso-, endomorph)",
-      "metaDescription": "Finden Sie Ihren Koerpertyp heraus und erhalten Sie angepasste Trainingstipps",
+      "metaDescription": "Koerpertyp: Bestimmen Sie Ihren Somatotyp (ekto-, meso-, endomorph) Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Beantworte ein paar Fragen zu deinem Korperbau oder gib einfache Messwerte ein.",
@@ -7301,7 +7301,7 @@
     "healthy-weight": {
       "name": "Gesundes-Gewicht",
       "description": "Finden Sie Ihren gesunden Gewichtsbereich nach Groesse",
-      "metaDescription": "Berechnen Sie Ihren gesunden Gewichtsbereich nach Ihrer Groesse",
+      "metaDescription": "Gesundes-Gewicht: Finden Sie Ihren gesunden Gewichtsbereich nach Groesse Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib Grose, Gewicht, Alter und das bei der Geburt zugewiesene Geschlecht ein.",
@@ -7333,7 +7333,7 @@
     "protein-calculator": {
       "name": "Eiweiß",
       "description": "Berechnen Sie Ihren taeglichen Proteinbedarf",
-      "metaDescription": "Berechnen Sie Ihren Proteinbedarf nach Zielen und Aktivitaet",
+      "metaDescription": "Eiweiß: Berechnen Sie Ihren taeglichen Proteinbedarf Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gewicht (kg) und Ziel/ Aktivität eingeben.",
@@ -7366,7 +7366,7 @@
     "water-intake": {
       "name": "Wasserbedarf",
       "description": "Berechnen Sie Ihren taeglichen Wasserbedarf",
-      "metaDescription": "Berechnen Sie, wie viel Wasser Sie taeglich trinken sollten",
+      "metaDescription": "Wasserbedarf: Berechnen Sie Ihren taeglichen Wasserbedarf Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie Ihr Körpergewicht ein und wählen Sie Kilogramm oder Pfund.",
@@ -7429,7 +7429,7 @@
     "sleep-calculator": {
       "name": "Schlaf",
       "description": "Finden Sie optimale Schlaf- und Aufwachzeiten",
-      "metaDescription": "Berechnen Sie optimale Schlaf- und Aufwachzeiten nach Schlafzyklen",
+      "metaDescription": "Schlaf: Finden Sie optimale Schlaf- und Aufwachzeiten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie die Zeit, zu der Sie einschlafen möchten, oder die Zeit, zu der Sie aufstehen müssen.",
@@ -7492,7 +7492,7 @@
     "army-body-fat": {
       "name": "US-Armee-Koerperfett",
       "description": "Berechnen Sie Koerperfett mit der US-Armee-Bandmassmethode",
-      "metaDescription": "Berechnen Sie Ihren Koerperfettanteil nach US-Armee-Standards",
+      "metaDescription": "US-Armee-Koerperfett: Berechnen Sie Koerperfett mit der US-Armee-Bandmassmethode Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die nötigen Masse ein wie Grose, Hals und Taille (bei einigen Huften).",
@@ -7524,7 +7524,7 @@
     "period-calculator": {
       "name": "Perioden",
       "description": "Verfolgen Sie Ihren Menstruationszyklus und sagen Sie die naechste Periode voraus",
-      "metaDescription": "Verfolgen und prognostizieren Sie Ihren Menstruationszyklus",
+      "metaDescription": "Perioden: Verfolgen Sie Ihren Menstruationszyklus und sagen Sie die naechste Periode voraus Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Ersten Tag der letzten Periode und Zykluslänge eingeben.",
@@ -7557,7 +7557,7 @@
     "fat-intake": {
       "name": "Fettaufnahme",
       "description": "Berechnen Sie Ihren taeglichen Fettbedarf",
-      "metaDescription": "Berechnen Sie Ihren optimalen Fettbedarf nach Ihren Zielen",
+      "metaDescription": "Fettaufnahme: Berechnen Sie Ihren taeglichen Fettbedarf Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib dein kalorienziel und einen Ziel-Fettanteil ein.",
@@ -7589,7 +7589,7 @@
     "carb-calculator": {
       "name": "Kohlenhydrat",
       "description": "Berechnen Sie Ihren taeglichen Kohlenhydratbedarf",
-      "metaDescription": "Berechnen Sie Ihren optimalen Kohlenhydratbedarf nach Ihren Zielen",
+      "metaDescription": "Kohlenhydrat: Berechnen Sie Ihren taeglichen Kohlenhydratbedarf Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib dein kalorienziel und den gewahlten Kohlenhydratanteil ein.",
@@ -7621,7 +7621,7 @@
     "basic-calculator": {
       "name": "Taschenrechner",
       "description": "Führt arithmetische Berechnungen mit Ausdrucksunterstützung durch",
-      "metaDescription": "Kostenloser Online-Taschenrechner",
+      "metaDescription": "Taschenrechner: Führt arithmetische Berechnungen mit Ausdrucksunterstützung durch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Tippe Zahlen uber das Bildschirmfeld oder deine Tastatur ein.",
@@ -7653,7 +7653,7 @@
     "fraction-calculator": {
       "name": "Bruch",
       "description": "Addieren, subtrahieren, multiplizieren, dividieren und kuerzen Sie Brueche",
-      "metaDescription": "Berechnen Sie Brueche mit schrittweisen Loesungen und gemischten Zahlen",
+      "metaDescription": "Bruch: Addieren, subtrahieren, multiplizieren, dividieren und kuerzen Sie Brueche Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle die Operation: Addieren, Subtrahieren, Multiplizieren, Dividieren oder nur Kürzen einer gemischten/Echtbruchs.",
@@ -7685,7 +7685,7 @@
     "percentage-calculator": {
       "name": "Prozentrechner",
       "description": "Berechnet Prozent, Prozentänderung und Prozentdifferenz",
-      "metaDescription": "Kostenloser Online-Prozentrechner. Ermittle X% von Y, wie viel % eine Zahl von einer anderen ist, sowie Zuwächse oder Rabatte, ohne Anmeldung.",
+      "metaDescription": "Prozentrechner: Berechnet Prozent, Prozentänderung und Prozentdifferenz Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle die gewünschte Prozentrechnung (X% von Y, X ist wie viel % von Y oder Zu-/Abnahme).",
@@ -7717,7 +7717,7 @@
     "percent-error": {
       "name": "Prozentfehler",
       "description": "Berechnen Sie den Fehler zwischen experimentellen und tatsaechlichen Werten",
-      "metaDescription": "Berechnen Sie den Prozentfehler fuer wissenschaftliche Experimente",
+      "metaDescription": "Prozentfehler: Berechnen Sie den Fehler zwischen experimentellen und tatsaechlichen Werten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den gemessenen (experimentellen) und den akzeptierten (wahren) Wert ein.",
@@ -7749,7 +7749,7 @@
     "rounding-calculator": {
       "name": "Rundungs",
       "description": "Runden Sie Zahlen mit verschiedenen Methoden und Praezision",
-      "metaDescription": "Runden Sie auf Dezimalstellen, signifikante Stellen oder benutzerdefinierte Praezision",
+      "metaDescription": "Rundungs: Runden Sie Zahlen mit verschiedenen Methoden und Praezision Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die zu rundende Zahl ein und wahle die Ziel-Dezimalstellen oder Signifikanten.",
@@ -7781,7 +7781,7 @@
     "average-calculator": {
       "name": "Durchschnitts",
       "description": "Berechnen Sie Mittelwert, Median, Modus und andere Durchschnitte",
-      "metaDescription": "Berechnen Sie arithmetisches, gewichtetes, geometrisches und harmonisches Mittel",
+      "metaDescription": "Durchschnitts: Berechnen Sie Mittelwert, Median, Modus und andere Durchschnitte Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Zahlen zeilenweise oder durch Komma getrennt ein; jederzeit ergänzbar.",
@@ -7813,7 +7813,7 @@
     "long-division": {
       "name": "Langdivision",
       "description": "Fuehren Sie Langdivision mit schrittweiser Loesung durch",
-      "metaDescription": "Lernen Sie Langdivision mit detaillierten Schritt-fuer-Schritt-Loesungen",
+      "metaDescription": "Langdivision: Fuehren Sie Langdivision mit schrittweiser Loesung durch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Zahl geteilt (Zahl geteilt) und die Zahl geteilt (Zahl verwendet) ein.",
@@ -7888,7 +7888,7 @@
     "exponent-calculator": {
       "name": "Exponenten",
       "description": "Berechnen Sie Potenzen und Exponentialausdruecke",
-      "metaDescription": "Berechnen Sie Potenzen, Exponenten und Exponentialausdruecke",
+      "metaDescription": "Exponenten: Berechnen Sie Potenzen und Exponentialausdruecke Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Basis und den anzuwendenden Exponenten ein.",
@@ -7920,7 +7920,7 @@
     "root-calculator": {
       "name": "Wurzel",
       "description": "Berechnen Sie Quadratwurzeln, Kubikwurzeln und n-te Wurzeln",
-      "metaDescription": "Berechnen Sie Quadratwurzeln, Kubikwurzeln und beliebige n-te Wurzeln",
+      "metaDescription": "Wurzel: Berechnen Sie Quadratwurzeln, Kubikwurzeln und n-te Wurzeln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib den Radikanden (Zahl unter der Wurzel) und den Index ein, zum Beispiel 2 fur die Quadratwurzel.",
@@ -7952,7 +7952,7 @@
     "logarithm-calculator": {
       "name": "Logarithmus",
       "description": "Berechnen Sie Logarithmen mit beliebiger Basis",
-      "metaDescription": "Berechnen Sie Logarithmen zur Basis 10, natuerlichen Logarithmus oder benutzerdefinierter Basis",
+      "metaDescription": "Logarithmus: Berechnen Sie Logarithmen mit beliebiger Basis Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Zahl, deren Logarithmus du brauchst, und die Basis ein, wie 10, e oder 2.",
@@ -7984,7 +7984,7 @@
     "quadratic-calculator": {
       "name": "Quadratische-Formel",
       "description": "Loesen Sie quadratische Gleichungen und finden Sie Nullstellen",
-      "metaDescription": "Loesen Sie quadratische Gleichungen mit schrittweisen Loesungen",
+      "metaDescription": "Quadratische-Formel: Loesen Sie quadratische Gleichungen und finden Sie Nullstellen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Koeffizienten a, b und c deiner quadratischen Gleichung a x^2 + b x + c = 0 ein.",
@@ -8016,7 +8016,7 @@
     "factor-calculator": {
       "name": "Faktor",
       "description": "Finden Sie alle Teiler einer Zahl",
-      "metaDescription": "Finden Sie alle Teiler, Teilerpaare und Primfaktoren einer Zahl",
+      "metaDescription": "Faktor: Finden Sie alle Teiler einer Zahl Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie eine positive ganze Zahl ein, um sich zu zersetzen.",
@@ -8109,7 +8109,7 @@
     "gcd-calculator": {
       "name": "GGT",
       "description": "Berechnen Sie den groessten gemeinsamen Teiler mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie den GGT von zwei oder mehr Zahlen",
+      "metaDescription": "GGT: Berechnen Sie den groessten gemeinsamen Teiler mehrerer Zahlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie zwei oder mehr ganze Zahlen ein.",
@@ -8184,7 +8184,7 @@
     "lcm-calculator": {
       "name": "KGV",
       "description": "Berechnen Sie das kleinste gemeinsame Vielfache mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie das KGV von zwei oder mehr Zahlen",
+      "metaDescription": "KGV: Berechnen Sie das kleinste gemeinsame Vielfache mehrerer Zahlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie zwei oder mehr ganze Zahlen ein.",
@@ -8264,7 +8264,7 @@
     "prime-factorization": {
       "name": "Primfaktorzerlegung",
       "description": "Finden Sie Primfaktoren und Teiler beliebiger Zahlen",
-      "metaDescription": "Finden Sie Primfaktorzerlegung, Faktorbaum und alle Teiler",
+      "metaDescription": "Primfaktorzerlegung: Finden Sie Primfaktoren und Teiler beliebiger Zahlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie eine positive Zahl größer als 1 ein.",
@@ -8351,7 +8351,7 @@
     "triangle-calculator": {
       "name": "Dreiecks",
       "description": "Berechnen Sie Dreieckseigenschaften aus Seiten und Winkeln",
-      "metaDescription": "Berechnen Sie Flaeche, Umfang, Winkel und Seiten eines Dreiecks",
+      "metaDescription": "Dreiecks: Berechnen Sie Dreieckseigenschaften aus Seiten und Winkeln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib drei bekannte Werte eines Dreiecks ein, etwa zwei Seiten und einen Winkel.",
@@ -8383,7 +8383,7 @@
     "pythagorean-calculator": {
       "name": "Satz-des-Pythagoras",
       "description": "Berechnen Sie die fehlende Seite mit dem Satz des Pythagoras",
-      "metaDescription": "Finden Sie die fehlende Seite eines rechtwinkligen Dreiecks",
+      "metaDescription": "Satz-des-Pythagoras: Berechnen Sie die fehlende Seite mit dem Satz des Pythagoras Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die bekannten Seiten an: Katheten a und b oder eine Kathete und Hypotenuse c.",
@@ -8415,7 +8415,7 @@
     "circle-calculator": {
       "name": "Kreis",
       "description": "Berechnen Sie Kreiseigenschaften aus Radius, Durchmesser oder Umfang",
-      "metaDescription": "Berechnen Sie Flaeche, Umfang, Durchmesser und Radius eines Kreises",
+      "metaDescription": "Kreis: Berechnen Sie Kreiseigenschaften aus Radius, Durchmesser oder Umfang Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Radius, Durchmesser oder Umfang des Kreises ein.",
@@ -8496,7 +8496,7 @@
     "area-calculator": {
       "name": "Flächenrechner",
       "description": "Berechnet die Fläche verschiedener Formen",
-      "metaDescription": "Flächenrechner",
+      "metaDescription": "Flächenrechner: Berechnet die Fläche verschiedener Formen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle eine Figur: Rechteck, Kreis, Dreieck, Trapez u. a.",
@@ -8528,7 +8528,7 @@
     "surface-area-calculator": {
       "name": "Oberflaechen",
       "description": "Berechnen Sie die Oberflaeche von 3D-Formen",
-      "metaDescription": "Berechnen Sie Oberflaeche von Wuerfel, Kugel, Zylinder, Kegel und Pyramide",
+      "metaDescription": "Oberflaechen: Berechnen Sie die Oberflaeche von 3D-Formen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wählen Sie eine dreidimensionale Form (Würfel, Kugel, Zylinder, Kegel usw.).",
@@ -8609,7 +8609,7 @@
     "volume-calculator": {
       "name": "Volumen",
       "description": "Berechnen Sie das Volumen von 3D-Formen",
-      "metaDescription": "Berechnen Sie Volumen von Wuerfel, Kugel, Zylinder, Kegel und mehr",
+      "metaDescription": "Volumen: Berechnen Sie das Volumen von 3D-Formen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle einen Körper: Quader, Würfel, Zylinder, Kugel, Kegel u. a.",
@@ -8868,7 +8868,7 @@
     "virtualization-cost": {
       "name": "Virtualisierungskostenrechner",
       "description": "Berechnen Sie die Gesamtbetriebskosten für Virtualisierungsinfrastruktur",
-      "metaDescription": "Kostenloser Virtualisierungs-TCO-Rechner. Berechnen Sie die Gesamtbetriebskosten einschließlich CAPEX und OPEX für Virtualisierungsinfrastruktur.",
+      "metaDescription": "Virtualisierungskostenrechner: Berechnen Sie die Gesamtbetriebskosten für Virtualisierungsinfrastruktur Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Host-Anzahl, den Kaufpreis und die erwartete Nutzungsdauer ein.",
@@ -8900,7 +8900,7 @@
     "hyperv-consolidation": {
       "name": "Hyper-V Konsolidierungsrechner",
       "description": "Berechnen Sie Hyper-V Host-Anforderungen mit HA und Windows-Lizenzierung",
-      "metaDescription": "Kostenloser Hyper-V Konsolidierungsrechner. Berechnen Sie erforderliche Hosts mit N+1/N+2 HA, Speicher-Stacking und Windows Server-Lizenzkosten.",
+      "metaDescription": "Hyper-V Konsolidierungsrechner: Berechnen Sie Hyper-V Host-Anforderungen mit HA und Windows-Lizenzierung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die aktuelle Zahl physischer Server und deren CPU/RAM-Nutzung ein.",
@@ -8932,7 +8932,7 @@
     "windows-licensing": {
       "name": "Windows Server Lizenzrechner",
       "description": "Vergleichen Sie Datacenter- vs. Standard-Lizenzkosten",
-      "metaDescription": "Kostenloser Windows Server-Lizenzrechner. Vergleichen Sie Datacenter- und Standard-Editionen mit Break-Even-Analyse und 16-Kern-Minimum.",
+      "metaDescription": "Windows Server Lizenzrechner: Vergleichen Sie Datacenter- vs. Standard-Lizenzkosten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die physischen Kerne pro Windows Server Host ein.",
@@ -9050,7 +9050,7 @@
     "slope-calculator": {
       "name": "Steigungs",
       "description": "Berechnen Sie Steigung, Gleichung und Winkel einer Geraden",
-      "metaDescription": "Berechnen Sie Steigung, y-Achsenabschnitt und lineare Gleichung",
+      "metaDescription": "Steigungs: Berechnen Sie Steigung, Gleichung und Winkel einer Geraden Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie zwei Punktkoordinaten (x1, y1) und (x2, y2) ein.",
@@ -9175,7 +9175,7 @@
     "statistics-calculator": {
       "name": "Statistik",
       "description": "Berechnen Sie umfassende Statistiken fuer einen Datensatz",
-      "metaDescription": "Kostenloser Online-Statistikrechner. Erhalte Mittelwert, Median, Modus, Spannweite und Standardabweichung schnell, ohne Anmeldung.",
+      "metaDescription": "Statistik: Berechnen Sie umfassende Statistiken fuer einen Datensatz Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib deine Zahlen als kommagetrennte Liste ein.",
@@ -9207,7 +9207,7 @@
     "probability-calculator": {
       "name": "Wahrscheinlichkeits",
       "description": "Berechnen Sie Wahrscheinlichkeit von Ereignissen und Kombinationen",
-      "metaDescription": "Kostenloser Online-Wahrscheinlichkeitsrechner. Ermittle die Chance einzelner oder kombinierter Ereignisse schnell, ohne Anmeldung.",
+      "metaDescription": "Wahrscheinlichkeits: Berechnen Sie Wahrscheinlichkeit von Ereignissen und Kombinationen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Wähle das Szenario (einzelnes Ereignis, zwei Ereignisse oder Kombinationen).",
@@ -9239,7 +9239,7 @@
     "sample-size": {
       "name": "Stichprobengroessen",
       "description": "Berechnen Sie die erforderliche Stichprobengroesse fuer Umfragen und Studien",
-      "metaDescription": "Kostenloser Online-Stichprobenrechner. Finde die nötige Teilnehmerzahl für ein Konfidenzniveau und einen Fehlerbereich, ohne Anmeldung.",
+      "metaDescription": "Stichprobengroessen: Berechnen Sie die erforderliche Stichprobengroesse fuer Umfragen und Studien Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib das Konfidenzniveau, den Fehlerbereich und eine Schätzung des Anteils ein.",
@@ -9303,7 +9303,7 @@
     "p-value-calculator": {
       "name": "P-Wert",
       "description": "Berechnen Sie P-Werte fuer statistische Hypothesentests",
-      "metaDescription": "Berechnen Sie P-Werte aus z-, t-, Chi-Quadrat- und F-Werten",
+      "metaDescription": "P-Wert: Berechnen Sie P-Werte fuer statistische Hypothesentests Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie einen Test der statistischen und Freiheit (oder Wirkung und Probe).",
@@ -9384,7 +9384,7 @@
     "confidence-interval": {
       "name": "Konfidenzintervall",
       "description": "Berechnen Sie Konfidenzintervalle fuer Mittelwerte und Anteile",
-      "metaDescription": "Berechnen Sie Konfidenzintervalle fuer Populationsmittelwert und Anteil",
+      "metaDescription": "Konfidenzintervall: Berechnen Sie Konfidenzintervalle fuer Mittelwerte und Anteile Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Probendurchschnitt, die Standardabweichung und das Probenvolumen ein.",
@@ -9457,7 +9457,7 @@
     "permutation-combination": {
       "name": "Permutations- und Kombinations",
       "description": "Berechnen Sie Permutationen und Kombinationen mit und ohne Wiederholung",
-      "metaDescription": "Berechnen Sie nPr und nCr fuer Zaehlprobleme",
+      "metaDescription": "Permutations- und Kombinations: Berechnen Sie Permutationen und Kombinationen mit und ohne Wiederholung Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Gesamtzahl der Elemente n mit der ausgewählten Zahl k ein.",
@@ -9544,7 +9544,7 @@
     "ratio-calculator": {
       "name": "Verhaeltnis",
       "description": "Berechnen und vereinfachen Sie Verhaeltnisse, finden Sie Aequivalente",
-      "metaDescription": "Kostenloser Online-Verhältnisrechner. Kürze A:B-Verhältnisse, finde fehlende Werte und skaliere Proportionen, ohne Anmeldung.",
+      "metaDescription": "Verhaeltnis: Berechnen und vereinfachen Sie Verhaeltnisse, finden Sie Aequivalente Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Werte deines Verhältnisses ein, zum Beispiel A : B.",
@@ -9576,7 +9576,7 @@
     "binary-calculator": {
       "name": "Binaer",
       "description": "Konvertieren und fuehren Sie Operationen in Binaer durch",
-      "metaDescription": "Konvertieren Sie zwischen Binaer, Dezimal, Oktal und Hexadezimal",
+      "metaDescription": "Binaer: Konvertieren und fuehren Sie Operationen in Binaer durch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie eine Binär-, Dezimal- oder Hexadezimalzahl im entsprechenden Modus ein.",
@@ -9675,7 +9675,7 @@
     "hex-calculator": {
       "name": "Hexadezimal",
       "description": "Konvertieren und rechnen Sie in Hexadezimal",
-      "metaDescription": "Konvertieren und fuehren Sie arithmetische Operationen in Hexadezimal durch",
+      "metaDescription": "Hexadezimal: Konvertieren und rechnen Sie in Hexadezimal Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie einen Hexadezimalwert (unter Verwendung von 0-9 und A-F) oder eine andere Anode ein.",
@@ -9774,7 +9774,7 @@
     "scientific-notation": {
       "name": "Wissenschaftliche-Notation",
       "description": "Konvertieren Sie in/aus wissenschaftlicher Notation und fuehren Sie Operationen durch",
-      "metaDescription": "Kostenloser Online-Rechner für wissenschaftliche Notation. Wandeln Sie Zahlen schnell um, ohne Anmeldung, mit Mantisse, Exponent und Beispielen.",
+      "metaDescription": "Wissenschaftliche-Notation: Konvertieren Sie in/aus wissenschaftlicher Notation und fuehren Sie Operationen durch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Zahl, die du umwandeln möchtest, in das Eingabefeld ein.",
@@ -9806,7 +9806,7 @@
     "big-number": {
       "name": "Grosse-Zahlen",
       "description": "Fuehren Sie Arithmetik mit beliebig grossen Ganzzahlen durch",
-      "metaDescription": "Rechnen Sie mit sehr grossen Zahlen ueber Standardrechner-Grenzen hinaus",
+      "metaDescription": "Grosse-Zahlen: Fuehren Sie Arithmetik mit beliebig grossen Ganzzahlen durch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie eine oder mehrere große ganze Zahlen ein, die die normalen Rechnergrenzen überschreiten.",
@@ -9887,7 +9887,7 @@
     "number-sequence": {
       "name": "Zahlenfolgen",
       "description": "Analysieren und generieren Sie arithmetische, geometrische und Fibonacci-Folgen",
-      "metaDescription": "Finden Sie Muster in Zahlenfolgen und generieren Sie Reihen",
+      "metaDescription": "Zahlenfolgen: Analysieren und generieren Sie arithmetische, geometrische und Fibonacci-Folgen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Anzahl der Spalten ein, die Sie kennen, getrennt durch Kommas.",
@@ -9968,7 +9968,7 @@
     "matrix-calculator": {
       "name": "Matrix",
       "description": "Fuehren Sie Matrixoperationen durch: Addition, Multiplikation, Transposition, Determinante",
-      "metaDescription": "Berechnen Sie Matrixaddition, Multiplikation, Determinante, Inverse und Transposition",
+      "metaDescription": "Matrix: Fuehren Sie Matrixoperationen durch: Addition, Multiplikation, Transposition, Determinante Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Dimensionen und Werte von einem oder zwei Arrays ein.",
@@ -10049,7 +10049,7 @@
     "half-life-calculator": {
       "name": "Halbwertszeit",
       "description": "Berechnen Sie radioaktiven Zerfall und verbleibende Menge",
-      "metaDescription": "Berechnen Sie radioaktiven Zerfall, verbleibende Menge und C14-Datierung",
+      "metaDescription": "Halbwertszeit: Berechnen Sie radioaktiven Zerfall und verbleibende Menge Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Anfangsmenge und die Substanzhalbwertszeit ein.",
@@ -10142,7 +10142,7 @@
     "distance-calculator": {
       "name": "Entfernungs",
       "description": "Berechnen Sie Entfernungen zwischen Punkten in 2D, 3D und auf der Erde",
-      "metaDescription": "Berechnen Sie euklidische Entfernung, Manhattan-Entfernung und geographische Entfernungen",
+      "metaDescription": "Entfernungs: Berechnen Sie Entfernungen zwischen Punkten in 2D, 3D und auf der Erde Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Gib die Koordinaten oder zwei Ortsnamen ein, oder wahle zwei Punkte auf der Karte, falls moglich.",
@@ -10174,7 +10174,7 @@
     "random-number": {
       "name": "Zufallszahlen-Generator",
       "description": "Generieren Sie Zufallszahlen mit verschiedenen Verteilungen",
-      "metaDescription": "Generieren Sie Zufallszahlen, wuerfeln Sie und mischen Sie Listen",
+      "metaDescription": "Zufallszahlen-Generator: Generieren Sie Zufallszahlen mit verschiedenen Verteilungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Lege Mindest- und Hochstwert deines Bereichs fest.",
@@ -10206,7 +10206,7 @@
     "tcp-throughput": {
       "name": "TCP-Durchsatz",
       "description": "Berechnen Sie den theoretischen TCP-Durchsatz mit der Mathis-Formel",
-      "metaDescription": "Berechnen Sie maximalen TCP-Durchsatz basierend auf MSS, RTT und Paketverlustrate",
+      "metaDescription": "TCP-Durchsatz: Berechnen Sie den theoretischen TCP-Durchsatz mit der Mathis-Formel Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie RTT (Turn Time) und Drop Rate ein.",
@@ -10293,7 +10293,7 @@
     "bandwidth-delay-product": {
       "name": "Bandbreite-Verzoegerung-Produkt",
       "description": "Berechnen Sie BDP und optimale TCP-Puffergroesse",
-      "metaDescription": "Berechnen Sie das Bandbreite-Verzoegerung-Produkt und TCP-Fenstergroesse",
+      "metaDescription": "Bandbreite-Verzoegerung-Produkt: Berechnen Sie BDP und optimale TCP-Puffergroesse Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Bandbreite der Kette und den Zeitpunkt der Rückkehr ein.",
@@ -10467,7 +10467,7 @@
     "latency-converter": {
       "name": "Latenz-Konverter",
       "description": "Zwischen Ping-Zeiteinheiten umrechnen (Sekunden, Millisekunden, Mikrosekunden, Nanosekunden)",
-      "metaDescription": "Kostenloser Netzwerk-Latenz-Konverter. Ping-Zeiten zwischen Sekunden, Millisekunden, Mikrosekunden und Nanosekunden umrechnen.",
+      "metaDescription": "Latenz-Konverter: Zwischen Ping-Zeiteinheiten umrechnen (Sekunden, Millisekunden, Mikrosekunden, Nanosekunden) Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Verzögerungswert (ms, micros oder ns) ein.",
@@ -10560,7 +10560,7 @@
     "food-cost": {
       "name": "Lebensmittelkostenrechner",
       "description": "Berechnen Sie die Gesamtrezeptkosten und Kosten pro Portion aus den Zutatenpreisen",
-      "metaDescription": "Kostenloser Lebensmittelkostenrechner. Berechnen Sie Rezeptkosten, Kosten pro Portion und Aufschlusselung der Zutatenkosten.",
+      "metaDescription": "Lebensmittelkostenrechner: Berechnen Sie die Gesamtrezeptkosten und Kosten pro Portion aus den Zutatenpreisen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Kaufpreis und die Verpackungsspezifikationen für das Lebensmittel ein.",
@@ -10659,7 +10659,7 @@
     "recipe-scaler": {
       "name": "Rezeptskalierung",
       "description": "Rezeptzutaten mit intelligenten Anpassungen fur Salz, Gewurze und Backtriebmittel skalieren",
-      "metaDescription": "Kostenlose Rezeptskalierung. Verdoppeln oder halbieren Sie Rezepte mit intelligenter Skalierung fur perfekte Ergebnisse.",
+      "metaDescription": "Rezeptskalierung: Rezeptzutaten mit intelligenten Anpassungen fur Salz, Gewurze und Backtriebmittel skalieren Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Menge der im Originalrezept verwendeten Lebensmittel und die Anzahl der Originalkopien ein.",
@@ -10752,7 +10752,7 @@
     "nutrition-calculator": {
       "name": "Ernahrungsrechner",
       "description": "Berechnen Sie Kalorien, Makros und Nahrwerte aus ausgewahlten Lebensmitteln",
-      "metaDescription": "Kostenloser Ernahrungsrechner. Verfolgen Sie Kalorien, Protein, Kohlenhydrate, Fett und andere Nahrstoffe.",
+      "metaDescription": "Ernahrungsrechner: Berechnen Sie Kalorien, Makros und Nahrwerte aus ausgewahlten Lebensmitteln Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Lebensmittel und ihre Gewichte ein.",
@@ -10833,7 +10833,7 @@
     "fuel-efficiency": {
       "name": "Kraftstoffeffizienz",
       "description": "Berechnen Sie den Kraftstoffverbrauch",
-      "metaDescription": "Kraftstoffrechner",
+      "metaDescription": "Kraftstoffeffizienz: Berechnen Sie den Kraftstoffverbrauch Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die Entfernung zwischen der Fahrt und dem verbrauchten Kraftstoff ein.",
@@ -10932,7 +10932,7 @@
     "vehicle-financing": {
       "name": "Fahrzeugfinanzierung",
       "description": "Fahrzeugfinanzierungsrechner",
-      "metaDescription": "Fahrzeugfinanzierungsrechner",
+      "metaDescription": "Fahrzeugfinanzierung: Fahrzeugfinanzierungsrechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den Preis des Autos, die Anzahlung und den Umtauschkredit ein.",
@@ -11019,7 +11019,7 @@
     "tire-sizing": {
       "name": "Reifengröße",
       "description": "Reifengrößenwechsel-Rechner",
-      "metaDescription": "Reifengrößenrechner",
+      "metaDescription": "Reifengröße: Reifengrößenwechsel-Rechner Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie den aktuellen Reifencode (z. B. 205/55R16) und die Kandidatengröße ein.",
@@ -11106,7 +11106,7 @@
     "maintenance-intervals": {
       "name": "Wartungsintervall-Rechner",
       "description": "Verfolgen Sie Fahrzeug-Wartungsplane und berechnen Sie nachste Falligkeiten mit Schweizer MFK-Erinnerungen",
-      "metaDescription": "Kostenloser Fahrzeug-Wartungsrechner - verfolgen Sie Olwechsel, Filter, Bremsen und Schweizer MFK-Inspektionen. Km-basierte Intervalle.",
+      "metaDescription": "Wartungsintervall-Rechner: Verfolgen Sie Fahrzeug-Wartungsplane und berechnen Sie nachste Falligkeiten mit Schweizer MFK-Erinnerungen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie das Intervall (Meilen oder Kilometer) zwischen der aktuellen Kilometerleistung und dem Hersteller ein.",
@@ -11598,7 +11598,7 @@
     "unit-converter": {
       "name": "Einheitenumrechner",
       "description": "Konvertiert Längen-, Masse-, Temperatur-, Flächen-, Volumen-, Geschwindigkeits-, Zeit-, Daten-, Energie-, Leistungs- und Druckeinheiten",
-      "metaDescription": "Einheitenumrechner",
+      "metaDescription": "Einheitenumrechner: Konvertiert Längen-, Masse-, Temperatur-, Flächen-, Volumen-, Geschwindigkeits-, Zeit-, Daten-, Energie-, Leistungs- und Druckeinheiten Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "category": "Kategorie",
       "from": "Von",
       "swap": "Tauschen",
@@ -11677,7 +11677,7 @@
     "set-calculator": {
       "name": "Mengenrechner",
       "description": "Führen Sie Mengenoperationen aus: Vereinigung, Schnittmenge, Differenz, symmetrische Differenz, kartesisches Produkt und Relationen.",
-      "metaDescription": "Kostenloser Online-Mengenrechner für Vereinigung, Schnittmenge, Differenz, symmetrische Differenz, kartesisches Produkt und Teilmengenprüfung.",
+      "metaDescription": "Mengenrechner: Führen Sie Mengenoperationen aus: Vereinigung, Schnittmenge, Differenz, symmetrische Differenz, kartesisches Produkt und Relationen. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "setA": "Stellen Sie A ein",
       "setB": "Set B",
       "operation": "Betrieb",
@@ -11764,7 +11764,7 @@
     "programmer-calculator": {
       "name": "Programmierer-Rechner",
       "description": "Konvertiert zwischen Dezimal-, Hex-, Oktal- und Binärzahlen",
-      "metaDescription": "Rechner für Programmierer",
+      "metaDescription": "Programmierer-Rechner: Konvertiert zwischen Dezimal-, Hex-, Oktal- und Binärzahlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "bitwise": "Bitweise Operation",
       "left": "Links (<<)",
       "none": "Keine",
@@ -11874,7 +11874,7 @@
     "debt-snowball-avalanche": {
       "name": "Schulden-Tilgungsplaner",
       "description": "Vergleichen Sie die Schneeball- und Lawinen-Tilgungsstrategie und sehen Sie, welche Ihre Schulden schneller abbaut.",
-      "metaDescription": "Kostenloser Schulden-Tilgungsplaner, der Schneeball- und Lawinen-Methode mit Zinsen gesamt und Tilgungsreihenfolge vergleicht.",
+      "metaDescription": "Schulden-Tilgungsplaner: Vergleichen Sie die Schneeball- und Lawinen-Tilgungsstrategie und sehen Sie, welche Ihre Schulden schneller abbaut. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "debts": "Schulden",
       "hint": "Eine Schuld pro Zeile: Name, Saldo, Jahresrate %, Mindestzahlung.",
       "extra": "Zusätzliche monatliche Zahlung",
@@ -11917,7 +11917,7 @@
     "income-tax": {
       "name": "Einkommensteuer-Rechner",
       "description": "Berechnen Sie die progressive Einkommensteuer mit Voreinstellungen oder eigenen Steuerklassen.",
-      "metaDescription": "Kostenloser progressiver Einkommensteuer-Rechner mit US-, UK- und benutzerdefinierten Steuerklassen.",
+      "metaDescription": "Einkommensteuer-Rechner: Berechnen Sie die progressive Einkommensteuer mit Voreinstellungen oder eigenen Steuerklassen. Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "system": "Steuersystem",
       "income": "Steuerpflichtiges Einkommen",
       "brackets": "Benutzerdefinierte Klammern",
@@ -11959,7 +11959,7 @@
     "gcd-lcm": {
       "name": "GGT & KGV",
       "description": "Berechnen Sie GGT und KGV mehrerer Zahlen",
-      "metaDescription": "Berechnen Sie GGT und KGV von zwei oder mehr Zahlen",
+      "metaDescription": "GGT & KGV: Berechnen Sie GGT und KGV mehrerer Zahlen Nutzen Sie unseren kostenlosen Online-Rechner für schnelle, genaue Ergebnisse – ganz ohne Registrierung. Einfach, privat und in Sekunden startklar.",
       "guide": {
         "steps": [
           "Geben Sie die ganze Zahl von zwei Werten ein.",
@@ -17153,7 +17153,7 @@
   },
   "blog": {
     "title": "Artikel & Anleitungen",
-    "subtitle": "Praktische Erklärungen zu Geld, Gesundheit und Alltagsmathematik – kombiniert mit unseren kostenlosen Rechnern.",
+    "subtitle": "Praktische Erklärungen zu Geld, Gesundheit und Alltagsmathematik – kombiniert mit unseren kostenlosen Rechnern. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
     "readMore": "Artikel lesen",
     "publishedOn": "Veröffentlicht",
     "minRead": "Min. Lesezeit",
@@ -17368,7 +17368,7 @@
       },
       "calories-bmr-tdee": {
         "title": "Kalorien, BMR und TDEE: Planen Sie eine Diät, die tatsächlich funktioniert",
-        "excerpt": "Weniger essen, sich mehr bewegen ist wahr, aber ohne Zahlen nutzlos. Ihr Kalorienbedarf ist individuell und zwei Rechner erklären, warum.",
+        "excerpt": "Weniger essen, sich mehr bewegen ist wahr, aber ohne Zahlen nutzlos. Ihr Kalorienbedarf ist individuell und zwei Rechner erklären, warum. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17406,7 +17406,7 @@
       },
       "cooking-unit-conversions": {
         "title": "Umrechnung von Kocheinheiten: Tassen, Gramm und Unzen ohne Rätselraten",
-        "excerpt": "Ein Rezept verlangt 200 g Mehl, aber Ihre Tassen sind riesig. Der Umbau von Kocheinheiten sollte das Abendessen nicht ruinieren.",
+        "excerpt": "Ein Rezept verlangt 200 g Mehl, aber Ihre Tassen sind riesig. Der Umbau von Kocheinheiten sollte das Abendessen nicht ruinieren. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17444,7 +17444,7 @@
       },
       "debt-snowball-vs-avalanche": {
         "title": "Schulden-Schneeball vs. Schulden-Lawine: Welche Tilgungsmethode gewinnt?",
-        "excerpt": "Zwei beliebte Methoden versprechen die Schuldentilgung. Sie unterscheiden sich in einer Frage: Zahlen Sie nach Emotionen oder nach Mathematik?",
+        "excerpt": "Zwei beliebte Methoden versprechen die Schuldentilgung. Sie unterscheiden sich in einer Frage: Zahlen Sie nach Emotionen oder nach Mathematik? Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17482,7 +17482,7 @@
       },
       "equal-installment-vs-principal": {
         "title": "Annuität vs. Tilgungsdarlehen: Welche Rückzahlung spart mehr",
-        "excerpt": "Gleiche Summe, gleicher Zinssatz – und doch können die Zinskosten um Zehntausende auseinanderliegen. So entscheiden Sie richtig.",
+        "excerpt": "Gleiche Summe, gleicher Zinssatz – und doch können die Zinskosten um Zehntausende auseinanderliegen. So entscheiden Sie richtig. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17593,7 +17593,7 @@
       },
       "emergency-fund-how-many-months": {
         "title": "Wie viele Monatsausgaben sollte Ihr Notgroschen decken?",
-        "excerpt": "„Drei bis sechs Monate“ lautet die Standardempfehlung – doch entscheidend sind Ihre berufliche Stabilität und Ihre familiäre Situation.",
+        "excerpt": "„Drei bis sechs Monate“ lautet die Standardempfehlung – doch entscheidend sind Ihre berufliche Stabilität und Ihre familiäre Situation. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17649,7 +17649,7 @@
       },
       "inflation-purchasing-power": {
         "title": "Was sind Ihre 100 in 10 Jahren noch wert? Inflation und Kaufkraft",
-        "excerpt": "Inflation verringert nicht Ihr Geld, sondern das, was es kaufen kann. Wer das versteht, versteht auch, warum Anlegen nötig ist.",
+        "excerpt": "Inflation verringert nicht Ihr Geld, sondern das, was es kaufen kann. Wer das versteht, versteht auch, warum Anlegen nötig ist. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17699,7 +17699,7 @@
       },
       "apr-vs-apy-interest-rate-basics": {
         "title": "Nominalzins, Realzins und Effektivzins: Lassen Sie sich nicht täuschen",
-        "excerpt": "Ist „12 % pro Jahr“ dasselbe wie „1 % pro Monat“? Sobald Zinseszinsen ins Spiel kommen, nicht – und der Unterschied kostet Geld.",
+        "excerpt": "Ist „12 % pro Jahr“ dasselbe wie „1 % pro Monat“? Sobald Zinseszinsen ins Spiel kommen, nicht – und der Unterschied kostet Geld. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17749,7 +17749,7 @@
       },
       "rent-vs-buy-decision": {
         "title": "Mieten oder kaufen? Rechnen Sie es durch, bevor Sie entscheiden",
-        "excerpt": "„Kaufen schlägt mieten“ hört man oft – die echte Antwort hängt vom Preis-Miet-Verhältnis, Ihrer Wohndauer und Ihrer Stadt ab.",
+        "excerpt": "„Kaufen schlägt mieten“ hört man oft – die echte Antwort hängt vom Preis-Miet-Verhältnis, Ihrer Wohndauer und Ihrer Stadt ab. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17807,7 +17807,7 @@
       },
       "bmi-limitations-better-metrics": {
         "title": "Der BMI reicht nicht: Warum Körperfett und Taillenumfang zählen",
-        "excerpt": "Der BMI presst alle Menschen in eine Formel – und bewertet daher Muskulöse und Ältere falsch. Wer seine Schwächen kennt, nutzt ihn richtig.",
+        "excerpt": "Der BMI presst alle Menschen in eine Formel – und bewertet daher Muskulöse und Ältere falsch. Wer seine Schwächen kennt, nutzt ihn richtig. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -17857,7 +17857,7 @@
       },
       "bmr-tdee-how-many-calories": {
         "title": "BMR und TDEE: Wie viele Kalorien sollten Sie wirklich essen?",
-        "excerpt": "Fettabbau heißt Kaloriendefizit – aber relativ zu Ihrem tatsächlichen Verbrauch. BMR und TDEE liefern die Antwort.",
+        "excerpt": "Fettabbau heißt Kaloriendefizit – aber relativ zu Ihrem tatsächlichen Verbrauch. BMR und TDEE liefern die Antwort. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18023,7 +18023,7 @@
       },
       "percentage-increase-decrease-guide": {
         "title": "Prozentuale Zu- und Abnahme: Achten Sie auf die Bezugsgröße",
-        "excerpt": "Erst +50 %, dann −50 % bringt Sie nicht zum Start zurück. Wer die Basis versteht, vermeidet teure Fehler beim Investieren und Einkaufen.",
+        "excerpt": "Erst +50 %, dann −50 % bringt Sie nicht zum Start zurück. Wer die Basis versteht, vermeidet teure Fehler beim Investieren und Einkaufen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18148,7 +18148,7 @@
       },
       "recipe-scaling-guide": {
         "title": "Rezepte skalieren: von 8 auf 3 Portionen richtig umrechnen",
-        "excerpt": "Zutaten skalieren linear, Gewürze, Kräuter und Backzeit nicht. Wer die Ausnahmen kennt, kocht auch in anderer Menge gut.",
+        "excerpt": "Zutaten skalieren linear, Gewürze, Kräuter und Backzeit nicht. Wer die Ausnahmen kennt, kocht auch in anderer Menge gut. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18211,7 +18211,7 @@
       },
       "cooking-measurement-standards": {
         "title": "Wie viel wiegt eine Tasse Mehl? Warum Backen eine Küchenwaage braucht",
-        "excerpt": "Bei dem einen wiegt eine Tasse Mehl 120 g, bei dem anderen 160 g. Diese Unsicherheit ist ein klassischer Grund für misslungene Backwaren.",
+        "excerpt": "Bei dem einen wiegt eine Tasse Mehl 120 g, bei dem anderen 160 g. Diese Unsicherheit ist ein klassischer Grund für misslungene Backwaren. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18333,7 +18333,7 @@
       },
       "how-much-house-can-you-afford": {
         "title": "Wie viel Haus können Sie sich leisten? Drei Zahlen, die die Bank nicht freiwillig nennt",
-        "excerpt": "Zwischen dem bewilligten Kreditrahmen und dem wirklich tragfähigen Betrag liegt oft eine große Lücke. Drei Kennzahlen liefern die sichere Zahl.",
+        "excerpt": "Zwischen dem bewilligten Kreditrahmen und dem wirklich tragfähigen Betrag liegt oft eine große Lücke. Drei Kennzahlen liefern die sichere Zahl. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18399,7 +18399,7 @@
       },
       "protein-intake-how-much": {
         "title": "Wie viel Protein brauchen Sie? Rechnen Sie pro Kilogramm",
-        "excerpt": "Büromensch, Kraftsportler und Senior haben sehr unterschiedliche Bedarfe. Gewicht mal Faktor ist der praktischste Weg.",
+        "excerpt": "Büromensch, Kraftsportler und Senior haben sehr unterschiedliche Bedarfe. Gewicht mal Faktor ist der praktischste Weg. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18458,7 +18458,7 @@
       },
       "average-mean-median-mode": {
         "title": "Mittelwerte täuschen: Mittelwert, Median und Modus richtig wählen",
-        "excerpt": "Warum wirkt das „Durchschnittsgehalt“ oft zu hoch? Weil Extremwerte den Mittelwert verziehen. Die richtige Kennzahl zeigt die Wahrheit.",
+        "excerpt": "Warum wirkt das „Durchschnittsgehalt“ oft zu hoch? Weil Extremwerte den Mittelwert verziehen. Die richtige Kennzahl zeigt die Wahrheit. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18516,7 +18516,7 @@
       },
       "car-loan-total-cost": {
         "title": "Die wahren Kosten eines Autokredits: Vier Posten neben der Rate",
-        "excerpt": "„Null-Prozent-Finanzierung“ klingt günstig, doch mit Gebühren, Versicherung, Steuer und Wertverlust liegt die Realität oft darüber.",
+        "excerpt": "„Null-Prozent-Finanzierung“ klingt günstig, doch mit Gebühren, Versicherung, Steuer und Wertverlust liegt die Realität oft darüber. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18579,7 +18579,7 @@
       },
       "food-cost-per-serving": {
         "title": "Kosten pro Portion: Ist Selberkochen wirklich günstiger?",
-        "excerpt": "Selberkochen ist meist billiger als auswärts – aber wie viel hängt an der Rechnung. Zutaten, Gewürze und Energie gehören hinein.",
+        "excerpt": "Selberkochen ist meist billiger als auswärts – aber wie viel hängt an der Rechnung. Zutaten, Gewürze und Energie gehören hinein. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18639,7 +18639,7 @@
       },
       "rounding-and-significant-figures": {
         "title": "Warum Runden manchmal falsch ist: signifikante Stellen und Fehlerfortpflanzung",
-        "excerpt": "Wer in jedem Schritt rundet, landet am Ende daneben. Wer Fehlerfortpflanzung und kaufmännisches Runden kennt, rechnet verlässlicher.",
+        "excerpt": "Wer in jedem Schritt rundet, landet am Ende daneben. Wer Fehlerfortpflanzung und kaufmännisches Runden kennt, rechnet verlässlicher. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18702,7 +18702,7 @@
       },
       "sleep-cycles-when-to-wake": {
         "title": "Schlafzyklen und Aufstehzeit: Warum 8 Stunden manchmal nicht reichen",
-        "excerpt": "Schlaf verläuft in etwa 90-Minuten-Zyklen. Wer aus dem Tiefschlaf geweckt wird, ist trotz genügend Stunden benommen – das richtige Timing hilft.",
+        "excerpt": "Schlaf verläuft in etwa 90-Minuten-Zyklen. Wer aus dem Tiefschlaf geweckt wird, ist trotz genügend Stunden benommen – das richtige Timing hilft. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -18901,7 +18901,7 @@
       },
       "recipe-scaling-basics": {
         "title": "Grundlagen der Rezeptskalierung: Vier Portionen auf zwei zu reduzieren ist nicht einfach Halbieren",
-        "excerpt": "Lineares Skalieren der Hauptzutaten funktioniert, aber Gewürze, Gärung und Garzeit müssen einzeln beurteilt werden – sonst schmeckt alles anders.",
+        "excerpt": "Lineares Skalieren der Hauptzutaten funktioniert, aber Gewürze, Gärung und Garzeit müssen einzeln beurteilt werden – sonst schmeckt alles anders. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19018,7 +19018,7 @@
       },
       "cost-per-serving": {
         "title": "Wie man Kosten pro Portion berechnet: Nicht vom Stückpreis täuschen lassen, sondern die tatsächliche Menge beachten",
-        "excerpt": "Eine Flasche Öl hat einen niedrigen Stückpreis, wird aber nur sparsam verwendet – den Gerichtpreis bestimmen meist Hauptzutaten und Verlust.",
+        "excerpt": "Eine Flasche Öl hat einen niedrigen Stückpreis, wird aber nur sparsam verwendet – den Gerichtpreis bestimmen meist Hauptzutaten und Verlust. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19057,7 +19057,7 @@
       },
       "grams-to-cups": {
         "title": "Wie man Gramm und Tassen umrechnet: Ein Becher Mehl und ein Becher Zucker wiegen sehr unterschiedlich",
-        "excerpt": "Die Volumenumrechnung hängt von der Dichte ab: Ein Becher Mehl wiegt etwa 120 g, einer mit Zucker etwa 200 g – niemals dieselbe Zahl verwenden.",
+        "excerpt": "Die Volumenumrechnung hängt von der Dichte ab: Ein Becher Mehl wiegt etwa 120 g, einer mit Zucker etwa 200 g – niemals dieselbe Zahl verwenden. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19097,7 +19097,7 @@
       },
       "common-conversion-mistakes": {
         "title": "Häufige Umrechnungsfehler: Diese Stolpersteine lassen die Hälfte aller Alltagsgerichte misslingen",
-        "excerpt": "Vermischte Bechernormen, ignorierte Dichte und stures Festhalten an Zeiten sind die drei häufigsten Fehler bei Küchenumrechnungen.",
+        "excerpt": "Vermischte Bechernormen, ignorierte Dichte und stures Festhalten an Zeiten sind die drei häufigsten Fehler bei Küchenumrechnungen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19137,7 +19137,7 @@
       },
       "compare-loan-interest-rates": {
         "title": "Wie man Hypothekenzinsen vergleicht: Annuität, Tilgung mit konstantem Hauptbetrag und die Wahl des LPR",
-        "excerpt": "Beim Vergleich von Hypothekenzinsen reicht nicht die Zahl allein – die Tilgungsart bestimmt die gesamten Zinsausgaben.",
+        "excerpt": "Beim Vergleich von Hypothekenzinsen reicht nicht die Zahl allein – die Tilgungsart bestimmt die gesamten Zinsausgaben. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19176,7 +19176,7 @@
       },
       "early-loan-repayment-strategy": {
         "title": "Soll man vorzeitig tilgen? Erst die Opportunitätskosten klären, dann entscheiden",
-        "excerpt": "Bei vorzeitiger Tilgung spart man Zinsen, verzichtet aber auf andere Anlagemöglichkeiten für dieses Geld – entscheidend ist die Differenz.",
+        "excerpt": "Bei vorzeitiger Tilgung spart man Zinsen, verzichtet aber auf andere Anlagemöglichkeiten für dieses Geld – entscheidend ist die Differenz. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19215,7 +19215,7 @@
       },
       "compound-interest-investing": {
         "title": "Die Macht des Zinseszinses: Mit der 72er-Regel die Verdopplungszeit des Vermögens schätzen",
-        "excerpt": "Zinseszins ist keine Magie – die 72er-Regel lässt dich im Kopf überschlagen, nach wie vielen Jahren sich das Kapital bei jeder Rendite verdoppelt.",
+        "excerpt": "Zinseszins ist keine Magie – die 72er-Regel lässt dich im Kopf überschlagen, nach wie vielen Jahren sich das Kapital bei jeder Rendite verdoppelt. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19254,7 +19254,7 @@
       },
       "build-emergency-fund": {
         "title": "Aufbau eines Notgroschens: Wie viele Monatsausgaben sind für Sicherheit nötig",
-        "excerpt": "Der Notgroschen ist das Fundament der finanziellen Sicherheit – Betrag und Wahl des Zielkontos sind wichtiger, als du denkst.",
+        "excerpt": "Der Notgroschen ist das Fundament der finanziellen Sicherheit – Betrag und Wahl des Zielkontos sind wichtiger, als du denkst. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19332,7 +19332,7 @@
       },
       "personal-tax-basics": {
         "title": "Grundlagen der Einkommensteuer: Freibetrag und Sonderausgaben voll ausschöpfen",
-        "excerpt": "Viele zahlen zu viel Steuer, nur weil sie die Sonderausgaben nicht postenweise geltend machen – legale Steueroptimierung beginnt beim Ausfüllen.",
+        "excerpt": "Viele zahlen zu viel Steuer, nur weil sie die Sonderausgaben nicht postenweise geltend machen – legale Steueroptimierung beginnt beim Ausfüllen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19371,7 +19371,7 @@
       },
       "body-fat-percentage-guide": {
         "title": "Wie man den Körperfettanteil liest: Normen für Männer und Frauen unterscheiden sich – lass dich nicht vom Gewicht täuschen",
-        "excerpt": "Normales Gewicht bedeutet nicht automatisch gesunde Figur – der Körperfettanteil ist der Schlüsselwert für den Fettgehalt.",
+        "excerpt": "Normales Gewicht bedeutet nicht automatisch gesunde Figur – der Körperfettanteil ist der Schlüsselwert für den Fettgehalt. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19410,7 +19410,7 @@
       },
       "basal-metabolic-rate": {
         "title": "Wie man den Grundumsatz berechnet: Dein Körper verbrennt auch in Ruhe Kalorien",
-        "excerpt": "Der Grundumsatz macht über 60 % des täglichen Verbrauchs aus – nur wer ihn kennt, setzt wissenschaftlich Kalorienziele.",
+        "excerpt": "Der Grundumsatz macht über 60 % des täglichen Verbrauchs aus – nur wer ihn kennt, setzt wissenschaftlich Kalorienziele. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19449,7 +19449,7 @@
       },
       "fat-loss-calorie-deficit": {
         "title": "Wie man das Fettverlust-Kaloriendefizit berechnet: Wie viel weniger pro Tag, ohne Muskeln zu verlieren",
-        "excerpt": "Fettverlust bedeutet ein Kaloriendefizit, doch dessen Größe entscheidet, ob du Fett oder Muskeln abbaust.",
+        "excerpt": "Fettverlust bedeutet ein Kaloriendefizit, doch dessen Größe entscheidet, ob du Fett oder Muskeln abbaust. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19488,7 +19488,7 @@
       },
       "daily-protein-intake": {
         "title": "Wie viel Protein pro Tag: Unverzichtbar beim Training und Fettverlust",
-        "excerpt": "Protein bestimmt Muskelerhalt und Sättigung – die Menge richtet sich nach dem Gewicht, nicht nach Schätzung.",
+        "excerpt": "Protein bestimmt Muskelerhalt und Sättigung – die Menge richtet sich nach dem Gewicht, nicht nach Schätzung. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19527,7 +19527,7 @@
       },
       "sleep-cycle-explained": {
         "title": "Die Wissenschaft des Schlafzyklus: Warum man sich bei acht Stunden Schlaf noch müde fühlt",
-        "excerpt": "Die Schlafqualität hängt vom Zyklus ab, nicht nur von der Dauer – in der falschen Phase aufzuwachen macht benommen.",
+        "excerpt": "Die Schlafqualität hängt vom Zyklus ab, nicht nur von der Dauer – in der falschen Phase aufzuwachen macht benommen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19566,7 +19566,7 @@
       },
       "percentage-increase-decrease": {
         "title": "Wie man Prozentzu- und -abnahme berechnet: Warum nach erst Steigen dann Fallen der Ausgangspunkt nicht erreicht wird",
-        "excerpt": "Die Basis der Prozentänderung verschiebt sich: erst +50 % dann −50 % endet im Verlust, nicht beim Ausgangswert.",
+        "excerpt": "Die Basis der Prozentänderung verschiebt sich: erst +50 % dann −50 % endet im Verlust, nicht beim Ausgangswert. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19605,7 +19605,7 @@
       },
       "unit-conversion-pitfalls": {
         "title": "Fallstricke bei der Einheitenumrechnung: Länge, Fläche, Volumen nicht mit demselben Faktor",
-        "excerpt": "Cm und m unterscheiden sich um den Faktor 100, cm² und m² aber um 10.000 – Flächen- und Volumenumrechnung gehen am ehesten daneben.",
+        "excerpt": "Cm und m unterscheiden sich um den Faktor 100, cm² und m² aber um 10.000 – Flächen- und Volumenumrechnung gehen am ehesten daneben. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19644,7 +19644,7 @@
       },
       "ratio-and-scaling": {
         "title": "Praxis zu Verhältnis und Mischverhältnis: Warum ein verdoppeltes Rezept anders schmeckt",
-        "excerpt": "Lineares Skalieren geht bei trockenen und flüssigen Zutaten, doch Salz, Gewürze und Gärung sind nichtlinear und brauchen Einzelbeurteilung.",
+        "excerpt": "Lineares Skalieren geht bei trockenen und flüssigen Zutaten, doch Salz, Gewürze und Gärung sind nichtlinear und brauchen Einzelbeurteilung. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19683,7 +19683,7 @@
       },
       "mean-median-mode": {
         "title": "Mittelwert, Median, Modus: Vor dem »Durchschnitt« zuerst die Verteilung ansehen",
-        "excerpt": "Ist das Durchschnittsgehalt durch wenige nach oben gezogen, bildet der Median das wahre Niveau der meisten besser ab.",
+        "excerpt": "Ist das Durchschnittsgehalt durch wenige nach oben gezogen, bildet der Median das wahre Niveau der meisten besser ab. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -19722,7 +19722,7 @@
       },
       "rounding-significant-figures": {
         "title": "Runden und signifikante Stellen: Eine Stelle zu viel kann falsche Genauigkeit sein",
-        "excerpt": "Die Zahl der signifikanten Stellen einer Messung hängt von der Gerätegenauigkeit ab – blind Dezimalstellen behalten irrt eher.",
+        "excerpt": "Die Zahl der signifikanten Stellen einer Messung hängt von der Gerätegenauigkeit ab – blind Dezimalstellen behalten irrt eher. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
         "blocks": [
           {
             "type": "p",
@@ -20594,4 +20594,4 @@
       "intro": "Das Web-Tool ist offen für die Front-End- und Ganzhausentwicklung und bietet eine einfache Berechnung von Codierung, Einheiten, Farben und Layouts usw. und integriert die kleinen Konvertierungen in der Entwicklung auf einer einzigen Seite."
     }
   }
-}
+}

@@ -61,31 +61,57 @@ const urls = collectUrls(OUT_DIR);
 console.log(`[seo-push] collected ${urls.length} URLs from ${OUT_DIR}`);
 
 // ---- IndexNow (Bing / Yandex / Seznam) ----
+// Bing 建议避免一次性提交超大批量的 "Batch Mode"：改为每批 50 条流式提交，
+// 既降低单次请求体积，也避免触发 "Avoid IndexNow Batch Mode" 警告。
+const INDEXNOW_BATCH = 50;
 async function pushIndexNow() {
   if (!INDEXNOW_KEY) {
     console.log("[seo-push] INDEXNOW_KEY 未设置，跳过 IndexNow");
     return;
   }
-  const body = JSON.stringify({
-    host: new URL(SITE).host,
-    key: INDEXNOW_KEY,
-    keyLocation: `${SITE}/${INDEXNOW_KEY}.txt`,
-    urlList: urls,
-  });
-  try {
-    const res = await fetch("https://api.indexnow.org/indexnow", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body,
+  const host = new URL(SITE).host;
+  const keyLocation = `${SITE}/${INDEXNOW_KEY}.txt`;
+  let ok = 0;
+  let fail = 0;
+  const total = Math.ceil(urls.length / INDEXNOW_BATCH);
+  for (let i = 0; i < urls.length; i += INDEXNOW_BATCH) {
+    const batch = urls.slice(i, i + INDEXNOW_BATCH);
+    const body = JSON.stringify({
+      host,
+      key: INDEXNOW_KEY,
+      keyLocation,
+      urlList: batch,
     });
-    const text = await res.text();
-    console.log(`[seo-push] IndexNow -> ${res.status} ${text}`);
-  } catch (err) {
-    console.log(`[seo-push] IndexNow 失败: ${err.message}`);
+    const idx = i / INDEXNOW_BATCH + 1;
+    try {
+      const res = await fetch("https://api.indexnow.org/indexnow", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+      });
+      const text = await res.text();
+      console.log(
+        `[seo-push] IndexNow 批次 ${idx}/${total} (${batch.length} urls) -> ${res.status} ${text}`,
+      );
+      if (res.ok) ok += batch.length;
+      else fail += batch.length;
+    } catch (err) {
+      console.log(`[seo-push] IndexNow 批次 ${idx} 失败: ${err.message}`);
+      fail += batch.length;
+    }
+    // 批次间小延时，避免触发限流
+    if (i + INDEXNOW_BATCH < urls.length) {
+      await new Promise((r) => setTimeout(r, 800));
+    }
   }
+  console.log(
+    `[seo-push] IndexNow 完成: 成功 ${ok} / 失败 ${fail} / 共 ${urls.length}`,
+  );
 }
 
 // ---- 百度主动推送 ----
+// 百度单次接口上限约 2000 条，这里按 1000 条分批提交更稳。
+const BAIDU_BATCH = 1000;
 async function pushBaidu() {
   if (!BAIDU_SITE || !BAIDU_TOKEN) {
     console.log("[seo-push] BAIDU_SITE/BAIDU_TOKEN 未设置，跳过百度推送");
@@ -96,17 +122,35 @@ async function pushBaidu() {
   const endpoint = `https://data.zz.baidu.com/urls?site=${encodeURIComponent(
     BAIDU_SITE,
   )}&token=${BAIDU_TOKEN}`;
-  try {
-    const res = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain" },
-      body: urls.join("\n"),
-    });
-    const text = await res.text();
-    console.log(`[seo-push] 百度推送 -> ${res.status} ${text}`);
-  } catch (err) {
-    console.log(`[seo-push] 百度推送失败: ${err.message}`);
+  let ok = 0;
+  let fail = 0;
+  const total = Math.ceil(urls.length / BAIDU_BATCH);
+  for (let i = 0; i < urls.length; i += BAIDU_BATCH) {
+    const batch = urls.slice(i, i + BAIDU_BATCH);
+    const idx = i / BAIDU_BATCH + 1;
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain" },
+        body: batch.join("\n"),
+      });
+      const text = await res.text();
+      console.log(
+        `[seo-push] 百度推送 批次 ${idx}/${total} (${batch.length} urls) -> ${res.status} ${text}`,
+      );
+      if (res.ok) ok += batch.length;
+      else fail += batch.length;
+    } catch (err) {
+      console.log(`[seo-push] 百度推送 批次 ${idx} 失败: ${err.message}`);
+      fail += batch.length;
+    }
+    if (i + BAIDU_BATCH < urls.length) {
+      await new Promise((r) => setTimeout(r, 800));
+    }
   }
+  console.log(
+    `[seo-push] 百度推送完成: 成功 ${ok} / 失败 ${fail} / 共 ${urls.length}`,
+  );
 }
 
 await pushIndexNow();

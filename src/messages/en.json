@@ -62,7 +62,7 @@
     },
     "metadata": {
       "titleSuffix": "baikecalc",
-      "defaultDescription": "Free online calculators and converters for everyday needs"
+      "defaultDescription": "baikecalc offers 190+ free online calculators and converters for finance, health, math, color, cooking, crypto, and media. Fast, accurate, and private — no sign-up required."
     },
     "cookieConsent": {
       "title": "We value your privacy",
@@ -113,7 +113,7 @@
     },
     "videoWatermark": {
       "title": "Video Watermark Remover",
-      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM.",
+      "desc": "Upload a video, select the watermark area. In-browser AI processing. Supports MP4 / MOV / WebM. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload video\" to choose a local MP4 / MOV / WebM file, or drag the file into the drop zone.",
@@ -144,7 +144,7 @@
     },
     "imageWatermark": {
       "title": "Image Watermark Remover",
-      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP.",
+      "desc": "Select the watermark area. AI-based smart removal. Supports JPG / PNG / WEBP. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" to choose a local JPG / PNG / WEBP file, or drag it into the drop zone.",
@@ -175,7 +175,7 @@
     },
     "ico": {
       "title": "ICO Icon Converter",
-      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px).",
+      "desc": "Convert images to .ico with multi-size packaging (16/32/64/128/256px). Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" and pick a PNG / JPG source (a square, high-res image works best).",
@@ -206,7 +206,7 @@
     },
     "formatConvert": {
       "title": "Image Format Converter",
-      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion.",
+      "desc": "PNG / JPG / WEBP / BMP / GIF batch conversion. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" to batch-select multiple PNG / JPG / WEBP / BMP / GIF files.",
@@ -237,7 +237,7 @@
     },
     "imageCompress": {
       "title": "Image Compressor",
-      "desc": "Lossy / lossless compression. Reduce file size while preserving quality.",
+      "desc": "Lossy / lossless compression. Reduce file size while preserving quality. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" and choose JPG / PNG / WEBP (batch supported).",
@@ -268,7 +268,7 @@
     },
     "videoCompress": {
       "title": "Video Compressor",
-      "desc": "Adjust resolution & bitrate to quickly shrink video file size.",
+      "desc": "Adjust resolution & bitrate to quickly shrink video file size. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload video\" and choose MP4 / MOV / WebM.",
@@ -299,7 +299,7 @@
     },
     "imageUpscale": {
       "title": "Image Upscaler",
-      "desc": "AI super-resolution — make blurry images clear again.",
+      "desc": "AI super-resolution — make blurry images clear again. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" and choose a JPG / PNG / WEBP to enlarge.",
@@ -336,7 +336,7 @@
       "mergeBtn": "Merge to PDF",
       "downloadBtn": "Download PDF",
       "title": "Image to PDF",
-      "desc": "Merge multiple images into a single PDF file.",
+      "desc": "Merge multiple images into a single PDF file. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload image\" to pick multiple JPG / PNG / WEBP files at once.",
@@ -495,7 +495,7 @@
       "errorEmpty": "Output file is empty",
       "errorNetwork": "Network error: failed to download the processing core. Check your connection and retry.",
       "errorFailed": "Conversion failed, please retry",
-      "desc": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click.",
+      "desc": "Upload a video, adjust FPS and width, and convert it to an animated GIF in one click. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Click \"Upload video\" and choose MP4 / MOV / WebM.",
@@ -529,35 +529,35 @@
   "nav": {
     "color": {
       "name": "Color",
-      "description": "Color conversion and palettes"
+      "description": "Color: Color conversion and palettes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "cooking": {
       "name": "Cooking",
-      "description": "Recipe scaling and nutrition calculators"
+      "description": "Cooking: Recipe scaling and nutrition calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "crypto": {
       "name": "Crypto",
-      "description": "Cryptocurrency and blockchain tools"
+      "description": "Crypto: Cryptocurrency and blockchain tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "data": {
       "name": "Data",
-      "description": "Bandwidth and file size calculators"
+      "description": "Data: Bandwidth and file size calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "datetime": {
       "name": "Date & Time",
-      "description": "Date, time, and duration calculators"
+      "description": "Date & Time: Date, time, and duration calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "finance": {
       "name": "Finance",
-      "description": "Financial calculators and converters"
+      "description": "Finance: Financial calculators and converters Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "health": {
       "name": "Health",
-      "description": "Health and fitness calculators"
+      "description": "Health: Health and fitness calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "infrastructure": {
       "name": "Infrastructure",
-      "description": "Virtualization, Kubernetes, and datacenter tools",
+      "description": "Infrastructure: Virtualization, Kubernetes, and datacenter tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "subcategories": {
         "vmware": "VMware",
         "hyperv": "Hyper-V",
@@ -568,7 +568,7 @@
     },
     "engineering": {
       "name": "Engineering",
-      "description": "Structural calculations, material properties, and beam analysis",
+      "description": "Engineering: Structural calculations, material properties, and beam analysis Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "subcategories": {
         "structural": "Structural",
         "materials": "Materials",
@@ -578,7 +578,7 @@
     },
     "chemistry": {
       "name": "Chemistry",
-      "description": "Chemical calculations and molecular tools",
+      "description": "Chemistry: Chemical calculations and molecular tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "subcategories": {
         "general": "General",
         "solutions": "Solutions",
@@ -588,40 +588,40 @@
     },
     "math": {
       "name": "Math",
-      "description": "Mathematical calculators"
+      "description": "Math: Mathematical calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "music": {
       "name": "Music",
-      "description": "Music theory and audio tools",
+      "description": "Music: Music theory and audio tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "comingSoon": "Music calculators coming soon!"
     },
     "network": {
       "name": "Network",
-      "description": "Network calculators and IP address tools"
+      "description": "Network: Network calculators and IP address tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "photo": {
       "name": "Photo",
-      "description": "Photography calculators"
+      "description": "Photo: Photography calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "physics": {
       "name": "Physics",
-      "description": "Physics and unit converters"
+      "description": "Physics: Physics and unit converters Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "realestate": {
       "name": "Real Estate",
-      "description": "Property valuation and mortgage calculators"
+      "description": "Real Estate: Property valuation and mortgage calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "video": {
       "name": "Video",
-      "description": "Video and media calculators"
+      "description": "Video: Video and media calculators Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "web": {
       "name": "Web",
-      "description": "Web development tools"
+      "description": "Web: Web development tools Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "automotive": {
       "name": "Automotive",
-      "description": "Vehicle calculators for fuel, tires, maintenance, and financing"
+      "description": "Automotive: Vehicle calculators for fuel, tires, maintenance, and financing Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds."
     },
     "subcategories": {
       "date-time": "Date & Time",
@@ -676,7 +676,7 @@
     "bmi": {
       "name": "BMI",
       "description": "Calculate your Body Mass Index and health category",
-      "metaDescription": "Calculate your Body Mass Index (BMI) and understand your health category",
+      "metaDescription": "BMI: Calculate your Body Mass Index and health category Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose your unit system: metric (centimetres / kilograms) or imperial (feet and inches / pounds).",
@@ -743,7 +743,7 @@
     "corpulence": {
       "name": "Corpulence",
       "description": "Calculate your Corpulence Index (Ponderal Index)",
-      "metaDescription": "Calculate your Ponderal Index for a more accurate body composition assessment",
+      "metaDescription": "Corpulence: Calculate your Corpulence Index (Ponderal Index) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your height and weight, and your age and sex if the formula requires them.",
@@ -918,7 +918,7 @@
     "age": {
       "name": "Age",
       "description": "Calculate exact age from birthdate in years, months, and days",
-      "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes",
+      "metaDescription": "Age: Calculate exact age from birthdate in years, months, and days Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the birth date (Y/M/D); add the time for more precision.",
@@ -950,7 +950,7 @@
     "date": {
       "name": "Date",
       "description": "Add or subtract days, weeks, months, and years from a date",
-      "metaDescription": "Add or subtract time periods from any date",
+      "metaDescription": "Date: Add or subtract days, weeks, months, and years from a date Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a start date and choose add or subtract.",
@@ -982,7 +982,7 @@
     "time": {
       "name": "Time",
       "description": "Add or subtract hours, minutes, and seconds",
-      "metaDescription": "Perform time calculations with hours, minutes, and seconds",
+      "metaDescription": "Time: Add or subtract hours, minutes, and seconds Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the time of the day, including hours, minutes, seconds.",
@@ -1081,7 +1081,7 @@
     "hours": {
       "name": "Hours",
       "description": "Calculate hours between two times or dates",
-      "metaDescription": "Calculate the number of hours between two times or dates",
+      "metaDescription": "Hours: Calculate hours between two times or dates Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the time in the form of \"hours + minutes \" , or the hour value of a decimal.",
@@ -1168,7 +1168,7 @@
     "time-duration": {
       "name": "Time Duration",
       "description": "Calculate duration between two dates and times",
-      "metaDescription": "Calculate the exact duration between two dates and times",
+      "metaDescription": "Time Duration: Calculate duration between two dates and times Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the start and end time, and if you cross midnight, take the date.",
@@ -1261,7 +1261,7 @@
     "time-zone": {
       "name": "Time Zone",
       "description": "Convert times between different time zones",
-      "metaDescription": "Convert times across different time zones worldwide",
+      "metaDescription": "Time Zone: Convert times between different time zones Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the source and target time zones (major cities and UTC offsets).",
@@ -1293,7 +1293,7 @@
     "day-counter": {
       "name": "Day Counter",
       "description": "Count days between dates or until a future date",
-      "metaDescription": "Count the days between two dates or until an upcoming event",
+      "metaDescription": "Day Counter: Count days between dates or until a future date Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the start and end dates; toggle whether endpoints are included.",
@@ -1325,7 +1325,7 @@
     "day-of-week": {
       "name": "Day of the Week",
       "description": "Find what day of the week any date falls on",
-      "metaDescription": "Find out what day of the week any date falls on",
+      "metaDescription": "Day of the Week: Find what day of the week any date falls on Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter any calendar date you are curious about.",
@@ -1357,7 +1357,7 @@
     "duration-converter": {
       "name": "Duration Converter",
       "description": "Convert between time units (seconds, minutes, hours, days, weeks, months, years)",
-      "metaDescription": "Convert duration between seconds, minutes, hours, days, weeks, months, and years with human-readable output",
+      "metaDescription": "Duration Converter: Convert between time units (seconds, minutes, hours, days, weeks, months, years) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a number of hours, such as days, hours or minutes, expressed in a unit.",
@@ -1450,7 +1450,7 @@
     "rgb": {
       "name": "RGB Converter",
       "description": "Convert between RGB, HEX, HSL, and CMYK color formats",
-      "metaDescription": "Convert colors between RGB, HEX, HSL, and CMYK formats",
+      "metaDescription": "RGB Converter: Convert between RGB, HEX, HSL, and CMYK color formats Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter values between 0 and 255 for red, green, blue.",
@@ -1549,7 +1549,7 @@
     "data-size": {
       "name": "Data Size",
       "description": "Convert between bytes, KB, MB, GB, TB and more",
-      "metaDescription": "Convert data sizes between bytes, kilobytes, megabytes, and more",
+      "metaDescription": "Data Size: Convert between bytes, KB, MB, GB, TB and more Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the values bytes, KB, MB, GB or TB.",
@@ -1630,7 +1630,7 @@
     "bandwidth": {
       "name": "Bandwidth Converter",
       "description": "Convert Mbps to KB/s, GB/day, TB/week and more",
-      "metaDescription": "Convert bandwidth between different units",
+      "metaDescription": "Bandwidth Converter: Convert Mbps to KB/s, GB/day, TB/week and more Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the bandwidth value and its units (bps, Kbps, Mbps, Gbps).",
@@ -1717,7 +1717,7 @@
     "download-calculator": {
       "name": "Download",
       "description": "Calculate download time from bandwidth and file size",
-      "metaDescription": "Calculate how long a file download will take",
+      "metaDescription": "Download: Calculate download time from bandwidth and file size Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the file size (e.g. 500 MB) and your download bandwidth (e.g. 100 Mbps).",
@@ -1781,7 +1781,7 @@
     "cidr-range": {
       "name": "CIDR Range",
       "description": "Calculate IP ranges from CIDR notation and check if an IP is within range",
-      "metaDescription": "Free CIDR range calculator. See first and last IP addresses in a CIDR block and check if specific IPs fall within the range. Supports IPv4 and IPv6.",
+      "metaDescription": "CIDR Range: Calculate IP ranges from CIDR notation and check if an IP is within range Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter an IPv4 or IPv6 address with its prefix length, e.g. 10.0.0.0/24.",
@@ -1813,7 +1813,7 @@
     "ip-calculator": {
       "name": "IP Address",
       "description": "Classify IP addresses by class (A-E) and identify public/private status",
-      "metaDescription": "Free IP address classifier. Detect IP class (A, B, C, D, E), identify public vs private addresses, and validate IPv4/IPv6 format.",
+      "metaDescription": "IP Address: Classify IP addresses by class (A-E) and identify public/private status Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter an IPv4 address, e.g. 192.168.1.10.",
@@ -1845,7 +1845,7 @@
     "throughput-calculator": {
       "name": "Throughput",
       "description": "Calculate network throughput from data transferred and time",
-      "metaDescription": "Free network throughput calculator. Calculate actual data transfer speed from file size and transfer time with speed comparisons.",
+      "metaDescription": "Throughput: Calculate network throughput from data transferred and time Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the amount and time you want to transfer.",
@@ -1932,7 +1932,7 @@
     "speed": {
       "name": "Speed Converter",
       "description": "Convert between m/s, km/h, mph, knots, and more",
-      "metaDescription": "Convert speed between meters per second, km/h, mph, and more",
+      "metaDescription": "Speed Converter: Convert between m/s, km/h, mph, knots, and more Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the speed value and select the current unit, such as meters per second or miles per hour.",
@@ -1965,7 +1965,7 @@
     "aspect-ratio": {
       "name": "Aspect Ratio",
       "description": "Calculate aspect ratios from width and height",
-      "metaDescription": "Calculate and convert aspect ratios for images and video",
+      "metaDescription": "Aspect Ratio: Calculate aspect ratios from width and height Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the original width and height, or pick a common preset like 16:9.",
@@ -1997,7 +1997,7 @@
     "aspect-fit": {
       "name": "Aspect Fit",
       "description": "Fit an image on a screen with letterboxing",
-      "metaDescription": "Calculate letterboxing and pillarboxing for image fitting",
+      "metaDescription": "Aspect Fit: Fit an image on a screen with letterboxing Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the source width and height of your image or video.",
@@ -2029,7 +2029,7 @@
     "composition": {
       "name": "Composition",
       "description": "Calculate field of view from focal length and distance",
-      "metaDescription": "Free online composition calculator. Get rule-of-thirds and golden-ratio grid points for any frame size fast, no signup, for better photos.",
+      "metaDescription": "Composition: Calculate field of view from focal length and distance Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose a composition rule you want to apply (rule of thirds, golden ratio, etc.).",
@@ -2061,7 +2061,7 @@
     "depth-of-field": {
       "name": "Depth of Field",
       "description": "Calculate DoF from aperture, focal length, and distance",
-      "metaDescription": "Free online depth of field calculator. Find near and far focus limits and blur for any lens and aperture fast, no signup, with clear steps.",
+      "metaDescription": "Depth of Field: Calculate DoF from aperture, focal length, and distance Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Set your camera to aperture-priority or manual mode and pick an f-number.",
@@ -2093,7 +2093,7 @@
     "dpi": {
       "name": "DPI",
       "description": "Calculate megapixels from print size and DPI",
-      "metaDescription": "Calculate DPI and resolution for printing",
+      "metaDescription": "DPI: Calculate megapixels from print size and DPI Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose the direction: size → DPI, or DPI → print size.",
@@ -2125,7 +2125,7 @@
     "image-filesize": {
       "name": "Image Filesize",
       "description": "Estimate image file size for JPEG, PNG, RAW formats",
-      "metaDescription": "Estimate image file sizes for different formats",
+      "metaDescription": "Image Filesize: Estimate image file size for JPEG, PNG, RAW formats Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the image type: photo (JPEG), transparent (PNG) or raw (RAW).",
@@ -2157,7 +2157,7 @@
     "light-ev": {
       "name": "Light EV",
       "description": "Calculate Exposure Value from camera settings",
-      "metaDescription": "Calculate exposure value from camera settings",
+      "metaDescription": "Light EV: Calculate Exposure Value from camera settings Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the radium (f), fast door speed and ISO.",
@@ -2256,7 +2256,7 @@
     "megapixels": {
       "name": "Megapixel",
       "description": "Calculate megapixels from width and height",
-      "metaDescription": "Calculate megapixels from image dimensions",
+      "metaDescription": "Megapixel: Calculate megapixels from width and height Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the sensor width and height in pixels, or pick a common spec.",
@@ -2288,7 +2288,7 @@
     "megapixel-aspects": {
       "name": "Megapixel Aspects",
       "description": "View megapixels in different aspect ratios",
-      "metaDescription": "View megapixel counts across different aspect ratios",
+      "metaDescription": "Megapixel Aspects: View megapixels in different aspect ratios Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the total megapixels of the sensor or image.",
@@ -2320,7 +2320,7 @@
     "portrait-distance": {
       "name": "Portrait Distance",
       "description": "Calculate ideal shooting distance for portraits",
-      "metaDescription": "Calculate the ideal distance for portrait photography",
+      "metaDescription": "Portrait Distance: Calculate ideal shooting distance for portraits Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the focal length of the lens and the camera sensor height.",
@@ -2395,7 +2395,7 @@
     "star-trails": {
       "name": "Star Trails",
       "description": "Calculate exposure time for star trail rotation",
-      "metaDescription": "Calculate exposure times for star trail photography",
+      "metaDescription": "Star Trails: Calculate exposure time for star trail rotation Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the focal length of the lens and the camera hear coefficient.",
@@ -2470,7 +2470,7 @@
     "spot-stars": {
       "name": "Spot Stars",
       "description": "Calculate max exposure to prevent star trailing (NPF Rule)",
-      "metaDescription": "Calculate maximum exposure time for sharp stars",
+      "metaDescription": "Spot Stars: Calculate max exposure to prevent star trailing (NPF Rule) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter focal length, aperture and sensor pixel spacing.",
@@ -2557,7 +2557,7 @@
     "time-lapse": {
       "name": "Time Lapse",
       "description": "Calculate interval, clip length, and memory for time lapse",
-      "metaDescription": "Plan your time lapse photography projects",
+      "metaDescription": "Time Lapse: Calculate interval, clip length, and memory for time lapse Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the time you want to film the real world.",
@@ -2651,7 +2651,7 @@
     "focal-equivalent": {
       "name": "Focal Length Equivalent",
       "description": "Match settings between different sensor sizes",
-      "metaDescription": "Free online focal length equivalent calculator. Convert any lens to full-frame equivalent fast, no signup, compare cameras easily.",
+      "metaDescription": "Focal Length Equivalent: Match settings between different sensor sizes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the actual focal length of your lens.",
@@ -2683,7 +2683,7 @@
     "hyperfocal": {
       "name": "Hyperfocal Distance",
       "description": "Calculate hyperfocal distance for maximum depth of field",
-      "metaDescription": "Free online hyperfocal distance calculator. Get the focus point for max depth of field in landscapes fast, no signup, with formula.",
+      "metaDescription": "Hyperfocal Distance: Calculate hyperfocal distance for maximum depth of field Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the focal length and aperture you plan to shoot with.",
@@ -2715,7 +2715,7 @@
     "nd-filter": {
       "name": "ND Filter",
       "description": "Calculate exposure time with ND filters",
-      "metaDescription": "Free online ND filter calculator. Convert shutter speed for any ND stop value fast, no signup, for silky water and long exposures.",
+      "metaDescription": "ND Filter: Calculate exposure time with ND filters Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the shutter speed you would use without the filter.",
@@ -2747,7 +2747,7 @@
     "golden-hour": {
       "name": "Golden Hour Guide",
       "description": "Calculate golden hour times based on your location",
-      "metaDescription": "Free online golden hour calculator. Find golden and blue hour times for your location and date fast, no signup, for better photos.",
+      "metaDescription": "Golden Hour Guide: Calculate golden hour times based on your location Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your location (or let the calculator use your device position).",
@@ -2779,7 +2779,7 @@
     "cooking-units": {
       "name": "Cooking Units",
       "description": "Convert between metric and imperial cooking measurements with ingredient densities",
-      "metaDescription": "Free cooking unit converter. Convert cups, tablespoons, teaspoons to ml, grams with density-aware conversions for flour, sugar, and more.",
+      "metaDescription": "Cooking Units: Convert between metric and imperial cooking measurements with ingredient densities Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the quantity and the unit you have (cups, grams, tablespoons, etc.).",
@@ -2811,7 +2811,7 @@
     "exchange-rate": {
       "name": "Exchange Rate",
       "description": "Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD)",
-      "metaDescription": "Free online exchange rate calculator. Convert currencies fast with recent rates, no signup, supports USD EUR GBP JPY CNY CHF and more.",
+      "metaDescription": "Exchange Rate: Convert between cryptocurrencies and fiat currencies (CHF, EUR, USD) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the amount you want to convert.",
@@ -2843,7 +2843,7 @@
     "hash-calculator": {
       "name": "Hash Calculator",
       "description": "Calculate MD5, SHA-1, SHA-256, SHA-512 hash values",
-      "metaDescription": "Free online hash calculator. Generate MD5, SHA-1, SHA-256, SHA-512 digests from text or files fast, no signup, for integrity checks.",
+      "metaDescription": "Hash Calculator: Calculate MD5, SHA-1, SHA-256, SHA-512 hash values Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Type or paste the text or file content you want to hash.",
@@ -2875,7 +2875,7 @@
     "mining-calculator": {
       "name": "Mining Profitability",
       "description": "Calculate Bitcoin mining profitability based on hash rate and electricity cost",
-      "metaDescription": "Free online crypto mining calculator. Estimate profit from hashrate, power and electricity cost fast, no signup, with daily and monthly views.",
+      "metaDescription": "Mining Profitability: Calculate Bitcoin mining profitability based on hash rate and electricity cost Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your hardware hashrate and power consumption.",
@@ -2907,7 +2907,7 @@
     "wallet-validator": {
       "name": "Wallet Validator",
       "description": "Validate Bitcoin, Ethereum, and Litecoin wallet addresses",
-      "metaDescription": "Free online wallet address validator. Check Bitcoin, Ethereum and more addresses for valid format and checksum fast, no signup.",
+      "metaDescription": "Wallet Validator: Validate Bitcoin, Ethereum, and Litecoin wallet addresses Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Paste the encrypted currency wallet address to check.",
@@ -3000,7 +3000,7 @@
     "mortgage-swiss": {
       "name": "Swiss Mortgage Calculator",
       "description": "Calculate mortgage payments with CHF/EUR support and Swiss market rates",
-      "metaDescription": "Free Swiss mortgage calculator with CHF and EUR support. Calculate monthly payments, amortization schedules, and total costs with Swiss market rates.",
+      "metaDescription": "Swiss Mortgage Calculator: Calculate mortgage payments with CHF/EUR support and Swiss market rates Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the property price, down payment and the Swiss reference or SARON-based rate.",
@@ -3065,7 +3065,7 @@
     "property-valuation": {
       "name": "Property Valuation Calculator",
       "description": "Estimate Swiss property values using the hedonic method",
-      "metaDescription": "Free Swiss property valuation calculator. Estimate apartment and house values based on location, size, condition, and features.",
+      "metaDescription": "Property Valuation Calculator: Estimate Swiss property values using the hedonic method Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter comparable sales prices and key diffs (area, age, floor, etc.).",
@@ -3098,7 +3098,7 @@
     "sun-position": {
       "name": "Sun Position",
       "description": "Calculate sun position, twilight times, and light phases for photography",
-      "metaDescription": "Calculate sun altitude, azimuth, twilight times, golden hour and blue hour for photography planning",
+      "metaDescription": "Sun Position: Calculate sun position, twilight times, and light phases for photography Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the latitude, longitude, date and local time.",
@@ -3179,7 +3179,7 @@
     "circle-of-confusion": {
       "name": "Circle of Confusion",
       "description": "Calculate CoC from sensor, print size, and viewing distance",
-      "metaDescription": "Calculate circle of confusion for depth of field",
+      "metaDescription": "Circle of Confusion: Calculate CoC from sensor, print size, and viewing distance Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the view distance and the size of the image.",
@@ -3272,7 +3272,7 @@
     "advanced-dof": {
       "name": "Advanced DoF",
       "description": "Depth of field with adjustable CoC for print size and viewing",
-      "metaDescription": "Advanced depth of field calculations",
+      "metaDescription": "Advanced DoF: Depth of field with adjustable CoC for print size and viewing Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter focal length, aperture (f-number), focus distance, and circle of confusion.",
@@ -3304,7 +3304,7 @@
     "macro-dof": {
       "name": "Macro DoF",
       "description": "Accurate depth of field for macro photography",
-      "metaDescription": "Calculate depth of field for macro photography",
+      "metaDescription": "Macro DoF: Accurate depth of field for macro photography Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the aperture (f-number) and the magnification ratio of your macro shot.",
@@ -3336,7 +3336,7 @@
     "dof-table": {
       "name": "DoF Table",
       "description": "Interactive table showing DoF across apertures and distances",
-      "metaDescription": "Reference table for depth of field",
+      "metaDescription": "DoF Table: Interactive table showing DoF across apertures and distances Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select the focal length and the radium you plan to use.",
@@ -3423,7 +3423,7 @@
     "diffraction": {
       "name": "Diffraction",
       "description": "Calculate when your camera becomes diffraction-limited",
-      "metaDescription": "Calculate diffraction limits for your camera",
+      "metaDescription": "Diffraction: Calculate when your camera becomes diffraction-limited Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the radium (f) and light wavelength.",
@@ -3516,7 +3516,7 @@
     "macro-diffraction": {
       "name": "Macro Diffraction",
       "description": "Calculate effective aperture and diffraction in macro photography",
-      "metaDescription": "Calculate diffraction effects in macro photography",
+      "metaDescription": "Macro Diffraction: Calculate effective aperture and diffraction in macro photography Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the radium (f value) and microrange magnification rate.",
@@ -3603,7 +3603,7 @@
     "bpm": {
       "name": "BPM",
       "description": "Convert BPM to Hz, bar length, and note durations",
-      "metaDescription": "Convert beats per minute to other musical timing units",
+      "metaDescription": "BPM: Convert BPM to Hz, bar length, and note durations Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number of beats and the time (seconds or minutes) to be taken.",
@@ -3696,7 +3696,7 @@
     "video-file-size": {
       "name": "Video File Size",
       "description": "Estimate video file size from resolution and duration",
-      "metaDescription": "Estimate video file sizes based on settings",
+      "metaDescription": "Video File Size: Estimate video file size from resolution and duration Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the video duration, resolution, and target quality.",
@@ -3728,7 +3728,7 @@
     "audio-filesize": {
       "name": "Audio File Size",
       "description": "Estimate audio file size from duration and format",
-      "metaDescription": "Estimate audio file sizes for different formats",
+      "metaDescription": "Audio File Size: Estimate audio file size from duration and format Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the audio length and sampling rate (e.g. 44.1 kHz).",
@@ -3827,7 +3827,7 @@
     "common-bitrates": {
       "name": "Common Bitrates Reference",
       "description": "Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates",
-      "metaDescription": "Reference guide for video codec bitrates",
+      "metaDescription": "Common Bitrates Reference: Reference guide for ProRes, DNxHD, DCP, and MPEG bitrates Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the delivery target: streaming, broadcast, disc, or mastering.",
@@ -3859,7 +3859,7 @@
     "dcp-filesize": {
       "name": "DCP File Size",
       "description": "Calculate Digital Cinema Package file sizes",
-      "metaDescription": "Calculate DCP file sizes for cinema distribution",
+      "metaDescription": "DCP File Size: Calculate Digital Cinema Package file sizes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the feature duration and chosen resolution (2K or 4K).",
@@ -3891,7 +3891,7 @@
     "foot-lambert": {
       "name": "Foot-Lambert",
       "description": "Calculate screen luminance for cinema projection",
-      "metaDescription": "Calculate screen brightness for cinema projection",
+      "metaDescription": "Foot-Lambert: Calculate screen luminance for cinema projection Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the brightness (fL or nits) measured.",
@@ -3978,7 +3978,7 @@
     "screen-size": {
       "name": "Screen Size",
       "description": "Calculate screen dimensions from diagonal and aspect ratio",
-      "metaDescription": "Calculate screen dimensions from diagonal size",
+      "metaDescription": "Screen Size: Calculate screen dimensions from diagonal and aspect ratio Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the size of the corner of the screen (inches or centimetres).",
@@ -4071,7 +4071,7 @@
     "video-bitrate": {
       "name": "Video Bitrate",
       "description": "Estimate video bitrate based on resolution and codec",
-      "metaDescription": "Calculate optimal video bitrates",
+      "metaDescription": "Video Bitrate: Estimate video bitrate based on resolution and codec Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the target file size and video duration.",
@@ -4165,7 +4165,7 @@
     "frame-rate": {
       "name": "Frame Rate Converter",
       "description": "Convert between frame rates with ffmpeg commands",
-      "metaDescription": "Convert video between frame rates",
+      "metaDescription": "Frame Rate Converter: Convert between frame rates with ffmpeg commands Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the source frame rate.",
@@ -4258,7 +4258,7 @@
     "url-encoder": {
       "name": "URL Encoder",
       "description": "Encode and decode URLs and special characters",
-      "metaDescription": "Encode and decode URLs and URI components",
+      "metaDescription": "URL Encoder: Encode and decode URLs and special characters Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Paste the URL or query string to encode.",
@@ -4290,7 +4290,7 @@
     "csp": {
       "name": "CSP Generator",
       "description": "Generate Content Security Policy headers",
-      "metaDescription": "Generate Content Security Policy headers for web security",
+      "metaDescription": "CSP Generator: Generate Content Security Policy headers Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the policy directives you plan to allow (default-src, script-src, img-src, etc.).",
@@ -4322,7 +4322,7 @@
     "redirect-check": {
       "name": "Redirect Checker",
       "description": "Check HTTP redirect chains and status codes",
-      "metaDescription": "Check URL redirect chains and HTTP status codes",
+      "metaDescription": "Redirect Checker: Check HTTP redirect chains and status codes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the source URL to test with the desired ultimate destination address.",
@@ -4416,7 +4416,7 @@
     "spf-check": {
       "name": "SPF Record Checker",
       "description": "Analyze SPF records for email authentication",
-      "metaDescription": "Analyze SPF records for email security",
+      "metaDescription": "SPF Record Checker: Analyze SPF records for email authentication Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your domain name to query its published SPF DNS record.",
@@ -4448,7 +4448,7 @@
     "https-check": {
       "name": "HTTPS Security Checker",
       "description": "Check security headers and TLS configuration",
-      "metaDescription": "Check website HTTPS and security headers",
+      "metaDescription": "HTTPS Security Checker: Check security headers and TLS configuration Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the hostname or full URL you want to test over HTTPS.",
@@ -4480,7 +4480,7 @@
     "html-encoder": {
       "name": "HTML Encoder",
       "description": "Encode and decode HTML entities",
-      "metaDescription": "Encode and decode HTML special characters",
+      "metaDescription": "HTML Encoder: Encode and decode HTML entities Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Paste HTML text needing escaping (with < > & etc.).",
@@ -4513,7 +4513,7 @@
     "html-chars": {
       "name": "HTML Character Map",
       "description": "Browse and copy HTML character entities",
-      "metaDescription": "Reference guide for HTML character entities",
+      "metaDescription": "HTML Character Map: Browse and copy HTML character entities Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Type or paste text with special characters.",
@@ -4546,7 +4546,7 @@
     "emoji-chars": {
       "name": "Emoji Character Map",
       "description": "Browse and copy emoji with codes",
-      "metaDescription": "Browse and copy emoji characters",
+      "metaDescription": "Emoji Character Map: Browse and copy emoji with codes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Type or paste text with emoji / special symbols.",
@@ -4579,7 +4579,7 @@
     "seo-performance": {
       "name": "SEO Performance Analyzer",
       "description": "Analyze page SEO metrics and get recommendations",
-      "metaDescription": "Analyze SEO performance and get optimization tips",
+      "metaDescription": "SEO Performance Analyzer: Analyze page SEO metrics and get recommendations Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your page URL and the target keyword or phrase you want to rank for.",
@@ -4611,7 +4611,7 @@
     "mortgage": {
       "name": "Mortgage",
       "description": "Calculate monthly payments, view amortization schedule, and visualize your loan",
-      "metaDescription": "Calculate mortgage payments with amortization schedule",
+      "metaDescription": "Mortgage: Calculate monthly payments, view amortization schedule, and visualize your loan Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the property price and the down payment percentage or amount; the loan principal is derived automatically.",
@@ -4678,7 +4678,7 @@
     "compound-interest": {
       "name": "Compound Interest",
       "description": "Calculate compound interest on investments with regular contributions",
-      "metaDescription": "Calculate compound interest growth over time",
+      "metaDescription": "Compound Interest: Calculate compound interest on investments with regular contributions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the starting principal, the amount you invest at the beginning.",
@@ -4747,7 +4747,7 @@
     "loan": {
       "name": "Loan",
       "description": "Calculate monthly payments for personal, auto, or any loan type",
-      "metaDescription": "Calculate loan payments and amortization",
+      "metaDescription": "Loan: Calculate monthly payments for personal, auto, or any loan type Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the loan principal, meaning the amount you actually receive, excluding upfront fees.",
@@ -4807,7 +4807,7 @@
     "retirement": {
       "name": "Retirement",
       "description": "Plan your retirement with savings projections and income planning",
-      "metaDescription": "Plan your retirement savings and income",
+      "metaDescription": "Retirement: Plan your retirement with savings projections and income planning Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your current age and planned retirement age to set the accumulation period.",
@@ -4876,7 +4876,7 @@
     "tip": {
       "name": "Tip",
       "description": "Calculate tip amount and split bills between multiple people",
-      "metaDescription": "Calculate tips and split bills easily",
+      "metaDescription": "Tip: Calculate tip amount and split bills between multiple people Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the bill currency and the common local tip rate (e.g. restaurant 10%–15%, delivery 0%–10%).",
@@ -4909,7 +4909,7 @@
     "savings-goal": {
       "name": "Savings Goal",
       "description": "Calculate how long to reach your savings goal with regular contributions",
-      "metaDescription": "Plan your savings and reach your financial goals",
+      "metaDescription": "Savings Goal: Calculate how long to reach your savings goal with regular contributions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the target amount, such as a deposit, study fund or emergency reserve, plus what you already have saved.",
@@ -4978,7 +4978,7 @@
     "inflation": {
       "name": "Inflation",
       "description": "Calculate the impact of inflation on purchasing power over time",
-      "metaDescription": "Understand inflation's impact on your money",
+      "metaDescription": "Inflation: Calculate the impact of inflation on purchasing power over time Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter an amount together with the start and end year.",
@@ -5041,7 +5041,7 @@
     "roi": {
       "name": "ROI",
       "description": "Calculate return on investment and annualized returns",
-      "metaDescription": "Calculate your investment returns",
+      "metaDescription": "ROI: Calculate return on investment and annualized returns Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the cost of the investment, the purchase price plus every fee and tax.",
@@ -5110,7 +5110,7 @@
     "break-even": {
       "name": "Break-Even",
       "description": "Calculate break-even point for your business",
-      "metaDescription": "Find your business break-even point",
+      "metaDescription": "Break-Even: Calculate break-even point for your business Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter fixed costs (rent, salaries—costs that don't vary with volume).",
@@ -5143,7 +5143,7 @@
     "profit-margin": {
       "name": "Profit Margin",
       "description": "Calculate gross, operating, and net profit margins",
-      "metaDescription": "Calculate business profit margins",
+      "metaDescription": "Profit Margin: Calculate gross, operating, and net profit margins Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose 'cost-plus' or 'price-backward' mode.",
@@ -5176,7 +5176,7 @@
     "discount": {
       "name": "Discount",
       "description": "Calculate discounts, sale prices, and savings",
-      "metaDescription": "Calculate discounts and sale prices",
+      "metaDescription": "Discount: Calculate discounts, sale prices, and savings Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the original price and discount percent (e.g. 20%), or enter the sale price to back-calculate the discount.",
@@ -5209,7 +5209,7 @@
     "currency": {
       "name": "Currency Converter",
       "description": "Convert between major world currencies",
-      "metaDescription": "Convert currencies with live exchange rates",
+      "metaDescription": "Currency Converter: Convert between major world currencies Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the amount you want to convert and pick the source and target currencies.",
@@ -5278,7 +5278,7 @@
     "auto-loan": {
       "name": "Auto Loan",
       "description": "Calculate car loan payments, interest, and total cost",
-      "metaDescription": "Calculate your auto loan monthly payments and total cost",
+      "metaDescription": "Auto Loan: Calculate car loan payments, interest, and total cost Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter car price, down payment (percent or amount), term, and annual rate.",
@@ -5311,7 +5311,7 @@
     "personal-loan": {
       "name": "Personal Loan",
       "description": "Calculate personal loan payments with fees and APR",
-      "metaDescription": "Calculate personal loan payments including origination fees",
+      "metaDescription": "Personal Loan: Calculate personal loan payments with fees and APR Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter loan amount, APR, and term (months or years).",
@@ -5344,7 +5344,7 @@
     "student-loan": {
       "name": "Student Loan",
       "description": "Calculate student loan payments with grace period options",
-      "metaDescription": "Calculate student loan payments and repayment schedules",
+      "metaDescription": "Student Loan: Calculate student loan payments with grace period options Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your total loan balance, the fixed interest rate, and the repayment term in years.",
@@ -5376,7 +5376,7 @@
     "home-equity": {
       "name": "Home Equity",
       "description": "Calculate home equity loan or HELOC payments",
-      "metaDescription": "Calculate home equity loan and HELOC payments",
+      "metaDescription": "Home Equity: Calculate home equity loan or HELOC payments Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your home's current market value and the total balances of any mortgages or liens.",
@@ -5408,7 +5408,7 @@
     "debt-payoff": {
       "name": "Debt Payoff",
       "description": "Calculate how long to pay off debt with extra payments",
-      "metaDescription": "Calculate debt payoff time and savings from extra payments",
+      "metaDescription": "Debt Payoff: Calculate how long to pay off debt with extra payments Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "List all debts: balance, rate, minimum payment.",
@@ -5441,7 +5441,7 @@
     "credit-card": {
       "name": "Credit Card",
       "description": "Calculate credit card payoff time and interest",
-      "metaDescription": "Calculate credit card payoff time and total interest cost",
+      "metaDescription": "Credit Card: Calculate credit card payoff time and interest Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the current balance, the card's annual percentage rate and the amount you plan to pay each month.",
@@ -5504,7 +5504,7 @@
     "down-payment": {
       "name": "Down Payment",
       "description": "Calculate how much to save for a down payment",
-      "metaDescription": "Calculate monthly savings needed for your down payment goal",
+      "metaDescription": "Down Payment: Calculate how much to save for a down payment Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the home price you are considering and your target down-payment percentage.",
@@ -5536,7 +5536,7 @@
     "retirement-401k": {
       "name": "401(k)",
       "description": "Calculate retirement savings with employer matching",
-      "metaDescription": "Calculate 401k retirement savings with employer match and projections",
+      "metaDescription": "401(k): Calculate retirement savings with employer matching Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your current age, planned retirement age, salary, and current 401(k) balance.",
@@ -5568,7 +5568,7 @@
     "ira-calculator": {
       "name": "IRA",
       "description": "Compare Traditional vs Roth IRA retirement accounts",
-      "metaDescription": "Compare Traditional and Roth IRA retirement accounts and tax benefits",
+      "metaDescription": "IRA: Compare Traditional vs Roth IRA retirement accounts Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select whether you want to compare Traditional IRA, Roth IRA, or both.",
@@ -5601,7 +5601,7 @@
     "bond-calculator": {
       "name": "Bond",
       "description": "Calculate bond prices, yields, and returns",
-      "metaDescription": "Calculate bond prices, current yield, and yield to maturity",
+      "metaDescription": "Bond: Calculate bond prices, yields, and returns Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the bond face value, coupon rate, years to maturity, and current market price.",
@@ -5634,7 +5634,7 @@
     "annuity-calculator": {
       "name": "Annuity",
       "description": "Calculate annuity payments and retirement income",
-      "metaDescription": "Calculate annuity payments and retirement income projections",
+      "metaDescription": "Annuity: Calculate annuity payments and retirement income Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose the annuity type: ordinary annuity (payments at end of period) or annuity due (payments at beginning).",
@@ -5667,7 +5667,7 @@
     "body-fat": {
       "name": "Body Fat",
       "description": "Calculate body fat percentage using the US Navy method",
-      "metaDescription": "Calculate your body fat percentage using the US Navy method with measurements",
+      "metaDescription": "Body Fat: Calculate body fat percentage using the US Navy method Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select your sex and unit system. Sex directly changes the formula coefficients.",
@@ -5730,7 +5730,7 @@
     "lean-body-mass": {
       "name": "Lean Body Mass",
       "description": "Calculate lean body mass using multiple formulas",
-      "metaDescription": "Calculate your lean body mass (fat-free mass) using multiple medical formulas",
+      "metaDescription": "Lean Body Mass: Calculate lean body mass using multiple formulas Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your weight, body fat percentage (or use a method like skinfold), and your sex.",
@@ -5762,7 +5762,7 @@
     "body-surface-area": {
       "name": "Body Surface Area",
       "description": "Calculate BSA using multiple medical formulas",
-      "metaDescription": "Calculate body surface area for medical dosing using multiple formulas",
+      "metaDescription": "Body Surface Area: Calculate BSA using multiple medical formulas Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your height and weight.",
@@ -5794,7 +5794,7 @@
     "ideal-weight": {
       "name": "Ideal Weight",
       "description": "Calculate ideal body weight using multiple formulas",
-      "metaDescription": "Calculate your ideal body weight using Robinson, Miller, Devine, and Hamwi formulas",
+      "metaDescription": "Ideal Weight: Calculate ideal body weight using multiple formulas Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select sex and unit system, since the coefficients differ by sex.",
@@ -5863,7 +5863,7 @@
     "bmr-calculator": {
       "name": "BMR",
       "description": "Calculate Basal Metabolic Rate for calorie planning",
-      "metaDescription": "Calculate your Basal Metabolic Rate using Harris-Benedict and Mifflin-St Jeor formulas",
+      "metaDescription": "BMR: Calculate Basal Metabolic Rate for calorie planning Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select sex and unit system. Sex sets the constant term in the equation.",
@@ -5932,7 +5932,7 @@
     "tdee-calculator": {
       "name": "TDEE",
       "description": "Calculate Total Daily Energy Expenditure",
-      "metaDescription": "Calculate your Total Daily Energy Expenditure based on activity level",
+      "metaDescription": "TDEE: Calculate Total Daily Energy Expenditure Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter sex, age, height and weight to establish your basal metabolic rate.",
@@ -6007,7 +6007,7 @@
     "calorie-calculator": {
       "name": "Calorie",
       "description": "Calculate daily calorie needs for weight goals",
-      "metaDescription": "Calculate daily calorie needs and macros for your weight loss or gain goals",
+      "metaDescription": "Calorie: Calculate daily calorie needs for weight goals Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter sex, age, height and weight to establish your basal metabolic rate.",
@@ -6076,7 +6076,7 @@
     "calories-burned": {
       "name": "Calories Burned",
       "description": "Calculate calories burned during various activities",
-      "metaDescription": "Calculate calories burned during exercise and daily activities using MET values",
+      "metaDescription": "Calories Burned: Calculate calories burned during various activities Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your body weight, since a heavier person burns more doing the same activity.",
@@ -6157,7 +6157,7 @@
     "target-heart-rate": {
       "name": "Target Heart Rate",
       "description": "Calculate target heart rate zones for exercise",
-      "metaDescription": "Calculate your target heart rate zones for fat burning and cardio exercise",
+      "metaDescription": "Target Heart Rate: Calculate target heart rate zones for exercise Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your age, since maximal heart rate is driven mainly by age.",
@@ -6232,7 +6232,7 @@
     "one-rep-max": {
       "name": "One Rep Max",
       "description": "Calculate your one-rep max from submaximal lifts",
-      "metaDescription": "Calculate your 1RM using various formulas from your submaximal lifts",
+      "metaDescription": "One Rep Max: Calculate your one-rep max from submaximal lifts Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose the lift you want to estimate, such as bench press, squat or deadlift.",
@@ -6296,7 +6296,7 @@
     "pace-calculator": {
       "name": "Pace",
       "description": "Calculate running pace, speed, and race times",
-      "metaDescription": "Calculate your running pace, predict race times, and plan your training",
+      "metaDescription": "Pace: Calculate running pace, speed, and race times Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose: distance+time → pace, or pace+distance → finish time.",
@@ -6329,7 +6329,7 @@
     "macro-calculator": {
       "name": "Macro",
       "description": "Calculate daily macronutrient targets",
-      "metaDescription": "Calculate your optimal protein, carbs, and fat intake for your fitness goals",
+      "metaDescription": "Macro: Calculate daily macronutrient targets Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter sex, age, height and weight so the basal metabolic rate can be calculated.",
@@ -6396,7 +6396,7 @@
     "protein-calculator": {
       "name": "Protein",
       "description": "Calculate daily protein requirements",
-      "metaDescription": "Calculate your daily protein needs based on your weight and goals",
+      "metaDescription": "Protein: Calculate daily protein requirements Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter body weight (kg) and activity or fitness goal.",
@@ -6429,7 +6429,7 @@
     "carb-calculator": {
       "name": "Carbohydrate",
       "description": "Calculate daily carbohydrate needs",
-      "metaDescription": "Calculate your optimal daily carbohydrate intake for energy and performance",
+      "metaDescription": "Carbohydrate: Calculate daily carbohydrate needs Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your daily calorie target and your chosen carbohydrate percentage.",
@@ -6461,7 +6461,7 @@
     "fat-intake": {
       "name": "Fat Intake",
       "description": "Calculate daily fat intake requirements",
-      "metaDescription": "Calculate your daily fat intake needs including healthy fat sources",
+      "metaDescription": "Fat Intake: Calculate daily fat intake requirements Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your daily calorie goal and a target fat percentage.",
@@ -6493,7 +6493,7 @@
     "water-intake": {
       "name": "Water Intake",
       "description": "Calculate daily water intake needs",
-      "metaDescription": "Calculate how much water you should drink daily based on your lifestyle",
+      "metaDescription": "Water Intake: Calculate daily water intake needs Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your body weight and choose kilograms or pounds.",
@@ -6556,7 +6556,7 @@
     "body-type": {
       "name": "Body Type",
       "description": "Determine your body type (ectomorph, mesomorph, endomorph)",
-      "metaDescription": "Discover your body type and get personalized training and nutrition advice",
+      "metaDescription": "Body Type: Determine your body type (ectomorph, mesomorph, endomorph) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Answer a few questions about your build, or enter simple measurements.",
@@ -6588,7 +6588,7 @@
     "healthy-weight": {
       "name": "Healthy Weight",
       "description": "Calculate your healthy weight range based on height",
-      "metaDescription": "Find your healthy weight range based on your height, age, and frame size",
+      "metaDescription": "Healthy Weight: Calculate your healthy weight range based on height Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your height, weight, age, and sex assigned at birth.",
@@ -6620,7 +6620,7 @@
     "army-body-fat": {
       "name": "Army Body Fat",
       "description": "Calculate body fat using US Army standards",
-      "metaDescription": "Calculate your body fat percentage using the official US Army tape test method",
+      "metaDescription": "Army Body Fat: Calculate body fat using US Army standards Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the required measurements such as height, neck, and waist (and hips for some).",
@@ -6652,7 +6652,7 @@
     "bac-calculator": {
       "name": "BAC",
       "description": "Calculate blood alcohol content",
-      "metaDescription": "Estimate your blood alcohol content based on drinks consumed",
+      "metaDescription": "BAC: Calculate blood alcohol content Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your sex, weight, number of standard drinks, and the hours spent drinking.",
@@ -6684,7 +6684,7 @@
     "gfr-calculator": {
       "name": "GFR",
       "description": "Calculate glomerular filtration rate for kidney function",
-      "metaDescription": "Calculate your eGFR to assess kidney function using CKD-EPI formula",
+      "metaDescription": "GFR: Calculate glomerular filtration rate for kidney function Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your serum creatinine, age, and sex (and race coefficient if the older equation uses it).",
@@ -6716,7 +6716,7 @@
     "sleep-calculator": {
       "name": "Sleep",
       "description": "Calculate optimal sleep and wake times",
-      "metaDescription": "Find the best times to sleep and wake up based on sleep cycles",
+      "metaDescription": "Sleep: Calculate optimal sleep and wake times Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the time you plan to fall asleep, or the time you need to wake up.",
@@ -6779,7 +6779,7 @@
     "due-date": {
       "name": "Due Date",
       "description": "Calculate pregnancy due date and milestones",
-      "metaDescription": "Calculate your pregnancy due date and track important milestones",
+      "metaDescription": "Due Date: Calculate pregnancy due date and milestones Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the first day of your last menstrual period (LMP).",
@@ -6812,7 +6812,7 @@
     "ovulation-calculator": {
       "name": "Ovulation",
       "description": "Calculate ovulation date and fertile window",
-      "metaDescription": "Calculate your ovulation date and most fertile days",
+      "metaDescription": "Ovulation: Calculate ovulation date and fertile window Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter first day of last period and average cycle length (default 28).",
@@ -6845,7 +6845,7 @@
     "period-calculator": {
       "name": "Period",
       "description": "Track menstrual cycle and predict next period",
-      "metaDescription": "Track your menstrual cycle and predict your next period",
+      "metaDescription": "Period: Track menstrual cycle and predict next period Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter first day of last period and average cycle length.",
@@ -6878,7 +6878,7 @@
     "pregnancy-weight-gain": {
       "name": "Pregnancy Weight Gain",
       "description": "Calculate recommended weight gain during pregnancy",
-      "metaDescription": "Calculate healthy weight gain recommendations during pregnancy",
+      "metaDescription": "Pregnancy Weight Gain: Calculate recommended weight gain during pregnancy Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your pre-pregnancy weight and height to compute your starting BMI.",
@@ -6910,7 +6910,7 @@
     "basic-calculator": {
       "name": "Basic",
       "description": "Perform arithmetic calculations with expression support",
-      "metaDescription": "Free online basic calculator for arithmetic operations and expressions",
+      "metaDescription": "Basic: Perform arithmetic calculations with expression support Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Type numbers using the on-screen pad or your keyboard.",
@@ -6942,7 +6942,7 @@
     "fraction-calculator": {
       "name": "Fraction",
       "description": "Add, subtract, multiply, divide, and simplify fractions",
-      "metaDescription": "Calculate fractions with step-by-step solutions and mixed numbers",
+      "metaDescription": "Fraction: Add, subtract, multiply, divide, and simplify fractions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick an operation: add, subtract, multiply, divide, or just simplify a mixed/improper fraction.",
@@ -6974,7 +6974,7 @@
     "percentage-calculator": {
       "name": "Percentage",
       "description": "Calculate percentages, percent change, and percent difference",
-      "metaDescription": "Free online percentage calculator. Find X% of Y, what percent one number is of another, and increases or discounts fast, no signup.",
+      "metaDescription": "Percentage: Calculate percentages, percent change, and percent difference Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick the percentage operation you need (X% of Y, X is what % of Y, or increase/decrease).",
@@ -7006,7 +7006,7 @@
     "percent-error": {
       "name": "Percent Error",
       "description": "Calculate percent error between experimental and actual values",
-      "metaDescription": "Calculate percent error for scientific experiments and measurements",
+      "metaDescription": "Percent Error: Calculate percent error between experimental and actual values Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the measured (experimental) value and the accepted (true) value.",
@@ -7038,7 +7038,7 @@
     "rounding-calculator": {
       "name": "Rounding",
       "description": "Round numbers using different methods and precision",
-      "metaDescription": "Round numbers to decimal places, significant figures, or custom precision",
+      "metaDescription": "Rounding: Round numbers using different methods and precision Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number you want to round and choose the target decimal places or significant figures.",
@@ -7070,7 +7070,7 @@
     "average-calculator": {
       "name": "Average",
       "description": "Calculate mean, median, mode, and other averages",
-      "metaDescription": "Calculate arithmetic mean, weighted average, geometric mean, and harmonic mean",
+      "metaDescription": "Average: Calculate mean, median, mode, and other averages Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the numbers line by line or comma separated; add or remove any time.",
@@ -7102,7 +7102,7 @@
     "long-division": {
       "name": "Long Division",
       "description": "Perform long division with step-by-step solution",
-      "metaDescription": "Learn long division with detailed step-by-step solutions and remainders",
+      "metaDescription": "Long Division: Perform long division with step-by-step solution Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the dividend (the number being divided) and the divisor (the number you divide by).",
@@ -7134,7 +7134,7 @@
     "exponent-calculator": {
       "name": "Exponent",
       "description": "Calculate powers and exponential expressions",
-      "metaDescription": "Calculate powers, exponents, and exponential expressions",
+      "metaDescription": "Exponent: Calculate powers and exponential expressions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the bottom number and the index to be applied.",
@@ -7233,7 +7233,7 @@
     "root-calculator": {
       "name": "Root",
       "description": "Calculate square roots, cube roots, and nth roots",
-      "metaDescription": "Calculate square roots, cube roots, and any nth root of numbers",
+      "metaDescription": "Root: Calculate square roots, cube roots, and nth roots Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the radicand (the number under the root) and the index, such as 2 for square root.",
@@ -7265,7 +7265,7 @@
     "logarithm-calculator": {
       "name": "Logarithm",
       "description": "Calculate logarithms with any base",
-      "metaDescription": "Calculate logarithms with base 10, natural log, or any custom base",
+      "metaDescription": "Logarithm: Calculate logarithms with any base Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number whose logarithm you need and pick the base, such as 10, e, or 2.",
@@ -7297,7 +7297,7 @@
     "quadratic-calculator": {
       "name": "Quadratic Formula",
       "description": "Solve quadratic equations and find roots",
-      "metaDescription": "Solve quadratic equations using the quadratic formula with step-by-step solutions",
+      "metaDescription": "Quadratic Formula: Solve quadratic equations and find roots Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the coefficients a, b, and c from your quadratic equation a x^2 + b x + c = 0.",
@@ -7329,7 +7329,7 @@
     "factor-calculator": {
       "name": "Factor",
       "description": "Find all factors of a number",
-      "metaDescription": "Find all factors, factor pairs, and prime factors of any number",
+      "metaDescription": "Factor: Find all factors of a number Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a positive integer you want to factor.",
@@ -7361,7 +7361,7 @@
     "gcd-calculator": {
       "name": "GCD",
       "description": "Calculate Greatest Common Divisor of multiple numbers",
-      "metaDescription": "Calculate the greatest common divisor (GCD/GCF) of two or more numbers",
+      "metaDescription": "GCD: Calculate Greatest Common Divisor of multiple numbers Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter two or more integers.",
@@ -7436,7 +7436,7 @@
     "lcm-calculator": {
       "name": "LCM",
       "description": "Calculate Least Common Multiple of multiple numbers",
-      "metaDescription": "Calculate the least common multiple (LCM) of two or more numbers",
+      "metaDescription": "LCM: Calculate Least Common Multiple of multiple numbers Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter two or more integers.",
@@ -7516,7 +7516,7 @@
     "prime-factorization": {
       "name": "Prime Factorization",
       "description": "Find prime factors and divisors of any number",
-      "metaDescription": "Find prime factorization, factor tree, and all divisors of any number",
+      "metaDescription": "Prime Factorization: Find prime factors and divisors of any number Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a positive number greater than 1.",
@@ -7603,7 +7603,7 @@
     "triangle-calculator": {
       "name": "Triangle",
       "description": "Calculate triangle properties from sides and angles",
-      "metaDescription": "Calculate triangle area, perimeter, angles, and sides with law of cosines",
+      "metaDescription": "Triangle: Calculate triangle properties from sides and angles Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter any three known values of a triangle, such as two sides and an angle.",
@@ -7635,7 +7635,7 @@
     "pythagorean-calculator": {
       "name": "Pythagorean Theorem",
       "description": "Calculate missing side using Pythagorean theorem",
-      "metaDescription": "Find the missing side of a right triangle using the Pythagorean theorem",
+      "metaDescription": "Pythagorean Theorem: Calculate missing side using Pythagorean theorem Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "State the known sides: legs a and b, or one leg and hypotenuse c.",
@@ -7667,7 +7667,7 @@
     "circle-calculator": {
       "name": "Circle",
       "description": "Calculate circle properties from radius, diameter, or circumference",
-      "metaDescription": "Calculate circle area, circumference, diameter, and radius",
+      "metaDescription": "Circle: Calculate circle properties from radius, diameter, or circumference Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the radius, diameter or perimeter of the circle.",
@@ -7748,7 +7748,7 @@
     "area-calculator": {
       "name": "Area",
       "description": "Calculate area of various shapes",
-      "metaDescription": "Calculate area of rectangle, square, circle, triangle, trapezoid, and more",
+      "metaDescription": "Area: Calculate area of various shapes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick a shape: rectangle, circle, triangle, trapezoid and more.",
@@ -7780,7 +7780,7 @@
     "surface-area-calculator": {
       "name": "Surface Area",
       "description": "Calculate surface area of 3D shapes",
-      "metaDescription": "Calculate surface area of cube, sphere, cylinder, cone, and pyramid",
+      "metaDescription": "Surface Area: Calculate surface area of 3D shapes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Select a three-dimensional shape (cube, ball, cylinder, cone, etc.).",
@@ -7861,7 +7861,7 @@
     "volume-calculator": {
       "name": "Volume",
       "description": "Calculate volume of 3D shapes",
-      "metaDescription": "Calculate volume of cube, sphere, cylinder, cone, prism, and more",
+      "metaDescription": "Volume: Calculate volume of 3D shapes Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Pick a solid: cuboid, cube, cylinder, sphere, cone and more.",
@@ -8202,7 +8202,7 @@
     "molarity": {
       "name": "Molarity Calculator",
       "description": "Calculate solution concentration from mass, moles, and volume",
-      "metaDescription": "Free molarity calculator. Calculate solution concentration (M, mM, µM, nM) from mass/volume or moles/volume with step-by-step calculations.",
+      "metaDescription": "Molarity Calculator: Calculate solution concentration from mass, moles, and volume Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the moles of solute and the volume of solution in litres.",
@@ -8426,7 +8426,7 @@
     "server-virtualization-calculator": {
       "name": "Server Virtualization Calculator",
       "description": "Calculate ESX host requirements for VM workloads",
-      "metaDescription": "Free VMware ESX host sizing calculator. Calculate required hosts based on VM CPU/RAM requirements with N+1 high availability support.",
+      "metaDescription": "Server Virtualization Calculator: Calculate ESX host requirements for VM workloads Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number of physical servers and their average CPU/RAM utilization today.",
@@ -8458,7 +8458,7 @@
     "vmware-licensing-calculator": {
       "name": "VMware Licensing Calculator",
       "description": "Calculate VMware VCF/VVF licensing costs",
-      "metaDescription": "Free VMware licensing cost calculator. Calculate VMware Cloud Foundation and vSphere Foundation subscription costs with 16-core minimum enforcement.",
+      "metaDescription": "VMware Licensing Calculator: Calculate VMware VCF/VVF licensing costs Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number of CPU cores or processors across your hosts that need licensing.",
@@ -8490,7 +8490,7 @@
     "virtualization-cost": {
       "name": "Virtualization Cost Calculator",
       "description": "Calculate total cost of ownership for virtualization infrastructure",
-      "metaDescription": "Free virtualization TCO calculator. Calculate total cost of ownership including CAPEX and OPEX for virtualization infrastructure.",
+      "metaDescription": "Virtualization Cost Calculator: Calculate total cost of ownership for virtualization infrastructure Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number of hosts, their purchase price and expected lifespan.",
@@ -8522,7 +8522,7 @@
     "hyperv-consolidation": {
       "name": "Hyper-V Consolidation Calculator",
       "description": "Calculate Hyper-V host requirements with HA and Windows licensing",
-      "metaDescription": "Free Hyper-V consolidation calculator. Calculate required hosts with N+1/N+2 HA, storage stacking, and Windows Server licensing costs.",
+      "metaDescription": "Hyper-V Consolidation Calculator: Calculate Hyper-V host requirements with HA and Windows licensing Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your current count of physical servers and their average CPU/RAM usage.",
@@ -8554,7 +8554,7 @@
     "windows-licensing": {
       "name": "Windows Server Licensing Calculator",
       "description": "Compare Datacenter vs Standard licensing costs",
-      "metaDescription": "Free Windows Server licensing calculator. Compare Datacenter and Standard editions with break-even analysis and 16-core minimum enforcement.",
+      "metaDescription": "Windows Server Licensing Calculator: Compare Datacenter vs Standard licensing costs Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the number of physical cores in each Windows Server host.",
@@ -8672,7 +8672,7 @@
     "slope-calculator": {
       "name": "Slope",
       "description": "Calculate slope, equation, and angle of a line",
-      "metaDescription": "Calculate slope, y-intercept, and linear equation from two points",
+      "metaDescription": "Slope: Calculate slope, equation, and angle of a line Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter two point coordinates (x1, y1) and (x2, y2).",
@@ -8765,7 +8765,7 @@
     "standard-deviation": {
       "name": "Standard Deviation",
       "description": "Calculate standard deviation and variance",
-      "metaDescription": "Free online standard deviation calculator. Find population or sample SD and variance fast, no signup, with clear formula and examples.",
+      "metaDescription": "Standard Deviation: Calculate standard deviation and variance Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your data set as a list of numbers separated by commas.",
@@ -8797,7 +8797,7 @@
     "statistics-calculator": {
       "name": "Statistics",
       "description": "Calculate comprehensive statistics for a data set",
-      "metaDescription": "Free online statistics calculator. Get mean, median, mode, range and standard deviation from a list fast, no signup, with clear explanation.",
+      "metaDescription": "Statistics: Calculate comprehensive statistics for a data set Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your numbers as a comma-separated list.",
@@ -8829,7 +8829,7 @@
     "probability-calculator": {
       "name": "Probability",
       "description": "Calculate probability of events and combinations",
-      "metaDescription": "Free online probability calculator. Find the chance of single or combined events fast, no signup, shown as fraction, decimal and percent.",
+      "metaDescription": "Probability: Calculate probability of events and combinations Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Choose the probability scenario (single event, two events, or combinations).",
@@ -8861,7 +8861,7 @@
     "sample-size": {
       "name": "Sample Size",
       "description": "Calculate required sample size for surveys and studies",
-      "metaDescription": "Free online sample size calculator. Find how many responses you need for a given confidence and margin of error, no signup, with steps.",
+      "metaDescription": "Sample Size: Calculate required sample size for surveys and studies Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your confidence level, margin of error, and an estimate of the population proportion.",
@@ -8893,7 +8893,7 @@
     "z-score-calculator": {
       "name": "Z-Score",
       "description": "Calculate z-score and normal distribution probabilities",
-      "metaDescription": "Free online z-score calculator. Standardize any raw score with mean and SD fast, no signup, and see how far it sits from the average.",
+      "metaDescription": "Z-Score: Calculate z-score and normal distribution probabilities Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the original fraction that you want to standardize.",
@@ -8980,7 +8980,7 @@
     "p-value-calculator": {
       "name": "P-Value",
       "description": "Calculate p-values for statistical hypothesis testing",
-      "metaDescription": "Calculate p-values from z-scores, t-scores, chi-square, and F-statistics",
+      "metaDescription": "P-Value: Calculate p-values for statistical hypothesis testing Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter your test statistic and degrees of freedom (or the effect size and sample size).",
@@ -9012,7 +9012,7 @@
     "confidence-interval": {
       "name": "Confidence Interval",
       "description": "Calculate confidence intervals for means and proportions",
-      "metaDescription": "Calculate confidence intervals for population mean and proportion",
+      "metaDescription": "Confidence Interval: Calculate confidence intervals for means and proportions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the sample mean, standard deviation and sample size.",
@@ -9044,7 +9044,7 @@
     "permutation-combination": {
       "name": "Permutation & Combination",
       "description": "Calculate permutations and combinations with and without repetition",
-      "metaDescription": "Calculate nPr and nCr permutations and combinations for counting problems",
+      "metaDescription": "Permutation & Combination: Calculate permutations and combinations with and without repetition Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the total number of items n with the selected number k.",
@@ -9131,7 +9131,7 @@
     "ratio-calculator": {
       "name": "Ratio",
       "description": "Calculate and simplify ratios, find equivalent ratios",
-      "metaDescription": "Free online ratio calculator. Simplify A:B ratios, find missing values, and scale proportions fast, no signup, with clear steps.",
+      "metaDescription": "Ratio: Calculate and simplify ratios, find equivalent ratios Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the values of your ratio, such as A : B.",
@@ -9163,7 +9163,7 @@
     "binary-calculator": {
       "name": "Binary",
       "description": "Convert and perform operations in binary",
-      "metaDescription": "Convert between binary, decimal, octal, and hexadecimal number systems",
+      "metaDescription": "Binary: Convert and perform operations in binary Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a binary, decimal or hexadecimal number in the corresponding mode.",
@@ -9262,7 +9262,7 @@
     "hex-calculator": {
       "name": "Hexadecimal",
       "description": "Convert and calculate in hexadecimal",
-      "metaDescription": "Convert and perform arithmetic operations in hexadecimal",
+      "metaDescription": "Hexadecimal: Convert and calculate in hexadecimal Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter a hexadecimal value (using 0-9 and A-F) or other anode.",
@@ -9361,7 +9361,7 @@
     "scientific-notation": {
       "name": "Scientific Notation",
       "description": "Convert to/from scientific notation and perform operations",
-      "metaDescription": "Free online scientific notation calculator. Convert any number to or from scientific notation fast, no signup, with mantissa, exponent and examples.",
+      "metaDescription": "Scientific Notation: Convert to/from scientific notation and perform operations Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Type the number you want to convert into the input field.",
@@ -9393,7 +9393,7 @@
     "big-number": {
       "name": "Big Number",
       "description": "Perform arithmetic on arbitrarily large integers",
-      "metaDescription": "Calculate with very large numbers beyond standard calculator limits",
+      "metaDescription": "Big Number: Perform arithmetic on arbitrarily large integers Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter one or two very large integers that exceed normal calculator limits.",
@@ -9425,7 +9425,7 @@
     "number-sequence": {
       "name": "Number Sequence",
       "description": "Analyze and generate arithmetic, geometric, and Fibonacci sequences",
-      "metaDescription": "Find patterns in number sequences and generate arithmetic or geometric series",
+      "metaDescription": "Number Sequence: Analyze and generate arithmetic, geometric, and Fibonacci sequences Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the known terms of your sequence, separated by commas.",
@@ -9457,7 +9457,7 @@
     "matrix-calculator": {
       "name": "Matrix",
       "description": "Perform matrix operations: add, multiply, transpose, determinant",
-      "metaDescription": "Calculate matrix addition, multiplication, determinant, inverse, and transpose",
+      "metaDescription": "Matrix: Perform matrix operations: add, multiply, transpose, determinant Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the dimensions and values of one or two arrays.",
@@ -9538,7 +9538,7 @@
     "half-life-calculator": {
       "name": "Half-Life",
       "description": "Calculate radioactive decay and remaining quantity",
-      "metaDescription": "Calculate radioactive decay, remaining quantity, and carbon dating",
+      "metaDescription": "Half-Life: Calculate radioactive decay and remaining quantity Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the initial amount and the substance half-life.",
@@ -9631,7 +9631,7 @@
     "distance-calculator": {
       "name": "Distance",
       "description": "Calculate distances between points in 2D, 3D, and on Earth",
-      "metaDescription": "Calculate Euclidean distance, Manhattan distance, and geographic distances",
+      "metaDescription": "Distance: Calculate distances between points in 2D, 3D, and on Earth Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the coordinates or two place names, or pick two points on the map if available.",
@@ -9663,7 +9663,7 @@
     "random-number": {
       "name": "Random Number Generator",
       "description": "Generate random numbers with various distributions",
-      "metaDescription": "Generate random numbers, roll dice, and shuffle lists",
+      "metaDescription": "Random Number Generator: Generate random numbers with various distributions Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Sets the minimum and maximum values of the range you need.",
@@ -9744,7 +9744,7 @@
     "tcp-throughput": {
       "name": "TCP Throughput",
       "description": "Calculate theoretical TCP throughput using the Mathis formula",
-      "metaDescription": "Calculate maximum TCP throughput based on MSS, RTT, and packet loss rate using the Mathis formula",
+      "metaDescription": "TCP Throughput: Calculate theoretical TCP throughput using the Mathis formula Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the RTT (round-trip time) and packet loss probability.",
@@ -9776,7 +9776,7 @@
     "bandwidth-delay-product": {
       "name": "Bandwidth-Delay Product",
       "description": "Calculate BDP and optimal TCP buffer size",
-      "metaDescription": "Calculate bandwidth-delay product and required TCP window size for optimal network performance",
+      "metaDescription": "Bandwidth-Delay Product: Calculate BDP and optimal TCP buffer size Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the bandwidth of the chain and the time of return.",
@@ -9863,7 +9863,7 @@
     "bb-credit-calculator": {
       "name": "BB Credit Calculator",
       "description": "Calculate Fibre Channel BB credits for ISL links based on speed and distance",
-      "metaDescription": "Free SAN BB credit calculator — compute buffer-to-buffer credits for Brocade FOS and Cisco MDS ISL links based on FC speed and cable distance",
+      "metaDescription": "BB Credit Calculator: Calculate Fibre Channel BB credits for ISL links based on speed and distance Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the link line rate in Gbps (e.g., 16, 32, 64).",
@@ -9895,7 +9895,7 @@
     "latency-converter": {
       "name": "Latency Converter",
       "description": "Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds)",
-      "metaDescription": "Free network latency converter. Convert ping times between seconds, milliseconds, microseconds, and nanoseconds with latency category context.",
+      "metaDescription": "Latency Converter: Convert between ping time units (seconds, milliseconds, microseconds, nanoseconds) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the delay value (ms, micros or ns).",
@@ -9988,7 +9988,7 @@
     "food-cost": {
       "name": "Food Cost Calculator",
       "description": "Calculate total recipe cost and cost per serving from ingredient prices",
-      "metaDescription": "Free food cost calculator. Calculate recipe cost, cost per serving, and ingredient expense breakdown for meal planning and budgeting.",
+      "metaDescription": "Food Cost Calculator: Calculate total recipe cost and cost per serving from ingredient prices Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the purchase price and packing specifications for the food.",
@@ -10087,7 +10087,7 @@
     "recipe-scaler": {
       "name": "Recipe Scaler",
       "description": "Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents",
-      "metaDescription": "Free recipe scaler. Double or halve recipes with intelligent scaling that adjusts seasonings and leavening for perfect results.",
+      "metaDescription": "Recipe Scaler: Scale recipe ingredients with smart adjustments for salt, spices, and leavening agents Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the amount of food used in the original recipe and the number of original copies.",
@@ -10180,7 +10180,7 @@
     "nutrition-calculator": {
       "name": "Nutrition Calculator",
       "description": "Calculate calories, macros, and nutrition facts from selected foods",
-      "metaDescription": "Free nutrition calculator. Track calories, protein, carbs, fat, and other nutrients from a database of 100+ common foods.",
+      "metaDescription": "Nutrition Calculator: Calculate calories, macros, and nutrition facts from selected foods Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the foods and their weights.",
@@ -10261,7 +10261,7 @@
     "fuel-efficiency": {
       "name": "Fuel Efficiency Calculator",
       "description": "Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates",
-      "metaDescription": "Free fuel efficiency calculator - L/100km, km/L, MPG conversions, trip fuel needed, and annual fuel cost estimates.",
+      "metaDescription": "Fuel Efficiency Calculator: Calculate fuel consumption in L/100km, km/L, and MPG with trip and cost estimates Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the distance traveled and the fuel consumed for that trip.",
@@ -10293,7 +10293,7 @@
     "vehicle-financing": {
       "name": "Vehicle Financing Calculator",
       "description": "Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR)",
-      "metaDescription": "Free vehicle financing calculator - auto loans, leases, and buy vs lease comparison. CHF and EUR support with Swiss VAT.",
+      "metaDescription": "Vehicle Financing Calculator: Calculate auto loan and lease payments with buy vs lease comparison (CHF/EUR) Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the price of the car, the down payment and the exchange credit.",
@@ -10380,7 +10380,7 @@
     "tire-sizing": {
       "name": "Tire Size Calculator",
       "description": "Calculate tire dimensions, compare sizes, and check speedometer error",
-      "metaDescription": "Free tire size calculator - dimensions, comparison, speedometer error. Supports European metric notation (205/55R16).",
+      "metaDescription": "Tire Size Calculator: Calculate tire dimensions, compare sizes, and check speedometer error Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the current tyre code (e.g. 205/55R16) and the candidate size.",
@@ -10467,7 +10467,7 @@
     "maintenance-intervals": {
       "name": "Maintenance Intervals Calculator",
       "description": "Track vehicle service schedules and calculate next due dates with Swiss MFK reminders",
-      "metaDescription": "Free vehicle maintenance calculator - track oil changes, filters, brakes, and Swiss MFK inspection schedules. Km-based intervals.",
+      "metaDescription": "Maintenance Intervals Calculator: Track vehicle service schedules and calculate next due dates with Swiss MFK reminders Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the interval (miles or kilometres) between the current mileage and the manufacturer.",
@@ -10589,7 +10589,7 @@
     "unit-converter": {
       "name": "Unit Converter",
       "description": "Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
-      "metaDescription": "Free online unit converter for length, mass, temperature, area, volume, speed, time, data, energy, power and pressure.",
+      "metaDescription": "Unit Converter: Convert between units of length, mass, temperature, area, volume, speed, time, data, energy, power and pressure. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "category": "Category",
       "value": "Value",
       "from": "From",
@@ -10668,7 +10668,7 @@
     "set-calculator": {
       "name": "Set Calculator",
       "description": "Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations.",
-      "metaDescription": "Free online set calculator for union, intersection, difference, symmetric difference, cartesian product and subset checks.",
+      "metaDescription": "Set Calculator: Perform set operations: union, intersection, difference, symmetric difference, cartesian product and set relations. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "setA": "Set A",
       "setB": "Set B",
       "operation": "Operation",
@@ -10755,7 +10755,7 @@
     "programmer-calculator": {
       "name": "Programmer Calculator",
       "description": "Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations.",
-      "metaDescription": "Free online programmer calculator: base conversion (dec/hex/oct/bin) with bitwise AND/OR/XOR and shifts.",
+      "metaDescription": "Programmer Calculator: Convert between decimal, hexadecimal, octal and binary and apply bitwise and shift operations. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "valueA": "Value A",
       "valueB": "Value B",
       "bitwise": "Bitwise operation",
@@ -10865,7 +10865,7 @@
     "debt-snowball-avalanche": {
       "name": "Debt Payoff Planner",
       "description": "Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster.",
-      "metaDescription": "Free debt payoff planner comparing snowball vs avalanche methods with total interest and payoff order.",
+      "metaDescription": "Debt Payoff Planner: Compare the snowball and avalanche debt payoff strategies and see which clears your debt faster. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "debts": "Debts",
       "hint": "One debt per line: Name, Balance, Annual Rate %, Minimum Payment.",
       "extra": "Extra monthly payment",
@@ -10908,7 +10908,7 @@
     "income-tax": {
       "name": "Income Tax Calculator",
       "description": "Calculate progressive income tax with presets or your own custom tax brackets.",
-      "metaDescription": "Free progressive income tax calculator with US, UK and custom bracket support.",
+      "metaDescription": "Income Tax Calculator: Calculate progressive income tax with presets or your own custom tax brackets. Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "system": "Tax system",
       "income": "Taxable income",
       "brackets": "Custom brackets",
@@ -10950,7 +10950,7 @@
     "gcd-lcm": {
       "name": "GCD & LCM",
       "description": "Calculate GCD and LCM of multiple numbers",
-      "metaDescription": "Calculate both greatest common divisor and least common multiple of two or more numbers",
+      "metaDescription": "GCD & LCM: Calculate GCD and LCM of multiple numbers Use our free online calculator for fast, accurate results with no registration required. Simple, private, and ready to use in seconds.",
       "guide": {
         "steps": [
           "Enter the integer of two values.",
@@ -16143,7 +16143,7 @@
   },
   "blog": {
     "title": "Articles & Guides",
-    "subtitle": "Practical explainers on money, health, and everyday math, paired with our free calculators.",
+    "subtitle": "Practical explainers on money, health, and everyday math, paired with our free calculators. Read the full guide with step-by-step examples and practical tips.",
     "readMore": "Read article",
     "publishedOn": "Published",
     "minRead": "min read",
@@ -16244,7 +16244,7 @@
       },
       "bmi-body-fat-explained": {
         "title": "BMI, Body Fat, and What Your Weight Number Really Means",
-        "excerpt": "Step on a scale and the number feels like a verdict. But weight alone hides more than it reveals. BMI is a starting point, not a finish line.",
+        "excerpt": "Step on a scale and the number feels like a verdict. But weight alone hides more than it reveals. BMI is a starting point, not a finish line. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16282,7 +16282,7 @@
       },
       "extra-mortgage-payments": {
         "title": "How Extra Mortgage Payments Save You Years of Interest",
-        "excerpt": "A 30-year mortgage is mostly interest in the early years. Small extra payments can shave years, and thousands of dollars, off the loan.",
+        "excerpt": "A 30-year mortgage is mostly interest in the early years. Small extra payments can shave years, and thousands of dollars, off the loan. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16320,7 +16320,7 @@
       },
       "percentages-in-everyday-life": {
         "title": "Percentages in Real Life: Discounts, Tips, and Tax Made Easy",
-        "excerpt": "Percentages run the everyday math of money, from sales and tips to tax and interest. Once the pattern clicks, you can do most of it in your head.",
+        "excerpt": "Percentages run the everyday math of money, from sales and tips to tax and interest. Once the pattern clicks, you can do most of it in your head. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16358,7 +16358,7 @@
       },
       "calories-bmr-tdee": {
         "title": "Calories, BMR, and TDEE: Planning a Diet That Actually Works",
-        "excerpt": "Eat less, move more is true but useless without numbers. Your calorie needs are personal, and two calculators explain why.",
+        "excerpt": "Eat less, move more is true but useless without numbers. Your calorie needs are personal, and two calculators explain why. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16396,7 +16396,7 @@
       },
       "cooking-unit-conversions": {
         "title": "Cooking Unit Conversions: Cups, Grams, and Ounces Without the Guesswork",
-        "excerpt": "A recipe calls for 200 g of flour but your cups are imperial. Converting cooking units should not ruin dinner.",
+        "excerpt": "A recipe calls for 200 g of flour but your cups are imperial. Converting cooking units should not ruin dinner. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16434,7 +16434,7 @@
       },
       "debt-snowball-vs-avalanche": {
         "title": "Debt Snowball vs. Avalanche: Which Payoff Method Wins?",
-        "excerpt": "Two popular methods promise to crush debt. They differ on one question: do you pay by emotion, or by math?",
+        "excerpt": "Two popular methods promise to crush debt. They differ on one question: do you pay by emotion, or by math? Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16472,7 +16472,7 @@
       },
       "equal-installment-vs-principal": {
         "title": "Equal Installment vs Equal Principal: Which Mortgage Saves More",
-        "excerpt": "Same loan amount, same rate — yet the two repayment methods can differ by tens of thousands in total interest. Here's how to choose.",
+        "excerpt": "Same loan amount, same rate — yet the two repayment methods can differ by tens of thousands in total interest. Here's how to choose. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16525,7 +16525,7 @@
       },
       "credit-card-minimum-payment-trap": {
         "title": "The Real Cost of Paying Only the Credit Card Minimum",
-        "excerpt": "Paying the minimum feels manageable, but it's one of the most expensive ways to borrow. A few thousand in debt can take over a decade to clear.",
+        "excerpt": "Paying the minimum feels manageable, but it's one of the most expensive ways to borrow. A few thousand in debt can take over a decade to clear. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16583,7 +16583,7 @@
       },
       "emergency-fund-how-many-months": {
         "title": "How Many Months of Expenses Should Your Emergency Fund Cover?",
-        "excerpt": "“Three to six months” is the standard advice, but that range hides the real question: your job stability and family structure decide the number.",
+        "excerpt": "“Three to six months” is the standard advice, but that range hides the real question: your job stability and family structure decide the number. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16639,7 +16639,7 @@
       },
       "inflation-purchasing-power": {
         "title": "What Will Your $100 Buy in 10 Years? Inflation and Purchasing Power",
-        "excerpt": "Inflation doesn't shrink your money — it shrinks what your money can buy. Understanding that erosion is lesson one in why you invest.",
+        "excerpt": "Inflation doesn't shrink your money — it shrinks what your money can buy. Understanding that erosion is lesson one in why you invest. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16689,7 +16689,7 @@
       },
       "apr-vs-apy-interest-rate-basics": {
         "title": "Nominal Rate, Real Rate, and EAR: Don't Let the Numbers Fool You",
-        "excerpt": "Is “12% per year” the same as “1% per month”? Not once compounding enters the picture — and the gap can be costly.",
+        "excerpt": "Is “12% per year” the same as “1% per month”? Not once compounding enters the picture — and the gap can be costly. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16739,7 +16739,7 @@
       },
       "rent-vs-buy-decision": {
         "title": "Rent or Buy? Run the Numbers Before You Decide",
-        "excerpt": "“Buying always beats renting” is a popular claim, but the real answer depends on the price-to-rent ratio, how long you'll stay, and your city.",
+        "excerpt": "“Buying always beats renting” is a popular claim, but the real answer depends on the price-to-rent ratio, how long you'll stay, and your city. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16847,7 +16847,7 @@
       },
       "bmr-tdee-how-many-calories": {
         "title": "BMR and TDEE: How Many Calories Should You Actually Eat?",
-        "excerpt": "Fat loss comes down to a calorie deficit — but a deficit relative to what you actually burn. BMR and TDEE answer that question.",
+        "excerpt": "Fat loss comes down to a calorie deficit — but a deficit relative to what you actually burn. BMR and TDEE answer that question. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -16906,7 +16906,7 @@
       },
       "daily-water-intake-guide": {
         "title": "How Much Water Should You Drink? Calculate by Weight, Not by “8 Glasses”",
-        "excerpt": "“Eight glasses a day” is catchy, but a 50 kg person and a 90 kg person clearly don't need the same. Weight and activity are better guides.",
+        "excerpt": "“Eight glasses a day” is catchy, but a 50 kg person and a 90 kg person clearly don't need the same. Weight and activity are better guides. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17013,7 +17013,7 @@
       },
       "percentage-increase-decrease-guide": {
         "title": "Percent Increase and Decrease: Mind the Base",
-        "excerpt": "Up 50% then down 50% doesn't bring you back to the start. Understanding the base-rate trap prevents a lot of mistakes in investing and shopping.",
+        "excerpt": "Up 50% then down 50% doesn't bring you back to the start. Understanding the base-rate trap prevents a lot of mistakes in investing and shopping. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17076,7 +17076,7 @@
       },
       "common-unit-conversion-mistakes": {
         "title": "Where Unit Conversions Most Often Go Wrong",
-        "excerpt": "Feet and inches to centimeters? Pounds to kilos? How many gallons are there? Most conversion errors aren't arithmetic — they're the wrong definition.",
+        "excerpt": "Feet and inches to centimeters? Pounds to kilos? How many gallons are there? Most conversion errors aren't arithmetic — they're the wrong definition. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17138,7 +17138,7 @@
       },
       "recipe-scaling-guide": {
         "title": "How to Scale a Recipe Down from 8 Servings to 3",
-        "excerpt": "Ingredients scale linearly, but seasoning, spices, and baking time don't. Know the exceptions and your resized dish still tastes right.",
+        "excerpt": "Ingredients scale linearly, but seasoning, spices, and baking time don't. Know the exceptions and your resized dish still tastes right. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17201,7 +17201,7 @@
       },
       "cooking-measurement-standards": {
         "title": "How Much Does a Cup of Flour Weigh? Why Baking Needs a Scale",
-        "excerpt": "One cook's cup of flour is 120 g, another's is 160 g. That uncertainty in volume measures is a classic cause of baking failures.",
+        "excerpt": "One cook's cup of flour is 120 g, another's is 160 g. That uncertainty in volume measures is a classic cause of baking failures. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17261,7 +17261,7 @@
       },
       "ratio-and-proportion-practical": {
         "title": "Ratios and Proportions: From Mixing Drinks to Reading Maps",
-        "excerpt": "How do you dilute a 1:4 concentrate? What does a 1:10000 map mean? Ratios are the most practical — and most misread — math in daily life.",
+        "excerpt": "How do you dilute a 1:4 concentrate? What does a 1:10000 map mean? Ratios are the most practical — and most misread — math in daily life. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17323,7 +17323,7 @@
       },
       "how-much-house-can-you-afford": {
         "title": "How Much House Can You Afford? Three Numbers the Bank Won't Volunteer",
-        "excerpt": "The amount a bank approves and the amount you can truly sustain are usually far apart. Three ratios tell you the safe number.",
+        "excerpt": "The amount a bank approves and the amount you can truly sustain are usually far apart. Three ratios tell you the safe number. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17389,7 +17389,7 @@
       },
       "protein-intake-how-much": {
         "title": "How Much Protein Do You Need? Calculate by Body Weight",
-        "excerpt": "Sedentary people, lifters, and older adults need very different amounts. Multiplying body weight by a factor is the most practical estimate.",
+        "excerpt": "Sedentary people, lifters, and older adults need very different amounts. Multiplying body weight by a factor is the most practical estimate. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17448,7 +17448,7 @@
       },
       "average-mean-median-mode": {
         "title": "Averages Mislead: Choosing Between Mean, Median, and Mode",
-        "excerpt": "Why does “average salary” always feel inflated? Because extreme values pull the mean. Pick the right statistic to see the data clearly.",
+        "excerpt": "Why does “average salary” always feel inflated? Because extreme values pull the mean. Pick the right statistic to see the data clearly. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17506,7 +17506,7 @@
       },
       "car-loan-total-cost": {
         "title": "The True Cost of a Car Loan: Four Costs Beyond the Monthly Payment",
-        "excerpt": "“Zero-interest financing” sounds like a bargain, but once you add fees, insurance, taxes, and depreciation, the real cost often exceeds expectations.",
+        "excerpt": "“Zero-interest financing” sounds like a bargain, but once you add fees, insurance, taxes, and depreciation, the real cost often exceeds expectations. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17629,7 +17629,7 @@
       },
       "rounding-and-significant-figures": {
         "title": "Why Rounding Is Sometimes Wrong: Significant Figures and Error Accumulation",
-        "excerpt": "Round at every step and the final result drifts. Understanding error accumulation and banker's rounding makes your calculations trustworthy.",
+        "excerpt": "Round at every step and the final result drifts. Understanding error accumulation and banker's rounding makes your calculations trustworthy. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17692,7 +17692,7 @@
       },
       "sleep-cycles-when-to-wake": {
         "title": "Sleep Cycles and Wake Times: Why 8 Hours Can Still Leave You Groggy",
-        "excerpt": "Sleep runs in roughly 90-minute cycles. Waking from deep sleep leaves you foggy even after enough hours. Timing your wake-up helps.",
+        "excerpt": "Sleep runs in roughly 90-minute cycles. Waking from deep sleep leaves you foggy even after enough hours. Timing your wake-up helps. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17891,7 +17891,7 @@
       },
       "high-yield-savings-vs-regular": {
         "title": "High-Yield vs Regular Savings: Is the Switch Worth It?",
-        "excerpt": "A high-yield savings account can earn 10-20x the interest of a traditional one. Here is how to decide whether moving your cash is worth the effort.",
+        "excerpt": "A high-yield savings account can earn 10-20x the interest of a traditional one. Here is how to decide whether moving your cash is worth the effort. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17933,7 +17933,7 @@
       },
       "pay-yourself-first-system": {
         "title": "Pay Yourself First: The Automation Trick That Builds Wealth",
-        "excerpt": "Saving what is left over rarely works. Pay yourself first flips the order - and automation makes it stick.",
+        "excerpt": "Saving what is left over rarely works. Pay yourself first flips the order - and automation makes it stick. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -17975,7 +17975,7 @@
       },
       "vo2-max-cardio-fitness": {
         "title": "VO2 Max: The Number That Tracks Real Cardio Fitness",
-        "excerpt": "VO2 max is one of the best predictors of cardiovascular health. Here is what it means and how to improve it without living at the gym.",
+        "excerpt": "VO2 max is one of the best predictors of cardiovascular health. Here is what it means and how to improve it without living at the gym. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18017,7 +18017,7 @@
       },
       "body-fat-vs-bmi": {
         "title": "Body Fat Percentage vs BMI: Which Should You Trust?",
-        "excerpt": "BMI is quick but blind to muscle. Body fat percentage tells a richer story - here is when each one matters.",
+        "excerpt": "BMI is quick but blind to muscle. Body fat percentage tells a richer story - here is when each one matters. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18051,7 +18051,7 @@
       },
       "mental-percentage-tricks": {
         "title": "Mental Percentage Tricks You Can Do Without a Calculator",
-        "excerpt": "Tips, discounts, and tax estimates are easier than they look. A few swaps let you compute percentages in your head.",
+        "excerpt": "Tips, discounts, and tax estimates are easier than they look. A few swaps let you compute percentages in your head. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18085,7 +18085,7 @@
       },
       "grams-to-cups-conversion": {
         "title": "Grams to Cups: Why Weight Beats Volume in the Kitchen",
-        "excerpt": "A cup of flour can vary by 30% depending on how you scoop. Weighing in grams is the fix - and it is easier than it sounds.",
+        "excerpt": "A cup of flour can vary by 30% depending on how you scoop. Weighing in grams is the fix - and it is easier than it sounds. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18158,7 +18158,7 @@
       },
       "measuring-cups-spoons-standard": {
         "title": "Measuring Cup and Spoon Standards: Exactly How Many Milliliters Is One Cup?",
-        "excerpt": "A US cup is about 240 ml, but cup sizes differ by country — mixing standards silently ruins a recipe.",
+        "excerpt": "A US cup is about 240 ml, but cup sizes differ by country — mixing standards silently ruins a recipe. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18236,7 +18236,7 @@
       },
       "cost-per-serving": {
         "title": "How to Calculate Cost per Serving: Don't Be Fooled by Unit Price — Look at Actual Usage",
-        "excerpt": "A bottle of oil has a low unit price but is used sparingly; what really drives a dish's cost is usually the main ingredients and waste.",
+        "excerpt": "A bottle of oil has a low unit price but is used sparingly; what really drives a dish's cost is usually the main ingredients and waste. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18275,7 +18275,7 @@
       },
       "grams-to-cups": {
         "title": "How to Convert Grams to Cups: A Cup of Flour and a Cup of Sugar Weigh Very Differently",
-        "excerpt": "Volume conversion depends on density; the same cup is about 120 g for flour but about 200 g for sugar — never apply the same number to both.",
+        "excerpt": "Volume conversion depends on density; the same cup is about 120 g for flour but about 200 g for sugar — never apply the same number to both. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18315,7 +18315,7 @@
       },
       "common-conversion-mistakes": {
         "title": "Common Conversion Mistakes: These Pitfalls Ruin Half of Home Cooking",
-        "excerpt": "Mixing cup standards, ignoring density, and clinging to time are the three most frequent errors in kitchen conversions.",
+        "excerpt": "Mixing cup standards, ignoring density, and clinging to time are the three most frequent errors in kitchen conversions. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18355,7 +18355,7 @@
       },
       "compare-loan-interest-rates": {
         "title": "How to Compare Mortgage Rates: Choosing Between Equal Principal and Interest, Equal Principal, and LPR",
-        "excerpt": "Comparing mortgage rates isn't just about the numbers — the repayment method decides your actual total interest paid.",
+        "excerpt": "Comparing mortgage rates isn't just about the numbers — the repayment method decides your actual total interest paid. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18394,7 +18394,7 @@
       },
       "early-loan-repayment-strategy": {
         "title": "Should You Repay Your Loan Early? Calculate the Opportunity Cost First",
-        "excerpt": "Early repayment saves interest but gives up other investment opportunities for that money — the key is the gap between the two.",
+        "excerpt": "Early repayment saves interest but gives up other investment opportunities for that money — the key is the gap between the two. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18433,7 +18433,7 @@
       },
       "compound-interest-investing": {
         "title": "The Power of Compound Interest: Use the Rule of 72 to Estimate When Wealth Doubles",
-        "excerpt": "Compound interest isn't magic — the Rule of 72 lets you mentally calculate how many years it takes principal to double at any annual return.",
+        "excerpt": "Compound interest isn't magic — the Rule of 72 lets you mentally calculate how many years it takes principal to double at any annual return. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18472,7 +18472,7 @@
       },
       "build-emergency-fund": {
         "title": "Build an Emergency Fund: How Many Months of Expenses Is Enough?",
-        "excerpt": "An emergency fund is the foundation of financial security; the amount and where you park it matter more than you think.",
+        "excerpt": "An emergency fund is the foundation of financial security; the amount and where you park it matter more than you think. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18511,7 +18511,7 @@
       },
       "currency-exchange-tips": {
         "title": "Currency Exchange Pitfalls: Exchange Rates, Fees, and Airport Traps",
-        "excerpt": "The same money exchanged through different channels can arrive with several percentage points of difference — the key is seeing the hidden costs.",
+        "excerpt": "The same money exchanged through different channels can arrive with several percentage points of difference — the key is seeing the hidden costs. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18550,7 +18550,7 @@
       },
       "personal-tax-basics": {
         "title": "Personal Income Tax Basics: How to Fully Use the Threshold and Special Additional Deductions",
-        "excerpt": "Many people overpay tax simply because they didn't claim each special additional deduction — legal tax saving starts with the form.",
+        "excerpt": "Many people overpay tax simply because they didn't claim each special additional deduction — legal tax saving starts with the form. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18589,7 +18589,7 @@
       },
       "body-fat-percentage-guide": {
         "title": "How to Read Body Fat Percentage: Standards Differ by Sex — Don't Be Fooled by Weight",
-        "excerpt": "A normal weight doesn't equal a healthy body — body fat percentage is the key indicator of fat content.",
+        "excerpt": "A normal weight doesn't equal a healthy body — body fat percentage is the key indicator of fat content. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18628,7 +18628,7 @@
       },
       "basal-metabolic-rate": {
         "title": "How to Calculate Basal Metabolic Rate: Your Body Burns Calories Even at Rest",
-        "excerpt": "Basal metabolic rate accounts for over 60% of daily expenditure — calculate it accurately to set science-based calorie goals.",
+        "excerpt": "Basal metabolic rate accounts for over 60% of daily expenditure — calculate it accurately to set science-based calorie goals. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18667,7 +18667,7 @@
       },
       "fat-loss-calorie-deficit": {
         "title": "How to Calculate the Fat-Loss Calorie Deficit: How Much Less per Day Keeps Muscle?",
-        "excerpt": "Fat loss is fundamentally a calorie deficit, but its size decides whether you lose fat or muscle.",
+        "excerpt": "Fat loss is fundamentally a calorie deficit, but its size decides whether you lose fat or muscle. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18706,7 +18706,7 @@
       },
       "daily-protein-intake": {
         "title": "How Much Daily Protein to Eat: Essential for Both Fitness and Fat Loss",
-        "excerpt": "Protein determines muscle retention and satiety — intake should scale with body weight, not be guessed.",
+        "excerpt": "Protein determines muscle retention and satiety — intake should scale with body weight, not be guessed. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18745,7 +18745,7 @@
       },
       "sleep-cycle-explained": {
         "title": "The Science of Sleep Cycles: Why You're Still Tired After Eight Hours",
-        "excerpt": "Sleep quality is about cycles, not just duration — waking at the wrong stage leaves you groggy.",
+        "excerpt": "Sleep quality is about cycles, not just duration — waking at the wrong stage leaves you groggy. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18784,7 +18784,7 @@
       },
       "percentage-increase-decrease": {
         "title": "How to Calculate Percentage Increase and Decrease: Why a Rise Then a Fall Doesn't Return to Base",
-        "excerpt": "The base of a percentage change shifts — up 50% then down 50% ends in a loss, not flat.",
+        "excerpt": "The base of a percentage change shifts — up 50% then down 50% ends in a loss, not flat. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18823,7 +18823,7 @@
       },
       "unit-conversion-pitfalls": {
         "title": "Unit Conversion Pitfalls: Don't Use the Same Factor for Length, Area, and Volume",
-        "excerpt": "A centimeter-to-meter gap is 100×, but square centimeter-to-square meter is 10,000× — area and volume conversions are where people crash.",
+        "excerpt": "A centimeter-to-meter gap is 100×, but square centimeter-to-square meter is 10,000× — area and volume conversions are where people crash. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18862,7 +18862,7 @@
       },
       "ratio-and-scaling": {
         "title": "Practical Ratios and Proportioning: Why Doubling a Recipe Changes the Taste",
-        "excerpt": "Linear scaling works for dry and wet ingredients, but salt, spices, and fermentation are non-linear and need separate judgment.",
+        "excerpt": "Linear scaling works for dry and wet ingredients, but salt, spices, and fermentation are non-linear and need separate judgment. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18901,7 +18901,7 @@
       },
       "mean-median-mode": {
         "title": "Mean, Median, Mode: Check the Distribution Before Being 'Averaged'",
-        "excerpt": "When a few people pull the average salary up, the median represents ordinary people's true level better than the mean.",
+        "excerpt": "When a few people pull the average salary up, the median represents ordinary people's true level better than the mean. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -18940,7 +18940,7 @@
       },
       "rounding-significant-figures": {
         "title": "Rounding and Significant Figures: One Extra Digit May Be False Precision",
-        "excerpt": "The number of significant figures in a measurement is set by instrument precision; blindly keeping decimals misleads.",
+        "excerpt": "The number of significant figures in a measurement is set by instrument precision; blindly keeping decimals misleads. Read the full guide with step-by-step examples and practical tips.",
         "blocks": [
           {
             "type": "p",
@@ -19812,4 +19812,4 @@
       "intro": "The Web tool is open to front-end and whole house development and provides easy calculation of coding, units, colours and layouts, etc., and integrates the petty conversions in development into a single page."
     }
   }
-}
+}
