@@ -18878,564 +18878,582 @@
         ]
       },
       "heart-rate-training-zones": {
-        "title": "Herzfrequenz-Trainingszonen: Trainiere schlauer mit der richtigen Intensität",
-        "excerpt": "Derselbe Lauf erfüllt verschiedene Ziele – Fettverbrennung und Ausdauer brauchen unterschiedliche Intensitäten. Nutze einen [Ziel-Herzfrequenz-Rechner](/health/target-heart-rate), um deine Zonen zu finden und jede Einheit zielgerichtet zu machen.",
+        "title": "Einführung in die Herzfrequenzzone: Ersetzen der Herzfrequenz für mehr Genauigkeit",
+        "excerpt": "Die maximale Herzfrequenz wird verwendet, um die Stärke des flammenden Harzes, die Ausdauer oder das Training mit hoher Intensität genau zu kontrollieren und Blindheit zu vermeiden.",
         "blocks": [
           {
             "type": "p",
-            "text": "Herzfrequenzzonen staffeln die Intensität, von Regeneration und Fettverbrennung bis anaerob, jeweils gekoppelt an ein anderes Energiesystem und Trainingswirkung."
+            "text": "Die Herzfrequenz ist ein objektiver Indikator für die Stärke der Bewegung, der viel zuverlässiger ist als der \"Ruhestand\". Die Formel zur Schätzung der maximalen Herzfrequenz ist \"220 weniger Alter\", mit einer prozentualen Verteilung der Trainingsbereiche. Die Überwachung mit einer Herzfrequenz oder einer Uhr stellt sicher, dass jedes Training in den Zielbereich fällt, vermeidet es, weiterhin leicht zu gehen, denkt aber, dass es hoch ist, und verhindert, dass eine Überschätzung zu Überarbeitung oder sogar Verletzungen führt. Die Herzfrequenz ist problematischer als das Verhältnis und Gewicht für Lipidverlust und CPR-Upgrade."
           },
           {
             "type": "h2",
-            "text": "Bestimme zuerst deine maximale Herzfrequenz"
+            "text": "Fünf gemeinsame Räume."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Z1 Rehabilitationsbereich 50% bis 60%: warm und entspannt, Erholung fördernd, nicht trainierend",
+              "Z2 Lederbrennbereich 60 bis 70%: nachhaltige aerobe Base, Lipidreduktion Hauptstromzone",
+              "Z3 Aerobe Zone 70% bis 80%: CPR erhöhen, sprechen, aber nicht singen",
+              "Z4 Aerobe Zone 80% bis 90%: Erhöhung der Geschwindigkeitsschwelle, signifikante Emulsionsakkumulation",
+              "Z5 Limits 90% bis 100%: kurzfristig, nicht nachhaltig, klein wöchentlich"
+            ]
           },
           {
             "type": "p",
-            "text": "Die gängige Schätzung ist 220 − Alter, aber die individuelle Abweichung ist groß. Ein [Ziel-Herzfrequenz-Rechner](/health/target-heart-rate), der Zonen nach Prozent aufteilt, ist zuverlässiger."
+            "text": "Es besteht keine Notwendigkeit für die lipidreduzierende Bevölkerung, um die Hochspannungsrate zu beschleunigen, und Z2 bis Z3's stetiges Aerobic, um die Ernährungslücke zu decken, ist effizienter, wie in [Fett-Verlust-Kalorien-Defizit] beschrieben. Hochintensive Pausen können über Z4 platziert werden, sollten jedoch nicht zu hoch pro Woche sein, um eine mangelnde Erholung zu vermeiden, die [Schlafzykluswissenschaft] (/Schlafzyklus-erklärt) beeinträchtigt, was kontraproduktiv wäre. Die Muskelreparatur nach dem Training beruht auf [wie viel der täglichen Proteinzufuhr] (/tägliche Proteinzufuhr) und es fehlt ausreichend Protein und ist schwer zu züchten."
           },
           {
             "type": "callout",
-            "text": "Ständig hart trainieren führt zu schlechter Regeneration und Verletzungen. Missche niedrigintensives Cardio mit Intervallen für stetigere Fortschritte."
+            "text": "Der langfristige Rückgang der statischen Herzfrequenzen und die Beschleunigung der Post-Motion-Herzfrequenzen sind zuverlässige Anzeichen für ein starkes Herz und eine starke Lunge, die wertvoller zu verfolgen sind als das Gewicht und eher Fortschritte zu sehen sind."
+          },
+          {
+            "type": "h2",
+            "text": "Achten Sie auf Messungen."
+          },
+          {
+            "type": "p",
+            "text": "Die optische Herzfrequenz des Handgelenks kann bei intensiver Bewegung driften, und die kritischen Pausen können mit der optischen Rate kalibriert werden. Drogen, Koffein, Austrocknung und hohe Temperaturen tragen alle zu einer statischen Herzfrequenz bei, die am besten behoben wird, wenn der Morgen aufwacht, wenn die Daten verglichen werden, um diese Störungen zu entfernen. Die gesamte Körperbewertung kann mit dem [Körperfett-Prozentsatz-Leitfaden] (/Basal-Metabolic-Rate) und [Basal-Metabolic-Rate] kombiniert werden, um zu bestimmen, ob das Training wirksam ist oder nicht, indem die Körperzusammensetzung, der Stoffwechsel und die motorische Stärke in derselben Tabelle aufgeführt werden. Neuere müssen keine täglichen Höchststände verfolgen und zwei bis drei Z2 pro Woche für Aerobic arrangieren, mit einer Z4-Pause und einem deutlichen Rückgang ihrer stillen Herzfrequenz um sechs Monate."
           }
         ]
       },
       "recipe-scaling-basics": {
-        "title": "Grundlagen der Rezeptskalierung: Vier Portionen auf zwei zu reduzieren ist nicht einfach Halbieren",
-        "excerpt": "Lineares Skalieren der Hauptzutaten funktioniert, aber Gewürze, Gärung und Garzeit müssen einzeln beurteilt werden – sonst schmeckt alles anders. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Formel-Scale-up-Basis: vier vor zwei statt einer einfachen Halbierung",
+        "excerpt": "Eine lineare Skalierung ist möglich, jedoch werden Temperatur, Fermentations- und Heizzeiten getrennt beurteilt, ansonsten ändern sich Geschmack und Geschmack.",
         "blocks": [
           {
             "type": "p",
-            "text": "Um ein Rezept von vier auf zwei Portionen umzurechnen, ist der bequemste Weg, den Faktor 0,5 anzuwenden – doch die Realität ist weit komplexer als Multiplikation. Hauptzutaten wie Mehl, Wasser und Fleisch lassen sich linear nach Personenzahl skalieren, doch Salz, Zucker und Gewürze hängen stark vom subjektiven Geschmack ab: einfach halbiert sind sie oft zu fade oder zu salzig. Und die Hefemenge beim Backen hängt zudem von Temperatur und Zeit ab – das ist kein reines Verhältnisproblem."
+            "text": "Die Formel wurde von einer Vier- auf eine Zwei-Personen-Formulierung geändert, und der am wenigsten kosteneffektive Ansatz bestand darin, den Faktor 0,5 zu multiplizieren, aber die Realität war viel komplexer als der Multiplikator. Mehl, Wasser, Fleisch und andere Heftklammern können linear skaliert werden, Salz, Zucker, Gewürze neigen dazu, subjektiv zu sein, und die direkte Reduktion der Hälfte wird oft verdünnt oder gesalzen; Hefen beim Backen werden mit Temperatur und Zeit kooptiert und sind nicht rein proportional, und mechanische Multiplikatoren können leicht umgedreht werden. Ganz zu schweigen davon, dass sich die Konzentration der Suppe mit Wasser und das Timing des Safts ändert und die Ration nicht dem Geruch entspricht."
           },
           {
             "type": "h2",
-            "text": "Was proportional skaliert wird und was separat angepasst werden muss"
+            "text": "Welches sollte proportional sein und welches sollte separat angepasst werden"
           },
           {
             "type": "ul",
             "items": [
-              "Mehl und flüssige Hauptzutaten: streng proportional skalierbar",
-              "Salz, Gewürze, Chili: proportional, aber schrittweise unter Abschmecken hinzufügen",
-              "Gehobener Teig: Hefe und Zeit müssen neu bewertet werden",
-              "Die Topfgröße begrenzt die Menge pro Charge; bei zu großen Mengen portionsweise arbeiten"
+              "Pulver, Flüssignetz: kann streng proportional skaliert werden, mit minimalem Fehler, zuerst angepasst",
+              "Salze, Gewürze, Paprika: proportional, aber teilweise genießbar, genießbar, nicht ersetzt",
+              "Fermentierte Nudeln: Hefen und Wachzeiten müssen neu bewertet werden, wobei niedrige Temperaturen die Zeit verlängern und nicht einen Multiplikator darstellen",
+              "Die Kapazitätsgrenze für die Pfanne ist eine Charge, sie ist zu groß, um in Teilen gemacht zu werden, also schieben Sie sie nicht, um ein Wärmeungleichgewicht zu verursachen."
             ]
           },
           {
             "type": "p",
-            "text": "Beim Skalieren zuerst die Bezugsmenge festlegen und dann umrechnen – dahinter steckt der Ansatz von [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling). Wenn das Originalrezept mit Tassen und Löffeln arbeitet und du Gramm verwenden willst, gehe zunächst [wie man Gramm und Tassen umrechnet](/grams-to-cups) durch, um die Einheiten zu vereinheitlichen. Das Präzisionsproblem nach dem Skalieren verhält sich wie bei [Runden und signifikante Stellen](/rounding-significant-figures) – schreibe keine unhandlichen Mengen wie 0,3333 Teelöffel auf."
+            "text": "Bei der Skalierung wird die Basislinie bestimmt und konvertiert, entlang der Linien der \"ersten-ersten-harmonisierten Basislinie\", die in [gemeinsamen Umwandlungsfehlern] (/gemeinsamen Umwandlungsfehlern) hervorgehoben wurde. Wenn die ursprüngliche Formel einen Löffel verwendet und Sie ein Gramm verwenden möchten, gehen Sie durch [grams-to-cup], um Einheiten zu vereinheitlichen. Dieser Schritt ist völlig falsch. Die Präzision der Skalierung ist ebenso wichtig, nicht eine inoperable Menge von 0,333 Teelöffeln zu schreiben, sondern Gramm anstelle von vagen Löffeln zu verwenden, wie in [Messbecher-Löffel-Standard] vorgeschlagen."
           },
           {
             "type": "callout",
-            "text": "Backen reagiert extrem empfindlich auf Verhältnisse. Bei einer Skalierung um mehr als den Faktor zwei empfiehlt es sich, das Mehl-Wasser-Verhältnis neu zu berechnen und zunächst eine kleine Testcharge zu backen, bevor man in großem Maßstab produziert."
+            "text": "Das Backen ist extrem empfindlich auf die Skala, wobei mehr als doppelt so groß ist wie die Skala, was auf eine Neuberechnung des Mehlwasserverhältnisses und eine kleine Charge von Reproduktionen hindeutet, bei denen nicht viel mehr als die Zeit verschwendet wird."
           },
           {
             "type": "h2",
-            "text": "Nichtlineares Verhalten von Hitze und Zeit"
+            "text": "Nichtlinear zwischen Hitze und Zeit"
           },
           {
             "type": "p",
-            "text": "Verdoppelt man eine Suppe, verdoppeln sich Koch- und Einkochzeit nicht exakt, da ein tieferes Gefäß langsamer abkühlt und den Rhythmus verändert – man muss nach Zustand gehen, nicht starr an der Zeit festhalten. Ebenso braucht eine vollere Backform länger, bis die Mitte durch ist. Wer das versteht und zusätzlich [häufige Umrechnungsfehler](/common-conversion-mistakes) beachtet, geht seltener daneben."
+            "text": "Eine doppelte Tonga-, Koch- und Sammelzeit verdoppelt sich nicht genau, und eine tiefere, langsamere Hitze kann den Rhythmus verändern, abhängig vom Zustand und nicht von den Toten. In ähnlicher Weise dauert es länger, bis der Ofen voller wird und das Zentrum vollständig versiert ist, und der Anstieg der Kuchenhaare wird durch die Größe der Form beeinflusst. In diesem Sinne kann eine Kombination von [gemeinsamen Umwandlungsfehlern] (/gemeinsamen Umwandlungsfehlern) die Anzahl der Autounfälle reduzieren, während die genaue Menge auf dem Verständnis des [herausfordernden Tassen-Löffel-Standards] basiert und die gemeinsame Verwendung der Knöpfe die meisten Probleme erspart. Familienkochen ist gelegentlich kurz von ein paar Gramm Salz, aber es ist wichtiger, Kinder oder ältere Menschen mit Nahrungsergänzungsmitteln und einer Arztnummer zu versorgen."
           }
         ]
       },
       "measuring-cups-spoons-standard": {
-        "title": "Normen für Messbecher und -löffel: Wie viele Milliliter ist eigentlich ein Becher?",
-        "excerpt": "Ein US-Becher sind etwa 240 Milliliter, doch in verschiedenen Ländern unterscheidet sich die Bechergröße – gemischte Normen ruinieren das Rezept unbemerkt.",
+        "title": "Messung des Bechers: Wie viele Milligramm eines Glases ist es?",
+        "excerpt": "Ein Glas im amerikanischen Stil von etwa 240 ml, aber verschiedene Länder haben unterschiedliche Tassen, und Mischstandards werden die Formel leise zerstören.",
         "blocks": [
           {
             "type": "p",
-            "text": "Messbecher und -löffel wirken einfach, verbergen aber Normunterschiede. In US-Rezepten entspricht 1 cup (Becher) etwa 240 Milliliter, 1 Esslöffel (tbsp) etwa 15 Milliliter und 1 Teelöffel (tsp) etwa 5 Milliliter; britische, japanische und australische Bechergrößen sind jedoch nicht identisch. Übernimmt man ein ausländisches Rezept, verwendet aber den falschen Becher, reichen die kumulierten Abweichungen, um das Backen scheitern zu lassen."
+            "text": "Der brühende Löffel sieht einfach aus und verbirgt Standardunterschiede dahinter. In den Vereinigten Staaten Rezept, 1 Tasse entspricht etwa 240 ml, 1 Löffel ist etwa 15 ml, 1 Teelöffel ist etwa 5 ml; und 1 Tasse ist etwa 284 ml in britischen, 180 ml in japanischen Verträgen ist mehr als für Reis und ein anderer ist für Australier verfügbar. Die Replikation von Fremdformulierungen verwendet den falschen Becher, und kumulative Abweichungen reichen aus, um das Backen zum Scheitern zu bringen, insbesondere für das proportional empfindliche Material wie Mehl, das zusammenbrechen könnte."
           },
           {
             "type": "h2",
-            "text": "Gängige Normen im Vergleich"
+            "text": "Standardkontrast"
           },
           {
             "type": "ul",
             "items": [
-              "US: 1 cup = 240 ml, 1 tbsp = 15 ml, 1 tsp = 5 ml",
-              "Britisch: 1 cup etwa 284 ml, abweichend von US",
-              "Japanisch: 1 go etwa 180 ml für Reismessung",
-              "Trocken- und Flüssigkeitsmessbecher funktionieren nach unterschiedlichem Prinzip – nicht mischen"
+              "1 Tasse = 240 ml, 1 EL = 15 ml, 1 EL = 5 ml, am häufigsten verwendet",
+              "Britische 1 Tasse etwa 284 ml, im Gegensatz zu amerikanischen, fast 20%",
+              "Tag 1 Vertrag 180 ml, vor allem für Reismessung, nicht gemischt mit europäischen",
+              "Trockenheit und Nässe sind unterschiedlich. Trockenpulver wird abgeschabt, Flüssigkeit eingebeult. Nudeln."
             ]
           },
           {
             "type": "p",
-            "text": "Die sicherste Methode ist, alle Mengen in Gramm umzurechnen, da das Gewicht absolut ist und sich nicht mit der Norm ändert. Darin liegt der Wert von [wie man Gramm und Tassen umrechnet](/grams-to-cups). Beachte beim Umrechnen [Fallstricke bei der Einheitenumrechnung](/unit-conversion-pitfalls) – die Volumenumrechnung hängt von der Dichte ab, und das Gewicht eines »Bechers« unterscheidet sich je nach Zutat gewaltig. Die Logik des Mischverhältnisses findest du auch in [Grundlagen der Rezeptskalierung](/recipe-scaling-basics)."
+            "text": "Der vorsichtigste Ansatz wäre, alle Mengen in Gramm umzurechnen, da das Gewicht absolut ist und nicht standardmäßig variiert. Hier liegt der Wert von [grams-to-cups] (/grams-to-cups) und eine Kontrolltabelle kann die überwiegende Mehrheit der Verwirrung lösen. Bei der Umwandlung wird auf die volumenabhängige Dichte und auf den Gewichtsunterschied zwischen Lebensmitteln, einer Tasse, mit mehr Details in [häufige Umwandlungsfehler] (/Compon-Conversion-Fehler) geachtet. Matching-Logik kann sich auch auf [Formulations-Skalierungsbasis] (/Rezept-Skalierungsgrundlagen) beziehen, wo Einheiten vor der Skalierung vereinheitlicht werden."
           },
           {
             "type": "callout",
-            "text": "Beim Abmessen von Mehl mit dem Becher unbedingt »glatt streichen«: Ein gehäufter Becher wiegt fast 20 % mehr als ein gestrichener und ist eine häufige Ursache für in sich zusammengefallene Kuchen."
+            "text": "Mehl muss in Tassen abgekratzt werden, mit einem Glas, das fast 20% mehr als zerkratzt ist, ein häufiger Killer von Kuchen bricht zusammen und Kekse gehärtet und muss mit geraden Füßen abgekratzt werden."
           },
           {
             "type": "h2",
-            "text": "Trocken und flüssig getrennt messen"
+            "text": "Trocken-nass-getrennt"
           },
           {
             "type": "p",
-            "text": "Flüssige Zutaten (Wasser, Öl, Milch) misst man mit einem transparenten Messbecher an der Unterkante der Meniskuskrümmung; Trockenpulver schöpft man mit dem Messlöffel voll und streicht glatt. Mischt man hier die Normen, vergrößert sich der Fehler. Zur genauen Kostenkontrolle hilft [wie man Kosten pro Portion berechnet](/cost-per-serving); eine Checkliste zur Fehlervermeidung findest du unter [häufige Umrechnungsfehler](/common-conversion-mistakes)."
+            "text": "Nasse Materialien (Wasser, Öl, Milch) lesen den Boden der Beule der Oberfläche mit einem transparenten Glas Masse; trockenes Pulver wird mit Löffeln bedeckt und abgekratzt, anstatt einen Löffel. Die Kombination der beiden Kriterien vergrößert den Fehler. Eine genaue Kostenkontrolle kann mit [wie jede Kosten berechnet wird] (/cost-per-serving) kombiniert werden, während die Fehlerliste durch [gemeinsame Umwandlungsfehler] (/compon-conversion-Fehler) vermieden wird, während die Umwandlung von Einheiten auf der Nährwertstufe auf [Nährwert-conversion-guide] (/nutrittion-conversion-guide) basiert. Der Kauf einer Tasse mit einer Milligramm-Skala ist häufiger als nur eine Kalibrierungsskala, und es gibt ein direktes Gegenstück zur Formel jedes Landes, mit einem weniger wahrscheinlichen Fehler in einem Schritt."
           }
         ]
       },
       "nutrition-conversion-guide": {
-        "title": "Leitfaden zur Nährstoffumrechnung: Wie man Kalorien und Eiweiß vom Rohgewicht zum Gargewicht umrechnet",
-        "excerpt": "Lebensmittel verlieren beim Garen Wasser und werden schwerer; rechnet man Nährwerte nach Gargewicht, überschätzt man die Kalorien pro Einheit – zuerst Roh- und Gargewicht trennen, dann umrechnen.",
+        "title": "Ernährungsumwandlungsrichtlinien: Wie man das Kalorienprotein von der Geburt bis zur Reifung neu berechnet",
+        "excerpt": "Der Wasserverlust wird nach dem Kochen der Nahrung leichter, was durch anerkannte Nährstoffe überbewertet wird, die die Kalorien teilen und umwandeln.",
         "blocks": [
           {
             "type": "p",
-            "text": "Auf Nährwertetiketten werden Kalorien und Eiweiß meist »pro 100 Gramm« angegeben, doch ob das Rohgewicht oder Gargewicht gemeint ist, wird oft übersehen. Hähnchenbrust verliert beim Garen Wasser: Aus 100 Gramm rohem Fleisch können nach dem Kochen nur noch 70 Gramm gargegartes Fleisch bleiben. Rechnet man nach Gargewicht, wird der Kaloriengehalt pro Einheit stark überschätzt. Richtig ist, einheitlich nach Rohgewicht zu erfassen oder den Umrechnungsfaktor für das Gargewicht zu ermitteln."
+            "text": "Die Wärme und Proteine auf dem Nährwertetikett werden meist \"pro 100 Gramm\" angegeben, aber die Angabe wird oft ignoriert, ob sie wiedergeboren oder anspruchsvoll ist. Die Hühnerbrust kocht und verliert Wasser, und 100 Gramm rohes Fleisch können nur 70 Gramm gekochtes Fleisch haben, und wenn neu berechnet, wird die Einheit der Wärme um etwa ein- und viermal signifikant überschätzt. Der richtige Ansatz wäre, einen einzigen bioreconciled Datensatz zu verwenden oder die entsprechenden Koeffizienten zu überprüfen, die nicht vermischt verwendet werden sollten, sonst würden Sie denken, dass es tatsächlich mehr als 400 Kilokalorien sein könnte."
           },
           {
             "type": "h2",
-            "text": "Wesentliche Punkte der Umrechnung"
+            "text": "Gemeinsame Umrechnungselemente"
           },
           {
             "type": "ul",
             "items": [
-              "Reis und Nudeln: Roh-zu-Gar-Verhältnis etwa 1:2,5 bis 3, nach Rohgewicht am sichersten",
-              "Fleisch: beim Garen etwa 20–30 % Wasserverlust, Rohgewicht erfassen",
-              "Öl hat hohe Kaloriendichte; ein falsch berechneter Löffel fällt stark ins Gewicht",
-              "Auf Verpackungsetiketten lieber »pro 100 g« statt »pro Portion« beachten"
+              "Nudeln mähen: Auf etwa 1: 2,5 bis 3 gekocht, am stabilsten, doppelt so schwer wie gekocht",
+              "Fleisch: 20 bis 30% des gekochten Wassers verloren, mit besserer Aufzeichnung und einfache Massenaufbereitung",
+              "Das Öl hat eine hohe Wärmedichte und eine Löffelfehlkalkulation hat einen signifikanten Einfluss auf die Gesamtwärme.",
+              "Verpackung Nährtische geben Vorrang \"pro 100 Gramm\" statt \"jedem\", so dass sie nicht falsch verstanden werden."
             ]
           },
           {
             "type": "p",
-            "text": "Die Nährstoffumrechnung teilt mit [wie man Gramm und Tassen umrechnet](/grams-to-cups) die Basis »Masse«: Zuerst das Volumen in Gramm umrechnen, dann in Tabellen nachschlagen, ist am verlässlichsten. Zur Kontrolle der Gesamtkalorien lässt sich [wie man Kosten pro Portion berechnet](/cost-per-serving) beim Mahlzeitenplanen einbeziehen. Für die Makro-Verhältnisse siehe [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling), und das Präzisionsproblem beim Berichten von Zahlen unter [Runden und signifikante Stellen](/rounding-significant-figures)."
+            "text": "Umwandlung von Ernährung und [g und Tassen und wie] (/Gramm-zu-Tassen) in den \"Qualitäts\" -Benchmark, zuerst Volumen in Gramm umwandeln und dann das zuverlässigste zeigen. Um die Gesamtwärme zu kontrollieren, können Lebensmittel in Kombination mit [wie man jeden Preis berechnet] (/cost-per-serving) sowohl für Wärme als auch für Geld geplant werden. Die makroskalierte Einstellung kann den Ansatz von [Formula-Skalierungsgrundlagen] (/Rezept-Skalierungsgrundlagen) kombinieren, ohne bei der Aufzeichnung von Zahlen zu viele Dezimalstellen verfolgen zu müssen, und nur eine angemessene Anzahl von Stellen beibehalten, was mit der Präzisionsbehandlung in [jeden Kosten] (/Kosten pro Portion) übereinstimmt."
           },
           {
             "type": "callout",
-            "text": "In der Fettverlustphase unbedingt Roh- und Gargewicht unterscheiden – sonst isst man »vermeintlich 300 kcal«, tatsächlich sind es über 400, und das Defizit schwindet unbemerkt."
+            "text": "Es ist wichtig, zwischen Retrenchment-Perioden zu unterscheiden, weil sonst \"der Gedanke an das Essen von 300 Kilokalorien\" mehr als 400 sein kann, und die Lücke kann ruhig gegessen worden sein, was der verborgene Grund für viele \"Nase, aber nicht dünn\" ist."
           },
           {
             "type": "h2",
-            "text": "Wie man Essen außer Haus und Selbstgekochtes abgleicht"
+            "text": "Wie man Essen und Hausgemachte zusammenbringt"
           },
           {
             "type": "p",
-            "text": "Angaben für Essen außer Haus beziehen sich meist auf das Gargewicht des essbaren Anteils und lassen sich nicht direkt mit selbst gekochtem, nach Rohgewicht erfasstem Essen addieren – man muss erst auf dieselbe Basis bringen, dann vergleichen. Eine eigene Tabelle für Roh- und Gargewicht häufiger Zutaten ist langfristig effizienter als ständiges Nachschlagen in einer App. Eine Zusammenfassung der Irrtümer findest du unter [häufige Umrechnungsfehler](/common-conversion-mistakes)."
+            "text": "Extra-Esszeichen sind schwerer auf dem essbaren und können nicht direkt zu hausgemachten Wiedereintrittsaufzeichnungen hinzugefügt werden und müssen für den Vergleich mit dem gleichen Benchmark harmonisiert werden. Es ist effizienter, einen Tisch mit gemeinsamen Lebensmitteln zu bauen und langfristig darauf zu bestehen, als die APP zu überprüfen. Die relevanten Fehler werden in [gemeinsamen Umwandlungsfehlern] (/gemeinsamen Umwandlungsfehlern) zusammengefasst, während der Referenz-Benchmark noch darin besteht, zum [Quantifizierungs-Becher-Löffel-Standard] Standard (/Messlöffel-Standard) zurückzukehren und zuerst den Löffelstandard zu harmonisieren, bevor die Nährwerte aussagekräftig sind. Die Lipidreduktionszeit verwechselte den Begriff \"Güter\" mit \"Geburtsgewicht\" und die Anhäufung von Tag und Monat würde die Aufnahme systematisch überschätzen, so dass die bestehende Lücke leise verschwinden würde; stattdessen würden die Küchenwaagen verwendet, um das Gewicht des Lebens zu erfassen und die Daten wären wirklich glaubwürdig."
           }
         ]
       },
       "cost-per-serving": {
-        "title": "Wie man Kosten pro Portion berechnet: Nicht vom Stückpreis täuschen lassen, sondern die tatsächliche Menge beachten",
-        "excerpt": "Eine Flasche Öl hat einen niedrigen Stückpreis, wird aber nur sparsam verwendet – den Gerichtpreis bestimmen meist Hauptzutaten und Verlust. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Wie berechnen Sie die einzelnen Kosten?",
+        "excerpt": "Der Preis für eine einzelne Flasche Öl ist niedrig, aber klein, und es sind oft die Grundnahrungsmittel und Verluste, die den Preis bestimmen, nicht den Preis auf dem Regal.",
         "blocks": [
           {
             "type": "p",
-            "text": "Um die Kosten eines Gerichts zu berechnen, darf man nicht nur den Einkaufspreis betrachten, sondern muss die »tatsächliche Menge« jeder Zutat mit dem jeweiligen Einzelpreis multiplizieren und aufsummieren. Eine Flasche Sojasauce ist etwa sehr günstig, doch ein Gericht verbraucht nur 10 Milliliter – die anteiligen Kosten sind minimal. Dagegen sind Fleisch und frisches Gemüse teuer und werden in großen Mengen verwendet: sie bilden den Kostenkern. Mengen zu ignorieren führt zu völlig falschen Schlüssen."
+            "text": "Die Zählung der Kosten für ein Gericht hängt nicht allein vom Stückpreis ab, sondern von der \"tatsächlichen Verwendung\" jedes Lebensmittels multipliziert mit dem entsprechenden Stückpreis. Zum Beispiel ist eine Flasche Sojasauce billig, aber ein Gericht verwendet nur 10 ml zu sehr niedrigen Kosten des Teilens; eher sind Fleisch und frisches Gemüse die Hauptkosten. Das Ignorieren der Verwendung führt zu der völlig falschen Schlussfolgerung, dass das teure, billige und teure Budget voreingenommen ist."
           },
           {
             "type": "h2",
-            "text": "Schritte der Kalkulation"
+            "text": "Buchungsschritte"
           },
           {
             "type": "ul",
             "items": [
-              "Alle Zutaten und Mengen auflisten, einheitlich in Gramm oder Milliliter",
-              "Gesamtpreis der Packung ÷ Nettogehalt = Einzelpreis",
-              "Einzelpreis × tatsächliche Menge = Kosten der Zutat",
-              "Alle Positionen addieren ÷ Portionen = Kosten pro Portion"
+              "Liste aller verwendeten Lebensmittel und Mengen in Gramm oder Milligramm in gemischten Einheiten",
+              "÷ Gesamtnettogehalt pro Stückpreis, z.B. durch Milligramm Öl Ja.",
+              "Stückpreis x tatsächliche Verwendung = Kosten des Lebensmittels, Stückzahl",
+              "= pro Kostenposten, bezogen auf die Kalibrierung und Energie"
             ]
           },
           {
             "type": "p",
-            "text": "Dieser Schritt hängt von der genauen [Umrechnung von Gramm und Tassen](/grams-to-cups) ab, um Becher und Löffel in Gramm zu wandeln – sonst werden die Mengen verfälscht. Die Zutatenverhältnisse stammen aus [Grundlagen der Rezeptskalierung](/recipe-scaling-basics). Bei Nährwertangaben lässt sich [Leitfaden zur Nährstoffumrechnung](/nutrition-conversion-guide) einbeziehen. Zur Zahlenpräzision beim Erfassen siehe [Runden und signifikante Stellen](/rounding-significant-figures) – zwei Stellen genügen."
+            "text": "Dieser Schritt hängt von der genauen [Gramm-zu-Tassen] (/Gramm-zu-Tassen) ab, um die Tasse in Gramm zu verwandeln, sonst ist die Menge verzerrt und die Kosten sind natürlich falsch. Das Verhältnis selbst ergibt sich aus der [Formulierungsskalierungsgrundlage] (/Rezeptskalierungsgrundlage). Wenn es sich um Nährwertindikationen handelt, können sie auch mit [Nährwertkonversions-Konversions-Leitfaden] kombiniert werden. Die Zahl muss nicht zu lang sein, um aufgezeichnet zu werden, und es genügt, zwei zu behalten. Dies steht im Einklang mit der sogenannten Präzision in [grams-to-cups] (/grams-to-cups), die nur falsch ist."
           },
           {
             "type": "callout",
-            "text": "Vergiss nicht: Gewürze und Energie (Gas, Strom) sind klein, summieren sich aber bei häufigem Kochen langfristig zu Beträgen, die in die wahren Kosten gehören."
+            "text": "Die Schlussfolgerung, dass hausgemachte Produkte billiger sind als Out-of-Sale, könnte verzerrt sein."
           },
           {
             "type": "h2",
-            "text": "Hebel zur Kostensenkung"
+            "text": "Hebelwirkung zur Kostensenkung"
           },
           {
             "type": "p",
-            "text": "Optimiere zuerst bei den Hauptzutaten mit »hoher Menge und hohem Preis«: Mengeneinkauf, saisonales Gemüse, weniger Verlust. Dagegen lohnt es sich kaum, über den Stückpreis von wenigen Millilitern Öl zu grübeln. Erst wer [häufige Umrechnungsfehler](/common-conversion-mistakes) vermeidet, erhält glaubwürdige Kalkulationen."
+            "text": "Vorrang haben die \"hoch genutzten, hochpreisigen\" Grundnahrungsmittel: Masseneinkauf, saisonales Gemüse und reduzierter Verschleiß. Dies steht im Vergleich zu einer sehr niedrigen Stückpreisrendite für einige Milligramm Öl. [gemeinsame Umwandlungsfehler] (/gemeinsame Umwandlungsfehler) zu vermeiden, wäre eine glaubwürdige Buchhaltung; um sie genauer zu machen, wäre es einfacher, die Einheitenbeziehung im [Messbecher-Löffel-Standards] (/Messunterstützungs-Standard) zu verstehen und besser zu vergleichen. Out-Sale ist oft billiger wegen der versteckten Kosten für Verpackung, Verteilung und Zeit; Ein Vergleich eines wöchentlichen Mittagessens mit gelegentlichem Take-Out wird oft gefunden, um Hunderte von Dollar pro Monat oder einen erheblichen Reisefonds pro Jahr zu sparen. Diese Art von \"unsichtbaren Ausgaben\" werden in separaten Konten erfasst, so dass sie sich eher an die Gewohnheiten erinnern, die es wert sind, geändert zu werden."
           }
         ]
       },
       "grams-to-cups": {
-        "title": "Wie man Gramm und Tassen umrechnet: Ein Becher Mehl und ein Becher Zucker wiegen sehr unterschiedlich",
-        "excerpt": "Die Volumenumrechnung hängt von der Dichte ab: Ein Becher Mehl wiegt etwa 120 g, einer mit Zucker etwa 200 g – niemals dieselbe Zahl verwenden. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Wie übersetzt man eine Tasse Mehl und eine Tasse Zucker?",
+        "excerpt": "Die Volumenumwandlung hängt von der Dichte, dem gleichen Becher, Mehl etwa 120 Gramm und Zucker etwa 200 Gramm ab, die niemals auf die gleiche Anzahl angewendet werden dürfen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Um einen »Becher« in »Gramm« umzurechnen, gibt es keinen Universalfaktor, da die Dichte verschiedener Zutaten völlig unterschiedlich ist. Bei einem US-Becher von 240 Milliliter: locker eingefülltes Mehl etwa 120 Gramm, Weißzucker etwa 200 Gramm, Wasser genau 240 Gramm, Butter etwa 227 Gramm. Mit dem falschen Faktor gerät das Rezeptverhältnis durcheinander."
+            "text": "Die Tasse in ein Gramm zu verwandeln, erlaubt keinen All-Power-Koeffizienten, da die Dichte verschiedener Lebensmittel völlig unterschiedlich ist. Ein Glas von 240 Milligramm aus Schönheit: etwa 120 Gramm Mehl, 200 Gramm Weißzucker, 240 Gramm Wasser, 227 Gramm Butter und 340 Gramm Honig. Der Fehlkalkulationsfaktor, das Verhältnis der Formel ist gebrochen, und das Backen ist besonders empfindlich, so dass einige Dutzend Gramm zusammenbrechen oder trocknen, so dass die spezialisierte Formel fast alle in Gramm ist."
           },
           {
             "type": "h2",
-            "text": "Wie schwer ist etwa ein Becher gängiger Zutaten"
+            "text": "Es geht um ein Glas gewöhnliches Essen."
           },
           {
             "type": "ul",
             "items": [
-              "Universalmehl: etwa 120 g (gestrichen)",
-              "Weißzucker: etwa 200 g",
-              "Brauner Zucker (festgedrückt): etwa 220 g",
-              "Wasser / Milch: etwa 240 g",
-              "Butter: etwa 227 g"
+              "Allgemeines Mehl: ca. 120 g (Rasur, Feder mehr als 140 g)",
+              "Weißzucker: ca. 200 g, Feinteilchendichte Hoch",
+              "Rotzucker (Druck): ca. 220 g, fester nach Pressen",
+              "Wasser / Milch: ca. 240 g, Dichte nahe 1",
+              "Butter: ca. 227 g, Stehmarke 1 Tasse = 2 bar = 227 g"
             ]
           },
           {
             "type": "p",
-            "text": "Darum ist beim Backen »Gramm« dem »Becher« weit überlegen und beseitigt die Dichteunsicherheit vollständig. Die Bechernormen unterscheiden sich zudem länderweise – Details unter [Normen für Messbecher und -löffel](/measuring-cups-spoons-standard). Die Umrechnung gehört zu den [Fallstricken bei der Einheitenumrechnung](/unit-conversion-pitfalls) bei Volumen-Masse-Umwandlung – unbedingt zuerst die Dichte prüfen. Beim Skalieren von Rezepten hilft [Grundlagen der Rezeptskalierung](/recipe-scaling-basics)."
+            "text": "Es ist also besser, das Gramm beim Backen zu verwenden als die Tasse, und es wird die Dichteunsicherheit beseitigen. Es gibt auch Länderunterschiede in den Maßbechern selbst, wie in [Messbecher-Löffel-Standard] beschrieben. Die Umwandlung ist von Natur aus eine Volumen-Massen-Umwandlung, und die Dichte muss zuerst gesehen werden. Die Skalierungsformel wird von der [Formulierungsgrundlage] (/Rezeptskalierungsgrundlage) begleitet, während das Problem der trophischen Reife im [Nährwertumwandlungs-Umwandlungs-Leitfaden] (/Ernährungs-Leitfaden) gefunden wird, wo mehrere Umwandlungsarten vollständig sind."
           },
           {
             "type": "callout",
-            "text": "Derselbe Zutat wiegt je nach Zustand unterschiedlich: festgedrücktes Mehl oder klumpiger Zucker machen einen »Becher« schwerer – Wiegen ist am sichersten."
+            "text": "Das gleiche Essen hat unterschiedliche Gewichte: Mehl ist gut gepresst, Zuckerriegel machen eine \"eine\" schwerer, mit dem besten Gewicht, und die 10-Dollar-Küchenwaage löst 80% des Umwandlungsproblems."
           },
           {
             "type": "h2",
-            "text": "Näherung ohne Waage"
+            "text": "Keine Annäherung der Skalen"
           },
           {
             "type": "p",
-            "text": "Hast du kurzfristig keine Küchenwaage, merke dir die Becher-Gramm-Werte gängiger Zutaten – doch das eignet sich nur für brutzelnde Gerichte mit geringer Präzisionsanforderung; Backen verlangt zwingend das Wiegen. Zur Nährstoffberechnung siehe [Leitfaden zur Nährstoffumrechnung](/nutrition-conversion-guide), zur Kostenverteilung [wie man Kosten pro Portion berechnet](/cost-per-serving), und Methoden zur Fehlervermeidung sind unter [häufige Umrechnungsfehler](/common-conversion-mistakes) zusammengefasst."
+            "text": "In Ermangelung einer Küchenwaage für einen vorübergehenden Zeitraum können die Buntstifte gewöhnlicher Lebensmittel in Erinnerung bleiben, aber nur zum Spotten, das nicht empfindlich auf Genauigkeit ist; das Backen muss gewogen werden. Nährstoffberechnungen sind in [Nährwert-Umwandlungs-Leitfaden] (/Nährwert-Umwandlungs-Leitfaden), Kostenteilung ist in [wie man jede Kosten berechnet] (/Kosten pro Service), Methoden zur Vermeidung von Fehlern werden in [gemeinsame Umwandlungsfehler] (/Compon-Umwandlungs-Fehler) zusammengefasst, das erste Erinnern an gemeinsame Gruben ist praktischer als Rückformeln. In Abwesenheit von Schuppen ist es auch möglich, sie mit einem \"Standardbecher\" wie diesem zu kratzen, aber Mehl muss mit einem Löffel getrommelt werden, niemals mit einer Tasse abgeflacht, und eine einzige Tasse von 20 Gramm reicht aus, um den Kuchen mundhart zu machen."
           }
         ]
       },
       "common-conversion-mistakes": {
-        "title": "Häufige Umrechnungsfehler: Diese Stolpersteine lassen die Hälfte aller Alltagsgerichte misslingen",
-        "excerpt": "Vermischte Bechernormen, ignorierte Dichte und stures Festhalten an Zeiten sind die drei häufigsten Fehler bei Küchenumrechnungen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Häufige Umwandlungsfehler: Diese Gruben drehen mehr als die Hälfte der üblichen Nahrung.",
+        "excerpt": "Die drei hochfrequentesten Fehler bei der Küchenumwandlung sind gemischte Standards, vernachlässigte Dichte und statische, die viel stabiler sein können, wenn sie vermieden werden.",
         "blocks": [
           {
             "type": "p",
-            "text": "Fehler in der Küchenumrechnung entstehen oft nicht beim Rechnen, sondern weil die Voraussetzungen falsch sind. Die drei typischen Klassen: erstens das unbemerkte Mischen von Bechernormen verschiedener Länder; zweitens die Annahme, ein »Becher« wiege bei allem gleich und die Dichte werde ignoriert; drittens das Rezeptzeit als absolute Wahrheit zu nehmen, ohne nach Zustand anzupassen. Alle drei zusammen ergeben naturgemäß instabile Ergebnisse."
+            "text": "Fehlkalkulation von Küchen ist oft keine Fehlkalkulation, sondern ein Fehler der Prämisse. Die drei typischsten Kategorien: erstens die Mischung von Bechern in verschiedenen Ländern ohne vorherige Ankündigung; zweitens der Gedanke, dass \"ein Glas\" das gleiche Gewicht wiegt und die Dichte ignoriert; und drittens die Verwendung von Formelzeit als absolute Wahrheit, ohne eine Anpassung nach dem neuesten Stand der Technik. Die drei Aberglauben und die natürliche Instabilität des fertigen Produkts sind auch die Ursache für viele Menschen \"gleiche Formel, gut und schlecht\" - das Problem ist nicht so sehr zu konvertieren."
           },
           {
             "type": "h2",
-            "text": "Liste häufiger Fehler"
+            "text": "HF-Fehlerliste"
           },
           {
             "type": "ul",
             "items": [
-              "US-Becher und britischen Becher verwechseln – fast 20 % Differenz",
-              "Gehäuftes Mehl nicht glatt streichen – Mengen zu hoch",
-              "Salz und Zucker nach Volumen umrechnen, aber falsche Dichte ansetzen",
-              "Flüssigkeitsunzen und Gewichtsunzen verwechseln",
-              "Zeiten unverändert übernehmen, ohne die tatsächliche Garstufe zu prüfen"
+              "Der U.S. Cup wird mit dem British Cup verwechselt. Produktion",
+              "Mehlpfähle sind nicht abgeflacht, sie sind zu hoch, sie müssen abgeflacht werden.",
+              "Salzzucker wird durch Volumen mit einer falschen Dichte und einem milden Ungleichgewicht umgewandelt",
+              "Flüssige Unzen werden mit Gewichtsunzen gemischt.",
+              "Der Zeitpunkt des Umzugs betrachtet nicht die tatsächliche Reife. Die Temperaturdifferenz im Ofen beträgt 20 Grad."
             ]
           },
           {
             "type": "p",
-            "text": "Flüssigkeitsunzen messen Volumen, Gewichtsunzen messen Masse – beide lassen sich im Rezept leicht verwechseln, was genau dem Dimensionenbewusstsein bei [Fallstricke bei der Einheitenumrechnung](/unit-conversion-pitfalls) entspricht. Der Wechsel zu Gramm vermeidet die meisten Probleme auf einen Schlag; Methoden unter [wie man Gramm und Tassen umrechnet](/grams-to-cups) und [Normen für Messbecher und -löffel](/measuring-cups-spoons-standard). Zum Skalieren und Mischverhältnis siehe [Grundlagen der Rezeptskalierung](/recipe-scaling-basics)."
+            "text": "Flüssiges Unzenvolumen, konstantes Unzengewicht, die beide in der Formulierung sehr irreführend sind, sind Manifestationen eines schwachen Einheitsbewusstseins. Der Wechsel zu Gramm kann die meisten Probleme ein für alle Mal umgehen, siehe [grams-to-cups] (/grams-to-cups) und [messbecher-löffel-standards]. Die Skalierungs- und Matching-Referenz [Formel-Skalierungsgrundlagen] (/Rezept-Skalierungsgrundlagen) und die Nährwertbewertung [Nutriation-Conversion-Guide], die zusammen gelesen werden, machen die Küchenumstellung fast drehfest."
           },
           {
             "type": "callout",
-            "text": "Eine Küchenwaage für kleines Geld löst über 80 % der Umrechnungspatzer – entspannter als jede Vergleichstabelle."
+            "text": "Der Kauf einer 10-Bit-Küchenwaage wird mehr als 80 Prozent des Conversion-Umkehrers lösen, und es wird billiger sein als jeder Vergleich, und es wird einfacher sein, die Kostenrechnung zu machen [wie jede Kosten berechnet werden] (/ Cost-per-Service)."
           },
           {
             "type": "h2",
-            "text": "Einen eigenen Prozess zur Fehlervermeidung aufbauen"
+            "text": "Erstellen Sie Ihren eigenen Pit-Shelter-Prozess"
           },
           {
             "type": "p",
-            "text": "Empfohlen sind drei Grundregeln: durchgehend Gramm verwenden, eine Bechernorm festlegen, Garstufe nach Zustand beurteilen – und die Roh-/Gargewicht- sowie Becher-Gramm-Werte häufiger Zutaten im Handy notieren. Nährstoff- und Kostenaspekte lassen sich mit [Leitfaden zur Nährstoffumrechnung](/nutrition-conversion-guide) und [wie man Kosten pro Portion berechnet](/cost-per-serving) verbinden; das Thema Zahlenpräzision unter [Runden und signifikante Stellen](/rounding-significant-figures)."
+            "text": "Es wird empfohlen, dass die drei Prinzipien der \"vollständigen Verwendung von Gramm, festen Ein-Becher-Standard und State-of-the-Art-Feuer\" behoben werden, und dass das Rohgewicht der gemeinsamen Lebensmittel im Telefon aufgezeichnet werden. Ernährungs- und Kostendimensionen können mit [Ernährungs-Umwandlungs-Leitfaden] (/Ernährungs-Umwandlungs-Leitfaden) und [wie jede Kosten berechnet werden] (/Kosten-pro-Service) kombiniert werden, während die Frage der Quantengenauigkeit die Charakterisierung in [Gramm-zu-Tasse] (/Gramm-zu-Tasse) erinnert, indem die Baseline ausgerichtet und dann über Geschmack und Kosten gesprochen wird."
           }
         ]
       },
       "compare-loan-interest-rates": {
-        "title": "Wie man Hypothekenzinsen vergleicht: Annuität, Tilgung mit konstantem Hauptbetrag und die Wahl des LPR",
-        "excerpt": "Beim Vergleich von Hypothekenzinsen reicht nicht die Zahl allein – die Tilgungsart bestimmt die gesamten Zinsausgaben. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Wie vergleicht sich der Hypothekenzinssatz: Äquivalenter Kapitalbetrag, Äquivalenter Kapitalbetrag und LPR?",
+        "excerpt": "Verglichen mit dem Zinssatz für die Hypothek bestimmt die Rückzahlungsmethode die Gesamtzinsen für Ihre tatsächlichen Ausgaben, und der Fehler kann Hunderttausende mehr betragen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Viele vergleichen Kredite nur nach dem von der Bank genannten Sollzinssatz und übersehen den entscheidenden Einfluss der Tilgungsart auf die Gesamtzinsen. Bei derselben Hypothek über 1 Million Yuan, 4,2 % Sollzins und 30 Jahren Laufzeit ist die annuitätische Tilgung (Annuität) mit fester Monatsrate behaftet, tilgt aber anfangs wenig Hauptbetrag und kostet die meisten Gesamtzinsen; die Tilgung mit konstantem Hauptbetrag (lineare Tilgung) hat eine feste monatliche Hauptbetragstilgung und sinkende Zinsen – weniger Gesamtzinsen, aber höhere Anfangsbelastung. Um den Unterschied zu sehen, rechne mit dem Ansatz des [Kreditzinssvergleichs](/finance) beide Varianten nach Monatsrate und Gesamtzinsen durch."
+            "text": "Viele vergleichen ihre Kredite mit den von den Banken gemeldeten Jahreszinszahlen, während sie die entscheidenden Auswirkungen der Rückzahlung auf die Gesamtzinsen ignorieren. Das gleiche gilt für Darlehen von 1 Million Dollar, mit einem jährlichen Zinssatz von 4,2% und einer Laufzeit von 30 Jahren, mit Rückzahlungen von etwa 4,890 $ pro Monat zum Zeitpunkt der Auswahl des Äquivalents und konstant, aber mit einem sehr niedrigen Prozentsatz des im vorherigen Zeitraum zurückgezahlten Kapitals, von denen die meisten mit der monatlichen Rate von etwa 760.000 $ pro Monat für die 30 Jahre bezahlt werden; Zinsen auf den ersten Monat der Auswahl des entsprechenden Betrags sind etwa 6,33 Millionen $ und sinken dann jeden Monat mit einem Gesamtzins von etwa 6,36 Millionen $ oder 130.000 $ weniger als das Äquivalent. Um wirklich zu sehen, wo die beiden Optionen unterschiedlich sind, wird vorgeschlagen, dass die monatliche Rückstellung und die Gesamtzinsen separat berechnet werden sollten, und dass [eine Strategie zur vorzeitigen Rückzahlung] (/eine Strategie zur vorzeitigen Rückzahlung von Darlehen) kombiniert werden sollte, um festzustellen, ob es angemessen ist, die Laufzeit früher zu verkürzen und nicht durch das offensichtliche Angebot von niedrigen Monaten irregeführt zu werden."
           },
           {
             "type": "h2",
-            "text": "Wesentlicher Unterschied zwischen LPR und Festzins"
+            "text": "Art der LPR im Gegensatz zu festen Zinssätzen"
           },
           {
             "type": "p",
-            "text": "Die meisten Hypotheken sind heute an den LPR (Loan Prime Rate, marktbezogener Zinssatz) gekoppelt, der einmal jährlich neu festgesetzt wird; der Zins sinkt mit dem Markt und steigt mit ihm. Erwartest du insgesamt fallende Zinsen, lohnt sich der variable Zins eher; strebst du absolute Stabilität der Monatsrate an und willst Schwankungen nicht ertragen, wähle den Festzins. Beachte: Neufestsetzungstag und Aufschlag bleiben nach Vertragsabschluss meist langfristig gleich – kläre diese Details vor dem Unterschreiben."
+            "text": "Die überwiegende Mehrheit der Hypotheken ist jetzt mit LPR (Lending Market Quoteed Rates) verbunden, die einmal im Jahr neu bewertet werden, wobei die Zinssätze fallen und steigen, wenn der Markt sinkt. Es gibt auch einen \"Plus-Wert\" im Vertrag, wie LPR minus 20 Basispunkte, die normalerweise während des Rückzahlungszyklus festgelegt werden, und die reale schwimmende LPR selbst. Wenn Sie der Meinung sind, dass die zukünftigen Zinssätze insgesamt niedriger sind, ist die Wahl der variablen Zinssätze in der Regel kostengünstiger; Wenn Sie absolute Stabilität in der monatlichen Versorgung anstreben und keine Schwankungen aushalten wollen, können feste Zinssätze auf Kosten einer zukünftigen Abwärtsdividende gesperrt werden. Diese Details müssen vor der Unterzeichnung geklärt werden, und es wäre für den Kreditmanager vorzuziehen, die Gesamtzinsen über 30 Jahre für beide Optionen auszudrucken und zu unterzeichnen."
           },
           {
             "type": "ul",
             "items": [
-              "Annuität: feste Monatsrate, geeignet für Angestellte mit stabilem Cashflow",
-              "Tilgung mit konstantem Hauptbetrag: weniger Gesamtzinsen, geeignet für Menschen mit starker Anfangstilgungskraft",
-              "Variabler Zins: folgt dem LPR, langfristig möglicherweise günstiger",
-              "Festzins: Monatsrate fixiert, geeignet für risikoaverse Kreditnehmer"
+              "Gleichwertiger Grundsatz: monatlich festgelegt, geeignet für Arbeitnehmer mit einem stabilen Cashflow, aber mit den höchsten Gesamtzinsen, wobei die Zinsen weitgehend in der Vorperiode gezahlt wurden",
+              "Gleichwertiges Prinzip: Je weniger die Gesamtzinsen, desto einfacher wird es für diejenigen sein, die in der Lage sind, im Voraus zurückzuzahlen und dem hohen monatlichen Angebot standzuhalten",
+              "Variable Zinssätze: abhängig von LPR-Änderungen, auf lange Sicht, wenn die Zinssätze sinken, wird es wirtschaftlicher sein, aber der Monat wird für eine mögliche Erhöhung akzeptiert",
+              "Fester Zinssatz: monatlich, geeignet für risikoscheue Kreditnehmer, die Red Lee aufgeben müssen."
             ]
           },
           {
             "type": "callout",
-            "text": "Beim Zinsvergleich sind »Nominalsollzins« und »effektive jährliche Kosten (APR)« getrennt zu betrachten – letztere enthalten erst Gebühren, Versicherungen und andere versteckte Ausgaben."
+            "text": "Beim Vergleich der Zinssätze ist es wichtig, den nominalen Jahreszinssatz getrennt von den realen jährlichen Finanzkosten (APR) zu betrachten, die versteckte Ausgaben wie Gebühren, Versicherungsprämien, Bewertungsgebühren usw. berücksichtigen, die leicht falsch berechnet werden können."
           },
           {
             "type": "h2",
-            "text": "Drei häufige Stolpersteine beim Vergleich"
+            "text": "Drei gemeinsame Fallen für den horizontalen Vergleich"
           },
           {
             "type": "p",
-            "text": "Erstens: Lass dich nicht von »Sonderzinsen für die ersten N Jahre« täuschen – der nach Ablauf des Angebots geltende Standardzins bestimmt die langfristigen Kosten. Zweitens: Vorfälligkeitsentschädigungen für Sondertilgungen unterscheiden sich je nach Bank stark und beeinflussen direkt die Flexibilität bei späterer Schuldenoptimierung; dazu siehe [Strategie für vorzeitige Kredittilgung](/early-loan-repayment-strategy). Drittens: Das Ersetzen einer Hypothek durch einen Geschäftskredit scheint zinsgünstiger, birgt aber Compliance-Risiken bei der Verwendung – Privatleute sollten vorsichtig sein. Erst wenn man Monatsrate, Gesamtzinsen und Vorfälligkeitsentschädigung zusammenrechnet, ergibt sich wirklich das sparsamste Modell."
+            "text": "Erstens, lassen Sie sich nicht durch den ehemaligen N-Jahres-Präferenzsatz verwirren, der Standardsatz, der nach Ablauf der Präferenz wiederhergestellt werden muss, sind die langfristigen Kosten, und der Gesamtzinssatz ist mit dem wiederhergestellten Zinssatz zu berechnen. Zweitens variiert die vorzeitige Rückzahlung von Zahlungsausfällen von Bank zu Bank erheblich und reicht von einem bis zwei Prozent des Kapitals in drei Jahren bis zur Befreiung von einem Jahr, was sich direkt auf die Flexibilität Ihrer späteren Optimierung der Verbindlichkeiten auswirkt, wobei die Kompromisse Barmittel gegen Schuldendienstprioritäten gegen [Einrichtung eines Notfallfonds] (/Build-Emergency-Fonds) ausgleichen. Drittens birgt die Verwendung von Betriebsdarlehen für Wohnungsswaps, die zu niedrigeren Zinssätzen zu sein scheinen, Compliance-Risiken für die Verwendung von Mitteln, und normale Haushalte sollten vorsichtig sein. Die Berechnung von monatlichen Beiträgen, Gesamtzinsen, Ausfallgeld zusammen ist der einzige Weg, um zu einer wirklich kostensparenden Lösung zu gelangen, und ein systematisches Verständnis der Auswirkungen der Steuerbelastung auf das verfügbare Einkommen kann sich auch auf die [Personensteuer-Bemessungsgrundlage] (/Personensteuer-Grundlagen) erstrecken."
           }
         ]
       },
       "early-loan-repayment-strategy": {
-        "title": "Soll man vorzeitig tilgen? Erst die Opportunitätskosten klären, dann entscheiden",
-        "excerpt": "Bei vorzeitiger Tilgung spart man Zinsen, verzichtet aber auf andere Anlagemöglichkeiten für dieses Geld – entscheidend ist die Differenz. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Ob Sie im Voraus bezahlen oder nicht: Berechnen Sie die Opportunitätskosten und entscheiden Sie dann.",
+        "excerpt": "Zinsen wurden auf vorzeitige Rückzahlungen gespart und die Möglichkeit, dass das Geld in andere Investitionen investiert wurde, wurde aufgegeben, abhängig von der Differenz zwischen den beiden.",
         "blocks": [
           {
             "type": "p",
-            "text": "Wenn man überschüssiges Geld hat – soll man die Hypothek vorzeitig tilgen? Diese Frage hat keine Standardantwort; der Kern ist der Vergleich zwischen »beim vorzeitigen Tilgen gespartem Zins« und »der Rendite, die das Geld in einer Anlage erzielen würde«. Liegt der Hypothekenzins bei 4,5 %, und man bekommt nur 2,5 % p. a. auf Einlagen oder Produkte, dann ist vorzeitiges Tilgen ein sicherer Gewinn von zwei Punkten und meist sinnvoll. Umgekehrt lohnt es sich eher, das Cash zu behalten, wenn man von einer Anlagerendite über dem Hypothekenzins überzeugt ist."
+            "text": "Möchten Sie die Hypothek im Voraus bezahlen? Es gibt keine Standardantwort auf diese Frage, und der Kern besteht darin, \"den durch vorzeitige Rückzahlungen eingesparten Zinssatz\" mit \"der Rendite der Investition\" zu vergleichen. Wenn der Zinssatz 4,5 Prozent beträgt und Sie nur 2,5 Prozent der jährlichen Ersparnisse oder des Managements kaufen können, würde die vorzeitige Rückzahlung des Darlehens einem stetigen Gewinn von zwei Punkten entsprechen, was sich normalerweise lohnt; Wenn Sie sich hingegen der Rendite der Investition sicher sind, die über dem Zinssatz stabil ist, dann ist das Bargeld besser. Die beiden Zahlen sind zuverlässiger als intuitiv vor der Entscheidungsfindung und ignorieren die Opportunitätskosten nicht wegen der Stimmung \"überhaupt keine Schulden\"."
           },
           {
             "type": "h2",
-            "text": "Laufzeit verkürzen oder Monatsrate senken"
+            "text": "Kürzere Dauer oder weniger Monat"
           },
           {
             "type": "ul",
             "items": [
-              "Laufzeit verkürzen: stärkster Rückgang der Gesamtzinsen, geeignet für alle, die schnell schuldenfrei sein wollen",
-              "Monatsrate senken: geringerer Monatsdruck, aber begrenzte Ersparnis bei Gesamtzinsen",
-              "Nach einer Teilsondertilgung selbst aktiv die Bank um »Laufzeitverkürzung« statt der standardmäßigen »Ratensenkung« bitten",
-              "Zuerst die Verbindlichkeit mit dem höchsten Zins tilgen – die Reihenfolge zählt mehr als der Betrag"
+              "Verkürzung der Laufzeit des Darlehens: Gesamtzinsen am meisten gesunken, geeignet für diejenigen, die so schnell wie möglich unverschuldet sein wollen, z. B. 20 Jahre auf eine Million Darlehen und eine erhebliche Einsparung von 15 Jahren",
+              "Reduzierung des monatlichen Angebots: Der monatliche Druck wird reduziert, aber die gesamten Zinseinsparungen sind begrenzt, und die Banken sind sich oft einig, dass dies nicht gut für Sie ist",
+              "Denken Sie nach einer teilweisen vorzeitigen Rückzahlung daran, eine \"Verkürzung\" anstelle einer Standard-\"Subtraktion\" zu beantragen, die sich ansonsten erheblich auf die Einsparungen auswirken würde.",
+              "Priorisieren Sie die Rückzahlung der Schulden mit dem höchsten Zinssatz, die wichtiger als der Betrag sind, und löschen Sie den Kredit vor der Hypothek."
             ]
           },
           {
             "type": "p",
-            "text": "Die Standardeinstellung der Bank ist meist »Monatsrate senken«, weil so die Gesamtzinsen weniger sinken und es für die Bank vorteilhafter ist. Du musst aktiv »Laufzeit verkürzen« verlangen, um wirklich Zinsen zu sparen. Zur Logik des Zinsvergleichs weiterführend [wie man Hypothekenzinsen vergleicht](/compare-loan-interest-rates). Vorzeitige Tilgung kann zudem Vorfälligkeitsentschädigungen auslösen; im Vertrag steht meist, dass innerhalb von ein bis drei Jahren nach Auszahlung Gebühren anfallen, danach kostenlos."
+            "text": "Bankausfalloperationen sind oft \"reduzierte monatliche Versorgung\", da dies die Gesamtzinsen reduziert und für Banken günstiger ist. Sie müssen die Initiative ergreifen, um eine \"kürzere Laufzeit\" zu fordern, um wirklich Zinsen zu sparen. Für die unterste Logik des Zinsvergleichs wird es erweitert, um zu lesen [wie der Hypothekenzins vergleicht] (/Vergleich-Darlehen-Zinssätze). Vorauszahlungen können auch Ausfallzahlungen beinhalten, die in der Regel innerhalb von ein bis drei Jahren nach der Freigabe gebührenpflichtig und nach Ablauf der Frist kostenlos sind, und denen eine Berechnung vorausgehen muss, ob der Ausfall höher ist als die eingesparten Zinsen. Für Informationen über die Auswirkungen der Besteuerung auf die Rückzahlungskapazität wird auf die [Personensteuer-Bemessungsgrundlage] (/Personensteuer-Grundlagen) verwiesen."
           },
           {
             "type": "callout",
-            "text": "Behalte drei bis sechs Monate Notgroschen, bevor du vorzeitig tilgst; zahle nicht alle Sichteinlagen in die Schuld – sonst gerätst du bei Arbeitslosigkeit oder schwerer Krankheit in die Enge."
+            "text": "Die Einbehaltung von Notfallfonds für drei bis sechs Monate vor der vorzeitigen Rückzahlung, ohne dass alle laufenden Einlagen zurückgezahlt werden, wäre im Falle von Arbeitslosigkeit oder schwerer Krankheit sehr passiv und würde hohen Zinssätzen unterliegen."
           },
           {
             "type": "h2",
-            "text": "Wann vorzeitiges Tilgen nicht empfohlen wird"
+            "text": "Unter welchen Umständen?"
           },
           {
             "type": "p",
-            "text": "Genießt du einen sehr niedrigen historischen Zins (etwa unter 3 %), und hast Anlagemöglichkeiten mit stabiler Rendite darüber, lohnt sich vorzeitiges Tilgen eher nicht. Zudem liegt der Zins für Wohnungsfondskredite meist weit unter dem gewerblichen Kredit – tilge zuerst den gewerblichen, behalte den Fondskredit. Weitere Grundideen zur Planung unter [Grundlagen der Einkommensteuer](/personal-tax-basics) und [Aufbau eines Notgroschens](/build-emergency-fund)."
+            "text": "Wenn Sie niedrige historische Zinssätze genießen (z. B. weniger als 3 Prozent) und Sie einen stabilen Finanzkanal mit einer höheren Rendite haben, ist eine vorzeitige Rückzahlung des Darlehens keine gute Sache. Darüber hinaus sind die Zinssätze für Provident Fund-Darlehen in der Regel viel niedriger als bei kommerziellen Darlehen, und die Rückzahlung von Darlehen und deren Beibehaltung sollten Vorrang haben. Im Rahmen der integrierten Planung wird empfohlen, die [Einrichtung eines Notfallfonds] (/Build-Emergency-Fonds) zu besichern, bevor eine Erhöhung der Schuldendienstquote in Betracht gezogen wird, und mögliche Fremdwährungsverbindlichkeiten in Verbindung mit [Währungs-Exchange-Exchange-Tips] zu behandeln, um einen Kompromiss zu vermeiden."
           }
         ]
       },
       "compound-interest-investing": {
-        "title": "Die Macht des Zinseszinses: Mit der 72er-Regel die Verdopplungszeit des Vermögens schätzen",
-        "excerpt": "Zinseszins ist keine Magie – die 72er-Regel lässt dich im Kopf überschlagen, nach wie vielen Jahren sich das Kapital bei jeder Rendite verdoppelt. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Die Macht der Verbindung: 72 Gesetze, um die Zeit zu schätzen, wenn sich der Reichtum verdoppelt",
+        "excerpt": "Es ist keine chronologie, und das gesetz ist, dass sie das prinzip in jedem annualisierten gewinn ohne den rechner verdoppeln können.",
         "blocks": [
           {
             "type": "p",
-            "text": "Zinseszins bedeutet, dass »auch die Zinsen wieder Zinsen bringen«; über längere Zeit wächst der Ertrag exponentiell. Ein einfaches Schätzwerkzeug ist die 72er-Regel: 72 durch den Renditesatz in Prozent ergibt die Jahre bis zur Kapitalverdopplung. Bei 6 % p. a. ist 72 durch 6 gleich 12 Jahre bis zur Verdopplung; bei 8 % etwa 9 Jahre. Diese Regel ist beim Planen für Rente und Kindererziehung sehr nützlich."
+            "text": "Der Zinseszins bedeutet, dass \"Zinsen auch Zinsen generieren können\" und dass die Gewinne langfristig exponentiell steigen werden. Ein einfaches und gutes Schätzwerkzeug ist Regel 72: Durch Division von 72 durch den Prozentsatz der annualisierten Rendite, die Anzahl der Jahre, die erforderlich sind, um den Hauptbetrag zu verdoppeln. Zum Beispiel beträgt die Jährlichkeitsrate sechs Prozent, 72 Prozent, geteilt durch sechs mal entspricht 12 Jahren, acht Prozent sind etwa neun Jahre und zwölf Prozent sind etwa sechs Jahre. Dieses Gesetz ist sehr praktisch bei der Planung von Altersrenten, Kinderbildung und langfristigen Zielen. Es hilft Ihnen schnell zu bestimmen, ob eine Investition schnell genug ist, und es kann die Rhetorik der \"Zwanziger Jahre\" brechen."
           },
           {
             "type": "h2",
-            "text": "Wie Sparpläne den Zinseszinseffekt verstärken"
+            "text": "Legt fest, wie man den zusammengesetzten Effekt vergrößert"
           },
           {
             "type": "ul",
             "items": [
-              "Regelmäßige Beträge glätten Marktschwankungen: günstig mehr, teuer weniger kaufen",
-              "Zeit ist der beste Freund des Zinseszinses – je früher, desto größer der Vorteil",
-              "Dividenden und Zinsen automatisch reinvestieren, die Erträge nicht ungenutzt liegen lassen",
-              "Jeder Prozentpunkt weniger Gebühr vergrößert den Endbetrag langfristig spürbar"
+              "Regelmäßige pauschale Inputs, reibungslose Marktschwankungen, niedrig- und hoch- und langfristig günstig",
+              "Die Zeit ist der beste Freund der Verbindung, je früher der Vorteil beginnt, desto später kann der 10. weniger als die Hälfte sein.",
+              "Legen Sie die Dividenden und Zinsen als automatische Reinvestition fest, damit der Erlös nicht in die Bücher aufgenommen wird oder die zusammengesetzte Kette bricht.",
+              "Jeder einzelne Prozentpunkt nach unten, erhalten Sie ein Viertel mehr für 30 Jahre."
             ]
           },
           {
             "type": "p",
-            "text": "Das Gegenstück zum Zinseszins ist der »negative Zinseszins«: hohe Gebühren, häufiges Handeln und Inflation erodieren das Kapital. Viele ignorieren die Gebühren – dabei frisst eine jährliche Verwaltungsgebühr von 1 % über 30 Jahre fast ein Viertel des Endertrags. Zur systematischen Asset-Allokation siehe die Sparplanlogik im [Einstieg in Zinseszinsanlagen](/compound-interest-investing) und kombiniere sie mit [Hinweisen zum Währungstausch](/currency-exchange-tips), um versteckte Kosten bei grenzüberschreitenden Anlagen zu vermeiden."
+            "text": "Die negative Seite des Zinseszinses sind \"negative Co-Vorteile\": Hohe Bearbeitungsgebühren, häufiger Handel und Inflation können sich beim Kapital wegschleichen. Viele ignorieren die Preise und tatsächlich frisst ein Prozent der jährlichen Verwaltungsgebühr fast ein Viertel des endgültigen Gewinns auf einer 30-jährigen Skala, was den versteckten Kosten entspricht, die in [Währungs-Wechsel-Wechsel-Tipps] diskutiert werden. Um die Vermögensallokation systematisch zu verstehen, kann auf die Logik der Bilanzierung der langfristigen Kosten in [den Zinssatz für Hypotheken] (/Vergleich der Darlehenszinsen) und der Bilanzierung der Schuldenrückzahlung und -investition im Rahmen der [Frühkredit-Rückzahlungs-Strategie] verwiesen werden, so dass die Anzahlung der Investition nicht in die Immobilie geworfen wird."
           },
           {
             "type": "callout",
-            "text": "Die Falle des Zinseszinses liegt in der »linearen Intuition« – das menschliche Gehirn denkt linear und unterschätzt exponentielles Wachstum über mehr als zwanzig Jahre meist drastisch."
+            "text": "Die Falle der Compoundität liegt in der \"linearen Intuition\" - der Gewohnheit des menschlichen Gehirns, linear zu denken, die dazu neigt, das Wachstum des Index seit mehr als 20 Jahren ernsthaft zu unterschätzen, weshalb je früher die Investition einfacher wird, desto später die Angst."
           },
           {
             "type": "h2",
-            "text": "Die kleinste Handlung, ab heute"
+            "text": "Minimale Maßnahmen ab heute."
           },
           {
             "type": "p",
-            "text": "Du musst nicht warten, bis ein großes Kapital zusammen ist. Lege jeden Monat fest 10 % des Einkommens in einen Indexfonds-Sparplan an und halte zwanzig Jahre durch – der Zinseszins erledigt den Großteil der Arbeit für dich. Im gesamten Finanzplanungsrahmen empfiehlt es sich, zuerst [Aufbau eines Notgroschens](/build-emergency-fund) zu lesen und erst nach Sicherung des Basis-Polsters den Anteil zu erhöhen."
+            "text": "Wir müssen nicht auf genug Geld warten, um zu investieren. Feste 10 Prozent des Einkommens pro Monat werden in einen Indexfonds investiert, der 20 Jahre hält und voraussichtlich den größten Teil Ihrer Arbeit erledigen wird. Um auf den allgemeinen Rahmen der Finanzplanung zurückzukommen, wird empfohlen, die [Einrichtung eines Notfallfonds] (/Build-Emergency-Fonds) zu lesen, um sicherzustellen, dass das grundlegende Sicherheitspolster vorhanden ist, bevor der Anteil der Investitionen schrittweise erhöht wird, und dass eine vollständige Steuerbefreiung und ein aufgeschobener Betrag in Übereinstimmung mit der [Personensteuer-Bemessungsgrundlage] (/Personensteuer-Grundlagen) angewendet werden, so dass Gewinne nach Steuern in die Zusammensetzung aufgenommen werden, anstatt ein Stück der Steuer zu früh gegessen zu werden."
           }
         ]
       },
       "build-emergency-fund": {
-        "title": "Aufbau eines Notgroschens: Wie viele Monatsausgaben sind für Sicherheit nötig",
-        "excerpt": "Der Notgroschen ist das Fundament der finanziellen Sicherheit – Betrag und Wahl des Zielkontos sind wichtiger, als du denkst. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Einrichtung eines Notfallfonds: wenige Monate zur Ausgabensicherung",
+        "excerpt": "Der Notfallfonds war die Grundlage der finanziellen Sicherheit und das Ziel des Betrags und die Option der Einzahlung des Kontos waren wichtiger als Sie dachten.",
         "blocks": [
           {
             "type": "p",
-            "text": "Ein Notgroschen ist eine Bargreserve für plötzliche Notfälle wie Arbeitslosigkeit, Krankheit oder unerwartete Ausgaben. Die gängige Empfehlung sind drei bis sechs Monatsausgaben: wer fest angestellt ist und Nebeneinnahmen hat, kann die Untergrenze von drei bis vier Monaten nehmen; Selbstständige oder Menschen mit schwankendem Einkommen sollten eher sechs Monate oder mehr anstreben. Der Sinn dieses Geldes ist nicht Wertsteigerung, sondern dass du im Sturm nicht Vermögen verscherbeln oder teure Kredite aufnehmen musst."
+            "text": "Der Notfallfonds ist eine Barreserve zur Deckung von Notfallsituationen wie Arbeitslosigkeit, Krankheit und unvorhergesehenen Ausgaben. Die allgemeine Empfehlung beträgt das Drei- bis Sechsfache der monatlichen Lebenshaltungskosten: Single, arbeitsplatzstabilisiert, zweitrangig, drei bis vier Monate; verheiratete, verpfändete, freiberufliche oder einkommensorientierte Personen sollten sechs Monate oder länger arbeiten. Der Wert dieses Geldes ist keine Wertschöpfung, sondern es ist vorübergehend im Sturm, dass Sie Ihr Vermögen nicht verkaufen, hochverzinsliche Schulden aufnehmen müssen, damit das langfristige Investitionstempo nicht unterbrochen wird und nicht gezwungen werden, Fleisch an einem Tiefpunkt wegen Geldmangels zu schneiden."
           },
           {
             "type": "h2",
-            "text": "Wo das Geld liegen sollte"
+            "text": "Wo soll ich das Geld hinlegen?"
           },
           {
             "type": "ul",
             "items": [
-              "Sichteinlage oder Geldmarktfonds: jederzeit verfügbar, Liquidität zuerst",
-              "Wenig innovative Bankeinlagen: etwas höherer Ertrag, Rücknahmeregeln beachten",
-              "Auf keinen Fall in Aktien oder langfristig gebundene Produkte",
-              "Eigenes Konto führen, damit es nicht mit dem Alltagskonsum vermischt und ausgegeben wird"
+              "Current oder IMF: Zu jeder Zeit der Wahl steht die Liquidität immer an erster Stelle, mit niedrigen Renditen, aber kritischen Überlebensmomenten",
+              "Kleine Mengen an innovativen Bankeinlagen: eine etwas höhere Rendite, aber es ist wichtig, Zwangsvollstreckungsregeln zu sehen und eine Sperrung zu vermeiden",
+              "Legen Sie es nicht in Aktien oder in langfristige Lockdowns.",
+              "Separate Konten, um eine Vermischung mit dem täglichen Verbrauch zu vermeiden, die zu unwissenden Ausgaben führt, vorzugsweise automatische Überweisungen"
             ]
           },
           {
             "type": "p",
-            "text": "Ein Notgroschen strebt nach Sicherheit und Liquidität, nicht nach Rendite. Statt um wenige Zehntel Prozent mehr zu feilschen, sorge lieber dafür, dass er innerhalb eines Tages verfügbar ist. Erst nach dem Polster gehört übriges Kapital in langfristige Wertsteigerungswerkzeuge wie den [Einstieg in Zinseszinsanlagen](/compound-interest-investing). Bei mehreren Einkommensquellen in der Familie hilft [Strategie für vorzeitige Kredittilgung](/early-loan-repayment-strategy), um die Priorität von Sparen und Tilgen neu auszugleichen."
+            "text": "Der Fonds suchte eher Sicherheit und Liquidität als eine Rendite. Anstatt mehr als ein paar Prozentpunkte zu machen, sollte sichergestellt werden, dass es an einem Tag ankommt. Sobald die Sicherheitspads vorhanden sind, sind die verbleibenden Mittel für Investitionen geeignet. Langfristige Mehrwert-Tools wie Retrieving Investment. Wenn Haushalte über mehrere Einkommensquellen verfügen, können sie die Spar- und Schuldendienstprioritäten in Verbindung mit der [Frühkredit-Rückzahlungs-Strategie] ausgleichen und Fremdwährungspositionen verwalten, insbesondere wenn sie Überseeeinkommen oder -verbindlichkeiten haben."
           },
           {
             "type": "callout",
-            "text": "Solange der Notgroschen nicht steht, solltest du nicht vorzeitig tilgen oder wagemutig investieren; wer das Fundament nicht gelegt hat und doch baut, wird von einem einzigen Unglück umgeworfen."
+            "text": "Der Notfallfonds wurde nicht für die vorzeitige Rückzahlung empfohlen oder in Investitionen gewagt, bis er sein Ziel erreicht hatte; das Gebäude war ohne Fundament gebaut worden und der Gesamtplan war zufällig heruntergefahren worden, und alle bevorstehenden Restaurierungsbemühungen hätten erschöpft sein können."
           },
           {
             "type": "h2",
-            "text": "Wie lange bis zum Ziel"
+            "text": "Wie lange wird es dauern?"
           },
           {
             "type": "p",
-            "text": "Bei monatlichen Ausgaben von 10.000 Yuan und einem Sechs-Monate-Ziel von 60.000 Yuan dauert es bei 2.000 Yuan Ersparnis pro Monat etwa 30 Monate. Setze den automatischen Transfer am Zahltag als erste Ausgabe, vor jedem Konsum. Mehr zu den Familienfinanzen unter [Grundlagen der Einkommensteuer](/personal-tax-basics) und [Hinweisen zum Währungstausch](/currency-exchange-tips)."
+            "text": "Unter der Annahme einer monatlichen Ausgabe von 10.000 US-Dollar und eines Ziels von 66.000 US-Dollar für sechs Monate könnte das Ziel für etwa 30 Monate erreicht werden, wenn jeden Monat 2.000 US-Dollar gespart würden. Es wird vorgeschlagen, dass die automatische Übertragung von Löhnen am Tag der Zahlung als erste Ausgabe festgelegt wird, wobei der Vorrang vor dem Konsum, d.h. dem Sparen vor dem Ausgeben, Vorrang hat. Mehr Familienfinanzen basieren auf der [Personensteuer-Bemessungsgrundlage] (/Personensteuer-Grundlage) und [Wohnungszinsen] (/Vergleich-Darlehen-Zinssätze), und es ist viel schneller, das Geld von Steuerersparnissen direkt auf ein Notfallkonto zu überweisen, und es ist auch eine Gewohnheit von Zwangsersparnissen. Selbst in einem langsameren Tempo wird die Grundlage für das gesparte Geld gelegt, bevor in höhere Renditen investiert wird, damit es nicht dorthin zurückkehrt, wo es herkommt."
           }
         ]
       },
       "currency-exchange-tips": {
-        "title": "Stolpersteine beim Währungstausch: Wechselkurs, Gebühren und Flughafenfallen",
-        "excerpt": "Dasselbe Geld bei verschiedenen Anbietern getauscht kann beim erhaltenen Betrag mehrere Prozentpunkte differieren – entscheidend ist, die versteckten Kosten zu erkennen.",
+        "title": "Devisengruben: Wechselkurs, Gebühren und versteckte Gruben an Flughafenschaltern",
+        "excerpt": "Das gleiche Geld wird über verschiedene Kanäle ausgetauscht, und die Differenz in dem zu zahlenden Betrag kann mehrere Prozentpunkte betragen, und der Schlüssel ist, versteckte Kosten zu sehen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Bei Auslandsreisen oder grenzüberschreitenden Überweisungen sind die wahren Kosten nicht nur der Kurs auf dem Schild, sondern auch Gebühren, Spreads und Korrespondenzbankentgelte. Zwischen Ankauf und Verkauf von Bargeld bei der Bank besteht ohnehin eine Spanne; dazu kommt pro Vorgang eine feste Gebühr, was kleine Beträge besonders unvorteilhaft macht. Beim Anbietervergleich zählt der »tatsächlich erhaltene Betrag«, nicht welche Kurszahl besser aussieht."
+            "text": "Bei Reisen ins Ausland oder bei grenzüberschreitenden Überweisungen sind die tatsächlichen Kosten nicht nur der Wechselkurs auf den Preis der Karte, sondern auch die Kosten für die Handhabung, Differenzen und Zwischenkosten. Der Preisunterschied zwischen dem Kaufpreis der Bank und dem Angebotspreis zusammen mit einer festen Gebühr macht die kleine Börse besonders unwirtschaftlich. Dies sind die tatsächlichen Kosten des Wechselkurses, der nicht der beste ist, aber die Differenz von Hunderten an einem Punkt von Null und fünf Punkten."
           },
           {
             "type": "h2",
-            "text": "Typische teure Situationen"
+            "text": "Gemeinsame Hochkostenszenarien"
           },
           {
             "type": "ul",
             "items": [
-              "Schalter am Flughafen und Hotel: schlechtester Kurs, höchste Gebühren, nur im Notfall",
-              "Dynamic Currency Conversion (DCC): in RMB abrechnen ist nachteilig, lieber lokale Währung wählen",
-              "Kleine Beträge oft tauschen: die feste Gebühr pro Mal schmerzt mehr",
-              "Ohne Bankenvergleich tauschen: der Spread kann um Zehntel Prozent auseinanderliegen"
+              "Flughäfen und Hotelschalter: schlechtester Wechselkurs, höchste Bearbeitungsgebühren, nur für Notfälle, meist zwei bis drei Prozentpunkte teurer als Banken",
+              "Dynamische Währungsumrechnung (DCC): Wenn der Renminbi verwendet wird, um einen Verlust zu begleichen, sollte die lokale Währung für die Karte gewählt werden. Ja.",
+              "Kleiner Mehrfachaustausch: Jede feste Gebühr verteilt sich schmerzhafter, so viel wie möglich für die gesamte Reise",
+              "Kein Vergleich mehrerer Banken mit dem Tausch: Der Unterschied könnte einige Prozentpunkte betragen, und die Waren wären weniger als drei."
             ]
           },
           {
             "type": "p",
-            "text": "Kartenkäufe werden meist zum Kurs der internationalen Organisation abgerechnet und sind günstiger als Bargeldtausch, doch muss die Karte gebührenfreien Währungsumtausch bieten. Bei grenzüberschreitenden Anlagen beachte, dass Kursschwankungen einen Teil der Rendite auffressen – analog zur Gebührenerosion im [Einstieg in Zinseszinsanlagen](/compound-interest-investing). Bei häufigen Ausgaben im Ausland lässt sich mit dem Ansatz von [wie man Hypothekenzinsen vergleicht](/compare-loan-interest-rates) auch die Tauschkosten in den Gesamtfinanzvergleich einbeziehen."
+            "text": "Der Verbrauch von Kreditkartenwäsche wird in der Regel zum Wechselkurs der internationalen Organisation berechnet, der oft besser ist als der Wechselkurs des Bargeldes, sofern anerkannt wird, dass die Karte frei von Währungsumrechnungsgebühren ist oder zusätzlichen 2 bis 3 Prozent unterliegt. Grenzüberschreitende Investitionen müssen auch beachten, dass Wechselkursschwankungen einen Teil der Gewinne ausgleichen, was mit der in [der Einführung in das Compound-Investment] (/Compunding-Interest-Investing) diskutierten Tariferosion übereinstimmt. Wenn Sie häufig Fremdwährungen im Ausland konsumieren oder konfigurieren, können Sie sich die Notwendigkeit von auf Fremdwährungen lautenden Verbindlichkeiten in Verbindung mit der [Frühkredit-Rückzahlungs-Strategie] ansehen, um Doppeldefizitverluste zu vermeiden."
           },
           {
             "type": "callout",
-            "text": "Fragt das POS-Terminal »in RMB abrechnen?«, immer »Nein« wählen – die ausgebende Bank zum lokalen Kurs abrechnen zu lassen, spart Geld."
+            "text": "Auf der POS-Maschine gibt es einen Hinweis auf eine \"RMB-basierte Abwicklung\", die immer \"Nein\" wählt und dass der Emittent in der lokalen Währung behandelt wird, normalerweise weniger teuer, und DCC ist eine übliche Möglichkeit für Unternehmen, einen Unterschied zu machen."
           },
           {
             "type": "h2",
-            "text": "Praktische Checkliste"
+            "text": "Betriebskontrollliste"
           },
           {
             "type": "p",
-            "text": "Vor der Reise bei der heimischen Bank die wichtigsten Bargeldbeträge vorbestellen, etwas lokale Währung für Notfälle behalten; große Käufe mit gebührenfreier Karte; nach der Rückkehr übriges Kleingeld rechtzeitig zurücktauschen, um weitere Kursschwankungen zu vermeiden. Zur vollständigen Finanzplanung siehe [Aufbau eines Notgroschens](/build-emergency-fund) und [Grundlagen der Einkommensteuer](/personal-tax-basics)."
+            "text": "Vor der Reise wurden wichtige Banknoten in inländischen Banken umgetauscht, so dass nur eine kleine Menge lokaler Währung für Notfallzwecke übrig blieb; der groß angelegte Verbrauch wurde durch eine umtauschfreie Kreditkarte abgedeckt; und die verbleibende Änderung wurde bei der Rückkehr rechtzeitig überwiesen, um einen sekundären Verlust aufgrund weiterer Wechselkursschwankungen zu vermeiden. Der vollständige Finanzplan ist in [Einrichtung eines Notfallfonds] (/Build-Emergency-Fonds) zur Aufbewahrung von Bargeld in Fremdwährung als Teil des Reiseausfalls und in den [Personensteuer-Bemessungsgrundlage] (/Personensteuer-Grundlagen) Anforderungen für die Erklärung von außerhalb des Landes verdienten Einkommen festgelegt, um keine Verzögerungen aufgrund von Unterberichterstattung zu verursachen. Es dauert 10 Minuten, um das Geld von zwei Banken zu kaufen und zu verkaufen, spart oft die nächste Mahlzeit, mit einer kleinen Menge an echtem Geld und Silber, und zögert nicht, zu konkurrieren."
           }
         ]
       },
       "personal-tax-basics": {
-        "title": "Grundlagen der Einkommensteuer: Freibetrag und Sonderausgaben voll ausschöpfen",
-        "excerpt": "Viele zahlen zu viel Steuer, nur weil sie die Sonderausgaben nicht postenweise geltend machen – legale Steueroptimierung beginnt beim Ausfüllen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Die Grundlage der persönlichen Einkommensteuer: Wo soll man anfangen, wie man die speziellen Abzüge verwendet?",
+        "excerpt": "Viele haben ungerechte Steuern gezahlt, aber nur, weil keine speziellen Abzüge auf einer Fall-zu-Fall-Basis erklärt worden sind, und gesetzliche Steuern beginnen mit dem Ausfüllen eines passenden Formulars.",
         "blocks": [
           {
             "type": "p",
-            "text": "Der Steuerfreibetrag für Einwohner beträgt 5.000 Yuan pro Monat, der Überschuss wird nach einem progressiven Tarif mit sieben Stufen erhoben. Doch die eigentliche Steuerlast bestimmen die Abzüge: neben den Sozialversicherungen gibt es Sonderausgaben für Kindererziehung, Weiterbildung, schwere Krankheiten, Hypothekenzinsen oder Miete, Pflege älterer Angehöriger und Betreuung von Kleinkindern unter drei Jahren – deren postenweise Geltendmachung senkt die Steuerschuld legal."
+            "text": "Der Ausgangspunkt für die persönliche Einkommensteuer für unsere Bewohner ist $ 5.000 pro Monat, die teilweise auf der Sieben-Grad-überschuss progressive Steuer basiert, und je höher die Grenzsteuer auf Einkommen. Aber was die Steuerlast wirklich betrifft, sind die Abzüge: Neben speziellen Abzügen wie fünf Versicherungsprämien gibt es spezielle Abzüge für die Bildung von Kindern, die Weiterbildung, die medizinische Versorgung, Zinsen oder Mieten für Wohnungsbaudarlehen, den Unterhalt im Alter, die Betreuung von Kindern unter drei Jahren usw. Die gesetzliche Reduzierung der zu versteuernden Beträge, wie sie von Fall zu Fall erklärt wird, entspricht einer Lohnerhöhung ohne Einkommensänderung, wobei viele Tausende von Dollar pro Jahr einsparen."
           },
           {
             "type": "h2",
-            "text": "Am häufigsten übersehene Abzüge"
+            "text": "Die am leichtesten weggelassenen Abzüge."
           },
           {
             "type": "ul",
             "items": [
-              "Hypothekenzinsen und Miete sind entweder-oder zu wählen, der höhere Betrag zählt",
-              "Pflege älterer Angehöriger: nicht alleinstehende Kinder teilen den Betrag mit Geschwistern",
-              "Schwere Krankheiten: über die Krankenversicherung hinausgehender Teil innerhalb der Grenze abzugsfähig",
-              "Weiterbildung: akademische Bildung und Berufsqualifikationen haben je eigene Pauschalen"
+              "Die Zinsen und die Miete für den Wohnungsbaukredit können nur doppelt geprüft werden, kostengünstiger auf der Grundlage einer hochwertigen Erklärung, und beide sind auszufüllen.",
+              "Altersunterstützung: Ein Kind, das kein Einzelkind ist, soll mit einem Bruder oder einer Schwester geteilt werden und darf nicht vollständig allein beschäftigt oder systematisch zurückgeführt werden",
+              "Medizinische Behandlung bei schweren Krankheiten: Der Überschuss der Krankenversicherung ist innerhalb des Limits abzugsfähig, unter Berücksichtigung von Aufbewahrungsbelegen und Abrechnungserklärungen",
+              "Weiterbildung: Ausbildungs- und Berufsqualifikationen unterliegen gesonderten Quoten, die Prüfung entfällt und die Förderung wird besteuert."
             ]
           },
           {
             "type": "p",
-            "text": "Die Sonderausgaben werden über die Steuer-App bei der jährlichen Jahresabrechnung eingetragen; versäumte Posten lassen sich bis zum 30. Juni des Folgejahres nachholen. Der sinnvolle Abzug wirkt wie eine indirekte Gehaltserhöhung – das Ersparte kann in [Aufbau eines Notgroschens](/build-emergency-fund) oder den [Einstieg in Zinseszinsanlagen](/compound-interest-investing) fließen. Zu den abzugsfähigen Details rund um Kredite siehe [Strategie für vorzeitige Kredittilgung](/early-loan-repayment-strategy) – denn auch Hypothekenzinsen sind abzugsfähig."
+            "text": "Zweckgebundene Abzüge werden über eine Steuer-App zum Zeitpunkt der jährlichen Überweisung gemeldet, und die Auslassung wird bis zum 30. Juni des folgenden Jahres hinzugefügt, was der Rückkehr der überschüssigen Steuer entspricht. Angemessene Verwendung der eingesparten Mittel kann auf [Einrichtung von Notfallfonds] (/Gebäude-Notfonds) oder [Retribution-Investment-Eintrag] (/Zinsinvesting) verlagert werden. Die Details der kreditbezogenen Abzüge werden vorgeschlagen, um gegen die [Frühkredit-Rückzahlungs-Strategie] (/Frührückzahlungs-Strategie) geplant zu werden, da die Rückzahlung der Hypothek selbst absetzbare Zinsen generieren kann, die sich auf Ihre Cashflow-Vereinbarungen und vorzeitige Rückzahlungsentscheidungen auswirken."
           },
           {
             "type": "callout",
-            "text": "Der Jahresbonus kann separat oder mit dem Gesamteinkommen versteuert werden – rechne beide durch und wähle die günstigere; die Differenz kann über 1.000 Yuan betragen."
+            "text": "Die ende des jahres auszeichnungen können separat oder kombiniert gezählt werden, und der unterschied zwischen den beiden methoden, je nachdem, was provinzieller ist, kann so hoch wie tausende oder mehr sein."
           },
           {
             "type": "h2",
-            "text": "Zu beachten bei verschiedenen Einkunftsarten"
+            "text": "Einkommensübergreifender Fokus"
           },
           {
             "type": "p",
-            "text": "Gehalt, Honorare, Tantiemen und Lizenzgebühren werden zu den Gesamteinkünften zusammengefasst und jährlich versteuert; wer mehrere Einkommensquellen hat, muss die Jahresabrechnung besonders beachten, um Nachzahlungen oder Säumniszuschläge wegen zu niedriger Vorauszahlung zu vermeiden. Zur Deklaration ausländischer Einkünfte im Zusammenhang mit Wechselkursen siehe [Hinweise zum Währungstausch](/currency-exchange-tips). Zum Gesamtplanungsansatz [wie man Hypothekenzinsen vergleicht](/compare-loan-interest-rates)."
+            "text": "Die Kombination von Löhnen, Arbeitszahlungen, Manuskripten und Lizenzgebühren ist eine Jahressteuer auf den kombinierten Erlös, so dass diejenigen mit mehreren Einkommensquellen sich mehr mit der Berechnung ihrer Beiträge, der Vermeidung von Vorauszahlungen und sogar dem Stillstand befassen. Für ausländische Einkommenserklärungen mit Wechselkursen kann auf das Kostenbewusstsein in [Währungs-Wechselkursen] verwiesen werden. Der Gesamtplanungsansatz besteht darin, den Zinssatz für die Hypothek zu vergleichen (/Darlehenszinssätze zu vergleichen), der die Steuerlast, den Zinssatz und den Cashflow in derselben Tabelle wiegt, um die vorteilhafteste Wahl für sich selbst zu treffen."
           }
         ]
       },
       "body-fat-percentage-guide": {
-        "title": "Wie man den Körperfettanteil liest: Normen für Männer und Frauen unterscheiden sich – lass dich nicht vom Gewicht täuschen",
-        "excerpt": "Normales Gewicht bedeutet nicht automatisch gesunde Figur – der Körperfettanteil ist der Schlüsselwert für den Fettgehalt. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Was halten Sie von der Lipidrate?",
+        "excerpt": "Normales Körpergewicht ist nicht gleich Körpergesundheit, und das Lipid-Verhältnis ist der Schlüsselindikator für den Fettgehalt, und die Standards für Männer und Frauen sind nicht die gleichen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Viele starren täglich auf die Waage, übersehen aber eine wichtigere Zahl – den Körperfettanteil. Das Gewicht umfasst Muskeln, Wasser, Knochen und Fett; zwei Menschen mit gleichem Gewicht können völlig unterschiedliche Körperfettanteile haben. Der Körperfettanteil spiegelt den Anteil des Körperfetts direkt wider und zeigt besser als das bloße Gewicht, ob du »verstecktes Fett« hast."
+            "text": "Viele Menschen starren jeden Tag auf die Gewichtsskalen und ignorieren eine wichtigere Zahl - die Lipidrate. Das Körpergewicht besteht aus Muskeln, Feuchtigkeit, Knochen und Fett, zwei Personen mit identischem Gewicht, und das Lipid-Verhältnis kann signifikant variieren: einer kann ein Muskelgewicht, Fett-niedriger Turner sein, und der andere kann ein \"Buff-Mann\" mit kleinen Muskeln und hohem innerem Fett sein. Die Lipidrate ist eine direkte Reflexion des Fettgehalts des Körpers, die mehr darauf hinweist, ob Sie \"versteckt fettleibig\" sind als Ihr bloßes Körpergewicht: Sie sind nicht fettleibig, aber Sie haben ein hohes inneres Fett, und das Risiko von kardiovaskulären und metabolischen Risiken für solche Menschen ist nicht gering, und Ihr Gewicht allein ist ernsthaft falsch berechnet."
           },
           {
             "type": "h2",
-            "text": "Gesunde Bereiche unterscheiden sich bei Männern und Frauen"
+            "text": "Es gibt einen Unterschied zwischen den Gesundheitszonen von Männern und Frauen"
           },
           {
             "type": "ul",
             "items": [
-              "Erwachsene Männer: gesunder Körperfettanteil etwa 10–20 %",
-              "Erwachsene Frauen: etwa 18–28 %, schwankt stärker mit dem Zyklus",
-              "Über 25 % (Männer) bzw. 32 % (Frauen) gilt meist als adipös",
-              "Sportler haben noch niedrigere Werte, sollten das Extrem aber nicht dauerhaft anstreben"
+              "Das Gesundheitsfettverhältnis für erwachsene Männer beträgt etwa 10 bis 20 Prozent, und der Körper ist so niedrig wie 6 bis 13 Prozent.",
+              "Etwa 18 bis 28 Prozent der erwachsenen Frauen sind stärker von Physiologie und Hormonen betroffen.",
+              "Über 25% männlich und 32% weiblich gelten normalerweise als fettleibig.",
+              "Athleten haben eine niedrigere Lipidrate, aber es ist nicht angemessen, sie langfristig zu verfolgen, um endokrine und Immunisierung nicht zu beeinflussen."
             ]
           },
           {
             "type": "p",
-            "text": "Es gibt viele Messmethoden: Caliper im Studio, Bioimpedanzwaage zu Hause, DXA-Scan im Krankenhaus – die Genauigkeit steigt in dieser Reihenfolge. Hauswaagen schwanken stark mit Trinken, Sport und Tageszeit; miss am besten jeden Morgen nüchtern zur selben Zeit und schau auf den Trend, nicht auf einen Einzelwert. Mit dem Verständnis des Körperfetts lässt sich mit [wie man das Fettverlust-Kaloriendefizit berechnet](/fat-loss-calorie-deficit) ein Ziel festlegen und mit [wie viel Protein pro Tag](/daily-protein-intake) die Muskeln erhalten."
+            "text": "Es gibt viele Möglichkeiten, die Lipidrate zu messen: Das Gymnasium ist billig, aber abhängig von der Methode, das Gymnasium hat eine große Fehlerquote, die biotemporale Widerstandsfähigkeit des Haushalts wird durch Wasserverbrauch, Bewegung und Zeiträume beeinflusst, und das Krankenhaus DXA hat die höchste, aber teure gescannte Genauigkeit. Es wird empfohlen, einen festen Morgenbauch, Urin und das gleiche Instrument zu messen, um Trends zu sehen, anstatt einen einzigen absoluten Wert. Nach dem Verständnis des Lipids kann ein angemessenes Ziel in Kombination mit [Fett-Verlust-Kalorien-Defizit] (/Fett-Kalorien-Defizit) und in Bezug auf [die tägliche Proteinaufnahme] (/die tägliche Proteinaufnahme) festgelegt werden, um die Muskeln während der Lipidreduktionszeit zu halten, um den Verlust der Schuppen mit dünnem Fleisch und einen schnelleren Rückprall zu vermeiden."
           },
           {
             "type": "callout",
-            "text": "Zu niedriger Körperfettanteil stört bei Frauen den Hormonhaushalt bis zur Amenorrhö – niedriger ist nicht besser; die gesunde Kurve zählt mehr als die Zahl."
+            "text": "Eine Frau mit zu niedrigem Lipid (weniger als 17 Prozent) kann die Endokrine stören oder sogar aufhören. Je niedriger die Lipide, desto besser, desto besser ist die gesunde Kurve wichtiger als eine Zahl, besonders wenn Frauen im gebärfähigen Alter nicht blind sinken."
           },
           {
             "type": "h2",
-            "text": "Wie man Körperfett und Gewicht zusammen liest"
+            "text": "Wie passen Fett und Gewicht zusammen? Schauen Sie."
           },
           {
             "type": "p",
-            "text": "In der Fettverlustphase ist ein häufiges Phänomen: das Gewicht bleibt gleich, aber der Taillenumfang schrumpft – ein gutes Zeichen für weniger Fett und mehr Muskeln. Darum erfasse gleichzeitig Gewicht, Körperfettanteil und Umfang und lass dich nicht von kurzfristigen Gewichtsschwankungen verjagen. Zur umfassenden Körperwertekontrolle weiterführend [wie man den Grundumsatz berechnet](/basal-metabolic-rate) und [Einstieg in Herzfrequenz-Trainingszonen](/heart-rate-training-zones)."
+            "text": "Fettreduktion ist üblich: Das Körpergewicht wird nicht verändert, aber die Taille ist kleiner und die Kleidung ist lockerer, was ein gutes Zeichen für den Verlust von Fett und Muskeln ist. Bitte notieren Sie daher gleichzeitig Körpergewicht, Lipidverhältnis und Kondensation und lassen Sie sich nicht von kurzfristigen Körpergewichtsschwankungen abschrecken - das Körpergewicht wird durch Feuchtigkeit, Zuckerebenen, Defäkation beeinflusst und kann an einem Tag mehr als 1 kg schwingen. Um die Körperindikatoren umfassend zu verwalten, wird durch eine erweiterte Messung der [Basal-Metabolic-Rate] (/Basal-Metabolic-Rate) verstanden, woher der tägliche Verbrauch kommt, und [Herz-Rate-Trainingszonen] (/Herz-Rate-Trainingszonen) erhöht die Effizienz der Lipidreduktion mit motorischer Stärke, wodurch der Fettabfall effizienter wird."
           }
         ]
       },
       "basal-metabolic-rate": {
-        "title": "Wie man den Grundumsatz berechnet: Dein Körper verbrennt auch in Ruhe Kalorien",
-        "excerpt": "Der Grundumsatz macht über 60 % des täglichen Verbrauchs aus – nur wer ihn kennt, setzt wissenschaftlich Kalorienziele. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Was ist mit der grundlegenden metabolischen Rate: Ihr Körper brennt immer noch Hitze.",
+        "excerpt": "Der grundlegende Stoffwechsel macht mehr als 60 Prozent des täglichen Verbrauchs aus, so dass er ein wissenschaftliches Kalorienziel anstelle einer blinden Diät festlegen kann.",
         "blocks": [
           {
             "type": "p",
-            "text": "Der Grundumsatz (BMR, Basal Metabolic Rate) ist die Wärmemenge, die der Körper im wachen, liegenden, nüchternen und temperaturkonstanten Zustand für Herzschlag, Atmung und andere Lebensfunktionen verbraucht – meist 60–70 % des täglichen Gesamtverbrauchs. Kennt man seinen BMR und multipliziert ihn mit dem Aktivitätsfaktor, schätzt man den täglichen Gesamtverbrauch (TDEE) – der Ausgangspunkt jeder Ernährungsplanung."
+            "text": "Die grundlegende metabolische Rate (BMR) bezieht sich auf die Menge an Wärme, die der menschliche Körper bei Lebensaktivitäten wie der Aufrechterhaltung des Herzschlags, der Atmung, der Körpertemperatur, der Zellreparatur usw. in einem Zustand der Nüchternheit, der Stille, des leeren Abdomens und der konstanten Temperatur verbraucht, was normalerweise 60 bis 70 Prozent des gesamten täglichen Verbrauchs ausmacht. Die Kenntnis ihrer eigenen BMR mit einem Aktivitätsfaktor kann den täglichen Gesamtverbrauch (TDEE) abschätzen, was der eigentliche Ausgangspunkt für alle Diäten und Sportpläne ist. Wenn Sie nicht wissen, wie viel Sie an einem Tag verbrennen werden, ist es nur ein Gefühl, dass es einfach ist, entweder zu wenig Muskeln zu essen oder zu viel nicht dünn zu essen."
           },
           {
             "type": "h2",
-            "text": "Gängige Schätzformeln"
+            "text": "Gemeinsame Schätzformel"
           },
           {
             "type": "ul",
             "items": [
-              "Mifflin-St-Jeor-Formel: gilt als recht genau, braucht Gewicht, Größe, Alter, Geschlecht",
-              "Männer-BMR ≈ 10×kg + 6,25×cm − 5×Alter + 5",
-              "Frauen-BMR ≈ 10×kg + 6,25×cm − 5×Alter − 161",
-              "Aktivitätsfaktor von 1,2 (sitzend) bis 1,9 (sehr intensiv)"
+              "Mifflin-St Jeor Formel: derzeit als geeigneter akzeptiert, mit vier Arten von Gewicht, Größe, Alter, Geschlecht",
+              "Männer BMR entspricht etwa 10 x kg + 6,25 x cm - 5 x Alter + 5",
+              "Weibliche BMR entspricht etwa 10 x kg + 6,25 x cm - 5 x Alter - 161",
+              "Aktivitätskoeffizienten reichen von lang sitzenden 1,2 bis hochintensiven 1,9, und die meisten Menschen gehen tatsächlich von 1,3 bis 1,5."
             ]
           },
           {
             "type": "p",
-            "text": "Nach dem BMR lässt sich in der Fettverlustphase ein Defizit aufbauen, doch sollte es nicht zu groß sein, um Muskeln und Stoffwechsel nicht zu ruinieren. Wie das Defizit konkret festgelegt wird, steht in [wie man das Fettverlust-Kaloriendefizit berechnet](/fat-loss-calorie-deficit). Zudem steigt der Grundumsatz mit der Muskelmasse, also sind [wie viel Protein pro Tag](/daily-protein-intake) und Krafttraining ebenso entscheidend. Zur Prüfung der Trainingsintensität siehe [Einstieg in Herzfrequenz-Trainingszonen](/heart-rate-training-zones)."
+            "text": "Nachdem BMR berechnet wurde, kann eine Lücke auf einer Gesamtverbrauchsbasis geschaffen werden, aber die Lücke sollte nicht zu groß sein, sonst fallen die Muskeln, der Stoffwechsel fällt und wird später schwieriger. Was sind die spezifischen Lücken und was ist der Bezug zu [Fett-Verlust-Kalorien-Defizit]? Zur gleichen Zeit, je höher die Muskelmasse, desto höher ist der grundlegende Stoffwechsel, so dass [die tägliche Proteinzufuhr] (/tägliche Proteinzufuhr) genauso wichtig ist wie Krafttraining, und die Muskelverstärkung ist die spektrogenste Methode für den Langzeitmetabolismus. Um die Stärke der Übung zu überprüfen, steht der [Herzfrequenz-Trainingsbereichseintritt] (/Herzfrequenz-Trainingszonen) zur Verfügung."
           },
           {
             "type": "callout",
-            "text": "Dauerhaft sehr kalorienarme Diäten versetzen den Körper in den »Energiesparmodus« – der Jojo-Effekt fällt oft heftiger aus; zieh das Defizit nicht aufs Äußerste."
+            "text": "Langfristige, sehr kalorienarme Diäten ermöglichen es, dass der bodenständige Stoffwechsel in das \"Energiesparmodell\" eintritt, und der Grundstoffwechsel kann um mehr als 10 Prozent zurückgehen, wobei der Rebound oft stärker ist als zuvor, um die Lücke nicht bis zum Extrem zu ziehen."
           },
           {
             "type": "h2",
@@ -19443,134 +19461,134 @@
           },
           {
             "type": "p",
-            "text": "Muskelmasse, Alter, Schilddrüsenfunktion und sogar Körpertemperatur beeinflussen den BMR. Ab 30 sinkt der Stoffwechsel pro Jahrzehnt natürlich etwas, weshalb im mittleren Alter Training und Ernährung wichtiger werden. Zur ganzheitlichen Körperwertekontrolle empfiehlt sich die Kombination mit [wie man den Körperfettanteil liest](/body-fat-percentage-guide) und [die Wissenschaft des Schlafzyklus](/sleep-cycle-explained)."
+            "text": "Muskelmasse, Alter, Schilddrüsenfunktion, sogar Körpertemperatur und Gene beeinflussen BMR. Nach 30 Jahren nimmt der Stoffwechsel auf natürliche Weise alle 10 Jahre um zwei bis drei Prozent ab, was die Mitte der Jahre abhängiger von Training und Ernährungsunterstützung macht. Koffein und Chili sind kurzlebige und kleine Metabolismen, aber ihre Auswirkungen sind begrenzt und können nicht verlassen werden. Integriertes Body Indikator Management. Es wird empfohlen, Fettveränderungen in Verbindung mit [Körperfett-Prozentsatz-Leitfaden] zu beurteilen und mit [Schlafzykluswissenschaft] (/Schlafzyklus-erklärt) zu optimieren, da unzureichender Schlaf auch den täglichen Stoffwechsel und die Appetitkontrolle senkt."
           }
         ]
       },
       "fat-loss-calorie-deficit": {
-        "title": "Wie man das Fettverlust-Kaloriendefizit berechnet: Wie viel weniger pro Tag, ohne Muskeln zu verlieren",
-        "excerpt": "Fettverlust bedeutet ein Kaloriendefizit, doch dessen Größe entscheidet, ob du Fett oder Muskeln abbaust. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Was meinen Sie mit \"Fat-Down\"?",
+        "excerpt": "Es ist im Wesentlichen eine Wärmelücke, aber die Größe der Lücke bestimmt, ob Sie Fett oder Muskeln verlieren, und Geschwindigkeit ist der Schlüssel.",
         "blocks": [
           {
             "type": "p",
-            "text": "Die Logik des Fettverlusts ist nur eine: Die aufgenommene Energie liegt dauerhaft unter dem Verbrauch, es entsteht ein Defizit, und der Körper nutzt Fett als Energie. Theoretisch enthält 1 kg Fett etwa 7.700 kcal; bei einem täglichen Defizit von 500 kcal verlierst du etwa alle 15 Tage 1 kg Fett. Doch zu schneller Verlust bedeutet oft Wasser und Muskeln statt reinem Fett."
+            "text": "Die unterste Logik des Lipidverlustes ist nur eine: Der Wärmeverbrauch ist chronisch niedriger als der Wärmeverbrauch und schafft eine Lücke, in der der Körper Fett für Energie verwendet. Theoretisch enthält ein Kilogramm Fett etwa 7.700 Kilokalorien, und wenn eine 500 Kilokalorien-Lücke pro Tag entsteht, gehen etwa 15 Tage um ein Kilogramm Fett verloren. Aber es ist die Feuchtigkeit und der Muskel, die zu schnell verloren gehen, anstatt reines Fett, weshalb viele Menschen sich schnell erholen, wenn sie ihre Schuppen verlieren - die Muskeln fallen, der Stoffwechsel sinkt und eine normale Ernährung hortet sofort das Fett."
           },
           {
             "type": "h2",
-            "text": "Wie groß das Defizit sicher ist"
+            "text": "Es ist eine sicherere Lücke."
           },
           {
             "type": "ul",
             "items": [
-              "Defizit bei 15–20 % des Gesamtverbrauchs halten",
-              "Für Normalpersonen etwa 300–500 kcal täglich sicher",
-              "Pro Woche nicht mehr als 1 % des Körpergewichts abnehmen, um Stoffwechselschäden zu vermeiden",
-              "In der Plateauphase zuerst das Kalorienprotokoll prüfen, statt blind weiter zu kürzen"
+              "Es wird empfohlen, die tägliche Lücke bei 15 bis 20 Prozent des Gesamtverbrauchs zu begrenzen, moderat und nachhaltig",
+              "Der durchschnittliche Mann ist etwa 300 bis 500 Kilokalorien pro Tag.",
+              "Der Gewichtsverlust übersteigt nicht ein Prozent des Gewichts pro Woche, um metabolische Schäden und Muskelverlust zu vermeiden.",
+              "Überprüfen Sie während der Plattformzeit, ob der Kalorienrekord fehlt, anstatt die Hitze blind zu schneiden"
             ]
           },
           {
             "type": "p",
-            "text": "Zwei Wege führen zum Defizit: weniger essen oder mehr bewegen, am besten beides. Zuerst den Gesamtverbrauch nach [wie man den Grundumsatz berechnet](/basal-metabolic-rate) ermitteln, dann die Zielaufnahme festlegen. Ausreichend Protein erhält die Muskeln, Details in [wie viel Protein pro Tag](/daily-protein-intake); guter Schlaf stabilisiert die Hungerhormone, siehe [die Wissenschaft des Schlafzyklus](/sleep-cycle-explained). Den Körperfettanteil lässt sich mit [wie man den Körperfettanteil liest](/body-fat-percentage-guide) verfolgen."
+            "text": "Es gibt zwei Möglichkeiten, die Lücke zu schließen: Um weniger zu essen oder sich mehr zu bewegen, wäre es besser, in beide Richtungen zu gehen, wobei die Hälfte der Last einfacher und nachhaltiger ist. Berechnen Sie den Gesamtverbrauch mit [Basal-Metabol-Rate] vor der Zielaufnahme. Die Kombination mit ausreichend Proteinen konserviert die Muskeln, wie in [wie viel der täglichen Proteinzufuhr] (/tägliche Proteinzufuhr) beschrieben; Sicherstellen, dass der Schlaf auch magersüchtige Hormone stabilisiert, in Bezug auf [Schlafzyklus-erklärt] (/Schlafzyklus-erklärt) und erhöht den Hunger in der kurzen Schlafphase wird Sie am nächsten Tag hungrig machen. Die Lipiddaten können den tatsächlichen Fortschritt verfolgen, nicht nur den Körper-Fett-Prozentsatz-Leitfaden, indem sie [das Körper-Fett-schnelle Verhältnis] verwenden."
           },
           {
             "type": "callout",
-            "text": "Viele unterschätzen die Aufnahme und überschätzen den Verbrauch; protokolliert man drei Tage ehrlich in einer App, stellt man oft fest, dass man tatsächlich 20 % mehr gegessen hat."
+            "text": "Viele Menschen unterschätzen die Menge an Nahrung, die sie essen, überschätzen den Konsum und notieren ihn drei Tage lang in Form einer APP. Oft stellen sie fest, dass sie tatsächlich 20 Prozent mehr essen, oft wegen dem, was sie \"Ich esse wenig, aber nicht dünn\" nennen."
           },
           {
             "type": "h2",
-            "text": "Was in der Plateauphase zu tun ist"
+            "text": "Was passiert, wenn man eine Plattform trifft?"
           },
           {
             "type": "p",
-            "text": "Nach Gewichtsverlust sinkt auch der Gesamtverbrauch, das ursprüngliche Defizit verkleinert sich natürlich – das ist der physiologische Grund der Plateauphase. Dann leicht die Ernährung anpassen oder den nicht sportlichen Aktivitätsverbrauch erhöhen (mehr gehen, mehr stehen), statt extrem zu hungern. Ob die Trainingsintensität reicht, zeigt [Einstieg in Herzfrequenz-Trainingszonen](/heart-rate-training-zones)."
+            "text": "Der Gesamtverbrauch nimmt ab, wenn das Körpergewicht sinkt, und die ursprüngliche Lücke nimmt natürlich ab, was die biologische Ursache der Plattformperiode ist, nicht Ihr Stoffwechsel oder Ihre körperlichen Probleme. An diesem Punkt können Diäten fein abgestimmt oder nicht-motorische Aktivität Verbrauch (viele Gehen, Stehen, Hausarbeit) erhöht werden, anstatt extreme Diäten, die weiter metabolisch zerquetschen. Ob die Motorkraft ausreicht, um von der [Herzfrequenz-Trainingszone] (/Herzfrequenz-Trainingszonen) beurteilt zu werden, um sicherzustellen, dass Aerobic tatsächlich in den Geschmack fällt, anstatt langsam zu gehen, als ob sie wirbeln würden. Verlangsamt auf ein halbes Pfund pro Woche, ist es einfacher, mehr als ein Jahr zu halten, viel besser als ein schneller Rebound nach kurzen Perioden der Dünnheit, viel schneller."
           }
         ]
       },
       "daily-protein-intake": {
-        "title": "Wie viel Protein pro Tag: Unverzichtbar beim Training und Fettverlust",
-        "excerpt": "Protein bestimmt Muskelerhalt und Sättigung – die Menge richtet sich nach dem Gewicht, nicht nach Schätzung. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Die tägliche Proteinzufuhr: körperliche Fitness und Lipidverlust.",
+        "excerpt": "Protein bestimmt Muskelretention und Bauchsättigung, und die Aufnahme wird nach Gewicht und nicht nach einer Schätzung gemessen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Protein ist der Grundbaustein für Muskeln, Enzyme und Immunzellen. Eine sitzende Person sollte etwa 0,8–1 g pro kg Körpergewicht pro Tag aufnehmen; bei Krafttraining oder Fettverlust sind 1,6–2,2 g ratsam, da höhere Zufuhr Muskeln erhält, den thermischen Effekt der Nahrung steigert und die Sättigung verstärkt."
+            "text": "Protein ist das Grundmaterial für Muskeln, Enzyme, Hormone und immunzelluläre Zellen und ist besonders wichtig für die Lipidreduktion. Gewöhnliche sitzende Erwachsene empfehlen etwa 8 bis 1 g / kg Gewicht pro Tag; Die Zeit des Krafttrainings oder des Lipidverlusts sollte auf 1 6 bis 2 g / kg erhöht werden, da höhere Aufnahmen die Muskeln erhalten, die Nahrungswärme erhöhen (Verdauungsproteine selbst erwärmen mehr) und die Bauchsättigung erhöhen, so dass Sie bei der Kontrolle der Hitze weniger wahrscheinlich verhungern. Essen genug Protein ist der wichtigste Schlüssel zum Verlust von Muskeln."
           },
           {
             "type": "h2",
-            "text": "Wie man es auf die Mahlzeiten verteilt"
+            "text": "Wie bekommen wir drei Mahlzeiten?"
           },
           {
             "type": "ul",
             "items": [
-              "Pro Mahlzeit 25–40 g Protein werden am besten verwertet",
-              "Frühstück wird oft vernachlässigt; Protein darin reduziert Tages-Heißhunger",
-              "Innerhalb von zwei Stunden nach dem Sport wirkt die Zufuhr besser",
-              "Pflanzliches und tierisches Protein kombinieren ergänzt Aminosäuren"
+              "25 bis 40 Gramm Protein sind die höchsten pro Mahlzeit, nicht alle gestapelt und breitet sich leichter aus.",
+              "Das Frühstück wird oft ignoriert, Proteine reichen aus, um die ganztägigen Impulse zu reduzieren und den Blutzucker zu stabilisieren.",
+              "Nach zwei Stunden Übung ist es besser, es mit Kohlenstoff- und Wasserrückgewinnung und Zuckerrückgewinnung zu ergänzen.",
+              "Pflanzen und tierische Proteine können Aminosäuren ergänzen, und Puritane müssen vielfältiger sein."
             ]
           },
           {
             "type": "p",
-            "text": "Beispiel: Eine 70 kg schwere Person in der Fettverlustphase braucht bei 1,8 g pro kg etwa 126 g Protein täglich, verteilt auf drei Mahlzeiten plus einen Snack. Ausreichend Protein ist der Schlüssel, in [wie man das Fettverlust-Kaloriendefizit berechnet](/fat-loss-calorie-deficit) Muskeln zu erhalten, und stützt die Muskelmasse, von der [wie man den Grundumsatz berechnet](/basal-metabolic-rate) abhängt. Zur Trainingsintensität siehe [Einstieg in Herzfrequenz-Trainingszonen](/heart-rate-training-zones)."
+            "text": "Im Falle einer Person, die dabei ist, 70 Kilogramm zu entgiften, würde es ungefähr 126 Gramm Protein pro Tag zu 1,8 Gramm pro Kilogramm nehmen, verteilt auf drei Mahlzeiten plus eine zusätzliche Mahlzeit, was ungefähr 30 Gramm pro Mahlzeit entspricht. Ausreichende Proteine sind der Schlüssel zur Verhinderung von Muskelverlust in [Fett-Verlust-Kalorien-Defizit] und unterstützen die Muskelmasse, von der [Basal-Metabolic-Rate] abhängt. Trainingsintensitätsanordnungen können auf [die Einführung in den Herzfrequenz-Trainingsbereich] (/Herzfrequenz-Trainingszonen) bezogen werden."
           },
           {
             "type": "callout",
-            "text": "Bei Nierenerkrankung muss Protein ärztlich begrenzt werden; für gesunde Menschen ist eiweißreiche Ernährung nicht nachweislich schädlich für die Nieren."
+            "text": "Nierenanomalien sind auf Proteine beschränkt, wie vom Arzt verschrieben, und normale proteinreiche Diäten stellen kein klares Risiko für die Nieren dar und müssen sich nicht zu viele Sorgen machen, verlieren aber oft Muskeln aufgrund von Proteinmangel."
           },
           {
             "type": "h2",
-            "text": "Hochwertige Proteinquellen"
+            "text": "Quelle von Qualitätsprotein"
           },
           {
             "type": "p",
-            "text": "Hähnchenbrust, Fisch, Eier, Milchprodukte, Tofu und Sojamilch sind hochwertige Quellen, wobei tierisches Protein die vollständigere Aminosäurenbewertung hat. Bei pflanzlicher Ernährung Getreide und Hülsenfrüchte sinnvoll kombinieren. Zur Körperzusammensetzung passt die Kombination mit [wie man den Körperfettanteil liest](/body-fat-percentage-guide) und [die Wissenschaft des Schlafzyklus](/sleep-cycle-explained) für eine umfassende Bewertung."
+            "text": "Hühnerbrüste, Fisch, Eier, Milchprodukte, Tofu und Sojabohnen sind alle hochwertige Quellen, mit vollständigeren und absorbierenden Aminosäuren für tierische Proteine und Pflanzenproteine, die zu Hülsenfrüchten komplementär sind. Wenn Sie an eine Veränderung der Zersetzung denken, können Sie einen Fettabfall in Kombination mit [Körperfett-Prozentsatz-Leitfaden] beobachten und eine Erholung mit [Schlafzykluswissenschaft] (/Schlafzyklus-erklärt) arrangieren, da das eigentliche Muskelwachstum in der Schlafreparaturphase statt im Training auftritt. Wenn Sie nicht genug essen, kann es mit griechischem Joghurt, Milch oder Proteinpulver ergänzt werden; Vegetarier neigen dazu, Bohnen und Getreide zu mischen, um Aminosäuren vollständiger und die Absorptionsrate weniger tierisches Protein zu machen."
           }
         ]
       },
       "sleep-cycle-explained": {
-        "title": "Die Wissenschaft des Schlafzyklus: Warum man sich bei acht Stunden Schlaf noch müde fühlt",
-        "excerpt": "Die Schlafqualität hängt vom Zyklus ab, nicht nur von der Dauer – in der falschen Phase aufzuwachen macht benommen. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Schlafzyklus Wissenschaft: Warum acht Stunden lang oder schläfrig schlafen?",
+        "excerpt": "Schlafqualität ist ein Zyklus, nicht nur eine Zeit, und das Aufwachen im falschen Stadium macht Sie den ganzen Tag ohnmächtig.",
         "blocks": [
           {
             "type": "p",
-            "text": "Der Schlaf eines Erwachsenen besteht aus vier bis sechs Zyklen pro Nacht, jeder etwa 90–110 Minuten, durchlaufen in den drei Phasen Leichtschlaf, Tiefschlaf und REM (Rapid Eye Movement). Tiefschlaf repariert den Körper, REM festigt Erinnerung und Emotionen. Klingelt der Wecker in der Tiefschlafphase, fühlt man sich selbst nach acht Stunden groggy – ein häufiger Grund für »ausgeschlafen, aber trotzdem müde«."
+            "text": "Der Erwachsenenschlaf besteht aus vier bis sechs Zyklen von jeweils etwa 90 bis 110 Minuten, die drei Schlafphasen, Tiefschlaf und schnelle Augenbewegung (REM) durchlaufen. Schlafen Sie gut, um den Körper zu reparieren, metabolische Abfälle zu entfernen, das Gedächtnis und die Emotionen zu stärken. Wenn der Wecker während des Tiefschlafs klingelt, kann er acht Stunden schlafen gehen und aufstehen, was der häufigste Grund für den \"Schlaf genug\" ist - das Problem ist nicht lang, aber der Rhythmus wird unterbrochen."
           },
           {
             "type": "h2",
-            "text": "Aufwachen mit dem Zyklus planen"
+            "text": "Verwenden Sie den Zyklus, um aufzustehen."
           },
           {
             "type": "ul",
             "items": [
-              "Einschlafzeit an ganzzahligen Vielfachen von 90 Minuten zurückrechnen",
-              "Bei 5 Zyklen etwa 7,5 Stunden – wacher als krampfhaft 8 Stunden",
-              "Feste Aufwachzeit stabilisiert die innere Uhr mehr als feste Einschlafzeit",
-              "Tiefschlaf liegt vormittag; Aufbleiben opfert die wertvollste Reparaturphase"
+              "Die ganze Zahl in 90 Minuten ist wissenschaftlicher, z. B. 5 Zyklen von etwa 7,5 Stunden",
+              "Nüchterner als acht Stunden, weil es einfacher ist, nachts zu schlafen oder am Ende von REM aufzuwachen",
+              "Fixe Weckzeiten sind stabiler als normaler Schlaf.",
+              "Schlafen ist meist in der ersten Hälfte der Nacht konzentriert."
             ]
           },
           {
             "type": "p",
-            "text": "Regelmäßiger Rhythmus beeinflusst die Erholungsqualität mehr als die Gesamtdauer. Schlaf hängt auch direkt mit Stoffwechsel und Appetit zusammen: bei zu wenig Schlaf steigt Ghrelin und sinkt Leptin, was die Umsetzung von [wie man das Fettverlust-Kaloriendefizit berechnet](/fat-loss-calorie-deficit) indirekt sabotiert. Zudem drückt ungenügende Erholung die Trainingsleistung – siehe [Einstieg in Herzfrequenz-Trainingszonen](/heart-rate-training-zones) zur Ruhepulsbeobachtung. Zur ergänzenden Ernährung [wie viel Protein pro Tag](/daily-protein-intake)."
+            "text": "Regelmäßigkeit beeinflusst die Qualitätswiederherstellung mehr als die Gesamtdauer. Schlaf ist auch direkt mit Stoffwechsel und Appetit verbunden: Hunger steigt und Dünnheit sinkt, wenn Sie zu wenig Schlaf haben, was indirekt die Umsetzung von [Fett-Verlust-Kalorien-Defizit] (/Fett-Verlust-Kalorien-Defizit) stört und Sie hungriger auf hohen Zucker macht. Gleichzeitig reduziert eine unzureichende Erholung die Trainingsleistung und kann durch die beobachtete Veränderung der statischen Herzfrequenz gegenüber [der Einführung in den Herzfrequenztrainingsbereich] (/Herzfrequenztrainingszonen) beurteilt werden. In Kombination mit der Ernährung wird auf [wie viel Protein täglich konsumiert wird] (/Täglich-Protein-Einnahme) verwiesen und die Erholungslücke ist schlecht synthetisiert."
           },
           {
             "type": "callout",
-            "text": "Eine Stunde vor dem Schlaf keine Bildschirme und kein Koffein; ein leicht kühles Schlafzimmer (etwa 18–20 °C) fördert den Tiefschlaf am besten."
+            "text": "Eine Stunde vor dem Schlafen ist weg von blauem Licht und Koffein, eine etwas niedrigere Schlafzimmertemperatur (etwa 18 bis 20 Grad) ist der beste Weg, um einzuschlafen, und Alkohol, während er hilft zu schlafen, zerstört REM und schläft nicht."
           },
           {
             "type": "h2",
-            "text": "Beurteilen, ob man gut schläft"
+            "text": "Wie schlafen Sie?"
           },
           {
             "type": "p",
-            "text": "Neben der Dauer zählt mehr: tagsüber natürlich wach, schnell einschlafend, nachts selten wach. Ein zweiwöchiges Schlafprotokoll offenbart Muster. Gesundheitswerte lassen sich zudem mit [wie man den Körperfettanteil liest](/body-fat-percentage-guide) und [wie man den Grundumsatz berechnet](/basal-metabolic-rate) zusammen bewerten."
+            "text": "Neben der Länge der Zeit ist es noch wichtiger, sich darauf zu konzentrieren, ob der Tag natürlich und wach ist, ob der Schlaf schnell ist, ob das Erwachen nachts häufig ist und ob der Morgen erfrischend ist. Eine zweiwöchige Schlafprotokollsuche kann aufgezeichnet werden, nicht nur für die Gesamtdauer der Zeit am Telefon. Insgesamt können Gesundheitsindikatoren auch mit einer Kombination von [Körperfett-Prozentsatz-Leitfaden] und [Basal-Metabolic-Rate] kombiniert werden, da Schlafunterschiede mit fettreich und niedrigkörnig kombiniert werden können, was die verborgene Ursache für die Stagnation vieler Menschen ist. Eine Mittagspause wird innerhalb von 20 bis 30 Minuten kontrolliert, sowohl um Energie zu gewinnen als auch um nicht in den Tiefschlaf zu gehen, was zu einer Ohnmacht am späten Nachmittag führt, was eine kostengünstigere Art der Sanierung ist als ein Bett."
           }
         ]
       },
       "percentage-increase-decrease": {
-        "title": "Wie man Prozentzu- und -abnahme berechnet: Warum nach erst Steigen dann Fallen der Ausgangspunkt nicht erreicht wird",
-        "excerpt": "Die Basis der Prozentänderung verschiebt sich: erst +50 % dann −50 % endet im Verlust, nicht beim Ausgangswert. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Wie zählt der prozentuale Anstieg oder Rückgang: Warum fällt er zurück?",
+        "excerpt": "Die Basis für prozentuale Erhöhungen oder Abnahmen wird sich ändern, mit einem Anstieg von 50 Prozent und einem Rückgang von 50 Prozent, was zu Verlusten und nicht zu Evens führt, wobei viele an der Basis falsch berechnet werden.",
         "blocks": [
           {
             "type": "p",
-            "text": "Der häufigste Fehler bei Zu- und Abnahme liegt in der »Basis«. Änderungen beziehen sich auf den jeweils aktuellen Wert; verschiebt sich die Basis, ändert sich der absolute Betrag derselben Prozentzahl. Steigt etwa ein Artikel erst um 50 % auf 150 Yuan und dann um 50 % – bezogen auf 150 Yuan – auf 75 Yuan, kehrt er nicht zu 100 Yuan zurück. Gleiche Prozentzahlen erst hoch dann runter liegen immer unter dem Start."
+            "text": "Am anfälligsten für Fehler bei der Berechnung von Erhöhungen oder Abnahmen ist, dass sich die Grundzahl mit jedem Schritt ändert. Sowohl Zu- als auch Abnahmen beziehen sich auf aktuelle Werte, und die Grundzahl hat sich geändert, wobei der gleiche Prozentsatz absoluten Beträgen entspricht. Zum Beispiel, wenn eine Ware 50 bis 150 steigt und 50 Prozent fällt, fällt sie auf 75 statt 100. Derselbe Prozentsatz steigt und fällt, und das Ergebnis liegt immer unter dem Ausgangspunkt, der mathematisch notwendig ist und den Instinkten widerspricht."
           },
           {
             "type": "h2",
@@ -19579,97 +19597,97 @@
           {
             "type": "ul",
             "items": [
-              "Wachstumsrate = (Neuer Wert − Alter Wert) ÷ Alter Wert × 100 %",
-              "Auch die Abnahmerate nutzt den alten Wert im Nenner, nicht den neuen",
-              "Aufeinanderfolgende Änderungen multiplizieren: Ende = Start × (1+10 %) × (1−10 %)",
-              "Zurück zum Start muss der Steigerungssatz größer sein als der vorige Fall"
+              "Wachstumsrate = (neu - original) ÷ Originalwert x 100%, Nenner immer mit Originalwert",
+              "Die Drop Rate basiert auch auf dem ursprünglichen Wert als Nenner, verwenden Sie also nicht den neuen Wert oder das Verhältnis ist verzerrt.",
+              "Multiplikator für aufeinanderfolgende Änderungen: Final = Originalwert x (1+10%) x (1-10%), nicht minus",
+              "Um zum ursprünglichen Punkt zurückzukehren, muss der prozentuale Anstieg größer sein als der vorherige Rückgang, und die Lücke erweitert sich."
             ]
           },
           {
             "type": "p",
-            "text": "Diese Täuschung ist bei Anlagen und Rabatten sehr verbreitet: Nach −20 % an der Aktie braucht es +25 %, um wieder am Kapital zu sein. Wer das Basisprinzip versteht, täuscht sich bei [Mittelwert, Median, Modus](/mean-median-mode) nicht durch »durchschnittliche Steigerungen«. Zur Umrechnung von Rabatten und Mischverhältnissen siehe [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling). Tägliche Kopfrechentricks unter [Prozent-Kopfrechentricks](/mental-percentage-tricks)."
+            "text": "Solche Wahnvorstellungen sind bei Investments und Rabatten sehr verbreitet: nach einem Rückgang der Aktien um 20 Prozent, 25 Prozent mehr als 20 Prozent mehr als 20 Prozent mehr als im Fall des Einkaufszentrums, das auch teurer ist als es ist. Der Begriff der Grundzahl wird verstanden, und es ist möglich, durch den \"durchschnittlichen Anstieg\" bei der Betrachtung der [durchschnittlichen Medianzahl] (/Mean-Median-Mode) nicht irregeführt zu werden. Die Umwandlung von Rabatten in Matching kann auf [proportional versus Matching] (/Verhältnis-und-Skalierung) bezogen werden. Die täglichen Geist-zu-Herz-Fähigkeiten finden sich in [prozentualen Geist-zu-Herz-] Techniken ( / Mental-Prozent-Tricks)."
           },
           {
             "type": "callout",
-            "text": "Eine »Steigerung um 30 %« in den Nachrichten ohne Basis kann bloß von 100 auf 130 sein – schau immer zuerst, wie groß der Nenner ist."
+            "text": "Der \"30% Anstieg\" in den Nachrichten hätte von 100 auf 130 oder von 10.000 auf 13.000 steigen können; es müsste immer auf den Nenner schauen und die Größe beurteilen."
           },
           {
             "type": "h2",
-            "text": "Wie man aufeinanderfolgende Prozente behandelt"
+            "text": "Was ist mit den aufeinander folgenden Prozentsätzen?"
           },
           {
             "type": "p",
-            "text": "Mehrere Änderungen nicht einfach addieren oder subtrahieren, sondern die Faktoren multiplizieren. Steigt etwa ein Wert zwei Jahre um 10 % und fällt um 10 %, ist das Ergebnis 1,1 × 0,9 = 0,99 des Ausgangswerts, also netto −1 %. Das entspricht dem Prinzip kumulierter Fehler bei [Runden und signifikante Stellen](/rounding-significant-figures) – viele Messungen lassen Fehler still anwachsen."
+            "text": "Mehrere Änderungen addieren oder verringern sich nicht einfach prozentual, sondern multiplizieren jeden Faktor. In zwei Jahren zum Beispiel betrug der Anstieg 10 Prozent und der Rückgang 10 Prozent, mit dem Ergebnis, dass der ursprüngliche Wert 1,1 x 0,9 = 0,99 war, dh ein Nettorückgang von einem Prozent und nicht ein \"Offset\". Dies steht im Einklang mit [abgerundeten signifikanten Zahlen] der akkumulierten Fehler: jeder kleine Fehler wird mit der endgültigen Abweichung multipliziert, und je größer die Anzahl der Messungen oder Berechnungen ist, desto wachsamer ist es, und gegebenenfalls werden mehr Mediane beibehalten. Es gibt einen Unterschied zwischen einem \"zehn Prozent Rabatt auf den ursprünglichen Preis\" und einer 5-prozentigen Erhöhung des direkten Preises, zu dem das Haus gekauft wird, was das Ergebnis einer Reihe von Multiplikatoren ist, die durch das Marketing nicht ohnmächtig werden."
           }
         ]
       },
       "unit-conversion-pitfalls": {
-        "title": "Fallstricke bei der Einheitenumrechnung: Länge, Fläche, Volumen nicht mit demselben Faktor",
-        "excerpt": "Cm und m unterscheiden sich um den Faktor 100, cm² und m² aber um 10.000 – Flächen- und Volumenumrechnung gehen am ehesten daneben. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Einheitsumrechnungsfalle: gleicher Faktor für Längenflächengröße",
+        "excerpt": "Der Unterschied zwischen Zentimetern und Reis ist hundertmal, während der Unterschied zwischen Quadratzentimetern und Quadratmetern 10.000 Mal beträgt, und die Umrechnung der Flächengröße ist der einfachste Ort, um zu rollen.",
         "blocks": [
           {
             "type": "p",
-            "text": "Einheitenumrechnung ist Alltag, doch viele übertragen den Längenfaktor direkt auf Fläche und Volumen. Ein Meter sind 100 cm – das ist Länge. Doch ein Quadratmeter sind 100 × 100, also 10.000 Quadratzentimeter – die Differenz ist quadratisch. Beim Volumen wird es extremer: ein Kubikmeter sind 1.000.000 Kubikzentimeter. Mit dem falschen Dimensionsfaktor weicht das Ergebnis um Größenordnungen ab."
+            "text": "Die Einheitenumwandlung ist eine routinemäßige Hochfrequenzoperation, aber viele wenden den Längenfaktor direkt auf Fläche und Volumen an. Ein Meter ist gleich 100 Zentimeter, was die Länge ist; aber ein Quadratmeter ist gleich 100 mal 100 Zentimeter, also 10.000 Quadratzentimeter, und der Unterschied sind quadratische Beziehungen. Das Volumen ist übertrieben, mit einem Kubikmeter gleich 1 Million Kubikzentimeter. Unter Verwendung eines fehlerdimensionalen Faktors wäre das Ergebnis mehrere Größenordnungen, Engineering würde Unfälle verursachen und Küchen würden die Formulierung zum Scheitern bringen."
           },
           {
             "type": "h2",
-            "text": "Faktor je nach Dimension anwenden"
+            "text": "Anwendungsfaktor nach Dimension"
           },
           {
             "type": "ul",
             "items": [
-              "Länge: 1 m = 100 cm (×100)",
-              "Fläche: 1 m² = 10.000 cm² (×100²)",
-              "Volumen: 1 m³ = 1.000.000 cm³ (×100³)",
-              "Bei Geschwindigkeitseinheiten Zähler und Nenner gleichzeitig behandeln"
+              "Länge: 1 m = 100 cm (x 100)",
+              "Fläche: 1 Quadratmeter = 10000 Quadratzentimeter (x 1002), Plätze nicht verpassen",
+              "Volumen: 1 Kubikmeter = 1.000.000 Kubikzentimeter (x 1003), drei Dimensionen ersetzend",
+              "Geschwindigkeitseinheiten sind sowohl in Moleküle als auch in Nenner umzuwandeln, z. B. km/h bis m/s geteilt durch 3,6"
             ]
           },
           {
             "type": "p",
-            "text": "Auch die Gramm-Tassen-Umrechnung in der Küche ist eine Fallgrube, Details unter [wie man Gramm und Tassen umrechnet](/grams-to-cups). Die Präzision physikalischer Umrechnungen hängt zudem mit [Runden und signifikante Stellen](/rounding-significant-figures) zusammen – zu viele Stellen wirken falsch genau, zu wenige verfälschen. Beim Skalieren von Rezepten hilft [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling) für das Verständnis von Vielfachen."
+            "text": "Die Genauigkeit der physikalischen Volumenumwandlung ist auch mit [Rundung-signifikanten-Zahlen] (/Rundung-Werte-Zahlen) verbunden, die Beibehaltung zu vieler Ziffern ist falsch, zu wenige sind falsch und es werden keine Stellen mehr auf die Ergebnisse der gültigen Zahlen in den Originaldaten geschrieben. Die Formel-Skalierung muss auch durch eine Multiplikation der Interpretation des [Verhältnis-und-Skalierung] (/Verhältnis-und-Skalierung) ausgeglichen werden, da sich das Verhältnis von Einheit zu Anteil von Natur aus ändert. Denken Sie zuerst an die Dimensionen, berechnen Sie dann und vermeiden Sie die meisten Einheitsfehler."
           },
           {
             "type": "callout",
-            "text": "Vor der Umrechnung Einheiten anschreiben: bei cm/s in m/h Länge und Zeit getrennt behandeln, nicht im Kopf mischen."
+            "text": "Schreiben Sie vor der Konvertierung in Einheiten: Wenn 'cm/s' in 'm/h', Prozesslänge (100100) und Zeit (x3600) konvertiert wird, um sich nicht zu vermischen, ist es einfacher, im mittleren Schritt eine Null zu werfen."
           },
           {
             "type": "h2",
-            "text": "Fallen bei Geschwindigkeit und Zeit"
+            "text": "Geschwindigkeit und Zeitfalle"
           },
           {
             "type": "p",
-            "text": "Ein häufiger Fehler ist, »km/h« direkt als »m/s« zu nehmen. Richtig: 1 km/h = 1.000 m / 3.600 s ≈ 0,278 m/s. Bei solchen gleichzeitigen Änderungen zweier Einheiten lieber formelmäßig Schritt für Schritt vorgehen statt aus dem Bauch. Zur schnellen Einschätzung von Verhältnissen passt [Prozent-Kopfrechentricks](/mental-percentage-tricks) für die Größenordnung."
+            "text": "Der häufige Fehler ist, \"Kilometer pro Stunde\" direkt als \"Meter pro Sekunde\" zu verwenden. Der richtige Ansatz ist 1 km/h = 1000 m/ 3600 Sekunden ≈ 0,278 m/s, was dem 3,6-fachen der Differenz entspricht. In solchen Fällen, die einen gleichzeitigen Wechsel zwischen den beiden Einheiten beinhalten, wird vorgeschlagen, dass sich die Formel Schritt für Schritt bewegen sollte, um Intuition zu vermeiden. Wenn die Skala schnell bestimmt werden soll, kann sie mit der Schätzungsskala [prozentuale Herzberechnung] (/mental-percentage-tricks) kombiniert werden, und dann die [median-digitale Zahl der Mittelwerte] (/mean-median-mode) einen Datensatz für die Bindestriche testen, was zu einer doppelten Validierung führt. Die Fehlkalkulation von Quadratmetern zum Zeitpunkt des Kaufs des Bodens wird hundertmal höher sein, wobei Einheiten klar geschrieben und vor der nächsten Liste wiederholt werden, wodurch vermieden wird, dass Tausende von Dollar an Material verschwendet und an die Arbeit zurückgegeben werden."
           }
         ]
       },
       "ratio-and-scaling": {
-        "title": "Praxis zu Verhältnis und Mischverhältnis: Warum ein verdoppeltes Rezept anders schmeckt",
-        "excerpt": "Lineares Skalieren geht bei trockenen und flüssigen Zutaten, doch Salz, Gewürze und Gärung sind nichtlinear und brauchen Einzelbeurteilung. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Ratio versus Match: Warum schmeckt es anders?",
+        "excerpt": "Lineare Skalierung ist für Trocken- und Nassformulierungen verfügbar, aber Salz, Gewürze und Fermentation unterliegen nichtlinearen Effekten und müssen anstelle von mechanischen Multiplikatoren separat beurteilt werden.",
         "blocks": [
           {
             "type": "p",
-            "text": "Ein Verhältnis drückt das Vielfache zweier Größen aus, ein Mischverhältnis ist typisch für Rezepte und Mischungen. Ein Vier-Personen-Rezept auf zwei zu ändern, scheint mit dem Faktor 0,5 einfach – doch manche Bestandteile ändern sich nicht linear zur Personenzahl: Salz, Chili und Gewürze hängen vom subjektiven Geschmack ab und schmecken verdoppelt zu salzig; die Gehzeit eines Hefeteigs hängt eher von Gesamtmenge und Umgebungstemperatur als von einem simplen Verhältnis."
+            "text": "Das Verhältnis ist ein Werkzeug, das eine Zwei-Volumen-Mehrfach-Beziehung darstellt, und das Verhältnis ist für Formulierungen und Umschichtungen üblich. Die Vier-Personen-Diät wird in eine Zwei-Personen-Diät umgewandelt, mit einem direkten Faktor von Null-Punkt-Fünf, der einfach zu sein scheint, aber bestimmte Zutaten ändern sich nicht linear mit der Anzahl der Menschen: Salz, Pfeffer, Gewürze neigen dazu, Subjektivität zu sein, die nach der Verdoppelung zu salzig sein kann; Die Wachzeit fermentierter Nudeln hängt mehr mit den Gesamtwerten, den Umgebungstemperaturen als mit der einfachen Proportionalität zusammen. Um dies zu verstehen, können wir die Peinlichkeit des \"Skalierens, aber Scheiterns\" vermeiden."
           },
           {
             "type": "h2",
-            "text": "Richtiges Vorgehen beim Mischverhältnis"
+            "text": "Der richtige Weg zum Match"
           },
           {
             "type": "ul",
             "items": [
-              "Zuerst die »Bezugsmenge« finden, alle anderen Mengen relativ dazu ausdrücken",
-              "Einheiten vor dem Vergleich vereinheitlichen, Gramm und Milliliter nicht mischen",
-              "Nach dem Skalieren sinnvolle signifikante Stellen behalten, nicht 1,3333 g schreiben",
-              "Würze lieber schrittweise zugeben und nach Geschmack justieren"
+              "Suchen Sie zuerst nach der Basismenge, und der Rest wird in Relation dazu ausgedrückt, z. B. Mehl als 1 Basislinie",
+              "Einheiten vereinigen und dann vergleichen, um eine systematische Abweichung durch Mischen von Gramm mit ml zu vermeiden",
+              "Behalten Sie eine gültige Zahl nach der Skalierung und schreiben Sie keine inoperable Zahl von 1,333 g",
+              "Die Gewürze sind eher an einem Ort, um zu versuchen, sich anzupassen, nicht einmal unwiederbringlich zu sein."
             ]
           },
           {
             "type": "p",
-            "text": "In der Praxis lassen sich trockene Hauptzutaten proportional skalieren, bei Flüssigkeiten und Würze empfiehlt sich proportional mit Spielraum. Das schließt an die Volumen-Masse-Umwandlung in [wie man Gramm und Tassen umrechnet](/grams-to-cups) und das Dimensionsbewusstsein bei [Fallstricke bei der Einheitenumrechnung](/unit-conversion-pitfalls) an. Will man das Ergebnis statistisch berichten, hilft [Mittelwert, Median, Modus](/mean-median-mode) bei der Wahl des passenden Zentralwerts."
+            "text": "In der Praxis können trockene Leitungen proportional hochskaliert werden, und Flüssigkeiten und Gewürze werden proportional empfohlen, lassen jedoch Raum für Anpassungen. Dies geht Hand in Hand mit den Dimensionen der [Einheiten-Umwandlungs-Falle]: Der Wechsel der Einheiten und der Wechsel der Multiplikatoren beginnt mit der Klarheit und dann mit der Berechnung. Wenn die Ergebnisse in Statistiken zusammengefasst werden sollen, kann auf die [mittlere Medianzahl] (/Mittelwert-Median-Modus) Auswahl des geeigneten zentralen Wertes verwiesen werden, um eine Reihe von Verhältnissen zu beschreiben und irreführende Urteile durch Fehldeutung zu vermeiden."
           },
           {
             "type": "callout",
-            "text": "Backen hängt mehr als Braten vom exakten Mischverhältnis ab; kleine Abweichungen bei Mehl, Wasser, Hefe lassen es scheitern – beim Skalieren vorsichtiger sein."
+            "text": "Das Backen hängt mehr von einer genauen Übereinstimmung als vom Kochen ab, und eine kleine Abweichung im Verhältnis von Mehl, Wasser und Hefe kann fehlschlagen, wobei mehr als die doppelte Skala auf eine Neuberechnung des Wasserpulververhältnisses und einen kleinen Batch-Test hindeutet."
           },
           {
             "type": "h2",
@@ -19677,56 +19695,56 @@
           },
           {
             "type": "p",
-            "text": "Die Verdünnung von Desinfektionsmitteln oder Pestiziden ist im Kern ein Verhältnisproblem: ein Mischverhältnis 1:100 bedeutet ein Teil Konzentrat auf hundert Teile Wasser. Das Verwechseln von »1:100« mit »1 %« kann zu Unfällen führen. Zur Abschätzung des Verdünnungsfaktors passt [Prozent-Kopfrechentricks](/mental-percentage-tricks), und die Messpräzision führt zurück zu [Runden und signifikante Stellen](/rounding-significant-figures)."
+            "text": "Die Verdünnung von Desinfektionsflüssigkeiten und Pestiziden ist von Natur aus ein Problem der Proportionalität: Das Verhältnis von 1:100 zeigt an, dass eine Originalflüssigkeit mit 100 Wasser versorgt wird und letztlich 100, nicht 100. Die Verwechslung zwischen „1:100“ und „1 Prozent“ verursacht Unfälle mit einer Konzentration von etwa 0,9 Prozent und „1 Prozent“, was der Realität doppelt so nahe kommt. Die Schätzung der Verdünnungsmultiplikatoren kann verwendet werden [prozentuale Herzberechnungstechniken] (/mentale-Prozent-Tricks), während die Genauigkeit der Messungen zu [abgerundeten und gültigen Zahlen] (/abgerundete signifikante Zahlen) zurückkehrt und die Originalflüssigkeiten selbst gültig sind, also schreiben Sie keine weiteren Stellen auf. Vergessen Sie nicht die Verdünnung von Haushaltsreinigungsmitteln, die zu irritierend und verschwenderisch ist, um effektiv zu sein; 1:50 oder 1:100 im verpackten Maßstab und ist mit einer gemessenen Flasche sicherer als mit einer Hand."
           }
         ]
       },
       "mean-median-mode": {
-        "title": "Mittelwert, Median, Modus: Vor dem »Durchschnitt« zuerst die Verteilung ansehen",
-        "excerpt": "Ist das Durchschnittsgehalt durch wenige nach oben gezogen, bildet der Median das wahre Niveau der meisten besser ab. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Mediane Anzahl der Durchschnittswerte: Verteilung des ersten Lese vor dem Durchschnitt",
+        "excerpt": "Wenn Durchschnittslöhne von einer kleinen Anzahl von Menschen angehoben werden, ist der Median repräsentativer für das wahre Niveau der gewöhnlichen Menschen als der Durchschnitt, und der falsche Indikator führt zu einer umgekehrten Schlussfolgerung.",
         "blocks": [
           {
             "type": "p",
-            "text": "Es gibt drei gängige Kennzahlen für das »Zentrum« einer Datenreihe. Der Mittelwert ist die Summe geteilt durch die Anzahl und reagiert am stärksten auf Ausreißer; der Median ist die mittlere Zahl nach Sortierung und immun gegen Extremwerte; der Modus ist die häufigste Zahl. Die falsche Kennzahl kann das Gegenteil belegen – daher das Wort vom »Durchschnittsein«."
+            "text": "Es gibt drei häufig verwendete Indikatoren, die eine Reihe von Datenzentren beschreiben. Der Durchschnitt ist die Summe geteilt durch die Zahl, die am anfälligsten für Hitze ist; der Median ist die Zahl, die zurücksteht und gegen Extreme immun ist; die Zahl ist die höchste. Wenn Sie den falschen Indikator auswählen, könnte die Schlussfolgerung das Gegenteil sein, was auch die Quelle des Begriffs \"Durchschnitt\" ist - - Sie haben das Gefühl, dass Sie ins Stocken geraten, aber Sie werden durch ein paar sehr hohe Werte angehoben."
           },
           {
             "type": "h2",
-            "text": "Wie man die drei Kennzahlen wählt"
+            "text": "Was sind die drei Indikatoren?"
           },
           {
             "type": "ul",
             "items": [
-              "Schiefe Daten wie Einkommen, Hauspreise: Median ist wahrer",
-              "Notenzeugnis: Mittelwert belohnt das allgemeine Niveau",
-              "Kleidergrößen, Renner-Optionen: Modus passt",
-              "Je größer die Differenz der drei, desto ungleicher die Verteilung"
+              "Differenzierte Daten, wie Einkommen, Immobilienpreise, sind realistischer in Medianen und sind nicht gegen die Reichen voreingenommen.",
+              "Wenn Sie das allgemeine Niveau belohnen möchten, können Sie den Durchschnitt sehen, aber Sie müssen auf das sehr niedrige individuelle Minimum achten",
+              "Kleidungsgröße, Implosionsoption ist für die Menge geeignet, was die maximale Anzahl der ausgewählten Personen widerspiegelt",
+              "Je größer die Lücke zwischen den dreien, desto ungleicher ist die Verteilung der Daten und die Auswirkungen der Extremwerte Viet. Schwer"
             ]
           },
           {
             "type": "p",
-            "text": "Beispiel: Neun von zehn verdienen 8.000, einer 80.000 Yuan – der Mittelwert liegt bei etwa 15.000, der Median bei 8.000; letzterer trifft das Empfinden der meisten. Das verstehen hilft, sich nicht von »durchschnittlichen Steigerungen« in [wie man Prozentzu- und -abnahme berechnet](/percentage-increase-decrease) täuschen zu lassen. Bei statistischen Berichten auf Präzision achten, siehe [Runden und signifikante Stellen](/rounding-significant-figures)."
+            "text": "Zum Beispiel gehen neun von zehn Menschen auf 8.000 pro Monat und 80.000 pro Monat, im Durchschnitt etwa 15.000, aber der Median ist 8.000 - letzteres ist dem Gefühl der Mehrheit nahe. Dies zu verstehen, würde vermeiden, durch den \"durchschnittlichen Anstieg\" in [prozentualen Anstieg / Rückgang] (/Prozentsatz-Erhöhung - Rückgang) in die Irre geführt zu werden. Statistische Berichte sollten auch korrekt sein, mit Bezug auf [Rundung-signifikant-Zahlen] (/Rundung-signifikant-Zahlen), um Durchschnittswerte nicht als falsche Dezimalzahlen zu schreiben oder die wahre Form der Verteilung mit ihnen zu maskieren."
           },
           {
             "type": "callout",
-            "text": "Bei »Durchschnitt« zuerst die Verteilung fragen: gibt es wenige Extremwerte, ist der Median meist aussagekräftiger als der Mittelwert."
+            "text": "Siehe die \"durchschnittliche\" Verteilung aus erster Hand: Wenn einige Extreme existieren, ist der Median oft relevanter als der Durchschnitt, insbesondere für rechte Daten wie Einkommen und Hauspreise."
           },
           {
             "type": "h2",
-            "text": "Praktische Anwendungsfälle"
+            "text": "Praktische Anwendungsszene"
           },
           {
             "type": "p",
-            "text": "In Wirtschaft und amtlicher Statistik werden Median-Einkommen und Median-Hauspreise oft bevorzugt veröffentlicht, gerade weil sie robust sind. In Umfrageberichten empfiehlt sich, Mittelwert und Median gemeinsam zu nennen und die Differenz zu erklären. Zur Aufbereitung von Mischverhältnisdaten passt [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling), und schnelle Schätzungen nutzen [Prozent-Kopfrechentricks](/mental-percentage-tricks)."
+            "text": "In der Unternehmens- und nationalen Statistik werden Medianeinkommen und Medianwohnungspreise wegen ihrer Widerstandsfähigkeit gegen Einmischung oft offiziell priorisiert. Bei der Durchführung der Studie wird empfohlen, sowohl Mittelwerte als auch Mediane anzugeben und Unterschiede anzugeben. Die übereinstimmenden Daten können in einer Kombination von [Verhältnis-und-Skalierung] (/Verhältnis-und-Skalierung) gesammelt werden, während schnelle Schätzungen auf [prozentualen Herzzähltechniken] (/Mental-Prozent-Tricks) basieren können, um festzustellen, ob die Skala außerhalb des Maßstabs liegt und ob in der Tiefe berechnet werden soll. Wenn Unternehmen ihre Gehälter durchschnittlich angeben, werden sie oft von den hohen Gehältern der Führungskräfte nach oben gedrängt, und Neulinge sind anfällig für Fehleinschätzungen; Blick auf das \"Medium\" der Stellenangebote oder Lohnzonen sind symmetrischer. Medianzahlen werden auch häufig verwendet, um \"allgemeine Niveaus\" der Schulergebnisse anzuzeigen, um den Eindruck zu vermeiden, dass einzelne Ergebnisse voll oder sehr niedrig sind. Bevor Sie zur Datenpräsentation gehen, denken Sie darüber nach, ob Sie typische oder Aggregate betonen möchten, und entscheiden Sie, welchen Indikator Sie verwenden möchten, dies ist viel wichtiger als Blind-Set-Formeln. Die Verteilungsform häufiger betrachten als eine Dezimalzahl."
           }
         ]
       },
       "rounding-significant-figures": {
-        "title": "Runden und signifikante Stellen: Eine Stelle zu viel kann falsche Genauigkeit sein",
-        "excerpt": "Die Zahl der signifikanten Stellen einer Messung hängt von der Gerätegenauigkeit ab – blind Dezimalstellen behalten irrt eher. Lesen Sie die vollständige Anleitung mit Schritt-für-Schritt-Beispielen und praktischen Tipps.",
+        "title": "Abgerundete und gültige Zahlen: Eine weitere kann falsch sein",
+        "excerpt": "Die gültigen digitalen Ziffern der Messungen werden durch die Genauigkeit des Geräts bestimmt, und die blinde Beibehaltung der Dezimalstellen ist eher die Schaffung einer fehlenden Präzision.",
         "blocks": [
           {
             "type": "p",
-            "text": "Runden wirkt einfach, doch schwer ist »wie viele Stellen«. Signifikante Stellen sind alle verlässlichen Ziffern ab der ersten von null verschiedenen – sie spiegeln die wahre Messgenauigkeit. Mit einer nur auf Gramm genauen Waage 52,317 g zu wiegen ist absurd, denn die Waage hat selbst nur zwei signifikante Stellen; die übrigen Ziffern sind reine Fantasie."
+            "text": "Abgerundet auf den Punkt, dass es einfach schien, war die wirkliche Schwierigkeit, ein paar zu behalten. Gültige Zahlen beziehen sich auf alle zuverlässigen Zahlen aus der ersten Nicht-Null-Zahl, die die wahre Genauigkeit der Messungen widerspiegelt. Es wäre absurd, eine Skala zu verwenden, die nur auf die Gramm genau sein kann, weil die Waage selbst nur zwei gültige Zahlen haben, die einfach imaginäre und irreführende Leser sind zu denken, dass Sie den mg-Spiegel gemessen haben. Es hängt davon ab, wie gut Ihre Werkzeuge sind."
           },
           {
             "type": "h2",
@@ -19735,27 +19753,66 @@
           {
             "type": "ul",
             "items": [
-              "Runden: die Folgeziffer prüfen, ab 5 aufrunden",
-              "Ist die Ziffer genau 5 und dahinter nur Null, Banker-Rundung zur geraden Zahl",
-              "Bei Addition/Subtraktion nicht mehr Dezimalstellen als das ungenaueste Glied",
-              "Bei Multiplikation/Division nicht mehr signifikante Stellen als der unsicherste Faktor"
+              "Abgerundet, um sich um die Reservierung zu kümmern, voll auf eine, die häufigste Regel.",
+              "Wenn der median fünf und dann null ist, rundet der banker auf gerade und reduziert systemische abweichungen.",
+              "Die Dezimalstellen des Additions- oder Subtraktionsergebnisses überschreiten nicht den am wenigsten genauen Eintrag, z. B. 1,2 + 3,45.",
+              "Die Anzahl der gültigen Multiplikatorergebnisse übersteigt nicht die Mindestanzahl gültiger Ziffern, macht also keinen Unterschied."
             ]
           },
           {
             "type": "p",
-            "text": "Viele Fehler entstehen aus Sensibilitätsmangel für Genauigkeit: 1,2 m (zwei signifikante Stellen) mit 3,45 m multipliziert ergibt 4,140 m, tatsächlich muss auf 4,1 m gerundet werden. Das ähnelt dem Aufaddieren von Dimensionsfaktoren bei [Fallstricke bei der Einheitenumrechnung](/unit-conversion-pitfalls) – je mehr Operationen, desto leichter sammelt sich der Fehler. Zur Präzision von Mischverhältnis und Skalierung siehe [Praxis zu Verhältnis und Mischverhältnis](/ratio-and-scaling)."
+            "text": "Viele Rechenfehler ergeben sich aus der Unempfindlichkeit gegenüber Genauigkeit: Das Verhältnis von 1,2 m (zwei gültige Zahlen) zu 3,45 m beträgt 4,140 m, was eigentlich etwa 4,1 m entspricht. Dies ist vergleichbar mit der Logik der Überlagerung der Dimensionskoeffizienten in [Einheitsumwandlungsfallen], die dazu neigt, sich mit mehr Fehlern zu akkumulieren. Die Genauigkeit des Abgleichs und der Skalierung (/Verhältnis-und-Skalierung) ist an die Genauigkeit der Originaldaten gebunden, und es macht keinen Sinn, hinter der Quelle zu bleiben."
           },
           {
             "type": "callout",
-            "text": "Die signifikanten Stellen eines Ergebnisses dürfen die des ungenauesten Ausgangswerts nicht übertreffen – die häufigste Quelle für »falsche Genauigkeit«."
+            "text": "Die Ergebnisse sollten nicht gültiger sein als die ungenauesten der Originaldaten, die die häufigste Quelle für \"falsche Genauigkeit\" sind, und schreiben 1,333 Gramm so gut wie 1,3 Gramm."
           },
           {
             "type": "h2",
-            "text": "Abwägung in Technik und Alltag"
+            "text": "Engineering versus alltägliche Kompromisse"
           },
           {
             "type": "p",
-            "text": "Im Alltag muss man nicht lange Dezimalstellen anstreben – ein Rezept mit 1,3 g ist ehrlicher und nützlicher als 1,3333 g. In Finanzen und Wissenschaft gilt die Norm. Bei schnellen Schätzungen hilft [Prozent-Kopfrechentricks](/mental-percentage-tricks) zuerst für die Größenordnung, dann die Stellen wählen. Zur statistischen Beschreibung siehe [Mittelwert, Median, Modus](/mean-median-mode)."
+            "text": "Tag-zu-Tag-Berechnungen müssen keine langen Dezimalzahlen verfolgen, zum Beispiel ist die Rezeptur 1,3 g ehrlicher und praktischer als 1,333 g und mehr ist kaum messbar. Die finanzielle und wissenschaftliche Szene ist jedoch in Übereinstimmung mit den Normen zu halten. Schnelle Schätzungen können von [prozentualen Herzberechnungstechniken] (/mental-Prozent-Tricks) Quantifizierungen begleitet werden, gefolgt von Entscheidungen, mehrere zu behalten. Die statistische Beschreibung erscheint im [Mediandurchschnitt] (/Mean-Median-Mode), und der Durchschnitt selbst wird in der Präzision dargestellt, so dass die Approximation nicht für sich selbst liegt. Der Studienbericht beschreibt die Skala als 12,3 Gramm als 12,3456 Gramm, die beide unprofessionell erscheinen und Missverständnisse des Instruments aufdecken; der richtige Ansatz besteht darin, eine Schätzung am Mindestpunkt beizubehalten, so dass die wahre Genauigkeit der Zahl klar ist."
+          }
+        ]
+      },
+      "mental-percentage-tricks": {
+        "title": "Prozent Herzzähltechnik: Ein Rechner kann auch ein Zehntel schätzen.",
+        "excerpt": "Nehmen Sie die Prozentsätze auf 10, 1 und die Hälfte, und die meisten Rabatterhöhungen können vor Ort berechnet werden, was Zeit für Mobiltelefone spart.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "\"Zwanzig bis fünfzig Prozent.\" Fünfundfünfzig Prozent mehr. Sie müssen den Rechner nicht ziehen. Die Kernidee ist, jeden Prozentsatz in eine Kombination von 10%, 5%, 1% zu brechen und zu addieren. Zum Beispiel 240 für 15%: 10% zuerst ist 24 und 5% ist 12 plus 36. Nach wenigen Sekunden sind Straßeneinkäufe, Tipps, Rabatte besonders nützlich, und es besteht keine Notwendigkeit, von der \"alten Preis\" -Rhetorik des Händlers beeinflusst zu werden."
+          },
+          {
+            "type": "h2",
+            "text": "Vier gemeinsame Demontage."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "10% = ursprüngliche Nummer 10, schnellste und häufigste, erste Zählung. Boden",
+              "1% = Original ÷ 100 für Feinfeinabstimmung, z.B. 1% von 240 ist 2,4",
+              "5% = Hälfte von 10%, leicht verfügbar, geeignet für Tipps",
+              "25% = original ÷ 4,50% = original = 2, ganzzahlige Priorität"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Zum Beispiel 18 Prozent von 240: 10 Prozent sind 24, 5 Prozent sind 12, 1 Prozent sind 2,4, plus 24 + 12 + 2,4 = 38,4. Ob Sie einen Gewinn erzielen oder nicht, kann auch [die prozentuale Zunahme oder Abnahme] (/Prozentsatz-Erhöhung-Abnahme) kombinieren, um den tatsächlichen Anstieg oder Fall zu sehen, z. B. die Höhe des Verlusts nach dem ersten Anstieg oder Fall. Dieser Ansatz wird auch verwendet, um die Größe des Kaufpreises gegen [unit-conversion-pitfalls] zu schätzen, die nicht fehleranfällig ist."
+          },
+          {
+            "type": "callout",
+            "text": "Zehn Prozent vor der Feinabstimmung, viel schneller als eine direkte harte Berechnung eines willkürlichen Prozentsatzes und ausreichend, um die überwiegende Mehrheit der Lebensszenarien zu bewältigen, wobei genaue Berechnungen den realen Bedürfnissen vorbehalten sind."
+          },
+          {
+            "type": "h2",
+            "text": "Validierung und Grubenschutz"
+          },
+          {
+            "type": "p",
+            "text": "Der \"Reverse-Test\" bestätigt: Wenn etwa 18% von 240 berechnet werden, ist etwa ein Sechstel von 240 schwach, was der 18% -Skala entspricht, was darauf hinweist, dass die Ergebnisse glaubwürdig sind. In Bezug auf die Skalierung wird die Frage der statistischen Genauigkeit (/Rundung-signifikant-Figuren) bezeichnet, so dass die Annäherung des Geistes nicht als präziser Wert geschrieben wird, sondern als schnelles Urteil und nicht als Ersatz für Präzision verwendet wird. Der zweite Halbwertspreis des Supermarktes entspricht einem 70-50-Rabatt anstelle eines Fünf-50-Rabatts, mit 10 Prozent und 5 Prozent aufgeschlüsselt; der reale Rabatt von 300-50% für Mitglieder beträgt etwa 83-33%, und die Berechnung ist nicht leicht zu monogamisieren."
           }
         ]
       }
