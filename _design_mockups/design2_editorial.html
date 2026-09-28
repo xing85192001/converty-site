@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>baikecalc · 设计稿 2 · 编辑杂志风</title>
+<style>
+  :root{
+    --ink:#1A1A1A;
+    --ink-2:#6B6B6B;
+    --paper:#FBFAF7;
+    --line:#E3E0D8;
+    --mint:#1D9E75;
+    --serif:Georgia,"Times New Roman","Songti SC","SimSun",serif;
+    --sans:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+  /* ===== Header ===== */
+  header{border-bottom:1px solid var(--line)}
+  .bar{max-width:1100px;margin:0 auto;padding:22px 28px;display:flex;align-items:center;gap:18px}
+  .logo{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.3px}
+  .logo .ac{color:var(--mint)}
+  .search{margin-left:auto;position:relative;width:300px}
+  .search input{width:100%;border:none;border-bottom:1px solid var(--ink);background:transparent;padding:8px 4px 8px 28px;font-size:14px;font-family:var(--sans);outline:none}
+  .search input::placeholder{color:var(--ink-2)}
+  .search svg{position:absolute;left:0;top:9px;width:17px;height:17px;fill:var(--ink-2)}
+  .nav{display:flex;gap:20px;font-size:14px}
+  .nav a{color:var(--ink);text-decoration:none}
+  .nav a:hover{color:var(--mint)}
+
+  /* ===== Hero ===== */
+  .hero{max-width:1100px;margin:0 auto;padding:70px 28px 40px}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--mint);font-weight:700;margin-bottom:18px}
+  .hero h1{font-family:var(--serif);font-size:54px;line-height:1.15;font-weight:700;max-width:720px;letter-spacing:-.5px}
+  .hero p{color:var(--ink-2);font-size:17px;margin-top:22px;max-width:560px}
+  .hr{height:1px;background:var(--line);max-width:1100px;margin:46px auto 0}
+
+  /* ===== Section ===== */
+  section{max-width:1100px;margin:0 auto;padding:54px 28px}
+  .sec-head{margin-bottom:34px}
+  .sec-head .eyebrow{margin-bottom:10px}
+  .sec-head h2{font-family:var(--serif);font-size:30px;font-weight:700}
+
+  /* ===== Editorial category list ===== */
+  .cat-list{display:grid;grid-template-columns:1fr 1fr;column-gap:70px;row-gap:0}
+  .cat-row{display:flex;align-items:baseline;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);cursor:pointer}
+  .cat-row:hover .c-name{color:var(--mint)}
+  .c-num{font-family:var(--serif);font-size:15px;color:var(--mint);width:34px;flex:none;font-weight:700}
+  .c-name{font-family:var(--serif);font-size:20px;font-weight:400;flex:1;transition:.15s}
+  .c-cnt{font-size:13px;color:var(--ink-2);white-space:nowrap}
+
+  /* ===== Popular ===== */
+  .pop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  .pop{cursor:pointer;padding-top:16px;border-top:2px solid var(--ink)}
+  .pop:hover{border-top-color:var(--mint)}
+  .pop .pic{font-size:26px;margin-bottom:12px}
+  .pop .t{font-family:var(--serif);font-size:18px}
+  .pop .d{color:var(--ink-2);font-size:12.5px;margin-top:4px}
+
+  footer{border-top:1px solid var(--line);margin-top:30px}
+  .foot{max-width:1100px;margin:0 auto;padding:30px 28px;color:var(--ink-2);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="logo">baike<span class="ac">calc</span></div>
+    <div class="search">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
+      <input placeholder="搜索…">
+    </div>
+    <nav class="nav">
+      <a href="#">分类</a>
+      <a href="#">博客</a>
+      <a href="#">中文</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">Free Online Calculators</div>
+  <h1>把复杂计算，<br>变成一件简单的事。</h1>
+  <p>199+ 款精心打磨的计算器，按主题分门别类。无论是家庭账本还是科研数据，这里都有答案。</p>
+</div>
+<div class="hr"></div>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Browse by Category</div>
+    <h2>分类目录</h2>
+  </div>
+  <div class="cat-list" id="catList"></div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Most Popular</div>
+    <h2>热门工具</h2>
+  </div>
+  <div class="pop-grid" id="popGrid"></div>
+</section>
+
+<footer>
+  <div class="foot">
+    <span>© 2026 baikecalc</span>
+    <span>隐私 · 免责 · 联系</span>
+  </div>
+</footer>
+
+<script>
+  const cats=[
+    ["单位换算","14"],["金融计算","22"],["健康与健身","18"],["烹饪与食物","12"],
+    ["数学工具","16"],["时间与日期","9"],["科技与计算机","11"],["建造装修","7"],
+    ["教育学习","10"],["日常生活","13"],["科学计算","8"],["交通出行","6"],
+  ];
+  document.getElementById('catList').innerHTML=cats.map((c,i)=>`
+    <div class="cat-row">
+      <span class="c-num">${String(i+1).padStart(2,'0')}</span>
+      <span class="c-name">${c[0]}</span>
+      <span class="c-cnt">${c[1]} 个工具</span>
+    </div>`).join('');
+
+  const pops=[
+    ["🏠","房贷计算器","月供利息试算"],
+    ["💱","汇率换算","多币种实时"],
+    ["⚖️","BMI 指数","健康评估"],
+    ["🔥","卡路里计算","热量查询"],
+    ["%","百分比计算","占比增减"],
+    ["📅","日期计算","天数间隔"],
+    ["💡","小费计算","聚餐分摊"],
+    ["📏","长度换算","公制英制"],
+  ];
+  document.getElementById('popGrid').innerHTML=pops.map(p=>`
+    <div class="pop">
+      <div class="pic">${p[0]}</div>
+      <div class="t">${p[1]}</div>
+      <div class="d">${p[2]}</div>
+    </div>`).join('');
+</script>
+</body>
+</html>
