@@ -92,6 +92,25 @@ export default async function Home({
 		.map((id) => converterRegistry[id])
 		.filter((c): c is NonNullable<typeof c> => Boolean(c));
 
+	// Plan B: merge Quick + Hot + Popular into one "热门工具" strip (deduped, order-preserving)
+	const featuredToolIds = Array.from(
+		new Set<string>([
+			...quickToolIds,
+			"bmi",
+			"currency",
+			"unit-converter",
+			"percentage-calculator",
+			"compound-interest",
+			"loan",
+			"basic-calculator",
+			"body-fat",
+			...popularGroups.flatMap((g) => g.toolIds),
+		]),
+	);
+	const featuredTools = featuredToolIds
+		.map((id) => converterRegistry[id])
+		.filter((c): c is NonNullable<typeof c> => Boolean(c));
+
 	const renderQuickCard = (converter: (typeof quickTools)[number]) => {
 		const name = tc(`${converter.id}.name`);
 		const desc = tc(`${converter.id}.description`);
@@ -101,7 +120,7 @@ export default async function Home({
 			<Link
 				key={converter.id}
 				href={`/${getCategoryById(converter.category)?.slug}/${converter.slug}`}
-				className="group relative block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+				className="group relative block rounded-xl border border-border bg-card p-3.5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
 			>
 				{badge && (
 					<span
@@ -140,15 +159,16 @@ export default async function Home({
 	};
 
 	return (
-		<div className="mx-auto max-w-6xl px-4">
-			{/* ===== Hero (compact) ===== */}
-			<section className="py-6 text-center">
-				<div className="mx-auto w-full max-w-2xl">
+		<>
+			{/* ===== Hero (dark, tooldone-style) ===== */}
+			<section className="bg-[#0E211C] text-white">
+				<div className="mx-auto w-full max-w-3xl px-4 py-8 text-center sm:py-10">
 					<h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
-						{t("siteName")}{" "}
-						<span className="text-primary">{t("homepageTitle")}</span>
+						{t("homepageTitle")}
 					</h1>
-					<p className="mt-1 text-sm text-muted-foreground">{t("tagline")}</p>
+					<p className="mx-auto mt-2 max-w-xl text-sm text-white/70">
+						{t("tagline")}
+					</p>
 
 					<div className="mx-auto mt-4 max-w-xl">
 						<HeroSearch />
@@ -159,7 +179,7 @@ export default async function Home({
 							<Link
 								key={id}
 								href={`/${getCategoryById(id)?.slug}`}
-								className="rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+								className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80 transition-colors hover:border-white/40 hover:text-white"
 							>
 								{nav(`${id}.name`)}
 							</Link>
@@ -167,6 +187,8 @@ export default async function Home({
 					</div>
 				</div>
 			</section>
+
+			<div className="mx-auto max-w-6xl px-4">
 
 			{/* ===== About the site (editorial intro) ===== */}
 			<section className="pb-8">
@@ -179,23 +201,7 @@ export default async function Home({
 			{/* ===== Media tools (preserved feature) ===== */}
 			<MediaToolsSection />
 
-			{/* ===== Quick Tools ===== */}
-			<section className="pb-6">
-				<div className="mb-3 flex items-end justify-between">
-					<h2 className="text-lg font-bold">{t("quickTools")}</h2>
-					<Link
-						href="/all"
-						className="text-sm font-medium text-primary hover:underline"
-					>
-						{t("homepageViewAll")}
-					</Link>
-				</div>
-				<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-					{quickTools.map(renderQuickCard)}
-				</div>
-			</section>
-
-			{/* ===== Browse by Category (descriptive cards) ===== */}
+			{/* ===== Browse by Category (moved up, all 19) ===== */}
 			<section className="pb-8">
 				<h2 className="mb-1 text-lg font-bold">{th("categoriesTitle")}</h2>
 				<p className="mb-3 text-sm text-muted-foreground">
@@ -208,7 +214,7 @@ export default async function Home({
 							<Link
 								key={c.id}
 								href={`/${c.slug}`}
-								className="group rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+								className="group rounded-xl border border-border bg-card p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
 							>
 								<div className="flex items-center gap-2.5">
 									<div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -232,7 +238,7 @@ export default async function Home({
 				</div>
 			</section>
 
-			{/* ===== Hot Tools (preserved) ===== */}
+			{/* ===== 热门工具 (merged Quick + Hot + Popular) ===== */}
 			<section className="pb-8">
 				<div className="mb-3 flex items-end justify-between">
 					<h2 className="text-lg font-bold">{t("hotTools")}</h2>
@@ -244,81 +250,7 @@ export default async function Home({
 					</Link>
 				</div>
 				<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-					{[
-						"bmi",
-						"currency",
-						"unit-converter",
-						"percentage-calculator",
-						"compound-interest",
-						"loan",
-						"basic-calculator",
-						"body-fat",
-					]
-						.map((id) => converterRegistry[id])
-						.filter((c): c is NonNullable<typeof c> => Boolean(c))
-						.map((converter) => {
-							const Icon = converter.icon;
-							return (
-								<Link
-									key={converter.id}
-									href={`/${getCategoryById(converter.category)?.slug}/${converter.slug}`}
-									className="group block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
-								>
-									<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-										<Icon className="h-5 w-5" />
-									</div>
-									<h3 className="mt-2 font-semibold">
-										{tc(`${converter.id}.name`)}
-									</h3>
-									<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-										{tc(`${converter.id}.description`)}
-									</p>
-								</Link>
-							);
-						})}
-				</div>
-			</section>
-
-			{/* ===== Popular Calculators (contextual deep links) ===== */}
-			<section className="pb-8">
-				<h2 className="mb-1 text-lg font-bold">{th("popularTitle")}</h2>
-				<p className="mb-4 text-sm text-muted-foreground">
-					{th("popularDesc")}
-				</p>
-				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					{popularGroups.map((group) => {
-						const cat = getCategoryById(group.categoryId);
-						if (!cat) return null;
-						const tools = group.toolIds
-							.map((id) => converterRegistry[id])
-							.filter((c): c is NonNullable<typeof c> => Boolean(c));
-						if (!tools.length) return null;
-						return (
-							<div
-								key={group.categoryId}
-								className="rounded-xl border border-border bg-card p-4"
-							>
-								<Link
-									href={`/${cat.slug}`}
-									className="mb-2 block font-semibold text-primary hover:underline"
-								>
-									{nav(`${group.categoryId}.name`)} →
-								</Link>
-								<ul className="space-y-1.5">
-									{tools.map((converter) => (
-										<li key={converter.id}>
-											<Link
-												href={`/${cat.slug}/${converter.slug}`}
-												className="text-sm text-muted-foreground transition-colors hover:text-foreground hover:underline"
-											>
-												{tc(`${converter.id}.name`)}
-											</Link>
-										</li>
-									))}
-								</ul>
-							</div>
-						);
-					})}
+					{featuredTools.map(renderQuickCard)}
 				</div>
 			</section>
 
@@ -413,5 +345,6 @@ export default async function Home({
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

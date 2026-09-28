@@ -1,8 +1,8 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
 import { Button } from "@/components/ui/button";
 import { InstallPrompt } from "@/components/ui/install-prompt";
@@ -13,64 +13,88 @@ import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
-// Categories featured in the "More Tools" mega menu
-const MEGA_CATEGORIES = ["finance", "math", "data"];
-const MEGA_BADGES: Record<string, "NEW" | "HOT"> = {
-	currency: "HOT",
-	loan: "HOT",
-};
+// Category pills shown directly in the dark header bar (tooldone-style).
+// Keep this list short — the bar must fit logo + pills + 所有工具 + 博客 without truncation.
+const pillCategoryIds = [
+	"math",
+	"finance",
+	"health",
+	"datetime",
+	"cooking",
+	"color",
+];
 
 export function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [megaOpen, setMegaOpen] = useState(false);
 	const t = useTranslations("common");
 	const nav = useTranslations("nav");
-	const tc = useTranslations("converter");
+
+	// Close the mega menu when clicking anywhere outside it (click-to-open support).
+	useEffect(() => {
+		if (!megaOpen) return;
+		const close = () => setMegaOpen(false);
+		document.addEventListener("click", close);
+		return () => document.removeEventListener("click", close);
+	}, [megaOpen]);
 
 	return (
-		<header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+		<header className="dark-header sticky top-0 z-50 border-b border-white/10 bg-[#0E211C]">
 			<div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
 				{/* Logo (single) */}
-				<Link href="/" className="flex shrink-0 items-center gap-2">
+				<Link
+					href="/"
+					className="flex shrink-0 items-center gap-2 rounded-full bg-white py-1.5 pl-2 pr-3.5 shadow-sm"
+				>
 					<img
 						src="/logo.jpg"
 						alt="baikecalc"
-						className="h-9 w-9 rounded-xl object-cover shadow-sm"
+						className="h-7 w-7 rounded-lg object-cover"
 					/>
-					<span className="text-lg font-extrabold tracking-tight text-foreground">
+					<span className="text-base font-extrabold tracking-tight text-[#0E211C]">
 						baike<span className="text-primary">calc</span>
 					</span>
 				</Link>
 
 				{/* Nav */}
-				<nav className="hidden items-center gap-1 md:flex">
-					<Link
-						href="/"
-						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-					>
-						{t("home")}
-					</Link>
-					<Link
-						href="/photo"
-						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-					>
-						{nav("photo.name")}
-					</Link>
-					<Link
-						href="/video"
-						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-					>
-						{nav("video.name")}
-					</Link>
-
-					{/* More Tools mega menu */}
-					<div className="group relative">
-						<button
-							type="button"
-							className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+			<nav className="hidden min-w-0 flex-1 items-center gap-1.5 lg:flex">
+				{/* Inner wrapper owns the horizontal scroll so the nav itself does NOT clip
+				    the absolutely-positioned mega menu (overflow-x:auto forces overflow-y:auto). */}
+				<div className="flex min-w-0 flex-1 items-center gap-1.5 overflow-x-auto scrollbar-hide">
+				{pillCategoryIds.map((id) => {
+					const c = getCategoryById(id);
+					if (!c) return null;
+					return (
+						<Link
+							key={id}
+							href={`/${c.slug}`}
+							className="flex shrink-0 items-center gap-1.5 rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-white/85 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
 						>
-							{t("navigation.moreTools")}
+							<c.icon className="h-3.5 w-3.5" />
+							{nav(`${id}.name`)}
+						</Link>
+					);
+				})}
+				</div>
+
+				{/* All categories mega menu */}
+				<div className="group relative shrink-0">
+					<button
+						type="button"
+						onClick={(e) => {
+							e.stopPropagation();
+							setMegaOpen((v) => !v);
+						}}
+						aria-expanded={megaOpen}
+						className="flex items-center gap-1 rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:border-white/30 hover:bg-white/10"
+					>
+							{t("allTools")}
 							<svg
-								className="h-4 w-4 transition-transform group-hover:rotate-180"
+								className={cn(
+									"h-4 w-4 transition-transform",
+									(megaOpen || undefined) && "rotate-180",
+									"group-hover:rotate-180",
+								)}
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
@@ -83,80 +107,76 @@ export function Header() {
 								/>
 							</svg>
 						</button>
-						<div className="invisible absolute left-1/2 top-full w-[680px] -translate-x-1/2 pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
-							<div className="grid grid-cols-3 gap-6 rounded-xl border border-border bg-popover p-5 shadow-lg">
-								{MEGA_CATEGORIES.map((catId) => {
-									const cat = getCategoryById(catId);
-									if (!cat) return null;
-									const tools = getConvertersByCategory(catId).slice(0, 6);
-									return (
-										<div key={catId}>
-											<div className="mb-2 text-sm font-semibold text-foreground">
-												{nav(`${catId}.name`)}
-											</div>
-											<ul className="space-y-0.5">
-												{tools.map((conv) => (
-													<li key={conv.id}>
-														<Link
-															href={`/${cat.slug}/${conv.slug}`}
-															className="flex items-center gap-2 rounded-md px-1.5 py-1 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-														>
-															<conv.icon className="h-4 w-4 shrink-0" />
-															<span className="truncate">
-																{tc(`${conv.id}.name`)}
-															</span>
-															{MEGA_BADGES[conv.id] && (
-																<span
-																	className={cn(
-																		"ml-auto shrink-0 rounded px-1.5 py-0.5 text-[10px] font-bold",
-																		MEGA_BADGES[conv.id] === "NEW"
-																			? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300"
-																			: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
-																	)}
-																>
-																	{MEGA_BADGES[conv.id]}
-																</span>
-															)}
-														</Link>
-													</li>
-												))}
-											</ul>
+						<div
+							onClick={(e) => e.stopPropagation()}
+							className={cn(
+								"absolute left-1/2 top-full z-50 w-[720px] -translate-x-1/2 pt-2 transition-all",
+								megaOpen
+									? "visible opacity-100"
+									: "invisible opacity-0 group-hover:visible group-hover:opacity-100",
+							)}
+						>
+							<div className="light-panel rounded-xl border border-border bg-popover p-5 shadow-lg">
+								<div className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+									{t("allTools")}
+								</div>
+								<div className="grid grid-cols-4 gap-3">
+									{categories.map((c) => {
+										const count = getConvertersByCategory(c.id).length;
+										return (
 											<Link
-												href={`/${cat.slug}`}
-												className="mt-2 inline-flex items-center text-xs text-muted-foreground hover:text-primary"
+												key={c.id}
+												href={`/${c.slug}`}
+												className="flex items-center gap-2 rounded-lg border border-border bg-card px-2.5 py-2 text-sm transition-colors hover:border-primary hover:bg-muted"
 											>
-												{t("homepageViewAll")} →
+												<c.icon className="h-4 w-4 shrink-0 text-primary" />
+												<span className="truncate font-medium">
+													{nav(`${c.id}.name`)}
+												</span>
+												<span className="ml-auto text-xs text-muted-foreground">
+													{count}
+												</span>
 											</Link>
-										</div>
-									);
-								})}
+										);
+									})}
+								</div>
+								<Link
+									href="/all"
+									className="mt-3 inline-flex items-center text-xs text-muted-foreground hover:text-primary"
+								>
+									{t("homepageViewAll")} →
+								</Link>
 							</div>
 						</div>
 					</div>
 
-					<Link
-						href="/blog"
-						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-					>
-						{t("blog")}
-					</Link>
-					<Link
-						href="/about"
-						className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-					>
-						{t("footer.links.about")}
-					</Link>
-				</nav>
+				<Link
+					href="/blog"
+					className="flex shrink-0 items-center rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-white/85 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
+				>
+					{t("blog")}
+				</Link>
+			</nav>
 
 				{/* Actions */}
 				<div className="ml-auto flex shrink-0 items-center gap-1">
+					{/* Compact search icon — opens the same command palette as the hero search (no duplicate bar) */}
+					<Button
+						variant="ghost"
+						size="icon"
+						className="h-9 w-9 text-white/80 hover:bg-white/10 hover:text-white"
+						onClick={() => window.dispatchEvent(new Event("open-global-search"))}
+						aria-label={t("search.placeholder")}
+					>
+						<Search className="h-[18px] w-[18px]" />
+					</Button>
 					<InstallPrompt />
 					<LanguageSwitcher />
 					<ThemeToggle />
 					<Button
 						variant="ghost"
 						size="icon"
-						className="h-9 w-9 text-muted-foreground hover:bg-muted hover:text-foreground md:hidden"
+						className="h-9 w-9 text-white/80 hover:bg-white/10 hover:text-white md:hidden"
 						onClick={() => setMenuOpen(!menuOpen)}
 						aria-label="Menu"
 					>
@@ -169,12 +189,14 @@ export function Header() {
 				</div>
 			</div>
 
-			{/* Global search (triggerless; opens via Ctrl/Cmd+K or hero input) */}
-			<GlobalSearch trigger={false} />
+			{/* Global search (triggerless; opens via Ctrl/Cmd+K, header input or hero input) */}
+			<div className="light-panel">
+				<GlobalSearch trigger={false} />
+			</div>
 
 			{/* Mobile drawer */}
 			{menuOpen && (
-				<div className="border-t border-border bg-background md:hidden">
+				<div className="light-panel border-t border-border bg-background md:hidden">
 					<div className="mx-auto max-h-[70vh] overflow-y-auto px-4 py-3">
 						<div className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
 							{t("navigation.moreTools")}

@@ -5,25 +5,25 @@
 
 @theme {
   /* ===== Light theme (default) ===== */
-  --color-background: #f7f8fa;
-  --color-foreground: #1e293b; /* slate-800 */
+  --color-background: #ffffff;
+  --color-foreground: #18211e; /* near-black with green tint */
   --color-card: #ffffff;
-  --color-card-foreground: #1e293b;
+  --color-card-foreground: #18211e;
   --color-popover: #ffffff;
-  --color-popover-foreground: #1e293b;
-  --color-primary: #4f46e5; /* indigo-600 */
+  --color-popover-foreground: #18211e;
+  --color-primary: #1d9e75; /* brand mint green */
   --color-primary-foreground: #ffffff;
-  --color-secondary: #f1f5f9; /* slate-100 */
-  --color-secondary-foreground: #1e293b;
-  --color-muted: #f1f5f9;
-  --color-muted-foreground: #64748b; /* slate-500 */
-  --color-accent: #eef2ff; /* indigo-50 */
-  --color-accent-foreground: #4f46e5;
+  --color-secondary: #f1f7f4;
+  --color-secondary-foreground: #18211e;
+  --color-muted: #f1f7f4;
+  --color-muted-foreground: #5d6b66; /* muted green-gray */
+  --color-accent: #e8f5f0; /* mint-50 */
+  --color-accent-foreground: #1d9e75;
   --color-destructive: #ef4444;
   --color-destructive-foreground: #ffffff;
-  --color-border: #e2e8f0; /* slate-200 */
-  --color-input: #e2e8f0;
-  --color-ring: #4f46e5;
+  --color-border: #e8e8e8;
+  --color-input: #e8e8e8;
+  --color-ring: #1d9e75;
 
   --radius: 0.75rem; /* rounded-xl */
   --radius-lg: var(--radius);
@@ -31,9 +31,9 @@
   --radius-sm: calc(var(--radius) - 4px);
 
   /* Brand harmonies (kept for legacy gradient refs) */
-  --color-brand: #6366f1;
-  --color-brand2: #8b5cf6;
-  --color-brand-green: #10b981;
+  --color-brand: #1d9e75;
+  --color-brand2: #34d8a4;
+  --color-brand-green: #1d9e75;
   --color-brand-pink: #ec4899;
 }
 
@@ -44,19 +44,19 @@
   --color-card-foreground: #e2e8f0;
   --color-popover: #1e293b;
   --color-popover-foreground: #e2e8f0;
-  --color-primary: #6366f1; /* indigo-500 */
-  --color-primary-foreground: #ffffff;
-  --color-secondary: #334155;
+  --color-primary: #34d8a4; /* bright mint for dark mode */
+  --color-primary-foreground: #06231b;
+  --color-secondary: #16241f;
   --color-secondary-foreground: #e2e8f0;
-  --color-muted: #334155;
-  --color-muted-foreground: #94a3b8; /* slate-400 */
-  --color-accent: #312e81;
-  --color-accent-foreground: #c7d2fe;
+  --color-muted: #16241f;
+  --color-muted-foreground: #9dbdb2;
+  --color-accent: #0f2a22;
+  --color-accent-foreground: #7fe9c8;
   --color-destructive: #f87171;
   --color-destructive-foreground: #ffffff;
-  --color-border: #334155; /* slate-700 */
-  --color-input: #334155;
-  --color-ring: #6366f1;
+  --color-border: #22332c;
+  --color-input: #22332c;
+  --color-ring: #34d8a4;
 }
 
 * {
@@ -79,4 +79,40 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* ===== Dark (tooldone-style) header overrides =====
+   The header bar is dark on every page. Utility classes inside it are
+   re-tinted for legibility; white panels inside it opt out via .light-panel. */
+.dark-header .text-muted-foreground {
+  color: rgba(255, 255, 255, 0.72);
+}
+.dark-header .text-foreground {
+  color: #ffffff;
+}
+.dark-header .border-border {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+.dark-header .hover\:bg-muted:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.dark-header .hover\:text-foreground:hover {
+  color: #ffffff;
+}
+
+/* White panels rendered inside the dark header keep their original colors */
+.dark-header .light-panel .text-muted-foreground {
+  color: var(--color-muted-foreground);
+}
+.dark-header .light-panel .text-foreground {
+  color: var(--color-foreground);
+}
+.dark-header .light-panel .border-border {
+  border-color: var(--color-border);
+}
+.dark-header .light-panel .hover\:bg-muted:hover {
+  background-color: var(--color-muted);
+}
+.dark-header .light-panel .hover\:text-foreground:hover {
+  color: var(--color-foreground);
 }

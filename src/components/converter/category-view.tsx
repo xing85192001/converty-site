@@ -1,9 +1,10 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { categories, getCategoryBySlug } from "@/lib/registry/categories";
+import { categories, getCategoryBySlug, getSubcategoriesByCategoryId } from "@/lib/registry/categories";
+import { subcatNames } from "@/lib/registry/subcat-names";
 import { getConvertersByCategoryGrouped } from "@/lib/registry/converters";
 import { blogPosts } from "@/lib/blog/posts";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,16 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 	const tc = useTranslations("converter");
 	const tcat = useTranslations("category");
 	const tb = useTranslations("blog.posts");
+	const locale = useLocale();
+
+	// Resolve a localized subcategory display name; falls back to the English
+	// source name (from categories.ts) for `en` and any untranslated locale.
+	const subcatLabel = (subId: string): string => {
+		const localized = subcatNames[`${category?.id}.${subId}`]?.[locale];
+		if (localized) return localized;
+		if (subId === "uncategorized") return t("other");
+		return subcats.find((s) => s.id === subId)?.name ?? subId;
+	};
 	const category = getCategoryBySlug(categorySlug);
 	const grouped = getConvertersByCategoryGrouped(category?.id ?? categorySlug);
 	const catDesc = tcat(`${category?.id}.description`);
@@ -25,6 +36,9 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 	const [query, setQuery] = useState("");
 	const [drawerOpen, setDrawerOpen] = useState(false);
 	const [collapsed, setCollapsed] = useState(false);
+	const [activeSub, setActiveSub] = useState<string>("all");
+
+	const subcats = category ? getSubcategoriesByCategoryId(category.id) : [];
 
 	const allTools = useMemo(
 		() => Array.from(grouped.values()).flat(),
@@ -40,6 +54,15 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 				tc(`${t.id}.description`).toLowerCase().includes(q),
 		);
 	}, [query, allTools, tc]);
+
+	// When the category has subcategories, group tools by subcategory.
+	const groups = useMemo(() => {
+		const hasSubcats = subcats.length > 0;
+		if (!hasSubcats) return null;
+		return Array.from(grouped.entries()).map(([subId, tools]) => {
+			return { subId, name: subcatLabel(subId), tools };
+		});
+	}, [grouped, subcats, t, locale, category?.id]);
 
 	if (!category) return null;
 
@@ -184,38 +207,157 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 						/>
 					</div>
 
-					<div
-						className="grid gap-3"
-						style={{
-							gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-						}}
-					>
-						{filtered.map((tool) => {
-							const Icon = tool.icon;
-							return (
-								<Link
-									key={tool.id}
-									href={`/${categorySlug}/${tool.slug}`}
-									className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
-								>
-									<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-										<Icon className="h-5 w-5" />
+					{/* Subcategory filter chips (only when the category has subcategories) */}
+					{subcats.length > 0 && (
+						<div className="mb-5 flex flex-wrap gap-2">
+							<button
+								type="button"
+								onClick={() => {
+									setQuery("");
+									setActiveSub("all");
+								}}
+								className={cn(
+									"rounded-full border px-3 py-1 text-xs transition-colors",
+									activeSub === "all" && query.trim() === ""
+										? "border-primary bg-primary/10 font-medium text-primary"
+										: "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+								)}
+							>
+								{t("allTools")}
+							</button>
+							{subcats.map((s) => {
+								const count = (grouped.get(s.id) ?? []).length;
+								const isActive = activeSub === s.id && query.trim() === "";
+								return (
+									<button
+										key={s.id}
+										type="button"
+										onClick={() => {
+											setQuery("");
+											setActiveSub(s.id);
+										}}
+										className={cn(
+											"rounded-full border px-3 py-1 text-xs transition-colors",
+											isActive
+												? "border-primary bg-primary/10 font-medium text-primary"
+												: "border-border bg-card text-muted-foreground hover:border-primary hover:text-primary",
+										)}
+									>
+										{subcatLabel(s.id)} <span className="text-muted-foreground/70">{count}</span>
+									</button>
+								);
+							})}
+						</div>
+					)}
+
+					{/* Search mode: show flat filtered results */}
+					{query.trim() ? (
+						<div
+							className="grid gap-3"
+							style={{
+								gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+							}}
+						>
+							{filtered.map((tool) => {
+								const Icon = tool.icon;
+								return (
+									<Link
+										key={tool.id}
+										href={`/${categorySlug}/${tool.slug}`}
+										className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+									>
+										<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+											<Icon className="h-5 w-5" />
+										</div>
+										<h3 className="mt-3 font-semibold">
+											{tc(`${tool.id}.name`)}
+										</h3>
+										<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+											{tc(`${tool.id}.description`)}
+										</p>
+									</Link>
+								);
+							})}
+							{filtered.length === 0 && (
+								<p className="text-sm text-muted-foreground">
+									{t("search.noResults")}
+								</p>
+							)}
+						</div>
+					) : groups ? (
+						/* Grouped by subcategory (optionally filtered by the active subcategory chip) */
+						<div className="space-y-6">
+							{(activeSub === "all"
+								? groups
+								: groups.filter((g) => g.subId === activeSub)
+							).map((group) => (
+								<div key={group.subId}>
+									<h2 className="mb-3 flex items-center gap-2 text-base font-semibold">
+										{group.name}
+										<span className="text-xs font-normal text-muted-foreground">
+											{group.tools.length}
+										</span>
+									</h2>
+									<div
+										className="grid gap-3"
+										style={{
+											gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+										}}
+									>
+										{group.tools.map((tool) => {
+											const Icon = tool.icon;
+											return (
+												<Link
+													key={tool.id}
+													href={`/${categorySlug}/${tool.slug}`}
+													className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+												>
+													<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+														<Icon className="h-5 w-5" />
+													</div>
+													<h3 className="mt-3 font-semibold">
+														{tc(`${tool.id}.name`)}
+													</h3>
+													<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+														{tc(`${tool.id}.description`)}
+													</p>
+												</Link>
+											);
+										})}
 									</div>
-									<h3 className="mt-3 font-semibold">
-										{tc(`${tool.id}.name`)}
-									</h3>
-									<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-										{tc(`${tool.id}.description`)}
-									</p>
-								</Link>
-							);
-						})}
-						{filtered.length === 0 && (
-							<p className="text-sm text-muted-foreground">
-								{t("search.noResults")}
-							</p>
-						)}
-					</div>
+								</div>
+							))}
+						</div>
+					) : (
+						/* No subcategories: flat grid */
+						<div
+							className="grid gap-3"
+							style={{
+								gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+							}}
+						>
+							{allTools.map((tool) => {
+								const Icon = tool.icon;
+								return (
+									<Link
+										key={tool.id}
+										href={`/${categorySlug}/${tool.slug}`}
+										className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
+									>
+										<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+											<Icon className="h-5 w-5" />
+										</div>
+										<h3 className="mt-3 font-semibold">
+											{tc(`${tool.id}.name`)}
+										</h3>
+										<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+											{tc(`${tool.id}.description`)}
+										</p>
+									</Link>
+								);
+							})}
+						</div>
+					)}
 
 					{/* Related articles (content cluster -> internal links) */}
 					{relatedPosts.length > 0 && (

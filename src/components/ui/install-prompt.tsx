@@ -70,7 +70,7 @@ export function InstallPrompt() {
         )}
       </Button>
       {showIOSHint && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-56 rounded-lg border border-white/10 bg-card p-3 text-xs text-foreground shadow-xl">
+        <div className="light-panel absolute right-0 top-full z-50 mt-2 w-56 rounded-lg border border-white/10 bg-card p-3 text-xs text-foreground shadow-xl">
           <p className="font-medium text-primary">
             {isIOS ? "Add to Home Screen" : "Install baikecalc"}
           </p>
