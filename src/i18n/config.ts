@@ -9,7 +9,7 @@ export const locales = [
 ] as const;
 
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "zh";
+export const defaultLocale: Locale = "en";
 
 // Locale formats
 export const localeFormats: Record<
