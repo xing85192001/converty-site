@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "baikecalc - Free online calculators and converters",
     description:
       "Free online calculators and converters for finance, health, math, photo, video, and more.",
-    locale: "en_US",
+    locale: "zh_CN",
     images: [{ url: "/logo.jpg", width: 512, height: 512, alt: "baikecalc" }],
   },
   twitter: {
