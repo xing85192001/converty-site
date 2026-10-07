@@ -116,3 +116,31 @@ body {
 .dark-header .light-panel .hover\:text-foreground:hover {
   color: var(--color-foreground);
 }
+
+/* ===== Plan D: Liquid Glass — 极光背景（置于内容之下，不破坏深色模式） ===== */
+body {
+  overflow-x: hidden;
+}
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+body::before {
+  width: 540px;
+  height: 540px;
+  left: -140px;
+  top: -140px;
+  background: radial-gradient(closest-side, rgba(52, 216, 164, 0.45), transparent 70%);
+}
+body::after {
+  width: 580px;
+  height: 580px;
+  right: -180px;
+  top: 160px;
+  background: radial-gradient(closest-side, rgba(45, 212, 191, 0.3), transparent 70%);
+}

@@ -117,11 +117,11 @@ export default async function Home({
 		const Icon = converter.icon;
 		const badge = quickBadges[converter.id];
 		return (
-			<Link
-				key={converter.id}
-				href={`/${getCategoryById(converter.category)?.slug}/${converter.slug}`}
-				className="group relative block rounded-xl border border-border bg-card p-3.5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
-			>
+				<Link
+					key={converter.id}
+					href={`/${getCategoryById(converter.category)?.slug}/${converter.slug}`}
+					className="group relative block rounded-2xl border border-white/70 bg-white/55 p-3.5 shadow-sm backdrop-blur transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md dark:border-white/10 dark:bg-white/5"
+				>
 				{badge && (
 					<span
 						className={cn(
@@ -160,26 +160,29 @@ export default async function Home({
 
 	return (
 		<>
-			{/* ===== Hero (dark, tooldone-style) ===== */}
-			<section className="bg-[#0E211C] text-white">
-				<div className="mx-auto w-full max-w-3xl px-4 py-8 text-center sm:py-10">
-					<h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+			{/* ===== Hero (Plan D: liquid glass, light) ===== */}
+			<section className="relative">
+				<div className="mx-auto w-full max-w-3xl px-4 py-12 text-center sm:py-16">
+					<span className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/60 px-4 py-1.5 text-xs font-semibold text-primary shadow-sm backdrop-blur dark:bg-white/5">
+						{t("heroBadge")}
+					</span>
+					<h1 className="text-3xl font-extrabold tracking-tight text-[#0E211C] dark:text-white sm:text-5xl">
 						{t("homepageTitle")}
 					</h1>
-					<p className="mx-auto mt-2 max-w-xl text-sm text-white/70">
+					<p className="mx-auto mt-3 max-w-xl text-sm text-[#3c5249] dark:text-white/70 sm:text-base">
 						{t("tagline")}
 					</p>
 
-					<div className="mx-auto mt-4 max-w-xl">
+					<div className="mx-auto mt-6 max-w-xl">
 						<HeroSearch />
 					</div>
 
-					<div className="mt-3 flex flex-wrap justify-center gap-2">
+					<div className="mt-4 flex flex-wrap justify-center gap-2">
 						{hotChipCategories.map((id) => (
 							<Link
 								key={id}
 								href={`/${getCategoryById(id)?.slug}`}
-								className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80 transition-colors hover:border-white/40 hover:text-white"
+								className="rounded-full border border-black/10 bg-white/55 px-3 py-1 text-xs text-[#2c4038] backdrop-blur transition-colors hover:border-primary hover:text-primary dark:border-white/15 dark:bg-white/5 dark:text-white/85"
 							>
 								{nav(`${id}.name`)}
 							</Link>
@@ -214,14 +217,14 @@ export default async function Home({
 							<Link
 								key={c.id}
 								href={`/${c.slug}`}
-								className="group rounded-xl border border-border bg-card p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
+								className="group rounded-2xl border border-white/70 bg-white/55 p-4 shadow-sm backdrop-blur transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md dark:border-white/10 dark:bg-white/5"
 							>
 								<div className="flex items-center gap-2.5">
 									<div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
 										<c.icon className="h-4 w-4" />
 									</div>
 									<div className="min-w-0">
-										<h3 className="truncate font-semibold">
+										<h3 className="truncate font-semibold text-[#0E211C] dark:text-white">
 											{nav(`${c.id}.name`)}
 										</h3>
 										<p className="text-xs text-muted-foreground">
@@ -229,7 +232,7 @@ export default async function Home({
 										</p>
 									</div>
 								</div>
-								<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+								<p className="mt-2 text-sm leading-relaxed text-[#3c5249] dark:text-white/70">
 									{th(`categoryDesc.${c.id}`)}
 								</p>
 							</Link>

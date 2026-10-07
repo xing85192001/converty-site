@@ -11,7 +11,7 @@ export function HeroSearch() {
     <button
       type="button"
       onClick={open}
-      className="group relative flex h-12 w-full items-center justify-start gap-3 rounded-2xl border border-border bg-card px-4 text-left text-sm text-muted-foreground shadow-sm transition-colors hover:border-primary/50"
+      className="group relative flex h-12 w-full items-center justify-start gap-3 rounded-2xl border border-white/70 bg-white/55 px-4 text-left text-sm text-[#3c5249] shadow-lg backdrop-blur-xl transition-colors hover:border-primary/60 dark:border-white/10 dark:bg-white/5 dark:text-white/70"
     >
       <Search className="h-5 w-5 shrink-0" />
       <span className="truncate">{t("placeholder")}</span>
