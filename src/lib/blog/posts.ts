@@ -25,6 +25,78 @@ export interface LocalizedBlogPost extends BlogPostBase {
 }
 
 export const blogPosts: BlogPostBase[] = [	{
+		slug: "saving-vs-investing-when",
+		date: "2026-10-19",
+		category: "finance",
+		readingMinutes: 7,
+	},
+	{
+		slug: "credit-score-basics",
+		date: "2026-10-19",
+		category: "finance",
+		readingMinutes: 6,
+	},
+	{
+		slug: "retirement-savings-early-start",
+		date: "2026-10-19",
+		category: "finance",
+		readingMinutes: 7,
+	},
+	{
+		slug: "meal-timing-myths",
+		date: "2026-10-19",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "strength-training-for-beginners",
+		date: "2026-10-19",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "sitting-too-much-health-risk",
+		date: "2026-10-19",
+		category: "health",
+		readingMinutes: 6,
+	},
+	{
+		slug: "fractions-decimals-percentages",
+		date: "2026-10-19",
+		category: "math",
+		readingMinutes: 6,
+	},
+	{
+		slug: "understanding-standard-deviation",
+		date: "2026-10-19",
+		category: "math",
+		readingMinutes: 6,
+	},
+	{
+		slug: "area-volume-formulas-everyday",
+		date: "2026-10-19",
+		category: "math",
+		readingMinutes: 6,
+	},
+	{
+		slug: "substitute-ingredients-common",
+		date: "2026-10-19",
+		category: "cooking",
+		readingMinutes: 6,
+	},
+	{
+		slug: "oven-temperature-conversion",
+		date: "2026-10-19",
+		category: "cooking",
+		readingMinutes: 5,
+	},
+	{
+		slug: "portions-for-crowd-scaling",
+		date: "2026-10-19",
+		category: "cooking",
+		readingMinutes: 6,
+	},
+	{
 		slug: "recipe-scaling-basics",
 		date: "2026-09-11",
 		category: "cooking",

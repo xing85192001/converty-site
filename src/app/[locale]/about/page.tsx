@@ -42,7 +42,7 @@ export default async function AboutPage({
 			</LegalSection>
 
 			<p className="text-xs text-muted-foreground">
-				<T k="ui.last-updated-august-11-2026" />
+				<T k="ui.last-updated-october-19-2026" />
 			</p>
 		</LegalPage>
 	);
