@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
 import { T } from "@/components/ui/t";
+import { Link } from "@/i18n/navigation";
 import { locales } from "@/i18n/config";
 
 export function generateStaticParams() {
@@ -39,6 +40,14 @@ export default async function AboutPage({
 
 			<LegalSection title={tUi("editorial-standards")}>
 				<p>{tUi("about-editorial")}</p>
+				<p className="mt-3">
+					<Link
+						href="/editorial"
+						className="font-medium text-primary underline-offset-4 hover:underline"
+					>
+						{tUi("editorialLearnMore")}
+					</Link>
+				</p>
 			</LegalSection>
 
 			<p className="text-xs text-muted-foreground">

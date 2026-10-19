@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BlogContent } from "@/components/blog/blog-content";
+import { EditorialTrust } from "@/components/blog/editorial-trust";
 import { Button } from "@/components/ui/button";
 import { locales } from "@/i18n/config";
 import { Link } from "@/i18n/navigation";
@@ -61,8 +62,25 @@ export default async function BlogPostPage({
     cooking: t("category.cooking"),
   };
 
-  const style = getCategoryStyle(post.category);
-  const Icon = style.icon;
+	const style = getCategoryStyle(post.category);
+	const Icon = style.icon;
+
+	// Article structured data — ties the post to the site Organization entity (E-E-A-T).
+	const articleJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "Article",
+		headline: post.title,
+		description: post.excerpt,
+		inLanguage: locale,
+		datePublished: post.date,
+		dateModified: post.date,
+		author: { "@id": "https://baikecalc.com/#organization" },
+		publisher: { "@id": "https://baikecalc.com/#organization" },
+		mainEntityOfPage: {
+			"@type": "WebPage",
+			"@id": `https://baikecalc.com/${locale}/blog/${post.slug}`,
+		},
+	};
 
   // Related posts: same category, excluding current, max 3
   const related = blogPosts
@@ -72,6 +90,11 @@ export default async function BlogPostPage({
 
   return (
     <article className="min-h-screen bg-background">
+      {/* Article structured data (author = site Organization) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       {/* Hero header */}
       <header
         className={`relative overflow-hidden border-b bg-gradient-to-br ${style.lightBg} py-14 sm:py-20`}
@@ -154,7 +177,9 @@ export default async function BlogPostPage({
             </div>
           </aside>
         )}
-      </div>
-    </article>
+		</div>
+
+			<EditorialTrust />
+		</article>
   );
 }

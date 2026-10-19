@@ -10,6 +10,7 @@ import { getCategoryById } from "@/lib/registry/categories";
 import { getConvertersByCategory } from "@/lib/registry/converters";
 import { Breadcrumbs } from "./breadcrumbs";
 import { ToolContentSection } from "./tool-content-section";
+import { EditorialTrust } from "@/components/blog/editorial-trust";
 
 interface ConverterLayoutProps {
 	title: string;
@@ -51,6 +52,8 @@ export function ConverterLayout({
 		inLanguage: locale,
 		url: `https://baikecalc.com/${locale}/${categorySlug}/${toolId ?? ""}`,
 		offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+		author: { "@id": "https://baikecalc.com/#organization" },
+		publisher: { "@id": "https://baikecalc.com/#organization" },
 	};
 
 	return (
@@ -140,6 +143,8 @@ export function ConverterLayout({
 					</div>
 				</section>
 			)}
+
+			<EditorialTrust />
 
 			<AdUnit slot="content-bottom" />
 		</div>
