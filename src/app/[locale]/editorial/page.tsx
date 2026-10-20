@@ -17,8 +17,6 @@ export default async function EditorialPage({
 
 	return (
 		<LegalPage title={tUi("editorial-standards")} description={tUi("editorialTeamBio")}>
-			<p>{tUi("editorialTeamBio")}</p>
-
 			<LegalSection title={tUi("about-us")}>
 				<p>{tUi("about-intro")}</p>
 			</LegalSection>

@@ -23,8 +23,6 @@ export default async function AboutPage({
 			title={tUi("about-us")}
 			description={tUi("about-intro", { siteName: t("siteName") })}
 		>
-			<p>{tUi("about-intro", { siteName: t("siteName") })}</p>
-
 			<LegalSection title={tUi("what-we-offer")}>
 				<ul className="list-disc space-y-1 pl-5">
 					<li>{tUi("about-offer-finance")}</li>

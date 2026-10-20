@@ -10,7 +10,7 @@ export function LegalPage({
   children: ReactNode;
 }) {
   return (
-    <div className="container max-w-3xl py-12">
+    <div className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6">
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
       {description ? <p className="mt-3 text-lg text-muted-foreground">{description}</p> : null}
       <div className="mt-8 space-y-8 text-sm leading-relaxed text-foreground/90">{children}</div>
