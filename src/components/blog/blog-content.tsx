@@ -2,6 +2,24 @@ import { Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import type { BlogBlock } from "@/lib/blog/posts";
+import { blogPosts } from "@/lib/blog/posts";
+
+/**
+ * Blog post slugs are served at /<locale>/blog/<slug>, but the markdown source
+ * historically linked them as bare /<slug> (which 404s). Resolve any internal
+ * link whose path matches a known blog slug to the real /blog/<slug> route.
+ * Tool links (/finance/..., /health/...) and already-prefixed /blog/ links are
+ * left untouched.
+ */
+const BLOG_SLUG_SET = new Set(blogPosts.map((p) => p.slug));
+
+function resolveBlogHref(href: string): string {
+	if (!href.startsWith("/")) return href; // external / absolute
+	if (href.startsWith("/blog/")) return href; // already correct
+	const slug = href.slice(1);
+	if (BLOG_SLUG_SET.has(slug)) return `/blog/${slug}`;
+	return href;
+}
 
 /**
  * Render a single line of inline markdown:
@@ -22,12 +40,13 @@ function renderInline(text: string): ReactNode[] {
       nodes.push(<span key={key++}>{renderBold(text.slice(last, match.index))}</span>);
     }
     const [, label, href] = match;
-    const isInternal = href.startsWith("/");
+    const resolvedHref = resolveBlogHref(href);
+    const isInternal = resolvedHref.startsWith("/");
     nodes.push(
       isInternal ? (
         <Link
           key={key++}
-          href={href}
+          href={resolvedHref}
           className="font-medium text-primary underline underline-offset-4 hover:opacity-80"
         >
           {label}

@@ -62,6 +62,9 @@ converty-local/
 converty-local.zip
 .grepai/
 
+# SEO push 增量状态（seo-push.mjs 本地生成，用于判断哪些页面变了）
+.seo-push-state.json
+
 # Logs & temp analysis files
 *.log
 scripts/*.log

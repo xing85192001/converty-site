@@ -1,4 +1,4 @@
-import { ArrowLeft, CalendarDays, Clock } from "lucide-react";
+import { ArrowLeft, CalendarDays, Clock, RefreshCw } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -49,6 +49,8 @@ export default async function BlogPostPage({
   const postsT = await getTranslations({ locale, namespace: "blog.posts" });
   const post = localizePost(postBase, postsT);
 
+  const reviewedDate = postBase.reviewed ?? postBase.date;
+
   const dateFmt = new Intl.DateTimeFormat(locale, {
     year: "numeric",
     month: "long",
@@ -73,7 +75,7 @@ export default async function BlogPostPage({
 		description: post.excerpt,
 		inLanguage: locale,
 		datePublished: post.date,
-		dateModified: post.date,
+		dateModified: reviewedDate,
 		author: { "@id": "https://baikecalc.com/#organization" },
 		publisher: { "@id": "https://baikecalc.com/#organization" },
 		mainEntityOfPage: {
@@ -106,7 +108,7 @@ export default async function BlogPostPage({
           />
         </div>
 
-        <div className="container max-w-4xl">
+        <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
           <Button variant="ghost" size="sm" className="mb-6 -ml-3 h-auto px-3 py-2" asChild>
             <Link
               href="/blog"
@@ -126,11 +128,15 @@ export default async function BlogPostPage({
             </span>
             <span className="inline-flex items-center gap-1.5 text-muted-foreground">
               <CalendarDays className="h-4 w-4" />
-              <time dateTime={post.date}>{dateFmt.format(new Date(post.date))}</time>
+              {t("publishedOn")} <time dateTime={post.date}>{dateFmt.format(new Date(post.date))}</time>
             </span>
             <span className="inline-flex items-center gap-1.5 text-muted-foreground">
               <Clock className="h-4 w-4" />
               {post.readingMinutes} {t("minRead")}
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-muted-foreground">
+              <RefreshCw className="h-4 w-4" />
+              {t("reviewedOn")} <time dateTime={reviewedDate}>{dateFmt.format(new Date(reviewedDate))}</time>
             </span>
           </div>
 
@@ -145,7 +151,7 @@ export default async function BlogPostPage({
       </header>
 
       {/* Body */}
-      <div className="container max-w-3xl py-12 sm:py-16">
+      <div className="mx-auto w-full max-w-3xl px-4 py-12 sm:py-16">
         <BlogContent blocks={post.blocks} />
 
         {/* Related posts */}
@@ -179,7 +185,10 @@ export default async function BlogPostPage({
         )}
 		</div>
 
+			<div className="mx-auto w-full max-w-3xl px-4">
 			<EditorialTrust />
+		</div>
+		
 		</article>
   );
 }

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalPage, LegalSection } from "@/components/legal/legal-page";
 import { T } from "@/components/ui/t";
@@ -8,6 +9,16 @@ export function generateStaticParams() {
 	return locales.map((locale) => ({ locale }));
 }
 
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ui" });
+  return { title: t("about-us") };
+}
 export default async function AboutPage({
 	params,
 }: {
