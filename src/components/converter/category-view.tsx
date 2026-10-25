@@ -3,6 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { Link } from "@/i18n/navigation";
+import { ToolCard } from "@/components/tool-card";
 import { categories, getCategoryBySlug, getSubcategoriesByCategoryId } from "@/lib/registry/categories";
 import { subcatNames } from "@/lib/registry/subcat-names";
 import { getConvertersByCategoryGrouped } from "@/lib/registry/converters";
@@ -259,23 +260,14 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 							}}
 						>
 							{filtered.map((tool) => {
-								const Icon = tool.icon;
 								return (
-									<Link
+									<ToolCard
 										key={tool.id}
+										icon={tool.icon}
+										title={tc(`${tool.id}.name`)}
+										description={tc(`${tool.id}.description`)}
 										href={`/${categorySlug}/${tool.slug}`}
-										className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
-									>
-										<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-											<Icon className="h-5 w-5" />
-										</div>
-										<h3 className="mt-3 font-semibold">
-											{tc(`${tool.id}.name`)}
-										</h3>
-										<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-											{tc(`${tool.id}.description`)}
-										</p>
-									</Link>
+									/>
 								);
 							})}
 							{filtered.length === 0 && (
@@ -305,23 +297,14 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 										}}
 									>
 										{group.tools.map((tool) => {
-											const Icon = tool.icon;
 											return (
-												<Link
+												<ToolCard
 													key={tool.id}
+													icon={tool.icon}
+													title={tc(`${tool.id}.name`)}
+													description={tc(`${tool.id}.description`)}
 													href={`/${categorySlug}/${tool.slug}`}
-													className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
-												>
-													<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-														<Icon className="h-5 w-5" />
-													</div>
-													<h3 className="mt-3 font-semibold">
-														{tc(`${tool.id}.name`)}
-													</h3>
-													<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-														{tc(`${tool.id}.description`)}
-													</p>
-												</Link>
+												/>
 											);
 										})}
 									</div>
@@ -337,23 +320,14 @@ export function CategoryView({ categorySlug }: { categorySlug: string }) {
 							}}
 						>
 							{allTools.map((tool) => {
-								const Icon = tool.icon;
 								return (
-									<Link
+									<ToolCard
 										key={tool.id}
+										icon={tool.icon}
+										title={tc(`${tool.id}.name`)}
+										description={tc(`${tool.id}.description`)}
 										href={`/${categorySlug}/${tool.slug}`}
-										className="block rounded-xl border border-border bg-card p-3.5 transition-all duration-200 hover:-translate-y-1 hover:border-primary"
-									>
-										<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-											<Icon className="h-5 w-5" />
-										</div>
-										<h3 className="mt-3 font-semibold">
-											{tc(`${tool.id}.name`)}
-										</h3>
-										<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-											{tc(`${tool.id}.description`)}
-										</p>
-									</Link>
+									/>
 								);
 							})}
 						</div>

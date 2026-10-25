@@ -280,7 +280,7 @@ export function BeamDiagramSvg({
       height="100%"
       viewBox={`0 0 ${width} ${height}`}
       preserveAspectRatio="xMidYMid meet"
-      className="border rounded-lg bg-white dark:bg-slate-900"
+      className="border rounded-lg bg-card"
     >
       <title>
         <T k="ui.beam-deflection-diagram" />

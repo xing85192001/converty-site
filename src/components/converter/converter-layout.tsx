@@ -5,7 +5,7 @@ import { AdUnit } from "@/components/ads/ad-unit";
 import { Disclaimer } from "@/components/ads/disclaimer";
 import { CalculatorErrorBoundary } from "@/components/error-boundary/calculator-error-boundary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "@/i18n/navigation";
+import { ToolCard } from "@/components/tool-card";
 import { getCategoryById } from "@/lib/registry/categories";
 import { getConvertersByCategory } from "@/lib/registry/converters";
 import { Breadcrumbs } from "./breadcrumbs";
@@ -77,7 +77,7 @@ export function ConverterLayout({
 
 			<Disclaimer categoryId={categoryId} />
 
-			<Card className="mb-6 border-border shadow-card">
+			<Card className="mb-6 border-border">
 				<CardContent className="pt-6">
 					<CalculatorErrorBoundary>{children}</CalculatorErrorBoundary>
 				</CardContent>
@@ -120,26 +120,15 @@ export function ConverterLayout({
 						{t("navigation.moreTools")}
 					</h2>
 					<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-						{related.map((tool) => {
-							const Icon = tool.icon;
-							return (
-								<Link
-									key={tool.id}
-									href={`/${categorySlug}/${tool.slug}`}
-									className="card-hover group rounded-xl border border-border bg-card p-4"
-								>
-									<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-										<Icon className="h-5 w-5" />
-									</div>
-									<h3 className="mt-3 font-semibold">
-										{tc(`${tool.id}.name`)}
-									</h3>
-									<p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-										{tc(`${tool.id}.description`)}
-									</p>
-								</Link>
-							);
-						})}
+						{related.map((tool) => (
+							<ToolCard
+								key={tool.id}
+								icon={tool.icon}
+								title={tc(`${tool.id}.name`)}
+								description={tc(`${tool.id}.description`)}
+								href={`/${categorySlug}/${tool.slug}`}
+							/>
+						))}
 					</div>
 				</section>
 			)}

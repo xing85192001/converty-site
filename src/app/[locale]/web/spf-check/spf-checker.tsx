@@ -85,7 +85,7 @@ export function SPFChecker() {
                               ? "bg-red-500/20 text-red-600"
                               : mech.qualifier === "~"
                                 ? "bg-yellow-500/20 text-yellow-600"
-                                : "bg-gray-500/20 text-gray-600"
+                                : "bg-muted text-muted-foreground"
                         }`}
                       >
                         {mech.qualifier} {SPF_QUALIFIERS[mech.qualifier]?.name}

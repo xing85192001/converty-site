@@ -106,7 +106,7 @@ export function HomeEquityCalculator() {
               type="checkbox"
               checked={isHELOC}
               onChange={(e) => setIsHELOC(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300"
+              className="h-4 w-4 rounded border-border"
             />
             <Label htmlFor="isHELOC" className="text-sm font-normal">
               {t("labels.heloc")}

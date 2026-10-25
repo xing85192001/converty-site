@@ -2,7 +2,7 @@
   "common": {
     "siteName": "baikecalc",
     "quickTools": "Quick Tools",
-    "tagline": "Free online calculators and converters",
+    "tagline": "Free calculators and smart tools for work, life, and everything in between.",
     "heroBadge": "199+ free tools · ready to use",
     "allTools": "All Tools",
     "home": "Home",
@@ -75,7 +75,7 @@
     "coreFeatures": "Core Features",
     "toolHighlights": "Tool Highlights",
     "blog": "Blog",
-    "homepageTitle": "Free online toolbox",
+    "homepageTitle": "Every calculation. One simple place.",
     "homepageBrowseAll": "Browse All Tools",
     "homepageViewBlog": "View Blog",
     "homepageViewAll": "View All →",

@@ -10,8 +10,8 @@ import * as path from "node:path";
 import Fuse from "fuse.js";
 import type { SearchDocument } from "../src/lib/search/search-data";
 
-// Locales to generate indexes for
-const LOCALES = ["en", "fr", "de", "it", "zh"] as const;
+// Locales to generate indexes for — must match src/i18n/config.ts
+const LOCALES = ["zh", "zh-TW", "en", "de", "ja", "es"] as const;
 
 // Fuse.js keys for search - must match runtime options
 const FUSE_KEYS = ["name", "description", "keywords", "categoryName"];
@@ -33,13 +33,16 @@ function loadConverters(): ConverterEntry[] {
   // We read the compiled JS or use require for simplicity in the script
   const registryFiles = [
     "automotive-converters",
+    "chemistry-converters",
     "color-converters",
     "cooking-converters",
     "crypto-converters",
     "data-converters",
     "datetime-converters",
+    "engineering-converters",
     "finance-converters",
     "health-converters",
+    "infrastructure-converters",
     "math-converters",
     "music-converters",
     "network-converters",

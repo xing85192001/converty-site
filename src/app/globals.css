@@ -4,26 +4,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* ===== Light theme (default) ===== */
-  --color-background: #ffffff;
-  --color-foreground: #18211e; /* near-black with green tint */
+  /* ===== Light theme (default) — BaikeCalc SaaS rebrand ===== */
+  --color-background: #f5f7fb;
+  --color-foreground: #172343; /* deep navy — used for headings & primary text */
   --color-card: #ffffff;
-  --color-card-foreground: #18211e;
+  --color-card-foreground: #172343;
   --color-popover: #ffffff;
-  --color-popover-foreground: #18211e;
-  --color-primary: #1d9e75; /* brand mint green */
+  --color-popover-foreground: #172343;
+  --color-primary: #263ccb; /* brand blue */
   --color-primary-foreground: #ffffff;
-  --color-secondary: #f1f7f4;
-  --color-secondary-foreground: #18211e;
-  --color-muted: #f1f7f4;
-  --color-muted-foreground: #5d6b66; /* muted green-gray */
-  --color-accent: #e8f5f0; /* mint-50 */
-  --color-accent-foreground: #1d9e75;
+  --color-secondary: #eef1fb;
+  --color-secondary-foreground: #172343;
+  --color-muted: #eef1fb;
+  --color-muted-foreground: #5b6478; /* gray-blue secondary text */
+  --color-accent: #eef1fb;
+  --color-accent-foreground: #263ccb;
   --color-destructive: #ef4444;
   --color-destructive-foreground: #ffffff;
-  --color-border: #e8e8e8;
-  --color-input: #e8e8e8;
-  --color-ring: #1d9e75;
+  --color-border: #e6eaf2;
+  --color-input: #e6eaf2;
+  --color-ring: #263ccb;
+
+  /* Restrained, layered shadows (no heavy glow) */
+  --shadow-sm: 0 1px 2px 0 rgb(16 24 40 / 0.06);
+  --shadow-md: 0 4px 12px -2px rgb(16 24 40 / 0.08);
+  --shadow-lg: 0 12px 28px -6px rgb(16 24 40 / 0.10);
 
   --radius: 0.75rem; /* rounded-xl */
   --radius-lg: var(--radius);
@@ -31,32 +36,33 @@
   --radius-sm: calc(var(--radius) - 4px);
 
   /* Brand harmonies (kept for legacy gradient refs) */
-  --color-brand: #1d9e75;
-  --color-brand2: #34d8a4;
-  --color-brand-green: #1d9e75;
+  --color-brand: #263ccb;
+  --color-brand2: #5b73ff;
+  --color-brand-green: #263ccb;
   --color-brand-pink: #ec4899;
 }
 
 .dark {
-  --color-background: #0f172a; /* slate-900 */
-  --color-foreground: #e2e8f0; /* slate-200 */
-  --color-card: #1e293b; /* slate-800 */
-  --color-card-foreground: #e2e8f0;
-  --color-popover: #1e293b;
-  --color-popover-foreground: #e2e8f0;
-  --color-primary: #34d8a4; /* bright mint for dark mode */
-  --color-primary-foreground: #06231b;
-  --color-secondary: #16241f;
-  --color-secondary-foreground: #e2e8f0;
-  --color-muted: #16241f;
-  --color-muted-foreground: #9dbdb2;
-  --color-accent: #0f2a22;
-  --color-accent-foreground: #7fe9c8;
+  /* ===== Dark theme — deep navy canvas, bright-blue accent ===== */
+  --color-background: #0b1020;
+  --color-foreground: #e6eaf5;
+  --color-card: #141b2e;
+  --color-card-foreground: #e6eaf5;
+  --color-popover: #141b2e;
+  --color-popover-foreground: #e6eaf5;
+  --color-primary: #5b73ff; /* bright blue for contrast on dark */
+  --color-primary-foreground: #0b1020;
+  --color-secondary: #1a2238;
+  --color-secondary-foreground: #e6eaf5;
+  --color-muted: #1a2238;
+  --color-muted-foreground: #97a1b8;
+  --color-accent: #1a2238;
+  --color-accent-foreground: #8fa4ff;
   --color-destructive: #f87171;
   --color-destructive-foreground: #ffffff;
-  --color-border: #22332c;
-  --color-input: #22332c;
-  --color-ring: #34d8a4;
+  --color-border: #26314d;
+  --color-input: #26314d;
+  --color-ring: #5b73ff;
 }
 
 * {
@@ -70,6 +76,7 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
+  overflow-x: hidden;
 }
 
 .scrollbar-hide {
@@ -81,9 +88,7 @@ body {
   display: none;
 }
 
-/* ===== Dark (tooldone-style) header overrides =====
-   The header bar is dark on every page. Utility classes inside it are
-   re-tinted for legibility; white panels inside it opt out via .light-panel. */
+/* ===== Dark header overrides (legacy; kept for compatibility) ===== */
 .dark-header .text-muted-foreground {
   color: rgba(255, 255, 255, 0.72);
 }
@@ -115,32 +120,4 @@ body {
 }
 .dark-header .light-panel .hover\:text-foreground:hover {
   color: var(--color-foreground);
-}
-
-/* ===== Plan D: Liquid Glass — 极光背景（置于内容之下，不破坏深色模式） ===== */
-body {
-  overflow-x: hidden;
-}
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(80px);
-  z-index: -1;
-  pointer-events: none;
-}
-body::before {
-  width: 540px;
-  height: 540px;
-  left: -140px;
-  top: -140px;
-  background: radial-gradient(closest-side, rgba(52, 216, 164, 0.45), transparent 70%);
-}
-body::after {
-  width: 580px;
-  height: 580px;
-  right: -180px;
-  top: 160px;
-  background: radial-gradient(closest-side, rgba(45, 212, 191, 0.3), transparent 70%);
 }

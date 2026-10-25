@@ -64,7 +64,7 @@ export function HTTPSChecker() {
                         ? "bg-yellow-500/20 text-yellow-600"
                         : status?.status === "missing"
                           ? "bg-red-500/20 text-red-600"
-                          : "bg-gray-500/20 text-gray-600"
+                          : "bg-muted text-muted-foreground"
                   }`}
                 >
                   {status?.status || "unknown"}

@@ -97,7 +97,7 @@ export function StudentLoanCalculator() {
               type="checkbox"
               checked={interestCapitalized}
               onChange={(e) => setInterestCapitalized(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300"
+              className="h-4 w-4 rounded border-border"
             />
             <Label htmlFor="interestCapitalized" className="text-sm font-normal">
               {t("finance.capitalizeInterest")}

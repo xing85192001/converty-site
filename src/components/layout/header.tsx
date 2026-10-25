@@ -39,19 +39,19 @@ export function Header() {
 	}, [megaOpen]);
 
 	return (
-		<header className="sticky top-0 z-50 border-b border-white/60 bg-white/55 backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+		<header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur shadow-sm dark:border-border dark:bg-background/95">
 			<div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
 				{/* Logo (single) */}
 				<Link
 					href="/"
-					className="flex shrink-0 items-center gap-2 rounded-full border border-white/70 bg-white/60 px-2 py-1.5 pl-2 pr-3.5 shadow-sm backdrop-blur dark:border-white/15 dark:bg-white/10"
+					className="flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-2 py-1.5 pl-2 pr-3.5 shadow-sm"
 				>
 					<img
 						src="/logo.jpg"
 						alt="baikecalc"
 						className="h-7 w-7 rounded-lg object-cover"
 					/>
-					<span className="text-base font-extrabold tracking-tight text-[#0E211C] dark:text-white">
+					<span className="text-base font-extrabold tracking-tight text-foreground">
 						baike<span className="text-primary">calc</span>
 					</span>
 				</Link>
@@ -68,7 +68,7 @@ export function Header() {
 						<Link
 							key={id}
 							href={`/${c.slug}`}
-							className="flex shrink-0 items-center gap-1.5 rounded-lg border border-black/10 bg-white/50 px-3 py-1.5 text-sm text-[#2c4038] backdrop-blur transition-colors hover:border-primary hover:bg-white/80 hover:text-primary dark:border-white/15 dark:bg-white/5 dark:text-white/85 dark:hover:bg-white/10"
+							className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
 						>
 							<c.icon className="h-3.5 w-3.5" />
 							{nav(`${id}.name`)}
@@ -86,7 +86,7 @@ export function Header() {
 							setMegaOpen((v) => !v);
 						}}
 						aria-expanded={megaOpen}
-						className="flex items-center gap-1 rounded-lg border border-black/10 bg-white/50 px-3 py-1.5 text-sm font-medium text-[#2c4038] backdrop-blur transition-colors hover:border-primary hover:bg-white/80 hover:text-primary dark:border-white/15 dark:bg-white/5 dark:text-white/85 dark:hover:bg-white/10"
+						className="flex items-center gap-1 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
 					>
 							{t("allTools")}
 							<svg
@@ -152,7 +152,7 @@ export function Header() {
 
 				<Link
 					href="/blog"
-					className="flex shrink-0 items-center rounded-lg border border-black/10 bg-white/50 px-3 py-1.5 text-sm text-[#2c4038] backdrop-blur transition-colors hover:border-primary hover:bg-white/80 hover:text-primary dark:border-white/15 dark:bg-white/5 dark:text-white/85 dark:hover:bg-white/10"
+					className="flex shrink-0 items-center rounded-lg border border-border bg-card px-3 py-1.5 text-sm text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
 				>
 					{t("blog")}
 				</Link>
@@ -164,7 +164,7 @@ export function Header() {
 					<Button
 						variant="ghost"
 						size="icon"
-						className="h-9 w-9 text-[#2c4038] hover:bg-black/5 hover:text-primary dark:text-white/80 dark:hover:bg-white/10"
+						className="h-9 w-9 text-foreground hover:bg-muted hover:text-primary dark:text-foreground dark:hover:bg-muted"
 						onClick={() => window.dispatchEvent(new Event("open-global-search"))}
 						aria-label={t("search.placeholder")}
 					>
@@ -176,7 +176,7 @@ export function Header() {
 					<Button
 						variant="ghost"
 						size="icon"
-						className="h-9 w-9 text-white/80 hover:bg-white/10 hover:text-white md:hidden"
+						className="h-9 w-9 text-foreground hover:bg-muted hover:text-primary md:hidden"
 						onClick={() => setMenuOpen(!menuOpen)}
 						aria-label="Menu"
 					>

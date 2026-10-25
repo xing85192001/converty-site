@@ -85,8 +85,8 @@ export function AllToolsBrowser() {
             className={cn(
               "shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors",
               selected === n.id
-                ? "bg-primary/15 text-primary"
-                : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground"
+                ? "border border-primary bg-primary/10 font-medium text-primary"
+                : "border border-border bg-card text-muted-foreground hover:border-primary hover:text-primary"
             )}
           >
             {n.label}
@@ -105,8 +105,8 @@ export function AllToolsBrowser() {
               className={cn(
                 "block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors",
                 selected === n.id
-                  ? "bg-primary/15 font-medium text-primary"
-                  : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                  ? "bg-primary/10 font-medium text-primary"
+                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
               {n.label}
@@ -123,7 +123,7 @@ export function AllToolsBrowser() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={ts("placeholder")}
-            className="w-full rounded-xl border border-white/10 bg-white/5 py-2.5 pl-10 pr-3 text-sm outline-none transition-colors focus:border-primary/40"
+            className="w-full rounded-xl border border-border bg-card py-2.5 pl-10 pr-3 text-sm outline-none transition-colors focus:border-primary"
           />
         </div>
 
@@ -143,7 +143,7 @@ export function AllToolsBrowser() {
                   <Link
                     key={it.slug}
                     href={it.href}
-                    className="rounded-xl border border-white/10 bg-card p-4 text-sm font-medium transition-colors hover:bg-muted/50 hover:text-primary"
+                    className="rounded-xl border border-border bg-card p-4 text-sm font-medium transition-colors hover:border-primary hover:bg-muted/50 hover:text-primary"
                   >
                     {it.name}
                   </Link>

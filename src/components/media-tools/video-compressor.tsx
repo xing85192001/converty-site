@@ -204,7 +204,7 @@ export function VideoCompressor() {
       <div className="flex min-h-[320px] flex-col rounded-2xl border border-white/10 bg-card p-5">
         <div className="mb-3 flex items-center justify-between">
           <span className="text-sm font-medium">{t("settingsTitle")}</span>
-          <span className="rounded-full bg-pink-500/15 px-2 py-0.5 text-[10px] font-medium text-pink-300">
+          <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-medium text-primary">
             FFmpeg
           </span>
         </div>

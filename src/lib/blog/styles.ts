@@ -10,43 +10,24 @@ export interface CategoryStyle {
   lightBg: string;
 }
 
+// All blog categories share the brand-blue accent for a unified, professional
+// SaaS look. Categories stay distinguishable by their icon + label, not by color.
+const BRAND: Omit<CategoryStyle, "icon" | "label"> = {
+  gradient: "from-primary to-[#5b73ff]",
+  badge: "bg-primary/10 text-primary dark:bg-primary/15 dark:text-primary",
+  ring: "ring-primary/20",
+  lightBg: "bg-primary/[0.04] dark:bg-primary/[0.06]",
+};
+
 export function getCategoryStyle(category: BlogCategory): CategoryStyle {
   switch (category) {
     case "finance":
-      return {
-        icon: Landmark,
-        label: "finance",
-        gradient: "from-emerald-500 to-teal-600",
-        badge: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300",
-        ring: "ring-emerald-500/20",
-        lightBg: "bg-emerald-50/50 dark:bg-emerald-950/30",
-      };
+      return { icon: Landmark, label: "finance", ...BRAND };
     case "health":
-      return {
-        icon: HeartPulse,
-        label: "health",
-        gradient: "from-rose-500 to-pink-600",
-        badge: "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
-        ring: "ring-rose-500/20",
-        lightBg: "bg-rose-50/50 dark:bg-rose-950/30",
-      };
+      return { icon: HeartPulse, label: "health", ...BRAND };
     case "math":
-      return {
-        icon: Sigma,
-        label: "math",
-        gradient: "from-blue-500 to-indigo-600",
-        badge: "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300",
-        ring: "ring-blue-500/20",
-        lightBg: "bg-blue-50/50 dark:bg-blue-950/30",
-      };
+      return { icon: Sigma, label: "math", ...BRAND };
     case "cooking":
-      return {
-        icon: ChefHat,
-        label: "cooking",
-        gradient: "from-amber-500 to-orange-600",
-        badge: "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300",
-        ring: "ring-amber-500/20",
-        lightBg: "bg-amber-50/50 dark:bg-amber-950/30",
-      };
+      return { icon: ChefHat, label: "cooking", ...BRAND };
   }
 }

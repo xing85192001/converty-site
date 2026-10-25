@@ -91,7 +91,7 @@ export function PropertyValuationCalculator() {
           <select
             value={propertyType}
             onChange={(e) => setPropertyType(e.target.value as PropertyType)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
           >
             {propertyTypes.map((type) => (
               <option key={type} value={type}>
@@ -106,7 +106,7 @@ export function PropertyValuationCalculator() {
           <select
             value={region}
             onChange={(e) => setRegion(e.target.value as SwissRegion)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
           >
             {swissRegions.map((r) => (
               <option key={r} value={r}>
@@ -133,7 +133,7 @@ export function PropertyValuationCalculator() {
             type="number"
             value={size}
             onChange={(e) => setSize(Number(e.target.value))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
             step="10"
             min="20"
           />
@@ -145,7 +145,7 @@ export function PropertyValuationCalculator() {
             type="number"
             value={rooms}
             onChange={(e) => setRooms(Number(e.target.value))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
             step="0.5"
             min="1"
           />
@@ -157,12 +157,12 @@ export function PropertyValuationCalculator() {
             type="number"
             value={constructionYear}
             onChange={(e) => setConstructionYear(Number(e.target.value))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
             step="1"
             min="1900"
             max={currentYear}
           />
-          <p className="text-xs text-gray-500 mt-1">{t("ageYears", { age })}</p>
+          <p className="text-xs text-muted-foreground mt-1">{t("ageYears", { age })}</p>
         </div>
 
         <div>
@@ -170,7 +170,7 @@ export function PropertyValuationCalculator() {
           <select
             value={condition}
             onChange={(e) => setCondition(e.target.value as PropertyCondition)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+            className="w-full px-3 py-2 border border-border rounded-md"
           >
             {conditions.map((c) => (
               <option key={c} value={c}>
@@ -182,7 +182,7 @@ export function PropertyValuationCalculator() {
       </div>
 
       {/* Features Section */}
-      <div className="border border-gray-200 rounded-lg p-4">
+      <div className="border border-border rounded-lg p-4">
         <h3 className="font-semibold mb-4">{t("features")}</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {PROPERTY_FEATURES.map((feature) => (
@@ -204,7 +204,7 @@ export function PropertyValuationCalculator() {
         <div className="space-y-6">
           {/* Main Valuation Card */}
           <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-200 rounded-lg p-6">
-            <p className="text-sm text-gray-600 mb-2">{t("estimatedValue")}</p>
+            <p className="text-sm text-muted-foreground mb-2">{t("estimatedValue")}</p>
             <div className="space-y-3">
               <div>
                 <p className="text-3xl font-bold text-blue-700">
@@ -213,19 +213,19 @@ export function PropertyValuationCalculator() {
               </div>
               <div className="grid grid-cols-3 gap-4 pt-3 border-t border-blue-200">
                 <div>
-                  <p className="text-xs text-gray-600">{t("minValue")}</p>
+                  <p className="text-xs text-muted-foreground">{t("minValue")}</p>
                   <p className="font-semibold text-sm">
                     {formatCurrencyValue(result.minValue, result.currency)}
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-600">{t("maxValue")}</p>
+                  <p className="text-xs text-muted-foreground">{t("maxValue")}</p>
                   <p className="font-semibold text-sm">
                     {formatCurrencyValue(result.maxValue, result.currency)}
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-600">{t("confidence")}</p>
+                  <p className="text-xs text-muted-foreground">{t("confidence")}</p>
                   <p className="font-semibold text-sm">
                     {t(`confidenceLevels.${result.confidence}`)}
                   </p>
@@ -236,20 +236,20 @@ export function PropertyValuationCalculator() {
 
           {/* Key Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-gray-50 rounded-lg p-3">
-              <p className="text-xs text-gray-600">{t("pricePerM2")}</p>
+            <div className="bg-muted rounded-lg p-3">
+              <p className="text-xs text-muted-foreground">{t("pricePerM2")}</p>
               <p className="text-lg font-bold">
                 {formatCurrencyValue(result.pricePerM2, result.currency)}/m²
               </p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-3">
-              <p className="text-xs text-gray-600">{t("regionAverage")}</p>
+            <div className="bg-muted rounded-lg p-3">
+              <p className="text-xs text-muted-foreground">{t("regionAverage")}</p>
               <p className="text-lg font-bold">
                 {formatCurrencyValue(result.regionPricePerM2, result.currency)}/m²
               </p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-3">
-              <p className="text-xs text-gray-600">{t("vsNational")}</p>
+            <div className="bg-muted rounded-lg p-3">
+              <p className="text-xs text-muted-foreground">{t("vsNational")}</p>
               <p
                 className={`text-lg font-bold ${
                   result.vsRegionalAverage > 0 ? "text-green-600" : "text-red-600"
@@ -262,17 +262,17 @@ export function PropertyValuationCalculator() {
           </div>
 
           {/* Valuation Breakdown */}
-          <div className="border border-gray-200 rounded-lg p-4">
+          <div className="border border-border rounded-lg p-4">
             <h3 className="font-semibold mb-4">{t("valuationBreakdown")}</h3>
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">{t("baseValue")}</span>
+                <span className="text-sm text-muted-foreground">{t("baseValue")}</span>
                 <span className="font-semibold">
                   {formatCurrencyValue(result.baseValue, result.currency)}
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">{t("ageAdjustment")}</span>
+                <span className="text-sm text-muted-foreground">{t("ageAdjustment")}</span>
                 <span
                   className={`font-semibold ${
                     result.ageAdjustment >= 0 ? "text-green-600" : "text-red-600"
@@ -283,7 +283,7 @@ export function PropertyValuationCalculator() {
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-600">{t("conditionAdjustment")}</span>
+                <span className="text-sm text-muted-foreground">{t("conditionAdjustment")}</span>
                 <span
                   className={`font-semibold ${
                     result.conditionAdjustment >= 0 ? "text-green-600" : "text-red-600"
@@ -295,7 +295,7 @@ export function PropertyValuationCalculator() {
               </div>
               {result.featureBonus > 0 && (
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">{t("featureBonus")}</span>
+                  <span className="text-sm text-muted-foreground">{t("featureBonus")}</span>
                   <span className="font-semibold text-green-600">
                     +{formatCurrencyValue(result.featureBonus, result.currency)}
                   </span>
@@ -313,7 +313,7 @@ export function PropertyValuationCalculator() {
 
           {/* Selected Features */}
           {features.length > 0 && (
-            <div className="border border-gray-200 rounded-lg p-4">
+            <div className="border border-border rounded-lg p-4">
               <h3 className="font-semibold mb-3">{t("selectedFeatures")}</h3>
               <div className="flex flex-wrap gap-2">
                 {features.map((featureId) => {
@@ -337,7 +337,7 @@ export function PropertyValuationCalculator() {
           {/* Reset Button */}
           <button
             onClick={reset}
-            className="w-full px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium hover:bg-gray-300"
+            className="w-full px-4 py-2 bg-muted text-foreground rounded-lg font-medium hover:bg-muted"
           >
             {t("reset")}
           </button>

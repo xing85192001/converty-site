@@ -26,7 +26,7 @@ export function MediaToolsSection() {
 	return (
 		<section className="mb-3">
 			<div className="mb-4 flex items-end justify-between">
-				<h2 className="flex items-center gap-2 text-xl font-bold">
+				<h2 className="flex items-center gap-2 text-xl font-bold text-foreground">
 					{t("sectionTitle")}{" "}
 					<small className="text-sm font-normal text-muted-foreground">
 						{t("sectionSubtitle")}
@@ -43,8 +43,8 @@ export function MediaToolsSection() {
 						className={cn(
 							"cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors",
 							activeCategory === key
-								? "bg-pink-500/15 text-pink-400"
-								: "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground",
+								? "bg-primary/10 text-primary"
+								: "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary",
 						)}
 					>
 						{t(`categories.${key}`)}
@@ -59,12 +59,12 @@ export function MediaToolsSection() {
 						<Link
 							key={tool.id}
 							href={`/tools/${tool.slug}`}
-							className="group relative rounded-2xl border border-white/10 bg-card p-5 text-left transition-all duration-300 hover:-translate-y-1 hover:border-pink-500/30 hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+							className="group relative rounded-xl border border-border bg-card p-5 text-left shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
 						>
-							<div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/5 bg-pink-500/10 text-pink-400 transition-colors group-hover:bg-pink-500 group-hover:text-white">
+							<div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
 								<Icon className="h-5 w-5" />
 							</div>
-							<h3 className="mt-4 text-[15px] font-semibold">
+							<h3 className="mt-4 text-[15px] font-semibold text-foreground">
 								{t(tool.titleKey)}
 							</h3>
 							<p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
