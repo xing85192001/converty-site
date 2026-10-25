@@ -7,7 +7,7 @@
     "allTools": "Todas las herramientas",
     "home": "Inicio",
     "search": {
-      "placeholder": "Busque una calculadora...",
+      "placeholder": "Busca calculadora, herramienta o palabra clave…",
       "noResults": "No se encontraron calculadoras",
       "calculators": "Calculadoras",
       "loading": "Cargando búsqueda...",
@@ -33,7 +33,8 @@
         "terms": "Términos de Servicio",
         "blog": "Blog",
         "sitemap": "Mapa del sitio"
-      }
+      },
+      "tagline": "Herramientas en línea gratuitas para una vida mejor."
     },
     "navigation": {
       "categories": "Categorías",
@@ -79,7 +80,7 @@
     "homepageBrowseAll": "Explorar todas las herramientas",
     "homepageViewBlog": "Ver blog",
     "homepageViewAll": "Ver todo →",
-    "hotTools": "🔥 Herramientas calientes",
+    "hotTools": "🔥 Herramientas populares",
     "colorHealthTools": "🎨 Herramientas de color y salud",
     "allCategories": "📂 Todas las categorías",
     "hotToolsChips": {
@@ -105,11 +106,13 @@
     "sitemapIntro": "Explora cada herramienta, categoría y artículo del blog de baikecalc. Indexado por categoría para llegar rápido a la calculadora que necesitas.",
     "relatedCategories": "Categorías Relacionadas",
     "relatedArticles": "Artículos relacionados",
-    "other": "Otros"
+    "other": "Otros",
+    "heroTitle1": "Todos los cálculos.",
+    "heroTitle2": "Un solo lugar."
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Procesamiento de imágenes y video",
-    "sectionSubtitle": "Herramientas de imagen y video · Nuevo",
+    "sectionTitle": "Herramientas de imagen y video",
+    "sectionSubtitle": "Convierte, comprime y optimiza tus archivos.",
     "featuredTitle": "✨ Herramientas destacadas",
     "allCategories": "Todo",
     "categories": {
@@ -20669,8 +20672,8 @@
   "home": {
     "introTitle": "Acerca de Baike Calc",
     "intro": "Baike Calc es un conjunto gratuito de 198 calculadoras y conversores en línea repartidos en 19 categorías: matemáticas, finanzas, salud, procesamiento de imágenes, ingeniería y redes, entre otras. Todos los cálculos se ejecutan localmente en tu navegador: lo que escribas no se envía a ningún servidor y no necesitas crear una cuenta para usar ninguna herramienta. Cada página incluye instrucciones paso a paso, una explicación de la fórmula utilizada y una sección de preguntas frecuentes, para que entiendas cómo se obtiene cada resultado en lugar de leer solo un número. Tanto si eres estudiante, ingeniero, profesional de las finanzas como si solo necesitas una cifra rápida, aquí encontrarás una herramienta útil.",
-    "categoriesTitle": "Explorar por categoría",
-    "categoriesDesc": "198 herramientas en 19 categorías. Abre una categoría para ver todas sus calculadoras con explicaciones.",
+    "categoriesTitle": "Explorar categorías",
+    "categoriesDesc": "Encuentra la herramienta adecuada para cada tarea.",
     "categoryDesc": {
       "color": "Conversión de color y paletas: HEX, RGB y HSL, además de contraste y diferencia.",
       "cooking": "Conversiones de cocina, escalado de recetas y conversión de temperaturas de horno.",
@@ -20692,26 +20695,26 @@
       "video": "Vídeo: bitrate, tamaño de archivo, fotogramas por segundo y compresión.",
       "web": "Herramientas web: revisión SEO, codificación de URL, tiempo de respuesta y DNS."
     },
-    "whyTitle": "Por qué usar Baike Calc",
+    "whyTitle": "¿Por qué BaikeCalc?",
     "whyItems": [
       {
-        "title": "Cálculo local, sin rastro de datos",
-        "desc": "Todos los cálculos se realizan en tu navegador. Tus datos no llegan a ningún servidor y desaparecen al cerrar la pestaña."
+        "title": "Privacidad",
+        "desc": "Tus datos permanecen seguros y privados"
       },
       {
-        "title": "Fórmulas abiertas y verificables",
-        "desc": "Cada página indica el algoritmo, la fórmula y sus supuestos, para que puedas comprobar cada paso por tu cuenta."
+        "title": "Fórmulas transparentes",
+        "desc": "Claras y fáciles de verificar"
       },
       {
-        "title": "Sin registro y totalmente gratis",
-        "desc": "Sin cuenta, sin correo electrónico y sin límite diario de uso. Abre la página y empieza a calcular."
+        "title": "Gratis",
+        "desc": "Sin costos ocultos ni registro"
       },
       {
-        "title": "19 categorías y sigue creciendo",
-        "desc": "Desde porcentajes cotidianos hasta planificación de capacidad para virtualización de servidores, la colección sigue ampliándose."
+        "title": "Herramientas cotidianas",
+        "desc": "Ahorra tiempo y haz las cosas"
       }
     ],
-    "guidesDesc": "Guías detalladas sobre casos concretos, que explican las fórmulas y las alternativas, cada una enlazada a una herramienta que puedes probar al momento.",
+    "guidesDesc": "Consejos, guías y artículos útiles.",
     "faqTitle": "Preguntas frecuentes",
     "faq": [
       {
@@ -20728,7 +20731,14 @@
       }
     ],
     "popularTitle": "Calculadoras Populares",
-    "popularDesc": "Accede directamente a las calculadoras que nuestros visitantes usan más."
+    "popularDesc": "Accede directamente a las calculadoras que nuestros visitantes usan más.",
+    "hotToolsDesc": "Acceso rápido a las herramientas más usadas",
+    "whySubtitle": "Simple, local y siempre gratis.",
+    "blogTitle": "Lo último de nuestro blog",
+    "mediaGroupImage": "Herramientas de imagen",
+    "mediaGroupVideo": "Herramientas de video",
+    "mediaImageDesc": "Convierte formatos, comprime y más.",
+    "mediaVideoDesc": "Comprime, convierte y edita videos."
   },
   "guide": {
     "howToUseTitle": "Cómo usar {name}",

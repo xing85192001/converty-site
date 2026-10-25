@@ -7,7 +7,7 @@
     "allTools": "All Tools",
     "home": "Home",
     "search": {
-      "placeholder": "Search for a calculator...",
+      "placeholder": "Search for a calculator, tool or keyword...",
       "noResults": "No calculators found",
       "calculators": "Calculators",
       "loading": "Loading search...",
@@ -33,7 +33,8 @@
         "terms": "Terms of Service",
         "blog": "Blog",
         "sitemap": "Sitemap"
-      }
+      },
+      "tagline": "Free online tools for a better life."
     },
     "navigation": {
       "categories": "Categories",
@@ -79,7 +80,7 @@
     "homepageBrowseAll": "Browse All Tools",
     "homepageViewBlog": "View Blog",
     "homepageViewAll": "View All →",
-    "hotTools": "🔥 Hot Tools",
+    "hotTools": "🔥 Popular Tools",
     "colorHealthTools": "🎨 Color & Health Tools",
     "allCategories": "📂 All Categories",
     "hotToolsChips": {
@@ -99,11 +100,13 @@
     "sitemapIntro": "Browse every baikecalc tool, category, and blog post. Indexed by category so you can reach the calculator you need fast.",
     "relatedCategories": "Related Categories",
     "relatedArticles": "Related articles",
-    "other": "Other"
+    "other": "Other",
+    "heroTitle1": "Every calculation.",
+    "heroTitle2": "One simple place."
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Image & Video Processing",
-    "sectionSubtitle": "Image & Video Tools · New",
+    "sectionTitle": "Image & Video Tools",
+    "sectionSubtitle": "Convert, compress and optimize your files.",
     "featuredTitle": "✨ Featured Tools Preview",
     "allCategories": "All",
     "categories": {
@@ -20062,8 +20065,8 @@
   "home": {
     "introTitle": "About Baike Calc",
     "intro": "Baike Calc is a free online toolkit with 198 calculators and converters across 19 categories, including math, finance, health, image processing, engineering, and networking. Every calculation runs locally in your browser: nothing you type is uploaded to a server, and no account is required to use any tool. Each tool page includes step-by-step instructions, an explanation of the underlying formula, and a set of frequently asked questions, so you can understand how a result is derived instead of just reading a number. Whether you are a student, an engineer, a finance professional, or someone who just needs a quick figure, you will find a tool that fits.",
-    "categoriesTitle": "Browse by category",
-    "categoriesDesc": "198 tools across 19 categories. Open any category to see every calculator in it, with explanations.",
+    "categoriesTitle": "Explore Categories",
+    "categoriesDesc": "Find the right tool for every task.",
     "categoryDesc": {
       "color": "Color conversion and palettes: HEX, RGB and HSL, plus contrast and difference checks.",
       "cooking": "Kitchen unit conversion, recipe scaling and oven temperature conversion.",
@@ -20085,26 +20088,26 @@
       "video": "Video: bitrate, file size, frame rate and compression parameters.",
       "web": "Web tools: SEO checks, URL encoding, response time and DNS lookups."
     },
-    "whyTitle": "Why use Baike Calc",
+    "whyTitle": "Why BaikeCalc?",
     "whyItems": [
       {
-        "title": "Runs locally, no data trail",
-        "desc": "All calculations happen inside your browser. Your inputs never reach a server and vanish when you close the tab."
+        "title": "Private",
+        "desc": "Your data stays safe and private"
       },
       {
-        "title": "Open formulas you can verify",
-        "desc": "Every tool page states the algorithm, the formula and its assumptions, so you can check each step yourself."
+        "title": "Transparent Formulas",
+        "desc": "Clear and easy to read"
       },
       {
-        "title": "No sign-up, completely free",
-        "desc": "No account, no email address, no daily usage cap. Just open the page and start calculating."
+        "title": "Free to Use",
+        "desc": "No hidden fees, no registration required"
       },
       {
-        "title": "19 categories and growing",
-        "desc": "From everyday percentage math to server virtualization capacity planning, the library keeps expanding."
+        "title": "Tools for Everyday Tasks",
+        "desc": "Save time and get things done"
       }
     ],
-    "guidesDesc": "In-depth guides built around real scenarios, explaining the formulas and the trade-offs, each linked to a tool you can try right away.",
+    "guidesDesc": "Tips, guides and helpful articles.",
     "faqTitle": "Frequently asked questions",
     "faq": [
       {
@@ -20121,7 +20124,14 @@
       }
     ],
     "popularTitle": "Popular Calculators",
-    "popularDesc": "Jump straight to the calculators our visitors reach for most often."
+    "popularDesc": "Jump straight to the calculators our visitors reach for most often.",
+    "hotToolsDesc": "Quick access to the most used tools",
+    "whySubtitle": "Simple, local and always free.",
+    "blogTitle": "Latest from Our Blog",
+    "mediaGroupImage": "Image Tools",
+    "mediaGroupVideo": "Video Tools",
+    "mediaImageDesc": "Convert formats, compress, and more.",
+    "mediaVideoDesc": "Compress, convert, trim and edit videos."
   },
   "guide": {
     "howToUseTitle": "How to use {name}",

@@ -1,9 +1,9 @@
 "use client";
 
-import { Search } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
+import { ArrowRight, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState, useDeferredValue } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { useDeferredValue, useEffect, useState } from "react";
 import type { SearchDocument } from "@/lib/search/search-data";
 
 /**
@@ -52,6 +52,16 @@ export function HeroSearchInput() {
 		setQuery("");
 	};
 
+	// Blue submit button: jump to the top hit, or browse all tools.
+	const submit = () => {
+		if (results.length > 0) {
+			go(results[active] ?? results[0]);
+			return;
+		}
+		setOpen(false);
+		router.push(`/${locale}/all`);
+	};
+
 	const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 		if (e.key === "ArrowDown") {
 			e.preventDefault();
@@ -71,7 +81,7 @@ export function HeroSearchInput() {
 
 	return (
 		<div className="relative mx-auto w-full max-w-xl">
-			<div className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 shadow-sm transition-colors focus-within:border-primary">
+			<div className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2.5 shadow-md transition-colors focus-within:border-primary">
 				<Search className="h-5 w-5 shrink-0 text-muted-foreground" />
 				<input
 					type="text"
@@ -90,6 +100,14 @@ export function HeroSearchInput() {
 					placeholder={t("placeholder")}
 					className="w-full bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground"
 				/>
+				<button
+					type="button"
+					onClick={submit}
+					aria-label={t("placeholder")}
+					className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition-transform duration-150 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+				>
+					<ArrowRight className="h-4 w-4" />
+				</button>
 			</div>
 
 			{showDropdown && (

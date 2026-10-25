@@ -7,7 +7,7 @@
     "allTools": "Alle Tools",
     "home": "Startseite",
     "search": {
-      "placeholder": "Rechner suchen...",
+      "placeholder": "Rechner, Tool oder Stichwort suchen…",
       "noResults": "Keine Rechner gefunden",
       "calculators": "Rechner",
       "loading": "Suche wird geladen...",
@@ -33,7 +33,8 @@
         "terms": "Nutzungsbedingungen",
         "blog": "Blog",
         "sitemap": "Sitemap"
-      }
+      },
+      "tagline": "Kostenlose Online-Tools für ein besseres Leben."
     },
     "navigation": {
       "categories": "Kategorien",
@@ -82,7 +83,7 @@
     "homepageBrowseAll": "Alle Werkzeuge durchsuchen",
     "homepageTitle": "Kostenlose Online-Toolbox",
     "homepageViewAll": "Alle ansehen →",
-    "hotTools": "🔥 Beliebte Werkzeuge",
+    "hotTools": "🔥 Beliebte Tools",
     "hotToolsChips": {
       "all": "Alle",
       "basic": "Basis",
@@ -99,11 +100,13 @@
     "sitemapIntro": "Durchsuche jedes baikecalc-Werkzeug, jede Kategorie und jeden Blogbeitrag. Nach Kategorie indexiert für schnellen Zugriff.",
     "relatedCategories": "Verwandte Kategorien",
     "relatedArticles": "Verwandte Artikel",
-    "other": "Andere"
+    "other": "Andere",
+    "heroTitle1": "Jede Berechnung.",
+    "heroTitle2": "Ein einfacher Ort."
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ Bild- & Videobearbeitung",
-    "sectionSubtitle": "Bild- & Video-Tools · Neu",
+    "sectionTitle": "Bild- & Video-Tools",
+    "sectionSubtitle": "Dateien konvertieren, komprimieren und optimieren.",
     "featuredTitle": "✨ Empfohlene Tools",
     "allCategories": "Alle",
     "categories": {
@@ -20878,8 +20881,8 @@
   "home": {
     "introTitle": "Über Baike Calc",
     "intro": "Baike Calc ist eine kostenlose Online-Sammlung mit 198 Rechnern und Umrechnern in 19 Kategorien – von Mathematik und Finanzen über Gesundheit und Bildbearbeitung bis zu Technik und Netzwerk. Alle Berechnungen laufen lokal in Ihrem Browser: Ihre Eingaben werden nicht an einen Server übertragen, und Sie benötigen kein Konto. Jede Werkzeugseite enthält eine Schritt-für-Schritt-Anleitung, eine Erklärung der zugrunde liegenden Formel sowie häufige Fragen, damit Sie nachvollziehen können, wie ein Ergebnis entsteht – statt nur eine Zahl zu lesen. Ob Studierende, Ingenieure, Finanzexperten oder alle, die schnell etwas ausrechnen müssen: Hier finden Sie das passende Werkzeug.",
-    "categoriesTitle": "Nach Kategorie stöbern",
-    "categoriesDesc": "198 Werkzeuge in 19 Kategorien. Öffnen Sie eine Kategorie, um alle Rechner darin mit Erklärungen zu sehen.",
+    "categoriesTitle": "Kategorien entdecken",
+    "categoriesDesc": "Finden Sie für jede Aufgabe das passende Werkzeug.",
     "categoryDesc": {
       "color": "Farbumrechnung und Paletten: HEX, RGB und HSL sowie Kontrast- und Farbabstandsprüfung.",
       "cooking": "Küchenumrechnungen, Rezeptskalierung und Umrechnung von Backofentemperaturen.",
@@ -20901,26 +20904,26 @@
       "video": "Video: Bitrate, Dateigröße, Bildrate und Kompressionsparameter.",
       "web": "Web-Werkzeuge: SEO-Prüfung, URL-Kodierung, Antwortzeit und DNS-Abfrage."
     },
-    "whyTitle": "Warum Baike Calc",
+    "whyTitle": "Warum BaikeCalc?",
     "whyItems": [
       {
-        "title": "Lokale Berechnung, keine Datenspur",
-        "desc": "Alle Berechnungen laufen in Ihrem Browser. Ihre Eingaben erreichen keinen Server und verschwinden, sobald Sie den Tab schließen."
+        "title": "Privat",
+        "desc": "Ihre Daten bleiben sicher und privat"
       },
       {
-        "title": "Offene Formeln zum Nachprüfen",
-        "desc": "Jede Werkzeugseite nennt Algorithmus, Formel und Annahmen, damit Sie jeden Schritt selbst nachvollziehen können."
+        "title": "Transparente Formeln",
+        "desc": "Klar und leicht nachvollziehbar"
       },
       {
-        "title": "Keine Anmeldung, völlig kostenlos",
-        "desc": "Kein Konto, keine E-Mail-Adresse, kein Tageslimit. Einfach Seite öffnen und losrechnen."
+        "title": "Kostenlos",
+        "desc": "Keine versteckten Kosten, keine Registrierung"
       },
       {
-        "title": "19 Kategorien und es werden mehr",
-        "desc": "Von der Prozentrechnung im Alltag bis zur Kapazitätsplanung für Servervirtualisierung wächst die Sammlung weiter."
+        "title": "Werkzeuge für den Alltag",
+        "desc": "Zeit sparen und Aufgaben erledigen"
       }
     ],
-    "guidesDesc": "Ausführliche Ratgeber für konkrete Szenarien: sie erklären Formeln und Abwägungen und verlinken jeweils auf das passende Werkzeug.",
+    "guidesDesc": "Tipps, Anleitungen und hilfreiche Artikel.",
     "faqTitle": "Häufige Fragen",
     "faq": [
       {
@@ -20937,7 +20940,14 @@
       }
     ],
     "popularTitle": "Beliebte Rechner",
-    "popularDesc": "Springe direkt zu den Rechnern, die unsere Besucher am häufigsten nutzen."
+    "popularDesc": "Springe direkt zu den Rechnern, die unsere Besucher am häufigsten nutzen.",
+    "hotToolsDesc": "Schneller Zugriff auf die meistgenutzten Tools",
+    "whySubtitle": "Einfach, lokal und immer kostenlos.",
+    "blogTitle": "Neuestes aus unserem Blog",
+    "mediaGroupImage": "Bild-Tools",
+    "mediaGroupVideo": "Video-Tools",
+    "mediaImageDesc": "Formate konvertieren, komprimieren und mehr.",
+    "mediaVideoDesc": "Videos komprimieren, konvertieren und schneiden."
   },
   "guide": {
     "howToUseTitle": "So nutzen Sie {name}",

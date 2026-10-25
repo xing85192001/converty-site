@@ -1,79 +1,90 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { ArrowRight, Image as ImageIcon, Video } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { type MediaCategory, mediaTools } from "@/lib/registry/media-tools";
-import { cn } from "@/lib/utils";
+import { mediaTools } from "@/lib/registry/media-tools";
 
-const categoryKeys: MediaCategory[] = [
-	"all",
-	"watermark",
-	"format",
-	"icon",
-	"compress",
+// Real media-tool ids grouped for the homepage card (no placeholder data).
+const IMAGE_TOOL_IDS = [
+	"image-watermark",
+	"ico",
+	"format-convert",
+	"image-compress",
+	"image-upscale",
+	"image-to-pdf",
 ];
+const VIDEO_TOOL_IDS = ["video-watermark", "video-compress", "video-to-gif"];
 
-export function MediaToolsSection() {
-	const t = useTranslations("mediaTools");
-	const [activeCategory, setActiveCategory] = useState<MediaCategory>("all");
+/**
+ * Homepage "Image & Video Tools" card — the left column of the three-up
+ * feature row. Groups the real media tools registry into two entries that
+ * link to the all-tools browser (which lists the media group).
+ */
+export async function MediaToolsSection() {
+	const t = await getTranslations("common");
+	const tm = await getTranslations("mediaTools");
+	const th = await getTranslations("home");
 
-	const filteredTools =
-		activeCategory === "all"
-			? mediaTools
-			: mediaTools.filter((tool) => tool.categories.includes(activeCategory));
+	const groups = [
+		{
+			key: "image",
+			icon: ImageIcon,
+			title: th("mediaGroupImage"),
+			desc: th("mediaImageDesc"),
+			ids: IMAGE_TOOL_IDS,
+		},
+		{
+			key: "video",
+			icon: Video,
+			title: th("mediaGroupVideo"),
+			desc: th("mediaVideoDesc"),
+			ids: VIDEO_TOOL_IDS,
+		},
+	];
 
 	return (
-		<section className="mb-3">
-			<div className="mb-4 flex items-end justify-between">
-				<h2 className="flex items-center gap-2 text-xl font-bold text-foreground">
-					{t("sectionTitle")}{" "}
-					<small className="text-sm font-normal text-muted-foreground">
-						{t("sectionSubtitle")}
-					</small>
-				</h2>
-			</div>
-
-			<div className="mb-4 flex flex-wrap gap-2">
-				{categoryKeys.map((key) => (
-					<button
-						key={key}
-						type="button"
-						onClick={() => setActiveCategory(key)}
-						className={cn(
-							"cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors",
-							activeCategory === key
-								? "bg-primary/10 text-primary"
-								: "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary",
-						)}
-					>
-						{t(`categories.${key}`)}
-					</button>
-				))}
-			</div>
-
-			<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-				{filteredTools.map((tool) => {
-					const Icon = tool.icon;
+		<section className="flex flex-col rounded-xl border border-border bg-card p-5 shadow-sm">
+			<h2 className="text-base font-bold text-foreground">
+				{tm("sectionTitle")}
+			</h2>
+			<p className="mt-1 text-xs text-muted-foreground">
+				{tm("sectionSubtitle")}
+			</p>
+			<div className="mt-4 flex flex-col gap-2.5">
+				{groups.map((group) => {
+					const count = group.ids
+						.map((id) => mediaTools.find((m) => m.id === id))
+						.filter(Boolean).length;
 					return (
 						<Link
-							key={tool.id}
-							href={`/tools/${tool.slug}`}
-							className="group relative rounded-xl border border-border bg-card p-5 text-left shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-md"
+							key={group.key}
+							href="/all"
+							className="group flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-colors hover:border-primary"
 						>
-							<div className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-								<Icon className="h-5 w-5" />
-							</div>
-							<h3 className="mt-4 text-[15px] font-semibold text-foreground">
-								{t(tool.titleKey)}
-							</h3>
-							<p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
-								{t(tool.descKey)}
-							</p>
+							<span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+								<group.icon className="h-[18px] w-[18px]" />
+							</span>
+							<span className="min-w-0 flex-1">
+								<span className="flex items-center gap-2 text-sm font-semibold text-foreground">
+									{group.title}
+									<span className="text-xs font-normal text-muted-foreground">
+										{count} {t("toolsCount")}
+									</span>
+								</span>
+								<span className="mt-0.5 block truncate text-xs text-muted-foreground">
+									{group.desc}
+								</span>
+							</span>
+							<ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
 						</Link>
 					);
 				})}
 			</div>
+			<Link
+				href="/all"
+				className="mt-4 self-end text-xs font-medium text-primary hover:underline"
+			>
+				{t("homepageViewAll")}
+			</Link>
 		</section>
 	);
 }

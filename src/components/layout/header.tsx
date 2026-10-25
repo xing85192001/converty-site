@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Search, X } from "lucide-react";
+import { Calculator, Menu, Search, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
@@ -13,15 +13,15 @@ import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
-// Category pills shown directly in the dark header bar (tooldone-style).
-// Keep this list short — the bar must fit logo + pills + 所有工具 + 博客 without truncation.
-const pillCategoryIds = [
+// Category links shown directly in the header (reference layout: plain text
+// links, no pill borders). Keep this list short so the bar never overflows.
+const navCategoryIds = [
 	"math",
 	"finance",
 	"health",
+	"photo",
+	"video",
 	"datetime",
-	"cooking",
-	"color",
 ];
 
 export function Header() {
@@ -40,54 +40,52 @@ export function Header() {
 
 	return (
 		<header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur shadow-sm dark:border-border dark:bg-background/95">
-			<div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
-				{/* Logo (single) */}
+			<div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4">
+				{/* Logo + brand */}
 				<Link
 					href="/"
-					className="flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-2 py-1.5 pl-2 pr-3.5 shadow-sm"
+					className="flex shrink-0 items-center gap-2"
+					aria-label="BaikeCalc"
 				>
-					<img
-						src="/logo.jpg"
-						alt="baikecalc"
-						className="h-7 w-7 rounded-lg object-cover"
-					/>
-					<span className="text-base font-extrabold tracking-tight text-foreground">
-						baike<span className="text-primary">calc</span>
+					<span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
+						<Calculator className="h-[18px] w-[18px]" />
+					</span>
+					<span className="text-[17px] font-extrabold tracking-tight text-foreground">
+						Baike<span className="text-primary">Calc</span>
 					</span>
 				</Link>
 
 				{/* Nav */}
-			<nav className="hidden min-w-0 flex-1 items-center gap-1.5 lg:flex">
-				{/* Inner wrapper owns the horizontal scroll so the nav itself does NOT clip
-				    the absolutely-positioned mega menu (overflow-x:auto forces overflow-y:auto). */}
-				<div className="flex min-w-0 flex-1 items-center gap-1.5 overflow-x-auto scrollbar-hide">
-				{pillCategoryIds.map((id) => {
-					const c = getCategoryById(id);
-					if (!c) return null;
-					return (
-						<Link
-							key={id}
-							href={`/${c.slug}`}
-							className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
-						>
-							<c.icon className="h-3.5 w-3.5" />
-							{nav(`${id}.name`)}
-						</Link>
-					);
-				})}
-				</div>
+				<nav className="hidden min-w-0 flex-1 items-center gap-5 lg:flex">
+					{/* Inner wrapper owns the horizontal scroll so the nav itself does NOT clip
+					    the absolutely-positioned mega menu (overflow-x:auto forces overflow-y:auto). */}
+					<div className="flex min-w-0 flex-1 items-center gap-5 overflow-x-auto scrollbar-hide">
+						{navCategoryIds.map((id) => {
+							const c = getCategoryById(id);
+							if (!c) return null;
+							return (
+								<Link
+									key={id}
+									href={`/${c.slug}`}
+									className="shrink-0 text-sm font-medium text-foreground/85 transition-colors hover:text-primary"
+								>
+									{nav(`${id}.name`)}
+								</Link>
+							);
+						})}
+					</div>
 
-				{/* All categories mega menu */}
-				<div className="group relative shrink-0">
-					<button
-						type="button"
-						onClick={(e) => {
-							e.stopPropagation();
-							setMegaOpen((v) => !v);
-						}}
-						aria-expanded={megaOpen}
-						className="flex items-center gap-1 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
-					>
+					{/* All categories mega menu */}
+					<div className="group relative shrink-0">
+						<button
+							type="button"
+							onClick={(e) => {
+								e.stopPropagation();
+								setMegaOpen((v) => !v);
+							}}
+							aria-expanded={megaOpen}
+							className="flex items-center gap-1 text-sm font-medium text-foreground/85 transition-colors hover:text-primary"
+						>
 							{t("allTools")}
 							<svg
 								className={cn(
@@ -110,7 +108,7 @@ export function Header() {
 						<div
 							onClick={(e) => e.stopPropagation()}
 							className={cn(
-								"absolute left-1/2 top-full z-50 w-[720px] -translate-x-1/2 pt-2 transition-all",
+								"absolute left-1/2 top-full z-50 w-[720px] -translate-x-1/2 pt-3 transition-all",
 								megaOpen
 									? "visible opacity-100"
 									: "invisible opacity-0 group-hover:visible group-hover:opacity-100",
@@ -120,14 +118,14 @@ export function Header() {
 								<div className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
 									{t("allTools")}
 								</div>
-								<div className="grid grid-cols-4 gap-3">
+								<div className="grid grid-cols-4 gap-2">
 									{categories.map((c) => {
 										const count = getConvertersByCategory(c.id).length;
 										return (
 											<Link
 												key={c.id}
 												href={`/${c.slug}`}
-												className="flex items-center gap-2 rounded-lg border border-border bg-card px-2.5 py-2 text-sm transition-colors hover:border-primary hover:bg-muted"
+												className="flex items-center gap-2 rounded-lg px-2.5 py-2 text-sm transition-colors hover:bg-muted"
 											>
 												<c.icon className="h-4 w-4 shrink-0 text-primary" />
 												<span className="truncate font-medium">
@@ -149,14 +147,7 @@ export function Header() {
 							</div>
 						</div>
 					</div>
-
-				<Link
-					href="/blog"
-					className="flex shrink-0 items-center rounded-lg border border-border bg-card px-3 py-1.5 text-sm text-foreground transition-colors hover:border-primary hover:bg-muted hover:text-primary dark:border-border dark:bg-card dark:text-foreground dark:hover:bg-muted"
-				>
-					{t("blog")}
-				</Link>
-			</nav>
+				</nav>
 
 				{/* Actions */}
 				<div className="ml-auto flex shrink-0 items-center gap-1">
@@ -164,19 +155,27 @@ export function Header() {
 					<Button
 						variant="ghost"
 						size="icon"
-						className="h-9 w-9 text-foreground hover:bg-muted hover:text-primary dark:text-foreground dark:hover:bg-muted"
-						onClick={() => window.dispatchEvent(new Event("open-global-search"))}
+						className="h-9 w-9 text-muted-foreground hover:bg-muted hover:text-primary"
+						onClick={() =>
+							window.dispatchEvent(new Event("open-global-search"))
+						}
 						aria-label={t("search.placeholder")}
 					>
 						<Search className="h-[18px] w-[18px]" />
 					</Button>
-					<InstallPrompt />
 					<LanguageSwitcher />
 					<ThemeToggle />
+					<Link
+						href="/blog"
+						className="ml-1 hidden text-sm font-medium text-foreground/85 transition-colors hover:text-primary md:block"
+					>
+						{t("blog")}
+					</Link>
+					<InstallPrompt />
 					<Button
 						variant="ghost"
 						size="icon"
-						className="h-9 w-9 text-foreground hover:bg-muted hover:text-primary md:hidden"
+						className="h-9 w-9 text-muted-foreground hover:bg-muted hover:text-primary md:hidden"
 						onClick={() => setMenuOpen(!menuOpen)}
 						aria-label="Menu"
 					>

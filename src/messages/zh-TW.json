@@ -7,7 +7,7 @@
     "allTools": "所有工具",
     "home": "家",
     "search": {
-      "placeholder": "搜尋計算器...",
+      "placeholder": "搜尋計算機、工具或關鍵字…",
       "noResults": "沒有找到計算器",
       "calculators": "計算機",
       "loading": "正在加載搜尋...",
@@ -33,7 +33,8 @@
         "terms": "服務條款",
         "blog": "部落格",
         "sitemap": "網站地圖"
-      }
+      },
+      "tagline": "免費線上工具，讓生活更美好。"
     },
     "navigation": {
       "categories": "類別",
@@ -101,11 +102,13 @@
     "sitemapIntro": "瀏覽 baikecalc 全部工具、分類與部落格文章。依分類索引，快速抵達你需要的計算器。",
     "relatedCategories": "相關分類",
     "relatedArticles": "相關文章",
-    "other": "其他"
+    "other": "其他",
+    "heroTitle1": "免費線上工具箱",
+    "heroTitle2": "一站式解決所有計算"
   },
   "mediaTools": {
-    "sectionTitle": "🖼️ 圖片 / 影片處理",
-    "sectionSubtitle": "圖片與影片工具 · 新增",
+    "sectionTitle": "圖片與影片工具",
+    "sectionSubtitle": "轉換、壓縮與最佳化你的檔案。",
     "featuredTitle": "✨ 精選工具預覽",
     "allCategories": "全部",
     "categories": {
@@ -26984,8 +26987,8 @@
   "home": {
     "introTitle": "關於百科計算機",
     "intro": "百科計算機收錄 198 個免費線上計算機與轉換工具，涵蓋數學、財務、健康、圖片處理、工程與網路等 19 個分類。所有計算都在瀏覽器本機完成，輸入的資料不會上傳到伺服器，無需註冊或登入即可使用每一個工具。每個工具頁面都附有詳細的使用步驟、計算原理與公式說明，以及常見問題解答，幫助你理解結果背後的演算法邏輯，而不只是得到一個數字。無論你是學生、工程師、財務從業者，或只是想快速算一筆帳，都能在這裡找到順手的工具。",
-    "categoriesTitle": "依分類瀏覽",
-    "categoriesDesc": "19 個分類、198 個工具，點進任意分類可查看該類別下的全部計算機與說明。",
+    "categoriesTitle": "探索分類",
+    "categoriesDesc": "為每種任務找到合適的工具。",
     "categoryDesc": {
       "color": "顏色轉換與配色：HEX、RGB、HSL 互轉，色差與對比度檢查。",
       "cooking": "烹飪計量換算、食譜份量縮放與烘焙溫度轉換。",
@@ -27007,26 +27010,26 @@
       "video": "影片計算：位元率、檔案大小、幀率與壓縮參數。",
       "web": "網站工具：SEO 檢查、URL 編碼、回應時間與網域名稱解析。"
     },
-    "whyTitle": "為什麼選擇百科計算機",
+    "whyTitle": "為什麼選擇 BaikeCalc？",
     "whyItems": [
       {
-        "title": "本機計算，資料不留痕",
-        "desc": "所有運算都在你的瀏覽器內完成，輸入的資料不會上傳伺服器，關閉頁面即徹底清除。"
+        "title": "私密安全",
+        "desc": "你的資料始終安全私密"
       },
       {
-        "title": "公式公開，結果可複核",
-        "desc": "每個工具頁都寫明所用演算法、公式與假設條件，你可以自行驗證每一步計算過程。"
+        "title": "公式透明",
+        "desc": "公式清晰，易於核對"
       },
       {
-        "title": "無需註冊，完全免費",
-        "desc": "不用建立帳號、不用留信箱，打開頁面就能用，也沒有每日次數限制。"
+        "title": "免費使用",
+        "desc": "無隱藏費用，無需註冊"
       },
       {
-        "title": "19 個分類，持續擴充",
-        "desc": "從基礎的百分比計算到伺服器虛擬化容量規劃，工具庫仍在依需求持續增加。"
+        "title": "日常好幫手",
+        "desc": "節省時間，輕鬆完成任務"
       }
     ],
-    "guidesDesc": "圍繞具體情境撰寫的深度指南，講清公式與取捨，每篇都附有可立即試用的對應工具。",
+    "guidesDesc": "技巧、指南與實用文章。",
     "faqTitle": "常見問題",
     "faq": [
       {
@@ -27043,7 +27046,14 @@
       }
     ],
     "popularTitle": "熱門計算器",
-    "popularDesc": "直達使用者最常用的計算器，省去查找時間。"
+    "popularDesc": "直達使用者最常用的計算器，省去查找時間。",
+    "hotToolsDesc": "快速直達最常用的工具",
+    "whySubtitle": "簡單、本地、永遠免費。",
+    "blogTitle": "最新部落格文章",
+    "mediaGroupImage": "圖片工具",
+    "mediaGroupVideo": "影片工具",
+    "mediaImageDesc": "格式轉換、壓縮等更多功能。",
+    "mediaVideoDesc": "壓縮、轉換、剪輯與編輯影片。"
   },
   "guide": {
     "howToUseTitle": "如何使用{name}",
