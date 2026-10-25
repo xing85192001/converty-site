@@ -1,6 +1,6 @@
 "use client";
 
-import { Calculator, Menu, Search, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { GlobalSearch } from "@/components/search/global-search";
@@ -47,9 +47,13 @@ export function Header() {
 					className="flex shrink-0 items-center gap-2"
 					aria-label="BaikeCalc"
 				>
-					<span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-						<Calculator className="h-[18px] w-[18px]" />
-					</span>
+					<img
+						src="/logo-cube.jpg"
+						alt="BaikeCalc"
+						width={32}
+						height={32}
+						className="h-8 w-8 rounded-lg object-cover shadow-sm"
+					/>
 					<span className="text-[17px] font-extrabold tracking-tight text-foreground">
 						Baike<span className="text-primary">Calc</span>
 					</span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Calculator, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -81,9 +81,13 @@ export function Footer() {
 					{/* Brand */}
 					<div className="max-w-xs">
 						<Link href="/" className="flex items-center gap-2">
-							<span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/15">
-								<Calculator className="h-[18px] w-[18px] text-white" />
-							</span>
+							<img
+								src="/logo-cube.jpg"
+								alt="BaikeCalc"
+								width={32}
+								height={32}
+								className="h-8 w-8 rounded-lg object-cover"
+							/>
 							<span className="text-[17px] font-extrabold tracking-tight text-white">
 								Baike<span className="text-[#9fb2ff]">Calc</span>
 							</span>

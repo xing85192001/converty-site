@@ -7,43 +7,44 @@ import { siteConfig } from "@/config/site";
 // 字体已落到本地仓库（src/app/fonts/Inter-latin.woff2），避免构建期访问
 // fonts.gstatic.com（沙箱/Turbopack 抓取字体偶发失败导致整构建中断）。
 const inter = localFont({
-  src: "./fonts/Inter-latin.woff2",
-  variable: "--font-inter",
-  display: "swap",
+	src: "./fonts/Inter-latin.woff2",
+	variable: "--font-inter",
+	display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.siteUrl),
-  title: {
-    default: "baikecalc - Free online calculators and converters",
-    template: "%s | baikecalc",
-  },
-  description:
-    "Free online calculators and converters for finance, health, math, photo, video, and more.",
-  openGraph: {
-    type: "website",
-    siteName: "baikecalc",
-    title: "baikecalc - Free online calculators and converters",
-    description:
-      "Free online calculators and converters for finance, health, math, photo, video, and more.",
-    locale: "en_US",
-    images: [{ url: "/logo.jpg", width: 512, height: 512, alt: "baikecalc" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "baikecalc - Free online calculators and converters",
-    description:
-      "Free online calculators and converters for finance, health, math, photo, video, and more.",
-    images: ["/logo.jpg"],
-  },
-  icons: {
-    icon: [
-      { url: "/logo.jpg", type: "image/jpeg" },
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/icons/apple-touch-icon.png",
-  },
+	metadataBase: new URL(siteConfig.siteUrl),
+	title: {
+		default: "baikecalc - Free online calculators and converters",
+		template: "%s | baikecalc",
+	},
+	description:
+		"Free online calculators and converters for finance, health, math, photo, video, and more.",
+	openGraph: {
+		type: "website",
+		siteName: "baikecalc",
+		title: "baikecalc - Free online calculators and converters",
+		description:
+			"Free online calculators and converters for finance, health, math, photo, video, and more.",
+		locale: "en_US",
+		images: [
+			{ url: "/logo-cube.jpg", width: 512, height: 512, alt: "baikecalc" },
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "baikecalc - Free online calculators and converters",
+		description:
+			"Free online calculators and converters for finance, health, math, photo, video, and more.",
+		images: ["/logo-cube.jpg"],
+	},
+	icons: {
+		icon: [
+			{ url: "/icon.png", type: "image/png" },
+			{ url: "/favicon.ico", sizes: "any" },
+		],
+		apple: "/icons/apple-touch-icon.png",
+	},
 };
 
 // Google Consent Mode v2 default — must run before any ad/analytics script so
@@ -63,57 +64,60 @@ const SW_CLEANUP = `(function(){try{if(!('serviceWorker' in navigator))return;na
 // 结构化数据：在每页注入 Organization + WebSite 实体，帮助 Google 将 "baikecalc" 识别为品牌实体，提升纯品牌词（不带 .com）的搜索召回。
 const SITE_HREF = siteConfig.siteUrl.replace(/\/$/, "");
 const brandJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${SITE_HREF}/#organization`,
-      name: siteConfig.operator.organization,
-      url: SITE_HREF,
-      logo: `${SITE_HREF}/logo.jpg`,
-      email: siteConfig.operator.email,
-      sameAs: [],
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${SITE_HREF}/#website`,
-      url: SITE_HREF,
-      name: siteConfig.operator.name,
-      description:
-        "Free online calculators and converters for finance, health, math, photo, video, and more.",
-      publisher: { "@id": `${SITE_HREF}/#organization` },
-    },
-  ],
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Organization",
+			"@id": `${SITE_HREF}/#organization`,
+			name: siteConfig.operator.organization,
+			url: SITE_HREF,
+			logo: `${SITE_HREF}/logo-cube.jpg`,
+			email: siteConfig.operator.email,
+			sameAs: [],
+		},
+		{
+			"@type": "WebSite",
+			"@id": `${SITE_HREF}/#website`,
+			url: SITE_HREF,
+			name: siteConfig.operator.name,
+			description:
+				"Free online calculators and converters for finance, health, math, photo, video, and more.",
+			publisher: { "@id": `${SITE_HREF}/#organization` },
+		},
+	],
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning translate="no">
-      <body className={`${inter.className} notranslate`} suppressHydrationWarning>
-        <Script id="sw-cleanup" strategy="beforeInteractive">
-          {SW_CLEANUP}
-        </Script>
-        <Script id="google-consent-default" strategy="beforeInteractive">
-          {GOOGLE_CONSENT_DEFAULT}
-        </Script>
-        {adsClientId ? (
-          <Script
-            id="adsbygoogle"
-            strategy="afterInteractive"
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClientId}`}
-            crossOrigin="anonymous"
-          />
-        ) : null}
-        {children}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(brandJsonLd) }}
-        />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" suppressHydrationWarning translate="no">
+			<body
+				className={`${inter.className} notranslate`}
+				suppressHydrationWarning
+			>
+				<Script id="sw-cleanup" strategy="beforeInteractive">
+					{SW_CLEANUP}
+				</Script>
+				<Script id="google-consent-default" strategy="beforeInteractive">
+					{GOOGLE_CONSENT_DEFAULT}
+				</Script>
+				{adsClientId ? (
+					<Script
+						id="adsbygoogle"
+						strategy="afterInteractive"
+						src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClientId}`}
+						crossOrigin="anonymous"
+					/>
+				) : null}
+				{children}
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(brandJsonLd) }}
+				/>
+			</body>
+		</html>
+	);
 }

@@ -1,7 +1,10 @@
 /**
- * Hero illustration for the homepage: a calculator with floating tool cards.
- * Pure inline SVG — no external assets or dependencies. Decorative only
- * (aria-hidden); all meaning lives in the adjacent hero copy.
+ * Hero illustration for the homepage: a soft, pastel calculator with
+ * floating tool cards. Pure inline SVG — no external assets or dependencies.
+ * Decorative only (aria-hidden); all meaning lives in the adjacent hero copy.
+ * Style reference (approved): soft 3D pastel look, light-blue buttons,
+ * deep-navy screen, blue $ badge, four floating cards (chart / image /
+ * calendar / currency), "Simple Tools Better Life" tagline with swash.
  */
 
 export function HeroIllustration({ className }: { className?: string }) {
@@ -13,246 +16,215 @@ export function HeroIllustration({ className }: { className?: string }) {
 			className={className}
 			aria-hidden="true"
 		>
-			{/* soft brand-tinted glow */}
-			<ellipse
-				cx="288"
-				cy="252"
-				rx="252"
-				ry="228"
-				fill="#e6ecff"
-				opacity="0.75"
-			/>
-			<ellipse
-				cx="220"
-				cy="300"
-				rx="180"
-				ry="150"
-				fill="#eef2ff"
-				opacity="0.7"
-			/>
+			<defs>
+				<linearGradient id="bk-body" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stopColor="#ffffff" />
+					<stop offset="100%" stopColor="#edf2fe" />
+				</linearGradient>
+				<linearGradient id="bk-screen" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stopColor="#26325c" />
+					<stop offset="100%" stopColor="#1a2342" />
+				</linearGradient>
+				<radialGradient id="bk-glow" cx="50%" cy="42%" r="62%">
+					<stop offset="0%" stopColor="#eef1fc" />
+					<stop offset="100%" stopColor="#e2e8f8" />
+				</radialGradient>
+			</defs>
+
+			{/* soft periwinkle backdrop */}
+			<circle cx="280" cy="246" r="234" fill="url(#bk-glow)" />
 
 			{/* sparkles */}
 			<path
-				d="M118 158l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12z"
-				fill="var(--primary)"
-				opacity="0.35"
+				d="M112 216l4.5 10.5 10.5 4.5-10.5 4.5L112 246l-4.5-10.5L97 231l10.5-4.5L112 216z"
+				fill="#aebcf0"
 			/>
 			<path
-				d="M486 292l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9z"
-				fill="var(--primary)"
-				opacity="0.3"
-			/>
-			<path
-				d="M96 268l3.5 8 8 3.5-8 3.5-3.5 8-3.5-8-8-3.5 8-3.5 3.5-8z"
-				fill="#8fa0e8"
-				opacity="0.5"
-			/>
-			<path
-				d="M508 108l3.5 8 8 3.5-8 3.5-3.5 8-3.5-8-8-3.5 8-3.5 3.5-8z"
-				fill="var(--primary)"
-				opacity="0.25"
+				d="M498 288l3.5 8 8 3.5-8 3.5-3.5 8-3.5-8-8-3.5 8-3.5 3.5-8z"
+				fill="#c3cdf2"
 			/>
 
 			{/* ===== floating card: trending chart ===== */}
 			<g>
 				<rect
-					x="26"
-					y="72"
-					width="128"
+					x="24"
+					y="62"
+					width="126"
 					height="92"
 					rx="16"
 					fill="#ffffff"
 					stroke="#e6eaf2"
 					strokeWidth="1.5"
 				/>
-				<rect
-					x="44"
-					y="128"
-					width="14"
-					height="20"
-					rx="4"
-					fill="var(--primary)"
-					opacity="0.35"
-				/>
-				<rect
-					x="64"
-					y="116"
-					width="14"
-					height="32"
-					rx="4"
-					fill="var(--primary)"
-					opacity="0.55"
-				/>
-				<rect
-					x="84"
-					y="104"
-					width="14"
-					height="44"
-					rx="4"
-					fill="var(--primary)"
-					opacity="0.75"
-				/>
-				<rect
-					x="104"
-					y="94"
-					width="14"
-					height="54"
-					rx="4"
-					fill="var(--primary)"
-				/>
+				<rect x="46" y="120" width="13" height="16" rx="3.5" fill="#d7f5e3" />
+				<rect x="65" y="112" width="13" height="24" rx="3.5" fill="#a7ebc6" />
+				<rect x="84" y="102" width="13" height="34" rx="3.5" fill="#6fdc9d" />
 				<path
-					d="M46 92l16-12 12 8 18-18"
+					d="M46 96l20-16 13 9 21-20"
 					stroke="#22c55e"
-					strokeWidth="3"
+					strokeWidth="3.5"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 				<path
-					d="M86 70l6 0 0 6"
+					d="M93 69l7 0 0 7"
 					stroke="#22c55e"
-					strokeWidth="3"
+					strokeWidth="3.5"
 					strokeLinecap="round"
 					strokeLinejoin="round"
-					transform="translate(-4 0)"
 				/>
-				<rect x="44" y="136" width="74" height="6" rx="3" fill="#eef1fb" />
+				<rect x="46" y="130" width="76" height="7" rx="3.5" fill="#eef1f8" />
 			</g>
 
-			{/* ===== floating badge: currency ===== */}
-			<g>
-				<circle cx="438" cy="164" r="42" fill="var(--primary)" opacity="0.1" />
-				<circle cx="438" cy="164" r="30" fill="var(--primary)" />
-				<text
-					x="438"
-					y="174"
-					textAnchor="middle"
-					fill="#ffffff"
-					fontSize="26"
-					fontWeight="800"
-					fontFamily="Inter, system-ui, sans-serif"
-				>
-					$
-				</text>
-			</g>
-
-			{/* ===== floating card: calendar ===== */}
+			{/* ===== floating card: image tools ===== */}
 			<g>
 				<rect
-					x="42"
-					y="336"
-					width="112"
-					height="98"
+					x="40"
+					y="332"
+					width="106"
+					height="94"
 					rx="16"
 					fill="#ffffff"
 					stroke="#e6eaf2"
 					strokeWidth="1.5"
 				/>
-				<rect x="66" y="356" width="64" height="54" rx="10" fill="#eef1fb" />
-				<rect
-					x="66"
-					y="356"
-					width="64"
-					height="16"
-					rx="8"
-					fill="var(--primary)"
+				<rect x="66" y="352" width="54" height="54" rx="13" fill="#f0ebfd" />
+				<circle cx="80" cy="368" r="4.5" fill="#8b5cf6" />
+				<path
+					d="M70 398l14-16 11 12 8-8 13 14"
+					stroke="#8b5cf6"
+					strokeWidth="3"
+					strokeLinecap="round"
+					strokeLinejoin="round"
 				/>
-				<rect x="76" y="348" width="6" height="14" rx="3" fill="#c7d0e8" />
-				<rect x="114" y="348" width="6" height="14" rx="3" fill="#c7d0e8" />
-				<circle cx="82" cy="386" r="3.5" fill="#c7d0e8" />
-				<circle cx="98" cy="386" r="3.5" fill="#c7d0e8" />
-				<circle cx="114" cy="386" r="3.5" fill="var(--primary)" />
-				<circle cx="82" cy="398" r="3.5" fill="#c7d0e8" />
-				<circle cx="98" cy="398" r="3.5" fill="var(--primary)" />
 			</g>
 
-			{/* ===== calculator ===== */}
+			{/* ===== floating card: calendar ===== */}
 			<g>
-				<ellipse
-					cx="284"
-					cy="460"
-					rx="140"
-					ry="20"
-					fill="#263ccb"
-					opacity="0.08"
-				/>
 				<rect
-					x="172"
-					y="106"
-					width="224"
-					height="330"
-					rx="32"
+					x="398"
+					y="330"
+					width="106"
+					height="94"
+					rx="16"
 					fill="#ffffff"
 					stroke="#e6eaf2"
 					strokeWidth="1.5"
 				/>
-				{/* screen */}
-				<rect x="198" y="128" width="172" height="68" rx="16" fill="#172343" />
-				<text
-					x="284"
-					y="176"
-					textAnchor="middle"
-					fill="#ffffff"
-					fontSize="34"
-					fontWeight="700"
-					letterSpacing="3"
-					fontFamily="Inter, system-ui, sans-serif"
-				>
-					123456
-				</text>
-				{/* buttons */}
-				<circle cx="226" cy="234" r="17" fill="var(--primary)" />
-				<circle cx="272" cy="234" r="17" fill="#eef1fb" />
-				<circle cx="318" cy="234" r="17" fill="#eef1fb" />
-				<circle cx="364" cy="234" r="17" fill="#eef1fb" />
-				<circle cx="226" cy="272" r="17" fill="#eef1fb" />
-				<circle cx="272" cy="272" r="17" fill="var(--primary)" />
-				<circle cx="318" cy="272" r="17" fill="#eef1fb" />
-				<circle cx="364" cy="272" r="17" fill="#eef1fb" />
-				<circle cx="226" cy="310" r="17" fill="#eef1fb" />
-				<circle cx="272" cy="310" r="17" fill="#eef1fb" />
-				<circle cx="318" cy="310" r="17" fill="var(--primary)" />
-				<circle cx="364" cy="310" r="17" fill="#eef1fb" />
-				<circle cx="226" cy="348" r="17" fill="#eef1fb" />
-				<circle cx="272" cy="348" r="17" fill="#eef1fb" />
-				<circle cx="318" cy="348" r="17" fill="#eef1fb" />
-				<circle cx="364" cy="348" r="17" fill="var(--primary)" />
-				{/* wide action button */}
-				<rect
-					x="208"
-					y="386"
-					width="152"
-					height="28"
-					rx="14"
-					fill="var(--primary)"
-					opacity="0.92"
-				/>
+				<rect x="424" y="350" width="54" height="50" rx="12" fill="#e8eeff" />
+				<rect x="424" y="350" width="54" height="15" rx="7.5" fill="#5b73ff" />
+				<rect x="434" y="343" width="6" height="13" rx="3" fill="#b9c6ee" />
+				<rect x="462" y="343" width="6" height="13" rx="3" fill="#b9c6ee" />
+				<circle cx="438" cy="381" r="3.5" fill="#b9c6ee" />
+				<circle cx="451" cy="381" r="3.5" fill="#b9c6ee" />
+				<circle cx="464" cy="381" r="3.5" fill="#5b73ff" />
+				<circle cx="438" cy="392" r="3.5" fill="#b9c6ee" />
+				<circle cx="451" cy="392" r="3.5" fill="#5b73ff" />
 			</g>
 
-			{/* ===== tagline ===== */}
-			<g transform="rotate(-5 400 60)">
-				<text
-					x="400"
-					y="52"
-					textAnchor="middle"
-					fill="var(--primary)"
-					fontSize="21"
-					fontWeight="800"
-					fontFamily="Inter, system-ui, sans-serif"
-				>
-					Simple Tools
-				</text>
-				<text
-					x="400"
-					y="78"
-					textAnchor="middle"
-					fill="var(--primary)"
-					fontSize="21"
-					fontWeight="800"
-					fontFamily="Inter, system-ui, sans-serif"
-				>
-					Better Life
-				</text>
-			</g>
+			{/* ===== currency badge ===== */}
+			<circle cx="452" cy="196" r="33" fill="#5b73ff" />
+			<circle cx="452" cy="196" r="33" fill="#ffffff" opacity="0.12" />
+			<text
+				x="452"
+				y="208"
+				textAnchor="middle"
+				fill="#ffffff"
+				fontSize="29"
+				fontWeight="800"
+				fontFamily="Inter, system-ui, sans-serif"
+			>
+				$
+			</text>
+
+			{/* ===== calculator ===== */}
+			<ellipse
+				cx="284"
+				cy="446"
+				rx="130"
+				ry="17"
+				fill="#263ccb"
+				opacity="0.07"
+			/>
+			<rect
+				x="172"
+				y="100"
+				width="216"
+				height="328"
+				rx="32"
+				fill="url(#bk-body)"
+				stroke="#dfe6f5"
+				strokeWidth="1.5"
+			/>
+			{/* screen */}
+			<rect
+				x="198"
+				y="122"
+				width="164"
+				height="64"
+				rx="14"
+				fill="url(#bk-screen)"
+			/>
+			<text
+				x="280"
+				y="167"
+				textAnchor="middle"
+				fill="#ffffff"
+				fontSize="32"
+				fontWeight="700"
+				letterSpacing="3"
+				fontFamily="Inter, system-ui, sans-serif"
+			>
+				123456
+			</text>
+			{/* buttons: uniform soft blue, 4 x 4 */}
+			<circle cx="224" cy="224" r="15" fill="#dbe3fa" />
+			<circle cx="266" cy="224" r="15" fill="#dbe3fa" />
+			<circle cx="308" cy="224" r="15" fill="#dbe3fa" />
+			<circle cx="350" cy="224" r="15" fill="#dbe3fa" />
+			<circle cx="224" cy="262" r="15" fill="#dbe3fa" />
+			<circle cx="266" cy="262" r="15" fill="#dbe3fa" />
+			<circle cx="308" cy="262" r="15" fill="#dbe3fa" />
+			<circle cx="350" cy="262" r="15" fill="#dbe3fa" />
+			<circle cx="224" cy="300" r="15" fill="#dbe3fa" />
+			<circle cx="266" cy="300" r="15" fill="#dbe3fa" />
+			<circle cx="308" cy="300" r="15" fill="#dbe3fa" />
+			<circle cx="350" cy="300" r="15" fill="#dbe3fa" />
+			<circle cx="224" cy="338" r="15" fill="#dbe3fa" />
+			<circle cx="266" cy="338" r="15" fill="#dbe3fa" />
+			<circle cx="308" cy="338" r="15" fill="#dbe3fa" />
+			<circle cx="350" cy="338" r="15" fill="#dbe3fa" />
+
+			{/* ===== tagline + swash ===== */}
+			<text
+				x="406"
+				y="56"
+				textAnchor="middle"
+				fill="var(--primary)"
+				fontSize="20"
+				fontWeight="800"
+				fontFamily="Inter, system-ui, sans-serif"
+			>
+				Simple Tools
+			</text>
+			<text
+				x="406"
+				y="80"
+				textAnchor="middle"
+				fill="var(--primary)"
+				fontSize="20"
+				fontWeight="800"
+				fontFamily="Inter, system-ui, sans-serif"
+			>
+				Better Life
+			</text>
+			<path
+				d="M336 94q70 22 140 -8"
+				stroke="var(--primary)"
+				strokeWidth="2.5"
+				strokeLinecap="round"
+				opacity="0.45"
+			/>
 		</svg>
 	);
 }
