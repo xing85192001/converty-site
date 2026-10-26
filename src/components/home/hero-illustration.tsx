@@ -1,225 +1,222 @@
 /**
- * Hero illustration for the homepage: a soft, pastel calculator with
- * floating tool cards. Pure inline SVG — no external assets or dependencies.
+ * Hero illustration for the homepage: a soft, flat (2.5D) calculator with
+ * floating app-style tool cards. Pure inline SVG — no external assets.
  * Decorative only (aria-hidden); all meaning lives in the adjacent hero copy.
- * Style reference (approved): soft 3D pastel look, light-blue buttons,
- * deep-navy screen, blue $ badge, four floating cards (chart / image /
- * calendar / currency), "Simple Tools Better Life" tagline with swash.
+ *
+ * Approved style (v8): flat fintech vector look — blue-and-white calculator
+ * slightly tilted, dark display with digits, light button grid; four floating
+ * rounded cards (left: green bar chart + blue search; right: blue percent +
+ * red calendar); "Simple Tools Better Life" tagline top-right with swash.
  */
 
 export function HeroIllustration({ className }: { className?: string }) {
 	return (
 		<svg
-			viewBox="0 0 560 520"
+			viewBox="0 0 600 440"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			className={className}
 			aria-hidden="true"
 		>
 			<defs>
-				<linearGradient id="bk-body" x1="0" y1="0" x2="0" y2="1">
+				<linearGradient id="v8-body" x1="0" y1="0" x2="0" y2="1">
 					<stop offset="0%" stopColor="#ffffff" />
-					<stop offset="100%" stopColor="#edf2fe" />
+					<stop offset="100%" stopColor="#eaf0fe" />
 				</linearGradient>
-				<linearGradient id="bk-screen" x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0%" stopColor="#26325c" />
-					<stop offset="100%" stopColor="#1a2342" />
+				<linearGradient id="v8-screen" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stopColor="#1e2a5e" />
+					<stop offset="100%" stopColor="#15203f" />
 				</linearGradient>
-				<radialGradient id="bk-glow" cx="50%" cy="42%" r="62%">
-					<stop offset="0%" stopColor="#eef1fc" />
-					<stop offset="100%" stopColor="#e2e8f8" />
-				</radialGradient>
 			</defs>
 
 			{/* soft periwinkle backdrop */}
-			<circle cx="280" cy="246" r="234" fill="url(#bk-glow)" />
+			<circle cx="300" cy="218" r="182" fill="#e9edfb" />
+			<circle cx="276" cy="246" r="120" fill="#f3f6fd" opacity="0.9" />
 
-			{/* sparkles */}
-			<path
-				d="M112 216l4.5 10.5 10.5 4.5-10.5 4.5L112 246l-4.5-10.5L97 231l10.5-4.5L112 216z"
-				fill="#aebcf0"
-			/>
-			<path
-				d="M498 288l3.5 8 8 3.5-8 3.5-3.5 8-3.5-8-8-3.5 8-3.5 3.5-8z"
-				fill="#c3cdf2"
-			/>
-
-			{/* ===== floating card: trending chart ===== */}
+			{/* ===== floating card: green bar chart ===== */}
 			<g>
 				<rect
-					x="24"
-					y="62"
-					width="126"
-					height="92"
-					rx="16"
+					x="64"
+					y="104"
+					width="86"
+					height="86"
+					rx="20"
 					fill="#ffffff"
 					stroke="#e6eaf2"
 					strokeWidth="1.5"
 				/>
-				<rect x="46" y="120" width="13" height="16" rx="3.5" fill="#d7f5e3" />
-				<rect x="65" y="112" width="13" height="24" rx="3.5" fill="#a7ebc6" />
-				<rect x="84" y="102" width="13" height="34" rx="3.5" fill="#6fdc9d" />
+				<rect x="86" y="158" width="12" height="20" rx="3" fill="#a7ebc6" />
+				<rect x="104" y="146" width="12" height="32" rx="3" fill="#6fdc9d" />
+				<rect x="122" y="132" width="12" height="46" rx="3" fill="#22c55e" />
 				<path
-					d="M46 96l20-16 13 9 21-20"
+					d="M86 150l18-14 14 10 16-16"
 					stroke="#22c55e"
-					strokeWidth="3.5"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-				/>
-				<path
-					d="M93 69l7 0 0 7"
-					stroke="#22c55e"
-					strokeWidth="3.5"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-				/>
-				<rect x="46" y="130" width="76" height="7" rx="3.5" fill="#eef1f8" />
-			</g>
-
-			{/* ===== floating card: image tools ===== */}
-			<g>
-				<rect
-					x="40"
-					y="332"
-					width="106"
-					height="94"
-					rx="16"
-					fill="#ffffff"
-					stroke="#e6eaf2"
-					strokeWidth="1.5"
-				/>
-				<rect x="66" y="352" width="54" height="54" rx="13" fill="#f0ebfd" />
-				<circle cx="80" cy="368" r="4.5" fill="#8b5cf6" />
-				<path
-					d="M70 398l14-16 11 12 8-8 13 14"
-					stroke="#8b5cf6"
 					strokeWidth="3"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 			</g>
 
-			{/* ===== floating card: calendar ===== */}
+			{/* ===== floating card: blue search ===== */}
 			<g>
 				<rect
-					x="398"
-					y="330"
-					width="106"
-					height="94"
-					rx="16"
+					x="52"
+					y="226"
+					width="86"
+					height="82"
+					rx="20"
 					fill="#ffffff"
 					stroke="#e6eaf2"
 					strokeWidth="1.5"
 				/>
-				<rect x="424" y="350" width="54" height="50" rx="12" fill="#e8eeff" />
-				<rect x="424" y="350" width="54" height="15" rx="7.5" fill="#5b73ff" />
-				<rect x="434" y="343" width="6" height="13" rx="3" fill="#b9c6ee" />
-				<rect x="462" y="343" width="6" height="13" rx="3" fill="#b9c6ee" />
-				<circle cx="438" cy="381" r="3.5" fill="#b9c6ee" />
-				<circle cx="451" cy="381" r="3.5" fill="#b9c6ee" />
-				<circle cx="464" cy="381" r="3.5" fill="#5b73ff" />
-				<circle cx="438" cy="392" r="3.5" fill="#b9c6ee" />
-				<circle cx="451" cy="392" r="3.5" fill="#5b73ff" />
+				<circle
+					cx="88"
+					cy="262"
+					r="15"
+					fill="none"
+					stroke="var(--primary)"
+					strokeWidth="4"
+				/>
+				<line
+					x1="99"
+					y1="273"
+					x2="110"
+					y2="284"
+					stroke="var(--primary)"
+					strokeWidth="5"
+					strokeLinecap="round"
+				/>
 			</g>
 
-			{/* ===== currency badge ===== */}
-			<circle cx="452" cy="196" r="33" fill="#5b73ff" />
-			<circle cx="452" cy="196" r="33" fill="#ffffff" opacity="0.12" />
-			<text
-				x="452"
-				y="208"
-				textAnchor="middle"
-				fill="#ffffff"
-				fontSize="29"
-				fontWeight="800"
-				fontFamily="Inter, system-ui, sans-serif"
-			>
-				$
-			</text>
+			{/* ===== floating card: blue percent ===== */}
+			<g>
+				<rect
+					x="450"
+					y="104"
+					width="86"
+					height="86"
+					rx="20"
+					fill="#ffffff"
+					stroke="#e6eaf2"
+					strokeWidth="1.5"
+				/>
+				<text
+					x="493"
+					y="160"
+					textAnchor="middle"
+					fill="var(--primary)"
+					fontSize="38"
+					fontWeight="800"
+					fontFamily="Inter, system-ui, sans-serif"
+				>
+					%
+				</text>
+			</g>
 
-			{/* ===== calculator ===== */}
-			<ellipse
-				cx="284"
-				cy="446"
-				rx="130"
-				ry="17"
-				fill="#263ccb"
-				opacity="0.07"
-			/>
-			<rect
-				x="172"
-				y="100"
-				width="216"
-				height="328"
-				rx="32"
-				fill="url(#bk-body)"
-				stroke="#dfe6f5"
-				strokeWidth="1.5"
-			/>
-			{/* screen */}
-			<rect
-				x="198"
-				y="122"
-				width="164"
-				height="64"
-				rx="14"
-				fill="url(#bk-screen)"
-			/>
-			<text
-				x="280"
-				y="167"
-				textAnchor="middle"
-				fill="#ffffff"
-				fontSize="32"
-				fontWeight="700"
-				letterSpacing="3"
-				fontFamily="Inter, system-ui, sans-serif"
-			>
-				123456
-			</text>
-			{/* buttons: uniform soft blue, 4 x 4 */}
-			<circle cx="224" cy="224" r="15" fill="#dbe3fa" />
-			<circle cx="266" cy="224" r="15" fill="#dbe3fa" />
-			<circle cx="308" cy="224" r="15" fill="#dbe3fa" />
-			<circle cx="350" cy="224" r="15" fill="#dbe3fa" />
-			<circle cx="224" cy="262" r="15" fill="#dbe3fa" />
-			<circle cx="266" cy="262" r="15" fill="#dbe3fa" />
-			<circle cx="308" cy="262" r="15" fill="#dbe3fa" />
-			<circle cx="350" cy="262" r="15" fill="#dbe3fa" />
-			<circle cx="224" cy="300" r="15" fill="#dbe3fa" />
-			<circle cx="266" cy="300" r="15" fill="#dbe3fa" />
-			<circle cx="308" cy="300" r="15" fill="#dbe3fa" />
-			<circle cx="350" cy="300" r="15" fill="#dbe3fa" />
-			<circle cx="224" cy="338" r="15" fill="#dbe3fa" />
-			<circle cx="266" cy="338" r="15" fill="#dbe3fa" />
-			<circle cx="308" cy="338" r="15" fill="#dbe3fa" />
-			<circle cx="350" cy="338" r="15" fill="#dbe3fa" />
+			{/* ===== floating card: red calendar ===== */}
+			<g>
+				<rect
+					x="462"
+					y="226"
+					width="86"
+					height="82"
+					rx="20"
+					fill="#ffffff"
+					stroke="#e6eaf2"
+					strokeWidth="1.5"
+				/>
+				<rect x="480" y="244" width="50" height="34" rx="8" fill="#fde8ec" />
+				<rect x="480" y="244" width="50" height="11" rx="5.5" fill="#e23e57" />
+				<rect x="488" y="262" width="6" height="6" rx="2" fill="#e23e57" />
+				<rect x="504" y="262" width="6" height="6" rx="2" fill="#e23e57" />
+				<rect x="520" y="262" width="6" height="6" rx="2" fill="#e23e57" />
+			</g>
+
+			{/* ===== calculator (slightly tilted) ===== */}
+			<g transform="rotate(-6 300 220)">
+				<ellipse
+					cx="300"
+					cy="372"
+					rx="96"
+					ry="14"
+					fill="#263ccb"
+					opacity="0.07"
+				/>
+				<rect
+					x="220"
+					y="104"
+					width="160"
+					height="252"
+					rx="30"
+					fill="url(#v8-body)"
+					stroke="#dfe6f5"
+					strokeWidth="1.5"
+				/>
+				<rect
+					x="242"
+					y="126"
+					width="116"
+					height="56"
+					rx="14"
+					fill="url(#v8-screen)"
+				/>
+				<text
+					x="300"
+					y="164"
+					textAnchor="middle"
+					fill="#ffffff"
+					fontSize="25"
+					fontWeight="700"
+					letterSpacing="2"
+					fontFamily="Inter, system-ui, sans-serif"
+				>
+					12345678
+				</text>
+				<g fill="#dbe3fa">
+					<rect x="244" y="206" width="22" height="22" rx="6" />
+					<rect x="274" y="206" width="22" height="22" rx="6" />
+					<rect x="304" y="206" width="22" height="22" rx="6" />
+					<rect x="334" y="206" width="22" height="22" rx="6" />
+					<rect x="244" y="238" width="22" height="22" rx="6" />
+					<rect x="274" y="238" width="22" height="22" rx="6" />
+					<rect x="304" y="238" width="22" height="22" rx="6" />
+					<rect x="334" y="238" width="22" height="22" rx="6" />
+					<rect x="244" y="270" width="22" height="22" rx="6" />
+					<rect x="274" y="270" width="22" height="22" rx="6" />
+					<rect x="304" y="270" width="22" height="22" rx="6" />
+					<rect x="334" y="270" width="22" height="22" rx="6" />
+					<rect x="244" y="302" width="22" height="22" rx="6" />
+					<rect x="274" y="302" width="22" height="22" rx="6" />
+					<rect x="304" y="302" width="22" height="22" rx="6" />
+					<rect x="334" y="302" width="22" height="22" rx="6" />
+				</g>
+			</g>
 
 			{/* ===== tagline + swash ===== */}
 			<text
-				x="406"
-				y="56"
+				x="512"
+				y="70"
 				textAnchor="middle"
 				fill="var(--primary)"
-				fontSize="20"
+				fontSize="18"
 				fontWeight="800"
 				fontFamily="Inter, system-ui, sans-serif"
 			>
 				Simple Tools
 			</text>
 			<text
-				x="406"
-				y="80"
+				x="512"
+				y="92"
 				textAnchor="middle"
 				fill="var(--primary)"
-				fontSize="20"
+				fontSize="18"
 				fontWeight="800"
 				fontFamily="Inter, system-ui, sans-serif"
 			>
 				Better Life
 			</text>
 			<path
-				d="M336 94q70 22 140 -8"
+				d="M452 102q60 18 120 -4"
 				stroke="var(--primary)"
 				strokeWidth="2.5"
 				strokeLinecap="round"

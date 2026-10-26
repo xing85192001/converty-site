@@ -134,50 +134,50 @@ export default async function Home({
 		<>
 			{/* ===== Hero: copy + search left, illustration right ===== */}
 			<section className="relative overflow-hidden border-b border-border bg-background">
-				<div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:py-14">
-					<div className="text-center lg:text-left">
-						<span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
-							<Sparkles className="h-3.5 w-3.5" />
-							{t("heroBadge")}
-						</span>
-						<h1 className="mt-4 text-[34px] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[54px]">
-							<span className="block text-foreground">{t("heroTitle1")}</span>
-							<span className="block text-primary">{t("heroTitle2")}</span>
-						</h1>
-						<p className="mx-auto mt-4 max-w-md text-sm text-muted-foreground sm:text-base lg:mx-0">
-							{t("tagline")}
-						</p>
+				<div className="mx-auto max-w-6xl px-4 py-8 lg:py-10">
+					<div className="grid items-center gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
+						<div className="text-center lg:text-left">
+							<span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
+								<Sparkles className="h-3.5 w-3.5" />
+								{t("heroBadge")}
+							</span>
+							<h1 className="mt-4 text-[34px] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[44px]">
+								<span className="block text-foreground">{t("heroTitle1")}</span>
+								<span className="block text-primary">{t("heroTitle2")}</span>
+							</h1>
+							<p className="mx-auto mt-4 max-w-md text-sm text-muted-foreground sm:text-base lg:mx-0">
+								{t("tagline")}
+							</p>
 
-						<div className="mx-auto mt-6 max-w-xl lg:mx-0">
-							<HeroSearchInput />
+							<div className="mx-auto mt-6 max-w-xl lg:mx-0">
+								<HeroSearchInput />
+							</div>
 						</div>
-
-						<div className="mt-5 flex flex-wrap justify-center gap-2 lg:justify-start">
-							{hotChipCategories.map((id) => {
-								const c = getCategoryById(id);
-								if (!c) return null;
-								return (
-									<Link
-										key={id}
-										href={`/${c.slug}`}
-										className="flex h-8 items-center gap-1.5 rounded-full border border-border bg-card px-3 text-xs font-medium text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary"
-									>
-										<span
-											className={`flex h-5 w-5 items-center justify-center rounded-full ${
-												chipTints[id] ?? "bg-primary/10 text-primary"
-											}`}
-										>
-											<c.icon className="h-3 w-3" />
-										</span>
-										{nav(`${id}.name`)}
-									</Link>
-								);
-							})}
+						<div className="flex justify-center lg:justify-end">
+							<HeroIllustration className="h-auto w-full max-w-[320px] lg:max-w-[420px]" />
 						</div>
 					</div>
-
-					<div className="flex justify-center lg:justify-end">
-						<HeroIllustration className="h-auto w-full max-w-[360px] lg:max-w-[520px]" />
+					<div className="mt-5 flex flex-nowrap justify-center gap-2 overflow-x-auto lg:justify-start lg:col-span-2">
+						{hotChipCategories.map((id) => {
+							const c = getCategoryById(id);
+							if (!c) return null;
+							return (
+								<Link
+									key={id}
+									href={`/${c.slug}`}
+									className="flex h-8 shrink-0 items-center gap-1.5 rounded-full border border-border bg-card px-3 text-xs font-medium text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary"
+								>
+									<span
+										className={`flex h-5 w-5 items-center justify-center rounded-full ${
+											chipTints[id] ?? "bg-primary/10 text-primary"
+										}`}
+									>
+										<c.icon className="h-3 w-3" />
+									</span>
+									{nav(`${id}.name`)}
+								</Link>
+							);
+						})}
 					</div>
 				</div>
 			</section>
@@ -296,7 +296,7 @@ export default async function Home({
 						<p className="mt-1 text-xs text-muted-foreground">
 							{th("whySubtitle")}
 						</p>
-						<ul className="mt-4 flex flex-col gap-3.5">
+						<ul className="mt-4 flex flex-1 flex-col justify-center gap-3.5">
 							{whyItems.map((item, i) => {
 								const Icon = whyIcons[i] ?? ShieldCheck;
 								return (
@@ -336,7 +336,7 @@ export default async function Home({
 								{t("homepageViewAll")}
 							</Link>
 						</div>
-						<ul className="mt-4 flex flex-col gap-3.5">
+						<ul className="mt-4 flex flex-1 flex-col justify-center gap-3.5">
 							{blogPosts.slice(0, 4).map((post) => {
 								const Icon = blogCategoryIcons[post.category] ?? Percent;
 								return (
@@ -352,9 +352,9 @@ export default async function Home({
 												<b className="line-clamp-2 text-[13px] font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
 													{tBlog(`posts.${post.slug}.title`)}
 												</b>
-											<span className="mt-0.5 block text-[11px] text-muted-foreground">
-												{post.readingMinutes} {tBlog("minRead")}
-											</span>
+												<span className="mt-0.5 block text-[11px] text-muted-foreground">
+													{post.readingMinutes} {tBlog("minRead")}
+												</span>
 											</span>
 										</Link>
 									</li>
