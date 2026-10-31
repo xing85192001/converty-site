@@ -154,7 +154,7 @@ export default async function Home({
 							</div>
 						</div>
 						<div className="flex justify-center lg:justify-end">
-							<HeroIllustration className="h-auto w-full max-w-[320px] lg:max-w-[420px]" />
+							<HeroIllustration className="h-auto w-full max-w-[260px] lg:max-w-[300px]" />
 						</div>
 					</div>
 					<div className="mt-5 flex flex-nowrap justify-center gap-2 overflow-x-auto lg:justify-start lg:col-span-2">
